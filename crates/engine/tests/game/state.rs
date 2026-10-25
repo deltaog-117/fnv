@@ -1,4 +1,6 @@
 //! `Game` against hand-built quests and effects.
+//!
+//! World effects are covered in `tests/world`.
 
 use std::sync::Arc;
 
@@ -77,10 +79,7 @@ fn unbuilt_effects() -> Vec<Value> {
         json!({"type": "xp", "amount": 10.0}),
         json!({"type": "caps", "amount": 10.0}),
         json!({"type": "give_item", "item": "stimpak"}),
-        json!({"type": "set_flag", "flag": "f"}),
-        json!({"type": "kill_npc", "npc": "n"}),
         json!({"type": "companion_join", "companion": "c"}),
-        json!({"type": "unlock_ending", "ending": "e"}),
     ]
 }
 

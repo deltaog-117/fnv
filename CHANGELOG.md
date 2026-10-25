@@ -29,8 +29,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Quest tests: lifecycle cases, property tests over random effect sequences, a walk of every staged quest in the real data, and a playthrough benchmark stub
 - Game state in `crates/engine/src/game/`: `Game` holds the quest log and implements all six view and six sink traits, so `evaluate` and `apply_all` run against it. Views of unbuilt features give the shared defaults; effects aimed at them are refused with a reason naming the missing feature
 - Game tests: quest effects and conditions through `Game`, a property test for the refusals, a walk of every staged quest through `apply_all`, and a batch benchmark stub
+- World state in `crates/engine/src/world/`: `WorldBook` (the NPC roster) and `WorldState` (story flags, NPC fates, ending locks) implementing `WorldView` and `WorldSink`. An NPC is alive (hostile or not), dead or removed, so a dead hostile NPC cannot exist; an NPC outside the roster is an error
+- `Game::with_world` builds a game over a populated NPC roster, and `Game::meet` records meeting an NPC
+- World tests: one case per rule, property tests over random effect sequences, world effects through `Game`, and a benchmark stub
 
 ### Changed
+- `Game` now applies flag, NPC and ending effects instead of refusing them; `Game::new` has an empty roster, so NPC effects on it fail with an unknown-NPC error
 - A quest condition must now carry a `stage` exactly when its state is `stage_at_least` or `stage_is`, and stage numbers cannot be negative (`schemas/common.schema.json`)
 
 ### Deprecated

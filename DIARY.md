@@ -682,6 +682,55 @@ The evaluator needs something to read quest conditions from and write quest effe
 
 ---
 
+### World State: Flags and NPC Fates Over a Shared Roster
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Most quest consequence rules set a flag or kill, anger or remove an NPC, so rule firing and dialogue both need a real world state. `Game` refused every world effect, and the `WorldSink` contract says an effect on an unknown NPC must fail.
+
+---
+
+#### Decision
+
+> `world/` holds `WorldBook`, the read-only roster of NPC ids, and `WorldState`, which implements `WorldView` and `WorldSink` over it. An NPC is `Alive { hostile }`, `Dead` or `Removed`, plus a `met` mark, so a dead hostile NPC cannot be stored. Only NPCs that changed are stored, so cloning stays cheap. `Game` gets a `world` field; `Game::new` keeps its signature with an empty roster, and `Game::with_world` takes a populated one.
+>
+> **Alternatives rejected:** B, rule firing in the same cycle (the rules only carry prose `when` text, so firing needs structured conditions first), and C, the whole Goodsprings slice at once (too large to review, and the authoring should target a rule engine that already runs).
+>
+> **Trade-offs accepted:** endings have no catalog yet, so any ending id is accepted and an untouched ending reads as `None`. Flags are free-form, with no registry. `meet` is an inherent method because the sink traits have no "met" effect.
+
+---
+
+#### Implementation Notes
+
+> - A removed NPC is in no state, `Met` included; a dead NPC stays met. Killing the dead and removing the removed change nothing; killing the removed, and changing the attitude of the dead or removed, are refused.
+> - A `Game` built with `Game::new` has no NPCs, so NPC effects fail with `Unknown` rather than vanish.
+> - Tests: one case per rule, property tests for the NPC laws and for "a refused effect changes nothing", and world effects through `Game`. The batch test pins the existing behavior that `apply_all` leaves earlier effects applied when a later sink refuses.
+> - The benchmark stub measures about 275 ns for a four-effect batch on a fresh `WorldState`.
+
+---
+
+#### References
+
+- `crates/engine/src/world.rs`, `world/book.rs`, `world/state.rs`
+- `crates/engine/src/game/state.rs`
+- `crates/engine/tests/world/`
+- `crates/engine/benches/world.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry
