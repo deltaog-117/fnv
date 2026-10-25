@@ -829,6 +829,54 @@ The quest engine and game state run conditions and effects, but nothing let the 
 
 ---
 
+### Combat Core: A Fight Over a Small Combatant Trait
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Combat was an empty stub, and the character and inventory modules it would read from are stubs too. The curated formulas cover weapon damage, resistance, threshold, action points and crit chance, but the wiki gives no hit-chance or spread formula.
+
+---
+
+#### Decision
+
+> `combat/` defines a `Combatant` trait for the numbers it reads (hit points, action points, threshold, resistance, crit chance, weapon) and tracks only what changes in a fight itself (COA C of three; the others were a plain-struct core with no trait, and a full pipeline over the character and inventory views). Hit chance is behind a swappable `HitModel` with a labelled flat stand-in, and chance comes from a `Dice` trait, so a fight is deterministic for a given sequence of rolls and tests script the dice. Numbers are validated once at the edge (`Points`, `Multiplier`, `Percent`, a non-zero hit-point maximum and attack cost), so the fight never re-checks them.
+>
+> **Alternatives rejected:** A, a core on plain structs (a subset of C that would have to be rewired when `Game` arrives), and B, the full pipeline over `CharacterView` and `InventoryView` (blocked by the stubs, and the hit formula is not in the data).
+>
+> **Trade-offs accepted:** a critical hit adds the weapon's critical damage to the base before the multipliers; the wiki does not say where it enters, so this is a stand-in. A hit that gets through at all costs at least 1 hit point, so a fight with any hitting weapon ends. Turn order is the order the fighters are given; initiative is not modelled. Weapon condition is an input multiplier, not a changing value, and body parts and spread are not modelled. A move is checked as a whole before anything changes, so a refused attack costs no action points and rolls no dice.
+
+---
+
+#### Implementation Notes
+
+> - Nine real weapons (Hologram beam, Laser detonator, X-25 Gatling laser and others) have an action-point cost of 0 in the data and three have none. A fight needs a cost of at least 1, so the adapter that builds an attack from a weapon has to decide what to do with them. A real-data test pins the exact list so a change shows up.
+> - `Rules::standard()` mirrors `constants` in `formulas.json`; a real-data test fails if they drift.
+> - Tests: 29, including four property tests and twelve golden scenarios in `tests/scenarios/combat.json`.
+> - The benchmark stub measures about 490 ns for a four-fighter fight of sure hits.
+> - Not wired into `Game` yet: that needs character and inventory.
+
+---
+
+#### References
+
+- `crates/engine/src/combat.rs`, `combat/stats.rs`, `combat/damage.rs`, `combat/hit.rs`, `combat/fight.rs`
+- `crates/engine/tests/combat/`, `tests/scenarios/combat.json`, `crates/engine/benches/combat.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

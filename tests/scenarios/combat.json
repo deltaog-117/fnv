@@ -1,0 +1,510 @@
+{
+ "description": "Language-neutral combat scenarios: 'fighters' are listed in turn order; 'rolls' are the percentile dice consumed in order (a hit roll, then a critical roll only after a hit); each step is an 'attack' on the fighter at index 'target' (power 'normal' or 'boosted') or 'end_turn', and 'fails' marks a move that must be refused; 'expect' lists every fighter's hit points, the status, the round and the active fighter's action points left. Standard rules: resistance caps at 85, a fifth of the damage always gets through, a hit costs at least 1 hit point.",
+ "scenarios": [
+  {
+   "name": "a hit takes the threshold off and spends the weapon's action points",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 20,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 50,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20,
+     "dt": 5
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     35
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 45
+   }
+  },
+  {
+   "name": "a boosted attack doubles the damage before armor",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 20,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 50,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20,
+     "dt": 5
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1,
+     "power": "boosted"
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     15
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 45
+   }
+  },
+  {
+   "name": "a fifth of the damage gets through a huge threshold",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 10,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 30,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20,
+     "dt": 50
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     28
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 45
+   }
+  },
+  {
+   "name": "resistance comes off before the threshold",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 40,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 100,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20,
+     "dt": 10,
+     "dr": 50
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     90
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 45
+   }
+  },
+  {
+   "name": "resistance past the cap counts as 85 and the floor still applies",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 40,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 100,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20,
+     "dr": 100
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     92
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 45
+   }
+  },
+  {
+   "name": "a miss spends action points and does no damage",
+   "hit_chance": 50,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 20,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 50,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20
+    }
+   ],
+   "rolls": [
+    51
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     50
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 45
+   }
+  },
+  {
+   "name": "a critical hit adds the critical damage",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 20,
+     "ap_cost": 20,
+     "crit_chance": 10,
+     "crit_damage": 10
+    },
+    {
+     "side": "enemy",
+     "hp": 50,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20,
+     "dt": 5
+    }
+   ],
+   "rolls": [
+    10,
+    10
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     25
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 45
+   }
+  },
+  {
+   "name": "an attack the fighter cannot pay for is refused",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 30,
+     "damage": 20,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 50,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1
+    },
+    {
+     "action": "attack",
+     "target": 1,
+     "fails": true
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     30
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 10
+   }
+  },
+  {
+   "name": "ending turns hands over and the round counts up on wrap",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 20,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 50,
+     "ap": 40,
+     "damage": 1,
+     "ap_cost": 20
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "end_turn"
+    },
+    {
+     "action": "end_turn"
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     50
+    ],
+    "status": "ongoing",
+    "round": 2,
+    "ap_left": 65
+   }
+  },
+  {
+   "name": "the enemy hits back on its own turn",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 20,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 50,
+     "ap": 40,
+     "damage": 10,
+     "ap_cost": 20
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "end_turn"
+    },
+    {
+     "action": "attack",
+     "target": 0
+    }
+   ],
+   "expect": {
+    "hp": [
+     40,
+     50
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 20
+   }
+  },
+  {
+   "name": "downing the last enemy wins the fight and ends all moves",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 100,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 10,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1
+    },
+    {
+     "action": "attack",
+     "target": 1,
+     "fails": true
+    },
+    {
+     "action": "end_turn",
+     "fails": true
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     0
+    ],
+    "status": "won_player",
+    "round": 1,
+    "ap_left": 45
+   }
+  },
+  {
+   "name": "friendly fire is refused",
+   "hit_chance": 100,
+   "fighters": [
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 20,
+     "ap_cost": 20
+    },
+    {
+     "side": "player",
+     "hp": 50,
+     "ap": 65,
+     "damage": 20,
+     "ap_cost": 20
+    },
+    {
+     "side": "enemy",
+     "hp": 50,
+     "ap": 65,
+     "damage": 1,
+     "ap_cost": 20
+    }
+   ],
+   "rolls": [
+    1,
+    100
+   ],
+   "steps": [
+    {
+     "action": "attack",
+     "target": 1,
+     "fails": true
+    }
+   ],
+   "expect": {
+    "hp": [
+     50,
+     50,
+     50
+    ],
+    "status": "ongoing",
+    "round": 1,
+    "ap_left": 65
+   }
+  }
+ ]
+}

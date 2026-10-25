@@ -27,6 +27,7 @@ Items are organized by priority, not by timeline.
 - ✅ World state (`world/`): `WorldBook` (NPC roster) and `WorldState` (story flags, NPC fates, ending locks) implementing `WorldView` and `WorldSink`; `Game` now delegates world reads and writes to it; lifecycle, property and through-`Game` tests, and a benchmark stub
 - ✅ Dialogue runner (`dialogue/`): `DialogueBook` (validated topic graph) and `Conversation` (start topics, follow-ups, conditions, locked checks, atomic effects, endings) over any `State`; `start` and `ends` added to the dialogue schema; hand-authored Doc Mitchell and Sunny Smiles graphs in `data/dialogue/slice_goodsprings.json`; 24 tests including a property test over random graphs, seven golden scenarios in `tests/scenarios/goodsprings_dialogue.json` and a menu benchmark stub (about 300 ns per menu)
 - ✅ Goodsprings quest slice: hand-authored stage rewards and rule gates (`data/quests/slice_goodsprings.json`) merged by `normalize.py`; `Game` applies `on_enter` effects and fires consequence rules, undoes a failed change, and postpones rewards for unbuilt features into `Game::deferred()`; ten golden scenarios in `tests/scenarios/`
+- ✅ Combat core (`combat/`): `Combat` runs a turn-based fight (action points, rounds, a win check) over a small `Combatant` trait, with the curated damage pipeline (weapon damage, resistance capped at 85, threshold with a 20% floor), bounded combat numbers, a swappable `HitModel` with a flat stand-in, and deterministic `Dice`; 29 tests including property tests and twelve golden scenarios in `tests/scenarios/combat.json`, and a fight benchmark stub (about 490 ns)
 
 ---
 
@@ -37,7 +38,7 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 - **Grow the game state** – `Game` gains a real field each time a feature lands (inventory, reputation, character, companions), replacing its placeholder refusals.
 - **Finish the Goodsprings slice** – Run Goodsprings Run, By a Campfire on the Trail, and the quests with no stages; fame and infamy amounts; replay `Game::deferred()` as inventory, character and reputation land.
 - **Goodsprings dialogue content** – author the graphs for Chet, Trudy, Ringo, Easy Pete and Joe Cobb, then the Doc Mitchell intro and the paid topics (healing, supplies) once inventory exists. The wiki records no links or skill-check thresholds, so each one is read from the transcript.
-- **Turn-based AP combat** – VATS-style action points, DT/DR damage, criticals and weapon condition, using the curated formulas.
+- **Finish combat** – the real hit-chance and spread model (needs the wiki or the xEdit export), body-part targeting, weapon condition that wears down, initiative, and an adapter that builds a `Combatant` from the character, inventory and weapon data (nine weapons have an action-point cost of 0 and need a decision).
 - **Reputation and karma** – fame/infamy per faction and town, titles and consequences.
 - **Leveling, perks and traits** – XP table, skill points per level, a perk every two levels, trait choice at character creation.
 - **Vendors and barter** – buying and selling with the barter formula. Vendor stock is not in the wiki and depends on the game-data export below, so the Goodsprings vendors (Chet, Trudy's stock, etc.) have to be authored by hand until then.
@@ -78,6 +79,6 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🎯 Next Actions (Immediate)
 
-1. **Build turn-based combat** – `crates/engine/src/combat/`, with property tests and a benchmark stub.
-2. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel, the dialogue menu and the action footer.
-3. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above.
+1. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel, the dialogue menu and the action footer.
+2. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above.
+3. **Grow the game state** – character and inventory, so combat can be wired into `Game`.
