@@ -1,0 +1,124 @@
+{
+ "page": "1ESquatterWatchQuest1.txt",
+ "speaker": "Squatter Bill",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're going, we're going!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "SquattersBribe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Sure. You got a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] That don't buy much these days. Double it and you've got a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd rather not have any trouble. Here's 50 caps, just keep yourself off the streets."
+  },
+  {
+   "id": "SquattersIntimidate",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] H-Hey... hey, don't worry, I was just kidding. We're going, right boys?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm asking nicely. I only do that *once.*"
+  },
+  {
+   "id": "SquattersIntimidate",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I ain't moving my stuff just 'cause you ask, nicely or not. Get the fuck out of my sight, punk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm asking nicely. Maybe you should go before I get angry at you."
+  },
+  {
+   "id": "SquattersKill",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck you, asshole! You're gonna regret it!",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "prompt": "<Attack> Easy, I'm just going to kill you."
+  },
+  {
+   "id": "SquattersMoveAlong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh really? And how are you gonna make us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Crandon says you're not allowed to stay here. You'll have to go somewhere else."
+  },
+  {
+   "id": "VDialogueVegasNorth1ESquatterWatchQuest1Topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pleasure doing business with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Fine, take it."
+  },
+  {
+   "id": "VDialogueVegasNorth1ESquatterWatchQuest1Topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then we ain't going nowhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A hundred caps? Forget it."
+  },
+  {
+   "id": "VDialogueVegasNorth1ESquatterWatchQuest1Topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pleasure doing business with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here you go."
+  }
+ ]
+}

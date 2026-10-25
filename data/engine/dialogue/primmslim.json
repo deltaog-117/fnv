@@ -1,0 +1,470 @@
+{
+ "id": "primmslim",
+ "speaker_name": "Primm Slim",
+ "source": "PrimmSlim.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Howdy pardner! Welcome to the Vikki and Vance Casino and Museum.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Howdy pardner! Any luck tracking down Vance's gun?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Always good to see you, pardner! Anything I can help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "primmslimaboutbisonsteve",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{clears throat} The Bison Steve is one of Primm's less-impressive casino hotels. I'd steer clear of that place, pardner, if I were you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Rumor is the dealers over there cheat, and that rickety roller-coaster's liable to fall down any day 'cause it wasn't built to code.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimAboutBisonSteve",
+   "prompt": "What about the Bison Steve hotel, across the street?",
+   "label": "Tell me about the Bison Steve."
+  },
+  {
+   "key": "primmslimaboutcasinomuseum",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why, this is the Vikki and Vance Casino and Museum - Primm's Primm-eer tourist attraction and resort destination! Yeehaw!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimAboutCasinoMuseum",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "primmslimabouthimself",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm Slim at your service! Authentic cowpoke and official spokesbot of the Vikki and Vance Casino and Museum! Yeehaw!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimAboutHimself",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "primmslimaboutprimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm is a thriving resort community located in Clark County, Nevada, right along Interstate 15.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whether you can't wait 'til Vegas to try your luck, or want to hit one last jackpot before you leave Nevada, Primm's your place!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The town's Primm-eer attraction is the world-famous Vikki and Vance Casino and Museum, so you came to the right place, pardner!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimAboutPrimm",
+   "prompt": "Tell me about Primm.",
+   "label": "Tell me about Primm"
+  },
+  {
+   "key": "primmslimgun",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just mosey on over to the display case and you'll see it plain as day. Quite a piece, that gun. Mint condition. Never fired.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimGun",
+   "prompt": "Did you know that Vance's gun is missing?",
+   "label": "Did you know that Vance's gun is missing?"
+  },
+  {
+   "key": "primmslimgunmissing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have you gone loco, pardner? I can see the gun with my own three photo sensors from where I'm standing right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[You hear strange sounds coming from Primm Slim. He may be trying to read a corrupted file, but it would take more science knowledge to be sure.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimGunMissing",
+   "prompt": "The display case is empty. The gun's missing.",
+   "label": "No, the gun is missing."
+  },
+  {
+   "key": "primmslimgunmissing_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Quit yammering on about missing guns, pardner. Primm Slim's a busy man, ain't got time for that sort of bosh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimGunMissing",
+   "prompt": "The gun is still missing.",
+   "label": "No, the gun is missing."
+  },
+  {
+   "key": "primmslimgunno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dang it. I hope you'll keep looking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimGunNo",
+   "prompt": "I haven't found the gun."
+  },
+  {
+   "key": "primmslimgunscience",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] <Primm Slim buzzes and whirs while he reformats.>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well look at that. I happened across this data file locked away in an isolated sub-system.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimGunScience",
+   "prompt": "Scan your data registry. You've been hacked.",
+   "label": "What happened to Vance's Gun?"
+  },
+  {
+   "key": "primmslimgunscience_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You're plumb loco partner.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimGunScience",
+   "prompt": "Maybe you've been hacked or something?",
+   "label": "What happened to Vance's Gun?"
+  },
+  {
+   "key": "primmslimgunyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those thieves had some gall, stealing from a museum dedicated to romanticizing a couple of criminals!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll make sure the gun ends up back on display. I thank you, Primm thanks you, and I do believe Vance'd thank you, if he could.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimGunYes",
+   "prompt": "I found the gun. Here it is."
+  },
+  {
+   "key": "primmslimsheriff",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Bzzzt... Law Enforcement Protocols reinstated, pardner. Initializing use of force authorization... authorization found. Yee-haw!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimSheriff",
+   "prompt": "<Reprogram Primm Slim to serve as Primm's Sheriff.>",
+   "label": "Reprogram Primm Slim to serve as Primm's Sheriff."
+  },
+  {
+   "key": "primmslimsheriff_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Aw, shucks, SYSTEM RUNTIME ERROR! Unable to initialize Law Enforcement Protocols, pardner!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimSheriff",
+   "prompt": "<Try to reprogram Primm Slim to act as Sheriff of Primm.>",
+   "label": "Reprogram Primm Slim to serve as Primm's Sheriff."
+  },
+  {
+   "key": "primmslimsheriff2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bzzzt... Law Enforcement Protocols reinstated, pardner. Initializing use of force authorization... authorization found. Yee-haw!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aw, shucks, SYSTEM RUNTIME ERROR! Unable to initialize Law Enforcement Protocols, pardner!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimSheriff2",
+   "prompt": "<Reprogram Primm Slim to serve as Primm's Sheriff using 3 fission batteries and 4 conductors.>",
+   "label": "Reprogram Primm Slim to serve as Primm's Sheriff using parts."
+  },
+  {
+   "key": "primmslimsomethingelse",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yessir, you just tell ol' Primm Slim what you'd like to know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes ma'am, you just tell ol' Primm Slim what you'd like to know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimSomethingElse",
+   "prompt": "Let's talk about something else.",
+   "label": "Ok then, let's talk about something else."
+  },
+  {
+   "key": "primmslimvvhistoryno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have it your way, pardner. Maybe work up your curiosity by having a look at thrilling exhibits like the genuine Death Car and Vance's machine gun!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimVVHistoryNo",
+   "prompt": "Another time, maybe."
+  },
+  {
+   "key": "primmslimvvhistoryyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yahoo! I ain't had a chance to tell their tale in a mess of years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First things first: any bosh you've heard about Vikki and Vance being copycats ain't nothing but ill-tempered slander.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fact is, they begun their crime spree two days before Bonnie and Clyde robbed their first bank - so who was copying who?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now true, Vikki and Vance didn't exactly cut a wide swath of murder and bank robbery across the central U.S., like Bonnie and Clyde did.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was more like a narrow swath of shoplifting, check-cashing fraud, and gas pump driveoffs - but crime is crime! They drove reckless, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Having lived by the gun - well, Vance owned one, anyway - it was only fitting that the duo of desperados would die by the gun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps it was fate itself that accidentally drove them into a crossfire between police and a gang of bank robbers in Plano, Texas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or maybe they just didn't notice until it was too late. It's been said that Vikki would have tried to cash a bad check in that bank, had she lived.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll never know for sure. All we know is that the crossfire tore the car and both occupants to pieces, and the police issued an official apology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can put your eyes on the genuine Death Car just over yonder, and there's Vance's machine gun in the case next to it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimVVHistoryYes",
+   "prompt": "Tell me the whole story of Vikki and Vance."
+  },
+  {
+   "key": "primmslimvvhistoryyes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it, Pardner. Primm Slim loves to spin a yarn.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First things first: any bosh you've heard about Vikki and Vance being copycats ain't nothing but ill-tempered slander.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fact is, they begun their crime spree two days before Bonnie and Clyde robbed their first bank - so who was copying who?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now true, Vikki and Vance didn't exactly cut a wide swath of murder and bank robbery across the central U.S., like Bonnie and Clyde did.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was more like a narrow swath of shoplifting, check-cashing fraud, and gas pump driveoffs - but crime is crime! They drove reckless, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Having lived by the gun - well, Vance owned one, anyway - it was only fitting that the duo of desperados would die by the gun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps it was fate itself that accidentally drove them into a crossfire between police and a gang of bank robbers in Plano, Texas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or maybe they just didn't notice until it was too late. It's been said that Vikki might have tried to cash a bad check in that bank, had she lived.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll never know for sure. All we know is that the crossfire shot the car and both occupants to pieces, and the police issued an official apology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can put your eyes on the genuine Death Car just over yonder, and there's Vance's machine gun in the case next to it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimVVHistoryYes",
+   "prompt": "Tell me about Vikki and Vance again."
+  },
+  {
+   "key": "primmslimwhoisvikiandvance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where have you been, pardner? Hiding under a rock?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vikki and Vance were this nation's fourth or maybe fifth most infamous celebrity outlaw couple ever, that's who they was!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Primm Slim here can tell you the whole story, if you can spare a minute to hear the tale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmSlimWhoIsVikiAndVance",
+   "prompt": "Who were Vikki and Vance?",
+   "label": "Tell me about the Vikki and Vance"
+  },
+  {
+   "key": "vms02anynpcaboutncr",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's a prison north of here? Well, don't go picking up any hitchhikers and you should be all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02AnyNPCAboutNCR",
+   "prompt": "Do you know if the NCR has any plans to attack the prison north of here?",
+   "label": "Any idea what the NCR's up to in Primm?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Happy trails partner.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "rnvnewsstory2",
+   "section": "other",
+   "responses": [
+    {
+     "text": "{Primm Slim:} Loading Public Appeasement Oration... complete. Howdy... citizens. How about a yee-haw for law and order in the fine town of ERROR: TOKEN NOT FOUND?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RNVNewsStory2",
+   "prompt": "RNVNewsStoryLine2"
+  }
+ ],
+ "speaker": "primm_slim"
+}

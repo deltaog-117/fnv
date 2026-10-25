@@ -1,0 +1,169 @@
+{
+ "id": "hvtorres",
+ "speaker_name": "Torres",
+ "source": "HVTorres.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You must be the stranger I've been hearing about. Sorry, but I'm strictly forbidden from offering our tech to outsiders like yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Besides, I'm a little busy right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, outsider, but I'm not allowed to sell you anything without the Elder's say so.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Besides, I'm a little busy right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't believe Hardin is Elder now. At least with the lockdown lifted I'll be able to resupply my store more often. So what are you here for?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you heard the news? Elder McNamara has lifted the lockdown! Good news for this store, let me tell you. I can't wait to start getting more goods.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So what are you here for?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The word came down from the Elder that I'm to offer you some of our lesser wares, as if I didn't have other matters on my mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you found it? I need to give my report to Hardin soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hi there. Looking to spend some caps?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You again? Didn't I tell you I was busy?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "hvtorresfoundgun",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh thank god. Hardin was about to start an inquiry into the whole affair, and more than a few heads would have rolled as a result.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since you helped me, I'll tell you what. I work on some of our busted weapons in my spare time, so I have a few pieces that are kept off the books.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take this. I hope it comes in handy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVTorresFoundGun",
+   "prompt": "I've got it right here."
+  },
+  {
+   "key": "hvtorreshaventfoundgun",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then we have nothing further to talk about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVTorresHaventFoundGun",
+   "prompt": "Sorry, I haven't found it yet."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvtorrestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Our patrols are always bringing more stuff in. Take a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVTorresTopic000",
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvtorrestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you happen to find it, bring it here right away. I might be able to throw a few supplies your way if you do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVTorresTopic001",
+   "prompt": "I could look around for the pistol."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvtorrestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you must know, my inventory check this week shows that our weapon count is one short. Somehow we're missing a laser pistol.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hardin will have my head if I don't find that weapon soon. I can't delay my report to him any longer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVTorresTopic003",
+   "prompt": "Anything I can help you with?"
+  },
+  {
+   "key": "hvtorresveronica",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Can't complain. Not like there's anywhere else to go, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With everyone getting to go to the surface, I'm a little jealous, but I'll be fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVTorresVeronica",
+   "prompt": "HVTorresVeronica"
+  }
+ ],
+ "speaker": "knight_torres"
+}

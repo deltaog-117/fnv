@@ -1,0 +1,334 @@
+{
+ "page": "FortOtho.txt",
+ "speaker": "Otho",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Male PC} You here to fight in the arena? Then you're talking to the right man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC} What do you want from me, woman? I'm in charge of the arena, not the cooking pots.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As expected, it wasn't much of a fight, but what can you expect from slaves?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A good fight. Some NCR troopers can be competent fighters.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unbelievable. You stood against a Ranger in single combat and survived.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar dead} {KAI-zar} Caesar was a great man, but the Legion will become even greater with Legate Lanius at its head.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar cured, Male PC} You've done the Legion a great service by healing whatever was wrong with {KAI-zar} Caesar.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "{Caesar cured, Female PC} {contempt} A woman actually proved useful for once. {KAI-zar} Caesar was bold to put his life in your hands.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "What do you need from me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A great warrior. When he was but a recruit, I watched him kill ten men in the arena with his bare hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He doesn't feel pain and he never, ever shows mercy. If all Legionaries were like him, the Legion would be invincible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about the Legate?"
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Male PC} It's not something we like to speak of. The Burned Man was our greatest warrior, even greater than Legate Lanius, but he failed {KAI-zar} Caesar at the Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's been dead for several years now, but the rumor is that {KAI-zar} Caesar has scouts out looking for him all the same. The Burned Man was a very tough man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC} Ask someone else, woman.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about the Burned Man?"
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{player said something dumb} No, imbecile, that's not how it works. I set up the fights, then you go in the arena and fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay. Let's fight."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Such as?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me more about the arena."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Female PC} Women are beneath notice, as {KAI-zar} Caesar has taught us. I'm only allowing you to speak to me because you are {KAI-zar's} Caesar's guest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I may yet, if {KAI-zar} Caesar commands it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you have a problem with women?"
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like what?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's enough about the arena. Let's talk about something else."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Light armor and machetes only. The challenger - the one who asks to enter the arena - may be pitted against one or more opponents.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All matches continue until one side is dead. No exceptions.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are the rules?"
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Most of the time it's some young Legionary trying to make a name for himself, hoping to get noticed by Caesar or the Praetorians.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We pit slaves or prisoners against each other once in awhile, but it's not much of a show. They're usually too reluctant to kill each other.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who does the fighting?"
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I set up the fights, keep track of prisoners available, and make sure the arena's cleaned up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do?"
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player is a woman} Know your place, woman. Unlike the Profligates of the NCR, only {emphasis \"men\"} men fight in the Legion.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Player has companion} Only you may enter. Tell your companion to wait and speak to me again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That can be arranged. You will be facing off against a couple of disobedient slaves - not much of challenge, but it might be entertaining to watch.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a captured NCR trooper available - Sergeant Andrews. He's already been challenged once and survived, so he should be a worthy opponent.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have a dangerous one for you - an NCR Ranger by the name of Stella. We got lucky, since we rarely capture Rangers alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even though she's a woman, she's killed every man who's faced her in the arena, even one of the elite Centurions. With her bare hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, but there's nobody left who'd even be a challenge for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to fight in the arena."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Remember the rules: light armor and machetes only. And, of course, to the death.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm ready."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Got it. I'm ready."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need some time to prepare."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Did you want something else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Careful in there - he's tougher than he looks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm ready."
+  },
+  {
+   "id": "VFreeformTheFortFortOthoTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Watch out for her - she's one of the deadliest fighters I've ever seen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm ready."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

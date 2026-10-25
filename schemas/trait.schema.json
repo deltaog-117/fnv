@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "trait.schema.json",
+  "title": "Trait",
+  "description": "One entry in data/engine/traits.json.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "dlc"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dlc": {
+      "$ref": "common.schema.json#/$defs/dlc"
+    },
+    "source": {
+      "type": "string"
+    },
+    "form_id": {
+      "$ref": "common.schema.json#/$defs/form_id"
+    },
+    "description": {
+      "type": "string"
+    },
+    "requires": {
+      "type": "string"
+    },
+    "benefits": {
+      "type": "string"
+    },
+    "penalties": {
+      "type": "string"
+    }
+  }
+}

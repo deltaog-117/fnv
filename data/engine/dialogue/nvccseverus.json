@@ -1,0 +1,606 @@
+{
+ "id": "nvccseverus",
+ "speaker_name": "Severus",
+ "source": "NVCCSeverus.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Annoyed} You're the one {Luh-CUL-us} Lucullus said would come? {Blunt} You'll find him waiting for you, down at the docks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Angered} What are you doing standing around, whelp? {KAI-zar)Caesar awaits!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're the one {Luh-CUL-us} Lucullus said would come. You'll find him waiting for you, down at the docks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{menacing} Scum such as you does not belong here. {cold} Leave, or be added to the dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{menacing} Trade with Canyon Runner if you like. Make trouble and things won't go well for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied} You did well to give Centurion Aurelius the Profligates' listening machine. We'll butcher the troops they send to ambush our patrols. {Ken-TOO-ree-on}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{AH-way} Ave. Name your business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic000",
+   "prompt": "I have some questions."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{irritated by player's stupidity} A Legion outpost. What's it look like?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{gruff} We crossed the river when the Profligates fled from Searchlight. From here we stage raiding parties and process captures.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic001",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm an officer of the Legion, of the rank {de-CAN-us} Decanus. When we encamped, I commanded a {con-too-BER-nee-um} contubernium of eight Legionaries.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So I command what's left. Under the wise leadership of {Ken-TOO-ree-on Aw-REL-ee-us} Centurion Aurelius, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic002",
+   "prompt": "What is your role here?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} In trade for what? {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic003",
+   "prompt": "I have dog tags to turn in."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} What do you want to trade for?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic004",
+   "prompt": "I have dog tags to turn in."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How many tags worth?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic005",
+   "prompt": "Food supplies."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What type of ammo?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic006",
+   "prompt": "Ammo."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Firearms of what kind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic007",
+   "prompt": "Firearms."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} What sort of armor?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic008",
+   "prompt": "Armor."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Wasting my time is more like it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic009",
+   "prompt": "Just letting you know."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As much as their cowardice will allow. The Profligates avoid open battle, but on good days we find one of their patrols.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Their landmines have caused us more trouble than their marksmanship - which is lacking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic010",
+   "prompt": "Do you see much action against the NCR?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic012",
+   "prompt": "20 gauge shotgun shells."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic013",
+   "prompt": "9 mm."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic014",
+   "prompt": "10 mm."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic015",
+   "prompt": ".22 LR."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic016",
+   "prompt": ".357 Magnum."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic017",
+   "prompt": "Small Energy Cells."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Take it. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic018",
+   "prompt": "10 mm Submachine Gun [30 tags]."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Dynamite or grenades?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic019",
+   "prompt": "Explosives."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Watch yourself with this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic020",
+   "prompt": "Dynamite [3 tags]."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Watch yourself with this. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic021",
+   "prompt": "Grenades [3 tags]"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{LATIN} {\"WALL-ae\"} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic022",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Take it. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic024",
+   "prompt": "9 mm Submachine Gun [20 tags]."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Take it. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic025",
+   "prompt": "Laser Pistol [25 tags]."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Take it. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic026",
+   "prompt": "Laser Rifle [50 tags]."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} This is your size.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic027",
+   "prompt": "Leather Armor [15 tags]."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} This is your size. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic028",
+   "prompt": "Reinforced Leather Armor [20 tags]."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If they're more powerful than the Profligates' landmines, by all means show me how.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic036",
+   "prompt": "I can teach you to make Powder Charges."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here, this is edible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic037",
+   "prompt": "One."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here, this is edible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic038",
+   "prompt": "Three."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here, this is edible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic039",
+   "prompt": "Five."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Here, this is edible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic040",
+   "prompt": "Ten."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} Are we done, then?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic042",
+   "prompt": "That's it for now."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Tin cans, gunpowder, scrap metal, and duct tape? {Humph!} We won't have any trouble finding those ingredients!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic044",
+   "prompt": "Study this as long as you need. <Show him the Powder Charge schematic.>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff, interested} That would be worth knowing, especially if we can then rearm and reuse them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic045",
+   "prompt": "I can show you how to disarm the NCR's mines."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] The light is a button that can interrupt detonation? {Humph!} We were too busy throwing ourselves to the ground to figure that out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To rearm the mine, we'd just press the button again - simple. The Profligates will regret that we learned this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic046",
+   "prompt": "The trick is to rush the mine and press the blinking red light.",
+   "label": "<Player teaches Severus how to disarm NCR munitions>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic046_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Go find a minefield and practice that \"trick\" several times, then. Idiot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic046",
+   "prompt": "The trick, I figure, is to pick up the mine really, really carefully.",
+   "label": "<Player teaches Severus how to disarm NCR munitions>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} If you have nothing to teach, don't make the offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic047",
+   "prompt": "Another time, perhaps."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccseverustopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{gruff} What of it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSeverusTopic049",
+   "prompt": "Your Centurion said I could trade dog tags for supplies."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{LATIN} {\"WALL-ae\"} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{AH-way} Ave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "decanus_severus"
+}

@@ -1,0 +1,314 @@
+{
+ "page": "WestsidePrettySarah.txt",
+ "speaker": "Pretty Sarah",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in combat} Leave me out of your fight!",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "Welcome to the Casa Madrid. If you got an itch needs scratching, you came to the right place. Just watch how you treat the merchandise.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to the Casa - so long as you didn't come here to sell that scrawny ass of yours around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not hiring new girls - all slots filled, you could say - and my arrangements with Marco are exclusive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Anderson dead} I don't know what went on between you and Anderson, but leave me out of it.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "It's good you told me about Dermot and Saint James. It was killing that needed doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You think you see the worst of what people can do to each other, and then there's always something else to top it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to assume you had reason to kill Dermot and his pet. Always had a bad feeling about them. {stern} But everyone else here is hands-off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can just talk to the whores, you know. You and me don't need to talk unless there's trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you need this time?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VCasaSarahAboutWhores",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Non-Dummy} Three flavors to choose from - Sweetie, Maude, and Jimmy. Sweetie's the house favorite, for reasons that should be obvious.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maude is what you might call the discount rack. She's what a customer wears if he doesn't have the caps to afford Sweetie - or just likes them old.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Jimmy's more of a \"specialist.\" I only hear good things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dummy} {realizing the player is not very smart} All right, then. Looks like I need to talk slow and use small words. There's Sweetie, Maude, and Jimmy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fewer than I used to. Go see for yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who's the merchandise?"
+  },
+  {
+   "id": "VCasaSarahChill",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just needed to make the situation clear is all. How can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You sure know how to make a girl feel welcome."
+  },
+  {
+   "id": "VCasaSarahDSJKillAgree",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So long as we understand each other.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Fine by me.",
+   "label": "Fine by me."
+  },
+  {
+   "id": "VCasaSarahDSJKillExplain",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{tentative} I'll take a look, just to see what sort of shit they were into.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{mounting fury} What?... Those bastards! Selling folks off to the Fiends? Selling children - to Cook-Cook...?",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "I've seen enough. You did everyone a service. Take these. Might help if you get a jam.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found this in Dermot's room. <Show her Dermot's ledger.>",
+   "label": "I found this in Dermot's room. <Show her Dermot's ledger.>"
+  },
+  {
+   "id": "VCasaSarahDSJKillShrugOff",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right, we will. Anything I can help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "We'll see how it goes.",
+   "label": "We'll see how it goes."
+  },
+  {
+   "id": "VCasaSarahNotWhore",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then there's no problem here - and no need to get nasty. How can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not a whore, you ugly bitch."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsidePrettySarahTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They don't look like much, but they earn a pretty good living by selling scrap and salvage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dermot saves his money. Saint James spends his on Sweetie. A good customer, that one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Coyotes? Yeah, they run folks onto the Strip, have some kind of connections over there. Everybody makes a living one way or another.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dermot saves his money. Saint James spends his on Sweetie. A good customer, that one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm interested in learning more about Dermot and Saint James."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsidePrettySarahTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I look after the only reasons anyone would want to spend any time here. I'm a pimp.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All Marco does is collect rent and take a small cut of my action. He sure as hell doesn't clean the rooms.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "I look after the only reasons anyone would want to spend any time here. I'm a pimp.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that Marco's no longer around, I guess it's up to me to collect rent, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do around here?"
+  },
+  {
+   "id": "VFreeformCasaMadridWestsidePrettySarahTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We don't talk about that. Next topic.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did you get burned so badly?"
+  },
+  {
+   "id": "VFreeformCasaMadridWestsidePrettySarahTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You did? Well, that's one hell of a service to humanity, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess I always thought maybe I'd be the one to do it, but I just... never got my nerve up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe I'll sleep good tonight... {deciding not to share details} Here, take this. It's how I say thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Cook-Cook dead}You might be interested to know that I killed a fiend named Cook-Cook."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsidePrettySarahTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll take a look, but you better have a good reason for asking me to violate his privacy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{mounting fury} What?... Those bastards! Selling folks off to the Fiends? Selling children - to Cook-Cook...?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Resolving to kill them.} I've seen enough. They're done for, both of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Take a look at this ledger I found in Dermot's room."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsidePrettySarahTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know where to find me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsidePrettySarahTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Most of my body is scarred all over, like a ghoul. Nobody around who'd want to screw that. No, I just run things.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're not one of the merchandise?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You know where to find me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

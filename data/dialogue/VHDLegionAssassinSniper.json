@@ -1,0 +1,119 @@
+{
+ "page": "VHDLegionAssassinSniper.txt",
+ "speaker": "NCR Ranger (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are you doing up here?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Kind of busy up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinSniperTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{feigning surprise} Oh shit... really? We should go take a look!",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "prompt": "There's a dead ranger downstairs!"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinSniperTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Settle down. No one uses the radio until I know what's going on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need you to radio in an emergency report!"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinSniperTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, lead the way!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's go!"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinSniperTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're just going to be a moment. We should both take a look first.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Is it okay to leave your post?"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinSniperTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh... I think I should check it out first before radioing it in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's radio it in first."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinSniperTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's your own fault for finding this - now I'm going to have to kill you.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Ambush Dialog>"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinSniperTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck it, you're more trouble than you're worth.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, radio it in first."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Uh-huh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

@@ -1,0 +1,968 @@
+{
+ "id": "vmqtopsswank",
+ "speaker_name": "Swank",
+ "source": "VMQTopsSwank.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is Benny taken care of yet?",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "You're back. Find anything?",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "You ready to deal with Benny yet?",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "So that's it then. Benny's dead, and I'm the boss now. What can I do for you?",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "I heard you were wandering around. Haven't gotten yourself arrested yet, huh?",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "This is just swell - Benny vamooses and I'm left holding the bag. Whaddya need, kid?",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "Heya baby, good to see you. Always nice to have a celebrity drop by.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Got to admit, baby, I'm surprised to see you walking around like this. Figured you for persona non grata around here.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "Kid, you better have a good reason for waltzing back in here and not expecting us to fill you full of lead. So talk.",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "Jesus. Benny's dead, and now I gotta take up the slack. This right here is the end of an era.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "{draw out \"hello;\" this whole line is flirty} Hello, baby! Welcome to the Tops! What can I do for you?",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "Hey there, pal! Welcome to the Tops, and what can I do for you today?",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "You did good, putting those Omerta finks in their place. I never did trust them.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "So all of a sudden I'm hearing word that Mr. House ain't the boss of Vegas? Baby, that's just not square.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Little birdies tell me you've been to visit the Lucky 38 - {mildly suspicious} not a lot of folks go in there these days.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Hey, doll, how's my favorite girl? Got a kiss for me?",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Couldn't stay away, huh baby? Shoulda known. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Something else you need?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{greets player after Benny killed or fled, accompanied by a Victor or House Securitron whose face screen then blinks over to the default} You got friends in high places, kid! According to this heap of bolts here, Mr. House don't want you touched.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In fact, I've been directed to cooperate with your {beat, quoting the robot} \"investigation,\" so you have the run of the place. Go where you want.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player fled or fought way out after Benny killed/fled} Hey, kid - let's not have trouble this time, hey?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I did some nosing around after your last {raise eyebrows, all hell broke loose} visit. In Benny's suite, to be specific.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What I saw, well, it's a bit out of my league. But it was enough to make me think you mighta been the party wronged.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Check Benny's suite. The angle he was playing, well, maybe you can figure it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've told the boys to leave you be. Don't abuse the hospitality.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "swankbennybetrayalevidence",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa, hey now, kid, that's some kind of serious charge you're dropping. You want to be real careful what you say next.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "topic": "SwankBennyBetrayalEvidence",
+   "prompt": "I've got evidence that Benny tried to kill me and stole a Platinum Chip from me."
+  },
+  {
+   "key": "swankbennybetrayalevidence_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah? What else you got?",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "SwankBennyBetrayalEvidence",
+   "prompt": "I've got more evidence that proves Benny tried to kill me."
+  },
+  {
+   "key": "swankbennybetrayalspeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? You got something to say about the big boss, huh? Well, why don't you say it to his face instead of yapping at me?",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "topic": "SwankBennyBetrayalSpeech",
+   "prompt": "I think you should know something about Benny."
+  },
+  {
+   "key": "swankintro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ain't been on the strip long, have you, pal? Name's Swank. This is my joint.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Baby, I'm the best thing that ever happened to you. Name's Swank. This here's my joint.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "SwankIntro",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "swankncr",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hear they got their act together out west - like a real old-time country, they tell me.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Now, maybe that's true and maybe it ain't, but Vegas is a whole new scene. Those bear-flag boys better step light, unless they want a knuckle supper.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "SwankNCR",
+   "prompt": "What do you know about the NCR?"
+  },
+  {
+   "key": "swanktops",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Tops? Yeah, sure, you want the nickel tour ol' Swank's happy to oblige.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "We got everything you could want - slot machines in the back, cards and roulette in the front, fine entertainment upstairs in the Aces Theater.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "And all with your security personally guaranteed by the Chairmen and Mr. House's own Securitron police. It's the Tops!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "SwankTops",
+   "prompt": "Nice place you've got here. Tell me about it."
+  },
+  {
+   "key": "swankvegas",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, kid, sure. What can I tell you?",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "SwankVegas",
+   "prompt": "Can you give me the rundown on New Vegas?"
+  },
+  {
+   "key": "swankwork",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Baby, you stick with me, you won't have to work a day in your life. Don't fret about caps, you just sit there and look pretty for me.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "SwankWork",
+   "prompt": "I'm looking to make a few extra caps. Got any jobs you need done?"
+  },
+  {
+   "key": "topsallseenbenny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I saw him heading for his suite just a few minutes ago. Looked like a fox that just got caught in the henhouse. Maybe you'll catch him there.",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "topic": "TopsAllSeenBenny",
+   "prompt": "Have you seen Benny?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Benny oversees the business, sure, but I run the Tops day to day. I'm his right-hand guy, you dig?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Yeah, well, that's the way it used to be. Now that Benny's gone, it's just me in charge.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic000",
+   "prompt": "I thought Benny ran this place."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, kid, sure - I can spare a couple. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic001",
+   "prompt": "Nice place. Got a minute to talk?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ouch! Come on, baby, don't be that way. You don't know what you're missing.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic002",
+   "prompt": "Somehow I find that hard to believe."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, well, might want to get a move on, is all I'm saying.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic003",
+   "prompt": "I haven't had a chance to look yet."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's what? Ah jeez... jeez, this is really bad. What are you going to do?",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic004",
+   "prompt": "Benny has reprogrammed a Securitron, he's trying to take over the Strip."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah? That's ballsy. Good luck with that.",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic005",
+   "prompt": "I thought maybe I'd talk to the man. See if we can work out a deal."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh. Well, yeah, okay, these are Benny's brand, and they ain't too common. You got anything else?",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic006",
+   "prompt": "Look, I found these cigarette butts by the grave he buried me in."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, that looks like Benny's lighter all right. Still, not exactly a ton of proof. Got anything else, kid?",
+     "emotion": "pained",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic007",
+   "prompt": "I found this lighter in Boulder City. He dropped it when he killed his partners."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's... pretty shady, yeah. Could be Benny's up to no good, could be this is somebody else altogether. What else you got?",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic008",
+   "prompt": "Here, take a look at this note I found in Novac."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Creepy bunch of cats, you ask me. Oh, sure, they act all polite and civilized, but there's something off about them, you dig?",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Don't get me wrong, that resort of theirs is ring-a-ding, but my guts say, \"don't go in the basement.\"",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic009",
+   "prompt": "What's the story with the White Glove Society?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll tell you what I think, I think I oughta go tell Benny about this right now - but I'll clam up for now.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "That's all I'm going to do, though, unless you can get me some more proof.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I think you might just be onto something here, kid. Tell you what, I can't actively back your play, but I'll keep the Chairmen off your back.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "I'll tell the doormen you're cool to pack heat inside - trust me, you're gonna need it.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "You'll still have to deal with Benny's private goon squad, though. I got no play with those cats. You want more help, I'll need more proof.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "Jesus, kid, I think we got a real problem on our hands. Can't believe Benny's a no-good stinkin' punk. Trying to play House like that....",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Tell you what - I'll call Benny, keep him away from his suite. You go search the place. Here's the key, it's on the 13th floor.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "It's the room with the double doors, can't miss it. Maybe you'll find something we can show to Mr. House and get him arrested.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic011",
+   "prompt": "That's it. What do you think?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Groovy. Here's your stuff back - in case you run into company, you dig? I'll tell the boys to give you a pass to pack some heat.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Go on then. Elevators are past the slot machines on your left.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic012",
+   "prompt": "Okay, I'll do it."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, thought so. You're a smart kid, you know that?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic013",
+   "prompt": "Actually, never mind. It's nothing."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take him out? Jesus... okay, well, if you think that's the best way to deal with this. I'll send him up to his room, you can ambush him there.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "And don't worry about the rest of the Chairmen - I'll keep them from getting involved. You'll still have to watch out for Benny's guards, though.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic014",
+   "prompt": "We don't have time for that. We need to take him out right now."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh? What are you talking about?",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "[SUCCEEDED] Huh? What are you talking about?",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic015",
+   "prompt": "I don't think you're going to like it. Seems Benny's been making his own play."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic015_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Why you lousy no-good punk! Give me one reason why I shouldn't take this to Benny right now!",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic015",
+   "prompt": "Uh, well, you know Benny's planning to screw you over, right?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anybody ever tell you your sense of humor stinks? I'll let it go this time, but you watch your mouth from now on.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic016",
+   "prompt": "Ha ha! Take it easy, pal, I'm just pulling your leg. Honest."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pal, you're gonna regret that for the rest of your very short life.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic017",
+   "prompt": "Go ahead, see if I care."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That doesn't... why would he pull a stunt like that? Got anything else to offer?",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "[SUCCEEDED] That doesn't... why would he pull a stunt like that? Got anything else to offer?",
+     "emotion": "surprise",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic018",
+   "prompt": "Benny tried to kill me and stole a platinum chip I was hired to deliver."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic018_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Kid, I think you really better shut up and stop making baseless accusations unless you got some proof. Well?",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic018",
+   "prompt": "Benny stole my chip! And he tried to kill me, Mr. House said so!"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's trying to pull a fast one on the big man? Crazy bastard. You got any more?",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "[SUCCEEDED] He's trying to pull a fast one on the big man? Crazy bastard. You got any more?",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic020",
+   "prompt": "He tried to make it look like an accident - just a traveler killed and robbed in the Wasteland."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic020_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Kid, that doesn't even pretend to make sense. You want to try again?",
+     "emotion": "pained",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic020",
+   "prompt": "Benny's going to steal all of House's robots! Don't you see?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Jesus, I can't even believe it. After all House did to set us up with this swank joint. I don't suppose there's more?",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "[SUCCEEDED] Jesus, I can't even believe it. After all House did to set us up with this swank joint. I don't suppose there's more?",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "[FAILED] Now you're just talking crazy. No way Benny'd risk something like that. What else you got?",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic021",
+   "prompt": "Benny must think this chip will allow him to seize power on the Strip."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, they're a shifty pack of rats. If I were you, I'd keep one hand on my wallet and the other on my gun whenever they're around.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic022",
+   "prompt": "Let's talk about the Omertas."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "House is an all-right kind of guy. Sure, he keeps a pretty tight grip on the reins, but Vegas is a wild horse, and you can't just give her her head.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Without Mr. House, we'd still be wearing gecko skins, poking around the ruins with pointy sticks and scalping people for giggles.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic023",
+   "prompt": "What do you know about Mr. House?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Baby, we're only the coolest cats on the whole Strip. We been here the longest, we got the swankiest digs, and we got caps rolling in like the tide.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Everybody loves the Chairmen, because we show them a simple good time, no strings attached.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Man, we're only the coolest cats on the whole Strip. We been here the longest, we got the swankiest digs, and we got caps rolling in like the tide.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Everybody loves the Chairmen, because we show them a simple good time, no strings attached.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic024",
+   "prompt": "Tell me about the Chairmen."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You might have a jaw at Tommy Torini up in the Aces. He's always looking for talent scouts.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic025",
+   "prompt": "Flattering, but I don't like being tied down. How about some real work?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ooh, I dig the way you think, doll. Here, go treat yourself.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic026",
+   "prompt": "Baby, you're too good to me! How about some caps to buy myself something pretty?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, whatever you want.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic028",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, well, might want to get a move on, is all I'm saying.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic029",
+   "prompt": "Not yet. Soon."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh. Guess that makes me the boss. Ring-a-ding.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic030",
+   "prompt": "Yeah, he's dead."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope so, kid. Last thing we need is that punk running around out there.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic031",
+   "prompt": "He bolted. But I'll find him."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, boy, those clowns. Listen up, kid, and listen good, I don't care how many fancy Latin names he gives himself, a thug ain't nothin' but a thug.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "Warlords and emperors? Don't make me laugh. At least they got enough brains to stay the hell out of New Vegas - Mr. House'd clean their clocks.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic032",
+   "prompt": "What do you think of Caesar's Legion?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, kid, like what?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic033",
+   "prompt": "On second thought, let's talk about something else."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, sure. Take your stuff back - you'll need it.",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "Go on then. Elevators are past the slot machines on your right.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic034",
+   "prompt": "They took my guns at the security checkpoint. Can you set me up?"
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here's your stuff back - in case Benny don't go quiet, you dig? I'll tell the boys to give you a pass to pack some heat.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Go on then. Elevators are past the slot machines on your right.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Go on then. Elevators are past the slot machines on your right.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic035",
+   "prompt": "Okay, I'll do it."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Just let me know when you're ready.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic036",
+   "prompt": "Not yet, I want to take care of a few things first."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, sure. I hope you know what you're doing, kid.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic037",
+   "prompt": "Yeah, send him up to his room. I'll take care of him."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Anything else?",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic038",
+   "prompt": "Yeah. Keep him distracted while I search his room."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, whatcha need?",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic039",
+   "prompt": "I'm not sure yet, but I had some other questions first."
+  },
+  {
+   "key": "vmqtopsvmqtopsswanktopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, kid, see ya.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMQTopsVMQTopsSwankTopic040",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah, see ya kid.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't be a stranger, doll.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "rnvnewsstory2",
+   "section": "other",
+   "responses": [
+    {
+     "text": "{Swank:} If I know my pal Benny, he's swinging with the Big Cat Upstairs as we speak. Or he's chasing some angel broad with cans as big as her halo! <Laughs>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Swank:} Do I seem worried to you, baby? Sometimes a cat just needs room to swing. He'll be back, sure as a conga drum's got a groovy beat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RNVNewsStory2",
+   "prompt": "RNVNewsStoryLine2"
+  }
+ ],
+ "speaker": "swank"
+}

@@ -1,0 +1,413 @@
+{
+ "page": "CorporalFarber.txt",
+ "speaker": "William Farber",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Listen, asshole. I know you're not really an NCR health inspector, so you can cut the restaurant critic routine.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I want my fifty caps back, 'cause I looked it up and there ain't no disease called colorectal implosion syndrome.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So I paid you to look the other way for nothing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wait. Wait. You're not... oh wow, I'm sorry. You looked just like- never mind. Sorry. So... what can I serve you up?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Terse, sigh} You again? What do need?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Good-humored} Howdy, looking for chow?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Happy to see player} Hey hey, back for seconds, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sarcastic} Oh yeah. You can order up anything you want... as long as it's corn or beans!<Laughs>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Done joking, serious} Just kidding. Haven't you heard? With few shipments from home and little variety, the troops are getting restless for some quality grub.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Matter of fact} You can only do so much as a chef with just corn, beans, onions, and peppers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Got anything to eat?"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Chow down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, but the brass ordered me to not serve enemies of NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't like your kind taking food from my men, so I'm going to charge you a little extra. Don't like it? Tough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to buy some food."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Tired sigh, lamenting lack of supplies} Well, we haven't had any quality meat in months. Everyone in the camp just eating beans for protein... It isn't pretty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Annoyed by bad luck} Some of my kitchen machinery is broken down, too, so we've been eating mostly raw vegetables.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Direct, a bit desperate} And I'm desperate for spices or seasonings. Anything. Just something to the general mood around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can anything be done to improve your supplies?"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you need to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Could you remind me where I should look for supplies?"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, it's nothing. You just looked like the health inspector who stopped through for the yearly inspection a couple weeks back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was hoping I wouldn't have to wait another 11 months to see his crooked ass to get my caps back. Ah well, anything I can get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is there a health inspector bothering you?"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Reassuring} It doesn't need to all come from the same source. There are a bunch of different vendors around who sell meat. Fitz, the Nash's, Crimson Caravan...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've never really tried to go out and organize deals with merchants to supply our food. Already having an overstock of food, we haven't needed to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But we really need some good-old red meat on the menu soon, so I'm willing to divert some caps in their direction if they're open to supplying us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where would you suggest I find meat in the amount you'd need here?"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{To the point} Here is the list. We've been scrapping together quick-fixes to keep it running for months. I think it finally crapped out and needs a full overhaul.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's the goofy machine behind the counter in the corner next to the stove. I'd be much obliged if you could take a look at it and get it fixed up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What parts are needed to fix the food processor?"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{At a loss} I don't know. Try the various traders around the wastes, or the pawn shop in Westside might have some parts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sudden realization} Oh, I've heard of a place called House Tools you could check out! Its an old factory on the north side of Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nervous} Just a word of warning, though. I hear no one who goes in there comes back out. Could be traps, crazy robots, or who knows what in that place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where might I find these parts?"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Crimson Caravan would probably be able to arrange a regular shipment, but I don't know of any spices known to improve mood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell, we have a whole research department. One guy's even set up in the main terminal building. They're the ones who oughtta be looking into it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where should I look for spices?"
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to talk about something else."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pleased} Great! Small price to pay in caps for a little variety in our weekly menu.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Mrs. Nash agreed to trade with McCarran."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Very pleased} Excellent! That'll save us some caps and help offload a bit of our overstock.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Mrs. Nash agreed to trade snacks for vegetables and water."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pleased} Good to hear. That should cover the majority of the supply.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Blake at the Crimson Caravan agreed to sell meat and spices."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Very pleased} That should help balance out our stock of food more reasonably and save us a ton of caps. Good work!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Crimson Caravan agreed to trade meat and spices for vegetables and water."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Very pleased} You managed to swing us a discount and cover the majority of the meat supply we need? Good work!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Crimson Caravan agreed to trade meat and spices at a generous discount."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pleased} Good, that should help diversify things. It may be a bit gamey, but I can use it for stews and kabobs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Very pleased} Great! What he sells might be a bit gamey, but I can use it for stews and kabobs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found a merchant named Fitz who agreed to sell meat to McCarran."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a good one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Amazing. I thought that thing was done for. That'll help me transform what I can offer the troops.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll give you a little extra discount the next time you buy food from me. Thanks again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I fixed the food processor."
+  },
+  {
+   "id": "VFreeformMcCarranCorporalFarberTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pleasantly surprised} No shit? The stuff actually does all that, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have to start testing this out immediately. This will really help keep the guys focused.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This spore pod extract from Keely should help with morale."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{annoyed at seeing the player} Aw crap.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{annoyed at seeing the player} Hi.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{annoyed at seeing the player} Heh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{cheery} Hello.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Whistling a tune} <Whistling>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Humming a tune} <Humming>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{cheery} Howdy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{cheery} How about some grub?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Concerned} Whew, you don't look so good. You might want to see Doc Kemp.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{cheery} If you need anything, just give me a holler.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

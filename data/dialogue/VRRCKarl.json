@@ -1,0 +1,280 @@
+{
+ "page": "VRRCKarl.txt",
+ "speaker": "Karl (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're the one making a name for yourself among the troops, aren't you? What is it you need?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, the vaunted hero of the Legion. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You've been quite difficult to predict, my friend. I hope I can sway you more solidly to the Legion's way of thinking.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Caesar is not fond of loose cannons like yourself. I sincerely hope you change your ways before something drastic must occur.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "I've been warned about you. You are perilously close to making an enemy of Caesar, and that is not wise.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I understand you've been invited to meet with Caesar. You should be aware of the honor you've been granted.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "If we weren't in Khan territory I would kill you where you stand. Caesar will be avenged!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar's death was tragic, but do not think that it will break the Legion's resolve.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "Caesar's veterans will arrive from Arizona soon, and there will be no stopping our victory.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Greetings in the name of {KAI-zar} Caesar.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I understand you've been talking to the Great Khans about breaking their oaths to great Caesar. I would call that... unwise.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "What more do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "KarlCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My name is Karl. Glorious Caesar has sent me as an emissary to the Great Khans as a token of our alliance.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "KarlGreatKhans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Shifty, doesn't really believe what he's saying.} They're a tribe of fine warriors, with many proud traditions and a glorious history. They will be worthy additions to the Legion.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Alas, my first loyalty is to Caesar, and a soldier cannot have two masters.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you think of the Great Khans?"
+  },
+  {
+   "id": "KarlGreatKhans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Join? Oh, no, I simply couldn't. That is... I'm {choking on this, REALLY hates to say it} not worthy of such an honor.",
+     "emotion": "disgust",
+     "intensity": 75
+    }
+   ],
+   "prompt": "I've been wondering why you don't petition the Khans for membership as a show of allegiance."
+  },
+  {
+   "id": "RRCLegionAmbush",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've been a persistent annoyance. I had hoped to avoid this, but it seems I have no choice but to deal with you myself.",
+     "emotion": "disgust",
+     "intensity": 35
+    }
+   ],
+   "prompt": "RRCLegionAmbush"
+  },
+  {
+   "id": "VMS45VRRCKarlTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well-spoken.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Let's get this over with then."
+  },
+  {
+   "id": "VMS45VRRCKarlTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Noooooooo!",
+     "emotion": "fear",
+     "intensity": 100
+    }
+   ],
+   "prompt": "Send your whole damned Legion if you want - I'll water the desert with their blood."
+  },
+  {
+   "id": "VMS45VRRCKarlTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Getting annoyed} Of course I am! {Smoother, recovering} That is to say, Caesar has many fine warriors, and I wouldn't wish to compare them to the Great Khans.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "prompt": "But surely a warrior in service of glorious Caesar is the equal of any tribe's finest?"
+  },
+  {
+   "id": "VMS45VRRCKarlTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You insult our hosts, where I wouldn't dare to. You might want to watch that talk around Papa Khan.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Wow, you're not worthy to join a scruffy tribe of has-been desert raiders? You must suck."
+  },
+  {
+   "id": "VMS45VRRCKarlTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Furious} Enough! How dare you compare Caesar's finest to this tribe of savages? The mightiest Great Khan is scarcely a match for a Legion recruit!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "The Burned Man would leave their mightiest shitting themselves in terror! I would... {Beat, realizing what he's just done} Uhhh, that is....",
+     "emotion": "anger",
+     "intensity": 75
+    }
+   ],
+   "prompt": "Because you know they'd come up lacking?"
+  },
+  {
+   "id": "VMS45VRRCKarlTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Win? I wasn't aware we were competing.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Well-spoken. You win this round."
+  },
+  {
+   "id": "VMS45VRRCKarlTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You motherless bastard. You'll pay for this!",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Interesting opinion, Karl. I wonder what Papa Khan will say about this."
+  },
+  {
+   "id": "VMS45VRRCKarlTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In exchange for great Caesar's promise of all the lands west of New Vegas, the Khans have agreed to fight alongside the Legion when the time comes.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "What alliance?"
+  },
+  {
+   "id": "VMS45VRRCKarlTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am one of the {Fru-men-TAR-ee-eye} frumentarii: it is my duty to scout the Wastes in Caesar's name and make contact with any tribes that might serve a useful purpose.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "You might say I'm somewhere between a scout and an ambassador. I'm assigned here as part of the alliance between the Legion and the Great Khans.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "prompt": "What's your role in Caesar's Legion?"
+  },
+  {
+   "id": "VMS45VRRCKarlTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Though they have been cruelly oppressed by the NCR, the Khans remain great warriors. {Choking on this a little; he's lying and it galls him} The Legion is honored to have such allies in battle.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What does the Legion want with the Great Khans?"
+  },
+  {
+   "id": "VMS45VRRCKarlTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Speak, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I had some other questions."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yes. Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

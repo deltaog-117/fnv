@@ -1,0 +1,161 @@
+{
+ "id": "vrrcanders",
+ "speaker_name": "Anders (Fallout: New Vegas)",
+ "source": "VRRCAnders.txt",
+ "topics": [
+  {
+   "key": "anderscross",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{In agony} Unh... Legion caught me. Said this... was the penalty for drug runners. Please... let me down.",
+     "emotion": "pained",
+     "intensity": 80
+    },
+    {
+     "text": "A Legion patrol caught me trying to cross the river. When they found the, umm, package I was carrying, they strung me up there.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "topic": "AndersCross",
+   "prompt": "Who did this to you?"
+  },
+  {
+   "key": "andersdrugs",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{In agony} Please... for the love of God, let me down!",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Well, not exactly. More like... trying to expand our markets. I heard there was a lot of untapped territory down south, but the Legion caught me.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "AndersDrugs",
+   "prompt": "You're smuggling drugs?"
+  },
+  {
+   "key": "andersfree",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Unnnh.",
+     "emotion": "pained",
+     "intensity": 20
+    }
+   ],
+   "topic": "AndersFree",
+   "prompt": "Let's get you down from there."
+  },
+  {
+   "key": "andersjackanddiane",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{In agony} Thank God. Let me down, please!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "They did? Heh. Probably mostly Jack's idea, he always was the soft touch.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Thanks. You've saved my life, and done the Great Khans a huge favor. I'll be heading back to Red Rock Canyon now - maybe we'll see each other there.",
+     "emotion": "happy",
+     "intensity": 40
+    }
+   ],
+   "topic": "AndersJackandDiane",
+   "prompt": "Are you Anders? Jack and Diane sent me to look for you."
+  },
+  {
+   "key": "andersrot",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{In agony} No! God, please!",
+     "emotion": "pained",
+     "intensity": 80
+    }
+   ],
+   "topic": "AndersRot",
+   "prompt": "I think you're better off where you are. Hang around, I'll be back."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{In agony} Unnnh... please... help me.",
+     "emotion": "pained",
+     "intensity": 80
+    },
+    {
+     "text": "Thanks for getting me down from that cross. I owe you one.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Thanks again for saving my ass.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms46vrrcanderstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, but keep it quick. I'd like to get out of here before the Legionnaires come to check on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46vRRCAndersTopic000",
+   "prompt": "Actually, I have a few questions first."
+  },
+  {
+   "key": "vms46vrrcanderstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46vRRCAndersTopic001",
+   "prompt": "Good luck on your journey."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{In Agony} No, please! Don't leave me here!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "So long.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  }
+ ],
+ "speaker": "anders"
+}

@@ -1,0 +1,571 @@
+{
+ "page": "CliffBriscoe.txt",
+ "speaker": "Cliff Briscoe",
+ "topics": [
+  {
+   "id": "CaravanOffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A fellow enthusiast, huh? That's great! Let's play.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Want to play a hand of Caravan?"
+  },
+  {
+   "id": "CaravanPlayerLoses",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't take it to heart. I've studied the strategies of the masters.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CaravanPlayerLoses"
+  },
+  {
+   "id": "CaravanPlayerWins",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh. I wonder where I went wrong. Let's try that again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CaravanPlayerWins"
+  },
+  {
+   "id": "CaravanRematchNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shucks, well, let's do it again sometime.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm all done playing for now."
+  },
+  {
+   "id": "CaravanRematchYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've got a good feeling about this hand.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yeah, let's play again."
+  },
+  {
+   "id": "CliffBriscoeBarterCheck",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Okay, I admit it. They've been collecting dust since before I got here. You can have them dirt cheap.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You don't have any offers for the rockets. You'd be lucky to get money at all."
+  },
+  {
+   "id": "CliffBriscoeBarterFail",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Are you kidding me? I can't ship these things fast enough. People love them!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "But... the price tag seems so excessive on the souvenir rockets. Could you make it lower?"
+  },
+  {
+   "id": "CliffBriscoeBuyCollection",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? I never thought I'd see the day.",
+     "emotion": "surprise",
+     "intensity": 65
+    },
+    {
+     "text": "I mean... the day I'd part with them for such an incredibly low price. With so many other offers flooding in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I like you. I think maybe it's time. All that's left is in this storage room here. You can buy the key from my store.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to buy all of your remaining rocket souvenirs."
+  },
+  {
+   "id": "CliffBriscoeBuyDinoSouvenir",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Here you go!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to buy a dinosaur souvenir."
+  },
+  {
+   "id": "CliffBriscoeBuyRocketSouvenir",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? I mean, that's great! I'm sure you'll be quite pleased with it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to buy one of those souvenir rockets."
+  },
+  {
+   "id": "CliffBriscoeHaveGuns",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guns? I, uh, well... yeah, I guess I might have a few.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Darn it. No one ever buys the t-rexes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What about supplies? And guns? Do you sell those?"
+  },
+  {
+   "id": "CliffBriscoeJeannieMaySentMe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bless her. Seems like every traveler I get in here tells me the same thing.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "They see the sign and think, gift shop? That's just too good to be true. But Jeannie May always points them back in my direction.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, a friend of Jeannie's is a friend of mine. And my friends get a discount at my store.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Jeannie May sent me."
+  },
+  {
+   "id": "CliffBriscoeJustBecause",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You just... did it? Just like that, on a whim?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well listen, sir, if something like that crosses your mind about me, please let me know. I'm sure we can work something out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Will there be anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You just... did it? Just like that, on a whim?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well listen, ma'am, if something like that crosses your mind about me, please let me know. I'm sure we can work something out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Will there be anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just because."
+  },
+  {
+   "id": "CliffBriscoeKilledJeannieMay",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ki- killed her? Why would you do something like that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I killed Jeannie May. Do I still get my discount?"
+  },
+  {
+   "id": "CliffBriscoeMissedWakeup",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I- I'm sorry to hear that. She's a nice woman. Was. She might've grown on you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She's usually real good about those calls. Something must've happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope just because I said she and I were friends doesn't mean you and I can't still be friendly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Will there be anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "She missed my wake-up call."
+  },
+  {
+   "id": "CliffBriscoeMyBusiness",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lord almighty. I can't for the life of me imagine her doing anything that'd make someone want to kill her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not that I'm saying you're a liar, of course! I'm just surprised, is all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Will there be anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's my business."
+  },
+  {
+   "id": "CliffBriscoeNotSafe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I understand if that's how you feel. But keep in mind that I've been selling these for years and I'm fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure the kids that buy them are all fine too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not really sure it's safe to carry those things around."
+  },
+  {
+   "id": "CliffBriscoeOpenStore",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure thing. Have a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to see what you've got for sale."
+  },
+  {
+   "id": "CliffBriscoeRecommendation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bless her. Seems like every traveler I get in here tells me the same thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They see the sign and think, gift shop? That's just too good to be true. But Jeannie May always points them back in my direction.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, a friend of Jeannie May's is a friend of mine. And my friends get a discount at my store.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Jeannie May sent me."
+  },
+  {
+   "id": "CliffBriscoeRocketFactory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, that? It's just a bit west of Novac, up in the mountains. Lots of broken equipment and such. Place is deserted. Or used to be, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lately there's been talk of ghouls up that way, but I can't rightly say whether it's so or not. If you want to know more, ask old No-bark.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the rocket factory."
+  },
+  {
+   "id": "CliffBriscoeScienceRocket",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I, ah, well I don't really know. Would that sour you on buying one if it did?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is there radioactive material in your rocket souvenirs?",
+   "label": "Is there radioactive material in your rocket souvenirs? It would explain the glow and the illnesses."
+  },
+  {
+   "id": "CliffBriscoeSouvenirInfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're scale replicas of the real thing. Very detailed. Got a liquid in them that makes them glow.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From what I hear, REPCONN used to give them out on tours of their HQ up in Henderson.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I guess they had to stop after the first few kids thought they were filled with Nuka Cola and drank it down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The papers had a name for the condition and everything. They called it the \"REPCONN Shakes.\" Those were bad times for RobCo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me more about the souvenir rockets."
+  },
+  {
+   "id": "CliffBriscoeWhatDoYouSell",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, there's t-rex figurines, of course. That's our bread and butter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We also have an assortment of the REPCONN factory souvenirs - rockets, things of that nature.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you sell here?"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to the Dino Bite Gift Shop. My name's Cliff. If you're here for the t-rex figurines, you're just in time. There's still a few left.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back. Please don't kill me. I'll give you a real nice price on everything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know if you know, but since Jeannie May passed, I've been keeping an eye on her properties for her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think it's time we gave something back to you, so take this key and make yourself at home at our motel.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It'll open the room on the second floor, closest to the lobby. Hope it suits you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back. Can I get you anything?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey there. If you want to buy something from my shop, you'll have to wait till it opens.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "NovacGhoulInfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know what else I could tell you. You could give No-bark a try, though, or Jeannie May.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about the ghouls spotted to the west?"
+  },
+  {
+   "id": "SnipersRevengeBooneWife",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can't say we spoke much. Boone did most of the buying for them. She was in the store once, but she didn't stay long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had a look on her face like she'd smelled something sour. But far as I can remember, the gift shop smelled fine. Well... fine as it always does.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about Boone's wife?"
+  },
+  {
+   "id": "SnipersRevengeComeOutside",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess I can leave the store for a minute. I hope I don't miss any customers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Really? Store's still okay, isn't it? {Worried}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Come with me. There's something you should see, in front of the dinosaur."
+  },
+  {
+   "id": "VDialogueCliffBriscoeCliffBriscoeTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, they unloaded what they had left on the Dino Bite as a tax write-off. But that was before my time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Plenty of demand for them, seeing as they're one-of-a-kind collectors items. But I might still have some in back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did they end up here?"
+  },
+  {
+   "id": "VDialogueCliffBriscoeCliffBriscoeTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Cheery} That's a great idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VMQ01LookingForManny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, but he didn't buy any souvenirs, if that's what you're wondering. Sounded like he didn't have his money with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "His friends seemed disappointed about it. Heck, I would be, too, if I found such a fine store and left my money elsewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Manny might know more about them. Thought he might've been friends with one or two of 'em. He's up in the dino mouth during the day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm looking for a man in a checkered coat. Have you seen anyone like that?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come back soon, now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Welcome. Come on in!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, you came back! Must be doing something right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How ya doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

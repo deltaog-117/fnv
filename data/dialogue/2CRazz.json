@@ -1,0 +1,281 @@
+{
+ "page": "2CRazz.txt",
+ "speaker": "Razz",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, okay, I admit it - knowing how to use these guns right is pretty cool.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Sweet, those \"readiness reports\" are so good they actually gave me a raise!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I thought all that touchy-feely teamwork bullshit was kind of fruity... but it kinda feels good knowing my squad's got my back.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{Tripping out on a drug almost like but legally distinct from meth} Ha ha, fuck me, Jack's shit is still the best!",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Heard Chief Hanlon took the {\"lead\" as in bullets} lead expressway to Angel-town. Weird shit, yo.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "What you want, homes?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Aw, shit, here comes the brown-noser. What you want?",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Shit, look who it is, the crazy one! What up?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Every time you come around, the brass gets their pants in a bunch. Keep on coming by.",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "Shit, you just piss folks off wherever you go, huh?",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "I know I talk a lot of shit about the army, but you come around here again and I'll slit you.",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "Yo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "MagsShapeUp1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hoo-hoo! Hot damn, it's gonna be a party in the camp tonight!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I got you the stuff."
+  },
+  {
+   "id": "MagsShapeUp1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yo, I'll tell you what this squad needs. A healthy dose of angry juice.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Sgt. McCredie asked me to talk to you about getting your squad in shape."
+  },
+  {
+   "id": "MagsShapeUp1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I said, you get the juice, we'll cut loose.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "About getting the squad's readiness reports up...."
+  },
+  {
+   "id": "RazzArmy",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shit, man, it was this or the Fiends, and Fiends don't last too long in the NCR.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "At least this way the badasses with the top-shelf guns are on my side.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Shit, honey, it was this or the Fiends, and Fiends don't last too long in the NCR.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "At least this way the badasses with the top-shelf guns are on my side.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Why are you in the Army?"
+  },
+  {
+   "id": "RazzCampGolf",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What you want to know? Whole place used to be some kinda rich bastard resort, back before the war.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Now the Rangers use the old resort, and we grunts get to live in tents. Fucking typical.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Can you tell me anything about Camp Golf?"
+  },
+  {
+   "id": "RazzHistory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ain't much to tell. Grew up out west, in the Boneyard. Heard of it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, not many people have. Wasn't really a good place for kids, you know? I joined up to get out. My family's still back there.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "prompt": "So, what's your story?"
+  },
+  {
+   "id": "RazzMisfits",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We don't talk too much, mostly. Poindexter's a smartass prick.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "O'Hanrahan's a big pussy, ain't good for shit in a fight, and Mags... well, Mags is cut out for something other than soldiering, you dig?",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Know anything about your squadmates?"
+  },
+  {
+   "id": "VFreeformCampGolf2CRazzTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Hey, you asked. Don't want the answer, don't ask a guy's opinion.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "[SUCCEEDED] Shit, maybe you're right. Guess I ought to give them a shot.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "That's charming. It's good to know team-building is alive and well."
+  },
+  {
+   "id": "VFreeformCampGolf2CRazzTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever. Not like I need any of them. I do just fine on my own.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Sounds like a bunch of winners."
+  },
+  {
+   "id": "VFreeformCampGolf2CRazzTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Psycho! The big red one! I used to run with the Fiends, I still got the hookups. Smuggle some in and you'll see an improvement.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Angry... juice?"
+  },
+  {
+   "id": "VFreeformCampGolf2CRazzTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My man Jack at Red Rock Canyon got the goods. But listen: once you get folks dosed on Psycho, ain't a lot of room for much else.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "So if you got any other plans for bulking up the Misfits crew, might want to see about them first.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Okay, tell me where to get it."
+  },
+  {
+   "id": "VFreeformCampGolf2CRazzTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right. Head to Red Rock Canyon - that's deep Khan territory, so watch your back. Talk to Jack, tell him Razz wants the usual. See you soon.",
+     "emotion": "surprise",
+     "intensity": 30
+    }
+   ],
+   "prompt": "I'm convinced this is a good idea, let's do it."
+  },
+  {
+   "id": "VFreeformCampGolf2CRazzTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "prompt": "On second thought, I'll talk to the others first."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

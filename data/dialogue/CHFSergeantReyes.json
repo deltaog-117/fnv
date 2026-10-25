@@ -1,0 +1,399 @@
+{
+ "page": "CHFSergeantReyes.txt",
+ "speaker": "Reyes",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} Got a second, trooper? I've got something important that needs to get done, but nobody's stepping up to help me out. I'm hoping you're different.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player not in NCR gear} Hey, you're not one of the troopers... got a second? I have work I need done and nobody here at the camp has the time or inclination to help me out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCR victory} {grinning} You should've heard the cheers over the radio when news of the victory came back from the Dam.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Legion victory} {fear} I've been trying to sort out the rumors from the facts, but with the Legion coming, I guess it doesn't matter. The news is all bad.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "{Other victory} {puzzled} Lots of confusion over the radio. Somehow the NCR lost the Dam, but the Legion didn't get it, either?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{curious} Hey, what did Chief Hanlon have to say about those false reports we uncovered?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "RSGlobalCommBreakdownSergeantReyesTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've been trying to get someone to authorize this update - or at the least get field clearance to leave the camp and do this myself.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "But nobody takes me seriously - they just think I'm an incompetent desk jockey trying to glamorize the importance of my job.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You'd think the NCR would be very concerned about this sort of thing."
+  },
+  {
+   "id": "RSGlobalCommBreakdownSergeantReyesTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Less than a third of reported enemy sightings are getting intercepted. Either our intel is faulty, or our enemies are one step ahead of us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You think someone is listening in on your broadcasts?"
+  },
+  {
+   "id": "RSGlobalCommBreakdownTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have the delightful task of tabulating stockpiles, kill ratios, mission success rates, radiation deaths, and other truly fascinating numbers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've come across numerous inconsistencies between our numbers and our reports - especially with regards to intercepting hostiles.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm wondering if our radio security codes have been compromised. I need someone to deliver security code upgrades to each of the Ranger stations.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you need help with?"
+  },
+  {
+   "id": "RSGlobalCommBreakdownTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see... well, if you change your mind and want to earn some caps, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can't do this right now."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownCHFSergeantReyesTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nothing as severe. Charlie seems to be getting a lot of extra medical supplies for some reason, while Bravo hasn't requested a resupply in awhile.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Echo has been reporting heavy Legion activity down on their end, but that's about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have you heard anything unusual about any of the other Ranger stations?"
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownCHFSergeantReyesTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I handle communications for Camp Forlorn Hope, compiling reports I've received from the Rangers at Camp Golf as well as the brass at McCarran.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{annoyed and underappreciated} Unofficially, I'm also in charge of radio security. No one else seems to take it as seriously as I do.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownCHFSergeantReyesTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{disappointed} Oh. Well, thanks for helping get to the bottom of this, I guess.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Forget about it. It's over."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The security codes are unique to the radios at each Ranger station. They're useless anywhere else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What makes you think you can trust me with security codes?"
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Chief? But, he's a legend! I guess if he's got a plan behind it all, who am I to question it? I won't say a word about it to anyone else.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Keep it to yourself, but Hanlon is the one behind the misinformation. He's got a plan."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This holotape contains the updated security codes for the Ranger Stations. Show it to the comm officers there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once the new codes are in use, anyone still using the old codes will just hear static if they're listening in on our frequencies.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll help. Tell me what I need to do."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Glad to hear it! I'll switch over all radio broadcasts to the new encrypted channels - this ought to help us stay a step ahead of any spies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Before you go, I've got another job available.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All of the Ranger stations have been given the new security codes."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The station's been silent for quite some time now... I guess this confirms what we've all feared. Thanks for letting me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll switch over all radio broadcasts to the new encrypted channels - this ought to help us stay a step ahead of any spies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Before you go, I've got another job available.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Every station except Charlie has been given the new security codes. Charlie was wiped out."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've received some disturbing reports from some of the Ranger stations - heavy casualties at Alpha, {disbelief} Super Mutant Legionaries at Delta.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The weirdest one has to be the Great Khans and their trained Deathclaws at Foxtrot. These reports can't be accurate. {less certain} Can they?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know you've already been out there, but could you do me a solid and confirm these reports with the Rangers who sent them in?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What else did you need me to do?"
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Chief Hanlon. The man's a war hero? Why would he...? That just doesn't make sense. This is awful...",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hanlon was the one sending out the false reports. He killed himself rather than turning himself in."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I knew it. I'm glad you and the Chief were able to put a stop to this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> Yes, everything's resolved - Hanlon and I found a Legion spy at Camp Golf."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, and good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll investigate and let you know what I find out about those odd reports."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic101",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wait... what? Why would he do that?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's complicated. Hanlon caused the misinformation, but I convinced him to stop."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever the Chief had in mind, I'm sure it was the right thing to do - even if it did end up scaring a lot of people in the process.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "prompt": "That's not important. It's over."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic103",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Chief should've known that the NCR is too stubborn to back down from anything, even when it's for the best.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "While I'm glad it wasn't an enemy who was spreading lies and killing morale, I'm disappointed that a legend like the Chief felt he had to do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He wanted to scare the NCR into retreating from this region - all to save lives."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then. Come and talk to me when you do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't have time to do this right now."
+  },
+  {
+   "id": "VMSRSGlobalCommBreakdownRSSergeantReyesTopic107",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Hanlon alive} I knew it. Every one of the false reports was signed off by Chief Hanlon at Camp Golf, but why would the Chief manipulate the reports?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I need you to take everything we've found to Chief Hanlon and confront him with it. I don't want to make this public unless we have to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hanlon dead} I knew it. I suspected that Chief Hanlon was behind all this, but since he's dead, there's no way we'll ever know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for all your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Rangers' versions of the reports they sent to Camp Golf don't match what you received."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

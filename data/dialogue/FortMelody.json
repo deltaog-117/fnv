@@ -1,0 +1,232 @@
+{
+ "page": "FortMelody.txt",
+ "speaker": "Melody",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{quiet, shy - nervous young girl} I can't talk to you. It's not allowed.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{Player destroyed Sergeant Teddy} {tearful} I don't want to talk to you! I hate you!",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{brightening up - she's seeing a friend} Hi!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{quiet, shy - nervous young girl} I'm still not allowed to talk to you.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I guess that's okay. Um, if you're a friend, can you help me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm a friend. It's okay for you to talk to friends, right?",
+   "label": "< Speech - 50 >"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm not allowed to talk to you. Bye.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I just have some questions. It'll probably be okay to talk to me.",
+   "label": "< Speech - 50 >"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Um... do you think you could help me?",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "{Child At Heart}Don't worry - I won't tell on you if you don't tell on me."
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{giggles} They do say that! I guess you can be my friend.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Um... can you help me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Dumb PC}Moo! That's what Brahmin say."
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Um... I help take care of the Brahmin. I sometimes bring water and food to people. Um... that's it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Antony took Sergeant Teddy away and gave him to the stinky dogs. I want him back!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What did you need help with?"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's a toy. I'm not a baby, you know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Uhh... wouldn't Sergeant Teddy be dead?"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I kept him secret, but I think somebody told on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "They let you have toys here?"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, okay.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can't help you with that right now."
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll see what I can do."
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's okay, I'll fix him! Can I have him now?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I got Sergeant Teddy - he's a little chewed up."
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here you go."
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "But... I don't have anything. I thought you were my friend!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not so fast. What will you give me for him?"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Antony said he was punishing me for trying to hide it from the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why did Antony take him away?"
+  },
+  {
+   "id": "VFreeformTheFortFortMelodyTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{crying} Sergeant Teddy!",
+     "emotion": "sad",
+     "intensity": 100
+    }
+   ],
+   "prompt": "< Tear Sergeant Teddy in half. >"
+  }
+ ]
+}

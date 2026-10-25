@@ -1,0 +1,714 @@
+{
+ "id": "jacobstownmarcus",
+ "speaker_name": "Marcus",
+ "source": "JacobstownMarcus.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to Jacobstown, human. You're free to walk around, just don't stare at the Nightkin. They don't like people looking at them. {\"Welcome. Don't bother the patients.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{A little quieter, more confidentially} And if you're NCR, keep it to yourself. They're not popular around here.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Got a problem, could use your help. Been having trouble with NCR mercs harassing the town, and they just showed up again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just had to go and start a fight with the mercs, didn't you. Guess we'd better finish things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not the outcome I was hoping for with the mercs. At least it buys us time to build up our defenses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had hoped to start reaching out to NCR, start talking trade and borders. It'll be more difficult now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Regretful} So, Keene's dead. Knew it might come to that some day. {Beat, slight weariness} Makes things difficult for the town.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Without Keene, it'll be hard to convince other Nightkin in the wasteland to come here. And harder to get the ones here to stay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{sighing} Was hard enough to convince Keene to come up here in the first place, and you gave him an excuse to leave. Better than killing him, I guess.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Always a chance I could get him to come back. Not counting on it. {glum} Hope the town doesn't take the blame for whatever trouble he gets into.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nods, respectful} I like how you handled Keene. Without the Nightkin around, Jacobstown would be much weaker than it is.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Something on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vendingjacobstown",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating} With Jacobstown's leadership destroyed, the remaining Super Mutants and Nightkin of the west scattered across the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Jacobstown withered away, its death going unnoticed by the rest of the Mojave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Thanks to the Courier and Lily, a cure for the Nightkin schizophrenia was found shortly after Doctor Henry's experiment concluded.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Nightkin and other Super Mutants in the wasteland flocked to Jacobstown, and the town became known as a haven where a mutant could find peace.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Though a cure for the Nightkin schizophrenia was eventually found, it became a case of too little, too late for Jacobstown.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Disgruntled by the death of their leader, Keene, most of the Nightkin scattered into the wasteland, their insanity worsening with each day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Jacobstown, constantly on guard for anti-mutant reprisals, never truly prospered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Though a cure for the Nightkin schizophrenia was eventually found, it became a case of too little, too late for Jacobstown.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Most Nightkin at Jacobstown followed their leader Keene out into the wasteland, terrorizing the Mojave for years to come.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Jacobstown, constantly on guard for anti-mutant reprisals, never truly prospered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} It took more time than anticipated for a cure for the Nightkin schizophrenia to be found, but in the end it was beneficial to Jacobstown.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} The presence of the Nightkin leader, Keene, persuaded Nightkin from across the wasteland to make the journey to the town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Jacobstown prospered, becoming known as a fair - if somewhat intimidating - place for a trader to do business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} With no cure for the Nightkin schizophrenia in sight, the disgruntled Nightkin left Jacobstown. Without a treatment, their insanity grew.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} The crazed Nightkin terrorized the wasteland, and Jacobstown suffered repeated reprisals from mutant-hating humans.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} In the end, the surviving mutants abandoned Jacobstown entirely, its existence quickly forgotten by the rest of the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingJacobstown",
+   "prompt": "VEndingJacobstown"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{appreciative} Lot of the mutants here found out about Jacobstown because of Neil. {rueful} Our isolation works against us sometimes. {Splits emotion in these lines.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic000",
+   "prompt": "Neil told me about this town."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Killing our Bighorners, shooting at the lodge, that sort of thing. It's getting hard to keep people from retaliating.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic001",
+   "prompt": "How have they been harassing the town?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{frowns, didn't consider this} Guess I can't say for sure if they're NCR. {Beat, shrugs} Whoever they are, they want us dead or gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic002",
+   "prompt": "You're sure these mercenaries work for the NCR?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Doc's inside the Lodge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic003",
+   "prompt": "I'm looking for Doctor Henry."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was a resort Pre-War. I renamed it to Jacobstown after an old friend. Died a long time ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I figured us mutants needed a place to call our own. Town's far enough away from humans so they don't bother us much.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One of these days I'm hoping we can trade with the rest of the wasteland. No more fighting, just... get along.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic005",
+   "prompt": "What's the history of Jacobstown?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was part of Super Mutant army, ran a town, walked the wasteland with a tribal. Now I'm here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic006",
+   "prompt": "I'd like to know about you."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Long story, so here's the short version. The Master created the Super Mutants and Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Master thought he could unify everyone. No more differences, no more war. {Beat, raises an eyebrow} Didn't end well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic007",
+   "prompt": "Super Mutant army?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Nods} Town was Broken Hills. Bunch of Super Mutants, humans, and Ghouls all living together peacefully. {Beat} Well, most of the time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic008",
+   "prompt": "You were a mayor?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We were looking for a {GECK} GECK to save the village of {uh-ROY-yo} Arroyo. Eventually, we did. Nuked an oil rig in the process.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We went separate ways after that. I went east into the Rockies, looking for other mutants like myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't know what happened to my friend. {Beat, slight smile} I've got a feeling it turned out all right in the end.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic009",
+   "prompt": "Tell me more about the tribal."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic010",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bighorners. Good eating. And we can trade the hides. Got a lot of wild ones around here, so it's easy to restock the herd.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic012",
+   "prompt": "How does the town support itself?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not looking to fight. That'll give NCR an excuse to come up here and wipe us out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic014",
+   "prompt": "Why can't you just take them out?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because of a promise. One I haven't been able to keep. The Nightkin all suffer from schizophrenia. It's the Stealth Boys they use, used to use.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Nightkin have a hard time being seen like normal folks. Can't stand it. A few already left to try and find more Stealth Boys.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Miserable situation. They either stay here and suffer, or dig up Stealth Boys and lose their minds. Not much of a choice.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic016",
+   "prompt": "Why does Keene want to leave?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That happens, there's a good chance other Nightkin will follow. It'll make it hard to get a cure to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wary} Worse, if Keene and the Nightkin tear up the Mojave hunting for Stealth Boys, people are going get killed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Most humans can't tell the difference between mutants. Might come here looking for payback. {Should end with the tone of \"Can't let that come to pass.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic017",
+   "prompt": "What happens if Keene leaves?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic018",
+   "prompt": "I changed my mind - I'll help you with your mercenary problem."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Chuckles, player's being naive} That's like saying Caesar and Kimball would listen to each other. {Beat, explaining} Nightkin don't have a lot of trust for others, mutants included.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic019",
+   "prompt": "You're a mutant, too. Wouldn't the Nightkin listen to you?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Keene alive} Smart, charismatic. Hell of a mean streak. Doesn't care for humans. Prefers fighting them to talking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's got a lot of pull with Nightkin, though. He talks, they listen. Was hoping he could draw other Nightkin to Jacobstown.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keene is saner than most, but I know he's thinking of going his own way again. He's aggressive, impatient. Can't stand sitting around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic020",
+   "prompt": "What's the story with Keene?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Such as?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic021",
+   "prompt": "I had some questions about Jacobstown."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lot of bad blood between Super Mutants and humans. Goes back years. Some here still got the scars and memories.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Me, I don't really have a problem with the NCR. Set their sights a little too high sometimes, but they try. {Beat, gets serious} Legion, that's another story.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic022",
+   "prompt": "Why do some of the Super Mutants here dislike the NCR?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{contempt} {KAI-zar} Caesar thinks he can change human nature. Most of the Legion is following {KAI-zar} Caesar, not {KAI-zar} Caesar's ideals. When he's gone, it'll crumble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Might not happen overnight. Might take a few decades. But it'll happen. Basic human nature - greed, ambition, jealousy - will see to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic023",
+   "prompt": "What do you know about the Legion?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They expand, fast. If you've got land they want, they'll take it, eventually. Did it out West, they'll do it here.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Warning tone to govt} They keep rolling over people, they'll regret it. That's how revolutions start.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic024",
+   "prompt": "What makes the NCR too ambitious?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Seen them grow from a single town - Shady Sands - into the republic. They've done good for the most part.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic025",
+   "prompt": "Anything else can you tell me about the NCR?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not really. Heard it's paradise in the wasteland. Never been in there myself, doubt they'd let a mutant in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To himself, slight humor at human nature} Amazes me people would come from all over the wastes to throw away everything they've got in that town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic026",
+   "prompt": "Do you have any dealings with New Vegas?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're human - they {emph} might be willing to be listen to what you have to say. Maybe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm {emph} not asking you to kill them. Just talk them into leaving. Hell, pay them off if you have to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic028",
+   "prompt": "What do you want me to do?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic029",
+   "prompt": "I'll see what I can do."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nightkin suffer schizophrenia from the Stealth Boys they're always using. One of the reasons I settled Jacobstown was so they could be cured.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "While they're in town, the Nightkin aren't allowed to have Stealth Boys so their craziness doesn't get worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Trouble is the Nightkin don't like being visible, either. They don't take being exposed too well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic030",
+   "prompt": "What's wrong with the Nightkin?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Same as any civilized town - don't start any fights or steal anything, we'll treat you fair. Not a lot to ask.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic031",
+   "prompt": "Are there any town rules I need to know about?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Skeptical, but...} Up to Lily. Not my call. {Emph} Might lead to a faster cure. Might not. Don't want any harm coming to her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic032",
+   "prompt": "Doctor Henry wants Lily to continue wearing the prototype. What do you think?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Can't say I blame you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic033",
+   "prompt": "I'd rather not get involved."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic034",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angry} Damn it. That'll wipe out the town treasury. {Calms down, irritated} If that's what it takes...",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic035",
+   "prompt": "<Lie> I'll need 3000 caps to pay off the mercenaries."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That puts a dent in the town treasury. {\"Still...\"} If that's what it takes to be rid of them...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic036",
+   "prompt": "I'll need 2500 caps to pay the mercenaries."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's not too bad. If that's what it takes to be rid of them...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic037",
+   "prompt": "I'll need 2000 caps to pay off the mercenaries."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstownmarcustopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{peaceful resolution} Good. Glad you didn't kill them. Letting them walk away proves we're not bloodthirsty mutants.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "If NCR or anybody else is looking for an excuse to attack Jacobstown, they're not going to get it from us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownMarcusTopic038",
+   "prompt": "You won't have any more trouble with those mercenaries."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "marcus"
+}

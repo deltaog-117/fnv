@@ -1,0 +1,163 @@
+{
+ "id": "northvegasmrhostetler",
+ "speaker_name": "Don Hostetler",
+ "source": "NorthVegasMrHostetler.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Reining Immense Anger} I should kill you, right here, for what you've done.",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "Hello there! Welcome to the Crimson Caravan Company. How can I help you today?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Need anything?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I owe you an apology, stranger. We almost lost her forever, and I'm glad that things didn't turn out for the worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "mrhostetleraffair",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Topic is a nuisance} I really don't have time for this right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MrHostetlerAffair",
+   "prompt": "I've got to talk to you about Alice."
+  },
+  {
+   "key": "mrhostetlercaravan",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know, hiring isn't really my department. You should talk to Ms. McLafferty about work for hire.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MrHostetlerCaravan",
+   "prompt": "Is there any work to be had here?"
+  },
+  {
+   "key": "mrhostetlercaravan_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I said, talk to Alice McLafferty, she's in charge here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MrHostetlerCaravan",
+   "prompt": "Who did you say I should ask about work?"
+  },
+  {
+   "key": "mrhostetlerdrugdelivery",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh? Oh! Oh, right. Yeah. I'll take that. You should go now, before you draw any attention.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "MrHostetlerDrugDelivery",
+   "prompt": "I've got a package here from your friends Jack and Diane."
+  },
+  {
+   "key": "mrhostetlerintro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The name's Hostetler - Don Hostetler. Can I help you with something?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight Irritation} I've already told you... I'm Don Hostetler.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MrHostetlerIntro",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrhostetlertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Visibly bothered} Nonsense! Alice's a good girl. She may be going through a hard time, but...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Realizes that he owes no explanation} What the hell? It's none of your business. Don't bother me with this any longer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrHostetlerTopic000",
+   "prompt": "Alice's \"friends\" plan to use her to steal your Crimson Caravan earnings."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrhostetlertopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Realizes that he owes no explanation} What the hell? It's none of your business. Don't bother me with this any longer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrHostetlerTopic000",
+   "prompt": "So, about Alice..."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrhostetlertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't want to talk about this, didn't you hear? Now, get lost before we run you off the hard way.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrHostetlerTopic002",
+   "prompt": "I've got proof of what I've said."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrhostetlertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, that's right - good to say bye to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrHostetlerTopic004",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "don_hostetler"
+}

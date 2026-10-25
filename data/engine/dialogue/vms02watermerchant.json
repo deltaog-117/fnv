@@ -1,0 +1,255 @@
+{
+ "id": "vms02watermerchant",
+ "speaker_name": "Bounty hunter (Fallout: New Vegas)",
+ "source": "VMS02WaterMerchant.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player not in Powder Ganger gear} {part of an act - he's not really a merchant and trying to see if the player is really a Powder Ganger} Better be careful around these parts. I hear there's Powder Gangers around and dangerous for merchants like me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Male PC, in Powder Ganger gear} {triumphant} Well, well. It's about time one of you guys came along. I figure the NCR would pay a pretty good bounty for a Powder Ganger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC, in Powder Ganger gear} {puzzled} Hadn't heard there were women Powder Gangers, but a bounty's a bounty. The NCR will probably pay up either way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You won't see me around here again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What brings you back?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms02merchantgimmecaps",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Male PC} It's about time one of you guys showed up - I've been waiting long enough. The NCR will probably give me a nice bounty for your corpse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC} Huh - didn't know there were women Powder Gangers. Oh, well - the NCR will still give me a nice bounty for your corpse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02MerchantGimmeCaps",
+   "prompt": "This is Powder Ganger territory, and there's a toll. Pay up."
+  },
+  {
+   "key": "vms02merchantleave",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh, you know, just filling up water and stuff.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02MerchantLeave",
+   "prompt": "So what are you doing sticking around here?"
+  },
+  {
+   "key": "vms02vms02watermerchanttopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Watch your back out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms02vms02watermerchanttopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, but there really ought to be. I'm just taking the initiative, is all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic001",
+   "prompt": "There's a bounty out on Powder Gangers?"
+  },
+  {
+   "key": "vms02vms02watermerchanttopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nope, not going to be that easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms02vms02watermerchanttopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you see, I... fuck. I'm really a bounty hunter trying to catch some Powder Gangers, but they probably saw through me, just like you did.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been hanging around hoping to ambush some of them, but haven't had any success.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic003",
+   "prompt": "{Intelligence 6+}Traveling a little light for a merchant, aren't you? No pack Brahmin?"
+  },
+  {
+   "key": "vms02vms02watermerchanttopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hmmm... that's a good point. Sorry I, uh, tried to ambush you there. No hard feelings, I hope.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic004",
+   "prompt": "Even if you managed to kill me, the Powder Gangers are already on to you. It's why I'm here.",
+   "label": "< Speech 30 >"
+  },
+  {
+   "key": "vms02vms02watermerchanttopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't think it's a waste of time. A handful of dead Powder Gangers ought to get the NCR to cough up some caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic004",
+   "prompt": "So, there's no official bounty? Waste of time, if you ask me. Better walk away while you can.",
+   "label": "< Speech 30 >"
+  },
+  {
+   "key": "vms02vms02watermerchanttopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not a whole gang or anything - just two, maybe three. I was a caravan guard, so I know how to handle a gun pretty well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic005",
+   "prompt": "You think you can take on Powder Gangers by yourself?"
+  },
+  {
+   "key": "vms02vms02watermerchanttopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We'll see about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic006",
+   "prompt": "You won't live to collect that bounty."
+  },
+  {
+   "key": "vms02vms02watermerchanttopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Guess I was a little too obvious. I'm actually a bounty hunter - I was hoping to bag some Powder Gangers if they tried to rob me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic007",
+   "prompt": "A real merchant would be much more worried about Powder Gangers, you know.",
+   "label": "< Speech 30 >"
+  },
+  {
+   "key": "vms02vms02watermerchanttopic007_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Yeah, I'm a merchant, just like I said.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic007",
+   "prompt": "You sure you're actually a merchant?",
+   "label": "< Speech 30 >"
+  },
+  {
+   "key": "vms02vms02watermerchanttopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, was a stupid idea, anyway. See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic008",
+   "prompt": "You'd better leave while you can. The Powder Gangers won't fall for your trick."
+  },
+  {
+   "key": "vms02vms02watermerchanttopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I'd hang around to find out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02VMS02WaterMerchantTopic009",
+   "prompt": "{Terrifying Presence}I'm sorry for what I'm about to do to you. Well, not really."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Watch your back out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nope, not going to be that easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "traveling_merchant"
+}

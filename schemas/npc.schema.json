@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "npc.schema.json",
+  "title": "NPC",
+  "description": "One entry in data/engine/npcs.json.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "dlc"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dlc": {
+      "$ref": "common.schema.json#/$defs/dlc"
+    },
+    "edid": {
+      "type": "string"
+    },
+    "form_id": {
+      "$ref": "common.schema.json#/$defs/form_id"
+    },
+    "source": {
+      "type": "string",
+      "description": "Wiki page the record was imported from."
+    },
+    "race": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "karma": {
+      "type": "string"
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "special": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "strength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "perception": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "endurance": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "charisma": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "intelligence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "agility": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "luck": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        }
+      }
+    },
+    "skills": {
+      "type": "object",
+      "description": "Tagged skill values.",
+      "propertyNames": {
+        "$ref": "common.schema.json#/$defs/skill"
+      },
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "hp": {
+      "type": "number",
+      "minimum": 0
+    },
+    "hp_max": {
+      "type": "number",
+      "minimum": 0
+    },
+    "dt": {
+      "type": "number",
+      "minimum": 0
+    },
+    "companion": {
+      "type": "boolean"
+    },
+    "aggression": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string"
+    },
+    "affiliations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Wiki faction/group names; not yet mapped to faction ids."
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "geck_factions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quests": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "unresolved_quests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dialogue": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      },
+      "description": "Dialogue file ids for this NPC."
+    },
+    "faction_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      },
+      "description": "affiliations matched to factions.json."
+    },
+    "location_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      },
+      "description": "locations matched to locations.json."
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+ "page": "2CMcCredie.txt",
+ "speaker": "McCredie",
+ "topics": [
+  {
+   "id": "BitterSpringsTroopers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angry drill sergeant} Who the hell are you, coming in here and asking me if I can \"spare any?\" I don't hand out NCR troopers to anybody who wanders out of the Wasteland!",
+     "emotion": "anger",
+     "intensity": 45
+    },
+    {
+     "text": "{Gruff but pleased} Hey, you're a damn fine soldier, and word on the grapevine is that you're already some kind of hero. You got yourself a deal.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{Gruff but pleased} After what you did getting my misfits whipped into shape? Yeah, I can spare a couple of boys for Bitter Springs. I'll issue the dispatch orders.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Captain Gilles at Bitter Springs needs reinforcements. Can you spare any?"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hell of a thing about Chief Hanlon. I never would have guessed he was capable of it.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I've been hearing some rumors from the Embassy that Mr. House has gone quiet all of a sudden. You wouldn't know anything about that, would you?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Nice work dealing with Caesar. That'll make holding the Mojave a lot easier.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Have you seen these elite rangers they sent us from California? God damn those boys are gonna kick some ass!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Nice work with that assassination attempt! If my troops were half as dedicated as you, we'd win the war in a week!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like the President's security detail was too good for you, huh, shitbird?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "You oughta die for what you did.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Not like I even voted for him, but losing the President's a hell of a morale killer.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "I just got word that 1st Recon is being mobilized to Nelson. God forbid we get any reinforcements here, right?",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "Seems the Misfits scored pretty well on their readiness evaluations. That strikes me as... suspicious.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "I gotta admit, I'm impressed. The Misfits are drilling better than I ever expected.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I'm not sure what's going on with the Misfits - their accuracy is in the toilet, but they're spoiling for a fight like I ain't never seen.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Well, their test scores are only marginally improved, but I'm hearing good things about the Misfits' teamwork.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Ah, hell, what is it now?",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Pleased to see the player} What can I do for you?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "You here to help, or just dick around all day?",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{Very pleased to see the player} Hot damn, look who it is!",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "{Frazzled and annoyed} Oh, great, like I don't have enough problems!",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "{Cold} What the hell do you want?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "What the hell do you want, you vicious son of a bitch?",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "What the hell do you want, you vicious bitch?",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "So you're back. What else do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "McCredieArmy",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Man, it's my life. I joined up when I was 16 - I don't know how to do anything else.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "How do you like serving in the Army?"
+  },
+  {
+   "id": "McCredieCampGolf",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've been here since the first push into Vegas. Back in the day, this camp was the hotspot for conflicts with the Legion, raider tribes, you name it.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "These days, I spend most of my time trying to beat a little discipline into the soldiers under my command. They've gotten soft with no action.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "How'd you end up at Camp Golf?"
+  },
+  {
+   "id": "McCredieMisfits",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Disappointed? We call 'em the Misfits for a reason. They're undisciplined, lazy, and they have absolutely no espirit de corps.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "The squad leader's got some promise, kid named Mags, but as for the rest...{Trails off} I don't see much hope.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "I'm going to make them shape up if it kills me, though. Or them, for that matter.",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Sounds like you're a little disappointed in your troops."
+  },
+  {
+   "id": "VFreeformCampGolf2CMagsTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, well... I didn't want to get promoted out of the field. I didn't join up to drive a desk.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "You joined at 16 and you're still a sergeant?"
+  },
+  {
+   "id": "VFreeformCampGolf2CMagsTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. I only wish some of the soldiers under my command would share some of it.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "prompt": "That's some dedication."
+  },
+  {
+   "id": "VFreeformCampGolf2CMcCredieTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, well, somebody has to wrangle those washouts and losers. Somebody's got to turn them into a real fighting force.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "prompt": "Funny, I thought this was where they sent washouts and losers."
+  },
+  {
+   "id": "VFreeformCampGolf2CMcCredieTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mostly drill the troops, try to keep the discipline up and combat readiness high.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "It's not the easiest job in the world - soldiers without a mission get bored very easily.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Still, with the Legion just across the river, we have to be ready.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "So what do you do now that the fighting's died down?"
+  },
+  {
+   "id": "VFreeformCampGolf2CMcCredieTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're welcome to try - hell, maybe they'll listen to somebody they don't see as an authority figure.",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Maybe I can help you whip them into shape."
+  },
+  {
+   "id": "VFreeformCampGolf2CMcCredieTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd be skeptical of the odds, myself. I just hope they figure it out before it comes to that.",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Tough luck. If the Legion attacks, they're dead meat."
+  },
+  {
+   "id": "VFreeformCampGolf2CMcCredieTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose so. Sorry, this isn't your problem, I shouldn't be going on to you about this.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "If they don't, it's their loss."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Irritated, busy} Yeah, whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

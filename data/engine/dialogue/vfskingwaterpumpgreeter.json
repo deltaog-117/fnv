@@ -1,0 +1,109 @@
+{
+ "id": "vfskingwaterpumpgreeter",
+ "speaker_name": "Tapper",
+ "source": "VFSKingWaterPumpGreeter.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you helped out Bill Ronte so the Followers worked out a deal for you to drink free.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The King controls the water pump. If you want water, you need to pay like everyone else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfskingwaterpumpgreetertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If we let everyone run amok, the damn NCR would shut us down. Gotta have some way to regulate usage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSKingWaterPumpGreeterTopic000",
+   "prompt": "Why charge for water?"
+  },
+  {
+   "key": "vfreeformfreesidevfskingwaterpumpgreetertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just a few caps for a good long swig.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You already paid, bub. Get a drink then come back and see me if you still want more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSKingWaterPumpGreeterTopic001",
+   "prompt": "How much for a drink?"
+  },
+  {
+   "key": "vfreeformfreesidevfskingwaterpumpgreetertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSKingWaterPumpGreeterTopic002",
+   "prompt": "Can I buy bottled water?"
+  },
+  {
+   "key": "vfreeformfreesidevfskingwaterpumpgreetertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't get wise. We charge per use, so make that first drink worth the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSKingWaterPumpGreeterTopic003",
+   "prompt": "<Pay 10 caps>"
+  },
+  {
+   "key": "vfreeformfreesidevfskingwaterpumpgreetertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSKingWaterPumpGreeterTopic004",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vfswaterpumpbark",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The pump is property of The King. You'll need to pay if you want a drink.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSWaterPumpBark",
+   "prompt": "VFSWaterPumpBark"
+  }
+ ],
+ "speaker": "tapper"
+}

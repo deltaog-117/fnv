@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dialogue.schema.json",
+  "title": "Dialogue",
+  "description": "One file in data/engine/dialogue/: a speaker's topics as transcribed by the wiki. The wiki does not record which topic leads to which, nor conditions; `conditions`, `effects` and `next` are there to be authored.",
+  "type": "object",
+  "required": ["id", "speaker_name", "topics"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "speaker": {"$ref": "common.schema.json#/$defs/id", "description": "NPC id, when the speaker was matched to an NPC."},
+    "speaker_name": {"type": "string"},
+    "source": {"type": "string"},
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["key", "section", "responses"], "additionalProperties": false,
+        "properties": {
+          "key": {"$ref": "common.schema.json#/$defs/id", "description": "Unique within the file."},
+          "topic": {"type": "string", "description": "The wiki's topic id (not unique)."},
+          "section": {"enum": ["topics", "conversation", "combat", "detection", "other"]},
+          "prompt": {"type": "string", "description": "What the player says to open this topic."},
+          "label": {"type": "string"},
+          "check": {"$ref": "common.schema.json#/$defs/condition"},
+          "responses": {"type": "array", "minItems": 1, "items": {
+            "type": "object", "required": ["text"], "additionalProperties": false,
+            "properties": {
+              "text": {"type": "string", "minLength": 1},
+              "emotion": {"type": "string"},
+              "intensity": {"type": "integer", "minimum": 0, "maximum": 100}
+            }}},
+          "conditions": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/condition"}},
+          "effects": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/effect"}},
+          "next": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/id"}, "description": "Topic keys that follow."}
+        }
+      }
+    }
+  }
+}

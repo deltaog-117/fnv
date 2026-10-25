@@ -1,0 +1,44 @@
+{
+ "id": "vault3prisoner03",
+ "speaker_name": "Dennis (Fallout: New Vegas)",
+ "source": "Vault3Prisoner03.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you going to free me or what?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for releasing us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you have anything to say, talk to Rick.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms07greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for the help. We'll find our own way out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07Greeting",
+   "prompt": "VMS07Greeting"
+  }
+ ],
+ "speaker": "dennis"
+}

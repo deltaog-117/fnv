@@ -1,0 +1,227 @@
+{
+ "id": "vfssecuritrongreeter",
+ "speaker_name": "Securitron gatekeeper",
+ "source": "VFSSecuritronGreeter.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Submit to a credit check or present your passport before proceeding to the gate. Trespassers will be shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Move along.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfssecuritrongreetertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Admission to the Strip requires an official passport or proof that you are carrying the required minimum balance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "These policies prevent less-reputable persons from entering and ensure a good time will be had by all who enter the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSSecuritronGreeterTopic000",
+   "prompt": "Credit check? What's that for?"
+  },
+  {
+   "key": "vfreeformfreesidevfssecuritrongreetertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, sir. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you, madam. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, but your balance does not meet the minimum balance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSSecuritronGreeterTopic001",
+   "prompt": "I'll submit to the credit check. <2,000 caps required.>"
+  },
+  {
+   "key": "vfreeformfreesidevfssecuritrongreetertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, sir. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you, madam. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you, sir. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you, madam. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSSecuritronGreeterTopic002",
+   "prompt": "[Passport] I've got a passport."
+  },
+  {
+   "key": "vfreeformfreesidevfssecuritrongreetertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] <Various buzzing and clicking noises>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you, sir. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] <Various buzzing and clicking noises>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you, madam. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSSecuritronGreeterTopic003",
+   "prompt": "1C 3C R34 M.",
+   "label": "<Science>"
+  },
+  {
+   "key": "vfreeformfreesidevfssecuritrongreetertopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Please submit to a credit check or present a passport.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSSecuritronGreeterTopic003",
+   "prompt": "Robot! Let me past!",
+   "label": "<Science>"
+  },
+  {
+   "key": "vfreeformfreesidevfssecuritrongreetertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you are unable to meet the minimum balance requirement, an official passport is an acceptable alternative.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSSecuritronGreeterTopic004",
+   "prompt": "What do I need to do to get in?"
+  },
+  {
+   "key": "vfreeformfreesidevfssecuritrongreetertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please return when you have sufficient caps or a passport.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSSecuritronGreeterTopic005",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Thank you for visiting New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Move along.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "vfssecuritronhalt",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You have entered a restricted area! Exit the gate area or you will be fired upon!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSecuritronHalt",
+   "prompt": "VFSSecuritronHalt"
+  },
+  {
+   "key": "vfssecuritronkill",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You have been warned! Extermination imminent!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vaporization subroutine initiated!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unauthorized entry detected!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have a nice day!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Exterminate!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSecuritronKill",
+   "prompt": "VFSSecuritronKill"
+  }
+ ]
+}

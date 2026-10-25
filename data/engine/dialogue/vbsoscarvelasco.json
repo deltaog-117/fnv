@@ -1,0 +1,262 @@
+{
+ "id": "vbsoscarvelasco",
+ "speaker_name": "Oscar Velasco",
+ "source": "VBSOscarVelasco.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angry} Die, NCR filth!",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "{Peaceful, accepting} Thank you for your advice. You've helped me see more clearly.",
+     "emotion": "pained",
+     "intensity": 30
+    },
+    {
+     "text": "{Battle cry} Flails of God!",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "{Suspicious} Who are you? How did you find this place?",
+     "emotion": "fear",
+     "intensity": 40
+    },
+    {
+     "text": "{Resigned} Back again. What now?",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "oscarvelascocamp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Disdainful} Refugee camp? Is that what they're calling it? Good old NCR, they can whitewash anything.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Let me tell you something, that refugee camp? It's built on the blood and tears of my people. Nobody likes to talk about it, but I remember.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "OscarVelascoCamp",
+   "prompt": "Are you the one who's been raiding the refugee camp at Bitter Springs?"
+  },
+  {
+   "key": "oscarvelascodie",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come for me then. {Intense, half battle cry, half prayer} Flails of God!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "OscarVelascoDie",
+   "prompt": "It's time to die."
+  },
+  {
+   "key": "oscarvelascodie_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come for me then. {Intense, half battle cry, half prayer} Flails of God!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "OscarVelascoDie",
+   "prompt": "Spare me your sob story, it's time to die."
+  },
+  {
+   "key": "oscarvelascomassacre",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Proud} We were the Flails of God. The scourge of the Mojave, the best warriors and raiders in the Wasteland. Until the NCR tracked us back to Bitter Springs.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Sad} The main force hit the canyon by surprise. While our warriors tried to hold them off, we sent our women, our children, our old through the Red Pass.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "NCR's First Recon Battalion was waiting for them on Coyote Tail Ridge. No Khan left alive, that was the order. {Broken} My family....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "OscarVelascoMassacre",
+   "prompt": "What happened to your people?"
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Righteous anger} For revenge! The NCR committed an atrocity here, an atrocity that they tried to bury and forget. I'm going to remind them.",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic000",
+   "prompt": "So you've been hiding in these mountains ever since? Why?"
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Bitter} I know that. But what else can I do?",
+     "emotion": "pained",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic001",
+   "prompt": "The people at this camp aren't responsible for your family's death. They're refugees."
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Bitter} Keep deluding yourself if you want. I've seen the NCR's true face.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic001",
+   "prompt": "But the NCR are trying to help! They're good people, fighting for civilization in a lawless waste!"
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sad, thoughtful} Maybe... maybe you're right. Maybe three years is vengeance enough. Thank you for helping me see that.",
+     "emotion": "pained",
+     "intensity": 40
+    },
+    {
+     "text": "Here. This will unlock the supply caches we left in caves around these mountains. You might get some use out of them.",
+     "emotion": "sad",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic002",
+   "prompt": "The Khans settled in Red Rock Canyon years ago. It's time to let go of your hate and join them."
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Proud anger} You're right. A Khan's vengeance should be direct and bloody. No more skulking in caves - I'll remind the NCR why they feared us!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic003",
+   "prompt": "Take revenge on the people actually responsible: Go attack Camp McCarran."
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Resigned} Then you'll have to kill me. My vengeance will not be stayed.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic004",
+   "prompt": "I promised Captain Gilles I'd stop the attacks on Bitter Springs."
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Suspicious} Why should I let you leave? You could lead the NCR right to me. I should kill you now.",
+     "emotion": "disgust",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic005",
+   "prompt": "Let's not be hasty. I'll be back."
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Accepting} As you wish.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic007",
+   "prompt": "I understand. I'll leave you to your grief, then."
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Accepting} As you wish.",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "[FAILED] {Suspicious} I don't think so. If you work for the NCR, you're no better than they are. {Intense, almost a prayer} Flails of God!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic008",
+   "prompt": "<Truth> I give you my word I won't tell the NCR where you are. I want to resolve this peacefully."
+  },
+  {
+   "key": "vms37vbsoscarvelascotopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Suspicious} As you wish.",
+     "emotion": "surprise",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS37VBSOscarVelascoTopic009",
+   "prompt": "<Lie> I give you my word I won't tell the NCR where you are. I want to resolve this peacefully."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Never forget the Bitter Springs Massacre.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  }
+ ],
+ "speaker": "oscar_velasco"
+}

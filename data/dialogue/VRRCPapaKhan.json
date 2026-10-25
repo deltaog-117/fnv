@@ -1,0 +1,680 @@
+{
+ "page": "VRRCPapaKhan.txt",
+ "speaker": "Papa Khan",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We'll begin readying the camp to move. As soon as Caesar makes his move, we'll depart. We will make ourselves strong again, and we shall conquer!",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "So, the cub enters the wolf's den. What do you want, cub?",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "All four of my most trusted advisors have told me we should break our alliance - maybe I should hear you out after all.",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "I'm beginning to hear troubling rumors from my advisors. Would you know anything about that?",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "More of my advisors are starting to talk openly of breaking our alliance. I wonder where that idea is coming from?",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "I understand you dealt the NCR a crushing defeat at Forlorn Hope. I hope that trend continues.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "That's why I've made a decision: I'm naming you my heir. When I die, leadership of the Great Khans will pass to you.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You've been doing good things for us - don't think I haven't noticed. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "It's always a pleasure to see you around the camp.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Are you going to help us this time, or vex us?",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "And so the unpredictable one returns. What do you want from us?",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "I've got little enough patience for you. Consider your words carefully - you don't want me as an enemy.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "In the past, I'd have had someone like you executed for showing their face here - consider yourself lucky I don't have the warriors to spare.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, you're back. What else do you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "KarlCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Amused} You march all the way out to Red Rock Canyon, enter my home as bold as you please, and you have no idea who I am? You've got guts, I'll give you that.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Well, then, let me educate you: I am the chief of the Great Khans - the Khan of Khans, if you like. This is my tribe and these are my people.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "PapaKhanCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have you now? Hmm. Well, you're a bold one, I'll give you that, but why should I do this for you?",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "Hmm. I have heard some things from my most trusted Khans that makes me wonder whether this alliance is a good idea after all.",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "But I want to leave a legacy of greatness when I die. My tribe deserves better than this, cowering in a canyon and living on scraps.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Tell me then, if I don't join with Caesar's Legion, where will I find my tribe's lost glory?",
+     "emotion": "pained",
+     "intensity": 30
+    }
+   ],
+   "prompt": "I've come to ask the Great Khans to break their alliance with Caesar's Legion."
+  },
+  {
+   "id": "PapaKhanKarlDisgrace",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me see that... \"filthy savages? Probably have to decimate the lot of them?\" Are these the words of our \"friend,\" Caesar?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Great Khans! Drive Caesar's dog out of our camp! If he's too slow to flee, kill him!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You should look at this. It's Karl's journal, and it's very revealing of his true opinions."
+  },
+  {
+   "id": "PapaKhanKarlDisgrace",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's this? Ah, yes, I've heard that the Legion has sometimes had to quell tribes that did not share its vision.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "The Khans, though, are protected by Caesar's emissary - I have Karl's word we will remain our own tribe as long as we remain loyal to Caesar.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Take your slander elsewhere.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "This is a ledger from Caesar's camp, showing what Karl really has planned for the Great Khans."
+  },
+  {
+   "id": "PapaKhanKhans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want to hear the story of the Great Khans? It's a long one, full of honor, glory and betrayal. We have suffered, but we will regain our glory.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Can you tell me about your people?"
+  },
+  {
+   "id": "PapaKhanPowderGangers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And what benefit would this alliance give us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've come with an offer of alliance from the Powder Gangers at Vault 19."
+  },
+  {
+   "id": "VEndingGreatKhans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating} After generations of being beaten down, the Great Khans were finally broken by the Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those few who avoided the Courier's wrath moved north, into the wilderness of Idaho, where they tried once more to rebuild.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} After the Second Battle of Hoover Dam, the Great Khans returned for a time to Red Rock Canyon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR's pressing need to expand proved greater than its promise of amnesty, and before long the government decided the Khans had to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The surviving Great Khans were relocated to an isolated, barren reservation, well north of NCR trade routes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} For supporting the NCR, the Great Khans were ruthlessly hunted down by the victorious Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar destroyed all evidence of their existence at Red Rock Canyon, and forbade mention of their name in any history.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Great Khans' legacy was swiftly forgotten.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} As reward for their loyal service, Caesar forcibly integrated the Great Khans into the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The sick and elderly were killed, the women sold as wives to ranking officers, and the tribe's identity was annihilated.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Though many Great Khans mourned the death of their tribe, many more were ultimately satisfied with their revenge against NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} After driving the Legion out of the Mojave Wasteland, the victorious NCR turned its attention to those who had allied themselves with Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Great Khans were among the first tribes to suffer this fate, and the few who survived Hoover Dam were driven north, into the wilderness of Idaho.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} During the Battle of Hoover Dam, the Great Khans quickly evacuated Red Rock Canyon and headed north and east into the plains of Wyoming.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There, they reconnected with the Followers of the Apocalypse and rebuilt their strength.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bolstered by ancient knowledge of governance, economics, and transportation, they carved a mighty empire out of the ruins of the Northwest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} After their suicidal last stand at Hoover Dam, the Great Khans ceased to exist as a tribe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The few surviving members dispersed, joining up with other tribes and gangs across the Mojave, and quickly forgot their heritage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingGreatKhans"
+  },
+  {
+   "id": "VMS42VRRCPapaKhanTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well now... the armory could always use more firepower. Very well. Tell the Powder Gangers we accept their offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, they would still have to pass the initiation rite to truly join our ranks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Powder Gangers have access to large quantities of explosives, which they'd be willing to share."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Doesn't he? Caesar's representative tells a different tale.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "The glory of the Great Khans will be restored, and once the NCR is pushed back to California, all the land from here to the Colorado will be ours.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "I won't hear any more talk against Caesar or his alliance. The Great Khans will answer Caesar's call to war, and the NCR will pay for their crimes.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Caesar is only using you, he doesn't actually care about the Great Khans."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hah! The Great Khans will not be slaves. Caesar himself has promised us the land from here to the Colorado and the freedom to raid as we see fit.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Do you really think Caesar is going to restore your tribe to glory? You'll be made slaves."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Suddenly cold and furious} Don't you dare mention the NCR under this roof. They are butchers without honor, killers of women and children!",
+     "emotion": "disgust",
+     "intensity": 80
+    }
+   ],
+   "prompt": "Because the NCR is the best hope for long-term stability in the region, not Caesar."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well-spoken, traveler. Well spoken indeed. Perhaps it's time to find our own destiny unburdened by the past.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "We'll begin readying the camp to move. As soon as Caesar makes his move, we'll depart. We will make ourselves strong again, and we shall conquer!",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Great Khans! Drive Caesar's dog out of our camp! If he's too slow to flee, kill him!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] Well-spoken, traveler. Well spoken indeed. Perhaps it's time to find our own destiny unburdened by the past.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "We'll begin readying the camp to move. As soon as Caesar makes his move, we'll depart. We will make ourselves strong again, and we shall conquer!",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "You don't need to look outward, mighty Khan. Your tribe is proud and strong - claim your own glory!"
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You talk like glory is a hollow, meaningless thing. Maybe to you it is, but not to the Great Khans.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Show me something to inspire my people, or we march with Caesar, despite my misgivings.",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Who cares about glory? Better to live without glory than die pointlessly, if you ask me."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you should ever tire of wandering alone, seek us out. You might just have the makings of a Great Khan yourself.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That sounds wise. I wish you the best."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever your motivation was, I think we owe you a debt.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Hey, as long as you aren't fighting for Caesar, I don't care what you do."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Suddenly goes cold} You've helped me see Caesar for what he is, and I thank you for that - but if you suggest that again I will have your head.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Now that we've got that out of the way, I don't suppose you'd consider joining the NCR instead?"
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We'll remain until the camp is packed up. If you have some plan, see to it quickly.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "prompt": "All right, all right, don't get touchy. Just stick around for a while. I might change your mind."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I should have you torn apart for speaking like that - but maybe you're right. The glory of the past is an empty dream.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "If the Khans are to be immortal, we must make our own destiny. We won't fight for Caesar, but when he strikes, we will ride out one last time.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What great legacy do the Great Khans have? Your tribe is nothing but ghosts and martyrs."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Followers of the Apocalypse keep many records of the past. It's been a long time since we associated with them, but they might have something.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "Until you do find me something, though, know that I still plan to lead the Great Khans to fight for Caesar.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Any idea where I might look to find such inspiration from the past?"
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm... this is exactly the kind of symbol the Khans could unite behind.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "We'll begin readying the camp to move. As soon as Caesar makes his move, we'll depart. We will make ourselves strong again, and we shall conquer!",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Hmm... this is exactly the kind of symbol the Khans could unite behind.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "We'll begin readying the camp to move. As soon as Caesar makes his move, we'll depart. We will make ourselves strong again, and we shall conquer!",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Great Khans! Drive Caesar's dog out of our camp! If he's too slow to flee, kill him!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have a look at this book. If you want to see what your tribe could be, read about the Mongol Empire."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You don't have to say anything - I am Papa Khan, and I have spoken. When I'm gone, you will lead the tribe.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "This is a great honor. I don't know what to say."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I should have you torn apart for speaking like that - but maybe you're right. The glory of the past is an empty dream.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "If the Khans are to be immortal, we must make our own destiny. We won't fight for Caesar, but when he strikes, we will ride out one last time.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have a look at this book. Your tribe is nothing but a bunch of thugs, aping the glories of the past."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In a hurry, are you? Very well then: The Great Khans came east out of the NCR 14 years ago. We ruled the Wastes, then, and called no man master.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "But we underestimated the Families of the Strip, and they drove us back to Bitter Springs, where we remained until the NCR arrived and drove us here.",
+     "emotion": "pained",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Maybe you could give me the short version."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Typical. No reverence for history in the younger generations.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "prompt": "On second thought, let's talk about something else."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They allied with Mr. House, the self-proclaimed master of New Vegas. He supported them with the resources of New Vegas: weapons, technology, caps.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "They were better equipped, and we could not stand against them.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did the Three Families defeat you?"
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "When the NCR came to the Mojave, we thought they would be easy pickings. We raided their caravans, their towns, their camps - they couldn't stop us.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "At least, that's what we thought. They tracked us to Bitter Springs and surrounded us.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "When our children, our sick and old, fled through a nearby pass, the NCR gunned them down.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened at Bitter Springs?"
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, they claimed it was a miscommunication, but tell that to those who saw our families butchered. Tell it to the survivors who were banished here.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That doesn't sound like something the NCR would order."
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's because of that that we have sworn to take revenge on the NCR. With our new allies in Caesar's Legion, we will crush them!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's horrible!"
+  },
+  {
+   "id": "VMS45VRRCPapaKhanTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then when I die, you can pass control of the Great Khans on to Regis. For now you are my heir, and will be accorded the honor of that position.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "prompt": "I don't want that kind of responsibility."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Farewell.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Farewell, brother.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Farewell, sister.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "PapaKhanKarl",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Great Khans! Drive Caesar's dog out of our camp! If he's too slow to flee, kill him!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PapaKhanKarl"
+  }
+ ]
+}

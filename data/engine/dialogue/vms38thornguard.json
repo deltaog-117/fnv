@@ -1,0 +1,128 @@
+{
+ "id": "vms38thornguard",
+ "speaker_name": "Thorn guard",
+ "source": "VMS38ThornGuard.txt",
+ "topics": [
+  {
+   "key": "vms38vms38guard01topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Dumfounded, Overflowing Anger}I can't believe this shit. Time to die, punk!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38Guard01Topic001",
+   "prompt": "VMS38VMS38Guard01Topic001"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Serious, Seething Anger}We're watching you{two seconds pause}... {Slightly drawn out \"sss.\" Morrowind!}stranger!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Serious, Seething Anger}Don't fuck with the caged beasts.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Dumfounded, Overflowing Anger}I can't believe this shit. Time to die, punk!",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "{Cautionary Warning, Calm}Follow the rules of The Thorn.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Cautionary Warning, Calm}Don't feed the creatures.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Surprised, Proving a Point}What did I tell you about breaking the rules? You're gonna learn the hard way, now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Proud}Nowhere else will you find something like The Thorn.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "{Proud. As if the last sentence is a conclusion of obeying the first two}Take advice. Don't break the rules. And we won't kill you.",
+     "emotion": "neutral",
+     "intensity": 30
+    },
+    {
+     "text": "{Deeply Offended}You dared go against The Thorn, and now you'll pay for that!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Amiable, Joking Tone}Come see the fights, or Red Lucy?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Amiable, Joking Tone}Enjoy the show, and don't give us a reason to shoot you, okay?{Chuckles}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Surprised, still with a joking tone but about to start combat}You've just fucked up, big time!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms38vms38guard02topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised, Proving a Point}What did I tell you about breaking the rules? You're gonna learn the hard way, now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38Guard02Topic001",
+   "prompt": "VMS38VMS38Guard02Topic001"
+  },
+  {
+   "key": "vms38vms38guard03topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Deeply Offended}You dared go against The Thorn, and now you'll pay for that!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38Guard03Topic001",
+   "prompt": "VMS38VMS38Guard03Topic001"
+  },
+  {
+   "key": "vms38vms38guard04topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised, still with a joking tone but about to start combat}You've just fucked up, big time!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38Guard04Topic001",
+   "prompt": "VMS38VMS38Guard04Topic001"
+  }
+ ],
+ "speaker": "thorn_guard"
+}

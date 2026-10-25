@@ -1,0 +1,26 @@
+{
+ "id": "188gunrunnerguard",
+ "speaker_name": "Gun Runner guard",
+ "source": "188GunrunnerGuard.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This job's boring enough without talking to you. Go see Alexander.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Alexander doesn't pay me to talk.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "gun_runner_guard"
+}

@@ -1,0 +1,605 @@
+{
+ "page": "VCFHPrivateStone.txt",
+ "speaker": "Private Stone",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for setting me straight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get lost.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Surprised} Oh! What are you doing here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aren't you the guy that helped wipe out Nelson?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Holy shit man, that's fucking crazy!",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Aren't you the gal that helped wipe out Nelson?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Holy shit, that's fucking crazy!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aren't you the one that saved President Kimball? That must have been some speech, eh?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I heard President Kimball was assassinated during his visit to Hoover Dam. Doesn't surprise me, we're all going to end up dead soon anyway.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I heard President Kimball almost got killed during his visit to Hoover Dam. Good thing he didn't come here, he would be dead for sure.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "You're new here aren't you? Don't tell me we're actually going to get reinforcements.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Look at the big hero. You here to save us?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I've heard of you. Did you figure on coming out here and helping us lowly troopers out?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Just what we need around here, a loose cannon causing more trouble.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I've heard of you, what do you want?",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "What the fuck are you doing here?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "What do you want?",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "We're all going to die out here. They're out there right now, waiting for us... waiting to kill us.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "We're all fucked!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "I don't want to be seen with the likes of you. Get lost.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You're still here? I'm surprised you're not dead or gone by now.",
+     "emotion": "neutral",
+     "intensity": 5
+    },
+    {
+     "text": "What do you want?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Missing medical supplies? No, uhh... I don't know anything about that.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know anything about Dr. Richards' missing medical supplies?"
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My problem? My problem is we're all going to die.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "The Legion may be gone from Nelson, but there's still a whole fucking army of them out there.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Today... tomorrow... it doesn't matter, we're all going to die in this war.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "So why don't you just leave me alone.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "My problem? My problem is we're all going to die.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "We're out of food, we're out of men, and we're out of time. The Legion is right outside waiting to kill us all.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Today... tomorrow... it doesn't matter, we're all going to die here.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "So why don't you just leave me alone.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "What's your problem?"
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You kidding me, man? How are things? They're all fucked up, that's how things are!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Everyone is either starving or dying out here. Left out to dry by the rest of the NCR. Fuck this place.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "I'd rather be anywhere else but here.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How are things around camp?"
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go. Thanks, I owe you big time.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Alright, hand it over."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine. Be like that.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Not interested."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] What?! Oh shit... how the fuck?! Oh man, I'm in some deep shit now.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I can explain everything! Really, just give me a chance to explain!",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Dilated eyes, increased heart rate... I think you took the drugs."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, no that's not necessary. I'm fine. Just a little stressed out, that's all.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "You look a little sick. Maybe you should see Dr. Richards."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Holy shit! How the hell did you find that?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I can explain everything! Really, just give me a chance to explain!",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Then why did I find this empty syringe in your pocket?"
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I do what now? Uhh... I mean, yeah, I sometimes need to... stretch my legs. Helps me... uh... think.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Private Sexton mentioned you wander around the camp at night."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well... sometimes I sneak into the medical tent at night and \"borrow\" some of the medical supplies.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "But it's not what you think. I can explain everything. Just hear me out.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I know what's really going on. You can trust me."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh... look, it's not what you think. I can explain everything, if you'll just hear me out.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I saw you stealing the supplies."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh... yeah, sure, no problem.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay. Thanks anyway."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have you looked around? Have you seen what's going on here? What we're going through?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "This place is hell. I've seen my all my friends butchered by the Legion in front of my very eyes. I can still hear their screams at night.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "All I wanted was a little escape, so I took some drugs to help me do that. Is that so bad?",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This better be good."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey look, I just wanted to forget about all this stuff happening around here for a little while, that's all!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "What happens now?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't care about your explanations."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "But it sure as hell is going to make me feel better for a little while, and that's all I wanted.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "So what happens now?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Doing drugs isn't going to change anything."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I... uh... I never... I never thought about that.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "But look, I needed this. I needed to escape for just a little while. I needed this...",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "So what happens now?",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "What about the injured men that need this medicine?"
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, see... I just needed to escape for a little while. To not think about all this stuff going on here.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "So what happens now?",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Hum... I think I understand."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I knew you wouldn't understand! You haven't been here! You haven't been through all the horrors that we go through every day!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "So what are you going to do about it?",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "That's a poor excuse."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Haven't you heard anything I've said?! Don't you understand?!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, maybe I can change your mind. I still have some drugs left over. They're all yours if you let me go.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "I'm going to turn you in."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? You want me to turn myself in?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Why the hell should I do that?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to turn yourself in."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright. Here, I'll give you some of what I stole, just don't mention this to anyone.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "I won't turn you in... if you make it worth my while."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Hey sure! You got a deal. Thanks, I owe you big time.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If you promise to stop, I won't turn you in."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No. That's not going to happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Because it's the right thing to do."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Nothing's going on, so just mind your own business.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yeah, right. Why don't you tell me what's really going on?"
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, nothing strange about a late night stroll. Everybody does it.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "I sometimes do the same thing."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't care what you believe. Now unless there's something else, why don't you just buzz off.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "For some reason I don't believe you."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I... I guess you're right. I'll do the right thing and turn myself in.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "prompt": "It's better if you turn yourself in rather than me turning you in."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Nervous} Uh... I was just... uh... getting some fresh air and stretching my legs. It's getting pretty late though, I should get going. Goodnight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I could ask you the same thing."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, yeah... me too. It's getting a bit late though, I should get going. Goodnight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm just enjoying a late night stroll."
+  },
+  {
+   "id": "VMS31VCFHPrivateStoneTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Nervous} I'm not sneaking! I'm uh... just stretching my legs. I should be getting back though, it's late. Goodnight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sneaking around at night is a little suspicious."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah, whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

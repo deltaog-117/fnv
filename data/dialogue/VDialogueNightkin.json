@@ -1,0 +1,963 @@
+{
+ "page": "VDialogueNightkin.txt",
+ "speaker": "Super mutant (Fallout: New Vegas)#Nightkin",
+ "topics": [
+  {
+   "id": "Acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{disgusted}Stupid weak human.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Acceptyield"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That was *dumb*, human!",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "<Pained Grunt>",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "*Hurt*!",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Angry Grunt as you charge}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry Grunt as you charge}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry Grunt as you charge}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "AvoidThreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Surprised yell}",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Surprised yell}",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AvoidThreat"
+  },
+  {
+   "id": "Death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Death sound 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Death sound 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Death sound 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Death"
+  },
+  {
+   "id": "DeathResponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hm.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry}Hey!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DeathResponse"
+  },
+  {
+   "id": "FireExplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Grunt as you throw grenade}",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Snarl as you throw grenade}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FireExplosive"
+  },
+  {
+   "id": "Flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{panicked}Help!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{Panicked yell 1}",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{Panicked yell 2}",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Flee"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Snarls}Back off, human…",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Snarls}Go away!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Snarls}Stop that, human…",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "Hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ow!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oof!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Grunt 1}",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Grunt 2}",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Grunt 3}",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Grunt 4}",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hit"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Angry yell}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have your blood, human!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Now you pay!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "MurderNoCrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Slightly amused chuckle}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Medium sized laugh}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Big laugh}",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "id": "PowerAttack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{strenuous grunt 1}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{strenuous grunt 2}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{strenuous grunt 3}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PowerAttack"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Stupid human!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "That's mine, human!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry yell}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "IdleChatter",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Introspective}Chair... empty? Head voices say so.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Matter-of-fact}Head voices say silver chair flies east.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Laughing}Chip slippery! More slippery than the Chair thinks!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Buildings not covered in blood. Chip is cause?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Chip goes when broken man calls!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{A little scared}Shiny screens brighter! Don't let them flicker at us!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Withered... broken! Not speak any more.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Broken one is ended. Head voice not sure what this mean.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Confused}When Mars calls... we run?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Confused}Thorn... *pulled* from flesh of bull? Not sure why.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Muttering to self}Bull is broken. But bull has many friends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bull lies dead. Dogs coming for fresh meat.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Laughing}Bull not as smart as he thinks! Can't see dogs around him.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Shiny screens brighter! Why so bright?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Shiny screens go dark. Stupid head voice have no use for shiny screens.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Snake dead! Rats scurry while they can.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Bears returning! Rats will flee.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Arms of mars are unbound. Watch them swing!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voice say bear heads still talking. Is surprised at this.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Bear heads in pain. Chip cannot help them.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Chip hurt bear heads! Stupid head voices afraid.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Bear heads in pain. But voices don't know who hurt them.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Green grass man dead. Head voices wonder why?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Green grass man dead. We understand why.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One head cut off. Head voices say many will take its place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Laughing}Hah hah, many rats dead in gutters today!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Bull attacks bears! Many more will come.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Horns will help the bull. Voices say they knew that would happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bear has horns? Head voices not see that coming.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Horns fall on bloody rocks. Head voices saw many bodies.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Horns leave this place. Head voices see them go far away.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Horns unleashed. Many will feel their sting.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Crowned heads lie dead. Bear heads growing strong.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Crowned heads make nice with bears? Voices confused.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Metal men walk no more. Stupid metal men. Head voices don't like metal men!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices say Mars angry.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Bears hurt.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Squishy human not making many friends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bears grow stronger. But still sit on edge of cliff.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bears in pain. Head voices not surprised.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bears killed cornered dogs. Voices not surprised.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Horns dead on rock city.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Horns on the run. Voices wonder where they going?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices say new meat will rot in the sun.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Bears taking over twisty track. Voices unsure of this.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices wonder... why bull doggies die?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Confused}Head voices hear of new metal men. But not metal men. Different metal men. Make head hurt.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Bears strong like metal men? Bears stronger now.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Mars growing bigger. Shadow gets larger.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Mars *eclipsing* bears. Bulls come soon.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Confused, muttering}Head voices hear things. Many things. Not all make sense.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices see clouds in the sky. Where is sun?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Sun sets.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Voices say waters close around bears *and* bull. Not sure who in better shape.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices say smart man also metal man. Don't like metal men!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices say quiet man knows more than he says about horns!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices say they knew flower girl's father.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Childish laughter}Funny robot make blinky sounds.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices say someone close. Someone like us.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices know smelly ghoul. He old and good with guns.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voices speak of doggy with squishy brain.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Book girl has hard decision to make.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "IdleChatter"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wuh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I see you, human!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got you now!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're mine!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Frustrated}Nothing!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stupid head voice go away again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just stupid head voice again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Where are you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're out there!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not crazy! You out there!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Unintelligible frustrated mumbling}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Muttering, getting angrier towards the end}Not here...? Just saw, of course here… *shut up stupid head voice!*",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Muttering}Stupid head voice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Not seeing things! You're out there!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Stupid head voice wrong! I know you're there!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You come back!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Satisfied with proof of sanity}Ah hah!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Got you now!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now you die!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Not sure}Maybe stupid head voice was right?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Reassuring self}Was definitely there. Not crazy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Relatively calm statement of fact}You come back, I kill you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Huh?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Head voice, that you?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Wuh?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You die now!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I'll kill you!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Unintelligible battle cry}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToCombat"
+  },
+  {
+   "id": "ObserveCombat",
+   "section": "miscellaneous",
+   "responses": [
+    {
+     "text": "{Big laugh}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Medium sized laugh}",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ObserveCombat"
+  },
+  {
+   "id": "GREETING",
+   "section": "topic",
+   "responses": [
+    {
+     "text": "{Eventual Cure}{angry, impatient}We were promised a cure long before this, and now we must wait some more?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Keene dead}Why should we stay if Keene is dead?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Keene left}Perhaps the rest of us should follow Keene into the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go away, human.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry}Head voices don't *like* you, squishy man!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Jealous}No! Head voices don't talk to you. Only to me!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "PLAYERFIREWEAPON",
+   "section": "topic",
+   "responses": [
+    {
+     "text": "{Amused chuckle}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Slightly annoyed}Keep that up, human…",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYERFIREWEAPON"
+  },
+  {
+   "id": "PLAYERINIRONSITES",
+   "section": "topic",
+   "responses": [
+    {
+     "text": "{Snarls}I wouldn't.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Snarls}I don't think so.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYERINIRONSITES"
+  },
+  {
+   "id": "PLAYERLAYMINE",
+   "section": "topic",
+   "responses": [
+    {
+     "text": "I saw that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You take that back!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYERLAYMINE"
+  },
+  {
+   "id": "PLAYERTHROWGRENADE",
+   "section": "topic",
+   "responses": [
+    {
+     "text": "{Yells}",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Fire!",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYERTHROWGRENADE"
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "page": "VHDKimballRoofGuard.txt",
+ "speaker": "Jensen (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're cleared to go on through.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "No one can go upstairs without authorization.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VHDAssassinationDialogTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The President is visiting today. Ranger Grant doesn't want anyone snooping around up there that doesn't have authorization.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why the lockdown?"
+  },
+  {
+   "id": "VHDAssassinationDialogTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Only NCR engineers or people with explicit permission from Ranger Grant are allowed roof access.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you have to ask, you're not authorized.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Who's authorized to go upstairs?"
+  },
+  {
+   "id": "VHDAssassinationDialogTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, no can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've always wanted to see the President's vertibird."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDKimballRoofGuardTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, just this once. Make it quick though, I don't want to get in trouble for this.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Pretty please?"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDKimballRoofGuardTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not a chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Come on!"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDKimballRoofGuardTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, but those are the rules.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's too bad."
+  },
+  {
+   "id": "VHDAssassinationRoofWarning1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Only engineers and authorized personnel are allowed upstairs. Please step away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Warning 1"
+  },
+  {
+   "id": "VHDAssassinationRoofWarning2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I warned you. Intruder!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Warning 2"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

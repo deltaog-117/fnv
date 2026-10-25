@@ -1,0 +1,746 @@
+{
+ "id": "vfssimon",
+ "speaker_name": "Simon (Fallout: New Vegas)",
+ "source": "VFSSimon.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't talk to me, rookie!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're all dead. Guy must've had some kind of explosive on him, set off all the ordinance in this place at once.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Congratulations, rookie. You just cost me my job. Don't think I don't appreciate it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was just telling Gloria about your performance. Hell of a first day, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to the Silver Rush, New Vegas's best- ah, I'm just kidding. Go on in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to the Silv- ah crap, don't tell me you're my new guard.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, now let's get you geared up. First, your armor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Standard issue is your run-of-the-mill combat armor, with a nice dark coat of paint for both brand recognition and sheer intimidation value.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Next, your weapon. Guards are required to use rifles. Anything lighter compromises your combat effectiveness.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anything heavier and people are too scared to come in the door. What's your preference, laser or plasma?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to the Silver Rush, New Vegas's best source of laser and plasma weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't hurry me. I'm trying to get your stuff ready.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfssimoncallsitaday",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's just about closing time. Let's go see the boss about getting paid.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, I'm going to need the rifle and armor back. Boss's orders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonCallsItADay",
+   "prompt": "VFSSimonCallsItADay"
+  },
+  {
+   "key": "vfssimonsearch",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid I'm going to have to search you before letting you in. The only weapons allowed on the premises are the ones we're selling.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonSearch",
+   "prompt": "VFSSimonSearch"
+  },
+  {
+   "key": "vfssimonsearchdone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There, I've stowed all of your weapons. You're clear to enter. When you leave, I'll hand them all back to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonSearchDone",
+   "prompt": "VFSSimonSearchDone"
+  },
+  {
+   "key": "vms29avfssimontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This should only take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSimonTopic000",
+   "prompt": "Okay, search away."
+  },
+  {
+   "key": "vms29avfssimontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then you're not going to shop here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSimonTopic001",
+   "prompt": "That's not going to happen."
+  },
+  {
+   "key": "vms29avfsvangraffthug09topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, no time for pleasantries. I've got your gear right here, but let's see if you can follow instructions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll be covering the other side of the door there. Take your position while I get your stuff out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSVanGraffThug09Topic000",
+   "prompt": "That's right."
+  },
+  {
+   "key": "vms29avfsvangraffthug09topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can always tell a rookie. You look too eager. Give the job a few hours, and the shine'll come right off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSVanGraffThug09Topic001",
+   "prompt": "How did you know?"
+  },
+  {
+   "key": "vms29avfsvangraffthug09topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've been paired with worse, I guess. Anyway, let's see if you can follow instructions.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSVanGraffThug09Topic002",
+   "prompt": "Looks like we're stuck with each other."
+  },
+  {
+   "key": "vms29avfsvangraffthug09topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good choice. I prefer laser-based weapons myself, but the boss lady said she wants at least one guard using a plasma rifle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Says the lightning bits draw in more people. Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that you're equipped, a quick word on the job at hand. In a nutshell, we're here to keep the riff-raff away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Drunks, punks, and capless vermin are to be turned away. Potential customers are to be permitted normal entrance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That is, after we pat them down for weapons. An unarmed man is a lot less likely to try to steal something with several armed guards around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't start any fights. I don't care if some Jet junkie just insulted your mother, we're here to promote violence elsewhere, not start it here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lastly, don't abandon your post. We're getting paid to stand next to this door, not talk to someone down the street or head to the casino.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That goes double for any thoughts of splitting with that gear. Every now and then some young punk thinks he can run off with Van Graff property.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Trust me, the rifle and armor are nice, but they're not worth your life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Other than that, relax. There's usually some eye candy coming and going from the Wrangler over there at some point, so the view's not too bad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Other than that, relax. Who knows, you might attract a high roller from the Wrangler over there and never have to pull a gig like this again!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSVanGraffThug09Topic003",
+   "prompt": "Laser."
+  },
+  {
+   "key": "vms29avfsvangraffthug09topic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nothing wrong with going plasma. Just make sure you hit what you're aiming at.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSVanGraffThug09Topic004",
+   "prompt": "Plasma."
+  },
+  {
+   "key": "vms29avfsvangraffthug09topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lasers have a high rate of fire, but not a lot of stopping power. Plasma on the other hand is slow as a mule, but with a kick to match.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So what'll it be?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSVanGraffThug09Topic005",
+   "prompt": "What's the difference?"
+  },
+  {
+   "key": "vfspacergreetssimon",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Tiny bit of distaste here, he doesn't like Pacer} What can I say? Business has been good lately. We can afford the help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{mood gets darker, Simon doesn't like Pacer talking about Gloria} You know she is. {This is a threat, Pacer's dead if he goes inside} Why don't you go in and say hi?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSPacerGreetsSimon",
+   "prompt": "VFSPacerGreetsSimon"
+  },
+  {
+   "key": "vfssimonbomberaftermath",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Now what in the {stressed} hell do you suppose that was about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonBomberAftermath",
+   "prompt": "VFSSimonBomberAftermath"
+  },
+  {
+   "key": "vfssimonbomberannounce",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Looks like that guy's headed this way. Don't screw it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonBomberAnnounce",
+   "prompt": "VFSSimonBomberAnnounce"
+  },
+  {
+   "key": "vfssimonbombercleanup",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Help me clean this up. No one's going to want to shop here with a corpse out front.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonBomberCleanUp",
+   "prompt": "VFSSimonBomberCleanUp"
+  },
+  {
+   "key": "vfssimonbomberletin",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You're doing that on purpose, aren't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonBomberLetIn",
+   "prompt": "VFSSimonBomberLetIn"
+  },
+  {
+   "key": "vfssimonbomberstophim",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Stop him!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonBomberStopHim",
+   "prompt": "VFSSimonBomberStopHim"
+  },
+  {
+   "key": "vfssimoncallsforbackup",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I could use some help out here!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonCallsForBackup",
+   "prompt": "VFSSimonCallsForBackup"
+  },
+  {
+   "key": "vfssimondrunkannounce",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Here comes a winner. I'll let you handle this one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonDrunkAnnounce",
+   "prompt": "VFSSimonDrunkComment"
+  },
+  {
+   "key": "vfssimondrunkelsewhere",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "More like he's going to the Wrangler for another drink. You watch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonDrunkElsewhere",
+   "prompt": "VFSSimonDrunkElsewhere"
+  },
+  {
+   "key": "vfssimondrunkpolicy",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Good. Stick to the rules.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonDrunkPolicy",
+   "prompt": "VFSSimonDrunkPolicy"
+  },
+  {
+   "key": "vfssimondrunkrebuke",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hoo boy, Gloria's gonna have your ass for letting that wino in. You're not starting the day well, rookie.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonDrunkRebuke",
+   "prompt": "VFSSimonRebuke"
+  },
+  {
+   "key": "vfssimongamblerannounce",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Heads up. Looks like we've got another customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonGamblerAnnounce",
+   "prompt": "VFSSimonGamblerAnnounce"
+  },
+  {
+   "key": "vfssimongamblerclean",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "He's clean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonGamblerClean",
+   "prompt": "VFSSimonGamblerClean"
+  },
+  {
+   "key": "vfssimongamblerletin",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You just going to let everyone in without checking them? Bad move, rookie. That's going in my report.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonGamblerLetIn",
+   "prompt": "VFSSimonGamblerLetIn"
+  },
+  {
+   "key": "vfssimongamblerlostanotherone",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You keep losing us business like that, and you can forget about being paid.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonGamblerLostAnotherOne",
+   "prompt": "VFSSimonGamblerLostAnotherOne"
+  },
+  {
+   "key": "vfssimongamblernopatdown",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You don't listen too well, do you? We're supposed to pat everyone down. That's going in my report.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonGamblerNoPatDown",
+   "prompt": "VFSSimonGamblerNoPatDown"
+  },
+  {
+   "key": "vfssimongamblerpeopleperson",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Wow, you're a real people person, aren't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonGamblerPeoplePerson",
+   "prompt": "VFSSimonGamblerPeoplePerson"
+  },
+  {
+   "key": "vfssimonlongday",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Settle in. You've got some hours left before your shift ends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonLongDay",
+   "prompt": "VFSSimonLongDay"
+  },
+  {
+   "key": "vfssimonmanclean",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "He's clean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonManClean",
+   "prompt": "VFSSimonManClean"
+  },
+  {
+   "key": "vfssimonnormalannounce",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Another one coming. You're on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonNormalAnnounce",
+   "prompt": "VFSSimonNormalAnnounce"
+  },
+  {
+   "key": "vfssimonnormaldrivenoff",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You know, guarding the door's not {stressed} that complicated. Maybe you'd be better off in another line of work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonNormalDrivenOff",
+   "prompt": "VFSSimonNormalDrivenOff"
+  },
+  {
+   "key": "vfssimonnormalnosearch",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "It's almost like I never said anything at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonNormalNoSearch",
+   "prompt": "VFSSimonNormalNoSearch"
+  },
+  {
+   "key": "vfssimonnormalsearch",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "He's clean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonNormalSearch",
+   "prompt": "VFSSimonNormalSearch"
+  },
+  {
+   "key": "vfssimonnormalwentin",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See? Not so hard is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonNormalWentIn",
+   "prompt": "VFSSimonNormalWentIn"
+  },
+  {
+   "key": "vfssimonpacerannounce",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Crap. {stressed} This I do not need today. Keep your head straight, rookie. Things are about to get interesting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonPacerAnnounce",
+   "prompt": "VFSSimonPacerAnnounce"
+  },
+  {
+   "key": "vfssimonpacercleanup",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come on, help me clean this up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonPacerCleanup",
+   "prompt": "VFSSimonPacerCleanup"
+  },
+  {
+   "key": "vfssimonpacerdead",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Oh man, Gloria's going to be pissed when she hears about this. Still, he started it, so we probably won't go to war with the Kings.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonPacerDead",
+   "prompt": "VFSSimonPacerDead"
+  },
+  {
+   "key": "vfssimonpacerpeaceful",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Way to keep your head, rookie. There's hope for you yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonPacerPeaceful",
+   "prompt": "VFSSimonPacerPeaceful"
+  },
+  {
+   "key": "vfssimonplayerattackedcustomer",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What the hell are you doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonPlayerAttackedCustomer",
+   "prompt": "VFSSimonPlayerAttackedCustomer"
+  },
+  {
+   "key": "vfssimonplayerletsomeoneby",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We're supposed to pat everyone down. Didn't you hear that part of my instructions?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Were you even listening when I said what you're supposed to do?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's almost like I never said anything at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're doing it on purpose, aren't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonPlayerLetSomeoneBy",
+   "prompt": "VFSSimonPlayerLetSomeoneBy"
+  },
+  {
+   "key": "vfssimonplayerrunningoff",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What did I tell you about trying to make off with that gear?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonPlayerRunningOff",
+   "prompt": "VFSSimonPlayerRunningOff"
+  },
+  {
+   "key": "vfssimonpostbomb",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Oh shit. Oh shit shit shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonPostBomb",
+   "prompt": "VFSSimonPostBomb"
+  },
+  {
+   "key": "vfssimontellsyoutolookaround",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Good. Look around and get a feel for where customers and risks can enter and exit the area while I get your gear ready.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonTellsYouToLookAround",
+   "prompt": "VFSSimonTellsYouToLookAround"
+  },
+  {
+   "key": "vfssimonwomanclean",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "She's clean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSimonWomanClean",
+   "prompt": "VFSSimonWomanClean"
+  }
+ ],
+ "speaker": "simon"
+}

@@ -1,0 +1,30 @@
+{
+ "page": "VFSAtomicWranglerCashier.txt",
+ "speaker": "Atomic Wrangler cashier",
+ "topics": [
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Enjoy your stay at the Atomic Wrangler.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to the Atomic Wrangler. Looking to exchange?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  }
+ ]
+}

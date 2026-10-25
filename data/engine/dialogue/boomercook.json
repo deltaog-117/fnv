@@ -1,0 +1,52 @@
+{
+ "id": "boomercook",
+ "speaker_name": "Boomer chef",
+ "source": "BoomerCook.txt",
+ "topics": [
+  {
+   "key": "boomercook",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here is what we have available.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I bet you would, but Pearl didn't give me permission to sell to outsiders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BoomerCook",
+   "prompt": "I'd like to buy some food."
+  },
+  {
+   "key": "boomercook2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BoomerCook2",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hungry for grub?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "boomer_chef"
+}

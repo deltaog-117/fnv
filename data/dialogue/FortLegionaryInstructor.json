@@ -1,0 +1,45 @@
+{
+ "page": "FortLegionaryInstructor.txt",
+ "speaker": "Legionary instructor",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{with pride} I'm harsh on the children, but they'll be excellent Legionaries. I'm quite proud of them.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You're slowing down. Pick it up!",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Good. You'll be a Legionary yet.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "What the fuck was that? I've seen crippled slaves move faster.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Run faster or I will throw you off the side.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

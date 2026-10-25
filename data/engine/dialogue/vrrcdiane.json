@@ -1,0 +1,714 @@
+{
+ "id": "vrrcdiane",
+ "speaker_name": "Diane (Fallout: New Vegas)",
+ "source": "VRRCDiane.txt",
+ "topics": [
+  {
+   "key": "dianecaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't worry, Jack and I have talked it over. We'll talk up the idea of breaking the alliance.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Anders got back a little while before you did, he told me what happened. If that's how the Legion treats my people, I don't want any part of them.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "DianeCaesar",
+   "prompt": "So, about the alliance with Caesar's Legion...."
+  },
+  {
+   "key": "dianecaesar_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, it's not like I'm super-attached to working with Caesar or anything, but if it'll stop his patrols from harassing my runners, I'm all for it.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "DianeCaesar",
+   "prompt": "I've been told you're someone I should talk to about stopping the Khans' alliance with Caesar."
+  },
+  {
+   "key": "dianework",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have any compelling reason to trust you, given your behavior. So no, I'm not really inclined to give you a job.",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "{Thoughtful} Hmm... you look like you could handle yourself in a fix. All right, I'll tell you what. Anders, one of my best runners, is overdue to report back.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "If you can find out what happened to him, I'll give you some real work.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "DianeWork",
+   "prompt": "I'm looking to make a few caps. Got any work for me?"
+  },
+  {
+   "key": "dianework_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great! Here's your payment.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "DianeWork",
+   "prompt": "I finished the Crimson Caravan run."
+  },
+  {
+   "key": "dianework_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And you didn't even get skinned alive. I'm impressed. Here's your payment.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "DianeWork",
+   "prompt": "I finished the Vault 3 run."
+  },
+  {
+   "key": "dianework_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I said, find Anders first, then we'll see about trusting you with more work.",
+     "emotion": "pained",
+     "intensity": 15
+    },
+    {
+     "text": "Okay, if you want a little work, I think I can find you something.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Not right at the moment, but you could talk to Jack - he's always looking for new recipes.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Ordinarily I would, but it seems like all our clients have ended up dead. You could talk to Jack - he's always looking for new recipes.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "DianeWork",
+   "prompt": "Any new jobs for me?"
+  },
+  {
+   "key": "dianework_5",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, you did good finding him. Okay, if you want a little work, I think I can find you something.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "DianeWork",
+   "prompt": "Now that Anders is back, how about that work?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Get away from me, you lunatic!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Anders told me what happened. We owe you one for rescuing him. Tell you what: I can give you caps as a thank you, or a special recipe Jack cooked up.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Any luck finding Anders?",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "You're not one of my regulars. What do you want?",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "I've been hearing a lot of good things about you. What's up?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Hey! Seems like you've been making lots of friends around here.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Wary, the player is an unpredictable nutter} Oh, uh, hey - Jack can probably give you a discount, if that'll calm you down.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Look, we'll be happy to sell you any chems you want, just don't do anything crazy, okay?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "If there's something you want, spill it - otherwise, move along.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Make it quick - I don't want to be seen with you.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Dammit, someone offed Motor-Runner! That guy was one of our biggest clients.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Someone's been picking off the leaders of the Fiends down in New Vegas. That's going to cut into our profits.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Did you make that delivery yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, what's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "jackdianemedicine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, you made a pretty good argument. We'll keep it small for now, but if it turns a profit we might expand.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "JackDianeMedicine",
+   "prompt": "Have you started making meds yet?"
+  },
+  {
+   "key": "jackdianemedicine_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Helpful? What, like bathtub Stimpaks? What's the point of that?",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "topic": "JackDianeMedicine",
+   "prompt": "You've got an impressive setup here - have you considered making more helpful chems?"
+  },
+  {
+   "key": "jackmerchant",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Jack handles the small-time purchases. You should talk to him unless you're looking for a major shipment.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "JackMerchant",
+   "prompt": "What do you have for sale?"
+  },
+  {
+   "key": "jackanddianecaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, it's not like I'm super-attached to working with Caesar or anything, but if it'll stop his patrols from harassing my runners, I'm all for it.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "Papa hasn't steered us wrong yet.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "JackandDianeCaesar",
+   "prompt": "What do you think about Caesar?"
+  },
+  {
+   "key": "jackanddianeinfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We keep the Great Khans from falling apart, essentially. Jack manufactures the chems, I organize the runners and the shipments.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "JackandDianeInfo",
+   "prompt": "What is it you do here?"
+  },
+  {
+   "key": "jackanddianekhans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll spare you the history lesson - talk to Papa Khan if you want to hear that story.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "Things have been rough for a while now, even with Jack working all the time and my runners making deliveries daily we're barely getting by.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "Maybe this alliance with Caesar will help, but I don't know.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "topic": "JackandDianeKhans",
+   "prompt": "Tell me a little about the Great Khans."
+  },
+  {
+   "key": "vms45vrrcdianetopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I haven't heard anything like that. Do you have any proof?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS45VRRCDianeTopic000",
+   "prompt": "Caesar isn't going to let you run drugs as an ally any more than he supports it now. He hates chems."
+  },
+  {
+   "key": "vms45vrrcdianetopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, come on back when you do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS45VRRCDianeTopic001",
+   "prompt": "Not yet, but I'll find some."
+  },
+  {
+   "key": "vms45vrrcdianetopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I won't bother.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS45VRRCDianeTopic002",
+   "prompt": "No, and finding some would be too much work. Never mind."
+  },
+  {
+   "key": "vms46nulllinks",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've got an associate in the Crimson Caravan Trading Company who distributes for us in Outer Vegas. He's been after us for a new shipment.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS46NullLinks",
+   "prompt": "VMS46NullLinks"
+  },
+  {
+   "key": "vms46vrrcdianetopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "About three weeks ago I sent Anders southeast to find a route into Arizona to open new markets for our product.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "He should have been back two days ago, but there's been no sign of him.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic000",
+   "prompt": "Sure, just tell me who I'm looking for and where to start."
+  },
+  {
+   "key": "vms46vrrcdianetopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay then. Job'll be waiting if you change your mind.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic001",
+   "prompt": "Sounds like more trouble than it's worth. I'll pass."
+  },
+  {
+   "key": "vms46vrrcdianetopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. Prove you're reliable on this, and I'll have more for you later.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic002",
+   "prompt": "Okay, I'll be back as soon as I have any news."
+  },
+  {
+   "key": "vms46vrrcdianetopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With Anders out of commission for so long, we're shorthanded on runners, and some backlogs have piled up.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "We've got an associate in the Crimson Caravan Trading Company who distributes for us in Outer Vegas. He's been after us for a new shipment.",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "You up for something challenging?",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "I've got a shipment of Jet and Psycho that needs to be delivered to Motor Runner at Vault 3.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic003",
+   "prompt": "Sure, what have you got?"
+  },
+  {
+   "key": "vms46vrrcdianetopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Here's the package - your contact is Don Hostetler at the Crimson Caravan. Come back and see me when you're done.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic005",
+   "prompt": "Sure, I'll do it."
+  },
+  {
+   "key": "vms46vrrcdianetopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic006",
+   "prompt": "Okay, I'll do that."
+  },
+  {
+   "key": "vms46vrrcdianetopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't get cocky, the Fiends are twitchy. Most of them won't bother a Khan, but the ones outside the Vault... well, they're outside for a reason.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Here's the package - good luck. Your payment will be waiting when you get back.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Don't get cocky, the Fiends are twitchy. Most of them won't bother a Khan, but the ones outside the Vault... well, they're outside for a reason.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Here's the package - good luck. Your payment will be waiting when you get back.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic008",
+   "prompt": "Piece of cake."
+  },
+  {
+   "key": "vms46vrrcdianetopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You've got a point. Selling meds to the locals could be a pretty nice side gig. All right, I'll tell Jack to give it a try.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic010",
+   "prompt": "Medical supplies are always scarce, and they don't kill the buyer as often. Think of the profits!"
+  },
+  {
+   "key": "vms46vrrcdianetopic010_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That's touching, but it would take away from our bottom line. I'll have to pass.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic010",
+   "prompt": "But you could turn a profit and help the people of the Mojave!"
+  },
+  {
+   "key": "vms46vrrcdianetopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go, you've earned these.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic011",
+   "prompt": "I'll take the caps."
+  },
+  {
+   "key": "vms46vrrcdianetopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go. Enjoy it.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic012",
+   "prompt": "I'll take the recipe."
+  },
+  {
+   "key": "vms46vrrcdianetopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Papa Khan has been talking to Caesar's emissary for weeks now - they're always going on about crushing the NCR.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "Papa's announced that if Caesar goes to war against the NCR, the Khans will go with him.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic013",
+   "prompt": "What alliance?"
+  },
+  {
+   "key": "vms46vrrcdianetopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Red Rock Canyon isn't exactly the most hospitable place - there's no food, barely any water, and nothing anybody wants.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "We used to send patrols out to acquire supplies, but ever since Bitter Springs there just aren't enough of us left.",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic014",
+   "prompt": "Why are things so tough?"
+  },
+  {
+   "key": "vms46vrrcdianetopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, what do you want to know?",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic015",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vms46vrrcdianetopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're supplying things people want in exchange for things our tribe needs. Don't judge us.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic016",
+   "prompt": "So you're drug dealers?"
+  },
+  {
+   "key": "vms46vrrcdianetopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We make regular shipments to a lot of settlements around the Mojave - a lot of our business comes from the Fiends lately.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Personally, I think they're kind of creepy, but Papa likes the fact that they get hopped up on Psycho and harass NCR patrols.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic017",
+   "prompt": "Who do you sell to?"
+  },
+  {
+   "key": "vms46vrrcdianetopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like what?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic018",
+   "prompt": "Good to know. I had some other questions."
+  },
+  {
+   "key": "vms46vrrcdianetopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, but please find him as soon as you can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic019",
+   "prompt": "Not yet, but I had more questions."
+  },
+  {
+   "key": "vms46vrrcdianetopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? How? What happened?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic020",
+   "prompt": "I'm afraid he's dead."
+  },
+  {
+   "key": "vms46vrrcdianetopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Why the hell would you do that? Are you insane?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic021",
+   "prompt": "<Truth> I killed him."
+  },
+  {
+   "key": "vms46vrrcdianetopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dammit! Okay, well, thank you for finding out at least. Was there something else you needed?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic022",
+   "prompt": "<Lie> The Legion caught him and crucified him. He was dead when I found him."
+  },
+  {
+   "key": "vms46vrrcdianetopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, because that makes it so much better! Get out of my sight, I have nothing to say to you any more!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic024",
+   "prompt": "I didn't know he worked for you."
+  },
+  {
+   "key": "vms46vrrcdianetopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're psychotic! Get out of my sight, I have nothing to say to you any more!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS46VRRCDianeTopic025",
+   "prompt": "It was fun. He made a noise like a deflating balloon."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Catch you later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "diane"
+}

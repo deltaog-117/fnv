@@ -1,0 +1,526 @@
+{
+ "page": "BCLieutenantMonroe.txt",
+ "speaker": "Monroe (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've got a situation with some Great Khans right now. The brass at McCarran has ordered me to lock down the ruins until it's been resolved.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player attacking Great Khans, Great Khans not all dead} Can't talk. We didn't get all the Great Khans yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player not helping Monroe} Where do you think you're going? I can't let you go into the ruins, not without a reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Speech path} How are negotiations with the Great Khans going?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Speech path - deal reached} I'm glad you were able to get my people freed, but there's a new problem. I just got orders to take out the Great Khans, hostages or not.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Speech path - player attacked Great Khans} When I heard the shots, I figured your negotiation went bad. What the hell happened?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Speech path - bribe paid} The Great Khans can go, just as we agreed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sneak path} Ackerman and Gilbert aren't back yet. What's the holdup?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Both hostages rescued} Thanks for getting both of my people out of there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sneak path - one hostage rescued} I'm sorry that you couldn't get both hostages out alive, but that's how it goes sometimes. Thanks for your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sneak path - hostages dead} I'm sorry that you couldn't get either hostage out alive, but that's how it goes sometimes. Thanks for your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I really don't have the time to chatter right now. {Slightly stressed - he's got a hostage situation he's trying to deal with.}",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You mean... just let them go? How would I explain this to my superiors?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been thinking about it since you brought it up earlier. 500 caps would go a long way for some soldier's families.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How much money would it take for you to look the other way while the Great Khans left?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Once the Great Khans have been killed or captured, you're welcome to retrieve any property they've taken from you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "These Great Khans might have something of mine - a Platinum Chip."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "500 caps would go a long way for some soldier's families.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Look at it this way - nobody dies."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Forget I said anything."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This doesn't feel quite right, but it resolves things and gets my troopers back in one piece.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Done. Here's the caps."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be back with the caps."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My hands are tied. I can't go against orders... can I?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Great Khans let the hostages go in exchange for their own freedom."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You cut a deal with the Khans? Damn it. Attacking them now doesn't feel right, but orders are orders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Go for it. The Great Khans have nowhere to run."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That makes sense, and it's still more than these troopers see in a month.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "400 caps is a less suspicious amount. You have enough trouble here as it is.",
+   "label": "< Barter 45 >"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You're asking me to accept a bribe. I'd like to make sure the risk to my career - and freedom - benefits the families of my troops.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Way too much. Bring that price down and I'll consider it.",
+   "label": "< Barter 45 >"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One of my patrols was on its way back from Novac when it came under fire from the Great Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They radioed for reinforcements, but instead of waiting for us, they chased the Khans into the ruins where they were caught in a crossfire.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No deaths, but not all of the squad got out. The Khans have Private Ackerman and Private Gilbert as hostages.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's going on with the Great Khans?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't like it, but orders are orders.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "You're the officer here. Make the call."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This doesn't feel quite right, but it resolves things and gets my troopers back in one piece.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's the caps."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. Keep me updated.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still working on it."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "500 caps was the amount requested.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We agreed on 400 caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "About that bribe..."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're right. The Great Khans are free to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If you have any integrity, then you'll honor the deal."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{nodding} Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't like it, but orders are orders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Forget what I said. Kill them all."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shoot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you some questions?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Knowing the Khans, they were probably drugged up to hell and back. {Not quite believing the player, but not really having any evidence to the contrary.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll take it from here and sort things out. Thanks for trying to help us out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> I didn't have a choice - they started shooting first."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right... probably just bad luck. {Somewhat disbelieving - he knows the player isn't telling the whole truth.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Like you said, things went bad."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You were supposed to negotiate for the safety of my troopers, damn it. {Controlled anger - he trusted the player to handle things diplomatically, and the player started a fight instead.}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That was me, \"negotiating.\""
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Normally, I'd turn you down since I have no idea who you are, but considering that the hostages are as good as dead when we attack...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, I'm going to give you a chance to talk to the Great Khans. Their leader is a man named Jessup.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we hear shooting, we'll be coming in, but it'll probably be late for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I may be able to negotiate a deal with the Great Khans."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As soon as you free them, the rest of my squad will move in and provide covering fire.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You should wait until it's darker so that you have the best chance to pull this off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You should go now, while it's still dark. That way, you'll have the best chance to pull this off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I could sneak in there and try to get your people out."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I understand."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Acceptable casualties, I've been told. I don't like it, but the brass has their reasons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you going to do about the hostages?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was worth a try. I'll have to proceed with the attack as ordered, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm unable to work out a deal. The Great Khans are all yours."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's one of the biggest sources of electrical power in the region, so the NCR's fortified the place pretty heavily.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When President Kimball shows up on his inspection tour, I'm sure he'll be confident that the Dam is safe and secure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about Hoover Dam?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're an outlaw group, primarily trafficking in drugs and other contraband. They usually stay out of NCR territory, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is there anything you can tell me about the Great Khans?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Camp McCarran is the headquarters for the NCR military in this region. It occupies the old airport next to New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where can I find McCarran?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's probably just a political thing - you know, give a few speeches, shake hands with the troops, boost morale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The President is coming to Hoover Dam?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCLieutenantMonroeTopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Destroyed during the Battle of Hoover Dam a couple of years ago. The town was set up as a trap for Caesar's Legion. {Spoken with pride about a significant victory.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The sharpshooters in the Rangers picked off the Legion's veterans from a distance, and the rest of the Legion just rushed on in. Then - boom!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened to Boulder City?"
+  }
+ ]
+}

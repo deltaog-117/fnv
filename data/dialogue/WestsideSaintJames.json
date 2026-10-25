@@ -1,0 +1,156 @@
+{
+ "page": "WestsideSaintJames.txt",
+ "speaker": "Saint James",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in combat} Yeah! Fight! Fight!",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{unstable} Why you talking to me, man? I'm trying to relax here, got it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{unstable, issues with women} When I talk to a girl, I start the conversation! And I didn't start no conversation with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{unstable} We got to go through this again? What's it about this time?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VCasaStJamesAboutStJames",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{saying the minimum, guarded} Me and Dermot work salvage around New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do around here?"
+  },
+  {
+   "id": "VCasaStJamesCoyotes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{irritated} I don't know a thing about no missing refugees from that Aerotech camp. Go cry to somebody else.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Some people have gone missing, and they were last seen dealing with you."
+  },
+  {
+   "id": "VCasaStJamesLedger",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got his book? {shouting for Dermot as you attack player} Dermot, this bastard got your book! He got your book!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got his book? Dermot, this {shouting for Dermot as you attack player} bitch got your book! She got your book!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found this ledger in Dermot's room."
+  },
+  {
+   "id": "VCasaStJamesTeddyBear",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{unstable, bungling your lies} What you doing stealing my stuff? That ain't even mine. I mean it's mine, but it's private. Give it back!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell, don't give it back! I don't care. {coming up with a good lie} Just found it when we was working salvage and thought I'd save it to give to some kid if one came by.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Look what I found in your room. <Show him the teddy bear.>"
+  },
+  {
+   "id": "VFreeformCasaMadrid1ESaintJamesTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, fuck off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformCasaMadrid1ESaintJamesTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{bungling your lie} Yeah, well, I must've heard rumors, and, uh... {losing patience} fuck you! You got nothing on me and Dermot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I didn't mention Aerotech."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideSaintJamesTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{unstable and not especially bright} What do you even mean? He's Dermot.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dermot knows how to work salvage than any man I ever met. Doesn't go asking questions all day, neither.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Dermot, your partner."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideSaintJamesTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's private. I don't go asking about how you like to get laid, and I don't wanna know. Enough of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I hear you spend most of your caps on Sweetie."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Fuck off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "id": "safehousefollowersdoctor",
+ "speaker_name": "Luria",
+ "source": "SafehouseFollowersDoctor.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "May I help you?",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vsafehousesafehousefollowersdoctortopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like to check up on things from time to time. I can't let this place fall apart, now can I?",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Since you're here, I can offer you some medical supplies. I can't give you everything I have but I can give you a few things.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "vSafehouseSafehouseFollowersDoctorTopic000",
+   "prompt": "Why are you here?"
+  },
+  {
+   "key": "vsafehousesafehousefollowersdoctortopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can give you stims or radiation supplies, which would you prefer?",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "vSafehouseSafehouseFollowersDoctorTopic001",
+   "prompt": "I could use some stims."
+  },
+  {
+   "key": "vsafehousesafehousefollowersdoctortopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vSafehouseSafehouseFollowersDoctorTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vsafehousesafehousefollowersdoctortopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm usually here a few days out of the week. Mostly to keep the fridge stocked. Plus it's nice to get away from it all every now and then.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "vSafehouseSafehouseFollowersDoctorTopic003",
+   "prompt": "Are you always here?"
+  },
+  {
+   "key": "vsafehousesafehousefollowersdoctortopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "vSafehouseSafehouseFollowersDoctorTopic004",
+   "prompt": "Regular stims."
+  },
+  {
+   "key": "vsafehousesafehousefollowersdoctortopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "vSafehouseSafehouseFollowersDoctorTopic005",
+   "prompt": "Super stims."
+  },
+  {
+   "key": "vsafehousesafehousefollowersdoctortopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll have them here for you if you want them.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "vSafehouseSafehouseFollowersDoctorTopic006",
+   "prompt": "Actually, nevermind."
+  },
+  {
+   "key": "vsafehousesafehousefollowersdoctortopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "vSafehouseSafehouseFollowersDoctorTopic007",
+   "prompt": "Radiation supplies."
+  }
+ ],
+ "speaker": "doctor_luria"
+}

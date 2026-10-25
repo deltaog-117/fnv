@@ -1,0 +1,552 @@
+{
+ "page": "VRemJudahKreger.txt",
+ "speaker": "Judah Kreger",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's get going, we have a battle to win.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You don't strike me as someone down on their luck. What brings you to Westside?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{At Bunker} Glad to see you made it here all right. So, who are we going up against?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{At Bunker} Still waiting on that decision...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player killed Moreno} {quiet regret} We saw everything through the security monitor. I had no idea Moreno would ever pull something like that.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "By rights, Moreno's Power Armor now belongs to you. Whitman's volunteered to show you how to use it, so talk to her as soon as you can.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Moreno convinced to stay} Moreno's a stubborn son of a bitch, but he's also tougher than any of us. I'm glad you were able to talk him into staying.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since Whitman will be staying with the vertibird, she's offered to give her old suit of Power Armor to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll need special training to use it properly, so talk to her as soon as you get the chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Remnants helping NCR or Legion} We'll be ready, don't worry.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sticking around for the attractions?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{as a way of goodbye} Uh-huh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Arcade hired} {to another person} Hello, Arcade. Making some new friends, are you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{to the player} Why the need for a bunch of old warhorses like us?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Arcade not hired} Why the need for a bunch of old warhorses like us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Arcade asked me to find you. I'm gathering the Remnants."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I help tend the crops, stand watch for Fiends, and generally help keep things civilized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do in Westside?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Judah agrees to come} Swooping in on a vertibird, guns blazing? Haven't done that in years, but all right, I'm in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "None of this means a thing if the rest of the group doesn't show up, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and you'll need my part of the pass phrase to get into the bunker - \"Navarro.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You'll be the element of surprise."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{bemused} It really must be bad out there if he's sending you to us. Is the idea that we swoop in by vertibird, guns blazing?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It was Arcade's suggestion, not mine."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, assuming our equipment cache is intact, my squad would have the edge in armor and firepower.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's only a handful of us, though, so the best tactic would be for us to swoop in where the target isn't expecting us. {asking for an opinion of his plan} How am I doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You tell me."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Moreno, Johnson, Henry, and I will be the boots on the ground. Whitman will stay with the vertibird.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How are you going to deploy your squad?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This was a minor refueling station for vertibirds. It seemed an appropriate place to stash our equipment if we ever needed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm surprised this place hasn't fallen apart. When I put it into standby mode, I expected to return to it within a few years, not decades.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is this place?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{No decision} You still need time to think?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll be there when you need us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{disagreeing with player} I disagree. You're the one who wanted our help in the first place. You want us to succeed, you go talk to Moreno.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "We don't need him. If he wants to go, let him go."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then that's the plan. We're going to have a problem with Moreno, though. He won't like that we're helping the NCR - you'll have to talk to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to help the NCR hold onto the Dam."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, now. An opportunity for payback after all these years. Johnson won't go along with it, though - he actually likes the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Help the Legion take over the Dam."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I stopped being Moreno's officer a long time ago. Everyone here respects me, but they don't need to follow my orders. Not anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're the officer here. Can't you just order him to go along with the plan?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He won't turn on us, but he's a good shot and I'd hate to do this without him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Will Moreno be a liability?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They won, we didn't. It's as simple as that. The rest of us moved on while Moreno... didn't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, I'm not convinced Moreno hates the NCR as much as he thinks he does. You still might be able to talk him out of leaving.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's Moreno's problem with the NCR?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I stopped being Johnson's officer a long time ago. Everyone here respects me, but they don't need to follow my orders. Not anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can't you just order Johnson to go along with the plan?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He won't turn on us, but he's a good shot and I'd hate to do this without him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Will Johnson be a liability?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I'm afraid. Johnson truly hates the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any chance of talking Johnson into staying?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got only one chance at this. I know Moreno - once he's made up his mind about something, there's no changing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll talk to Moreno."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Since Johnson won't be needing his Power Armor, I've decided to let you have it. You'll need training in how to use it, so talk to Moreno about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Enough about Johnson. What's next?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Judah agrees to come} I'll be there, but it won't mean squat if the rest of the group isn't there, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sounds good to me. Does that mean you're in?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Judah agrees to come} I hope you weren't thinking we were going to take the lead. That's no job for a bunch of graybeards. Or grayheads, in Whitman's case.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be there at the reunion. Let's hope the others show up, too, or this plan isn't going to work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's way better than what I had in mind."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Judah agrees to come} Yeah, well, don't count on us sticking around if things get too hot. We're not a suicide squad. I'll go to this reunion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think you'll be a very good distraction."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Couple of years now. I was a trader for awhile, but got tired of all the walking. Westside was a good place to settle down as any.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How long have you lived in Westside?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{wistful} I miss those days sometimes. We all had a purpose, you know? I admit that some of the folks in charge were pretty ruthless.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "The rest of us, though - we were just trying to civilize things. The NCR was still new and it didn't look like they'd last all that long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then, we lost the oil rig and shortly after that, the base at Navarro. Nobody left except us Remnants.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the old days with the Enclave."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Internal sabotage took down the oil rig - never did get the full story. The NCR took out Navarro, saying we posed a threat to the region.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened to the Enclave oil rig and Navarro?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was the officer in charge, and Johnson and Moreno were my heavy hitters. Henry handled tech things, and Whitman flew the chopper.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Johnson and Moreno never got along, and I had my hands full keeping those two apart some days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was a difference in philosophy, mostly. \"Mercy\" was not part of Moreno's vocabulary.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to know more about your former squad."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. That'll save us some time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Player has Power Armor training}I already know how to wear Power Armor."
+  },
+  {
+   "id": "VDialogueRemnantsVRemJudahKregerTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The training might take several hours, so keep that in mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Player doesn't have Power Armor training}I'll talk to her, then."
+  },
+  {
+   "id": "VEndingRemnants",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating} Despite surviving the destruction of the oil rig and the loss of their comrades at Navarro, the venerable Remnants were no match for the Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} They carried the secrets of their old lives to their graves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} After their bold arrival at Hoover Dam, the Remnants disappeared as quickly as they came.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Legends of their power spread throughout the southwest, a reminder of why people once feared the sight of vertibirds in the sky.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Merciless in their assault on the NCR, the Remnants struck fear into the hearts of even the Centurions at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Well aware of the full extent of their power, {KAI-zar} Caesar commanded his troops to not pursue them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Merciless in their assault on the NCR, the Remnants struck fear into the hearts of even the Centurions at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} {KAI-zar's} Caesar's heirs aggressively pursued the Remnants into Arizona, losing hundreds of Legionaries in the process and gaining nothing in return.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingRemnants"
+  },
+  {
+   "id": "vHDJudahKregerGreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We are here as promised. Now let's kick some ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Judah Kreger Greeting}"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Uh-huh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

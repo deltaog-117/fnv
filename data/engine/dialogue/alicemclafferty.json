@@ -1,0 +1,730 @@
+{
+ "id": "alicemclafferty",
+ "speaker_name": "Alice McLafferty",
+ "source": "AliceMcLafferty.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to the Crimson Caravan Company, New Vegas branch. What may I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's been a pleasure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid we have no current openings for caravaneers or guards, but I'm in need of a runner.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic001",
+   "prompt": "I'm looking for work."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Deliver this invoice to Dr. Hildern. You can find him somewhere inside Camp McCarran.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic002",
+   "prompt": "I'll take it. What do I need to do?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{slightly annoyed - player asked for work, then turned down the job} I see. Was there anything else, then?",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic003",
+   "prompt": "Actually, I don't have time for this right now."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you've proven yourself reliable so far. Would you be interested in more important jobs?",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic004",
+   "prompt": "I delivered the invoice, just as you asked."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As much as I like to handle matters personally, I can't be everywhere at once.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There is a negotiation with a smaller trading outfit that I'd like resolved as quickly as possible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's also the matter of Henry Jamison, an employee whose services I'd rather do without. His family connections make it difficult, however.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "And finally, I need someone to \"acquire\" the Gun Runner's manufacturing specifications. This job needs to be quiet - no alarms, no deaths.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic005",
+   "prompt": "What other work do you have available?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Certainly. What would you like to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic006",
+   "prompt": "I'd like to know more about the Crimson Caravan Company."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Crimson Caravan Company has been in business for over 130 years. We're partially responsible for the progress in the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic007",
+   "prompt": "How long have you been in business?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, the Gun Runners continue to dominate the weapons market, and the Mormon traders from New Canaan control the majority of the northern routes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic008",
+   "prompt": "Does the Crimson Caravan have any competition?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Normally, I oversee company operations at the Hub in California. However, the New Vegas branch has been underperforming in recent years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given the conditions here, it's not hard to see why. I'll change all that, soon enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic009",
+   "prompt": "You're well-dressed for this place."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Is there anything else I can do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic010",
+   "prompt": "I don't have any more questions. Let's talk about something else."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I'd heard something about his untimely death. There will be a lot of questions from his family, so I trust you had nothing to do with this.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "I guess the one bright spot is that I can strike his name from the payroll after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, but at significant cost. I understand that you not only agreed that the company pay off his gambling debts, but he also gets severance.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "I'm disappointed with this outcome, but what's done is done. At least we're rid of Henry.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, I understand that he's decided to quit outright and not even ask for compensation. I'm a bit curious what exactly you said to him.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Then again, perhaps I'd rather not know. Thank you all the same - I'm very happy to be rid of that man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, I heard. I believe we're now responsible for paying off his gambling debts, but that you bargained him down from a more outrageous demand.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well done. I'm very pleased to be rid of that man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic011",
+   "prompt": "The Crimson Caravan Company no longer has to worry about Henry Jamison."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very good. On occasion it's proven to be more profitable in the long run to simply buy out the competition, and this is one of those occasions.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic012",
+   "prompt": "Cassidy Caravans has been bought out, and is now part of the Crimson Caravan Company."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Alarm, no deaths} The Gun Runners detected an intruder roaming around, so they'll like be aware of the theft soon enough.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "This unfortunate circumstance will prevent us from immediately using their blueprints to manufacture weapons. A pity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Deaths} The Gun Runners will be looking for revenge for the murder of their people. I won't sell you out, but be careful out there.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "We'll be unable to make use of their schematics any time soon. Not what I was hoping for when I asked you to do the job. Take your pay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear it's business as usual at the Gun Runners, as if nothing unusual happened. Excellent work.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "We'll be able to use the schematics you acquired to begin manufacturing our own weapons immediately. We'll provide some to you at a discount.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic013",
+   "prompt": "I have the Gun Runner holotape."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's a small trading outfit, Cassidy Caravans, that I'm interested in acquiring. They've been rather competitive, so it's time to buy them out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have it on good authority that the owner, Cass, wants out of the caravan business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Cass frequently trades with the NCR, so you'll likely find her at the Mojave Outpost.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic014",
+   "prompt": "Tell me about the negotiation."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Jamisons are very wealthy ranchers back in Redding, California and significant investors in the Crimson Caravan Company.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was pressured into posting young Henry as the manager of the New Vegas branch. As you can see, he wasn't exactly cut out for the job.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "He was much more interested in gambling and prostitutes, and because of his family, I can't simply fire him.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "Henry needs to be convinced to quit, one way or another. I won't have a useless employee on the company payroll.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic015",
+   "prompt": "I want to know more about the problem with Henry Jamison."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{snorting, a bit contemptuous} Ah, yes, her infatuation with a Boomer she's never met. It's a small camp, and word gets around.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "She's aware she's breaking her contract, which is undoubtedly why she sent you to talk to me instead of coming herself.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Janet is free to leave, but she forfeits the wages she's owed. That's the price of contract breaking - take it or leave it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My terms haven't changed. Janet is free to leave, but she forfeits the wages she's owed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic016",
+   "prompt": "Janet's asked me to talk to you about releasing her from her contract."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The quality of the Gun Runners' armaments is due to their manufacturing process. They craft all weapons on-site.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want to know the secrets of their manufacturing process, which means you'll need to find some way to get inside their heavily-guarded factory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I would greatly prefer that you perform this job undetected and without killing anyone, if it can be helped.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic017",
+   "prompt": "What's the Gun Runner job about?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you. Was there something else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic018",
+   "prompt": "I'll see what I can do."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Non-Dummy} Of course. Which one?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dummy - sigh, strained patience} Very well. What job did you need more information on?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic019",
+   "prompt": "I need to be reminded about a job you wanted me to do."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{grumbling} [SUCCEEDED] Being sentimental is not how I made the Crimson Caravan so successful, but I'll allow it, just this once.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Janet will be paid what she's owed. Consider it a gift.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic020",
+   "prompt": "Are you really going to ruin what's supposed to be a time of happiness for her?",
+   "label": "< Speech 75 >"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic020_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{somewhat amused} [FAILED] You'll have to try harder than that. The rumors about my heart being made of stone are true.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic020",
+   "prompt": "Oh, come on. She's in love. Give her a break.",
+   "label": "< Speech 75 >"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I understand. No hard feelings, but you will, of course, keep our conversation on the matter strictly confidential.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic021",
+   "prompt": "You'll have to find someone else for the Gun Runner job. That's not something I do."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Intriguing. Janet puts in a good word for me, and the Crimson Caravan gains exclusive access to the Boomers. Yes, that works for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Janet will be paid what she's owed. Consider it a gift.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic022",
+   "prompt": "Opening up trade with the Boomers would be easier with Janet in their camp, wouldn't you agree?",
+   "label": "< Barter 65 >"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic022_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] The Crimson Caravan Company's operations require dependable employees. I'm not going to reward someone for breaking their work contract.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic022",
+   "prompt": "Janet's wages can't be that much. Why bother keeping them from her?",
+   "label": "< Barter 65 >"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take all the time you need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic023",
+   "prompt": "I need to consider your offer."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm glad to hear it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic024",
+   "prompt": "You have a deal."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Most merchant companies - {correcting herself, emphasizes \"successful\"} successful merchant companies, rather - have them. It can be inconvenient to replace employees on short notice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The contracts keep employees around for a specific duration of time, after which they get paid - after their upkeep expenses are deducted, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic025",
+   "prompt": "Are work contracts common for the Crimson Caravan Company?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Food, water, living quarters, medicine, and clothes - just the basic stuff. It all comes out of the Company's coffers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic027",
+   "prompt": "What kind of upkeep expenses?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, and they have been for decades now. The hired hands know what they're signing up for - we don't hide anything with fancy talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic028",
+   "prompt": "Are work contracts legal?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{grinning} That's because we are. {more serious} We always pay up when the contract ends, though. Won't stay in business long if you've got a reputation as a cheat.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic029",
+   "prompt": "It seems like that the companies are getting the better deal."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Something has actually come up. A prospector recently came through here and spent a lot of caps on supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Closer inspection of these caps has revealed them to be brand new. This is a problem.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "The most likely source of these new caps is the old sarsaparilla bottling plant. Go there, locate the bottle cap press, and disable it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic030",
+   "prompt": "Is there anything else you need me to do?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What would you like to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic031",
+   "prompt": "I had some questions about bottle cap currency."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. I'm sure you were thorough. Here's your payment for a job well done.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic032",
+   "prompt": "The bottle cap press is no longer a problem."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "People have been counterfeiting bottle caps forever, but it's always been small scale.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A bottle cap press is a whole other threat. We can't have anyone devaluing our currency by mass producing new bottle caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic034",
+   "prompt": "Why is a bottle cap press a problem for you?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Certainly. Bottle caps do wear out or get damaged. Some people even insist on using bottle caps in explosive devices for some reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We make it a point to scour Pre-War bottling plants and recover or disable the bottle cap presses. It seems we missed one.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic035",
+   "prompt": "Are new bottle caps ever made?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lots of little things - the paint on the label, the machining, the type of metal it's made from.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know there's counterfeit caps floating around, of course. Fortunately, they're very time-consuming to make, so the numbers are small.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic036",
+   "prompt": "What makes a bottle cap genuine?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Cass not hired} Coincidentally, I'm also looking for her. I've got a business offer she'd be interested in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I believe Cass frequents the Mojave Outpost, far south of here, near the California border.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic037",
+   "prompt": "I'm looking for Cass. The Van Graffs told me to check in with you."
+  },
+  {
+   "key": "vdialoguecrimsoncaravanalicemclaffertytopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A pity. I guess I'll have to find some other way to acquire her caravan's assets. Thanks for letting me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanAliceMcLaffertyTopic038",
+   "prompt": "Cass isn't around anymore, so I won't be able to complete the negotiation for you."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "It's been a pleasure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "alice_mclafferty"
+}

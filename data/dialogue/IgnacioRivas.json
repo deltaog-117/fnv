@@ -1,0 +1,748 @@
+{
+ "page": "IgnacioRivas.txt",
+ "speaker": "Ignacio Rivas",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What have you done? Get away from me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's unusual to see a new face here. Are you a soldier, or a scientist?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your organization will doom all of us.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "What can I help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS03IgnacioArchimedesIsAWeapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. And the technology they have in this facility is like nothing I've seen. Some of it reminds me of Enclave equipment, but more advanced.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A weapon based upon it would be catastrophic, no matter who claimed it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's no wonder the Brotherhood wouldn't give it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You think ARCHIMEDES is a weapon they built here."
+  },
+  {
+   "id": "VMS03IgnacioDivertedPower",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I saw that on the monitors here. And you sent it to everyone. Very admirable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that the NCR has more or less what they want, hopefully their curiosity about the plant is satisfied and they'll dig no deeper.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Followers will be grateful. Here, take these, as a parting gift. I hope you'll find them useful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I saw that on the monitors here. And you sent it to Freeside, where power is in short supply. A respectable decision.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that the NCR has more or less what they want, hopefully their curiosity about the plant is satisfied and they'll dig no deeper.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Followers will be grateful. Here, take these, as a parting gift. I hope you'll find them useful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I saw that on the monitors here. It's strange, but I can't find where on the grid the power is being sent to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nevertheless, hopefully the NCR's curiosity is satisfied now that the plant's output is improved. Here, accept these, for your efforts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I diverted power to the grid."
+  },
+  {
+   "id": "VMS03IgnacioDrifter",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Then you must have some special business here, for them to have let you through.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "More of a drifter."
+  },
+  {
+   "id": "VMS03IgnacioInterestScientific",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then we have that in common. Whom do you typically work with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "My interest in this place is scientific."
+  },
+  {
+   "id": "VMS03IgnacioKeepPeace",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's reassuring, although many who've made that claim to the Followers of the Apocalypse over the years have had less than pure intentions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if it's really as you say, then take my advice. This installation carries with it dangers that no one here has realized.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take care what you do here, and who you listen to. Some things are best left buried with the old world.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's reassuring, although many who've made that claim over the years have had less than pure intentions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if it's really as you say, then take my advice. This installation carries with it dangers that no one here has realized.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take care what you do here, and who you listen to. Some things are best left buried with the old world.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I just do what's necessary to keep the peace."
+  },
+  {
+   "id": "VMS03IgnacioMoreAboutFollowers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Humanity lost many things after the war. Methods of agriculture, techniques for survival.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We took it upon ourselves to piece together this knowledge and bring it back to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me more about the Followers of the Apocalypse."
+  },
+  {
+   "id": "VMS03IgnacioNCRDoesntKnow",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not yet. By some miracle they've hired an imbecile to try and decipher the systems here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's spent months working at one console trying to get the solar reflectors to track the sun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What he doesn't know is that the only thing the console controls is the plant's intercom system.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I tried to tell him, but he insisted that the largest console had to be the most important. Still, it's only a matter of time.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The NCR doesn't know about the weapon?"
+  },
+  {
+   "id": "VMS03IgnacioNCREnlistedMe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I would say do it. As long as the power of this plant is committed to the regional grid and not to a weapon, we are safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you are the one to restore output, then you can route the power where you choose, and they'll never be the wiser.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't get you past the security in the tower, but I can be of some help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've discovered a password for one of the mirror control terminals outside. You'll need it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're playing you for a fool. You'll die in that tower, just like their soldiers did. Why do you think they haven't taken care of this themselves?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The NCR asked me to help increase the plant's power output."
+  },
+  {
+   "id": "VMS03IgnacioNCRWantsHelp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Interesting. Forgive me for prying, but I'm curious. Are you with a particular group?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "They're looking for help getting this plant running."
+  },
+  {
+   "id": "VMS03IgnacioNotYourConcern",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Interesting. Forgive me for prying, but I'm curious. Are you with a particular group?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's not your concern."
+  },
+  {
+   "id": "VMS03IgnacioOverloaded",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So I saw. Shame to let the energy go to waste, but on the other hand, now we can rest easy. Here, accept these, for your efforts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I overloaded the plant. No one will be able to use it to power a weapon."
+  },
+  {
+   "id": "VMS03IgnacioPeace",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's reassuring, although many who've made that claim to the Followers of the Apocalypse over the years have had less than pure intentions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if it's really as you say, then take my advice. This installation carries with it dangers that no one here has realized.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take care what you do here, and who you listen to. Some things are best left buried with the old world.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's reassuring, although many who've made that claim over the years have had less than pure intentions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if it's really as you say, then take my advice. This installation carries with it dangers that no one here has realized.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take care what you do here, and who you listen to. Some things are best left buried with the old world.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Peace."
+  },
+  {
+   "id": "VMS03IgnacioRivasTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're right. I'm sorry. That imbecile in the next room has me on edge. I used to be more fun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm still passionate about my work though. Otherwise I wouldn't be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm in the Followers of the Apocalypse. How about you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It'll be more fun if we keep it a mystery. Besides, I'm more interested in you."
+  },
+  {
+   "id": "VMS03IgnacioRivasTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're scattered, mostly. We go where we're needed. Our largest presence is in Freeside at Old Mormon Fort.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Other than that, I know Dr. Usanagi set up a practice near the Crimson Caravan. And a man we trained is operating out of the Aerotech building.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Another man, Tom Anderson, was looking into water supply problems in Westside. But that was a while ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where are the Followers based around here?"
+  },
+  {
+   "id": "VMS03IgnacioRivasTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We did, for a time. But our goals differ. The NCR only cares to expand their wealth and their reach.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For us, territorial boundaries mean nothing. And prosperity has to be for everyone, not just citizens of the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So a parting was inevitable. While the NCR pushes east, we clean up the mess they leave behind. Try to provide some stability.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do the Followers work together with the NCR?"
+  },
+  {
+   "id": "VMS03IgnacioRivasTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Other things weren't lost, but were blocked from our collective memory. Knowledge of what we're capable of, and how things spiral out of control.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's in our nature to want to forget truths that keep us awake at night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And for that reason it's all the more important that the Followers walk the wastes to remind people of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Go on."
+  },
+  {
+   "id": "VMS03IgnacioRivasTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "By all means.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have another question."
+  },
+  {
+   "id": "VMS03IgnacioRivasTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would think you'd know better than I. But perhaps they kept their operation here a secret, even from members of their own order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They weren't here for me to ask, but I doubt they were here for electricity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When the NCR first came here, it was under Brotherhood control. They usually steer clear of one another, but something here changed their minds.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Brotherhood's interest in Pre-War technology has always been in weapons. It's likely they were trying to reclaim ARCHIMEDES when the NCR arrived.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Brotherhood of Steel knew about ARCHIMEDES?"
+  },
+  {
+   "id": "VMS03IgnacioRivasTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keeping watch, mostly. Trying to make sure the dangers of this plant are minimized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why are you still here?"
+  },
+  {
+   "id": "VMS03IgnacioSoldier",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that explains it. NCR? Who do you fight for? {Playing his cards close to the vest.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm a soldier."
+  },
+  {
+   "id": "VMS03IgnacioTryNotToGetInvolved",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, but there's no avoiding it. You can only outrun the choice for so long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take now, for instance. You are inside a facility with lost technology, some of it very dangerous.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unless you turn and leave right now, you'll be very much involved in the lives of people you've never seen or met.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I try not to get involved."
+  },
+  {
+   "id": "VMS03IgnacioWantWhatYouWant",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's reassuring, although many who've made that claim over the years have had less than pure intentions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if it's really as you say, then take my advice. This installation carries with it dangers that no one here has realized.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take care what you do here, and who you listen to. Some things are best left buried with the old world.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want what you want."
+  },
+  {
+   "id": "VMS03IgnacioWar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's... an unfortunate mistake.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "As a Follower of the Apocalypse, I've studied it all my life, but I'll never understand how people don't foresee what lies ahead on that path.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's... an unfortunate mistake.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I've studied it all my life, but I'll never understand how people don't foresee what lies ahead on that path.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "War."
+  },
+  {
+   "id": "VMS03IgnacioWhatMoreThanAPlant",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't entirely know. Our records on the company that built this place suggest that their dealings were not only in energy, but also in weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I've seen equipment here marked with symbols used by the Pre-War military. Targeting computers. Shock sensors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A codeword comes up repeatedly in the papers I've looked through here. ARCHIMEDES.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What more is there to this place than a power plant?"
+  },
+  {
+   "id": "VMS03IgnacioWhereRoutePower",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, the NCR has their own designs for it, no doubt. But resist the urge to send it only to the thriving communities.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The need for power is great everywhere. Distributing it evenly is the most rational and humane choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where should I route the power?"
+  },
+  {
+   "id": "VMS03IgnacioWhyAreYouHere",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was sent here when we saw that the NCR had taken it. We have no record of the facility, but its original builders were cause for concern.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm to determine the threat level of this place and do everything in my power to prevent the revival of any dangerous Pre-War technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR let me stay because they are desperate for answers about this place, but I've kept them in the dark.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm a visiting scholar. Solar power technology may be important to our future and I was sent to research it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why are you here?"
+  },
+  {
+   "id": "VMS03IgnacioWhyTrustMe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm a man of letters. I'd be torn to pieces by the security system they have in that tower. I'd never reach the mainframe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But eventually the NCR will, or if not them, Caesar's Legion. They will use this place for war.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Because the possibility exists you might do anything else, you're the only choice I have.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why would you trust me with this?"
+  },
+  {
+   "id": "VMS03IgnacioWithBrotherhood",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Brotherhood? I never thought I'd say it, but I'm glad you're here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm a member of the Followers of the Apocalypse, and for once we might want the same thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This place houses technology beyond anything I've seen. I'm afraid it could be dangerous if either of the warring factions here learns how to use it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Brotherhood? I never thought I'd say it, but I'm glad you're here. For once our organizations may want the same thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This place houses technology beyond anything I've seen. I'm afraid it could be dangerous if either of the warring factions here learns how to use it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm in the Brotherhood of Steel."
+  },
+  {
+   "id": "VMS03IgnacioWithLegion",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then may you die in his service. I have nothing to say to you.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I serve Caesar."
+  },
+  {
+   "id": "VMS03IgnacioWithNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That makes sense. It is their facility, after all. At least as long as they can hold it. As for me, I'm with the Followers of the Apocalypse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm with the NCR."
+  },
+  {
+   "id": "VMS03IgnacioWithNoOne",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then for everyone's sake, I hope you serve a worthy master. Are you a maker of war, or peace?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "My only true allegiance is to myself."
+  },
+  {
+   "id": "VMS03IgnacioYouFirst",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Very well. Yes. I'm part of the Followers of the Apocalypse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're not familiar, we seek peace and the spread of knowledge. Knowledge that must never be lost to the world.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now your turn.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This is your turf. For all I know you could have me killed for my allegiance. Who are you with?"
+  },
+  {
+   "id": "VMS03IgnacioYouFirst",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I would, but I wouldn't want to influence your answer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Uh... you first."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hello.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

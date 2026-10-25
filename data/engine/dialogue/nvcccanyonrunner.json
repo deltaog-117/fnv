@@ -1,0 +1,329 @@
+{
+ "id": "nvcccanyonrunner",
+ "speaker_name": "Canyon Runner",
+ "source": "NVCCCanyonRunner.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see you bear the Mark of {KAI-zar} Caesar! Cursor {Luh-CUL-us} Lucullus awaits you at the docks!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KAI-zar} Caesar does not like to be kept waiting. I would find Cursor {Luh-CUL-us} Lucullus quickly and travel to The Fort, if I were you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He should still be waiting at the docks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATIN} {AH-way} Ave. Have you come to sell or trade for captures?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{AH-way} Ave. How goes it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "topics_topic",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{scoffing} This isn't the total we agreed upon. Don't waste my time, wastelander.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Could we go lower than 300 caps?"
+  },
+  {
+   "key": "topics_topic_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{good-humored} No, no, no - they haven't yet earned the right to be called \"slaves\"! Those three in the pen are captures, nothing more.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{as though talking about animal training} I'm a Slavemaster, so I know what I'm talking about. Back at the Fort, I'd have those three half-broken and well on their way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But this is just a holding area, so all I do is assess their fitness and decide whether to send them on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "By \"captures,\" do you mean \"slaves\"?"
+  },
+  {
+   "key": "topics_topic_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {alarmed, trouble pronouncing it} Pustulah what? Is that contagious? That doesn't sound good at all!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> Any fool can see that girl has all the symptoms of Pustular Hypomyalgia!",
+   "label": "<SPEECH - player tells CR the daughter has an incurable STD>"
+  },
+  {
+   "key": "topics_topic_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED]I think my Latin is better than yours. I inspect all the captives myself, and there was no \"dentata.\"",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "But the girl is sick. With classic symptoms of, uh... Vagina Dentata?",
+   "label": "<SPEECH - player tells CR the daughter has an incurable STD>"
+  },
+  {
+   "key": "topics_topic_5",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A fair price. Always best to have caps on hand in case traders stop by.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's the key to their collars. You want to take those off before you've gone far, trust me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can pay you 300 caps."
+  },
+  {
+   "key": "topics_topic_6",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Seems I'm fortunate to get that much for them, given the circumstances! {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, this is the key to their collars. You'll want to take those off before you go far, trust me. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seems I'm fortunate to get that much for them, given the circumstances! {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, this is the key to their collars. You'll want to take those off before you go far, trust me. {DUPLICATE?}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{scoffing} This isn't the total we agreed upon. Don't waste my time, wastelander.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll give you 150 caps for the lot."
+  },
+  {
+   "key": "topics_topic_7",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{the player's ignorance is almost comical} Why would it bother me to enslave these wretches? They have no purpose, no creed, no honor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They live in pitiful squalor, undisciplined, intemperate. To enslave them is to save them - to give them purpose, and virtue.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Ho-NES-tas, In-DUS-tree-ah, Proo-DEN-tee-ah} Honestas, Industria, Prudentia - even the virtues of slaves are beyond the Dissolute on this side of the river.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It doesn't bother you, enslaving people?"
+  },
+  {
+   "key": "topics_topic_8",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please do. An outbreak of {trouble pronouncing it} pustulah-whatever is the last thing we need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll come back if I want to buy them."
+  },
+  {
+   "key": "topics_topic_9",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a weak bunch, to be honest. I'd rather have extra currency to buy supplies or better captures off traders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a boy, too old to be trained as a Legionary. Normally they have to die, but he's too frail to make trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The old woman's dried up, but she could keep house or do gardening - if she can learn to keep her mouth shut.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The girl's the only one of real value, young enough to breed, not hideous to look at. What's your offer for the lot?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How much would it cost to buy the three \"captures\"?"
+  },
+  {
+   "key": "topics_topic_10",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me know if you change your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let me think about it."
+  },
+  {
+   "key": "topics_topic_11",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was easy. The Colorado is narrow here, and when the Profligates abandoned Searchlight, there was no one to guard the crossing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's just a small outpost, but we keep busy. Raiding parties go out, new captures come in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did the Legion set up a camp on this side of the river?"
+  },
+  {
+   "key": "topics_topic_12",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{proudly} I have Blackfoot in me, the first tribe that {KAI-zar} Caesar ever led in battle - the tribe that formed the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If not for him, we'd still be living in tents or shacks, scavenging for food like animals. If we were alive at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did you join Caesar's Legion?"
+  },
+  {
+   "key": "topics_topic_13",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{\"Wall-ae\"} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "topics_topic_14",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The best Cursor in the Legion. You'll reach Fortification Hill without incident, that's for sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{envious} Wait until you see the encampment, how massive it is. And a personal audience with mighty Caesar - glorious! {KAI-zar}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who is Cursor Lucullus?"
+  },
+  {
+   "key": "topics_topic_15",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{patiently explaining} Captures lose any claim to the names they called themselves when they let themselves be taken.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If they're fortunate enough to become slaves, a new name will be given to them - one they can be proud of.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you have any \"captures\" with the last name, \"Weathers?\""
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{\"Wall-ae\"} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{AH-way} Ave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "canyon_runner"
+}

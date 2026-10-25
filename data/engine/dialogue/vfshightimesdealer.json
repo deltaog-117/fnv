@@ -1,0 +1,210 @@
+{
+ "id": "vfshightimesdealer",
+ "speaker_name": "Dixon (Fallout: New Vegas)",
+ "source": "VFSHighTimesDealer.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Looking for a fix, man? I got what you need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, man. Those cats are out of their domes addicted to my shit. They can't get enough. Pretty hilarious to watch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic000",
+   "prompt": "Do you know anything about Bill or Jacob?"
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a look, baby.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic001",
+   "prompt": "What are you selling?"
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Aw, you're such a saint.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You know what? I might be willing to stop if there is something in it for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic006",
+   "prompt": "I need you to stop supplying Bill and Jacob."
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "300 caps and I'll stop selling to them. Otherwise, it is just too much fun watching them spiral downward.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic007",
+   "prompt": "Maybe some caps could persuade you to leave them alone?"
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ooo, I always enjoy a good scrap!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic008",
+   "prompt": "<Attack> Screw that. It'd be a lot cheaper and easier for me to kill you.",
+   "label": "<Attack>"
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, nice doing business with you, Mr. Moneybags.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good luck getting them healthy. If they don't get a whole lot of fixer soon, withdrawal will kill them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, nice doing business with you, Mrs. Moneybags.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good luck getting them healthy. If they don't get a whole lot of fixer soon, withdrawal will kill them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic009",
+   "prompt": "All right. Take the caps and leave them alone."
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Wait, man! You can't go around saying shit like that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, I get your point. You won't have to worry about me supplying those two any more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic010",
+   "prompt": "So the NCR is supplying you with cheap chems? To keep Freeside down?",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic010_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Wow, you really suck at this don't you? Go bully some molerats, jackass.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic010",
+   "prompt": "If you don't leave them alone... I'll... I'll tell on you!",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh, you sorry sad sack. Come back when you've got the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic011",
+   "prompt": "Nevermind. I don't have enough to cover that."
+  },
+  {
+   "key": "vfreeformfreesidevfshightimesdealertopic013duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those fools are from NCR. I love seeing those squatters in agony.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were doing just fine before those shits came here and made a mess of things. We don't need NCR eggheads wandering around confusing things.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSHighTimesDealerTopic013DUPLICATE000",
+   "prompt": "Are you trying to kill your customers?"
+  },
+  {
+   "key": "vfshightimesdealerdone",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Get lost.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSHighTimesDealerDone",
+   "prompt": "VFSHighTimesDealerDone"
+  },
+  {
+   "key": "vfshightimesdealerhello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Friggin' troll NCR squatters. A bunch of mouth-breathing wastes of space, if you ask me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSHighTimesDealerHello",
+   "prompt": "VFSHighTimesDealerHello"
+  }
+ ],
+ "speaker": "dixon"
+}

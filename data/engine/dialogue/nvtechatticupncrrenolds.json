@@ -1,0 +1,222 @@
+{
+ "id": "nvtechatticupncrrenolds",
+ "speaker_name": "Renolds",
+ "source": "NVTechatticupNCRRenolds.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank goodness you're here. My squad needs help.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "You're the courier I've heard so much about. My squad needs your assistance.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "So any word on my friends?",
+     "emotion": "neutral",
+     "intensity": 20
+    },
+    {
+     "text": "I'm glad to see a fellow trooper. My squad is in trouble.",
+     "emotion": "neutral",
+     "intensity": 20
+    },
+    {
+     "text": "Need something?",
+     "emotion": "neutral",
+     "intensity": 20
+    },
+    {
+     "text": "The Legion are trouble. You should watch out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The road is dangerous. You better stay sharp.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My squad was ambushed by a Legion party lead by that bastard Alexus.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "He was taking us into the mine up ahead, but I managed to get away. I need help to get them out.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic000",
+   "prompt": "Why are you out here alone?"
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you want to be that way I'll leave you alone.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic001",
+   "prompt": "I'm busy right now."
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's already more than I was expecting. I'll keep watch to make sure no more Legion come up the road. Good Luck.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic002",
+   "prompt": "I'll take a look and see if there's anything I can do."
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's a slim chance. But if the Legion wanted us dead, our heads would already be on pikes.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic003",
+   "prompt": "You sure they're still alive?"
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I understand. Here's what I have on me. Now go before it's too late.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] This is an emergency. How can you be asking for payment?",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic004",
+   "prompt": "Extra encouragement would also increase their chances."
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's no way I can take on the Legion by myself. I'll be here if you change your mind.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic006",
+   "prompt": "The odds are too small. You're on your own."
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? I can't thank you enough. I'll wait here and watch the road. Good luck in there.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic008",
+   "prompt": "I changed my mind. I'll save your squad."
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They must have run straight back to camp. I bet they didn't even stop and say thanks.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "The NCR could use someone like you. Stop by our camps if you're looking for work.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic009",
+   "prompt": "Your friends are safe."
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can you hurry? I know those Legion bastards are tough but my friends won't last long with all the radiation in there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic010",
+   "prompt": "They're still in the mine."
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Were? What do you mean were?",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic012",
+   "prompt": "Were they the NCR hostages in the mine?"
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Legion bastards. They'll pay for that.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic013",
+   "prompt": "They're already dead."
+  },
+  {
+   "key": "vtechatticupnvtechatticupncrrenoldstopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was worried Alexus had already thrown them down a mineshaft. I'll run by camp and see how they're doing when I get a chance. Thanks for the help.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VTechatticupNVTechatticupNCRRenoldsTopic014",
+   "prompt": "I got them out alive."
+  }
+ ],
+ "speaker": "private_renolds"
+}

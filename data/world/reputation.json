@@ -1,0 +1,1790 @@
+{
+ "bump_breakdown": {
+  "very_minor": 1,
+  "minor": 2,
+  "average": 4,
+  "major": 7,
+  "very_major": 12
+ },
+ "benefits": [
+  {
+   "faction": "Followers of the Apocalypse",
+   "reputation": "Idolized",
+   "effect": "Julie Farkas will give the player character the Followers lab coat and a key to the Followers safehouse, providing they have completed High Times and donated enough chems to fill one supply need."
+  },
+  {
+   "faction": "Followers of the Apocalypse",
+   "reputation": "Positive",
+   "effect": "Arcade Gannon can become the player character's companion."
+  },
+  {
+   "faction": "Followers of the Apocalypse",
+   "reputation": "Negative",
+   "effect": "Arcade Gannon will refuse to be the player character's companion."
+  },
+  {
+   "faction": "Brotherhood of Steel",
+   "reputation": "Positive",
+   "effect": "The Brotherhood of Steel will give the player character a key to the Brotherhood of Steel safehouse."
+  },
+  {
+   "faction": "Brotherhood of Steel",
+   "reputation": "Positive",
+   "effect": "They will replenish an ammunition crate next to Ramos' room with random energy weapons ammunition every three days if one has a positive reputation. This coincides with the completion of Still in the Dark (for either side)."
+  },
+  {
+   "faction": "Brotherhood of Steel",
+   "reputation": "Negative",
+   "effect": "Veronica will refuse to be one's companion.\nBrotherhood night patrols will be hostile and attack the player."
+  },
+  {
+   "faction": "rowspan=2 | Boomers",
+   "reputation": "Idolized",
+   "effect": "Allows progress in the quest Volare!."
+  },
+  {
+   "faction": "Caesar's Legion",
+   "reputation": "Liked",
+   "effect": "Lucius will give a key to the Caesar's Legion Safehouse."
+  },
+  {
+   "faction": "Caesar's Legion",
+   "reputation": "Accepted",
+   "effect": "Lucius will teach the player character the special Legion Assault Unarmed move with an Unarmed skill of 50 or higher."
+  },
+  {
+   "faction": "Caesar's Legion",
+   "reputation": "Positive",
+   "effect": "Required to complete the quest I Put a Spell on You in favor of the Legion."
+  },
+  {
+   "faction": "Caesar's Legion",
+   "reputation": "Positive",
+   "effect": "Required to help Silus escape from Camp McCarran."
+  },
+  {
+   "faction": "Caesar's Legion",
+   "reputation": "Positive",
+   "effect": "Boone and Arcade Gannon will refuse to be the player character's companion."
+  },
+  {
+   "faction": "Caesar's Legion",
+   "reputation": "Neutral or Positive",
+   "effect": "The Legion will also provide various items within boxes outside of Cottonwood Cove; for more information, see the quests Caesar's Hire and Caesar's Favor."
+  },
+  {
+   "faction": "Caesar's Legion",
+   "reputation": "Negative",
+   "effect": "The unmarked quest Caesar's Foe will occur: Legionary assassins will be sent to kill the player character throughout the wasteland."
+  },
+  {
+   "faction": "Caesar's Legion",
+   "reputation": "Negative",
+   "effect": "Beware the Wrath of Caesar! will fail, permanently locking out the Legion main questline with all faction members becoming enemies of the player character."
+  },
+  {
+   "faction": "Great Khans",
+   "reputation": "Positive",
+   "effect": "Required to complete Diane's tasks in Aba Daba Honeymoon, unless the player character is wearing Khan faction armor when they speak to her."
+  },
+  {
+   "faction": "Great Khans",
+   "reputation": "High",
+   "effect": "Required to be named Papa Khan's heir after completion of We Are Legion."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Idolized",
+   "effect": "Allows the player character to convince the mercenaries in Unfriendly Persuasion to leave without fighting if they do not pay them off or have high Speech."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Liked",
+   "effect": "James Hsu will give the player character a key to the NCR Ranger safehouse."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Liked",
+   "effect": "Allows the player character to ride the monorail without the NCR becoming hostile if one does not wear NCR faction armor."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Liked",
+   "effect": "Allows the player character to convince each camp in No, Not Much to send reinforcements to Bitter Springs without completing their quests."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Accepted",
+   "effect": "Allows one access to Silus during Silus Treatment."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Positive",
+   "effect": "An NCR Ranger will give the player character the NCR emergency radio."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Positive",
+   "effect": "Allows access into HELIOS One without high Speech, Science or Sneak."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Positive",
+   "effect": "Required along with a Speech of 50 to trade with Bardon in Hoover Dam if one does not follow the NCR main quest line up to Colonel Moore."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Negative",
+   "effect": "The unmarked quest Most Wanted will occur: NCR Ranger hit squads will warn the player character to change their reputation with NCR within three days, or they will come after them to kill the player character throughout the wasteland. If Vilified, they will be immediately hostile."
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Negative",
+   "effect": "Don't Tread on the Bear! will fail, permanently locking out the NCR main questline with all faction members becoming enemies of the player character. (The quest can fail in other ways but this will happen if it fails due to low reputation.)"
+  },
+  {
+   "faction": "New California Republic",
+   "reputation": "Negative",
+   "effect": "Cass and Boone will refuse to be the player character's companion."
+  },
+  {
+   "faction": "Powder Gangers",
+   "reputation": "Liked",
+   "effect": "Powder gang merchants will sell to the player character with 1-to-1 exchange rate."
+  },
+  {
+   "faction": "Powder Gangers",
+   "reputation": "Positive",
+   "effect": "Eddie will give the player character one stick of dynamite, four pistol powders and four rifle powders every three days.\n|}"
+  }
+ ],
+ "entities": [
+  {
+   "name": "Boomers",
+   "ranges": [
+    "0-7",
+    "8-24",
+    "25-49",
+    "50+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "consequences": [
+    {
+     "text": "If Accepted, Pearl will give permission for Janet to enter Nellis during Young Hearts."
+    },
+    {
+     "text": "If Liked, the player character will be able to trade with Argyll and the Boomer munitions manager."
+    },
+    {
+     "text": "With a fame score of at least 40, the player character can start the final phase of the quest Volare!."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, Pearl will give permission for the howitzer firing mechanism to be taken by the player character for I Hear You Knocking."
+    }
+   ],
+   "gains": [
+    {
+     "text": "Donate scrap metal to Jack (+1 each).",
+     "delta": 1
+    },
+    {
+     "text": "Donate missiles (any type) to the Boomer munitions manager (+1 for one, +2 for five, +7 for ten)."
+    },
+    {
+     "text": "Mini Boomers:"
+    },
+    {
+     "text": "Mini Boomers: Yield to the Red-Brick Mini Boomer (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Mini Boomers: Give a Rocket souvenir or a Dinky the T-Rex to a Mini Boomer (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Mini Boomers: Respond to a Mini Boomer with: \"Oh mighty Fantoma, I hope one day I can fight for the forces of good by your side!\" (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Mini Boomers: Respond to a Mini Boomer with: \"I have no money for your toll, surely you will let a fair traveller pass through your gate.\" (+1)",
+     "delta": 1
+    },
+    {
+     "text": "Mini Boomers: Respond to a Mini Boomer with: \"I bet when you get bigger you'll be able to fly your own plane.\" (+1)",
+     "delta": 1
+    },
+    {
+     "text": "Mini Boomers: Respond to a Mini Boomer with: \"I'm a vicious velociraptor. ROAR!\" (+1)",
+     "delta": 1
+    },
+    {
+     "text": "Mini Boomers: Respond to a Mini Boomer with: \"You don't need toys, I bet you can get a fun game of Boomers and targets.\" (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Mini Boomers: Respond to a Mini Boomer with: \"That's right. I've battled giant mutated animals, crazed raiders, and braved many other dangers.\" (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Nellis Boomer Museum:"
+    },
+    {
+     "text": "Nellis Boomer Museum: Listen to Pete's story in the Nellis Boomer museum (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Nellis Boomer Museum: Follow up by questioning Pete about Boomer history and comment positively (+1 each, possibly +2 each depending on whether or not the skill check is passed alongside each of the six questions)."
+    },
+    {
+     "text": "Nellis Boomer Museum: Wrap up the interaction with Pete after having covered all six of the questions that can be directed at him (+4). (Not impacted by whether the comment made to him after each question was positive or negative)",
+     "delta": 4
+    },
+    {
+     "text": "Find Mr. Cuddles for Lindsay (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Offer additions to the Boomer school curriculum for the Boomer teacher with skill checks (+4 each).",
+     "delta": 4
+    },
+    {
+     "text": "Heal an injured Boomer at the Nellis medical station with a high Medicine skill (+7 each).",
+     "delta": 7
+    },
+    {
+     "text": "Complete Sunshine Boogie (+7 or +12 if the efficiency of the solar panels was also increased)."
+    },
+    {
+     "text": "Complete Ant Misbehavin' (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Young Hearts (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Volare! (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Lonesome Road by nuking both the NCR and the Legion (+12).",
+     "delta": 12
+    }
+   ],
+   "losses": [
+    {
+     "text": "Offer a Mini Boomer radioactive gum drops (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Offer the Red-Brick Mini Boomer Psycho (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Lie to Lindsay about Mr. Cuddles, regardless of Speech check (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Walk off during Pete's story in the Nellis Boomer Museum (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Ask questions of Pete about Boomer history and comment negatively on each of them (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Worsen the condition of an injured Boomer at the Nellis medical station due to a low Medicine skill (-2).",
+     "delta": -2
+    },
+    {
+     "text": "Kill an injured Boomer at the Nellis medical station due to a low Medicine skill (-7).",
+     "delta": -7
+    },
+    {
+     "text": "Attack a Boomer (-12).",
+     "delta": -12
+    },
+    {
+     "text": "Kill Pearl, Loyal, Argyll, Jack, or Raquel (Infamy set at -40)."
+    }
+   ]
+  },
+  {
+   "name": "Brotherhood of Steel",
+   "ranges": [
+    "0-2",
+    "3-9",
+    "10-19",
+    "20+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "consequences": [
+    {
+     "text": "If Smiling Troublemaker or better, the player character will be provided with energy ammo in a restocking crate in the Hidden Valley bunker."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, the player character will be able to tell Ignacio Rivas that they are a member of the Brotherhood."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, Torres will sell an extended array of goods."
+    },
+    {
+     "text": "If Idolized, Torres will sell her entire stock (due to an oversight in the amount of possible reputation gain in the base game, Idolized reputation is only possible with the completion of The End quest as part the Lonesome Road add-on)."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, one will be able to identify Christine Royce as a Brotherhood Scribe, bypassing a 6 Perception check."
+    },
+    {
+     "text": "If Mixed to Wild Child, Knight Torres will sell goods cheaper, though attempting this will block access to her extended inventory possible at only Idolized reputation, however."
+    },
+    {
+     "text": "With a reputation of Hated or lower, the player will be approached by a paladin at the entrance of the Hidden Valley Bunker, and the paladin will threaten the player, heavily implying that they will be attacked if a Brotherhood patrol encounters them on the surface. From this point on, the 1 a.m.-4 a.m. patrols will be hostile."
+    },
+    {
+     "text": "If Shunned to Merciful Thug, Veronica refuses to join as a companion, or if she is currently a companion, she will confront the player about this and leave, returning to the 188 Trading Post."
+    },
+    {
+     "text": "If Shunned to Merciful Thug, Veronica refuses to join as a companion, or if she is currently a companion, she will confront the player about this and leave, returning to the 188 Trading Post.: Restoring a neutral reputation status (black on table above) will allow for Veronica being recruited as a companion again."
+    },
+    {
+     "text": "If Shunned to Merciful Thug, Veronica refuses to join as a companion, or if she is currently a companion, she will confront the player about this and leave, returning to the 188 Trading Post.: If Vilified reputation is very quickly gained between the time it takes Veronica to confront the player while acting as a companion, the above-mentioned dialogue is skipped, and she will immediately turn hostile."
+    },
+    {
+     "text": "If Shunned to Merciful Thug, Veronica refuses to join as a companion, or if she is currently a companion, she will confront the player about this and leave, returning to the 188 Trading Post.: If Veronica had never been interacted with before becoming Vilified and is still at the 188 Trading Post, she will notice who the player is, and once spoken to, will become hostile. If she had been recruited as a companion beforehand, but had since returned to the 188 or Lucky 38, similar dialogue will occur, factoring in her already knowing the player, and then she will again turn hostile."
+    }
+   ],
+   "gains": [
+    {
+     "text": "Complete Pistol Packing (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Complete Still in the Dark with any outcome:"
+    },
+    {
+     "text": "Complete Still in the Dark with any outcome: Did not assist Hardin's plans to replace Elder McNamara as Elder of the Mojave Brotherhood of Steel, and therefore only assisted McNamara in his own tasks (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Still in the Dark with any outcome: Successfully assisted Hardin in replacing Elder McNamara as Elder of the Mojave Brotherhood of Steel with himself, and therefore did not assist McNamara in his own tasks (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Lonesome Road via The End quest, meaning that the missile launch was stopped (+12).",
+     "delta": 12
+    }
+   ],
+   "losses": [
+    {
+     "text": "Inform Ranger Dobson of the Brotherhood's presence at Hidden Valley during Still in the Dark (-12).",
+     "delta": -12
+    },
+    {
+     "text": "Activate the self-destruct sequence of the Hidden Valley bunker (-100).",
+     "delta": -100
+    }
+   ]
+  },
+  {
+   "name": "Caesar's Legion",
+   "ranges": [
+    "0-14",
+    "15-49",
+    "50-99",
+    "100+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "consequences": [
+    {
+     "text": "If any neutral (black in table above), but positive reputation holds the majority, followed by a 50 Unarmed check, Lucius will teach Legion Assault."
+    },
+    {
+     "text": "If any neutral (black in table above), but positive reputation holds the majority, the Legion will also provide various items within supply boxes outside of Cottonwood Cove, as part of the quests Caesar's Hire and Caesar's Favor."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, one can assist Captain Curtis (the Legion spy planted at Camp McCarran) in finding a scapegoat for his cover, during I Put a Spell on You to favour the Legion."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, one can assist Silus in escaping from Camp McCarran during Silus Treatment (positive reputation with the NCR is required to first gain access to Silus' interrogation room from Lieutenant Boyd, the NCR officer currently in charge of interrogating him)."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, Boone will refuse to join as a companion. There is no possible scene where Boone confronts the player about their actions like other companions since while Boone is a companion all Legion members become hostile to the player, therefore reputation gain with the Legion is rendered impossible."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, Arcade will refuse to join as a companion, or if he is currently a companion, he will confront the player about this and threaten to leave, returning to Old Mormon Fort unless the player verbally agrees to stop aiding the Legion further (any more Caesar's Legion reputation gain, regardless of how minor, will prompt a second confrontation with Arcade if he is still a companion, in which he will insist that he is leaving and gives the player no option to stop him)."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, Arcade will refuse to join as a companion, or if he is currently a companion, he will confront the player about this and threaten to leave, returning to Old Mormon Fort unless the player verbally agrees to stop aiding the Legion further (any more Caesar's Legion reputation gain, regardless of how minor, will prompt a second confrontation with Arcade if he is still a companion, in which he will insist that he is leaving and gives the player no option to stop him).: Dropping to a neutral reputation status (black on table above) will allow for Arcade being recruited as a companion again, despite his possible angered departure beforehand which caused him to leave."
+    },
+    {
+     "text": "If Liked or better, one will obtain the key to the Caesar's Legion Safehouse from Lucius when he is first spoken to again."
+    },
+    {
+     "text": "If Idolized, many named Legionaries will have unique greeting dialogue when spoken to; usually very positive."
+    },
+    {
+     "text": "If Good-Natured Rascal or better will one can identify that some of the deceased Marked men in the Hopeville missile silo bunker looked like Legion scouts, when talking to Ulysses during their conversation through ED-E at the end of The Silo (reputation level with the NCR must be lower than the Legion's, otherwise this option will be overridden with an NCR equivalent)."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can reaffirm to Ulysses that they realise that some of the Marked Men in Hopeville are former Legionaries, during their second conversation through ED-E at the end of The Job (reputation level with the NCR must be lower than the Legion's, otherwise this option will be overridden with an NCR or Vegas equivalent)."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can reaffirm to Ulysses that they realise that some of the Marked Men in Hopeville are former Legionaries, during their second conversation through ED-E at the end of The Job (reputation level with the NCR must be lower than the Legion's, otherwise this option will be overridden with an NCR or Vegas equivalent).: One can also then prompt further dialogue questioning Ulysses why the Marked Men are comprised of both Legion and NCR soldiers working together, despite the two sides normally being enemies, to which Ulysses will talk about how their feelings of abandonment and suffering have united both in a combined hatred."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can express sympathy for the Legionaries who perished at the Divide, when talking to Ulysses during their conversation through ED-E at the end of The Tunnelers (reputation level with the NCR must be lower than the Legion's, otherwise this option will be overridden with an NCR equivalent)."
+    },
+    {
+     "text": "If Idolized, one can make it easier to convince Ulysses to see reason during The Courier quest. Typically, a 90 Speech check, followed by another 100 Speech check, is required to convince Ulysses, However, if this reputation check succeeds, the 100 Speech check is later bypassed, and only the 90 Speech is required (reputation level with the NCR must be lower, and the player's Strip reputation level must be equal or lower, than the Legion's, otherwise this option will be overridden with an NCR or Vegas equivalent)."
+    },
+    {
+     "text": "Once Shunned to Merciful Thug, Caesar's Foe will trigger, regardless of what point in the main questline has been reached. Bands of Legionary assassins will attack the player at predetermined locations across the Mojave; all Legionary assassins will be immediately hostile, with the exception of the first occurrence, where they will at first approach the player peacefully and exclaim that Caesar has marked them for death, then turn hostile."
+    },
+    {
+     "text": "Once Shunned to Merciful Thug, Caesar's Foe will trigger, regardless of what point in the main questline has been reached. Bands of Legionary assassins will attack the player at predetermined locations across the Mojave; all Legionary assassins will be immediately hostile, with the exception of the first occurrence, where they will at first approach the player peacefully and exclaim that Caesar has marked them for death, then turn hostile.: If Vilified, and one has not encountered a Legionary assassin band prior, the exception mentioned in the point above never occurs; Legion assassins will be immediately hostile upon spawning."
+    },
+    {
+     "text": "If Vilified, Beware the Wrath of Caesar! will automatically trigger and fail regardless of main quest progression. This will also trigger Caesar's Foe if it had not started previously."
+    }
+   ],
+   "gains": [
+    {
+     "text": "During Cold, Cold Heart:"
+    },
+    {
+     "text": "During Cold, Cold Heart: Displaying admiration for the purity of the Legion's \"justice\" when first encountering Vulpes Inculta and witnessing the aftermath of the Legion's massacre of Nipton (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During Cold, Cold Heart: Telling Vulpes Inculta that Nipton \"got what was coming to them\" when first accepting the quest from him (+1).",
+     "delta": 1
+    },
+    {
+     "text": "During Eye for an Eye:"
+    },
+    {
+     "text": "During Eye for an Eye: Betray First Sergeant Astor by giving the NCR radio bug to Aurelius of Phoenix (+4).",
+     "delta": 4
+    },
+    {
+     "text": "During Eye for an Eye: Complete the quest by returning to Astor to hand him the old Legion paperwork from Aurelius (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Cottonwood Cove:"
+    },
+    {
+     "text": "Cottonwood Cove: Teach Decanus Severus to disarm and reuse NCR mines (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Cottonwood Cove: Teach Decanus Severus how to make powder charges (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Cottonwood Cove: Handing NCR dogtags to Aurelius of Phoenix despite the lack of a reward as part of the repeatable unmarked quest Arizona Scavenger (Varies, see quest page for a detailed breakdown of the amount gained from each bundle of dogtags depending on the amount)."
+    },
+    {
+     "text": "Cottonwood Cove: Trading NCR dogtags to Decanus Severus in exchange for concrete rewards such as weapons, armor, food, or ammunition as part of the repeatable quest Arizona Scavenger (Varies, see quest page for a detailed breakdown of the amount gained from each type of reward item)."
+    },
+    {
+     "text": "During Render Unto Caesar:"
+    },
+    {
+     "text": "During Render Unto Caesar: Flattering Caesar by inquiring about \"serving the mighty Caesar\" prior to receiving his order to go into the Securitron vault during the first step of Render Unto Caesar (+1).",
+     "delta": 1
+    },
+    {
+     "text": "During Render Unto Caesar: Speaking to Caesar upon returning from the Securitron vault after either following his instructions to destroy the vault or upgrading the Securitron army on behalf of Mr. House and letting Caesar falsely believe that the loud noises in the vault meant that the place was destroyed (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Achieve victory in various fights inside the Legion arena at the Fort (male player characters only):"
+    },
+    {
+     "text": "Achieve victory in various fights inside the Legion arena at the Fort (male player characters only): Three official rounds organized by Otho as part of the unmarked quest Laurifer Gladiator:"
+    },
+    {
+     "text": "Achieve victory in various fights inside the Legion arena at the Fort (male player characters only): Defeat the two slaves armed with machetes (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Achieve victory in various fights inside the Legion arena at the Fort (male player characters only): Defeat Sergeant Andrews, a captured NCR soldier armed with a machete (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Achieve victory in various fights inside the Legion arena at the Fort (male player characters only): Defeat Ranger Stella, a captured NCR ranger that has a great proficiency when it comes to unarmed combat (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Achieve victory in various fights inside the Legion arena at the Fort (male player characters only): Choose to fight Benny in an arena battle and defeat him during Render Unto Caesar (+1). (Only possible if he survived during Ring-a-Ding-Ding!)",
+     "delta": 1
+    },
+    {
+     "text": "Achieve victory in various fights inside the Legion arena at the Fort (male player characters only): Defeat Lupa in the arena as part of Nothin' But a Hound Dog after getting Antony's agreement to give her an honorable death in combat (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Achieve victory in various fights inside the Legion arena at the Fort (male player characters only): Fight in the arena against either two or four of Antony's Legion mongrels in order to get him to agree to release Sergeant Teddy from captivity so that he can be given back to Melody (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Return Sergeant Teddy as part of the unmarked quest Saving (or Savaging) Sergeant Teddy only to suddenly tear him apart in front of Melody (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Teach Siri at the Fort how to make healing powders more efficiently as part of the unmarked quest Powder to the People. (+1)",
+     "delta": 1
+    },
+    {
+     "text": "Complete I Hear You Knocking for Lucius at the Fort (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete The Finger of Suspicion for Vulpes Inculta at the Fort with any outcome:"
+    },
+    {
+     "text": "Complete The Finger of Suspicion for Vulpes Inculta at the Fort with any outcome: Killed the three Omerta thugs (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Complete The Finger of Suspicion for Vulpes Inculta at the Fort with any outcome: Convinced the Omerta thugs to leave peacefully by threatening them and letting them know that they wouldn't want to mess with the Legion (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Complete The Finger of Suspicion for Vulpes Inculta at the Fort with any outcome: Tricked the Omerta thugs into leaving before turning around and murdering them in cold blood while they're on their way out (+3).",
+     "delta": 3
+    },
+    {
+     "text": "Complete I Put a Spell on You with any outcome which favored the Legion, which can be done by discussing the matter with Vulpes Inculta at the Fort:"
+    },
+    {
+     "text": "Complete I Put a Spell on You with any outcome which favored the Legion, which can be done by discussing the matter with Vulpes Inculta at the Fort: Blew up the monorail, but failed to frame a scapegoat to secure Captain Curtis' cover (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete I Put a Spell on You with any outcome which favored the Legion, which can be done by discussing the matter with Vulpes Inculta at the Fort: Blew up the monorail and succeeded in framing a scapegoat to secure Captain Curtis' cover (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Et Tumor, Brute? for Caesar at the Fort with any outcome where Caesar survives; except by forcing Arcade Gannon into becoming Caesar's personal physician, which will result in no reputation change:"
+    },
+    {
+     "text": "Complete Et Tumor, Brute? for Caesar at the Fort with any outcome where Caesar survives; except by forcing Arcade Gannon into becoming Caesar's personal physician, which will result in no reputation change: Used the repaired Auto-Doc (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Et Tumor, Brute? for Caesar at the Fort with any outcome where Caesar survives; except by forcing Arcade Gannon into becoming Caesar's personal physician, which will result in no reputation change: Successfully performed surgery on Caesar by passing a 9 Luck or 75 Medicine skill check (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Arizona Killer for Caesar at the Fort (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Lonesome Road by nuking the NCR (+12).",
+     "delta": 12
+    }
+   ],
+   "losses": [
+    {
+     "text": "Completing Back in Your Own Backyard in any way (-2).",
+     "delta": -2
+    },
+    {
+     "text": "Reporting to Colonel Moore or Mr. House that the Omertas have been dealt with in For the Republic, Part 2 or The House Always Wins IV respectively. Completing Wild Card: Change in Management and Wild Card: Side Bets as part of the Yes Man questline will earn the same consequence too."
+    },
+    {
+     "text": "Speaking to Caesar after completing either Restoring Hope, How Little We Know by siding with Cachino, Oh My Papa by breaking their Legion alliance, or I Put a Spell on You will earn the player character a warning that further crimes against the Legion warrant death. Refusal to confess your crimes when receiving this warning, or by completing one or more of the other above mentioned outcomes, and speaking to Caesar again will cause a huge reputation loss and the Legion will turn hostile (-100). (Certain scripts, such as Caesar's dialogue on House's death, will override his 'warning' dialogues.)",
+     "delta": -100
+    },
+    {
+     "text": "Caesar dies in any circumstance, except during his operation in Et Tumor, Brute? and one passes either skill check with Lucius to avoid the blame (-100). (Even if one was previously Liked or Idolized by Caesar's Legion, resulting in Soft-Heated Devil or Wild Child reputation, all Legion soldiers will be immediately hostile.)",
+     "delta": -100
+    },
+    {
+     "text": "Complete Lonesome Road by nuking the Legion (-100).",
+     "delta": -100
+    },
+    {
+     "text": "Complete Lonesome Road by nuking both the NCR and the Legion (-100).",
+     "delta": -100
+    }
+   ]
+  },
+  {
+   "name": "Followers of the Apocalypse",
+   "ranges": [
+    "0-7",
+    "8-24",
+    "25-49",
+    "50+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "consequences": [
+    {
+     "text": "If Smiling Troublemaker or better, Julie Farkas will offer the player character a discount on supplies."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, Tom Anderson can be convinced to confess to Corporal White's murder during The White Wash."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, Arcade Gannon can join the player character's party without further persuasion."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, Dr. Usanagi will give the player character a 5% discount and will pay 5% more for items."
+    },
+    {
+     "text": "Once Idolized, and at least one donated chem type has reached surplus as part of the quest Short-Term Treatment, the Friend of the Followers quest will trigger once Julie Farkas is spoken to again or was already in dialogue. She offer the player membership to the Followers as part of this quest; if the offer is accepted, she will give the player the Followers lab coat and the key to the Followers safehouse."
+    },
+    {
+     "text": "If Idolized, and the appropriate points in the main story have been reached (except during the Legion questline), for example reporting back to Colonel Moore that Mr. House has been eliminated as a threat, Julie Farkas can now be asked to have the Followers provide medical support to the NCR during the upcoming Second Battle of Hoover Dam. Farkas agreeing to this request is required to obtain the \"good ending\" for the Followers when siding with the NCR."
+    },
+    {
+     "text": "If Sneering Punk or worse, Arcade will refuse to join as a companion, or if he is currently a companion, he will confront the player about this and leave, returning to Old Mormon Fort."
+    },
+    {
+     "text": "If Sneering Punk or worse, Arcade will refuse to join as a companion, or if he is currently a companion, he will confront the player about this and leave, returning to Old Mormon Fort.: Rebuilding to a neutral reputation status (black on table above) will allow for Arcade to be recruited as a companion again, despite his possible angered departure beforehand which caused him to leave."
+    },
+    {
+     "text": "If Sneering Punk or worse, Arcade will refuse to join as a companion, or if he is currently a companion, he will confront the player about this and leave, returning to Old Mormon Fort.: If Arcade had not previously been recruited, and reputation was Merciful Thug or worse prior to regaining neutral reputation, Arcade will have to be convinced via Speech check, negative Intelligence check or the Confirmed Bachelor perk from then on. This is because no matter how much Fame is gained, the ability to recruit him by just Followers reputation will never be enough."
+    }
+   ],
+   "gains": [
+    {
+     "text": "Making a 500 cap donation to Dr. Usanagi at the New Vegas Medical Clinic (+4); see below for an explanation of the bug.",
+     "delta": 4
+    },
+    {
+     "text": "Convincing Emily Ortal to talk her relationship with Benny and responding in any polite way:"
+    },
+    {
+     "text": "Convincing Emily Ortal to talk her relationship with Benny and responding in any polite way: Choosing to respond \"Getting sucker punched by Benny happens to the best of us.\" (+1)",
+     "delta": 1
+    },
+    {
+     "text": "Convincing Emily Ortal to talk her relationship with Benny and responding in any polite way: Choosing to respond \"Alcohol is the only way Benny could ever get any action from a smart girl like you.\" or \"Don't be so hard on yourself. Life would be dull if it weren't for all the little mistakes.\" (+2)",
+     "delta": 2
+    },
+    {
+     "text": "Donate Fixer, Med-X and RadAway to Julie Farkas at the Old Mormon Fort as part of the repeatable unmarked quest Short-Term Treatment (+54 minimum, +72 maximum if the surplus of each of the three types of supplies is reached by donating the items in four batches of three):"
+    },
+    {
+     "text": "Donate Fixer, Med-X and RadAway to Julie Farkas at the Old Mormon Fort as part of the repeatable unmarked quest Short-Term Treatment (+54 minimum, +72 maximum if the surplus of each of the three types of supplies is reached by donating the items in four batches of three): Donate doses of either Med-X, Fixer, RadAway (+1 per single dose, +2 per two doses, +4 per three doses).",
+     "delta": 1
+    },
+    {
+     "text": "Donate Fixer, Med-X and RadAway to Julie Farkas at the Old Mormon Fort as part of the repeatable unmarked quest Short-Term Treatment (+54 minimum, +72 maximum if the surplus of each of the three types of supplies is reached by donating the items in four batches of three): Speak to Julie and attempt to donate some more of one of the types after having already donated ten doses of that particular type of supply prompting her to mention that she currently has a surplus of that particular supply thanks to the previous donations (+4 for each of the three types of supplies)."
+    },
+    {
+     "text": "Donate Fixer, Med-X and RadAway to Julie Farkas at the Old Mormon Fort as part of the repeatable unmarked quest Short-Term Treatment (+54 minimum, +72 maximum if the surplus of each of the three types of supplies is reached by donating the items in four batches of three): Speak to Julie after having donated ten doses of all three of types of supplies prompting her to announce that her short-term supply issues have been resolved and proceed to extend an invitation for joining the Followers of the Apocalypse (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Long-Term Care for Julie Farkas at Old Mormon Fort (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete High Times for Julie Farkas at Old Mormon Fort for any outcome with both Jacob Hoff and Bill Ronte:"
+    },
+    {
+     "text": "Complete High Times for Julie Farkas at Old Mormon Fort for any outcome with both Jacob Hoff and Bill Ronte: Only one out of Jacob Hoff and Bill Ronte remained alive for whatever reason (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete High Times for Julie Farkas at Old Mormon Fort for any outcome with both Jacob Hoff and Bill Ronte: Both Jacob Hoff and Bill Ronte were successfully cured of, or convinced to seek help for, their additions (+12).",
+     "delta": 12
+    },
+    {
+     "text": "During The Moon Comes Over the Tower:"
+    },
+    {
+     "text": "During The Moon Comes Over the Tower: Refusing to participate in this quest, as long as it is done politely, will still earn Fame, albeit much less (+1).",
+     "delta": 1
+    },
+    {
+     "text": "During The Moon Comes Over the Tower: Complete The Moon Comes Over the Tower for Emily Ortal on the Strip (+8 or +7 if you had previously turned down her offer to get involved and later changed your mind)."
+    },
+    {
+     "text": "Complete The White Wash for Lieutenant Boyd at Camp McCarran by agreeing to keep Westside's siphoning of NCR pipelines a secret and promising to report back to the NCR that the Scorpions gang were responsible for Corporal White's murder, not Tom Anderson, White's real killer (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete That Lucky Old Sun and confirm completion with Ignacio Rivas at HELIOS One for any outcome except choosing to divert the plant's newfound potential output to just the NCR desired locations (Camp McCarran and the New Vegas Strip), or attempting to activate \"Emergency Output\" mode, which causes the plant to overload itself and break down."
+    },
+    {
+     "text": "Complete That Lucky Old Sun and confirm completion with Ignacio Rivas at HELIOS One for any outcome except choosing to divert the plant's newfound potential output to just the NCR desired locations (Camp McCarran and the New Vegas Strip), or attempting to activate \"Emergency Output\" mode, which causes the plant to overload itself and break down.: Choosing to divert the new power to the ARCHIMEDES satellite; though this Fame boost is really gained out of Ignacio's ignorance to the player's choice, as he does not realize that the power plant has been weaponized (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete That Lucky Old Sun and confirm completion with Ignacio Rivas at HELIOS One for any outcome except choosing to divert the plant's newfound potential output to just the NCR desired locations (Camp McCarran and the New Vegas Strip), or attempting to activate \"Emergency Output\" mode, which causes the plant to overload itself and break down.: Choosing to divert the new power to only Freeside and Westside (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete That Lucky Old Sun and confirm completion with Ignacio Rivas at HELIOS One for any outcome except choosing to divert the plant's newfound potential output to just the NCR desired locations (Camp McCarran and the New Vegas Strip), or attempting to activate \"Emergency Output\" mode, which causes the plant to overload itself and break down.: Choosing to spread the new power equally across the entire Vegas grid (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Lonesome Road via The End quest, meaning that the missile launch was stopped (+12).",
+     "delta": 12
+    }
+   ],
+   "losses": [
+    {
+     "text": "Kill Jacob Hoff and Bill Ronte (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Rudely refuse Emily Ortal's quest (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Insult Emily Ortal about sleeping with Benny (-2).",
+     "delta": -2
+    },
+    {
+     "text": "Kill Julie Farkas (-36).",
+     "delta": -36
+    }
+   ]
+  },
+  {
+   "name": "Freeside",
+   "ranges": [
+    "0-10",
+    "11-34",
+    "35-69",
+    "70+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "consequences": [
+    {
+     "text": "If Accepted or better, a random Kings gang member will regularly approach the player character and give them ammunition, chems or caps."
+    },
+    {
+     "text": "If Mixed or better (in neutral reputations), a local will approach the player character to say that Mick & Ralph's will offer them a discount. The discount is intended to be +5% higher per reputation level, from 10% off at Mixed to 30% off at Wild Child."
+    },
+    {
+     "text": "If Mixed or better (in neutral reputations), a local will approach the player character to say that Mick & Ralph's will offer them a discount. The discount is intended to be +5% higher per reputation level, from 10% off at Mixed to 30% off at Wild Child.: The discounts do not function correctly in Mick's or Ralph's dialogue, as the dialogue script conditions used to apply the discounts incorrectly use the function <tt>GetReputation</tt> instead of the function <tt>GetReputationThreshold</tt>. This causes the dialogue script to only give the discount if the Courier has Positive reputation rather than mixed reputation, and can actually make it so that Mick and Ralph are unable to trade with the player character when they have a mixed reputation (the dialogue will work, but the trading menu will not open)."
+    },
+    {
+     "text": "Freeside thugs will not attack the player character."
+    }
+   ],
+   "gains": [
+    {
+     "text": "Complete Long-Term Care (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Debt Collector (+12).",
+     "delta": 12
+    },
+    {
+     "text": "During G.I. Blues:"
+    },
+    {
+     "text": "During G.I. Blues: Encourage Wayne at the Old Mormon Fort to remember more information when questioning him about the attackers (+1).",
+     "delta": 1
+    },
+    {
+     "text": "During G.I. Blues: Be rude to Wayne by implying that he's lying or holding back information when questioning him (-1). (Loss of fame, not gain of infamy)",
+     "delta": -1
+    },
+    {
+     "text": "During G.I. Blues: Complete G.I. Blues after resolving the situation at the train station peacefully (+4).",
+     "delta": 4
+    },
+    {
+     "text": "During G.I. Blues: Complete G.I. Blues after resolving the situation at the train station violently by killing Elizabeth Kieran and the NCR Troopers. (+7).",
+     "delta": 7
+    },
+    {
+     "text": "During Wang Dang Atomic Tango:"
+    },
+    {
+     "text": "During Wang Dang Atomic Tango: Inform James Garret that Fisto has been successfully recruited (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During Wang Dang Atomic Tango: Inform James Garret that Beatrix has been successfully recruited (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During Wang Dang Atomic Tango: Inform James Garret that Santiago or Old Ben has been successfully recruited (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During Wang Dang Atomic Tango: Complete Wang Dang Atomic Tango (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Ask James Garret to improve your reputation (adds Fame points up to the Idolized cutoff):"
+    },
+    {
+     "text": "Ask James Garret to improve your reputation (adds Fame points up to the Idolized cutoff): 250 caps (+12 each, repeatable up to three times if not yet Idolized)."
+    },
+    {
+     "text": "Ask James Garret to improve your reputation (adds Fame points up to the Idolized cutoff): 500 caps (+24 each, repeatable up to three times if not yet Idolized)."
+    },
+    {
+     "text": "Ask James Garret to improve your reputation (adds Fame points up to the Idolized cutoff): 1000 caps (+48).",
+     "delta": 48
+    }
+   ],
+   "losses": [
+    {
+     "text": "Ask James Garret to improve your reputation (removes Infamy points up to the Neutral cutoff):"
+    },
+    {
+     "text": "Ask James Garret to improve your reputation (removes Infamy points up to the Neutral cutoff): 250 caps (+12 each, repeatable up to two times if not yet Neutral)."
+    },
+    {
+     "text": "Ask James Garret to improve your reputation (removes Infamy points up to the Neutral cutoff): 500 caps (+24 each, repeatable up to two times if not yet Neutral)."
+    },
+    {
+     "text": "Ask James Garret to improve your reputation (removes Infamy points up to the Neutral cutoff): 1000 caps (+48).",
+     "delta": 48
+    },
+    {
+     "text": "Kill Julie Farkas (-12).",
+     "delta": -12
+    }
+   ]
+  },
+  {
+   "name": "Goodsprings",
+   "ranges": [
+    "0-2",
+    "3-7",
+    "8-14",
+    "15+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "consequences": [
+    {
+     "text": "If Accepted or better, Trudy will offer a 25% discount on her wares and buy items at 25% higher prices."
+    },
+    {
+     "text": "If Mixed or more, Chet will offer a 25% discount on his wares and buy items at 25% higher prices."
+    },
+    {
+     "text": "If Merciful Thug or worse, Ringo will not offer Ghost Town Gunfight."
+    }
+   ]
+  },
+  {
+   "name": "Great Khans",
+   "ranges": [
+    "0-4",
+    "5-14",
+    "15-29",
+    "30+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "gains": [
+    {
+     "text": "Required to complete Diane's tasks in Aba Daba Honeymoon without faction armor."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, the armory master will sell weapons to the player character."
+    },
+    {
+     "text": "If Accepted or better, Jerry the Punk will react negatively to the player character."
+    },
+    {
+     "text": "If Liked or better, the player character can be named Papa Khan's heir after completion of We Are Legion."
+    },
+    {
+     "text": "Teach Jack new recipes (+1 per recipe).",
+     "delta": 1
+    },
+    {
+     "text": "During Aba Daba Honeymoon:"
+    },
+    {
+     "text": "During Aba Daba Honeymoon: Save Anders (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During Aba Daba Honeymoon: Deliver the package to Motor-Runner safely (+4).",
+     "delta": 4
+    },
+    {
+     "text": "During Aba Daba Honeymoon: Complete Aba Daba Honeymoon (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During Boulder City Showdown:"
+    },
+    {
+     "text": "During Boulder City Showdown: Wipe out the NCR troops (+12).",
+     "delta": 12
+    },
+    {
+     "text": "During Boulder City Showdown: Bribe the NCR troops (+12).",
+     "delta": 12
+    },
+    {
+     "text": "During Boulder City Showdown: Convince the NCR to escort the Great Khans to Red Rock Canyon (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Don't Make a Beggar of Me without exposing the operation to the NCR (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Oh My Papa (+7).",
+     "delta": 7
+    }
+   ],
+   "losses": [
+    {
+     "text": "If Sneering Punk, Jack will offer a 20% discount on wares and buy items for 20% more caps."
+    },
+    {
+     "text": "If Vilified, Melissa Lewis will refuse to work with the player character and not offer Don't Make a Beggar of Me."
+    },
+    {
+     "text": "If Vilified, Melissa Lewis will refuse to work with the player character and not offer Don't Make a Beggar of Me.: If the player is wearing a Great Khan disguise, Melissa will still offer Don't Make a Beggar of Me even if the player is Vilified. The quest can be completed as normal even if the player removes the disguise thereafter."
+    },
+    {
+     "text": "Betray the Khans during Boulder City Showdown (-12).",
+     "delta": -12
+    }
+   ]
+  },
+  {
+   "name": "New California Republic",
+   "ranges": [
+    "0-11",
+    "12-39",
+    "40-79",
+    "80+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "gains": [
+    {
+     "text": "If any neutral (black in table above), but at least one instance of positive reputation had been gained, or better, Cass can be corrected on what the Ranger Monument at Mojave Outpost represents."
+    },
+    {
+     "text": "Once Smiling Troublemaker or better, assuming positive reputation is maintained until his appearance, the unmarked quest Emergency Radio will trigger; an NCR Ranger will approach the player after around one in-game day and give them the NCR emergency radio."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, one can identify themselves as a soldier for the log book when first talking to Major Knight at Mojave Outpost."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, one can convince Lieutenant Haggerty to allow entry to HELIOS One and begin That Lucky Old Sun without the need to pass any skill checks."
+    },
+    {
+     "text": "If Smiling Troublemaker or Accepted, one will be allowed to keep their weapons for Aaron Kimball's visit by Ranger Grant during You'll Know It When It Happens, but must keep them holstered. In this situation, actively aiming a firearm at any NCR personnel (the Legion NCR Engineer and NCR Ranger assassins not included) at the Dam once Kimball's Vertibird has arrived will cause all other NCR personnel to turn hostile and the quest to fail."
+    },
+    {
+     "text": "If Smiling Troublemaker or better, one will be allowed to interrogate Silus by Lieutenant Boyd and begin Silus Treatment."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, followed by a 50 Speech check, one can open trade with Quartermaster Bardon at Hoover Dam before starting For the Republic, Part 2."
+    },
+    {
+     "text": "Once Good-Natured Rascal or better, one will obtain the key to the NCR Ranger Safehouse from Colonel Hsu when he is first spoken to again."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can convince each camp in to send reinforcements to Bitter Springs without completing their respective quests during No, Not Much, those being:"
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can convince each camp in to send reinforcements to Bitter Springs without completing their respective quests during No, Not Much, those being: Flags of Our Foul-Ups for Sergeant McCredie at Camp Golf."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can convince each camp in to send reinforcements to Bitter Springs without completing their respective quests during No, Not Much, those being: I Put a Spell on You for Colonel Hsu at Camp McCarran."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can convince each camp in to send reinforcements to Bitter Springs without completing their respective quests during No, Not Much, those being: Restoring Hope for Major Polatli at Camp Forlorn Hope."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can ride the monorail without an NCR MP soon confronting them when they enter out onto The Strip, or the next time they return, depending on if the monorail was used to travel to or from Camp McCarran."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one will be allowed to keep their weapons, draw them and aim them wherever they please, without incident for Aaron Kimball's visit by Ranger Grant during \"You'll Know It When It Happens\"."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one will be allowed to keep their weapons, draw them and aim them wherever they please, without incident for Aaron Kimball's visit by Ranger Grant during \"You'll Know It When It Happens\".: Additionally, one can be granted access to the Vertibird landing pad atop the Visitors center by asking permission from Grant."
+    },
+    {
+     "text": "If Idolized, one can convince Norton and his fellow mercenaries to leave peacefully at no expense during Unfriendly Persuasion."
+    },
+    {
+     "text": "If Idolized, many named NCR military personnel will have unique greeting dialogue when spoken to; usually very positive, with a few exceptions, such as Razz who refers to the player as a \"brown-noser\"."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can identify that some of the deceased Marked men in the Hopeville missile silo bunker looked like NCR special forces, when talking to Ulysses during their conversation through ED-E at the end of The Silo (reputation level with the Legion must be lower or equal to the player's NCR level, otherwise this option will be overridden with a Legion equivalent)."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can reaffirm to Ulysses that they realise that some of the Marked Men in Hopeville are former NCR troopers, during their second conversation through ED-E at the end of The Job (reputation level with the Legion must be lower or equal to the player's NCR level, otherwise this option will be overridden with a Legion equivalent)."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can reaffirm to Ulysses that they realise that some of the Marked Men in Hopeville are former NCR troopers, during their second conversation through ED-E at the end of The Job (reputation level with the Legion must be lower or equal to the player's NCR level, otherwise this option will be overridden with a Legion equivalent).: One can also then prompt further dialogue questioning Ulysses why the Marked Men are comprised of both NCR and Legion soldiers working together, despite the two sides normally being enemies, to which Ulysses will talk about how their feelings of suffering and abandonment have united both in a combined hatred."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, one can express sympathy for the NCR soldiers who perished at the Divide, when talking to Ulysses during their conversation through ED-E at the end of The Tunnelers (reputation level with the Legion must be lower or equal to the player's NCR level, otherwise this option will be overridden with a Legion equivalent)."
+    },
+    {
+     "text": "If Idolized, one can make it easier to convince Ulysses to see reason during The Courier quest. Typically, a 90 Speech check, followed by another 100 Speech check, is required to convince Ulysses, However, if this reputation check succeeds, the 100 Speech check is later bypassed, and only the 90 Speech is required (reputation level with both the Legion and the Strip must be lower or equal to the player's NCR level, otherwise this option will be overridden with an Legion or Vegas equivalent)."
+    },
+    {
+     "text": "Complete Power to the People and confirm completion with Chomps Lewis in Sloan (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Complete Claws Mended and confirm completion with Chomps Lewis in Sloan (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Complete Claws Out and confirm completion with Chomps Lewis in Sloan (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Don't Make a Beggar of Me by exposing the operation to the NCR (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete I Fought the Law for Eddie at the NCR Correctional Facility by betraying the Powder Gangers (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Can You Find it in Your Heart? for Ranger Jackson at the Mojave Outpost (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Keep Your Eyes on the Prize for Ranger Ghost at the Mojave Outpost (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Andy and Charlie for Ranger Andy in Novac by telling the truth (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete That Lucky Old Sun for Fantastic at HELIOS One by choosing to divert the plant's power towards just Camp McCarran and the New Vegas Strip (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Boulder City Showdown for Lieutenant Monroe at the Boulder City ruins in any form:"
+    },
+    {
+     "text": "Complete Boulder City Showdown for Lieutenant Monroe at the Boulder City ruins in any form: Let or help the NCR wipe out the Great Khans after persuading them to release the hostages first (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Complete Boulder City Showdown for Lieutenant Monroe at the Boulder City ruins in any form: Let or help the NCR wipe out the Great Khans without persuading them to release the hostages first (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Boulder City Showdown for Lieutenant Monroe at the Boulder City ruins in any form: Persuade the Great Khans to release the hostages and then tell the NCR to honor the agreement to escort them back to Red Rock Canyon (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Back in Your Own Backyard for Ranger Milo at the NCR checkpoint outside Nelson in any form:"
+    },
+    {
+     "text": "Complete Back in Your Own Backyard for Ranger Milo at the NCR checkpoint outside Nelson in any form: Mercy killing the NCR trooper hostages (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Complete Back in Your Own Backyard for Ranger Milo at the NCR checkpoint outside Nelson in any form: Freeing the NCR trooper hostages (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete An Ear to the Ground for Private James Sexton at Camp Forlorn Hope by turning in 30 legion ears (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Medical Mystery for Dr. Richards at Camp Forlorn Hope by either turning in Private Stone, or convincing Stone to turn himself in (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Restoring Hope for Major Polatli at Camp Forlorn Hope in any form:"
+    },
+    {
+     "text": "Complete Restoring Hope for Major Polatli at Camp Forlorn Hope in any form: Camp Forlorn Hope morale was not rebuilt before agreeing to stage the attack on Nelson with Major Polatli (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Complete Restoring Hope for Major Polatli at Camp Forlorn Hope in any form: Camp Forlorn Hope morale was rebuilt slightly before agreeing to stage the attack on Nelson with Major Polatli (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Complete Restoring Hope for Major Polatli at Camp Forlorn Hope in any form: Camp Forlorn Hope morale was rebuilt decently before agreeing to stage the attack on Nelson with Major Polatli (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Restoring Hope for Major Polatli at Camp Forlorn Hope in any form: Camp Forlorn Hope morale was rebuilt fully before agreeing to stage the attack on Nelson with Major Polatli (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Anywhere I Wander for Private Renolds in front of Techatticup Mine (+7).",
+     "delta": 7
+    },
+    {
+     "text": "During Eye for an Eye:"
+    },
+    {
+     "text": "During Eye for an Eye: Progress up until the point of returning to First Sergeant Astor to give him the Legion patrol notes and Legion raid plans stolen the from the Legion at Cottonwood Cove and let him know that the NCR radio bug has been planted to show that a decision was made to side with him and NCR instead of going with the Legion by giving the bug to Aurelius of Phoenix and betraying the NCR (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During Eye for an Eye: Completed the rest of the quest by manually wiping out the entire Legion presence at Cottonwood Cove (+7).",
+     "delta": 7
+    },
+    {
+     "text": "During Eye for an Eye: Completed the rest of the quest by unlocking the door of the semi-trailer hanging on the edge of the cliff overlooking Cottonwood Cove in order to release barrels of radioactive waste and wipe out the Legion troops at Cottonwood Cove by basically irradiating them (+12).",
+     "delta": 12
+    },
+    {
+     "text": "During Eye for an Eye: Attempting to earn extra reputation by wiping out the Legion forces manually before proceeding to send the barrels of radioactive waste their way doesn't result in any additional reputation being rewarded. The dialogue option to report having dumped the radioactive waste upon them will instead simply override the first dialogue option related to having slaughtered them the old-fashioned way, which causes First Sergeant Astor to act as if the radioactive barrels were the cause of the demise of the Legion troops all along."
+    },
+    {
+     "text": "Turn in the heads of Cook-Cook, Driver Nephi, and Violetta to Major Dhatri at Camp McCarran during Three-Card Bounty (+4 each, reduced to +1 when mangled)."
+    },
+    {
+     "text": "Complete I Don't Hurt Anymore for Lieutenant Gorobets at Camp McCarran (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Save Bryce Anders from Vault 3 and speak to Col. James Hsu at Camp McCarran about it (+7).",
+     "delta": 7
+    },
+    {
+     "text": "During I Put a Spell on You:"
+    },
+    {
+     "text": "During I Put a Spell on You: Take out Captain Curtis without first learning all of the details of the Legion plans for a terrorist attack on Camp McCarran, leading to the monorail getting blown up right after informing Colonel Hsu that Curtis was the Legion mole (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During I Put a Spell on You: Identify Captain Curtis as the Legion mole by sneaking into the control tower in the middle of the night and overhearing his conversation with his Legion handler that reveals his plans and follow this up by using this information to disarm the monorail bomb before it goes off and then reporting to Col. Hsu to let him know the identity of the traitor (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Hard Luck Blues for Morgan Blake at the NCR sharecropper farms by disabling the reactor, removing the radiation affecting the farms (+4).",
+     "delta": 4
+    },
+    {
+     "text": "During You Can Depend on Me:"
+    },
+    {
+     "text": "During You Can Depend on Me: Purchase Cassidy Caravans from Rose of Sharon Cassidy (+1).",
+     "delta": 1
+    },
+    {
+     "text": "During You Can Depend on Me: Convince Henry Jamison to quit (+2).",
+     "delta": 2
+    },
+    {
+     "text": "During You Can Depend on Me: Steal the Gun Runners' manufacturing specifications from their factory stealthily, without killing any of their guards or being detected (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Complete Pressing Matters for Alice McLafferty from the Crimson Caravan Company by disabling the bottle cap press on the factory floor of the Sunset Sarsaparilla headquarters (+1).",
+     "delta": 1
+    },
+    {
+     "text": "Complete No, Not Much for Captain Gilles at Bitter Springs (+7).",
+     "delta": 7
+    },
+    {
+     "text": "Complete No, Not Much for Captain Gilles at Bitter Springs (+7).: Turn in all 3 supply caches and pass the Science check for the irradiated supplies (+2).",
+     "delta": 7
+    },
+    {
+     "text": "Complete Climb Ev'ry Mountain for Captain Gilles at Bitter Springs (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Complete Bitter Springs Infirmary Blues for Lieutenant Markland at Bitter Springs (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Complete I Forgot to Remember to Forget with Boone by wiping out the Legion attackers at Bitter Springs (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Things That Go Boom for Ambassador Crocker at the NCR Embassy (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Lonesome Road by nuking the Legion (+12).",
+     "delta": 12
+    }
+   ],
+   "losses": [
+    {
+     "text": "If Sneering Punk or worse, Cass will refuse to join as a companion, or if she is currently a companion, she will confront the player about this and threaten to leave, returning to the Mojave Outpost unless the player verbally agrees to stop acting against the NCR further (any NCR Infamy gain, regardless of how minor, will prompt a second confrontation with Cass if she is still a companion, in which she will insist that she is leaving and gives the player no option to stop her)."
+    },
+    {
+     "text": "If Sneering Punk or worse, Cass will refuse to join as a companion, or if she is currently a companion, she will confront the player about this and threaten to leave, returning to the Mojave Outpost unless the player verbally agrees to stop acting against the NCR further (any NCR Infamy gain, regardless of how minor, will prompt a second confrontation with Cass if she is still a companion, in which she will insist that she is leaving and gives the player no option to stop her).: Rebuilding to a neutral reputation status (black on table above) will allow for Cass to be recruited as a companion again, despite her possible angered departure beforehand which caused her to leave."
+    },
+    {
+     "text": "If Sneering Punk or worse, Boone will refuse to join as a companion, or if he is currently a companion, he will confront the player about this and threaten to leave, returning to Novac unless the player verbally agrees to stop acting against further (any more NCR Infamy gain, regardless of how minor, will prompt a second confrontation with Boone if he is still a companion, in which he will insist that he is leaving and gives the player no option to stop him)."
+    },
+    {
+     "text": "If Sneering Punk or worse, Boone will refuse to join as a companion, or if he is currently a companion, he will confront the player about this and threaten to leave, returning to Novac unless the player verbally agrees to stop acting against further (any more NCR Infamy gain, regardless of how minor, will prompt a second confrontation with Boone if he is still a companion, in which he will insist that he is leaving and gives the player no option to stop him).: Rebuilding to a neutral reputation status (black on table above) will allow for Boone to be recruited as a companion again, despite his possible angered departure beforehand which caused him to leave."
+    },
+    {
+     "text": "Once Shunned to Merciful Thug, Most Wanted will trigger, regardless of what point in the main questline has been reached. An NCR Ranger hit squad will approach and warn to improve reputation with the NCR within three days."
+    },
+    {
+     "text": "Once Shunned to Merciful Thug, Most Wanted will trigger, regardless of what point in the main questline has been reached. An NCR Ranger hit squad will approach and warn to improve reputation with the NCR within three days.: If still Shunned to Merciful Thug following the three day warning, multiple NCR hit squads will attack immediately until neutral reputation is reached. However, being forced to kill hit squad members will likely cause reputation to decrease further and recovery will be much more difficult."
+    },
+    {
+     "text": "Once Shunned to Merciful Thug, Most Wanted will trigger, regardless of what point in the main questline has been reached. An NCR Ranger hit squad will approach and warn to improve reputation with the NCR within three days.: If then Vilified, and one had not been approached with the NCR hit squad warning yet, the encounter never occurs; NCR hit squads will be immediately hostile upon spawning."
+    },
+    {
+     "text": "If Vilified, and the invitation to see Ambassador Crocker has already been received on the New Vegas Strip, then Don't Tread on the Bear! will trigger and immediately fail, locking out the NCR questline. This will also cause Most Wanted to trigger if it did not already start."
+    },
+    {
+     "text": "If Sneering Punk or worse, one can side with Father Elijah during their conversation in the Sierra Madre vault and unlock a non-canon ending."
+    },
+    {
+     "text": "Complete Andy and Charlie for Ranger Andy in Novac by passing the Speech check to lie at the end (-2).",
+     "delta": -2
+    },
+    {
+     "text": "During G.I. Blues:"
+    },
+    {
+     "text": "During G.I. Blues: Resolve the situation at the train station in a violent manner by killing Elizabeth Kieran and the NCR troopers and missionaries (-15).",
+     "delta": -15
+    },
+    {
+     "text": "During G.I. Blues: Complete G.I. Blues by speaking to The King to let him know that Elizabeth Kieran and the NCR personnel at the train station have been eliminated (-4).",
+     "delta": -4
+    },
+    {
+     "text": "Accessing the \"Squad Readiness Reports Terminal\" on the front desk in the House Resort, regardless of being detected or not (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Accessing the \"Squad Readiness Reports Terminal\" on the front desk in the House Resort, regardless of being detected or not (-1).: There is an identical Hard-locked terminal down the hall and to the right, which will not give reputation loss as long as one is hidden during use.",
+     "delta": -1
+    },
+    {
+     "text": "Form an alliance between the NCR and the Brotherhood of Steel during For the Republic, Part 2 (-4).",
+     "delta": -4
+    },
+    {
+     "text": "Ambassador Crocker dies under any circumstance, whether the player or their companions actually had any involvement in his death or not (-100).",
+     "delta": -100
+    },
+    {
+     "text": "Colonel Moore dies under any circumstance, whether the player or their companions actually had any involvement in her death or not (-100).",
+     "delta": -100
+    },
+    {
+     "text": "Reporting to Caesar that the White Gloves will or will not ally with him during Render Unto Caesar, effectively confirming that the player has chosen to side with Caesar's Legion or Yes Man (-100).",
+     "delta": -100
+    },
+    {
+     "text": "Reporting to Caesar that the White Gloves will or will not ally with him during Render Unto Caesar, effectively confirming that the player has chosen to side with Caesar's Legion or Yes Man (-100).: Even if they were previously Liked or Idolized by the NCR, resulting in Soft-Heated Devil or Wild Child reputation, most NCR soldiers will be immediately hostile.",
+     "delta": -100
+    },
+    {
+     "text": "Complete Lonesome Road by nuking the NCR (-100).",
+     "delta": -100
+    },
+    {
+     "text": "Complete Lonesome Road by nuking both the NCR and the Legion (-100).",
+     "delta": -100
+    }
+   ]
+  },
+  {
+   "name": "Novac",
+   "ranges": [
+    "0-2",
+    "3-9",
+    "10-19",
+    "20+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "gains": [
+    {
+     "text": "If Smiling Troublemaker or better, Jeannie May Crawford (Cliff Briscoe instead if Jeannie is dead following the One for My Baby quest or for any other reason) will give the player the key to the vacant room at the Dino Dee-lite Motel upon being spoken to again."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, Cliff Briscoe will sell goods 30% cheaper and pay 30% more when buying."
+    },
+    {
+     "text": "Complete Andy and Charlie for Ranger Andy by telling the truth (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete The Screams of Brahmin for Dusty McBride in any outcome:"
+    },
+    {
+     "text": "Complete The Screams of Brahmin for Dusty McBride in any outcome: All three remaining brahmin were killed (+2).",
+     "delta": 2
+    },
+    {
+     "text": "Complete The Screams of Brahmin for Dusty McBride in any outcome: At least one remaining brahmin was saved (+4).",
+     "delta": 4
+    },
+    {
+     "text": "Complete Come Fly With Me (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Come Fly With Me (+12).: Confirm completion with Manny Vargas (must have started the quest via Manny) (+12).",
+     "delta": 12
+    }
+   ],
+   "losses": [
+    {
+     "text": "Complete Andy and Charlie by passing the 60 Speech check to lie at the end (-4).",
+     "delta": -4
+    }
+   ]
+  },
+  {
+   "name": "Powder Gangers",
+   "ranges": [
+    "0-4",
+    "5-14",
+    "15-29",
+    "30+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "gains": [
+    {
+     "text": "If Smiling Troublemaker or better, Eddie will give the player character 1 stick of dynamite, 4 pistol powder and 4 rifle powder every 24 hours. Each successive positive reputation level will multiply the reward: At Idolized, the player character receives 5 sticks of dynamite and 20 powder of each type."
+    }
+   ],
+   "losses": [
+    {
+     "text": "If Shunned and working with Eddie in I Fought the Law, a Powder Ganger will be sent to tell the player character that they can work out a truce with them and will not attack them at the NCR Correctional Facility but will risk being attacked at their camps."
+    }
+   ]
+  },
+  {
+   "name": "The Strip",
+   "ranges": [
+    "0-5",
+    "6-19",
+    "20-39",
+    "40+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "gains": [
+    {
+     "text": "If Smiling Troublemaker, Mr. Holdout will sell his wares at an inflated price."
+    },
+    {
+     "text": "If Smiling Troublemaker, Mr. Holdout will sell his wares at an inflated price.: If Good Natured Rascal or better, Mr. Holdout will refuse to open trade altogether."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, Chauncey will offer to sponsor the player as an honorary member of the White Glove Society to stop Mortimer's plans, shortly before he is assassinated, during the quest Beyond the Beef."
+    },
+    {
+     "text": "If Good-Natured Rascal or better, Chauncey will offer to sponsor the player as an honorary member of the White Glove Society to stop Mortimer's plans, shortly before he is assassinated, during the quest Beyond the Beef.: Assuming that Good-Natured Rascal or better reputation was kept, one can successfully ask Marjorie to sponsor the player as an honorary member of the White Glove Society instead, following Chauncey's death, during the same quest."
+    },
+    {
+     "text": "If Idolized, one can make it easier to convince Ulysses to see reason during The Courier quest. Typically, a 90 Speech check, followed by another 100 Speech check, is required to convince Ulysses, However, if this reputation check succeeds, the 100 Speech check is later bypassed, and only the 90 Speech is required (reputation level with the NCR and Legion must both be lower than with the Strip, otherwise this option will be overridden with an NCR or Legion equivalent)."
+    }
+   ],
+   "losses": [
+    {
+     "text": "If Sneering Punk or worse, Mr. Holdout will sell his wears at a discounted price."
+    },
+    {
+     "text": "Once Sneering Punk or worse, an NCR Military Police officer will confront the player and make them pay 200 caps compensation, refusal or inability to pay the fine will result in the officer turning hostile."
+    },
+    {
+     "text": "If Sneering Punk or worse, Sarah Weintraub will refuse to rent a room to the player at the Vault 21 hotel."
+    }
+   ]
+  },
+  {
+   "name": "White Glove Society",
+   "ranges": [
+    "0-1",
+    "2-4",
+    "5-9",
+    "10+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ],
+   "gains": [
+    {
+     "text": "Cooperate with Mortimer in his plans (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Expose Mortimer and talk to Marjorie (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Frame Heck Gunderson for the murder of his son (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Lie to Heck Gunderson about who took Ted Gunderson when taking him back to Heck (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Convince Heck Gunderson against cutting off the food supply to the Strip (+12).",
+     "delta": 12
+    },
+    {
+     "text": "Complete Beyond the Beef by listening to Mortimer (+12).",
+     "delta": 12
+    }
+   ],
+   "losses": [
+    {
+     "text": "Telling Marjorie that the player \"eat[s] people, too\" (-1).",
+     "delta": -1
+    },
+    {
+     "text": "Completing Beyond the Beef by tattling on the White Glove Society to Heck Gunderson. (-12)",
+     "delta": -12
+    },
+    {
+     "text": "Convince Heck Gunderson to blockade meat deliveries to the Strip (-12).",
+     "delta": -12
+    }
+   ]
+  },
+  {
+   "name": "Primm",
+   "ranges": [
+    "0-4",
+    "5-14",
+    "15-29",
+    "30+"
+   ],
+   "titles": [
+    [
+     "Neutral",
+     "Accepted",
+     "Liked",
+     "Idolized"
+    ],
+    [
+     "Shunned",
+     "Mixed",
+     "Smiling Troublemaker",
+     "Good-Natured Rascal"
+    ],
+    [
+     "Hated",
+     "Sneering Punk",
+     "Unpredictable",
+     "Dark Hero"
+    ],
+    [
+     "Vilified",
+     "Merciful Thug",
+     "Soft-Hearted Devil",
+     "Wild Child"
+    ]
+   ]
+  }
+ ]
+}

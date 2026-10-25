@@ -1,0 +1,536 @@
+{
+ "id": "nvcghalford",
+ "speaker_name": "Halford",
+ "source": "NVCGHalford.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Desparate, relieved} Oh, thank God! I didn't think I'd ever see another human face down here.",
+     "emotion": "fear",
+     "intensity": 70
+    },
+    {
+     "text": "Please, buddy, you've got to help me. I don't know how much longer I'm going to last with my leg like this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come on man, my leg is killing me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is it safe to leave yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Urgent hushed, Shhh} Keep it down, we don't want to alert the freaks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Urgent hushed} No time to talk, we've still got fish heads to deal with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nervous about alerting monsters, hushed} Let's talk after we get the hell out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Self-satisfied} Well well, it looks like we've cleared them out, damn inbred mutant freaks. Think I'll start heading back to California now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There have been way too many catastrophic NCR foul-ups around here for me to risk my life by sticking around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Relieved, friendly} Thanks for getting me out of there. I better get started back to California.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for helping me out. I won't forget it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Relieved} You must be the backup I've been calling for. Where are the rest of your men?",
+     "emotion": "surprise",
+     "intensity": 60
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic000",
+   "prompt": "What are you talking about?"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank God. I hoped someone would come eventually, but where are the rest of your men?",
+     "emotion": "surprise",
+     "intensity": 60
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic001",
+   "prompt": "I heard your radio broadcast. I'm here to help."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Urgent} Shit. Have you any damn idea what lives in these caves!? We need to get out of...{cut short realizing he's yelling}",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Urgent hushed tone, fearful monsters will hear} We need to go now!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic002",
+   "prompt": "This is it, buddy."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{anxious} I don't know. Some kind of man-fish freak like the one I killed over there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd heard fishermen spin old tales of 'Lakelurks' swimming in the water, but I always thought they were just bullshit mermaid stories.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic004",
+   "prompt": "What killed the other troopers?"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I managed to kill that thing, but not before it mangled my leg all up. No way I'm walking out of here like this.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I've been keeping quiet and hoping they don't realize one of their buddies is missing. We need to get out of here before they come back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic005",
+   "prompt": "Are you okay?"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With my bare hands. I would have shot it, but I was cleaning my gun when they swarmed the camp.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The ugly bastard knocked me down and started dragging me down into these caves. I managed to get my knife out and get a good throw into it's back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once he was on the ground, all it took was a bit of choking and punching to finish him off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic006",
+   "prompt": "How did you kill that thing?"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Thanks a lot, doc. I think I should be able to walk out of here, now.",
+     "emotion": "happy",
+     "intensity": 70
+    },
+    {
+     "text": "I don't want to risk running into a pack of those freaks alone, though. Could you escort me out of here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic007",
+   "prompt": "Looks like some nasty lacerations and a dislocated joint. You're lucky I found you.",
+   "label": "{Medicine}"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic007_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Whoa there, buddy. What you're suggesting is downright archaic.",
+     "emotion": "surprise",
+     "intensity": 60
+    },
+    {
+     "text": "I think my tourniquet will work for now, but I still can't walk like this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I had a doctor's bag, I could probaly fix it up myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic007",
+   "prompt": "I think I've got a dull needle and twine in one of my pockets.",
+   "label": "{Medicine}"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks a lot, doc. Looks like I should be able to at least walk out of here, now.",
+     "emotion": "happy",
+     "intensity": 70
+    },
+    {
+     "text": "I don't want to risk running into a pack of those freaks alone, though. Could you escort me out of here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic008",
+   "prompt": "<Use Doctor Bag to heal his leg> This should help fix up your leg."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great, just leave me here, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic009",
+   "prompt": "I'll be back."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can have it if you get me out of here alive. I won't have a use for it when I get back to California.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic010",
+   "prompt": "That's a nice gun you've got there."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great, I'll start heading back to California now. I'm not about to let myself get killed by future NCR incompetence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you find my friends, please return their dogtags to the NCR. People need to know what happened here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If they won't listen, do what you can to make them listen. The dead need to be avenged.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic011",
+   "prompt": "You're free to leave. The way up is clear."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you crazy? No way in hell am I going deeper into these caves.",
+     "emotion": "disgust",
+     "intensity": 60
+    },
+    {
+     "text": "You haven't seen what they did to the other troopers, and I'd rather not find out why they took all of the bodies.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic012",
+   "prompt": "We need to clear the caves first."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, you have a point. They were good men and deserved better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't guarantee I'll be much help against their numbers, but I'll do what I can. Chances are we won't get out of here alive anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic014",
+   "prompt": "If we don't clear the caves, your friends' deaths were for nothing. Can you live with that?",
+   "label": "{Speech}"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic014_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Hey, I'm all for being a hero when the time is right, but there are at least 12 of those bastards lurking around in here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd rather not join my buddies any time soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic014",
+   "prompt": "More people are going to die if we don't do something.",
+   "label": "{Speech}"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lead on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic015",
+   "prompt": "Let's get moving."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know, but now that I can see the way out, I'm not so sure. I'd rather not join my dead buddies anytime soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to start heading back to California now. I'm not about to let myself get killed by future NCR incompetence.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic017",
+   "prompt": "Hey, you said you would help clear the caves."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Fearful, surprised} Ahhh!...",
+     "emotion": "fear",
+     "intensity": 80
+    },
+    {
+     "text": "{Realizes player isn't a monster} You sick bastard, I could have shot you! You must be the backup I've been calling for.",
+     "emotion": "disgust",
+     "intensity": 70
+    },
+    {
+     "text": "{Concerned} Where are the rest of your men?",
+     "emotion": "pained",
+     "intensity": 60
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic018",
+   "prompt": "<Raise arms>Boogedy boogedy boo!"
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you find my friends, please return their dogtags to the NCR. People need to know what happened here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If they won't listen, do what you can to make them listen. The dead need to be avenged.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic019",
+   "prompt": "Well, have a safe trip."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure enough, you got me clear of this mess. Here you go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic020",
+   "prompt": "You said I could have your rifle before you go."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure enough, you got me clear of this mess. Here you go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic022",
+   "prompt": "You said I could have your rifle before you go."
+  },
+  {
+   "key": "vfreeformcampguardiannvcghalfordtopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{anxious} I don't know. Some kind of man-fish freak like the one I killed over there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd heard fishermen spin old tales of 'Lakelurks' swimming in the water, but I always thought they were just bullshit mermaid stories.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianNVCGHalfordTopic024",
+   "prompt": "What killed the other troopers?"
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey, over here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{pained} Damn leg.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "vfreeformcampguardianbattledone",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Triumphant, taunting the dead} Ha! How do you like that you sons of bitches?!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformCampGuardianBattleDone",
+   "prompt": "vFreeformCampGuardianBattleDone"
+  },
+  {
+   "key": "radiohello",
+   "section": "other",
+   "responses": [
+    {
+     "text": "{Hushed, urgent, impatient} Bravo, come in, Bravo. Is anyone out there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hushed, nervous} The camp was attacked. I think I'm the only one left alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hushed, urgent} We were attacked by some kind of freak mutants from the caves. Please send backup!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hushed, nervous} God damn leg... {whince} I don't know how much longer I'm going to make it before I bleed out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hushed, urgent} Bravo, this is Camp Guardian calling for backup. No sign of the rest of the men stationed here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hushed, nervous} This is Private Halford requesting backup. Anyone out there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hushed, urgent} Guardian is down. I repeat Guardian is down. Requesting backup from any nearby forces.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hushed, fearful} Those beasts drug the rest of the men away. Oh God, I hope they don't come back for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RadioHello",
+   "prompt": "RadioHello",
+   "label": "(Camp Guardian Radio)"
+  }
+ ],
+ "speaker": "private_halford"
+}

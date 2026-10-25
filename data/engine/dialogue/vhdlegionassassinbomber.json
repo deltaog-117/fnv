@@ -1,0 +1,186 @@
+{
+ "id": "vhdlegionassassinbomber",
+ "speaker_name": "NCR engineer",
+ "source": "VHDLegionAssassinBomber.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is there a problem here?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You again. What's your problem?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Do you mind?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not sure what you mean. I think you have me confused with someone else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic001",
+   "prompt": "You're the problem here."
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that's too bad. I'm just here to enjoy the show so if you don't mind...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic002",
+   "prompt": "My dog here doesn't like you."
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then leave me alone.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic003",
+   "prompt": "No problem."
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What the... how'd you...",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "{Yelling} For the Legion!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic005",
+   "prompt": "I found this detonator in your pocket."
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pause} You will regret this.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Die, Profligate!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic006",
+   "prompt": "Would you happen to know who did maintenance on the President's vertibird?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, that just ain't gonna happen.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "For {KAI-zar} Caesar!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic007",
+   "prompt": "Just come with me, right now."
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, thought so.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic008",
+   "prompt": "My mistake."
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have time for this.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Death to the Legion's enemies!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic009",
+   "prompt": "Why don't we take this somewhere private?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdlegionassassinbombertopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bad idea.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Die, infidel!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDLegionAssassinBomberTopic010",
+   "prompt": "Maybe I should go get the MPs."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "ncr_engineer"
+}

@@ -1,0 +1,408 @@
+{
+ "id": "vms21nero",
+ "speaker_name": "Nero",
+ "source": "VMS21Nero.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Get the fuck out of my room.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "I thought I told you to get the fuck out of here.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "Hey pal, thanks for helping us shape things up. You're good people.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Take a seat on the couch please, so we can have a little talking time.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "I'm on my way to have some private time, give me some peace.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "I'm on my way to my office, give me a little time before you get in my face.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "Come to my office, we'll have a little chat with Cachino.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "You're always welcome here, good to see you again. Let's chat, what's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, you're the one everyone's talking about. What business you got with me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you need? I'm a busy man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms21bossgreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is this you asking for a last request?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21BossGreeting",
+   "prompt": "VMS21BigSalGreeting"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My associate Big Sal deals with Troike and his business. When my shift down here is done you can talk to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic000",
+   "prompt": "I'd like to talk to you about Troike."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] We don't want to draw attention to ourselves. Alright, we'll give them a little bit of extra business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic008",
+   "prompt": "You should buy guns from Mick and Ralph, people are starting to ask questions.",
+   "label": "{Speech, Convince Sal or Nero to buy guns from Mick & Ralph again}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] They're small timers, I could give a fuck what they would enjoy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic008",
+   "prompt": "Mick and Ralph would...Um... Enjoy selling the Omertas guns.",
+   "label": "{Speech, Convince Sal or Nero to buy guns from Mick & Ralph again}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like hell you do, show me what you have or get the fuck out of my face.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic013",
+   "prompt": "I have proof one of your Lieutenants is dealing behind your back."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] This'll be worth your while. I wouldn't be here talking to you otherwise.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic015",
+   "prompt": "This will be worth your while, so much that you won't regret paying 300 caps for it.",
+   "label": "{Barter Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic015_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm not sure if you're funny or just stupid, but I'm not amused. Make me a real offer and we can talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic015",
+   "prompt": "You give me 4500 caps and I'll let you look at the proof I found.",
+   "label": "{Barter Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come to my office and you'll see.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic018",
+   "prompt": "How is Cachino going to be handled?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We have two contractors, a guy named Troike and one named Clanden. They've both been running into some issues.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic020",
+   "prompt": "What kind of help do you need?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We call it Racket, and it is going to show Not-At-Home and every other fucker in our business just what the Family can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic021",
+   "prompt": "Tell me about the plan."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, let's chat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic022",
+   "prompt": "Let's talk about something else"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come find me when you have something you need to say.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic023",
+   "prompt": "I don't have any more questions right now."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cachino was my Man Friday. He took care of what needed to be taken care of. Had no idea what a dumb son of a bitch he was.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic027",
+   "prompt": "What was Cachino's role in the plan?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21nerotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All kinds of business, most of it is ours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21NeroTopic000",
+   "prompt": "What kind of business do you do here?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21nerotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll show you what I have, but if it doesn't rock my world then we're going to have a long talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21NeroTopic001",
+   "prompt": "I'll show it to you for 100 caps."
+  },
+  {
+   "key": "vdialoguegomorrahvms21nerotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard, we'll be needing those guns. Word on the street is you handled those Fiend freaks like a real pro.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21NeroTopic002",
+   "prompt": "I helped Troike out, like you asked.",
+   "label": "{Updates on Racket}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21nerotopic002_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I heard. I wasn't sold on the whole gas thing. He's the expert though. It sounds like this chlorine thing is going to work out real well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21NeroTopic002",
+   "prompt": "I finished that work for Clanden.",
+   "label": "{Updates on Racket}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21nerotopic002_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard you did some good work for us. Thank you. Here's a little cash from us to you. Try not to spend it all in one place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21NeroTopic002",
+   "prompt": "I finished all the work you had for me.",
+   "label": "{Updates on Racket}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21nerotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not sure I have anything I want to hear from you, but you can have your moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21NeroTopic003",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguegomorrahvms21nerotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then get the fuck out of my face.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21NeroTopic004",
+   "prompt": "Nevermind."
+  },
+  {
+   "key": "vdialoguegomorrahvms21nerotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? That two-faced son of a bitch. I'm glad now that we kept him mostly out of the loop. Look, we could use your help with some things.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Especially with Cachino gone, we could use another pair of competent hands, and I think you can provide that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21NeroTopic005",
+   "prompt": "Cachino was talking about big plans for the Family."
+  },
+  {
+   "key": "vgomorrahbosschips",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Laughs} Real subtle. Here you go. Play some games. Have some fun.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vGomorrahBossChips",
+   "prompt": "I'm planning on playing some games in the Casino."
+  },
+  {
+   "key": "vms21cachinoexecution1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Cachino, we've been friends for a long time. A real long time, but this time you really fucked up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've been with the Family long enough to know how this goes. I'm sorry you had to fuck this up. Goodbye, you were a real benefit to the business.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21CachinoExecution1",
+   "prompt": "VMS21CachinoExecution1"
+  },
+  {
+   "key": "vms21cachinoexecution3",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You've been with the Family long enough to know how this goes. I'm sorry you had to fuck this up. Goodbye, you were a real benefit to the business.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21CachinoExecution3",
+   "prompt": "VMS21CachinoExecution3"
+  },
+  {
+   "key": "vms21officebark",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Please, have a seat. Let's have a bit of a pow-wow.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21OfficeBark",
+   "prompt": "VMS21OfficeBark"
+  }
+ ],
+ "speaker": "nero"
+}

@@ -1,0 +1,98 @@
+{
+ "id": "qjsnuffles",
+ "speaker_name": "Snuffles",
+ "source": "QJSnuffles.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whuff>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<snuffle!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformsloanqjsnufflestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<snuffle>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformSloanQJSnufflesTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformsloanqjsnufflestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whuff>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformSloanQJSnufflesTopic001",
+   "prompt": "Hmmm... your leg appears to be injured."
+  },
+  {
+   "key": "vfreeformsloanqjsnufflestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whuff>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<snuffle!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformSloanQJSnufflesTopic002",
+   "prompt": "How's it going?"
+  },
+  {
+   "key": "vfreeformsloanqjsnufflestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] <snuffle!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformSloanQJSnufflesTopic003",
+   "prompt": "[Clean the wound with antibiotics and expertly bind Snuffles' injured leg.]",
+   "label": "< Medicine - 30 >"
+  },
+  {
+   "key": "vfreeformsloanqjsnufflestopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] <whuff!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformSloanQJSnufflesTopic003",
+   "prompt": "[Do your best attempts at first aid to treat Snuffles' injured leg.]",
+   "label": "< Medicine - 30 >"
+  }
+ ],
+ "speaker": "snuffles"
+}

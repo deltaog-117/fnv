@@ -1,0 +1,764 @@
+[
+ {
+  "page": "Agility (Fallout: New Vegas)",
+  "kind": "primary",
+  "type": "primary",
+  "modifies": "Action Points available in V.A.T.S., Guns, Sneak, Drawing/Holstering speeds, Reload Speeds",
+  "related_perks": "Action Boy/Action Girl, Light Step, Light Touch, Rapid Reload, Silent Running, Slayer, Sniper, Quick Draw",
+  "related_traits": "Small Frame",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Action Boy Action Girl (Fallout: New Vegas)",
+   "Light Step (Fallout: New Vegas)",
+   "Light Touch",
+   "Rapid Reload",
+   "Silent Running (Fallout: New Vegas)",
+   "Slayer (Fallout: New Vegas)",
+   "Sniper (Fallout: New Vegas)",
+   "Quick Draw"
+  ],
+  "math": [],
+  "fnv_text": "Agility is one of the seven primary statistics in the SPECIAL system .\n\n==Overview==\nAgility determines the number of action points available for use in V.A.T.S. (base AP determined by 65 + (Agility ×3), and can be raised by perks and some items).\n\nThe holster/reload time is modified in percentage points (not percent) by 10×(Agility-5)% from a base value of 100% of the weapon's reload time. Agility below 5 makes reloading slower and above 5 makes it faster, by 10 percentage points per point of Agility, as a modifier to the character's speed. Speed is the inverse of time: at Agility 1, the character is at 60% (3/5) of baseline speed, which means the time it takes to reload is multiplied by &approx; 1.67 (taking 5/3 as long to reload), while at Agility 10 the character is at 150% (3/2) baseline speed, so the amount of time it takes to reload is multiplied by &approx; 0.67 (taking 2/3 as long to reload).\n\n<math display=block>\\begin{align}\n\\text{reload speed modifier} &= \\frac{\\text{Agility}-5}{10} = \\frac{\\text{Agility}}{10}-\\frac{1}{2} \\\\\n\\text{reload time in seconds} &= \\frac{WeaponReloadTime}{((0.5+\\text{Agility}*0.1)*\\text{Rapid Reload})}\\\\\n\\text{Rapid Reload} &= \\begin{cases}\n1.25, &\\text{Actor has Rapid Reload}\\\\\n1, &\\text{Otherwise}\n\\end{cases}\\\\\n\\end{align}</math> \n\nThis means you can view Agility as a multiplier on weapon reload time (i.e. lower is better, since you want to reload in fewer seconds). Viewed this way, Rapid Reload acts as 4/5 (0.8) multiplier on the time, the same multiplier Agility 7.5 would have if that were possible. The reload time modifier imposed by each rank of Agility:\n\n#5/3 &approx; 1.67\n#10/7 &approx; 1.43\n#5/4 &approx; 1.25\n#10/9 &approx; 1.11\n#1\n#10/11 &approx; .91\n#5/6 &approx; .83\n#10/13 &approx; .77\n#5/7 &approx; .71\n#2/3 &approx; .67\n\n==Modified statistics==\n* Action Points available for V.A.T.S.\n* Draw-, holster- and reload speed\n* The Guns and Sneak skills.\n\n==Level names and statistics==\n{| class=\"va-table sortable va-table-center\"\n! Value\n! Name\n! Action Points\n! Skill Modifiers\n\n|-\n| 1\n| Walking Disaster\n| 68\n| Guns +2, Sneak +2\n\n|-\n| 2\n| Accident Prone\n| 71\n| Guns +4, Sneak +4\n\n|-\n| 3\n| Oaf\n| 74\n| Guns +6, Sneak +6\n\n|-\n| 4\n| Butterfingers\n| 77\n| Guns +8, Sneak +8\n\n|-\n| 5\n| Under Control\n| 80\n| Guns +10, Sneak +10\n\n|-\n| 6\n| Catlike\n| 83\n| Guns +12, Sneak +12\n\n|-\n| 7\n| Knife Thrower\n| 86\n| Guns +14, Sneak +14\n\n|-\n| 8\n| Knife Catcher\n| 89\n| Guns +16, Sneak +16\n\n|-\n| 9\n| Acrobatic Marvel\n| 92\n| Guns +18, Sneak +18\n\n|-"
+ },
+ {
+  "page": "Charisma (Fallout: New Vegas)",
+  "kind": "primary",
+  "type": "primary",
+  "modifies": "NPC disposition toward player character; Barter + Speech skill levels; Companion Nerve",
+  "related_perks": "Animal Friend; Ferocious Loyalty",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Animal Friend (Fallout: New Vegas)",
+   "Ferocious Loyalty"
+  ],
+  "math": [],
+  "fnv_text": "Charisma is one of the seven primary statistics in the SPECIAL system .\n\n==Overview==\nCharisma in Fallout: New Vegas modifies Barter, Speech and Companion Nerve. Companion Nerve gives each companion in the party +5% to their damage and armor, up to a maximum of +50% at 10 Charisma.\n\nRegardless of Barter or Speech level, some interactions will not be available with an under-level Charisma attribute (e.g. Corporal Betsy will not flirt with a female Courier below CHA 7). These ultimately do not have any significant effect on gameplay, nor do they provide any special bonuses.\n\n==Modified statistics==\n* Non-player character disposition towards player\n* Barter\n* Speech\n* Companion nerve\n\n==Level names and statistics==\n{| class=\"va-table sortable va-table-center\"\n! Value\n! Name\n! Companion Armor & Damage\n! Skill Modifiers\n|-\n| 1\n| Misanthrope\n| +5%\n| Barter/Speech +2\n|-\n| 2\n| Old Hermit\n| +10%\n| Barter/Speech +4\n|-\n| 3\n| Creepy Undertaker\n| +15%\n| Barter/Speech +6\n|-\n| 4\n| Peevish Librarian\n| +20%\n| Barter/Speech +8\n|-\n| 5\n| Substitute Teacher\n| +25%\n| Barter/Speech +10\n|-\n| 6\n| Cheery Salesman\n| +30%\n| Barter/Speech +12\n|-\n| 7\n| Diplomat\n| +35%\n| Barter/Speech +14\n|-\n| 8\n| Movie Star\n| +40%\n| Barter/Speech +16\n|-\n| 9\n| Casanova\n| +45%\n| Barter/Speech +18\n|-\n| 10\n| Cult Leader\n| +50%\n| Barter/Speech +20\n|}\n\n==Charisma-based perks==\n{| class=\"va-table sortable va-table-center\"\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n|-\n| Ferocious Loyalty\n| CHA 6\n| 6\n| —\n|-\n| Animal Friend\n| CHA 6\n| 10\n| Survival 45\n|}\n\n==Interactions that require Charisma stat==\n* 7 Charisma to convince Keller not to arrest you for transporting the medical supplies during Dealing with Contreras.\n* 7 Charisma to successfully respond to all comments from the Mini Boomers, gaining Boomers fame.\n\n==Ways to increase Charisma==\n;Permanent\n* Charisma Implant available at the New Vegas medical clinic (+1)\n* Intense Training perk (+1)\n* Completing the quest The Apocalypse or The End will allow raising any one primary statistic by 1.\n;Temporary\n* Alcohol (effects do not stack)\n** Absinthe, beer, Jake Juice, scotch, vodka, whiskey, wine (+1 - +3 depending on Survival skill)\n** Irradiated beer, irradiated scotch, irradiated whiskey (+1 - +3 depending on Survival skill)\n** Large wasteland tequila, wasteland tequila (+1 - +3 depending on Survival skill)\n** Moonshine (+2)\n* Armor and clothing\n** Bounty hunter duster, Regulator duster, sexy sleepwear, sheriff's duster, sleepwear (+1)\n** T-51b powe"
+ },
+ {
+  "page": "Endurance (Fallout: New Vegas)",
+  "kind": "primary",
+  "type": "primary",
+  "modifies": "Unarmed + Survival skill levelsMaximum Hit Points + Radiation Resistance + Poison Resistance; Number of available implants from Doctor Usanagi",
+  "related_perks": "Lead Belly; Life Giver; Long Haul; Old World Gourmet ; Rad Absorption; Rad Resistance; Solar Powered; Stonewall; Strong Back; Toughness",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Lead Belly (Fallout: New Vegas)",
+   "Life Giver (Fallout: New Vegas)",
+   "Long Haul",
+   "Old World Gourmet",
+   "Rad Absorption (Fallout: New Vegas)",
+   "Rad Resistance (Fallout: New Vegas)",
+   "Solar Powered (Fallout: New Vegas)",
+   "Stonewall (Fallout: New Vegas)",
+   "Strong Back (Fallout: New Vegas)",
+   "Toughness (Fallout: New Vegas)"
+  ],
+  "math": [],
+  "fnv_text": "{{Infobox stat\n|games1 =FNV\n|type =primary\n|image =Endurance.png\n|modifies1 =Unarmed + Survival skill levels<br/ >Maximum Hit Points + Radiation Resistance + Poison Resistance\nNumber of available implants from Doctor Usanagi\n|related perks1 =Lead Belly\nLife Giver\nLong Haul\nOld World Gourmet \nRad Absorption\nRad Resistance\nSolar Powered\nStonewall\nStrong Back\nToughness\n}}\n\nEndurance is one of the seven primary statistics in the SPECIAL system .\n\n==Modified statistics==\nEndurance determines a character's environmental resistances (poison, radiation), Hit Points, and Healing Rate, as well as the starting levels of the Unarmed and Survival skills. It also determines the number of implants allowed.\n\n==Level names and statistics==\n{| class=\"va-table sortable va-table-center\"\n! Value\n! Name\n! Starting HP\n! Poison/Rad Resist\n! Skill Modifiers\n\n|-\n|1\n|Basically Dead\n|120\n|0%/0%\n|Survival/Unarmed +2\n\n|-\n|2\n|Crumbly\n|140\n|5%/2%\n|Survival/Unarmed +4\n\n|-\n|3\n|Do Not Bend\n|160\n|10%/4%\n|Survival/Unarmed +6\n\n|-\n|4\n|Handle with Care\n|180\n|15%/6%\n|Survival/Unarmed +8\n\n|-\n|5\n|Stain-resistant\n|200\n|20%/8%\n|Survival/Unarmed +10\n\n|-\n|6\n|Hardy\n|220\n|25%/10%\n|Survival/Unarmed +12\n\n|-\n|7\n|Tough-as-nails\n|240\n|30%/12%\n|Survival/Unarmed +14\n\n|-\n|8\n|Flame Retardant\n|260\n|35%/14%\n|Survival/Unarmed +16\n\n|-\n|9\n|Bulletproof\n|280\n|40%/16%\n|Survival/Unarmed +18\n\n|-\n|10\n|Unstoppable\n|300\n|45%/18%\n|Survival/Unarmed +20\n|}\n\n==Endurance-based perks==\n{| class=\"va-table sortable va-table-center\"\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n\n|-\n| Old World Gourmet \n| 6\n| 2\n| Survival 45\n\n|-\n| Lead Belly\n| 5\n| 6\n| —\n\n|-\n| Toughness\n| 5\n| 6\n| —\n\n|-\n| Rad Resistance\n| 5\n| 8\n| Survival 40\n\n|-\n| Stonewall\n| 6\n| 8\n| Strength 6\n\n|-\n| Strong Back\n| 5\n| 8\n| Strength 5\n\n|-\n| Life Giver\n| 6\n| 12\n| —\n\n|-\n| Long Haul\n| 6\n| 12\n| Barter 70\n\n|-\n| Atomic! \n| 6\n| 20\n| —\n\n|-\n| Solar Powered\n| 7\n| 20\n| —\n\n|-\n| Irradiated Beauty \n| 8\n| 22\n| —\n\n|-\n| Rad Absorption\n| 7\n| 28\n| —\n\n|-\n| Burden to Bear \n| 6\n| 30\n| Strength 6\n\n|-\n| Implant GRX \n| 8\n| 30\n| —\n|}\n\n==Ways to increase Endurance==\n;Permanent\n* Endurance Implant available at the New Vegas medical clinic (+1)\n* Intense Training perk (+1)\n* Completing the quest The Apocalypse or The End will allow raising any one primary statistic by 1.\n;Temporary\n* Armor and clothing\n** Brahmin-skin outfit, wasteland legend outfit, wasteland settler outfit, wasteland wanderer outfit (+1)\n** Atomic-valence tri-radii-oscillator, Valence radii-accentuator (+1)\n** Advanced riot"
+ },
+ {
+  "page": "Intelligence (Fallout: New Vegas)",
+  "kind": "primary",
+  "type": "primary",
+  "modifies": "Number of new skill points per level, dialogue options, Medicine, Repair, Science",
+  "related_perks": "Comprehension, Computer Whiz, Educated, Entomologist, Nerd Rage!, Pack Rat, Retention, Swift Learner",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Comprehension (Fallout: New Vegas)",
+   "Computer Whiz (Fallout: New Vegas)",
+   "Educated (Fallout: New Vegas)",
+   "Entomologist (Fallout: New Vegas)",
+   "Nerd Rage! (Fallout: New Vegas)",
+   "Pack Rat (Fallout: New Vegas)",
+   "Retention",
+   "Swift Learner (Fallout: New Vegas)"
+  ],
+  "math": [],
+  "fnv_text": "Intelligence is one of the seven primary statistics in the SPECIAL system .\n\n==Overview==\nIntelligence affects skill points differently from how it did in Fallout 3. The number of skill points gained each level is based on the formula 10 + (0.5 × IN) per level, including level 1, where IN is the Courier's Intelligence. If one gets a non-whole number of skill points per level (e.g. 10.5 for INT 1) it will be saved for the next even level up (see Skill Rate).\n\n==Modified statistics==\n* Medicine\n* Repair\n* Science\n* Skill Rate\n\n==Level names and statistics==\n{| class=\"va-table sortable va-table-center\"\n! Value\n! Name\n! Skill Points\n! Skill Modifiers\n\n|-\n| 1\n| Sub-brick\n| 10.5\n| Medicine/Repair/Science +2\n\n|-\n| 2\n| Vegetable\n| 11\n| Medicine/Repair/Science +4\n\n|-\n| 3\n| Cretin\n| 11.5\n| Medicine/Repair/Science +6\n\n|-\n| 4\n| Knucklehead\n| 12\n| Medicine/Repair/Science +8\n\n|-\n| 5\n| Knowledgeable\n| 12.5\n| Medicine/Repair/Science +10\n\n|-\n| 6\n| Gifted\n| 13\n| Medicine/Repair/Science +12\n\n|-\n| 7\n| Smartypants\n| 13.5\n| Medicine/Repair/Science +14\n\n|-\n| 8\n| Know-it-all\n| 14\n| Medicine/Repair/Science +16\n\n|-\n| 9\n| Genius\n| 14.5\n| Medicine/Repair/Science +18\n\n|-\n| 10\n| Omniscient\n| 15\n| Medicine/Repair/Science +20\n|}\n\n==Intelligence-based perks==\n{| class=\"va-table sortable va-table-center\"\n\n|-\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n\n|-\n| Retention\n| 5\n| 2\n| —\n\n|-\n| Swift Learner\n| 4\n| 2\n| —\n\n|-\n| Comprehension\n| 4\n| 4\n| —\n\n|-\n| Educated\n| 4\n| 4\n| —\n\n|-\n| Entomologist\n| 4\n| 4\n| Survival 45\n\n|-\n| Pack Rat\n| 5\n| 8\n| Barter 70\n\n|-\n| Nerd Rage!\n| 5\n| 10\n| Science 50\n\n|-\n| Computer Whiz\n| 7\n| 18\n| Science 70\n\n|-\n| Voracious Reader \n| 7\n| 22\n| —\n\n|-\n| Lessons Learned \n| 6\n| 26\n| —\n|}\n\n==Interactions that require Intelligence stat==\n* An Intelligence of 3 or less will grant \"special\" reverse-Intelligence dialogue and actions. Instances of this include:\n** During Come Fly With Me, the Courier can randomly mash the buttons on the launch control panel. The rockets will take off and rewards will be gained as though one passed the 55 Science check to properly input improved coordinates.\n** When first meeting Ignacio Rivas at HELIOS One, respond \"I is scientistic\" after being asked about their reasons for visiting the power plant.\n** When first meeting Ranger Milo, he refers to the Legionaries in Nelson as \"Legion snakes,\" to which the Courier responds with the belief he meant actual snakes trained by the Legion, rather than him clearly speaking metaphorically.\n** When fir"
+ },
+ {
+  "page": "Luck (Fallout: New Vegas)",
+  "kind": "primary",
+  "type": "primary",
+  "modifies": "All skills, Critical Chance, odds in casino games, some random encounters",
+  "related_perks": "Better Criticals, Fortune Finder, Junk Rounds, Miss Fortune, Mysterious Stranger, Scrounger",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Better Criticals (Fallout: New Vegas)",
+   "Fortune Finder (Fallout: New Vegas)",
+   "Junk Rounds",
+   "Miss Fortune",
+   "Mysterious Stranger (Fallout: New Vegas)",
+   "Scrounger (Fallout: New Vegas)"
+  ],
+  "math": [],
+  "fnv_text": "Luck is one of the seven primary statistics in the SPECIAL system .\n\n==Overview==\nLuck functions in the same manner as Fallout 3. It raises the value of every skill +1 for every 2 points in Luck (see chart below Level names and statistics) and affects Critical Chance. It also improves the odds of winning at any casino game; the higher the Luck, the more likely favorable outcomes on bets will be. If having won a casino bet through the influence of Luck, the \"You feel lucky\" message is displayed. A Luck of 6 will begin to influence Roulette and Slot machines, though rarely. A Luck of 7 is required to win with any regularity or to begin to influence Blackjack outcomes.\n\n==Modified statistics==\n* All skills\n* Critical Chance\n* Odds in casino games\n* Some random encounters\n\n==Level names and statistics==\n{| class=\"va-table sortable va-table-center\"\n! Value\n! Name\n! Critical Chance\n! Skill Modifiers\n\n|-\n| 1\n| 13 Pitch-black Cats\n| +1%\n| All skills +1\n\n|-\n| 2\n| Broken Gypsy Mirror\n| +2%\n| All skills +1\n\n|-\n| 3\n| Sickly Albatross\n| +3%\n| All skills +2\n\n|-\n| 4\n| Spilled Salt\n| +4%\n| All skills +2\n\n|-\n| 5\n| Coin Flip\n| +5%\n| All skills +3\n\n|-\n| 6\n| Stacked Deck\n| +6%\n| All skills +3\n\n|-\n| 7\n| Lucky 7\n| +7%\n| All skills +4\n\n|-\n| 8\n| Leprechaun's Foot\n| +8%\n| All skills +4\n\n|-\n| 9\n| 21-Leaf Clover\n| +9%\n| All skills +5\n\n|-\n| 10\n| Two-headed Coin Flip\n| +10%\n| All skills +5\n|}\n\n==Luck-based perks==\n{| class=\"va-table sortable va-table-center\"\n! Perk\n! Required\n! Level\n! Additional Requirements\n|-\n| Junk Rounds \n| 6\n| 2\n| Repair 45\n\n|-\n| Fortune Finder\n| 5\n| 6\n| —\n\n|-\n| Scrounger\n| 5\n| 8\n| —\n\n|-\n| Miss Fortune\n| 6\n| 10\n| —\n\n|-\n| Mysterious Stranger\n| 6\n| 10\n| —\n\n|-\n| Better Criticals\n| 6\n| 16\n| Perception 6\n|}\n\n==Interactions that require Luck stat==\n* 7 Luck to correctly guess the code phrase to prevent the mobile facial recognition scanner at REPCONN headquarters from attacking.\n* 9 Luck to successfully complete the operation to remove the brain tumor that's killing Caesar during Et Tumor, Brute? (bypasses Medicine and Auto-Doc requirement; 8 or less Luck will result in Caesar's death).\n\n==Ways to increase Luck==\n;Permanent\n* Luck Implant available at the New Vegas medical clinic (+1)\n* Intense Training perk (+1)\n* Completing the quest The Apocalypse or The End will allow raising any one primary statistic by 1 via a perk.\n;Temporary\n* Armor and clothing\n** Naughty nightwear (+1)\n** Lucky shades (+1) (Added to the game after the 1.2 patch.)\n** \"Blackjack\" variant of th"
+ },
+ {
+  "page": "Perception (Fallout: New Vegas)",
+  "kind": "primary",
+  "type": "primary",
+  "modifies": "Energy Weapons, Lockpick, Explosives skill level; Minimum detection distance on compass",
+  "related_perks": "Better Criticals; Friend of the Night; Hobbler ; Infiltrator; Light Step; Sniper",
+  "related_traits": "Four Eyes",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Better Criticals (Fallout: New Vegas)",
+   "Friend of the Night",
+   "Hobbler",
+   "Infiltrator (Fallout: New Vegas)",
+   "Light Step (Fallout: New Vegas)",
+   "Sniper (Fallout: New Vegas)"
+  ],
+  "math": [],
+  "fnv_text": "{{Infobox stat\n|games1 =FNV\n|type =primary\n|image =Perception icon.png\n|modifies1 =Energy Weapons, Lockpick, Explosives skill level\nMinimum detection distance on compass\n|related perks1 =Better Criticals\nFriend of the Night\nHobbler \nInfiltrator\nLight Step\nSniper\n|related traits1 =Four Eyes\n}}\n\nPerception is one of the seven primary statistics in the SPECIAL system .\n\n==Overview==\nPerception affects the distance at which the Courier is able to detect other creatures on the compass on the heads-up display (HUD). It also factors into some conversations with some NPCs.\n\n==Modified skills==\n* Explosives\n* Lockpick\n* Energy Weapons\n\n==Level names and statistics==\n{| class=\"va-table sortable va-table-center\"\n! Value \n! Name\n! Skill Modifiers\n|-\n| 1\n| Deaf Bat\n| Energy Weapons/Lockpick/Explosives +2\n|-\n| 2\n| Senile Mole\n| Energy Weapons/Lockpick/Explosives +4\n|-\n| 3\n| Squinting Newt\n| Energy Weapons/Lockpick/Explosives +6\n|-\n| 4\n| Unsuspecting Trout\n| Energy Weapons/Lockpick/Explosives +8\n|-\n| 5\n| Wary Trout\n| Energy Weapons/Lockpick/Explosives +10\n|-\n| 6\n| Alert Coyote\n| Energy Weapons/Lockpick/Explosives +12\n|-\n| 7\n| Big-eyed Tiger\n| Energy Weapons/Lockpick/Explosives +14\n|-\n| 8\n| Monocled Falcon\n| Energy Weapons/Lockpick/Explosives +16\n|-\n| 9\n| Sniper Hawk\n| Energy Weapons/Lockpick/Explosives +18\n|-\n| 10\n| Eagle with Telescope\n| Energy Weapons/Lockpick/Explosives +20\n|}\n\n==Perception-based perks==\n{| class=\"va-table sortable va-table-center\"\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n|-\n| Friend of the Night\n| 6\n| 2\n| Sneak 30\n|-\n| Alertness \n| 6 - 9\n| 12\n| —\n|-\n| Sniper\n| 6\n| 12\n| Agility 6\n|-\n| Hobbler \n| 7\n| 12\n| —\n|-\n| Light Step\n| 6\n| 14\n| Agility 6\n|-\n| Better Criticals\n| 6\n| 16\n| Luck 6\n|-\n| Infiltrator\n| 7\n| 18\n| Lockpick 70\n|}\n\n==Interactions that require Perception stat==\n* 6 Perception to correctly identify the bloodstain in the Hoover Dam visitor center supply closet as that of an NCR engineer during You'll Know It When It Happens.\n* 6 Perception to question Emily Ortal if \"something\" happened between her and Benny to get her help working on Yes Man.\n** Note, this is bugged as the G.E.C.K. is programmed to check the Perception stat for Emily rather than the Courier. Using the command or before talking to her can fix this. JSawyer also patches this.\n* 6 Perception and 35 Science to discuss with God about blocking Father Elijah's eavesdropping through the collars.\n* 6 Perception to correctly interpret Christine about:\n** Her refusal to lea"
+ },
+ {
+  "page": "Strength (Fallout: New Vegas)",
+  "kind": "primary",
+  "type": "primary",
+  "modifies": "Melee Weapons skill level; Melee Damage; Carry Weight; Effective weapon usage",
+  "related_perks": "Heave, Ho!; Heavyweight; StonewallStrong BackSuper Slam!; Unstoppable Force; Weapon Handling",
+  "related_traits": "None",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Heave, Ho! (Fallout: New Vegas)",
+   "Heavyweight",
+   "Stonewall (Fallout: New Vegas)",
+   "Strong Back (Fallout: New Vegas)",
+   "Super Slam!",
+   "Unstoppable Force",
+   "Weapon Handling (Fallout: New Vegas)"
+  ],
+  "math": [],
+  "fnv_text": "Strength is one of the seven primary statistics in the SPECIAL system .\n\n==Overview==\nSimilar to Fallout 3, while at first glance the damage bonus from high Strength seems minor at best, it is applied after a weapon's base damage has been adjusted by the Melee Weapons skill level and the given weapon's current condition. As such, having high Strength can grant a very significant increase for much of the game.\n\nIn addition, with the changed use of Damage Threshold instead of Damage Resistance as an armor mechanic, the bonus damage from Strength can significantly increase the DPS of low-damage, high-attack-rate weapons against unarmored targets such as the katana added with the Gun Runners' Arsenal add-on.\n\n==Modified statistics==\n* Melee Weapons skill level\n* Melee Damage\n* Carry Weight\n* Effective weapon usage\n\n==Level names and statistics==\n{| class=\"va-table sortable va-table-center\"\n! Value\n! Name\n! Carry Weight\n! Melee Damage Bonus\n! Skill Modifiers\n|-\n| 1\n| Wet Noodle\n| 160\n| 0.5\n| Melee Weapons +2\n|-\n| 2\n| Beached Jellyfish\n| 170\n| 1.0\n| Melee Weapons +4\n|-\n| 3\n| Doughy Baby\n| 180\n| 1.5\n| Melee Weapons +6\n|-\n| 4\n| Lightweight\n| 190\n| 2.0\n| Melee Weapons +8\n|-\n| 5\n| Average Joe\n| 200\n| 2.5\n| Melee Weapons +10\n|-\n| 6\n| Barrel Chested\n| 210\n| 3.0\n| Melee Weapons +12\n|-\n| 7\n| Beach Bully\n| 220\n| 3.5\n| Melee Weapons +14\n|-\n| 8\n| Circus Strongman\n| 230\n| 4.0\n| Melee Weapons +16\n|-\n| 9\n| Doomsday Pecs\n| 240\n| 4.5\n| Melee Weapons +18\n|-\n| 10\n| Hercules' Bigger Cousin\n| 250\n| 5.0\n| Melee Weapons +20\n|}\n\n==Weapons strength requirement==\nReturning from Fallout and Fallout 2, all weapons in Fallout: New Vegas have a minimum Strength requirement in order to use them at their most effective base stats. While having lower Strength results in decreased accuracy for firearms, there is no penalty for using melee/unarmed weapons below their requirement.\n\nTaking the Weapon Handling perk results in a universal -2 reduction in Strength requirements.\n\n==Strength-based perks==\n{|class=\"va-table sortable va-table-center\"\n! Perk\n! Required\n! Level\n! Additional Requirements\n|-\n| Heave, Ho!\n| 5\n| 2\n| Explosives 30\n|-\n| Strong Back\n| 5\n| 8\n| Endurance 5\n|-\n| Stonewall\n| 6\n| 8\n| Endurance 6\n|-\n| Super Slam!\n| 6\n| 8\n| Melee Weapons 45\n|-\n| Heavyweight \n| 7\n| 12\n| —\n|-\n| Unstoppable Force\n| 7\n| 12\n| Melee Weapons 90\n|-\n| Weapon Handling\n| <10\n| 16\n| —\n|-\n| Burden to Bear \n| 6\n| 30\n| Endurance 6\n|}\n\n==Interactions that require Strength stat==\n* 6 Strength to intimidate No-bark Noona"
+ },
+ {
+  "page": "Barter (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Prices when trading; Various dialogue options",
+  "governed_by": "Charisma",
+  "initial_value": "2 + (Charisma x 2) + ceil (Luck / 2)",
+  "related_perks": "Pack Rat, Long Haul",
+  "related_traits": "+5 Skilled; +5 Good Natured",
+  "governed_by_links": [
+   "Charisma (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Pack Rat (Fallout: New Vegas)",
+   "Long Haul"
+  ],
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Charisma})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=2+10+2.5=14.5\\text{ rounded up}=15"
+  ],
+  "fnv_text": "Barter is a skill in Fallout: New Vegas whose initial level is governed by the primary statistic SPECIAL attribute Charisma.\n\nThis skill affects the prices for buying and selling items.\n\n==Initial level==\n: [math] \n\nExample: A starting Charisma of 5 and Luck of 5.\n: [math] \n\n==Description==\nThe Barter skill is primarily used in the buying and selling of items, such as trading with a merchant or scavenger, and is the primary factor in price determination. The Courier's reputation with the merchant, town, or faction can also affect price with additional increases or discounts. In general, purchase prices will be lower and selling price will be higher with a higher Barter skill.\n\nGeneral price (before application of reputational price increases or discounts) is calculated with the same formula as in Fallout 3, which takes into account the player character's own Barter skill and some global values, and does not include any other factors. This progression is linear, meaning each point in Barter gives increasingly favorable prices. Reputation does not affect prices unless that particular merchant is scripted to modify worth based on the Courier's reputation. For example, Chet will use only the PC's barter skill value to determine prices even if they are Idolized with Goodsprings, but with a mixed reputation (regardless of how good or bad it is), he will offer 1:1 prices.\n\nThe following are the basic formulas for buying and selling prices, where Modifier represents any additional modifiers that might be present.\n\n<math display=block>\\begin{align}\n\\text{Sale Value} = round\\left(\\text{Item Value} \\times \\left ( 0.45 + \\frac{\\text{Barter Skill} \\times 9}{2000} \\right ) \\times Modifier\\right)\\\\\n\\text{Buy Value} = round\\left(\\text{Item Value} \\times \\left ( 1.55 - \\frac{\\text{Barter Skill} \\times 9}{2000} \\right ) \\times Modifier\\right)\n\\end{align}</math>\n\n{| class=\"va-table\"\n!width=\"80\" nowrap=\"nowrap\"|Barter\n!width=\"80\" nowrap=\"nowrap\"|Sell %\n!width=\"80\" nowrap=\"nowrap\"|Buy %\n|-\n|align=\"center\"|0\n|align=\"center\"|45\n|align=\"center\"|155\n|-\n|align=\"center\"|20\n|align=\"center\"|54\n|align=\"center\"|146\n|-\n|align=\"center\"|40\n|align=\"center\"|63\n|align=\"center\"|137\n|-\n|align=\"center\"|60\n|align=\"center\"|72\n|align=\"center\"|128\n|-\n|align=\"center\"|80\n|align=\"center\"|81\n|align=\"center\"|119\n|-\n|align=\"center\"|100\n|align=\"center\"|90\n|align=\"center\"|110\n|}\n\n\nThe Barter skill is also used in dialogue interactions with non-player characters, where certain responses require Barter skill "
+ },
+ {
+  "page": "Energy Weapons (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Damage done by Energy Weapons",
+  "governed_by": "Perception",
+  "initial_value": "2 + (Perception x 2) + ceil (Luck / 2)",
+  "related_perks": "Run 'n Gun, Plasma Spaz, Meltdown, Concentrated Fire, Laser Commander",
+  "related_traits": "+5 Skilled; -5 Good Natured",
+  "governed_by_links": [
+   "Perception (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Run 'n Gun",
+   "Plasma Spaz",
+   "Meltdown (Fallout: New Vegas)",
+   "Concentrated Fire (Fallout: New Vegas)",
+   "Laser Commander"
+  ],
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Perception})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=2+10+2.5=14.5\\text{ rounded up}=15"
+  ],
+  "fnv_text": "Energy Weapons is a skill in Fallout: New Vegas whose initial level is governed by the primary statistic SPECIAL attribute Perception.\n\nThis skill determines the player's combat effectiveness with energy-based weapons.\n\n==Initial level==\n: [math] \n\nExample: A starting Perception of 5 and Luck of 5.\n: [math] \n\n==Description==\nIn Fallout: New Vegas, energy weapons are more distinct. Lasers tend to have fast firing, accurate beams and lower damage, while plasma has a slow moving yet powerful projectile. The level of the Energy Weapons skill determines the player character's accuracy and damage with every kind of energy weapon, from pistols and rifles to heavy weapons. As this skill increases, so does the damage inflicted with all of these weapons, both in and out of VATS mode. At the highest level of 100, a weapon's sway is heavily reduced and its damage is twice that of the lowest level of 0.\n\n==Perks that require Energy Weapons skill==\n{| class=\"va-table va-table-center sortable\"\n! Perk\n! Energy Weapons\n! Level\n! Additional Requirements\n\n|-\n| Run 'n Gun\n| 45\n| 4\n| &mdash;\n\n|-\n| Plasma Spaz\n| 70\n| 10\n| &mdash;\n\n|-\n| Meltdown\n| 90\n| 16\n| &mdash;\n\n|-\n| Concentrated Fire\n| 60\n| 18\n| Guns 60\n\n|-\n| Laser Commander\n| 90\n| 22\n| &mdash;\n|}\n\n\nThere are many other perks that do not require the energy weapons skill to take the perk, but do affect things such as drained energy ammunition recovered, damage or criticals done by energy-based weapons, and perks that affect perception and weapons or combat in general.\n\n==Ways to increase Energy Weapons==\n; Permanent\n* Leveling up (up to +15 depending on Intelligence, up to +17 with Educated perk)\n* Nikola Tesla and You book (+3, or +4 with Comprehension perk)\n* Intense Training in Perception (+2)\n* Lonesome Road completion any SPECIAL +1 in Perception (+2)\n* Optics Enhancer implant (+2)\n* Tag! (+15)\n* Skilled (+5)\n; Temporary\n* Future Weapons Today magazine (+10, or +20 with Comprehension)\n* Absinthe (up to +6 with 100 Survival, unless Perception is 10 which will see no benefit, 8-9 will see reduced benefit)\n* Mentats (+4, unless Perception is 9 which will see +2 benefit, 10 will see no benefit)\n* Party Time Mentats (+4, unless Perception is 9 which will see +2 benefit, 10 will see no benefit, can be stacked with Mentats)\n* Coyote tobacco chew (+2, unless Perception is 10 which will see no benefit)\n* Nightstalker squeezin's (+2 with Mile in Their Shoes, unless Perception is 10 which will see no benefit)\n* Gannon family Tesla"
+ },
+ {
+  "page": "Explosives (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Damage done by Explosives, ability of handling explosive traps",
+  "governed_by": "Perception",
+  "initial_value": "2 + (2 x Perception) + ceil (Luck / 2)",
+  "related_perks": "Heave, Ho!, Demolition Expert, Hit the Deck, Pyromaniac, Splash Damage, Grunt , Mad Bomber",
+  "related_traits": "+5 Skilled; -5 Good Natured; Loose Cannon",
+  "governed_by_links": [
+   "Perception (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Heave, Ho! (Fallout: New Vegas)",
+   "Demolition Expert (Fallout: New Vegas)",
+   "Hit the Deck (Fallout: New Vegas)",
+   "Pyromaniac (Fallout: New Vegas)",
+   "Splash Damage",
+   "Grunt",
+   "Mad Bomber"
+  ],
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Perception})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=2+10+2.5=14.5\\text{ rounded up}=15"
+  ],
+  "fnv_text": "{{Infobox stat\n|games1 =FNV\n|type =skill\n|image =Explosives.png\n|modifies1 =Damage done by Explosives, ability of handling explosive traps\n|governed by1 =Perception\n|initial value1 =2 + (2 x Perception) + ceil (Luck / 2)\n|related perks1 =Heave, Ho!, Demolition Expert, Hit the Deck, Pyromaniac, Splash Damage, Grunt , Mad Bomber \n|related traits1 =+5 Skilled\n -5 Good Natured\nLoose Cannon\n}}\n\n\n\nExplosives is a skill in Fallout: New Vegas whose initial level is governed by the primary statistics SPECIAL attribute Perception. It replaces the Traps and Throwing skills from previous games.\n\nThis skill determines the player's combat effectiveness with explosive weapons, disarming explosive traps and mines, and crafting explosives.\n\n==Initial level==\n: [math] \n\nExample: A starting Perception of 5 and Luck of 5.\n: [math] \n\n==Description==\nIn Fallout: New Vegas, many more types of weapons fall into the Explosives category, including placed, thrown, and projectile explosives. Any weapon that was originally a big gun in Fallout 3 and used explosion type ammunition (such as the Fat Man, or missile launcher) was moved to this category when the Big Guns skill was removed.\n\nThe level of the Explosives skill determines the player character's accuracy and combat damage with every kind of explosive, including the distance of thrown explosives. As this skill increases, so does the damage inflicted, both in and out of V.A.T.S. mode. At the highest level of 100, an explosive's damage is double the damage with 0 skill. This is linear, meaning each point in Explosives gives increasingly higher damage.\n\nThe Explosives skill also determines how close the player can get to a mine before detection, as well as how long the mine will take before it explodes. The minimum skill necessary to disarm a mine is 1, meaning any player can disarm them so long as the player can run up and activate it fast enough, but some explosive traps do require a minimum skill level. With the perk Light Step, the player does not set off enemy mines or floor-based traps, although companions and other non-player characters can still set them off.\n\nThis skill allows for crafting explosives from various junk items utilizing workbenches found throughout the Mojave. Some items require schematics in order to craft, but most are based only on the Explosives skill level. Some additionally require the perks Hand Loader or Mad Bomber in order to craft.\n\n==Perks that require Explosives skill==\n{| class=\"va-table va-table"
+ },
+ {
+  "page": "Guns",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Damage and accuracy for Guns",
+  "governed_by": "Agility",
+  "initial_value": "2 + (Agility x 2) + ceil (Luck / 2)",
+  "related_perks": "Rapid Reload, Run 'n Gun, Shotgun Surgeon, Cowboy, Concentrated Fire, Center of Mass, And Stay Back (Dead Money), Grunt (Honest Hearts)",
+  "related_traits": "Good Natured",
+  "governed_by_links": [
+   "Agility (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Rapid Reload",
+   "Run 'n Gun",
+   "Shotgun Surgeon (Fallout: New Vegas)",
+   "Cowboy (Fallout: New Vegas)",
+   "Concentrated Fire (Fallout: New Vegas)",
+   "Center of Mass",
+   "And Stay Back",
+   "Dead Money",
+   "Grunt",
+   "Honest Hearts"
+  ],
+  "math": [],
+  "fnv_text": "Guns is a skill . It is the successor to the Small Guns skill of previous Fallout games with the addition of some weapons previously categorized under Big Guns (such as miniguns and machine guns, but not missile launchers or Gatling lasers).\n\nThe level of the skill helps determine the player character's sway and damage with weapons governed by the Guns skill, from pistols and rifles to light machine guns and miniguns; at the highest level of 100, a weapon's sway is heavily reduced and its damage is twice that of the lowest level of 0, because like Energy Weapons and non-thrown/non-placed Explosives, Guns uses these formulas for any weapon:\n\n<math display=block>\\begin{align}\n\\text{Final Damage} &= \\text{Base Damage} \\times \\left(\\frac{100+\\text{Skill}}{200}\\right)\\\\\n\\text{Sway in Degrees} &= 5.955\\max\\left[.01,\n \\left(1-\\frac{\\text{Skill}}{200}\\right)\n \\left(u + m + s + c\n + \\max\\left(0,\\frac{\\text{Weapon Skill} - \\text{Skill}}{400}\\right)\n + \\max\\left(0,\\frac{\\text{Weapon Strength} -\\text{Strength}}{40}\\right)\n\\right)\\right]\\\\\nu &= \\begin{cases}\n0, &\\text{Aiming}\\\\\n.2, &\\text{Not Aiming}\n\\end{cases}\\\\\nm &= \\begin{cases}\n0, &\\text{Still}\\\\\n.1, &\\text{Walking}\\\\\n.2, &\\text{Running}\\\\\n\\end{cases}\\\\\n\\text{s} &= \\begin{cases}\n0, &\\text{Crouching}\\\\\n.1, &\\text{Standing}\n\\end{cases}\\\\\nc &= \\begin{cases}\n.2, &\\text{Pistol, right arm crippled}\\\\\n.4, &\\text{Pistol, both arms crippled, or Not Pistol, either arm crippled}\\\\\n.6, &\\text{Not Pistol, both arms crippled}\\\\\n0, &\\text{Otherwise}\\\\\n\\end{cases}\\\\\n\\end{align}</math>\n\nThe denominator of 400 in part of the formula is based on the wrong constant (it uses the same constant as the Strength check, even though the game's code makes it clear another constant is intended).\n\n==Initial level==\n<math display=block>\\text{Initial level}=2+(2\\times\\text{Agility})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil</math>\n\nExample: A starting Agility of 5 and Luck of 5.\n\n<math display=block>2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15</math>\n\n==Ways to increase Guns skill==\n; Permanent\n* Leveling up (10+INT (+2 with Educated perk))\n* Guns and Bullets (+3, or +4 with the Comprehension perk)\n* Reflex Booster implant (+2 depending on current Agility, a perfect Agility of 10 will see no benefit.) \n* Tag! (+15)\n* Skilled (+5)\n; Temporary\n* Milsurp Review (+10, or +20 with the Comprehension perk)\n* Coyote tobacco chew (+2 depending on current Agility, a perfect Agility of 10 will see no benefit.)\n* Fire ant nectar (+2-8 depending on "
+ },
+ {
+  "page": "Lockpick (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Difficulty of locks the player is able to pick, chance for a successful \"force lock\" attempt",
+  "governed_by": "Perception",
+  "initial_value": "2 + (Perception x 2) + ceil (Luck / 2)",
+  "related_perks": "Infiltrator",
+  "governed_by_links": [
+   "Perception (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Infiltrator (Fallout: New Vegas)"
+  ],
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Perception})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15"
+  ],
+  "fnv_text": "Lockpick is a skill in Fallout: New Vegas. Its functionality was replaced by the Locksmith perk in Fallout 4 and the Picklock perk .\n\nThis skill determines the difficulty of locks the player is able to pick.\n\n==Initial level==\n: [math] \n\nExample: A starting Perception of 5 and Luck of 5.\n: [math] \n\n==Description==\nLockpick in Fallout: New Vegas operates in much the same way as Fallout 3, with the Lockpick skill determining which locks the game will allow the player character to attempt picking. Their skill must, again, be at least the lock rating to try, and locks are rated at 25% increments:\n{| class=\"va-table va-table-center\"\n!Lock difficulty\n!Requirement\n|-\n|Very Easy\n|0%\n|-\n|Easy\n|25%\n|-\n|Average\n|50%\n|-\n|Hard\n|75%\n|-\n|Very Hard\n|100%\n|}\nWith the prerequisite skill, picking a lock takes the form of a minigame.\n\n==Ways to increase Lockpick==\n; Permanent\n* Leveling up (10 + half of INT + 2 with Educated perk)\n* Tumblers Today (+3 or +4 with Comprehension)\n* Optics Enhancer (+2 depending on Perception, a perfect Perception of 10 will see no benefit.)\n* Tag! (+15)\n* Skilled (+5)\n; Temporary\n* Locksmith's Reader (+10 or +20 with Comprehension)\n* Absinthe (up to +6 with 100 Survival, a perfect Perception of 10 will see no benefit.)\n* Coyote tobacco chew (+2 depending on Perception, a perfect Perception of 10 will see no benefit.)\n* Mentats (+2-4 depending on Perception, a perfect Perception of 10 will see no benefit.)\n* Party Time Mentats (+2-4 depending on Perception, a perfect Perception of 10 will see no benefit.)\n* Most hats (+2 depending on Perception, a perfect Perception of 10 will see no benefit.)\n* Vault 3 utility jumpsuit (+5)\n* Advanced riot gear helmet (+2-4 depending on Perception, a perfect Perception of 10 will see no benefit.)\n* Marked patrol armor (+2 depending on Perception, a perfect Perception of 10 will see no benefit.)\n\n==Perks that require Lockpick skill==\n{| class=\"va-table va-table-center\"\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n\n|-\n| Infiltrator\n| 70\n| 18\n| Perception 7\n|}\n\n==Interactions that require Lockpick skill==\n* 35 Lockpick to persuade God to follow the Courier during Find Collar 8: \"Dog\".\n* 50 Lockpick to unlock the truck door at Cottonwood overlook during the quest Eye for an Eye.\n* 75 Lockpick to taunt Elijah about unlocking the Sierra Madre vault and getting him to personally intervene during Heist of the Centuries.\n* 75 Lockpick to inform Klein that the Sonic emitter works like an electronic lockpick to g"
+ },
+ {
+  "page": "Medicine (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Effectiveness of stimpaks, super stimpaks, Rad-X and RadAway",
+  "governed_by": "Intelligence",
+  "initial_value": "2 + (Intelligence x 2) + ceil (Luck / 2)",
+  "related_perks": "Living Anatomy, Chemist, Chem Resistant",
+  "related_traits": "Good Natured",
+  "governed_by_links": [
+   "Intelligence (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Living Anatomy (Fallout: New Vegas)",
+   "Chemist (Fallout: New Vegas)",
+   "Chem Resistant (Fallout: New Vegas)"
+  ],
+  "math": [],
+  "fnv_text": "Medicine is a skill in Fallout: New Vegas, replacing the First Aid and Doctor skills from Fallout, Fallout 2 and Fallout Tactics.\n\nThis skill determines the effectiveness of stimpaks, super stimpaks, Rad-X and RadAway.\n\n==Initial level==\n<math display=block>\\text{Initial level}=2+(2\\times\\text{Intelligence})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil</math>\n\nExample: A starting Intelligence of 5 and Luck of 5.\n\n<math display=block>2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15</math>\n\nThe higher one's Medicine skill, the more Hit Points they will replenish when using a stimpak and the more effective they are at using any other medicinal item, such as Rad-X or RadAway.\n\nThe exact effect of the Medicine skill on such items is determined by the formula:\n\n<math display=block>\\text{Effect} =\\text{Base} \\times \\left(1 + \\frac{Medicine}{50}\\right)</math>\n\nIn basic terms, medical items become twice as effective with a Medicine skill of 50, and three times as effective with a Medicine skill of 100. This progression is linear, meaning at a skill level of 75, medical items are 2.5x as effective.\n\n==Ways to increase Medicine==\n; Permanent\n* Leveling up (up to +15 or +17 with Educated)\n* D.C. Journal of Internal Medicine (+3 or +4 with Comprehension)\n* Good Natured (+5)\n* Skilled (+5)\n; Temporary\n* Wasteland doctor fatigues (+5)\n* Today's Physician (+10 or +20 with Comprehension)\n* Followers lab coat (+10)\n* Daniel's outfit (+5)\n\n==Perks that require Medicine skill==\n{| class=\"va-table\"\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n\n|-\n| Living Anatomy\n| 70\n| 8\n| -\n\n|-\n| Chemist\n| 60\n| 14\n| -\n\n|-\n| Chem Resistant\n| 60\n| 16\n| -\n|}\n\n==Interactions that require Medicine skill==\n* 20 Medicine to convince Dr. Richards that the Courier has \"some medical experience,\" triggering Restoring Hope.\n* 25 Medicine to heal all injured NCR troopers in the Camp Forlorn Hope medical center with the required equipment (Med-X, bonesaw, surgical tubing, etc.) during Restoring Hope.\n* 30 Medicine or 30 Speech to convince Doc Mitchell to gift some stimpaks during Ain't That a Kick in the Head. Passing both checks will result in five stimpaks rather than six, with Medicine always the first choice.\n* 30 Medicine to correctly examine the \"dead bodies\" of the Freeside thugs \"killed\" by Orris during G.I. Blues.\n* 30 Medicine to successfully heal the mole rat Snuffles's injured leg in Sloan, earning NCR fame if Chomps Lewis is informed afterward.\n* 30 Medicine to point out that Troi"
+ },
+ {
+  "page": "Melee Weapons (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Damage done by Melee Weapons; Some damage blocked",
+  "governed_by": "Strength",
+  "initial_value": "2 + (Strength x 2) + ceil (Luck / 2)",
+  "related_perks": "Cowboy, Super Slam!, Unstoppable Force, Ninja",
+  "related_traits": "Good Natured",
+  "governed_by_links": [
+   "Strength (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Cowboy (Fallout: New Vegas)",
+   "Super Slam!",
+   "Unstoppable Force",
+   "Ninja (Fallout: New Vegas)"
+  ],
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Strength})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15"
+  ],
+  "fnv_text": "Melee Weapons is a skill in Fallout: New Vegas. This skill determines combat effectiveness with any melee weapon and combat effectiveness with non-explosive throwing weapons.\n\n==Math==\n: [math] \n\nExample: A starting Strength of 5 and Luck of 5.\n: [math] \n\nAs this skill increases, so does the damage inflicted with all of these weapons, both in and out of V.A.T.S. mode.\n\n==Special Attacks==\nWhen the player character has 50 Melee skill points, they have access to special melee moves which consume a certain amount of AP for a variety of effects in V.A.T.S.\n* Most one-handed edged weapons (such as combat knives) have the Back Slash special attack.\n* Most one-handed blunt weapons (such as the lead pipe) have the Lights Out special attack.\n* Most two-handed melee weapons (such as the sledgehammer) have the Mauler special attack.\n* Staff-like weapons (such as baseball bats) have the Grand Slam special attack.\n* There are a variety of other attacks, some unique. Only thrown melee weapons and the broad machete have no special attack.\n\n==V.A.T.S. vs. real-time==\nIt is possible to execute all special melee moves outside of V.A.T.S., although the animation can look different in first-person view than in third-person view. It is not required to have 50 points of the skill to perform the moves. To perform any special move described above, initiate a power attack (hold attack button) while moving forward. However, executed outside of V.A.T.S. they don't have any special properties but have a benefit of a standard power attack: doubling weapon base damage.\n\nUnlike in Fallout 3, a potentially significant amount of damage can be taken in V.A.T.S., heightening the danger of meleeing in it, as one cannot dodge or block while in V.A.T.S. However, all melee weapons, except thrown, do twice as much base damage.\n\n==Ways to increase Melee Weapons==\n; Permanent\n* Leveling up (up to +15 or +17 with Educated)\n* Grognak the Barbarian (+3 or 4 with Comprehension)\n* Tag! (+15)\n* Skilled (+5)\n; Temporary\n: Note: Only items adding +5 or more are included.\n* Motor-Runner's helmet\n* Tæles of Chivalrie (+10 or 20 with Comprehension)\n\n==Affected weapons==\n\n\n\n==Perks that require Melee Weapons skill==\n{| class=\"va-table va-table-center\"\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n\n|-\n| Cowboy\n| 45\n| 8\n| Guns 45\n\n|-\n| Super Slam!\n| 45\n| 8\n| Strength 6\n\n|-\n| Unstoppable Force\n| 90\n| 12\n| Strength 7\n\n|-\n| Ninja\n| 80\n| 20\n| Sneak 80\n|}\n\n==Interactions that require Melee Weapons skill==\n*"
+ },
+ {
+  "page": "Repair (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Ability to break down an item to repair another of the same type as well as computers, radios, etc.",
+  "governed_by": "Intelligence",
+  "initial_value": "(2 + (Intelligence x 2) + ceil (Luck / 2)",
+  "related_perks": "Hand Loader, Jury Rigging",
+  "related_traits": "Good Natured",
+  "governed_by_links": [
+   "Intelligence (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Hand Loader",
+   "Jury Rigging (Fallout: New Vegas)"
+  ],
+  "math": [],
+  "fnv_text": "Repair is a skill in Fallout: New Vegas primarily used to oppose degradation in equipment condition.\n\n==Initial level==\n<math display=block>\\text{Initial level}=2+(2\\times\\text{Intelligence})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil</math>\n\nExample: A starting Intelligence of 5 and Luck of 5.\n<math display=block>2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15</math>\n\n==Description==\nItems can now be repaired to 100% regardless of the player character's current skill. Repair still governs the effectiveness of repairing one item with another, using the same repair efficiency calculation as Fallout 3, but with a static 100% condition limit in place of the skill-based limit. The list of which items can be used to repair a chosen item can be found in the regular repair list article as well as the expanded list in the article for the Jury Rigging perk.\n\nA higher Repair skill unlocks crafting recipes for different types of ammunition and other gear at reloading benches and workbenches, such as the weapon repair kit with 50 skill. High Repair also allows one to repair mechanical or electronic world objects (elevators, doors, computers, etc.).\n\n==Ways to increase Repair==\n; Permanent\n* Leveling up (up to +15 or +17 with Educated)\n* Dean's Electronics (+3 or +4 with Comprehension)\n* Logic Co-Processor implant (+2 depending on Intelligence, a perfect Intelligence of 10 will see no benefit.)\n* Good Natured (+5)\n* Skilled (+5)\n; Temporary\n* Civilian engineer jumpsuit (+5)\n* Handyman jumpsuit (+5)\n* NCR engineer jumpsuit (+5)\n* Repconn jumpsuit (+5)\n* RobCo jumpsuit (+5)\n* Vault 3 utility jumpsuit (repair +5, lockpick +5)\n* Dead Money jumpsuit (+5)\n* Yangtze camp jumpsuit (+5)\n* Dr. Klein's glasses (+5)\n* Fixin' Things (+10 or +20 with Comprehension)\n* Mentats (+2 to +8 depending on Intelligence, a perfect Intelligence of 10 will see no benefit.)\n* Party Time Mentats (+2 to +8 depending on Intelligence, an Intelligence of 10 will see no benefit.)\n* Black coffee (+2 to +4 depending on Intelligence; an Intelligence of 10 will see no benefit, Survival can increase the bonus by up to +12 at 100%)\n* Light Switch 01 Upgrade: \"Smart Lights\" (+5 to +9 (depending on current Intelligence) for 12 hours or until one uses the Light Switch 02 Upgrade: \"Mood Lights\")\n\n==Perks that require Repair skill==\n{| class=\"va-table va-table-center\"\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n\n|-\n| In Shining Armor \n| 20\n| 2\n| Science 70\n\n|-\n| Junk Rounds \n| 45\n| 2\n| Luck 6\n\n|-"
+ },
+ {
+  "page": "Science (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "The range of terminal difficulties that may be hacked by the player, various dialogue options",
+  "governed_by": "Intelligence",
+  "initial_value": "2 + (Intelligence x 2) + ceil (Luck / 2)",
+  "related_perks": "Vigilant Recycler, Math Wrath, Nerd Rage!, Robotics Expert, Computer Whiz, Nuka Chemist",
+  "related_traits": "Good Natured",
+  "governed_by_links": [
+   "Intelligence (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Vigilant Recycler",
+   "Math Wrath",
+   "Nerd Rage! (Fallout: New Vegas)",
+   "Robotics Expert (Fallout: New Vegas)",
+   "Computer Whiz (Fallout: New Vegas)",
+   "Nuka Chemist"
+  ],
+  "math": [
+   "\\begin{matrix}\\text{Initial}\\\\\\text{level}\\end{matrix}=2+(2\\times\\text{Intelligence})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15"
+  ],
+  "fnv_text": "Science is a skill in Fallout: New Vegas. It determines the chance to successfully hack computers and the ability to convert and recycle ammunition used in energy weapons. It also opens up dialogue options with certain characters for various results.\n\n==Initial level==\n: [math] \n\nExample: A starting Intelligence of 5 and Luck of 5.\n: [math] \n\n==Description==\nLike in Fallout 3, one's Science skill relative to the difficulty rating affects how hard the hacking mini-game is. At Science 100, even Hard terminals will have very few words to choose from. This can possibly be as low as 5 possible passwords which, combined with the Computer Whiz perk, means an 80% chance of getting most terminals off the bat without even having to look at the words.\n\nUnlike Fallout 3, one's Science skill is used for more than dialogue checks and hacking. Many workbench crafting recipes, and some campfire recipes, rely on Science, specifically ones involving the creation and/or recycling of Energy Weapons ammunition and crafting chems.\n\n==Ways to increase Science==\n; Permanent\n* Leveling up (up to +15 or +17 with Educated)\n* Big Book of Science (+3 or +4 with Comprehension)\n* Logic Co-Processor (+2 depending on Intelligence, a perfect Intelligence of 10 will see no benefit.)\n* Good Natured (+5)\n* Skilled (+5)\n; Temporary\n* Programmer's Digest (+10 or +20 with Comprehension)\n* Night Person (+2-4 at night depending on Intelligence, a perfect Intelligence of 10 will see no benefit.)\n* Mentats (+2-4 depending on Intelligence, a perfect Intelligence of 10 will see no benefit.)\n* Party Time Mentats (+2-4 depending on Intelligence, a perfect Intelligence of 10 will see no benefit.)\n* All-purpose science suit (+5)\n* Scientist outfit (+5)\n* Followers lab coat (+10)\n* Followers doctor coat (+5)\n* (Legacy content) Lesko's lab coat (+10)\n* Dr. Klein's scrubs (+10 up to +14 depending on current Intelligence)\n* Dr. Mobius' scrubs (+15 up to +19 depending on current Intelligence)\n* Light Switch 01 Upgrade: \"Smart Lights\" (+5-9 (depending on current Intelligence) for 12 hours or until the player uses the Light Switch 02 Upgrade: \"Mood Lights\")\n* Black coffee (+2 to +4 depending on Intelligence; an Intelligence of 10 will see no benefit, Survival can increase the bonus by up to +12 at 100%)\n\n==Perks that require Science skill==\n{| class=\"va-table va-table-center sortable\"\n! Perk\n! Requirement\n! Level\n! Additional Requirements\n\n|-\n| In Shining Armor \n| 70\n| 2\n| Repair 20\n\n|-\n| Vigilant Recycler\n| 70\n"
+ },
+ {
+  "page": "Sneak (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Chance of being detected while sneaking and pickpocketing; Allows a wider range of Holdout weapons",
+  "governed_by": "Agility; Encumberance; Armor worn",
+  "initial_value": "2 + (2 x Agility) + ceil (Luck / 2)",
+  "related_perks": "Broad Daylight, Friend of the Night, The Professional, Mister Sandman, Silent Running, Ninja",
+  "governed_by_links": [
+   "Agility (Fallout: New Vegas)",
+   "Encumbered",
+   "Fallout: New Vegas armor and clothing"
+  ],
+  "related_perk_links": [
+   "Broad Daylight",
+   "Friend of the Night",
+   "The Professional",
+   "Mister Sandman (Fallout: New Vegas)",
+   "Silent Running (Fallout: New Vegas)",
+   "Ninja (Fallout: New Vegas)"
+  ],
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Agility})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15",
+   "\\lfloor40+(0.6\\times\\text{Player Sneak})-\\left\\lceil\\frac{\\text{Item Value}}{2}\\right\\rceil-(0.6\\times\\text{Target NPC Sneak})\\rfloor=\\text{Success Chance}"
+  ],
+  "fnv_text": "Sneak is a skill in Fallout: New Vegas. It determines the chance of being detected while sneaking.\n\n==Initial level==\n: [math] \n\nExample: A starting Agility of 5 and Luck of 5.\n: [math] \n\n==Description==\nMost aspects of the Sneak skill are the same as for Fallout 3 Sneak. This includes the initial statistic, the sneak meter, stealing and pickpocketing, and Sneak Attack Criticals. However, unlike in Fallout 3, sneak is determined by the character levels of the actor sneaking as well as the actor attempting to detect them.\n\nFurther, the detection while sneaking is modified by other factors such as the class of the armor worn as well as its weight (medium and heavy armor, such as power armor, makes more noise, and light armor makes none), the light levels of an area such as day or night, if the Pip-Boy light is on or off, how fast one is moving, being in an interior or an exterior location, and the noise level of weapons used; silent weapons are undetectable in terms of their action sound.\n\nThe formulae work as follows. Distance is measured in game units; approximately speaking, 64 game units equals one meter, so 2500 units is about 39 meters and 5000 units is about 78 meters. Light levels are not well-understood, but are included to give a sense of how stealth works. While some work has been done to clean up variable names to make them intuitive to understand, some are inherently counterintuitive, particularly \"Target Skill,\" which incorporates Detector information in it despite the name. Note that the Armor penalty is for armor, not for helmets.\n\nTarget Skill not being attenuated by distance while being modified by Detector level is why most practical tests of stealth mechanics always end up finding that target level is the most significant factor determining detection radius - effectively, for every level of the NPC trying to detect you above your own, you lose 5 points of Sneak, which can take you into the negative.\n\nThe \"Detection\" value in the formula is what is checked for an NPC detecting you, against arbitrary thresholds:\n\n*<-20: You are undetected. If you were in Combat, your Detector will set a timer; if the timer expires and you are still undetected, your Detector will remove you from its Combat Target list.\n*-20 &hellip; 0: NPC will go from Normal to Alert or Combat to Lost.\n*>0: NPC detects you (will go to Combat).\n\n<math display=block>\\begin{align}\n\\displaystyle \\text{Maximum Detection Distance} &= \\begin{cases}\n2500, &\\text{Inside}\\\\\n5000, &\\t"
+ },
+ {
+  "page": "Speech (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Amount to succeed in a Speech challenge",
+  "governed_by": "Charisma",
+  "initial_value": "2 + (2 x Charisma) + ceil (Luck / 2)",
+  "related_perks": "Black Widow/Lady Killer, Cherchez La Femme/Confirmed Bachelor, Terrifying Presence",
+  "related_traits": "Good Natured",
+  "governed_by_links": [
+   "Charisma (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Black Widow (Fallout: New Vegas)",
+   "Lady Killer (Fallout: New Vegas)",
+   "Cherchez La Femme",
+   "Confirmed Bachelor",
+   "Terrifying Presence (Fallout: New Vegas)"
+  ],
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Charisma})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15"
+  ],
+  "fnv_text": "Speech is a skill in Fallout: New Vegas. It determines the amount to succeed in a Speech challenge.\n\n==Math==\n: [math] \n\nExample: A starting Charisma of 5 and Luck of 5.\n: [math] \n\nSpeech no longer has a '%' chance of working as in Fallout 3. It now works 100% of the time if one has the right Speech skill, which makes it impossible to save and load to bypass Speech challenges. A Speech challenge beyond the player's ability will usually have one dialogue option, and another when it is within the player's ability. Speech is an extremely useful skill in New Vegas, since it can frequently allow the player to avoid fights or accomplish quests more easily. \n\n==Speech in quests and exploration==\n\n* 15, 30 and 45 Speech in lieu of Benny's evidence to convince Swank to give the Courier their weapons back at the Tops during Ring-a-Ding-Ding!.\n* 20 Speech\n** to get Joe Cobb to tell the player what he did to land himself in prison.\n** to get Pearl to reveal a small bit of info upon greeting.\n* 25, 50 and 75 Speech to trick Karl into losing his cool in front of Papa Khan during the quest Oh My Papa.\n* 25 Speech:\n** to convince Trudy to join the fight in Ghost Town Gunfight.\n** to convince Deputy Beagle in Primm to stay and fight with the player after releasing him.\n** to convince Angela Williams to tell the player her opinion about Thomas Hildern.\n** to convince Private Ortega to tell the player about the \"ungrateful\" farmers at the NCR sharecropper farms.\n** to convince Motor-Runner to reveal what happened to the Vault 3 inhabitants.\n** to convince Milo to start the mission Back in Your Own Backyard. Failing this initial check will make subsequent attempts require 45 Speech.\n* 30 Speech:\n** to convince Thomas Hildern to reveal that he wanted something more during his time with the Followers of the Apocalypse.\n** to convince Cannibal Johnson to reveal how he got his nickname.\n** or 30 Medicine to convince Doc Mitchell to give the Courier three stimpaks before initially leaving his house. Passing both will result in five stimpaks rather than three, Speech will always be the second choice (worth two).\n** to convince Bitter-Root to tell where he got his name.\n** to convince Chavez to move on in I Fought the Law.\n** to convince Ranger Andy to teach the Courier the Ranger Takedown.\n** to convince Comm Officer Lenk to share her story.\n** or 6 Intelligence to convince the suspicious merchant at Jean Sky Diving to reveal himself for I Fought the Law.\n** to convince the suspici"
+ },
+ {
+  "page": "Survival (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Magnitude of effects from food.; Ability to cook on a fire.",
+  "governed_by": "Endurance",
+  "initial_value": "2 + (Endurance x 2) + ceil (Luck / 2)",
+  "related_perks": "Hunter; Entomologist; Travel Light; Rad Child; Rad Resistance; Animal Friend; Tribal Wisdom; Old World Gourmet",
+  "governed_by_links": [
+   "Endurance (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Hunter (Fallout: New Vegas)",
+   "Entomologist (Fallout: New Vegas)",
+   "Travel Light",
+   "Rad Child (Fallout: New Vegas)",
+   "Rad Resistance (Fallout: New Vegas)",
+   "Animal Friend (Fallout: New Vegas)",
+   "Tribal Wisdom",
+   "Old World Gourmet"
+  ],
+  "math": [],
+  "fnv_text": "Survival is a skill in Fallout: New Vegas. It replaces the Outdoorsman skill from Fallout and Fallout 2.\n\n==Overview==\nThe Survival skill allows the player character to increase the effect of food and drink items when consumed and unlocks recipes for some poisons, chems, food, and drinks that can be crafted at campfires. It does not apply to all food and drink - e.g. it applies to Nuka-Cola Quartz but not Nuka-Cola - and improves the effect at application time, not at crafting time, i.e. it works on items the Courier acquired rather than crafted and only checks the skill when it is time to apply the effect.\n\nHigher levels of the Survival skill increase the effectiveness of food and drink items, including stat changes, whether they are made from Survival recipes or not, up to a tripling effect at a skill level of 100. However, this also includes most negative effects, such as penalties to SPECIAL stats or increases to the character's Dehydration, Starvation, and Sleep while in Hardcore mode. Radiation of foods is not affected.\n: For example, the gecko steak:\n\n\n==Equation==\n<math display=block>\\text{Initial level}=2+(2\\times\\text{Endurance})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil</math>\n\nExample: A starting Endurance of 5 and Luck of 5.\n<math display=block>2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15</math>\n\nEffects on food are affected by the Survival skill with the following equation, which amounts to 2 percentage points (102% at level 1, 104% at level 2, and so on) per skill level, although the final effect is floored:\n<math display=block>|\\text{Effect}| =\\left\\lfloor|\\text{Base}| \\times \\left(1 + \\frac{\\text{Survival}}{50}\\right)\\right\\rfloor</math>\n\nIn basic terms, food items become twice as effective with a Survival skill of 50, and three times as effective with a Survival skill of 100. This progression is linear, meaning that at a skill level of 75, food items are theoretically 2.5&times; as effective. However, the base effect of food and drink is generally small, e.g. +1 base for a SPECIAL stat improvement or +1 to +5 HP/second for most foods, which means the flooring effect results in most Survival levels not doing much for most effects outside of Hardcore mode (Dehydration, Starvation, and Sleep more often involve larger numbers such that the skill can do more with smaller changes in skill level). For example, purified water heals 2 HP per second base, so very few distinct skill levels apply - only levels 25, 50, 75, and 100 will impact"
+ },
+ {
+  "page": "Unarmed (Fallout: New Vegas)",
+  "kind": "skill",
+  "type": "skill",
+  "modifies": "Damage done by Unarmed attacks; Damage blocked",
+  "governed_by": "Endurance",
+  "initial_value": "2 + (Endurance x 2) + (Luck / 2)",
+  "related_perks": "Piercing Strike, Paralyzing Palm, Slayer",
+  "related_traits": "Good Natured, Heavy Handed",
+  "governed_by_links": [
+   "Endurance (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Piercing Strike",
+   "Paralyzing Palm (Fallout: New Vegas)",
+   "Slayer (Fallout: New Vegas)"
+  ],
+  "math": [
+   "5 + 0.3 \\times Unarmed"
+  ],
+  "fnv_text": "Unarmed is a skill in Fallout: New Vegas. It determines the effectiveness of Unarmed attacks.\n\n==Initial level==\n<math display=block>\\text{Initial level}=2+(2\\times\\text{Endurance})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil</math>\n\nExample: A starting Endurance of 5 and Luck of 5.\n<math display=block>2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15</math>\n\n===Short Description===\nAside from being potentially checked in dialogue or for quests like any other skill, Unarmed fundamentally does four things. It does not help qualify for certain weapons; the skill requirement on Unarmed weapons has no in-game effect.\n\nFirst, like any combat skill, it sets what percentage of the weapon's per-hit damage is actually dealt by the player character (PC), from 50% linearly up to 100%. \n<math display=block>\\text{Damage}=\\operatorname{round}\\left(\\text{Base} \\times \\frac{100+Skill}{200}\\right)</math>\n\nSecond, it adds to the PC's per-hit damage (for bare fists, it sets the PC's base damage directly).\n<math display=block>\\text{Bonus Damage}=\\left\\lceil\\frac{10+\\text{Skill}}{20}\\right\\rceil</math>\n{| class=\"va-table sortable va-table-center\" style=\"margin:0 auto;\"\n! scope=\"col\" |Unarmed Damage\n! scope=\"col\" |Minimum Skill\n|-\n|1\n|0\n|-\n|2\n|11\n|-\n|3\n\n|31\n|-\n|4\n|51\n|-\n|5\n|71\n|-\n|6\n| 91\n|} \n\nThird, it determines how much Damage Threshold against melee attacks the PC gains while blocking with Unarmed weapons; there appears to be a bug causing it to also determine this when wielding a melee weapon in at least some situations.\n<math display=block>\\text{Block Threshold} = \\operatorname{round}\\left(5 + 3 \\times \\frac{Skill}{10} \\right)</math>\n\nFourth, at levels 50 and 75 it unlocks special V.A.T.S. attacks only performable with Unarmed weapons that both deal increased damage and force the AP cost of the attack to be 20, which for any weapon with an AP cost of 21 or more increases its Damage Per Action Point.\n\n{|class=\"va-table\" style=\"text-align:center;margin:0 auto;\"\n! Name\n! Unarmed Requirement\n! AP\n! Damage Bonus\n! Notes\n|-\n|Uppercut\n|50\n|20\n|15%\n|\n|-\n|Stomp\n|50\n|20\n|100%\n| style=\"text-align:left;\" | Only on knocked down opponents\n|-\n|Cross\n|75\n|20\n|10%\n| style=\"text-align:left;\" | 2.5x Increased Limb Damage\n|}\n\n==Description==\nAs in Fallout 3, the Unarmed skill is tied to the Endurance SPECIAL stat. The PC will receive a boost of +2 points in Unarmed per level of Endurance, for a maximum boost of +20 points at 10 Endurance. Luck further raises Unarmed effectiveness by +1 poin"
+ },
+ {
+  "page": "Action Points",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Number of things a player can do during V.A.T.S. mode",
+  "governed_by": "Agility",
+  "initial_value": "65 + 3 * Agility",
+  "related_perks": "Action Boy/Action Girl, Beautiful Beatdown, Grim Reaper's Sprint, Math Wrath, Nerves of Steel, Plasma Spaz, Ain't Like That Now",
+  "related_traits": "Fast Shot, Kamikaze, Trigger Discipline",
+  "governed_by_links": [
+   "Agility (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Action Boy Action Girl (Fallout: New Vegas)",
+   "Beautiful Beatdown",
+   "Grim Reaper's Sprint (Fallout: New Vegas)",
+   "Math Wrath",
+   "Nerves of Steel (Fallout: New Vegas)",
+   "Plasma Spaz",
+   "Ain't Like That Now"
+  ],
+  "math": [
+   "\\text{Initial level}=65+(3\\times\\text{Agility})",
+   "65+(3\\times5)=80~\\text{Action points}"
+  ],
+  "fnv_text": "Action Points in Fallout: New Vegas are mechanically identical to Fallout 3, with the difference of the Agility bonus being multiplied by 3 instead of 2.\n\n: [math] \n\nExample: A starting Agility of 5.\n\n: [math] \n\nNotes:\n* The maximum base amount is capped at 95 AP.\n** This limit can be increased with the addition of bonuses (see table below).\n\n===AP bonuses===\n{|class=\"va-table sortable\" style=\"text-align: center;\"\n!style=\"white-space: nowrap;\"|Name\n!style=\"white-space: nowrap;\"|Type\n!style=\"white-space: nowrap;\"|AP bonus\n!style=\"white-space: nowrap;\"|Duration\n!style=\"white-space: nowrap;\"|Value\n!style=\"white-space: nowrap;\"|Form ID\n!style=\"white-space: nowrap;\"|Notes\n\n|-\n|Agility\n|SPECIAL\n|3-30\n|Permanent\n|N/A\n|N/A\n|style=\"text-align: left;\" | 3 AP per Agility point\n\n|-\n|Kamikaze\n|Trait\n|10\n|Permanent\n|N/A\n|\n|style=\"text-align: left;\" |Trait\n\n|-\n|Action Boy/Action Girl\n|Perk\n|15 (per rank)\n|Permanent\n|N/A\n| (Action Boy)\n (Action Girl)\n|style=\"text-align: left;\" | Perk may be taken up to two times\n\n|-\n|Ain't Like That Now\n|Perk\n|None (see notes)\n|Permanent\n|N/A\n|\n|style=\"text-align: left;\" | Perk increases AP Regen rate by +25% \n\n|-\n|Beautiful Beatdown\n|Perk\n|None (see notes)\n|When unarmed\n|N/A\n|\n|style=\"text-align: left;\" | Perk reduces AP cost by 10% with Unarmed attacks\n|-\n|Math Wrath\n|Perk\n|None (see notes)\n|Permanent\n|N/A\n|\n|style=\"text-align: left;\" | Perk reduces AP cost by 10% \n\n|-\n|Plasma Spaz\n|Perk\n|None (see notes)\n|Permanent\n|N/A\n|\n|style=\"text-align: left;\" | Perk reduces AP cost by 20% with plasma weapons\n\n|-\n|Nerves of Steel\n|Perk\n|None (see notes)\n|Permanent\n|N/A\n|\n|style=\"text-align: left;\" | Perk increases the AP Regen rate by +20%.\n\n|-\n|Atomic!\n|Perk\n|None (see notes)\n|While irradiated\n|N/A\n|\n|style=\"text-align: left;\" | Perk increase the AP Regen rate with radiation level \n\n|-\n|Grim Reaper's Sprint\n|Perk\n|None (see notes)\n|When triggered\n|N/A\n|\n|style=\"text-align: left;\" | Perk restores 20 AP on a kill in V.A.T.S.\n\n|-\n|Implant Y-7\n|Implant\n|2\n|When eating\n|20000\n|\n|style=\"text-align: left;\" | +2 AP replenished for each food item consumed \n\n|-\n|General Oliver's uniform\n|Clothing\n|20\n|While equipped\n|100\n|\n|style=\"text-align: left;\" | \n\n|-\n|Courier duster\n|Clothing\n|15\n|While equipped\n|1700\n| (Legion)\n|style=\"text-align: left;\" | \"Fighting Chance\" (Legion variant) in Lonesome Road\n\n|-\n|Armor of the 87th Tribe\n|Clothing\n|10\n|While equipped\n|6500\n|\n|style=\"text-align: left;\" | Found in Lonesome Road \n\n|-\n|Rebound\n|Aid-chem\n|5 per sec\n|1 minu"
+ },
+ {
+  "page": "Carry Weight",
+  "kind": "derived",
+  "type": "derived",
+  "governed_by": "Strength",
+  "initial_value": "150 + (STR x 10) = lbs",
+  "related_perks": "Burden to Bear, Heavyweight, Long Haul, Pack Rat, Strong Back",
+  "governed_by_links": [
+   "Strength"
+  ],
+  "related_perk_links": [
+   "Burden to Bear",
+   "Heavyweight",
+   "Long Haul",
+   "Pack Rat (Fallout: New Vegas)",
+   "Strong Back (Fallout 3)"
+  ],
+  "math": [
+   "\\text{Initial level}=150+(\\text{Strength}\\times10)",
+   "150+(5\\times10)=200~\\text{lbs}"
+  ],
+  "fnv_text": "Movement speed is unaffected by one's carry weight until the weight of items carried exceeds the total carry weight, at which point one will become overencumbered and unable to run, jump or fast travel, with the exception of the Long Haul perk in Fallout: New Vegas.\n: [math] \n\nExample: A starting Strength of 5.\n: [math] \n\n===Weight===\n\n* Every added point of Strength increases weight limit by 10 lbs, including temporary bonuses added from chems, alcohol and apparel.\n* The maximum initial level is capped at 250 lbs without the addition of extra perks.\n* The Strong Back perk increases the limit by 50 lbs.\n* The Burden to Bear perk can increase this limit by another 50 lbs.\n* The Hoarder trait increases the limit by 25 lbs.\n* The NCR Courier duster increases carry weight by another 25 lbs.\n* In Fallout: New Vegas, the maximum amount of weight one can carry is 400 lbs.\n* Using the console command , carry weight can be increased to a maximum of 20,106 lbs.\n* With the Long Haul perk in Fallout: New Vegas, one can still fast travel while overencumbered."
+ },
+ {
+  "page": "Critical Chance",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Chance to cause a critical hit",
+  "governed_by": "Luck",
+  "initial_value": "Luck × 1%",
+  "related_perks": "Finesse, Light Touch, Ninja, Laser Commander",
+  "related_traits": "Built to Destroy",
+  "governed_by_links": [
+   "Luck (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Finesse (Fallout: New Vegas)",
+   "Light Touch",
+   "Ninja (Fallout: New Vegas)",
+   "Laser Commander"
+  ],
+  "math": [],
+  "fnv_text": "The formulas for Critical Chance are mostly unchanged from Fallout 3, although weapon condition no longer affects Critical Chance. The player receives 1% of Critical Chance for each point placed into Luck. During character creation, the Built to Destroy trait can add an additional 3% for all weapons. Luck above 10 does not actually do anything for Critical Chance.\n\n; Attributes, perks, and traits that increase Critical Chance include:\n* Luck (permanent +1-10%)\n*Traits:\n** Built to Destroy (+3% to Crit Chance)\n** Claustrophobia (+1 Luck while outdoors, but -1 Luck indoors)\n** Early Bird (+2 Luck between 6am and 12pm but -1 Luck between 6pm and 6am, +0 Luck between 12pm and 6pm)\n*Perks:\n**From leveling:\n*** Certified Tech<sup>1</sup> (permanent +.25% against robots due to a bug; JSawyer fixes this bug, so instead it applies +25%)\n*** Fight the Power!<sup>1</sup> (permanent +5% versus targets in NCR, Legion, and Brotherhood of Steel faction armor).\n*** Finesse (permanent +5%).\n*** Intense Training lets you increase Luck by 1.\n*** Just Lucky I'm Alive (temporary +4 Luck for 3 minutes when ending combat with 25% health or less, effective +4%)\n*** Laser Commander<sup>1</sup> (permanent +10% with lasers).\n*** Light Touch<sup>1</sup> (temporary +5% while wearing any light armor)\n*** Ninja (permanent &times;1.15 increase for melee and unarmed weapons).\n*** Ninja multiplies total Critical Chance after all modifiers by 1.15 due to an error (it increases Critical Chance by +15 percent, not +15 percentage points); because Critical Chance is always less than or equal to 1, this makes it weaker than adding percentage points in all cases.\n**From quests, challenges or purchased:\n*** The Bear-Slayer, Dead Man's Burden, Divide Survivor and Scourge of the East are mutually exclusive quest reward perks that increase Luck by 1.\n*** Set Lasers for Fun<sup>1</sup> (permanent +2/4% with energy weapons) is a challenge perk.\n*** Meat of Champions (+1 Luck for 60 seconds after eating a fresh corpse, effective +1%) is a special case, in that it is a challenge perk with a prerequisite of a leveled perk.\n; Items that increase Critical Chance:\n* 1st Recon beret (+5%)\n* Naughty nightwear (+1 Luck, effective +1%)\n* True Police Stories (temporary +5%, +10% with Comprehension)\n* V.A.T.S.<sup>1</sup> (temporary +5% Critical Hit Chance when using V.A.T.S.)\n* Lucky shades (+1 Luck, effective +1%)\n* Joshua Graham's armor (+3%)\n* Salt-Upon-Wounds' helmet (+2%)\n* Elite riot gear (+5%)\n* Ulysses' d"
+ },
+ {
+  "page": "Damage Resistance",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Reduces Damage taken from attacks",
+  "governed_by": "None",
+  "initial_value": "0%",
+  "related_perks": "Toughness, Cyborg, Barkskin, Survival Expert, Pitt Fighter, Ferocious Loyalty",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Toughness (Fallout 3)",
+   "Cyborg (perk)",
+   "Barkskin",
+   "Survival Expert",
+   "Pitt Fighter",
+   "Ferocious Loyalty"
+  ],
+  "math": [],
+  "fnv_text": "In Fallout: New Vegas, DR is mostly replaced by DT (Damage Threshold). Med-X and the new consumables Slasher and Battle Brew provide bonuses to DR, which functions identically to the DR from Fallout 3. If all three consumables are taken together, they provide the maximum 85% damage resistance allowed by the game engine.\n\nDamage Resistance is applied before damage threshold, contrary to the original Fallout games. So, for a character with 30 DR and 20 DT (e.g. an NCR Veteran Ranger), an attack that deals 80 damage is first reduced by 30% (leaving 56 damage), then the damage threshold is subtracted from that number, leaving a final damage of 36. As a result of this, a high damage resistance has a very large effect on a character's ability to withstand damage. For the full damage formula see Fallout: New Vegas combat.\n\nThough not listed in the description or anywhere else in the game, the trait Kamikaze gives a permanent 15% decrease to DR. \n\nThe only pieces of equipment in the game that raise DR instead of DT are:\n\n* 1 DR - Vault 11 jumpsuit\n* 3 DR - Rebreather from the quest Volare!\n* 3 DR - Scientist outfit\n* 2 DR - [Unobtainable] Mysterious Stranger hat worn by the Mysterious Stranger\n* 5 DR - [Unobtainable] Trenchcoat found on the investigator during the quest Beyond the Beef.\n* 5 DR - [Unobtainable] Mysterious Stranger outfit worn by the Mysterious Stranger\n\nIn addition, DR can be conferred via the console by entering , where xx is a number between 0 and 85. Values beyond 85 are ignored by the game; 85 is the maximum DR. However, 80% is the maximum in practice, because incoming damage can never be reduced below 20%.\n\nA rare few non-player characters have perks which grant them DR in addition to the DT from their armor. These include:\n* All companions if using Ferocious Loyalty."
+ },
+ {
+  "page": "Damage Threshold",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Damage reduction",
+  "governed_by": "Armor; Blocking",
+  "initial_value": "0",
+  "related_perks": "Toughness, Stonewall, Nerd Rage!, Hit the Deck, Piercing Strike, Shotgun Surgeon, Living Anatomy, Whiskey Rose, Sub-Dermal Armor, Brainless, Big Brained",
+  "related_traits": "Kamikaze",
+  "governed_by_links": [
+   "Blocking"
+  ],
+  "related_perk_links": [
+   "Toughness (Fallout: New Vegas)",
+   "Stonewall (Fallout: New Vegas)",
+   "Nerd Rage! (Fallout: New Vegas)",
+   "Hit the Deck (Fallout: New Vegas)",
+   "Piercing Strike",
+   "Shotgun Surgeon (Fallout: New Vegas)",
+   "Living Anatomy (Fallout: New Vegas)",
+   "Whiskey Rose",
+   "Sub-Dermal Armor",
+   "Brainless",
+   "Big Brained"
+  ],
+  "math": [],
+  "fnv_text": "===Mechanics===\n\n\n\n\nFallout: New Vegas mostly moves away from the exclusive use of Damage Resistance (DR) in Fallout 3, towards Damage Threshold (DT). Like in previous games, DT can function as an outright subtraction: if a shot is fired with a damage value of 40 against a DT of 10, then 10 damage will be ignored.\n\nHowever, the sequence of calculations differs compared to previous games. DR is applied first. The value after this adjustment depends on any DR a player character has, which is capped to a DR of 85 (85%. However, since final damage that is applied to health will never be below 20% of the original incoming damage (described later in this section), this ultimately means that any DR above 80 (a DR of 81 or higher) will never have any effect, so the actual effective cap is 80.\n\n<math display=block>Damage_{DR}=Basic Damage \\times \\frac{100-\\text{min}(DR, 85)}{100}</math>\n\nThe subtractive effect of DT applies after the multiplicative percentage reduction of DR, but with a limit to the combined effect of DR and DT: the final damage taken cannot be lower than 20% of the base attack; if lower, it is overwritten to 20% instead. Thus, with 80 DR, DT will not do anything, as it is already at the protection cap; however, with 70 DR against an attack of 10 damage, a DT of 1 will reduce the damage taken from 3 to 2, and DT above that will not help. Provided that a character's DR is 79 or less, any amount of DT is theoretically useful if the incoming attack damage is high enough. For example, applying the previous example to an incoming attack of 100 damage, 70 DR and 1 DT would reduce damage instead from 30 to 29 - a much less significant reduction than 3 to 2.\n\n<math display=block>Damage_{Final}={max}(Damage_{DR}-DT, Basic Damage \\times 0.2)</math>\n\nSo, to evaluate the earlier example, if an attack of 40 damage hits a character with 85 DR and 10 DT, the damage is first reduced to 6 (40 × 0.15 = 6), and then reduced by 10. The final result (-4) is less than 20% of the base attack (40 × 0.20 = 8), so the damage taken is raised to 8 instead.\n\n\n\nDamage which is reduced to below the 20% minimum value is indicated with a shield icon next to the health bar (either the player character's, or the non-player character's). When all of an enemy's DT (if it is not 0 to begin with) is overcome with armor piercing attacks, then a broken shield icon will appear in its place instead. The shield/broken shield icon is shown during V.A.T.S. and on the health bars once damage ha"
+ },
+ {
+  "page": "Dehydration",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Endurance; Perception; Intelligence; Agility",
+  "governed_by": "Amount of water consumed",
+  "initial_value": "1",
+  "governed_by_links": [],
+  "related_perk_links": [],
+  "math": [],
+  "fnv_text": "Dehydration is a derived statistic in Fallout: New Vegas. \n\n==Characteristics==\nDehydration is measured by the H2O bar only in Hardcore mode. \n\nDehydration increases over time, and can be affected by certain consumables. Much like radiation, it has increasing effects with each increment of 200. It primarily affects Endurance, though Perception, Intelligence, and Agility will also suffer with more severe dehydration. A level of 1000 means instant death. Without outside interference, it will take three days to reach fatal levels of thirst. It is the fastest-acting stat in Hardcore mode, accumulating twice as fast as food and about five times as fast as sleep. \n\nDifferent foods and beverages have different effects on hydration. Any type of water will reduce dehydration. A drink from a water fountain, or any body of water will increase Hit Points, but may also incur radiation damage. Most food has no effect on dehydration/thirst, however, some farmed or wild fruits and vegetables and crafted recipes may reduce dehydration too. Alcoholic beverages, soda and some food may also increase dehydration.\n\nMaize, Nevada agave fruit and prickly pear fruits are some of the grown food that reduce dehydration, and Caravan lunch, Desert Salad and gecko kebabs are crafted recipes that reduce dehydration. Beer, Nuka-Cola, Sunset Sarsaparilla and Pork n' Beans are examples of food and beverages which increase it.\n\n==Stages of dehydration==\n{| border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"va-table\" style=\"text-align: center; width: 100%\"\n|-\n!Stages\n!Value\n!Effects\n|-\n|Minor Dehydration\n|200-399\n|Endurance -1\n|-\n|Advanced Dehydration\n|400-599\n|Perception -1, Endurance -2\n|-\n|Critical Dehydration\n|600-799\n|Perception -2, Endurance -3, Intelligence -1\n|-\n|Deadly Dehydration\n|800-999\n|Perception -2, Endurance -3, Intelligence -1, Agility -2\n|-\n|Fatal Dehydration\n|1000\n|Death\n|}\n\n==Notes==\n* Carrying water—whether it be purified or not—is the easiest way to combat thirst.\n* The Survival skill enhances the hydration/dehydration amounts of all consumables. A higher Survival skill will make it necessary to carry less water, but will also increase how much consumables, such as alcohol and pork n' beans, will add to dehydration.\n* Carrying the Vault 13 canteen is good way to stave off dehydration without having to carry multiple bottles of purified or dirty water. However, it is not totally reliable, as it only reduces dehydration by 25 points every five minutes. \n* Water sources, su"
+ },
+ {
+  "page": "Energy Resistance",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Energy damage reduction",
+  "initial_value": "0",
+  "governed_by_links": [],
+  "related_perk_links": [],
+  "math": [],
+  "fnv_text": "With 100 Survival, and the helmet mentioned below, the 85% damage reduction cap can be achieved.\n\n===Temporarily increasing Energy Resistance===\n* Atomic cocktail: +27.5-75 (depending on Survival skill 5-100) Energy Resistance for 2 min.\n* Marked beast helmet: +10 Energy Resistance, +2 Energy Weapons while worn."
+ },
+ {
+  "page": "Fatigue (Fallout: New Vegas)",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Consciousness",
+  "governed_by": "Level; Endurance",
+  "initial_value": "Varies",
+  "related_perks": "",
+  "related_traits": "",
+  "governed_by_links": [
+   "Level",
+   "Endurance (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [],
+  "math": [],
+  "fnv_text": "Fatigue is a derived statistic in Fallout: New Vegas.\n\n== Mechanics==\nFatigue is similar to Hit Points - but instead of causing death upon its depletion, a non-player character gets knocked out and becomes unconscious. If their fatigue is reduced to zero or below, the fatigue value is immediately set to -30. Additional fatigue damage can still be applied to a knocked out non-player character, but it cannot lower the value below -30.\n\nWhile unconscious, a non-player character can neither move nor react, but is still considered alive and can suffer damage to the point of death. Unlike in Fallout 3, \"fatigued\" or \"knocked out\" characters cannot be looted; any attempts to interact with them will fail with the message \"<NAME> is Unconscious.\"\n\nThe fatigue stat is determined by a base fatigue value and modified by a character's Endurance and level, as shown by the formula below. The approximate average fatigue rating for humanoids is 250. Fatigue's base regeneration is 1 per second, meaning that a non player-character will naturally recover from a knockout in 30 seconds.\n\n<math display=block>\\text{Fatigue}=\\text{Base Fatigue}+(\\text{Endurance}\\times20)+(\\text{Level}\\times10)</math>\n\n==Fatigue equipment==\nFor the following Unarmed weapons, targets that cannot be fatigued instead take some additional damage depending on the weapon.\n\n;Melee\n* Cattle prod\n\n;Unarmed\n* Boxing gloves\n** Golden Gloves\n* Boxing tape\n\n;Ammunition\n* 12 gauge, bean bag\n\nCategory:Fallout: New Vegas derived statistics\n\nfr:Fatigue\nes:Fatiga (Fallout: New Vegas)\nru:Запас сил\nzh:疲劳(辐射:新维加斯)"
+ },
+ {
+  "page": "Fire Resistance",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Fire damage reduction",
+  "governed_by": "-",
+  "initial_value": "0",
+  "related_perks": "Ant Might, Ant Sight",
+  "governed_by_links": [],
+  "related_perk_links": [
+   "Ant Might",
+   "Ant Sight"
+  ],
+  "math": [],
+  "fnv_text": "* Fire ant nectar will temporarily increase Fire Resistance by 25% when consumed.\n* Using gecko-backed armors from Honest Hearts will increase Fire Resistance by 15%.\n* The scorched Sierra power armor from Lonesome Road increases Fire Resistance by 25%.\n* Drinking an atomic cocktail will temporary increase both Fire Resistance and Energy Resistance.\n\n\n\nCategory:Fallout 3 derived statistics\nCategory:Fallout: New Vegas derived statistics\n\nde:Feuerresistenz\nes:Resistencia al Fuego\nfr:Résistance au feu\nit:Resistenza al fuoco\nru:Сопротивляемость огню\nzh:火抗性"
+ },
+ {
+  "page": "Hit Points",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Health",
+  "governed_by": "Endurance",
+  "initial_value": "95 + Endurance &times; 20 + Level &times; 5",
+  "related_perks": "Life Giver, Thought You Died",
+  "governed_by_links": [
+   "Endurance (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Life Giver (Fallout: New Vegas)",
+   "Thought You Died"
+  ],
+  "math": [
+   "\\text{Initial level}=100+(\\text{Endurance}\\times20)+(\\text{(Level - 1)}\\times5)",
+   "100+(5\\times20)+(0\\times5)=200~\\text{Hit Points}",
+   "100+(10\\times20)+(29\\times5)=445~\\text{Hit Points}",
+   "100+(10\\times20)+(49\\times5)+30^1+60^2+75^3+100^4+25^5+=835~\\text{Hit Points}"
+  ],
+  "fnv_text": "Between Fallout 3 and New Vegas, base HP was changed from 90 to 100. Further, <tt>fAVDHealthLevelMult</tt> was changed from 10 to 5. As a result, starting characters from both games with Endurance 5 will have the same HP (200), but New Vegas characters' HP scales slower than Fallout 3 characters.\n: [math] \n\nExample: A starting Endurance of 5 at Level 1\n: [math] \n\nMax health of a player character without any chem boosts, DLC, or perks, and at max Endurance is 445\n: [math] \n\nMax health of a player character with DLC, chems, and perks at max Endurance is 835\n: [math] \n\n: ¹ From the perk Life Giver. ² From Buffout. ³ From Sierra Madre martini. <sup>4</sup> From the perk Thought You Died (if Karma is at 1000 points). <sup>5</sup> From black blood sausage."
+ },
+ {
+  "page": "Melee Damage",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Amount of bonus damage a character does with Melee Weapons",
+  "governed_by": "Strength",
+  "initial_value": "Strength * 0.5",
+  "related_perks": "Nerd Rage!",
+  "governed_by_links": [
+   "Strength"
+  ],
+  "related_perk_links": [
+   "Nerd Rage! (Fallout 3)"
+  ],
+  "math": [],
+  "fnv_text": "In Fallout 3 and Fallout: New Vegas, Melee Damage only affects damage done with Melee Weapons. There is a separate statistic for hand-to-hand combat called Unarmed Damage.\n\n<math display=block>\\text{Initial level}=\\text{Strength}\\times0.5</math>\n\nExample: A starting Strength of 5.\n\n<math display=block>5\\times0.5=2.5</math>\n\n===Notes===\n* Melee and Unarmed attacks in V.A.T.S. do twice as much normal damage, but this doubling is done before Strength is added.\n* Power attacks in real-time combat also double normal damage."
+ },
+ {
+  "page": "Perk Rate",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "How often a character is allowed to pick a perk",
+  "initial_value": "2",
+  "governed_by_links": [],
+  "related_perk_links": [],
+  "math": [],
+  "fnv_text": "In Fallout: New Vegas, the perk rate is set at 2 - one can get a new perk every two levels. As in Fallout 3, perks cannot be saved for later use; they must be chosen the moment the player character has leveled up and is out of combat."
+ },
+ {
+  "page": "Poison Resistance",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Poison damage reduction, chance to get poisoned",
+  "governed_by": "Endurance",
+  "initial_value": "(Endurance - 1) * 5",
+  "related_perks": "Cyborg, Survival Expert; Tribal Wisdom; Heartless, Cardiac Arrest",
+  "governed_by_links": [
+   "Endurance"
+  ],
+  "related_perk_links": [
+   "Cyborg (perk)",
+   "Survival Expert",
+   "Tribal Wisdom",
+   "Heartless",
+   "Cardiac Arrest"
+  ],
+  "math": [],
+  "fnv_text": "Fallout: New Vegas uses the same equation as Fallout 3, but Poison Resistance has much more use: there are cazadores, bark scorpions, night stalkers, and weapon poisons, all in addition to radscorpions. In Lonesome Road, there are also venomous tunnelers. Moreover, poison in Fallout: New Vegas is generally much more lethal. \n\nHonest Hearts perks\n* Tribal Wisdom increases Poison Resistance by 25%.\n\nOld World Blues perks\n* Mile in Their Shoes - after consuming the nightstalker squeezin's, Poison Resistance is increased by 5%.\n* Cardiac Arrest increases Poison Resistance by 50%.\n* Heartless makes the player character immune to poisoning.\n\nItems and consumables\n* Gecko-backed leather armor, Gecko-backed metal armor and variants (+15%).\n* Wasteland tequila (+5%, affected by Survival) and large wasteland tequila.\n* Spore plant pods gives +25% resistance for 2m.\n* Snakebite tourniquet cures poison and gives +85% resistance (30s).\n* Antivenom, Datura antivenom and Fiery purgative cure poisoning.\n* Hazmat suit (+85% resistance).\n* Blood Shield (+50% up to +85% depending on the player character's Medicine)."
+ },
+ {
+  "page": "Radiation Resistance",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Reduction of radiation exposure",
+  "governed_by": "Endurance, armor, Rad-X",
+  "initial_value": "(Endurance - 1) * 2",
+  "related_perks": "Rad Resistance",
+  "governed_by_links": [
+   "Endurance (Fallout: New Vegas)",
+   "Fallout: New Vegas armor and clothing",
+   "Rad-X (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Rad Resistance (Fallout: New Vegas)"
+  ],
+  "math": [
+   "\\text{Initial level }\\%=(\\text{Endurance}-1)\\times2",
+   "\\left(25 + \\frac{Medicine}{2}\\right)\\%"
+  ],
+  "fnv_text": ": [math] \n\n===Temporarily increasing Radiation Resistance===\n* Any temporary increase to Endurance, at 2% per point of Endurance.\n* Various items of armor and clothing can increase Radiation Resistance while worn.\n* Rad-X increases Radiation Resistance by [math] up to 75% at 100 Medicine, for 4 minutes per dose taken.\n\n===Permanently increasing Radiation Resistance===\n* Any permanent increase to Endurance, at 2% per point of Endurance.\n* The Rad Resistance perk increases Radiation Resistance by 25%.\n\n===Notes===\n* In Fallout: New Vegas, Radiation Resistance is capped at 85%."
+ },
+ {
+  "page": "Skill Rate",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Amount of skill points per level.",
+  "governed_by": "Intelligence",
+  "initial_value": "(Intelligence x 0.5) + 10",
+  "related_perks": "Educated",
+  "governed_by_links": [
+   "Intelligence (Fallout: New Vegas)"
+  ],
+  "related_perk_links": [
+   "Educated (Fallout: New Vegas)"
+  ],
+  "math": [
+   "\\text{Initial level}=(\\text{Intelligence}/2)+10",
+   "\\left\\lceil\\frac{9}{2}\\right\\rceil+10=4.5+10=14.5"
+  ],
+  "fnv_text": ": [math] \n\n: Example: Intelligence of 9\n: [math] \n\nIn Fallout: New Vegas, the number of innate skill points that can be allocated to the 13 skills remains the same at 10, but the Intelligence bonus is now halved. If Intelligence is set to an odd number, the half points will be stored and added to every other level; i.e. an Intelligence of 9 would result in skill point allowances of 14 and 15 every other level. \n\nTag skills function the same as before. The Educated perk now only adds two points instead of three, meaning a maximum of 17 points per level (after level 4). 30 is the maximum possible level initially, the same as Fallout 3 with Broken Steel installed. Each add-on increases the level cap by five, resulting in a final level cap of 50 with Lonesome Road.\n\nAll skill-enhancing perks have been removed or modified in such a way that they no longer increase the base value of a skill. Only Tag! provides a direct increase. Intense Training can increase skill points indirectly, as can implants which are functionally identical, but not to any significant degree. In addition, the number of skill books has been reduced, now averaging four per skill, though they are now worth four points with Comprehension instead of 2 as in Fallout 3.\n\nWithout the add-ons there is no combination of perk, SPECIAL, and skill point allocation that will allow for 100 points in every skill. With the add-ons installed, one can max every skill with an Intelligence of 4, Educated, Comprehension, and every skill book.\n\nTemporary increases to Intelligence, such as bonuses from apparel or the Early Bird perk, do not increase the skill points earned per level."
+ },
+ {
+  "page": "Starvation",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Strength; Charisma; Perception",
+  "governed_by": "Amount of food eaten",
+  "initial_value": "1",
+  "related_perks": "",
+  "governed_by_links": [],
+  "related_perk_links": [],
+  "math": [],
+  "fnv_text": "Starvation is a derived statistic in Fallout: New Vegas in Hardcore mode. \n\n==Characteristics==\nStarvation is measured as FOD under the Hit points (HP) bar. Starvation occurs if the Courier does not eat food after a long enough period of time. It accumulates slowly at all times, and primarily affects Strength, though Perception and Charisma also suffer at higher starvation levels. It takes five days for the Courier to starve without eating anything. Most types of food will reduce starvation by some amount, though certain foods are more effective than others.\n\n==Stages of starvation==\n{| class=\"va-table va-table-full va-table-center\"\n\n|-\n! Stages\n! Value\n! Effects\n\n|-\n| Minor Starvation\n| 200-399\n| Strength -1\n\n|-\n| Advanced Starvation\n| 400-599\n| Charisma -1, Strength -2\n\n|-\n| Critical Starvation\n| 600-799\n| Perception -1, Charisma -2, Strength -3\n\n|-\n| Deadly Starvation\n| 800-999\n| Perception -2, Charisma -2, Strength -3\n\n|-\n| Fatal Starvation\n| 1000\n| DEATH\n|}\n\n==Notes==\n* There are no items or effects which directly increase the Courier's starvation level.\n* The Survival skill affects all food items, and increases the amount of starvation they reduce. A Courier with a high Survival skill will not have to carry as much food.\n* The amount of starvation a given consumable item will reduce may not correlate to the amount of health it provides. For example, iguana bits restore less than a package of Cram, although both items have the same weight, value, radiation, and health restoration properties.\n* The MREs found in Lonesome Road restore up to 600 points of starvation, and are plentiful in the DLC.\n\n==See also==\n* Dehydration\n* Sleep\n\n\n\nCategory:Fallout: New Vegas derived statistics\n\nde:Hunger\nes:Hambruna\nit:Denutrizione\nru:Голод\nuk:Голод\nzh:饥饿"
+ },
+ {
+  "page": "Unarmed Damage",
+  "kind": "derived",
+  "type": "derived",
+  "modifies": "Amount damage a character does with Unarmed weapons (and fists)",
+  "governed_by": "Unarmed",
+  "initial_value": "ceil ((Unarmed / 20) + 0.5 )",
+  "related_perks": "Iron Fist",
+  "governed_by_links": [
+   "Unarmed (Fallout 3)"
+  ],
+  "related_perk_links": [
+   "Iron Fist (Fallout 3)"
+  ],
+  "math": [],
+  "fnv_text": "* The equation from Fallout 3 is used.\n* The official Prima strategy guide incorrectly gives the Unarmed Damage value as one quarter of the Unarmed Skill.\n* Similar to Melee Damage, unarmed attacks in V.A.T.S double weapons' base damage. The Unarmed Damage bonus from the player's Unarmed skill is not doubled, though."
+ }
+]

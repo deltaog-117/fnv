@@ -1,0 +1,162 @@
+{
+ "page": "PaulineWins.txt",
+ "speaker": "Pauline Wins",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'd best not try any funny business, stranger. One word from me, and Vance will plant you in the ground!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the hell you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank god you talked me out of trying to rob the Strip. I guess we'll wait here until I come up with our next caper.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "PaulineCharisma",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Really? You think so? We've only got the one gun, and there's two of us... and we've never done anything like this before...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've never been on the Strip, either, so we don't know how many guards the casinos have. And I keep having these nightmares...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What are we thinking? We're gonna get ourselves killed!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, tell Sammy to give you the gun, all right? Just take it! I don't want it around, tempting us to do something stupid!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's the greatest plan I've ever heard in my entire life.",
+   "label": "Charm Pauline into Rethinking their plan."
+  },
+  {
+   "id": "PaulineCharisma",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] So does your face, all right? And Sammy will add a few more if you don't shut up!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your plan has critical flaws.",
+   "label": "Charm Pauline into Rethinking their plan."
+  },
+  {
+   "id": "PaulineGun",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why would I deny it? I was the one that hacked that Cowboy Robot while Vance kept him busy. Ain't the first thing we stole. Won't be the last.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I know the two of you stole Vance's gun down in Primm."
+  },
+  {
+   "id": "PaulineNeverHeardOfYou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We ain't never heard of you, either, so the not being impressed is mutual.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come a week or so, though, and everyone will've heard of Sammy and Pauline! Just you wait!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You sound pretty tough. Why haven't I heard of you two before?"
+  },
+  {
+   "id": "PaulinePlan",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sammy and me got our hands on a powerful weapon not too long ago: Vance's gun. You know - Vance, of Vance and Vikki?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That gun's our \"shot\" at the big-time. We're gonna sneak it onto the Strip and rob one of the casinos. Maybe all of them!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll be known as the greatest gunslingers to ever terrorize the wastelands!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's your plan?"
+  },
+  {
+   "id": "PaulinePlanSucks",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll see! You'll feel stupid that you made fun of us when you learn how rich we are!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your plan is going to get you both killed.",
+   "label": "PualinePlanSucks"
+  },
+  {
+   "id": "PaulineWhoAreYou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm Pauline, of Sammy and Pauline, the wasteland's most dangerous and notorious criminal couple!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'd best not mess with us, or you'll have a bullet hole where your eye used to be!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Sammy and I are grateful. We are going to follow our dreams.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

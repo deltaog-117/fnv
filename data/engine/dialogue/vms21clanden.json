@@ -1,0 +1,438 @@
+{
+ "id": "vms21clanden",
+ "speaker_name": "Clanden",
+ "source": "VMS21Clanden.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Placeholder for top level topics}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's get this going.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, I'm leaving and I don't have anything more to say to you, so get the fuck out of{outta} my face.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, nice to meet you. Do you need help with something?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Hey, did you track down some chlorine for me?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Good to see you again, I hope you're winning some money in here.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms21clandenmurderroom",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angry} What the fuck are you trying to pull here? Where is my girl? Now I'm gonna have to kill your sorry ass. {Clanden was just tricked into thinking he was going to find a prostitute, instead it is just the player.}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Ok little lady, let's get started. You look like a tough piece of meat, I'm going to enjoy tenderizing you. {Clanden was just tricked into thinking he was going to find a prostitute, instead it is just the player.}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21ClandenMurderRoom",
+   "prompt": "VMS21ClandenMurderRoom"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A little bit of this, and a little bit of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic000",
+   "prompt": "What do you do around here?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm a close friend of some of the Family around here. I do some independent contracting around the casino, and they set me up with this great room.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic001",
+   "prompt": "How did you end up with one of the hotel suites?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cachino? Yeah I've heard the name. Not sure why he'd send you to me, is he helping out with room service or something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic002",
+   "prompt": "Cachino sent me to talk to you."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Annoyed} Oh did you now? What business is that of yours, and why the fuck should I care?",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic003",
+   "prompt": "I hear you have some exotic tastes when it comes to women."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, that's great{genuine} . I could sure use some help. You see, I do explosives, and they have a special need for some big explosions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Problem is, there's no way I can get enough explosives to do the type of damage they're looking to do, much less get it all deployed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic004",
+   "prompt": "The Bosses sent me to offer you assistance."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED]{Excited} Oh, already? I figured it would be a couple days. Well, let's go meet the lucky lady.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic005",
+   "prompt": "Oh, I was just told to deliver a girl to the spare room you keep up here.",
+   "label": "{Speech Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic005_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED]{Laughs} I don't care much about your tastes. Get lost and leave me alone.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic005",
+   "prompt": "Well... I... I have some exotic tastes too!",
+   "label": "{Speech Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Blowing shit up, of course. Thing is, they don't need things to blow up, they need people to die in a fairly large area in a fairly small timeframe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are other ways to kill people with bombs aside from explosions, if you know what I mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic006",
+   "prompt": "What do you need the bombs for?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, since I can't hope to get all the killing done that they need to get done with bombs, I've been thinking about some alternatives.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic007",
+   "prompt": "How can I be of assistance?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Spot on, you're a bright one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic008",
+   "prompt": "A gas, perhaps chlorine? It is a deadly nerve gas and not too hard to come by.",
+   "label": "{Science options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED]{Chuckles} Yeah, I could {Emphasized} build a nuke, but I'm not looking to turn the Mojave into a giant mirror.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, I was thinking something more subtle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic008",
+   "prompt": "Er... Maybe you could build a nuke?",
+   "label": "{Science options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I figure chlorine gas is the way to go. It's toxic, and I can rig it up to do a whole lot of killing in a fairly short timeframe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic009",
+   "prompt": "What did you have in mind?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, of course. Ask away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic010",
+   "prompt": "I have a couple other questions to ask you instead."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, come find me whenever you want to chat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic011",
+   "prompt": "Let's talk about this a little later."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not sure exactly. There is a swimming pool at The Ultra-Luxe, so they probably have some, although I doubt they'd appreciate you taking it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But they must get it from somewhere, maybe try out in Freeside somewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic012",
+   "prompt": "Where can I find some chlorine gas?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you know what I need, find it or I'll find another way to get it. You're the one that offered.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic013",
+   "prompt": "I don't think I want to get involved in this."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Yeah, this is just what I needed.",
+     "emotion": "surprise",
+     "intensity": 30
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic014",
+   "prompt": "I found some chlorine for you."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, look at you! It's so rare I get a volunteer. Yes, let's head to my special room. Follow me, we'll talk there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic015",
+   "prompt": "I thought that maybe I could be your next playtoy. Your exploits are well known."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, but you're starting to get on my nerves.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic016",
+   "prompt": "Sorry, I was thinking about someone else. I have a different question though."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Get lost.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic017",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think I should kill you before you have a chance to show those tapes to anyone. What do I have to lose?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic018",
+   "prompt": "I think the authorities would like to hear these tapes I found in your safe."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Alright, give me the tapes and I'll leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going a long way away from Vegas, but you better hope that you and I never see each other again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic019",
+   "prompt": "I'll give you the tapes if you promise to leave Vegas and never come back, and give me 200 caps.",
+   "label": "{Barter Check}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic019_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, but there's no fucking way I'm going anywhere if those tapes aren't with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic019",
+   "prompt": "If you... um... give me 300 caps and leave Vegas, I'll keep these tapes safe.",
+   "label": "{Barter Check}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess you've made your choice then. Time to die.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic020",
+   "prompt": "I can't give you these tapes, they are evidence of a crime."
+  },
+  {
+   "key": "vdialoguegomorrahvms21clandentopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck, I was getting tired of this place anyways. I can find girls to play with somewhere else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21ClandenTopic021",
+   "prompt": "You can't have the tapes, but I'll keep them to myself if you leave and never come back."
+  },
+  {
+   "key": "vms21clandenarrest",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What? Are you fucking kidding me? You can't do this, the Omertas aren't going to stand by and let you arrest me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alright. I'll come quietly, but this fucked.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21ClandenArrest",
+   "prompt": "VMS21ClandenArrest"
+  }
+ ],
+ "speaker": "clanden"
+}

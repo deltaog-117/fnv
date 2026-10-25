@@ -1,0 +1,249 @@
+{
+ "page": "PrimmRubyNash.txt",
+ "speaker": "Ruby Nash",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello there. What brings you to Primm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back. Good to see you again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "RNash0Glands",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guess you'll be needing to find some, huh? Come back when you do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't have any.",
+   "label": "Never mind."
+  },
+  {
+   "id": "RNash1Gland",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One's enough to make a helping. Hand it over!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have one radscorpion gland.",
+   "label": "I have 1 radscorpion gland."
+  },
+  {
+   "id": "RNash3Glands",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hand 'em over and I'll get to baking!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've got a few radscorpion glands.",
+   "label": "I have 3 glands."
+  },
+  {
+   "id": "RNash4Glands",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is that right? Then hand 'em over and I'll get to baking a whole batch of casseroles!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a bunch of radscorpion glands.",
+   "label": "I have a bunch."
+  },
+  {
+   "id": "RNashAboutPrimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My mother taught me never to say something 'less it was nice. So I don't have nothing to say about Primm, for the time being at least.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a sad state of affairs. Discuss it with Mr. Nash if you care to. Just makes me want to cry.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks to you, Primm's on the way back up. With folks watching over us, I think the raiders will keep their distance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Primm."
+  },
+  {
+   "id": "RNashCasseroleHowMany",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Does sound good, don't it? How many radscorpion glands you got?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like some of that radscorpion venom casserole.",
+   "label": "I have some radscorpion glands. Can you make me some casserole?"
+  },
+  {
+   "id": "RNashWhatCook",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My specialty is a radscorpion venom casserole. It's a more appetizing than it sounds!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The venom has a sharp, smokey flavor, and it numbs your mouth so fierce you'll forget you ever had a tongue!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's perfectly safe, long as you don't have sores in your mouth for the venom to find your blood. 'Cause that'll kill you dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you cook?",
+   "label": "RNashCasserole"
+  },
+  {
+   "id": "RNashWhoAreU",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm Ruby Nash. Pleased to make your acquaintance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My husband and I are Primm long-timers. He fancies himself a trader, and I know my way around a kitchen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?",
+   "label": "[Ask about services]"
+  },
+  {
+   "id": "VFreeformMcCarranPrimmRubyNashTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, business is pretty light and I'd welcome the income, but I'll need a lot of caps to buy the necessary supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "200 caps would get me started.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "McCarran's mess hall needs more variety. Could we work out a deal?"
+  },
+  {
+   "id": "VFreeformMcCarranPrimmRubyNashTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. I'll just pick up future payments from McCarran directly when I drop off my snacks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can let McCarran know they'll have fresh snacks coming in a few days.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Give 200 caps> Alright. 200 caps it is."
+  },
+  {
+   "id": "VFreeformMcCarranPrimmRubyNashTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You drive a hard bargain, but 100 caps will do until we can get a regular deal worked out with McCarran.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can let McCarran know they'll have fresh snacks coming in a few days.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Give 100 caps> 200 seems a bit steep. How about 100?"
+  },
+  {
+   "id": "VFreeformMcCarranPrimmRubyNashTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Fresh food and water is worth it's weight in gold... You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let McCarran know they'll have fresh snacks coming in a few days. I'll pick up the produce at that time as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "McCarran has more vegetables and water than they know what to do with..."
+  },
+  {
+   "id": "VFreeformMcCarranPrimmRubyNashTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself. I'm always open to more business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe we could work something out later."
+  },
+  {
+   "id": "VMS02AnyNPCAboutNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wouldn't know anything about that, dear. You might ask Johnson.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wouldn't know anything about that, dear. You might ask Johnson.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know if the NCR has any plans to attack the prison north of here?",
+   "label": "Any idea what the NCR's up to in Primm?"
+  }
+ ]
+}

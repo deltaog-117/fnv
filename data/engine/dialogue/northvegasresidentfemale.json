@@ -1,0 +1,31 @@
+{
+ "id": "northvegasresidentfemale",
+ "speaker_name": "North Vegas resident",
+ "source": "NorthVegasResidentFemale.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Hello, there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you're not planning on visiting {spoken with distaste} the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The rest of this city has gone absolutely to seed!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "north_vegas_resident"
+}

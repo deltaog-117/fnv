@@ -1,0 +1,763 @@
+{
+ "page": "NellisJack.txt",
+ "speaker": "Jack (Boomer)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you're the outsider. Lived your whole life out there, huh? Wow.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I always thought you savages probably spoke a different language, but I hear you sound like us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for getting Janet to Nellis. I've never been so happy in my entire life!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This has been a dream come true to work on the Lady. I don't think I've seen Loyal this frisky in years.{test}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've never been so happy in my entire life!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you seen her? The redhead of my dreams?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hi! I can't believe I'm going to meet my red-headed lady soon! I'm really nervous about it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player responsible for the death of his love} Go to hell, outsider. Stay away from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're a terrible person! I loved her! And you let her run right into our killzone. Why didn't you stop her?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey there. Back for more?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "NellisJackGirlIssue",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's an outpost near here. The signs say \"Crimson Caravan?\" It seems like they carry things to and fro for people out there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, every once in a while I watch the outpost through one of the spotters' binoculars. And sometimes there's this girl there, this special girl...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And sometimes it's like she's watching me back with her binoculars! Except she's probably just watching Nellis. I haven't tried waving.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So tell me about this girl that caught your interest."
+  },
+  {
+   "id": "NellisJackScrap01",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cool! How much can you spare?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've got scrap metal for you."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What I could use is some scrap metal. It may not sound exciting, but around here we have to recycle every rivet and plate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other thing, you being from the outside and all, well, I guess you'd call it a personal matter but, well... Eh, forget it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm looking for ways to help out. Anything come to mind?"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I said, I can never get enough scrap metal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you think of any ways I can help out?"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me? I work with Loyal, mostly electronics work and robotics. Keeping the old technologies alive, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. That'd be great.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can find you some scrap metal."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'll keep my spit to myself, thank you very much. That sounded stupid, didn't it? Damn it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Personal matter? Nonsense. Spit it out.",
+   "label": "<Speech>"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That must be nice, sharing yourself like that, not being embarrassed or anything? Well, the thing is, there's this girl...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where I come from, we discuss personal matters all the time.",
+   "label": "<Speech>"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "She does? You mean it? That's incredible!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What happens next? Can she come here? How do we make sure she doesn't get blown up? Should I talk to the gunners? Or to Pearl?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Good news. She feels the same way."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'm just really excited is all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm working on it. I need to talk to Pearl first."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, well let me know when you do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm working on it."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. See you around, I hope.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then why did you make me spill my guts about it? You're an asshole!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This doesn't interest me."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Loyal's a great man, but he's getting on in years, so a younger's got to learn everything he knows. That'd be me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The man knows how to fix and build just about everything that was ever made. It's not easy keeping up with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you help him recover the Lady I figure - oh, I figure it's been a nice day. Yeah, a real nice day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Loyal's a great man, but he's getting on in years, so a younger's got to learn everything he knows. That'd be me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The man knows how to fix and build just about everything that was ever made. It's not easy keeping up with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh come on, you've met Loyal by now. He's a mechanical genius.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The man knows how to fix and build just about everything that was ever made. It's not easy keeping up with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about Loyal?"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can spare 2."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, you can't miss her! She has short red hair and she's the most beautiful woman who ever lived!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'd really talk to her for me? What if she feels the same way? What if she comes here like you did?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What if she gets blown up? What if she doesn't like me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh jeez, I better just let you handle it. I'm better with machines. They don't make my stomach queasy like this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, you can't miss her! She has short red hair and she's the most beautiful woman who ever lived!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'd really talk to her for me? What if she feels the same way? What if she comes here like you did?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What if she gets blown up? What if she doesn't like me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh jeez, I better just let you handle it. I'm better with machines. They don't make my stomach queasy like this!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe I could talk to her for you. What's she look like?"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That would be amazing. As in, I would thank you forever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll look into it. Stranger things have happened."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just 1."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey thanks!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just take all of it."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What?! No! I mean, I haven't seen her around for a while, but I thought she was just busy working.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She was so beautiful... Now I'll never get to know her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry to be the bearer of bad news, but I think she's dead."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I just need some parts from a pressure cooker to create a hermetic seal for the rebreather.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you found a pressure cooker so I can finish the rebreather?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Loyal said you can help me breathe under water."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for dropping it off. Anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's all for now."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think I'm handsome? Wow, I wonder if she does, too!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A \"personal matter,\" eh? Handsome guy like you, I bet there's a girl involved.",
+   "label": "<Confirmed Bachelor>"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Did I say that? Sometimes I just say stupid things! Sorry about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Pearl will tell you when the time comes. If, I mean. I should really be going.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Recover a Lady? What are you talking about?"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. Sometimes I talk too much. I guess you already know that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can wait until Pearl or Loyal want to tell me."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You said you'd talk to her. Don't treat me like a jerk for asking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've had other things to attend to."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, please, talk to her soon. The suspense is killing me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What are you waiting for? I've been losing sleep wonder what she'll say!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've seen her, but we haven't talked about you yet."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here take this Boomer outfit. I'll let the gunners know she is coming, and not to shoot at her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I spoke to Pearl, but Janet needs a way past the artillery."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wow, that seems dangerous, but if you really think it's safe, I'll trust you. You did make it here, afterall.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I told her how to get through the artillery barrage."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wish we'd blown you up! I wish you were dead! Just leave me alone!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's not my fault that your tribe blows up everyone who comes close."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Oh, my sweet blameless Red! Curse the walls of Nellis! Curse our guns and isolation! Her blood is on our hands!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Only if we stop shelling everyone who comes close will some good come from this tragedy. If you'll excuse me...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> It's a tragedy. She loved you so much, she risked it all."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Then why didn't you stop her? You could've tackled her or something! You knew how much she meant to me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just - just go away!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> She was so excited to see you, she wouldn't wait."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, well let me know when you do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not yet."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, this will just take a few moments...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, it looks like the valve from the cooker was a perfect fit. Here is the rebreather.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have one right here."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can spare 4."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That's a brilliant idea! I can put that together right now...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here you go, a new rebreather!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Corn silk, rubber hose, and removable adhesive would make a good hermetic seal.",
+   "label": "<Science skill>"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, there is no way it would withstand submersion. Has to be watertight. Past few times I've tested it I've gotten a mouthful of water.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A pressure cooker would have the gaskets and valving I need to seal it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Aw c'mon, it looks fine. I bet the seal will hold.",
+   "label": "<Science skill>"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's too bad. I was hoping to melt some more down for machining.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually. I can't spare anything right now."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great, that's all I need to get the rebreather to work right. I don't think you'd want to start breathing water halfway down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay, I'll let you know if I find a pressure cooker."
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think I'm handsome? Wow, I wonder if she does, too!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A \"personal matter,\" hmm? Handsome guy like you, I bet there's a girl involved.",
+   "label": "<Black Widow>"
+  },
+  {
+   "id": "VFreeformNellisNellisJackTopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I thought you weren't interested.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to hear about that personal matter you mentioned."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hello, it is great to finally meet you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "VFreeformNellis1ECrimsonCaravanWorkerCFTopic000",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'm glad that you made it out here. You're even more stunning up close than you were at a distance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Jack Reply 1}"
+  },
+  {
+   "id": "VFreeformNellis1ECrimsonCaravanWorkerCFTopic001",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Of course it would. I'll have you set up with some quarters with some of the other women.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Jack Reply 2}"
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "id": "vdialoguesharecroppergeneric",
+ "speaker_name": "Sharecropper",
+ "source": "VDialogueSharecropperGeneric.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can't grow crops if they don't give us the water.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Don't know about you, but this beats herding Brahmin back in California.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "If I don't get more water soon, I won't make my quota this season.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "I'm glad the troopers are smart enough not to trample everything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something - or someone - has been chewing on the coyote tobacco again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The maize is doing well in this soil.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "We're finally getting all the water we're supposed to. It's about time.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Word is they're sending some of us home since we're not making the quota.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "sharecropper"
+}

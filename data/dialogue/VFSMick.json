@@ -1,0 +1,420 @@
+{
+ "page": "VFSMick.txt",
+ "speaker": "Mick (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to Mick & Ralph's. If you need guns, I'm your man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For general supplies and other services, see my partner Ralph.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Blunt advice} You might want to clean up your act. Some of the locals have been complaining.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ralph and I don't sell to people who treat our friends badly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Blunt} I don't take kindly to deadbeats who treat my friends like trash. Get {outta} out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{saddened sigh} I wish I'd never gotten involved with the Omertas. All of this bloodshed...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{vindictive} One of these days, those bastards will get what's coming to them. {calm realization} In the meantime, I'll be sure to be more careful with my sales.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{back to business} Anyway, is there anything I can get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Matter of fact} That was a real mess the Omertas were looking to create. {grateful, long glaaad} Glad you could get all that sorted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{financially strained, but relieved} May have cost me some business, but at least we avoided a shitstorm.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{back to business} Anything I can get {ya} you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gruff} All of the scumbags are coming out of the woodwork now that the Kings are keeping everyone in line.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{resigned sigh} At least gun sales are better than ever. {back to business} Now what can I get you{getcha} ?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Ambivalent sigh} I'm not sure how to feel about the Kings and NCR sorting out their differences, but as long as business keeps up, I'm a happy man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{back to business} Now what can I {getcha} get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Amused} People say Mr. House hasn't been heard from in a while. Good riddance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Back to business as usual} Now what can I do for {yuh} you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard about some things you've done around town. Nice to know someone is helping out for a change.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{happy to see player} Welcome back, buddy! What can I {getcha} get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What guns do you have for sale?"
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to switch to my Pip-Boy."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Things were better when the Omertas were buying, but we get by. Good selection from traders and the Van Graffs keep things running.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Things were better when the Omertas were buying, but we get by. Van Graffs getting killed is making a mess of things, but we have other customers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How's business?"
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why, do you work for one of the casinos?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you have any special items for sale?"
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] In that case, yes I do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Follow me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] All of my guns are special. If anything catches your eye, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No Vegas-banned items here, buddy. Just high quality standard stock.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to switch to my Pimpboy."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else I can help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Will do."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, let's see what you've got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Could you repair some things for me?"
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are they looking to buy guns?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Followers are looking to work out a supply deal."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's the thing, I have no idea. They just stopped buying guns all of a sudden.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you hear anything, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the deal with the Omertas?"
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else I can help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? What did you learn?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I figured out why the Omertas stopped buying."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that would explain why they stopped buying. Them not telling me why leads me to think I'd rather not know the particulars.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for digging that up for me. If there is any way you could convince them to reestablish, I have a few extra special items you can have.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're too pricey for anyone around here to afford, but getting the Omerta's sales back would be a worthy trade.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "They found a way to smuggle guns in at a lower price."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Outstanding! You have no idea how much this means to me, but I think this little beauty will give you an idea.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Good news. The Omertas say they'll buy arms from you again."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You aren't the first poor sucker who's come in here saying that. We don't do discounts here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sounds like you were ripped off. I'd go get your money back from Santiago.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Santiago says the password is extravaganza for a discount."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then talk to my partner Ralph.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Follow me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to browse your special inventory."
+  },
+  {
+   "id": "VFreeformFreesideVFSMickTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I always say, a polite society is an armed society.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to browse your special inventory."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come back and see us soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for stopping in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Feel free to look around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey ya.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just let me know if anything catches your eye.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've got competitive prices and a good inventory.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

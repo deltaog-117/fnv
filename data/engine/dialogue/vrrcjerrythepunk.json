@@ -1,0 +1,544 @@
+{
+ "id": "vrrcjerrythepunk",
+ "speaker_name": "Jerry the Punk",
+ "source": "VRRCJerrythePunk.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm so much happier now. Thank you again.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Sullen youth, has just been surprised doing something embarassinng} What do you want?",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "{Sarcastic} Oh look, it's the conformist tool.",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "{Sarcastic} How much ass did you have to kick to get Papa Khan to like you so much?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "{Thinks the player is totally cool, but doesn't want to admit it} Oh, hey. What's up?",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "I can't believe you're talking to me, this is so cool! I mean, uh... dude, what's up?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You going to make fun of me too?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "I really don't want to deal with this right now.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "{Sullen youth} What?",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "jerrycaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh? Wait, what are you talking about? We're allied with Caesar now? Psh. Typical. Nobody tells me anything.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "topic": "JerryCaesar",
+   "prompt": "What do you think about the Khans' alliance with Caesar?"
+  },
+  {
+   "key": "jerryfollowers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They did? That's great! Thank you! I'm out of this crummy camp!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "JerryFollowers",
+   "prompt": "The Followers have agreed to take you on as a member. Head to the Old Mormon Fort."
+  },
+  {
+   "key": "jerryinitiation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Everybody has to do it. Well, everybody who wants to be a Khan, anyways. They toss you into the ring there and beat on you for a solid minute.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "If you survive, you're in.",
+     "emotion": "fear",
+     "intensity": 35
+    }
+   ],
+   "topic": "JerryInitiation",
+   "prompt": "What is this initiation?"
+  },
+  {
+   "key": "jerryintro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, nothing really. Just trying to psych myself up to try my initiation. Again. {Totally unconvincing roar} Raaaar!",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "JerryIntro",
+   "prompt": "What are you doing?"
+  },
+  {
+   "key": "jerrykhans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can tell you they're a bunch of big dumb jerks with no appreciation for art. I mean, can you believe their initiation?",
+     "emotion": "disgust",
+     "intensity": 35
+    }
+   ],
+   "topic": "JerryKhans",
+   "prompt": "Can you tell me about the Great Khans?"
+  },
+  {
+   "key": "jerrypoetry",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You would? Really? Okay, well then, here goes:",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "This one's a haiku.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "{Clear throat, begin reciting} Radscorpion bites,",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "my foot in the box canyon.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Ow, ow, ow, ow... ow.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Clear throat, begin reciting} I wrote this limerick the last time I went to Freeside.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "There once was a fellow called Garret,",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "whose sister she did love to bare it.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "She flashed it around, all over town,",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "so if you would screw her, beware it.",
+     "emotion": "happy",
+     "intensity": 45
+    },
+    {
+     "text": "{back to normal speaking} I, uh, got kicked out of the Atomic Wrangler for that one.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "This is a poem I wrote about the dark loneliness that suffuses my soul.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Clear throat, begin reciting} Rainclouds wrap my heart in sorrow black as silk,",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "My empty scream does not echo, even though we're in a canyon.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "My soul aches, but not as much as my limbs, because I've been beaten severely.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Here's one about the girl I love.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Clear throat, begin reciting} Her hair stands tall, like the spiky bits on a Deathclaw.",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "Her eyes are bright as radioactive sludge, glowing with the light of love.",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "But when I talk to her, she laughs and mocks and has her brothers beat me.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, why do nice girls hate me?",
+     "emotion": "sad",
+     "intensity": 100
+    },
+    {
+     "text": "That's it. What do you think?",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "JerryPoetry",
+   "prompt": "I'd like to hear some of your poetry."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, maybe not if you're some hulking reprobate like Regis or baked to the gills like Jack. I've tried five times and still haven't made it.",
+     "emotion": "disgust",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic000",
+   "prompt": "That doesn't sound so bad."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Maybe you're right. Maybe I can find my true calling, someplace they'll appreciate my poetry! Someplace like the Old Mormon Fort, maybe.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Do you think the Followers of the Apocalypse would take me? I remember all those books they brought us when they visited our tribe.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic001",
+   "prompt": "It sounds like you're not happy being a Great Khan. Maybe you'd be happier someplace else."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't know... the Khans don't really get me, but at least they're family, you know?",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic001",
+   "prompt": "Maybe you should just ditch this place."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cheat? The only way I could cheat is if I was so doped up on painkillers that I don't feel anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic002",
+   "prompt": "Why don't you just cheat?"
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Wow, um... okay. Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic003",
+   "prompt": "Just wait here a minute, I'll be back with some Med-X."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa... you were serious. Okay, yeah, this might just work. Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic004",
+   "prompt": "<Give Med-X> Painkillers like these, you mean?"
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic005",
+   "prompt": "Well then, never mind."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. You heard that, huh? Okay, so yeah, I was writing poetry. I know, I know, it's not a very Great Khan-like thing to do.",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "The Followers of the Apocalypse came to our camp when I was a kid, and they brought a bunch of old books. I used to read pre-War poetry for hours.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic006",
+   "prompt": "It sounded like you were writing poetry."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, well, I guess maybe I'm not. But what else can I do?",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic007",
+   "prompt": "You don't sound too eager for your initiation."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic008",
+   "prompt": "I had some other questions, actually."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have you seen this tribe? If it's not an epic drunken ballad of cracking skulls and hearing lamentations they think it's a waste of time.",
+     "emotion": "disgust",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic009",
+   "prompt": "Why isn't poetry \"Great Khan-like?\""
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'd do that? Thanks! I mean, I'd go myself, but what if they said no? The Khans wouldn't take me back, and then I'd have nobody.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic010",
+   "prompt": "I could ask them for you."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. I mean, I'd go myself, but what if they said no? The Khans wouldn't take me back, and then I'd have nobody.",
+     "emotion": "fear",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic011",
+   "prompt": "Why don't you go there and find out?"
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think so? I mean, I'd go myself, but what if they said no? The Khans wouldn't take me back, and then I'd have nobody.",
+     "emotion": "fear",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic012",
+   "prompt": "Probably. You seem like their type."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I suppose not.",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic013",
+   "prompt": "That's not really my problem, is it?"
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much. They found us when we came to the Mojave, gave us a bunch of books on science and history - I guess they're like teachers or something?",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic014",
+   "prompt": "What do you know about the Followers of the Apocalypse?"
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You liked it? Wow, you're the first one who ever did!",
+     "emotion": "happy",
+     "intensity": 100
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic015",
+   "prompt": "Wow, that... really was something."
+  },
+  {
+   "key": "vms47vrrcjerrythepunktopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sullen youth} Psh. Whatever.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS47VRRCJerrythePunkTopic016",
+   "prompt": "That was terrible. Really, really awful."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "jerrypoetrybarks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hmm, indulgent, what rhymes with indulgent? Efful- no, no, that's terrible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Silver... silver what? Silver eyes? No, \"eyes\" doesn't rhyme...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One, two, three... dammit, too many syllables!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There once was a man of stout heart... heart, heart, what rhymes with heart?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wonder if anything rhymes with \"Cazador?\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm, maybe I should write something about how much the Great Khans suck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How do you spell \"gesticulate?\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JerryPoetryBarks",
+   "prompt": "JerryPoetryBarks"
+  }
+ ],
+ "speaker": "jerry_the_punk"
+}

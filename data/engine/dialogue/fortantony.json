@@ -1,0 +1,480 @@
+{
+ "id": "fortantony",
+ "speaker_name": "Antony",
+ "source": "FortAntony.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Outsiders are a rare sight at the Fort. Step carefully around here and you might just leave alive. I'm Antony, master of the hounds.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Killed the mongrels in the arena} Damn it. I thought they had you.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar dead} It'll be strange not having {KAI-zar} Caesar in command, but Legate Lanius is a strong leader.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar cured} I'm sure you had to use a lot of healing powder on {KAI-zar} Caesar. Well done.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Rex hired} The mechanical dog you have with you - where did you get it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic001",
+   "prompt": "I had some questions."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We breed them, mostly, but sometimes we get some good ones from Denver. That whole city is overrun with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic002",
+   "prompt": "Where does the Legion get its dogs?"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic003",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Been doing it since I was a boy. The mongrels know to listen up when I start talking to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic004",
+   "prompt": "You train these dogs?"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The stupid girl should know by now that even the rags on her back are a privilege. Anyway, my mongrels like their new toy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell you what - you square off with four of my best dogs. No armor and no weapons except a machete. You survive and I let you have the bear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You ready to fight my mongrels, then?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic005",
+   "prompt": "I'm here for Melody's bear."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh? Such things are common in Denver, but I didn't know that other cities had them as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic006",
+   "prompt": "Rex? I picked him up in New Vegas."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. That's very strange.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic007",
+   "prompt": "<Lie> He just started following me one day. I have no idea where he came from."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ask because Caesar once had a similar pet, but it was lost during a battle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic008",
+   "prompt": "Why do you want to know?"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, two it is. They'll still be more than enough to take you down, I think.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic009",
+   "prompt": "Potentially losing four dogs is a very high price to pay for a toy. What about two?",
+   "label": "< Barter 50 >"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic009_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No deal. You and four of my dogs. Not two, not three - four.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic009",
+   "prompt": "Can't we make some kind of deal?",
+   "label": "< Barter 50 >"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It took years for {KAI-zar} Caesar to conquer Lanius' tribe, and {KAI-zar} Caesar showed mercy to the survivors, allowing them to join the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had the positions been reversed, {KAI-zar} Caesar would be dead. Lanius is called the Monster of the East because he never, ever shows mercy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic011",
+   "prompt": "What can you tell me about Legate Lanius?"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think they'll probably end up killing you. I trained them myself. But, if you do win somehow, the mongrels will at least get honorable deaths.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic012",
+   "prompt": "You won't mind if I kill them?"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I thought something was wrong. We usually have to pull them off any visitors to the Fort.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, that's no fun. Take the bear. I'll find them something else to chew on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic013",
+   "prompt": "The mongrels won't touch me. Animals like me."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take the bear. I can't believe I let some of my best dogs get killed over this stupid thing.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Your stuff is in the crate next to the arena entrance. Leave it there too long and we'll dump it in the lake.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh. I could've sworn I had that stupid bear on me. Well, tough luck for you, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic014",
+   "prompt": "You thought wrong."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You do that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic015",
+   "prompt": "I need to think about this."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good luck - you'll need it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic016",
+   "prompt": "Let's do this."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lupa? Yes, she's the mother of a lot of our best dogs. She's getting old, but she's still a tough old bitch. {to Lupa} Aren't you, girl?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic018",
+   "prompt": "Nice dog."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I guess you're right. Here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic019",
+   "prompt": "[Reputation] I've done a lot for the Legion. Just hand over the bear already."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cyber-dog? Like the ones I've seen up in Denver? I know what you're talking about, and it would make Lupa immortal in a way.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic020",
+   "prompt": "I could use Lupa's brain to fix my cyber-dog."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You give Lupa a worthy death in the arena, and her brain is yours. Don't let your guard down just because she's old, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and standard arena rules still apply. You don't get to wear armor and you get only a machete for a weapon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic021",
+   "prompt": "Is that a yes?"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not too common but you still see 'em around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic022",
+   "prompt": "They have cyber-dogs in Denver?"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. {to Lupa} You've been a good dog, Lupa. Die well, girl.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic023",
+   "prompt": "I'm ready to fight Lupa now."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take all the time you need, otherwise Lupa will tear your throat out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic024",
+   "prompt": "I'll be back when I'm ready."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You sure? Last chance to back out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic025",
+   "prompt": "I'm ready to fight Lupa."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've been around dogs all my life. They're my life, always were - {pauses, thinking back, as if he's forgotten} all the way back when I was a tribal, one of the Hangdogs, outside Denver.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Still thinking back} Dogs roamed that city. Our tribe made peace with them. {Scoffs, trying to dismiss painful memory} Thought they were our spirit animals - helped us hunt, provided for us in some lean times.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then the Legion came. {Beat} Good thing, too. {Trying to convince himself} Stronger now, don't need those beliefs anymore.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic028",
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "When the Legion showed up, we fought, most tribes did. Hangdogs hung out longer than most... {beat} broke us by throwing our dogs on the fire.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{A little quiet, to himself, painful memory - scornful he ever believed this} So we gave up, our elders couldn't bear the idea of our spirit animals burning in the afterlife.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Rallies} Still, Caesar was impressed enough to conscript us, use our skills with dogs to join the Legion as houndmasters.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic029",
+   "prompt": "How did you end up joining the Legion?"
+  },
+  {
+   "key": "vfreeformthefortfortantonytopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{hiding his fear behind angry denial} He's a story to frighten the younger Legionaries. He's dead - no man, no matter how tough, could survive a fall into the Grand Canyon.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformTheFortFortAntonyTopic030",
+   "prompt": "What do you know about the Burned Man?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "antony"
+}

@@ -1,0 +1,34 @@
+{
+ "id": "vfsatomicwranglercashier",
+ "speaker_name": "Atomic Wrangler cashier",
+ "source": "VFSAtomicWranglerCashier.txt",
+ "topics": [
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Enjoy your stay at the Atomic Wrangler.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to the Atomic Wrangler. Looking to exchange?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "cashier"
+}

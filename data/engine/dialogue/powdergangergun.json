@@ -1,0 +1,224 @@
+{
+ "id": "powdergangergun",
+ "speaker_name": "Powder Ganger",
+ "source": "PowderGangerGun.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Primm, new Sheriff}Primm's got some new sheriff watching over the town now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Primm, NCR rule}The NCR's all over Primm. Steer clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Kimball dead}Somebody whacked the NCR president. Got what was coming to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar dead}Someone took out the Legion's boss. Doubt it'll stop them for long, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Middle Game}Lot more troops on the road these days. Wonder what's up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Late Game}Best to lay low. The NCR and the Legion are about to have it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked 1}You and me are all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked 2}Good to know that you've got my back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked 3}Don't let the NCR catch up to you, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rascal 1}You seem to be on the level.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rascal 2}Heard some things about you. {clarifying}Good things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rascal 3}Guess we're on the same side.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wild Child 1}I respect you, but I want nothing to do with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wild Child 2}I've heard some crazy stories about you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wild Child 3}Whatever is you want, keep me out of it. I've heard the stories.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mixed 1}I don't think I'll be turning my back to you anytime soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mixed 2}Keep your hands where I can see them - makes me feel better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mixed 3}You make it hard to trust you, you know that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hated 1}You better be sleeping with one eye open.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Hated 2}Why are you even talking to me?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Hated 3}I'd kill you right now if I could.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Thug 1}You're not exactly making friends around here, are you?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Thug 2}You and I have got nothing to talk about.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Thug 3}Just keep on walking.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Companion Reaction - Lily}Holy fuck. Never seen a mutant like that before.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - Rex}Didn't know they still had robo-dogs around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - Raul}Wouldn't want to live forever if I had to look like a ghoul.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "{Companion Reaction - Boone} {slight awe, respectful}That guy's got cold eyes. Definitely ex-military.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Companion Reaction - Veronica}Now there's a fine-looking woman. Just needs to ditch the robe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - Cass}Tough-looking woman. Something tells me she aims for the crotch.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - Arcade}We bought and sold guys like Four-Eyes over there like property back in the prison.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slight threat}You eyeballing me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn. Running low on smokes again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any lawman that comes after me won't have it easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Never gets old when something blows up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No way I'm going back to prison.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - EDE}Wouldn't mind having one of those little flying robots myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Back off. This is our turf.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not gonna stay nice if you don't leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Clear out. You're not welcome here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  }
+ ],
+ "speaker": "powder_ganger"
+}

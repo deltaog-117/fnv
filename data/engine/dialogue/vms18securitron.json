@@ -1,0 +1,63 @@
+{
+ "id": "vms18securitron",
+ "speaker_name": "Securitron",
+ "source": "VMS18Securitron.txt",
+ "topics": [
+  {
+   "key": "vms18securitronarrestheck",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heck Gunderson, you are under arrest for the murder of Ted Gunderson.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is my duty to inform you that murder is a serious crime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As a murderer you should be feeling emotions such as guilt, sorrow, and shame.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If not, you may wish to consult a mental health professional.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope this experience has taught you an important lesson about the value of human life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dead or alive, you're coming with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please allow me to escort you to the nearest criminal processing facility.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18SecuritronArrestHeck",
+   "prompt": "VMS18SecuritronArrestHeck"
+  },
+  {
+   "key": "vms18securitronheckdeathreaction",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Stand back, citizens. Deceased bodies are a known source of illness, and a potential tripping hazard.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18SecuritronHeckDeathReaction",
+   "prompt": "VMS18SecuritronHeckDeathReaction"
+  }
+ ]
+}

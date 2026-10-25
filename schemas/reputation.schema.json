@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reputation.schema.json",
+  "title": "Reputation rules",
+  "description": "data/engine/reputation.json: global reputation rules.",
+  "type": "object",
+  "required": [
+    "bump_points",
+    "benefits"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "bump_points": {
+      "type": "object",
+      "description": "Points added by a script's reputation bump, by size.",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "faction",
+          "reputation",
+          "effect"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "faction": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "reputation": {
+            "type": "string",
+            "description": "A title or Positive/Negative/Neutral."
+          },
+          "effect": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

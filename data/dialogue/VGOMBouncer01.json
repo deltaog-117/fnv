@@ -1,0 +1,131 @@
+{
+ "page": "VGOMBouncer01.txt",
+ "speaker": "Omerta thug",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey Buddy, Zoara is off limits to everyone but Family.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "Go ahead and talk to the bosses, they'll want to hear what you have to say.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vDialogueGomorrahvGOMBouncer01Topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Family, the fucking Omertas. Are you new around here or what?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you mean by Family?"
+  },
+  {
+   "id": "vDialogueGomorrahvGOMBouncer01Topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Zoara is our club. The Family club. If you got business with the bosses, you can go upstairs to talk to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is Zoara?"
+  },
+  {
+   "id": "vDialogueGomorrahvGOMBouncer01Topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What business is that?",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I have business with your bosses."
+  },
+  {
+   "id": "vDialogueGomorrahvGOMBouncer01Topic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, get lost.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nevermind, I'm done now."
+  },
+  {
+   "id": "vDialogueGomorrahvGOMBouncer01Topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, give me what you got.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck? Oh shit. Yeah, go talk to Nero or Big Sal upstairs. They'll want to see this. I'll send Cachino to the office as well.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "One of your soldiers has been breaking family rules, here is the proof."
+  },
+  {
+   "id": "vDialogueGomorrahvGOMBouncer01Topic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's my fucking job, and no one sees the bosses unless I give the okay.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "My business with the bosses is my business, not yours."
+  },
+  {
+   "id": "vDialogueGomorrahvGOMBouncer01Topic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Okay, calm down. I'm just doing my job. Go talk to the bosses, one of them should be upstairs. Look for Big Sal or Nero.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "I'll tell Cachino to head upstairs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It involves Cachino, and if you don't let me through it'll involve you too.",
+   "label": "{Speech Options}"
+  },
+  {
+   "id": "vDialogueGomorrahvGOMBouncer01Topic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't know who the fuck{emphasized} you think you are, but this is my gate and I'm the gatekeeper.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What I have is for their eyes only, not some lowly thug.",
+   "label": "{Speech Options}"
+  }
+ ]
+}

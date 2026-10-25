@@ -1,0 +1,127 @@
+{
+ "id": "sammywins",
+ "speaker_name": "Sammy Wins",
+ "source": "SammyWins.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are you doing here, stranger? You looking to start some trouble?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This better be good, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for talking Pauline out of robbing the Strip. Who knows what she'll think of next?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "sammygun",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So? That's just one of our crimes! We're depraved, stone-cold degenerates, you know? You don't want to mess with us!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SammyGun",
+   "prompt": "I know the two of you stole Vance's gun down in Primm.",
+   "label": "I know you have the gun, Sammy."
+  },
+  {
+   "key": "sammyneverheardofyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Simple! Up 'til now, we committed our crimes stealthily, leaving no evidence behind. So we never built a rep.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But that's gonna change with our next score. You just wait and see.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SammyNeverHeardofYou",
+   "prompt": "You sound pretty tough. I wonder why I've never heard of you."
+  },
+  {
+   "key": "sammypaulineconvinced",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Oh, thank god! I love that woman, but I swear this time she was gonna get us killed!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The gun's in the safe. The combination's 05-23-34. Take it far away from here, before she changes her mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SammyPaulineConvinced",
+   "prompt": "Pauline says you should give me the gun.",
+   "label": "I convinced Pauline that you shouldn't go through with this."
+  },
+  {
+   "key": "sammyplan",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll have to ask Pauline about that! She's the brains of our operation. I'm the muscle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SammyPlan",
+   "prompt": "What's your plan?",
+   "label": "What is your plan?"
+  },
+  {
+   "key": "sammywhoareyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me? I'm Sammy, of Sammy and Pauline, the wasteland's most dangerous and notorious criminal duo!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You better not mess with us or you'll end up face down in a shallow grave!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SammyWhoAreYou",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Thanks for talking us out of our evil ways. I'm starting on that novel soon. Pauline is so happy. You are a nice person! Hurray!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "sammy_wins"
+}

@@ -1,0 +1,949 @@
+{
+ "id": "ghouljasonbright",
+ "speaker_name": "Jason Bright",
+ "source": "GhoulJasonBright.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello, wanderer. Please forgive us of our humble surroundings. Our true home awaits us in the Far Beyond. {ghoul voice; welcoming}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you come to help us complete the Great Journey? {ghoul voice; hopeful}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I apologize, wanderer, but I must go tend to my flock!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I waited to speak with you one last time before I descended to the launch pad, wanderer. {ghoul voice; greeting}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want you to know that we will remember for all eternity how you delivered us to the threshold of the Great Journey. {ghoul voice; sincerely}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our preparations are nearly complete, but the rockets that will carry us to salvation are yet missing vital components. {ghoul voice}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you would still help us, wanderer, speak to Chris. He can tell you what is missing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There is no way that we can thank you enough, wanderer. Your arrival here was a blessing. We will remember you always.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Forgive me, wanderer, but my flock awaits.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is the way clear?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Will you help us, wanderer?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "jasonbrightabout",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am Jason Bright, the prophet of the Great Journey. All the ghouls you see here are members of my flock.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightAbout",
+   "prompt": "Who are you?",
+   "label": "JasonBrightWhoAreYou"
+  },
+  {
+   "key": "jasonbrightabout_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "An auspicious name, don't you think? It was mine before I became as I am now. Before the Great War, even.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Truly does the creator author a destiny for each and every one of us...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightAbout",
+   "prompt": "Your last name is \"Bright?\" That's funny.",
+   "label": "JasonBrightWhoAreYou"
+  },
+  {
+   "key": "jasonbrightalreadyhelpingchris",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It pleases me to hear this. Truly, the creator sent you to help us in our time of need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightAlreadyHelpingChris",
+   "prompt": "I'm already helping Chris with the rockets."
+  },
+  {
+   "key": "jasonbrightchrisabout",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're referring to Chris. I doubt you had much luck if you tried telling him that he's human.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We had the same discussions when he first appeared, and the same lack of success. He believes he is one of us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Soon enough we realized that Chris was a gift from the creator. He is integral to the success of the Great Journey.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightChrisAbout",
+   "prompt": "What's the deal with the human who let me in?",
+   "label": "PC asks about Chris H"
+  },
+  {
+   "key": "jasonbrightchrisabout_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "After all that you have done for us, I suppose you deserve to know everything...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When Chris came to us, we tried to convince him that he was human. But this only angered him. He seemed... lost.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We decided to let him stay with us for a few days, over the course of which we learned that his technical skills far surpassed our own.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It became clear that the creator had sent him to us, to ensure the success of the Great Journey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Equally clear was that Chris should labor in blessed ignorance of his humanity, and his inability to make the journey himself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is no coincidence that two humans have been vital to the success of the Great Journey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is my belief that the creator sent you and Chris to expiate the sins of your kind against mine. You are redeemers both.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightChrisAbout",
+   "prompt": "Let's talk about Chris.",
+   "label": "PC asks about Chris H"
+  },
+  {
+   "key": "jasonbrightchrisabout_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Such is the creator's will. Vision upon vision has shown me that, were Chris to accompany us, he would die in minutes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The radiation around the launch pad alone would kill Chris in minutes. The radioactivity of the Far Beyond is much stronger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightChrisAbout",
+   "prompt": "So you're going to leave Chris behind?",
+   "label": "PC asks about Chris H"
+  },
+  {
+   "key": "jasonbrightchrisallow",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Chris shall be declared the Saint of the Great Journey before we depart. I hope this will ease his sadness...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightChrisAllow",
+   "prompt": "Well, it's none of my business.",
+   "label": "PC will not alert Chris H"
+  },
+  {
+   "key": "jasonbrightchrisapprove",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I take no pleasure in hiding the truth from Chris. But it is the creator's will, to which I must submit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightChrisApprove",
+   "prompt": "Wow! You really pulled the wool over his eyes!",
+   "label": "PC says he understands role of Chris H"
+  },
+  {
+   "key": "jasonbrightchrisdisapprove",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It is the creator's will, and I must submit. There is no malice in it. We would take him with us if we could.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightChrisDisapprove",
+   "prompt": "You've been using Chris. It's despicable."
+  },
+  {
+   "key": "jasonbrightfarbeyond",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have glimpsed it only in visions, wanderer, but what I have seen is truly miraculous.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is a place of light and healing, and I know in my soul that my flock will be safe there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightFarBeyond",
+   "prompt": "What is this Far Beyond?"
+  },
+  {
+   "key": "jasonbrightgreatjourney",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We wish to escape the barbarity of the wasteland, especially the violence and bigotry of its human inhabitants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The creator has promised to my flock a new land: a place of safety and healing... a paradise in the Far Beyond.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Preparations for the Great Journey were nearly complete when the demons appeared.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightGreatJourney",
+   "prompt": "What's the \"Great Journey\"?",
+   "label": "PC asks about the Great Journey"
+  },
+  {
+   "key": "jasonbrightgreatjourney_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The means by which the Great Journey is to be accomplished are an article of faith, not to be discussed with outsiders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightGreatJourney",
+   "prompt": "How will you make the \"Journey?\"",
+   "label": "PC asks about the Great Journey"
+  },
+  {
+   "key": "jasonbrightgreatjourney_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. The rockets will convey us to our promised land in the Far Beyond. Vision upon vision has confirmed it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightGreatJourney",
+   "prompt": "Are you seriously going to make your \"Great Journey\" on those rockets?",
+   "label": "PC asks about the Great Journey"
+  },
+  {
+   "key": "jasonbrightgreatjourney_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I understand your concerns, friend, and I thank you for voicing them. But the creator's will for us has been made manifest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightGreatJourney",
+   "prompt": "Are these surface-to-surface rockets? Or will they launch you into orbit?",
+   "label": "PC asks about the Great Journey"
+  },
+  {
+   "key": "jasonbrightgreatjourney_5",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I understand your concerns, friend, and I thank you for voicing them. But the creator's will for us has been made manifest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightGreatJourney",
+   "prompt": "Those rockets will convey you and your flock straight into the ground!",
+   "label": "PC asks about the Great Journey"
+  },
+  {
+   "key": "jasonbrightkeeptalking",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightKeepTalking",
+   "prompt": "I'll think about it."
+  },
+  {
+   "key": "jasonbrightnightkinabout",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The demons appeared from nowhere... except it might be more accurate to say they never actually \"appeared\" at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The demons are invisible. Where one of them stands, the most one sees is the air shimmering, like sunlight on water...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They set upon us as we were on our way to worship one morning. We had just entered the basement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My flock fought bravely, and killed a few, but at such cost. Nearly half of us died or went missing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The rest of us retreated up here. One of the demons raved at us, but they have not tried to attack us since.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, their demonic presence brought all progress towards the Great Journey to a standstill.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But now you have come. Once again, the creator has sent a human to help us across a seemingly insurmountable obstacle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinAbout",
+   "prompt": "Tell me more about these \"demons.\"",
+   "label": "PC asks about the Nightkin"
+  },
+  {
+   "key": "jasonbrightnightkinabout_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, over the intercom. Threats of death should we step outside, guarantees of safety should we stay locked away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It went on for hours, and did not always make sense. But that was the first day only. Since then, silence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Will you drive away the demons, wanderer?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinAbout",
+   "prompt": "You say one of the demons \"raved\" at you?",
+   "label": "PC asks about the Nightkin"
+  },
+  {
+   "key": "jasonbrightnightkinabout_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, wanderer?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinAbout",
+   "prompt": "About those \"demons\"...",
+   "label": "PC asks about the Nightkin"
+  },
+  {
+   "key": "jasonbrightnightkingone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Praise the creator! And bless you, wanderer! The way is clear. I will lead my flock through the basement to the sacred site!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you will come find us there, wanderer! There is much to be done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinGone",
+   "prompt": "The \"demons\" are gone.",
+   "label": "PC reports that Nightkin are gone"
+  },
+  {
+   "key": "jasonbrightnightkingone_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I understand. I know you will fulfill your promise.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinGone",
+   "prompt": "I haven't dealt with the \"demons\" yet.",
+   "label": "PC reports that Nightkin are gone"
+  },
+  {
+   "key": "jasonbrightnightkinno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "But we have no hope of completing the Great Journey without your help!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinNo",
+   "prompt": "Sorry. Not interested.",
+   "label": "PC declines to help"
+  },
+  {
+   "key": "jasonbrightnightkinno_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I pray that you will reconsider, wanderer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinNo",
+   "prompt": "Like I said, not interested.",
+   "label": "PC declines to help"
+  },
+  {
+   "key": "jasonbrightnightkinyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Praise the creator. Bless you, wanderer! Bless us all!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With the underground rid of demons, preparations for the Great Journey can resume!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinYes",
+   "prompt": "I've already killed your \"demons.\"",
+   "label": "PC agrees to help"
+  },
+  {
+   "key": "jasonbrightnightkinyes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Praise the creator. Bless you, wanderer! Bless us all!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As soon as the underground has been rid of demons, preparations for the Great Journey can resume!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNightkinYes",
+   "prompt": "I'll take care of the \"demons\" for you.",
+   "label": "PC agrees to help"
+  },
+  {
+   "key": "jasonbrightnovacferalghouls",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And they've been shooting them down like animals, haven't they?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those ghouls were members of my flock, even after the madness consumed their minds. We never let them wander free.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We kept them safe on the first floor. We kept them contained. The demons must have let them out, somehow...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And now they are lost forever, denied the salvation and healing glow of the Far Beyond...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please, wanderer, bear in mind that every feral ghoul you spare now is one that we can save later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once the way is clear, our feral brothers and sisters will accompany us on the Great Journey. If there are any left...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNovacFeralGhouls",
+   "prompt": "I'm here because feral ghouls have been wandering into Novac.",
+   "label": "PC says Novac is worried about REPCONN ghouls <ref name=\":0\">This dialogue is only available if the quest variable VMS01.NovacVsGhouls is greater than 0, which is triggered only when the player has both talked to Jeannie May Crawford about REPCONN AND asked Manny what he protects Novac from. It is not available if the player only spoke to Manny about clearing out the ghouls from REPCONN in exchange for information on Benny.</ref>"
+  },
+  {
+   "key": "jasonbrightnovacghoulicide_ref_name_0",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wish I could say I was surprised. But that is what we've come to expect from your kind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Normally, it's what I'd expect from you. But it was the creator who brought you here today.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightNovacGhoulicide <ref name=\":0\" />",
+   "prompt": "Some folks in Novac want you dead, and will pay to have it done."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Do come find us!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Understood.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "goodbye_2",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Return to me, wanderer. We need your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "I need to get going.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "goodbye_3",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Let me know when the underground has been rid of the demons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "I'll be on my way.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "goodbye_4",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "There is no way that we can thank you enough, wanderer. Your arrival here was a blessing. We will remember you always.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Goodbye, wanderer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye, Jason.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "jasonbrightspeech1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Gather, all. May the creator guide my words and help me speak true...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech1",
+   "prompt": "JasonBrightSpeech1"
+  },
+  {
+   "key": "jasonbrightspeech2",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The almighty creator has seen fit to answer our prayers. The time has come for us to board the rockets and begin the Great Journey.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech2",
+   "prompt": "JasonBrightSpeech2"
+  },
+  {
+   "key": "jasonbrightspeech3",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Though it may seem that all humans despise us, the creator has seen fit to instruct us differently.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech3",
+   "prompt": "JasonBrightSpeech3"
+  },
+  {
+   "key": "jasonbrightspeech4",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The Journey ahead would have been impossible if not for the intercession of two human friends, one new, the other a long-abiding companion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech4",
+   "prompt": "JasonBrightSpeech4"
+  },
+  {
+   "key": "jasonbrightspeech5",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "To our new friend, we say thanks, and promise never to forget how he cleared from our path the demons who sought to stay our Journey.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech5",
+   "prompt": "JasonBrightSpeech5"
+  },
+  {
+   "key": "jasonbrightspeech6",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "But to Chris, we owe more than thanks. Chris, you have made this Great Journey a reality.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech6",
+   "prompt": "JasonBrightSpeech6"
+  },
+  {
+   "key": "jasonbrightspeech7",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "From this moment forward, you will be remembered as the Saint of the Great Journey. We shall never forget you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech7",
+   "prompt": "JasonBrightSpeech7"
+  },
+  {
+   "key": "jasonbrightspeech8",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I ask that you forgive us, Chris, and give us your blessing, and we bestow ours upon you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech8",
+   "prompt": "JasonBrightSpeech8"
+  },
+  {
+   "key": "jasonbrightspeech9",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Seekers, board the rockets, take your seats. The Great Journey awaits! To the promised land we go! To the Far Beyond!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JasonBrightSpeech9",
+   "prompt": "JasonBrightSpeech9"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Better not try that again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What was that for?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You dirty coward!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the hell?!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You like that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come on!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had enough?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Incoming!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get down!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Help!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is hopeless!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm out of here!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm hit!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What have you done?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Murderer!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Thief!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can't just take that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That doesn't belong to you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  }
+ ],
+ "speaker": "jason_bright"
+}

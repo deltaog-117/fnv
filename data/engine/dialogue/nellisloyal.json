@@ -1,0 +1,654 @@
+{
+ "id": "nellisloyal",
+ "speaker_name": "Loyal",
+ "source": "NellisLoyal.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pearl sent word saying it's all right to tell you about the Lady in the water.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Isn't that bomber a beauty? Thanks so much for making an old man's dreams come true.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's going to be a dream come true once you've raised that bomber from Lake Mead!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good work with those solar arrays.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope Pearl knows what she's doing, letting you wander around Nellis as you please.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it, Outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{fall-through greeting, friendly} Hello, Outsider, need something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Amused chuckle} If we need something obliterated, Raquel and the howitzer crews are more than qualified.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, we have more specialized issues we need help with right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic000",
+   "prompt": "You don't need anything blown up?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If that's so, how about you look into repairing the solar arrays on the roof of the generator building?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing too complicated about it, but it's a long ways to walk my old bones, and there's been that ant problem over near there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can't miss the array. It's on top of the generator building smack dab in the middle of Nellis between the two runways.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic001",
+   "prompt": "I'm looking for ways to make myself useful."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I started building a sonic emitter that might do the trick, but it's useless without knowing the exact frequency that would kill the ants.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic002",
+   "prompt": "Raquel said you were working on some kind of weapon to fight the giant ants?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hot damn, you're right! It's a matter of boosting across those thresholds, not exact amplitude. You're smarter than you look.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just so happens I was testing it at 24,000 hertz, so it should be good to go. Place it near their nest and cross your fingers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Signal's too high for people to hear, so no harm done, but it might make you feel sick to your stomach.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic003",
+   "prompt": "Any signal over 22,000 hertz at 150 or more decibels should do the trick.",
+   "label": "<Science check to get emitter>"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, it doesn't have a dial! It has to be stabilized for an exact frequency or it could shake itself apart!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic003",
+   "prompt": "Oh. Does it have a dial or something? Turn it up to 11!",
+   "label": "<Science check to get emitter>"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] If you're willing to take the risk, be my guest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've got it set to broadcast a powerful signal at 24,000 hertz. Just place it near their nest and cross your fingers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Signal's too high for people to hear, so no harm done, but it might make you feel sick to your stomach.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic004",
+   "prompt": "Think of it as a field test. A trial run.",
+   "label": "<Speech check to get emitter>"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't even know what the hell you're talking about. Sounds like gibberish.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic004",
+   "prompt": "Maybe tilt the... megareceiver? To 73.5 kilonewtons...?",
+   "label": "<Speech check to get emitter>"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess you'll have to use hit and run tactics, and go see Doc Argyll if you need patching up. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic005",
+   "prompt": "I think I can handle a few ants without a sonic emitter."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A long time ago - long before the war that killed just about everything that ever lived - a bomber crashed not far from here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A bomber was a flying contraption that could drop explosives down on anything it flew over. But anyway, moving on...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This bomber crashed down in Lake Mead, pretty damn near intact. When we got to Nellis, see, I found this article in a magazine all about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There was another B-29 around here, part of a museum. Couldn't fly, but had a lot of spare parts, see? Get where I'm going?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since I was a young man, I've dreamed of raising that Lady from the lake and bringing her back to life. What do you say?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic006",
+   "prompt": "Lady in the water? What's that?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's at the bottom of Lake Mead. I'll mark its location on your Pip-boy map.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic007",
+   "prompt": "Where is the bomber located?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Simple! Attach deployable ballast to the plane and float it on up!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here is a remote detonator. Once the ballast is attached to the plane just hit the detonator from the shore and let buoyancy handle the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic008",
+   "prompt": "How do you expect to raise a bomber from the bottom of a lake?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. What's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic009",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic010",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I told you, at the bottom of Lake Mead! I'll make sure the location is displayed on your Pip-boy map.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic011",
+   "prompt": "Where is the bomber located?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wish you'd paid attention the first time! All you need to do is attach the deployable ballast to the plane.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of my robots will carry a remote activation station out to the shore. Attach the ballast, hit a button, and they'll handle the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic012",
+   "prompt": "Tell me again what I need to do."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's tremendous! I'll transmit instructions to the robots to start packing up the plane to bring it back to Nellis!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic013",
+   "prompt": "Your plan worked. The plane floated up. Seemed to be intact."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "An impressive piece of work. I'll keep that in mind if jobs come up in the future.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic016",
+   "prompt": "I repaired the solar arrays and increased their efficiency."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha! If we had spare parts, do you think I'd be asking you to fix the damn things? That's rich.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, we ran out of spares a while back, and Jack and I have been doing our best to patch the arrays up as best we can. Sadly, we're at our wit's end.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There have to be spare parts somewhere around the wasteland, but I just don't know where to direct you. You may have noticed we don't get out much.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic017",
+   "prompt": "Where should I look for spare parts?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Did I misunderstand what Pearl said? All right. Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic018",
+   "prompt": "Maybe another time. Goodbye."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ain't nothing creepy about it. It's a term of respect!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic019",
+   "prompt": "That sounds really creepy, Loyal."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know it does, but I tell you, it ain't! I've worked it out so it's simple!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic020",
+   "prompt": "That sounds impossible."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe you don't understand. Hasn't been one of us, not a one, to set a foot outside Nellis in over fifty years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You come along, with your knowledge of the outside, and it seems the time's come to raise the Lady after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic021",
+   "prompt": "If it's so simple, why haven't you done it?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Here's the deployable ballast. Go find the plane, attach the ballast, and hit the button!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic022",
+   "prompt": "All right. I'm game."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, it's not. It's the smartest idea you ever heard, but you're too stupid to know it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic023",
+   "prompt": "That's just about the stupidest idea I ever heard."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, that's great! You shouldn't have much trouble getting those fixed up, then. Just stop back when you're done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic024",
+   "prompt": "Funny you should mention that, I have array parts right here."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Might try holding your breath. If that doesn't sound good enough, talk to Jack. He was working on a rebreather once.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic025",
+   "prompt": "Any ideas how to get to the bottom of Lake Mead without drowning?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you talking about that damn bright light we've seen blast off to the south occasionally? I was wondering what the hell that was.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If they've got the parts, bring them on back. We need to get the array back up and charging.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic026",
+   "prompt": "I passed through a place called Helios One. Maybe I could find parts there."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, how about that! I'll have to check out your handywork.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And here I thought we had them running as best we could before they broke down again. Thanks for getting those sorted for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic027",
+   "prompt": "I fixed the arrays and improved their efficiency a bit too."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic027_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, how about that! Turns out you aren't completely useless, working with your hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic027",
+   "prompt": "I repaired the solar arrays."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be sure to stop on back and let me know when the arrays are fixed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic028",
+   "prompt": "I'll be back. I've got work to do."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. Those aren't for outsiders to use. Leave them alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic029",
+   "prompt": "Can I get a code to use the VR pods in the mess hall?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else you need? I've got work to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic031",
+   "prompt": "Okay, I was just curious."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well, if you genuinely care so much, they're flight simulators. If you don't know our history yet, you should see Pete and get the tour.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We dream to one day rule the skies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Talk to Pete if you're so curious.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic032",
+   "prompt": "I'm genuinely interested in your people's history. What are the pods for?",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I just told you, the robots are going to handle it. They'll break the plane down into pieces and move it up from Callville Bay in one shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic033",
+   "prompt": "How exactly do you plan to get the plane back here?"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, I better get rolling. Jack and I have a lot of work ahead of us!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic034",
+   "prompt": "Glad to have helped."
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Exactly. We'll be shelling an unoccupied location in Outer Vegas to get their attention elsewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "By the time they realize they aren't under attack, the plane and the bots will be long gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The kids wish we were shelling a real target, but Pearl thinks it wise to not start up a war just as the lady has risen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic036",
+   "prompt": "Are you planning to use diversionary tactics to draw their attention?",
+   "label": "<Intelligence>"
+  },
+  {
+   "key": "vfreeformnellisnellisloyaltopic036_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] We've got that covered. They won't be a problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's just say they'll be a little distracted for a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisLoyalTopic036",
+   "prompt": "But won't that attract the attention of the NCR?",
+   "label": "<Intelligence>"
+  }
+ ],
+ "speaker": "loyal"
+}

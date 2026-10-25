@@ -1,0 +1,986 @@
+{
+ "page": "VFSGloriaVanGraff.txt",
+ "speaker": "Gloria Van Graff",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good job. I need to work out some last minute details with our new clients, but after that we'll head back to the Rush.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "No time to talk. We have to finish these bastards off!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good, you're here. Do you remember that package I had you deliver? Well, the client liked the sample and put in a massive order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's possibly the biggest order we've ever supplied. I've had to repeatedly assure my mother that everything will go smoothly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And that's where I'm hoping you'll come in. We'll be bringing an escort, and I want you on it. What do you say?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Simon's been telling me how it went. Let's do a quick recap.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back. Did you have news for me, or are you just here for the guns?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back. I hope you've been working on that task Jean-Baptiste had for you. My brother is not a patient man by any means.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to the Silver Rush, where only top of the line energy weapons can be found. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{ Holder node for Gloria's top level topics }",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My favorite employee returns! What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFSGloriaEndingDialog",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose you have a few questions.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSGloriaEndingDialog"
+  },
+  {
+   "id": "VFSGloriaWarehouseInstructions",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're taking an awfully long time inspecting the weapons. I'm beginning to think they're doing it just to unnerve us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't let them rattle you, though. The deal's almost done. There's just one last piece of business left.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Speaking of which, I need you to listen to me very carefully. Things are about to get a little crazy. When I give the signal, follow my lead, okay?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSGloriaWarehouseInstructions"
+  },
+  {
+   "id": "VFreeformFreesideVFSGloriaVanGraffTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to see what you have for sale."
+  },
+  {
+   "id": "VFreeformFreesideVFSGloriaVanGraffTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please let me know if anything catches your eye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm just browsing."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It just so happens a position opened up recently. It's not much, but it'll be a good way for me to gauge your potential for future assignments.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It just so happens a position opened up recently. We currently need another body to guard the entrance outside. Think you can handle that?",
+     "emotion": "anger",
+     "intensity": 80
+    }
+   ],
+   "prompt": "I was wondering if you had any work available.",
+   "label": "{Ask for work nodes}"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ran out of caps, eh? The job's still available, if you're interested.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is that guard position still available?",
+   "label": "{Ask for work nodes}"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're in luck. We've interviewed a few people for the courier position, but they all seem so... untrustworthy. Ready to make some money?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Still need that sample delivered?",
+   "label": "{Ask for work nodes}"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And? Don't leave me in suspense. What was their reaction?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I delivered the package as requested.",
+   "label": "{Ask for work nodes}"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wonderful. I already have a man outside who can show you the ropes and get you set up. His name is Simon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's been with the family for years, so listen to what he says, and follow his instructions.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure. Count me in."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself. Was there anything else you wanted?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I have better things to do."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Mind if I ask you some questions?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes it is. My brother and I run this particular branch, but our family has operations all over, particularly in California.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So is this a family business?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look around, and you'll notice two things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First, we don't lack for security. I'm not worried about anyone breaking in here or stealing our goods.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not that we don't occasionally have attempts, but even those prove useful. Do you know how much target dummies cost?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Back to my point, the second thing you'll notice is that we do not sell cheap merchandise. Everything here is second-to-none.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "People who buy Van Graff goods typically don't care where they have to go to get them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This seems like a bad neighborhood to open a store."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This place is certainly lively, that's for sure. Did you want to know something specific about it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Freeside."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, there's not much to tell. I was born into a big family and don't get along with my parents, so here I am. As far away from them as possible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Unfortunately, I found someone else with a little more experience, and he'll take over the position starting tomorrow.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, another task has come up that I could use some help with, assuming you're still interested in making some money?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You basically let every jackass off the street march in here. That doesn't say much for your judgement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, you did manage to prevent that psychopath from blowing this place up. That deserves some reward, at least.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then you robbed me of my revenge on that prancing asshole of a King. For that alone, I should kill you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You kept away the undesirables, patted down the rest for weapons, and kept your cool.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That is to say, you performed as instructed. Simon was impressed, and so am I. So you get a small bonus with your normal pay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You had a little bit of a hard time following instructions, but didn't do too bad overall. Here's your pay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{ Node for guard result infos }"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's a deal that we've been working on for a while now and the buyer would like a sample of our weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need you to run a package out to a discrete location that the client has chosen. Sound good?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Always."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, look who doesn't need my money any more. When you find your pockets a little lighter, stop back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a courier job, so it should be easy caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe another time."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, here's the package. I'll mark the location on your map. The buyer said they'd be in town for quite a while so there's no rush.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That said, try not to dawdle. This client could mean big money for us, which naturally means big money for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll do it."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. Let me know if you change your mind. The buyer said they'd be in town for quite a while, so there's no rush.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My men have their hands full with our other operations, so unless I can find another courier, the job will still be available.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not a delivery boy. Not interested."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good... good. Here's your payment. If you'll excuse me, I have some thinking to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, Jean-Baptiste was talking about a matter earlier that he needs help with. I volunteered you. See him for the details.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He said you'd hear from them soon."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's better if you don't ask. Now I believe I asked you a question. What was their reaction?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about this client?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Perfect. We're still getting everything together, but I can always find a use for idle hands in the meantime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once we're settled, we'll head out to the rendezvous point.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Count me in."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's okay, I still need some time to get everything together. The logistics of an order like this are headache inducing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We won't need to head out for a while yet, so stop back when you have the time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can't right now."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have time to explain now. Just do as you're told and we'll all be rich.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wait, what?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's what I like about you. You follow orders, for the most part. Just remember to wait for the signal.",
+     "emotion": "happy",
+     "intensity": 60
+    }
+   ],
+   "prompt": "Got it."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not if we don't screw this up. I'm counting on you to do your part. Just wait for the signal. You'll know what to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is anything wrong?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're welcome here any time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just thought I'd stop in and say hello."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We made a lot of money, that's what. The Legion paid us to deliver weapons, and the NCR paid us to deliver the Legion. Or some of them, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "For starters, what in the hell just happened?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I do. They're a bunch of corrupt, bullying fools who think they can tell everyone how to live their lives, and my family's fought them for years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But that's just it. Do you know how large the NCR army is? If they wanted to, they could have beaten us a dozen times over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do you know why they haven't? Money. Every time things have gotten too tense, we've paid them off and laid low for a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're an enemy we can live with. This Caesar, on the other hand, is a different animal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've heard reports for years from our agents to the east. He doesn't tolerate his enemies, he makes examples of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And he doesn't have friends. Only servants. And the Van Graffs serve no one but themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given that, the choice was rather simple.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I thought you hated the NCR?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar has been making overtures to prominent suppliers for some time now. Usually, they're too scared of him to cross him and just pay or flee.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I saw an opportunity and negotiated a deal with the NCR - I help draw some of their enemy's troops into a trap and they agree to buy from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Normally, those stuck-up bastards wouldn't have anything to do with us, but their situation is precarious, and this chance was too tempting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just start at the beginning."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well... not exactly. The deal wasn't exactly sanctioned by my mother, but she'll come around when she hears about the profit I made.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If she's smart, and she is, believe me, she'll turn this to her own advantage and make a bundle off our new \"connections\" in the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So now the Van Graffs are allied with the NCR?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hardly. They've got a lot of soldiers, and slaves. But they don't come close to having the amount of wealth the NCR has.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When I said we were going to be rich, I meant it. The deal I brokered with the NCR netted me fives times what Caesar paid.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keeping Caesar's money was just a bonus.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wouldn't you have made just as much money dealing with the Legion?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It'll be all I can do to supply the NCR with the amount of weapons they want, so I'll be pretty busy for the foreseeable future.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, you're probably wondering if you still have a job! I don't have anything open at the moment, sadly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But we're going to need all the help we can get transporting guns to the NCR, so stop by every now and then and I might have a delivery job for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And before I forget, here's your share of the take from the warehouse job. You can keep the armor. Thanks again for all your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What will you do now?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, the \"rulers\" of Freeside. The Kings are a bunch of boys who refuse to grow up, and this is their playground.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Their leader seems different, though. The few times I've dealt with him I've been impressed despite myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unfortunately, he rarely acts. The Kings believe that everyone in Freeside can do whatever they want, provided they can back it up with force.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Which suits us just fine. When we first arrived in Freeside, the Kings protested when we kicked out the original occupant of this establishment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When we reduced several of their members to glowing puddles of goo, their objections vanished. Since then, we've left each other alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Kings."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't really have much to do with them. They seem to have an aversion to weapons technology, and those who possess a great deal of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Their loss, really.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Followers."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you probably noticed the Atomic Wrangler across the street. That's pretty much the place to go around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They make it a little loud around here at night, but the business their proximity brings more than makes up for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Other than them, you're better off skipping Freeside entirely and just heading to the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is there to do here?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suits me. What did you have in mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's just a rumor. Even so, I trust you will refrain from bringing up this subject again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "There's a rumor that there's a feud between your family and Pacer. What's that about?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You must not know a lot about my family or you wouldn't have asked that. The Van Graffs and the NCR have been enemies for decades.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They've tried to block our expansion for years, but we've managed to grow regardless. The problem is they have, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR is huge, now. We're talking on a scale that's difficult to imagine. Time was, we could fight them and hold our own. Not so anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My family has enough men and guns to field a small army, but the NCR can field a really, really big army. Fighting them is out of the question now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you think of the NCR?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've only heard rumors, since this is the furthest east our operations go. But the rumors are pretty scary.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're said to be a huge slaver nation, with all the soldiers obeying their lord with unquestioning obedience.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sounds like a man I'd like to meet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you think of the Legion?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very little, same as everyone else. We attempted to deal with him when we first moved into the area, but had no luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He must have his own weapons supplies to keep as many laser-armed robots operational as he does. Makes me wonder where they are...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know of Mr. House?"
+  },
+  {
+   "id": "VMS29aVFSGloriaVanGraffTopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're our chief competitors in this region, and many others. That makes them our enemies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "While I respect their business acumen, I'm obligated to try to destroy them however I can. That's business, after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you think of the Gun Runners?"
+  },
+  {
+   "id": "VFSGloriaKillThemAll",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Their commander is down! Kill the rest!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSGloriaKillThemAll"
+  },
+  {
+   "id": "VFSGloriaSpeaksToLegionOfficer",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I trust you find everything acceptable?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, I imagine he won't.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSGloriaSpeaksToLegionOfficer"
+  },
+  {
+   "id": "VFSGloriaTalksAboutVolunteer",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Everything. Up until recently, this man was an employee of mine. He's quite handsome, don't you think?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know I did. We became... close. I warned him that I was a very jealous woman, and he said he understood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Apparently he didn't. Last week, I chanced upon him in Gomorrah, being serviced by one of their two-cap whores. I was not pleased.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I tell you all this because I want you to know that this man means a great deal to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSGloriaTalksAboutVolunteer"
+  },
+  {
+   "id": "VFSVanGraffIntro01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Mr. Soren, please get to the point. The second half of your payment is late and I want to know why.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Might I ask for what reason? The shipment was delivered. The guns were tested before leaving this facility.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, I think I understand what the issue here is. Excuse me for a moment, would you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffIntro01"
+  },
+  {
+   "id": "VFSVanGraffIntro02",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Jean-Baptiste, could you bring out the volunteer?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffIntro02"
+  },
+  {
+   "id": "VFSVanGraffIntro03",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "This is a lesson, Mr. Soren. A lesson in faith.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffIntro03"
+  },
+  {
+   "id": "VFSVanGraffIntro04",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffIntro04"
+  },
+  {
+   "id": "VFSVanGraffIntro05",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Never break faith with the Van Graffs, Mr. Soren.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I expect you'll have the rest of our payment ready tomorrow morning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffIntro05"
+  },
+  {
+   "id": "VFSVanGraffLaughter",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Okay everyone, show's over. Back to work!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He {stressed} was stealing money, though he could have kept it for all I cared. God knows he earned it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffLaughter"
+  }
+ ]
+}

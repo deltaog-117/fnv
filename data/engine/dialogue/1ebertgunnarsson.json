@@ -1,0 +1,193 @@
+{
+ "id": "1ebertgunnarsson",
+ "speaker_name": "Bert Gunnarsson",
+ "source": "1EBertGunnarsson.txt",
+ "topics": [
+  {
+   "key": "bertfollowers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I surely am. Well, sort of. I came out from Utah about six months back, saw a need for my help here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Followers weren't too happy about that, of course. They haven't been too fond of the NCR for a while, but I go where I'm needed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BertFollowers",
+   "prompt": "You're one of the Followers of the Apocalypse?"
+  },
+  {
+   "key": "berthelp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I give what aid and comfort I can. I have medical knowledge thanks to my time with the Followers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BertHelp",
+   "prompt": "What do you do here?"
+  },
+  {
+   "key": "bertintro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's an interesting question. Among the Church, I'm called Elder Gunnarsson. The Followers call me \"Doc.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can call me Bert, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BertIntro",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "bertnephi",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I never was able to reach him. He has allowed drugs and hatred to consume him. He runs with the Fiends north of here, now. They call him Driver Nephi.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BertNephi",
+   "prompt": "What happened to your friend Nephi?"
+  },
+  {
+   "key": "bertrefugees",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Poor lost souls, most of them. They thought to come to New Vegas and find their fortunes on its shining Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the journey is often long, and the price to enter the city is steep. Those who could not pay ended up here, hoping to earn the caps they need.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some find honest labor, but more fritter away what little they've saved on crooked gambling and cheap liquor. Still, I minister to them as I can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BertRefugees",
+   "prompt": "What's the deal with all these refugees?"
+  },
+  {
+   "key": "bertutah",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Following a lost cause, I'm afraid. My old friend Nephi fell in with a bad crowd.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Drug runners, raiders, probably worse things it's better not to dwell on. When his gang headed west, I followed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I thought perhaps I could turn him back to the Church.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BertUtah",
+   "prompt": "What was it that brought you out here from Utah?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've heard through the locals that Nephi has passed on. I truly hope his soul finds peace.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome, brother! How can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome, sister! How can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is there something else I can do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguevegaseast21ebertgunnarssontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would be happy to, should you require it. You seem to be in fine health now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I would be happy to. What I can do isn't much, but I give it freely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid I have exhausted my supplies. If you come back in a day or two, I may be able to do more for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EBertGunnarssonTopic000",
+   "prompt": "Can you heal me?"
+  },
+  {
+   "key": "vdialoguevegaseast21ebertgunnarssontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I only do what I can to help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EBertGunnarssonTopic001",
+   "prompt": "That's noble of you."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Farewell, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "bert_gunnarsson"
+}

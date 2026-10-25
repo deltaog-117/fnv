@@ -1,0 +1,4042 @@
+{
+ "id": "craigboone",
+ "speaker_name": "Craig Boone",
+ "source": "CraigBoone.txt",
+ "topics": [
+  {
+   "key": "craigbooneareyougoingtokillme",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not unless you give me a reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneAreYouGoingToKillMe",
+   "prompt": "Are you going to try and kill me?"
+  },
+  {
+   "key": "craigbooneclosesttoproof",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goddamn it. This wasn't supposed to be a guess. He might not have done a goddamn thing.",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "Goddamn it. This wasn't supposed to be a guess. She might not have done a goddamn thing.",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "Get out. I don't ever want to see you here again. And you stay the hell away from me.",
+     "emotion": "anger",
+     "intensity": 60
+    }
+   ],
+   "topic": "CraigBooneClosestToProof",
+   "prompt": "It was the closest to proof that there was."
+  },
+  {
+   "key": "craigboonecomewithme",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You don't want to do that.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "CraigBooneComeWithMe",
+   "prompt": "Come with me. Let's go after the Legion."
+  },
+  {
+   "key": "craigbooneculpritobvious",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's about all the proof I could hope for, I guess. Here. This is all I can give. I think our dealings are done here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneCulpritObvious",
+   "prompt": "I deduced it with a simple process of elimination.",
+   "label": "The culprit was obvious when all the pieces fell into place."
+  },
+  {
+   "key": "craigboonedoafterthis",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. I won't be staying, I know that. Don't see much point in anything right now, except hunting legionaries.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Maybe I'll wander, like you.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "CraigBooneDoAfterThis",
+   "prompt": "What will you do after this?"
+  },
+  {
+   "key": "craigboonedoesntaffectme",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wait. You just got into town. Maybe you shouldn't go. Not just yet.",
+     "emotion": "surprise",
+     "intensity": 15
+    }
+   ],
+   "topic": "CraigBooneDoesntAffectMe",
+   "prompt": "I don't see how that affects me."
+  },
+  {
+   "key": "craigboonefoundbillofsale",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess I shouldn't be surprised. It'd be like them to keep paperwork.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here. This is all I can give. I think our dealings are done here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneFoundBillOfSale",
+   "prompt": "I found the bill of sale."
+  },
+  {
+   "key": "craigboonefriendlyconversation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have friends here.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "CraigBooneFriendlyConversation",
+   "prompt": "Just making friendly conversation."
+  },
+  {
+   "key": "craigboonehowdoyouknowshesdead",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know, all right? And that's all you need to know.",
+     "emotion": "anger",
+     "intensity": 75
+    }
+   ],
+   "topic": "CraigBooneHowDoYouKnowShesDead",
+   "prompt": "How do you know your wife is dead?"
+  },
+  {
+   "key": "craigboonejustahunch",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You didn't have any proof?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneJustAHunch",
+   "prompt": "Just a hunch."
+  },
+  {
+   "key": "craigboonekillmoretogether",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. That might be true. And that's reason enough for me to take you up on it, I suppose. But this isn't gonna end well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fine. Let's get out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneKillMoreTogether",
+   "prompt": "We'll kill more with two of us."
+  },
+  {
+   "key": "craigbooneleaving",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't come here again till it's over.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneLeaving",
+   "prompt": "I'm leaving."
+  },
+  {
+   "key": "craigboonelookingaround",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's nothing up here.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "CraigBooneLookingAround",
+   "prompt": "Just looking around."
+  },
+  {
+   "key": "craigboonemeetingnewpeople",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think you'd better leave.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "CraigBooneMeetingNewPeople",
+   "prompt": "I'm meeting new people."
+  },
+  {
+   "key": "craigbooneno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know who you think you're kidding. I've lived here for more than a year.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Anyway, I need someone I can trust, and you may be a liar, but you're also a stranger. And that's a start.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneNo",
+   "prompt": "No."
+  },
+  {
+   "key": "craigboonenotfromhere",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. No you're not, are you? Maybe you shouldn't go. Not just yet.",
+     "emotion": "surprise",
+     "intensity": 15
+    }
+   ],
+   "topic": "CraigBooneNotFromHere",
+   "prompt": "Well, I'm not from here."
+  },
+  {
+   "key": "craigbooneonlytruststrangers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I said it was a start. This town... nobody looks me straight in the eye anymore.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "CraigBooneOnlyTrustStrangers",
+   "prompt": "You only trust strangers?"
+  },
+  {
+   "key": "craigbooneoutlaw",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. People die out there. Often enough that no one worries about blame. They're too anxious to forget it happened in the first place, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Besides. I was on break when it happened.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "CraigBooneOutlaw",
+   "prompt": "Are you an outlaw now?"
+  },
+  {
+   "key": "craigbooneseewhaticando",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. I'll make it worth your while. And one more thing. We shouldn't speak again. Not until it's over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No one in town knows that I know what happened to my wife. Best they never know. Or the Legion will be after me next.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneSeeWhatICanDo",
+   "prompt": "I'll see what I can do to help you out."
+  },
+  {
+   "key": "craigboonesnipersworkinteams",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hnh. Yeah. Working on your own, you're a lot less effective. I've been there and paid for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But this isn't gonna end well.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "CraigBooneSnipersWorkInTeams",
+   "prompt": "I thought snipers worked in teams.",
+   "label": "Snipers work better in pairs."
+  },
+  {
+   "key": "craigboonestorydidntaddup",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You didn't have any proof?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneStoryDidntAddUp",
+   "prompt": "His story didn't add up.",
+   "label": "His story didn't add up."
+  },
+  {
+   "key": "craigboonestorydidntaddup_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You didn't have any proof?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneStoryDidntAddUp",
+   "prompt": "Her story didn't add up.",
+   "label": "His story didn't add up."
+  },
+  {
+   "key": "craigboonetrackdownwife",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My wife's dead. I want the son of a bitch who sold her.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "CraigBooneTrackDownWife",
+   "prompt": "You're trying to track down your wife?"
+  },
+  {
+   "key": "craigboonevictimspeechfail",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No confession? No evidence? What good is that?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneVictimSpeechFail",
+   "prompt": "It was the, uh... the shifty eyes. Yeah. Dead give-away."
+  },
+  {
+   "key": "craigboonevisitors",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I guess maybe I am. But not like you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh. Maybe it should've been you I was expecting all along. {to himself, grimly}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why are you here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneVisitors",
+   "prompt": "Expecting visitors?",
+   "label": "Expecting visitors?"
+  },
+  {
+   "key": "craigboonewantmetodo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I want you to find something out for me. I don't know if there's anything to find, but I need someone to try.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My wife was taken from our home by Legion slavers one night while I was on watch.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "They knew when to come and what route to take, and they only took Carla. Someone set it up. I don't know who.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "CraigBooneWantMeToDo",
+   "prompt": "What do you want me to do?"
+  },
+  {
+   "key": "craigboonewantedyoutokill",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You sick bastard. You'd better be ready to join him.",
+     "emotion": "anger",
+     "intensity": 75
+    }
+   ],
+   "topic": "CraigBooneWantedYouToKill",
+   "prompt": "I just wanted you to kill him.",
+   "label": "I just wanted you to kill him."
+  },
+  {
+   "key": "craigboonewantedyoutokill_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You sick bastard. You'd better be ready to join her.",
+     "emotion": "anger",
+     "intensity": 75
+    }
+   ],
+   "topic": "CraigBooneWantedYouToKill",
+   "prompt": "I just wanted you to kill her.",
+   "label": "I just wanted you to kill him."
+  },
+  {
+   "key": "craigboonewhatififindthisperson",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bring him out in front of the nest here while I'm on duty. I work nights.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll give you my NCR beret to put on. It'll be our signal, so I know you're standing with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I'll take care of the rest. I need to do this myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneWhatIfIFindThisPerson",
+   "prompt": "What do I do if I find this person?"
+  },
+  {
+   "key": "craigboonewhatwasisupposedtodo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Find out who had Carla kidnapped. Bring him out in front of the dinosaur while I'm working my shift.",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "Let me know it's him by putting on the beret I gave you. That's it. Now go on.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "CraigBooneWhatWasISupposedToDo",
+   "prompt": "What was I supposed to do again?"
+  },
+  {
+   "key": "craigboonewhyisthat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I need someone I can trust. You're a stranger. That's a start.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneWhyIsThat",
+   "prompt": "Why is that?"
+  },
+  {
+   "key": "craigboonewrongdinosaur",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, looks that way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneWrongDinosaur",
+   "prompt": "I think I'm in the wrong place."
+  },
+  {
+   "key": "craigbooneyoureright",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've done enough for me. What's coming next, that's something for me to deal with on my own.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CraigBooneYoureRight",
+   "prompt": "You're right. I don't."
+  },
+  {
+   "key": "followersacknowledgemyorder",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersAcknowledgeMyOrder",
+   "prompt": "FollowersAcknowledgeMyOrder"
+  },
+  {
+   "key": "followersfired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If that's what you think.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFired",
+   "prompt": "I think we should part ways for now, Boone.",
+   "label": "It's time for us to part ways."
+  },
+  {
+   "key": "followersfiredno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredNo",
+   "prompt": "Actually I changed my mind. Let's stick together.",
+   "label": "On second thought, stick with me for a little longer."
+  },
+  {
+   "key": "followersfiredyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Guess I'll be around Novac for a while longer, until I figure out what I want to do with myself. See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredYes",
+   "prompt": "Yeah, that's what I think. You should head back home.",
+   "label": "Yes, I'm sure."
+  },
+  {
+   "key": "followersfiredyessuite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll make my way there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredYesSuite",
+   "prompt": "I do. We'll meet up at the Lucky 38.",
+   "label": "I'd like you to go back to the Lucky 38 for now."
+  },
+  {
+   "key": "followershired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh. Well, let me know when there's room for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm ready when you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersHired",
+   "prompt": "Let's travel together.",
+   "label": "I think we should travel together."
+  },
+  {
+   "key": "followersletsgo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've got your back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersLetsGo",
+   "prompt": "Let's get going."
+  },
+  {
+   "key": "followersoverburdened",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Gonna be hard covering you when I can't move my legs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersOverburdened",
+   "prompt": "FollowersOverburdened"
+  },
+  {
+   "key": "followerstactics",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You wanna do something different?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTactics",
+   "prompt": "Let's talk about your tactics."
+  },
+  {
+   "key": "followerstacticscombat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you think it'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombat",
+   "prompt": "I want you to change your combat style."
+  },
+  {
+   "key": "followerstacticscombataggressive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm already doing that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good. Makes things simple.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatAggressive",
+   "prompt": "I want you to attack enemies the moment you see them."
+  },
+  {
+   "key": "followerstacticscombatend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm listening.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatEND",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "followerstacticscombatgoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right behind you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatGOODBYE",
+   "prompt": "That's all. Let's get going."
+  },
+  {
+   "key": "followerstacticscombatmelee",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not my strong suit, but okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatMelee",
+   "prompt": "Switch to a melee weapon."
+  },
+  {
+   "key": "followerstacticscombatpassive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm already doing that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll follow your lead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatPassive",
+   "prompt": "I want you not to attack enemies unless I've already engaged them."
+  },
+  {
+   "key": "followerstacticscombatranged",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, you and me both.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatRanged",
+   "prompt": "I want you to use ranged weapons."
+  },
+  {
+   "key": "followerstacticsdistance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We can do that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistance",
+   "prompt": "Let's talk about how close you're following me."
+  },
+  {
+   "key": "followerstacticsdistancedefault",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll keep it tight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceDefault",
+   "prompt": "Stay close to me."
+  },
+  {
+   "key": "followerstacticsdistanceend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm listening.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceEND",
+   "prompt": "Your distance is good. Let's talk about something else."
+  },
+  {
+   "key": "followerstacticsdistancegoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceGOODBYE",
+   "prompt": "All right, you're good. Let's get out of here."
+  },
+  {
+   "key": "followerstacticsdistancelong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's what I do best.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceLong",
+   "prompt": "Keep your distance.",
+   "label": "Keep your distance. Try to flank them."
+  },
+  {
+   "key": "followerstacticsend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsEnd",
+   "prompt": "Enough about tactics."
+  },
+  {
+   "key": "followerstrade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine by me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTrade",
+   "prompt": "Let's trade equipment."
+  },
+  {
+   "key": "followerswait",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll sit tight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersWait",
+   "prompt": "Wait here."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've lost all respect for you.",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "If you're an enemy of the NCR, you're an enemy of mine. Get out of my sight.",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "Goddamn it! Don't sneak up on me like that. What do you want?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Hey. You. You wandered into town recently, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get the hell away! We're done talking.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You shouldn't be here. If people know we talked, they'll suspect you.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "And if whoever did this smells a rat, they'll have the Legion after both of us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's it, then. How did you know?",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "If there's one thing I won't tolerate, it's working with some dog of the Legion. You've got some explaining to do.",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "I told you I wouldn't work against the NCR. I meant it.",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "I'm out of here.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Still helping the Legion. You're gonna get what's coming to you. I promise you that.",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "We're through working together.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I know the NCR has problems, but I fought with those men. I'll be damned before I betray them.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "This stops right now.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah?",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "No offense, but I need to focus on getting more rest when I'm off duty. I'm not sleeping so good. So now's not a good time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to talk, catch me when I'm on duty. I'm up in the dinosaur after 9 pm.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice of you to show up. {Slightly Bitter}",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Is it time?",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Let's get out of this first. {not now I'm busy.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We take this boat, it's probably the last one we ever take.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm ready for that. Are you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're near a Legion slave camp now. I've... been here before.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "Let's get one thing straight. I see any crimson, I'm taking the shot. You don't like that, you're on your own.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "We're getting close to Nelson. Any closer, I'm shooting any legionary I see. Hope that's not a problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh. We made it through after all. Not sure what to make of that.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Mercy killing is expected of NCR snipers. The Legion likes to torture their prisoners within sight of NCR positions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We get called on to end it. I've had my share. Some of them, you think, maybe you could've gotten them out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe it's not the Legion that got them killed. Maybe it's your orders and you following them.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "Caesar's dead. Bet he didn't see this coming when he was having his coffee this morning. {Wry}",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Still. It's not gonna stop the Legion. Might not even slow them down.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Pisses me off that Legion slavers can just operate on NCR turf like that.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "If we hadn't caught up to them they'd probably have had a clear path to the river. No one to stop them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There should be patrols. Checkpoints. We got greedy, overstretched. Now our own territory isn't secure.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "Something's wrong. Got a group coming our way. Looks like a Legion raiding party. It's big. {Calm, but with gravity. Beat before \"It's big.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Might be too big. Even for us. {Unsurprised at likely imminent death.}",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "If you want out I won't blame you. But I'm going to stay. See if I can hold them off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey. I thought some more about what you said. I think maybe you're right. Maybe I should go to Bitter Springs.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "I don't know what I'm hoping to find there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey. I want to thank you for bringing me to Bitter Springs. Things seem... clearer now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We should get to the Hoover Dam. I don't want to miss this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That guy Benny was a piece of work.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "A face-to-face meeting with House, huh? The NCR would kill to be in your shoes.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Sounds like it's gonna be an all-out war with the Legion soon. Maybe I should've re-enlisted after all.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "What is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your problem?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me aim that for you next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How about I aim my gun at you for a while, see how you like it? {Hit the\"my\" and both \"you\"s}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You looking for trouble? {Hit the\"my\" and both \"you\"s}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll watch my step.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Careful with that. {calmly}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Grenade!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Frag out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "vbooneclattack",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Tell the truth... I think this is exactly what I've been waiting for.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VBooneCLAttack",
+   "prompt": "What are we waiting for?"
+  },
+  {
+   "key": "vdialoguecraigboonebsarrive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is the place. We got sent from Camp Golf, looking for some Khans who'd been making trouble with one of our settlements.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess one of the settlers was connected, because we sent everything we had. We figured this was a gang hideout, but... they'd led us to their home.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a ridge called Coyote Tail on the south side. That's where we set up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneBSArrive",
+   "prompt": "VDialogueCraigBooneBSArrive"
+  },
+  {
+   "key": "vdialoguecraigboonebscemetery",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Christ. They put the graveyard here.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueCraigBooneBSCemetery",
+   "prompt": "VDialogueCraigBooneBSCemetery"
+  },
+  {
+   "key": "vdialoguecraigboonebsreadytostay",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's go {slight emph} up there first, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneBSReadyToStay",
+   "prompt": "We can stay on Coyote Tail Ridge for the night."
+  },
+  {
+   "key": "vdialoguecraigboonebsridgearrive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Canyon 37. That's what the NCR calls the pass down there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was the Khans' only escape, so we set up here to guard it while the main force attacked from the front.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Standing orders were to shoot on sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneBSRidgeArrive",
+   "prompt": "VDialogueCraigBooneBSRidgeArrive"
+  },
+  {
+   "key": "vdialoguecraigboonebswake",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Something's wrong. Got a group coming our way. Looks like a Legion raiding party. It's big. {Calm, but with gravity. Beat before \"It's big.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It might be too big. {Unsurprised at likely imminent death.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneBSWake",
+   "prompt": "VDialogueCraigBooneBSWake"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Yeah, well, you see anybody wearing Legion crimson or a lot of sports equipment, you just let me know.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "You still haven't answered my question.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic000",
+   "prompt": "If you're looking for someone in particular, I could tip you off if I see them."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Drop it. Now why the hell are you here?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic001",
+   "prompt": "Who were you looking for? Come on, you can tell me. Please?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{icy} You got no right asking me that. Drop it.",
+     "emotion": "anger",
+     "intensity": 60
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic002",
+   "prompt": "What is it you aren't telling me about what happened to your wife?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That goes both ways. I joined up with you to kill legionaries. Sooner we get back to that, sooner we can have an understanding.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic003",
+   "prompt": "I don't feel like I can trust you."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You don't know what you're asking. Just... let it go for now.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "The Legion's the only thing I want on my mind right now.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic004",
+   "prompt": "I want to understand you better."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sighs} It's just something I'm not ready to discuss. With you or anybody.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic005",
+   "prompt": "You're right. I was out of line."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't see what this helps. She's dead.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic006",
+   "prompt": "I think it's time you told me what happened to your wife."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Touchy} Fine. How do I know she's dead? Here it is.",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "She... I tracked her down. Southeast, near the river. They were selling her. Saw it through my scope. {Remembering a horrible scene. Disgust on \"they were selling her.\"}",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Whole place swarming with Legion. Hundreds of them. Bidding for things no man has a right to. {Remembering a horrible scene.}",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "I just had my rifle with me. Just me, against all of them, so... I took the shot. {Defeated, bitter. Very slightly choked up at the end - he's talking about mercy-killing his wife.}",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic007",
+   "prompt": "You're hiding something. Spit it out. You owe me."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sighs} All right. {Solemn, giving in.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic008",
+   "prompt": "The better we understand each other, the more effective we'll be."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. What they do to women... that's worse than death. There was no choice in what I did.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "It was more like... being forced to watch something you can't stop.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "All this was only ever going to play out one way. It still is. I don't have any say. All I can do is wait for it to be done with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic010",
+   "prompt": "Better for her to die than live a Legion slave."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There was never any saving her. They'd have taken her where I couldn't follow. What I did... that was the only rescue.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic011",
+   "prompt": "You should've tried to rescue her. Even if it meant your death."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There was no decision. I was meant to pull that trigger. It was a mistake to think I could escape it.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "You take out a debt, it's only a matter of time before someone comes collecting. Things just finally caught up with me.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic012",
+   "prompt": "You had no right to make that decision."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was gonna be something. If I'd never met Carla, it would've been something else. I should've never gotten close to her.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "I've got bad things coming to me. You'd better keep your distance, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic013",
+   "prompt": "You make it sound like your wife's death was inevitable."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sighs} Because fair is fair. {Grim}",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic014",
+   "prompt": "Why do you think you've got bad things coming?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Better that you don't.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic015",
+   "prompt": "I don't understand."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic016",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. Sorry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic017",
+   "prompt": "You're not going to tell me?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was in a lot of places with First Recon. I don't really remember.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic018",
+   "prompt": "Were you at Bitter Springs with First Recon?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That part of my life is over now. So is this discussion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sardonic} We won.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sighs} There was a... miscommunication.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic019",
+   "prompt": "You must've been at Bitter Springs. What happened there?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, we've done some traveling together, but we're not exactly comrades-in-arms. I'm not ready to swap war stories.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic020",
+   "prompt": "That's it? You won?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe some other time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic021",
+   "prompt": "I've seen my share of terrible things. You can talk to me about it."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pointed} Your enemies, or mine?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True. It's a start.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic022",
+   "prompt": "How can you say that? We've been fighting together."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. Couldn't hurt.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic024",
+   "prompt": "You want me to make good on my promise to fight the Legion with you, is that it?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I guess that'd be the word.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We did what we were there to do. Lot of people got killed. That's war.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe looking back you'd do things differently, but that's not how it works.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the field, you hesitate, you or someone you care about will die. They teach that from day one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic025",
+   "prompt": "Sounded like more of a massacre."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, well. That's how they wrote it up in the report.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic026",
+   "prompt": "Must've been one hell of a miscommunication."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not as much as you'd think.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic027",
+   "prompt": "There must be more to it than that."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You don't come out of a tour of duty without regrets. It's best just not to think about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic028",
+   "prompt": "Sounds like you have some regrets."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It doesn't lead anywhere that does any good. I know that much.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic029",
+   "prompt": "That's true. You can't second guess what you do out there."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much hope either way, is there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic030",
+   "prompt": "Being a mindless drone is just as dangerous. You have to think for yourself."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Life has a way of punishing you for the mistakes you make.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Big enough mistake, punishment can take a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mine's not over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic031",
+   "prompt": "It is because of Bitter Springs that you think you've got bad things coming?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A murderer who does good deeds is still a murderer. And he'll still get his judgment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I left the NCR when my tour was up. Had enough of war. Decided I was gonna start over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "None of it made a difference in the end.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic032",
+   "prompt": "Maybe you can make up for your mistakes."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's what they tell you in the casinos, too. Because it's the only way to get you to buy back in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If people knew the truth, that something's watching you, waiting to take it all away from you, and it never loses...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's all it's doing now. Waiting for me to buy back in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic033",
+   "prompt": "Life doesn't work that way. Your misfortunes are just bad luck."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, that's what I thought, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But it's not so easy when you know it's coming for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic034",
+   "prompt": "If it's out of your control, why worry about it?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because I'm still alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic035",
+   "prompt": "How do you know your punishment isn't over?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. Always. Even when I sleep.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic036",
+   "prompt": "Do you think about Bitter Springs a lot?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't think so. It won't change anything. And that's a memory I don't want refreshed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic037",
+   "prompt": "Maybe it would help to go back there."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nothing. Dream. Just tired of thinking about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic038",
+   "prompt": "What changed your mind?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope this isn't a mistake.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic039",
+   "prompt": "Okay. We'll make it a point to stop there."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Embarrassed} Yeah. Yeah, I guess not. Forget I brought it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic040",
+   "prompt": "I don't really have time for this now, Boone."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Irked} You're the one who suggested it.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Fine. If I'm on my own I'm on my own. But I'm gonna go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good working with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic041",
+   "prompt": "Not my problem. You want to go? You're on your own."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Let's head out, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic042",
+   "prompt": "I'm ready to go to Bitter Springs."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Main force got spotted too soon. We heard shooting. Then Khans started coming through Canyon 37 in bunches.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was all wrong, though. Women, kids, elderly. Wounded started coming through, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We radioed to confirm our orders but command didn't get what we were seeing. They told us to shoot till we were out of ammo. So that's what we did.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic043",
+   "prompt": "What happened?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I guess not.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic044",
+   "prompt": "I'm not interested in your stories."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, well. I'm not a soldier anymore. Those rules don't seem like much of an excuse now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway... I don't know why we're here. Thought maybe it'd help me see things better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd like to stay here for the night. Think some things over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic045",
+   "prompt": "You did what you were supposed to as a soldier."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe not. Maybe I wouldn't have either at one point. But that's why they train you. Break you down till you're automatic.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic046",
+   "prompt": "That's not what I would've done at all."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With the Khans, any of them can be dangerous. There's a lot you can't see through a scope.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still. I often wonder the same thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic047",
+   "prompt": "How could you kill innocent people like that?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can do what you want, but I'm not going anywhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic048",
+   "prompt": "Let's get out of here. Let them have Bitter Springs."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. I only would've needed one bullet to do things right that day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic049",
+   "prompt": "Your only mistake was not bringing enough ammo."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. We won't stay for long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic050",
+   "prompt": "We can do that."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, but I'd still like to when we get a chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic051",
+   "prompt": "I'd prefer not to right now."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Easy target for grabbing slaves. Bunch of refugees, just a few soldiers defending it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't think they're here for us. Too bad. Would've made me feel good about myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic052",
+   "prompt": "Why would they come to Bitter Springs?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha! If only it was this easy all the time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic053",
+   "prompt": "Good. Saves us the trouble of finding them."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not. Always figured this was how it was gonna end for me. Just didn't know when.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That day you showed up in Novac, I had a feeling I was supposed to go with you. That it was time to end all this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And now I know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic054",
+   "prompt": "You don't sound surprised."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thought my time had come. For a minute there everything made sense. I could feel the end coming. I was ready for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now... I'm back where I was.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic055",
+   "prompt": "Why aren't you sure?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guess I did. Guess I figured whatever we could handle, this time the Legion was going to send more.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I should've died here a long time ago. When I spotted the legionaries today I thought I understood. Things were finally going to even out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I'm still here and nothing's changed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic056",
+   "prompt": "You underestimated us."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess they brought us here. One less Legion raiding party running loose now. Never a bad thing, you can take my word for that. {Hit \"here.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still feels like I'm living on borrowed time. But I don't see any reason not to take a lot more of those sons of bitches with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got a point. There's still some things I can do before all this is over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic057",
+   "prompt": "You can't take back what you've done. But your regrets can set you on a better path."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't mean disrespect. It's a hell of a thing having someone with your ability looking out for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I've come to believe that there are things nobody can stop. I thought for sure that's what we'd finally come up against today.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It would've made sense for things to end here. But now... I'm still waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic058",
+   "prompt": "I wasn't going to let you die."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<Sighs> Goddamn it. It's like I'm being toyed with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know what I'm supposed to do about all this. {Lost.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic059",
+   "prompt": "Maybe it's just not your time yet."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If that's how it is, there's not a lot of comfort in knowing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic060",
+   "prompt": "No one is judging or punishing you. Things just happen."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I never thought of it that way. Always expected something... more final. But maybe it is. {Not an encouraging thought.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic061",
+   "prompt": "Having to live with what you've done is your punishment."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With the Khans, the only difference between a soldier and a civilian is that the civilian is more likely to miss when he shoots at you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{searching} Maybe Bitter Springs just seemed different. {then, going ice cold} Maybe it's the same as killing legionaries. {Hit \"seemed.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They'd have died whether or not they were soldiers. Whether or not I was there. And my leaving the NCR hasn't stopped any wars or saved any lives.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's no controlling war. No sense regretting what you can't stop.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic062",
+   "prompt": "Get over it. It's war. People die. Why should it matter whether they're soldiers or civilians?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "First NCR Recon. It's a sniper battalion. Sees a lot of action.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They moved us around a lot. I was stationed at Camp Golf for a while. Last I heard they were at Camp McCarran.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic063",
+   "prompt": "What outfit did you serve in the military with?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They pick you out if you do well at the firing range. Pays a little better, so I said okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic064",
+   "prompt": "How did you happen to join First Recon?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "\"The last thing you never see.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Pretty accurate, and so were we. {Said with a little smile.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic065",
+   "prompt": "What's the slogan?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. You can tell by the patch. Bear skull with crossed rifles behind it. Slogan underneath.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic066",
+   "prompt": "Is that a First Recon beret?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was an airport before the war. Command liked it because it was already fortified and it let them keep an eye on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They've got an old monorail that still runs between them. Used mostly for supplies and deployment. But if you get leave you're allowed to go gamble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was General Oliver's post, but I heard he's been up at the Dam a lot lately. Guessing Colonel Hsu is running it. {Hsu = \"Shoe\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic067",
+   "prompt": "Tell me about Camp McCarran."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was on the front line for a while. Only resort in New Vegas no one wanted to get sent to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Doesn't have that kind of importance anymore, though. They pulled most of the troops out of there after we took the Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic068",
+   "prompt": "What was Camp Golf like?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Didn't know him. He's a signature on my discharge papers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wasn't real popular, though. Even overheard my C.O. complain about him once.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "General Wait-and-see, he called him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic069",
+   "prompt": "What do you think of General Oliver?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. He introduced himself to me once. I shook his hand. Doubt he'd remember me now, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When he looked at you, you could see he understood. After some of the things we'd seen, that meant something.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What I heard, he'd be a general right now if Oliver didn't know the president.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic070",
+   "prompt": "Do you know Colonel Hsu at all?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The big one. The one the NCR is trying to hold onto, that the Legion's pushing for. Whole war depends on holding it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic071",
+   "prompt": "The Dam?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. But let's make sure and come back here. I'd love to wipe this place off the map.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic072",
+   "prompt": "Don't worry, I'm not going in there right now."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't think I'd hold it against you. {Wry.}",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic073",
+   "prompt": "As long as you don't mind me joining the fun."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine. But if you make any new friends in there, all bets are off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic074",
+   "prompt": "I don't want any trouble. We should part ways for now."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're making a mistake. I want to be a part of this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic075",
+   "prompt": "Yes, but you're not coming with me."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You ever change your mind, I'll be right there with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic076",
+   "prompt": "No, I'm not going in right now."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic077",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's what the scope's for. {wry}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic077",
+   "prompt": "I'm ready. Caesar won't know what hit him."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damn right. You and I, we're just a couple of problem solvers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic078",
+   "prompt": "No, that's not a problem. That's a solution."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're sure. There's a lot of high ground around the town. We could do a lot of damage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just saying. {Antsy.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic079",
+   "prompt": "I'm not ready to attack it. We'll keep our distance."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Better be a good reason. I didn't join up with you to go on nature walks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic080",
+   "prompt": "That's not how I want to approach this. You'd better go your own way for now."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic081",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Bitter} You say so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic081",
+   "prompt": "I'm going to do this my way. I can't bring you."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll be glad you did this. I'm gonna put a hole through Caesar's head.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic082",
+   "prompt": "All right, come along."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh. Yeah. That was some kind of stunt we pulled.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Whatever happens from here on out, we killed that prick in the middle of his fortress.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ought to give the rest of them something to think about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic083",
+   "prompt": "Still feels pretty good, though, doesn't it?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Intel we had back in the NCR said they had a whole succession lined up. They'll replace him as soon as word gets out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other thing I heard is that he wasn't really commanding the army anymore. Guess we made sure of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic084",
+   "prompt": "Why wouldn't this stop the Legion?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, it does. But we got these bastards pretty good today.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic085",
+   "prompt": "That just means we've got more work to do."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you want me to stick around, that ends now. I don't care what the reasons are, I will not help the Legion. Ever. Got it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic086",
+   "prompt": "I'm infiltrating the organization. I have to gain their trust."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bullshit. You're a goddamned coward, trying to pick the winning side.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We will never work together again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic087",
+   "prompt": "I'm... uh... helping them so I can spy on them better."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic089",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then this is over. Next time I see you, it'll be through my scope.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any Legion with you and I'm pulling the trigger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic089",
+   "prompt": "Things have changed. I'm with Caesar now."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic090",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I should never have trusted you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic090",
+   "prompt": "[Attack] I won't be needing your services any longer."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic091",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. But we'd better not have to have this talk again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic091",
+   "prompt": "Very well. You have my word."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then we're finished here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic092",
+   "prompt": "Sorry. I won't compromise my mission."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic093",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I should never have worked with you in the first place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic093",
+   "prompt": "Then we can't work together anymore."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're right. You won't. {Threatening}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic094",
+   "prompt": "All right. I won't do anything else to hurt the NCR."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic095",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good thing I'm still alive, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic095",
+   "prompt": "[Attack] You're less trouble to me dead than alive."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic096",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you want. It's not really my thing. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic096",
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Give me my rifle and a clear line of sight and I'll start picking them off before they've even seen me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't have much hand-to-hand training, so our chances are better if you keep the enemy out of my face.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm trained as a spotter, too. If you're looking through a scope, I can find your targets for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic097",
+   "prompt": "What's the best way for me to use your skills?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic098",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic098",
+   "prompt": "Ever take that beret off?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic099",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't ever say that name again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He was a good spotter.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic099",
+   "prompt": "How do you feel about Manny Vargas?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic100",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. We were.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic100",
+   "prompt": "Weren't you also friends?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic101",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When Carla went missing he was the first person I told.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He tried to hide it, but I could tell right away. He was glad.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic101",
+   "prompt": "Not anymore?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. {Whatever.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic102",
+   "prompt": "I have another question about you."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic103",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Carla's dead. That's all you need to know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I met Carla while I was at the Strip on leave. She said I looked lost.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She talked a lot. Suited me fine - I never know what to say. And listening to her, it could... make you forget.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She stuck out, pretty much everywhere we went. Like she was from a different time. A better time. I never met anyone like her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic103",
+   "prompt": "Tell me about your wife."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. I wanted to. I just couldn't.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic104",
+   "prompt": "Did you ever tell your wife about what happened at Bitter Springs?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic105",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I don't know much. Just rumors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All I know is he's supposed to be in charge of the Strip. And he's been able to stop the NCR from taking it over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wish he'd give it up, so the NCR could focus on securing the border.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic105",
+   "prompt": "Have you heard of Mr. House?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic106",
+   "prompt": "I had some questions I wanted to ask you."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic107",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. It doesn't.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic107",
+   "prompt": "Does the name Benny mean anything to you?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic108",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's NCR land, for the most part. We tamed it, now we're settling it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lot of people complain about it, but they forget what it was like before we showed up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a lot of territory to secure. Too much, even for a big army like the NCR's.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic108",
+   "prompt": "What can you tell me about New Vegas?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic109",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Coming east was about securing the land, so people could live without fear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's not always that simple. But I think the cause is still right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And God help us if they lose.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic109",
+   "prompt": "How do you feel about the NCR?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic110",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. Lots of thoughts. All about the best ways to kill them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic110",
+   "prompt": "Any thoughts about Caesar's Legion?"
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, let me know when it is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic113",
+   "prompt": "Not yet."
+  },
+  {
+   "key": "vdialoguecraigboonecraigboonetopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. This is something for {emph} me to deal with. But I'm glad you're here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCraigBooneTopic114",
+   "prompt": "I changed my mind. This is something we should confront together."
+  },
+  {
+   "key": "vendingboone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narration} Tired of waiting for the world to be done with him, Boone ventured into the wastes to make his own way out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Unable to clear his mind of the past, he was at last granted the death he'd awaited, bringing final rest to a life that had ended long ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} As the Battle of Hoover Dam ended, Boone confirmed what he had always suspected - that revenge would never quiet his troubled mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Side arm in hand, he journeyed back to California in search of the NCR officer who had led the attack on Bitter Springs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} There, with only two bullets loaded, Boone did the only thing he believed would put an end to his suffering.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Looking for a place where he could be of some use, Boone found himself re-enlisting with his old unit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Though his regrets remained in his thoughts, they coalesced into a purpose, and Boone embraced it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} He spent his leave time hunting down slavers in the desert, his First Recon beret the last thing they never saw.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Though NCR was withdrawing from the region, Boone remained in New Vegas, finding work as a security guard and caravan scout along the highways.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} While he might've preferred rejoining his old unit, Boone couldn't bring himself to abandon the city where he'd met his wife.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Boone refused to take the Legion's victory lying down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Heading to the hills with his rifle, he began a deadly campaign against high-ranking Legion officers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} And though the price on his head rose to levels unheard of, few pursued it, fearing it would be the last thing they'd never see.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} No longer held in check by his conscience, Boone found lucrative work as a mercenary and assassin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} No job was too violent, no target too innocent. As long as the caps were good, Boone would take the job.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Driven mad by Caesar's victory at Hoover Dam, and unable to escape his memories, Boone staged a suicide mission against the Legate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Fighting as he wished he would've fought on the day of his wife's death, he brought down scores of Legionaries before being caught.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Before his crucifixion, he was brought before the Legate, who expressed his admiration for Boone's reckless abandon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Boone spat tobacco in his eye, for all of Caesar's armies to see.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingBoone",
+   "prompt": "VEndingBoone"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguecraigbooneassassinhint",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "If I was the assassin, I'd be up on that ridge. Or if I didn't care about escaping, maybe that near tower, or the landing pad behind us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneAssassinHint",
+   "prompt": "VDialogueCraigBooneAssassinHint"
+  },
+  {
+   "key": "vdialoguecraigboonecccomplete",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Wish there was more of them. I wasn't done yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCCComplete",
+   "prompt": "VDialogueCraigBooneCCComplete"
+  },
+  {
+   "key": "vdialoguecraigbooneclattackfinish",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I think we're clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCLAttackFinish",
+   "prompt": "VDialogueCraigBooneCLAttackFinish"
+  },
+  {
+   "key": "vdialoguecraigboonecaesardead",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Thumbs down, you son of a bitch. {Spiteful, got vengeance}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneCaesarDead",
+   "prompt": "VDialogueCraigBooneCaesarDead"
+  },
+  {
+   "key": "vdialoguecraigboonenelsonreactmercykill",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Goddamn it. We could've gotten them out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneNelsonReactMercyKill",
+   "prompt": "VDialogueCraigBooneNelsonReactMercyKill"
+  },
+  {
+   "key": "vdialoguecraigboonenelsonreactsave",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Mercy killing is a last resort. Glad you recognized we had options.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneNelsonReactSave",
+   "prompt": "VDialogueCraigBooneNelsonReactSave"
+  },
+  {
+   "key": "vdialoguecraigboonenelsonstart",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "To hell with mercy killing. We're getting those guys out of there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneNelsonStart",
+   "prompt": "VDialogueCraigBooneNelsonStart"
+  },
+  {
+   "key": "vdialoguecraigbooneniptoncrossreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Goddamn Legion. {Looking at an atrocity they performed.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneNiptonCrossReact",
+   "prompt": "VDialogueCraigBooneNiptonCrossReact"
+  },
+  {
+   "key": "vdialoguecraigbooneniptonreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "They got what they had coming. Glad we were the ones to deliver it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneNiptonReact",
+   "prompt": "VDialogueCraigBooneNiptonReact"
+  },
+  {
+   "key": "vdialoguecraigboonenoberetreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'd really like my beret back, please. {Flatly, unamused.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneNoBeretReact",
+   "prompt": "VDialogueCraigBooneNoBeretReact"
+  },
+  {
+   "key": "vdialoguecraigbooneoscarvelascoreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Great Khan, looks like. Guess he fought at Bitter Springs. Or saw it happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneOscarVelascoReact",
+   "prompt": "VDialogueCraigBooneOscarVelascoReact"
+  },
+  {
+   "key": "vdialoguecraigboonespotterintro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Dark in here. If you want to use a scope, I can spot for you. Keep you on target.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneSpotterIntro",
+   "prompt": "VDialogueCraigBooneSpotterIntro"
+  },
+  {
+   "key": "vdialoguecraigboonewave2",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We need to get to the camp before they do!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneWave2",
+   "prompt": "VDialogueCraigBooneWave2"
+  },
+  {
+   "key": "vdialoguecraigboonewave3",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "More coming!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCraigBooneWave3",
+   "prompt": "VDialogueCraigBooneWave3"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Don't try that again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "armorineffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "This armor's gonna get me killed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I'm dead unless you can get me some real armor.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ArmorIneffective",
+   "prompt": "ArmorIneffective"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're asking for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Eat this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're mine.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can't run from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hey, look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heads up!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "crippled",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Critically Injured} Need a medic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Critically Injured} Can't feel all my limbs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Crippled",
+   "prompt": "Crippled"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Death Noise 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ah, hell.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dammit!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get down!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fire in the hole!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Gotta pull back!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fall back!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're in too close!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You need to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Beat it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep walking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "healthquarter",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Dying} So this is how it ends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying} Maybe it's my time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying} Heh... I knew you'd be the death of me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying} Think I might've killed my last legionary.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HealthQuarter",
+   "prompt": "HealthQuarter"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What the hell was that? {Incredulous. As in \"what were you doing just now?\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not a good idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're gonna get us in some serious shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "We all gotta go sometime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Too bad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmmph. {A nonchalant grunt - witnessing violence he's desensitized to.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "noammo",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That's the last of the ammo.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Empty.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NoAmmo",
+   "prompt": "NoAmmo"
+  },
+  {
+   "key": "poisoned",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Argh. Poison.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Poisoned",
+   "prompt": "Poison"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'll take that back now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't think so. {You can't do that.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know who you think you're fooling.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "useddoctorbag",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm fine now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Patched up. Let's get back to the fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "UsedDoctorBag",
+   "prompt": "UsedDoctorBag"
+  },
+  {
+   "key": "wake",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Huh. Alive after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Sighs> Figures. {Disappointed.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Wake",
+   "prompt": "Wake"
+  },
+  {
+   "key": "weaponbroke",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "This weapon's done.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm no good without my weapon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need a new rifle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "WeaponBroke",
+   "prompt": "WeaponBroke"
+  },
+  {
+   "key": "weaponineffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Need a bigger caliber.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can't punch through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is useless.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "WeaponIneffective",
+   "prompt": "WeaponIneffective"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hmm.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep looking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stay sharp.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Spotted!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Company!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got you in my sights.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I've got nothing. {Lost track of his target.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Never mind. {Wary}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gone now. {Wary}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Lost contact!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't see 'em!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still around here somewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "All clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess we made it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, it's over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Nothing yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gotta still be here...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep looking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Target reacquired!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Over there!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I see 'em! {Hit \"I\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Gone for now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gone. Huh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "There's something there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Shh. Eyes and ears.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're not alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "All mine.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take 'em out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Contact!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Got it covered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Right with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've got your back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "key": "observecombat",
+   "section": "other",
+   "responses": [
+    {
+     "text": "Pointless.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not my fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ObserveCombat",
+   "prompt": "ObserveCombat"
+  }
+ ],
+ "speaker": "boone"
+}

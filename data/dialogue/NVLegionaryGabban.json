@@ -1,0 +1,410 @@
+{
+ "page": "NVLegionaryGabban.txt",
+ "speaker": "Gabban",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{surprised} Hah! And we were just finishing up here. To think that we might have missed you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If anyone belongs on a cross, it's you! For your crimes against the Legion, you will die!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{surprised to meet player here} How interesting! You're the Profligate courier who's been of some assistance to the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{pleased to see the player} Well, well, well! If it isn't the Legion's favorite courier - trekker of the wastes, killer of Mr. House!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, well, well! What's the Legion's favorite courier doing so far from the Strip? Don't you have a special delivery to give to Mr. House?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{pleasantly surprised} Well, well, well! I've heard of you - the courier upon whom mighty {KAI-zar} Caesar has bestowed his Mark!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{pleasant} Don't worry, I won't have you lashed to a cross like the rest of these degenerates. It's useful that you happened by.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want you to witness the fate of Nipton, to memorize every detail. And then, when you move on?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, I'd like you to move west towards the Mojave Outpost, to let the Profligates there know about the little sermon I prepared for them here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was there more for us to discuss?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was just finishing up making an example of this town, delivering a sermon, if you will.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When you move on, head west to the Mojave Outpost and tell the Profligate troops what you found here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{calling to arms, frightened} Legionaries - we have a problem!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm going to wear your head like you wear that dog's."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am {GAB-en} Gabban, of {KAI-zar's} Caesar's Legion. I serve my master as the one of his {froo-men-TAR-ee} Frumentarii.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We Frumentarii are soldiers of a different stripe, capable in battle, but skilled as infiltrators and agents as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I bid you {WAH-lay} \"Vale\" - until we meet again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll do as you ask."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where to begin? That they are weak, and we are strong? This much was known already.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the depths of their moral sickness, their {a beat} dissolution? Nipton serves as the perfect object lesson.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Where to begin? That you are weak, and we are strong? This much was known already.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the depths of your moral sickness, your {a beat} dissolution? Nipton serves as the perfect object lesson.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "prompt": "What \"lessons\" did you teach here?"
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion is civilization reborn. Our culture is based on virtues such as martial excellence, loyalty, and justice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you'll learn all there is to know in due time. {Le-GAH-tus La-nee-OOS} Legatus Lanius, Monster of the East, will soon arrive to command {KAI-zar's} Caesar's troops in battle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Dam will fall, and the rest of the Profligate west will soon follow.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Caesar's Legion."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you've said.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your crimes are unforgivable."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nipton was a wicked place, debased and corrupt. It served all comers, so long as they paid.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Profligate troops, Powder Gangers - or men of the Legion. The people here didn't care. It was a town of whores.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For a pittance, the great {WUHL-pace in-CUHL-tah} Vulpes Inculta {in-VAY-gulled} inveigled this town to lead those it had sheltered into a trap.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Only when it was sprung did they realize they were caught inside it, too. {beat, regret} I only wish {WUHL-pace} Vulpes had lived to see the scheme come to fruition.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What exactly happened here?"
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, and herded them to the center of town. I told them their sins, the foremost being disloyalty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I told them that when Legionaries are disloyal, some are punished, the others made to watch. And I announced the lottery.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Each clutched his ticket, hoping it would set him free. Each did nothing, even when {mocking the term} \"loved ones\" were dragged away to be killed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You captured everyone?"
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think your eyes will see more than I could ever tell you. Take your time. Enjoy the sights.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{curious} Why, then, do you keep asking?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've heard enough."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{scoffing Ha!} Innocent? Hardly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Cowardly, though. They outnumbered us, yet not once did they try to resist.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They stood and watched as their fellows were butchered, crucified, and burned, one by one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They stood and hoped their turn would not come. Each cared only for himself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You slaughtered innocent civilians?"
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It has a stark beauty, doesn't it? I'm glad you can appreciate it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now go, and teach the Mojave Outpost what you learned here. There will be more lessons in the days ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, they did. As will all the rest of you, in due time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now go, and teach the Mojave Outpost what you've learned here. There will be more lessons in the days ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sounds like they got what was coming to them."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're unusually bright for a Profligate. Well done.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now go, and teach what you've learned here. There will be more lessons in the days ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It has a stark beauty, doesn't it? I'm glad you can appreciate it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now go, and teach them what you learned here. There will be more lessons in the days ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I admire the purity of the Legion's justice."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You bear the Mark of {KAI-zar} Caesar. That makes you special.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do whatever {KAI-zar} Caesar tells you to do. And whenever the opportunity presents, strike at the Profligates. Pile body upon body.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell everyone you meet of what you saw here. The Legion can handle the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That said, if you were to strike at the Profligates, butcher them, trouble their operations... this will not go unnoticed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How can I serve the Legion?"
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{scoffing guffaw} Indeed, our hounds demonstrate greater loyalty to each other every day than the wretched inhabitants of this town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your \"civilization\" sounds like a pack of snarling dogs."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What can be said? He's a man of towering intellect, the founder of the Legion, conquerer of 86 tribes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KAI-zar} Caesar is the salvation of mankind, his Legion the rebirth of civilization in a benighted age.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry, you'll know him well when you serve him. Or you'll be dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Caesar."
+  },
+  {
+   "id": "VNiptonVLegionaryVulpesIncultaTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{admiring} Legatus Lanius, Monster of the East! Quite a man, if man he be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KAI-zar} Caesar prides himself on selecting the right tool to overcome each new obstacle. In Lanius, he found his hammer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's never been defeated in battle. 14 tribes have laid down arms at his boots. Another five, rendered extinct.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "His latest campaign in the wilds of the Utah has concluded, and he is en route. When he arrives, your doom arrives with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who is this Legatus you mention?"
+  }
+ ]
+}

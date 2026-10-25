@@ -1,0 +1,171 @@
+{
+ "id": "rsalphalineholm",
+ "speaker_name": "Ranger Lineholm",
+ "source": "RSAlphaLineholm.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} {suspicious} You're not part of this post as far as I know. What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player not in NCR gear} {suspicious} This is a military outpost. Why are you here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you need something else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vmsrsalphaquestrsrangeralphalineholmtopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSAlphaQuestRSRangerAlphaLineholmTopic003",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vmsrsalphaquestrsrangeralphalineholmtopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confused} \"High casualties?\" We've had one broken ankle, but nobody at this post has died.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSAlphaQuestRSRangerAlphaLineholmTopic004",
+   "prompt": "Sgt. Reyes sent me - she's curious about the high casualties at this station."
+  },
+  {
+   "key": "vmsrsalphaquestrsrangeralphalineholmtopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Any injury, illness, or death gets radioed to Ranger HQ at Camp Golf.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Chief Hanlon and his aides compile the reports and assign reinforcements as needed, and they're not needed here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSAlphaQuestRSRangerAlphaLineholmTopic005",
+   "prompt": "Reyes' information says otherwise."
+  },
+  {
+   "key": "vmsrsalphaquestrsrangeralphalineholmtopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do a fucking headcount, then. Everybody's right where they're supposed to be.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSAlphaQuestRSRangerAlphaLineholmTopic006",
+   "prompt": "Maybe you're lying to keep morale up."
+  },
+  {
+   "key": "vmsrsalphaquestrsrangeralphalineholmtopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ranger Station Alpha used to be the frontline outpost for NCR. When we moved onto the Dam, this station has fallen into more a support role.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSAlphaQuestRSRangerAlphaLineholmTopic008",
+   "prompt": "What do you do here?"
+  },
+  {
+   "key": "vmsrsalphaquestrsrangeralphalineholmtopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There are other Ranger posts around. Reyes might have mixed up the report.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSAlphaQuestRSRangerAlphaLineholmTopic009",
+   "prompt": "How could Reyes have been wrong?"
+  },
+  {
+   "key": "vmsrsalphaquestrsrangeralphalineholmtopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Reyes got the numbers wrong - not much more to it than that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSAlphaQuestRSRangerAlphaLineholmTopic010",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguerangerstationalpharsalphalineholmtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have you ever heard the story of the bomber that crashed into the lake before the War? Supposedly it's mostly intact, even after all that time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationAlphaRSAlphaLineholmTopic000",
+   "prompt": "Any interesting places around here?"
+  },
+  {
+   "key": "vdialoguerangerstationalpharsalphalineholmtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For about ten years now. Toughest training I've ever done, and was the proudest day of my life when I got my Ranger badge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you know that the first battle at Hoover Dam was won because of the Rangers? Legion had the numbers, but we had the skill.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationAlphaRSAlphaLineholmTopic001",
+   "prompt": "So, you're a Ranger?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "So long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "rebecca_lineholm"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "vfsbodyguard02",
+ "speaker_name": "bodyguard for hire",
+ "source": "VFSBodyguard02.txt",
+ "topics": [
+  {
+   "key": "fsbodyguardaccept",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've made the right choice. As long as you're in Freeside, I'm your man. No one will mess with you with me hanging around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, once you head over to the Strip or enter the wasteland, I'm heading immediately back here to pick up another customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So what do you say? Ready to head out?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardAccept",
+   "prompt": "Here's the money. It sounds like I could use a bodyguard."
+  },
+  {
+   "key": "fsbodyguardaccept_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, for the love of - get the hell out of here, then!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardAccept",
+   "prompt": "I'd hire you, but I don't have the caps."
+  },
+  {
+   "key": "fsbodyguardreject",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure? Well, don't say you weren't warned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardReject",
+   "prompt": "I don't really think I need a bodyguard."
+  },
+  {
+   "key": "fsbodyguardwhyhire",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "New to Freeside, are you? Trust me, you won't make it ten feet without being accosted by some of our more friendly residents.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I happen to have an understanding with most of the local wildlife, however. With me by your side, they'll kindly find someone else to bother.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So you want to run with the best or not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardWhyHire",
+   "prompt": "Why would I need a bodyguard in Freeside?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're in luck stranger. You just happen to be talking to the most successful bodyguard in all of Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I just happen to be available at the moment. One hundred caps gets you a peaceful, pleasant trip through our fair district. Guaranteed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Freeside truly is an interesting place, isn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfsbodyguard02topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're either brave or crazy. Either way, I don't care.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSBodyguard02Topic000",
+   "prompt": "It is, but I think I'll explore it on my own from now on."
+  },
+  {
+   "key": "vfreeformfreesidevfsbodyguard02topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll probably be able to think of a few more before you leave, trust me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSBodyguard02Topic001",
+   "prompt": "That's one word for it. Let's keep going."
+  },
+  {
+   "key": "fsbodyguardbarks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Protection services for hire over here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Safe travel through Freeside!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You need the best. Hire me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardBarks",
+   "prompt": "FSBodyguard0101"
+  }
+ ],
+ "speaker": "bodyguard_for_hire"
+}

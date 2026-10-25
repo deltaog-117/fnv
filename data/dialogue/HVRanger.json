@@ -1,0 +1,559 @@
+{
+ "page": "HVRanger.txt",
+ "speaker": "Dobson",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No time to talk now. I have to get ready to return to base with this information. I'll get a fat raise for this, if anyone actually believes me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nonchalant} Okay, so you weren't kidding about there being a Brotherhood base here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll need to report back to base about this. They'll think I'm playing a prank if I try to radio it in, so I'll need some face time with the brass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for the heads up. I mean it. I'll be sure to mention you in my report.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Shhh. I thought I heard something up by the entrance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, now. Calm down. I believe you saw something. Let's just head back to my camp and we'll figure out what it was, okay?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, but I've got a long hike ahead of me. You take care.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Powder ganger scum! Hands up or die!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thought you'd sneak up on me, you filthy powder ganger?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, it's you. Any particular reason you felt the need to bother me again?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "HVRangerIntroIllBeGoing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha! Just having some fun with you, waster. No harm done, right? What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll just be going..."
+  },
+  {
+   "id": "HVRangerIntroPowGangNot",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Exactly what powder ganger scum would say! Any last words before I pull this trigger?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not a powder ganger."
+  },
+  {
+   "id": "HVRangerIntroPowGangNot2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Relax, son. Just pulling your leg. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Relax, little lady. Just pulling your leg. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not a powder ganger!"
+  },
+  {
+   "id": "HVRangerIntroSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Ha! Got some stones on you, son. I like that. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] Ha! Got some claws on you, little lady. I like that. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Keep pointing that gun at me and I'll stick it up your ass."
+  },
+  {
+   "id": "HVRangerIntroSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'll point my rifle at anything and anyone I please to! Got that, powder ganger?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Don't point! It's rude! Especially with guns!"
+  },
+  {
+   "id": "HVRangerMessWithRadio",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, what are you doing to my radio?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You just had to go messing with my radio again, didn't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVRangerMessWithRadio"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Standard practice. Rangers operate on our own most of the time. And that's how we like it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Usually we call in our positions to McCarran to be relayed to other rangers, but I can handle myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure as hell not going to lose any sleep on account of a goddamn broken down radio. But it will shorten my stay if I can't fix it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So no one knows you're here?"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're a strange one, aren'tcha? Fine, what did you want to talk about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Let's talk about something else."
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Criminal scum that've infested this region, attacking caravans and regular folk just passing through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The dangerous ones are roamers, though there's another group that mostly stays put, over at the prison southwest of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR mounted an attack not long ago but they just used regular troops - no rangers - so that didn't amount to anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Criminal scum that've infested this region, attacking caravans and regular folk just passing through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The dangerous ones are roamers, though there's another group that mostly stays put, over at the prison southwest of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So far the brass haven't mustered up enough men to take the prison back. Long overdue if you ask me. But I'm just one man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Criminal scum that've infested this region, attacking caravans and regular folk just passing through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The dangerous ones are roamers, though there's another group that mostly stays put, over at the prison southwest of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or so they did, 'til NCR brass finally mustered up enough troops to take out the trash. Wish I could've been there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are Powder Gangers?"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Disbelief, thinks player's crazy} A Brotherhood base? Here? Are you shitting me? No one's seen them for years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't suppose you've got a scrap of evidence to support this wild-eyed claim of yours?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Brotherhood of Steel has a base inside one of the bunkers here. They sent me after you."
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be. Let me take a look at that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All this is, is a slave collar. Seen plenty of these infernal contraptions in my day, and I know just how to spring 'em. Hold still.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There, it's off. Now thing is, a slave collar seems a little too basic for the Brotherhood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's not to say I don't believe you, {but} bu- did you just hear something?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be. Let me take a look at that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All this is, is a slave collar. Seen plenty of these infernal contraptions in my day, and I know just how to spring 'em. Hold still.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There, it's off. Now thing is, a slave collar seems a little too basic for the Brotherhood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's not to say I don't believe you, just that maybe you got your facts mixed up a little. Let's head back to my camp and go over what you saw.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How about this explosive collar around my neck?"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've been trying to get that damn thing working for days, and you decided to just start tinkering with it? Let me see that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was just trying to fix it.",
+   "label": "HVRangerFixedIt"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I've been trying to get that damn thing working for days, and you think you fixed it in a few minutes? Let me see that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] The hell you did. I know enough about electronics to know that what you were doing wasn't fixing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So I'll give you one more chance to tell me what you were doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Lie] I just fixed it.",
+   "label": "HVRangerFixedIt"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, but if I find you messing with it again, there'll be hell to pay, you hear me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't look like nothing to me. Draw!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just kidding. You weren't doing any harm that I could see. So what do you think? Can it be fixed?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't look like nothing to me. Draw!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nothing, I swear."
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, at least you're man enough to admit it. Now get the hell out of here. If I see you again, it'll be through my rifle's sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, I rigged your radio with a bomb."
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh? And in your expert opinion, why would that be?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This seems like a bad location for a safehouse."
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You've seen that with your own two eyes?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Goddamn, I knew Cooke's gang passed through these parts 'bout that frequently, but I didn't know they holed up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Be a rude awakening, to find fifteen of those merciless bastards looking down at me snoozing on my bedroll!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yep, I'd be better off setting up an ambush along one of their routes to catch stragglers. Thanks for the information. You may've saved my life.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> Powder gangers use these bunkers as hideouts once or twice a month.",
+   "label": "{Speech >= 50}"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] See now, thing is, I fancy myself a bit of a tracker. And I don't see much in the way of tracks 'round here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Could say that's on account of the dust storms. But if there were criminals using these bunkers as hideouts, I'd know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Well, criminals come through here. And the storms, they're bad. Right?",
+   "label": "{Speech >= 50}"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Well, I'll take that under advisement.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not sure. Just feels bad."
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now why would I do that? You see some powder gangers on the approach or something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You have to get out of here."
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I was thinking I might set this bunker up as a safehouse. Between the remote location and the dust storms, I figured it was ideal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Course, seems a lot less remote since you showed up. Plus I haven't been able to get my radio working, and a safehouse's no good without one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I reckon I'll stick around awhile, patrol for troublemakers, see if I can get that radio working.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, I thought I might set up a safehouse in one of the bunkers here. Between the remote location and the dust storms, I figured it was ideal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Course, seems a lot less remote since you showed up. Plus I haven't been able to get my radio working, and a safehouse's no good without one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I reckon I'll stick around awhile, patrol for troublemakers, see if I can get that radio working.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you doing here?"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dobson's my name. I'm an NCR Ranger, operating out of Camp McCarran north of here. Redding man by birth, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The desert can play tricks on a man's mind. Don't let it bother you overmuch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, not really."
+  },
+  {
+   "id": "VDialogueHiddenValleyHVRangerTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Let me see that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What? That's great. I'll have to check it out when I head back tonight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hey, I fixed your radio."
+  },
+  {
+   "id": "HVRangerRadioDestroyed",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You did {stressed} not just destroy my radio.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVRangerRadioDestroyed"
+  },
+  {
+   "id": "HVRangerRadioDisturbed",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You mess with a man's radio, and he might take it personal like, you hear?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVRangerRadioDisturbed"
+  }
+ ]
+}

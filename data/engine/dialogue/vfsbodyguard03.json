@@ -1,0 +1,142 @@
+{
+ "id": "vfsbodyguard03",
+ "speaker_name": "bodyguard for hire",
+ "source": "VFSBodyguard03.txt",
+ "topics": [
+  {
+   "key": "fsbodyguardaccept",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You won't regret it, my friend! As long as you're in Freeside, I'll be right behind you, covering your back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, I should mention that I don't go where I'm not invited, so don't count on me following you inside private property. Ready to get going?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardAccept",
+   "prompt": "Here's the money. It sounds like I could use a bodyguard."
+  },
+  {
+   "key": "fsbodyguardaccept_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That is most regrettable, my friend. I wish you well in the meantime.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardAccept",
+   "prompt": "I'd hire you, but I don't have the caps."
+  },
+  {
+   "key": "fsbodyguardreject",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't say I recommend that, but hopefully you'll change your mind. I'll be here if you do. Good luck!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardReject",
+   "prompt": "I don't really think I need a bodyguard."
+  },
+  {
+   "key": "fsbodyguardwhyhire",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, my friend, believe me when I tell you that this place, while quite nice when you know your way around, can be very, very dangerous.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are those who would hinder your every step with requests for your money, your business, or even your life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With your permission, however, I would be happy to stand between you and those people. How does that sound?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardWhyHire",
+   "prompt": "Why would I need a bodyguard in Freeside?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello, my friend! Can I perhaps interest you in some protection? My services come cheap at only a hundred caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I am sorry, my friend, but I must concentrate on watching out for threats. Please do not take offense.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfsbodyguard03topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're sure, then I guess I'll take my leave. You know where to find me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSBodyguard03Topic000",
+   "prompt": "I don't need your services any longer."
+  },
+  {
+   "key": "vfreeformfreesidevfsbodyguard03topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSBodyguard03Topic001",
+   "prompt": "None taken. Let's go."
+  },
+  {
+   "key": "fsbodyguardbarks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Your safety guaranteed!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Freeside's a dangerous place, my friend!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Only I can keep you safe, my friend!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FSBodyguardBarks",
+   "prompt": "FSBodyguard0101"
+  }
+ ],
+ "speaker": "bodyguard_for_hire"
+}

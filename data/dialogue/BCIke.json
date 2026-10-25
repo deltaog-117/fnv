@@ -1,0 +1,174 @@
+{
+ "page": "BCIke.txt",
+ "speaker": "Ike",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player not in NCR gear} {pleased} A customer! Not many people come into Boulder City these days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player in NCR gear} Howdy, trooper. I thought the Big Horn was off limits to you guys, but who am I to complain? A customer is a customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Great Khans left alive} Surprising that the Khans are going to walk out of here after all that fuss.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Great Khans dead} Guess those Khans got what was coming to them, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCR troops dead} Hope those Great Khans don't come trash my saloon. I'm not part of the NCR!",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "Welcome back to the Big Horn. What can I get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformBoulderCityBCIkeTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Quarry Junction Deathclaws dead} Most of the limestone comes from Quarry Junction out west. The supply had stopped for awhile because of a Deathclaw problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard some badass wastelander killed the Deathclaws, and deliveries of limestone have been coming in again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't think they've gotten the trains up and running yet, but most of the concrete plant workers have come back to town now. Good for business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Quarry Junction Deathclaws not dead} Most of the limestone comes from Quarry Junction out west, but I hear some Deathclaws overran the quarry.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With no work to be had, all the workers around here have wandered off. I'm the only one left in town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where does the concrete come from?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCIkeTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come back real soon!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformBoulderCityBCIkeTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Well, you'd better not let any of the real troopers hear that - and, of course, they won't be hearing it from me, neither.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So, what brings you to Boulder City? Not many people come here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not a trooper. I just happen to be wearing the armor."
+  },
+  {
+   "id": "VFreeformBoulderCityBCIkeTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What can I get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "id": "VFreeformBoulderCityBCIkeTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The workers here don't much like the military. After too many fights and broken noses, the NCR doesn't allow troops to spend time here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That doesn't stop a few people like yourself, of course. Don't worry, I won't say a word.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why is the Big Horn off limits to troopers?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCIkeTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Most of the town is rubble - destroyed during the Battle of Hoover Dam - and the only other thing around here is the concrete mixing yard.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Boulder City."
+  },
+  {
+   "id": "VFreeformBoulderCityBCIkeTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The NCR has been constructing bunkers up and down the river. From what I've heard, it's a little late for that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Travelers over at the 188 - just up the road - said that the Legion has overrun a couple of towns to the south.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the concrete used for?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come back real soon!",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

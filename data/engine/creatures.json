@@ -1,0 +1,5153 @@
+[
+ {
+  "id": "alien",
+  "name": "Alien",
+  "dlc": "base",
+  "source": "Alien (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mercenary camp"
+  ],
+  "variants": [
+   {
+    "id": "alien",
+    "name": "Alien",
+    "group": "Alien",
+    "form_id": "001690ac",
+    "level": 15,
+    "perception": 8,
+    "hp": 250,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (0 )",
+     ""
+    ],
+    "items": [
+     "Tri-beam laser rifle"
+    ]
+   },
+   {
+    "id": "alien_captain",
+    "name": "Alien captain",
+    "group": "Alien captain",
+    "form_id": "001690e9",
+    "level": 20,
+    "perception": 9,
+    "hp": 400,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (0 )",
+     ""
+    ],
+    "items": [
+     "Laser pistol * Alien blaster"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bark_scorpion",
+  "name": "Bark scorpion",
+  "dlc": "base",
+  "source": "Bark scorpion",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland"
+  ],
+  "variants": [
+   {
+    "id": "bark_scorpion",
+    "name": "Bark scorpion",
+    "group": "Bark scorpion",
+    "form_id": "0014f475",
+    "level": 5,
+    "perception": 3,
+    "hp": 20,
+    "dt": 2,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (25 )",
+     "Bark scorpion poison (5 /sec, -2 PER for 30 seconds)"
+    ],
+    "items": [
+     "Bark scorpion poison gland"
+    ]
+   },
+   {
+    "id": "bark_scorpion_hunter",
+    "name": "Bark scorpion hunter",
+    "group": "Bark scorpion hunter",
+    "form_id": "0015e910",
+    "level": 5,
+    "perception": 3,
+    "hp": 20,
+    "dt": 2,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (30 )",
+     "Bark scorpion poison (5 /sec, -2 PER for 30 seconds)"
+    ],
+    "items": [
+     "Bark scorpion poison gland"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bighorner",
+  "name": "Bighorner",
+  "dlc": "base",
+  "source": "Bighorner",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Matthews Animal Husbandry Farm",
+   "Goodsprings",
+   "Jacobstown",
+   "Dead Horses camp"
+  ],
+  "variants": [
+   {
+    "id": "bighorner",
+    "name": "Bighorner",
+    "group": "Bighorner",
+    "form_id": "001445a7",
+    "level": 3,
+    "perception": 2,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 3,
+    "assistance": 0,
+    "attacks": [
+     "Melee (40 )",
+     ""
+    ],
+    "items": [
+     "Bighorner meat"
+    ]
+   },
+   {
+    "id": "bighorner_f431",
+    "name": "Bighorner",
+    "group": "Bighorner",
+    "form_id": "0014f431",
+    "level": 9,
+    "perception": 2,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (35 )",
+     ""
+    ],
+    "items": [
+     "Bighorner meat"
+    ]
+   },
+   {
+    "id": "bighorner_bull",
+    "name": "Bighorner bull",
+    "group": "Bighorner bull",
+    "form_id": "00159790",
+    "level": 11,
+    "perception": 4,
+    "hp": 120,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (45 )",
+     ""
+    ],
+    "items": [
+     "Bighorner meat"
+    ]
+   },
+   {
+    "id": "bighorner_calf",
+    "name": "Bighorner calf",
+    "group": "Bighorner calf",
+    "form_id": "0014f47e",
+    "level": 5,
+    "perception": 2,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )",
+     ""
+    ],
+    "items": [
+     "Bighorner meat"
+    ]
+   },
+   {
+    "id": "young_bighorner",
+    "name": "Young bighorner",
+    "group": "Young bighorner",
+    "form_id": "0010ab79",
+    "level": 1,
+    "perception": 3,
+    "hp": 60,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 0,
+    "assistance": 1,
+    "attacks": [
+     "Melee (40 )",
+     ""
+    ],
+    "items": [
+     "Bighorner meat"
+    ]
+   },
+   {
+    "id": "malnourished_bighorner",
+    "name": "Malnourished bighorner",
+    "group": "Malnourished bighorner",
+    "form_id": "001544b8",
+    "level": 9,
+    "perception": 2,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 1,
+    "assistance": 1,
+    "attacks": [
+     "Melee (35 )",
+     ""
+    ],
+    "items": [
+     "Bighorner meat"
+    ]
+   },
+   {
+    "id": "malnourished_bighorner_calf",
+    "name": "Malnourished bighorner calf",
+    "group": "Malnourished bighorner calf",
+    "form_id": "001544b7",
+    "level": 5,
+    "perception": 2,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 1,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )",
+     ""
+    ],
+    "items": [
+     "Bighorner meat"
+    ]
+   },
+   {
+    "id": "lost_mountain_bighorner_calf",
+    "name": "Lost Mountain bighorner calf",
+    "group": "Lost Mountain bighorner calf",
+    "level": 5,
+    "perception": 2,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee ()",
+     ""
+    ],
+    "items": [
+     "Bighorner meat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bloatfly",
+  "name": "Bloatfly",
+  "dlc": "base",
+  "source": "Bloatfly (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Camp Forlorn Hope",
+   "Goodsprings Cemetery",
+   "Wrecked Highwayman",
+   "Primm",
+   "Zion Canyon",
+   "Big MT"
+  ],
+  "variants": [
+   {
+    "id": "bloatfly",
+    "name": "Bloatfly",
+    "group": "Bloatfly",
+    "form_id": "0009189c",
+    "level": 1,
+    "xp": 1,
+    "perception": 6,
+    "hp": 15,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (7 )"
+    ],
+    "items": [
+     "Bloatfly meat"
+    ]
+   },
+   {
+    "id": "legendary_bloatfly",
+    "name": "Legendary bloatfly",
+    "group": "Legendary bloatfly",
+    "level": 50,
+    "xp": 50,
+    "perception": 5,
+    "hp": 2000,
+    "dt": 20,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (450 )",
+     "Plasma (300 )",
+     "Explosion (225 )"
+    ],
+    "items": [
+     "Bloatfly meat * Psycho * Buffout * Empty syringes * Drained microfusion cells"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "brahmin",
+  "name": "Brahmin",
+  "dlc": "base",
+  "source": "Brahmin (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "188 Trading Post",
+   "Matthews Animal Husbandry Farm"
+  ],
+  "variants": [
+   {
+    "id": "brahmin",
+    "name": "Brahmin",
+    "group": "Brahmin",
+    "form_id": "0001cfa2",
+    "level": 1,
+    "perception": 3,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 1,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     ""
+    ],
+    "items": [
+     "Brahmin meat"
+    ]
+   },
+   {
+    "id": "mad_brahmin",
+    "name": "Mad brahmin",
+    "group": "Mad brahmin",
+    "form_id": "000caff8",
+    "level": 1,
+    "perception": 3,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     ""
+    ],
+    "items": [
+     "Brahmin meat"
+    ]
+   },
+   {
+    "id": "malnourished_brahmin",
+    "name": "Malnourished brahmin",
+    "group": "Malnourished brahmin",
+    "form_id": "001544b6",
+    "level": 1,
+    "perception": 3,
+    "hp": 30,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 1,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     ""
+    ],
+    "items": [
+     "Brahmin meat"
+    ]
+   },
+   {
+    "id": "malnourished_brahmin_calf",
+    "name": "Malnourished brahmin calf",
+    "group": "Malnourished brahmin calf",
+    "form_id": "001544b9",
+    "level": 1,
+    "perception": 3,
+    "hp": 20,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 0,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     ""
+    ],
+    "items": [
+     "Brahmin meat"
+    ]
+   },
+   {
+    "id": "water_brahmin",
+    "name": "Water brahmin",
+    "group": "Water brahmin",
+    "form_id": "000f0b30",
+    "level": 1,
+    "perception": 3,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 0,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     ""
+    ],
+    "items": [
+     "Brahmin meat"
+    ]
+   },
+   {
+    "id": "fiend_brahmin",
+    "name": "Fiend brahmin",
+    "group": "Fiend brahmin",
+    "form_id": "000f5702",
+    "level": 1,
+    "perception": 3,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 0,
+    "assistance": 0,
+    "attacks": [
+     "Melee (2 )",
+     ""
+    ],
+    "items": [
+     "Brahmin meat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cazador",
+  "name": "Cazador",
+  "dlc": "base",
+  "source": "Cazador",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Zion Canyon",
+   "Big MT"
+  ],
+  "variants": [
+   {
+    "id": "cazador",
+    "name": "Cazador",
+    "group": "Cazador",
+    "form_id": "000e584d",
+    "level": 18,
+    "xp": 50,
+    "perception": 9,
+    "hp": 200,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (70 )",
+     "Cazador poison (8 /sec for 30s)"
+    ],
+    "items": [
+     "Cazador poison glands * Cazador egg"
+    ]
+   },
+   {
+    "id": "young_cazador",
+    "name": "Young cazador",
+    "group": "Young cazador",
+    "form_id": "0014f478",
+    "level": 12,
+    "xp": 25,
+    "perception": 7,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (30 )",
+     "Cazador poison (5 /sec for 30s)"
+    ],
+    "items": [
+     "Cazador poison gland"
+    ]
+   },
+   {
+    "id": "legendary_cazador",
+    "name": "Legendary cazador",
+    "group": "Legendary cazador",
+    "form_id": "00166df8",
+    "level": 25,
+    "xp": 50,
+    "perception": 10,
+    "hp": 400,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (120 )",
+     "Cazador poison (8 /sec for 30s)"
+    ],
+    "items": [
+     "Cazador poison glands * Cazador egg"
+    ]
+   },
+   {
+    "id": "giant_cazador",
+    "name": "Giant cazador",
+    "group": "Giant cazador",
+    "level": 27,
+    "xp": 50,
+    "perception": 9,
+    "hp": 350,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (80 )",
+     "Cazador poison (8 /sec for 30s)"
+    ],
+    "items": [
+     "Cazador poison gland x2 * Cazador egg"
+    ]
+   },
+   {
+    "id": "specimen_73",
+    "name": "Specimen 73",
+    "group": "Specimen 73",
+    "level": 50,
+    "xp": 50,
+    "perception": 6,
+    "hp": 675,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (70 )",
+     "Cazador poison (8 /sec for 30s)"
+    ],
+    "items": [
+     "Atomic-valence tri-radii-oscillator * Cazador poison gland x2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "centaur",
+  "name": "Centaur",
+  "dlc": "base",
+  "source": "Centaur (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "New California",
+   "Black Mountain",
+   "Jack Rabbit Springs",
+   "The Devil's Throat"
+  ],
+  "variants": [
+   {
+    "id": "centaur",
+    "name": "Centaur",
+    "group": "Centaur",
+    "form_id": "000e9491",
+    "level": 5,
+    "perception": 6,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (27 )",
+     "Radioactive spit (30 , 5 /sec for 10 seconds)"
+    ],
+    "items": [
+     "Centaur blood"
+    ]
+   },
+   {
+    "id": "centaur_cf90",
+    "name": "Centaur",
+    "group": "Centaur",
+    "form_id": "0001cf90",
+    "level": 9,
+    "perception": 6,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (40 )",
+     "Radioactive spit (30 , 5 /sec for 10 seconds)"
+    ],
+    "items": [
+     "Centaur blood"
+    ]
+   },
+   {
+    "id": "evolved_centaur",
+    "name": "Evolved centaur",
+    "group": "Evolved centaur",
+    "form_id": "000e5853",
+    "level": 14,
+    "perception": 7,
+    "hp": 150,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (50 )",
+     "Radioactive spit (60 , 10 /sec for 10 seconds)"
+    ],
+    "items": [
+     "Centaur blood"
+    ]
+   },
+   {
+    "id": "giant_evolved_centaur",
+    "name": "Giant evolved centaur",
+    "group": "Giant evolved centaur",
+    "form_id": "00156789",
+    "level": 18,
+    "perception": 8,
+    "hp": 220,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (70 )",
+     "Radioactive spit (60 , 10 /sec for 10 seconds)"
+    ],
+    "items": [
+     "Centaur blood"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "coyote",
+  "name": "Coyote",
+  "dlc": "base",
+  "source": "Coyote (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Coyote den",
+   "Goodsprings cave"
+  ],
+  "variants": [
+   {
+    "id": "coyote",
+    "name": "Coyote",
+    "group": "Coyote",
+    "level": 4,
+    "perception": 8,
+    "hp": 30,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 2,
+    "attacks": [
+     "Melee (15 )",
+     ""
+    ],
+    "items": [
+     "Coyote meat * Coyote hide"
+    ]
+   },
+   {
+    "id": "den_mother",
+    "name": "Den mother",
+    "group": "Coyote den mother",
+    "level": 4,
+    "perception": 8,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 2,
+    "attacks": [
+     "Melee (17 )",
+     ""
+    ],
+    "items": [
+     "Coyote meat * Coyote hide"
+    ]
+   },
+   {
+    "id": "coyote_pack_alpha",
+    "name": "Coyote pack alpha",
+    "group": "Coyote pack alpha",
+    "level": 5,
+    "perception": 8,
+    "hp": 60,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (29 )",
+     ""
+    ],
+    "items": [
+     "Coyote meat * Coyote hide"
+    ]
+   },
+   {
+    "id": "coyote_pup",
+    "name": "Coyote pup",
+    "group": "Coyote pup",
+    "level": 1,
+    "perception": 6,
+    "hp": 10,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 1,
+    "assistance": 2,
+    "attacks": [
+     "Melee (7 )",
+     ""
+    ],
+    "items": [
+     "Coyote meat * Coyote hide"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cyberdog",
+  "name": "Cyberdog",
+  "dlc": "base",
+  "source": "Cyberdog (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Big MT"
+  ],
+  "variants": [
+   {
+    "id": "military_cyberdog",
+    "name": "Military cyberdog",
+    "group": "Military cyberdog",
+    "level": 5,
+    "xp": 10,
+    "perception": 5,
+    "hp": 75,
+    "dt": 2,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (40 )",
+     "Sonic bark (36 )"
+    ],
+    "items": [
+     "Dog hide * Dog meat * Energy cells * Energy cells, over charge"
+    ]
+   },
+   {
+    "id": "police_cyberdog",
+    "name": "Police cyberdog",
+    "group": "Police cyberdog",
+    "level": 0.8,
+    "perception": 10,
+    "hp": 22,
+    "dt": 2,
+    "aggression": 0,
+    "confidence": 0,
+    "assistance": 0,
+    "attacks": [
+     "Melee (30 )",
+     ""
+    ],
+    "items": [
+     "Dog hide * Dog meat * Small energy cells"
+    ]
+   },
+   {
+    "id": "cyberdog",
+    "name": "Cyberdog",
+    "group": "Cyberdog",
+    "level": 5,
+    "xp": 10,
+    "perception": 0,
+    "hp": 75,
+    "dt": 2,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (80 )",
+     "Sonic bark (36 )"
+    ],
+    "items": [
+     "Fission battery * Energy cells"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "deathclaw",
+  "name": "Deathclaw",
+  "dlc": "base",
+  "source": "Deathclaw (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland"
+  ],
+  "variants": [
+   {
+    "id": "deathclaw",
+    "name": "Deathclaw",
+    "group": "Deathclaw",
+    "form_id": "0014f42c",
+    "level": 20,
+    "xp": 50,
+    "perception": 7,
+    "hp": 500,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (125 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_quarry_junction",
+    "name": "Deathclaw (Quarry Junction)",
+    "group": "Deathclaw",
+    "form_id": "001607b5",
+    "level": 15,
+    "xp": 50,
+    "perception": 8,
+    "hp": 500,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (125 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_alpha_male",
+    "name": "Deathclaw alpha male",
+    "group": "Deathclaw alpha male",
+    "form_id": "00167ec1",
+    "level": 25,
+    "xp": 50,
+    "perception": 8,
+    "hp": 750,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (300 )"
+    ],
+    "items": [
+     "15% Deathclaw egg * 35% Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_alpha_male_quarry_junction",
+    "name": "Deathclaw alpha male (Quarry Junction)",
+    "group": "Deathclaw alpha male",
+    "form_id": "000e59e8",
+    "level": 25,
+    "xp": 50,
+    "perception": 9,
+    "hp": 750,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (300 )"
+    ],
+    "items": [
+     "15% Deathclaw egg * 35% Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_mother",
+    "name": "Deathclaw mother",
+    "group": "Deathclaw mother",
+    "form_id": "000e59e7",
+    "level": 30,
+    "xp": 50,
+    "perception": 8,
+    "hp": 700,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (275 )",
+     ""
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_baby",
+    "name": "Deathclaw baby",
+    "group": "Deathclaw baby",
+    "form_id": "000e601f",
+    "level": 10,
+    "xp": 50,
+    "perception": 6,
+    "hp": 100,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 0,
+    "attacks": [
+     "Melee (40 )"
+    ],
+    "items": [
+     "Deathclaw hand"
+    ]
+   },
+   {
+    "id": "young_deathclaw",
+    "name": "Young deathclaw",
+    "group": "Young deathclaw",
+    "form_id": "0014f42d",
+    "level": 10,
+    "xp": 50,
+    "perception": 6,
+    "hp": 350,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (40 )",
+     ""
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "blind_deathclaw",
+    "name": "Blind deathclaw",
+    "group": "Blind deathclaw",
+    "form_id": "0015c642",
+    "level": 20,
+    "xp": 50,
+    "perception": 8,
+    "hp": 500,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (125 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "legendary_deathclaw",
+    "name": "Legendary deathclaw",
+    "group": "Legendary deathclaw",
+    "form_id": "00167eff",
+    "level": 30,
+    "xp": 50,
+    "perception": 10,
+    "hp": 1000,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (250 )"
+    ],
+    "items": [
+     "15% Deathclaw egg * 35% Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_2",
+    "name": "Deathclaw",
+    "group": "Deathclaw",
+    "level": 20,
+    "xp": 50,
+    "perception": 8,
+    "hp": 500,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (125 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_3",
+    "name": "Deathclaw",
+    "group": "Deathclaw",
+    "level": 25,
+    "xp": 50,
+    "perception": 8,
+    "hp": 550,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (187 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_4",
+    "name": "Deathclaw",
+    "group": "Deathclaw",
+    "level": 35,
+    "xp": 50,
+    "perception": 8,
+    "hp": 600,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (280 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "deathclaw_5",
+    "name": "Deathclaw",
+    "group": "Deathclaw",
+    "level": 45,
+    "xp": 50,
+    "perception": 8,
+    "hp": 700,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (350 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "irradiated_deathclaw",
+    "name": "Irradiated deathclaw",
+    "group": "Irradiated deathclaw",
+    "level": 20,
+    "xp": 50,
+    "perception": 8,
+    "hp": 500,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (125 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "irradiated_deathclaw_2",
+    "name": "Irradiated deathclaw",
+    "group": "Irradiated deathclaw",
+    "level": 25,
+    "xp": 50,
+    "perception": 8,
+    "hp": 550,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (187 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "irradiated_deathclaw_3",
+    "name": "Irradiated deathclaw",
+    "group": "Irradiated deathclaw",
+    "level": 35,
+    "xp": 50,
+    "perception": 8,
+    "hp": 600,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (280 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   },
+   {
+    "id": "irradiated_deathclaw_4",
+    "name": "Irradiated deathclaw",
+    "group": "Irradiated deathclaw",
+    "level": 45,
+    "xp": 50,
+    "perception": 8,
+    "hp": 700,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (350 )"
+    ],
+    "items": [
+     "Deathclaw egg * Deathclaw hand"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "dog",
+  "name": "Dog",
+  "dlc": "base",
+  "source": "Dog (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Camp Forlorn Hope",
+   "Cottonwood Cove",
+   "Fiends",
+   "HELIOS One",
+   "The Fort",
+   "Zion Canyon"
+  ],
+  "variants": [
+   {
+    "id": "dog",
+    "name": "Dog",
+    "group": "Dog",
+    "form_id": "0001cf9c",
+    "level": 2,
+    "perception": 6,
+    "hp": 20,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 2,
+    "attacks": [
+     "Melee (12 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "large_dog",
+    "name": "Large dog",
+    "group": "Dog",
+    "level": 4,
+    "perception": 7,
+    "hp": 45,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "prospector_s_dog",
+    "name": "Prospector's dog",
+    "group": "Dog",
+    "level": 2,
+    "perception": 6,
+    "hp": 20,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (12 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "legion_mongrel",
+    "name": "Legion mongrel",
+    "group": "Legion mongrel",
+    "form_id": "00136a20",
+    "level": 1,
+    "perception": 8,
+    "hp": 80,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (10 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "ncr_guard_dog",
+    "name": "NCR guard dog",
+    "group": "NCR guard dog",
+    "form_id": "000a46f4",
+    "level": 5,
+    "perception": 7,
+    "hp": 55,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "fiend_guard_dog",
+    "name": "Fiend guard dog",
+    "group": "NCR guard dog",
+    "level": 5,
+    "perception": 7,
+    "hp": 55,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "vicious_dog",
+    "name": "Vicious dog",
+    "group": "Vicious dog",
+    "form_id": "0001cfa3",
+    "level": 5,
+    "perception": 7,
+    "hp": 55,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "wild_dog",
+    "name": "Wild dog",
+    "group": "Wild dog",
+    "form_id": "0015c690",
+    "level": 3,
+    "perception": 6,
+    "hp": 30,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 2,
+    "attacks": [
+     "Melee (18 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "large_wild_dog",
+    "name": "Large wild dog",
+    "group": "Wild dog",
+    "form_id": "0015c68f",
+    "level": 5,
+    "perception": 7,
+    "hp": 55,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (32 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "white_legs_mongrel",
+    "name": "White Legs mongrel",
+    "group": "White Legs mongrel",
+    "level": 7,
+    "perception": 7,
+    "hp": 70,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "large_white_legs_mongrel",
+    "name": "Large White Legs mongrel",
+    "group": "White Legs mongrel",
+    "level": 13,
+    "perception": 7,
+    "hp": 110,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee (50 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "ranch_dog",
+    "name": "Ranch dog",
+    "group": "Ranch dog",
+    "form_id": "000feb84",
+    "level": 2,
+    "perception": 6,
+    "hp": 20,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (12 )"
+    ],
+    "items": [
+     ""
+    ]
+   },
+   {
+    "id": "nikita",
+    "name": "Nikita",
+    "group": "Sheep dog",
+    "form_id": "000000ee",
+    "level": 2,
+    "perception": 6,
+    "hp": 20,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (12 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   },
+   {
+    "id": "tokio",
+    "name": "Tokio",
+    "group": "Sheep dog",
+    "form_id": "000000ee",
+    "level": 2,
+    "perception": 6,
+    "hp": 20,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (12 )"
+    ],
+    "items": [
+     "Dog meat * Dog hide"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "feral_ghoul",
+  "name": "Feral ghoul",
+  "dlc": "base",
+  "source": "Feral ghoul (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Vault 34",
+   "Camp Searchlight",
+   "Old nuclear test site",
+   "REPCONN test site"
+  ],
+  "variants": [
+   {
+    "id": "feral_ghoul",
+    "name": "Feral ghoul",
+    "group": "Feral ghoul",
+    "form_id": "0009fafa",
+    "level": 3,
+    "perception": 3,
+    "hp": 25,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (5 )"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "feral_ghoul_7ecc",
+    "name": "Feral ghoul",
+    "group": "Feral ghoul",
+    "form_id": "00167ecc",
+    "level": 5,
+    "perception": 2,
+    "hp": 60,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (20 )"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "feral_ghoul_roamer",
+    "name": "Feral ghoul roamer",
+    "group": "Feral ghoul roamer",
+    "form_id": "0001cf77",
+    "level": 6,
+    "perception": 4,
+    "hp": 80,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (16 )"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "feral_ghoul_roamer_7ece",
+    "name": "Feral ghoul roamer",
+    "group": "Feral ghoul roamer",
+    "form_id": "00167ece",
+    "level": 10,
+    "perception": 4,
+    "hp": 110,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (30 )"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "feral_ghoul_reaver",
+    "name": "Feral ghoul reaver",
+    "group": "Feral ghoul reaver",
+    "form_id": "00167ed7",
+    "level": 17,
+    "perception": 7,
+    "hp": 180,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (40 , +10 /sec for 4 seconds, -15 /sec for 4 seconds)"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "feral_ghoul_reaver_283a",
+    "name": "Feral ghoul reaver",
+    "group": "Feral ghoul reaver",
+    "form_id": "0017283a",
+    "level": 23,
+    "perception": 7,
+    "hp": 350,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (50 , +10 /sec for 4 seconds, -15 /sec for 4 seconds)"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "feral_trooper_ghoul",
+    "name": "Feral trooper ghoul",
+    "group": "Feral trooper ghoul",
+    "form_id": "0014451b",
+    "level": 8,
+    "perception": 1,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (20 )"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "feral_trooper_ghoul_2948",
+    "name": "Feral trooper ghoul",
+    "group": "Feral trooper ghoul",
+    "form_id": "00162948",
+    "level": 8,
+    "perception": 2,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (30 )"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "feral_ghoul_jumpsuit",
+    "name": "Feral ghoul jumpsuit",
+    "group": "Feral ghoul jumpsuit",
+    "form_id": "00145e6e",
+    "level": 3,
+    "perception": 3,
+    "hp": 25,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (5 )"
+    ],
+    "items": [
+     "25% Stealth Boy"
+    ]
+   },
+   {
+    "id": "glowing_one",
+    "name": "Glowing one",
+    "group": "Glowing one",
+    "form_id": "0001cf7b",
+    "level": 9,
+    "perception": 5,
+    "hp": 240,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (32 )",
+     "Aura Explosion (15 and 5 /sec for 3 seconds)"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "glowing_one_7ed0",
+    "name": "Glowing one",
+    "group": "Glowing one",
+    "form_id": "00167ed0",
+    "level": 13,
+    "perception": 5,
+    "hp": 145,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (35 )",
+     "Aura Explosion (15 and 5 /sec for 3 seconds)"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "glowing_one_2",
+    "name": "Glowing one",
+    "group": "Glowing one",
+    "form_id": "00167ed0",
+    "level": 26,
+    "perception": 5,
+    "hp": 400,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (60 )",
+     "Aura Explosion (15 and 5 /sec for 3 seconds)"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "glowing_trooper_ghoul",
+    "name": "Glowing trooper ghoul",
+    "group": "Glowing trooper ghoul",
+    "form_id": "0014451a",
+    "level": 8,
+    "perception": 1,
+    "hp": 150,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (30 )",
+     "Aura Explosion (15 and 5 /sec for 3 seconds)"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "glowing_trooper_ghoul_2947",
+    "name": "Glowing trooper ghoul",
+    "group": "Glowing trooper ghoul",
+    "form_id": "00162947",
+    "level": 8,
+    "perception": 1,
+    "hp": 150,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (30 )",
+     "Aura Explosion (15 and 5 /sec for 3 seconds)"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "glowing_ghoul_jumpsuit",
+    "name": "Glowing ghoul jumpsuit",
+    "group": "Glowing ghoul jumpsuit",
+    "form_id": "00145e6f",
+    "level": 3,
+    "perception": 3,
+    "hp": 25,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (5 )"
+    ],
+    "items": [
+     "25% Stealth Boy * 10% Bottle caps"
+    ]
+   },
+   {
+    "id": "legion_creature",
+    "name": "Legion creature",
+    "group": "Legion creature",
+    "form_id": "00140d4b",
+    "level": 6,
+    "perception": 4,
+    "hp": 80,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (16 )"
+    ],
+    "items": [
+     "63% Bottle caps * 25% random clutter * 13% random chem"
+    ]
+   },
+   {
+    "id": "overseer",
+    "name": "Overseer",
+    "group": "Overseer",
+    "form_id": "00132541",
+    "level": 12,
+    "perception": 2,
+    "hp": 900,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (100 )",
+     "Aura Explosion (15 and 5 /sec for 3 seconds)"
+    ],
+    "items": [
+     "100% Overseer's password * 100% Pencil * 17% 10mm rounds * 17% random chem * 17% random clutter * 13% Pre-War money * 9% Vault 34 jumpsuit"
+    ]
+   },
+   {
+    "id": "vault_dweller",
+    "name": "Vault dweller",
+    "group": "Vault dweller",
+    "form_id": "00133101",
+    "level": 6,
+    "perception": 2,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (16 )"
+    ],
+    "items": [
+     "100% 10mm rounds * 17% random chem * 17% random clutter * 13% Pre-War money * 9% Vault 34 jumpsuit"
+    ]
+   },
+   {
+    "id": "vault_security_guard",
+    "name": "Vault security guard",
+    "group": "Vault security guard",
+    "form_id": "00132540",
+    "level": 8,
+    "perception": 2,
+    "hp": 200,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "100% 10mm rounds * 17% random chem * 17% random clutter * 13% Pre-War money * 9% Vault 34 jumpsuit"
+    ]
+   },
+   {
+    "id": "vault_security_officer",
+    "name": "Vault security officer",
+    "group": "Vault security officer",
+    "form_id": "00132164",
+    "level": 10,
+    "perception": 2,
+    "hp": 400,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (50 )",
+     "Aura Explosion (5 /sec for 3 seconds)"
+    ],
+    "items": [
+     "100% 10mm rounds * 17% random chem * 17% random clutter * 13% pre-War money * 9% Vault 34 jumpsuit"
+    ]
+   },
+   {
+    "id": "vault_security_officer_af94",
+    "name": "Vault security officer",
+    "group": "Vault security officer",
+    "form_id": "0017af94",
+    "level": 10,
+    "perception": 2,
+    "hp": 400,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (50 )"
+    ],
+    "items": [
+     "100% 10mm rounds * 17% random chem * 17% random clutter * 13% pre-War money * 9% Vault 34 jumpsuit"
+    ]
+   },
+   {
+    "id": "vault_technician",
+    "name": "Vault technician",
+    "group": "Vault technician",
+    "form_id": "00133f46",
+    "level": 9,
+    "perception": 2,
+    "hp": 300,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (35 )"
+    ],
+    "items": [
+     "100% 10mm rounds * 17% random chem * 17% random clutter * 13% pre-War money * 9% Vault 34 jumpsuit"
+    ]
+   },
+   {
+    "id": "vault_technician_e313",
+    "name": "Vault technician",
+    "group": "Vault technician",
+    "form_id": "0013e313",
+    "level": 9,
+    "perception": 2,
+    "hp": 0,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (35 )"
+    ],
+    "items": [
+     "Vault 34 security terminal password * Vault 34 utility terminal password"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fire_ant",
+  "name": "Fire ant",
+  "dlc": "base",
+  "source": "Fire ant (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland"
+  ],
+  "variants": [
+   {
+    "id": "fire_ant_queen",
+    "name": "Fire ant queen",
+    "group": "Fire ant queen",
+    "level": 17,
+    "perception": 5,
+    "hp": 450,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (55 )",
+     "Fire breath (8 + 2 for 5s) attacks per second (8)"
+    ],
+    "items": [
+     "20% Ant egg * 8% Ant queen pheromones"
+    ]
+   },
+   {
+    "id": "fire_ant_soldier",
+    "name": "Fire ant soldier",
+    "group": "Fire ant soldier",
+    "level": 12,
+    "perception": 4,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (40 )",
+     "Fire breath (4 + 2 for 5s) attacks per second (8)"
+    ],
+    "items": [
+     "75% Fire ant meat * 70% Fire ant nectar * 20% Fire ant egg"
+    ]
+   },
+   {
+    "id": "soldier_fire_ant",
+    "name": "Soldier fire ant",
+    "group": "Fire ant soldier",
+    "level": 12,
+    "perception": 4,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (40 )",
+     "Fire breath (4 + 2 for 5s) attacks per second (8)"
+    ],
+    "items": [
+     "75% Fire ant meat * 70% Fire ant nectar * 20% Fire ant egg"
+    ]
+   },
+   {
+    "id": "fire_ant_worker",
+    "name": "Fire ant worker",
+    "group": "Fire ant worker",
+    "level": 6,
+    "perception": 2,
+    "hp": 55,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (20 )",
+     "Fire breath (2 + 2 for 5s) attacks per second (8)"
+    ],
+    "items": [
+     "75% Fire ant meat * 20% Fire ant nectar * 20% Fire ant egg"
+    ]
+   },
+   {
+    "id": "worker_fire_ant",
+    "name": "Worker fire ant",
+    "group": "Fire ant worker",
+    "level": 6,
+    "perception": 2,
+    "hp": 55,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (20 )",
+     "Fire breath (2 + 2 for 5s) attacks per second (8)"
+    ],
+    "items": [
+     "75% Fire ant meat * 20% Fire ant nectar * 20% Fire ant egg"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "gecko",
+  "name": "Gecko",
+  "dlc": "base",
+  "source": "Gecko (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Zion Canyon"
+  ],
+  "variants": [
+   {
+    "id": "gecko",
+    "name": "Gecko",
+    "group": "Gecko",
+    "form_id": "0010cd73",
+    "level": 7,
+    "perception": 5,
+    "hp": 65,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (30 )"
+    ],
+    "items": [
+     "80% Gecko hide * 75% Gecko meat * 25% Gecko meat * 20% Gecko egg"
+    ]
+   },
+   {
+    "id": "gecko_2",
+    "name": "Gecko",
+    "group": "Gecko",
+    "level": 3,
+    "perception": 3,
+    "hp": 20,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (5 )"
+    ],
+    "items": [
+     "80% Gecko hide * 75% Gecko meat * 25% Gecko meat * 20% Gecko egg"
+    ]
+   },
+   {
+    "id": "gecko_goodsprings",
+    "name": "Gecko (Goodsprings)",
+    "group": "Gecko",
+    "level": 3,
+    "perception": 3,
+    "hp": 20,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (15 )"
+    ],
+    "items": [
+     "80% Gecko hide * 75% Gecko meat * 25% Gecko meat * 20% Gecko egg"
+    ]
+   },
+   {
+    "id": "gecko_hunter",
+    "name": "Gecko hunter",
+    "group": "Gecko hunter",
+    "form_id": "00157fe0",
+    "level": 3,
+    "perception": 3,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )"
+    ],
+    "items": [
+     "Gecko hide * Gecko meat"
+    ]
+   },
+   {
+    "id": "young_gecko",
+    "name": "Young gecko",
+    "group": "Young gecko",
+    "form_id": "00014f47",
+    "level": 3,
+    "perception": 4,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )"
+    ],
+    "items": [
+     "Gecko hide * Gecko meat"
+    ]
+   },
+   {
+    "id": "young_gecko_hunter",
+    "name": "Young gecko hunter",
+    "group": "Young gecko hunter",
+    "form_id": "00159783",
+    "level": 3,
+    "perception": 5,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )"
+    ],
+    "items": [
+     "Gecko hide * Gecko meat"
+    ]
+   },
+   {
+    "id": "golden_gecko",
+    "name": "Golden gecko",
+    "group": "Golden gecko",
+    "form_id": "00118d61",
+    "level": 12,
+    "perception": 5,
+    "hp": 125,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (50 )",
+     "Radiation bite (+15 for 5/sec.)"
+    ],
+    "items": [
+     "80% Golden gecko hide * 75% Gecko meat * 50% Gecko meat * 20% Golden gecko egg"
+    ]
+   },
+   {
+    "id": "golden_gecko_camp_searchlight",
+    "name": "Golden gecko (Camp Searchlight)",
+    "group": "Golden gecko",
+    "level": 5,
+    "perception": 3,
+    "hp": 125,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (25 )",
+     "Radiation bite (+15 for 5/sec.)"
+    ],
+    "items": [
+     "80% Golden gecko hide * 75% Gecko meat * 50% Gecko meat * 20% Golden gecko egg"
+    ]
+   },
+   {
+    "id": "golden_gecko_hunter",
+    "name": "Golden gecko hunter",
+    "group": "Golden gecko hunter",
+    "form_id": "00164ef2",
+    "level": 12,
+    "perception": 5,
+    "hp": 125,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (50 )",
+     "Radiation bite (+9 for 10/sec. )"
+    ],
+    "items": [
+     "Golden gecko hide * Gecko meat"
+    ]
+   },
+   {
+    "id": "young_golden_gecko",
+    "name": "Young golden gecko",
+    "group": "Young golden gecko",
+    "form_id": "0014f479",
+    "level": 7,
+    "perception": 4,
+    "hp": 60,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (35 )",
+     "Radiation bite (+2 for 10/sec. )"
+    ],
+    "items": [
+     "Golden gecko hide * Gecko meat"
+    ]
+   },
+   {
+    "id": "fire_gecko",
+    "name": "Fire gecko",
+    "group": "Fire gecko",
+    "form_id": "00113246",
+    "level": 16,
+    "perception": 7,
+    "hp": 165,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (60 )",
+     "Fire breath (23 )"
+    ],
+    "items": [
+     "80% Fire gecko hide * 75% Gecko meat * 75% Gecko meat * 25% Gecko meat * 20% Fire gecko egg"
+    ]
+   },
+   {
+    "id": "fire_gecko_7eb8",
+    "name": "Fire gecko",
+    "group": "Fire gecko",
+    "form_id": "00167eb8",
+    "level": 17,
+    "perception": 7,
+    "hp": 185,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (65 )",
+     "Fire breath (23 )"
+    ],
+    "items": [
+     "80% Fire gecko hide * 75% Gecko meat * 75% Gecko meat * 25% Gecko meat * 20% Fire gecko egg"
+    ]
+   },
+   {
+    "id": "fire_gecko_vault_19",
+    "name": "Fire gecko (Vault 19)",
+    "group": "Fire gecko",
+    "level": 14,
+    "perception": 7,
+    "hp": 165,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (50 )",
+     "Fire breath (23 )"
+    ],
+    "items": [
+     "80% Fire gecko hide * 75% Gecko meat * 75% Gecko meat * 25% Gecko meat * 20% Fire gecko egg"
+    ]
+   },
+   {
+    "id": "fire_gecko_vault_19_2",
+    "name": "Fire gecko (Vault 19)",
+    "group": "Fire gecko",
+    "level": 14,
+    "perception": 7,
+    "hp": 165,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (50 )",
+     "Fire breath (23 )"
+    ],
+    "items": [
+     "80% Fire gecko hide * 75% Gecko meat * 75% Gecko meat * 25% Gecko meat"
+    ]
+   },
+   {
+    "id": "fire_gecko_pit_fighter",
+    "name": "Fire gecko (Pit fighter)",
+    "group": "Fire gecko",
+    "form_id": "001365b5",
+    "level": 14,
+    "perception": 7,
+    "hp": 165,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (50 )",
+     "Fire breath (23 )"
+    ],
+    "items": [
+     "None"
+    ]
+   },
+   {
+    "id": "young_fire_gecko",
+    "name": "Young fire gecko",
+    "group": "Young fire gecko",
+    "form_id": "00167e9d",
+    "level": 11,
+    "perception": 5,
+    "hp": 95,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (45 )",
+     "Fire breath (12 )"
+    ],
+    "items": [
+     "80% Fire gecko hide * 75% Gecko meat * 75% Gecko meat * 25% Gecko meat * 20% Fire gecko egg"
+    ]
+   },
+   {
+    "id": "legendary_fire_gecko",
+    "name": "Legendary fire gecko",
+    "group": "Legendary fire gecko",
+    "form_id": "00167efd",
+    "level": 25,
+    "perception": 8,
+    "hp": 385,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (115 )",
+     "Fire breath (23 )"
+    ],
+    "items": [
+     "80% Fire gecko hide * 75% Gecko meat * 75% Gecko meat * 25% Gecko meat * 20% Fire gecko egg"
+    ]
+   },
+   {
+    "id": "green_gecko",
+    "name": "Green gecko",
+    "group": "Green gecko",
+    "level": 12,
+    "perception": 8,
+    "hp": 225,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (75 )",
+     "Ranged (8 /sec for 10s)"
+    ],
+    "items": [
+     "Gecko meat * Green gecko egg * Green gecko hide"
+    ]
+   },
+   {
+    "id": "young_green_gecko",
+    "name": "Young green gecko",
+    "group": "Young green gecko",
+    "level": 13,
+    "perception": 6,
+    "hp": 115,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (55 )",
+     "Ranged (8 /sec for 10s)"
+    ],
+    "items": [
+     "Gecko meat * Green gecko egg * Green gecko hide"
+    ]
+   },
+   {
+    "id": "giant_green_gecko",
+    "name": "Giant green gecko",
+    "group": "Giant green gecko",
+    "level": 30,
+    "perception": 9,
+    "hp": 375,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (95 )",
+     "Ranged (8 /sec for 10s)"
+    ],
+    "items": [
+     "Gecko meat * Green gecko egg * Green gecko hide"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ghost_people",
+  "name": "Ghost people",
+  "dlc": "dead_money",
+  "source": "Ghost people",
+  "type": "creature",
+  "locations": [
+   "Sierra Madre"
+  ],
+  "variants": [
+   {
+    "id": "ghost_harvester",
+    "name": "Ghost harvester",
+    "group": "Ghost harvester",
+    "level": 5,
+    "xp": 10,
+    "perception": 0,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Throwing knife spear"
+    ],
+    "items": [
+     "Knife spear * 5 throwing knife spears"
+    ]
+   },
+   {
+    "id": "ghost_harvester_2",
+    "name": "Ghost harvester",
+    "group": "Ghost harvester",
+    "level": 15,
+    "xp": 50,
+    "perception": 0,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Throwing knife spear"
+    ],
+    "items": [
+     "Knife spear * 5 throwing knife spears"
+    ]
+   },
+   {
+    "id": "ghost_harvester_3",
+    "name": "Ghost harvester",
+    "group": "Ghost harvester",
+    "level": 25,
+    "xp": 50,
+    "perception": 0,
+    "hp": 150,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Throwing knife spear"
+    ],
+    "items": [
+     "Knife spear * 5 throwing knife spears"
+    ]
+   },
+   {
+    "id": "ghost_harvester_4",
+    "name": "Ghost harvester",
+    "group": "Ghost harvester",
+    "level": 35,
+    "xp": 50,
+    "perception": 0,
+    "hp": 250,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Throwing knife spear"
+    ],
+    "items": [
+     "Knife spear * 5 throwing knife spears"
+    ]
+   },
+   {
+    "id": "ghost_harvester_5",
+    "name": "Ghost harvester",
+    "group": "Ghost harvester",
+    "level": 45,
+    "xp": 50,
+    "perception": 0,
+    "hp": 350,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Throwing knife spear"
+    ],
+    "items": [
+     "Knife spear * 5 throwing knife spears"
+    ]
+   },
+   {
+    "id": "ghost_harvester_6",
+    "name": "Ghost harvester",
+    "group": "Ghost harvester",
+    "level": 55,
+    "xp": 50,
+    "perception": 0,
+    "hp": 450,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Throwing knife spear"
+    ],
+    "items": [
+     "Knife spear * 5 throwing knife spears"
+    ]
+   },
+   {
+    "id": "ghost_trapper",
+    "name": "Ghost trapper",
+    "group": "Ghost trapper",
+    "level": 5,
+    "xp": 10,
+    "perception": 0,
+    "hp": 75,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Bear trap fist"
+    ],
+    "items": [
+     "Bear trap fist"
+    ]
+   },
+   {
+    "id": "ghost_trapper_2",
+    "name": "Ghost trapper",
+    "group": "Ghost trapper",
+    "level": 15,
+    "xp": 50,
+    "perception": 0,
+    "hp": 150,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Bear trap fist"
+    ],
+    "items": [
+     "Bear trap fist"
+    ]
+   },
+   {
+    "id": "ghost_trapper_3",
+    "name": "Ghost trapper",
+    "group": "Ghost trapper",
+    "level": 25,
+    "xp": 50,
+    "perception": 0,
+    "hp": 225,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Bear trap fist"
+    ],
+    "items": [
+     "Bear trap fist"
+    ]
+   },
+   {
+    "id": "ghost_trapper_4",
+    "name": "Ghost trapper",
+    "group": "Ghost trapper",
+    "level": 35,
+    "xp": 50,
+    "perception": 0,
+    "hp": 375,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Bear trap fist"
+    ],
+    "items": [
+     "Bear trap fist"
+    ]
+   },
+   {
+    "id": "ghost_trapper_5",
+    "name": "Ghost trapper",
+    "group": "Ghost trapper",
+    "level": 45,
+    "xp": 50,
+    "perception": 0,
+    "hp": 525,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Bear trap fist"
+    ],
+    "items": [
+     "Bear trap fist"
+    ]
+   },
+   {
+    "id": "ghost_trapper_6",
+    "name": "Ghost trapper",
+    "group": "Ghost trapper",
+    "level": 55,
+    "xp": 50,
+    "perception": 0,
+    "hp": 675,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Bear trap fist"
+    ],
+    "items": [
+     "Bear trap fist"
+    ]
+   },
+   {
+    "id": "ghost_seeker",
+    "name": "Ghost seeker",
+    "group": "Ghost seeker",
+    "level": 5,
+    "xp": 10,
+    "perception": 0,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Gas bomb"
+    ],
+    "items": [
+     "Knife spear * Gas bomb"
+    ]
+   },
+   {
+    "id": "ghost_seeker_2",
+    "name": "Ghost seeker",
+    "group": "Ghost seeker",
+    "level": 15,
+    "xp": 50,
+    "perception": 0,
+    "hp": 100,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Gas bomb"
+    ],
+    "items": [
+     "Knife spear * Gas bomb"
+    ]
+   },
+   {
+    "id": "ghost_seeker_3",
+    "name": "Ghost seeker",
+    "group": "Ghost seeker",
+    "level": 25,
+    "xp": 50,
+    "perception": 0,
+    "hp": 150,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Gas bomb"
+    ],
+    "items": [
+     "Knife spear * Gas bomb"
+    ]
+   },
+   {
+    "id": "ghost_seeker_4",
+    "name": "Ghost seeker",
+    "group": "Ghost seeker",
+    "level": 35,
+    "xp": 50,
+    "perception": 0,
+    "hp": 250,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Gas bomb"
+    ],
+    "items": [
+     "Knife spear * Gas bomb"
+    ]
+   },
+   {
+    "id": "ghost_seeker_5",
+    "name": "Ghost seeker",
+    "group": "Ghost seeker",
+    "level": 45,
+    "xp": 50,
+    "perception": 0,
+    "hp": 350,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Gas bomb"
+    ],
+    "items": [
+     "Knife spear * Gas bomb"
+    ]
+   },
+   {
+    "id": "ghost_seeker_6",
+    "name": "Ghost seeker",
+    "group": "Ghost seeker",
+    "level": 55,
+    "xp": 50,
+    "perception": 0,
+    "hp": 450,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Knife spear",
+     "Gas bomb"
+    ],
+    "items": [
+     "Knife spear * Gas bomb"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "giant_ant",
+  "name": "Giant ant",
+  "dlc": "base",
+  "source": "Giant ant (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland"
+  ],
+  "variants": [
+   {
+    "id": "giant_soldier_ant",
+    "name": "Giant soldier ant",
+    "group": "Giant soldier ant",
+    "form_id": "0001cf80",
+    "level": 6,
+    "perception": 3,
+    "hp": 75,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (30 )"
+    ],
+    "items": [
+     "75% ant meat * 35% ant nectar * 20% ant egg"
+    ]
+   },
+   {
+    "id": "giant_soldier_ant_2aad",
+    "name": "Giant soldier ant",
+    "group": "Giant soldier ant",
+    "form_id": "00102aad",
+    "level": 6,
+    "perception": 4,
+    "hp": 150,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (24 )"
+    ],
+    "items": [
+     "75% ant meat * 35% ant nectar * 20% ant egg"
+    ]
+   },
+   {
+    "id": "giant_soldier_ant_c7be",
+    "name": "Giant soldier ant",
+    "group": "Giant soldier ant",
+    "form_id": "0015c7be",
+    "level": 8,
+    "perception": 3,
+    "hp": 75,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (30 )"
+    ],
+    "items": [
+     "75% ant meat * 35% ant nectar * 20% ant egg"
+    ]
+   },
+   {
+    "id": "giant_worker_ant",
+    "name": "Giant worker ant",
+    "group": "Giant worker ant",
+    "form_id": "00102aae",
+    "level": 2,
+    "perception": 3,
+    "hp": 30,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (7 )"
+    ],
+    "items": [
+     "75% ant meat * 25% ant nectar * 20% ant egg"
+    ]
+   },
+   {
+    "id": "giant_worker_ant_cf81",
+    "name": "Giant worker ant",
+    "group": "Giant worker ant",
+    "form_id": "0001cf81",
+    "level": 4,
+    "perception": 2,
+    "hp": 45,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )"
+    ],
+    "items": [
+     "75% ant meat * 25% ant nectar * 20% ant egg"
+    ]
+   },
+   {
+    "id": "giant_ant_queen",
+    "name": "Giant ant queen",
+    "group": "Giant ant queen",
+    "form_id": "0015e908",
+    "level": 17,
+    "perception": 5,
+    "hp": 450,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (55 )",
+     "Fire breath (8 + 2 for 5s) attacks per second (8)"
+    ],
+    "items": [
+     "20% ant egg * 8% ant queen pheromones"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "giant_mantis",
+  "name": "Giant mantis",
+  "dlc": "base",
+  "source": "Giant mantis (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Zion Canyon"
+  ],
+  "variants": [
+   {
+    "id": "giant_mantis",
+    "name": "Giant mantis",
+    "group": "Giant mantis",
+    "form_id": "000f3d53",
+    "level": 3,
+    "perception": 6,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "10% Mantis egg * 75% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_mantis_f412",
+    "name": "Giant mantis",
+    "group": "Giant mantis",
+    "form_id": "000ef412",
+    "level": 6,
+    "perception": 3,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (45 )"
+    ],
+    "items": [
+     "10% Mantis egg * 75% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_mantis_3d52",
+    "name": "Giant mantis",
+    "group": "Giant mantis",
+    "form_id": "000f3d52",
+    "level": 9,
+    "perception": 8,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "10% Mantis egg * 75% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_mantis_4401",
+    "name": "Giant mantis",
+    "group": "Giant mantis",
+    "form_id": "000f4401",
+    "level": 9,
+    "perception": 6,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "10% Mantis egg * 75% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_mantis_47e0",
+    "name": "Giant mantis",
+    "group": "Giant mantis",
+    "form_id": "001347e0",
+    "level": 9,
+    "perception": 3,
+    "hp": 60,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 4,
+    "attacks": [
+     "Melee (40 )"
+    ],
+    "items": [
+     "10% Mantis egg * 75% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_mantis_5b35",
+    "name": "Giant mantis",
+    "group": "Giant mantis",
+    "form_id": "00135b35",
+    "level": 9,
+    "perception": 3,
+    "hp": 60,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (40 )"
+    ],
+    "items": [
+     "none"
+    ]
+   },
+   {
+    "id": "giant_mantis_female",
+    "name": "Giant mantis female",
+    "group": "Giant mantis female",
+    "form_id": "000fc1d0",
+    "level": 9,
+    "perception": 6,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (40 )"
+    ],
+    "items": [
+     "75% Mantis egg * 10% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_mantis_nymph",
+    "name": "Giant mantis nymph",
+    "group": "Giant mantis nymph",
+    "form_id": "000ef411",
+    "level": 1,
+    "perception": 6,
+    "hp": 1,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (1 )"
+    ],
+    "items": [
+     "50% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_mantis_nymph_d584",
+    "name": "Giant mantis nymph",
+    "group": "Giant mantis nymph",
+    "form_id": "0011d584",
+    "level": 1,
+    "perception": 4,
+    "hp": 5,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (1 )"
+    ],
+    "items": [
+     "75% Mantis egg * 10% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_mantis_nymph_c653",
+    "name": "Giant mantis nymph",
+    "group": "Giant mantis nymph",
+    "form_id": "0015c653",
+    "level": 3,
+    "perception": 2,
+    "hp": 15,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (25 )"
+    ],
+    "items": [
+     "50% Mantis foreleg"
+    ]
+   },
+   {
+    "id": "zion_mantis",
+    "name": "Zion mantis",
+    "group": "Zion mantis",
+    "level": 12,
+    "perception": 5,
+    "hp": 70,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (65 )"
+    ],
+    "items": [
+     "Mantis foreleg"
+    ]
+   },
+   {
+    "id": "zion_mantis_nymph",
+    "name": "Zion mantis nymph",
+    "group": "Zion mantis nymph",
+    "level": 6,
+    "perception": 4,
+    "hp": 35,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee (45 )"
+    ],
+    "items": [
+     "Mantis foreleg"
+    ]
+   },
+   {
+    "id": "giant_zion_mantis",
+    "name": "Giant Zion mantis",
+    "group": "Giant Zion mantis",
+    "level": 20,
+    "perception": 6,
+    "hp": 120,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (110 )"
+    ],
+    "items": [
+     "Mantis foreleg"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "giant_rat",
+  "name": "Giant rat",
+  "dlc": "base",
+  "source": "Giant rat (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Guardian Peak",
+   "Broc flower cave",
+   "New Vegas sewers"
+  ],
+  "variants": [
+   {
+    "id": "giant_rat",
+    "name": "Giant rat",
+    "group": "Giant rat",
+    "form_id": "000e8e95",
+    "level": 2,
+    "perception": 4,
+    "hp": 24,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (15 )",
+     ""
+    ],
+    "items": [
+     "75% Giant rat meat * 25% Giant rat meat"
+    ]
+   },
+   {
+    "id": "giant_rat_40bc",
+    "name": "Giant rat",
+    "group": "Giant rat",
+    "form_id": "001040bc",
+    "level": 3,
+    "perception": 3,
+    "hp": 40,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )",
+     ""
+    ],
+    "items": [
+     "75% Giant rat meat * 25% Giant rat meat"
+    ]
+   },
+   {
+    "id": "giant_rat_283e",
+    "name": "Giant rat",
+    "group": "Giant rat",
+    "form_id": "0017283e",
+    "level": 12,
+    "perception": 7,
+    "hp": 125,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (50 )",
+     ""
+    ],
+    "items": [
+     "75% Giant rat meat * 25% Giant rat meat"
+    ]
+   },
+   {
+    "id": "giant_rat_pup",
+    "name": "Giant rat pup",
+    "group": "Giant rat pup",
+    "form_id": "0014f480",
+    "level": 1,
+    "perception": 2,
+    "hp": 12,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 1,
+    "assistance": 1,
+    "attacks": [
+     "Melee (7 )",
+     ""
+    ],
+    "items": [
+     "50% Giant rat meat"
+    ]
+   },
+   {
+    "id": "rodent_of_unusual_size",
+    "name": "Rodent of unusual size",
+    "group": "Rodent of unusual size",
+    "form_id": "00162b3d",
+    "level": 12,
+    "perception": 5,
+    "hp": 125,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (50 )"
+    ],
+    "items": [
+     "75% Giant rat meat * 25% Giant rat meat"
+    ]
+   },
+   {
+    "id": "unnaturally_large_sized_rodent",
+    "name": "Unnaturally large sized rodent",
+    "group": "Unnaturally large sized rodent",
+    "form_id": "00154454",
+    "level": 6,
+    "perception": 6,
+    "hp": 70,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (35 )"
+    ],
+    "items": [
+     "75% Giant rat meat * 25% Giant rat meat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lakelurk",
+  "name": "Lakelurk",
+  "dlc": "base",
+  "source": "Lakelurk",
+  "type": "creature",
+  "locations": [
+   "Colorado River",
+   "Lake Mead",
+   "Camp Guardian cave",
+   "Ruby Hill Mine"
+  ],
+  "variants": [
+   {
+    "id": "lakelurk",
+    "name": "Lakelurk",
+    "group": "Lakelurk",
+    "form_id": "00156784",
+    "level": 13,
+    "perception": 7,
+    "hp": 150,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (40 )",
+     "Shriek (110 -10 )"
+    ],
+    "items": [
+     "10% Lakelurk meat"
+    ]
+   },
+   {
+    "id": "lakelurk_5edb",
+    "name": "Lakelurk",
+    "group": "Lakelurk",
+    "form_id": "00145edb",
+    "level": 15,
+    "perception": 7,
+    "hp": 200,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (55 )",
+     "Shriek (110 -10 )"
+    ],
+    "items": [
+     "100% Lakelurk meat"
+    ]
+   },
+   {
+    "id": "alpha_male_lakelurk",
+    "name": "Alpha male lakelurk",
+    "group": "Alpha male lakelurk",
+    "form_id": "0014f44c",
+    "level": 12,
+    "perception": 7,
+    "hp": 375,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (80 )",
+     "Shriek (110 -10 )"
+    ],
+    "items": [
+     "10% Lakelurk meat"
+    ]
+   },
+   {
+    "id": "lakelurk_king",
+    "name": "Lakelurk king",
+    "group": "Lakelurk king",
+    "form_id": "00145eda",
+    "level": 18,
+    "perception": 8,
+    "hp": 300,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (70 )",
+     "Shriek (110 -10 )"
+    ],
+    "items": [
+     "10% Lakelurk meat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "marked_men",
+  "name": "Marked men",
+  "dlc": "lonesome_road",
+  "source": "Marked men",
+  "type": "creature",
+  "locations": [
+   "The Divide",
+   "Dry Wells",
+   "Long 15"
+  ],
+  "variants": [
+   {
+    "id": "marked_men_hunter",
+    "name": "Marked men hunter",
+    "group": "Marked men hunter",
+    "level": 1,
+    "perception": 7,
+    "hp": 130,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     "Ranged"
+    ],
+    "items": [
+     "Marked trooper armor, marked scout armor, trooper helmet, goggles helmet, veteran helmet, veteran decanus helmet * Arc welder, trail carbine, assault carbine, sniper rifle, laser rifle (level 1) * Anti-materiel rifle, brush gun, marksman carbine, tri-beam laser rifle (level 30-40)"
+    ]
+   },
+   {
+    "id": "marked_men_marauder",
+    "name": "Marked men marauder",
+    "group": "Marked men marauder",
+    "level": 1,
+    "perception": 6,
+    "hp": 138,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (3 )",
+     "Ranged"
+    ],
+    "items": [
+     "Marked tribal armor, marked patrol armor, trooper helmet, goggles helmet, veteran helmet, veteran decanus helmet * Missile launcher, light machine gun (level 1) * Minigun, heavy incinerator, Gatling laser, plasma caster (level 30-40)"
+    ]
+   },
+   {
+    "id": "marked_men_ravager",
+    "name": "Marked men ravager",
+    "group": "Marked men ravager",
+    "level": 1,
+    "perception": 5,
+    "hp": 145,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (4 )",
+     "Ranged"
+    ],
+    "items": [
+     "Marked trooper armor, marked scout armor, trooper helmet, goggles helmet, veteran helmet, veteran decanus helmet * Incendary grenade, Blade of the West, fire axe, Shishkebab (level 1) * Super sledge, thermic lance (level > 30)"
+    ]
+   },
+   {
+    "id": "marked_men_scout",
+    "name": "Marked men scout",
+    "group": "Marked men scout",
+    "level": 1,
+    "perception": 6,
+    "hp": 130,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     "Ranged"
+    ],
+    "items": [
+     "Marked trooper armor, marked scout armor, trooper helmet, goggles helmet, veteran helmet, veteran decanus helmet * Frag grenade, flare gun, 12.7mm pistol, hunting shotgun, hunting revolver, Plasma Defender, Bowie knife (level 30) * + 12.7mm submachine gun and riot shotgun (level 40)"
+    ]
+   },
+   {
+    "id": "irradiated_marked_men_hunter",
+    "name": "Irradiated marked men hunter",
+    "group": "Irradiated marked men hunter",
+    "level": 50,
+    "xp": 50,
+    "perception": 7,
+    "hp": 520,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     "Ranged"
+    ],
+    "items": [
+     "Marked trooper armor, marked scout armor, trooper helmet, goggles helmet, veteran helmet, veteran decanus helmet * Arc welder, trail carbine, assault carbine, sniper rifle, laser rifle (level 1) * Anti-materiel rifle, brush gun, marksman carbine, Tri-beam laser rifle (level 30-40)"
+    ]
+   },
+   {
+    "id": "irradiated_marked_men_marauder",
+    "name": "Irradiated marked men marauder",
+    "group": "Irradiated marked men marauder",
+    "level": 50,
+    "xp": 50,
+    "perception": 6,
+    "hp": 520,
+    "dt": 11,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (3 )",
+     "Ranged"
+    ],
+    "items": [
+     "Marked tribal armor, marked patrol armor, trooper helmet, goggles helmet, veteran helmet, veteran decanus helmet * Missile launcher, light machine gun (level 1) * Minigun, heavy incinerator, Gatling laser, plasma caster (level 30-40)"
+    ]
+   },
+   {
+    "id": "irradiated_marked_men_ravager",
+    "name": "Irradiated marked men ravager",
+    "group": "Irradiated marked men ravager",
+    "level": 50,
+    "xp": 50,
+    "perception": 5,
+    "hp": 525,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (4 )",
+     "Ranged"
+    ],
+    "items": [
+     "Marked trooper armor, marked scout armor, trooper helmet, goggles helmet, veteran helmet, veteran decanus helmet * Incendary grenade, Blade of the West, fire axe, Shishkebab (level 1) * Super sledge, thermic lance (level > 30)"
+    ]
+   },
+   {
+    "id": "irradiated_marked_men_scout",
+    "name": "Irradiated marked men scout",
+    "group": "Irradiated marked men scout",
+    "level": 50,
+    "xp": 50,
+    "perception": 6,
+    "hp": 520,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (2 )",
+     "ranged"
+    ],
+    "items": [
+     "Marked trooper armor, marked scout armor, trooper helmet, goggles helmet, veteran helmet, veteran decanus helmet * Frag grenade, flare gun, 12.7mm pistol, hunting shotgun, hunting revolver, Plasma Defender, Bowie knife (level 30) * + 12.7mm submachine gun and riot shotgun (level 40)"
+    ]
+   },
+   {
+    "id": "irradiated_heavy_trooper",
+    "name": "Irradiated heavy trooper",
+    "group": "Irradiated heavy trooper",
+    "form_id": "0000000c",
+    "level": 50,
+    "perception": 10,
+    "hp": 640,
+    "dt": 5,
+    "dr": 10,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (5"
+    ],
+    "items": [
+     "NCR salvaged power armor, Salvaged power helmet * Combat knife, and heavy incinerator or minigun with 5mm AP rounds or plasma caster with MFC OC cells or Gatling laser with ECP OC cells * NCR dollars"
+    ]
+   },
+   {
+    "id": "irradiated_legion_explorer",
+    "name": "Irradiated Legion explorer",
+    "group": "Irradiated Legion explorer",
+    "form_id": "0000000e",
+    "level": 50,
+    "perception": 8,
+    "hp": 620,
+    "dt": 5,
+    "dr": 10,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (3",
+     "Ranged"
+    ],
+    "items": [
+     "Legion explorer armor, Explorer hood * Bowie knife, frag grenade (melee) * Sniper rifle, machete (ranged) * Stealth Boy"
+    ]
+   },
+   {
+    "id": "irradiated_legionary_prime",
+    "name": "Irradiated legionary prime",
+    "group": "Irradiated legionary prime",
+    "level": 50,
+    "perception": 5,
+    "hp": 610,
+    "dt": 10,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (3"
+    ],
+    "items": [
+     "Legion prime armor, prime helmet * Super sledge, thermic lance, chainsaw, Shishkebab, fire axe * Legion denarius"
+    ]
+   },
+   {
+    "id": "irradiated_legionary_veteran",
+    "name": "Irradiated legionary veteran",
+    "group": "Irradiated legionary veteran",
+    "level": 50,
+    "perception": 5,
+    "hp": 610,
+    "dt": 13,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (3"
+    ],
+    "items": [
+     "Legion veteran armor, veteran helmet * Machete, anti-materiel rifle, brush gun, Marksman carbine * Legion denarius"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mole_rat",
+  "name": "Mole rat",
+  "dlc": "base",
+  "source": "Mole rat (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "The Divide"
+  ],
+  "variants": [
+   {
+    "id": "mole_rat",
+    "name": "Mole rat",
+    "group": "Mole rat",
+    "form_id": "0001cf9f",
+    "level": 4,
+    "perception": 2,
+    "hp": 35,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 2,
+    "assistance": 1,
+    "attacks": [
+     "Melee (20 )"
+    ],
+    "items": [
+     "mole rat meat"
+    ]
+   },
+   {
+    "id": "mole_rat_pup",
+    "name": "Mole rat pup",
+    "group": "Mole rat pup",
+    "form_id": "0014f481",
+    "level": 2,
+    "perception": 1,
+    "hp": 18,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 1,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )"
+    ],
+    "items": [
+     "mole rat meat"
+    ]
+   },
+   {
+    "id": "mole_rat_corpse",
+    "name": "Mole rat corpse",
+    "group": "Mole rat corpse",
+    "form_id": "000a3d15",
+    "level": 1,
+    "perception": 3,
+    "hp": 0,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 2,
+    "attacks": [
+     "Melee (19 )"
+    ],
+    "items": [
+     "mole rat meat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "night_stalker",
+  "name": "Night stalker",
+  "dlc": "base",
+  "source": "Night stalker",
+  "type": "creature",
+  "locations": [
+   "Baja",
+   "Mojave Wasteland",
+   "Big MT"
+  ],
+  "variants": [
+   {
+    "id": "night_stalker",
+    "name": "Night stalker",
+    "group": "Night stalker",
+    "form_id": "00156788",
+    "level": 15,
+    "perception": 9,
+    "hp": 110,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (70 )",
+     "Nightstalker poison (5 /sec, -2 END for 60 seconds)"
+    ],
+    "items": [
+     "50% nightstalker blood * 25% nightstalker blood * 25% nightstalker egg * 50% nightstalker tail"
+    ]
+   },
+   {
+    "id": "night_stalker_jacobstown",
+    "name": "Night stalker (Jacobstown)",
+    "group": "Night stalker",
+    "form_id": "00144bc4",
+    "level": 16,
+    "perception": 8,
+    "hp": 120,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (70 )",
+     "Nightstalker poison (5 /sec, -2 END for 60 seconds)"
+    ],
+    "items": [
+     "50% nightstalker blood * 25% nightstalker blood * 25% nightstalker egg * 50% nightstalker tail"
+    ]
+   },
+   {
+    "id": "night_stalker_pit_fighter",
+    "name": "Night stalker (pit fighter)",
+    "group": "Night stalker",
+    "form_id": "00144bc4",
+    "level": 15,
+    "perception": 9,
+    "hp": 120,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (70 )",
+     "None"
+    ],
+    "items": [
+     "75% dog meat * 25% dog meat * 50% dog hide"
+    ]
+   },
+   {
+    "id": "young_night_stalker",
+    "name": "Young night stalker",
+    "group": "Young night stalker",
+    "form_id": "0014f476",
+    "level": 9,
+    "perception": 8,
+    "hp": 70,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 1,
+    "attacks": [
+     "Melee (45 )",
+     "Nightstalker poison (5 /sec, -2 END for 60 seconds)"
+    ],
+    "items": [
+     "50% nightstalker blood * 25% nightstalker blood * 25% nightstalker egg * 50% nightstalker tail"
+    ]
+   },
+   {
+    "id": "young_night_stalker_89d8",
+    "name": "Young night stalker",
+    "group": "Young night stalker",
+    "form_id": "001689d8",
+    "level": 9,
+    "perception": 8,
+    "hp": 70,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (45 )",
+     "Nightstalker poison (5 /sec, -2 END for 60 seconds)"
+    ],
+    "items": [
+     "50% nightstalker blood * 25% nightstalker blood * 25% nightstalker egg * 50% nightstalker tail"
+    ]
+   },
+   {
+    "id": "legendary_night_stalker",
+    "name": "Legendary night stalker",
+    "group": "Legendary night stalker",
+    "form_id": "00167efe",
+    "level": 15,
+    "perception": 10,
+    "hp": 250,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (100 )",
+     "Nightstalker poison (5 /sec, -2 END for 60 seconds)"
+    ],
+    "items": [
+     "50% nightstalker blood * 25% nightstalker blood * 25% nightstalker egg * 50% nightstalker tail"
+    ]
+   },
+   {
+    "id": "den_mother",
+    "name": "Den mother",
+    "group": "Den mother",
+    "form_id": "001532ff",
+    "level": 18,
+    "perception": 9,
+    "hp": 170,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (85 )",
+     "Nightstalker poison (5 /sec, -2 END for 60 seconds)"
+    ],
+    "items": [
+     "50% nightstalker blood * 25% nightstalker blood * 25% nightstalker egg * 50% nightstalker tail"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "radroach",
+  "name": "Radroach",
+  "dlc": "base",
+  "source": "Radroach (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Sierra Madre"
+  ],
+  "variants": [
+   {
+    "id": "radroach",
+    "name": "Radroach",
+    "group": "Radroach",
+    "level": 1,
+    "perception": 3,
+    "hp": 12,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 1,
+    "assistance": 0,
+    "attacks": [
+     "Melee (5 )"
+    ],
+    "items": [
+     "Radroach meat"
+    ]
+   },
+   {
+    "id": "irradiated_radroach",
+    "name": "Irradiated radroach",
+    "group": "Irradiated radroach",
+    "level": 5,
+    "perception": 3,
+    "hp": 12,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 1,
+    "assistance": 0,
+    "attacks": [
+     "Melee (10 )"
+    ],
+    "items": [
+     "Radroach meat (irradiated)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "radscorpion",
+  "name": "Radscorpion",
+  "dlc": "base",
+  "source": "Radscorpion (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland"
+  ],
+  "variants": [
+   {
+    "id": "radscorpion",
+    "name": "Radscorpion",
+    "group": "Radscorpion",
+    "form_id": "00135ba0",
+    "level": 6,
+    "perception": 4,
+    "hp": 75,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (20 + 3 /sec for 5s)",
+     "Radscorpion poison (3 /sec 5)"
+    ],
+    "items": [
+     "75% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "radscorpion_5e75",
+    "name": "Radscorpion",
+    "group": "Radscorpion",
+    "form_id": "00145e75",
+    "level": 6,
+    "perception": 4,
+    "hp": 80,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (22 + 3 /sec for 5s)",
+     "Radscorpion poison (3 /sec 5)"
+    ],
+    "items": [
+     "75% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "radscorpion_5b9c",
+    "name": "Radscorpion",
+    "group": "Radscorpion",
+    "form_id": "00135b9c",
+    "level": 6,
+    "perception": 4,
+    "hp": 85,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (24 + 3 /sec for 5s)",
+     "Radscorpion poison (3 /sec 5)"
+    ],
+    "items": [
+     "75% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "radscorpion_5ba5",
+    "name": "Radscorpion",
+    "group": "Radscorpion",
+    "form_id": "00135ba5",
+    "level": 8,
+    "perception": 4,
+    "hp": 70,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 3,
+    "attacks": [
+     "Melee (32 + 3 /sec for 5s)",
+     "Radscorpion poison (3 /sec 5)"
+    ],
+    "items": [
+     "75% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "radscorpion_cf9e",
+    "name": "Radscorpion",
+    "group": "Radscorpion",
+    "form_id": "0001cf9e",
+    "level": 8,
+    "perception": 4,
+    "hp": 70,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (35 + 3 /sec for 5s)",
+     "Radscorpion poison (3 /sec 5)"
+    ],
+    "items": [
+     "75% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "radscorpion_7e8b",
+    "name": "Radscorpion",
+    "group": "Radscorpion",
+    "form_id": "00167e8b",
+    "level": 8,
+    "perception": 4,
+    "hp": 75,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (35 + 3 /sec for 5s)",
+     "Radscorpion poison (3 /sec 5)"
+    ],
+    "items": [
+     "75% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "small_radscorpion",
+    "name": "Small radscorpion",
+    "group": "Small radscorpion",
+    "form_id": "00167e64",
+    "level": 3,
+    "perception": 3,
+    "hp": 20,
+    "dt": 5,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 3,
+    "assistance": 2,
+    "attacks": [
+     "Melee (20 + 3 /sec for 5s)"
+    ],
+    "items": [
+     "75% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "giant_radscorpion",
+    "name": "Giant radscorpion",
+    "group": "Giant radscorpion",
+    "form_id": "00135bcf",
+    "level": 9,
+    "perception": 6,
+    "hp": 130,
+    "dt": 18,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (60 + 8 /sec for 10s)"
+    ],
+    "items": [
+     "100% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "giant_radscorpion_5e76",
+    "name": "Giant radscorpion",
+    "group": "Giant radscorpion",
+    "form_id": "00145e76",
+    "level": 9,
+    "perception": 6,
+    "hp": 150,
+    "dt": 18,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (60 + 8 /sec for 10s)"
+    ],
+    "items": [
+     "100% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "giant_radscorpion_7ea6",
+    "name": "Giant radscorpion",
+    "group": "Giant radscorpion",
+    "form_id": "00167ea6",
+    "level": 15,
+    "perception": 6,
+    "hp": 150,
+    "dt": 18,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (60 + 8 /sec for 10s)"
+    ],
+    "items": [
+     "100% Radscorpion poison gland"
+    ]
+   },
+   {
+    "id": "radscorpion_queen",
+    "name": "Radscorpion queen",
+    "group": "Radscorpion queen",
+    "form_id": "0013fe86",
+    "level": 9,
+    "perception": 6,
+    "hp": 200,
+    "dt": 18,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (60 + 8 /sec for 10s)"
+    ],
+    "items": [
+     "100% Radscorpion poison gland"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "raven",
+  "name": "Raven",
+  "dlc": "base",
+  "source": "Raven",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland"
+  ],
+  "variants": [
+   {
+    "id": "raven",
+    "name": "Raven",
+    "group": "Raven",
+    "form_id": "00140db0",
+    "level": 1,
+    "perception": 1,
+    "hp": 6,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (15 )",
+     ""
+    ],
+    "items": [
+     "None"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "spore_carrier",
+  "name": "Spore carrier",
+  "dlc": "base",
+  "source": "Spore carrier",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Vault 22",
+   "Zion Canyon",
+   "Big MT"
+  ],
+  "variants": [
+   {
+    "id": "spore_carrier",
+    "name": "Spore carrier",
+    "group": "Spore carrier",
+    "form_id": "000e5860",
+    "level": 6,
+    "perception": 4,
+    "hp": 75,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (25 )",
+     "Spore carrier burst (100 )"
+    ],
+    "items": [
+     "None"
+    ]
+   },
+   {
+    "id": "spore_carrier_brute",
+    "name": "Spore carrier brute",
+    "group": "Spore carrier brute",
+    "form_id": "000e5861",
+    "level": 9,
+    "perception": 5,
+    "hp": 125,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (32 )",
+     "Spore carrier burst (100 )"
+    ],
+    "items": [
+     "None"
+    ]
+   },
+   {
+    "id": "spore_carrier_runt",
+    "name": "Spore carrier runt",
+    "group": "Spore carrier runt",
+    "form_id": "000e585f",
+    "level": 3,
+    "perception": 3,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (10 )",
+     "Spore carrier burst (100 )"
+    ],
+    "items": [
+     "None"
+    ]
+   },
+   {
+    "id": "spore_carrier_savage",
+    "name": "Spore carrier savage",
+    "group": "Spore carrier savage",
+    "form_id": "000fe034",
+    "level": 12,
+    "perception": 6,
+    "hp": 175,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (50 )",
+     "Spore carrier burst (100 )"
+    ],
+    "items": [
+     "None"
+    ]
+   },
+   {
+    "id": "spore_carrier_beast",
+    "name": "Spore carrier beast",
+    "group": "Spore carrier beast",
+    "level": 22,
+    "perception": 7,
+    "hp": 300,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (100 )",
+     "Spore carrier burst (100 )"
+    ],
+    "items": [
+     "Spore carrier sap"
+    ]
+   },
+   {
+    "id": "spore_carrier_scavenger",
+    "name": "Spore carrier scavenger",
+    "group": "Spore carrier scavenger",
+    "level": 45,
+    "perception": 6,
+    "hp": 250,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 3,
+    "assistance": 0,
+    "attacks": [
+     "Melee (50)",
+     "Spore carrier burst (100)"
+    ],
+    "items": [
+     "None"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "spore_plant",
+  "name": "Spore plant",
+  "dlc": "base",
+  "source": "Spore plant (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Mojave Wasteland",
+   "Zion Canyon",
+   "Big MT"
+  ],
+  "variants": [
+   {
+    "id": "spore_plant",
+    "name": "Spore plant",
+    "group": "Spore plant",
+    "form_id": "000fe036",
+    "level": 2,
+    "perception": 10,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (1 )",
+     "Spore spit (15 )"
+    ],
+    "items": [
+     "None"
+    ]
+   },
+   {
+    "id": "giant_spore_plant",
+    "name": "Giant spore plant",
+    "group": "Giant spore plant",
+    "level": 15,
+    "perception": 8,
+    "hp": 180,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (1 )",
+     "Spore spit (60 )"
+    ],
+    "items": [
+     "Spore plant pods"
+    ]
+   },
+   {
+    "id": "dionaea_muscipula",
+    "name": "Dionaea Muscipula",
+    "group": "Dionaea Muscipula (Old World Blues)",
+    "level": 50,
+    "perception": 6,
+    "hp": 675,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (1 )",
+     "Spore spit (100 )"
+    ],
+    "items": [
+     "Corrosive glove * Spore plant pods"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "stripe",
+  "name": "Stripe",
+  "dlc": "base",
+  "source": "Stripe",
+  "variants": [
+   {
+    "id": "stripe",
+    "name": "Stripe",
+    "group": "Stats",
+    "level": 30,
+    "perception": 10,
+    "hp": 850,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (250 )",
+     ""
+    ],
+    "items": [
+     "Egg timer * Deathclaw hand * Junk food"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "super_mutant",
+  "name": "Super mutant",
+  "dlc": "base",
+  "source": "Super mutant (Fallout: New Vegas)",
+  "type": "creature",
+  "locations": [
+   "Black Rock Cave",
+   "Black Mountain",
+   "Jack Rabbit Springs",
+   "Jacobstown",
+   "Novac",
+   "Nopah Cave",
+   "REPCONN test site",
+   "Ruby Hill Mine"
+  ],
+  "variants": [
+   {
+    "id": "super_mutant_default",
+    "name": "Super mutant (default)",
+    "group": "Super mutant",
+    "form_id": "0003a147",
+    "level": 6,
+    "xp": 10,
+    "perception": 3,
+    "hp": 100,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (4 )",
+     ""
+    ],
+    "items": [
+     "Hunting rifle * Nail board * Frag grenades"
+    ]
+   },
+   {
+    "id": "super_mutant_jacobstown",
+    "name": "Super mutant (Jacobstown)",
+    "group": "Super mutant",
+    "form_id": "0013aacf",
+    "level": 20,
+    "xp": 50,
+    "perception": 3,
+    "hp": 200,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (4 )",
+     ""
+    ],
+    "items": [
+     "Hunting rifle * Nail board * Sledgehammer * Rebar club"
+    ]
+   },
+   {
+    "id": "super_mutant_brute_default",
+    "name": "Super mutant brute (default)",
+    "group": "Super mutant brute",
+    "form_id": "00027fb3",
+    "level": 9,
+    "xp": 25,
+    "perception": 5,
+    "hp": 250,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (5 )",
+     ""
+    ],
+    "items": [
+     "Assault carbine * Incinerator * Minigun * Missile launcher * Sledgehammer * Frag grenade"
+    ]
+   },
+   {
+    "id": "super_mutant_brute_ruby_hill_mine",
+    "name": "Super mutant brute (Ruby Hill Mine)",
+    "group": "Super mutant brute",
+    "form_id": "0017af62",
+    "level": 1,
+    "xp": 1,
+    "perception": 5,
+    "hp": 0,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 0,
+    "confidence": 4,
+    "assistance": 0,
+    "attacks": [
+     "Melee (5 )",
+     ""
+    ],
+    "items": [
+     "Multiplas rifle * Rebar club * Frag grenade * Sledgehammer"
+    ]
+   },
+   {
+    "id": "super_mutant_master_default",
+    "name": "Super mutant master (default)",
+    "group": "Super mutant master",
+    "form_id": "00092c4d",
+    "level": 12,
+    "xp": 50,
+    "perception": 6,
+    "hp": 360,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (6 )",
+     ""
+    ],
+    "items": [
+     "Light machine gun * Heavy incinerator * Minigun * Missile launcher * Super sledge * Frag grenade"
+    ]
+   },
+   {
+    "id": "super_mutant_master_jacobstown_nopah_cave",
+    "name": "Super mutant master (Jacobstown, Nopah cave)",
+    "group": "Super mutant master",
+    "form_id": "0017af3f",
+    "level": 12,
+    "xp": 50,
+    "perception": 6,
+    "hp": 0,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (6 )",
+     ""
+    ],
+    "items": [
+     "Fat Man"
+    ]
+   },
+   {
+    "id": "super_mutant_master_jacobstown",
+    "name": "Super mutant master (Jacobstown)",
+    "group": "Super mutant master",
+    "form_id": "00164eca",
+    "level": 20,
+    "xp": 50,
+    "perception": 3,
+    "hp": 200,
+    "dt": 15,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (6 )",
+     ""
+    ],
+    "items": [
+     "Hunting rifle"
+    ]
+   },
+   {
+    "id": "nightkin",
+    "name": "Nightkin",
+    "group": "Nightkin",
+    "form_id": "0007ea2a",
+    "level": 9,
+    "xp": 25,
+    "perception": 5,
+    "hp": 250,
+    "dt": 0,
+    "dr": 30,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (4 )",
+     ""
+    ],
+    "items": [
+     "Hunting rifle * Assault carbine * Incinerator * Rebar club * Bumper sword * Frag grenades"
+    ]
+   },
+   {
+    "id": "nightkin_jacobstown",
+    "name": "Nightkin (Jacobstown)",
+    "group": "Nightkin",
+    "form_id": "0013afdc",
+    "level": 6,
+    "xp": 10,
+    "perception": 3,
+    "hp": 175,
+    "dt": 0,
+    "dr": 30,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (4 )",
+     ""
+    ],
+    "items": [
+     "None"
+    ]
+   },
+   {
+    "id": "nightkin_jailer",
+    "name": "Nightkin jailer",
+    "group": "Nightkin jailer",
+    "form_id": "000bac89",
+    "level": 1,
+    "xp": 1,
+    "perception": 5,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (0 )",
+     ""
+    ],
+    "items": [
+     "Incinerator * Rebar club * Stealth Boy * Jail key"
+    ]
+   },
+   {
+    "id": "nightkin_master",
+    "name": "Nightkin master",
+    "group": "Nightkin master",
+    "form_id": "0007ea2c",
+    "level": 12,
+    "xp": 50,
+    "perception": 6,
+    "hp": 360,
+    "dt": 0,
+    "dr": 30,
+    "aggression": 1,
+    "confidence": 4,
+    "assistance": 2,
+    "attacks": [
+     "Melee (6 )",
+     ""
+    ],
+    "items": [
+     "Light machine gun * Minigun * Heavy incinerator * Sledgehammer * Frag grenades"
+    ]
+   },
+   {
+    "id": "nightkin_sniper",
+    "name": "Nightkin sniper",
+    "group": "Nightkin sniper",
+    "form_id": "000e794e",
+    "level": 14,
+    "xp": 50,
+    "perception": 5,
+    "hp": 140,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 1,
+    "confidence": 2,
+    "assistance": 0,
+    "attacks": [
+     "Melee (0 )",
+     ""
+    ],
+    "items": [
+     "Annabelle * Hunting rifle * .308 rounds"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tunneler",
+  "name": "Tunneler",
+  "dlc": "lonesome_road",
+  "source": "Tunneler",
+  "type": "creature",
+  "locations": [
+   "Collapsed overpass tunnel entrance",
+   "Cave of the Abaddon"
+  ],
+  "variants": [
+   {
+    "id": "tunneler",
+    "name": "Tunneler",
+    "group": "Tunneler",
+    "level": 20,
+    "perception": 3,
+    "hp": 75,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (25 )",
+     ""
+    ],
+    "items": [
+     "Junk items * Tunneler hide"
+    ]
+   },
+   {
+    "id": "hulking_tunneler",
+    "name": "Hulking tunneler",
+    "group": "Hulking tunneler",
+    "level": 20,
+    "perception": 3,
+    "hp": 125,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (35 )",
+     ""
+    ],
+    "items": [
+     "Junk items * Tunneler hide"
+    ]
+   },
+   {
+    "id": "venomous_tunneler",
+    "name": "Venomous tunneler",
+    "group": "Venomous tunneler",
+    "level": 20,
+    "perception": 3,
+    "hp": 50,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (15 )",
+     ""
+    ],
+    "items": [
+     "Junk items * Tunneler hide"
+    ]
+   },
+   {
+    "id": "tunneler_queen",
+    "name": "Tunneler queen",
+    "group": "Tunneler queen",
+    "level": 45,
+    "perception": 3,
+    "hp": 475,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (175 )",
+     ""
+    ],
+    "items": [
+     "Junk items * Tunneler hide"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yao_guai",
+  "name": "Yao guai",
+  "dlc": "honest_hearts",
+  "source": "Yao guai (Honest Hearts)",
+  "type": "creature",
+  "locations": [
+   "Zion Canyon"
+  ],
+  "variants": [
+   {
+    "id": "yao_guai",
+    "name": "Yao guai",
+    "group": "Yao guai",
+    "level": 18,
+    "perception": 6,
+    "hp": 215,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (70 )",
+     ""
+    ],
+    "items": [
+     "Yao guai meat"
+    ]
+   },
+   {
+    "id": "yao_guai_2",
+    "name": "Yao guai",
+    "group": "Yao guai",
+    "level": 22,
+    "perception": 7,
+    "hp": 300,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (85 )",
+     ""
+    ],
+    "items": [
+     "Yao guai meat"
+    ]
+   },
+   {
+    "id": "yao_guai_cub",
+    "name": "Yao guai cub",
+    "group": "Yao guai cub",
+    "level": 5,
+    "perception": 4,
+    "hp": 65,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (25 )",
+     ""
+    ],
+    "items": [
+     "Yao guai meat"
+    ]
+   },
+   {
+    "id": "yao_guai_cub_2",
+    "name": "Yao guai cub",
+    "group": "Yao guai cub",
+    "level": 10,
+    "perception": 5,
+    "hp": 105,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (45 )",
+     ""
+    ],
+    "items": [
+     "Yao guai meat"
+    ]
+   },
+   {
+    "id": "yao_guai_cub_3",
+    "name": "Yao guai cub",
+    "group": "Yao guai cub",
+    "level": 14,
+    "perception": 5,
+    "hp": 145,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (60 )",
+     ""
+    ],
+    "items": [
+     "Yao guai meat"
+    ]
+   },
+   {
+    "id": "yao_guai_3",
+    "name": "Yao guai",
+    "group": "Giant yao guai",
+    "level": 16,
+    "perception": 2,
+    "hp": 300,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (60 )",
+     ""
+    ],
+    "items": [
+     "Yao guai meat"
+    ]
+   },
+   {
+    "id": "yao_guai_4",
+    "name": "Yao guai",
+    "group": "Giant yao guai",
+    "level": 32,
+    "perception": 8,
+    "hp": 475,
+    "dt": 0,
+    "dr": 0,
+    "aggression": 2,
+    "confidence": 4,
+    "assistance": 1,
+    "attacks": [
+     "Melee (120 )",
+     ""
+    ],
+    "items": [
+     "Yao guai meat"
+    ]
+   }
+  ]
+ }
+]

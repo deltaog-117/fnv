@@ -1,0 +1,42 @@
+{
+ "page": "NVProspectorMerchantPrimmDen.txt",
+ "speaker": "prospector merchant",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey there. Need anything?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VES09BoulderCityTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. Here's what I've got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to see your wares."
+  },
+  {
+   "id": "VES09BoulderCityTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stay safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

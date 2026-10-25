@@ -1,0 +1,115 @@
+{
+ "page": "RSFoxtrotKudlow.txt",
+ "speaker": "Ranger Kudlow",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} No run-ins with the Great Khans, I hope? They've been more restless than usual.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player not in NCR gear} This area isn't safe for civilians. You don't want to get caught by the Great Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMSRSFoxtrotQuestTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keeping watch on the Great Khans mostly. They usually stick around Red Rock Canyon, but at least one large group left recently.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We called it in, but haven't heard anything about any Great Khan incidents. Whatever they're doing, they're keeping a low profile.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you doing out here?"
+  },
+  {
+   "id": "vDialogueRangerStationFoxtrotRSFoxtrotKudlowTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be careful out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueRangerStationFoxtrotRSFoxtrotKudlowTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You must be mistaken - I haven't filed any report like that. Trained deathclaws? I would have remembered that.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "If someone is saying I filed that report, that's a load of crap. I won't have my name attached to a clerical error.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I need to confirm your report about Great Khans with trained Deathclaws."
+  },
+  {
+   "id": "vDialogueRangerStationFoxtrotRSFoxtrotKudlowTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Tough, independent, and as ruthless as they come. They're holed up in Red Rock Canyon, and it's this station's job to keep an eye on them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about the Great Khans?"
+  },
+  {
+   "id": "vDialogueRangerStationFoxtrotRSFoxtrotKudlowTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, it's a damn shame. There was a lot of talk about expelling her from the Rangers, especially once the gambling and drinking started.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Being posted here is her second and last chance, and so far, I'm not impressed. Lenk's jumpy all the time, and the others are sick of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Lenk told me her story."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Be careful out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

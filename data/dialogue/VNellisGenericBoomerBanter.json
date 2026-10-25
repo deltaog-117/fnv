@@ -1,0 +1,902 @@
+{
+ "page": "VNellisGenericBoomerBanter.txt",
+ "speaker": "Boomers",
+ "topics": [
+  {
+   "id": "AcceptYield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Smart move.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AcceptYield"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Under fire!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Protect the tribe!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kill the Outsider!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Contact!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Attacking!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Firing!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "AvoidThreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Duck and cover!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take cover!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AvoidThreat"
+  },
+  {
+   "id": "DeathResponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "We've got a man down here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Man down!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Engaging!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go, go, go!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Time to die, Outsider!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DeathResponse"
+  },
+  {
+   "id": "FireExplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "3, 2, 1, contact!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fire in the hole!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FireExplosive"
+  },
+  {
+   "id": "Flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Back to base!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Cover me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Pull back!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Flee"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get lost.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll turn back, if you know what's good for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This area is off limits, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You'll pay for that, Outsider!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Man down!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You son of a bitch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "MurderNoCrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "We kill to survive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At least it was a quick death.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The tribe must be protected.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Open fire!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop the Outsider!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I knew you'd try something.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Don't get blown up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See ya.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You've done us a great service. Thank you for your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch your step, sister.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you can't keep that thing under control, I will.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've never seen a ghoul up close. Not sure I wanted to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Make my day, mutant.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can take care of that robot problem for you. Just saying.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whatever you're selling, we have plenty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once a republican, always a republican.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You aren't stealing our medicine, are you, doc?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't believe we may see the superfortress built in my lifetime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Really? So we may see our dream of flight soon?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm happy that we managed to raise the bomber in my lifetime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm amazed that an outsider has proven so helpful.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You're not getting away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know you're out there!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{hushed} What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Target sighted!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There ya are!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aha!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Nothing out here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess I'm seeing things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aw, forget this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Show yourself, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come out, come out, wherever you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll find ya' one way or another.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I didn't think you had it in you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can run, but you can't hide forever.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll save a shell for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{frustrated} Show yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{confident} I can hear you breathing, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{frustrated} I'll blow this place apart if I have to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{satisfied, hostile} I got you now!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied, hostile} Let's do this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied, hostile} It's on!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{giving up search} I guess the outsider left.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{giving up search} I bet the coward ran back to those NCR fools.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{giving up search} Guess they're too scared to fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{slight concern} I heard a noise.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slight concern} Hello? Who's there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slight concern} What was that? Hello?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{starting combat} Fire for effect!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{starting combat} Saturate that quadrant!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{starting combat} Lock target and fire!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombat"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Derisive} Only thing you're good for is target practice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Threatening} Bet you'd blow up real good.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{threatening} Watch your step, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Open Threat} I got a shell with your name on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can spot a Brotherhood spy from a thousand yards. Even the cute ones.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've never seen a ghoul up close. Not sure I wanted to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That thing is housebroken, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I like you big mutants. You're easy to sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you know you have a robot following you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whatever you're selling, we have plenty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep your distance, soldier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{suspicious} A doctor? Who's your supplier?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Idle thumbs tend to get blown off around here. Get moving.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, I've got work to take care of.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd keep moving if I was you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dismissive} Go back to the Strip where you belong.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're nothing like us, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We should have never let you in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're no different than a common Fiend.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What are you looking at?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep your distance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not sure what to make of you, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you know about our problems?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey there. Kill any Outsiders lately?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Jovial} You can shoot with me anytime, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Always nice to see you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wry} Hope the trip into camp wasn't too eventful!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{friendly} Keep your head down, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've got my sights on you, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stand back where I can see you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Saw you coming a mile away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All those hours training? Glad they finally paid off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you see it? I hear the suckers burned right through their armor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was wonderful seeing Pearl fly and serve the purpose she was built for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's getting nasty out here. S'times like these I thank god for artillery.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "War's brewing on the horizon, plain as day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've survived out here pretty well so far without any help from the outside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You should get out of my face before you get yourself hurt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't have anything to say to you, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know how you survived the bombardment. That's incredible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't think you should be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm happy you came along. You are the answer to our dreams.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've earned our trust, now let's see if you can earn our gratitude.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't believe we may see the superfortress built in my lifetime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Really? So we may see our dream of flight soon?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you're going to help us, I hope you're up for the task.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm happy that we managed to raise the bomber in my lifetime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you so much for your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I didn't think the day would ever come, but thanks to you our dreams have come true!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm amazed that an outsider has proven so helpful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've given us the ability to touch the sky! Thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've done us a great service. Thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've done us a great service. Thank you for your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, no time to talk, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "PLAYERFIREWEAPON",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{irritated} Stow that weapon, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{irritated} Drop that weapon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "id": "PLAYERINIRONSITES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{threatening} You're going to make this easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{threatening} Drop that weapon, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "id": "PLAYERLAYMINE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{challenging} I see you, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{challenging} You think that firecracker will be enough?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "id": "PLAYERTHROWGRENADE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Bellow} Incoming!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Bellow} Grenade!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER THROW GRENADE"
+  }
+ ]
+}

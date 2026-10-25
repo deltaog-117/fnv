@@ -1,0 +1,466 @@
+{
+ "id": "vgomreceptionist",
+ "speaker_name": "Gomorrah receptionist",
+ "source": "VGOMReceptionist.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well look, the bully is back. What the hell do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello and welcome to Gomorrah. What can I help you with today?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello and welcome to Gomorrah. How can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguegomorrahgenerictopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, Cachino is a creep. I'll give you a key for some caps... Hazard pay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, Cachino is a creep. I'll give you a key for some caps... Hazard pay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericTopic008",
+   "prompt": "I need a key to Cachino's room. Do you have one that will work?"
+  },
+  {
+   "key": "vdialoguegomorrahgenerictopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No skin off my back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericTopic009",
+   "prompt": "Thanks, but I'll find another way."
+  },
+  {
+   "key": "vdialoguegomorrahgenerictopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, here you go. If anyone asks you ain't never seen me before.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fine, here you go. If anyone asks you ain't never seen me before.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericTopic010",
+   "prompt": "Ok, 300 caps is a deal."
+  },
+  {
+   "key": "vdialoguegomorrahgenerictopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Sounds like a deal to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Yeah, but come back when you have the money.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericTopic011",
+   "prompt": "How about 200 caps and I forget we ever met.",
+   "label": "{Barter}"
+  },
+  {
+   "key": "vdialoguegomorrahgenerictopic011_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I bet it does, but free ain't gonna work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericTopic011",
+   "prompt": "Free sounds better to me.",
+   "label": "{Barter}"
+  },
+  {
+   "key": "vdialoguegomorrahgenericvgomreceptionisttopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, we don't have any hotel rooms available right now, but feel free to gamble or help yourself to our other services.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, we don't have any hotel rooms available right now, but feel free to gamble or help yourself to our other services.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericvGOMReceptionistTopic000",
+   "prompt": "Do you have any rooms available?"
+  },
+  {
+   "key": "vdialoguegomorrahgenericvgomreceptionisttopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Feel free to head to our club, Brimstone, or you can see our gorgeous courtyard out behind the casino.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Feel free to head to our club, Brimstone, or you can see our gorgeous courtyard out behind the casino.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericvGOMReceptionistTopic001",
+   "prompt": "What is there to do around here?"
+  },
+  {
+   "key": "vdialoguegomorrahgenericvgomreceptionisttopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You make an excellent point. I never liked that Cachino fuck anyway. Here you go.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "You make an excellent point. I never liked that Cachino fuck anyway. Here you go.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericvGOMReceptionistTopic002",
+   "prompt": "I know you feel safe here, but I could crush your windpipe before anyone noticed.",
+   "label": "{Strength}"
+  },
+  {
+   "key": "vdialoguegomorrahgenericvgomreceptionisttopic002_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With those skinny little arms? Not before the bouncer put two in the back of your head. Now stop being stupid.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "With those skinny little arms? Not before the bouncer put two in the back of your head. Now stop being stupid.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahGenericvGOMReceptionistTopic002",
+   "prompt": "I bet I could beat you up.",
+   "label": "{Strength}"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I sure do, but loose lips{giggle} sink ships.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic000",
+   "prompt": "I'm sure you have all the good dirt on what goes on around here."
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Alright, you look pretty trustworthy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic001",
+   "prompt": "Don't worry about me, I can keep your secrets.",
+   "label": "<Speech Options>"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, but the Omertas don't look very kindly upon gossiping.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic001",
+   "prompt": "A little gossip never hurt anyone.",
+   "label": "<Speech Options>"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I...{stammer} well, since you ask so nicely, and I'm not sure I could resist those pretty eyes. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic002",
+   "prompt": "Beautiful, I would love to help you loosen those lips.",
+   "label": "<Cherchez La Femme>"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've heard some pretty shady rumors about the Ultra Luxe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not sure what the deal is, but although they try to put on airs, that place is just plain creepy. Maybe it's the masks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not much of a rumor, but I hear the Tops is always looking for new talent. Lord knows they've needed it for a long time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not sure what's going on at Lucky 38. That place is weird. Nobody ever goes in. Nobody ever comes out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you've actually been inside Lucky 38? You're the first person who's been in there in as long as anybody can remember.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's hard to believe that not too long ago most of the families on the Strip were little more than warring tribes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Omertas even had a big war with the Khans, once upon a time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, that's all the news worth talking about. All I have at least.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic003",
+   "prompt": "What can you tell me about what's going on around the Strip?"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Gossip is one thing, dirt on the Family is something else totally.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic004",
+   "prompt": "What can you tell me about what's going on in Gomorrah?"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sigh} I knew someone would call in that mark soon. What do you want to know?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "That was one of my sisters, but my family always repays our debts. What do you want to know?",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic004",
+   "prompt": "I'm calling in for an outstanding balance for some information. Tell me what the Omertas are up to."
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Depends on who you're looking for.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic005",
+   "prompt": "Can you help me find someone?"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cachino is usually on this floor in Brimstone, having drinks. If he isn't there then he's probably in his room upstairs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic006",
+   "prompt": "I'm looking for Cachino."
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Troike spends all his days down in Zoara on the lower level.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Troike is dead, but I'm sure you know that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic007",
+   "prompt": "Can you tell me where Troike is?"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I know him.{unhappy, spoken with contempt} You'll probably find him in his room upstairs. He usually just sends down for girls or food.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I knew someone named Clanden. Good fucking riddance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic008",
+   "prompt": "Do you know someone named Clanden?"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Big Sal and Nero split their time in Zoara overlooking the main casino floor from the balcony. No one but Family is allowed up there, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic009",
+   "prompt": "Where can I find the management?"
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All I can tell you is to find Cachino. He's the lowest level Lieutenant you're going to be able to talk to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of the girls say he's been involved in some shady business the Family wouldn't really like. Ask him about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic010",
+   "prompt": "I need to know who to talk to about what's been going on in Gomorrah."
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, they don't tell me their plans and I don't want to know. I'm just happy they don't make me fuck anybody anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic011",
+   "prompt": "Tell me what the Family is up to."
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fire away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic012",
+   "prompt": "Let me ask you about something else."
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Enjoy yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic013",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguegomorrahvgomreceptionisttopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be careful.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahvGOMReceptionistTopic014",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "gomorrah_receptionist"
+}

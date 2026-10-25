@@ -1,0 +1,826 @@
+{
+ "page": "CampSearchlightAstor.txt",
+ "speaker": "Astor",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hang on there, traveler. You'll want to steer clear of this place - the whole town is irradiated to high hell.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "How are you coming with the dog tags?",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "You're back. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "None that aren't feral ghouls. Those poor bastards - I can't imagine how they must be suffering.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "I'd like to put them out of their misery but I don't have the heart to do it. Can you do me a favor?",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Are there any other survivors?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Better get back to it then, I don't want those poor soldiers suffering for longer than they have to.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I'm still working on it."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The rangers at Echo have been keeping an eye on that place. It's relatively new, but those bastards have already dug in.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "They appear to be running a slave-trading operation and it also seems to be one of the primary crossing points for Legion raiding parties.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Let's hear it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's hear it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Placeholder>"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some Legionaries snuck into the camp and set off some kind of radiation bomb.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know where they got it, but it was damn effective. Killed almost everyone and turned the rest into ghouls.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, what's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, every tag you bring me is one more soldier at peace.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a dog tag for you."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stay safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was out on patrol at the time so I wasn't in the camp when it happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There were a few others with me after it happened, including some of my superiors.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Between radiation poisoning and attacks by the Legion they all died out.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "How did you survive?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know, unfortunately. There may be clues somewhere inside the camp, but I'm not about to run in there to find out.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "prompt": "How did they get into the camp?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Head north toward Novac. Look for a big dinosaur, can't miss it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Questions>"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who is Private Edwards?",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "prompt": "<Questions>"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was stationed at Camp Searchlight before the incident.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've since taken it upon myself to keep travelers away from the area.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If the area is filled with radiation, why are you still here?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I want you to put down the troopers that... changed. Turned into ghouls.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "What kind of favor?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We don't get many supplies out here, but I can offer you some caps and maybe some old gear.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "What's in it for me?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic077",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I understand.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Sorry, I can't help you right now."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The whole area is irradiated and filled with mutated creatures.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "prompt": "What's so dangerous about this place?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry I don't have anything else to offer.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "[SUCCEEDED]I can't offer much more aside from some extra ammo.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I'm gonna need more than that if you want my help."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you. Could you bring me their dog tags? Some of the troopers should still be wearing them.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "I'll give you some caps for each one you bring back to me. There's an old rifle in it for you if you can bring me at least 10.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Oh and take these radiation supplies. You'll need them.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Sure I'll do it."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those boys aren't themselves anymore. They're in pain, and you don't let good men suffer like that.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Those troopers deserve a clean death.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Why do you want to kill them?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because it's a far safer place to be than here.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Why Novac?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mostly ghouls, and a handful of radscorps. I think some geckos moved in not too long ago.",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "They seem to stick mostly to the south end of the camp.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "What kind of creatures?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If he's a ghoul he should be put down. I can't let a rabid dog suffer.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "prompt": "He is a ghoul in Camp Searchlight."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nevermind, can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic109",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Doesn't mean he isn't suffering, or that he won't go feral eventually.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "prompt": "But he isn't feral."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic110",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'd rather not take the chance.",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "[SUCCEEDED] Alright, I'll give him a shot.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Maybe Edwards can help you?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, I can't take that risk.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "[SUCCEEDED] Well, maybe I can give him a chance.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "prompt": "He isn't showing any signs of going feral."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's a ranger station north of here that has a few ghouls running it. Maybe they'll take him in.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Is there somewhere else he can go?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic119",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good luck with that.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "I'll go ask him about it."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic120",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic121",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you for the help. I can rest easier knowing those poor soldiers no longer have to suffer.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This is the last of the dog tags."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic139",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic143",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you can scout out the camp, bring back any intel on troop movement or plans for future raids. The rangers could put that information to good use.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Also, if you're any good at covert ops, I would love to get a bug planted on their radio. So far, we've been unable to crack their encryption.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Is there anything you need done?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic144",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What?! How did you pull it off?",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "prompt": "I already took care of the camp."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic145",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good to hear. This is the bug you'll need for the radio.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Report back if you pick up any intel or manage to sneak the bug into their radio.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I think I can handle that for you."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic146",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just let me know if you're available for the op. After what they did to Searchlight, they have a shitstorm coming.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Maybe later."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic147",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's exactly what we needed to put a cork in that camp. The Legion won't be moving through there anytime soon.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "It's a fitting revenge for Searchlight. Thanks for taking care of those bastards for us.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "I released some barrels of radioactive waste."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic152",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is more than I could have hoped for! It almost seems too good to be true, but the details are all here.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Looks like they're planning to strike some of the southern caravans. I'll notify the rangers and patrols in that area immediately.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Here are some caps for your trouble. You've done us a great service.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "[Give intel] I planted the bug in Cottonwood Cove's radio and found some intel."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic153",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, unless you want to go in there and clean out that camp for me, I guess this should be more than enough for now.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Is there anything else you need done?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic155",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Genuine Surprise} What?.. Really?! You're mad, but I like it!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "According to the notes you gave me, all of the southern raiding parties come from that camp. Caesar regularly sends fresh squads to relieve patrols.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Killing their Centurion and leadership would be a start, but finding a way to permanently shut down that dock is what we really need.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Consider it done."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic156",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Report back when the camp is clear. I'll try and shuffle some men in that direction once the Legion is gone.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "I'll see what I can do."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic157",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I know I wouldn't sign up for that solo op if asked.",
+     "emotion": "fear",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Maybe later."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic158",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is more than I could have hoped for! It almost seems too good to be true, but the details are all here.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Looks like they're planning to shift their raids north of Vegas. I'll shift some of the rangers and NCR patrols in that direction when they're free.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Here are some caps for your trouble. You've done us a great service.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "[Give Aurelius' old intel] I planted the bug and found some paperwork."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic159",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nothing new to report."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic160",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What?! How did you pull it off?",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "prompt": "I killed everyone in the camp."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic161",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's exactly what we needed to put a cork in that camp. The Legion won't be moving through there anytime soon.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Fitting that the camp was taken care of in a way similar to Searchlight. Thank you for taking care of that place for us.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "I released some barrels of radioactive waste."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic162",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A single man slaughters an entire camp of legionaries?! I'm amazed.{test text}",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "It took everything we had in the last battle at the dam to stand against those brutes. You're a beast, son.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "You've done a fine job, friend. Here is a little something for your work.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "A single woman slaughters an entire camp of legionaries?! Oh, that's priceless!",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Considering the way Caesar treats women, that should really put some doubts into his troops' minds. Wait til the rangers hear about this!",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "You've done a fine job, friend. Here's a little something for your work.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "I just killed everyone the old-fashioned way."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic165",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic167",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic168",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Understandable. Let me know when you've decided.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have to think about this first."
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic169",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else first?"
+  },
+  {
+   "id": "VMS43CampSearchlightAstorTopic172",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  }
+ ]
+}

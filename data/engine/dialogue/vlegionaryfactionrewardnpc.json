@@ -1,0 +1,85 @@
+{
+ "id": "vlegionaryfactionrewardnpc",
+ "speaker_name": "disguised frumentarius",
+ "source": "VLegionaryFactionRewardNPC.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Mixed 2+} The Legion is aware of your mercenary ways and has decided to encourage you work for us rather than against us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've provided you the location of a drop box. Every few days, we'll place Legion coin inside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Good 2+} Though you aren't of the Legion, you've aided us more than once. We acquire many items on our raids, some useless to us, some forbidden.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've provided you the location of a drop box where you can obtain these items. The box will be replenished every few days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please be aware that we'll assume any items left in the box will be unwanted and be removed and destroyed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My message to you has been delivered, and I've got other places to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformthefortvlegionaryfactionrewardnpctopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{WAH-lay} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortvLegionaryFactionRewardNPCTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformthefortvlegionaryfactionrewardnpctopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As long as you don't become an outright enemy of the Legion, payment will continue.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortvLegionaryFactionRewardNPCTopic001",
+   "prompt": "How long will I get this benefit?"
+  },
+  {
+   "key": "vfreeformthefortvlegionaryfactionrewardnpctopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stay an ally of the Legion and we will share our loot with you. If you start working against us - or become an enemy - our deal ends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortvLegionaryFactionRewardNPCTopic002",
+   "prompt": "For how long will I get this benefit?"
+  }
+ ],
+ "speaker": "disguised_frumentarius"
+}

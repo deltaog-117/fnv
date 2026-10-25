@@ -1,0 +1,227 @@
+{
+ "page": "HenryJamison.txt",
+ "speaker": "Henry Jamison",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shove off. You're making my luck turn bad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You again. What do you want now?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck no. No matter what that old bitch McLafferty says, my dad said I could be in charge of the New Vegas branch.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Besides, I got into a little money trouble with the Omertas. If I quit the Crimson Caravan, how am I supposed to get the money to gamble?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm here to talk about ending your employment with the Crimson Caravan Company."
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, all right. If McLafferty complains long enough, my folks might haul me back to California just to shut her up. Tell the old hag I'm gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{NCR - Mixed}Look, I take advantage of the NCR, too, but I don't make them my enemy."
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, all right! I believe you. Just don't say anything to my folks. You can tell the old hag I'm gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{NCR - liked}The NCR thinks pretty highly of me. Let's say I get word to your parents..."
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One of the families that runs the Strip. They're a pack of cheaters, but you still don't want to fuck with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about the Omertas?"
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I want my debt with the Omertas paid off. And I want one of those severance package things. A big one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My terms are the same as before. They pay off my debt to the Omertas, and I get a big fucking severance package.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe we can make a deal. What do you want from the Crimson Caravan in exchange for quitting?"
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Fine, whatever. Forget the severance. Just get the Omertas off my back, and you can tell McLafferty she won't see my face again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The better deal would be for me to walk away and let the Omertas handle you.",
+   "label": "< Barter 50 >"
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Tough shit. That's what I want, or I'm not going anywhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What? No way. Pay off the Omertas, sure, but you don't get a single cap more.",
+   "label": "< Barter 50 >"
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Wha-? No, no wait. Look, I just need time. Don't rat me out to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You want me to quit the Crimson Caravan? Fine, I quit. You can tell McLafferty that she won't see my face again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So you don't have the Omertas' money yet? I'll let them know about that.",
+   "label": "< Speech 50 >"
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] As if they'd even talk to you. You're nobody. I'm Henry-fucking-Jamison.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll go talk to the Omertas about you, then. Unless you feel like quitting?",
+   "label": "< Speech 50 >"
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We done, then?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You do that. And tell the old bitch to pay up quick, you hear?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Fine. I'll let McLafferty know we've struck a deal."
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wanted to be where the action is, so I got my dad to pull some strings and get me a cushy position with the Crimson Caravan.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Everything was great until McLafferty came along. That old bitch is gonna hear about it from my dad, just you wait.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What brought you to New Vegas?"
+  },
+  {
+   "id": "VDialogueCrimsonCaravanHenryJamisonTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh, yeah, actually. I'm still good for the money, but I'll get it some other way. You can tell the old hag I'm gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{RACKET complete}I'm in good with the Omertas - ask around. Feel like quitting yet?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah, whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

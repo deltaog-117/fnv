@@ -1,0 +1,1489 @@
+{
+ "id": "nolanmcnamara",
+ "speaker_name": "Nolan McNamara",
+ "source": "NolanMcNamara.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, outsider. I've heard that you were instrumental in providing Hardin with the evidence to bring against me. And here I had thought to use {lightly stressed} you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you come to gloat, or did you actually want something?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome, outsider, welcome! The lockdown has been officially lifted and everyone seems to be in good spirits.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With the surface open to us once again, Hardin's already started talk of sending a force out to attack HELIOS, but I hope to dissuade him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hail, Brother. May I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Greetings, my friend. I hope I can be of some assistance to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Getting ready to lift the lockdown} I apologize, outsider, but I'm going to be busy for a little while making preparations for lifting the lockdown.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Annoyed to have to talk to the player again} What is it now, outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid I don't have time to talk, outsider. I've had word that Hardin is charging me with violating protocol and must prepare a defense.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Back again, I see. Have you found all the components we need?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you had any luck finding the scouts? Or did you have something to discuss?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Found the missing patrols, or was something else on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How did you find us, stranger? And do tell the truth.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been informed that you bring us ill tidings, stranger. Care to elaborate?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When Paladin Ramos informed me that Veronica was approaching with an outsider in tow, at first I didn't know what to think.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After giving the matter some thought, however, I've decided that an outsider could be of use to me right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, I will not force you to help us. Should you refuse, you will be allowed to leave here, though you'd remain Veronica's responsibility.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you say, outsider? Are you willing to help us?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What I wished to discuss with you can wait for once I get settled in the command room, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When you first showed up on our doorstep, I'll admit at first I didn't know what to think.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After giving the matter some thought, however, I've decided that an outsider could be of great use to me right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, I will not force you to help us. Should you refuse, you will be allowed to leave here, though know we {stressed} will be keeping an eye on you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you say, outsider? Are you willing to help us?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How did you resolve the situation with the ranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you reconsidered, outsider? I can still use your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Generic question node} Yes, associate?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "hvmcnamexplainpresence",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You took an extreme risk in coming here. My policy towards trespassers has not been... lenient.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The security of this bunker is my foremost concern, and I take pains to minimize our exposure topside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For this reason, I might be interested in contracting with an outsider, who can accomplish certain tasks - some basic, some a bit more... involved.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "An NCR Ranger has begun to set up post in one of the other bunkers up top, for example. I want him driven off. Understood?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamExplainPresence",
+   "prompt": "I was just exploring the area and noticed your patrol coming out of here."
+  },
+  {
+   "key": "hvmcnamrangerask",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, we could kill him easily enough. But sometimes you can learn a great deal by observing people, both enemies and friends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Which is why it will be very interesting to observe how you choose to deal with the situation, and decide which you are. Enemy, or friend?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do we understand one another?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerAsk",
+   "prompt": "Why haven't you killed the ranger already?"
+  },
+  {
+   "key": "hvmcnamrangerdead",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How do you know he won't be missed, that other rangers won't come looking for him? Or NCR patrols? Did you just make matters worse?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerDead",
+   "prompt": "The ranger won't be a problem. He's dead."
+  },
+  {
+   "key": "hvmcnamrangerdeadsafe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Indeed he did. The collar includes a microphone, you see. Part of the test.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had you told him the location of this bunker, for example... well, let's just say we wouldn't be having this conversation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given the circumstances, termination was the best option - so your actions demonstrated loyalty, good judgment, and prowess in combat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerDeadSafe",
+   "prompt": "He told me himself that no one knew where he was."
+  },
+  {
+   "key": "hvmcnamrangerdeadspeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] So you weighed the value of confirming if his location was known against your advantage of surprise. All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerDeadSpeech",
+   "prompt": "It was a calculated risk. Asking questions would have tipped him off.",
+   "label": "{Speech >= 65}"
+  },
+  {
+   "key": "hvmcnamrangerdeadspeech_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] What's in doubt isn't your ability to kill. It's your ability to be thorough. Your circumspection, so to speak.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So again, I ask: How do you know that killing this ranger didn't make matters worse, exposing us to greater dangers?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerDeadSpeech",
+   "prompt": "I'm pretty sure I made things better. I mean, I killed him.",
+   "label": "{Speech >= 65}"
+  },
+  {
+   "key": "hvmcnamrangerfail",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right. Because you did nothing to find out. Your collar was rigged with a microphone, you see. Part of the test.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It would seem you are a brute, but even a brute can be of use. Particularly one capable of taking down an NCR Ranger one on one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since you completed your assigned task, I will allow you to come and go from the bunker freely. So let's get that collar off you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There, that's better, I hope. Now that we have that bit of unpleasantness out of the way, there is a matter that I would like to discuss with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop by the command room when you can. Oh, and bear in mind, if you end up betraying us, we will know it - and there will be no mercy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerFail",
+   "prompt": "I'm not sure."
+  },
+  {
+   "key": "hvmcnamrangergone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Gone? Why did he leave? And what makes you think he won't be back?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerGone",
+   "prompt": "The ranger won't be a problem. He's gone."
+  },
+  {
+   "key": "hvmcnamrangerno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I never said the ranger had to be killed. And I wasn't giving you the option. I merely asked if you understood.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerNo",
+   "prompt": "Not interested. I don't do murder-for-hire."
+  },
+  {
+   "key": "hvmcnamrangeryes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. I'll be interested to see how thoroughly and efficiently you carry out your mission.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Paladin Ramos will escort you back to the bunker's entrance and set you loose. Notice that I said \"loose,\" not \"free.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You are not free to carry the secret of this bunker's location beyond Hidden Valley - until I'm convinced that you're capable and dependable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To underscore this point, you'll be fitted with an explosive collar. Wander off, and it will detonate. Focus on your mission, and you'll be fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamRangerYes",
+   "prompt": "I can take care of the Ranger."
+  },
+  {
+   "key": "hvmcnamstorepermission",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. It's to our benefit that you'd be well-equipped. I'll send word ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamStorePermission",
+   "prompt": "May I have permission to trade with your armory?"
+  },
+  {
+   "key": "mcnamarapowerarmortraining",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "...There, I think you've got the knack of it now. You should now be able to wear any kind of power armor you come across.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've also given the order that all of our equipment be made available to you, not just the more mundane arms.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're a member of the Brotherhood now, and your gear should reflect that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lastly, you will be allowed to come and go as you please. You've done so much for us that to do otherwise would be a crime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just ask that you keep the Brotherhood's interests at heart in all your dealings. Remember that you will always have a home here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "McNamaraPowerArmorTraining",
+   "prompt": "McNamaraPowerArmorTraining"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm glad I can count on you. Oh, and one other thing. The patrols each had a holotape detailing their missions that you can use to track them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The shielding of the bunker prevents us from actively tracking them, but their positions should show up on your map once you get to the surface.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Should our worst fears become realized, please bring back all three of the holotapes from the patrols. Otherwise, bring our brothers home.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've given the order that you be given access to some of the equipment our scouts and patrols have scavenged over the years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You won't be allowed to purchase any prohibited equipment, but hopefully some of what's available will prove useful to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic000",
+   "prompt": "I'll begin looking immediately."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Solemn} They were all dead, then. I suppose I'm not surprised. We have few friends in the world above, and many enemies.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "But we must turn our minds to other matters. When I sent out those patrols, I also sent three Knights out on scouting missions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When the patrols failed to return, we assumed the worst and sent a single communication to the scouts to hold position and maintain radio silence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want you to contact those scouts and gather their reports. Like the patrols, they have devices on them that will enable you to track them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When you find them, tell them you're my representative and ask them if the bears are still hunting. That should get them to talk to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Return when you've gathered all of their reports.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic002",
+   "prompt": "Yes, here are their holotapes."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "While that is disheartening news, there remains hope that the other two patrols may still be found alive.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "See me as soon as you've found them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic003",
+   "prompt": "No, I've only found one of them so far. Both paladins were dead."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "T-That is unfortunate. As long as there is a chance to find the remaining patrol, however, I must still ask you to try.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Return when you have found them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic004",
+   "prompt": "I've found two of the patrols. All of the paladins were dead."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Remain diligent, outsider. If those patrols are in trouble, every second you delay lessens their chances of rescue.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic005",
+   "prompt": "No, I'm still working on it."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Relieved, sighs} Good news for a change. Your efforts have humbled me, outsider. You have done more than I could expect, even from my Brothers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Moreover, I've been going over the scouts' reports and keep coming up with the same conclusion. The NCR is not the threat I've believed it to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We should not have had to rely on your help in this crisis. I believed my actions were guided by caution and prudence, but I now see the truth.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "People called me a hero after what happened at HELIOS, but I left that battle scarred by fear, and have allowed that weakness to govern my actions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That ends now. I will undo the wrong I have done my brethren, and lift the lockdown. With luck, we will once again flourish.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please, take this. It is a small token of my thanks, and scarcely begins to repay the debt owed you, but is all I am allowed to give an outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This key will allow you to use our safehouse to the northeast. I hope it will prove useful in your travels.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic006",
+   "prompt": "I did. Lorenzo's on it."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please make all haste in your search. It is imperative that I know the results of his mission.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic007",
+   "prompt": "I'm still looking for them."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, let's take a look... Hmmm, if I'm reading this right, it appears that the NCR's grip on this region is nowhere near as firm as I thought.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have to review these in detail, but these reports have given me much to think about. Thank you, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've become someone I can count on, so I believe I can share something rather confidential with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic008",
+   "prompt": "Yes, I did. Here are their reports."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, return when you have.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic009",
+   "prompt": "No, not yet."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "While that is disheartening news, there remains hope that the other two patrols may still be found alive.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic010",
+   "prompt": "I think I already found one of your patrols. Both Paladins were dead."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "T-That is unfortunate. As long as there is a chance to find the remaining patrol, however, I must still ask you to try.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic011",
+   "prompt": "I already found a couple of your patrols. The paladins were all dead."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Solemn} I suppose I am not surprised. We have few friends in the world above, and many enemies.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic012",
+   "prompt": "I already found all three patrols. They were all dead."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keep looking for them. The information they have is vital.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic013",
+   "prompt": "Not all of them."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've certainly earned the right, but I'm afraid there's a slight matter of protocol that must be dealt with first.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Exceptional individuals, like yourself, {slightly stressed} are sometimes allowed to join the Brotherhood if they perform a valuable service for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "While your actions up to this point have been commendable, I'm afraid they don't quite qualify as such a service.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, I do have another task that fits the bill rather nicely. Would you consider undertaking it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic014",
+   "prompt": "I want to join the Brotherhood.",
+   "label": "{Ask to join the Brotherhood}"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic014_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The task I had in mind is still available, if you're up for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic014",
+   "prompt": "Can I still join the Brotherhood?",
+   "label": "{Ask to join the Brotherhood}"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As one of our patrols discovered, the mutants just to the northeast have become strangely violent in the years we were secluded.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, this turn of events could also be an opportunity. We mostly left the equipment of the communications array there alone, out of respect.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As the inhabitants have now proven themselves hostile, no more respect will accorded them. Making their equipment fair game.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want you to head up to the summit of Black Mountain and install this remote signal transmitter in one of their consoles.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It will allow us to tap into the radar and other detection systems running there, assuming they're still operational.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we're going to operate on the surface again, it would be nice to do so with as much information at our fingertips as possible. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic015",
+   "prompt": "Yes, what is the task?"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then allow me to explain our situation. This bunker is currently locked down, allowing no entry or exit, with you being one of the few exceptions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In exceptional cases, teams are sent out to investigate sites or retrieve materials deemed too important to ignore.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Three such teams have gone missing recently, and the news of their disappearance has not yet been widely spread to avoid undue concern.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In order to maintain the peace, and adhere to the strictures of the lockdown, I need to send someone else to discover what happened to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic016",
+   "prompt": "{McNamara linked lines}"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then that is your choice. If you should change your mind, please return.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic018",
+   "prompt": "I have better things to do."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The less who are aware of this situation, the better. My brothers and sisters were deeply traumatized by the losses we incurred several years ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It would be imprudent to worry them unduly without first discovering the facts of the situation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic020",
+   "prompt": "Surely you have people better suited to look for them than me."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can spare a little time. What did you want to talk about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic021",
+   "prompt": "I was hoping to speak to you about other matters."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That is sad news, indeed, and I thank you for making your way here to convey it to us, but now the issue remains that an outsider knows our location.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic024",
+   "prompt": "I found one of your patrols out in the waste. Your men are dead."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid that's not a possibility at the moment. Let's just say that your eventual safe departure from here relies on how forthcoming you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That said, I'd like you to tell me why you're here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic025",
+   "prompt": "Actually, I'd rather just be going. If I could just have my belongings back..."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I applaud your commitment to your own word, though it saddens me to hear of the fate of our comrades.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic026",
+   "prompt": "No, what I told your man before was the truth. I don't like repeating myself."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Accident or no, we both now find ourselves in an uncomfortable situation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic028",
+   "prompt": "It was a complete accident, I swear."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, you exploited his fear of Powder Gangers very effectively. The collar includes a microphone, you see. Part of the test.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He'll keep his distance, setting ambushes, never suspecting that these bunkers house something far more dangerous to him than criminals. Well-played.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic029",
+   "prompt": "I convinced him that staying here was more dangerous than moving on."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. And he's not particularly likely to come back, since he's learned that the bunkers here aren't secure enough to serve as safehouses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's not a foolproof solution, but indirect methods rarely are. What matters is that you drove him off without alerting him to our presence.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic030",
+   "prompt": "He was going to leave if he couldn't get his radio working. So I destroyed it."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would like you to find the components we need to fix this bunker's air filtration system. I cannot overstate the importance of this task.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See Senior Knight Lorenzo for the details. He's the one who brought the matter to my attention, and the only other person who is aware of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic031",
+   "prompt": "Just tell me what you want me to do."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The device that creates the sandstorms above, that masks our comings and goings, was only intended to be used in case of emergencies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was never meant to be used with any regularity, and the other systems here were not designed to accommodate such usage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In particular, the air filtration system simply cannot handle the quantity of sand and grit that it's been forced to cope with these last few years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As a result, the system is failing, albeit slowly. I'm told we have scant few months before it shuts down completely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Should that happen, it will quickly become impossible to breathe here in the bunker. Already the air quality begins to slightly worsen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic032",
+   "prompt": "Go on."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do not hesitate, my friend. Learn from my mistake and go boldly, one way or the other.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic033",
+   "prompt": "That depends on the task."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Regrettable, but understandable. Should you change your mind, return here. I will hold off on assigning the task to my brethren, for now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic034",
+   "prompt": "On second thought, I'm not really interested in joining the Brotherhood at the moment."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, we've already started receiving telemetry from it. This will be a great help in our future efforts, and I thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now then, it is my great honor to bestow upon you the title of Paladin of the Brotherhood, for meritorious service above and beyond the call of duty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid a formal ceremony was out of the question given our current state, but I hope this will make up for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I had the knights refurbish a suit of our power armor for your use. It's one of the earlier models, but it should serve you well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, I suppose I'm going to have to show you how to use it, aren't I?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic035",
+   "prompt": "I installed the device up at Black Mountain, as instructed."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Would you like to tell me where you learned such a thing?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, don't bother. A person as well-traveled as yourself is bound to pick up all kinds of skills, I suppose. Luckily, that's not all I have for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic036",
+   "prompt": "I already know how to use power armor."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "First, let's go over how to put it on...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic037",
+   "prompt": "Please do."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If only it were that simple. Think of power armor as a machine to be operated rather than clothing you'd wear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With a little instruction, using it becomes as natural as simple movement, but to the ignorant, it's just so much heavy junk.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So let's bring you up to speed, shall we?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic038",
+   "prompt": "Don't I just put it on?"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a protective measure that was enacted after our defeat at HELIOS. The NCR was hot on our heels, and we wouldn't have survived another encounter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was decided that we would stay quiet for a time, heal the wounded, and try to come up with a new strategy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, after we had fully recuperated, our first scouting measures showed that the NCR's presence in this region had only increased in our absence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are now more than five times the number of NCR troops in the area as when we fought them, and we have half the number we did at HELIOS.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And so the lockdown has been extended. To go outside would be the death of us all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic039",
+   "prompt": "Tell me about the lockdown."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We have some personnel that are allowed to travel on the surface. They trade for what we need, and occasionally drop off what they acquire.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We make sure that they only enter or leave the bunker while the sandstorm is active, to avoid detection.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic040",
+   "prompt": "How do you get supplies?"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. What did you wish to speak about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic041",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That is this base's defensive system. It serves as camouflage and masks all entry and exit from the bunker.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We use it to hide our patrols and supply runners, though we still send such out at night to be extra safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic043",
+   "prompt": "What is with that crazy sandstorm on the surface?"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We were overrun, plain and simple. My Brothers fought with great courage, but in the end the enemy was just too many.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When the tide of the battle turned for the worse, our Elder was nowhere to be found, and everything was chaos.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fully half of our forces had already fallen. I gathered up those I could find and we fought our way here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This place had been briefly discussed as a fallback point, though at the time none really believed that could possibly become necessary.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's it, really. There was nothing glorious about the battle, just a nightmare of screams, blood, and death.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic044",
+   "prompt": "Tell me about what happened at HELIOS."
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh yes, he's been trying for quite some time. Hardin has been strongly opposed to the lockdown from the first. It goes against his nature, you see.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hardin's the type to fight to the last, and die rather than surrender. It's a good trait to have in a soldier, and a bad one to have in a leader.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't let his actions bother you. He's only doing what he thinks is best for the chapter.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic045",
+   "prompt": "Did you know Hardin is trying to find a way to become Elder?"
+  },
+  {
+   "key": "vdialoguehiddenvalleynolanmcnamaratopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I've always known they were. Luckily, they don't know exactly where we are. And even if they did, our position here is fortified.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And assuming they managed to breach the bunker, I would be forced to activate our failsafe system.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Better we all die than allow the technology we have here to fall into such unworthy hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I suppose it was only a matter of time. I wonder if, given the NCR's current situation, they would consider a truce of sorts?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've given up our claim to HELIOS, and we don't have any interest in claiming Hoover Dam, so our ambitions are not at crossed purposes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps it's time for a new strategy. Go to the NCR commander and tell her the Brotherhood is willing to put aside our enmity for the time being.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Further, tell her that we are willing to send troops to aid in their coming defense of the Dam. My guess is they're in no position to refuse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyNolanMcNamaraTopic046",
+   "prompt": "The NCR is currently looking to destroy you.",
+   "label": "{Telling about the NCR wanting to destroy the BoS}"
+  },
+  {
+   "key": "vendingbrotherhood",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating} Buried beneath tons of rubble, the Mojave chapter of the Brotherhood of Steel was no more.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those few who were outside the Hidden Valley bunker when it was destroyed settled into new lives, or headed west to find a new chapter to join.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} During the fight for Hoover Dam, the Brotherhood took HELIOS One, inflicting heavy damage on retreating NCR forces, but it was a pyrrhic victory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once The Strip was secured, Caesar's forces overwhelmed and eventually routed the Brotherhood from HELIOS One and Hidden Valley.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Brotherhood used the battle of Hoover Dam as an opportunity to retake HELIOS One, and came to control the area between it and Hidden Valley.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With no organized opposition, their patrols began monitoring trade along I-15 and 95, seizing any items of technology they deemed inappropriate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Brotherhood and the NCR in the Mojave Wasteland declared an official truce, despite continued hostilities between the two in the west.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As per their agreement, the NCR handed over all suits of salvaged power armor and in return the Brotherhood helped patrol I-15 and Highway 95.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Due to their temporary truce, the Brotherhood allowed the NCR to retreat from the Mojave Wasteland without incident.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the relative peace that followed, Brotherhood patrols appeared along major roads, harassing travelers over any bits of technology they had.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingBrotherhood",
+   "prompt": "VEndingBrotherhood"
+  },
+  {
+   "key": "hvmcnamarahardinopening",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I understand your concern, Edgar, but the answer is no.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And our chances of exposure might be one hundred percent if we act rashly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, I will not endanger the entire chapter so recklessly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I've made my decision. Abide by it. I have other matters to attend to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVMcNamaraHardinOpening",
+   "prompt": "HVMcNamaraHardinOpening"
+  },
+  {
+   "key": "vms49elderdiscussion1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hello Veronica. How goes your mission?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Veronica, tell me this isn't about-",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've been through this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've outlasted the end of the world. We'll outlast these upstarts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we must.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I see no evidence of that. Nor do I see anyone out there with a solution to our problems.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion1",
+   "prompt": "VMS49ElderDiscussion1"
+  },
+  {
+   "key": "vms49elderdiscussion2conclusion",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What does the Codex say?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We do not help them, or let them in.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "We keep knowledge they must never have.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I'm sorry.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "{Sadly} <Sighs> I know.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2Conclusion",
+   "prompt": "VMS49ElderDiscussion2Conclusion"
+  },
+  {
+   "key": "vms49elderdiscussion2helios",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What? Wonderful news!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the hands of the enemy-",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We couldn't have known. We fought for what we believed in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you trying to shame me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2HELIOS",
+   "prompt": "VMS49ElderDiscussion2HELIOS"
+  },
+  {
+   "key": "vms49elderdiscussion2intro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Veronica. I hope-",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2Intro",
+   "prompt": "VMS49ElderDiscussion2Intro"
+  },
+  {
+   "key": "vms49elderdiscussion2v22",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "High Elder Maxson didn't found us to be botanists, Veronica.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "This won't get us Hoover Dam.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2V22",
+   "prompt": "VMS49ElderDiscussion2V22"
+  },
+  {
+   "key": "vms49elderdiscussion2v34",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "That could be the only one of its kind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2V34",
+   "prompt": "VMS49ElderDiscussion2V34"
+  }
+ ],
+ "speaker": "nolan_mcnamara"
+}

@@ -1,0 +1,177 @@
+{
+ "page": "NellisLindsay.txt",
+ "speaker": "Lindsay",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey there lady! Can you help me find Mister Cuddles?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey there mister! Can you help me find Mister Cuddles?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hi again! Have you found Mister Cuddles?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks again for finding Mister Cuddles! You're the best!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't believe Mister Cuddles is gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformNellisNellisBoomerKid09Topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mister Cuddles is my teddy. I lost him and I don't remember where.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who is Mister Cuddles?"
+  },
+  {
+   "id": "VFreeformNellisNellisBoomerKid09Topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Bye then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I don't have time right now."
+  },
+  {
+   "id": "VFreeformNellisNellisBoomerKid09Topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks! Let me know when you find him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Ok, I'll look for him."
+  },
+  {
+   "id": "VFreeformNellisNellisBoomerKid09Topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I remember now! I was playing hide and seek in the big hangar! Mister Loyal made us leave though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Think really hard. What were you doing when you saw him last?"
+  },
+  {
+   "id": "VFreeformNellisNellisBoomerKid09Topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks! Let me know when you find him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Great work Lindsay! I'll go take a look for him."
+  },
+  {
+   "id": "VFreeformNellisNellisLindsayTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Oh, I remember now! I was playing hide and seek in the big hangar! Mister Loyal made us leave though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Take a deep breath and focus, Lindsay. Where were you with him last?",
+   "label": "<Speech>"
+  },
+  {
+   "id": "VFreeformNellisNellisLindsayTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't know. I play all over. I'll never find him!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any idea where I should start looking, kid?",
+   "label": "<Speech>"
+  },
+  {
+   "id": "VFreeformNellisNellisLindsayTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh! Thank you so much! I'll never lose you again Mister Cuddles!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have Mister Cuddles right here."
+  },
+  {
+   "id": "VFreeformNellisNellisLindsayTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] No! Not Mister Cuddles!",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] I know you're kidding. Mister Cuddles is just hiding somewhere.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> I'm sorry Lindsay. Mister Cuddles is dead."
+  },
+  {
+   "id": "VFreeformNellisNellisLindsayTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] No! Not Mister Cuddles! He can't be dead!",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> I already told you he's dead. Get over it already, kid."
+  },
+  {
+   "id": "VFreeformNellisNellisLindsayTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, well thanks for looking. Let me know when you find him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, I haven't found him yet."
+  }
+ ]
+}

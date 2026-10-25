@@ -1,0 +1,504 @@
+{
+ "id": "1efrankweathers",
+ "speaker_name": "Frank Weathers",
+ "source": "1EFrankWeathers.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dammit, I'll find them eventually! Mark my words!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for your kindness, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh. Hello. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you found my family yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go ahead, mock me. Nothing you say can be worse than my own shame.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic000",
+   "prompt": "Wow, some protector you turned out to be."
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'd do that for a complete stranger? Thank you, friend. The army says they don't have the available manpower - as if this city is more important.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From what I've gathered from NCR rangers, they were most likely taken to Cottonwood Cove. You might start there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic001",
+   "prompt": "I'm so sorry. Can I help?"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I... God help me, I ran! I abandoned my family to those butchers. Not a day goes by I don't hate myself for that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic002",
+   "prompt": "Wait a minute - why didn't they take you, too?"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh God no! I haven't been the best father, but I didn't deserve this!",
+     "emotion": "pained",
+     "intensity": 60
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic004",
+   "prompt": "Yes. They're all dead.",
+   "label": "<Honest Option>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They are? Oh my God, thank you! Thank you so much!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "But wait, where are they?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic004",
+   "prompt": "Yes. They're all alive.",
+   "label": "<Honest Option>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic004_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, thank you! Thank you!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "But wait, what about my wife?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic004",
+   "prompt": "Your children are alive.",
+   "label": "<Honest Option>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic004_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Oh, I see. Well... thank you for saving her, at least.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "But wait, where is she?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic004",
+   "prompt": "Your children are dead, but your wife made it.",
+   "label": "<Honest Option>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic004_5",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Oh, I see. Well... thank you for saving the rest, at least.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "But wait, where are they?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic004",
+   "prompt": "Your wife and one of the children made it out alive.",
+   "label": "<Honest Option>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic004_6",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Oh, I see. Well... thank you for saving one of them, at least.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "But wait, where is my child?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic004",
+   "prompt": "Your wife and one of your children are dead.",
+   "label": "<Honest Option>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Oh, I see. Well... thank you for saving my children, at least.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where did they go?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic006",
+   "prompt": "I'm sorry. She didn't make it."
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please, hurry!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic009",
+   "prompt": "Not yet."
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My name's Frank Weathers. I'm a farmer, got a few hundred acres near Junktown. Well, I was a farmer. I guess I'm not much of anything now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic012",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Vehement} They're cannibals, slavers, and worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear rumors they're poised to overrun the entire Colorado River Valley, and even the Army won't be enough to stop them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One of the officers here, or at Camp McCarran, might be able to tell you more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic013",
+   "prompt": "What do you know about the Legion?"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why does anybody? I thought I'd strike it rich at the tables, make my fortune and never have to plow those damn fields again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just wanted to provide for my family - and now they're gone. All gone. God forgive me....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic014",
+   "prompt": "Why'd you come all the way out to New Vegas?"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes? Have you found them?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic015",
+   "prompt": "About your family..."
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We were crossing the Mojave, not far from Searchlight, when a band of Caesar's Legion slavers came out of nowhere. They took my family.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic016",
+   "prompt": "What happened to your family?"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic016_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's Legion attacked us near Searchlight. The rangers say they probably took my family to Cottonwood Cove.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic016",
+   "prompt": "Remind me what happened to your family."
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You're right. I've been a mean son of a bitch the past couple years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It won't be easy, but I'll try going sober. Maybe then my family will want me back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for doing what you can. I won't let this go to waste.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic018",
+   "prompt": "Your family doesn't want you around. You need to clean up, Frank.",
+   "label": "<Speech - Confront>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic018_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] They're my blood, man. You don't just walk away from your blood!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] They're my blood, lady. You don't just walk away from your blood!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic018",
+   "prompt": "They hate you. Get over it.",
+   "label": "<Speech - Confront>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised} What?! Why won't you tell me?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Growing Anger} Did my wife put you up to this?! What lies did she tell you?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic019",
+   "prompt": "Why would I tell an abusive bastard like you?",
+   "label": "<Be mean>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Here, I don't have much left at this point. Please, just tell me where they are.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic021",
+   "prompt": "Show me some caps and I'll tell you exactly where to go.",
+   "label": "<Barter>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dammit, I'll find them eventually! Mark my words!",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic022",
+   "prompt": "Hey thanks, Frank. Go to hell."
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You're right. I've been a mean son of a bitch the past couple years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What am I supposed to do? I've got no money left, and now my family has abandoned me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic024",
+   "prompt": "You're a slimy yellow-bellied bastard. You don't deserve a family!",
+   "label": "<Speech - Anger>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic024_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Well look who is all high and mighty! You're no better than me when it boils down, bub.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic024",
+   "prompt": "Your family doesn't want you around. You need to clean up your act.",
+   "label": "<Speech - Anger>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Crap, those goody-goodies kicked me out of there once already. No way I'm getting in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even if I could get in, rehab is for chumps. Well, thanks for doing what you could.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess I'll get a fresh start and keep an eye out in case they leave the Fort.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic025",
+   "prompt": "They mentioned going to the Old Mormon Fort in Freeside."
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You're right. I've got nothing left...",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Pathetic suicidal whimpering - about to shoot self} I'll never see my kids grow up, but they're better off without me.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic027",
+   "prompt": "Think about it, Frank. What do you have to live for?",
+   "label": "<Speech - Suicide>"
+  },
+  {
+   "key": "vdialoguevegaseast21efrankweatherstopic027_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You think you're better than me? You're just like those goody-goody Followers of the Apocalypse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueVegasEast21EFrankWeathersTopic027",
+   "prompt": "You're scum, Frank. A real bottom-feeder.",
+   "label": "<Speech - Suicide>"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "frank_weathers"
+}

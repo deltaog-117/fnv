@@ -1,0 +1,660 @@
+{
+ "id": "lucky38followeremily",
+ "speaker_name": "Emily Ortal",
+ "source": "Lucky38FollowerEmily.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excuse me, but... are you the courier who caused all of that trouble in The Tops?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, have you been able to bug Mr. House's network yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any interest in helping us with Mr. House's data network? I'm still good for the medical supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you reconsidered our offer to bug Mr. House's data network? It could be of enormous medical value to us and could alleviate a lot of suffering.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, hi. Thanks again for helping us with that data. {a bit disappointed} I mean, the feed only lasted about thirty seconds and it's not that useful, but... {sighing} we tried.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks again for helping with Mr. House's data network. Come see me at the Old Mormon Fort if you get a chance.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Drop dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh! Well, I heard... I mean, we heard... we meaning the Followers of the Apocalypse... that you had been in there. The Lucky 38, I mean.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "And we were wondering if you could help us. If it's not too much trouble, of course.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic000",
+   "prompt": "Why do you want to know?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Great! The Followers of the Apocalypse, well some of us, anyway, have been interested in Mr. House's technology, how he stays alive.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Of course, no one is allowed inside the Lucky 38, so no one knows what's going on. Well, except for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic001",
+   "prompt": "Yes."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, wait... please. Mr. House has access to technology that could help save a lot of lives, lives of people who suffer a great deal.",
+     "emotion": "pained",
+     "intensity": 5
+    },
+    {
+     "text": "Unlike Mr. House, refugees in New Vegas don't have the luxury of constant medical care. Some of them don't even have regular access to clean water.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "I guess we can thank NCR for that. Anyway, just a bit of information about Mr. House's technology could go a long way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic002",
+   "prompt": "If you're about to ask me for help, stop."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right. We just want to find out what sort of technology Mr. House has used to stay alive for all these years.",
+     "emotion": "pained",
+     "intensity": 5
+    },
+    {
+     "text": "It could be of great benefit to the people we try to help, many of whom suffer from hard to diagnose illnesses.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic003",
+   "prompt": "And this is where I come in."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We were connected for half a minute and received enough data to fill five holodiscs. It looked like nonsense at first, but we decoded it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was all biometric data, life signs from Mr. House. The technology he's using is so advanced that it samples data hundreds of times per second.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's fascinating, but depressing. Whatever technology he has can't possibly be practical for the people out here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic005",
+   "prompt": "Why wasn't the data useful?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Oh, I wasn't expecting you to agree so easily. That's great!",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Here, take this packet sniffer. It will allow us to intercept data on Mr. House's network.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "You might have to manually remove the encryption from his data network, but hopefully you won't have too much trouble. Good luck!",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic006",
+   "prompt": "All right. I'm on it."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. No rush, but the sooner the Followers can learn about Mr. House's technology, the better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic007",
+   "prompt": "Not quite yet."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good to hear, but it looks like the bug was deactivated a few minutes after it went online.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It looks like House has some kind of countermeasure in place to prevent evesdropping on his network. We'll get through eventually, just not today.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here are those medical supplies I promised. Hopefully you won't need to use them. Take care.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It looks like we've started getting reports from the tower's network! I'm sure the others will be able to make some sense of this.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Oh what the hell? The bug went offline! Dammit!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I swear to God that old man has thought of everything. Well, it looks like this was all for nothing, but you did your best. I appreciate the help.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "We haven't received any information yet from the bug. Please report back when you've found a way into House's network.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic008",
+   "prompt": "I've bugged the tower for you."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is important enough to the Followers that we scraped together the caps required for the credit check.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I'm staying at Vault 21, which is pretty cheap. For the Strip, anyway.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic009",
+   "prompt": "How did you get enough money to enter The Strip?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you mind if I ask why?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic011",
+   "prompt": "I'm not interested."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "About five years now. I have family back in Arroyo, but this is where all of the good work is being done, so to speak.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "NCR taxes and inflation have been hard for a lot of people to deal with, and most of the money is going to the war effort.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's not much funding for medical research with OSI or any other group - not unless it has a military application, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic012",
+   "prompt": "How long have you been with the Followers?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well... I guess that makes some sense. After all, you're the first person who's set foot in there in over two hundred years.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "Let me know if you change your mind. I'll be around here or in Vault 21.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic013",
+   "prompt": "I don't want to abuse Mr. House's trust."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. You and every other asshole around here. If you grow a heart anytime soon, I'll be around.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic014",
+   "prompt": "Because I don't give a shit about the Followers or anyone else in this dump."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{a bit shocked} Oh... okay. {regaining composure} I'll be around if you change your mind.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic015",
+   "prompt": "I have to go."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm interested in medicine, but it's not my strong suit. I try to help out with any computer issues the Followers have.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's why I was helping out with the research into Mr. House's technology. {disappointed} Trying to, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic016",
+   "prompt": "What do you do around here?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Ah. I see. I suppose I can give you some medical supplies for your efforts. I assure you they will be worth plenty of caps.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic017",
+   "prompt": "Dr. &PCName; diagnoses a terminally low discussion of caps in this conversation."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Oh. No that wasn't really what we had in mind. We were hoping you would just, you know, help us. To be helpful.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic018",
+   "prompt": "So, are you... paying me for this?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. I'll have the medical supplies for you by the time you come back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take this packet sniffer. It will allow us to intercept data on Mr. House's network.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You might have to manually remove the encryption from his data network, but hopefully you won't have too much trouble. Good luck!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic020",
+   "prompt": "All right. I'll do it."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid that's all I can offer. Well, I won't keep you any longer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me know if you change your mind. The offer for medical supplies will still be good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic021",
+   "prompt": "Not good enough."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{wary} After two tries, I think I've learned enough. I'm sure there's something more promising I could be helping the other Followers with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uh... oh yeah, I didn't tell you about the first time. I'd rather not talk about it, if you don't mind.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "I already told you, I don't want to talk about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic022",
+   "prompt": "Is there another way to get Mr. House's data?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] True. {sighs} All right. The first try was a little less \"professional\". Someone important on the Strip had access to some of House's technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Specifically, a Securitron. And more specifically, the \"someone\" was Benny. I know, I know... he shot you in the head and everything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But this was a while ago. I knew he was sleazy, but I didn't realize he was so cold-blooded.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic024",
+   "prompt": "Hey, I risked a lot to get you that data feed."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Just drop it, okay?",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic025",
+   "prompt": "What's the big deal?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic026",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See you when I see you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic027",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He sure didn't. Benny was pretty tight-lipped and cryptic about the thing, but he did let me poke around in it for a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wound up helping Benny a lot more than he helped me. Once he had access to the Securiton's memory banks, he kicked me out of the Tops.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Big surprise, right? I should have seen that coming.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic028",
+   "prompt": "Did Benny say why he had the Securitron?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Securitron was disabled somehow. Might have been an EMP, given some of the damage I saw.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, he wanted it re-enabled and connected to Mr. House's data network. The trick was getting it to be invisible on the network.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If Mr. House detects a \"rogue\" Securitron in his system, he remotely fries it. Getting around that security feature was a bit tricky.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic029",
+   "prompt": "What did he have you do?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ugh. So gross. It was bad enough that I didn't get any data out of the Securitron. This is why I didn't want to talk about it.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "It only happened once. I chalk it up to sleep deprivation and one atomic cocktail too many.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic030",
+   "prompt": "Did something... happen between you two?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, strange as it sounds, I figured that bad mouthing one of the Strip's most powerful people wasn't a good idea.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "The only reason I'm telling you any of this is because he's gone now.",
+     "emotion": "fear",
+     "intensity": 5
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic031",
+   "prompt": "You didn't think to tell anyone about this?"
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much to tell. Benny had one of Mr. House's Securitrons, deactivated, and wanted it switched back on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He had heard I was interested in Mr. House's technology so he hit me up... so to speak.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic033",
+   "prompt": "Tell me again about Benny's Securitron."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{teasing a bit} I take it you're speaking from experience.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "You're right though. He's gone now, so I'm not going to let it bother me anymore. {sweet} Thanks.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic034",
+   "prompt": "Don't be so hard on yourself. Life would be dull if it weren't for all the little mistakes."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{flattered} That's sweet of you to say, even if it isn't true.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic035",
+   "prompt": "Alcohol is the only way Benny could ever get any action from a smart girl like you."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good point.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic036",
+   "prompt": "Getting sucker punched by Benny happens to the best of us."
+  },
+  {
+   "key": "vfreeformlucky38lucky38followeremilytopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And maybe you should go jump off Hoover Dam, jackass.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "vfreeformlucky38Lucky38FollowerEmilyTopic037",
+   "prompt": "Maybe you should chalk it up to being irresponsible and naive."
+  }
+ ],
+ "speaker": "emily_ortal"
+}

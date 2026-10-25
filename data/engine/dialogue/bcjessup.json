@@ -1,0 +1,318 @@
+{
+ "id": "bcjessup",
+ "speaker_name": "Jessup",
+ "source": "BCJessup.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player attacked NCR, NCR troops not all dead} Kill every last one of those NCR troopers and then we'll talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{astonished, but in a manly way} What the hell? You're that courier Benny wasted back in Goodsprings. You're supposed to be dead.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{slight threat} I'm getting real tired of talking.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Still got a bit of a walk ahead of us. Talk fast.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not afraid of a gunfight, but I'd rather get back to Red Rock without a few extra holes in me if I can help it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic000",
+   "prompt": "Why don't you just shoot your way out of here?"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, that's a pretty piece of work. Makes me wonder why you'd turn on the NCR, especially when they had us cold.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Here - a souvenir for you. It's Benny's lighter. Shove it up his ass when you catch up with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic001",
+   "prompt": "The troopers are all dead. You're free to go."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, {as in, \"go on, get out\"} go on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And here I thought us Great Khans were tough to kill. So, what happens now?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic003",
+   "prompt": "I got better."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think you can take me, punk?",
+     "emotion": "anger",
+     "intensity": 100
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic008",
+   "prompt": "Not quite. When I kill you, however, the job will get done right."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then we are out of here. Here - a souvenir for you. It's Benny's lighter. Shove it up his ass when you catch up with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic020",
+   "prompt": "The NCR troopers have been paid to look the other way."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's to negotiate? The NCR backs off, we walk out of here, nobody gets hurt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still going on about this, huh? Pretty sure I already said we want the NCR to back off and let us out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic022",
+   "prompt": "Let's talk about settling things between you and the NCR."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't have it. Benny stole it, right before he stabbed us in the back. He's probably back at the Strip by now, laughing at me.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic033",
+   "prompt": "Where's the Platinum Chip?"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah... about that...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic034",
+   "prompt": "Well, I'm not, and I believe you have something of mine."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah? On what?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic035",
+   "prompt": "I want some more answers."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's one of the Chairmen, big shots who run The Tops casino in New Vegas. A friend from the city contacted me with info on a big job.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I should've known that the caps were too good to be true, but there was still no way I could pass up the chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic036",
+   "prompt": "What can you tell me about Benny?"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic037",
+   "prompt": "Never mind. Let's talk about something else."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And face NCR \"justice?\" No thanks. I'd rather not spend the next ten years doing hard labor.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic038",
+   "prompt": "Any chance you're willing to surrender?"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just a big, fancy poker chip as far as I know. Don't know why anyone would make one out of platinum, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic039",
+   "prompt": "What do you know about the Platinum Chip?"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Jessup mentions bribe option} We'd try to bribe our way out, but seeing as how Benny didn't pay us yet, that won't happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic040",
+   "prompt": "I'm willing to hear other suggestions."
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's a snake, that's why. He owed us the rest of the pay for the job, so maybe he didn't want to pay up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic041",
+   "prompt": "Why did Benny betray you?"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I can't believe I'm doing this, but all right, the hostages can go. The NCR had better keep their end of the deal, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here - a souvenir for you. It's Benny's lighter. Shove it up his ass when you catch up with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic042",
+   "prompt": "Free the hostages now, and I'll have the NCR escort you out of their territory.",
+   "label": "< Speech - 45 >"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic042_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Right, and they'd probably give us all medals, too. Maybe I should kill a hostage because you wasted my time with this shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic042",
+   "prompt": "If you let the hostages free now, maybe the NCR would just let you go.",
+   "label": "< Speech - 45 >"
+  },
+  {
+   "key": "vfreeformbouldercitybcjessuptopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{annoyed at the player's flippant reaction} All right, quit fucking around. You survived and you tracked us down. What now?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformBoulderCityBCJessupTopic043",
+   "prompt": "I'm a ghost, here to haunt you. Oooooh..."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah, {as in, \"go on, get out\"} go on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "jessup"
+}

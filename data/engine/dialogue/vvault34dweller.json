@@ -1,0 +1,71 @@
+{
+ "id": "vvault34dweller",
+ "speaker_name": "Vault 34 dweller (human)",
+ "source": "VVault34Dweller.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello, outlander.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's good making your acquaintance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Excuse me, I'm{dubitative} ... not from around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Horowitz is our leader.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Emotional to meet savior} You're the one who saved us! Thank you.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Complicit and congratulatory} I heard you talking to Horowitz, and can't thank you enough for what you've done for us.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Emotional to meet savior} I hope everyone on the surface is like you.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Sincere thankfulness} We're in your debt. Thank you, outlander.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Lamenting fate} I wish we were back at our Vault.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Lamenting fate} The surface world is a cruel place.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry disbelief} Why are you people treating us like this?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "vault_34_dweller_human"
+}

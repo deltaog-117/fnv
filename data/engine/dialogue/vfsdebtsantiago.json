@@ -1,0 +1,566 @@
+{
+ "id": "vfsdebtsantiago",
+ "speaker_name": "Santiago (Fallout: New Vegas)",
+ "source": "VFSDebtSantiago.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How are you today? Santiago is fabulous!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah... I wasn't expecting you to return.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Santiago has nothing left to give. Leave me now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Santiago thanks you for getting him this job.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good evening! Are you looking for companionship, love?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Indeed, Santiago is a poet among pretenders. If you are here to collect for the Garrets, Santiago is debt free.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic001",
+   "prompt": "Francine warned me that you're a smooth-talker."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes indeed, Santiago is very important. I even have a discount at Mick & Ralph's.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps you could use Santiago's discount? For 50 caps, Santiago will tell you the super secret code word to get a discount with Mick.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic002",
+   "prompt": "VIP? The Garrets said nothing about VIP status."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Santiago thanks you. Tell Mick Santiago sent you and the code word is 'extravaganza'.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic003",
+   "prompt": "50 Caps is a bit steep, but okay. Here, now what is it?"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] 25 caps will do. Tell Mick Santiago sent you and the code word is 'extravaganza'. He will set you up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic004",
+   "prompt": "I don't even know this discount is worth 50. How about 25 caps?",
+   "label": "<Barter down 25 caps>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, my friend. 50 caps is the price to be a VIP.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic004",
+   "prompt": "What kind of moron would pay 50 caps for information? 25 caps.",
+   "label": "<Barter down 25 caps>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sir, Santiago does not know what he has done to offend, but he can explain everything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic005",
+   "prompt": "Santiago is dead if he doesn’t cough up what he owes the Garrets."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Santiago is offended that you would opine such slander.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic008",
+   "prompt": "Liar. Pay up."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ow! Okay. Here! Take the caps, just don't hurt Santiago again!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic009",
+   "prompt": "<Punch Santiago in the face> I won't ask again, Santiago."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I didn't think she was upset enough to have me killed... Here are the caps I owe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I do the Santiago act to get out of paying for services every once in a while. I didn't think it could possibly get me killed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic010",
+   "prompt": "I'd rather not kill you, but Francine put a bounty on your head.",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic010_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED]You think Santiago is susceptible to such idle threats? Santiago laughs at your silly bluff.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic010",
+   "prompt": "I'm going to... Well, I'm sure it will be very painful if you don't pay.",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] When did this happen?! Hey, look. I only do the Santiago bit as a way of getting free stuff. I didn't think it would get me in trouble. {Spoken plainly without the rico-suave tone.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here is everything I have on me. Keep the extra for yourself! The last thing I need is a constant stream of bounty hunters after me. {Spoken plainly without the rico-suave tone.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic011",
+   "prompt": "With a price on your head, you should be paying me to say you're dead.",
+   "label": "<Barter>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic011_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You are not a VIP. You do not tell Santiago what he needs to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leave me now. Santiago grows bored of this exchange.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic011",
+   "prompt": "You need to pay me to pay the Garrets right now.",
+   "label": "<Barter>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtangelotopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here are the caps I owe! No need for violence!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtAngeloTopic012",
+   "prompt": "I can collect from your corpse, if you prefer."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsanchotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Santiago does not owe anyone. Santiago is a Freeside VIP.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSanchoTopic000",
+   "prompt": "You owe the Garrets a bunch of caps."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Santiago knows not of what you speak.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic000",
+   "prompt": "Your discount was a lie."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wait! Here is a full refund! Don't kill me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wait! Here is a full refund! Don't kill me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic001",
+   "prompt": "I'm going to kill you now."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm kidding, ha ha! There is no discount. Sorry!... Please don't kill me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can give you this tip, though. I have seen a few people go to the pawn shop then somehow get through the south gate to Vegas without caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Coincidence? I think not. Ralph and Mick have something going on there, but they refuse to let me in on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic002",
+   "prompt": "<Glare> You should give me this code for free while you can still walk straight.",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic002_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I appologize, friend, but that is absurd given the value of this information.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic002",
+   "prompt": "Give it to me for free, now!",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] 25 caps will do. Tell Mick Santiago sent you and the code word is 'extravaganza'. He will set you up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic003",
+   "prompt": "50 caps without even knowing the details of this code? How about 25?",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, my friend. 50 caps is the price to be a VIP.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic003",
+   "prompt": "25 caps, take it or leave it.",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sir, Santiago told you. Santiago has no debts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic004",
+   "prompt": "Now you need to settle that debt with the Garrets."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No! Don't!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic005",
+   "prompt": "Thanks, but I'm still going to kill you."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You won't! I'll be clean as a whistle!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic006",
+   "prompt": "Goodbye, and I better not hear about you trying this crap again."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Here, I'll pay you back extra! I'm sorry!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] Here, I'll pay you back extra! I'm sorry!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic007",
+   "prompt": "Santiago, dealing with you is getting to be more annoying than it is worth.",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic007_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't have any more than that to give! I'm sorry!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic007",
+   "prompt": "Hey, you made me look like a fool!",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic010",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm honored they would consider me. I'll start immediately.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic011",
+   "prompt": "James Garret is looking for a suave escort. Interested in some work?"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Santiago is here to please, my prarie flower. Just a few caps and I'm yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Santiago is sorry, but you must have a room first. Please see Ms. Garret to procure lodging.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic012",
+   "prompt": "I'd like to hire you for a bit."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll meet you upstairs in a moment, darling.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic013",
+   "prompt": "Here you go. <Pay 25 caps>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss, my friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic014",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How do you suggest Santiago does this?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic015",
+   "prompt": "You could work off your debt."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It is a dream come true. Santiago never thought he could work in such a wonderous den of vice and iniquity.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic017",
+   "prompt": "How do you like the new job?"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic018",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtsantiagotopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtSantiagoTopic019",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfssantiagohello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hello, my friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSantiagoHello",
+   "prompt": "VFSSantiagoHello"
+  },
+  {
+   "key": "vfssantiagohello2",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Please leave me alone. I have nothing more to give.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSSantiagoHello2",
+   "prompt": "VFSSantiagoHello2"
+  }
+ ],
+ "speaker": "santiago"
+}

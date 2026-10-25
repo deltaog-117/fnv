@@ -1,0 +1,177 @@
+{
+ "page": "WestsideHector.txt",
+ "speaker": "Hector",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, hello.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{kid who just got caught in the act} Agh! I wasn't doing anything!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS101EHectorTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "'Cause it's clean. The crops taste funny if you don't use clean water, but the NCR won't give us any and it's too expensive to buy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why is this water so special?"
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I deliver things and stuff for the people here. They give me caps to do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{nervous, hiding a secret} Corporal White? I don't know where he - {obviously changing his lie mid-sentence} uh, I mean, never heard of him. Uh, I gotta go...",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Do you know anything about Corporal White?"
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh... it's for the co-ops. Mr. Anderson told me to do it - he said it wasn't stealing if it's for the good of everybody.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You look like you're gathering water. The Westside isn't supposed to have a water supply."
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He caught me and made me tell on Mr. Anderson. I don't know what happened after that, but when I asked, Mr. Anderson said not to worry.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But... Mr. Anderson had this look on his face. It's the look grownups get when they've done something bad.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's stealing, no matter who it's for. Corporal White found out, didn't he?"
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I didn't want to get Mr. Anderson in trouble. He says the Westside needs to be able to take care of itself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Corporal White caught me taking the water and made me tell on Mr. Anderson. I think something bad happened, but Mr. Anderson told me not to worry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If something happened to White, tell me. You know it's the right thing to do.",
+   "label": "< Speech 80 >"
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I said I don't know anything. Leave me alone!",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Are you lying, Hector?",
+   "label": "< Speech 80 >"
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I didn't want to get Mr. Anderson in trouble. He says the Westside needs to be able to take care of itself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Corporal White caught me taking the water and made me tell on Mr. Anderson. I think something bad happened, but Mr. Anderson told me not to worry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Child At Heart}It's okay if you tell me - I won't get you in trouble."
+  },
+  {
+   "id": "vDialogueWestsideWestsideHectorTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. I gotta go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You sure you don't know anything?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

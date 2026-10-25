@@ -1,0 +1,431 @@
+{
+ "id": "lindaschuler",
+ "speaker_name": "Linda Schuler",
+ "source": "LindaSchuler.txt",
+ "topics": [
+  {
+   "key": "doctoraddiction",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't say that's something I treat all the time, but I should have something to help you through it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddiction",
+   "prompt": "I think I might be addicted to something."
+  },
+  {
+   "key": "doctoraddictionno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're making a mistake, but that's just my opinion. What do I know, after all? I've only studied medicine my entire life.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddictionNO",
+   "prompt": "I think I'll tough it out."
+  },
+  {
+   "key": "doctoraddictionyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There, that's got it. Do be so eager to sample dangerous substances in the future, okay?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddictionYES",
+   "prompt": "Yes, cure me. Here's 50 caps.",
+   "label": "Yes, cure me."
+  },
+  {
+   "key": "doctoraddictionyes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, my supplies are rather limited, and we can only get more by trading. Which requires money. Money you don't have. Come back when you have some.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddictionYES",
+   "prompt": "I can't afford treatment. I don't have 50 caps.",
+   "label": "Yes, cure me."
+  },
+  {
+   "key": "doctormedical",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This? This is nothing. You should see some of the wounds I've seen paladins come back with.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "That's not so bad. I should be able to treat you rather quickly.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "By Steel, I haven't seen wounds like these since HELIOS. I've got to get you treated quickly.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, but is that supposed to be a joke? There's nothing wrong with you. I can tell just by looking.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical",
+   "prompt": "I'm hurt. I need help, Doc."
+  },
+  {
+   "key": "doctormedical33yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This might take a while. Close your eyes and try to relax, and we'll begin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical33YES",
+   "prompt": "Okay, fix me. Here's 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "key": "doctormedical33yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid protocol prevents me from treating you then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical33YES",
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "key": "doctormedical66yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This shouldn't take too long. Just close your eyes and relax.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical66YES",
+   "prompt": "Okay, fix me. Here's 75 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "key": "doctormedical66yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid protocol prevents me from treating you then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical66YES",
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "key": "doctormedical99yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This shouldn't take too long. Just close your eyes and try to relax.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical99YES",
+   "prompt": "Okay, fix me. Here's 50 caps.",
+   "label": "All right, fix me."
+  },
+  {
+   "key": "doctormedical99yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid protocol prevents me from treating you then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical99YES",
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "All right, fix me."
+  },
+  {
+   "key": "doctormedicalno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not my clinical opinion, but so be it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedicalNO",
+   "prompt": "On second thought, I'll be fine."
+  },
+  {
+   "key": "doctorradiation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We always make sure to keep an ample supply of Rad-Away. Most of us haven't had the exposure outsiders like you take for granted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiation",
+   "prompt": "Can you heal my radiation?"
+  },
+  {
+   "key": "doctorradiationno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself. I'm sure there are ghouls and other mutants who once said the same thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationNO",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "doctorradiationyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here we go. You'll be rad-free in no time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationYES",
+   "prompt": "Here's your 100 caps. Do it.",
+   "label": "Do it."
+  },
+  {
+   "key": "doctorradiationyes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I can't help, sorry. Just following protocol.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationYES",
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "Do it."
+  },
+  {
+   "key": "doctorsupplies",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose I have a few things around that I can spare.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorSupplies",
+   "prompt": "I need medical supplies."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard we have you to thank for McNamara having a change of heart. Thank you. So what can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a rumor going around that you were behind Hardin's takeover. I suppose his leadership is better than none at all. Time will tell.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So what brings you by today?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, you must be the outsider everyone is talking about. I'm Linda Schuler. If you ever need medical attention, this is the place to come.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello. Can I help you with something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguehiddenvalleylindaschulertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I handle all medical needs in the bunker. If you're ever wounded, I can treat you, for a fee.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Normally I'd just be the base's medical officer, but my other duties say otherwise.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyLindaSchulerTopic000",
+   "prompt": "So you're a doctor?"
+  },
+  {
+   "key": "vdialoguehiddenvalleylindaschulertopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We have equipment here to treat most physical injuries - lacerations, broken bones, that sort of thing. We also carry a full supply of antitoxins.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You may have noticed the Bark Scorpions up above. Though tiny, their venom packs quite a punch. Treating scorpion stings is my most common procedure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can also treat any form of radiation sickness you pick up out in the waste, no matter what stage, save the last.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyLindaSchulerTopic008",
+   "prompt": "What services can you perform?"
+  },
+  {
+   "key": "vdialoguehiddenvalleylindaschulertopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm this bunker's Head Scribe in everything but name. I supervise the research teams. I collate the reports. I attend the meetings.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But for reasons beyond me, that buffoon Taggart still gets the title. And don't get me started on that little pet of his.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Everyone around here knows what's going on there but her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyLindaSchulerTopic009",
+   "prompt": "You mentioned other duties you had?"
+  },
+  {
+   "key": "vdialoguehiddenvalleylindaschulertopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you wish.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyLindaSchulerTopic010",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguehiddenvalleylindaschulertopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I tried. The elder listened patiently to my carefully constructed argument regarding why that buffoon should lose his position.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then he just as patiently explained to me that Taggart's work was vital to our cause, and that he wasn't to be trifled with \"lesser matters.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But vital to our cause? Hardly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyLindaSchulerTopic011",
+   "prompt": "Why not tell on him?"
+  },
+  {
+   "key": "vdialoguehiddenvalleylindaschulertopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "She's cute, isn't she? Like a puppy, almost. Unfortunately, our Head Scribe's intentions toward her aren't quite so innocent.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyLindaSchulerTopic012",
+   "prompt": "Was Initiate Watkins the \"pet\" you were referring to earlier?"
+  },
+  {
+   "key": "vdialoguehiddenvalleylindaschulertopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't appreciate how much harder I have to work to cover for his tendency to focus on his personal projects.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I try not to think too much about his personal proclivities.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyLindaSchulerTopic013",
+   "prompt": "You really don't like Taggart, do you?"
+  },
+  {
+   "key": "hvschulerveronica",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Quite well. Thank you for asking, Veronica.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVSchulerVeronica",
+   "prompt": "HVSchulerVeronica"
+  }
+ ],
+ "speaker": "senior_scribe_schuler"
+}

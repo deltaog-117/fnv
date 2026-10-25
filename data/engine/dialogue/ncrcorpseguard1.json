@@ -1,0 +1,218 @@
+{
+ "id": "ncrcorpseguard1",
+ "speaker_name": "NCR trooper",
+ "source": "NCRCorpseGuard1.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa whoa whoa. Hold up. Where do you think you're going?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, good luck. We'd be there with you, but the Colonel said he'd have our necks if we tried.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Be careful out there. We already lost Jackson doing what you're trying to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell of a thing you did up there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Proud to have met you, sir.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Proud to have met you, ma'am.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformmccarrancorpseguardend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh my God, are you okay? You've gotta get to a medic. Doc Kemp can patch you up back at base.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How could you just sacrifice your body like that? You never even met him. If the NCR doesn't have a medal for this, they should make one up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't believe it. Who the hell are you, man? How did you just walk right up and pull him out of there? {Awestruck.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't believe it. Who the hell are you, lady? How did you just walk right up and pull him out of there? {Awestruck.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranCorpseGuardEnd",
+   "prompt": "VFreeformMcCarranCorpseGuardEnd"
+  },
+  {
+   "key": "vfreeformmccarranncrcorpseguard1topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Christina hired you, huh? Well, if you're going to go up there, there's a couple things you should know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Esteban's body is in the middle of those buildings up the hill there. Look carefully, and you can see the Fiends patrolling the rooftops.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But they laid traps, too. There's mines all over. So for godsakes, watch your feet. Get him back here. We'll get him home.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranNCRCorpseGuard1Topic000",
+   "prompt": "I'm going to retrieve the body of Ranger Morales."
+  },
+  {
+   "key": "vfreeformmccarranncrcorpseguard1topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wouldn't do that if I were you. Those buildings up ahead are crawling with psychos. This is as far up as we've been able to safely set up a position.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You go any further, we can't protect you, understand?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranNCRCorpseGuard1Topic001",
+   "prompt": "Just passing through."
+  },
+  {
+   "key": "vfreeformmccarranncrcorpseguard1topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, smartass, I get it. You don't answer to us. But get this straight. You will get eaten alive if you go up that way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And that's not a figure of speech, either. Bunch of sick, messed-up junkies control the road up there. Got a thing for desecrating corpses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've been warned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranNCRCorpseGuard1Topic002",
+   "prompt": "I'm going to take this basket of cakes to my grandmother's house."
+  },
+  {
+   "key": "vfreeformmccarranncrcorpseguard1topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, it's your life. {unconcerned - \"do what you want with it.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranNCRCorpseGuard1Topic005",
+   "prompt": "I'll take my chances."
+  },
+  {
+   "key": "vfreeformmccarranncrcorpseguard1topic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Least we can do. Wish we could help more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranNCRCorpseGuard1Topic006",
+   "prompt": "Understood. Thanks for the help."
+  },
+  {
+   "key": "vfreeformmccarranncrcorpseguard1topic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{emphasize 2nd syllable, draw out} Bullshit. What anybody else would've done is get their asses killed. You're leading some kind of charmed life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll make sure Ranger Morales' body gets sent back home. You don't have to, you know, pick him up on your shoulder and haul him to California.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even though I believe you would if you had to. You should go tell Private Morales the news. I know she'll be relieved.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranNCRCorpseGuard1Topic008",
+   "prompt": "I just did what anybody else would've done."
+  },
+  {
+   "key": "vfreeformmccarranncrcorpseguard1topic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That must be {emph. \"some kind,\" as in, an impressive one} some kind of code of honor you hold yourself to. You're like a woman possessed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That must be {emph. \"some kind,\" as in, an impressive one} some kind of code of honor you hold yourself to. You're like a man possessed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranNCRCorpseGuard1Topic009",
+   "prompt": "I made a promise to Private Morales."
+  },
+  {
+   "key": "vfreeformmccarranncrcorpseguard1topic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, well, it looks like it might be too late for the Fiends. But we got the message loud and clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranNCRCorpseGuard1Topic010",
+   "prompt": "Now both the Fiends and the NCR know not to fuck with me."
+  }
+ ],
+ "speaker": "ncr_trooper"
+}

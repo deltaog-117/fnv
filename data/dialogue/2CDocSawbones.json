@@ -1,0 +1,299 @@
+{
+ "page": "2CDocSawbones.txt",
+ "speaker": "Sawbones (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "DoctorAddiction",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe you are and maybe you aren't, but I don't give my help to enemies of the NCR. Maybe you can find a raider \"medic\" to fix you up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, then, take two shots of whiskey and call me in the morning. Heh heh, little doctor humor. Okay, let's have a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I might be addicted to something."
+  },
+  {
+   "id": "DoctorAddictionNO",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh. Good luck with that. Just try to remember the Cazadores crawling out of your skin aren't real.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But on the off chance they are, come back and see me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I'll tough it out."
+  },
+  {
+   "id": "DoctorAddictionYES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And there we go. Now, try to stay off the stuff, you hear?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes, cure me. Here's 50 caps.",
+   "label": "Yes, cure me."
+  },
+  {
+   "id": "DoctorMedical",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe you are and maybe you aren't, but I don't give my help to enemies of the NCR. Maybe you can find a raider \"medic\" to fix you up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got to be kidding me. You're fine - this is just a ploy to get a free sucker, isn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This doesn't look too bad. We'll have you good as new in no time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn, that's got to hurt. Okay, hold still, it's gonna get worse before it gets better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wasn't going to say anything, but when you walked in here I thought you were a ghoul. We better get to work on this quick.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm hurt. I need help, Doc."
+  },
+  {
+   "id": "DoctorMedical33YES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, just hold steady. Want a shot of whiskey to calm your nerves? Mind if I have one? Heh heh, little doctor humor there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay, fix me. Here's 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "id": "DoctorMedical33YES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I can't help you much. Now, maybe if you enlisted....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "id": "DoctorMedical66YES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, just hold steady. Want a shot of whiskey to calm your nerves? Mind if I have one? Heh heh, little doctor humor there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay, fix me. Here's 75 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "id": "DoctorMedical66YES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I can't help you much. Now, maybe if you enlisted....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "id": "DoctorMedical99YES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, just hold steady. Want a shot of whiskey to calm your nerves? Mind if I have one? Heh heh, little doctor humor there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay, fix me. Here's 50 caps.",
+   "label": "All right, fix me."
+  },
+  {
+   "id": "DoctorMedical99YES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I can't help you much. Now, maybe if you enlisted....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "All right, fix me."
+  },
+  {
+   "id": "DoctorMedicalNO",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want to play tough guy, that's no skin off my nose.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You want to play tough gal, that's no skin off my nose.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "On second thought, I'll be fine."
+  },
+  {
+   "id": "DoctorRadiation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't give my help to enemies of the NCR. Maybe you can find a raider \"medic\" to fix you up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, sorry, we're totally unprepared to deal with radiation sickness.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ha ha, just kidding, of course I can!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you heal my radiation?"
+  },
+  {
+   "id": "DoctorRadiationNO",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you say. Hey, is that a little patch of ghoul rot on your cheek there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, thanks."
+  },
+  {
+   "id": "DoctorRadiationYES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This might tickle a little. Or it might cause searing, agonizing pain to shoot through your body. You never know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's your 100 caps. Do it.",
+   "label": "Do it."
+  },
+  {
+   "id": "DoctorRadiationYES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I can't help you much. Now, maybe if you enlisted....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "Do it."
+  },
+  {
+   "id": "DoctorSupplies",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't give my help to enemies of the NCR. Maybe you can find a raider \"medic\" to fix you up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's what I've got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need medical supplies."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Something I can do you for?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I suppose I can help you out. What do you want?",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "I'm not really comfortable having you in here, so make it quick.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "Hey, friend. Need something?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Glad to see you! Need a patch-job?",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "I think you'd better get out of here.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "There are a half-dozen troopers in shouting distance. Best remember that before you try anything.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "prompt": "GREETING"
+  }
+ ]
+}

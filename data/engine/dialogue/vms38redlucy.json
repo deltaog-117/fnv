@@ -1,0 +1,4982 @@
+{
+ "id": "vms38redlucy",
+ "speaker_name": "Red Lucy",
+ "source": "VMS38RedLucy.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd remember if I had seen you here before, I'm sure of it... {pauses as if thinking \"anyway, whatever\"} What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Welcoming, to one of her own} Greetings, Hunter of The Thorn.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The crowds are waiting for you, stranger. Show us your best.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight irritation} It's time for blood, not talk. Find me after the fight.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Congratulatory tone, if just a hint} Well done, stranger. Here's your share.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Strong emotion veiled by stoic expression} The Thorn does not welcome you, stranger. Leave now or suffer the consequences.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even the strongest creatures need their rest, {slight pause} and their companionship. I've been looking forward to this.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Ambivalent tone, generic} You know where we meet, and that's not here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{About to attack player} You've broken the rules of The Thorn. You've dishonored this sacred ground! I don't tolerate such offenses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{About to attack player} I admire your bravery, but coming down here after what you've done is just foolish. So be it, Legion dog!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Lay down with me, my hunter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our time was sweet, my hunter. But our passion will have to wait - The Thorn demands attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No more fights today. The Thorn needs time to soak its tribute of blood.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms38vms38redlucyattacks",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{About to attack player} You've broken the rules of The Thorn, you've dishonored this sacred ground! I don't tolerate such offenses.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyAttacks",
+   "prompt": "VMS38VMS38RedLucyAttacks"
+  },
+  {
+   "key": "vms38vms38redlucyattacks2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{About to attack player} I admire your bravery, but coming down here after what you've done is just foolish. So be it, Legion dog!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyAttacks2",
+   "prompt": "VMS38VMS38RedLucyAttacks2"
+  },
+  {
+   "key": "vms38vms38redlucytopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight Offense} The clamor of our bloodthirsty crowds reaches every corner of The Wasteland, but I'll pretend that your ignorance doesn't offend me, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Proud} This is The Thorn! Here's where the strong make a name for themselves and the weak are fed to the jaws of hell.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You can bet on the contenders or, if you have what it takes, be one of the contenders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Severe} Be warned, The Thorn demands respect. Break the rules, or offend me in any way, and I'll gut you open for all to see.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic004",
+   "prompt": "What's this place?"
+  },
+  {
+   "key": "vms38vms38redlucytopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic007",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms38vms38redlucytopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good work, stranger. The Thorn will nurture these eggs until their hatchlings are ready to bleed for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a compensation for your service. I trust that we're in agreement over it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic008",
+   "prompt": "I've brought the Giant Mantis Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good work, stranger. The Thorn will nurture these eggs until their hatchlings are ready to bleed for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a compensation for your service. I trust that we're in agreement over it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic009",
+   "prompt": "I've brought the Night Stalker Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Immpressed, showing emotions almost for the first time} You've, indeed, become the greatest hunter The Thorn has ever seen, the best I've ever seen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've earned the honor of being part of this sacred ground. Come to me often and I'll share with you the wealth of The Thorn.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic010",
+   "prompt": "I've brought the Deathclaw's Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic011",
+   "prompt": "<Questions about The Thorn>"
+  },
+  {
+   "key": "vms38vms38redlucytopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ask and you might get an answer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic012",
+   "prompt": "<Questions about Westside>"
+  },
+  {
+   "key": "vms38vms38redlucytopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic013",
+   "prompt": "<Questions about Red Lucy>"
+  },
+  {
+   "key": "vms38vms38redlucytopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "New Vegas has many faces, stranger. Despite everything, it shall never be whole.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When the land hunts you, when fighting for survival is the norm, your neighbors become either saviors, or enemies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Westside is a part of New Vegas, just as much as it's a part of the Wasteland. In the end, stranger, we need them both to continue making our fate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic016",
+   "prompt": "Is Westside part of New Vegas?"
+  },
+  {
+   "key": "vms38vms38redlucytopic016_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Westside is a part of New Vegas, just as much as it's a part of the Wasteland. In the end, stranger, we need them both to continue making our fate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic016",
+   "prompt": "Tell me again about Westside's relationship to New Vegas."
+  },
+  {
+   "key": "vms38vms38redlucytopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good work, stranger. The Thorn will nurture these eggs until their hatchlings are ready to bleed for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a compensation for your service. I trust that we're in agreement over it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic017",
+   "prompt": "I've brought the Radscorpion Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've got a pair of Giant Mantises ready to bleed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Radscorpions. The crowd loves those.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're lucky to have some Cazadores in the next match.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Giant Radscorpions are about to battle in The Thorn.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Deadly NightStalkers will now fight for our pleasure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The strongest Geckos you'll ever see are ready to fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Excitedly, yet still solemn} The deadliest beast of all! You've never seen anything like this before.",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "Deathclaws will bleed this sacred ground red! Make your bets, stranger, before it's too late.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Fiend prisoners will fight for their lives against Night Stalkers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Radscorpions against Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've got three fiends ready for our Cazadores.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A rare fight, Deathclaw against Fire Geckos.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Giant Radscorpions against two Deathclaws.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic018",
+   "prompt": "What's fighting in the next match?"
+  },
+  {
+   "key": "vms38vms38redlucytopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Remains Stoic, Unperturbed} Even if I trusted you I'd not share my secrets just for your pretty face, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Thorn's a sacred ground, a source of awe. Here we truly rule over the forces of nature, for once.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Not a chiding remark, but firm and proud} These beasts are slaves to their instincts and hunger for blood. That's good enough an answer for everyone, and it'll do for you too.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Not a chiding remark, but firm and proud} These beasts are slaves to their instincts and hunger for blood. That's good enough an answer for everyone, and it'll do for you too.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic019",
+   "prompt": "How do you train the creatures?"
+  },
+  {
+   "key": "vms38vms38redlucytopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And I won't stop you, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Stoic, \"deathwish\" for has a transcendental meaning} What's the name of your deathwish?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic020",
+   "prompt": "I want to fight in The Thorn."
+  },
+  {
+   "key": "vms38vms38redlucytopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's test your mettle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On how many can you take, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic022",
+   "prompt": "I'll fight Giant Mantises."
+  },
+  {
+   "key": "vms38vms38redlucytopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see what you've got.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On how many can you take, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic023",
+   "prompt": "I'll fight Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Cautionary, A Situation of Great Magnitude} My deadly Cazadores will test your limits.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On how many can you take, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic024",
+   "prompt": "I'll fight Cazadores."
+  },
+  {
+   "key": "vms38vms38redlucytopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Cautionary, but still stoic} Be warned, my Geckos are the toughest you'll ever face.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On how many can you take, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic025",
+   "prompt": "I'll fight Geckos."
+  },
+  {
+   "key": "vms38vms38redlucytopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Quite moved, respects players' bravery} Now you're talking! I'll be impressed if you make it out alive, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Having seen what you're capable of, I think you'd fight a horde of them and not bat an eye.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Firm} But The Thorn honors balance, not foolish sacrifice. I'll only allow one Deathclaw against you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic026",
+   "prompt": "I'll fight Deathclaws."
+  },
+  {
+   "key": "vms38vms38redlucytopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic028",
+   "prompt": "I'll bet 20 on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic029",
+   "prompt": "I'll bet 20 on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm listening.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic031",
+   "prompt": "I've got other questions for you."
+  },
+  {
+   "key": "vms38vms38redlucytopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic033",
+   "prompt": "One is good, for now."
+  },
+  {
+   "key": "vms38vms38redlucytopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Approving} Confident, I like that.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic034",
+   "prompt": "Two are no problem for me."
+  },
+  {
+   "key": "vms38vms38redlucytopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Approving} The crowd loves your bravery.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic035",
+   "prompt": "Three of them, bring it on!"
+  },
+  {
+   "key": "vms38vms38redlucytopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good work, stranger. The Thorn will nurture these eggs until their hatchlings are ready to bleed for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a compensation for your service. I trust that we're in agreement over it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic038",
+   "prompt": "I've brought the Fire Gecko Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic039",
+   "prompt": "One is good, for now."
+  },
+  {
+   "key": "vms38vms38redlucytopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confident, I like that.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic040",
+   "prompt": "Two are no problem for me."
+  },
+  {
+   "key": "vms38vms38redlucytopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The crowd loves your bravery.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic041",
+   "prompt": "Three of them, bring it on!"
+  },
+  {
+   "key": "vms38vms38redlucytopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic043",
+   "prompt": "One is good, for now."
+  },
+  {
+   "key": "vms38vms38redlucytopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confident, I like that.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic044",
+   "prompt": "Two are no problem for me."
+  },
+  {
+   "key": "vms38vms38redlucytopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The crowd loves your bravery.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic045",
+   "prompt": "Three of them, bring it on!"
+  },
+  {
+   "key": "vms38vms38redlucytopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The rules are simple. My creatures fight for our pleasure. You can bet on a contender and earn double if you chose the victor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you can get a bigger share if you risk your skin in The Thorn. Win a fight and I'll give you a meaty cut of the earnings.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Severe} I won't tolerate anyone that interferes with the fights. Offend me, and your blood will be the next to spill. Other than that, anything goes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic052",
+   "prompt": "What are the rules?"
+  },
+  {
+   "key": "vms38vms38redlucytopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slightly bothered by players' lack of seriousness} Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic058",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic059",
+   "prompt": "I'll bet 20 on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic060",
+   "prompt": "I'll bet 20 on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic065",
+   "prompt": "I'll bet 20 on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic066",
+   "prompt": "I'll bet 20 on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic071",
+   "prompt": "I'll bet 20 on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic072",
+   "prompt": "I'll bet 20 on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic076",
+   "prompt": "I'll bet 20 on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic077",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic077",
+   "prompt": "I'll bet 20 on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Serious, A Matter of Fact} Giant Radscorpions make deadly opponents.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On how many can you take?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic083",
+   "prompt": "I'll fight Giant Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic084",
+   "prompt": "One is good, for now."
+  },
+  {
+   "key": "vms38vms38redlucytopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confident, I like that.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic085",
+   "prompt": "Two are no problem for me."
+  },
+  {
+   "key": "vms38vms38redlucytopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The crowd loves your bravery.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic086",
+   "prompt": "Three of them, bring it on!"
+  },
+  {
+   "key": "vms38vms38redlucytopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've proven yourself, stranger. Your blood hungers for glory and I'll placate its thirst.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Name your challenge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic087",
+   "prompt": "I'm ready for greater challenges."
+  },
+  {
+   "key": "vms38vms38redlucytopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic088",
+   "prompt": "One is good, for now."
+  },
+  {
+   "key": "vms38vms38redlucytopic089",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confident, I like that.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic089",
+   "prompt": "Two are no problem for me."
+  },
+  {
+   "key": "vms38vms38redlucytopic090",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The crowd loves your bravery.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic090",
+   "prompt": "Three of them, bring it on!"
+  },
+  {
+   "key": "vms38vms38redlucytopic091",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Cautionary, A Situation of Magnitude} Prepare yourself, these Night Stalkers are hungry for blood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On how many can you take, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic091",
+   "prompt": "I'll fight Night Stalkers."
+  },
+  {
+   "key": "vms38vms38redlucytopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic092",
+   "prompt": "One is good, for now."
+  },
+  {
+   "key": "vms38vms38redlucytopic093",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confident, I like that.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic093",
+   "prompt": "Two are no problem for me."
+  },
+  {
+   "key": "vms38vms38redlucytopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The crowd loves your bravery.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic094",
+   "prompt": "Three of them, bring it on!"
+  },
+  {
+   "key": "vms38vms38redlucytopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are paying for it. What'll bleed today in The Thorn, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic097",
+   "prompt": "I want to set up a mixed fight."
+  },
+  {
+   "key": "vms38vms38redlucytopic099",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My creatures are expensive to find, expensive to raise, and expensive to maintain.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If your pleasure is to see them bleed at your will, I'll oblige only after my costs are covered, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those costs will change depending on your choice of fighters. Also, I'll only allow fair fights in The Thorn.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll help you set up good matches. You pay, you bet, and I bring you the most delightful spectacle on this world. Are we clear?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic099",
+   "prompt": "Do you set up custom fights?"
+  },
+  {
+   "key": "vms38vms38redlucytopic105",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic105",
+   "prompt": "I'll bet 20 on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic106",
+   "prompt": "I'll bet 20 on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic111",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "how many?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic111",
+   "prompt": "Cazador on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How many?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic112",
+   "prompt": "Nightstalker on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How many?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic113",
+   "prompt": "Giant Mantis on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How many?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic114",
+   "prompt": "Giant Radscorpion on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic115",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How many?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic115",
+   "prompt": "Radscorpion on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic116",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How many?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic116",
+   "prompt": "Fire Gecko on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic117",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How many?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic117",
+   "prompt": "Deathclaw on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic118",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic118",
+   "prompt": "One."
+  },
+  {
+   "key": "vms38vms38redlucytopic119",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic119",
+   "prompt": "Two."
+  },
+  {
+   "key": "vms38vms38redlucytopic120",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic120",
+   "prompt": "Three."
+  },
+  {
+   "key": "vms38vms38redlucytopic121",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic121",
+   "prompt": "Giant Mantis on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic122",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic122",
+   "prompt": "Giant Mantis on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic123",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic123",
+   "prompt": "Two Giant Rats on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic124",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic124",
+   "prompt": "Three Giant Rats on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic125",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic125",
+   "prompt": "Two Giant Mantises on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic126",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic126",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic127",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic127",
+   "prompt": "Two Fiends on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic128",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic128",
+   "prompt": "Two Fiends on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic129",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic129",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic130",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic130",
+   "prompt": "Giant Rat on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic131",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic131",
+   "prompt": "Fiend on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic132",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic132",
+   "prompt": "Here's 30 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic133",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic133",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic137",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic137",
+   "prompt": "Here's 40 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic138",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic138",
+   "prompt": "Here's 50 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic139",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic139",
+   "prompt": "Here's 60 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic140",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic140",
+   "prompt": "Here's 80 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic141",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic141",
+   "prompt": "Here's 70 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic142",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic142",
+   "prompt": "Here's 90 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic143",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic143",
+   "prompt": "Here's a 100 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic144",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic144",
+   "prompt": "Here's 120 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic145",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic145",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic146",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic146",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic147",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic147",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic148",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic148",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic149",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic149",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic150",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic150",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic151",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic151",
+   "prompt": "One."
+  },
+  {
+   "key": "vms38vms38redlucytopic152",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic152",
+   "prompt": "Two."
+  },
+  {
+   "key": "vms38vms38redlucytopic153",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic153",
+   "prompt": "Three."
+  },
+  {
+   "key": "vms38vms38redlucytopic154",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic154",
+   "prompt": "Two Giant Rats on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic155",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic155",
+   "prompt": "One Fiend on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic156",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic156",
+   "prompt": "One Radscorpion on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic157",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic157",
+   "prompt": "Three Giant Rats on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic158",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic158",
+   "prompt": "Two Fiends on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic159",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic159",
+   "prompt": "Two Radscorpions on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic160",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic160",
+   "prompt": "Three Fiends on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic161",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic161",
+   "prompt": "Three Radscorpions on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic162",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic162",
+   "prompt": "One Giant Radscorpion on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic163",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic163",
+   "prompt": "Here's 50 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic164",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic164",
+   "prompt": "Here's 50 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic165",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic165",
+   "prompt": "Here's 50 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic166",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic166",
+   "prompt": "Here's 90 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic167",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic167",
+   "prompt": "Here's a 100 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic168",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic168",
+   "prompt": "Here's a 100 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic169",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic169",
+   "prompt": "Here's 150 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic170",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic170",
+   "prompt": "Here's 150 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic171",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic171",
+   "prompt": "Here's 150 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic172",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic172",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic173",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic173",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic174",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic174",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic175",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic175",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic176",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic176",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic177",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic177",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic178",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic178",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic179",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic179",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic180",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic180",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic181",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic181",
+   "prompt": "One."
+  },
+  {
+   "key": "vms38vms38redlucytopic182",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic182",
+   "prompt": "Two."
+  },
+  {
+   "key": "vms38vms38redlucytopic183",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic183",
+   "prompt": "Three."
+  },
+  {
+   "key": "vms38vms38redlucytopic184",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic184",
+   "prompt": "Three Fiends."
+  },
+  {
+   "key": "vms38vms38redlucytopic185",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic185",
+   "prompt": "Two Giant Mantises."
+  },
+  {
+   "key": "vms38vms38redlucytopic186",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic186",
+   "prompt": "One Fire Gecko."
+  },
+  {
+   "key": "vms38vms38redlucytopic187",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic187",
+   "prompt": "Three Giant Mantises."
+  },
+  {
+   "key": "vms38vms38redlucytopic188",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic188",
+   "prompt": "Two Fire Geckos."
+  },
+  {
+   "key": "vms38vms38redlucytopic189",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic189",
+   "prompt": "Two Night Stalkers."
+  },
+  {
+   "key": "vms38vms38redlucytopic190",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic190",
+   "prompt": "Three Fire Geckos."
+  },
+  {
+   "key": "vms38vms38redlucytopic191",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic191",
+   "prompt": "Two Cazadores."
+  },
+  {
+   "key": "vms38vms38redlucytopic192",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic192",
+   "prompt": "Three Night Stalkers."
+  },
+  {
+   "key": "vms38vms38redlucytopic193",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic193",
+   "prompt": "Here's 120 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic194",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic194",
+   "prompt": "Here's 120 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic195",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic195",
+   "prompt": "Here's 120 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic196",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic196",
+   "prompt": "Here's 210 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic197",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic197",
+   "prompt": "Here's 240 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic198",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic198",
+   "prompt": "Here's 280 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic199",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic199",
+   "prompt": "Here's 360 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic200",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic200",
+   "prompt": "Here's 420 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic201",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic201",
+   "prompt": "Here's 420 caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic202",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic202",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic203",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic203",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic204",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic204",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic205",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic205",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic206",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic206",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic207",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic207",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic208",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic208",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic209",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic209",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic210",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic210",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic214",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Our creatures come from the farthest reaches of the Wasteland. The Thorn takes care of them until the time to spill their blood comes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We constantly replenish our stock to keep this holy ground soaked red. Only a few brave ones{slight emphasis in \"ever\"} ever earn the honor of serving The Thorn.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic214",
+   "prompt": "At least, tell me how you find these creatures."
+  },
+  {
+   "key": "vms38vms38redlucytopic216",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Think you have what it takes?{Pensive pause} Hmm, all right. Prove your worth and I'll reward your service.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Thorn needs newborn specimens that will one day grow to honor us with their blood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bring me a dozen Giant Mantis' eggs. If you accomplish this, I might gift you with greater tasks in the future.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bring me a dozen Giant Mantis' eggs. If you accomplish this, I might gift you with greater tasks in the future.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic216",
+   "prompt": "How could I help The Thorn?"
+  },
+  {
+   "key": "vms38vms38redlucytopic217",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll find egg-carrying Mantises in The Wasteland. But a wise hunter would search at a Mantis' breeding ground, like the nearby ruins of Vault 22.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic217",
+   "prompt": "Where can I find Giant Mantis' eggs?"
+  },
+  {
+   "key": "vms38vms38redlucytopic219",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic219",
+   "prompt": "I'll find Giant Mantis' eggs for you."
+  },
+  {
+   "key": "vms38vms38redlucytopic222",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We constantly replenish our stock to keep this holy ground soaked red. Only a few brave ones ever{slight emphasis in \"ever\"} earn the honor of servicing The Thorn.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic222",
+   "prompt": "How do you find these creatures?"
+  },
+  {
+   "key": "vms38vms38redlucytopic226",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic226",
+   "prompt": "I'm still looking for the Giant Mantis Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic227",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Recognizing players' deeds} You speak the truth, stranger, and The Thorn lives by the justice that honor and strength dispense. Here's a more fitting sum.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic227",
+   "prompt": "Who else can bring you so many intact eggs? I deserve a bigger reward."
+  },
+  {
+   "key": "vms38vms38redlucytopic228",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slightly bothered that players even dare ask more from The Thorn} Those are the risks of a hunter's life. I've delivered as promised, but perhaps I should better search for someone with greater resolve and honor?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic228",
+   "prompt": "I don't agree with it because... because it was very dangerous and I deserve more caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic229",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bring me a dozen Radscorpion eggs. I'll see to it that you're rewarded fairly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bring me a dozen Fire Gecko eggs. This great challenge will earn you a matching reward.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Thorn's calling its elite hunters to collect one of its deadliest creatures. Find Night Stalker eggs and your bravery will be greatly rewarded.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm asking our top hunters to gather Cazador eggs.{Sincere affirmation, weighed by the task at hand} I'd be impressed by whoever returns with such a prize.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Words charged with solemn excitement, a moment of great relevance} This is it, hunter. I've decided to grant{slight emphasis in \"you\"} you the opportunity to earn the greatest honor The Thorn could ever expect.",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "Deathclaws are our most precious and our most feared contenders. I want you to be the one to deliver the sacred eggs to me, personally.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic229",
+   "prompt": "<Questions about VMS38 quest>"
+  },
+  {
+   "key": "vms38vms38redlucytopic231",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I thank you, stranger. The Thorn thanks you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic231",
+   "prompt": "200 caps are sufficient. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic232",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slightly suspicious of players' motives} Don't think your servile gesture earns my respect, stranger. But if that's how you want it, so it'll be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic232",
+   "prompt": "I don't need anything in return. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic234",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The eggs I seek are not easy to find, stranger. Your best chances are in the mountains north of Goodsprings, and west from Quarry Junction.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic234",
+   "prompt": "Where can I find Radscorpion eggs?"
+  },
+  {
+   "key": "vms38vms38redlucytopic237",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got yourself a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic237",
+   "prompt": "I'll find the Radscorpion eggs for you."
+  },
+  {
+   "key": "vms38vms38redlucytopic242",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic242",
+   "prompt": "Perhaps, I'll keep the eggs for now."
+  },
+  {
+   "key": "vms38vms38redlucytopic244",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're proving your worth to The Thorn. I hope these extra caps are sufficient to demonstrate my fairness.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic244",
+   "prompt": "I was planing on helping you get even deadlier creatures, but not without a raise."
+  },
+  {
+   "key": "vms38vms38redlucytopic245",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those are the risks of a hunter's life. I've delivered as promised, but perhaps I should better search for someone with greater resolve and honor?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic245",
+   "prompt": "I'm risking my life for you at every turn. Pay up or find another hunter."
+  },
+  {
+   "key": "vms38vms38redlucytopic246",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, stranger. The Thorn thanks you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic246",
+   "prompt": "300 caps are enough. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic247",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't think your servile gesture earns my respect, stranger. But if that's how you want it, so it'll be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic247",
+   "prompt": "I don't need anything in return. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic251",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fire Geckos are among The Wasteland's most dangerous creatures. Near the Ireteba Peaks lies a nest where you may find their eggs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic251",
+   "prompt": "Where can I find Fire Gecko eggs?"
+  },
+  {
+   "key": "vms38vms38redlucytopic252",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confident, I like that.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic252",
+   "prompt": "I'll find the Fire Gecko eggs for you."
+  },
+  {
+   "key": "vms38vms38redlucytopic253",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic253",
+   "prompt": "I'm still looking for the Radscorpion Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic254",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are a match to my elite, but don't congratulate yourself so profusely just yet. Still, your valor deserves recognition and I shall honor it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic254",
+   "prompt": "I've shown you my worth. Doesn't your best hunter deserve the best rewards?"
+  },
+  {
+   "key": "vms38vms38redlucytopic255",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those are the risks of a hunter's life. I've delivered as promised, but perhaps I should better search for someone with greater resolve and honor?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic255",
+   "prompt": "Those Fire Geckos are not easy... not easy at all. I deserve more caps."
+  },
+  {
+   "key": "vms38vms38redlucytopic259",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Night Stalkers are amongst the most fearsome beasts you'll ever face. They're also hard to find, but I know of a nest at a cave near Bittersprings.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic259",
+   "prompt": "Where can I find Night Stalker Eggs?"
+  },
+  {
+   "key": "vms38vms38redlucytopic260",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confident, I like that.",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic260",
+   "prompt": "I'll find the Night Stalker Eggs for you."
+  },
+  {
+   "key": "vms38vms38redlucytopic261",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, stranger. The Thorn thanks you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic261",
+   "prompt": "500 caps sound good. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic262",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't think your servile gesture earns my respect, stranger. But if that's how you want it, so it'll be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic262",
+   "prompt": "I don't need anything in return. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic263",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic263",
+   "prompt": "I'm still looking for the Fire Gecko eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic264",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you have good news for The Thorn?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic264",
+   "prompt": "<Placeholder Node for Successful Quest Returns>"
+  },
+  {
+   "key": "vms38vms38redlucytopic265",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You speak the truth, stranger, and The Thorn lives by the justice that honor and strength dispense. Here's a more fitting sum.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic265",
+   "prompt": "I've braved packs of Night Stalkers to get these eggs. My reward should match this effort."
+  },
+  {
+   "key": "vms38vms38redlucytopic269",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those are the risks of a hunter's life. I've delivered as promised, but perhaps I should better search for someone with greater resolve and honor?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic269",
+   "prompt": "I'm getting tired of running around all over The Wasteland for a handful of caps. I want more."
+  },
+  {
+   "key": "vms38vms38redlucytopic270",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, stranger. The Thorn thanks you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic270",
+   "prompt": "700 caps will do. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic271",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Brief pause, surprised that players succeeded} That actually manages to surprise me, stranger. I'm starting to believe that there's something special about you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic271",
+   "prompt": "I don't need anything in return. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic272",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cazadores are extremely deadly, but they are also reclusive. Try looking near the Red Rock's canyons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic272",
+   "prompt": "Where can I find Cazador Eggs?"
+  },
+  {
+   "key": "vms38vms38redlucytopic273",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The crowd loves your bravery.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic273",
+   "prompt": "I'll find the Cazador Eggs for you."
+  },
+  {
+   "key": "vms38vms38redlucytopic274",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good work, stranger. The Thorn will nurture these eggs until their hatchlings are ready to bleed for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a compensation for your service. I trust that we're in agreement over it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic274",
+   "prompt": "I've brought the Cazador Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic275",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are a match to my elite, but don't congratulate yourself so profusely just yet. Still, your valor deserves recognition and I shall honor it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic275",
+   "prompt": "There's almost nothing worse than Cazadores in The Wasteland. Great deeds deserve great rewards."
+  },
+  {
+   "key": "vms38vms38redlucytopic276",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those are the risks of a hunter's life. I've delivered as promised, but perhaps I should better search for someone with greater resolve and honor?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic276",
+   "prompt": "Those Cazadores almost killed me. Pay me more or... just pay me more, alright?"
+  },
+  {
+   "key": "vms38vms38redlucytopic280",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, stranger. The Thorn thanks you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic280",
+   "prompt": "A 1000 caps will do. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic281",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Brief pause, surprised that players succeeded} That actually manages to surprise me, stranger. I'm starting to believe that there's something special about you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic281",
+   "prompt": "I don't need anything in return. Take the eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic282",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Quarry Junction is overrun with Deathclaws, but you may stand a better chance at a nest near the Repconn Test Site.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic282",
+   "prompt": "Where can I find Deathclaw Eggs?"
+  },
+  {
+   "key": "vms38vms38redlucytopic283",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{A hint of sincere emotion shows through her otherwise stoic mask} I've come to expect nothing less from you, brave stranger.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{A hint of sincere emotion shows through her otherwise stoic mask} I've come to expect nothing less from you, brave stranger.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic283",
+   "prompt": "I'll find this great prize for you."
+  },
+  {
+   "key": "vms38vms38redlucytopic284",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've done enough to last many lifetimes, stranger. But{slight pause, hesitant to speak so unfamiliar words} ... I'd like you to come see me, again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic284",
+   "prompt": "Is there anything else I can do to help The Thorn?"
+  },
+  {
+   "key": "vms38vms38redlucytopic287",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you, my brave hunter.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic287",
+   "prompt": "I will, Lucy."
+  },
+  {
+   "key": "vms38vms38redlucytopic288",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic288",
+   "prompt": "I'm still looking for the Night Stalker Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic289",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic289",
+   "prompt": "I'm still looking for the Cazador Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic290",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic290",
+   "prompt": "I'm still looking for the Deathclaw Eggs."
+  },
+  {
+   "key": "vms38vms38redlucytopic291",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Westside attracts all sorts of travelers, including merchants and farmers. They come here to exchange their goods, or to seek protection.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our community provides enough food, clothes, weapons and medicine to encourage trade, and to arm our defenses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Proud} The Thorn demonstrates, beyond anything else, that we're self-sufficient. Our desert-blood has overcome even the strongest beasts of the Wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic291",
+   "prompt": "How do people here manage to survive?"
+  },
+  {
+   "key": "vms38vms38redlucytopic303",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Not chiding, but stating it as a fact of belief} The Thorn is my master, not the other way around. I live to make our kin able to transcend their limitations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Not a lament, but a matter of fact, of human condition} Our land is harsh, and hostile. Our lives are cheap, and fragile. Death is our assured fate, striking when least we expect it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Thorn awakens us to the truth. Here we escape from our bonds, and choose the moment of death against the will of destiny.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic303",
+   "prompt": "How did you become the master of The Thorn?"
+  },
+  {
+   "key": "vms38vms38redlucytopic304",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The land does not care about petty squabbles among lesser men. I don't care about that either.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the end, the people of New Vegas will continue to live and die here. It matters not who their{A hint of Mockery} self-appointed \"master\" is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic304",
+   "prompt": "What's your take on the state of affairs of the Mojave Wasteland?"
+  },
+  {
+   "key": "vms38vms38redlucytopic307",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Enjoys the over compliment, but retains composure} Bold, as it pleases The Thorn, and me. But it does take more than that to earn my admiration.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You speak like a hunter, yet only actions prove one's worth. The Thorn requires a tribute of blood, and so do I.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You show great promise. I look forward to the time when I can call you{weighing the words \"My Hunter\" as something special} \"My Hunter,\" but that time has not yet arrived.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Softer, gentler, if still confident, voice} Your bravery surpasses that of any other, and I've come to admire your actions.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Before death takes us, I would know you deeper. Come with me...{slight pause to savor the words} My Hunter.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic307",
+   "prompt": "My mind's thinking about what I could do with you, in private."
+  },
+  {
+   "key": "vms38vms38redlucytopic327",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic327",
+   "prompt": "I'll bet 20 on Red."
+  },
+  {
+   "key": "vms38vms38redlucytopic328",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic328",
+   "prompt": "I'll bet 20 on Blue."
+  },
+  {
+   "key": "vms38vms38redlucytopic329",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic329",
+   "prompt": "I'll bet 20 on Red, Night Stalkers."
+  },
+  {
+   "key": "vms38vms38redlucytopic330",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic330",
+   "prompt": "I'll bet 20 on Blue, Fiends."
+  },
+  {
+   "key": "vms38vms38redlucytopic331",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic331",
+   "prompt": "I'll bet 20 on Red, Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic332",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic332",
+   "prompt": "I'll bet 20 on Blue, Fiends."
+  },
+  {
+   "key": "vms38vms38redlucytopic333",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic333",
+   "prompt": "I'll bet 20 on Red, Cazadores."
+  },
+  {
+   "key": "vms38vms38redlucytopic334",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic334",
+   "prompt": "I'll bet 20 on Blue, Fiends."
+  },
+  {
+   "key": "vms38vms38redlucytopic335",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic335",
+   "prompt": "I'll bet 20 on Red, Deathclaw."
+  },
+  {
+   "key": "vms38vms38redlucytopic336",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic336",
+   "prompt": "I'll bet 20 on Blue, Fire Geckos."
+  },
+  {
+   "key": "vms38vms38redlucytopic337",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic337",
+   "prompt": "I'll bet 20 on Red, Deathclaws."
+  },
+  {
+   "key": "vms38vms38redlucytopic338",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic338",
+   "prompt": "I'll bet 20 on Blue, Giant Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic363",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic363",
+   "prompt": "One."
+  },
+  {
+   "key": "vms38vms38redlucytopic364",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic364",
+   "prompt": "One."
+  },
+  {
+   "key": "vms38vms38redlucytopic365",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic365",
+   "prompt": "One."
+  },
+  {
+   "key": "vms38vms38redlucytopic366",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic366",
+   "prompt": "One."
+  },
+  {
+   "key": "vms38vms38redlucytopic367",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic367",
+   "prompt": "Two."
+  },
+  {
+   "key": "vms38vms38redlucytopic368",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic368",
+   "prompt": "Three."
+  },
+  {
+   "key": "vms38vms38redlucytopic369",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic369",
+   "prompt": "Two."
+  },
+  {
+   "key": "vms38vms38redlucytopic370",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic370",
+   "prompt": "Three."
+  },
+  {
+   "key": "vms38vms38redlucytopic371",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic371",
+   "prompt": "Two."
+  },
+  {
+   "key": "vms38vms38redlucytopic372",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic372",
+   "prompt": "Three."
+  },
+  {
+   "key": "vms38vms38redlucytopic373",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic373",
+   "prompt": "Two."
+  },
+  {
+   "key": "vms38vms38redlucytopic374",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'll fight on Blue?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic374",
+   "prompt": "Three."
+  },
+  {
+   "key": "vms38vms38redlucytopic375",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic375",
+   "prompt": "Three Fiends."
+  },
+  {
+   "key": "vms38vms38redlucytopic376",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic376",
+   "prompt": "Two Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic377",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic377",
+   "prompt": "A Giant Radscorpion."
+  },
+  {
+   "key": "vms38vms38redlucytopic378",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic378",
+   "prompt": "Three Night Stalkers."
+  },
+  {
+   "key": "vms38vms38redlucytopic379",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic379",
+   "prompt": "One Cazador and one Night Stalker."
+  },
+  {
+   "key": "vms38vms38redlucytopic380",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic380",
+   "prompt": "Two Giant Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic381",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic381",
+   "prompt": "One Deathclaw."
+  },
+  {
+   "key": "vms38vms38redlucytopic382",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic382",
+   "prompt": "One Cazador and two Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic383",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic383",
+   "prompt": "Three Giant Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic384",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic384",
+   "prompt": "Three Fiends."
+  },
+  {
+   "key": "vms38vms38redlucytopic385",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic385",
+   "prompt": "Three Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic386",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic386",
+   "prompt": "Two Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic387",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic387",
+   "prompt": "A Giant Radscorpion."
+  },
+  {
+   "key": "vms38vms38redlucytopic388",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic388",
+   "prompt": "A Giant Radscorpion and a regular Radscorpion."
+  },
+  {
+   "key": "vms38vms38redlucytopic389",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic389",
+   "prompt": "A Cazador."
+  },
+  {
+   "key": "vms38vms38redlucytopic390",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic390",
+   "prompt": "A Giant Radscorpion and two regular Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic391",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic391",
+   "prompt": "Two Fire Geckos."
+  },
+  {
+   "key": "vms38vms38redlucytopic392",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic392",
+   "prompt": "A Deathclaw."
+  },
+  {
+   "key": "vms38vms38redlucytopic393",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic393",
+   "prompt": "Three Fiends."
+  },
+  {
+   "key": "vms38vms38redlucytopic394",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic394",
+   "prompt": "Two Night Stalkers."
+  },
+  {
+   "key": "vms38vms38redlucytopic395",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic395",
+   "prompt": "A Fire Gecko."
+  },
+  {
+   "key": "vms38vms38redlucytopic396",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic396",
+   "prompt": "Three Giant Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic397",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic397",
+   "prompt": "Two Fire Geckos."
+  },
+  {
+   "key": "vms38vms38redlucytopic398",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic398",
+   "prompt": "One Deathclaw."
+  },
+  {
+   "key": "vms38vms38redlucytopic399",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic399",
+   "prompt": "Two Fire Geckos and a Giant Radscorpion."
+  },
+  {
+   "key": "vms38vms38redlucytopic400",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic400",
+   "prompt": "Two Night Stalkers and a Fire Gecko."
+  },
+  {
+   "key": "vms38vms38redlucytopic401",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic401",
+   "prompt": "One Deathclaw and a Night Stalker."
+  },
+  {
+   "key": "vms38vms38redlucytopic402",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic402",
+   "prompt": "Three Giant Radscorpions."
+  },
+  {
+   "key": "vms38vms38redlucytopic403",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic403",
+   "prompt": "Three Fire Geckos."
+  },
+  {
+   "key": "vms38vms38redlucytopic404",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic404",
+   "prompt": "Two Cazadores."
+  },
+  {
+   "key": "vms38vms38redlucytopic405",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic405",
+   "prompt": "This baddie."
+  },
+  {
+   "key": "vms38vms38redlucytopic406",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic406",
+   "prompt": "This baddie."
+  },
+  {
+   "key": "vms38vms38redlucytopic407",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic407",
+   "prompt": "This baddie."
+  },
+  {
+   "key": "vms38vms38redlucytopic408",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic408",
+   "prompt": "This baddie."
+  },
+  {
+   "key": "vms38vms38redlucytopic409",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic409",
+   "prompt": "This baddie."
+  },
+  {
+   "key": "vms38vms38redlucytopic410",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Thorn's thirsty for blood. Pay my costs and the fight will begin in earnest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic410",
+   "prompt": "This baddie."
+  },
+  {
+   "key": "vms38vms38redlucytopic411",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic411",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic412",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic412",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic413",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic413",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic414",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic414",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic415",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic415",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic416",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic416",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic417",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic417",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic418",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic418",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic419",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic419",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic420",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic420",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic421",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic421",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic422",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic422",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic423",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic423",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic424",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic424",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic425",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic425",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic426",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic426",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic427",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic427",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic428",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic428",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic429",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic429",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic430",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic430",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic431",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic431",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic432",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic432",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic433",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic433",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic434",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic434",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic435",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic435",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic436",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic436",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic437",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic437",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic438",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic438",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic439",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic439",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic440",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic440",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic441",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic441",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic442",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic442",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic443",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic443",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic444",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic444",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic445",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic445",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic446",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. Best of luck and enjoy the carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic446",
+   "prompt": "Here's the money."
+  },
+  {
+   "key": "vms38vms38redlucytopic447",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic447",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic448",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic448",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic449",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic449",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic450",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic450",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic451",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic451",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic452",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic452",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic453",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic453",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic454",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic454",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic455",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic455",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic456",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic456",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic457",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic457",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic458",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic458",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic459",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic459",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic460",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic460",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic461",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic461",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic462",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic462",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic463",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic463",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic464",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic464",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic465",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic465",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic466",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic466",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic467",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic467",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic468",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic468",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic469",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic469",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic470",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic470",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic471",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic471",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic472",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic472",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic473",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic473",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic474",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic474",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic475",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic475",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic476",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic476",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic477",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic477",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic478",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic478",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic479",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic479",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic480",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic480",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic481",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic481",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic482",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss. Come back to me when you have something to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic482",
+   "prompt": "I don't have enough caps right now."
+  },
+  {
+   "key": "vms38vms38redlucytopic483",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pauses to judge players' words, quite taken} I can see your resolve, determined like the nature of a beast. So be it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic483",
+   "prompt": "I'll defeat as many as you've got."
+  },
+  {
+   "key": "vms38vms38redlucytopic484",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{A hint of sincere emotion shows through her otherwise stoic mask} I've come to expect nothing less from you, brave stranger.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Get to your cage and ready your arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS38VMS38RedLucyTopic484",
+   "prompt": "Okay, bring it on!"
+  }
+ ],
+ "speaker": "red_lucy"
+}

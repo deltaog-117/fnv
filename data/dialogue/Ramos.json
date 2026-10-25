@@ -1,0 +1,636 @@
+{
+ "page": "Ramos.txt",
+ "speaker": "Ramos",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll find your equipment in the chest to your right. Don't bother coming back until you've dealt with the ranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stand back from the door. The Elder's eager to hear your report.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[You hear nothing.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Ramos Greeting for players who found a patrol} Where did you learn that password? And tell the truth, because I'll know if you're lying.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Ramos Greeting for players with Veronica} {Stern} Listen up. I'm in charge of security around here, and I can't say I'm too happy having an outsider waltzing around.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Eases up, first part was just for show} But since you came in with Veronica, I'm inclined to cut you a little slack. Just behave yourself and we won't have any problems, okay?",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Oh, and the Elder's going to want to talk to you. He's on the second level. Just take a right once you get down there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My office is right here in case you need anything. Just ask for Ramos.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "{Ramos dialogue if player sneaks into the bunker} {Angry, an intruder managed to get past his security} How the hell did you get in here? Normally, I would have already shot you, but I'm under orders to bring you to the Elder. Will you come peacefully?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Rest up, and make your report to the Elder when you're up to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you have something to say, say it to Elder McNamara.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your presence here... Let's just say it's highly irregular.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Outsiders aren't even allowed to know that our bunker's here, let alone come and go freely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You impressed Elder McNamara, obviously. He must believe that you'll be very useful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, hey there. Something I can help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "HVRamosAskForWork",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bored already? You should try living down here. Sorry, but I don't really have- oh, for Pete's sake, not again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Got anything you need help with?",
+   "label": "HVAskForWork"
+  },
+  {
+   "id": "HVRamosBosJoin",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You don't. Ever. You don't even think about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even if we did recruit trespassers, you're far too old for us. Your relationship to technology has already been perverted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do I join the Brotherhood of Steel?",
+   "label": "HVRamosFanboy"
+  },
+  {
+   "id": "HVRamosExplainSneakedIn",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. I'll take you to him. Follow me. Closely. Or you'll be shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll speak to your Elder. Lead the way."
+  },
+  {
+   "id": "HVRamosIntercomHello",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[You hear nothing.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello?",
+   "label": "HVIntercomHello"
+  },
+  {
+   "id": "HVRamosIntercomHello",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[You hear nothing.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is anyone there?",
+   "label": "HVIntercomHello"
+  },
+  {
+   "id": "HVRamosIntercomHello",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[You hear nothing.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Anyone home?",
+   "label": "HVIntercomHello"
+  },
+  {
+   "id": "HVRamosIntercomHello",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[You hear nothing.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Guess I'll just see myself out.",
+   "label": "HVIntercomHello"
+  },
+  {
+   "id": "HVRamosIntercomPassword",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Thinks you're from one of the lost patrols} [You hear static.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were getting a little worried. Where's your partner? No, on second thought, don't tell me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Give your report to the Elder, then have the doc look your over. Oh, and welcome back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[You hear static.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stay where you are. I'm sending someone up to meet you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The password is \"Lives to fight another day.\""
+  },
+  {
+   "id": "HVRamosLost",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. Permanently, I'm afraid.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I just wandered in here. I'm lost."
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosHELIOSStory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sure someone's told you all this before. Several years back, we were running our chapter out the HELIOS One solar power station.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our Elder at the time, Elijah, had some kind of obsession with the place. Which is the only reason we stayed as long as we did.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That place was hardly defensible, and we knew the NCR was moving in on us, but the Elder refused to budge, insisting that he just needed \"more time\".",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We never found out what he needed the time for. Wave upon wave of NCR troopers hit us from all directions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We held out for a time, but we were grossly outnumbered, and they had more men than we had ammo. Eventually our positions collapsed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Elder Elijah was nowhere to be found, so McNamara took charge and led what remained of us on a counter-offensive west.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We lost a lot of men and women, but we broke through and made it here. Make no mistake, McNamara saved this chapter that day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about what happened at HELIOS."
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "An interesting story. It may even be true.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Under normal circumstances, your story wouldn't make any difference. You'd be dead already.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lucky for you - probably - Elder McNamara wants to meet you. So follow me. Closely. Or you'll be killed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found some of your people dead out in the waste. They had it on them."
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The password you gave is valid, but old. The only way you could have gotten it is from one of our lost patrols.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do you look so spooked?"
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm the one asking the questions right now, and you still haven't answered me. I suggest you start doing so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's no longer an option, on account of you having one of our passwords. Now if you'd stop stalling, I'd really like to know where you learned it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Could you just let me go? I really don't care what's down here anymore."
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Thinks you're from one of the lost patrols} [You hear static.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were getting a little worried. Where's your partner? No, on second thought, don't tell me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Give your report to the Elder, then have the doc look your over. Oh, and welcome back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[You hear static.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stay where you are. I'm sending someone up to meet you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The password is \"And to dare to do it.\""
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not on my watch you won't. You either go with me to the Elder or I put you in the ground right here. Choose.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I appear to be lost. I'll just head back the way I came in."
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sighs} Your call.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not going anywhere with you."
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right. Nothing gets in or out of here without me knowing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So you're head of security?"
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Normally, that would have fallen under my jurisdiction, but the Elder thought it'd provide a good test for you, so I backed off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So why did I have to deal with that Ranger topside?"
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Laughs} Yeah, I knew about it. They're still young, and they weren't going to go very far.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I had them on my monitors the whole time. I almost headed out there when they got surrounded by those scorpions, but Watkins is a hell of a shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you know Watkins and Stanton snuck out of here a few weeks ago?"
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Under the lockdown, only essential personnel are permitted to enter or leave. That includes supply runners and high security patrols.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All other personnel are forbidden to leave, and any personnel that were out there when the lockdown was enacted are forbidden from returning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What exactly are the rules regarding entering and leaving?"
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine by me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I had other questions."
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you've been talking to Hardin, eh? He's been looking for a way to usurp McNamara ever since the lockdown started.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't get me wrong, he's a good man, but Elder McNamara's done all right by us. If it weren't for him, none of us would have survived at HELIOS.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll tell you what I told Hardin. There have only been a few cases of Elders being dismissed from their posts in the Brotherhood's history.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And those involved crimes that someone like Elder McNamara is just not capable of. You can look it up for yourself, if you want.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll grant you access to that portion of the history section of our datastore. See Senior Scribe Ibsen about accessing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What would an Elder have to do to get kicked out?"
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Thinks you're from one of the lost patrols} [You hear static.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were getting a little worried. Where's your partner? No, on second thought, don't tell me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Give your report to the Elder, then have the doc look your over. Oh, and welcome back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[You hear static.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stay where you are. I'm sending someone up to meet you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The password is \"The better part of valor.\""
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's an old, old principle that's been around since the Brotherhood was founded. It basically means that you have to obey a superior officer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's pretty much common sense, but it gets invoked a lot when people get pissy about following orders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're curious, I'll give you access to the datastore entry on it. You'd probably be the first to read it in years, if not decades.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "One of the datastore entries mentioned the Chain That Binds. What is that, exactly?"
+  },
+  {
+   "id": "VDialogueHiddenValleyRamosWhoIsElijah",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who {emph} was Elijah, more like. He was our Elder before McNamara. Bright guy, but just between you and me he was a little off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our mission is to recover and preserve the technology of the past, but Elijah wanted more. He sought ways to improve upon technology, make it better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When we found HELIOS One, he was like a kid in a candy store. He kept talking about the potential, and a \"grand design, never realized.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He even insisted we set up our base there, against the objection of nearly every paladin. What followed is a whole other story.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who is Elijah?"
+  },
+  {
+   "id": "HVRamosComment",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Great, looks like they're going at it again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVRamosComment"
+  },
+  {
+   "id": "HVRamosComment2",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Give it a few moments. This won't take long, trust me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVRamosComment2"
+  },
+  {
+   "id": "HVRamosIntercomGetRanger",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You'll find your belongings in the chest to your right. Don't come back until you've dealt with the ranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVRamosIntercomGetRanger"
+  },
+  {
+   "id": "HVRamosVeronica01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Behave yourself this time, Veronica.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey yourself, kiddo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVRamosVeronica01"
+  },
+  {
+   "id": "HVVeronicaEnter",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We gave you a password, Veronica. It's for your safety.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Annoyed} <Sighs> For Pete's sake. Opening up. {Still annoyed, but meaning it} Welcome back, Veronica.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVVeronicaEnter"
+  }
+ ]
+}

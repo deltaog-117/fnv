@@ -1,0 +1,561 @@
+{
+ "id": "nobarknoonan",
+ "speaker_name": "No-bark Noonan",
+ "source": "NobarkNoonan.txt",
+ "topics": [
+  {
+   "key": "caravanoffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. Ol No-bark is always looking to play. Not for entertainment, mind you, but because if you look at the cards right you can know the future.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanOffer",
+   "prompt": "Want to play a hand of Caravan?"
+  },
+  {
+   "key": "caravanplayerloses",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No-bark wins! A few more like that and the curse'll get lifted for sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanPlayerLoses",
+   "prompt": "CaravanPlayerLoses"
+  },
+  {
+   "key": "caravanplayerwins",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dang it! Shoulda known you was getting caravan hints from the bloatfly spirits what live in these parts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well I'll be cold and rotting before I let them get the best of me. Let's go again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanPlayerWins",
+   "prompt": "CaravanPlayerWins"
+  },
+  {
+   "key": "caravanrematchno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dang it, No-bark, just when you was making a friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanRematchNo",
+   "prompt": "I'm all done playing for now."
+  },
+  {
+   "key": "caravanrematchyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No more magic spells this time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanRematchYes",
+   "prompt": "Yeah, let's play again."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who sent you? I ain't talking. They tried to get me to talk before, but I didn't say nothing. And I don't aim to now, by gum.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've seen them too, haven't you? I can see it in your eyes. I knew I wasn't the only one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "nobarkabductorid",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Molerat men, come up from the Underneath to steal young women with promises of riches and fancy mud mansions with all the latest designer appliances.",
+     "emotion": "surprise",
+     "intensity": 90
+    },
+    {
+     "text": "They covet our ladyfolk's long hair for wigs, it's said, being either bald or balding themselves.",
+     "emotion": "surprise",
+     "intensity": 75
+    }
+   ],
+   "topic": "NobarkAbductorID",
+   "prompt": "Who was it?"
+  },
+  {
+   "key": "nobarkactingstrange",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't trust a man that doesn't have something strange going on about him, 'cause it means he's hiding it from you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If a man's wearing his pants on his head or if he says his words backwards from time to time, you know it's all laid out there for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if he's friendly to strangers and keeps his home spick-and-span, more often than not he's done something even his own ma couldn't forgive.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkActingStrange",
+   "prompt": "Has anybody been acting strange lately?"
+  },
+  {
+   "key": "nobarkactuallyatrepcon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ghosts. Commie ghosts what don't know they're dead.",
+     "emotion": "surprise",
+     "intensity": 90
+    },
+    {
+     "text": "Hoping to steal our rockets so they can fly up and paint the moon pink and draw a Lenin face on it.",
+     "emotion": "surprise",
+     "intensity": 80
+    },
+    {
+     "text": "I seen one of them disappear and reappear before my very eyes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Although being a scientist, I have to admit I might've just blinked for longer than usual, what with the shock of seeing a commie ghost and so forth.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkActuallyAtRepcon",
+   "prompt": "Who do you think is actually at the factory?"
+  },
+  {
+   "key": "nobarkbooneswife",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Seen it all. Seen shadowy folk come to his room and leave again in the middle of the night. Thought one might've gone in the lobby, too, for a spell.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Could be that person went in to get something. Or use the john maybe. Mighty interesting either way, you ask me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I thought it was cannibals, come to eat us all for sure, so I kept out of sight. But now I know better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkBoonesWife",
+   "prompt": "What do you know about the abduction of Boone's wife?"
+  },
+  {
+   "key": "nobarkcantalkfromhere",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You sure, now? It's kinda hard to hear you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkCanTalkFromHere",
+   "prompt": "We can talk from this distance."
+  },
+  {
+   "key": "nobarkcorraldeaths",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I come face to face with the chupacabra himself one night whilst I was investigating whether this gecko was hiding his treasure from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He was the meanest, ugliest chupacabra you could imagine. Had two heads, and fangs down to the ground.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Best I could tell, anyways, since when he come up to me he was invisible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had himself a blunderbuss what would rotate and shoot bullets real fast out of a backpack. Never seen nothing like it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Walked right past me having an argument with somebody.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I only saw the one chupacabra, so I guess the other fella had to be invisible too. Only more invisible than the other one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkCorralDeaths",
+   "prompt": "What else do you know about the deaths at the corral?"
+  },
+  {
+   "key": "nobarkgoingon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's been things of a disturbing nature going on at the McBride Corral.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seems every night one of their herd meets a most unnatural death, and always there's holes all over the body.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Work of the chupacabra, the livestock vampire, says No-bark, but they don't pay no mind. Too many holes, they say, and there's bullets in them.",
+     "emotion": "surprise",
+     "intensity": 75
+    },
+    {
+     "text": "Well, says No-bark, we got a chupacabra with an automatic weapon. And that's when they get real quiet, 'cause now they see the predicament we're in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkGoingOn",
+   "prompt": "What's been going on in town?"
+  },
+  {
+   "key": "nobarkifyouregoingtobeweird",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Weird's just normal when normal decides to start taking notice of things. You just think about that.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Now what'd you come here for?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkIfYoureGoingToBeWeird",
+   "prompt": "If you're going to be weird, I'm just going to leave."
+  },
+  {
+   "key": "nobarkinterestinghappenings",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Folks'll tell you that they seen ghouls up near the rocket factory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sensationalist hooey, cooked up by superstitious yokels seeing phantoms of their own imagining.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkInterestingHappenings",
+   "prompt": "Is anything interesting happening in the area?"
+  },
+  {
+   "key": "nobarkleaving",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me know if you meet anyone suspicious.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkLeaving",
+   "prompt": "I have to go now."
+  },
+  {
+   "key": "nobarkmeannoharm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We'll just see about that. You come any closer and I'm liable to stick you with my stickin' knife. Ol' Sticky's feeling mighty ornery this day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkMeanNoHarm",
+   "prompt": "I don't mean any harm."
+  },
+  {
+   "key": "nobarksomethingelse",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good idea. It ain't safe to stay on the same topic for too long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkSomethingElse",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "nobarkwhotriedtomakeyoutalk",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confound it, No-bark, you done it again. You let on that you know things. Now they'll never let you be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, stranger, you got me. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkWhoTriedToMakeYouTalk",
+   "prompt": "Who tried to make you talk?"
+  },
+  {
+   "key": "nobarkyousaidyoudstabme",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, okay. Just speak up a little. But not so much that They hear you. They got people everywhere, always listening.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkYouSaidYoudStabMe",
+   "prompt": "You said you'd stab me with that dirty knife."
+  },
+  {
+   "key": "nobarkyouregoingtotalk",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I give up! Please don't do no harm to me, mister, leastaways not my face. All I got left is my rugged good looks. What do you want to know?",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "I give up! Please don't do no harm to me, missy, leastaways not my face. All I got left is my rugged good looks. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NobarkYoureGoingToTalk",
+   "prompt": "You're going to talk whether you like it or not."
+  },
+  {
+   "key": "novacghoulinfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "From what I've been able to gather, they've been seen messing around with the machinery up there. What could they be up to?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NovacGhoulInfo",
+   "prompt": "What can you tell me about the ghouls spotted to the west?"
+  },
+  {
+   "key": "playerknockoverobjects",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? How'd you get past the guards?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "They're here! Don't let them get the antidote! Oh. It's just you. You can't have it either.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "The molerat men! They've come for my beard at last! Oh. Never mind.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERKNOCKOVEROBJECTS",
+   "prompt": "PLAYER KNOCK OVER OBJECTS"
+  },
+  {
+   "key": "snipersrevengecomeoutside",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're talking about that thing that looks like the entrance to the center of the Earth, I think it might just be a pothole.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But we better check it out anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know we already did this, but this time things might turn out different.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeComeOutside",
+   "prompt": "Come with me. There's something you should see, in front of the dinosaur."
+  },
+  {
+   "key": "speechchallengefailure",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's just the kind of thing I'd be expecting them to say. Which proves you're not with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, that's a load off. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SpeechChallengeFailure",
+   "prompt": "SpeechChallengeFailure"
+  },
+  {
+   "key": "vdialoguenovacnobarkname",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cause they know I ain't just barking here. What I say's got bite, 'cause it's the truth.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Them quack doctors can say what they want about all the radscorpion stings that done pierced my skull. I know what I seen.",
+     "emotion": "anger",
+     "intensity": 75
+    }
+   ],
+   "topic": "VDialogueNovacNobarkName",
+   "prompt": "Why do they call you No-bark?"
+  },
+  {
+   "key": "vmq01lookingformanny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure have. Camouflage, that coat was, trying to hide from extra terrestrials what can only see in black and white checkers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But they're not fooled 'cause he forgot to put the checkers on his face. I told him so and he seemed to take it to heart.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They stayed here a night, and was up by the dinosaur talking to the sniper fella with the moustache a couple of times.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQ01LookingForManny",
+   "prompt": "I'm looking for a man in a checkered coat. Have you seen anyone like that?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "If anyone asks, we never spoke.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Careful. They got spies all over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "rnvnewsstory2",
+   "section": "other",
+   "responses": [
+    {
+     "text": "{No-Bark Noonan:} It's ghouls, I tell ya. Religious ghouls in rockets looking for a land to call their own.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RNVNewsStory2",
+   "prompt": "RNVNewsStoryLine2"
+  },
+  {
+   "key": "rnvnewsstory3",
+   "section": "other",
+   "responses": [
+    {
+     "text": "{No-Bark Noonan:} Don't you laugh at me. I know a spell that'll make you show your true form. Cave rat taught it to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RNVNewsStory3",
+   "prompt": "RNVNewsStoryLine3"
+  }
+ ],
+ "speaker": "no_bark_noonan"
+}

@@ -1,0 +1,1167 @@
+{
+ "id": "vcfhalexrichards",
+ "speaker_name": "Alex Richards",
+ "source": "VCFHAlexRichards.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hear you defeated the Legion forces at Nelson. I'm impressed, and thankful. It'll make my job around here much easier.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I wanted to thank you again for saving my patients. It's nice to have a helping hand around here.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Thanks again for looking into my missing medical supplies. Now I can actually use them on people that need them.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Wow, if it isn't the man who saved President Kimball. What can I do for you this fine day?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Wow, if it isn't the woman who saved President Kimball. What can I do for you this fine day?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I'm relieved to hear that President Kimball survived that assassination attempt.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "It's a shame about President Kimball, he was a good man.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "You're new, aren't you? What can I do for you?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "I'm always a sucker for a pretty face. What can I do for you, my fine dear?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I think it just got a little bit hotter in here. Is there something I can do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "There's my little buttercup. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh... look who it is. What brings someone of your renown into my humble medical center?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Friendly} I didn't expect to see you here. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Do you need something, or are you just here to cause trouble?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I've heard about you. No funny stuff or I'll amputate your legs.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "You better have a damn good reason for being in my medical center.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{rough, rude} Is there something you need?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Unless it's urgent you're going to have to wait. If it's gravely important, save me the trouble and empty your pockets now.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "I've got a lot to do. Make it quick.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms30richardspatientharmedtopic",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey! Be careful, I don't like people hurting my patients.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Enough! You were supposed to be helping them. It's best if you just leave now.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30RichardsPatientHarmedTopic",
+   "prompt": "CFHRichardsPatientHarmed"
+  },
+  {
+   "key": "vms30richardspatientkilledtopic",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You killed him! What kind of Doctor are you? Get out of here now!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30RichardsPatientKilledTopic",
+   "prompt": "CFHRichardsPatientKilled"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With business booming like it is and considering I'm the only person with medical experience in the camp, I could perhaps use a hand.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Do you have any medical experience?",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic000",
+   "prompt": "Major Polatli said you might need some help."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard Private Stone turned himself in for stealing my medical supplies. You have my thanks.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Are you willing to look into this for me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So you've found out what's happening with the supplies?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "What would you like to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic001",
+   "prompt": "I wanted to talk to you about your missing medical supplies."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have that many supplies left, so I can't offer my services freely, but I can help you.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Well, go somewhere else. You're not welcome here.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic002",
+   "prompt": "I need medical treatment."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent job. Where did you learn how to do all that? I don't think that I could have done much better myself. Very impressive.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "As for the men, they'll recover soon and be back on the front lines in no time. Ahh... the circle of life.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I'll send word to Major Polatli about your work here. Once again, you have my sincerest thanks.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Not too bad, at least you didn't kill anyone.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "They'll recover soon and be back on the front lines in no time. Ahh... the circle of life.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I'll send word to Major Polatli about your work here. Thanks.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic003",
+   "prompt": "I finished looking over your patients."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Excellent. As you can see, we have a lot of injured troopers here and I haven't had time to look at all of them yet.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Since you have some medical experience I'd like you to examine them and see what you can do to treat them.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic004",
+   "prompt": "Yes. I have some medical experience."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent. As you can see, we have a lot of injured troopers here and I haven't had time to look at all of them yet.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Since you have some medical experience, I'd like you to examine them and see what you can do to treat them.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic005",
+   "prompt": "<Lie> You betcha!"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Without any medical experience, you're not going to be much use to me in here.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "However, you can take this status report back to Major Polatli. It's a very important task and I think I can count on you.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic006",
+   "prompt": "No, not really."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You look fine to me. Well, as fine as anyone else around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've seen worse, but I should be able to fix you up pretty easily.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, that looks pretty nasty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This might take a miracle, and a lot of money.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic007",
+   "prompt": "I have wounds that need mending."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is that so! I'll have to talk to Major Polatli about this right away.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I appreciate you doing this for me. Here's a little something for your trouble, it's not much, but it's all I can spare.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic008",
+   "prompt": "Yes. Private Stone was stealing them."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me know when you do find something out.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic009",
+   "prompt": "No, not yet."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's too bad. These men really needed those supplies.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for looking into this, I appreciate it even though you didn't find anything.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic010",
+   "prompt": "<Lie> I wasn't able to find out anything."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's too bad, but at least you didn't start hacking and slashing with a knife. I don't think Major Polatli could handle two doctors like that.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'll send word to Major Polatli.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic011",
+   "prompt": "I'm not qualified to examine your patients."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for your help. I'll take it from here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll send Major Polatli word about the situation here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You weren't much help, but thanks anyway... I guess.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "I'll send Major Polatli word about the situation here.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic015",
+   "prompt": "I did what I could for your patients."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Ahh... I see. Unfortunately you're experience with \"medicology\" isn't going to be any use to me here.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Just take this status report back to Major Polatli. That's all I need from you.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic016",
+   "prompt": "I've studied lots of medicology."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With the Legion defeated, things are great now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Things are better now that the Legion at Nelson have been defeated.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're doing okay for the time being. Not as many serious injuries lately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I was a mortician, business would be booming. As a Doctor, business is hard. Too many injuries that I can't do anything about.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "The Legion has been hitting us pretty hard lately. Lots of casualties, not many people I can save.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic017",
+   "prompt": "How're things around camp?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What would you like to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic018",
+   "prompt": "I have some questions for you."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Men have waged war on each other for countless centuries. Now is no different.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "People fight and die for what they believe in. I'm just here to patch them up so they can go on their merry way. Do no harm and all that.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic019",
+   "prompt": "Things look pretty rough in here."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Someone with medical experience, I take it? It's not the best, but it does the job.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "I just wish I had the equipment and supplies to handle the number of injuries we have here.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "To make things worse, I think someone might be stealing my supplies.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic020",
+   "prompt": "It looks like you have a decent facility here."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm doing the best I can considering the poor situation I find myself in.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "There's barely enough equipment or medicine to handle the number of injuries we have.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "To make things worse, I think someone might be stealing my supplies.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic021",
+   "prompt": "You seem to be handling it well."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sometimes it does feel that way. I feel more like a mortician than a doctor.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Often I just don't have the resources to handle the number of injuries here.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "To make things worse, I think someone might be stealing my supplies.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic022",
+   "prompt": "This place looks more like a chop shop."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The simple fact that I no longer have as many supplies as I should. I've been careful with them and I should have more than what remains.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "Unfortunately, I don't have the time to go searching for the missing supplies since I have my hands full with injured soldiers.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic023",
+   "prompt": "What makes you think someone is stealing your supplies?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything is possible, but that's unlikely.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Unfortunately, I don't have the time to go searching for the missing supplies since I have my hands full with injured troopers.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic024",
+   "prompt": "Perhaps you've misplaced them?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I may have my hands full here, but I'm anything but careless.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "Unfortunately, I don't have the time to go searching for the missing supplies since I have my hands full with injured troopers.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic025",
+   "prompt": "Maybe you're just careless."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's an odd response if I've ever heard one.",
+     "emotion": "pained",
+     "intensity": 25
+    },
+    {
+     "text": "Unfortunately, I don't have the time to go searching for the missing supplies since I have my hands full with injured troopers.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic026",
+   "prompt": "It wasn't me."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That would definitely be appreciated. You might want to ask around and keep an eye out for anything suspicious.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic027",
+   "prompt": "I can look into this for you."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I store a variety of drugs here, but it looks like my supply of Hydra is diminishing rather quickly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic028",
+   "prompt": "What exactly is missing?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Locked in a cabinet, here in the medical tent. I'm around most of the time, but I can't keep a constant watch on them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic029",
+   "prompt": "Where do you keep your supplies?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I remember coming in one morning and noticing that my supplies were lower than they should have been.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I thought it might have been a mistake, but another morning I noticed the same thing.",
+     "emotion": "neutral",
+     "intensity": 10
+    },
+    {
+     "text": "The camp is pretty dead at night, especially at 0200 hours when the guard shift changes. That'd be a good place to start looking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic030",
+   "prompt": "When did you notice them missing?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Perhaps you can come back and help me when you have more time.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic031",
+   "prompt": "I can't help you right now."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay then, what would you like to talk about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic032",
+   "prompt": "I want to talk about something else."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You and me both, but let's worry about you first. I can fix you up, if you know what I mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic033",
+   "prompt": "I need help with an addiction."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure can. The sooner the better if you ask me, unless you want a third arm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic034",
+   "prompt": "Can you heal my radiation?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry. I'm low on supplies as it is and I don't have any to spare.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic035",
+   "prompt": "I need medical supplies."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, now this might hurt a bit...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic036",
+   "prompt": "Here's your 100 caps. Do it.",
+   "label": "Do it."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic036_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, let me know if you get some money before that third arm comes in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic036",
+   "prompt": "I don't have 100 caps.",
+   "label": "Do it."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss, not mine. Let me know if your hair starts falling out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic037",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, I'll fix you up right away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic038",
+   "prompt": "Yes, cure me. Here's 50 caps.",
+   "label": "Yes, cure me."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic038_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you can't do the time, don't do the crime. Think about that next time you get high.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic038",
+   "prompt": "I can't afford treatment. I don't have 50 caps.",
+   "label": "Yes, cure me."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good luck to you then, junkie.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic039",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent, just let me grab my scalpel and a body bag, and we'll get started.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic040",
+   "prompt": "Okay, fix me. Here's 50 caps.",
+   "label": "Fix me."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic040_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you'll probably be fine. For a little while, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic040",
+   "prompt": "Sorry, I don't have 50 caps.",
+   "label": "Fix me."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay then. Just try not to bleed all over the place, okay?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic041",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic042",
+   "prompt": "Actually, I changed my mind."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I used to be a doctor back in California, but a few years back I got suckered into doing military work because it was my \"patriotic duty.\"",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "Back then, I, like many idealistic men before me, thought it was a great idea and was excited about making the world a better place with the NCR.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Now... I just want to get back home. I've had enough fighting and fixing up soldiers just to send them right back out to die to last a lifetime.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic043",
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Excessive use causes dilated eyes, an increased heart rate and blood pressure, massive sweating, you know... the usual.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic044",
+   "prompt": "What are the symptoms of Hydra use?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Good god, no. Look, don't worry about symptoms, just ask around and see if anyone has noticed anything suspicious.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic045",
+   "prompt": "People using Hydra have their skin turn purple, right?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Quite a bit actually. I was stationed nearby during the first battle of Hoover Dam four years ago. I saw a lot of what happened firsthand.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic046",
+   "prompt": "What do you know about Hoover Dam?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My take? I try not to think about it, I got enough on my hands here.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic047",
+   "prompt": "What's your take on the NCR?"
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion attacked in full force. Chief Hanlon had the troopers fall back pulling the enemy in, before entrenching into secure positions.",
+     "emotion": "pained",
+     "intensity": 15
+    },
+    {
+     "text": "The Legion got bogged down and Rangers and 1st Recon sharpshooters started taking out the Legion officers.",
+     "emotion": "pained",
+     "intensity": 15
+    },
+    {
+     "text": "They sent their best men to stop the Rangers and 1st Recon, but the Rangers pulled them into a trap at Boulder City and blew them all to hell.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "After that the Legion's forces were in disarray and tried to retreat. However, our forces advanced rapidly and routed them. And that was that.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic048",
+   "prompt": "Tell me about the first battle."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have no idea. It was a fierce battle. Lots of people died.",
+     "emotion": "pained",
+     "intensity": 25
+    },
+    {
+     "text": "Anyone with medical training had their hands full for weeks after the battle was finally over.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "During that time I saw quite a few things I wouldn't mind forgetting about.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic049",
+   "prompt": "Must have been rough."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, what's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic050",
+   "prompt": "Let's go back to my previous questions."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic051",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is definitely part of my missing supplies. I'll talk to Major Polatli about this right away.",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic052",
+   "prompt": "I found this syringe on Private Stone."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent, just let me grab my scalpel, and a body bag and we'll get started.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic053",
+   "prompt": "Okay, fix me. Here's 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic053_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you'll probably be fine. For a little while, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic053",
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My pleasure. Thanks again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic054",
+   "prompt": "Thanks."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent, just let me grab my scalpel, and a body bag and we'll get started.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic055",
+   "prompt": "Okay, fix me. Here's 75 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic055_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you'll probably be fine. For a little while, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic055",
+   "prompt": "Sorry, I don't have 75 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "key": "vms30vcfhalexrichardstopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ahh, doing this out of the goodness of your heart. You don't see that very often around here. Thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHAlexRichardsTopic056",
+   "prompt": "I don't need any compensation."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Until we meet again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "dr_alex_richards"
+}

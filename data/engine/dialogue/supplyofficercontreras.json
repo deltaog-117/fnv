@@ -1,0 +1,839 @@
+{
+ "id": "supplyofficercontreras",
+ "speaker_name": "Daniel Contreras",
+ "source": "SupplyOfficerContreras.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You look like someone in need of a reliable supplier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So you're back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For you? Just the basics. Come back when you're a little more seasoned and maybe we could talk about other options.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bad business if someone hurts themselves using your products, you know? Gets all kinds of unwanted attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you implying I have some kind of secret under-the-table stash I only offer to certain clients? Because that could get a man in trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic000",
+   "prompt": "What kind of supplies did you have in mind?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah shit, I'm guessing he got caught by the NCR. You need to kill that guy now that he's seen you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Last thing we need is some investigator tracking you down. Get it done, and I think we can settle accounts, so to speak.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic001",
+   "prompt": "Some other guy replaced Price, and he definitely didn't know the password."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you need then?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic002",
+   "prompt": "Nevermind."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now you're talking my language. I do have an expanded inventory for people I can trust.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're willing to do a little legwork for me, I could give you access to my stash and at a discount.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Many of these items aren't available in the NCR, and you'll be hard-pressed to find them at a better price anywhere else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic003",
+   "prompt": "[50 caps] Maybe some caps will clarify things."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Now you're talking my language. I do have an expanded inventory for people I can trust.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're willing to do a little legwork for me, I could give you access to my stash and at a discount.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Many of these items aren't available in the NCR, and you'll be hard-pressed to find them at a better price anywhere else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic004",
+   "prompt": "I can be pretty resourceful. Perhaps we could work out a deal?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't think so. This is what I've got. Take it or leave it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic004",
+   "prompt": "Come on, man. Hook me up."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Now you're talking my language. I do have an expanded inventory for people I can trust.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're willing to do a little legwork for me, I could give you access to my stash and at a discount.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Many of these items aren't available in the NCR, and you'll be hard-pressed to find them at a better price anywhere else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic005",
+   "prompt": "I've got connections. Maybe we could make an arrangement?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic005_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't think so. This is what I've got. Take it or leave it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic005",
+   "prompt": "I've got caps. Name your price."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I can't exactly go wandering off the base whenever I want, you know? They're already suspicious.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can hear the MP's now. \"Gee, Contreras, I didn't know you had so many friends in the Gun Runners.\" Speaking of which, guess your first stop.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're just passing a little note to a man named Isaac for me. {Sarcastic} I want to know which girl he likes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic006",
+   "prompt": "You said you have some legwork needing done?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, well just find me when you want to get started.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic007",
+   "prompt": "Maybe later."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Let me know what he says. They're almost a straight shot north from here, up past the sharecroppers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic008",
+   "prompt": "I'll do it."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic009",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah shit. Well, please tell me you didn't hand him the package.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic010",
+   "prompt": "Price is being held by the NCR. A Ranger replaced him."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now you're just going to have to take him out. I can't afford having NCR knowing about my side business...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "...and I don't think you want to go in front of a firing squad either. You take care of this, my entire stock is available to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell, I might even throw in something extra to sweeten the deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic011",
+   "prompt": "I didn't really have a choice."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That might just work. Tell him I'll cut him in on a bit of the profit and help him track down drug dealers if he'll give me a pass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The last thing I need is a do-gooder Ranger trying to take me down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic013",
+   "prompt": "We don't have to kill him. You could work with him and make caps."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic013_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No deals. I want that son of a bitch dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic013",
+   "prompt": "Kill him? Can't we just cut a deal or something?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank God. You're going to need to take him out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If McCarran hears I've been selling contraband, we're both dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic014",
+   "prompt": "<Hand Contreras the package> Nah, but he is definitely looking for you."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, here's a little something in advance. Now get the job done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic015",
+   "prompt": "Killing a Ranger brings big risks. Killing gets expensive."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic015_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You've got brass balls, but no deal. I'm already offering you access to my stash if you take care of this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic015",
+   "prompt": "Hey man, you never said anything about killing. Cough up some caps."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See, you're practically stealing caps from me, this work is so easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's one more job. It's a little more complicated, but I think you're up to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need to get some stuff sorted around. Gonna take me a day or two, so just stop back in a few days.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic016",
+   "prompt": "Here are the medical supplies from Blake."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I'm not. Come back tomorrow and the stuff will be ready to transport.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, I need you to pass something off to a merchant. The guy's name is Price. The exchange goes down at Miguel's Pawn Shop in Westside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This next bit is very important. He's paranoid. Maybe a little schizo. You have to identify yourself with a passcode or he'll shoot you right there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just tell him you're looking for some betting advice. Then he'll say the surest move is to bet on the house.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic017",
+   "prompt": "I'm ready for the next task."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Gun Runners are almost straight north of here. A little east. Isaac has a house in their compound.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic018",
+   "prompt": "Remind me where Isaac is."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be sure you do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you get this last job done, full access to my stash. At a discount, even. Just because I like you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get moving, watch out for raiders, and do {emph} not lose that package. Good Luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic019",
+   "prompt": "Right... Well, I'll keep that in mind."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good to hear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic020",
+   "prompt": "Don't worry. He won't be telling anyone anything ever again."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh. Not good. Price works alone. Chat him up and see what's going on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't give him any details and do {emph} not give him the package. There's a chance he actually knows Price, but I doubt it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic021",
+   "prompt": "Some guy is standing in for Price. I didn't inquire further."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, it sounds like you screwed the pooch. Give me the package back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Price works alone. If someone has replaced him, it's either some scumbag trying to hijack goods from his suppliers, or worse...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It could be someone more dangerous. You need to kill him, whoever he is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic022",
+   "prompt": "Price wasn't there. I fought some guy claiming to be his replacement."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good to hear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic023",
+   "prompt": "The guy claiming to stand in for Price is dead."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic023_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I'd say you're officially invited to the big kids' table now. My stash is your stash.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and I think you might get more use out of this rifle than I ever will. Enjoy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic023",
+   "prompt": "I convinced the Ranger to work with you. You're safe, but be careful."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. The Crimson Caravan has something ready for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look for Blake and let him know you're picking up Contreras' medical supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic024",
+   "prompt": "All right, what's the job?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. Don't come back until you have it. Crimson Caravan is just northeast of the Gun Runners. Blake's usually in the main office.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic025",
+   "prompt": "Sounds simple enough. I'll get right on it."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You bribed a {emph} Ranger? Ha! That's gotta be some kind of special talent.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic026",
+   "prompt": "Don't worry. I paid him off. He won't be a problem."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Get it done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic027",
+   "prompt": "See you later."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take your pick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You need to clean up your reputation or you're going to get me in trouble - I'll have to charge you more to keep from arousing suspicion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic028",
+   "prompt": "Got anything for sale?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That might just work. Tell him I'll cut him in on a bit of the profit and help him track down drug dealers if he'll give me a pass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The last thing I need is a do-gooder Ranger trying to take me down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No way. I'm making too much money to just hand him the entire contraband operation. Just kill the bastard.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic029",
+   "prompt": "He's looking to break up trafficking. Maybe there is money to be made here..."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't come back until his corpse is rotting in the sunlight. The last thing I need is a do-gooder Ranger trying to take me down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic030",
+   "prompt": "No problem. Consider it done."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very professional. I like that. Maybe you can handle something bigger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic031",
+   "prompt": "Isaac said they'll have the extra guns and ammo in the next shipment."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good to hear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic032",
+   "prompt": "I convinced the Ranger to work with you. You're safe, but be careful.",
+   "label": "I took care of the Ranger."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sarcastic} You're right. I'm just an under-the-table arms dealer. What could I possibly offer you, a drifting mercenary? Sorry for wasting your time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic033",
+   "prompt": "That's it? A few caps and another errand?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? I never noticed that. I'm just following orders here, moving supplies as needed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic034",
+   "prompt": "Hey, these medical supplies look like chem ingredients."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Does that mean you have those supplies?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic035",
+   "prompt": "All right. I guess I believe you."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa there, kiddo. No need to blow things out of proportion. I'm just selling certain ingredients on the side, not chems.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Besides, it's not like drugs are a big deal. Alcohol is just as bad yet it is perfectly legal in the NCR. I'm just a businessman doing business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic036",
+   "prompt": "Bullshit. If you're moving drugs, I'm going to have to report you."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well what the hell are you doing here? Get your ass out and find that metal. Don't come back until the job is done!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic037",
+   "prompt": "Isaac has me out looking for metal so they can do the first shipment."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're one pushy son of a bitch, I'll give you that. Alright, here are some caps to keep your mouth shut.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There is a lot of money to be made, and I'm not afraid to share it with reliable folks. Just keep the busters out of this and we're good.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So you've got the package then? I need to get that sorted and then sent off in a few days.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic038",
+   "prompt": "Lying bastard. I want cut in on this action."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now see, that's just downright unfriendly of you. I can't just let you go shooting your mouth off to Boyd now can I?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic039",
+   "prompt": "The law is the law. I'm done doing business with you."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, piss off then. I thought we had a good thing going here, but it looks like you're just a goody-goody.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic041",
+   "prompt": "I don't really agree with you, but I'm not interested in moving drugs for you."
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. It means you don't get shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic042",
+   "prompt": "Does it mean anything?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Crimson Caravan is up north past the Gun Runners. During the day Blake is usually in their main office.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic043",
+   "prompt": "Blake is where, exactly?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pawn shop in Westside called Miguel's. It's in outer Vegas, northwest of the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic044",
+   "prompt": "Where was I supposed to meet Price, again?"
+  },
+  {
+   "key": "vfreeformmccarransupplyofficercontrerastopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You mean other than some stranger with no military ID interrogating me inside our base?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did Boyd put you up to this? I am so sick of this harassment. You tell her to stop wasting my time with this bullshit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No. I haven't seen anything suspicious. It's been business as usual. {testy}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarranSupplyOfficerContrerasTopic045",
+   "prompt": "Seen anything suspicious lately?"
+  }
+ ],
+ "speaker": "sergeant_daniel_contreras"
+}

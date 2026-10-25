@@ -1,0 +1,546 @@
+{
+ "id": "fantastic",
+ "speaker_name": "Fantastic",
+ "source": "Fantastic.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey man, when in Rome.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I look so good in this shit, I want you to call me Fucking Spectacular from now on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well look who it is! Fantastic's little helper, all grown up. Following in his master's footsteps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess who got promoted to goddamn dam god? The cream always rises to the top, and Fantastic always rises to the top of the cream.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck, man? Are you loco? {Talking to a psychotic person who murdered a bunch of people just now.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You just killed my paycheck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who the hell are you? They bring you in to replace me? They're replacing me, aren't they?",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "Yo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms03fantasticattack",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Newsflash. Fantastic is irreplaceable.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticAttack",
+   "prompt": "[Attack] You won't need to worry about bills where you're going."
+  },
+  {
+   "key": "vms03fantasticdivertedpower",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa, really? Ho, shit! I knew I could do it. Those NCR pricks can all get on their knees and worship at the altar of fucking Fantastic!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But don't worry, I'll tell them what you did for me, man. Not all of it, though. They'd think I was an idiot. But some of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep at it, man. One day you could end up where I am. You never know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticDivertedPower",
+   "prompt": "I sent power to McCarran and the Strip."
+  },
+  {
+   "key": "vms03fantastichereforyourjob",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, shit. Shit, man. I need this. Gotta pay the bills. And I'm addicted to a lot of different kinds of chems. I mean a lot.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, shit, man. You're direct, you're no-nonsense. How am I supposed to compete with that? I gotta pay these chem bills.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticHereForYourJob",
+   "prompt": "That's right. I'm here for your job."
+  },
+  {
+   "key": "vms03fantastichowgetjob",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was easy, man. They were going door to door asking if anyone knew any scientists. I said look no further.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "They asked me if I knew anything about power plants. I said as much as anyone I'd ever met.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They asked me how well I understood theoretical physics. I said I had a theoretical degree in physics. They said welcome aboard.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticHowGetJob",
+   "prompt": "How did you get this job?"
+  },
+  {
+   "key": "vms03fantasticiamnow",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well hey, if you find yourself up at the mainframe, do yourself a favor and make sure you send the power to the right place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It needs to go to the Strip and McCarran.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticIAmNow",
+   "prompt": "I am now."
+  },
+  {
+   "key": "vms03fantasticjob",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What else? I'm in charge. This whole operation depends on me. No Fantastic, no power. Got the whole NCR suckling my teats, and it feels so good.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticJob",
+   "prompt": "What job do you have here?"
+  },
+  {
+   "key": "vms03fantasticnoideawhatyouredoing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, man. I know exactly what I'm doing. I just don't know what effect it's going to have.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Over there controls power in this building. That station has readouts on the computer network.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That big knob there makes a crazy noise. Sparks come out of that slot if you put stuff in it. And I'm learning more every day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticNoIdeaWhatYoureDoing",
+   "prompt": "So you have no idea what you're doing."
+  },
+  {
+   "key": "vms03fantasticnotgoingtoretarget",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah well. Guess I'll have to wait for the next curious sucker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticNotGoingToRetarget",
+   "prompt": "No."
+  },
+  {
+   "key": "vms03fantasticpayoff",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Aw, man. How am I supposed to buy chems now? Fine. Here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Ha! You had me going for a second there. Then I remembered that there's only one Fantastic. I'm king of this dump.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticPayoff",
+   "prompt": "You pay me a stack of caps right now and I'll forget you have my job."
+  },
+  {
+   "key": "vms03fantasticretarget",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's these two terminals outside. They control the mirrors. I tried fooling with them but didn't get very far.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'd have to get them to talk to the mainframe up in the tower, then do the rest from up there. I'm guessing. But it sounds good, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, you're not thinking of going up there, are you?",
+     "emotion": "surprise",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS03FantasticRetarget",
+   "prompt": "How would someone retarget the mirrors?"
+  },
+  {
+   "key": "vms03fantasticsettledown",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damn right, you're not. Goddamn right. Why would they? You can't top this guy. Just a little more time. You can't keep Fantastic down for long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticSettleDown",
+   "prompt": "Actually I'm not here to replace you.",
+   "label": "Settle down. I'm not here to replace anyone."
+  },
+  {
+   "key": "vms03fantasticsettledown_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damn right, you're not. Goddamn right. Why would they? You can't top this guy. Just a little more time. You can't keep Fantastic down for long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticSettleDown",
+   "prompt": "Settle down. I'm not here to replace anyone.",
+   "label": "Settle down. I'm not here to replace anyone."
+  },
+  {
+   "key": "vms03fantasticstripmccarran",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because I get paid, that's why. Per kilowatt-hour, whatever the hell that is. That's where the NCR wants the power, so that's where I want it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you know, you do that, maybe I put in a good word for you with them. Fantastic's little helper. There's a reputation you can hang your hat on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticStripMcCarran",
+   "prompt": "Why should the power go to the Strip and McCarran?"
+  },
+  {
+   "key": "vms03fantastictopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's it look like, man? I'm fucking king of the NCR. Caesar's Legion has Caesar, the NCR's got Fantastic. It's Fantastic's NCR now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This whole war's about power, man. Caesar wants it. NCR wants it. Fantastic's got it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After I fixed HELIOS One and basically saved the NCR from the dumbshits who run it, I got myself a little promotion. Now I run the whole shebang.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticTopic000",
+   "prompt": "Fantastic? What are you doing here?"
+  },
+  {
+   "key": "vms03fantastictopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa, hey. All right, man. It's cool. Who said anything about being your master?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm just the guy who tells you to do the stuff you do before you do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticTopic001",
+   "prompt": "Get this straight. You're not my master."
+  },
+  {
+   "key": "vms03fantastictopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Man, what aren't my responsibilities? Dam overflow, dam underflow. Dam leakage. Sometimes the dam gets too big and I have to shrink it down. {Emph. \"aren't\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "People come to me to resolve their disputes with my wisdom.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Like, hey Fantastic, who gets to keep this doodad we found? Or, yo, Fantastic, when will you accept that you're the father of my child? It's crazy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticTopic002",
+   "prompt": "What are your responsibilities now?"
+  },
+  {
+   "key": "vms03fantastictopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They sure as shit did. I mean there's still formalities, like I have to run everything by Lawson before I do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But do I ever do that? Is his name Fantastic?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticTopic003",
+   "prompt": "They put you in charge of Hoover Dam?"
+  },
+  {
+   "key": "vms03fantastictopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, man. That's just what I'm supposed to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But when he tells me to push the middle button to divert the intake, and the right button feels nicer when I touch it, I know where my loyalty is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Man, I just don't know how an idiot like that gets put in charge of anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticTopic004",
+   "prompt": "So you have to do whatever Lawson tells you."
+  },
+  {
+   "key": "vms03fantastictopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Man, I don't even know. It's crazy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticTopic006",
+   "prompt": "Is Ignacio dead over there? Did you kill him?"
+  },
+  {
+   "key": "vms03fantastictopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shh. You feel that? That's the winds of change, baby, and Fantastic's riding them with his magic angel wings.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They saw the shit I did for the NCR, how I carried them on my back, brought fire to the heathens. I wasn't gonna help them but they begged.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, somebody begged. Couldn't say who for sure. It's all a blur, you know? Chems, man. What a trip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticTopic007",
+   "prompt": "You're with the Legion?"
+  },
+  {
+   "key": "vms03fantastictopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm working on some top secret shit I can't even tell you about, it's so mind-blowing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But here's a little taste. You know how you can only collect sunlight during the day? What if you could make it daytime all the time?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crazy, right? Or is it? I'm gonna find somebody smart and ask him that question, see what he says. It'll be fucking intense.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticTopic008",
+   "prompt": "What will you do now?"
+  },
+  {
+   "key": "vms03fantastictryingtoaccomplish",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, see, we're getting power, because the guy running this place is Fantastic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the mirrors outside aren't aimed right, so we're running at one percent efficiency. And I guess that just isn't good enough for some assholes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Trouble is, most of the controls for this place aren't here - they're in the tower.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And that place has some crazy Pre-War security system that the dumbshit NCR set off when they took over. Killed two guys. Now they won't go near it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They want me to make an omelet, but I can't break any of their eggs, know what I'm saying?",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS03FantasticTryingToAccomplish",
+   "prompt": "What are you trying to accomplish?"
+  },
+  {
+   "key": "vms03fantasticwhatexactlydoyoudo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck, man. Everything. I push buttons. I turn dials. I read numbers. Sometimes I make up little stories in my head about what the numbers mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Like one time I imagined they were a code to get into a vault full of naked women. Man, how cool would that be?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03FantasticWhatExactlyDoYouDo",
+   "prompt": "What exactly do you do?"
+  },
+  {
+   "key": "vms03fantasticworried",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Worried? Do I look worried to you? I've got this under control, baby. No one else can do what I do here. {In denial.}",
+     "emotion": "surprise",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS03FantasticWorried",
+   "prompt": "Why are you worried about being replaced?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Here, you'll want this. It's the password to one of the terminals outside. Found it written on one of the stalls in the bathroom.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Adios, amigo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey, man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "fantastic"
+}

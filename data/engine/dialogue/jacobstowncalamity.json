@@ -1,0 +1,292 @@
+{
+ "id": "jacobstowncalamity",
+ "speaker_name": "Calamity",
+ "source": "JacobstownCalamity.txt",
+ "topics": [
+  {
+   "key": "calamitytodoctorhenry01",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stealth field is stable, and the readings are clean. Gamma wave activity is... {puzzled} zero? Odd, but everything looks right.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "The stealth field is unstable and scrambling things. This reading says gamma wave activity is zero, but that can't possibly be right.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Gamma wave activity is... {puzzled} zero? That can't be right. Must be a result of the interference.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CalamityToDoctorHenry01",
+   "prompt": "CalamityToDoctorHenry01"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be careful with Keene. He's got a mean temper.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh. I'd heard there were new people in town, but I thought it was more Super Mutants. Nice to meet you - I'm Calamity.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{Marcus dead} Losing Marcus is bad news for Jacobstown. I doubt the mutants will stick around for long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With Doctor Henry off to rejoin his Enclave friends, he's left it up to me to carry on with the research here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, there.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then. Be patient since this will take awhile.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic000",
+   "prompt": "Transplant Rey's brain into Rex."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Most of the time, I'm Doctor Henry's research assistant. We're looking into ways to cure the, uh... {drops her voice low}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm also handy with tools, and once in awhile I venture down into the valley to trade Big Horner hides and meat for supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic001",
+   "prompt": "What do you do here?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Prospectors looking for salvage, usually. {amused} They always run when they see the mutants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Great Khans come this way once in awhile, but they keep their distance. I think they're mostly keeping an eye on us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic002",
+   "prompt": "Does anyone other than Super Mutants come up this way?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you. I change names and jobs every decade or so, just to keep things interesting. I picked \"Calamity\" this time because it sounded nice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've never really done much science stuff until now. I'm pretty good at it, or so Doctor Henry tells me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic003",
+   "prompt": "You have an interesting name."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then. Be patient since this will take awhile.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic004",
+   "prompt": "Transplant Lupa's brain into Rex."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see... good guard dog tendencies. If I transplant this brain into Rex, he'll be a bit more ferocious in his attacks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic005",
+   "prompt": "This brain is from Rey, one of Old Lady Gibson's dogs."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Rex will be faster.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic006",
+   "prompt": "I took down a Fiend dog named Violetta."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Rex will be tougher.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic007",
+   "prompt": "I got a brain from Lupa, the mother of many Legion Mongrels."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, if you want.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic008",
+   "prompt": "Hold off for now."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic009",
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me take a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic010",
+   "prompt": "I need something repaired."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat. This will take awhile.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic011",
+   "prompt": "Transplant Violetta's brain into Rex."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can probably handle that. Just the same as changing a light bulb, except stickier and smellier. Right?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Anyway, what did you bring me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic012",
+   "prompt": "I've brought a brain to transplant into Rex."
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Absolutely not. Lily's done enough, and she doesn't need to do any more. We're close enough to a cure already, and don't need to rush it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic013",
+   "prompt": "Do you think Lily should continue to wear the Mark II prototype?"
+  },
+  {
+   "key": "vdialoguejacobstownjacobstowncalamitytopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueJacobstownJacobstownCalamityTopic014",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "calamity"
+}

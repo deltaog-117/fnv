@@ -1,0 +1,929 @@
+{
+ "page": "GSEasyPete.txt",
+ "speaker": "Easy Pete",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That ought to keep things settled for awhile. Hope it stays that way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Howdy. What can Easy Pete do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Howdy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "PLAYERFIREWEAPON",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What in tarnation?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What in blazes?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "id": "PLAYERINIRONSITES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For pete's sake...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No respect.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "id": "PLAYERLAYMINE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That'll show 'em!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got any more of those?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "id": "PLAYERTHROWGRENADE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here it comes!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here comes the boom!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was a prospector until I decided to settle here to get away from the NCR. Now I just take it easy and help out with the Brahmin and Bighorners.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why are you called Easy Pete?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The one in the fancy suit seemed to be calling the shots, that's as much as I know. Other folks in town might know more. {TEXT IS CORRECT, NOT SOUND FILE.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Word of advice, though: if you ever catch up with him, watch out. The man's got cold eyes like a snake. Can't be trusted, I'd say.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know anything about the people who attacked me?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Meat and hide, mostly. Can't put a pack on 'em - they just lay down until you take it off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can find a bunch of wild ones high up in the hills, but gotta be careful around 'em. They can put up a decent fight if cornered.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you use the Bighorners for?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nope. Had a pretty good claim once, way out east by the river, but got run off by Raiders. Eventually, got too old to keep going out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you ever find anything good while prospecting?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The machine? Harmless, no matter what Trudy says. She thinks it's hiding something, but I think it's just a broken down relic with no place to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know anything about Victor?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yup.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nah, nah - means I poked through old buildings looking for working tech and such. Some folks just call it \"salvaging,\" but never liked the term.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Way I see it, salvage means it's broken, near-worthless. Me, I looked for the good stuff - guns, chems, spare parts. Good money in it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You were a prospector - like digging for gold and silver?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't get me wrong - the NCR's got a lot of decent folk in it. It's just that they make you part of them whether you like it or not.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Towns like Goodsprings and Primm don't stay independent for long, not if you've got something the NCR wants. Still, the NCR keeps the Legion away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's wrong with the NCR?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're slavers, led by a guy named {SEE-zer} Caesar. Or {less certainly, KAI-zar} Caesar. Not sure how you're supposed to say it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A couple of years ago they tried to take over Hoover Dam, but the NCR beat them back. The NCR didn't - or couldn't - finish the job, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Legion's got its strength back and is getting ready for another round at the Dam. My money's still on the NCR winning, but you never know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{warning} We've been hearing stories about Legionaries on the Nevada side of the river, so keep a gun handy. You don't want to get caught by them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Legion."
+  },
+  {
+   "id": "VFreeformGoodspringsGSEasyPeteTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Dam powers a lot of New Vegas. And then there's all that clean water lying in Lake Mead, too. Anybody who owns the Dam owns the territory.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's so important about Hoover Dam?"
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsEasyPeteTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Too dangerous. Gonna kill all yourselves if I let you touch it. Better to leave it buried - safer that way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Told you before - it's too dangerous for a bunch of amateurs to handle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I hear you've got dynamite. It would help us beat the powder gangers."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsEasyPeteTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Uh huh. Guess you know what you're doing. I'll go dig it up and get it ready. You'll have it by the time the fighting starts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm familiar with the care and handling of explosives, dynamite included."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsEasyPeteTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Too dangerous, sorry. Blow yourself up, blow your neighbor up, blow the whole town up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How hard can it be? Just light them and throw."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsEasyPeteTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bad trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about Joe Cobb?"
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsEasyPeteTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keep your gun handy if you go poking around some of the abandoned places around here, like the schoolhouse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wasteland critters like to move in when Sunny's not looking, so watch out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yup.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsEasyPeteTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's... helpful."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsEasyPeteTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh huh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Keep your gun handy if you go poking around some of the abandoned places around here, like the schoolhouse. Critters move in there sometimes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yup.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "AcceptYield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Git.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AcceptYield"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Bastard!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You crazy?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ergh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Enh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ha!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "AvoidThreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Run!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhhhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AvoidThreat"
+  },
+  {
+   "id": "Death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ahhhhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gahulgh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Death"
+  },
+  {
+   "id": "DeathResponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Damn...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Shame...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DeathResponse"
+  },
+  {
+   "id": "FireExplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Heh heh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch this!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FireExplosive"
+  },
+  {
+   "id": "Flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Run!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Help!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Flee"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Stop!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stay away!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "Hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Eragh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oof!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ugh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ngh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hit"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Stop!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "God!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "MurderNoCrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Yup.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Too bad.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "id": "PowerAttack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hm eragh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hm ahh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yaaaa!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How 'bout this?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PowerAttack"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Thief!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Return that now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Strange...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Found ya!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You ain't getting away!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gotcha!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Just a noise.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just getting old, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stupid deaf ear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Where are ya?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Strange... Ain't there no more.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where'd you go?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Ah, well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Excitement's over, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kids these days...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You just disappear?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You still there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "There ya are!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Couldn't hide, could ya?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got my eye on you now!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I ain't chasin' 'em.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is too much runnin' for an old man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Someone younger can run after 'em.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Eh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Trudy, that you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Whippersnapper!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uppity youngster!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No respect for the elderly these days.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombat"
+  },
+  {
+   "id": "StartCombatResponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I'm comin', too!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This'll be fun!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Been years since I did this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "id": "ObserveCombat",
+   "section": "miscellaneous",
+   "responses": [
+    {
+     "text": "Look at 'em go!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get 'em! Yeah!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ObserveCombat"
+  }
+ ]
+}

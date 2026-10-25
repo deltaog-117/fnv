@@ -1,0 +1,549 @@
+{
+ "id": "hvscribeibsen",
+ "speaker_name": "Ibsen",
+ "source": "HVScribeIbsen.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll track the virus from over here. You just concentrate on locating the terminals hosting it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Flustered} Look, this isn't a great {time} ti- oh, what the hell, it's not like we're making any progress. I'm Ibsen, and I hope your day is going better than mine is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you want to try isolating the virus?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You actually did it! If you don't mind my saying so, I didn't think you had a chance in hell of pulling it off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I'm glad to be wrong for once! Thank you, my friend. Please, feel free to access the datastore at your leisure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm only allowed to give you access to non-classified topics, but it's better than nothing, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello again, my friend. I hope you've been finding the information in the datastore useful.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I'm in charge of keeping this data system up and running, but accessing it is a little, ah, touch and go at the moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic000",
+   "prompt": "Something wrong?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One of our exploratory patrols - back when we had exploratory patrols - found a data disc in some ruins out in the waste.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, we finally got around to cataloging the damn thing and got shut out of our own datastore the second it loaded. Turns out it had a virus on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic001",
+   "prompt": "Why's that?",
+   "label": "Why's that?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, there are patrols. Just not exploratory ones. We've been in a state of lockdown for... well, let's just say it's been a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The only time anyone gets to go topside is guard duty. Or to gather provisions. Other than that, it's steel walls and fluorescent lights for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic002",
+   "prompt": "Why aren't there any patrols anymore?",
+   "label": "Why no more patrols?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nah, it's not so bad. The world outside isn't exactly a paradise, you know? Still, you can only breathe recirculated air for so long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've got more than a few people in here who are going a little stir crazy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic003",
+   "prompt": "That's horrible.",
+   "label": "That's terrible."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, some Pre-War jackass with too much time on his hands apparently decided to inflict his misery on those around him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's scrambling all the terminals here at the moment. Luckily, we only use this section for storing historical data.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic004",
+   "prompt": "A virus?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose it couldn't hurt to get another pair of eyes on this. Maybe you'll be able to come up with something coming at it fresh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "While the entire system is infected, the virus itself is spread across three terminals. The problem is that it keeps moving periodically.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll have it nailed down in a terminal or two, only to have it jump to another set of terminals before we locate the third.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic005",
+   "prompt": "Anything I can do to help?",
+   "label": "Anything I can do?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Testy, Frustrated} I don't have time to think about silly things like politics right now. My main concern right now is getting this blasted datastore up and running.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic006",
+   "prompt": "What do you think of Hardin trying to get McNamara dismissed?",
+   "label": "{Ask Ibsen about Hardin trying to become Elder}"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic006_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can understand how the man might be frustrated by the current situation. He's a take-charge sort of fellow. Standing around's not his strong suit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I myself often wish we could end this interminable stasis and begin moving forward again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic006",
+   "prompt": "Now that the datastore is fixed, what do you think of Hardin trying to get McNamara dismissed?",
+   "label": "{Ask Ibsen about Hardin trying to become Elder}"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll need to locate it on three different terminals in this area in one minute. Any longer and it'll jump, and you'll have to start all over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Locating the virus would probably be nearly impossible, but the pompous little bastard that wrote it made things a little easier for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Normally, terminals infected by the virus just display gibberish, but we found that terminals the virus moved to had some real data passed to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were able to decrypt the data and discovered that it was just messages from the virus's writer, taunting his victims.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When you find terminals with those messages, lock them down and move on. Find three of them before the virus jumps, and we'll wipe the damn thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic007",
+   "prompt": "What do I need to do?",
+   "label": "What do I do?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's... not really for me to say. It's a bit of a touchy subject. You should probably forget I mentioned it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic008",
+   "prompt": "Why the lockdown?",
+   "label": "Why the lockdown?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please, don't let me stop you. I know what it's like to have a lot on your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic009",
+   "prompt": "I have to be going."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You and me both. The Elder wants this data store operational pronto, but it doesn't look like the damn thing will be working anytime soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic010",
+   "prompt": "I've had better."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I could use some assistance, sure, but I highly doubt you have the technical background to help us deal with this virus.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic011",
+   "prompt": "Need any help?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Best of luck to you. I'll tell the others to take a break so they don't get in your way. Oh, and I'll keep track of when it jumps for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To maximize your chances, wait for my signal before you begin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic015",
+   "prompt": "I'll give it a try, then."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We'll get it eventually, but it's frustrating that it's taking so long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic016",
+   "prompt": "Sounds complicated. I'll leave you to it."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] What? No, that... that's brilliant! It would let us seal a portion of the virus to a particular terminal, even when the other parts move.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic017",
+   "prompt": "Can the virus's files be partitioned so read-access is only provided by the kernel administrator?",
+   "label": "{ Science >= 70 }"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic017_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Along with all of the crucial data contained within. That'd be like throwing the baby out with the bathwater.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic017",
+   "prompt": "You could just delete all the files. That would get rid of the virus, right?",
+   "label": "{ Science >= 70 }"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm almost out of ideas, so you'd be more than welcome to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic018",
+   "prompt": "Maybe I'll try another time."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. I'll monitor when it jumps. When I give the signal, start checking terminals.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic019",
+   "prompt": "Yes."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We'll continue our own efforts in the meantime.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic020",
+   "prompt": "Perhaps another time."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose I could take a small break, but I can only spare a little time. Ask away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic021",
+   "prompt": "Not right now. I want to ask you a few questions."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Excited, this is his favorite subject} Oh, all kinds of things! There was already information regarding the layout and systems of this bunker, but we've since added our own data as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Prior to the lockdown, we had extensively scouted the surrounding area, and compiled dossiers on nearby points of interest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic022",
+   "prompt": "What kind of information is in the datastore?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, did you have an idea that might help us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic023",
+   "prompt": "About the virus..."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I do that all the time myself. One moment I'll think I've solved the conundrum, and the next I'm back to square one. Don't let it bother you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was there something else you wanted?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic024",
+   "prompt": "No, it's nothing."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscribeibsentopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you'd have to get a senior-level member of the chapter to unlock a topic for you. I've given you access to what I can, but that's not much.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The majority of topics fall under Ramos's aegis, since they'd constitute a security risk. Good luck getting anything out of him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You might have better luck with another member of the senior staff. Try talking to them about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScribeIbsenTopic025",
+   "prompt": "How do I get access to more topics in the datastore?"
+  },
+  {
+   "key": "hvibsentenseconds",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Ten seconds!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVIbsenTenSeconds",
+   "prompt": "HVIbsenTenSeconds"
+  },
+  {
+   "key": "hvibsenthirtyseconds",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Thirty seconds left!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVIbsenThirtySeconds",
+   "prompt": "HVIbsenThirtySeconds"
+  },
+  {
+   "key": "hvibsenveronica",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hmm? Oh, it's you, Veronica.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, yes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVIbsenVeronica",
+   "prompt": "HVIbsenVeronica"
+  },
+  {
+   "key": "hvibsenvirusend",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Damn, it's jumped! I thought we might have had it that time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVIbsenVirusEnd",
+   "prompt": "HVIbsenVirusEnd"
+  },
+  {
+   "key": "hvibsenvirusstart",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The virus just jumped! Find which terminals it went to!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVIbsenVirusStart",
+   "prompt": "HVIbsenVirusStart"
+  },
+  {
+   "key": "hvibsenviruswiped",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "That's it! We got it! The virus has been purged!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVIbsenVirusWiped",
+   "prompt": "HVIbsenVirusWiped"
+  }
+ ],
+ "speaker": "scribe_ibsen"
+}

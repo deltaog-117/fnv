@@ -1,0 +1,146 @@
+{
+ "id": "primmlancecorporalmcgee",
+ "speaker_name": "McGee",
+ "source": "PrimmLanceCorporalMcGee.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm is secure against outside threats. Be interesting to see how long the natives stay grateful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm Sergeant McGee of the New California Republic Army, 5th Battalion, 1st Company. If you want to talk about something, speak to Lieutenant Hayes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Move along, waster. Got a town to run here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "sgtmcgeeabout",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm from Hub originally, but it's been a long time since I saw it. I'm on my second tour here. Most Non-Commissioned Officers are.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SgtMcGeeAbout",
+   "prompt": "Where are you from?",
+   "label": "General information about McGee personally"
+  },
+  {
+   "key": "sgtmcgeegoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You were the one who came talking to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SgtMcGeeGoodbye",
+   "prompt": "I need to get going."
+  },
+  {
+   "key": "sgtmcgeelatestnews",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you think I'm blind? Of course I can see the Powder Gangers have taken over Primm.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have any other obvious facts you'd like to share? Don't fist fight with Deathclaws? No kissing Cazadores?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SgtMcGeeLatestNews",
+   "prompt": "Powder Gangers have taken over Primm.",
+   "label": "What's the news?"
+  },
+  {
+   "key": "sgtmcgeelatestnews_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't imagine that deputy of theirs is worth more than a spit. I was on lookout when he got frog marched over to Bison Steve.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I had a long rifle or the order I would have taken out the Powder Gangers to save him, but I didn't. His tough shit I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SgtMcGeeLatestNews",
+   "prompt": "I rescued Primm's deputy, but the town's still lawless.",
+   "label": "What's the news?"
+  },
+  {
+   "key": "vms02anynpcaboutncr",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have no idea. I just go and do what they tell me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02AnyNPCAboutNCR",
+   "prompt": "Does the NCR have any plans to attack the prison north of here?",
+   "label": "Any idea what the NCR's up to in Primm?"
+  },
+  {
+   "key": "primmncrsheriffconvo",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yes Lieutenant!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes sir!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNCRSheriffConvo",
+   "prompt": "PrimmNCRSheriffConvo"
+  },
+  {
+   "key": "rnvnewsstory2",
+   "section": "other",
+   "responses": [
+    {
+     "text": "{McGee:} People of Primm, the NCR wishes to inform you that you are under their jurisdiction now. And from now on, you're gonna be living by our rules.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RNVNewsStory2",
+   "prompt": "RNVNewsStoryLine2"
+  }
+ ],
+ "speaker": "sergeant_mcgee"
+}

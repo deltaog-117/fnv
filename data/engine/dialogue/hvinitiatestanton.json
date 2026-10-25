@@ -1,0 +1,216 @@
+{
+ "id": "hvinitiatestanton",
+ "speaker_name": "Stanton",
+ "source": "HVInitiateStanton.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, I heard the pistol got returned. Thanks a lot! I am {emph} never going to listen to Watkins again, believe me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I really hope you can find that pistol.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, but I'm a little busy here. If you'll excuse me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "hvstantonaskaboutweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh man, I told Watkins this wasn't going to work.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, Watkins and I snuck out one day. She said it'd be a training exercise.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Said she heard from a guy on one of the patrols that there was a gulch just southeast of here with scorpions in it, and that we had to check it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There were scorpions out there, all right. We started using them for target practice, but before we knew it the damn things were all around us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So we made a run for it, and in all the commotion, I dropped my pistol. Watkins keeps urging me to go back and get it, but that's not gonna happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can go outside, though, can't you? You could return the pistol to Torres and clear this whole thing up for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVStantonAskAboutWeapon",
+   "prompt": "You were the last one to check out the missing laser pistol, right?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great! When you find it, just turn it into Torres and I'll be in the clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic000",
+   "prompt": "Fine, I'll find the gun for you."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I sort of altered the records after we got back. That was Watkins' idea, too. That girl is nothing but trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, I haven't been exiled yet, or worse, assigned to latrine-cleaning duty. But I will, if you don't help me find that gun.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic001",
+   "prompt": "Why do the records show that the gun was turned back in?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh man, I am so screwed! Look, if you change your mind, I'd really appreciate it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic002",
+   "prompt": "Sorry, I can't help you."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, no idea. Sorry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic003",
+   "prompt": "I'm trying to help Torres find a missing laser pistol. Have you seen it around?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, see you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic004",
+   "prompt": "I have to be going."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, no pressure. I'm just grateful you're willing to help me out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic005",
+   "prompt": "I'll try my best to find it."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm pretty sure I dropped in when we made our escape. We had been surrounded and had climbed up on this big rock to hold them off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and I remember seeing a corpse near the rock, too. We never got a chance to check it out since we were too busy fighting for our lives.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess we had better luck than whoever that was, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic006",
+   "prompt": "Could you be a little more specific about where you dropped it?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good luck!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic007",
+   "prompt": "I better go and start looking."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvinitiatestantontopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, weapon check-in protocol includes verifying the serial number of the weapon, so a different gun would be noticed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Plus, having a new gun suddenly show up would immediately point to you, being the only outsider around here and all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, the only way I have out of this is if you help me find that gun. You'll help me, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVInitiateStantonTopic008",
+   "prompt": "Can I just get you another laser pistol?"
+  }
+ ],
+ "speaker": "initiate_stanton"
+}

@@ -1,0 +1,78 @@
+{
+ "id": "vfsbaitthug",
+ "speaker_name": "Freeside thug",
+ "source": "VFSBaitThug.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Check it out. Between the dumpsters there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfsbaitthugtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The last person stupid enough to follow me down this alley. Get this fool, boys!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSBaitThugTopic000",
+   "prompt": "Who is that?"
+  },
+  {
+   "key": "vfreeformfreesidevfsbaitthugtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nah, just some idiot that wandered down the wrong alley. Sound familiar?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSBaitThugTopic001",
+   "prompt": "Friend of yours?"
+  },
+  {
+   "key": "vfreeformfreesidevfsbaitthugtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your rush? The boys and I here want to get to know you better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSBaitThugTopic002",
+   "prompt": "Ooh, look. A body. I really should be going."
+  },
+  {
+   "key": "vfsbaitthuggethim",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Get him!",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "Get her!",
+     "emotion": "anger",
+     "intensity": 75
+    }
+   ],
+   "topic": "VFSBaitThugGetHim",
+   "prompt": "VFSBaitThugGetHim"
+  }
+ ],
+ "speaker": "freeside_thug"
+}

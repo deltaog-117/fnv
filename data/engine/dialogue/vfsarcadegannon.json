@@ -1,0 +1,4542 @@
+{
+ "id": "vfsarcadegannon",
+ "speaker_name": "Arcade Gannon",
+ "source": "VFSArcadeGannon.txt",
+ "topics": [
+  {
+   "key": "arcadeedeenclave",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wow. That thing is definitely carrying around a bunch of Enclave intel. Adams is on the eastern seaboard of the country.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Which means this little \"Duraframe\" sucker somehow managed to survive for over {thinking} two thousand miles. {impressed} Certainly lives up to its model name.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ArcadeEDEEnclave",
+   "prompt": "ArcadeEDEEnclave"
+  },
+  {
+   "key": "arcadeedenoenclave",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't want to be... alarmist or anything, but maybe you should ditch that Eyebot. {catching himself} Robot. Whatever that thing is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who knows what it's programmed for? Maybe tomorrow you'll take out an iguana-on-a-stick and that'll activate its {searching} mini-nuke self-destruct sequence.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ArcadeEDENoEnclave",
+   "prompt": "ArcadeEDENoEnclave"
+  },
+  {
+   "key": "arcadeedeopinion",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know if you care about my opinion, but I'd prefer that you turn ED-E over to the Followers. Surprised, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ArcadeEDEOpinion",
+   "prompt": "ArcadeEDEOpinion"
+  },
+  {
+   "key": "followersacknowledgemyorder",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Easy as a heart transplant.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersAcknowledgeMyOrder",
+   "prompt": "FollowersAcknowledgeMyOrder"
+  },
+  {
+   "key": "followersfired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{joking} I thought my charm could win you over, but I guess it wasn't meant to be. Are you sure you want me to go?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFired",
+   "prompt": "It's time for us to part ways."
+  },
+  {
+   "key": "followersfiredno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{\"Thought so.\"} Mmm hm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredNo",
+   "prompt": "On second thought, stick with me for a little longer."
+  },
+  {
+   "key": "followersfiredyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll head back to the Old Mormon Fort. If you need me, just swing by.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredYes",
+   "prompt": "Yes, I'm sure."
+  },
+  {
+   "key": "followersfiredyessuite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sighing} Back to the tomb, I suppose. If you need me, et cetera.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredYesSuite",
+   "prompt": "I'd like you to go back to the Lucky 38 for now."
+  },
+  {
+   "key": "followershired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have quite the menagerie at your disposal. If you can get the posse down to \"small gang\" size, I'll happily go with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As the old saying goes, two's company, but three's a small army. Okay, I'm paraphrasing a bit, but you get the idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's something about that robot that doesn't seem... all right to me. I'm not saying we shouldn't take it with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm just saying that if it were to \"fall\" into Lake Mead and be irreparably damaged... and if you threw an EMP grenade in after it...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, there are worse things happening in the world, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After spending thirty years of my life hiding my association with the Enclave, I'd {emph} love to stroll the wasteland with a twitchy Eyebot.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Back in your good graces again? I knew you'd see the light.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A courier, doctor, and a cybernetic dog. After we deal with the whole \"imminent conquest of New Vegas\" problem, we should open an act at the Tops.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Followershired",
+   "prompt": "I think we should travel together."
+  },
+  {
+   "key": "followersletsgo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lead the way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersLetsGo",
+   "prompt": "Let's get going."
+  },
+  {
+   "key": "followersoverburdened",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{a little annoyed} I'm not exactly in Power Armor over here, so why don't you help lighten my load a bit?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{annoyed} I'm not standing here because I'm overburdened with emotion. Take some of this stuff off of me so I can move a little more easily.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersOverburdened",
+   "prompt": "FollowersOverburdened"
+  },
+  {
+   "key": "followersstealthing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{hushed, not confident in his abilities} O... kay. I'll do my best.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{quietly} Just as a warning, my covert bandaging skills are a little rusty.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersStealthing",
+   "prompt": "FollowersStealthing"
+  },
+  {
+   "key": "followerstactics",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll defer to your judgment, naturally.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTactics",
+   "prompt": "Let's talk about your tactics."
+  },
+  {
+   "key": "followerstacticscombat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{worried} I'll do my best.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombat",
+   "prompt": "I want you to change your combat style."
+  },
+  {
+   "key": "followerstacticscombataggressive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Understood. I won't hesitate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatAggressive",
+   "prompt": "I want you to attack enemies the moment you see them."
+  },
+  {
+   "key": "followerstacticscombatend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not a problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatEND",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "followerstacticscombatgoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "After you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatGOODBYE",
+   "prompt": "That's all. Let's get going."
+  },
+  {
+   "key": "followerstacticscombatmelee",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you would like me to die very rapidly, this is clearly the best tactical choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatMelee",
+   "prompt": "Switch to a melee weapon."
+  },
+  {
+   "key": "followerstacticscombatpassive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm hardly a whirlwind of death when left to my own devices, but all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatPassive",
+   "prompt": "I want you not to attack enemies unless I've already engaged them."
+  },
+  {
+   "key": "followerstacticscombatranged",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sounds great to him} No arguments from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatRanged",
+   "prompt": "I want you to use ranged weapons."
+  },
+  {
+   "key": "followerstacticsdistance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just tell me where you want me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistance",
+   "prompt": "Let's talk about how close you're following me."
+  },
+  {
+   "key": "followerstacticsdistancedefault",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not going to wander off, but okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceDefault",
+   "prompt": "Stay close to me."
+  },
+  {
+   "key": "followerstacticsdistanceend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceEND",
+   "prompt": "Your distance is good. Let's talk about something else."
+  },
+  {
+   "key": "followerstacticsdistancegoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Got it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceGOODBYE",
+   "prompt": "All right, you're good. Let's get out of here."
+  },
+  {
+   "key": "followerstacticsdistancelong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wherever you want me. No problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceLong",
+   "prompt": "Keep your distance. Try to flank them."
+  },
+  {
+   "key": "followerstacticsend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me know if you need anything else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsEnd",
+   "prompt": "Enough about tactics."
+  },
+  {
+   "key": "followerstrade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. Just don't treat me like a pack Brahmin, okay?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTrade",
+   "prompt": "Let's trade equipment."
+  },
+  {
+   "key": "followerswait",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be here. Just don't expect me to fend off a gang of Super Mutants while you're gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay. Just don't be gone long. I sunburn easily.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersWait",
+   "prompt": "Wait here."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I said, I needed to go do something. This is it. It belonged to my father.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Since you convinced me to help out with the defense of Hoover Dam, I figured I'd haul it out of storage.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I'm a little rusty with it but... I think I can manage. {bit of a grin} As long as you've got my back, of course.",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "Like I said, I needed to go do something. This is it. It belonged to my father.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I thought I might wear it at Hoover Dam, but after you talked me out of it, I didn't see the point in hanging on to it any longer.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "I'm here because of you, so I figure you're the one most deserving of it. It should protect you from everything short of a Plasma Caster.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "And if you need anything - anything at all - you know where to find me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{false friendly} Hey there. Was it always your plan to sell me into slavery to Caesar, or was that a spur of the moment thing?",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "Why don't you make like Odysseus and get lost?",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "For as lack of adornment is said to become some women, so will this place, without your presence, bring delight.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "I've run out of witty ways to tell you to leave, so why don't you just go?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to talk, take off that ridiculous Legion uniform. It's insulting.",
+     "emotion": "disgust",
+     "intensity": 65
+    },
+    {
+     "text": "Hi. If you're looking for medical help, try the other doctors. I'm just a researcher. Not even a particularly good one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, again. Still in one piece, I see.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, we've had some laughs, you and I, but it looks like you're a crazy person and I'm going to have to leave.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Moreno took the fall of the Enclave hard. He never questioned his orders, never questioned the legitimacy of what the Enclave was doing.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "To him, it was all one unbroken chain, from Washington to Richardson. When we left Navarro, I remember looking up at Moreno.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "He said, \"Kiss America goodbye, boys.\" When we left the Enclave behind, the love in him burned itself out. Now there's just a bitter old man left.",
+     "emotion": "pained",
+     "intensity": 40
+    },
+    {
+     "text": "Since my mother died, Daisy's been the only woman in my life. She was the only other woman close to my father, too.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "She flew him out on over a dozen missions, including his last. I've always been close to Daisy.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "There have been some good men along the way, but lovers make poor confidants. Daisy never had children of her own, so she was always there to listen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Being in the Enclave didn't mean much to her. She just loved to fly. It broke her heart to be grounded.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Doc Henry always was a hard one to figure out. It didn't seem to matter whether he was working with humans or dogs.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "He had an equal lack of affection for both. A regular {dai-ah-jen-eez} Diogenes. I'm not sure what the man was after.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "\"Knowledge is power,\" but to what end for Henry, I have no idea. The problem was what mattered to him, not its practical impact.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He simply solved riddles because they existed.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "If I had to pick anyone who didn't belong in the Enclave, it would definitely be Johnson. He hated what the Enclave was doing.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Day to day, week to week, he would question orders, subvert mission objectives, do anything he could to serve without serving.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "It's amazing he was never court-martialed. He always had good things to say about my father. Said I was like him in a lot of ways. I wish I knew.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Judah Kreger is the glue that's kept us all together over the years, and with good reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyone who can command Moreno and Johnson in the same unit without somebody getting fragged is one hell of a leader.",
+     "emotion": "surprise",
+     "intensity": 40
+    },
+    {
+     "text": "Kreger was polite and kind, but never warm. He always did his best to make me feel welcome in the group.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think he did it out of a sense of loyalty to my father. Loyalty means a lot to Judah.",
+     "emotion": "neutral",
+     "intensity": 15
+    },
+    {
+     "text": "Not loyalty to the Enclave, or even the ideals they fought for, but to the people who served with him.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I'd like to say that I saw this coming, but honestly I was oblivious. {sheepish} For what it's worth, I'll do what I can to help you... not get killed?",
+     "emotion": "pained",
+     "intensity": 60
+    },
+    {
+     "text": "So Mr. House doesn't care that one of Caesar's most notorious Legion spies is walking around on the Strip.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Either that or his Securitrons' AI is too primitive to recognize the threat. Neither answer is particularly comforting.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{sarcastic, in response to being ignored by another Follower} Oh, hello Emily. Yes, it is I, Arcade Gannon, fellow member of the Followers of the Apocalypse.",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "Would I like to help infiltrate the Lucky 38{casino} ? I'm so glad you asked...",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "That's a lot of energy weapons. Brings back some interesting memories.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "The Strip's not a bad place if you love terrible things and people. {a bit sad, annoyed} I'll never understand the allure of giving away your money to the rich.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I've read about REPCONN. I think they did some work with the... {catching himself, was about to say \"Enclave\"} the government before the war. Rockets and some energy weapon prototypes, I think.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Westside, huh? I passed through here with another Follower a while back, Anderson. The locals were having a lot of trouble getting water through.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Westside, huh? I heard about what happened with Anderson. Can't say I'm surprised. He was always a fringe operator in the Followers.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "{exasperated} What's wrong with you? Killing Anderson isn't going to bring Corporal White back.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Interesting way of handling things. Very {soob} sub {roh-sah} rosa.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know if the Scorpions deserved to be wiped out for something they didn't do, but that's one less problem Westside has to deal with.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Anderson turned in for the wrong reason and Westside gets to keep siphoning water.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's hard to find justice in all of this, but I suppose this is as close as it gets. Thanks.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Extortion? Really? You go through all of this only to extort the people who are trying to help Westside? Unbelievable.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Hildern is a good example of \"big picture\" obsession gone too far.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "At some point he became so fixated on large scale results that he lost the concept of \"the common good\" along the way.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "It's an inhumane kind of public service when people and the basic resources they need become numbers in a ledger.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "A vertibird. Interesting. It's been a long time since I've seen one of these.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Wait, wait, wait a second. What's going on? Am I playing Vergil to your Dante?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I'd like to assume that we're tiptoeing into the mouth of hell out of academic curiosity, but I'm not so open-minded that I've lost my brains.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "I guess I'll wait out here, then.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "I need to talk to you about something, if you have a minute.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "Thanks for doing this, getting them all back together again.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be honest, when Moreno started going off, I didn't think we'd all be walking out of there in one piece.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "I still don't know how this is all going to shake out in the end, but at least the Enclave can atone a bit for all the damage it's done.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "I shouldn't be surprised at what happened with Moreno. I hoped that after all this time, he could put his anger behind him.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe everything good in Orion Moreno died at Navarro and it was foolish to think there was anything in him left to salvage.",
+     "emotion": "pained",
+     "intensity": 25
+    },
+    {
+     "text": "You got the survivors of the Enclave back together so you could convince them to help Caesar?!",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "What are you thinking? Do you {emph} want to see Vegas turned into the new slave capital of the west?",
+     "emotion": "anger",
+     "intensity": 70
+    },
+    {
+     "text": "Hey. You're your own person and all that, but you're acting crazy, and if you keep it up, I'm going to leave.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I like how you handled that. Nicely done.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "I can't say that's how {emph.} I would have handled that, but...",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "You're that courier, right? The guy who runs the Tops, Benny... heard he tried to kill you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess that didn't work out very well for him. {joking} Should I watch my back around you?",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "Oh, you're that courier, aren't you? The one who got mixed up with Benny over at the Tops. Sounds like messy business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm no botanist, but I think this {emph} may not be entirely natural.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Nuclear waste disposal. Pre-War, people figured there was so much desert in Nevada, you might as well turn it into a big dumping ground.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "People didn't like it, but they weren't about to give up easy access to power, not with all of the petroleum drying up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a shame what happened up here. I understand arguments about the \"fog of war\", but that can't be much consolation to the survivors.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "{sadly} Or to the NCR soldiers who have to live with what they did here.",
+     "emotion": "sad",
+     "intensity": 60
+    },
+    {
+     "text": "In case it's not obvious, I think you should redirect the power to Freeside and outer Vegas.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "You activated ARCHIMEDES?! What the hell are you thinking?!",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "Nicely done. I'm sure people will appreciate the power. I hate to have to rely on it, but out here... it makes a big difference.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm. I suppose an even distribution is better than nothing.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Everything to the Strip and McCarran? Are you kidding? {sighs}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{irritated} I guess I should be grateful you didn't activate the laser.",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "You have to hand it to the NCR. Get enough hands working together and they can make or break just about anything.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not exactly a mercenary, but taking out scumbags of this magnitude wouldn't cause me to lose any sleep.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Well, I'll be. Hoover Dam. One of the last remaining {emph} functioning wonders of the Pre-War world.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "I'm amazed it's still running at all. Too bad everyone's killing each other over it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What a load of Brahmin shit! Can you believe that guy?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{irritated that the player is shooting near him} Stop doing that, please.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{annoyed} I'm not sure if you're trying to hit me or trying to miss me. Either way, stop it. Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{player is aiming gun at Arcade} I assure you, you look extremely virile. Now, would you mind pointing that somewhere else? Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player is aiming gun at Arcade} Uh... {cautiously} what's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{player is dropping mines near Arcade} Can't wait to see where this is going.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{he just threw a grenade} Look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, you know. Finding alternative treatments for common illnesses and injuries. Stimpaks out of barrel cacti and other fantastic improbabilities.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "As far as fruitless wastes of time go, it's quite noble in its aims.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic000",
+   "prompt": "What kind of research?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not all Followers are \"people persons.\" Besides, someone needs to do research. I have no problem with Julie sticking me back here.",
+     "emotion": "neutral",
+     "intensity": 25
+    },
+    {
+     "text": "Out of sight, out of mind. There are worse things one can be, though I do admit, it is a bit boring.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "Though it has a noble goal, I don't think this research will yield much fruit. No pun intended.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Like I said before, not all Followers are good with people.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "I'm fine doing research back here, even if it is a bit boring... and pointless... and a complete waste of time.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Don't mind me. I'm just voicing my thoughts so they don't burrow out of my skull in a fit of abject despondency.",
+     "emotion": "pained",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic001",
+   "prompt": "Why do you do research instead of providing medical assistance?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm enthusiastic about helping people, but {nih-hill noh-wee soob soh-lay} nihil novi sub sole.",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic002",
+   "prompt": "You don't sound too enthusiastic about it."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For the past hundred years or so, the Followers have managed to get by using salvaged medical supplies from the Old World.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the side effect of medical success is that more people live longer. Funny how that works.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Eventually, we'll run out of hospitals to loot. We need new ways to produce those supplies. Or maybe old ways, if this research goes anywhere.",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic003",
+   "prompt": "What's the goal?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cuts, lacerations, broken bones. Infections resulting from all of the above. Common cold, influenza. Take your pick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are plenty of ways to die out here, and most of them, surprisingly, don't have anything to do with war. Just common human fragility.",
+     "emotion": "sad",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic004",
+   "prompt": "What kinds of illnesses and injuries?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{“Yeah, well...”}{SEE-zar} Caesar can cite {KAY-toe} Cato to suit his purpose. Many people have spoken Latin. Some of them were quite pleasant.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "It's unfortunate that the language is now associated with the gentlemen across the river.",
+     "emotion": "sad",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic005",
+   "prompt": "Isn't that the language that Caesar's Legion speaks?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. {sincere} Sorry. \"There is nothing new under the sun.\"",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "If agave and mesquite were that miraculous, the locals would have figured it out a few thousand years ago.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic006",
+   "prompt": "Nihi-what?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not from the Legion, if that's what you're getting at. Books. Sheet music. Gladiator movie holotapes. Bits and pieces here and there.",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "The Followers have extensive libraries, but we all draw water from the same old well. Even Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic007",
+   "prompt": "Where did you learn that?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sighs} I don't know anything that the others couldn't tell you. Caesar was one of the Followers. Before my time, of course.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "He wanted to rebuild the new world in the image of the old. A sad story of good intentions gone bad. In that regard, he's hardly unique.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "If you set aside his leadership capabilities, extensive knowledge, and ruthless cunning, he's just another jerk who steps on people to get his way.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic008",
+   "prompt": "Do you know much about Caesar?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't leave now. Caesar has gained too much ground. I need to be here in case the NCR fails to hold Hoover Dam.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "No offense intended, but why should I go anywhere with you?",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic009",
+   "prompt": "Why don't you come with me?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{off-hand, not realizing he's revealing something bad} Energy weapons? Of course not.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{catching himself, trying to cover} I mean... but, we study all sorts of science and technology so, you know, we... you just kind of get familiar with them. Yeah.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic010",
+   "prompt": "Do the Followers use a lot of energy weapons?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, uh... {trying to cover} of hearing stories. About energy weapons. {drifting off} They're... pretty crazy. {quietly} Yeah.",
+     "emotion": "fear",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic011",
+   "prompt": "Memories of what?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Did I say something? Sorry. Don't pay any attention to me. Just babbling. {becoming more quiet} Nonsense, really. {drifting off} Babbling nonsense.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic012",
+   "prompt": "If you say so."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very optimistic of you. You'll make a good Follower someday assuming Caesar doesn't have us both crucified.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic013",
+   "prompt": "I just want to hear Caesar out."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Short of canceling our imminent travel plans, that's the best thing you could have said.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Just be careful. If we travel at Caesar's pleasure, he may not let us out as easily as he lets us in.",
+     "emotion": "fear",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic014",
+   "prompt": "Let's just listen to him, figure out what he's up to, and get out."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{\"And you, my friend?\" eht too mee ah-mee-kay?} Et tu, mi amice?",
+     "emotion": "surprise",
+     "intensity": 75
+    },
+    {
+     "text": "{\"And you, my friend?\" eht too mee ah-MEE-kah?} Et tu, mi amica?",
+     "emotion": "surprise",
+     "intensity": 75
+    },
+    {
+     "text": "I have to commend you on your sense of historical propriety, but have you given more than a passing thought to how we would escape?",
+     "emotion": "fear",
+     "intensity": 35
+    },
+    {
+     "text": "No disrespect intended, but you aren't the first person to dream up the idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just give me a sign when you're about to pull out the dagger so I know when to make a run for the cliffs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic015",
+   "prompt": "Once we get close to Caesar, we can strike."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't say I understand your obsession, but for that I suppose I'd have to spend a night in your grave.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Fine. I'll stick with you. Just remember this. If you want something from Caesar, sooner or later you'll have to give him his due.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic016",
+   "prompt": "I'm not going to let Benny get away."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pulling bullets out of a vengeance-crazed drifter is truly a noble step up from tending to the downtrodden of Freeside, but I think I'll pass.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic017",
+   "prompt": "I'm going after a man named Benny for revenge and I need someone to keep me patched up."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The NCR had a chance to use the Followers' skills before, but being imperialists mattered more to them. No thanks.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic018",
+   "prompt": "The NCR needs help against the Legion before Caesar moves on the dam. We could use your skills."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's funny. Mr. House doesn't want to keep New Vegas independent. He just wants to keep the NCR and Caesar's Legion from pushing him around.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "He must be pretty convincing if he's roped you into helping him, but you can count me out.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic019",
+   "prompt": "I'm trying to help Mr. House keep New Vegas independent."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If that's really what you're trying to do, I'll go with you.",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "Things are hectic around here, but it won't mean anything if NCR or the Legion take control. I'm sure the Followers can manage without me.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Just don't try to help the Legion, and we shouldn't have any problems. Sound good?",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic020",
+   "prompt": "If New Vegas can remain independent, I'm going to find a way to do it. I could use your help."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Only because everyone would be conscripted or enslaved. And the people who are unfit for military service or slavery would be put down. Swell plan.",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "Yes, a veritable {pahx roh-MAH-nah} Pax Romana for post-nuclear America. My political beliefs are a bit more progressive than outright fascism, so I'll pass. Thanks.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic021",
+   "prompt": "The NCR oppression around here would disappear if the Legion took control. I could use your help."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm. That seems appropriately resolute and yet vague. I'll give you the benefit of the doubt and go with you, but let me be clear about something.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "If you plan to help Caesar's Legion, this is going to be a brief relationship.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "I may not have all the answers for how to fix Freeside's problems, but Caesar taking control isn't part of the solution. Fair?",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic022",
+   "prompt": "Things are bad around here. I'd like to make a difference, and I'd like you to help me."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm. Wow. You sound like you really do need some help. Look, I can help you out, but you can't do anything stu-",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I mean, you can't... help bad people, who want to hurt the locals in Freeside. If you do, I'll leave. Does that make sense?",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic023",
+   "prompt": "This place is really complicated and stuff. You're smart. Can you help me do... things?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. The Followers do not like Caesar or Caesar's Legion. You should also not like them. If you do, you like hurting people and that is bad. Goodbye.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic025",
+   "prompt": "Ugh. Well if you're going to be like that then never mind."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{slight mockery} Uh... probably not. Until things settle down around here, alleviating my boredom isn't a good motive to leave. Sorry.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic026",
+   "prompt": "Uh... it beats sitting around here all day, doesn't it?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Let's not waste any time. {a bit of enthusiasm} There are people out there to help, things to learn. Maybe not in that order, but let's get to it.",
+     "emotion": "happy",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic027",
+   "prompt": "Fair enough."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not sure why you thought a Follower would want to help Caesar after all of the misery he's visited on us and the people we try to help.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Well, good luck to you in your future endeavors, assuming they don't involve Caesar.",
+     "emotion": "fear",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic028",
+   "prompt": "Oh, well... in that case, never mind."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Overt flirtation will get you everywhere, you know.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "On a slightly more serious note, if you're interested in helping out with the troubles plaguing Freeside, I can come with you.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Just don't do anything obnoxious, like trying to help Caesar's Legion, and we should be fine. Understood?",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic031",
+   "prompt": "I need a good-looking doctor to help take care of me in the big, bad wasteland."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Plasma rifles. They were intended to replace the P94 plasma caster.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There was some corporate espionage going on between Poseidon Energy's Project SEMELE and whatever was going on here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic032",
+   "prompt": "What kind of prototypes?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "REPCONN went through some rough times. When their rocket business was shaky, Mr. House purchased the company.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "It didn't take long for him to repurpose their plasma technology for a government weapon contract.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic033",
+   "prompt": "An odd combination."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Another one of Poseidon Energy's many secret weapons projects. Before the Great War. It didn't go anywhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's how REPCONN got their shot. So to speak.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic034",
+   "prompt": "What was Project SEMELE?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me, specifically? No. I'm sure Julie Farkas does, though. Lab coat, pointy hair. Answers to the name \"Julie Farkas,\" strangely enough.",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "I'm sure she can find something for you to do. It might be kind of... depressing and terrible, though. {cah-WEE-aht sah-mahr-ee-TAH-noos, \"Samaritan, beware.\"} Caveat Samaritanus.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "Personally, no. But thanks to you, Julie says we're a lot better off these days. I'll take her word for it. So, thanks.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic035",
+   "prompt": "Do you need any help?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm... I'm starting to remember hearing some rumors about you and this crazy guy called \"Caesar.\" Bad. Not a friend of the Followers.",
+     "emotion": "fear",
+     "intensity": 35
+    },
+    {
+     "text": "Maybe they're not all true. That's enough for me to stand here and talk to you, but I'm not about to leave Freeside as your comrade-in-arms.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "You've helped the Followers, so you can't be entirely bad. To be honest, I haven't heard anyone say a negative word about you.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "As long as you keep working to help people around here get a fair shake, sure, I'll lend a hand.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "You helped the Followers, but your reputation isn't exactly spotless. How do I know you're not going to lose it out there?",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Here's my proposition. If you want to work together to help the people around here, I'll lend a hand. {on the other hand} If you start acting like a crazy waster...",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic037",
+   "prompt": "Would you like to come with me? I could use someone skilled in medicine."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic038",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well {emph} I don't. I'm sure there were a few people turning a blind eye, but can you blame them?",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "NCR's sharecropper farms had all of the water. The nearest fresh source is the lake, and that's a bit of a hike.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic039",
+   "prompt": "Right. \"The Followers don't endorse his actions,\" and all that."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I do say so. The Followers aren't a military organization. If anyone knew what he was up to, they weren't talking.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "And if they knew he was stealing water, so what? Westside has more of a right to that water than the NCR.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic040",
+   "prompt": "If you say so. I'm not arguing."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic041",
+   "prompt": "Let's keep moving."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sighing, pause} Neither did Anderson.",
+     "emotion": "sad",
+     "intensity": 60
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic042",
+   "prompt": "I'm sorry. I didn't realize it would end like this."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{irritated} I guess that means you don't have to apologize to all of the people in Westside you just screwed over.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "In case you weren't paying attention, you killed the only person who ever gave a damn about them.",
+     "emotion": "disgust",
+     "intensity": 65
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic043",
+   "prompt": "What's done is done."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fantastic. Now the only influential person who gave a damn about Westside is gone. Great job.",
+     "emotion": "anger",
+     "intensity": 65
+    },
+    {
+     "text": "In case I'm not laying down enough sarcasm, you just screwed up the lives of a bunch of struggling people.",
+     "emotion": "disgust",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic044",
+   "prompt": "Anderson killed White. He deserved to pay for what he did."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh. {trying to think of a plausible lie} Good question. Must have been in a book.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic045",
+   "prompt": "When was that?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh, what does anyone know about them? Big... flying machines, right? Crazy helicopters. {quietly} So weird.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic046",
+   "prompt": "What do you know about them?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, the Followers have had enough of a role in the misery that this area has had to endure.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to go off half-cocked and leave a trail of corpses in your wake, that's your business. We'll do our best to clean up your mess.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Just don't try to drag us into it personally, okay?",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic048",
+   "prompt": "Hmm, on second thought..."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Certainly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic050",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The last time we discussed this, you didn't exactly wow me with your pitch. What have you got for me this time?",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic053",
+   "prompt": "Would you reconsider my offer to travel with me? I could really use your help."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm really very boring. You'd get better stories out of a Freeside junkie.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic054",
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're helping the Legion, a slaving army that will almost certainly kill and enslave the majority of people in New Vegas.",
+     "emotion": "anger",
+     "intensity": 70
+    },
+    {
+     "text": "What? Did you expect me to applaud your efforts to support a deranged warlord?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar is bad. You are bad for helping him. Please stop.",
+     "emotion": "anger",
+     "intensity": 55
+    },
+    {
+     "text": "I have to say I don't understand where you're going with Mr. House. The man's been manipulating the locals for as long as anyone can remember.",
+     "emotion": "fear",
+     "intensity": 70
+    },
+    {
+     "text": "If you help him kick the NCR and Legion out, he's going to keep right on doing it. The people in Freeside will be just as bad off as they ever were.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "If you can find a way to push Mr. House out of the picture as well, I think everyone will be better off.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "Helping the NCR is better than helping Mr. House, but I don't think it's the best solution for the people in New Vegas.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "If the NCR can take full control of Freeside and the Strip, it's going to get worse before it gets better.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Besides, even if New Vegas eventually gets representation in the NCR senate, it's not like the NCR runs efficiently.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "I think you're on the right track.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "The only way to ensure relative safety and independence for the people of New Vegas is to prevent others from taking control of the region.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "That means no NCR, no Mr. House, and no Legion.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "It could be better. If we can find a way to work toward the independence of New Vegas, that would be ideal.",
+     "emotion": "fear",
+     "intensity": 35
+    },
+    {
+     "text": "But really, as long as you don't help out the Legion, anything's better than that.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic055",
+   "prompt": "What's your opinion on the current situation?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sickened} That's one way to look at it.",
+     "emotion": "anger",
+     "intensity": 60
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic056",
+   "prompt": "They profit from crime, now I profit, too."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{joking} I thought my charm could win you over, but I guess it wasn't meant to be. Are you sure you want me to go?",
+     "emotion": "pained",
+     "intensity": 35
+    },
+    {
+     "text": "All right, I'll head back to the Old Mormon Fort. If you need me, just swing by.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ugh. I guess that means I have to go back to that creepy mausoleum Mr. House calls the Lucky 38.",
+     "emotion": "disgust",
+     "intensity": 45
+    },
+    {
+     "text": "I've been around a few unsettling places in my life, but that place takes the cake.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "Anyway, if you need me, you know where to find me.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "{sighing} Back to the tomb, I suppose.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "{drifting off} If you need me, et cetera.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic058",
+   "prompt": "I need you to leave."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have quite the menagerie at your disposal. If you can get the posse down to \"small gang\" size, I'll happily go with you.",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "As the old saying goes, two's company, but three's a small army. Okay, I'm paraphrasing a bit, but you get the idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A courier, a doctor, and cybernetic dog. After we deal with this whole \"imminent conquest of New Vegas\" problem we should open an act at the Tops.",
+     "emotion": "happy",
+     "intensity": 45
+    },
+    {
+     "text": "There's something about that robot that doesn't seem... all right to me. I'm not saying we shouldn't take it with us.",
+     "emotion": "fear",
+     "intensity": 40
+    },
+    {
+     "text": "I'm just saying that if it were to fall into Lake Mead and be irreparably damaged... and if you threw an EMP grenade in after it...",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Well, there are worse things happening in the world, right?",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "After spending thirty years of my life hiding my association with the Enclave, I'd {emph} love to stroll the wasteland with a twitchy Eyebot.",
+     "emotion": "happy",
+     "intensity": 60
+    },
+    {
+     "text": "Thanks for asking. I appreciate it. I do.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Back in your good graces again? I knew you'd see the light.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic059",
+   "prompt": "I'd like you to come with me."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It just seems a little twitchy. Some of these robots, you look at them the wrong way, don't screw in a vacuum tube right...",
+     "emotion": "fear",
+     "intensity": 35
+    },
+    {
+     "text": "The next thing you know you're a pile of ash on the floor and someone's stepping out of a vertibird to sweep your remains into a Nuka-Cola bottle.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic060",
+   "prompt": "What's your problem with ED-E?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, ignore me. Just don't ask me to re-attach your arm when your pet murder machine goes into \"search and destroy\" mode.",
+     "emotion": "anger",
+     "intensity": 45
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic061",
+   "prompt": "Ooooo-kay."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's... {sigh} a thing. A science thing. It hurts robots. Don't worry about it. Silly Arcade's just telling magnetic field jokes for his own amusement.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "{clears throat} Ahem. Shall we?",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic062",
+   "prompt": "What's an eee-em-pee?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Does it? {beat, quietly} Does it?",
+     "emotion": "fear",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic063",
+   "prompt": "That sounds a little paranoid, Arcade."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Safety first. That's all I'm saying.",
+     "emotion": "surprise",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic064",
+   "prompt": "I'll keep an eye on it."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Only to obfuscate my past association with a fascist paramilitary organization.",
+     "emotion": "pained",
+     "intensity": 35
+    },
+    {
+     "text": "I'm joking, of course. I will deflect personal questions at any opportunity.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic065",
+   "prompt": "Do you always deflect personal questions?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Honestly, it isn't too difficult if you have half a brain and aren't a complete jerk. I wanted to help people and I enjoyed learning, so I signed up.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "New Vegas is in trouble, so I came out here. If someone doesn't step up and try to help the people here, it's going to end very badly.",
+     "emotion": "pained",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic066",
+   "prompt": "How did you join the Followers?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Followers taught me everything I know about medicine. Despite our humble abode here in New Vegas, we have great facilities back in the NCR.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "We may have over extended ourselves by setting up camp in Freeside, but the people here need help from someone. If not us, who?",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic067",
+   "prompt": "Where did you get your medical training?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't mind if I do. Enjoy your reign as King Scumbag the First, Overlord of Westside.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Don't mind if I do. Enjoy your reign as Queen Scumbag the First, Overlord of Westside.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic068",
+   "prompt": "If you don't like it, leave."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Any day now, Caesar's going to try to march across Hoover Dam and kick NCR out of the Mojave.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "We're getting caught up in something important out here. Hell, after how you handled Benny, you're practically right in the middle of all this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know I'm just along for the ride, but it's made me think about the past, how I might be able to help out.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic070",
+   "prompt": "Sure."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{drawing the word out} Actually, I'm going to keep talking anyway. Sorry, but I really need to get this out.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic071",
+   "prompt": "Not right now, Arcade."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Kind of you to say, but there are better people than me around here. I just hope the Followers can make a difference in the long run.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic072",
+   "prompt": "Good thing there are still people like you around."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wasn't always with the Followers, or with the NCR.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "My late father was an officer in a group called the Enclave, a remnant of America's Pre-War government.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Memories being short around here, not a whole lot of people remember them. But they did bad things. Terrorized communities, kidnapped people.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually, someone stopped them. I was born a few years later at a military base on the coast, a place called Navarro.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic073",
+   "prompt": "What are you talking about?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure? I didn't even get to the ostensibly \"good\" part.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "If you're sure, I won't bring it up again. We can just go on our merry way, fighting injustice in our typical fashion.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic074",
+   "prompt": "Arcade, I'm not interested."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I hear you. Forget I said anything. Consider it dropped.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic076",
+   "prompt": "I'm sure. I'm not interested."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic077",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A lot of different places. I only know what I was told. Some of them were cut down by the NCR and the Brotherhood. Some of them went east.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "My mother never told me what happened to my father, but she and I went south with some others and integrated into the NCR.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "When the NCR learned that Enclave personnel had integrated, we kept moving to the fringes. It's one of the reasons why I wound up out here.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic077",
+   "prompt": "Where did the Enclave go?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "After the Enclave's command structure fell apart, it was only a matter of time before Navarro was overrun by NCR forces.",
+     "emotion": "pained",
+     "intensity": 25
+    },
+    {
+     "text": "My mother and I left with some of the troopers from my father's old unit, the same people I've kept in contact with over the years.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "Anyone who didn't get out was killed by the NCR. Even some of the ones who escaped were eventually hunted down by the Brotherhood of Steel.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic078",
+   "prompt": "What happened to Navarro?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Enclave did a lot of bad things, but there were good people at Navarro. Good people with a lot of experience.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "Not many of them are alive anymore, but I think they could make a difference in the fight against Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic079",
+   "prompt": "Where are you going with all this?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a hard question to answer. I know I don't want the Legion to take Hoover Dam.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "So militarily, yes, I want them to help NCR. If possible, I'd like to figure out a way to help the NCR win Hoover Dam without holding New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic080",
+   "prompt": "Do you want them to help NCR?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic081",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great! {excited} I'd like you to talk to the old-timers, the Remnants. I don't think I can convince them by myself. To them, I'm still a kid.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "But you're a big part of what's happening out here. When you talk to them, they'll understand how important this all is.",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "I've kept in contact with them over the years, so I know where you can find them, but I doubt they'll open up to you unless I come along.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "I know I'm not always the most serious guy around, but this means a lot to me. Thanks.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic081",
+   "prompt": "Say no more. I'll do it."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{surprised} Oh. {beat} After spilling my guts to you, I wasn't expecting that kind of a response but... I understand.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "If you change your mind, let me know. It would mean a lot to me.",
+     "emotion": "pained",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic082",
+   "prompt": "I'm not interested."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop thinking so much. Thanks.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic084",
+   "prompt": "How do you know so much about this, again?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It isn't enough to mean well if you don't do good. I'm sure Caesar meant well, too.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic086",
+   "prompt": "I'm sure he means well."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you lose your humanity, then I suppose that is all that's left.",
+     "emotion": "sad",
+     "intensity": 70
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic087",
+   "prompt": "But in the end, doesn't it all just come down to numbers anyway?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know I shouldn't place one life below another, but in Caesar's case, I'll make an exception.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "The whole \"slavery and cultural annihilation\" stance he's adopted is bit repugnant to me.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Though I guess what I think never really mattered much to you, did it?",
+     "emotion": "disgust",
+     "intensity": 65
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic088",
+   "prompt": "I thought you were interested in preserving life."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic089",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{\"The conquering cause pleased the gods, but the conquered cause pleased Cato\" - week-treex cow-sah deh-ees plah-coo-eet sehd week-tah cah-toh-nee} Victrix causa deis placuit sed victa Catoni.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "{sadly} Goodbye, courier.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic089",
+   "prompt": "The world needs Caesar more than it needs you."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic090",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In the words of Socrates, \"Go fornicate yourself.\"",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic090",
+   "prompt": "Enjoying your stay?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic091",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "At least the mess is ours to clean up.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Wait a minute... am I going crazy or are you actually suggesting it might not be bad if the Legion takes over?",
+     "emotion": "anger",
+     "intensity": 65
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic091",
+   "prompt": "With how messed up New Vegas is, do you really think Caesar has nothing to offer?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a good thing to be, but you may want to close the floodgates once you see how Caesar runs things.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic092",
+   "prompt": "I'm just trying to be open-minded."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic093",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. I just wanted you to confirm that I'm traveling in the company of an insane fascist. Thanks.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic093",
+   "prompt": "Yes, that's exactly what I'm suggesting."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If the NCR is broken, it will fail on its own.",
+     "emotion": "anger",
+     "intensity": 65
+    },
+    {
+     "text": "The people who live here don't deserve to be victims of your misguided attempts at political engineering.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Or are they just collateral damage?",
+     "emotion": "disgust",
+     "intensity": 70
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic094",
+   "prompt": "NCR is broken beyond repair. Its time has come."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic095",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What?! Caesar is going to enslave or kill everyone in the Mojave.",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "And when that's done, he'll try to destroy the NCR senate and install himself as its new military dictator.",
+     "emotion": "anger",
+     "intensity": 55
+    },
+    {
+     "text": "I can't comprehend how Caesar could so extensively scramble your sense of morality to make you think the Legion is a better alternative to {emph} anything.",
+     "emotion": "anger",
+     "intensity": 65
+    },
+    {
+     "text": "And you know what? I'm not going to stick around to try to figure it out. At least legionaries have the excuse of being born into it.",
+     "emotion": "disgust",
+     "intensity": 45
+    },
+    {
+     "text": "Have a nice life.",
+     "emotion": "disgust",
+     "intensity": 65
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic095",
+   "prompt": "The Legion is better than the alternative."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic096",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great! You're either unimaginably cruel or profoundly insane!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Either way, I'm not going to wait around for you to help the Legion roll across Hoover Dam. Bye.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic096",
+   "prompt": "Actually, yes, I would like to see New Vegas turned into a slavery hub."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How noble of you.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, but I won't be sticking around to see if you have the courtesy to lay flowers on the mass grave that the Legion's going to dig for them.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic097",
+   "prompt": "More than collateral damage. A necessary sacrifice."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic098",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, if you're a sociopath.",
+     "emotion": "anger",
+     "intensity": 65
+    },
+    {
+     "text": "{sickened} Enjoy the fruits of your labor.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic098",
+   "prompt": "That's a good way to put it."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic099",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They sure don't, but I hope you get everything that's coming to you.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Have a nice life.",
+     "emotion": "disgust",
+     "intensity": 55
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic099",
+   "prompt": "They hide behind NCR's protection and they deserve everything coming to them."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic100",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If by \"sometimes\" you mean \"a lot of times,\" I agree. Please, just... settle down, okay?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic100",
+   "prompt": "Sorry. I just lose my head sometimes."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic101",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That wasn't exactly the response I was hoping for, but I'll give you the benefit of the doubt.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Seriously, though, watch it.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic101",
+   "prompt": "Whatever."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you insist. Have a nice life.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic102",
+   "prompt": "If you have a problem with me, why don't you just leave right now?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic103",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because you're helping Caesar's Legion. They are bad. You are bad. I am going. Bye.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Why are you crazy? That's a question for someone much wiser and more patient than myself.",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "All I know is that you are a bad person and I don't want to be around you anymore. So if that was your goal, congratulations.",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "If not, I'm sorry to inform you that you are, as the locals say, \"nuttier than a Bighorner dropping.\"",
+     "emotion": "disgust",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic103",
+   "prompt": "Why?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That was the plan. Bye.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic104",
+   "prompt": "Fine. Get lost."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic105",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose you're right. When you're part of something for that long, maybe it's impossible to let go without losing part of yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Moreno may be a stubborn son of a bitch, but at least he's loyal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic105",
+   "prompt": "Don't be too hard on him. It's part of who he is."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's been decades, you know. By now, he's been out of the Enclave longer than he was in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Most people know when to hang it up and start over. But not Moreno.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic106",
+   "prompt": "A man should know when to let go."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic107",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As screwed up as it sounds, at least she was part of something. Granted, it was something... admittedly, pretty bad, but it was something.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you spent the first half of your life flying Enclave troopers in a vertibird, I suppose picking over Pre-War rocket parts doesn't quite compare.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic107",
+   "prompt": "It was an important part of her life. Why shouldn't she enjoy it?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic108",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much glory in the Enclave. Most of her old comrades are long gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know life as a salvager can't compare to being a vertibird pilot but... at least it's life. That has to count for something.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic108",
+   "prompt": "Some people can't stop reliving their glory days."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic109",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wonder if he would. It's pointless, I know, but sometimes I wonder what he wanted me to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe being a doctor in the middle of Nevada wasn't exactly what he had in mind for his little boy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic109",
+   "prompt": "I'm sure your father would be proud of you."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic110",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I grew up without him. I'll always feel like something is missing from my life. But you're right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's not like I'm the only kid in the wasteland who's grown up without a dad. Johnson always said my father was a good man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If that's the only thing about me that's like him, that's enough for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic110",
+   "prompt": "Why worry about it? You don't have to be your father."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic111",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not everyone dreams of being a revolutionary, I suppose. Maybe we can't all change the world.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe it's enough just to do good for the short time that we're here. No one's going to sing Doc Henry's praises when he's gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But he's probably saved more lives than I ever will.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic111",
+   "prompt": "His work was what mattered to him."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sure Henry has goals. He was just more concerned with the \"how\" than the \"why\" of things. Being in the Enclave didn't really mean much to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess I'm lucky that I'm part of the Followers. Helping people as a doctor is important, but with the Followers, it feels different.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It feels like we're working toward something more important. That's more than the sum of good deeds that we do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic112",
+   "prompt": "It seems pointless to do all of that without a goal."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sometimes I wonder how much of my father they see in me. They went through a lot together, but my family went through it, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm glad they've watched out for me all these years. Maybe someday I can return the favor.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic113",
+   "prompt": "They're loyal to you, too."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I know. I was only a boy when they went through hell together. I'm glad you're helping me reunite them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even if I'm still just a spectator in all of this, I know they can still do some good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic114",
+   "prompt": "That's their story Arcade, not yours."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic115",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've been wondering about Daisy and the others for so long, I still haven't figured out what I should do.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "I mean, I'm not like them. I was born at Navarro and my father served with them, but I wasn't really part of the Enclave.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "It seems presumptuous of me to think that I could join the fight, even if this is a cause worth fighting for.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Because I know when fighting breaks out at the dam, all hell is going to break loose in Freeside. They're going to need every doctor they can get.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic115",
+   "prompt": "You've certainly done your part."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic116",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hold on a second. I need to talk to you about something else.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic116",
+   "prompt": "Let's get going."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic117",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine. Would you mind explaining {emph} why you killed Anderson?",
+     "emotion": "surprise",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic117",
+   "prompt": "You're assuming a motive without evidence. Please be rational."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic118",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a grim deal to make. But when it came down to it, it's the same choice he made. Not all sacrifices are made by the willing.",
+     "emotion": "sad",
+     "intensity": 55
+    },
+    {
+     "text": "{quoting the bible} But where is the lamb for this burnt offering?",
+     "emotion": "sad",
+     "intensity": 65
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic118",
+   "prompt": "It's cleaner this way, without bringing NCR in. No connecting Anderson back to the locals."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic119",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That was his decision to make, not yours.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic119",
+   "prompt": "It was either this or spend the rest of his life in an NCR chain gang."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic120",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There are other ways to punish people, other ways to condemn their actions.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic120",
+   "prompt": "Allowing Anderson to get away with murder tells him and everyone else that it's permissable."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic121",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{melancholy} What the Followers always do. Whatever we can.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic121",
+   "prompt": "What will you do if Caesar wins?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic122",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, really. Have you ever snorted a ground up Cazador venom sac? Neither have I, but I can guarantee you that a Freeside junkie {emph.} has.",
+     "emotion": "surprise",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic122",
+   "prompt": "You can do better than that."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic123",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, all right. I'm thirty-ish. {admitting} Well, late thirties. I was born... {guarded} west of here. I was an only child and spent most of my time with my mother.",
+     "emotion": "fear",
+     "intensity": 35
+    },
+    {
+     "text": "My father died when I was young and I never got over it. Oh... and I like medicine and reading books about failed Pre-War socioeconomic policies.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "{a bit of sarcasm} Right now, I'm sure you're asking yourself, \"Why hasn't some lucky man scooped this bachelor off his feet?\" {serious} Like I said, I'm boring.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic123",
+   "prompt": "Arcade, I'm asking you because I'm interested. Don't put yourself down."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic124",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some people do. I just... don't.",
+     "emotion": "sad",
+     "intensity": 55
+    },
+    {
+     "text": "Look, I appreciate that you're trying to be friendly, but I'd just rather not discuss it.",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic124",
+   "prompt": "Why don't you like talking about yourself?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic125",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, okay, you don't have to agree with me {emph} that much.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic125",
+   "prompt": "I'll say."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic126",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sounds reasonable} All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic126",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic127",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic127",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic128",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Glad we're on the same page.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I mean, I didn't expect that you'd want to... activate the super weapon or anything.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{nervous} Heh.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic128",
+   "prompt": "Of course."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic129",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR troops control Hoover Dam. Why do they need {emph} more power?",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic129",
+   "prompt": "Why not to the whole area equally?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic130",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{nervous} O... kay.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic130",
+   "prompt": "Noted."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic131",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm. That's a valid point. I'm not really behind the NCR in all of this, but the last thing I want is panic in the streets.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic131",
+   "prompt": "Redundancy. If Caesar takes the dam and cuts off power, it will be chaos all over New Vegas."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic132",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe if you're Mr. House you do. I bet the people in Freeside need it a lot more than he does.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic132",
+   "prompt": "You can always use more power, right?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic133",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, exactly. They don't.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic133",
+   "prompt": "Er..."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic134",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Argh, you moron! You're going to kill all of the troopers down there!",
+     "emotion": "anger",
+     "intensity": 65
+    },
+    {
+     "text": "That's it. I'm out. Good luck getting out of this place without being shot to pieces by NCR soldiers, assuming they aren't going to fry to death.",
+     "emotion": "anger",
+     "intensity": 45
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic134",
+   "prompt": "Oh, uh... whoops, I thought that was to turn it off."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic135",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm thinking that I'm leaving because you are a sociopath. Good riddance.",
+     "emotion": "disgust",
+     "intensity": 65
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic135",
+   "prompt": "I'm thinking I'm going to get a sweet Pre-War laser. What are you thinking?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic136",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, to hell with this!",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic136",
+   "prompt": "Time for the NCR to roast."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic137",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I figured you'd say that. Sometimes staying put is the best thing you can do.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I'll leave the fighting to the old warhorses. It's what they were made for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need to go take care of something before I set up at Freeside. I'll see you soon. And again, thanks for your help with the others.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I honestly didn't expect you to say that. When I talked to you about Daisy and the others, you seemed to put a lot of value in loyalty to the past.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "What's changed since then?",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic137",
+   "prompt": "If you're so sure it's going to be a bloodbath, maybe you should stay in Freeside."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic138",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good point. You've been encouraging the others to stand up and fight, maybe I should take the same advice. After all, I also lived in Navarro.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's something I need to go do, but I'll catch up with you later. Thanks again for your help with the others. It means a lot to me.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I'm surprised to hear you say that. I thought you had a problem with people who hold on to the past.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Suiting up to fight against Caesar with the Navarro veterans seems like... I don't know, like a kid playing dress up in his father's clothes.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic138",
+   "prompt": "What happens in Freeside won't make any difference if the Legion takes the dam. Fight with them."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic139",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "True enough, I suppose. Getting them back together must be worth more than me spraying plasma all over the dam.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Back to Freeside it is. I need to make a stop before I settle in. I'll be back in a while. Thanks again for your help. It means a lot to me.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic139",
+   "prompt": "You were born at Navarro, but you are your own man. They have their fight, and you have yours."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic140",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am, but they're still my family. I think you were right the first time. If there's something I can do to help hold the dam, I'll do it.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Look, there's something I have to do, but I promise I'll be back in a while. Trust me. And thanks again for your help. It means a lot to me.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic140",
+   "prompt": "Well you... you're different."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic141",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "True enough. Maybe I can't fill my father's shoes. I wouldn't even know how.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if following in his footsteps for a while means I can do some good out here, I will do my best.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need to go do something. I won't be gone long, but I'll catch up with you later. Thanks for your help with the others. It means a lot to me.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic141",
+   "prompt": "You aren't like the others, Arcade. You're still young. It's up to you to decide who you want to be."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic142",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I think it {emph.} is the same for me. Maybe for a different reason, but... you can't hold on to a past you've never had.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "For better or worse, I am not my father. I never had a life with the Enclave, and it would be silly for me to try to start one now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll stay with you until the Legion moves on the dam, but once the attack starts, I'm going to have to go to back to Freeside. It's where I belong.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need to take care of something, but I'll see you soon enough. Thanks for all of the help. It means a lot to me.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic142",
+   "prompt": "That was just talk. It's not the same for you."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic146",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's the least I could do. All I ask is that you put it to good use. This place has lived in the shadow of Caesar for long enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I may not be the one to help stop him here, but you are. {\"fortune favors the bold\" for-tees for-too-nah ah-dee-oo-vah-t} Fortis fortuna adiuvat. Good luck, and good bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic146",
+   "prompt": "I'm honored."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic147",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course, Caesar! You can hardly even hold his men responsible, given how they're practically raised to worship him as a living deity.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "What's the point of surviving the war? Why did the founders of the Followers crawl their way out of vaults to bring knowledge back to the wasteland?",
+     "emotion": "anger",
+     "intensity": 65
+    },
+    {
+     "text": "So we could act like the last two thousand years didn't happen? Play dress up so we can fight ancient wars all over again?",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "{defiantly} No way is he getting away with this. I'm not letting it happen. You're not letting it happen.",
+     "emotion": "anger",
+     "intensity": 85
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic147",
+   "prompt": "Who, Caesar?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic148",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Being \"smart\" doesn't matter if you're insane. Everything makes sense to Caesar because he's twisted everything to his world view.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "He's Caesar reincarnated, the NCR is the corrupt Roman senate. I wouldn't be surprised if he thought the Colorado River were the new Rubicon.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "He abdicates responsibility to a myth of historical inevitability. But he's {emph} not Caesar. This isn't Rome. {defiantly} And he isn't going to get away with this.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic148",
+   "prompt": "He seemed pretty smart to me."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic149",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, yeah! Right. What {emph} did I expect? The man's a megalomaniac. He acts like this is some pre-ordained cycle we're returning to.",
+     "emotion": "anger",
+     "intensity": 65
+    },
+    {
+     "text": "Of all the people who could learn from our past mistakes, he goes and throws all of our knowledge off of a cliff.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Instead of trying to learn from the past, he re-creates it, runs back over the same old barren ground.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic149",
+   "prompt": "He's a madman. What did you expect?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic150",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A fair point, but from the perspective of someone on the east side of Arizona, the man is clearly out of his mind.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe he didn't intend for things to wind up this way, but that doesn't mean he needs to perpetuate this bizarre anachronistic myth.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "And it doesn't mean that we should sit by and nod our heads at every absurd faux-Roman {kah-soos beh-lee, \"case of war\"} casus belli he can dream up.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "He's a tyrant. The bad kind. And there's no way we're letting him take Hoover Dam.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic150",
+   "prompt": "I don't think either of us can fully understand what he and the tribes have gone through."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic151",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't think you need to worry about the specifics. Basically, expect a lot of firepower and dead bodies.",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "Enclave technology is even more advanced than Brotherhood equipment, and in the hands of soldiers as experienced as Moreno and the others...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's just say it's truly a sight to behold.",
+     "emotion": "happy",
+     "intensity": 45
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic151",
+   "prompt": "What do you think the others will do at Hoover Dam?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic152",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{disappointed} I have to admit, I did not expect that sort of response.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{deflated} This is one of the last surviving suits of original-issue Tesla armor from Navarro and it was worn by my father but... yeah I guess it's no big deal.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "Good luck at Hoover Dam. I'll uh... be going now, I guess.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic152",
+   "prompt": "Thanks, I guess."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic153",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Back to Old Mormon Fort, where I can do some good. We Followers may be idealistic but even I know this is going to end in blood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{\"fortune favors the bold\" for-tees for-too-nah ah-dee-oo-vah-t} Fortis fortuna adiuvat. Good luck, and good bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic153",
+   "prompt": "What are you going to do now?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic155",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some of the old-timers like Moreno hold grudges against the Brotherhood and the NCR. I'd like to think I'm above that, but you may be right.",
+     "emotion": "pained",
+     "intensity": 35
+    },
+    {
+     "text": "I'm not going to pout and cry if you give him to the Brotherhood. I'd rather they have it than allow all that knowledge to disappear.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "I'd just prefer that it goes to an organization like the Followers, who are less likely to use it for... violent purposes.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic155",
+   "prompt": "Is the Enclave's treatment by the Brotherhood influencing your opinion?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic156",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Brotherhood hoards knowledge and is obviously a smidge more violent than the Followers.",
+     "emotion": "fear",
+     "intensity": 35
+    },
+    {
+     "text": "Don't get me wrong. I'd rather the Brotherhood get the intel than see it lost somewhere in the desert, but I'd prefer the Followers overall.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic156",
+   "prompt": "Why not the Brotherhood?"
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic157",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{a little concerned} Okay. Don't have to make a decision now. Just... sleep on it or something.",
+     "emotion": "fear",
+     "intensity": 55
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic157",
+   "prompt": "Understood."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic158",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Then all is right with the world.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic158",
+   "prompt": "Don't worry. I agree."
+  },
+  {
+   "key": "vdialoguearcadegannonvfsarcadegannontopic159",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This shouldn't be too surprising, but I'd prefer you let the Followers examine him. {unsure} Hopefully the reasons are obvious.",
+     "emotion": "fear",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueArcadeGannonVFSArcadeGannonTopic159",
+   "prompt": "What do you think I should do about ED-E? Brotherhood or Followers?"
+  },
+  {
+   "key": "vendingarcade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narration} Though Arcade's intentions were pure and his goals were noble, he ultimately succumbed to the harsh brutality of the Mojave like so many before him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Tricked by the Courier and imprisoned by the Legion, Arcade remained Caesar's personal physician for several years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Caesar grew fond of speaking with such an educated man on philosophical matters. Arcade became his unwilling intellectual sparring partner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} After years of such servitude, during an unguarded moment, Arcade used a surgical scalpel and his bare hands to disembowel himself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Lacking any other skilled medical personnel, the Legion was unable to prevent his death. Caesar mourned his loss for months.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Though the Legion was victorious at Hoover Dam, the Legate did not have the same medical needs as Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} {lah-NEE-oos} Lanius quickly tired of Arcade's acerbic wit and had the doctor crucified.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} During the retreat of Caesar's Legion from the Mojave Wasteland, Arcade was a sad casualty, one of many.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} His body was heaped with those of many others in a nameless ravine on the Legion's long march home.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Though Arcade had not hoped for an NCR victory, he was proud of his role in the defense of Hoover Dam against the forces of Caesar's Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Unfortunately, when word spread that Arcade was once a member of the Enclave, he was forced out of the Followers of the Apocalypse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Pursued by bounty hunters, NCR rangers, and the Brotherhood of Steel, Arcade pushed deep into the eastern plains and was never heard from again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Arcade had hoped that Freeside would be able to remain independent of NCR rule, but he was glad that Caesar's Legion had been stopped at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} He tended to the sick in Freeside for a while longer, then returned to NCR territory to become a teacher with the Followers there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Though Arcade was crushed by the Legion's victory at Hoover Dam, he was not among NCR's casualties.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} During the NCR's retreat from the Mojave Wasteland, he helped defend NCR citizens and refugees on their way to Mojave Outpost.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Unfortunately, NCR rangers identified his father's armor as Enclave property. He was arrested, tried as a war criminal, and imprisoned indefinitely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} When news reached Freeside that Legion forces were approaching New Vegas, Arcade did his best to help people escape with adequate supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} A Legion explorer saw Arcade helping locals escape and pointed him out to a Centurion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Arcade's group was run down somewhere near Westside. There were no survivors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Arcade was outraged by Mr. House's power play following the defeat of Caesar's Legion at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Though he remained in Freeside for a short time after the Securitrons established widespread control, he eventually traveled back into NCR territory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Disillusioned with the Followers of the Apocalypse, he settled down in the outskirts of the Boneyard, where he worked happily as a family doctor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Arcade was proud to have been one of the defenders who helped repel the Legion from Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} He was prouder still to see the area freed from the shackles of the NCR and Mr. House.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Though independence for New Vegas was not all he hoped it could be, Arcade used his Enclave knowledge and technology to keep order wherever he could.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Arcade was tending to the locals of Freeside when he learned that Caesar's Legion had been defeated and NCR was being pushed out of New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Though he found that independence for New Vegas was not all he hoped it would be, Arcade did his best to help the locals govern themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Though Arcade was proud to have been one of the defenders who turned back the Legion at Hoover Dam, he was crushed by Mr. House's ascent to power.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narration} Saddened by the loss of life and liberty in the area, Arcade left the Mojave Wasteland for parts unknown. He was never heard from again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingArcade",
+   "prompt": "VEndingArcade"
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{irritated at being attacked} Temporary insanity? {I'll buy it} All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did someone slip Psycho into your water or {growing anger} are you just naturally berserk?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "armorineffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I don't have much protection here. Mind helping me out?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ArmorIneffective",
+   "prompt": "ArmorIneffective"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{irritated, angry, confused} What the hell are you doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{hint of nervousness} Here we go!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Attack Grunt}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{swallowing the end} Holy-!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "crippled",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{crippled limbs} I could use a Doctor's Bag if you have any handy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Crippled",
+   "prompt": "Crippled"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Death Noise 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Death Noise 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Death Noise 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{grimly: eht een ahr-kay-dee-ah eh-goh, \"I too was an Arcadian.\"} Et in Arcadia ego.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{surprised} Oh! {sad} Dammit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{apologetic} Sorry! I'm out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "frenzy",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Wild Shout of Rage}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Frenzy",
+   "prompt": "Frenzy"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{suspicious} You're not really supposed to be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "healthhalf",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{pained} Ouch.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{in pain, commenting on his wounds} Physician, heal thyself. {thinking} Guess it's a good thing they invented stims.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Pained/Labored breathing through gritted teeth 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Pained/Labored breathing through gritted teeth 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HealthHalf",
+   "prompt": "HealthHalf"
+  },
+  {
+   "key": "healthquarter",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Dying} Ugh. Maybe I should have stayed back in NCR after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying} I could use a syringe of Med-X or two. {beat} Or eight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying}<Coughing Fit>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HealthQuarter",
+   "prompt": "HealthQuarter"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Got hit sound 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Got hit sound 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Got hit sound 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "knockedback",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Knocked Back 1}",
+     "emotion": "neutral",
+     "intensity": 40
+    },
+    {
+     "text": "{Knocked Back 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "KnockedBack",
+   "prompt": "KnockedBack"
+  },
+  {
+   "key": "koed",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{KOed 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KOed 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KOed 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "KOed",
+   "prompt": "KOed"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{pretty angry} Are you mentally deranged?!",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "What the hell is wrong with you?!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{finds murder of any sort distasteful} Ugh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{a little annoyed} Strange how dead bodies appear wherever you go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "noammo",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{a little bummed} All out of ammunition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slightly humorous} If you could spare any ammunition, that would be really terrific.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NoAmmo",
+   "prompt": "NoAmmo"
+  },
+  {
+   "key": "onfire",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{On Fire}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "OnFire",
+   "prompt": "OnFire"
+  },
+  {
+   "key": "poisoned",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{a little concerned} Hmm. Might need some antidote here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{a little concerned} Yep. That's poison.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Poisoned",
+   "prompt": "Poison"
+  },
+  {
+   "key": "powerattack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Power attack sound 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Power attack sound 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Power attack sound 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PowerAttack",
+   "prompt": "PowerAttack"
+  },
+  {
+   "key": "regenerating",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{sighs} That helps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{relieved} Much better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Regenerating",
+   "prompt": "Regenerating"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{annoyed} We have enough problems around here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{confused, not sure what to say} Uh... that doesn't belong to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "useddoctorbag",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{feeling better, joking} Will the medical wonders of the post-apocalyptic world never cease?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{feeling better} Good as new.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "UsedDoctorBag",
+   "prompt": "UsedDoctorBag"
+  },
+  {
+   "key": "wake",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{sighs} It is my medical opinion that that could have gone better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{yelling, confused} Thursday! {re-orienting} Wait... ugh. Dammit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Breathing in deeply as you wake up}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Disoriented}Hmm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To self, shaking off cobwebs}Oof.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Wake",
+   "prompt": "Wake"
+  },
+  {
+   "key": "weaponbroke",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{concerned} This weapon's done for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{concerned} I guess they just don't make 'em like they used to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "WeaponBroke",
+   "prompt": "WeaponBroke"
+  },
+  {
+   "key": "weaponineffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{worried} Might be time for a weapon upgrade.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{worried} Uh... I think I need some more firepower.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "WeaponIneffective",
+   "prompt": "WeaponIneffective"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{saw something suspicious} What's going on?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{saw something suspicious} Huh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{alarmed} Looks like trouble!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{alarmed} Bad guys!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Huh. Maybe I need some glasses that aren't two hundred years old.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing here, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{a bit exasperated} Where'd they go?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{relieved} I'm glad that's over with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{relieved} I guess that could have gone worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{unsure} Not finding much.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I guess they're gone. {since he didn't have to kill them} Probably for the best.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{concerned} Uh oh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{concerned} That doesn't sound good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{disappointed} What a shame.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{disappointed} Looks like break time's over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{concerned} Fighting's not my strong suit, but I'll see what I can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{grimly} I'm on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "key": "observecombat",
+   "section": "other",
+   "responses": [
+    {
+     "text": "{a bit depressed} If there's one thing there's no shortage of in the Mojave, it's violence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{a bit depressed} It would be nice if things could stop tearing each other apart around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ObserveCombat",
+   "prompt": "ObserveCombat"
+  }
+ ],
+ "speaker": "arcade_israel_gannon"
+}

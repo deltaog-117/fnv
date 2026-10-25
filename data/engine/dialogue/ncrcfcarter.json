@@ -1,0 +1,132 @@
+{
+ "id": "ncrcfcarter",
+ "speaker_name": "Carter (Fallout: New Vegas)",
+ "source": "NCRCFCarter.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Prison under attack} I don't want to get shot!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "It's about time a new customer showed up around here. Was getting sick of dealing with the same faces all the time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{After prison battle} I can't believe the NCR actually showed up. We sure showed them, though. Right?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "What's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformncrcfncrcfcartertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If I don't have anything you like, well... tough. I don't do special orders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFCarterTopic000",
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "key": "vfreeformncrcfncrcfcartertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFCarterTopic001",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformncrcfncrcfcartertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was always the guy who could get things, if you know what I mean. Figured I might as well keep on doing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFCarterTopic002",
+   "prompt": "You're a trader?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfcartertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I worked in a casino in New Reno, and one of the pit bosses decided he didn't like me. Framed me over some caps, and I ended up in here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFCarterTopic003",
+   "prompt": "What did you do to end up here in the first place?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfcartertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is where the NCR sent prisoners to \"reform\" through hard labor. I never saw much reforming around here, myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFCarterTopic004",
+   "prompt": "What can you tell me about this place?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfcartertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't have any other place to go. I'd just end up back in another prison, or dead out in the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFCarterTopic005",
+   "prompt": "Why do you stay here?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "carter"
+}

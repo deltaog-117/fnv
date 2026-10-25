@@ -1,0 +1,34 @@
+{
+ "id": "primmcashier",
+ "speaker_name": "Vikki and Vance cashier",
+ "source": "PrimmCashier.txt",
+ "topics": [
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Play safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to Vikki and Vance. Can I help you with an exchange?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "vikki_and_vance_cashier"
+}

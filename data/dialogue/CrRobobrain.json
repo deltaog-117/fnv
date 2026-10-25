@@ -1,0 +1,578 @@
+{
+ "page": "CrRobobrain.txt",
+ "speaker": "Robobrain (Fallout 3)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sorry, but I am not at liberty to chat right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hello, sir.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, ma'am.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "AcceptYield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm so relieved we can put that unpleasantness behind us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AcceptYield"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm sorry that you had to act that way.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid that kind of behavior can't be tolerated.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Tsk. I really thought we could be friends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please, lower your weapon and submit.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I'm a much better tactician than you. It's all in the brain, you see.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Please don't take this the wrong way.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Which do you like better the psionic beam or the laser?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing personal.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You could run? I am trying to kill you, after all.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I hope this unpleasantness will be over soon.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Hold still please. It's harder to hit you if you keep running around like that.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I hope we can still be friends when this is all over.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Please believe me when I say I'm not enjoying this.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I wish there was some other way we could have worked this out.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid I'm a very lethal killing machine.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Running away is probably your only hope.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "My programming requires that I keep trying to kill you. {apologetically}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Don't feel bad if you don't defeat me. I am one of the most advanced military robots available. {apologetically}",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not programmed to fail. Just so you know. {apologetically}",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "They could have programmed me to love. To forgive. But nnoooo... {talking to herself, frustrated that she has to kill someone}",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I don't mean to be insensitive, but you really can't win. {apologetically}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I calculate your chance of success as... well, no need to be morbid. {apologetically}",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "Death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Oh no.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll miss you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What are you {cut off in mid sentence}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Death"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I don't mean to be rude, but you're not allowed here. You'd better leave before I'm forced to take preventive measures.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're still within the restricted area. I really do advise you to leave immediately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps you didn't hear me the first time. This is a restricted area. Please leave immediately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, but you're not allowed here. I hope you won't turn this into an unpleasant situation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry. You've entered a restricted area. I may have to use deadly force if you don't leave immediately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Excuse me, sir, but this is a restricted area. Please leave immediately so we can remain friends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Excuse me, ma'am, but this is a restricted area. Please leave immediately so we can remain friends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "Hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hit"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Even I know that was not a nice thing to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now I'm going to have to do the same to you.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "You'll understand that now I have no choice but to employ deadly force.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "Pickpocket",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "It's a shame that you had to do that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Pickpocket"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I wish you hadn't done that.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry. I've been programmed to protect private property at all costs.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I wish I could look the other way, but I'm afraid my programming is very strict.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Don't be alarmed if I try to kill you when I find you. It's just the way I've been programmed.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Why don't you just come out where I can see you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I'll find you eventually, you know.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Where are you? {in a happy, sing-song voice}",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Allow me to introduce myself.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid I'm quite good at killing things. You may want to run now.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "There you are! Were you trying to hide from me?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Oh well. Maybe next time you'll introduce yourself.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Why did you run away? I'm really not as scary as I look.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "You shouldn't tease me like that.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Where did you go? Was it something I said?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'm coming to find you now. I'm afraid my programming does not allow me to let you get away.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "You're behaving very rudely. I wouldn't hide from you, if our positions were reversed.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I'm glad that's over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry it had to end this way.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'll always remember you. My memory circuits have almost unlimited capacity.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "There's no point in trying to hide from me, you know. I've been programmed to be quite relentless.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Please come back. I'm sorry about all that recent unpleasantness.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Where are you?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Are you still there? {homage to Portal, of course}",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Were you trying to hide from me?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "You'll find that my electronic sensors are quite sophisticated.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "My search routines are quite advanced, don't you think?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Oh well. I wish you hadn't left so soon. I was having such a good time with you.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'll miss you. Please come back and see me again.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I hope I didn't hurt your feelings with all that shooting and flaming. I'm afraid it's just the way I was programmed.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hello? Please step forward and introduce yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is there someone there? I'd love to make your acquaintance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't be shy. I'm always happy to make a new friend.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I'm afraid my programming requires that I try to kill you now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please don't take this personally.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, sir, but you've forced me to utilize deadly force.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, ma'am, but you've forced me to utilize deadly force.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombat"
+  }
+ ]
+}

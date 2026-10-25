@@ -1,0 +1,989 @@
+{
+ "id": "silus",
+ "speaker_name": "Silus",
+ "source": "Silus.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What an ugly little worm you are. What pile of excrement did the lieutenant pluck you from, worm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You don't have to do this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You hit like a bedridden old woman.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We don't have anything to discuss, worm.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Enough! This is pointless. I'm dead to the Legion either way. I'll tell you what I know.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "But you should know that Caesar has always kept his own counsel. He never reveals anything that would make him vulnerable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My knowledge will not prevent the inevitable. This camp will be ash within months. Maybe weeks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you got it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hit me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get away from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformmccarran2silustopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's eyes truly are everywhere. And here I thought they'd send assassins instead. Did the officer send you? {relieved}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic000",
+   "prompt": "I'm a friend of the Legion. I'm here to help."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] You're nothing. You're some inept mercenary the NCR is paying to supplement its own incompetent soldiers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[?] What? No! Listen, Caesar's secrets are safe with me. I stayed alive because Caesar would've wanted it. I'm useless to him dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic001",
+   "prompt": "<Lie> I'm with the Legion. I'm here to kill you before you talk."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] You must have some reason to be in your line of work. Tell me, what did the Legion do to you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did we enslave your children? Slaughter your family before your eyes to teach you a lesson?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whatever it was, I hope I was there to give the order.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic002",
+   "prompt": "[Speech] I think you're confused. I'm with the excrement right now."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I must admit that a conversation with an imbecile may be far worse than the kind of torture I was anticipating.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But somehow I think I'll manage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic003",
+   "prompt": "[Speech] You... *smell* like excrement. So there."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course, of course. All you had to do was ask. I'll tell you everything I know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's see. I know that you're a brainless cretin. I know that you're wasting your time. I know the lieutenant is going to be disappointed in you. {emphasize \"know\" each time.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I know that by this time next month the streets of New Vegas will be decorated with the decaying heads of NCR soldiers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is there anything else you wanted to know? {smugly. emphasize \"know.\" }",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic004",
+   "prompt": "You're about to tell me everything you know, Silus."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can take anything you've got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic005",
+   "prompt": "[Attack] Uh oh. Now you've made me angry."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know what name he goes by here. But I saw him when they brought me in, and I recognized him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When I saw him last it was ages ago. He was training to be an agent of Caesar's {LATIN} frumentarii. Apparently he passed the trials. {Froo-men-tar-ee-eye}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And what a job he's done, to achieve such a rank. I have no doubt he'll deliver a crippling blow to the NCR while he's here. Perhaps many.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have heard that he has been radioing high-level NCR intelligence back to Caesar's camp virtually every night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But never mind that now. We don't have much time. If you can get me a weapon, the rest will be easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the hall outside, they still have my possessions in a locker. There's a gun in there that should be small enough to get past the lieutenant.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When she comes back, I want you to go and get it for me. Simple enough?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic006",
+   "prompt": "What officer?"
+  },
+  {
+   "key": "vfreeformmccarran2silustopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm... perhaps not, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic007",
+   "prompt": "I work independently."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know of only the one other. Though I wouldn't be surprised if there were a great many.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic008",
+   "prompt": "How many agents of the Legion *are* there here?"
+  },
+  {
+   "key": "vfreeformmccarran2silustopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. But for her to trust you to re-enter the room, she'll need to believe you've been doing what she expects of you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll need to punch me until I'm bleeding and weak. Go on. This is nothing compared to the Legion's training.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic009",
+   "prompt": "I understand."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know why I'm taking this chance on an invalid... I'll explain again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic010",
+   "prompt": "Go over that one more time."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] Foot soldiers of the Legion are trained to not have to think for themselves - to have conflict removed from their minds.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They kill themselves to evade capture because they are not trusted to make such a decision rationally in the heat of battle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I'm no foot soldier. I knew I could escape captivity on my own, without revealing the tiniest iota of information to my captors.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic011",
+   "prompt": "[Speech] You must miss giving orders, now that all your men are dead."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I'll show you gutless, you sniveling bastard. I'll spill your guts all over this room! {Losing his cool.}",
+     "emotion": "anger",
+     "intensity": 80
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic012",
+   "prompt": "[Speech] Sounds to me like you were too gutless to follow Caesar's orders."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] I've told them nothing. They've gotten nowhere. I'm a centurion, for Christ's sake. I deserve his trust.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic014",
+   "prompt": "You're a danger to him alive. Your knowledge threatens him."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] You have to let this go. I'll disappear. No one will ever see me again. That was always the plan in the first place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic015",
+   "prompt": "Caesar's laws are absolute. He does not grant exceptions."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] No! That's not what I meant! I-",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Lieutenant! This man is trying to kill me! He's not who you think he is! {calling out to the hall}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] No! That's not what I meant! I-",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Lieutenant! This woman is trying to kill me! She's not who you think she is!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic016",
+   "prompt": "So in addition to treason, you're also a deserter."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] You think I could get where I was in the Legion army if I feared death?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic018",
+   "prompt": "You sure talk tough for someone who's afraid to die."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] Coward? I've faced odds that would make your NCR soldiers wet themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've led charges against men with guns carrying only my knife, and I can tell you, it was they who feared me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But suicide is a weak death on a battlefield. It says to your enemy that you fear capture. It says if you're caught you can be broken.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic019",
+   "prompt": "But I want to know how a coward can attain the rank of centurion."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take your time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic020",
+   "prompt": "I'll be right back."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] You've made your intentions clear. The Legion has abandoned me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic021",
+   "prompt": "You shouldn't have done that. I'm the only friend you have right now."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[?] If I had killed myself then I would've been murdering one of Caesar's greatest soldiers. Either choice is a betrayal of the Legion, as I see it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic022",
+   "prompt": "Did you honestly believe you could escape death?"
+  },
+  {
+   "key": "vfreeformmccarran2silustopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I've done everything Caesar ever asked of me, and this is how I am repaid? With assassination?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I ambushed countless NCR patrols and wiped them out so that our operatives could move freely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I waited for him to dispatch us for three days, never questioning why the \"headaches\" he complained of would hinder his ability to command.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic023",
+   "prompt": "Oh, but I do, Silus. Unlike you, I follow Caesar's orders."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It'll take more than that to get me to talk, worm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic025",
+   "prompt": "[Attack] Lucky you. You can borrow my dentures when I knock all your teeth out."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? What do you mean?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic026",
+   "prompt": "If his empire falls, it'll probably be because his centurions are so gullible."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Something is wrong with Caesar. Something he is attempting to hide from his men. But it was obvious before we set out on this last mission.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For three days, we awaited his order to dispatch us. Three days. But he hid in his tent, refusing to give orders. Complaining of headaches.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He looks different now than he used to. His face is sunken, sickly. But any questioning of his health enrages him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic028",
+   "prompt": "I'll be the judge of that. Let's hear what you've got to say."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{LATIN} Cedo nulli. {SAY-dough NOO-lee. \"I yield to no one.\" Said defiantly through gritted teeth.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic029",
+   "prompt": "[Attack] If you've got any last words, you'd better say them now, Legion scum."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No! You slimy bastard! {outrage - realizing he's been tricked.}",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "No! You cursed bitch! {outrage - realizing he's been tricked. \"Cursed\" is said with two syllables here.}",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "Nothing I've said will change the outcome for you. No force can hold back the tide of the Legion. This camp and everyone in it will burn.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic030",
+   "prompt": "You've been tricked, Silus. I'm working with the NCR. I just got you to talk."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You think I'm going to slit my throat for some megalomaniacal self-appointed dictator?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I didn't work my way up to have it all be taken from me out of some irrational paranoia. Caesar's losing it. I believe that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's been shutting himself in his tent. Privately, he complains of headaches. Whatever it is, it's affecting his ability to lead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic031",
+   "prompt": "And if you can't go through with it, you look even weaker."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope the Legion burns your wretched body at the stake when they conquer this place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing I could tell you would do anything to stop that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic034",
+   "prompt": "I think I've heard all I need to. You've been very helpful."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. I know he sends intelligence by radio in the middle of the night. Sometimes that intelligence would find its way to my century.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic035",
+   "prompt": "Who's the operative?"
+  },
+  {
+   "key": "vfreeformmccarran2silustopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then you're a fool. That man reports to Caesar on what I do here. The Legion isn't going to take me back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My only hope is to escape and disappear. But if I escape and he reports it, they'll hunt me down as long as I live.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It'd serve me to report him as much as it'd serve you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic036",
+   "prompt": "I don't believe you. You're lying."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Beat me all you like, but it won't make my information any more useful. You can take what I have or leave it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic037",
+   "prompt": "Maybe I'll beat some more useful information out of you."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There is one other thing that may interest you. I know that Caesar has planted a spy here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Every night details of NCR troop movements are broadcast from a radio on this base to Caesar's camp.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The spy has been here a long time - since before the entire conflict began. He's an officer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I knew who he was, I would tell you. If I escape and he's alive to report it, the Legion would hunt me down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But like I said, none of this information will change the outcome for you. No force can hold back the tide of the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic038",
+   "prompt": "There must be more you can tell me."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good! Give it to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to pretend to be unconscious. Let them send you out so no one suspects you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When I'm alone with a guard, I'll shoot him and leave in his uniform.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic039",
+   "prompt": "Yes, I have it here."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hurry!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic040",
+   "prompt": "No, not yet."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see you try.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic042",
+   "prompt": "[Attack] Then I may as well beat you to death for personal satisfaction."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Time was essential for my mission, but we waited three days for him to dispatch us. Another of his headaches. Does that sound like a man in command?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He has an operative planted in this very base, but does he use his agent to rescue me? No.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's content to have the agent spend his nights radioing troop positions back to our base camp. He knows I'm here, and he's left me to rot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic046",
+   "prompt": "<Continue Listening>"
+  },
+  {
+   "key": "vfreeformmccarran2silustopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I haven't breathed a word about the officer we planted here - he continues to radio intelligence to Caesar's camp nearly every night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've proven my loyalty. All you're doing is killing a loyal soldier. If that's Caesar's policy, then I say his empire will crumble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic047",
+   "prompt": "<Continue Listening>"
+  },
+  {
+   "key": "vfreeformmccarran2silustopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? No! Listen, Caesar's secrets are safe with me. I stayed alive because Caesar would've wanted it. I'm useless to him dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic048",
+   "prompt": "I'm with the Legion. I'm here to kill you before you talk."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then he's a fool! {enraged}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic049",
+   "prompt": "[Attack] Caesar's laws are absolute. He does not grant exceptions."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I knew you'd be reasonable. Now... how did you find me? Did the officer send you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic050",
+   "prompt": "Very well. I'll try and help you."
+  },
+  {
+   "key": "vfreeformmccarran2silustopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No! Stay away from me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2SilusTopic051",
+   "prompt": "But not to me. I'll sever your head and carry it with me always - a message to would-be traitors."
+  },
+  {
+   "key": "vfreeformmccarran2pow1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Lieutenant. I was just thinking about you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was. I was just thinking about that pretty neck of yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was thinking about how it would look with a Legion slave collar on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do you know what I love about our slave collars, Lieutenant?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I love how tightly they fit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I train my men to make sure the slaves' flesh bulges a bit around the top and bottom. Know why?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not quite. If you fit it just right, their body never gets used to the feeling of wearing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It cuts in just enough when they swallow or turn their head to remind them who they belong to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And it's that constant reminder that keeps them docile.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh? For whom?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And who is this friend of yours?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2POW1",
+   "prompt": "VFreeformMcCarran2POW1"
+  },
+  {
+   "key": "vfreeformmccarran2pow2beating",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You think this'll make me talk? A beating. This the best you can do?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go to hell.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're getting nothing from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2POW2Beating",
+   "prompt": "VFreeformMcCarran2POW2Beating"
+  },
+  {
+   "key": "vfreeformmccarran2pow2int",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Lieutenant, this woman is an agent of the Legion on a mission to kill me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lieutenant, this man is an agent of the Legion on a mission to kill me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Think about it! Is it worth the risk? You need what I know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It'll be your head if I die, Lieutenant. You'll be disgraced.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course I'm right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lieutenant!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2POW2Int",
+   "prompt": "VFreeformMcCarran2POW2Int"
+  },
+  {
+   "key": "vfreeformmccarran2pow2speech",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Your friend is a miserable fucking degenerate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we were on the other side of the river, I'd have her torn apart by dogs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we were on the other side of the river, I'd have him torn apart by dogs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your tactics are a joke.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Both of you can rot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2POW2Speech",
+   "prompt": "VFreeformMcCarran2POW2Speech"
+  }
+ ],
+ "speaker": "silus"
+}

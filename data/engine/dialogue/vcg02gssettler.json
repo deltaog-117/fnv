@@ -1,0 +1,59 @@
+{
+ "id": "vcg02gssettler",
+ "speaker_name": "Goodsprings settler",
+ "source": "VCG02GSSettler.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Holy moly! If you hadn't come here like you done, I'd be a goner for sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I came up here to draw water, but here, you should have what I got. You look thirsty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Help me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vcg02settlerbark",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Help!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's too many!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get 'em off!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02SettlerBark",
+   "prompt": "VCG02SettlerBark"
+  }
+ ],
+ "speaker": "goodsprings_settler"
+}

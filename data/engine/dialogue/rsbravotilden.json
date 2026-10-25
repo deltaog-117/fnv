@@ -1,0 +1,153 @@
+{
+ "id": "rsbravotilden",
+ "speaker_name": "Tilden",
+ "source": "RSBravoTilden.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} I don't know what you did to pull runner duty to a post this far out in the wasteland, but you have my sympathies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player not in NCR gear} If you're here to sell something, we don't want any.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "What's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vmsrsbravoquestrsbravotildentopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Careful out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSBravoTildenTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vmsrsbravoquestrsbravotildentopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSBravoTildenTopic001",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vmsrsbravoquestrsbravotildentopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think I haven't tried? Every time I do, Camp Golf acknowledges the situation. And soon after that, more ammo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSBravoTildenTopic002",
+   "prompt": "Why don't you use your radio to fix your supply situation?"
+  },
+  {
+   "key": "vmsrsbravoquestrsbravotildentopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're not going to die of thirst any time soon, but I'd rather have too much than not enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSBravoTildenTopic003",
+   "prompt": "How are your water supplies right now?"
+  },
+  {
+   "key": "vmsrsbravoquestrsbravotildentopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Eh, it's not my call to make. You'd have to clear it with Ranger Ericsen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSBravoTildenTopic004",
+   "prompt": "Since you have extra, could I have some of that ammo?"
+  },
+  {
+   "key": "vmsrsbravoquestrscommrangerbravotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No problem. Hey, do me a favor when you get back to Reyes and tell her that we don't need any more damn ammo. Wouldn't mind more water, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSCommRangerBravoTopic000",
+   "prompt": "Sergeant Reyes sent me here. I've got a security update for your radio."
+  },
+  {
+   "key": "vmsrsbravoquestrscommrangerbravotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is the frontier of NCR territory, and we're the first line of defense. You won't find much in the way of civilization east of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "South of here is Camp Guardian, but they've been having radio trouble so they've been silent for awhile now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSCommRangerBravoTopic001",
+   "prompt": "What do you do out here?"
+  },
+  {
+   "key": "vdialoguerangerstationbravorsbravotildentopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We keep getting deliveries of ammunition for some reason. I don't mind target practice, but there isn't all that much to shoot at out here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationBravoRSBravoTildenTopic000",
+   "prompt": "What was that about the surplus ammo?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Careful out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "comm_officer_tilden"
+}

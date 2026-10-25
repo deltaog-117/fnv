@@ -1,0 +1,79 @@
+{
+ "page": "VHDEngineerValentine.txt",
+ "speaker": "Allison Valentine",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you haven't seen my friend around here, have you? His name is Ben and he's an engineer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were supposed to meet up so we can watch the President's speech together, but he hasn't shown up yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leave me alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still no luck finding my friend. He better show up soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDEngineerValentineTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, well... I guess I'll just keep waiting. Sorry to bother you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I haven't seen him."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDEngineerValentineTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He isn't. I already checked there this morning. We were supposed to meet up here about an hour ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess I'll just keep waiting. Sorry to bother you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe he's down in the barracks."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDEngineerValentineTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why would you say something like that? That's just mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just leave me alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He probably ditched you for someone cuter."
+  }
+ ]
+}

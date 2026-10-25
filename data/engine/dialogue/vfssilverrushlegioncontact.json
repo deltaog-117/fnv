@@ -1,0 +1,168 @@
+{
+ "id": "vfssilverrushlegioncontact",
+ "speaker_name": "strange man",
+ "source": "VFSSilverRushLegionContact.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you the Van Graffs' emissary?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've already concluded our business. I suggest you return to your employers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you have what we requested?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic000",
+   "prompt": "I am."
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't play games with me. The question was just a formality. Now do you have what we requested?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic001",
+   "prompt": "Maybe."
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't think so. My men watched you head straight for this location. Now do you have what we requested?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic002",
+   "prompt": "I'm sorry, you've mistaken me for someone else."
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We were told there would be no questions. Do you have what we requested or not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic003",
+   "prompt": "Who is we?"
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, then our business is concluded. Tell your superiors that we will contact them shortly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic004",
+   "prompt": "It's right here."
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wasn't informed there was to be an exchange on my part. What are you talking about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic005",
+   "prompt": "Where's the payment?"
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Such a thing is possible. I've been out in the field for some time. Fine, this should cover your grievance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, the package, if you will.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic006",
+   "prompt": "My employers managed to negotiate a small fee for this drop a short time ago.",
+   "label": "{Speech Check - 75}"
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic006_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I've heard no such report. I'd have to check with my contacts before agreeing to such an exchange, and there's no time for that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, the package, if you will.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic006",
+   "prompt": "Surely you were told to pay the Van Graffs' messenger?",
+   "label": "{Speech Check - 75}"
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, now do you have the package or not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic007",
+   "prompt": "Never mind, I must have confused this with one of my other deliveries."
+  },
+  {
+   "key": "vms29avfssilverrushlegioncontacttopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That you would have something for me. Now do you or not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushLegionContactTopic008",
+   "prompt": "What were you informed of?"
+  }
+ ],
+ "speaker": "strange_man"
+}

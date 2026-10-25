@@ -1,0 +1,64 @@
+{
+ "page": "VMSHDBrotherhoodPaladin.txt",
+ "speaker": "Todd (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{snort} NCR, no better than common thieves. Where do they get off stealing our armor?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformHooverDamVMSHDBrotherhoodPaladinTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Yes, it would be, we can't have outsiders running around using our technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] It would mean more people better protected and able to fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Would it be so bad to lend them the armor for the battle?"
+  },
+  {
+   "id": "VFreeformHooverDamVMSHDBrotherhoodPaladinTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sure that we can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm sure you two can settle this."
+  },
+  {
+   "id": "vHDPowerArmor",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "This is unacceptable, we demand the immediate return of our power armor.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "It is not your armor, that power armor is property of the Brotherhood of Steel and you have no right to claim it as your own.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vHDPowerArmor"
+  }
+ ]
+}

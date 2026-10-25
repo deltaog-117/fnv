@@ -1,0 +1,70 @@
+{
+ "id": "corporalhornsby",
+ "speaker_name": "Walter Hornsby",
+ "source": "CorporalHornsby.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll take it from here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Boyd's in there with a prisoner right now. Boy, is she pissed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Boyd's in there with a prisoner right now. Boy, is she pissed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "vfreeformmccarran2powcleanup",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Not at all, ma'am. I'll get right on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2POWCleanup",
+   "prompt": "VFreeformMcCarran2POWCleanup"
+  },
+  {
+   "key": "vfreeformmccarran2powgetup",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Get your ass up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the-",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran2POWGetUp",
+   "prompt": "VFreeformMcCarran2POWGetUp"
+  }
+ ],
+ "speaker": "corporal_walter_hornsby"
+}

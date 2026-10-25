@@ -1,0 +1,785 @@
+{
+ "id": "vms22michaelangelo",
+ "speaker_name": "Michael Angelo",
+ "source": "VMS22MichaelAngelo.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh... Hello. I am Michael Angelo. How can I-",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "Uh... wait. Are you here to deliver more billboard requests? Please tell me you're not a messenger on behalf of Mr. House.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "Oh, what do you want?",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "Aha. The brave photographer returns. Good to see you.",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "{Still afraid} Now that you have all you care for, please... leave, and don't come back!",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "{Deeply Saddened} I can't talk, not after what happened to Sarah. I feel... so cold.",
+     "emotion": "sad",
+     "intensity": 90
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms22michaelangelotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's great to hear, really great. I am Sheldon, from Vault 21, although here I go by my artistic name, \"Michael Angelo.\"",
+     "emotion": "happy",
+     "intensity": 70
+    },
+    {
+     "text": "So, what brings you here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic000",
+   "prompt": "No, I'm not here for anything like that. Who are you?"
+  },
+  {
+   "key": "vms22michaelangelotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Hesitant Warning} [FAILED] I know important people here in the Strip. Powerful people. You, uh, can't get anything out of me.",
+     "emotion": "pained",
+     "intensity": 80
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic001",
+   "prompt": "(Lie) A messenger?... Why, yes! Of course, Mr. House and I go way, waaaay back."
+  },
+  {
+   "key": "vms22michaelangelotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Frantically Apologetic} [SUCCEEDED] I am sorry, meant no offense. The billboards are not ready yet... Please, I need more time, more materials!",
+     "emotion": "sad",
+     "intensity": 70
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic002",
+   "prompt": "(Lie) Of course I act on behalf of Mr. House. Why else would I be here?"
+  },
+  {
+   "key": "vms22michaelangelotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Taking Offense} Because spending myself to the edge of artistic oblivion for Mr. House sums up my existence since I had to leave Vault 21, that's why.",
+     "emotion": "pained",
+     "intensity": 70
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic003",
+   "prompt": "Why are you so jittery about Mr. House?"
+  },
+  {
+   "key": "vms22michaelangelotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh... All right. So, Ah... Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic004",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms22michaelangelotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Fearful} What!? No, please! Here, take the caps but please don't hurt me!",
+     "emotion": "fear",
+     "intensity": 80
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic005",
+   "prompt": "Okay. Game's over. Now pay up or I'll break your bones one by one, little man!"
+  },
+  {
+   "key": "vms22michaelangelotopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Most people don't, uh, understand what it means to grow up in a vault. Its corridors, its walls, radiate a warmth that feels, safe, honest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But here everything is huge and threatening - so empty that I think one of these days I'll just... snap.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic006",
+   "prompt": "You lived in Vault 21? Tell me about that."
+  },
+  {
+   "key": "vms22michaelangelotopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Accusative, then thoughtful nostalgia} It's this place - my inspiration ebbs and I don't know how to stop it! I can't feel the warmth anymore...",
+     "emotion": "sad",
+     "intensity": 80
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic007",
+   "prompt": "I guess you're having trouble with Mr. House requests. What's the problem?"
+  },
+  {
+   "key": "vms22michaelangelotopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I, uh, not much, really. Vault 21 was my home, my dear home. I left it to explore the outside world.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "At first it was a marvel to behold. My inspiration flowed true and its works caught Mr. House's attention. That's how I ended up in this... place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic008",
+   "prompt": "An artist - rare thing to see. What's your story?"
+  },
+  {
+   "key": "vms22michaelangelotopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I should've known that Mr. House wouldn't have sent just anybody. Anything I might I offer to, well, encourage discretion?",
+     "emotion": "fear",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic009",
+   "prompt": "(Lie) You really believed I wasn't working for Mr. House? Chump."
+  },
+  {
+   "key": "vms22michaelangelotopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I should've known that Mr. House wouldn't have sent just anybody. Anything I might I offer to, well, encourage discretion?",
+     "emotion": "fear",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic010",
+   "prompt": "Spare parts, assembly tools, generators. Mr. House won't buy your excuse."
+  },
+  {
+   "key": "vms22michaelangelotopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Suddenly Suspicious} Wait a minute... Do you even know what I do here? Who are you, really?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic011",
+   "prompt": "Lets see... You've got that thingy... there. Power, uh, re-circulators here...."
+  },
+  {
+   "key": "vms22michaelangelotopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You've made your point. What would it take to... convince you to keep silent until I manage to finish Mr. House's requests?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic012",
+   "prompt": "Your failure would not amuse Mr. House. Unless I be persuaded otherwise."
+  },
+  {
+   "key": "vms22michaelangelotopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED]Sorry excuses?.. That's does it! Tell Mr. House to hire a better artist, if he can find one in this barren wasteland!",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic013",
+   "prompt": "Better cough up some caps or Mr. House finds about your sorry excuses."
+  },
+  {
+   "key": "vms22michaelangelotopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised Relief} You were, really? Okay. For a moment I thought you were going to tighten my screws - like everyone else around here.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic014",
+   "prompt": "Relax. I was just kidding. What's all this fretting about Mr. House?"
+  },
+  {
+   "key": "vms22michaelangelotopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angry Resignation} [SUCCEEDED] Yeah, I imagine that it takes a lot to fill the void of such a bottomless soul. Take the caps and leave me to my sorrows.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic015",
+   "prompt": "Have you seen the cost of pliers, duct-tape and saws lately? 300 caps."
+  },
+  {
+   "key": "vms22michaelangelotopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Taking Offense} [FAILED] What!? I don't get paid near enough to what my talent deserves!? A 150 caps is my final offer.",
+     "emotion": "disgust",
+     "intensity": 60
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic016",
+   "prompt": "Artists are scarce. I bet you get paid handsomely. Cough up 300 caps."
+  },
+  {
+   "key": "vms22michaelangelotopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Fearful} What!? No, please! Here, take the caps but please don't hurt me!",
+     "emotion": "fear",
+     "intensity": 90
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic017",
+   "prompt": "Oh, so you've got lots of caps on you? Then I guess I can just beat them out of you."
+  },
+  {
+   "key": "vms22michaelangelotopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Hesitant Warning} [FAILED] I know important people here in the Strip. Powerful people. You, uh, can't get anything out of me.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic018",
+   "prompt": "(Lie) So, uh, wasn't it clever how I tricked you? I'm... working for Mr. House!"
+  },
+  {
+   "key": "vms22michaelangelotopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here. Now, please leave me be. I have had enough bullying for today.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic019",
+   "prompt": "All right. 150 caps will do."
+  },
+  {
+   "key": "vms22michaelangelotopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here. Now, please leave me be. I have had enough bullying for today.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic020",
+   "prompt": "300 caps it is."
+  },
+  {
+   "key": "vms22michaelangelotopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Ah, an educated fellow? Now that is almost as rare as artistry! So, how can you help me regain my inspiration?",
+     "emotion": "surprise",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic022",
+   "prompt": "You exhibit clear symptoms of acute agoraphobia. I can help."
+  },
+  {
+   "key": "vms22michaelangelotopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe you are thinking of Agoraphobia? Yes, you are right. I need something to bring back my inspiration. Any ideas?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic023",
+   "prompt": "Oh, that's, uh, I have it at the tip of my tongue... Agomorrahphobia! I'll help."
+  },
+  {
+   "key": "vms22michaelangelotopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I think so... But, please, uh, keep quiet about it. Without inspiration I am as good as a tumbleweed drifting in the barren wasteland.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic024",
+   "prompt": "So, is this fear of the outside world draining your inspiration?"
+  },
+  {
+   "key": "vms22michaelangelotopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I feel haunted by something terrible. Working in such a huge workshop often makes me shiver... I can't even leave the Strip!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic025",
+   "prompt": "It sounds as if you don't like this place. What is wrong with it?"
+  },
+  {
+   "key": "vms22michaelangelotopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wouldn't that be great... No - Mr. House filled it with concrete. Only a few rooms and halls remain. My sister was able to turn them into a hotel.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic026",
+   "prompt": "Why don't you pack up and return to Vault 21?"
+  },
+  {
+   "key": "vms22michaelangelotopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Accusative, then thoughtful nostalgia} It's this place - my inspiration ebbs and I don't know how to stop it! I can't feel the warmth anymore...",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic027",
+   "prompt": "You seem to dread hearing about Mr. House's requests. What is the problem?"
+  },
+  {
+   "key": "vms22michaelangelotopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised Relief} You were, really? Okay. For a moment I thought you were going to tighten my screws - like everyone else around here.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic028",
+   "prompt": "Relax. I was just kidding."
+  },
+  {
+   "key": "vms22michaelangelotopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angry Resignation} [SUCCEEDED] Yeah, I imagine that it takes a lot to fill the void of such a bottomless soul. Take the caps and leave me to my sorrows.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic029",
+   "prompt": "Have you seen the cost of pliers, duct-tape and saws lately? 300 caps."
+  },
+  {
+   "key": "vms22michaelangelotopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Taking Offense} [FAILED] What!? I don't get paid near enough to what my talent deserves!? A 150 caps is my final offer.",
+     "emotion": "disgust",
+     "intensity": 60
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic030",
+   "prompt": "Artists are scarce. I bet you get paid handsomely. Cough up 300 caps."
+  },
+  {
+   "key": "vms22michaelangelotopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Are you serious? I am an artist! I need inspiration, not therapy.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic031",
+   "prompt": "Several years of psychoanalysis, and a few thousand caps a month, will fix you."
+  },
+  {
+   "key": "vms22michaelangelotopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop right there!... I'm sorry, but there's nothing wrong with my brain. What I need is something that inspires ideas back into my work.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic032",
+   "prompt": "I know this guy in Freeside, really good at trepanation. You'd be amazed how h-."
+  },
+  {
+   "key": "vms22michaelangelotopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I... what does this have to do with my - never mind! I just can't go outside, get it? There has to be another way.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic033",
+   "prompt": "Grow a pair and go out into the real world to find your inspiration!"
+  },
+  {
+   "key": "vms22michaelangelotopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sudden Realization} Thank you for the offer but I think I really can't go to see... wait a minute. I know! I don't have to necessarily be there to see it.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic034",
+   "prompt": "I could escort you into the wasteland. It's not so bad."
+  },
+  {
+   "key": "vms22michaelangelotopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. Yes! That's it! I have a camera! It is old but it should work. Perhaps you could bring me images of inspiring landmarks?",
+     "emotion": "happy",
+     "intensity": 80
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic035",
+   "prompt": "What do you mean?"
+  },
+  {
+   "key": "vms22michaelangelotopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I always wanted to see the Dinosaur and its Thermometer sign at Novac. Then, there's the famous Bison Steve sign.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The McCarran Airfield and the Helios One power station signs are of much interest to my work - like the Sunset Sarsaparrilla Headquarter's bottle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic036",
+   "prompt": "I'll help you. Do you have any landmarks in mind?"
+  },
+  {
+   "key": "vms22michaelangelotopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's an opportunity for profit anywhere, uh? Even if it means preying on the helpless. Okay, you... shuckster - 150 caps each if they are good.",
+     "emotion": "sad",
+     "intensity": 60
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic037",
+   "prompt": "Mickey, photography is a risky business. This is going to cost you. A lot."
+  },
+  {
+   "key": "vms22michaelangelotopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Fearful} What!? No, please! Here, take the caps but please don't hurt me!",
+     "emotion": "fear",
+     "intensity": 80
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic038",
+   "prompt": "You know, I'm tired of this. I think I'll just beat you senseless instead."
+  },
+  {
+   "key": "vms22michaelangelotopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you! I really can't thank you enough for this. Please, get me all the pictures. I will compensate you accordingly.",
+     "emotion": "happy",
+     "intensity": 60
+    },
+    {
+     "text": "Oh, and if you need more camera film then just come back and I will get it for you. Again, thank you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic039",
+   "prompt": "Ok, you've got a deal. I'll return with the pictures."
+  },
+  {
+   "key": "vms22michaelangelotopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, that's wonderful! Just what I need. Thank you, brave one! Here's some compensation for your work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic040",
+   "prompt": "I have some fresh pictures for you."
+  },
+  {
+   "key": "vms22michaelangelotopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I always wanted to see the Dinosaur and its Thermometer sign at Novac. Then, there's the famous Bison Steve sign.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The McCarran Airfield and the Helios One power station signs are of much interest to my work - like the Sunset Sarsaparrilla Headquarter's bottle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic041",
+   "prompt": "I'm glad we have an understanding. Now, do you have any landmarks in mind?"
+  },
+  {
+   "key": "vms22michaelangelotopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Fearful} What!? No, please! Here, take the caps but please don't hurt me!",
+     "emotion": "fear",
+     "intensity": 80
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic042",
+   "prompt": "You're not making this easy. Screw it. Hand over the caps or drop dead."
+  },
+  {
+   "key": "vms22michaelangelotopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Still afraid} Now that you have all you care for, please... leave, and don't come back!",
+     "emotion": "anger",
+     "intensity": 60
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic043",
+   "prompt": "That's a very... inspired choice, Mickey."
+  },
+  {
+   "key": "vms22michaelangelotopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Aaaaahhhhh - Help!",
+     "emotion": "fear",
+     "intensity": 90
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic044",
+   "prompt": "Groveling brings out the worst in me. I'm going to enjoy this."
+  },
+  {
+   "key": "vms22michaelangelotopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am Sheldon, from Vault 21, although here I go by my artistic name, \"Michael Angelo.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic045",
+   "prompt": "Tell me about you again."
+  },
+  {
+   "key": "vms22michaelangelotopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Most people don't, uh, understand what it means to grow up in a vault. Its corridors, its walls, radiate a warmth that feels, safe, honest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But here everything is huge and threatening - so empty that I think one of these days I'll just... snap.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic046",
+   "prompt": "You mentioned growing up in Vault 21. Can you tell me about that?"
+  },
+  {
+   "key": "vms22michaelangelotopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I, uh, not much, really. Vault 21 was my home, my dear home. I left it to explore the outside world.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At first it was a marvel to behold. My inspiration flowed true and its works caught Mr. House's 'attention. That's how I ended up in this... place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic047",
+   "prompt": "What's your story, Michael Angelo?"
+  },
+  {
+   "key": "vms22michaelangelotopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's great to hear, really great.",
+     "emotion": "happy",
+     "intensity": 70
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic048",
+   "prompt": "I have some ideas that may help with your agoraphobia problem."
+  },
+  {
+   "key": "vms22michaelangelotopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I always wanted to see the Dinosaur and its Thermometer sign at Novac. Then, there's the famous Bison Steve sign.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The McCarran Airfield and the Helios One power station signs are of much interest to my work - like the Sunset Sarsaparrilla Headquarter's bottle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic049",
+   "prompt": "What landmarks did you want me to photograph?"
+  },
+  {
+   "key": "vms22michaelangelotopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have earned it, my friend! Now I can finally unveil my masterpieces to the world, all thanks to you. Come visit me again sometime.",
+     "emotion": "happy",
+     "intensity": 90
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic050",
+   "prompt": "I took all the pictures you wanted. There was something about a reward..."
+  },
+  {
+   "key": "vms22michaelangelotopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Fearful} What!? No, please! Here, take the caps but please don't hurt me!",
+     "emotion": "fear",
+     "intensity": 80
+    }
+   ],
+   "topic": "VMS22MichaelAngeloTopic055",
+   "prompt": "Let's see. Walk half the world or rough you up right now... Mickey, you lose."
+  },
+  {
+   "key": "vms22vms22michaelangelotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS22VMS22MichaelAngeloTopic000",
+   "prompt": "I need more film for the camera"
+  },
+  {
+   "key": "vms22vms22michaelangelotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised} You mean, Mitch? It's been ages since I've heard the name. My sister and I used to call him \"Mole-butt.\" Don't ask.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "That was a long time ago, before we exchanged the warmth of our home for the thin air of the Wasteland.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS22VMS22MichaelAngeloTopic001",
+   "prompt": "Do you know Doc Mitchell?"
+  }
+ ],
+ "speaker": "michael_angelo"
+}

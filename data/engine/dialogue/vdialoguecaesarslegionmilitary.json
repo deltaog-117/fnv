@@ -1,0 +1,505 @@
+{
+ "id": "vdialoguecaesarslegionmilitary",
+ "speaker_name": "Caesar's Legion",
+ "source": "VDialogueCaesarsLegionMilitary.txt",
+ "topics": [
+  {
+   "key": "observecombat",
+   "section": "other",
+   "responses": [
+    {
+     "text": "{disparaging} They hardly even know how to fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slight curiosity} Let them fight it out among themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{disparaging} They hardly even know how to fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slight curiosity} Let them fight it out among themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{disparaging} They hardly even know how to fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slight curiosity} Let them fight it out among themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ObserveCombat",
+   "prompt": "ObserveCombat"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "By {KAI-zar}Caesar's will.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATIN}{WAH-lay}Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "By {KAI-zar}Caesar's will.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATIN}{WAH-lay}Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "By {KAI-zar}Caesar's will.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATIN}{WAH-lay}Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{LATIN}{AH-way}Ave, true to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATIN}{AH-way}Ave, true to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATIN}{AH-way}Ave, true to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "True to {KAI-zar}Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{LATIN}{AH-way}Ave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Move along.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - Arcade}{pretending surprise}Imagine, a Follower brave enough to leave Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - Rex}The dog is part-machine... but its brain is flesh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - Raul}{disgusted by ghoul's appearance}What a revolting sight. {incredulous}To call that a friend?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - ED-E}That machine looks like a floating eye. I don't like it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Companion Reaction - Lily}How does one get that blue monster to obey?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Legion victory}{proud} All that {KAI-zar}Caesar promised has come true.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Legion victory}{Ah-WAY, Ah-ME-cus} Ave, amicus.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look to Bitter Springs to see what happens to disloyal slaves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player killed President Kimball} Kimball's assassin is always welcome here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Silus freed}The {Ken-TOO-ree-on} Centurion Silus will be punished for letting himself be captured. Coward.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Battle for Hoover Dam soon to begin}{Le-GAH-tus La-nee-OOS} Legatus Lanius is come. The battle for the dam will soon begin!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Late game begins}{Le-GAH-tus La-nee-OOS} Legatus Lanius draws near. The Profligates' days are numbered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Elite Rangers have arrived}{trying not to sound worried} The black-armored Rangers are said to be fearsome in battle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Elite rangers on the way} There have been sightings of Rangers in black armor, the best the Profligates have to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wish I could hear the Profligates weeping over the explosion at McCarran!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Mark of {KAI-zar}Caesar protects you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mr. House Unplugged/Killed} The warlord House thought himself beyond {KAI-zar's}Caesar's reach. And now he is dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar dead} The Legion will survive {KAI-zar's}Caesar's death. It must!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player destroyed Securitron Army} I felt the earth shake when the evil below the Fort was destroyed!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Legion dogs killed} Our hounds were bred to kill. They are missed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nelson and Camp Forlorn Hope both wiped out} It's said that every living thing at Nelson and Forlorn Hope camp was killed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Camp Forlorn Hope wiped out}{cheerful} I hear the Profligates at Forlorn Hope begged for their lives.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nelson wiped out} The Legionaries at Nelson were killed to a man. No survivors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Great Khans signed treaty with NCR} So frightened are the Profligates that they've begun signing treaties with primitive tribes!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Unknown} Watch yourself, Profligate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Unknown} Hold your tongue, wastrel.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Unknown} Degenerates like you belong on a cross.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dislike}{contempt} Wretched Profligate. Try making some trouble.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "{Dislike}{contempt} You belong on a cross, degenerate.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "{Dislike} I'd rather kill you than talk to you.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "{Hated} When the time comes, I'll be the one to kill you.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Hated}{looking for an excuse to attack} Give me cause, Profligate.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Hated} Attack me. Give me license to kill you.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Mixed} You aren't trusted here, Profligate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mixed}{Scornfully} You serve yourself, not the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mixed} Why is your degneracy tolerated?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wild Child} How are we to trust one such as you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wild Child}{suspicious} Who knows what you'll do next?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wild Child} You're a crazed one. I'll not talk to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Somewhat liked} {Most idiots try to defy the Legion}You do well to serve the Legion.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "{Somewhat liked}{Most are forced to serve} You're wise to serve the Legion by choice.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "{Somewhat liked} You've proved yourself useful, at least.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "{Liked} We each serve the Legion, in our way.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked}{LATIN} Good to see you, {ah-ME-cus}amicus.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked}{LATIN} {AH-way, ah-ME-cus}Ave, amicus.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Player killed President Kimball}{Officer} I've heard the stories of how you assassinated Kimball. It's all my Legionaries will about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Late game begins}{Officer} {Le-GAH-tus La-nee-OOS}Legatus Lanius will arrive soon enough - and with him comes slaughter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Middle game begins} {Le-GAH-tus La-nee-OOS}Legatus Lanius is known as the Monster of the East - a name he has earned many times over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Elite rangers on the way}{Officer} The Legionaries fret like women over rumors of Rangers in black armor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar cured}{officer} Never once did I believe that {KAI-zar}was near death. I have friends in high places.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rumors of Legion Veterans}{Officer} Soon the Legion's veterans will arrive from Arizona. Each has killed many times his number.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nelson wiped out}{officer} Had I been the commander of our forces at Nelson, the town would still be ours.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Unknown}{Officer} Keep barking and I'll feed you to a dog.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wild Child}{Officer} You can't be trusted... but you're useful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked}{Officer} You serve the Legion well, {ah-ME-cus}amicus.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Elite rangers have arrived}{Veteran} I keep an eye out for Rangers in black armor. I haven't killed one yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nelson wiped out}{veteran} Had the Legionaries at Nelson been more {beat}seasoned, we'd still hold the settlement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Unknown}{Veteran} I know your kind. You die easily enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Legion Veterans arriving} Have you seen the Legion's veterans, arrived from Arizona? They are fearless!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rumors of Legion Veterans} It's said the Legion's veterans will arrive from Arizona soon. They are a sight to behold.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Middle game begins} {Le-GAH-tus La-nee-OOS}Legatus Lanius is on the march. When he arrives, the real slaughter will begin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Late game begins}{Veteran} I have fought beneath {Le-GAH-tus La-nee-OOS}Legatus Lanius many times. He cannot be defeated.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Battle for Hoover Dam soon to begin}{Veteran} Finally, the dam will be assaulted. {Le-GAH-tus La-nee-OOS}Legatus Lanius is come.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player killed President Kimball}{Veteran}{recognizing player} Kimball's assassin. Nicely done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "veteran_legionary"
+}

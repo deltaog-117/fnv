@@ -1,0 +1,269 @@
+{
+ "id": "nellisboomerteacher",
+ "speaker_name": "Boomer teacher",
+ "source": "NellisBoomerTeacher.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, Outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're interrupting class, Outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Few children are, especially when they are born during a relatively safe time in our history.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our children are protected from the outside world, but they are not ignorant of the dangers it holds.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic000",
+   "prompt": "The children here don't seem interested in guns."
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really, Outsider? I'm open to ideas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic001",
+   "prompt": "I think I could improve your curriculum."
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I agree. That is why we do everything we can to teach the children from birth to defend themselves and serve the tribe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic002",
+   "prompt": "Good to hear. The wasteland is no place for children."
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All of us are trained in combat and farming from a very early age. When we reach adulthood, we serve in whatever capacity we are best suited.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic003",
+   "prompt": "What happens when they come of age?"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic004",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I like the way you think. Oratory may indeed be a useful tool in our arsenal if wielded effectively.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll put together a debate curriculum and pull out some of those old philosophy books.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic009",
+   "prompt": "Talking enemies down is an effective way to get what you want and save ammo.",
+   "label": "Speech"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic009_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Talking? Seriously? Sorry pal, but nothing is more persuasive than bullets and bombs, and we're the experts!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I could probably put together a debate curriculum and pull out some of those old philosophy books.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic009",
+   "prompt": "I think I can teach you things about public speaking.",
+   "label": "Speech"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That sounds good for teaching the kids how to negotiate prices. I keep saying we need to open trade with the outside, but no one listens.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic010",
+   "prompt": "There are some key principles to stick to when it comes to bartering with traders.",
+   "label": "Barter"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic010_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] It doesn't look like we're going to be trading with anyone outside of Nellis anytime soon, so I'd rather not bother.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic010",
+   "prompt": "I could teach you some tricks about trading.",
+   "label": "Barter"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Wow, our stockpiles mostly included full metal jacket. I should start a reloading class for the children to learn how to make ammunition!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic012",
+   "prompt": "I can teach how to make jacketed hollow points and other specialized ammo.",
+   "label": "Guns"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic012_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Look around Nellis. We've got a stockpile of weapons, and we've all spent plenty of time at the range.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I appreciate the sentiment, but there isn't much you could teach us when it comes to firearms.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic012",
+   "prompt": "I bet I could teach you a thing or two about shooting.",
+   "label": "Guns"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hey, that's a great idea! This information might help with our training manuals, and maybe create a few new apprentices for Loyal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic014",
+   "prompt": "I've done a lot of machining and lathe work over the years. I could write up a booklet for you.",
+   "label": "Repair"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic014_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Right... when we repair stuff, we tend to use welding torches and plasma cutters. I think I still with Loyal and Jack for repair knowledge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic014",
+   "prompt": "Oh the stories I could tell you about fixing stuff with duct tape and bubble gum!",
+   "label": "Repair"
+  },
+  {
+   "key": "vfreeformnellisnellisboomerteachertopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisBoomerTeacherTopic015",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "nellisboomerteacherbarks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Okay children, it's time to read another chapter from The Patriot's Cookbook.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Today, children, we are going to read another chapter from True Police Stories.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Children, today we're going to read more from the Milsurp Review.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For today's studies, please read the next chapter in Programmer's Digest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay children, today we are going to be reading Lad's Life.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NellisBoomerTeacherBarks",
+   "prompt": "NellisBoomerTeacherBarks"
+  }
+ ],
+ "speaker": "boomer_teacher"
+}

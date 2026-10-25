@@ -1,0 +1,159 @@
+[
+ {
+  "id": "built_to_destroy",
+  "name": "Built to Destroy",
+  "dlc": "base",
+  "source": "Built to Destroy",
+  "form_id": "00137b02",
+  "description": "The flamer that burns twice as bright burns half as long. All weapons have +3% chance to Critical Hit, but equipment condition decays 15% faster.",
+  "benefits": "+3% Critical Chance",
+  "penalties": "+15% weapon wear"
+ },
+ {
+  "id": "claustrophobia",
+  "name": "Claustrophobia",
+  "dlc": "old_world_blues",
+  "source": "Claustrophobia",
+  "description": "You have a fear of enclosed spaces (probably because of the mutants that live there). You gain +1 to SPECIAL attributes when outside, but suffer -1 when indoors.",
+  "benefits": "+1 to all SPECIAL stats when outside",
+  "penalties": "-1 to all SPECIAL stats when indoors"
+ },
+ {
+  "id": "early_bird",
+  "name": "Early Bird",
+  "dlc": "old_world_blues",
+  "source": "Early Bird",
+  "description": "Hey early risers! Enjoy a +2 to each of your SPECIAL attributes from 6 am to 12 pm, but suffer -1 from 6 pm to 6 am when you're not at your best.",
+  "benefits": "+2 to SPECIAL stats from 6 a.m. to 12 p.m.",
+  "penalties": "-1 to SPECIAL stats from 6 p.m. to 6 a.m."
+ },
+ {
+  "id": "fast_shot",
+  "name": "Fast Shot",
+  "dlc": "base",
+  "source": "Fast Shot (Fallout: New Vegas)",
+  "form_id": "00135ec7",
+  "description": "While using Guns and Energy Weapons, you fire 20% more quickly but your shots are 20% less accurate.",
+  "benefits": "Fire Rate increases by 20%,; AP costs are decreased by 20% for all firearms with Energy Weapons and Guns",
+  "penalties": "Weapon Spread increases by 20%,; V.A.T.S Accuracy decreases by 20% for all with Energy Weapons and Guns"
+ },
+ {
+  "id": "four_eyes",
+  "name": "Four Eyes",
+  "dlc": "base",
+  "source": "Four Eyes",
+  "form_id": "00135ec4",
+  "description": "While wearing any type of glasses, you have +1 PER. Without glasses, you have -1 PER.",
+  "requires": "Perception less than 10 AND higher than 1",
+  "benefits": "+2 Perception when wearing glasses",
+  "penalties": "-1 to Base Perception"
+ },
+ {
+  "id": "good_natured",
+  "name": "Good Natured",
+  "dlc": "base",
+  "source": "Good Natured (Fallout: New Vegas)",
+  "form_id": "00137afe",
+  "description": "You're Good Natured at heart, more prone to solving problems with your mind than violence. You gain +5 to Barter, Medicine, Repair, Science, and Speech, but have -5 to Energy Weapons, Explosives, Guns, Melee Weapons, and Unarmed.",
+  "benefits": "+5 to Barter, Medicine, Repair, Science, and Speech",
+  "penalties": "-5 to Energy Weapons, Explosives, Guns, Melee Weapons, and Unarmed"
+ },
+ {
+  "id": "heavy_handed",
+  "name": "Heavy Handed",
+  "dlc": "base",
+  "source": "Heavy Handed (Fallout: New Vegas)",
+  "form_id": "00135ec5",
+  "description": "Your melee and unarmed attacks do more damage, but less critical hit damage.",
+  "benefits": "+20% damage (Melee and Unarmed only)",
+  "penalties": "-60% Critical damage. (Melee and Unarmed only)"
+ },
+ {
+  "id": "hoarder",
+  "name": "Hoarder",
+  "dlc": "old_world_blues",
+  "source": "Hoarder",
+  "description": "You gain +25 lbs. to your carrying capacity, but suffer a -1 to all attributes any time the weight you're carrying drops below 160 lbs.",
+  "benefits": "+25 lbs. is added to your total Carry Weight",
+  "penalties": "-1 to SPECIAL stats while your total carrying weight is below 160 lbs."
+ },
+ {
+  "id": "hot_blooded",
+  "name": "Hot Blooded",
+  "dlc": "old_world_blues",
+  "source": "Hot Blooded",
+  "description": "When your health drops below 50% you gain +10% more damage, but you also suffer -2 to your Agility and Perception attributes.",
+  "benefits": "+15% damage when your health is below 50%",
+  "penalties": "-2 to Perception and Agility when your health is below 50%"
+ },
+ {
+  "id": "kamikaze",
+  "name": "Kamikaze",
+  "dlc": "base",
+  "source": "Kamikaze (Fallout: New Vegas)",
+  "form_id": "00135f05",
+  "description": "You have +10 Action Points but your reckless nature causes you to have -2 Damage Threshold.",
+  "benefits": "+10 Action Points",
+  "penalties": "-2 Damage Threshold, -15% Damage Resistance"
+ },
+ {
+  "id": "logan_s_loophole",
+  "name": "Logan's Loophole",
+  "dlc": "old_world_blues",
+  "source": "Logan's Loophole",
+  "description": "No one's going to put you out to pasture 'cause you're going to stay young (and level 30) forever! You'll never again become addicted to chems, and they'll last twice as long... but after 30 you can kiss experience, perks, and skill points goodbye!",
+  "requires": "Level less than 30",
+  "benefits": "Chems last twice as long; Addiction rates are set to 0%",
+  "penalties": "Level cap locks at Level 30"
+ },
+ {
+  "id": "loose_cannon",
+  "name": "Loose Cannon",
+  "dlc": "base",
+  "source": "Loose Cannon",
+  "form_id": "00164ed1",
+  "description": "From [[Frag grenade (Fallout: New Vegas)",
+  "benefits": "Thrown weapons' throw rate (rate of fire) +30% faster",
+  "penalties": "Thrown weapons have -25% range (velocity)"
+ },
+ {
+  "id": "skilled",
+  "name": "Skilled",
+  "dlc": "old_world_blues",
+  "source": "Skilled (Old World Blues)",
+  "description": "You're skilled, but not experienced. You gain +5 points to every skill, but you suffer -10% from experience gained from now on.",
+  "benefits": "+5 to all skills",
+  "penalties": "-10% to Experience Points gained"
+ },
+ {
+  "id": "small_frame",
+  "name": "Small Frame",
+  "dlc": "base",
+  "source": "Small Frame (Fallout: New Vegas)",
+  "form_id": "00135ec6",
+  "description": "Due to your small size, you have +1 Agility but your limbs are more easily crippled (25% extra limb damage).",
+  "requires": "Agility less than 10",
+  "benefits": "+1 Agility",
+  "penalties": "+25% Damage to limbs"
+ },
+ {
+  "id": "trigger_discipline",
+  "name": "Trigger Discipline",
+  "dlc": "base",
+  "source": "Trigger Discipline",
+  "form_id": "00135ec8",
+  "description": "While using Guns and Energy Weapons, you fire 20% more slowly but are 20% more accurate.",
+  "benefits": "+20% accuracy with Guns and Energy Weapons",
+  "penalties": "-20% fire rate with guns and energy weapons; +20% AP required per shot"
+ },
+ {
+  "id": "wild_wasteland",
+  "name": "Wild Wasteland",
+  "dlc": "base",
+  "source": "Wild Wasteland",
+  "form_id": "000ed568",
+  "description": "Wild Wasteland unleashes the most bizarre and silly elements of post-apocalyptic America. Not for the faint of heart or the serious of temperament.",
+  "benefits": "Adds additional \"wacky\" content and modifies existing content and random encounters",
+  "penalties": "YCS/186 becomes unobtainable"
+ }
+]

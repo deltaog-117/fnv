@@ -1,0 +1,636 @@
+{
+ "id": "vbscaptaingilles",
+ "speaker_name": "Gilles",
+ "source": "VBSCaptainGilles.txt",
+ "topics": [
+  {
+   "key": "captgillesflag",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Confused and annoyed by a spectacularly dumb question} Of course I'm aware. It's a distress call. This camp is in bad shape, and if we don't get relief soon, I don't know what will happen.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "{Worried} It's a distress call. This camp is in bad shape, and if we don't get relief soon, I don't know what will happen.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "CaptGillesFlag",
+   "prompt": "Why is the flag upside down?"
+  },
+  {
+   "key": "captaingillesaid",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Relieved} At this point, I'll take anything you can give me. We need more troops, fresh supplies, and medical relief.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "As if that wasn't enough, someone's been coming out of the mountains at night, stealing supplies and picking off my people.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Relieved} At this point, I'll take anything you can give me. We need more troops, fresh supplies, and medical relief.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Worried} Someone's been coming out of the mountains at night, stealing supplies and picking off my people.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaptainGillesAid",
+   "prompt": "What can I do to help?"
+  },
+  {
+   "key": "captaingillescamp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is the Bitter Springs refugee camp. We've been maintaining it for a few years now, ever since Caesar's Legion started seriously pushing west.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "Most of the people here were displaced by the Legion's advance. At first there weren't many, but lately it's been more than we can handle.",
+     "emotion": "pained",
+     "intensity": 20
+    }
+   ],
+   "topic": "CaptainGillesCamp",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "captaingillescamp_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Grateful} Thanks to your help, I think Bitter Springs has a real shot at surviving. I can't offer you much of a reward, but know that the NCR is very grateful.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaptainGillesCamp",
+   "prompt": "Are things going better at the camp now?"
+  },
+  {
+   "key": "captaingillescamp_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Grateful} Thanks to your help, I think Bitter Springs has a real shot at surviving. Thank you again.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaptainGillesCamp",
+   "prompt": "How are things around the camp?"
+  },
+  {
+   "key": "captaingillesoscar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You did? Who was it? Any information you can give me would be a big help for my reports.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaptainGillesOscar",
+   "prompt": "I've dealt with the attacks on the camp. They won't be a problem any more."
+  },
+  {
+   "key": "captaingillesoscar_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I appreciate the information, but I really wasn't kidding when I said I didn't have the manpower. If you could deal with him, I'd be in your debt.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "CaptainGillesOscar",
+   "prompt": "I found your attacker. There's a Great Khan hiding out in the mountains. I can lead your men there."
+  },
+  {
+   "key": "captaingillesradioactivesupplies",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where did you get this? You know what, it doesn't even matter. Thank you. This will be a tremendous help.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "CaptainGillesRadioactiveSupplies",
+   "prompt": "<Lie, give radioactive supplies> These supplies should be \"helpful.\" Enjoy them."
+  },
+  {
+   "key": "captaingillesradioactivesuppliesscience",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] We do have some spare Rad-X in the supply tent. That might work. Thank you.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "CaptainGillesRadioactiveSuppliesScience",
+   "prompt": "These supplies are irradiated, but if we filter them with Rad-X they'll be safe."
+  },
+  {
+   "key": "captaingillesradioactivesuppliesscience_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You know, I appreciate the help but... we'll pass on those. Thanks.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "CaptainGillesRadioactiveSuppliesScience",
+   "prompt": "These supplies are radioactive, so swallow lots of lead before you eat them."
+  },
+  {
+   "key": "captaingillessupplies",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where did you get these? You know what, it doesn't even matter. Thank you. These will be a tremendous help.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaptainGillesSupplies",
+   "prompt": "I found these supply caches in some caves up the mountain. Maybe they'll help."
+  },
+  {
+   "key": "captaingillessupplies_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where did you get this? You know what, it doesn't even matter. It doesn't completely solve our problems, but it goes a long way.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "CaptainGillesSupplies",
+   "prompt": "I found this supply cache in a cave up the mountain. Maybe it will help."
+  },
+  {
+   "key": "captaingillessupplies_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Again, thank you, this is a huge help.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "CaptainGillesSupplies",
+   "prompt": "I found another supply cache for the camp."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're back. Any progress on saving our skins?",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "{Awed} You're some kind of hero, huh? I heard about how you saved the President's life. That's incredible.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "You've heard the news about President Kimball? {Relieved} Thank God he survived, but I hope the Rangers hunt down the miserable traitor that tried to kill him.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Shocked, numb} I just can't believe it... the President's dead. It doesn't even feel real.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Furious} You've heard the news about President Kimball? If I got my hands on the traitor that killed him....",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Frightened} So now it's come to open assassination attempts against the President? Hard to believe.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "{Hugely relieved} Thank God. Please tell me you're here to relieve me.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "{Impressed, relieved} Never expected someone as famous as you to turn up here. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Mildly impressed} I've been sending requests for relief for months now. Didn't think they'd send you, though.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "{Less than thrilled} I really hope you're not here to cause trouble.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "{Uncertain} Oh. I've heard of you. What do you want?",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "{Cold} I'll give you this, you've got a lot of guts just walking in here like this.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Stiff, really doesn't like the player} What do you want?",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Frustrated, busy} If this isn't a crisis situation, you'd better have a damn good reason for interrupting me.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Anything else I can do for you?",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{Cautious} What now?",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "{Cold} What?",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "You've been a huge help here. Thanks to you, I think we can hold this camp together.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Was there something else?",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms36vbscaptaingillestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Frustrated} I don't know. The NCR's stretched thin as it is. I've put in requests at Camp Golf, Forlorn Hope, McCarran - but things are no better there.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe if their situations improved, they'd have men to spare. Or maybe they'd listen to someone with a reputation for helping the NCR.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic000",
+   "prompt": "Where would you get new troops from?"
+  },
+  {
+   "key": "vms36vbscaptaingillestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Frustrated} Food, blankets, clothes, tools. The army used to ship out caches of supplies regularly, but with the Legion so active we haven't gotten any in months.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic001",
+   "prompt": "What kind of supplies?"
+  },
+  {
+   "key": "vms36vbscaptaingillestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll want to talk to Lieutenant Markland about that, he's our medical officer. He should be down at the medical tent now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic002",
+   "prompt": "How can I help with medical supplies?"
+  },
+  {
+   "key": "vms36vbscaptaingillestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Worried, a little afraid} It started about six months ago. At first it was just supplies going missing - we figured it was refugees. Then people started dying.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Always a single bullet to the head, always from extreme range. We've lost eight refugees and three soldiers to this son of a bitch.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "We know he must be hiding out in one of the caves up in the mountains, but I don't have enough men to send out looking for him!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic003",
+   "prompt": "What's this about someone killing refugees?"
+  },
+  {
+   "key": "vms36vbscaptaingillestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Stressed} Okay, but make it quick - I'm very busy here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic004",
+   "prompt": "I'd like to ask about something else."
+  },
+  {
+   "key": "vms36vbscaptaingillestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This whole area used to be a Great Khan encampment before they relocated to Red Rock Canyon. We just haven't had the manpower to clean it all up yet.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic005",
+   "prompt": "Why are there so many Great Khan tags around the camp?"
+  },
+  {
+   "key": "vms36vbscaptaingillestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sarcastic} Thanks. Your concern is touching.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic006",
+   "prompt": "I see. Well, that's too bad. Good luck."
+  },
+  {
+   "key": "vms36vbscaptaingillestopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Grateful} That's very generous of you. I appreciate it.",
+     "emotion": "happy",
+     "intensity": 70
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic007",
+   "prompt": "I don't need any reward, just keep these people fed and healthy."
+  },
+  {
+   "key": "vms36vbscaptaingillestopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pleased} Here, take this. I hope you put it to good use.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic008",
+   "prompt": "Whatever you can spare would be a big help."
+  },
+  {
+   "key": "vms36vbscaptaingillestopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Cold} If a reward is all you're concerned with, here. {Bitter} Enjoy it.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic009",
+   "prompt": "I dragged myself all over Hell's half-acre for you, I expect something substantial!"
+  },
+  {
+   "key": "vms36vbscaptaingillestopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Stressed} Sure, but make them quick.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic010",
+   "prompt": "I've got other questions."
+  },
+  {
+   "key": "vms36vbscaptaingillestopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, just make them quick.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS36VBSCaptainGillesTopic011",
+   "prompt": "Not yet, but I had some questions."
+  },
+  {
+   "key": "vms37vbscaptaingillestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Suddenly reserved} Ah. I should have expected as much. There's still a lot of bad blood between the Khans and the NCR, ever since the incident here.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic000",
+   "prompt": "It was a Great Khan named Oscar Velasco. His family was killed by the NCR, and he wanted revenge."
+  },
+  {
+   "key": "vms37vbscaptaingillestopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Evasive} Really? Well, this canyon used to be a Great Khan stronghold, I suppose that explains why he was able to evade us so easily.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic000",
+   "prompt": "It was a Great Khan raider. He had a base camp in a cave up in the mountains."
+  },
+  {
+   "key": "vms37vbscaptaingillestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pointed emphasis} The incident, yes. It was a tragic mistake, but the NCR has done everything it can to make amends since then.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic001",
+   "prompt": "You mean the massacre three years ago?"
+  },
+  {
+   "key": "vms37vbscaptaingillestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Reluctant} About three years ago, this canyon was the main encampment for the Great Khans. NCR's 1st Recon tracked them here after a raid and made an attack.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "There was a communication mix-up that resulted in some noncombatants being killed. It was a tragic mistake, but we've done all we can to make amends.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic002",
+   "prompt": "What incident?"
+  },
+  {
+   "key": "vms37vbscaptaingillestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We provided medical aid to the wounded - {emphasis} all the wounded - and permitted the Khans to resettle at Red Rock Canyon.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic003",
+   "prompt": "Like what? It looks to me like the NCR ran the Khans out of Bitter Springs altogether."
+  },
+  {
+   "key": "vms37vbscaptaingillestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Grateful} I don't know how you did it, but thank you.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic004",
+   "prompt": "Well, it's taken care of now. I convinced him to leave Bitter Springs alone."
+  },
+  {
+   "key": "vms37vbscaptaingillestopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Grateful, a little sad} I'm glad it's taken care of, but still, I wish it could have been resolved without violence. There's too much bad blood there already.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic004",
+   "prompt": "Well, it's taken care of now. He's dead."
+  },
+  {
+   "key": "vms37vbscaptaingillestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Relieved} Sure. What do you need?",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic005",
+   "prompt": "That's very noble of you. I'd like to talk about something else though."
+  },
+  {
+   "key": "vms37vbscaptaingillestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Reluctant} About three years ago, NCR's 1st Recon launched an attack on the Khan encampment here.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "There was a communication mix-up that resulted in some noncombatants being killed. I guess he was still bitter about it.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "It was a tragic mistake, but we've done all we can to make amends.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS37VBSCaptainGillesTopic006",
+   "prompt": "Any idea why a Great Khan would be so far from Red Rock Canyon?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try not to do anything too disruptive, okay?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good riddance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "captain_gilles"
+}

@@ -1,0 +1,566 @@
+{
+ "page": "CrMisterGutsy.txt",
+ "speaker": "Mister Gutsy (Fallout 3)",
+ "topics": [
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Another glorious day in this man's army!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "AcceptYield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Do that again and I'll put my foot so far up your ass you'll cough up boot polish!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AcceptYield"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What is your major malfunction, maggot?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You make me sick, you worthless scumbag.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Eat hot lead, you commie bastard!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Ready to die for your country?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Pain is just weakness leaving the body!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Today's a hell of day to die, commie!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Come on, people, give 'em hell!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "How do you like that, you mother-loving commie!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Made in the U.S.A.!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "No surrender!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Is that the best you can do?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I'm just getting warmed up! Hoo-ah!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "There's nothing I like better than the smell of plasma in the morning!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "What's the matter, you pansy ass pinko? Getting tired?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "We are lean! We are mean!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I have a personal message for you from Uncle Sam!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Running will only make the pain last longer!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Kill them all! God will understand.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "There's nothing I like better than making some other poor bastard die for his country.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Now you're starting to piss me off.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "Death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Tell my mama I've done my best.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Pin my medals upon my chest.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Box me up and ship me home.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Death"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You had better remove yourself from this area before I am forced to declare you an enemy of the U.S. of A.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This area is under the protection of the U.S. army. Remove yourself or be prepared to defend yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're not allowed in here. Don't give me an excuse to use my weapon on you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do not push your luck any further.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll advise you again to leave immediately or I cannot be responsible for the consequences.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're taking your life into your own hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "Hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hit"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You are the lowest form of commie scumbag I've ever had the misfortune to lay eyes on!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You seem to need an object lesson in democracy!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I have a personal message for you from Uncle Sam!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "Pickpocket",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Please tell me that you did not just do what I think you did!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Pickpocket"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I thought I had seen every species of moronic petty bullshit, but you've just topped the list. Congratulations.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Do you have no respect for private property, you slimy little commie bastard?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Did you not realize that I have eyes in the back of my head?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Are you afraid of me? You should be because I'm going to kick your ass when I find you!",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Step forward and identify yourself!",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Do you think you can hide from me?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Do you think you can hide from me?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I'm starting to get angry. You would not like me when I'm angry.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Are you playing games with me, goddammit?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I cannot wait to find you so I can kill you as a personal favor to Uncle Sam.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You're gonna learn how Uncle Sam deals with commie maggots!",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "You are about to be introduced to the U.S. army!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Kill that son of a bitch!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You just made my day! Opening fire!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like this is my lucky day.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Since you don't seem willing to do the world a favor and kill yourself, I guess I'm going to have to do it for you.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Another glorious day in the U.S. army.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "False alarm. Stand down, people.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing I like better than a little R&R on Uncle Sam's dime.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Somebody find me something to shoot at!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Who's got a target?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Restore contact with the enemy, goddammit!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "That's how we do things in the U.S. army! Hoo-ah!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Time to hit the showers!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Another glorious day in the U.S. army!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You better run, you commie-loving bastard!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Who's got a target?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Come on, people, I need a target!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You cannot hide from me, you commie maggot!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You can run, but you can't hide!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Your worthless hide is mine!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Typical chickenshit commie maneuver.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "The enemy has retired before the awesome might of the U.S. army.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "This battlefield now belongs to Uncle Sam!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Is that someone who needs me to kick their ass?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Move it out, people. I want this place searched top to bottom.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Who's ready to have their ass kicked?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Ready to die for your country, you commie son of a bitch?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Kill them all and let God sort them out!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Every day is a good day to die!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombat"
+  }
+ ]
+}

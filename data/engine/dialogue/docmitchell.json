@@ -1,0 +1,2753 @@
+{
+ "id": "docmitchell",
+ "speaker_name": "Doc Mitchell",
+ "source": "DocMitchell.txt",
+ "topics": [
+  {
+   "key": "doctoraddiction",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. I can help you out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddiction",
+   "prompt": "I think I might be addicted to something."
+  },
+  {
+   "key": "doctoraddictionno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddictionNO",
+   "prompt": "I think I'll tough it out."
+  },
+  {
+   "key": "doctoraddictionyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay... all done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddictionYES",
+   "prompt": "Yes, cure me."
+  },
+  {
+   "key": "doctormedical",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't see nothing wrong with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't look like nothing too serious. Lemme patch you up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sure. I can help you out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical",
+   "prompt": "I'm hurt. I need help, Doc."
+  },
+  {
+   "key": "doctormedical33yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Hold still.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical33YES",
+   "prompt": "Okay, fix me. Here's 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "key": "doctormedical33yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, come back when you do. I'll be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical33YES",
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "key": "doctormedical66yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Hold still.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical66YES",
+   "prompt": "Okay, fix me. Here's 75 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "key": "doctormedical66yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, come back when you do. I'll be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical66YES",
+   "prompt": "Sorry, I don't have 75 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "key": "doctormedical99yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Hold still.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical99YES",
+   "prompt": "Okay, fix me. Here's 50 caps.",
+   "label": "All right, fix me."
+  },
+  {
+   "key": "doctormedical99yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, come back when you do. I'll be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical99YES",
+   "prompt": "Sorry, I don't have 50 caps.",
+   "label": "All right, fix me."
+  },
+  {
+   "key": "doctormedicalno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedicalNO",
+   "prompt": "On second thought, I'll be fine."
+  },
+  {
+   "key": "doctorradiation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. I can help you out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiation",
+   "prompt": "Can you heal my radiation?"
+  },
+  {
+   "key": "doctorradiationno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationNO",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "doctorradiationyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay... all done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationYES",
+   "prompt": "Here's your 100 caps. Do it.",
+   "label": "Do it."
+  },
+  {
+   "key": "doctorradiationyes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, come back when you do. I'll be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationYES",
+   "prompt": "I don't have 100 caps.",
+   "label": "Do it."
+  },
+  {
+   "key": "doctorsupplies",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorSupplies",
+   "prompt": "I need medical supplies."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We can chat later. The sooner you finish these tests the sooner you can get out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's important that you're relaxed for this next test. Please, have a seat.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right. I'm gonna say a word. I want you to say the first thing that comes to mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dog.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here. These are yours. Was all you had on you when you was brought in.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I hope you don't mind but I gave the note a look. I thought it might help me find a next of kin. But it was just something about a platinum chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I expect you'll be wanting to go outside after being cooped up for so long, but if you have any questions, I'll answer what I can.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back. I had hoped you wouldn't need to come see me again so soon. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How're you holding up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do that someplace else!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You tryin' to get me killed?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How about you line that up on a tin can instead?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't even kid about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope I don't forget that's there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hard for me to step lightly with a bum leg.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Out of the way!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hot potato!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "vcg01docmitchelltopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "House.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic000",
+   "prompt": "Cat."
+  },
+  {
+   "key": "vcg01docmitchelltopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "House.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic001",
+   "prompt": "Feed."
+  },
+  {
+   "key": "vcg01docmitchelltopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "House.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic002",
+   "prompt": "Newspaper."
+  },
+  {
+   "key": "vcg01docmitchelltopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "House.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic003",
+   "prompt": "Train."
+  },
+  {
+   "key": "vcg01docmitchelltopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "House.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic004",
+   "prompt": "Kick."
+  },
+  {
+   "key": "vcg01docmitchelltopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "House.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic005",
+   "prompt": "Dinner."
+  },
+  {
+   "key": "vcg01docmitchelltopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Night.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic006",
+   "prompt": "Shelter."
+  },
+  {
+   "key": "vcg01docmitchelltopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Night.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic007",
+   "prompt": "Burglarize."
+  },
+  {
+   "key": "vcg01docmitchelltopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Night.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic008",
+   "prompt": "Renovate."
+  },
+  {
+   "key": "vcg01docmitchelltopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Night.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic009",
+   "prompt": "Target."
+  },
+  {
+   "key": "vcg01docmitchelltopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Night.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic010",
+   "prompt": "Investment."
+  },
+  {
+   "key": "vcg01docmitchelltopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Night.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic011",
+   "prompt": "Demolish."
+  },
+  {
+   "key": "vcg01docmitchelltopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Enemy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic012",
+   "prompt": "Campfire."
+  },
+  {
+   "key": "vcg01docmitchelltopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bandit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic013",
+   "prompt": "Dream."
+  },
+  {
+   "key": "vcg01docmitchelltopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bandit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic014",
+   "prompt": "Shroud."
+  },
+  {
+   "key": "vcg01docmitchelltopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bandit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic015",
+   "prompt": "Sleep."
+  },
+  {
+   "key": "vcg01docmitchelltopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bandit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic016",
+   "prompt": "Treasure."
+  },
+  {
+   "key": "vcg01docmitchelltopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bandit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic017",
+   "prompt": "Silencer."
+  },
+  {
+   "key": "vcg01docmitchelltopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Light.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic018",
+   "prompt": "Bribe."
+  },
+  {
+   "key": "vcg01docmitchelltopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Light.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic019",
+   "prompt": "Crush."
+  },
+  {
+   "key": "vcg01docmitchelltopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Light.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic020",
+   "prompt": "Stab."
+  },
+  {
+   "key": "vcg01docmitchelltopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Light.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic022",
+   "prompt": "Swiss cheese."
+  },
+  {
+   "key": "vcg01docmitchelltopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Light.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic023",
+   "prompt": "Vaporize."
+  },
+  {
+   "key": "vcg01docmitchelltopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Light.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic024",
+   "prompt": "Reasonable."
+  },
+  {
+   "key": "vcg01docmitchelltopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mother.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic025",
+   "prompt": "Dark."
+  },
+  {
+   "key": "vcg01docmitchelltopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mother.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic026",
+   "prompt": "Heavy."
+  },
+  {
+   "key": "vcg01docmitchelltopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mother.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic027",
+   "prompt": "Beam."
+  },
+  {
+   "key": "vcg01docmitchelltopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mother.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic028",
+   "prompt": "Flash."
+  },
+  {
+   "key": "vcg01docmitchelltopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mother.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic029",
+   "prompt": "Inspiration."
+  },
+  {
+   "key": "vcg01docmitchelltopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mother.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic030",
+   "prompt": "Torch."
+  },
+  {
+   "key": "vcg01docmitchelltopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Now I got a few statements. I want you to tell me how much they sound like something you'd say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First one. \"Conflict just ain't in my nature.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic031",
+   "prompt": "Caretaker."
+  },
+  {
+   "key": "vcg01docmitchelltopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Now I've got a few statements. I want you to tell me how much they sound like something you'd say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First one. \"Conflict just ain't in my nature.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic032",
+   "prompt": "Genes."
+  },
+  {
+   "key": "vcg01docmitchelltopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Now I've got a few statements. I want you to tell me how much they sound like something you'd say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First one. \"Conflict just ain't in my nature.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic033",
+   "prompt": "Cookie jar."
+  },
+  {
+   "key": "vcg01docmitchelltopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Now I've got a few statements. I want you to tell me how much they sound like something you'd say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First one. \"Conflict just ain't in my nature.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic034",
+   "prompt": "Tantrum."
+  },
+  {
+   "key": "vcg01docmitchelltopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Now I've got a few statements. I want you to tell me how much they sound like something you'd say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First one. \"Conflict just ain't in my nature.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic035",
+   "prompt": "Tattle."
+  },
+  {
+   "key": "vcg01docmitchelltopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Now I've got a few statements. I want you to tell me how much they sound like something you'd say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First one. \"Conflict just ain't in my nature.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic036",
+   "prompt": "Regret."
+  },
+  {
+   "key": "vcg01docmitchelltopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm. Sometimes when you give tests like this, you learn more than you was hoping for, and I reckon that ain't always the best thing.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "But I guess maybe it explains a thing or two about your predicament.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay. Now I've got a few statements. I want you to tell me how much they sound like something you'd say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First one. \"Conflict just ain't in my nature.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic037",
+   "prompt": "Human shield."
+  },
+  {
+   "key": "vcg01docmitchelltopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ain't given to relying on others for support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic038",
+   "prompt": "Strongly agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ain't given to relying on others for support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic039",
+   "prompt": "Agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ain't given to relying on others for support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic040",
+   "prompt": "No opinion."
+  },
+  {
+   "key": "vcg01docmitchelltopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ain't given to relying on others for support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic041",
+   "prompt": "Disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ain't given to relying on others for support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic042",
+   "prompt": "Strongly disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm always fixing to be the center of attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic043",
+   "prompt": "Strongly agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm always fixing to be the center of attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic044",
+   "prompt": "Agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm always fixing to be the center of attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic045",
+   "prompt": "No opinion."
+  },
+  {
+   "key": "vcg01docmitchelltopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm always fixing to be the center of attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic046",
+   "prompt": "Disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm always fixing to be the center of attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic047",
+   "prompt": "Strongly disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm slow to embrace new ideas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic048",
+   "prompt": "Strongly agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm slow to embrace new ideas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic049",
+   "prompt": "No opinion."
+  },
+  {
+   "key": "vcg01docmitchelltopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm slow to embrace new ideas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic050",
+   "prompt": "Agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm slow to embrace new ideas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic051",
+   "prompt": "Disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm slow to embrace new ideas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic052",
+   "prompt": "Strongly disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I charge in to deal with my problems head-on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic053",
+   "prompt": "Strongly agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I charge in to deal with my problems head-on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic054",
+   "prompt": "Agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I charge in to deal with my problems head-on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic055",
+   "prompt": "No opinion."
+  },
+  {
+   "key": "vcg01docmitchelltopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I charge in to deal with my problems head-on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic056",
+   "prompt": "Disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I charge in to deal with my problems head-on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic057",
+   "prompt": "Strongly disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Almost done here. What do you say you have a look at this? Tell me what you see.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic058",
+   "prompt": "Strongly agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Almost done here. What do you say you have a look at this? Tell me what you see.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic059",
+   "prompt": "Agree."
+  },
+  {
+   "key": "vcg01docmitchelltopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Almost done here. What do you say you have a look at this? Tell me what you see.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic060",
+   "prompt": "No opinion."
+  },
+  {
+   "key": "vcg01docmitchelltopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Almost done here. What do you say you have a look at this? Tell me what you see.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic061",
+   "prompt": "Disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Almost done here. What do you say you have a look at this? Tell me what you see.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic062",
+   "prompt": "Strongly disagree."
+  },
+  {
+   "key": "vcg01docmitchelltopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. How about this one?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic063",
+   "prompt": "A broken chain."
+  },
+  {
+   "key": "vcg01docmitchelltopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. How about this one?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic064",
+   "prompt": "A chemical reaction."
+  },
+  {
+   "key": "vcg01docmitchelltopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. How about this one?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic065",
+   "prompt": "A shadow in a doorframe."
+  },
+  {
+   "key": "vcg01docmitchelltopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. How about this one?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic066",
+   "prompt": "An oozing wound."
+  },
+  {
+   "key": "vcg01docmitchelltopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. How about this one?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic067",
+   "prompt": "An angry two-headed ant."
+  },
+  {
+   "key": "vcg01docmitchelltopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Last one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic068",
+   "prompt": "I see a priceless work of art."
+  },
+  {
+   "key": "vcg01docmitchelltopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Last one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic069",
+   "prompt": "It's some piece of space-age technology."
+  },
+  {
+   "key": "vcg01docmitchelltopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Last one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic070",
+   "prompt": "A ship at sea."
+  },
+  {
+   "key": "vcg01docmitchelltopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Last one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic071",
+   "prompt": "I'm too embarrassed to say what it looks like."
+  },
+  {
+   "key": "vcg01docmitchelltopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's all she wrote.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I don't have nothing to compare it to, so maybe you'd better just have a look at the results. See if it all seems right to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Very interesting. Maybe a little disturbing, but interesting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't have nothing to compare it to, so maybe you'd better just have a look at the results. See if it all seems right to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic072",
+   "prompt": "A light in the darkness."
+  },
+  {
+   "key": "vcg01docmitchelltopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's all she wrote.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I don't have nothing to compare it to, so maybe you'd better just have a look at the results. See if it all seems right to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic073",
+   "prompt": "A bearded man."
+  },
+  {
+   "key": "vcg01docmitchelltopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's all she wrote.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I don't have nothing to compare it to, so maybe you'd better just have a look at the results. See if it all seems right to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic074",
+   "prompt": "A mushroom cloud."
+  },
+  {
+   "key": "vcg01docmitchelltopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's all she wrote.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I don't have nothing to compare it to, so maybe you'd better just have a look at the results. See if it all seems right to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic075",
+   "prompt": "A head on a pillow."
+  },
+  {
+   "key": "vcg01docmitchelltopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, if you're heading back out there, you ought to have this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They call it a Pip-Boy. I grew up in one of them vaults they made before the war. We all got one.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Ain't much use to me now, but you might want such a thing, after what you been through. I know what it's like, having something taken from you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And put this on, too, so the locals don't pick on you for lacking modesty. Was my wife's.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I think she was about your size, and she hardly wore it after we left the vault. Felt it was too brazen.",
+     "emotion": "happy",
+     "intensity": 65
+    },
+    {
+     "text": "And put this on, too, so the locals don't pick on you for lacking modesty. Never was much my style anyway.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "You should talk to Sunny Smiles before you leave town. She can help you learn to fend for yourself in the desert. She'll likely be at the saloon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I reckon some of the other folks at the saloon might be able to help you out, too. And the metal fella, Victor, who pulled you outta your grave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, you ever get hurt out there, you come right back. I'll fix you up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But try not to get killed anymore.",
+     "emotion": "happy",
+     "intensity": 65
+    },
+    {
+     "text": "Oh, before I forget, one of the townsfolk dropped this off. Said they found it near where Victor found you, and guessed it might be yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, before I forget, one of the townsfolk dropped these off. Said they found them near where Victor found you, and guessed they might be yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic076",
+   "prompt": "<Doc Outro>"
+  },
+  {
+   "key": "vcg01docmitchelltopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't mention it. It's what I'm here for.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic083",
+   "prompt": "Thanks for patching me up, Doc."
+  },
+  {
+   "key": "vcg01docmitchelltopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Didn't have much choice, I'm afraid. But I understand the sentiment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocMitchellTopic084",
+   "prompt": "You shouldn't have gone through my stuff."
+  },
+  {
+   "key": "vendinggoodsprings",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating} Travelers continued to stop by Goodsprings Source for water on the Long 15, but rarely would anyone venture into the ruins of Goodsprings itself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Those who did were almost always tourists, come to visit the graveyard where the Courier \"rose from the dead.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Goodsprings saw more trade along I-15 after NCR gained control of the Mojave Wasteland, but with that came a heavy burden of the Republic's taxes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Some old-timers, unable to handle the cost, were forced to move on, grumbling all the while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} The Legion, preoccupied with its acquisition of New Vegas, scarcely took notice of the town of Goodsprings.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Many locals moved on, fearful of Caesar's long shadow. Only the old and the stubborn remained.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} After Mr. House gained control of New Vegas, he sent a Securitron to Goodsprings as a token of appreciation for helping the Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Victor was a mixed blessing, however, as he continually monitored the town for Mr. House.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} With New Vegas' independence formally declared, Goodsprings thrived.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} More travelers stopped by Goodsprings on their way to and from the Strip, and the locals grew prosperous from the traffic.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingGoodsprings",
+   "prompt": "VEndingGoodsprings"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellspeechcheck",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Of course. You been through a lot. Ain't much, but these'll do you right if the pain flares up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellSpeechCheck",
+   "prompt": "Isn't it customary for a doctor to prescribe follow-up medication?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellspeechcheck_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Of course. You been through a lot. Ain't much, but these'll do you right if the pain flares up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellSpeechCheck",
+   "prompt": "My wounds still hurt a little. Can you give me something for the pain, Doc?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellspeechcheck_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Of course. You been through a lot. Ain't much, but these'll do you right if the pain flares up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellSpeechCheck",
+   "prompt": "I'm in a *lot* of pain, Doc. Can you spare any more?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellspeechcheck_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry. I'm afraid I'm all out of lollipops.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellSpeechCheck",
+   "prompt": "Don't I at least get a lollipop before leaving, Doc?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltellmeaboutyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I already told you I came from a vault. After that, was a traveling doctor for a spell.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seemed like a good idea at the time. Most folks out here ain't educated, so people with medical knowhow are hard to come by.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Found that I could help a lot of people with what I knew, and that was all right with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually, I went back and married my childhood sweetheart and that was the end of my traveling days. Didn't miss it none then. Still don't.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellTellMeAboutYou",
+   "prompt": "Tell me about yourself, Doc.",
+   "label": "VCG01DocMitchellTellMeAboutYou"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltowninfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, there's a general store just up the road. Run by a fella named Chet. He don't got nothing fancy, but he's got your basics covered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're looking to wet your whistle, just past Chet's is the Prospector Saloon. The bartender there, Trudy, knows everyone in town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Other than that, there's not much to see. Just people trying to scratch out a living.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellTownInfo",
+   "prompt": "What else can you tell me about Goodsprings?",
+   "label": "VCG01DocMitchellTownInfo"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltowninfo_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, there's a general store just up the road. Run by a fella named Chet. He don't got nothing fancy, but he's got your basics covered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're looking to wet your whistle, just past Chet's is the Prospector Saloon. The bartender there, Trudy, knows everyone in town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Other than that, there's not much to see. Just people trying to scratch out a living.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellTownInfo",
+   "prompt": "Could you give me the rundown on Goodsprings one more time?",
+   "label": "VCG01DocMitchellTownInfo"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellwhereisthis",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This here's Goodsprings. Named after the water we got here, just down the road to the southeast. Goodsprings Source, they call it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a quiet town, and that's how we like it. We don't go looking for trouble, though occasionally it sees fit to come looking for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellWhereIsThis",
+   "prompt": "What town is this?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellwhorescued",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That'd be Victor. Curious fella. Sort of odd. And I don't just mean 'cause he's a robot. I couldn't tell you much about him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's real friendly, don't get me wrong. You just get the sense that ain't the whole picture. Just a feeling.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keeps to himself, mostly. You want to know more about him, you'll have to ask him yourself. He has a shack on the southern edge of town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellWhoRescued",
+   "prompt": "Who was it that rescued me?",
+   "label": "VCG01DocMitchellWhoRescued"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellwhoshotme",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I didn't see him or the men with him. You might ask around town, though. Could be someone saw which way they was headed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your best bet would probably be Trudy, the bartender at the saloon up the road. If anyone saw anything, she'd know about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodSpringsDocMitchellWhoShotMe",
+   "prompt": "Do you know anything about the man that shot me?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellshootoutbags",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ain't got much, but it'll do you more good out there than it will in here. Take what I got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellShootoutBags",
+   "prompt": "They'll be using explosives. Do you have something for more serious injuries?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchellshootouthelp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Seems like wherever I go it's always the same. Folks just never leave each other alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not much good in a fight, with my bum leg. And my supplies are scarce. But I'll give you what I can spare.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellShootoutHelp",
+   "prompt": "The town is going to be attacked by bandits. Anything you can do to help?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, ain't we all, right? That was a long time ago. {Lying} I don't pay it much mind anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellTopic000",
+   "prompt": "You said before you had something taken from you."
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Bitter, attempting to hide it} Yep. He sure did. Wanted himself a hotel, and to make sure once he made the change there'd never be any going back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We didn't get a say. Don't know how you'd argue with a fella like that anyways, everywhere and nowhere all at once.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So just like that, we was all homeless. Went our separate ways, and that was all she wrote.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellTopic001",
+   "prompt": "I saw your old vault on the Strip. Vault 21, right? Mr. House filled it with concrete?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure? What kind of injuries are we talking about?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Has this person's condition worsened? What are the symptoms?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellTopic002",
+   "prompt": "<Lie> I'll need all the medical supplies you can spare for an injured man down by the highway."
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Must not be that serious, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellTopic003",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, that does sound bad. Here, take these - it should be enough. Good luck!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellTopic004",
+   "prompt": "Breathing is uneven, and he's coughing up blood. Possible internal injuries.",
+   "label": "< Medicine 25 >"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That does sound messy, but not too bad. I can't spare supplies for cuts and bruises.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellTopic004",
+   "prompt": "Well, there's lots of blood. And bruises. And maybe some other stuff, too.",
+   "label": "< Medicine 25 >"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Eventually we made our way out here. But uh...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, when folks spend their lives in isolation, sometimes that ain't the best of things for learning to fight off germs.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "We was going to California, but Goodsprings was as far as we got. After she passed, wasn't no reason to keep going.",
+     "emotion": "sad",
+     "intensity": 45
+    },
+    {
+     "text": "I stayed so I could keep close to her.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellTopic005",
+   "prompt": "Is that when you settled out here with your wife?"
+  },
+  {
+   "key": "vfreeformgoodspringsdocmitchelltopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What'd you have in mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsDocMitchellTopic006",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You take care, now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vcg01docfarewelltransition",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "All right. I guess that about does it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come with me. I'll see you out.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VCG01DocFarewellTransition",
+   "prompt": "VCG01DocFarewellTransition"
+  },
+  {
+   "key": "vcg01docpsychintro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Well, we know your vitals are good.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "But that don't mean them bullets didn't leave you nuttier than a Bighorner dropping.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "What do you say you take a seat on my couch and we go through a couple questions? See if your dogs are still barking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocPsychIntro",
+   "prompt": "VCG01DocPsychIntro"
+  },
+  {
+   "key": "vcg01docreactions",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Sorry, son. I fixed up your head as best I knew how. I guess I missed a spot.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, little lady. I fixed up your head as best I knew how. Guess I missed a spot.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Look at that. Maybe them bullets done your brain some good.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Now that don't make a lick of sense. Seems to me you're the luckiest son-of-a-gun in New Vegas.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "With luck like yours I'm surprised them bullets didn't just turn right around and climb back into the gun.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "That's some serious atrophy, even for someone who's been in bed awhile. It's a wonder you can move at all.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Surprised anybody'd want to tangle with you. Heck, you could go Deathclaw hunting with a switch.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I just don't get it. A stiff breeze'd tear you in two but a couple of bullets and you're right as rain.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I guess that explains how you're still alive. You're built solid as an oak.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Huh. Must be some frontal lobe damage.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Good to see them bullets didn't affect your charm none.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Now I ain't no optometrist, but maybe we should fit you for some glasses while you're here.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Nothing gets by you, huh? Coulda used you when I lost my keys last month.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Don't have all your coordination back yet, looks like. You should think about doing some rehab.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Most patients don't get out of bed after being shot and then move like they was in perfect control. You're unusual, I'll say that.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Yep, that's a pretty standard score there. But after what you been through, I'd say that's great news.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01DocReactions",
+   "prompt": "VCG01DocReactions"
+  },
+  {
+   "key": "vcg01doctraitintro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Before I turn you loose, I need one more thing from you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I got a form for you to fill out, so I can get a sense of your medical history.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just a formality. Ain't like I expect to find you got a family history of getting shot in the head.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VCG01DocTraitIntro",
+   "prompt": "VCG01DocTraitIntro"
+  },
+  {
+   "key": "vcg01intro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You're awake. How about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whoa, easy there. Easy. You been out cold a couple of days now.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Why don't you just relax a second? Get your bearings.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's see what the damage is. How about your name? Can you tell me your name?",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Huh. Can't say it's what I'd have picked for you. But if that's your name, that's your name.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm Doc Mitchell. Welcome to Goodsprings.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Now, I hope you don't mind, but I had to go rooting around there in your noggin to pull all the bits of lead out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I take pride in my needlework, but you'd better tell me if I left anything out of place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How'd I do?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, I got most of it right, anyway. Stuff that mattered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay. No sense keeping you in bed anymore. Let's see if we can get you on your feet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good. Why don't you walk down to the end of the room? Over by that vigor tester machine there.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Take it slow now. It ain't a race.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looking good so far. Go ahead and give the vigor tester a try. We'll learn right quick if you got back all your faculties.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Let's go into the next room. I've got a few more tests I'd like to run.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG01Intro",
+   "prompt": "VCG01Intro"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That's better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Why would you do that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That ain't right!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hurt an old man, will ya?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You'll get yours!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where's your manners?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Trouble...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get back!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ahh...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ehahugh",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Darn it...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What a waste...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get outta the way!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I should go!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ain't no place for me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gotta get out while the getting's good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You shouldn't be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You better go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got no right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ack!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oof...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oof!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What are you thinking?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You ain't getting away with that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What have you done?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hate to see that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Too bad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Darn shame about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "powerattack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Huragh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Umph!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uragh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oof!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PowerAttack",
+   "prompt": "PowerAttack"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You should give that back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That don't belong to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That ain't yours!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I don't like this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Somethin' don't feel right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Knew you was here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're in for it now!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're goin' down!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Just bugs I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get a grip, Doc.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ears must be actin' up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Coulda sworn you was here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nuts! You was just here...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gave me the slip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I'm supposed to be retired.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No more fightin' for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You're a damn coward!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No use hidin'!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Doggone it. Show yourself!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You're done hidin'!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Shoulda gone quietly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Knew it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hard to believe I scared somebody off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Up and left on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gone now...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hello?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had to be somethin'.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Am I hearin' things?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I didn't want to do this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You crossed the line.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You done ticked me off now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Ready as I'll ever be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here it comes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One more time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "key": "observecombat",
+   "section": "other",
+   "responses": [
+    {
+     "text": "That just ain't necessary",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kids today.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ObserveCombat",
+   "prompt": "ObserveCombat"
+  }
+ ],
+ "speaker": "doc_mitchell"
+}

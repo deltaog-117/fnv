@@ -1,0 +1,90 @@
+{
+ "page": "QJSnuffles.txt",
+ "speaker": "Snuffles",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whuff>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<snuffle!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vFreeformSloanQJSnufflesTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<snuffle>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vFreeformSloanQJSnufflesTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whuff>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hmmm... your leg appears to be injured."
+  },
+  {
+   "id": "vFreeformSloanQJSnufflesTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whuff>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<snuffle!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How's it going?"
+  },
+  {
+   "id": "vFreeformSloanQJSnufflesTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] <snuffle!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Clean the wound with antibiotics and expertly bind Snuffles' injured leg.]",
+   "label": "< Medicine - 30 >"
+  },
+  {
+   "id": "vFreeformSloanQJSnufflesTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] <whuff!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Do your best attempts at first aid to treat Snuffles' injured leg.]",
+   "label": "< Medicine - 30 >"
+  }
+ ]
+}

@@ -1,0 +1,1768 @@
+[
+ {
+  "id": "357_magnum_revolver_long_barrel",
+  "name": ".357 Magnum revolver long barrel",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 250,
+  "weight": 0,
+  "source": ".357 Magnum revolver long barrel",
+  "form_id": "000eeeda",
+  "effects_text": "+3 Damage",
+  "modifies_text": ".357 Magnum revolver",
+  "modifies": [
+   "357_magnum_revolver"
+  ]
+ },
+ {
+  "id": "357_revolver_hd_cylinder",
+  "name": ".357 revolver HD cylinder",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 450,
+  "weight": 0,
+  "source": ".357 revolver HD cylinder",
+  "form_id": "000eeed9",
+  "effects_text": "+100 item HP",
+  "modifies_text": ".357 Magnum revolver",
+  "modifies": [
+   "357_magnum_revolver"
+  ]
+ },
+ {
+  "id": "44_revolver_heavy_frame",
+  "name": ".44 revolver heavy frame",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1000,
+  "weight": 0,
+  "source": ".44 revolver heavy frame",
+  "form_id": "0010c85c",
+  "effects_text": "+125 item HP",
+  "modifies_text": ".44 Magnum revolver",
+  "modifies": [
+   "44_magnum_revolver"
+  ]
+ },
+ {
+  "id": "44_revolver_scope",
+  "name": ".44 revolver scope",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1100,
+  "weight": 0,
+  "source": ".44 revolver scope",
+  "form_id": "0010c85b",
+  "effects_text": "Adds a short-range scope with 1.86x magnification",
+  "modifies_text": ".44 Magnum revolver",
+  "modifies": [
+   "44_magnum_revolver"
+  ]
+ },
+ {
+  "id": "45_ap_hd_slide",
+  "name": ".45 AP HD slide",
+  "kind": "weapon_mod",
+  "dlc": "honest_hearts",
+  "value": 100,
+  "weight": 0,
+  "source": ".45 AP HD slide",
+  "form_id": "0000000d",
+  "effects_text": "+75 item HP",
+  "modifies_text": ".45 Auto pistol",
+  "modifies": [
+   "45_auto_pistol"
+  ]
+ },
+ {
+  "id": "45_ap_silencer",
+  "name": ".45 AP silencer",
+  "kind": "weapon_mod",
+  "dlc": "honest_hearts",
+  "value": 100,
+  "weight": 0,
+  "source": ".45 AP silencer",
+  "form_id": "0000000d",
+  "effects_text": "Silences weapon",
+  "modifies_text": ".45 Auto pistol",
+  "modifies": [
+   "45_auto_pistol"
+  ]
+ },
+ {
+  "id": "45_auto_smg_comp",
+  "name": ".45 Auto SMG comp.",
+  "kind": "weapon_mod",
+  "dlc": "honest_hearts",
+  "value": 250,
+  "weight": 0,
+  "source": ".45 Auto SMG comp.",
+  "form_id": "0000000d",
+  "effects_text": "Reduces weapon spread (-0.5)",
+  "modifies_text": ".45 Auto submachine gun",
+  "modifies": [
+   "45_auto_submachine_gun"
+  ]
+ },
+ {
+  "id": "45_auto_smg_drums",
+  "name": ".45 Auto SMG drums",
+  "kind": "weapon_mod",
+  "dlc": "honest_hearts",
+  "value": 250,
+  "weight": 0,
+  "source": ".45 Auto SMG drums",
+  "form_id": "0000000d",
+  "effects_text": "Increased ammunition capacity (+20)",
+  "modifies_text": ".45 Auto submachine gun",
+  "modifies": [
+   "45_auto_submachine_gun"
+  ]
+ },
+ {
+  "id": "10mm_smg_extended_mags",
+  "name": "10mm SMG extended mags",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1000,
+  "weight": 0,
+  "source": "10mm SMG extended mags",
+  "edid": "ModNV10mmSMGExtMags",
+  "form_id": "0010c85d",
+  "effects_text": "Increased ammunition capacity (+10)",
+  "modifies_text": "10mm submachine gun",
+  "modifies": [
+   "10mm_submachine_gun"
+  ]
+ },
+ {
+  "id": "10mm_smg_recoil_comp",
+  "name": "10mm SMG recoil comp.",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1100,
+  "weight": 0,
+  "source": "10mm SMG recoil comp.",
+  "edid": "ModNV10mmSMGRecoilCompensator",
+  "form_id": "0010c85e",
+  "effects_text": "Reduced weapon spread (-1)",
+  "modifies_text": "10mm submachine gun",
+  "modifies": [
+   "10mm_submachine_gun"
+  ]
+ },
+ {
+  "id": "10mm_pistol_extended_mags",
+  "name": "10mm pistol extended mags",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 750,
+  "weight": 0,
+  "source": "10mm pistol extended mags",
+  "edid": "ModNV10mmPistolExtMags",
+  "form_id": "0010c858",
+  "effects_text": "Increased ammo capacity (+4)",
+  "modifies_text": "10mm pistol; Weathered 10mm pistol",
+  "modifies": [
+   "10mm_pistol",
+   "weathered_10mm_pistol"
+  ]
+ },
+ {
+  "id": "10mm_pistol_laser_sight",
+  "name": "10mm pistol laser sight",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 650,
+  "weight": 0,
+  "source": "10mm pistol laser sight",
+  "edid": "ModNV10mmPistolLaserSight",
+  "form_id": "0010c859",
+  "effects_text": "Reduced weapon spread (-0.4); Laser line aim assist",
+  "modifies_text": "10mm pistol; Weathered 10mm pistol",
+  "modifies": [
+   "10mm_pistol",
+   "weathered_10mm_pistol"
+  ]
+ },
+ {
+  "id": "10mm_pistol_silencer",
+  "name": "10mm pistol silencer",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 750,
+  "weight": 0,
+  "source": "10mm pistol silencer",
+  "edid": "ModNV10mmPistolSilencer",
+  "form_id": "00129878",
+  "effects_text": "Silences weapon",
+  "modifies_text": "10mm pistol; Weathered 10mm pistol",
+  "modifies": [
+   "10mm_pistol",
+   "weathered_10mm_pistol"
+  ]
+ },
+ {
+  "id": "12_7mm_smg_laser_sight",
+  "name": "12.7mm SMG laser sight",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 2600,
+  "weight": 0,
+  "source": "12.7mm SMG laser sight",
+  "edid": "NVDLC05ModNV127mmSMGLaserSight",
+  "form_id": "0000000d",
+  "effects_text": "Reduced weapon spread (-0.4)",
+  "modifies_text": "12.7mm submachine gun (GRA)",
+  "modifies": [
+   "12_7mm_submachine_gun_gra"
+  ]
+ },
+ {
+  "id": "12_7mm_smg_stacked_magazine",
+  "name": "12.7mm SMG stacked magazine",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 2200,
+  "weight": 0,
+  "source": "12.7mm SMG stacked magazine",
+  "edid": "NVDLC05ModNV127mmSMGStackedMagazine",
+  "form_id": "0000000d",
+  "effects_text": "Increased ammunition capacity (+6)",
+  "modifies_text": "12.7mm submachine gun (GRA)",
+  "modifies": [
+   "12_7mm_submachine_gun_gra"
+  ]
+ },
+ {
+  "id": "12_7mm_smg_suppressor",
+  "name": "12.7mm SMG suppressor",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 2800,
+  "weight": 0,
+  "source": "12.7mm SMG suppressor",
+  "edid": "NVDLC05ModNV127mmSMGSuppressor",
+  "form_id": "0000000d",
+  "effects_text": "Silences weapon",
+  "modifies_text": "12.7mm submachine gun (GRA)",
+  "modifies": [
+   "12_7mm_submachine_gun_gra"
+  ]
+ },
+ {
+  "id": "12_7mm_pistol_silencer",
+  "name": "12.7mm pistol silencer",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1750,
+  "weight": 0,
+  "source": "12.7mm pistol silencer",
+  "edid": "ModNV127mmPistolSilencer",
+  "form_id": "00147620",
+  "effects_text": "Silences weapon",
+  "modifies_text": "12.7mm pistol",
+  "modifies": [
+   "12_7mm_pistol"
+  ]
+ },
+ {
+  "id": "12_7mm_submachine_gun_silencer",
+  "name": "12.7mm submachine gun silencer",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 2750,
+  "weight": 0,
+  "source": "12.7mm submachine gun silencer",
+  "edid": "ModNV127mmSubmachinegunSilencer",
+  "form_id": "001476b0",
+  "effects_text": "Silences weapon",
+  "modifies_text": "12.7mm submachine gun",
+  "modifies": [
+   "12_7mm_submachine_gun"
+  ]
+ },
+ {
+  "id": "25mm_g_apw_exp_drum",
+  "name": "25mm G. APW exp. drum",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1200,
+  "weight": 0,
+  "source": "25mm G. APW exp. drum",
+  "form_id": "0000000d",
+  "effects_text": "Increased ammunition capacity (+2)",
+  "modifies_text": "25mm grenade APW (GRA)",
+  "modifies": [
+   "25mm_grenade_apw_gra"
+  ]
+ },
+ {
+  "id": "25mm_g_apw_long_barrel",
+  "name": "25mm G. APW long barrel",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1300,
+  "weight": 0,
+  "source": "25mm G. APW long barrel",
+  "form_id": "0000000d",
+  "effects_text": "Increased projectile speed (+100%)",
+  "modifies_text": "25mm grenade APW (GRA)",
+  "modifies": [
+   "25mm_grenade_apw_gra"
+  ]
+ },
+ {
+  "id": "25mm_g_apw_upgraded_int",
+  "name": "25mm G. APW upgraded int.",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1900,
+  "weight": 0,
+  "source": "25mm G. APW upgraded int.",
+  "form_id": "0000000d",
+  "effects_text": "Increased rate of fire (+25%)",
+  "modifies_text": "25mm grenade APW (GRA)",
+  "modifies": [
+   "25mm_grenade_apw_gra"
+  ]
+ },
+ {
+  "id": "9mm_smg_drums",
+  "name": "9mm SMG drums",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 800,
+  "weight": 0,
+  "source": "9mm SMG drums",
+  "form_id": "000f18fc",
+  "effects_text": "Increased ammunition capacity (+30)",
+  "modifies_text": "9mm submachine gun",
+  "modifies": [
+   "9mm_submachine_gun"
+  ]
+ },
+ {
+  "id": "9mm_smg_light_bolt",
+  "name": "9mm SMG light bolt",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 850,
+  "weight": 0,
+  "source": "9mm SMG light bolt",
+  "form_id": "0010b968",
+  "effects_text": "Increased rate of fire (+30%)",
+  "modifies_text": "9mm submachine gun",
+  "modifies": [
+   "9mm_submachine_gun"
+  ]
+ },
+ {
+  "id": "9mm_pistol_extended_mags",
+  "name": "9mm pistol extended mags",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 250,
+  "weight": 0,
+  "source": "9mm pistol extended mags",
+  "form_id": "000eed3d",
+  "effects_text": "Increased ammo capacity (+7)",
+  "modifies_text": "9mm pistol",
+  "modifies": [
+   "9mm_pistol"
+  ]
+ },
+ {
+  "id": "9mm_pistol_scope",
+  "name": "9mm pistol scope",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 150,
+  "weight": 0,
+  "source": "9mm pistol scope",
+  "form_id": "000eed3c",
+  "effects_text": "Adds a short-range scope with 1.6x magnification",
+  "modifies_text": "9mm pistol",
+  "modifies": [
+   "9mm_pistol"
+  ]
+ },
+ {
+  "id": "anti_mat_rifle_cf_parts",
+  "name": "Anti-mat. rifle CF parts",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 2200,
+  "weight": 0,
+  "source": "Anti-mat. rifle CF parts",
+  "edid": "NVDLC05ModNVAntiMaterielRifleCarbonFiberParts",
+  "form_id": "0000000d",
+  "effects_text": "Reduces weapon Carry Weight (-7)",
+  "modifies_text": "Anti-materiel rifle (GRA)",
+  "modifies": [
+   "anti_materiel_rifle_gra"
+  ]
+ },
+ {
+  "id": "anti_mat_rifle_custom_bolt",
+  "name": "Anti-mat. rifle custom bolt",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 3000,
+  "weight": 0,
+  "source": "Anti-mat. rifle custom bolt",
+  "edid": "NVDLC05ModNVAntiMaterielRifleCustomBolt",
+  "form_id": "0000000d",
+  "effects_text": "Increased rate of fire (+20%)",
+  "modifies_text": "Anti-materiel rifle (GRA)",
+  "modifies": [
+   "anti_materiel_rifle_gra"
+  ]
+ },
+ {
+  "id": "anti_mat_rifle_suppressor",
+  "name": "Anti-mat. rifle suppressor",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 2500,
+  "weight": 0,
+  "source": "Anti-mat. rifle suppressor",
+  "edid": "NVDLC05ModNVAntiMaterielRifleSuppressor",
+  "form_id": "0000000d",
+  "effects_text": "Reduces weapon noise",
+  "modifies_text": "Anti-materiel rifle (GRA)",
+  "modifies": [
+   "anti_materiel_rifle_gra"
+  ]
+ },
+ {
+  "id": "assault_carb_ext_mags",
+  "name": "Assault carb. ext. mags",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1300,
+  "weight": 0,
+  "source": "Assault carb. ext. mags",
+  "edid": "NVDLC05ModNVAssaultCarbineExtendedMags",
+  "form_id": "0000000d",
+  "effects_text": "Increases ammunition capacity (+6)",
+  "modifies_text": "Assault carbine (GRA)",
+  "modifies": [
+   "assault_carbine_gra"
+  ]
+ },
+ {
+  "id": "assault_carb_forged_receiver",
+  "name": "Assault carb. forged receiver",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1500,
+  "weight": 0,
+  "source": "Assault carb. forged receiver",
+  "edid": "NVDLC05ModNVAssaultCarbineForgedReceiver",
+  "form_id": "0000000d",
+  "effects_text": "+248 item HP",
+  "modifies_text": "Assault carbine (GRA)",
+  "modifies": [
+   "assault_carbine_gra"
+  ]
+ },
+ {
+  "id": "assault_carb_light_bolt",
+  "name": "Assault carb. light bolt",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1950,
+  "weight": 0,
+  "source": "Assault carb. light bolt",
+  "edid": "NVDLC05ModNVAssaultCarbineLightBolt",
+  "form_id": "0000000d",
+  "effects_text": "Increases rate of fire (+20%)",
+  "modifies_text": "Assault carbine (GRA)",
+  "modifies": [
+   "assault_carbine_gra"
+  ]
+ },
+ {
+  "id": "assault_carbine_extended_magazines",
+  "name": "Assault carbine extended magazines",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1300,
+  "weight": 0,
+  "source": "Assault carbine extended magazines",
+  "edid": "ModNVAssaultCarbineExtMags",
+  "form_id": "0010c863",
+  "effects_text": "Increased ammunition capacity (+6)",
+  "modifies_text": "Assault carbine",
+  "modifies": [
+   "assault_carbine"
+  ]
+ },
+ {
+  "id": "auto_rifle_upgr_internals",
+  "name": "Auto. rifle upgr. internals",
+  "kind": "weapon_mod",
+  "dlc": "dead_money",
+  "value": 250,
+  "weight": 0,
+  "source": "Auto. rifle upgr. internals",
+  "edid": "ModNVDLC01AutoRifleUpgradedInternals",
+  "form_id": "0000000d",
+  "effects_text": "Increases weapon's rate of fire (+10%)",
+  "modifies_text": "Automatic rifle",
+  "modifies": [
+   "automatic_rifle"
+  ]
+ },
+ {
+  "id": "baseball_bat_cork_core",
+  "name": "Baseball bat cork core",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 350,
+  "weight": 0,
+  "source": "Baseball bat cork core",
+  "edid": "NVDLC05ModNVBaseballBatCorkCore",
+  "form_id": "0000000d",
+  "effects_text": "Increased attack speed (+20%)",
+  "modifies_text": "Baseball bat (GRA)",
+  "modifies": [
+   "baseball_bat_gra"
+  ]
+ },
+ {
+  "id": "baseball_bat_maple_body",
+  "name": "Baseball bat maple body",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 325,
+  "weight": 0,
+  "source": "Baseball bat maple body",
+  "edid": "NVDLC05ModNVBaseballBatMapleBody",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon condition (+50%)",
+  "modifies_text": "Baseball bat (GRA)",
+  "modifies": [
+   "baseball_bat_gra"
+  ]
+ },
+ {
+  "id": "baseball_bat_nails",
+  "name": "Baseball bat nails",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 315,
+  "weight": 0,
+  "source": "Baseball bat nails",
+  "edid": "NVDLC05ModNVBaseballBatNails",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+6)",
+  "modifies_text": "Baseball bat (GRA)",
+  "modifies": [
+   "baseball_bat_gra"
+  ]
+ },
+ {
+  "id": "bear_trap_fist_hd_springs",
+  "name": "Bear trap fist HD springs",
+  "kind": "weapon_mod",
+  "dlc": "dead_money",
+  "value": 250,
+  "weight": 0,
+  "source": "Bear trap fist HD springs",
+  "edid": "ModNVDLC01BearTrapFistHeavyDutySprings",
+  "form_id": "0000000d",
+  "effects_text": "Increases weapon's damage (+3 DAM)",
+  "modifies_text": "bear trap fist",
+  "modifies": [
+   "bear_trap_fist"
+  ]
+ },
+ {
+  "id": "brush_gun_forged_receiver",
+  "name": "Brush gun forged receiver",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1750,
+  "weight": 0,
+  "source": "Brush gun forged receiver",
+  "edid": "ModNVBrushGunForgedReceiver",
+  "form_id": "000eea72",
+  "effects_text": "+75 item HP",
+  "modifies_text": "Brush gun",
+  "modifies": [
+   "brush_gun"
+  ]
+ },
+ {
+  "id": "chainsaw_hd_chain",
+  "name": "Chainsaw HD chain",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1199,
+  "weight": 0,
+  "source": "Chainsaw HD chain",
+  "edid": "NVDLC05ModNVChainsawHeavyDutyChain",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon condition (+50%)",
+  "modifies_text": "Chainsaw (GRA)",
+  "modifies": [
+   "chainsaw_gra"
+  ]
+ },
+ {
+  "id": "chainsaw_alloy_frame",
+  "name": "Chainsaw alloy frame",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1500,
+  "weight": 0,
+  "source": "Chainsaw alloy frame",
+  "edid": "NVDLC05ModNVChainsawAlloyFrame",
+  "form_id": "0000000d",
+  "effects_text": "Decreased weapon Carry Weight (-8)",
+  "modifies_text": "Chainsaw (GRA)",
+  "modifies": [
+   "chainsaw_gra"
+  ]
+ },
+ {
+  "id": "chainsaw_carbide_teeth",
+  "name": "Chainsaw carbide teeth",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1800,
+  "weight": 0,
+  "source": "Chainsaw carbide teeth",
+  "edid": "NVDLC05ModNVChainsawCarbideTeeth",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+15)",
+  "modifies_text": "Chainsaw (GRA)",
+  "modifies": [
+   "chainsaw_gra"
+  ]
+ },
+ {
+  "id": "cowboy_repeater_custom_action",
+  "name": "Cowboy repeater custom action",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 850,
+  "weight": 0,
+  "source": "Cowboy repeater custom action",
+  "edid": "ModNVCowboyRepeaterCustomAction",
+  "form_id": "000eed39",
+  "effects_text": "Increased rate of fire (+20%)",
+  "modifies_text": "Cowboy repeater",
+  "modifies": [
+   "cowboy_repeater"
+  ]
+ },
+ {
+  "id": "cowboy_repeater_long_tube",
+  "name": "Cowboy repeater long tube",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 750,
+  "weight": 0,
+  "source": "Cowboy repeater long tube",
+  "edid": "ModNVCowboyRepeaterLongTube",
+  "form_id": "000eed3a",
+  "effects_text": "Increased ammunition capacity (+4)",
+  "modifies_text": "Cowboy repeater",
+  "modifies": [
+   "cowboy_repeater"
+  ]
+ },
+ {
+  "id": "cowboy_repeater_maple_stock",
+  "name": "Cowboy repeater maple stock",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 675,
+  "weight": 0,
+  "source": "Cowboy repeater maple stock",
+  "edid": "ModNVCowboyRepeaterMapleStock",
+  "form_id": "000eed3b",
+  "effects_text": "Reduced weapon Carry Weight (-1.5)",
+  "modifies_text": "Cowboy repeater",
+  "modifies": [
+   "cowboy_repeater"
+  ]
+ },
+ {
+  "id": "fat_man_little_boy_kit",
+  "name": "Fat Man Little Boy kit",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 2500,
+  "weight": 0,
+  "source": "Fat Man Little Boy kit",
+  "edid": "ModNVFatManLittleBoyKit",
+  "form_id": "0010c1ad",
+  "effects_text": "Decreased weapon Carry Weight (-50%)",
+  "modifies_text": "Fat Man; Fat Man (GRA)",
+  "modifies": [
+   "fat_man",
+   "fat_man_gra"
+  ]
+ },
+ {
+  "id": "flamer_expanded_tanks",
+  "name": "Flamer expanded tanks",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1300,
+  "weight": 0,
+  "source": "Flamer expanded tanks",
+  "edid": "ModNVFlamerExpandedTanks",
+  "form_id": "0010c85f",
+  "effects_text": "Increased ammunition capacity (+60)",
+  "modifies_text": "Flamer",
+  "modifies": [
+   "flamer"
+  ]
+ },
+ {
+  "id": "gatling_laser_carbon_fiber_frame",
+  "name": "Gatling laser carbon fiber frame",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 2200,
+  "weight": 0,
+  "source": "Gatling laser carbon fiber frame",
+  "edid": "ModNVGatlingLaserCFFrame",
+  "form_id": "0010c86d",
+  "effects_text": "Reduced weapon weight (-50%)",
+  "modifies_text": "Gatling laser",
+  "modifies": [
+   "gatling_laser"
+  ]
+ },
+ {
+  "id": "gatling_laser_focus_optics",
+  "name": "Gatling laser focus optics",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 3000,
+  "weight": 0,
+  "source": "Gatling laser focus optics",
+  "edid": "ModNVGatlingLaserFocusOptics",
+  "form_id": "0010c86c",
+  "effects_text": "Increased weapon damage (+3)",
+  "modifies_text": "Gatling laser",
+  "modifies": [
+   "gatling_laser"
+  ]
+ },
+ {
+  "id": "grenade_mg_high_speed_kit",
+  "name": "Grenade MG high-speed kit",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 3500,
+  "weight": 0,
+  "source": "Grenade MG high-speed kit",
+  "edid": "ModNVGrenadeMachinegunHSKit",
+  "form_id": "0010c857",
+  "effects_text": "Increased rate of fire (+50%)",
+  "modifies_text": "Grenade machinegun",
+  "modifies": [
+   "grenade_machinegun"
+  ]
+ },
+ {
+  "id": "grenade_rifle_long_barrel",
+  "name": "Grenade rifle long barrel",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 700,
+  "weight": 0,
+  "source": "Grenade rifle long barrel",
+  "edid": "ModNVGrenadeRifleLongBarrel",
+  "form_id": "0010c856",
+  "effects_text": "Increased projectile speed (+100%)",
+  "modifies_text": "Grenade rifle; Mercenary's grenade rifle",
+  "modifies": [
+   "grenade_rifle",
+   "mercenary_s_grenade_rifle"
+  ]
+ },
+ {
+  "id": "holorifle_adv_calibration",
+  "name": "Holorifle adv. calibration",
+  "kind": "weapon_mod",
+  "dlc": "dead_money",
+  "value": 200,
+  "weight": 0,
+  "source": "Holorifle adv. calibration",
+  "edid": "ModNVDLC01HolorifleAdvancedCalibration",
+  "form_id": "0000000d",
+  "effects_text": "Reduced weapon spread (-0.25)",
+  "modifies_text": "Holorifle",
+  "modifies": [
+   "holorifle"
+  ]
+ },
+ {
+  "id": "holorifle_focus_optics",
+  "name": "Holorifle focus optics",
+  "kind": "weapon_mod",
+  "dlc": "dead_money",
+  "value": 300,
+  "weight": 0,
+  "source": "Holorifle focus optics",
+  "edid": "ModNVDLC01HolorifleFocusOptics",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+25)",
+  "modifies_text": "Holorifle",
+  "modifies": [
+   "holorifle"
+  ]
+ },
+ {
+  "id": "holorifle_reinf_components",
+  "name": "Holorifle reinf. components",
+  "kind": "weapon_mod",
+  "dlc": "dead_money",
+  "value": 150,
+  "weight": 0,
+  "source": "Holorifle reinf. components",
+  "edid": "ModNVDLC01HolorifleReinforced",
+  "form_id": "0000000d",
+  "effects_text": "Increased condition (+1.5%)",
+  "modifies_text": "Holorifle",
+  "modifies": [
+   "holorifle"
+  ]
+ },
+ {
+  "id": "hunting_rev_6_shot_cylinder",
+  "name": "Hunting rev. 6-shot cylinder",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1100,
+  "weight": 0,
+  "source": "Hunting rev. 6-shot cylinder",
+  "edid": "NVDLC05ModNVHuntingRevolverSixShotCylinder",
+  "form_id": "0000000d",
+  "effects_text": "Increased ammo capacity (+1)",
+  "modifies_text": "Hunting revolver (GRA)",
+  "modifies": [
+   "hunting_revolver_gra"
+  ]
+ },
+ {
+  "id": "hunting_rev_match_barrel",
+  "name": "Hunting rev. match barrel",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1400,
+  "weight": 0,
+  "source": "Hunting rev. match barrel",
+  "edid": "NVDLC05ModNVHuntingRevolverMatchBarrel",
+  "form_id": "0000000d",
+  "effects_text": "Reduced weapon spread (-.15)",
+  "modifies_text": "GRA hunting revolver"
+ },
+ {
+  "id": "hunting_rifle_custom_action",
+  "name": "Hunting rifle custom action",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1200,
+  "weight": 0,
+  "source": "Hunting rifle custom action",
+  "edid": "ModNVHuntingRifleCustomAction",
+  "form_id": "0010c861",
+  "effects_text": "Increased rate of fire (+33.3%)",
+  "modifies_text": "Hunting rifle",
+  "modifies": [
+   "hunting_rifle"
+  ]
+ },
+ {
+  "id": "hunting_rifle_extended_mag",
+  "name": "Hunting rifle extended mag",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1600,
+  "weight": 0,
+  "source": "Hunting rifle extended mag",
+  "edid": "ModNVHuntingRifleExtMag",
+  "form_id": "0010c862",
+  "effects_text": "Increased ammunition capacity (+5)",
+  "modifies_text": "Hunting rifle",
+  "modifies": [
+   "hunting_rifle"
+  ]
+ },
+ {
+  "id": "hunting_rifle_scope",
+  "name": "Hunting rifle scope",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1300,
+  "weight": 0,
+  "source": "Hunting rifle scope",
+  "edid": "ModNVHuntingRifleScope",
+  "form_id": "0010c860",
+  "effects_text": "Adds a long-range scope with 3.5x magnification",
+  "modifies_text": "Hunting rifle",
+  "modifies": [
+   "hunting_rifle"
+  ]
+ },
+ {
+  "id": "hunting_shotgun_choke",
+  "name": "Hunting shotgun choke",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1500,
+  "weight": 0,
+  "source": "Hunting shotgun choke",
+  "edid": "ModNVHuntingShotgunChoke",
+  "form_id": "000f0fe9",
+  "effects_text": "Reduced weapon spread (-0.6)",
+  "modifies_text": "Hunting shotgun",
+  "modifies": [
+   "hunting_shotgun"
+  ]
+ },
+ {
+  "id": "hunting_shotgun_long_tube",
+  "name": "Hunting shotgun long tube",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1750,
+  "weight": 0,
+  "source": "Hunting shotgun long tube",
+  "edid": "ModNVHuntingShotgunLongTube",
+  "form_id": "000f0fe8",
+  "effects_text": "Increased ammunition capacity (+3)",
+  "modifies_text": "Hunting shotgun",
+  "modifies": [
+   "hunting_shotgun"
+  ]
+ },
+ {
+  "id": "k9000_mod_mentat_chow",
+  "name": "K9000 mod - Mentat chow",
+  "kind": "weapon_mod",
+  "dlc": "old_world_blues",
+  "value": 3000,
+  "weight": 0,
+  "source": "K9000 mod - Mentat chow",
+  "edid": "NVDLC03ModK9000MentatChow",
+  "form_id": "0000000d",
+  "effects_text": "Increased rate of fire (+40%)",
+  "modifies_text": "K9000 cyberdog gun",
+  "modifies": [
+   "k9000_cyberdog_gun"
+  ]
+ },
+ {
+  "id": "k9000_mod_resla_roil",
+  "name": "K9000 mod - Resla Roil",
+  "kind": "weapon_mod",
+  "dlc": "old_world_blues",
+  "value": 3000,
+  "weight": 0,
+  "source": "K9000 mod - Resla Roil",
+  "edid": "NVDLC03ModK9000ReslaRoil",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+2)",
+  "modifies_text": "K9000 cyberdog gun",
+  "modifies": [
+   "k9000_cyberdog_gun"
+  ]
+ },
+ {
+  "id": "katana_authentic_blade",
+  "name": "Katana authentic blade",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1000,
+  "weight": 0,
+  "source": "Katana authentic blade",
+  "edid": "NVDLC05ModNVKatanaAuthenticBlade",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+5)",
+  "modifies_text": "Katana (GRA)",
+  "modifies": [
+   "katana_gra"
+  ]
+ },
+ {
+  "id": "katana_balanced_grip",
+  "name": "Katana balanced grip",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 950,
+  "weight": 0,
+  "source": "Katana balanced grip",
+  "edid": "NVDLC05ModNVKatanaBalancedGrip",
+  "form_id": "0000000d",
+  "effects_text": "Increased attack speed (+20%)",
+  "modifies_text": "Katana (GRA)",
+  "modifies": [
+   "katana_gra"
+  ]
+ },
+ {
+  "id": "katana_protective_sheath",
+  "name": "Katana protective sheath",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 849,
+  "weight": 0,
+  "source": "Katana protective sheath",
+  "edid": "NVDLC05ModNVKatanaProtectiveSheath",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon condition (+50%)",
+  "modifies_text": "Katana (GRA)",
+  "modifies": [
+   "katana_gra"
+  ]
+ },
+ {
+  "id": "laer_mod_auxiliary_recharger_chip",
+  "name": "LAER mod - auxiliary recharger chip",
+  "kind": "weapon_mod",
+  "dlc": "old_world_blues",
+  "value": 2498,
+  "weight": 0,
+  "source": "LAER mod - auxiliary recharger chip",
+  "edid": "NVDLC03ModLAERAuxRecharger",
+  "form_id": "0000000d",
+  "effects_text": "+1 MFC every 4th shot",
+  "modifies_text": "LAER; Elijah's advanced LAER",
+  "modifies": [
+   "laer",
+   "elijah_s_advanced_laer"
+  ]
+ },
+ {
+  "id": "laer_mod_prismatic_lens",
+  "name": "LAER mod - prismatic lens",
+  "kind": "weapon_mod",
+  "dlc": "old_world_blues",
+  "value": 2998,
+  "weight": 0,
+  "source": "LAER mod - prismatic lens",
+  "edid": "NVDLC03ModLAERPrismLens",
+  "form_id": "0000000d",
+  "effects_text": "Weapon fires three beams with increased damage (+30%)",
+  "modifies_text": "LAER; Elijah's advanced LAER",
+  "modifies": [
+   "laer",
+   "elijah_s_advanced_laer"
+  ]
+ },
+ {
+  "id": "laser_rcw_recycler",
+  "name": "Laser RCW recycler",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1900,
+  "weight": 0,
+  "source": "Laser RCW recycler",
+  "edid": "ModNVLaserRCWRecycler",
+  "form_id": "0010c854",
+  "effects_text": "+1 electron charge pack every 4th shot",
+  "modifies_text": "Laser RCW; Recharger pistol{{Ref|(Note)}}",
+  "modifies": [
+   "laser_rcw",
+   "recharger_pistol"
+  ]
+ },
+ {
+  "id": "laser_pistol_combat_sights",
+  "name": "Laser pistol combat sights",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 125,
+  "weight": 0,
+  "source": "Laser pistol combat sights",
+  "edid": "NVDLC05ModNVLaserPistolCombatSights",
+  "form_id": "0000000d",
+  "effects_text": "Adds a laser sight to aiming",
+  "modifies_text": "Laser pistol (GRA)",
+  "modifies": [
+   "laser_pistol_gra"
+  ]
+ },
+ {
+  "id": "laser_pistol_focus_optics",
+  "name": "Laser pistol focus optics",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 200,
+  "weight": 0,
+  "source": "Laser pistol focus optics",
+  "edid": "NVDLC05ModNVLaserPistolFocusOptics",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+3)",
+  "modifies_text": "Laser pistol (GRA)",
+  "modifies": [
+   "laser_pistol_gra"
+  ]
+ },
+ {
+  "id": "laser_pistol_recycler",
+  "name": "Laser pistol recycler",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 275,
+  "weight": 0,
+  "source": "Laser pistol recycler",
+  "edid": "NVDLC05ModNVLaserPistolRecycler",
+  "form_id": "0000000d",
+  "effects_text": "+1 SEC every 4th shot",
+  "modifies_text": "Laser pistol (GRA)",
+  "modifies": [
+   "laser_pistol_gra"
+  ]
+ },
+ {
+  "id": "laser_rifle_beam_splitter",
+  "name": "Laser rifle beam splitter",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 650,
+  "weight": 0,
+  "source": "Laser rifle beam splitter",
+  "edid": "ModNVLaserRifleBeamSplitter",
+  "form_id": "0010c86a",
+  "effects_text": "Weapon fires three beams dealing increased damage (+30%)",
+  "modifies_text": "Laser rifle",
+  "modifies": [
+   "laser_rifle"
+  ]
+ },
+ {
+  "id": "laser_rifle_focus_optics",
+  "name": "Laser rifle focus optics",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 900,
+  "weight": 0,
+  "source": "Laser rifle focus optics",
+  "edid": "ModNVLaserRifleFocusOptics",
+  "form_id": "0010c869",
+  "effects_text": "Increased weapon damage (+3)",
+  "modifies_text": "Laser rifle",
+  "modifies": [
+   "laser_rifle"
+  ]
+ },
+ {
+  "id": "laser_rifle_scope",
+  "name": "Laser rifle scope",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 850,
+  "weight": 0,
+  "source": "Laser rifle scope",
+  "edid": "ModNVLaserRifleScope",
+  "form_id": "0010c868",
+  "effects_text": "Adds a long-range scope with 3.5x magnification",
+  "modifies_text": "Laser rifle",
+  "modifies": [
+   "laser_rifle"
+  ]
+ },
+ {
+  "id": "light_mg_expanded_drums",
+  "name": "Light MG expanded drums",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 3200,
+  "weight": 0,
+  "source": "Light MG expanded drums",
+  "edid": "ModNVLightMGExpandedDrums",
+  "form_id": "0010c852",
+  "effects_text": "Increasesd ammunition capacity (+110)",
+  "modifies_text": "Light machine gun",
+  "modifies": [
+   "light_machine_gun"
+  ]
+ },
+ {
+  "id": "minigun_damped_subframe",
+  "name": "Minigun damped subframe",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 2000,
+  "weight": 0,
+  "source": "Minigun damped subframe",
+  "edid": "ModNVMinigunDampedSubframe",
+  "form_id": "0010c866",
+  "effects_text": "Reduced weapon spread (-0.35)",
+  "modifies_text": "Minigun",
+  "modifies": [
+   "minigun"
+  ]
+ },
+ {
+  "id": "minigun_high_speed_motor",
+  "name": "Minigun high-speed motor",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 2750,
+  "weight": 0,
+  "source": "Minigun high-speed motor",
+  "edid": "ModNVMinigunHighSpeedMotor",
+  "form_id": "0010c867",
+  "effects_text": "Increased rate of fire (+25%)",
+  "modifies_text": "Minigun",
+  "modifies": [
+   "minigun"
+  ]
+ },
+ {
+  "id": "missile_launcher_guidance_system",
+  "name": "Missile launcher guidance system",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1500,
+  "weight": 0,
+  "source": "Missile launcher guidance system",
+  "edid": "ModNVMissileLauncherGuidanceSys",
+  "form_id": "0010c86e",
+  "effects_text": "Reduced weapon spread (-0.25)",
+  "modifies_text": "Missile launcher",
+  "modifies": [
+   "missile_launcher"
+  ]
+ },
+ {
+  "id": "plas_pistol_hi_energy_ionizer",
+  "name": "Plas. pistol hi-energy ionizer",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 325,
+  "weight": 0,
+  "source": "Plas. pistol hi-energy ionizer",
+  "edid": "NVDLC05ModNVPlasmaPistolHighEnergyIonizer",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+7)",
+  "modifies_text": "Plasma pistol (GRA)",
+  "modifies": [
+   "plasma_pistol_gra"
+  ]
+ },
+ {
+  "id": "plas_pistol_mag_accelerator",
+  "name": "Plas. pistol mag. accelerator",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 225,
+  "weight": 0,
+  "source": "Plas. pistol mag. accelerator",
+  "edid": "NVDLC05ModNVPlasmaPistolMagneticAccelerator",
+  "form_id": "0000000d",
+  "effects_text": "Increased projectile speed (+100%)",
+  "modifies_text": "Plasma pistol (GRA)",
+  "modifies": [
+   "plasma_pistol_gra"
+  ]
+ },
+ {
+  "id": "plas_pistol_recycler",
+  "name": "Plas. pistol recycler",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 325,
+  "weight": 0,
+  "source": "Plas. pistol recycler",
+  "edid": "NVDLC05ModNVPlasmaPistolRecycler",
+  "form_id": "0000000d",
+  "effects_text": "+1 SEC every 4th shot",
+  "modifies_text": "Plasma pistol (GRA)",
+  "modifies": [
+   "plasma_pistol_gra"
+  ]
+ },
+ {
+  "id": "plasma_def_hi_cap_terminal",
+  "name": "Plasma Def. hi-cap terminal",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1600,
+  "weight": 0,
+  "source": "Plasma Def. hi-cap terminal",
+  "edid": "NVDLC05ModNVPlasmaDefenderHighCapTerminal",
+  "form_id": "0000000d",
+  "effects_text": "Increased ammunition capacity (+32)",
+  "modifies_text": "Plasma defender (GRA)",
+  "modifies": [
+   "plasma_defender_gra"
+  ]
+ },
+ {
+  "id": "plasma_def_scope",
+  "name": "Plasma Def. scope",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1200,
+  "weight": 0,
+  "source": "Plasma Def. scope",
+  "edid": "NVDLC05ModNVPlasmaDefenderScope",
+  "form_id": "0000000d",
+  "effects_text": "Adds a short-range scope with 1.65x magnification",
+  "modifies_text": "Plasma Defender (GRA)",
+  "modifies": [
+   "plasma_defender_gra"
+  ]
+ },
+ {
+  "id": "plasma_def_sheath_stabilizer",
+  "name": "Plasma Def. sheath stabilizer",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1300,
+  "weight": 0,
+  "source": "Plasma Def. sheath stabilizer",
+  "edid": "NVDLC05ModNVPlasmaDefenderSheathStabilizer",
+  "form_id": "0000000d",
+  "effects_text": "Decreased weapon spread (-0.2)",
+  "modifies_text": "Plasma Defender (GRA)",
+  "modifies": [
+   "plasma_defender_gra"
+  ]
+ },
+ {
+  "id": "plasma_caster_hs_electrode",
+  "name": "Plasma caster HS electrode",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 2500,
+  "weight": 0,
+  "source": "Plasma caster HS electrode",
+  "edid": "ModNVPlasmaCasterHSElectrode",
+  "form_id": "0010c855",
+  "effects_text": "Increased rate of fire (+25%)",
+  "modifies_text": "Plasma caster",
+  "modifies": [
+   "plasma_caster"
+  ]
+ },
+ {
+  "id": "plasma_rifle_mag_accelerator",
+  "name": "Plasma rifle mag. accelerator",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 800,
+  "weight": 0,
+  "source": "Plasma rifle mag. accelerator",
+  "edid": "ModNVPlasmaRifleMagneticAccelerator",
+  "form_id": "0010c86b",
+  "effects_text": "Increased projectile speed (+200%)",
+  "modifies_text": "Plasma rifle",
+  "modifies": [
+   "plasma_rifle"
+  ]
+ },
+ {
+  "id": "power_fist_chromed_tubes",
+  "name": "Power fist chromed tubes",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1200,
+  "weight": 0,
+  "source": "Power fist chromed tubes",
+  "edid": "NVDLC05ModNVPowerFistChromedTubes",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon condition (+100%)",
+  "modifies_text": "Power fist (GRA)",
+  "modifies": [
+   "power_fist_gra"
+  ]
+ },
+ {
+  "id": "power_fist_hi_cap_valves",
+  "name": "Power fist hi-cap valves",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1400,
+  "weight": 0,
+  "source": "Power fist hi-cap valves",
+  "edid": "NVDLC05ModNVPowerFistHighCapValves",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+8)",
+  "modifies_text": "Power fist (GRA)",
+  "modifies": [
+   "power_fist_gra"
+  ]
+ },
+ {
+  "id": "power_fist_ported_chambers",
+  "name": "Power fist ported chambers",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1500,
+  "weight": 0,
+  "source": "Power fist ported chambers",
+  "edid": "NVDLC05ModNVPowerFistPortedChambers",
+  "form_id": "0000000d",
+  "effects_text": "Increased attack speed (+20%)",
+  "modifies_text": "Power fist (GRA)",
+  "modifies": [
+   "power_fist_gra"
+  ]
+ },
+ {
+  "id": "red_glare_alpha_strike",
+  "name": "Red Glare alpha strike",
+  "kind": "weapon_mod",
+  "dlc": "lonesome_road",
+  "value": 10750,
+  "weight": 0,
+  "source": "Red Glare alpha strike",
+  "edid": "ModNVDLC04RedGlareAlphaStrike",
+  "form_id": "0000000d",
+  "effects_text": "Increased projectile speed (+20%)",
+  "modifies_text": "Red Glare",
+  "modifies": [
+   "red_glare"
+  ]
+ },
+ {
+  "id": "red_glare_auto_launcher",
+  "name": "Red Glare auto launcher",
+  "kind": "weapon_mod",
+  "dlc": "lonesome_road",
+  "value": 10250,
+  "weight": 0,
+  "source": "Red Glare auto launcher",
+  "edid": "ModNVDLC04RedGlareAutoLauncher",
+  "form_id": "0000000d",
+  "effects_text": "Increased rate of fire (+25%)",
+  "modifies_text": "Red Glare",
+  "modifies": [
+   "red_glare"
+  ]
+ },
+ {
+  "id": "red_glare_far_sighting",
+  "name": "Red Glare far sighting",
+  "kind": "weapon_mod",
+  "dlc": "lonesome_road",
+  "value": 10500,
+  "weight": 0,
+  "source": "Red Glare far sighting",
+  "edid": "ModNVDLC04RedGlareFarSighting",
+  "form_id": "0000000d",
+  "effects_text": "Adds 4.35x magnification",
+  "modifies_text": "Red Glare",
+  "modifies": [
+   "red_glare"
+  ]
+ },
+ {
+  "id": "ripper_hd_chain",
+  "name": "Ripper HD chain",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1200,
+  "weight": 0,
+  "source": "Ripper HD chain",
+  "edid": "NVDLC05ModNVRipperHeavyDutyChain",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon condition (+50%)",
+  "modifies_text": "Ripper (GRA)",
+  "modifies": [
+   "ripper_gra"
+  ]
+ },
+ {
+  "id": "ripper_carbide_teeth",
+  "name": "Ripper carbide teeth",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1500,
+  "weight": 0,
+  "source": "Ripper carbide teeth",
+  "edid": "NVDLC05ModNVRipperCarbideTeeth",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+10)",
+  "modifies_text": "Ripper (GRA)",
+  "modifies": [
+   "ripper_gra"
+  ]
+ },
+ {
+  "id": "smmg_extended_magazine",
+  "name": "SMMG extended magazine",
+  "kind": "weapon_mod",
+  "dlc": "lonesome_road",
+  "value": 10750,
+  "weight": 0,
+  "source": "SMMG extended magazine",
+  "edid": "ModNVDLC04SMMGExtendedMag",
+  "form_id": "0000000d",
+  "effects_text": "Increased ammunition capacity (+15)",
+  "modifies_text": "Shoulder mounted machine gun",
+  "modifies": [
+   "shoulder_mounted_machine_gun"
+  ]
+ },
+ {
+  "id": "smmg_mechanical_upgrade",
+  "name": "SMMG mechanical upgrade",
+  "kind": "weapon_mod",
+  "dlc": "lonesome_road",
+  "value": 9750,
+  "weight": 0,
+  "source": "SMMG mechanical upgrade",
+  "edid": "ModNVDLC04SMMGMechanicalUpgrade",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon condition (+25%)",
+  "modifies_text": "Shoulder mounted machine gun",
+  "modifies": [
+   "shoulder_mounted_machine_gun"
+  ]
+ },
+ {
+  "id": "smmg_recoil_compensator",
+  "name": "SMMG recoil compensator",
+  "kind": "weapon_mod",
+  "dlc": "lonesome_road",
+  "value": 9750,
+  "weight": 0,
+  "source": "SMMG recoil compensator",
+  "edid": "ModNVDLC04SMMGRecoilCompensator",
+  "form_id": "0000000d",
+  "effects_text": "Reduced weapon spread (-0.2)",
+  "modifies_text": "Shoulder mounted machine gun",
+  "modifies": [
+   "shoulder_mounted_machine_gun"
+  ]
+ },
+ {
+  "id": "service_rifle_forged_receiver",
+  "name": "Service rifle forged receiver",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 650,
+  "weight": 0,
+  "source": "Service rifle forged receiver",
+  "edid": "ModNVServiceRifleForgedReceiver",
+  "form_id": "0010c851",
+  "effects_text": "+200 item HP",
+  "modifies_text": "Service rifle",
+  "modifies": [
+   "service_rifle"
+  ]
+ },
+ {
+  "id": "service_rifle_upgraded_springs",
+  "name": "Service rifle upgraded springs",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 850,
+  "weight": 0,
+  "source": "Service rifle upgraded springs",
+  "edid": "ModNVServiceRifleUpgradedSprings",
+  "form_id": "0010c850",
+  "effects_text": "Increased rate of fire (+30%)",
+  "modifies_text": "Service rifle",
+  "modifies": [
+   "service_rifle"
+  ]
+ },
+ {
+  "id": "sil_22_smg_exp_drums",
+  "name": "Sil. .22 SMG exp. drums",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1100,
+  "weight": 0,
+  "source": "Sil. .22 SMG exp. drums",
+  "edid": "ModNVSilenced22SMGDrums",
+  "form_id": "0010c86f",
+  "effects_text": "Increased ammunition capacity (+60)",
+  "modifies_text": "Silenced .22 SMG",
+  "modifies": [
+   "silenced_22_smg"
+  ]
+ },
+ {
+  "id": "sniper_rifle_carbon_fiber_parts",
+  "name": "Sniper rifle carbon fiber parts",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1500,
+  "weight": 0,
+  "source": "Sniper rifle carbon fiber parts",
+  "edid": "ModNVSniperRifleCarbonFiberParts",
+  "form_id": "0010c865",
+  "effects_text": "Reduces weapon Carry Weight (-5)",
+  "modifies_text": "Sniper rifle",
+  "modifies": [
+   "sniper_rifle"
+  ]
+ },
+ {
+  "id": "sniper_rifle_suppressor",
+  "name": "Sniper rifle suppressor",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1800,
+  "weight": 0,
+  "source": "Sniper rifle suppressor",
+  "edid": "ModNVSniperRifleSuppressor",
+  "form_id": "0010c864",
+  "effects_text": "Reduces weapon noise",
+  "modifies_text": "Sniper rifle",
+  "modifies": [
+   "sniper_rifle"
+  ]
+ },
+ {
+  "id": "trail_carbine_scope",
+  "name": "Trail carbine scope",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 1500,
+  "weight": 0,
+  "source": "Trail carbine scope",
+  "edid": "ModNVTrailCarbineScope",
+  "form_id": "000eea70",
+  "effects_text": "Adds a mid-range scope with 2.6x magnification",
+  "modifies_text": "Trail carbine",
+  "modifies": [
+   "trail_carbine"
+  ]
+ },
+ {
+  "id": "tri_beam_lr_hd_caps",
+  "name": "Tri-beam LR HD caps",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 2100,
+  "weight": 0,
+  "source": "Tri-beam LR HD caps",
+  "edid": "NVDLC05ModNVTriBeamLaserRifleHDCapacitors",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon condition (+200%)",
+  "modifies_text": "Tri-beam laser rifle (GRA)",
+  "modifies": [
+   "tri_beam_laser_rifle_gra"
+  ]
+ },
+ {
+  "id": "tri_beam_lr_focus_optics",
+  "name": "Tri-beam LR focus optics",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1900,
+  "weight": 0,
+  "source": "Tri-beam LR focus optics",
+  "edid": "NVDLC05ModNVTriBeamLaserRifleFocusOptics",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+3 per beam; total +9)",
+  "modifies_text": "Tri-beam laser rifle (GRA)",
+  "modifies": [
+   "tri_beam_laser_rifle_gra"
+  ]
+ },
+ {
+  "id": "tri_beam_lr_hi_cap_terminal",
+  "name": "Tri-beam LR hi-cap terminal",
+  "kind": "weapon_mod",
+  "dlc": "gun_runners_arsenal",
+  "value": 1800,
+  "weight": 0,
+  "source": "Tri-beam LR hi-cap terminal",
+  "edid": "NVDLC05ModNVTriBeamLaserRifleHighCapTerminal",
+  "form_id": "0000000d",
+  "effects_text": "Increased ammunition capacity (+24)",
+  "modifies_text": "Tri-beam laser rifle (GRA)",
+  "modifies": [
+   "tri_beam_laser_rifle_gra"
+  ]
+ },
+ {
+  "id": "varmint_rifle_extended_mags",
+  "name": "Varmint rifle extended mags",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 75,
+  "weight": 0,
+  "source": "Varmint rifle extended mags",
+  "edid": "ModNVVarmintRifleExtMags",
+  "form_id": "000eeed8",
+  "effects_text": "Increased ammunition capacity (+3)",
+  "modifies_text": "Varmint rifle",
+  "modifies": [
+   "varmint_rifle"
+  ]
+ },
+ {
+  "id": "varmint_rifle_night_scope",
+  "name": "Varmint rifle night scope",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 125,
+  "weight": 0,
+  "source": "Varmint rifle night scope",
+  "edid": "ModNVVarmintRifleNightScope",
+  "form_id": "000eeedb",
+  "effects_text": "Adds a long-range night-vision scope with 2.86x magnification",
+  "modifies_text": "Varmint rifle",
+  "modifies": [
+   "varmint_rifle"
+  ]
+ },
+ {
+  "id": "varmint_rifle_silencer",
+  "name": "Varmint rifle silencer",
+  "kind": "weapon_mod",
+  "dlc": "base",
+  "value": 100,
+  "weight": 0,
+  "source": "Varmint rifle silencer",
+  "edid": "ModNVVarmintRifleSilencer",
+  "form_id": "000eeed7",
+  "effects_text": "Silences weapon",
+  "modifies_text": "Varmint rifle",
+  "modifies": [
+   "varmint_rifle"
+  ]
+ },
+ {
+  "id": "war_club_casings",
+  "name": "War club casings",
+  "kind": "weapon_mod",
+  "dlc": "honest_hearts",
+  "value": 250,
+  "weight": 0,
+  "source": "War club casings",
+  "edid": "ModNVDLC02WarClubCasing",
+  "form_id": "0000000d",
+  "effects_text": "Increased weapon damage (+5)",
+  "modifies_text": "War club",
+  "modifies": [
+   "war_club"
+  ]
+ },
+ {
+  "id": "war_club_honors",
+  "name": "War club honors",
+  "kind": "weapon_mod",
+  "dlc": "honest_hearts",
+  "value": 250,
+  "weight": 0,
+  "source": "War club honors",
+  "edid": "ModNVDLC02WarClubHonors",
+  "form_id": "0000000d",
+  "effects_text": "Increased attack speed (+25%)",
+  "modifies_text": "War club",
+  "modifies": [
+   "war_club"
+  ]
+ }
+]

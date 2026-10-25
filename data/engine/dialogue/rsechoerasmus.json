@@ -1,0 +1,101 @@
+{
+ "id": "rsechoerasmus",
+ "speaker_name": "Erasmus",
+ "source": "RSEchoErasmus.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} I don't remember getting informed about any new transfers to this post.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player not in NCR gear} This is a military post. You sure you're in the right place?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is there something you need from me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vmsrsechoquestrsrangerechoerasmustopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion's got a major crossing point down at Cottonwood Cove, so we keep an eye on them from up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If McCarran would send us some more men, we could do more than watch.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMSRSEchoQuestRSRangerEchoErasmusTopic000",
+   "prompt": "What do you do here?"
+  },
+  {
+   "key": "vdialoguerangerstationechorsrangerechoerasmustopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Carry on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationEchoRSRangerEchoErasmusTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguerangerstationechorsrangerechoerasmustopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion's been sending raiding parties across the river in larger numbers lately. We don't have the men at this post to intercept them all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationEchoRSRangerEchoErasmusTopic001",
+   "prompt": "Why do you need reinforcements?"
+  },
+  {
+   "key": "vdialoguerangerstationechorsrangerechoerasmustopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Skirmishes, mostly. The Legion raiding parties usually fall back when they know it's us they're up against.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationEchoRSRangerEchoErasmusTopic003",
+   "prompt": "Has there been much fighting around here?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Carry on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "ranger_erasmus"
+}

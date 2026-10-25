@@ -1,0 +1,201 @@
+{
+ "id": "ncrcfdawes",
+ "speaker_name": "Dawes (Fallout: New Vegas)",
+ "source": "NCRCFDawes.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Prison under attack} There's still more troopers out there!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{Male Player in Powder Ganger gear} I know {emphasis \"all\"} all the guys I did time with around here and you ain't one of them. Can't fool me with that Powder Ganger getup.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female player in Powder Ganger gear} Okay, I know I wasn't serving time with no girl, or I'd have heard about it. You come to play with the Powder Gangers?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Male PC} Look at you, walking in here like you're one of us. Don't you know this is Powder Ganger territory?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC} Hey there, girlie. You here to party with the Powder Gangers?",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{After NCR attack} {gleeful for killing a guy} Did you see me take out that NCR trooper? Right through his eye!",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "{slightly hostility} What do you want now?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yup.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This? This is - or was - the big house. The New California Republic Correctional Facility. Not much \"correcting\" went on here, just slave labor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One day, us prisoners decided to liberate ourselves. Killed the warden, killed the guards, took over the whole damn territory.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic001",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{he does know} Well, I don't know. Depends on if you can make it worth my time. A hundred caps sounds right to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Helped Powder Gangers in Goodsprings} Yeah, all right. Figure you could help us out the way you helped out Cobb's crew over in Goodsprings.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic002",
+   "prompt": "Can I go in?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, you can go on in. Can't guarantee your safety, though. Just saying.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic003",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Quit wasting my time.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic004",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me? I ran with the toughest gang in the Hub. You've heard of the Hub, right? It's, uh, west of here, I think, back in California.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic005",
+   "prompt": "What did you do to end up in here?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've got the biggest, baddest fort in the wasteland. There's water and power, and if we need grub, we just go out and steal it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic006",
+   "prompt": "If you're free, why are you sticking around?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's us. We got sent here to fix the rails and make some new ones, and for that we got to use dynamite.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course, dynamite works pretty good against caravan guards, too. So, that's what we do - rob and blow things up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic007",
+   "prompt": "What exactly is a Powder Ganger?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfdawestopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Eddie alive} That'll be Eddie. You can usually find him sitting in the warden's old chair up in the main building.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Eddie dead} Not sure who's gonna take over with Eddie dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFDawesTopic008",
+   "prompt": "Who's in charge of the prison now?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah, whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "dawes"
+}

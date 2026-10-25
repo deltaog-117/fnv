@@ -1,0 +1,6868 @@
+{
+ "id": "roseofsharoncassidy",
+ "speaker_name": "Rose of Sharon Cassidy",
+ "source": "RoseofSharonCassidy.txt",
+ "topics": [
+  {
+   "key": "companiongoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CompanionGoodbye",
+   "prompt": "I've heard enough. Let's move on."
+  },
+  {
+   "key": "followersacknowledgemyorder",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Makes sense to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersAcknowledgeMyOrder",
+   "prompt": "FollowersAcknowledgeMyOrder"
+  },
+  {
+   "key": "followersfired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Little regretful} If you're sure... your loss.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Teasing} What no music? {Sarcastic} I'll hold the tears 'til I'm gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're sure... your loss. {Beat, under breath} Can't say I couldn't use a break from you for a while.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "FollowersFired",
+   "prompt": "It's time for us to part ways."
+  },
+  {
+   "key": "followersfiredno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't be playing with my heart now, gets me pissed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You {emph} sure now? All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Either shoot or don't, but don't be wishing and washing about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mutters} You're like a switchblade stuck on flick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Told to stay or go} Going to give a lightswitch a run for its money. Click click click.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredNo",
+   "prompt": "On second thought, stick with me for a little longer."
+  },
+  {
+   "key": "followersfiredyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight sass, told to leave} Fine then.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Slight sass, told to leave} I'll get out of your hair, then.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "FollowersFiredYes",
+   "prompt": "Yes, I'm sure."
+  },
+  {
+   "key": "followersfiredyessuite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Wary, doesn't like 38} All right... don't be long. {Under her breath} Robots there give me the creeps.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "{Wary, doesn't like 38} All right. Guess Vegas it is.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "{Wary, doesn't like 38} Back to the gilded cage.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "FollowersFiredYesSuite",
+   "prompt": "I'd like you to go back to the Lucky 38 for now."
+  },
+  {
+   "key": "followershired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can't be any worse than here.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "All right then, let's get the train rolling.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got one too many by my count.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not in the mood for a threesome. {Beat, under her breath} Today.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What, you teasing me? Lose one, then ask me again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersHired",
+   "prompt": "I think we should travel together."
+  },
+  {
+   "key": "followersletsgo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's hit the road.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's roll out, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersLetsGo",
+   "prompt": "Let's get going."
+  },
+  {
+   "key": "followersoverburdened",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Irritated} Carrying too much shit to move.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Irritated} Pinned down here carrying your bags.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Need to lighten my load.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Irritated} What did you give me, bricks?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersOverburdened",
+   "prompt": "FollowersOverburdened"
+  },
+  {
+   "key": "followersstealthing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Going stealthy, quiet} Bad guys won't see us coming.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Going stealthy, quiet, \"We're hunting wabbits\"} Shhhh... we're hunting shitheads.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Going stealthy, quiet} Holding my breath.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Going stealthy, quiet} Keeping quiet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Going stealthy, quiet} Staying low.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersStealthing",
+   "prompt": "FollowersStealthing"
+  },
+  {
+   "key": "followerstactics",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Wary} I'm listening.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To herself} Tactics ain't the word I'd use.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So talk then.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Frowns} Got my attention.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "FollowersTactics",
+   "prompt": "Let's talk about your tactics."
+  },
+  {
+   "key": "followerstacticscombat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My {emph} style suits me just fine. But go ahead anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Defensive} Well, we all ain't got Pip-VATS on our wrists.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You expecting a fight?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombat",
+   "prompt": "I want you to change your combat style."
+  },
+  {
+   "key": "followerstacticscombataggressive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Eager} I'll do like I'm doing then - {slight evil, likes hurting people} except I'll try to smile less.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight confusion} What, was I not doing it right before?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{To herself} Got a habit of repeating yourself.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Never get tired of hearing that.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Eager} Now we're talking.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "With a smile.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "FollowersTacticsCombatAggressive",
+   "prompt": "I want you to attack enemies the moment you see them."
+  },
+  {
+   "key": "followerstacticscombatend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No arguing here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Getting a little tired of talking} As long as we're not here all day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Getting a little tired of talking} Long as it's not a lecture.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm listening.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatEND",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "followerstacticscombatgoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's hit the road.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Road's not getting any shorter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, let's get this caravan rolling.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatGOODBYE",
+   "prompt": "That's all. Let's get going."
+  },
+  {
+   "key": "followerstacticscombatmelee",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pleased} All right. <Cracks knuckles>",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Wary, under her breath} As long as I'm not bringing a knife to a shootout.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Eager} Good, my fists were getting bored.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Eager} Gives me a chance to practice my backhand.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Eager} Throw some whiskey in the mix, and I'm game.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Eager} Time to make some new friends.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "FollowersTacticsCombatMelee",
+   "prompt": "Switch to a melee weapon."
+  },
+  {
+   "key": "followerstacticscombatpassive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight confusion} Thought I was already holding back.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Heard you the first time, no need to repeat yourself.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{Mutters} Guess it's leftovers for me.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{Mutters} Slim pickings, but all right.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "FollowersTacticsCombatPassive",
+   "prompt": "I want you not to attack enemies unless I've already engaged them."
+  },
+  {
+   "key": "followerstacticscombatranged",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pleased} Could use a little target practice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Pleased} Music to my ears.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Pleased} Dad'd approve.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Eager to shoot some bad guys} Line the bottles up, I'm ready.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatRanged",
+   "prompt": "I want you to use ranged weapons."
+  },
+  {
+   "key": "followerstacticsdistance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Confused} What, I got whiskey on my breath?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player asks for distance, Cass thinks PC farted} Look, if you ripped one, I don't care.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Herself} Washed a hundred times, Brahmin smell never gets out.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Sorry - travelling the Mojave don't exactly leave me smelling like a rose.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistance",
+   "prompt": "Let's talk about how close you're following me."
+  },
+  {
+   "key": "followerstacticsdistancedefault",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "About as close as I can get without crawling up your ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any closer, I'm stepping in your boots.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Already am... 'less you're getting fresh on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gonna need a wedding ring first.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, was lagging behind there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep your shirt on, I'm coming.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, I'll rein it in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bringing up the rear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceDefault",
+   "prompt": "Stay close to me."
+  },
+  {
+   "key": "followerstacticsdistanceend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What now?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's hear it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceEND",
+   "prompt": "Your distance is good. Let's talk about something else."
+  },
+  {
+   "key": "followerstacticsdistancegoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Heading out with player} Sounds good to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Heading out with player} All right, enough jabbering.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceGOODBYE",
+   "prompt": "All right, you're good. Let's get out of here."
+  },
+  {
+   "key": "followerstacticsdistancelong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like your thinking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceLong",
+   "prompt": "Keep your distance. Try to flank them."
+  },
+  {
+   "key": "followerstacticsend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, let's focus on the bad guys.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Waste of time, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fine. {To herself} All this planning won't matter much when the bullets fly, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsEnd",
+   "prompt": "Enough about tactics."
+  },
+  {
+   "key": "followerstrade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's distribute the weight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's see what you got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTrade",
+   "prompt": "Let's trade equipment."
+  },
+  {
+   "key": "followerswait",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Shrugs} Sitting tight. {Beat, low, a little smug} And pretty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, give a yell if there's trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll hold up here, don't be long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersWait",
+   "prompt": "Wait here."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go to hell.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Little sad} I'm heading back West. You won't see me again.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Found 1st Caravan, a little sickened, looking at destroyed caravan} God, there's almost nothing left. Looks like whoever it was - was just in the mood for killing.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Most of the cargo's ash, too - not burned, looks like... disintegrated. When I heard the reports, I assumed \"ash\" meant \"burned.\"",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "So close to the Vegas wall, too, don't that beat all. Must have happened during the day, though, they hadn't made a camp.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Prompt after 1st Caravan Found} You know what, what happened to my caravan - not the first time I've heard about an attack like that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One of our caravans got hit back a few months back, and the caravan'd been burned, too, along with the cargo.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wonder if he made the same mistake, and that other caravan got hit with energy weapons, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Found 2nd Caravan} More energy weapons hit this caravan. Place has been picked clean.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "This... is Brotherhood level murder here. But they don't do things like that. This was done with a purpose.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's poke around a bit, see what we can find. Might be something in the wreckage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Prompt after 2nd Caravan Found} What's that? Looks like a map - got the route along the West of Vegas, and...",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "...they've marked another spot. Over here, along this stretch. That's fucked up - middle of nowhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Found 3rd Site} Another caravan burned. Except someone made camp here - and I never heard about this attack.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's look around, something stinks.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Final} That does it, that's all I need to know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crimson Caravan and the Van Graffs... they were behind burning these caravans, and they've got to answer for them.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I'm going to get some extra ammo, a few bottles of whiskey, then show them how Cassidys settle accounts.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{In Combat, gritting teeth, slight reprimand} Voices down, eyes up.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Alt: Enemies near} Keep your voice down, we got movement out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{In Combat, dismissive} Save the sweettalk for when the shooting's done.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Warning 3} You and me we're done traveling together. I want nothing more to do with you.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "I thought there was a {emph} chance you'd change - {shakes head} not any longer, being a fucker is who you are.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "{Warning 2} Guess my last warning didn't sink in too well. Things don't change, and soon, I'm gone.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Warning 1} You are {emph} such an asshole sometimes.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Look, maybe you were like this before I signed up with you, but if you keep acting this way, I'm not going to stick around much longer.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Are you fucking high right now? God, I can smell it from here. {Beat} Keep that shit away from me.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "{Uneasy, in Lucky 38 casino} Ready to leave yet? This place puts my teeth on edge.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Teasing, actually happy to see the player} Well, now, look what rolled in. What, you getting lonely out there?",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "{Irritated} If you say you're going to gather evidence, then kill the bitches anyway, at least tell me when you change your mind.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "Now, if you're done fucking around, let's settle accounts the old-fashioned way.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Killed Van Graffs, grim, but happy} Just trimmed the Van Graff family tree, I think Freeside'll breathe a little easier now.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Killed an entire camp of Crimson Caravan, grim, but happy} And that's it for the Crimson Caravan.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "{Gave evidence, quest end. A little doubtful} Well, that's settled... I suppose.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "{Prompt for Political Manuevering} You find any \"evidence\" yet? I'm not going to wait forever.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Prompt for first caravan} Well, now that I'm free of the Outpost, was wondering if you'd mind making a detour.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "I'd like to pay my respects to the end of Cassidy Caravans, check out the site where they died.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 0 + Checkers, Eager} We find this \"friend\" of yours, looking forward to adding some red to that checkered suit of his.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 0 + !Benny} Why the hell we wandering so much anyway? Nothing against the Mojave except the dust, heat, and scorpions, but...",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 0 + Benny} We find this \"friend\" Benny of yours, looking forward to rattling his cage.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 10, to herself} Never thought I'd pass the Vegas wall. Never seen so many lights in one place before.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Story Stage 20, wary} Not sure who this friend of yours is, but if he's looking down on Vegas, he's either God or the moon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not one for being subtle, are you? The Tops probably never saw so much action 'til you charged in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So glad you iced that little fucker. Anyone that wears a suit like that... well, they're asking for bullets.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "So what, we chase that little cocksucker down or what? {Cold, eager} He's got to stop running sometime, and that's when we'll get him.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 20, Talked to House} So... you talked to a big movie screen? Feeling like I'm walking down a yellow-bricked road, and there's bad news at the end.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Just watched an enemy explode} What, did... did you put a plug in his cocktube to make him explode?",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "{Story Stage 20, Multiple Invites} First Vegas, now NCR {emph} and Legion? You're being courted more than a Redding widow.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{Beat, wary} Hope you can answer them politely, or there's no safe place in the Mojave for you.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 20, Default} Still looking for a place to pitch your tent? NCR, Legion, or Vegas, seems like each of them's a beartrap, no matter where you put your foot.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wary} Careful where you flash that chip of yours... not sure what kind of caps it's worth, but it's a tempting target.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing like turning a snake's trap on itself. That Benny's a slippery fucker, but you one-upped him, all right.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Can't tell you how glad I am you butchered the Fiends. Caravans across the wastes are going to be buying you drinks for years.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Inside the Lucky 38? Not sure whether that's a blessing or a curse.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 30, Default} Sure hope you know what you're doing, Mojave's getting tense.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 30, NCR, wary} Don't get me wrong, NCR needs the help... sometimes I wish they'd step up more on their own. {Quiet} Not sure saving them helps them in the long run.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Story Stage 30, Legion, wary} Sure hope you know what throwing in with the Legion means. Helping them running roughshod over the West is an Old World kind of cruel.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 30, House, wary} If someone promised me all the lights of Vegas, I'd consider it, too... but I wouldn't say yes until I saw what was behind the curtain.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Story Stage 40} Mojave's almost buzzing like a Cazador now... must be all the blood Legion and NCR are spilling over the Colorado.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{Story Stage 50} Guess there's no turning back now, it's war. If Hoover Dam's where it's going to go down, better make it count.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Frowns, irritated} Looking for trouble?",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{2nd Time, Mojave} You come around like a bad habit. What's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Question Node: Mojave} What's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{In Party, Random Opener from Wheel} Oh, you look like you got something else to say besides ordering me around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{In Party, Random Opener from Wheel} Let's hear it, you look all serious.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{In Party, Random Opener from Wheel} Something to say to me other than guns, distance, and stimming?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{In Party, Random Opener from Wheel} Whoa, why you leaning in all of a sudden?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Question Node, !Mojave} Ask 'em then.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Storage Node for Jackson Variable: Do not Translate.>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Storage Node for High Level Topics: Do Not Translate>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "goodbyemojave",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You take care now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GoodbyeMojave",
+   "prompt": "Never mind. I'll be going."
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Irritated, player fired a gun near her} Would you keep it down?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Irritated, player fired a gun near her} Waste of ammo.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Surprised, player fired a gun near her} What, you see a scorpion?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "If you can't control it, keep it in your holster.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player's aiming at her} Pull that trigger, you'll wish you hadn't.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Player's aiming at her} Don't like no one drawing a bead on me.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Player's aiming at her} Better be rocksalt in that, or you're asking for an asskicking.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Player's aiming at her} Don't make me take that away.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Player's aiming at her} Are you drunk?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Low, sees mine laid} I'll keep the dancing to a minimum.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sees mine laid} That ought to even the odds.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sees mine laid} Somebody's ear's going to be ringing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sees mine laid} There's a leg waiting to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Low, sees mine laid} Gonna be a bad day for somebody.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Watch out below!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go wide!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gonna get loud!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "vdialoguecasscasstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, keep those eyes up and turning - or I'll set 'em spinning.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "Got no time for gawkers... {threatening} or anyone looking for something I ain't selling.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueCassCassTopic000",
+   "prompt": "No, only looking around."
+  },
+  {
+   "key": "vdialoguecasscasstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight sneer} Your business, huh? Now there's a store worth tending.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "You run along now... judging by that busted pilot light expression you're fixed with, \"business\" ain't so good.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassCassTopic001",
+   "prompt": "Just minding my business."
+  },
+  {
+   "key": "vdialoguecasscasstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Got no time or answers for you. {Snorts} Ask a drifter in need of a few caps, they'll give you all the answers you need.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassCassTopic002",
+   "prompt": "Wanted to ask some questions about the outpost."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Irritated} Where? Like Vegas? Chewed and spit enough friends out. East? Get put in one of Caesar's little \"camps?\" No thanks.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Head back West? I already know the Big Circle and everyone in it - 'cept now I go back there, ruined.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Thinking} Never really realized how small the Mojave's getting nowadays, hard to find a place to go to that's worthwhile.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic000",
+   "prompt": "There's other places to go."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Drunk out of her skull} Oh my fucking god... get away from me, all three... four of you, don't need your...",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "Oh god, I think I'm going to be sick, and you... you look fine.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "{Surprised} Well, guess you're a little tougher than I thought... still, looks like you're feeling it, eh, slick?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "You... you all right? You took a little spill there, one moment you're smiling, then...",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic001",
+   "prompt": "Be my guest."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Still, Jackson's not letting me out of his sight as long as there's still trouble up North.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You settle things with him, help the others around here, too, I'll sign the paper if it means getting out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Resolved, sigh} Walking the Mojave with you can't be any worse than here, that's for sure. All right, I'm in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, onto settle accounts with Gloria Van Graff. Putting her down would suit me just fine.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Might be a little tougher than the Crimson Caravan - Van Graffs are like a nest of rattlers, and the guns they've got are Brotherhood-caliber.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Now, onto settle accounts with Alice McLafferty. Putting her down - that would suit me just fine.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Can't wait to see the look on her face when I show up. She'll know why.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Payback's a bitch, ladies, and between Gloria and Alice, that settles accounts, as far as I'm concerned.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Hope they're in hell right now, blinking, trying to figure out where they fucked up.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "My point before? Is that you know the Mojave, and it's a hard place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic002",
+   "prompt": "<Storage Node for Variables: Do Not Translate.>"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Disbelief} They want to buy Cassidy Caravans? Don't they know it's burned to ash?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Wary} No... even times being what they are, not sure I'm looking to sell, even for all the whiskey in Reno.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic003",
+   "prompt": "Crimson Caravan sent me, they want to buy out your caravan."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Frowns, sighs} Mojave happened - hit by raiders packing some heavy firepower. Can't believe the Crimson Caravan haven't heard.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "So if you want to buy all of Cassidy Caravans, you're looking at it - and what I got in my pockets. Still, as little as that is, not looking to sell.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic004",
+   "prompt": "Wait, what happened to your caravan?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If someone came up to you and offered you a thousand caps for your {emph} name, would {emph} you take it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Actually, you know what, fuck it, I don't want to hear your answer anyway.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Point is, I made the caravan what it is, it's mine.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic007",
+   "prompt": "So even if you have nothing, you won't sell?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Studying letter} Alice McLafferty, eh? No, I see the zeroes... and I know she's good for them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, it's not about the money. Dad'd spin like a twister if he ever heard I sold our name for anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic008",
+   "prompt": "I have the offer letter here, the terms are fair."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Impressed} You're obviously putting your money where your mouth is - on top of that offer letter, that is a lot of caps.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{Hesitating} Still... what makes you think that's enough. What, you think I'm cheap?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic009",
+   "prompt": "I'm prepared to offer you the terms, plus 750 caps."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic009_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] \"Just a name?\" {Scoffs} You obviously don't know me at all to {sarcastic} sweet talk me like that.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "{As if to a child} You take your letter, pay my respects to Alice, then kindly go fuck yourself.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic009",
+   "prompt": "It's just a name, this - this is money."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You challenging me? Serious now.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "All right, you come here, armed with whiskey, we'll make a sport of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And none of that radioactive shit, I'm talking whiskey, not Dixon Whiskey - whiskey.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic010",
+   "prompt": "I'm not going to offer money, I wanted to drink for it."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic010_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You are definitely barking up the wrong bar stool. Whatever you're suggesting, {emph} not interested.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic010",
+   "prompt": "Maybe... there's something else we could trade?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Old name? What old name?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic011",
+   "prompt": "That amount's enough to start a new caravan... with the old name."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, it's a deal, hand over that paper. Hnh. Can't believe I'm parting with it.",
+     "emotion": "pained",
+     "intensity": 5
+    },
+    {
+     "text": "{Signing} All right... there you go, caravan's yours. {Beat} Feel kind of relieved, actually. Guess I didn't realize how much I was carrying around with just the name.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic013",
+   "prompt": "Far from it, to turn down the original terms."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you're telling me, I could take this money you're offering, give them nothing, and then go on to strike up another caravan, same as before?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{Disbelieving} What kind of fucking negotiator are you? {Impressed} Hope Alice knows the kind of snake she's got working for her.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic014",
+   "prompt": "The Crimson Caravan will most likely change the name once they buy it."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Low, angry} {emph} What did you just say to me? Cause you sure as hell got my attention now.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic022",
+   "prompt": "If you made the caravan, you're responsible for killing it."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic022_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Yeah, yeah I will, and you sure as hell aren't taking it. Can't believe I was even listening to you.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic022",
+   "prompt": "So what... you're just going to keep it?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hnh. Maybe you're right. Brimmed hats always throw me off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, fine, whatever, they can be shaking each other's dicks, wouldn't change the Mojave now.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic023",
+   "prompt": "[NCR] I think they're both rangers, one desert, one NCR."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, I know you came all this way, and that takes some drive, especially these days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just doesn't feel right, trading history for a slip of paper.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic025",
+   "prompt": "Are you sure?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That... that's a good point, it's the caravan clearance that's got me stuck here. I'm sure this bar's getting tired of propping me up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic026",
+   "prompt": "This Outpost is the last place you want to be trapped."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic026_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I got a bar, men who don't say a word, and plenty of whiskey, I'm fine.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic026",
+   "prompt": "If you think staying here's any better..."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me, that's who. I'm not going to let it go just yet. There... there might be some survivors... or...",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Who am I kidding. There's nothing left, and I wouldn't be here, drinking in some shitty bar in the ass end of nowhere if it wasn't true.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic028",
+   "prompt": "Who believes in holding on to a dead caravan?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Blinks} That's fair. {Beat} But there's been that voice inside me saying the same thing, and whiskey wasn't killing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sad} Give me that paper, I'll put my name to it. No sense trying to hold the past between your fingers when it's nothing but dirt.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic030",
+   "prompt": "I may be honest, but at least I'm not blinded by pride."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Takes a breath} Guess that settles that, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic033",
+   "prompt": "Helped out Jackson and cleared the road North."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Another?!",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "{Winding Down} No... no, I... you got me beat. I'm done, caravan's yours. Give me that paper, I'll... phew... put my name to it.",
+     "emotion": "pained",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic034",
+   "prompt": "I feel great, actually. Another?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Echoing} A man who shot you.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic035",
+   "prompt": "Looking for a man who shot me."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want... want to drink more?",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic036",
+   "prompt": "Still feel a little parched."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<Laughs> All right, all right, you just hang on to the bar here... that's it.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Didn't take you for the toughest courier in the West when you walked in, but you walked all the way to the Outpost, so at least you have guts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic037",
+   "prompt": "I flll fnnne."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sighs} That's the question I been asking myself.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic038",
+   "prompt": "{Sold Caravan}What will you do now?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take care now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic040",
+   "prompt": "I'll be going now."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slightly confused} No idea. Maybe... head back West? Though the idea of heading back there with my tail between my legs isn't appealing.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic041",
+   "prompt": "What will you do now?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be waiting, then. {Beat, smiling} And training.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic043",
+   "prompt": "I'll get a dozen bottles of whiskey and be back."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right then, I already got a head start, but I'll go first anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic044",
+   "prompt": "Here's a dozen bottles, let's go."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right then, I already got a head start, but I'll go first anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic045",
+   "prompt": "Got the whiskey, let's do this."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know you put up a good fight. I'm impressed.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Thing is, I really just wanted an excuse to drink - should last me for a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Might just be the whiskey talking, but I think I might feel a whole lot better leaving the caravan business behind me...",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "Makes me a little teary-eyed, but now I've got a bottle to put 'em in. Hand over that paper, I'll put my name to it.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic046",
+   "prompt": "Yeah... well, feel a... a little dizzy."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Awwww. Now ain't that sweet.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic049",
+   "prompt": "When I mmmet you I thought you were thbiggst bitch."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was reminded why I left this place soon as I walked in. {Nods} Let's go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic051",
+   "prompt": "Looking to join up with me again?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Deep? {Laughs, then matter of fact} Ain't deep by half. Closed down the bar yesterday, going to close it again today - rinse and repeat.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic054",
+   "prompt": "Surprised you can see me from that deep in the bottle."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A sober woman might take insult at that. {Serious} Me, I might just bust you one.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "If you ain't drinking, then leave. If you're making to see if I'm an easy lay, I got a caravan shotgun that'll cure that desire right quick.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic055",
+   "prompt": "Was looking for someone worth my time, I was mistaken."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How about a drink? How about a {emph} couple, is what you mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic056",
+   "prompt": "How about a drink instead?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm fair with chucking dynamite {rising smugness} and not bad with a pistol, if I do say so myself. {Beat, a little lower} Carry a knife, too, but that's more for practical reasons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Prefer settling things with my fists, though. Made more friends than corpses in bar fights - plan on keeping it that way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Frowns, a little defensive} Don't think I'm some kind of Vault City pacifist, though - if things get heated, I'll start shooting, trust me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic057",
+   "prompt": "You any good in a fight?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Short of caps is what taught me, mostly. Ammo's expensive... so I learned to make every shot count.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And hear tell, my Dad was a crack shot, so I don't want to dirty the family name. Not out of pride - respect.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic058",
+   "prompt": "Where did you learn to shoot?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dynamite's for when you don't have enough bullets, want to clear a pass, or scare off Geckos from a caravan.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of the twisters out of the Divide can block off a pass in no time, so you learn how to handle powder so you don't get trapped somewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any event, I prefer shooting if it comes down to an argument. Don't worry, I'll carry my weight if a disagreement arises.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic059",
+   "prompt": "You've used explosives?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, then, not trying to pry. Just wondering what would make a Courier run around the desert without a contract is all. Forget I asked.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic062",
+   "prompt": "Don't really want to talk about it."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Echoing} And you got better.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic063",
+   "prompt": "Twice. In the head."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Incredulous} \"It's the company?\" That has {emph} got to be the biggest load of Brahmin shit I've ever heard.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Still, if you got more like that...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic065",
+   "prompt": "Maybe it's not where you go, it's the company."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Jackson might have something for you, if you haven't already spoken to that old buzzard.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He was looking to try and get troops to clear the north road. You can find him over in the other building - the one without a bar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic066",
+   "prompt": "Running and gunning sounds interesting."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sounds good to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic067",
+   "prompt": "Never mind. Let's move on."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you're looking for someone to help, not just tag along? Hnh.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic068",
+   "prompt": "Why not? I could use someone who knows the roads."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What, you mean like spears? No, none of that. Mom was a tribal, but she didn't teach me anything like that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic069",
+   "prompt": "Any other weapons you know how to use?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know, like one of the tribes from the East - we got 'em out West, too. NCR's herding 'em up, though, domesticating them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mom was from East of the Colorado, though, not sure what tribe. Was before the time Caesar rounded them up, made them Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She walked a hell of a way until she crossed paths with my Dad and he convinced her to stop walking. And lucky for me, he was a horny old bastard.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic070",
+   "prompt": "Your mother was a tribal?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much to tell. He ended up walking East one day when I was young and never came back. Not a family deserter like some, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mom died waiting for him, and she had me to raise. She was sick but she held off dying until I was old enough to be getting into trouble with boys.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As for Dad, I figure he just got himself lost or dead. {Shrugs} Happens... and I'm not all boo-hoo about it, so save your glass for someone who's crying.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic071",
+   "prompt": "Tell me about your Dad."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not a clue. When he left, I was too in my crib to understand why, and around the time Mom passed, I was too into my teens to listen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got his name, got this pendant, and that's about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic072",
+   "prompt": "Any idea why he went East?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Gift from my Dad, along with my name. {Wistful} Rose of Sharon Cassidy.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Mom said he got the name out of some Old World book about dirt pilgrims. {Beat} Name sure sounds sweet, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, pendant's a little rose. Originally thought it was one of Mom's tribal necklaces, but no, came from Dad.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic073",
+   "prompt": "Where'd you get that pendant?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, keep it away from me, won't have anything to do with it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic075",
+   "prompt": "Just needed a little pick-me-up."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My father had heart problems, and it ran down the family tree to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not looking to have my heart skip its last beat, even if I considered putting that junk in my system, which I don't.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic076",
+   "prompt": "What's the problem?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sarcastic} Oh, that's got just the right bite of judgment to it, stings a little, too. {Beat} Did you hear that from a Followers preacher?",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "I bet you could preach all day, who knows what other little bits of wisdom might spill out.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic079",
+   "prompt": "If your world's a whiskey bottle, there's more out there."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go with you? {Thinking} And why the hell would I do that.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "You got one too many by my count.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic080",
+   "prompt": "You could come with me."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic081",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Didn't ask Mom to elaborate. Never heard her complain about his bedroom behavior, only complain he wasn't around to do it no more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic081",
+   "prompt": "That's... one way to put it."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player's got a point} Hnh. The Outpost lost its charm about three bottles ago, and that was just this morning.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic082",
+   "prompt": "Do you really want to stay in this shithole?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So fighting boredom is your argument, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic083",
+   "prompt": "Stay here, you know exactly what's going to happen, day in, day out."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sarcastic} Aside from the TV-faced robots, the dust, and the old man smell in every room? Nothing, it's a paradise.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{Uneasy} This place has the Old World Blues about it. Everything in here feels like it should have passed on a long time ago.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Hell, it's hard to believe Vegas is right outside. So, yeah, I'm looking to leave whenever you're ready.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic084",
+   "prompt": "What's wrong?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Relieved to be leaving} Thank god, the sooner the better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic085",
+   "prompt": "All right. Come on, let's go."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not sure if I chose it or it chose me. {Beat} Dad ran a bar a long time ago, and it was a labor of love, Mom said. Didn't sound like it made her happy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, I'm guessing I got some of Dad's love of whiskey in me, because the burn suits me fine.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Used to call me \"Whiskey Rose\" back West, before I punched enough people, so now they say it, but quiet and when I'm not around.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic086",
+   "prompt": "Is whiskey your drink of choice?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, on account of my name... and the blossoms on my cheeks when I drink too much.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Won most of those fights, too. Can take a hell of a punch and give it right back when I've got a bottle in me.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "It's all in how you drink it, though - there's a trick to it. {Beat, nods} When we pass the bottle, I'll show you how it's done.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic087",
+   "prompt": "Whiskey Rose?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, he's been with NCR so long all he can see is the worst outcome of everything - so he doesn't do anything.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic088",
+   "prompt": "I've met him. Nice impersonation."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic091",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right? No, I'm not all right.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Drinking to forget, and it's only getting me mad instead. Whiskey always gets my temper up - now more than ever.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Drinking used to cause all sorts of trouble back West - before I punched enough people, that is, and they learned to lay low when the whiskey hit.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic091",
+   "prompt": "Are you all right?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic093",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lost my caravan heading north, the driver burned to ash - and they didn't even take the cargo, they just burned that, too.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic093",
+   "prompt": "What are you trying to forget?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, if you couldn't tell, I'm not from around here and I'm not NCR. I run a caravan... or did.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic094",
+   "prompt": "Back West?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic095",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't worry, not looking to throw punches just yet. {Beat} And something tells me hitting you would be a mistake I wouldn't want to repeat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic095",
+   "prompt": "Uh, how about you keep your hands by your sides."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic096",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My guess is Legion, they're trying to cut NCR's supply line... and the Mojave Outpost is proof. Got us locked up tighter than a New Vegas virgin.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "No caravans in, out, and just {emph} try arguing with Jackson about it. \"Roads aren't safe,\" he says.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "No shit, you washed-out old fuckup, I didn't need a Brotherhood Scribe to tell me that.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic096",
+   "prompt": "Why would they do that?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic099",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR officer, trooper, whatever - runs the place. He's over in the main building, the one {emph} without a bar.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Jackson won't let me head north, it's not safe... and even though my caravan's gone, my caravan {emph} papers are keeping me here.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "So if you came here for work, {emph} my advice? Go find the Crimson Caravan branch, south of Vegas. {Bitter, emph} They can help you out.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic099",
+   "prompt": "Who's Jackson?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic100",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Drink. Got a lot of memories to drown. If I die while doing it, so be it. Got nowhere else to go.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic100",
+   "prompt": "What are you going to do?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic101",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure am. Burned for the last time, and this time, it's for good. Worse, it's not done kicking me - I'm still {emph} trapped here.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic101",
+   "prompt": "So you're out of the caravan business?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, well, you {emph} aren't me, so good-for-fucking-you.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic102",
+   "prompt": "I'd slow down on that whiskey, if I were you."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic103",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Trouble's already come and went, so anything {emph} you bring will make my next drink go down easier.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic103",
+   "prompt": "That drinking's going to get you in trouble in a second."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Blinks} No shit? Drink's on me, then.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Still, not like I'm going anywhere. Caravan title's still keeping me here, even though it's dead and gone.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic104",
+   "prompt": "Already cleared the roads for Jackson."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic105",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're looking at it. It's a watering hole without much to brag about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's like a Brahmin drive gone wrong - supposed to be a gate north, but you come here, you get caught in the pen. Better to head back home.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you don't have a gun and a will, don't matter much what you do when you reach here, except stare at that fucking monument outside.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic105",
+   "prompt": "Anything you can tell me about the Outpost?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't even tell me you missed it coming in. It's like NCR showing its dick to all the East.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "If the Republic put as much effort into protecting the East as they put into those two asinine giants outside, then they'd be {emph} worth that monument.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{Shakes head} Statues of two men shaking hands covered in blood don't seem to be nothing to brag about.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic106",
+   "prompt": "That fucking monument outside?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic107",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight exasperation} I'm speaking figurative, isn't any blood on their damn hands. {Beat, to herself, serious} Course, when Caesar comes walking through here, there'll be blood for real.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And after the blood dries in the sun, he'll melt that piece of Jet-induced sculpture down, and reshape it into a bull.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Which by my reckoning is making up for a deficiency of his. But no matter what the state of his pecker, he's sure giving the West a good fucking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic107",
+   "prompt": "Covered in blood?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic108",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Irritated, doesn't much care} One's a ranger, one's an NCR trooper, supposed to represent unification of West and East... or some such shit.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "As far as those two iron lovebirds go, they've got more spine than you'll see in a year from the NCR government.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic108",
+   "prompt": "What are those statues supposed to be?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic109",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Jean-Baptiste? Sounds like someone got knocked out of the good book so hard his name broke.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{To herself, \"Canadarian\" is intentional fuckup} Either that or it's Canadarian or some such shit. {Frowns, to player} So who is this... \"Baptiste\" and what does he want?",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic109",
+   "prompt": "Jean-Baptiste in Freeside wanted to meet with you."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic111",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Two shots in the head without an Auto-Doc is a lot of patching. Hope you thanked him properly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who's this snake that put bullets in your head? Did he have cause, or...?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic111",
+   "prompt": "A doctor helped patch me up."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whiskey and me are old friends, keeps me going when times get rough. Like now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got me into the caravan business, you know - had to start transporting water instead of liquor, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I hadn't switched over, I'd end my trip with nothing but glass bottles rattling on the back of the Brahmin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic112",
+   "prompt": "Why are you here at the bar?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're looking to sign on with a caravan, no - traders are bottled up tight here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Caravan work's up north, check with the Crimson Caravan, maybe. Gun Runners might have work, wouldn't know for sure, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, if you got a gun, guts, and feeling like going on patrol, might be some of the soldiers around here have work for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic113",
+   "prompt": "Any work around here?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know, seems to be a lot of attention on Nipton. Word is, one of the snipers in the nest on the roof spotted smoke from the East.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic114",
+   "prompt": "Any other work?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic115",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, her name's... Ghost or something... {mocking} fucking scary, ooooooh. {Sarcastic} Guess it's cause you'll never see her 'til your dead.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "NCR and their goddamn nicknames, as if Caesar himself's gonna piss and run if he hears them.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Anyway, go on and head up top, ask her what's going on, if you haven't already. I don't much give a shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic115",
+   "prompt": "Sniper on the roof?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic116",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So he robbed you? Robbing a courier's low, and any family or group he's with is going to get a black eye for it.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Caravan code of the wastes is you don't fuck with the one who brings you your mail, and you don't fuck with your supply line.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Hope this shithead knows what he's in for. From both of us... what's his name?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic116",
+   "prompt": "He wanted something I was carrying."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic118",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight incredulous that the player would be dismissive of being shot} Well if it wasn't before, it is now.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Did he bother to introduce himself, or did he not take you for somebody who'd get up again when killed?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic118",
+   "prompt": "I don't think it was personal."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic119",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Frowns} Can't say I've heard the name. Or heard about any man dressed like a seat cover.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic119",
+   "prompt": "Benny, wore a checkered suit."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic120",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bad suit, huh? Well, if assholes had taste, we'd all be feasting on shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still... suit means money, and suits stand out, especially here in the Mojave. One of the larger towns, or Vegas, might be the place to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Cold} Don't you worry, though, we'll sort this asshole out, rattle his cage a little.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic120",
+   "prompt": "Didn't introduce himself, wore a bad suit."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic121",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, I will, jackass.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You can have your shit back, I don't need it or want it. You go your way, I'm going mine.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "And don't try looking for me - it was a mistake to show up in the Mojave in the first place, and I'm not about to repeat that mistake twice.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic121",
+   "prompt": "Go back West, then, see if I care."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic123",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Does it come with its own Deathclaw? Trust me, if you can't see it, something just as nasty's waiting.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Whole Lucky 38... the idea that there's this casino in the middle of a town of people, and only you're ever let inside?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To herself} Feels like other places I've been. Something that isolated from everyday folks starts to take on a bad shine.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic123",
+   "prompt": "Well, in the meantime, he's given me a suite at the Lucky 38."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic124",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Cold} You son of a bitch. {Beat} You know, I was just going to give you a piece of my mind and now? Now I'm going to put you down.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic124",
+   "prompt": "Good, go back to your famil... oh wait, they're fucking dead."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic125",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who you are comes from the choices you make when life {emph} gets tough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So if you're saying that life is dragging you down, I don't buy it. You better start changing your attitude, or I'm heading back West, you hear?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic125",
+   "prompt": "Life means we have to make tough choices - me included."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic126",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised} You're seriously going to draw on me? Fine, do it, see what happens.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic126",
+   "prompt": "<Attack>That's it. Tired of listening to you anyway."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic127",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Hesitating} Well... all right. I'll stick around for a little while longer, but if you get out of line again...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic127",
+   "prompt": "<Lie> The Mojave's a hard place. But I need to rise above that."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic127_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That's your excuse?",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic127",
+   "prompt": "<Lie> Look... I'm trying to change, life's tough."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic128",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Hesitating} Well... all right. I'll stick around for a little while longer, but if you get out of line again...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic128",
+   "prompt": "Tough words, but I needed to hear them. I'll change, I promise."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic128_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That's your excuse?",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic128",
+   "prompt": "I'm... not proud of what I've done. I'm trying to change, really."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic129",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Hesitating} I'll hold you to that promise, then. I'm not known for my patience, though.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic129",
+   "prompt": "<Lie> I'll change Cass, I promise."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic129_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Scoffs} Inside? Yeah, must be deep inside, all right.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic129",
+   "prompt": "<Lie> I heard you, I did. I've changed... inside."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic130",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Hesitating} All right... maybe I was a little harsh. I can be that way.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic130",
+   "prompt": "I've made mistakes. You judging me doesn't help."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic130_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Trying's the same thing as giving up, the way you're saying it.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic130",
+   "prompt": "I'm trying to do better... really trying."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic131",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You need to be tougher. If you let the Mojave get you down, then you've given up on life.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "So straighten out, stop being so shifty and... {struggles to find the words for the player's evil} downright mean, and see if that doesn't change your outlook.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic131",
+   "prompt": "Look, the Mojave's a tough place, all right?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic134",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck that. You can walk the road to hell on your own.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic134",
+   "prompt": "Can we talk about this?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic141",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Blinks} No shit? Drink's on me, then.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Still, not like I'm going anywhere. Caravan title's still keeping me here, even though it's dead and gone.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic141",
+   "prompt": "I already took care of Jackson. Er, the Jackson problem."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic142",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know, seems to be a lot of attention on Nipton. Word is, one of the snipers in the nest on the roof spotted smoke from the East.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic142",
+   "prompt": "He's... gone, don't think he can help. Anything else?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic143",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Started? Took to it like a fish to water... {hesitant} well, if you know what a fish is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic143",
+   "prompt": "How'd you get started in the caravan business?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic144",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's this... slimy, scaled thing, like a Lakelurk, except no legs. Well, most times. They're like birds, except they stay underwater.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, I've seen pictures. One guy even had one above his bar in Redding, except it was made of Pre-War plastic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Used to say it could sing, but I figured he was on a Jet rush.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic144",
+   "prompt": "What the hell is a fish?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic145",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Suddenly unsure} Well... of course I do.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic145",
+   "prompt": "[Intelligence] I'm familiar. Do *you* know what a fish is?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic146",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Actually, it sort of fell on me. My feet get antsy if I stay in one place, like the Mojave Outpost.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was driving me crazy, that feeling of being trapped there, so thanks for that.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic146",
+   "prompt": "So you just started in the caravan...?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic147",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. West, East - and passed through places enough times people would sometimes pay me some caps to take something to the next town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic147",
+   "prompt": "So you traveled a lot."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic148",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, not as glamorous, I guess - roads back West were safer in most places. {Beat, to herself} Most.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, occurred to me I could scratch the traveling itch and get paid for it. Cassidy Caravans formed around me, rest is history.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic148",
+   "prompt": "What, like a courier?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic149",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I'm not one for soft living... or soft men, let me tell you. I'm guessing neither are you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, I'm not one for soft living or soft men, let me tell you. Otherwise, I wouldn't be talking to you right now - on both counts.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic149",
+   "prompt": "How's caravan life in the Mojave?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic150",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Frowns} What? {Beat} Oh. Damn, no offense meant. Sometimes I get so drunk, I don't care who I share a bed with, so that's fine with me.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "My point before? Is that you know the Mojave, and it's a hard place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic150",
+   "prompt": "[Cherchez La Femme] That's... rarely an issue."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic151",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, don't let the soldiers drink too much, and I'd agree with you most time. Fucking whiskey dicks.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic151",
+   "prompt": "[Black Widow] Soft men don't stay that way around me, I've found."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic153",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Frowns} What? {Beat} Oh. All right. {Beat} Guess you've got a Legion outlook on things. No problems here, there's a lot more of that in the Mojave than you see.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic153",
+   "prompt": "[Confirmed Bachelor] As long as we keep it on that level."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic154",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't take that as anything more than my words. {Teasing} I bet you're a real sweetheart the way you leave that trail of broken-hearts behind you.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "I know your look, you probably {emph} say all the right things... so we're clear, nothing's going to happen between us. You'd best respect that.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic154",
+   "prompt": "[Ladykiller] Miss Cassidy... are you flirting with me?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic155",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Much as anyone else. Cazador trap - you fly in, the city sucks a pint out of you, then you're out on the street.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "NCR makes a habit of going there and dumping cash, only the Strip gets fat off it.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Couldn't tell you much more than that. Not really one for New Vegas when there's enough dumpwater bars in the Mojave to last me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic155",
+   "prompt": "What can you tell me about New Vegas?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic156",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Raises an eyebrow} The Caravan fighting here in the Mojave... it's been downright brutal. The amount of caravan space you reserve for ammo alone...",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{Sighs} And if it's not raiders, Powder Gangers, it's NCR tolls. They need to get the money from somewhere, even if it's Vegas-bound.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic156",
+   "prompt": "And caravan life's the same way?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic157",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anyone wise does. Vegas families pay on time, from what I've heard - even the Omertas. The White Gloves pay on time, but they're... creepy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Deal with anyone else, though, you're taking a big risk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic157",
+   "prompt": "Do you deal mostly with NCR?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic158",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Suspicious} Well, no idea why your friend Mr. House wants it, but I'm guessing it's not for the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Impressed} Must've been one huge metal Bighorner that crapped that chip out.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "My guess? Leads to a big cashout at some casino - and if the \"38\" on it is any indication... well... Lucky 38 it is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic158",
+   "prompt": "Can you tell me anything about this Platinum Chip?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic159",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Defensive, a little angry - hates these guys} The Legion? What about them?",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Slight anger} I don't trade caps or supply anyone who keeps slaves, and treats women like Brahmin in those... \"camps\" of theirs.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic159",
+   "prompt": "What about Caesar's Legion?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic160",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, not meaning to fly off the handle like that.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic160",
+   "prompt": "All right, just asking."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic161",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's some caravans that deal with the Legion, yes. And as much as it pains me to say it, any caravan marked by the Legion is safe as houses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They guard their roads, their supply lines - even Fiends would hesitate before going after any trader dealing with Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic161",
+   "prompt": "Do they deal with any caravans at all?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic162",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am. If NCR took the same stand and committed patrols to the roads, then I think that'd solve a lot of their problems right there.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "But they don't. Caravans get butchered in the Mojave all the time, like mine. And so fucking close to Vegas, you could see it from the wall.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic162",
+   "prompt": "You sound frustrated."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic164",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR tries. It's just that trying doesn't mean a whole lot when you're paying your respects to the dead.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "And Legion, from what I've heard, they don't do the \"stop tolls\" on the roads or in the outposts like some NCR quartermasters do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're lucky if you turn a profit sometimes if some new officer gets assigned a route, the fees just get worse.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic164",
+   "prompt": "There must be good parts to the Republic."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic165",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Much as I hate the Legion, caravan life would be a hell of a lot easier if they ran the roads.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Thinking about it again} Well, as long as those companies were run by men. And that's the biggest issue I see.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And it's a shame, but I think there's people on the NCR side who feel more strongly than I do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic165",
+   "prompt": "Any other differences between Legion and NCR?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic166",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR's my country, and I support it. Anyone who says otherwise, I'll feed them my knee.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "I know which side of the firing line I'm on in the Mojave, just so you know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic166",
+   "prompt": "What do you think of NCR?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic167",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, there is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic167",
+   "prompt": "There's a \"but\" in there."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic168",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not some blind, flag-saluting do-as-they-will NCR lover. They're family, but let me tell you what family means.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You ever had a brother? Some dumbass younger brother, say, who knocked up the pastor's daughter, can't hold a job, and his home-away is a jail cell?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's NCR. Their compass is spinning, all the time.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic168",
+   "prompt": "You support it no matter what?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic169",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They try to put their stake in everything they see.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nobody's dick's that long, not even Long Dick Johnson, and he had a fucking long dick. Thus, the name.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic169",
+   "prompt": "So they lack direction?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic170",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So NCR, tries to hold on to everything. They can't, because it's too big for them to get their arms around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They can't guard the roads, they can't put a line of troops around the Mojave... it's just greed that makes the heads back West even try.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic170",
+   "prompt": "Yeah, I got that part, thanks."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic172",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Aside from the people in the towns, it's the soldiers that suffer for it most.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Ever seen NCR troops asked to go after gangs at three-to-one odds? That bear flag doesn't make them bulletproof.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And when those gangs were caused by NCR in the first place, like the Powder Gangers? Caesar on a crutch, don't get me started there.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic172",
+   "prompt": "So the Mojave suffers."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic173",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, don't get me wrong.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wouldn't want the Brotherhood or the Followers or the Vegas families running the Mojave, all of them are a different kind of fuck-up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "NCR just has some shaping up to do. Maybe Caesar kicking them in the nuts is a nice wake-up call, is all I'm saying.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just wish Caesar would kick the heads of NCR, not the feet. {Beat} I've fucked a soldier in my time - they don't need to get fucked by their orders.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic173",
+   "prompt": "So what's the alternative?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic174",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look... and what I'm about to say, I don't mean as any offense to you, I know where your sympathies lie.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic174",
+   "prompt": "There's other alternatives."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic175",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some caravans deal with the Legion now because the security. If towns could get the same protection? A lot more tempting than you'd think.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A bunch of people would be willing to side with the Legion to not have to worry about Fiends and Boomers and Powder Ganger attacks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sad} It's not hard for some folks to sell freedom when the alternative is worse. Especially if being with NCR is going to get you on a Legion cross.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic175",
+   "prompt": "What do you mean?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic177",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I'm sure. Killing never felt so good, could almost hear the dead behind me guiding my hand.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Now that that bitch is in hell, they'll have a shot at her, too. So what are we waiting for? We've got more work to do.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic177",
+   "prompt": "You sure you want to do this?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic178",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Grim, pleased} Music to my ears.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic178",
+   "prompt": "Got it. Let's loot the place."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic180",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Takes a breath} Yeah... yeah, I am. Never realized had all that anger in me. {Beat, cold} Makes me wonder how much more I can settle with bullets.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "You know, when I first heard about them, I was so mad, but there was this little part of me that said, \"you can't do to them what they did to you.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I say fuck that part. I feel purified, and I love the fact that there's no more loose ends.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic180",
+   "prompt": "You all right?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic181",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's it. {Beat} Except for one thing... thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not many people in my company would have done what you did for me without some hesitation or asking me to cool down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you backed me, even when the odds were against us. Words aren't enough, but - thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic181",
+   "prompt": "So that's it, then."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic183",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Feels... I don't know. I guess I feel relieved. I don't know what I feel.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Wait, that's not true. I think the NCR back West, when riled, is going to be the worst enemy the Van Graffs and the Crimson Caravan ever had.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're all so mired in procedure and paper out there, the kind of evidence we gave is going to be worse than shooting them.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "I think that settles accounts with me - and my men. {Beat} That was some tricky political maneuvering, but worth it, even if it takes a few years.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic183",
+   "prompt": "Are you all right?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic184",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No... no, I know. Just hard to say how I feel right now.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic184",
+   "prompt": "Better than the alternative."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic186",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't care much for which one we kill first, whether settling accounts with McLafferty or making that bitch Gloria eat her hair.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "The Van Graffs are going to be tougher, so we'll likely get killed there. If we go to the Crimson Caravan camp, we'll just need a lot of bullets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, we give the Van Graffs the what-for, that means all those guns they used on my caravan - we can take and use on the Crimson Caravan.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic186",
+   "prompt": "I'm for that, let's go kill them."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic187",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR? Are you out of your fucking mind?",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "That'd take years... and with the war with the Legion, no way they're going to waste time running up the Crimson Caravan or the Van Graffs!",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "And what makes you think any evidence can be found?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic187",
+   "prompt": "There's another way - we can get evidence, let NCR take them down."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic188",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, if you poke around the Van Graffs and Alice, fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if I see either one, go into their camp? I'm going to start shooting, no matter what you find.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic188",
+   "prompt": "The harm to the Van Graffs would last longer - and travel back West."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic190",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So there's just one more safe to crack? Hope you can get to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Frowns} Say what you will about the two leading ladies, they watch their lockers like crows. Still... you got one, so the other might not be impossible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you get both, then let's talk. {Beat} And... I appreciate you putting yourself at risk like this. Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic190",
+   "prompt": "Here's the evidence of the deal. Without its twin, there's no proof."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic191",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Impressed} No shit. There it is, the blood, the motive, as clear as day. They must have penned these with snake venom.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "But... we got it, now what? Sure, this damns them, but only if someone listens.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic191",
+   "prompt": "Here's both pieces of evidence."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic192",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I held off on filling them full of holes, so unless you give me a good reason to cool my heels soon, I'm not waiting much longer.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic192",
+   "prompt": "Not yet."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic193",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Blinks} You're saying... they might need to do the same thing to each other some day. And evidence is easier than bullets.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic193",
+   "prompt": "Because of what happened to your caravan."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic194",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Blinks} No... No, I'd agree with that. And Alice and Gloria are two crows that'd keep something like that in their nest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic194",
+   "prompt": "No one enters into a deal like this unless they have dirt on their partner."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic196",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Blinks} Well... Jackson in the Mojave Outpost could get it to folks in the West. I wouldn't trust anyone closer to the Colorado.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Thinking} And the Crimson Caravan and the Van Graffs have their heart back West. {Beat} Not sure it'll do any good, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic196",
+   "prompt": "Anyone you trust in NCR?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic197",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, let's do it, listen to what he has to say.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic197",
+   "prompt": "We have to try."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic200",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sighs} Up side of Vegas, hear tell. Trapped at the Mojave Outpost, so I wasn't able to run there when I heard.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Been weeks since it was hit, so the site's probably a Cazador nest by now.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic200",
+   "prompt": "Where was your caravan hit?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic201",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Got word back on what happened from Rangers, guess they found enough in the wreckage to identify it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic201",
+   "prompt": "How did you catch word of it?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic202",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sighs} Only wishful thinking on my part, most likely. At the least, I'd like to pay my respects.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To herself, downnote} I got them into this mess, I owe them that much.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic202",
+   "prompt": "Think there's anything left?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic204",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I still wouldn't mind going there and crossing my heart a few times, if only to make me feel a bit better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To herself, downnote} I got them into this mess, I owe them that much.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic204",
+   "prompt": "Already been there, nothing worth finding."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic205",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, I appreciate it.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Some of the caravan might be ash, but we were expecting raiders and over-inquisitive NCR border guards. There might be something left.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I'm there with you, shouldn't be hard to spot. And I'd prefer to see the bodies with my own eyes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic205",
+   "prompt": "Let's go, then."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic206",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you have to know what to look for.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic206",
+   "prompt": "I may have already searched the area."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic208",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No idea. Maybe catch the sun in their eyes? Maybe they wanted the caravan to come to them, walk into an ambush?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We should check the wagon, they may not have got everything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whatever we find, it's yours - least I can do for hoofing it all this way with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic208",
+   "prompt": "Why would they have done it during the day?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic210",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much, and I haven't had occasion to look for anything more than that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've heard what most people know... he's said to run New Vegas, he runs the robots, but... well, no one's really seen him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, except you, that is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course, no one really will now that he's dead. Good thing, too, no idea what that contraption was on his pecker.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "So if he wants to see you... well, that's a rare thing I wouldn't turn down. I'd ask him some hard questions if I were you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic210",
+   "prompt": "Know anything about Mr. House?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic211",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not sure, let's look around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic211",
+   "prompt": "Is there anything salvagable?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic212",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, it's a ways, though, hell of a detour. You sure?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic212",
+   "prompt": "Want to go check it out?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic216",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, something's wrong, I can feel it.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "It's not any closer than the first, so if you'd rather let be, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic216",
+   "prompt": "Want to check it out?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic217",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right then, let's move out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic217",
+   "prompt": "We'll make the time."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic218",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't have to tell me twice, feel more alive than I ever have.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic218",
+   "prompt": "Got it, let's start looting."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic220",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Thinking} The only Van Graffs I know are the ones out West - well, except for Gloria Van Graff, and I don't know her all that well, nor do I want to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't have any objections speaking with him, though if he's with the Van Graffs, he should know I'm not looking to buy weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic220",
+   "prompt": "He's with the Van Graffs."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic221",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't matter much how we settle this, as long as it gets settled.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic221",
+   "prompt": "Let's do it, then."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic222",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No... still eating at me, though. Wouldn't mind taking another look. Something's off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think we should explore the next one, see what's up. Got my curiosity riled.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic222",
+   "prompt": "See anything at the caravan site?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic223",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nothing yet, but... something's there. Just got to look around and find it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic223",
+   "prompt": "See anything at the second caravan site?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic224",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not sure yet, something's definitely wrong. They were massacred, we should look around, find out why.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic224",
+   "prompt": "Any idea what was up at the site of the last caravan?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic225",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm already shadowing you, aren't I? Lead on, I'll follow.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ask me to come with you, I'll think about it on the way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not leaving here until my caravan papers clear, or my title goes away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you were looking for someone to caravan with, I'd try the Crimson Caravan up north. They pretty much run the roads now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't know, not sure where to head to next.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic225",
+   "prompt": "Interested in... uh... following me to Freeside?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic226",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's usually a bar in every stop along the road. Helps me sleep. Well, not really, but I tell myself that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sometimes I have to brew it myself if I'm too far from a bar. Not quality, but I'm for anything that takes the edge off the day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic226",
+   "prompt": "Where do you usually go to drink?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic227",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, what else you going to do with an empty bottle? Wait for it to refill itself?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get me some ingredients out of the Mojave, an empty bottle, a little time, and I'll keep us stocked.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic227",
+   "prompt": "Wait, you can make Moonshine?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic228",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Warning} Look, no guarantee on the quality, only the results. And don't drink too much of this stuff or you might go blind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, I'll start brewing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here you go. Go easy on it until you train yourself to choke back the urge to gag. After a few bottles and the vomiting, it ain't so bad.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic228",
+   "prompt": "Here's the items for making some Moonshine."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic229",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't have all the ingredients you need - come back when you have 'em, and I'd be happy to get something cooking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic229",
+   "prompt": "Can you make me some of your Moonshine?"
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic230",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Takes a breath} Guess that settles that, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic230",
+   "prompt": "I took care of Jackson. Er, the Jackson problem."
+  },
+  {
+   "key": "vdialoguecassroseofsharoncassidytopic232",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't matter much how we settle this, as long as it gets settled.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCassRoseofSharonCassidyTopic232",
+   "prompt": "Uh... Jackson? He can't help us, he's... gone."
+  },
+  {
+   "key": "vendingcass",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating Her Own Ending, slow and sad} Rose of Sharon Cassidy died as her caravan died - in an unmarked grave, another victim of the Mojave.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Narrating Her Own Ending, Sad} Despite the destruction of Cassidy Caravans, Cass lived for 30 more years.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Narrating her own ending, sad} She made her way back West and passed away in a small shack outside of Vault City, the rose pendant still around her neck.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Narrating Her Own Ending} The slaughter of the Van Graffs and the Crimson Caravan caused no end of trouble for NCR back West.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} Already struggling, NCR's supply lines suffered further as the two caravans withdrew support until the \"massacre in the East\" was resolved.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} In the years following the destruction of Cassidy Caravans, NCR used evidence of the plot to blackmail the Crimson Caravan and the Van Graffs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} NCR enacted strict trade laws with little resistance, strengthening their supply lines and their position in the Mojave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} Cass survived to see the NCR flag flying proud over Hoover Dam, and thought for a moment... {emph} this is what a hero must feel like.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Narrating Her Own Ending} Cass lived to see Hoover Dam in its Old World glory, humming with power the likes of which the Mojave had never seen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending, Sad, skipping is bad} Vegas burned brighter than ever, Securitrons filled the streets, and Cass's heart skipped... just a little.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Narrating Her Own Ending} Her last words were to the Dam - and to herself. {Resume Cass Voice, sad} \"We were going full speed ahead... but facing backwards the whole time.\"",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Narrating Her Own Ending} Cass lived to see the Courier bring down three armies and by her count, that was three more than she'd expected. {Beat, a little quieter} She'd kept quiet about that, though.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Narrating Her Own Ending} Cass lived to see the mark of the Legion on Hoover Dam. Uncertain of what lay next for the West, she remained silent.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Narrating Her Own Ending, Sad} As the Legion marched West, she found it difficult to see the Dam as anything more than a gravestone for the Mojave - and everyone in it.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VEndingCass",
+   "prompt": "VEndingCass"
+  },
+  {
+   "key": "vendingroseofsharoncassidycomplete",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating Her Own Ending} That night, Cass kicked in the door of his room to celebrate, only to find the man on the bed was an NCR soldier whose barracks had been destroyed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} He was cute, though, so after having her way with him, she got the hell out, leaving an empty whiskey bottle as a note.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} As she walked along the Dam in the night, she felt drunk, content, and happy to be alive. {Beat, end on a positive downnote} Which to her, was the whole point of it all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingRoseofSharonCassidyComplete",
+   "prompt": "<Do Not Translate>"
+  },
+  {
+   "key": "vendingroseofsharoncassidyncr",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating Her Own Ending} She was about to tell the Courier not to get too proud of himself, then she figured he knew that already.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} She was about to tell the Courier not to get too proud of herself, then she figured she knew that already.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} So she laughed, said fuck it all, and raised a bottle to the Dam and the ones who had fought for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating Her Own Ending} As far as she was concerned, the whole thing was proof that playing out a bad hand can pay off in the end...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "...as long as someone like the Courier was holding the cards.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "...as long as a woman like the Courier was holding the cards.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingRoseofSharonCassidyNCR",
+   "prompt": "<Do Not Translate>"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "All right, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vcassfreesidesass01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To a bad come-on} Stake a claim somewhere else, pretty boy.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassFreesideSass01",
+   "prompt": "VCassFreesideSass01"
+  },
+  {
+   "key": "vcassfreesidesass02",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To a bad come-on} Looking for target practice, you keep talking.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{To a bad come-on} Wanted to be with someone who knew how to please a woman, that's what.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassFreesideSass02",
+   "prompt": "VCassFreesideSass02"
+  },
+  {
+   "key": "vcassfreesidesass03",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To a bad come-on} No, and ain't looking to be a babysitter, neither.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassFreesideSass03",
+   "prompt": "VCassFreesideSass03"
+  },
+  {
+   "key": "vcassfreesidesass04",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To a bad come-on, Under her breath} Somebody's asking for a boot in their fusebox.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "| Wild Wasteland |{To a bad come-on, Dismissive} Ain't nothing but a hound dog.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassFreesideSass04",
+   "prompt": "VCassFreesideSass04"
+  },
+  {
+   "key": "vcassfreesidesass05",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To a bad come-on} I'm not the {emph} man you need, pretty boy.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{To a bad come-on} Show me one, and I'll do him proud.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassFreesideSass05",
+   "prompt": "VCassFreesideSass05"
+  },
+  {
+   "key": "vcassfreesidesass06",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To a bad come-on} Got enough on my shoulders without adding more dead weight to 'em.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassFreesideSass06",
+   "prompt": "VCassFreesideSass06"
+  },
+  {
+   "key": "vcassfreesidesass07",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To a bad come-on} A drink wouldn't make you any prettier, slick.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{To a bad come-on} As long as you leave right after you put your caps down, you're on.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassFreesideSass07",
+   "prompt": "VCassFreesideSass07"
+  },
+  {
+   "key": "vcassfreesidesassgeneral",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To a bad come-on} Looking for love or to put me to sleep, kid?",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{To a bad come-on} If you're looking for action, grab some grease from your hair and give your gun a few pulls.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{To a bad come-on} Not interested in any weapon that shoots blanks.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{To a bad come-on} Not for all the whiskey in Reno.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{To a bad come-on} Barking up the wrong bar stool, kid.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{To a bad come-on} If you're looking for action, jam your dick in a locker and slam it a few times.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassFreesideSassGeneral",
+   "prompt": "VCassFreesideSassGeneral"
+  },
+  {
+   "key": "vcassjbcattack",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Attacked out of the blue} What the hell is this shit?",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassJBCAttack",
+   "prompt": "VCassJBCAttack"
+  },
+  {
+   "key": "vcassjbcpostattack",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Calming down, just avoided a surprise attack} What the hell was that all about?",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassJBCPostAttack",
+   "prompt": "VCassJBCPostAttack"
+  },
+  {
+   "key": "vcasslocationbittersprings",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Heard NCR recon fucked up here once, with the Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heard NCR drove the Khans out of here, to Red Rock.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Place stinks of sand, piss, and vomit.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Refugees.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch out - easy to get sick around here.",
+     "emotion": "fear",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationBitterSprings",
+   "prompt": "VCassLocationBitterSprings"
+  },
+  {
+   "key": "vcasslocationblackmt",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Crazy ass radio signals around here, couldn't make sense of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Place sets geiger counters ticking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No idea why the highest point in the Mojave is so rad-lit.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationBlackMt",
+   "prompt": "VCassLocationBlackMt"
+  },
+  {
+   "key": "vcasslocationbouldercity",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Should hit the Big Horn saloon here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heard there's still mines in the city - and maybe drunk NCR soldiers spoiling for a fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To herself} Rubble city, more like it.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "There's a bar in the intact section, careful if you go wandering around the ruined section.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationBoulderCity",
+   "prompt": "VCassLocationBoulderCity"
+  },
+  {
+   "key": "vcasslocationcampgolf",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Not much reason to ship water here, but liquor... hard to meet demand.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If NCR didn't grate me so, I'd come here for water resupply.",
+     "emotion": "pained",
+     "intensity": 5
+    },
+    {
+     "text": "Used to ship a lot of liquor here, soldiers here have too much free time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If there's a reason to attack NCR, Camp Golf's a reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch out for the Misfits here - 9th Platoon, word of their fuck-ups is legendary.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Golf was a president, I think. Maybe for NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heard this used to be a mine field from some of the troopers here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Each spot for a land mine is numbered, hear tell.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Under her breath} If you're looking for NCR's spine, ain't going to find it here.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Well, Hanlon sure let this place go to shit.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Lot of sites to this guy Golf all over the West.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationCampGolf",
+   "prompt": "VCassLocationCampGolf"
+  },
+  {
+   "key": "vcasslocationcampguardian",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Just goes to show you, no matter where you go, there's NCR trying to hold onto every corner of the world.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess they chose this spot to spy on Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Poor bastards.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess NCR's fish food.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice sign.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationCampGuardian",
+   "prompt": "VCassLocationCampGuardian"
+  },
+  {
+   "key": "vcasslocationcottonwood",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{To herself} Should kill all these slavers.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{To herself} Damn slavers.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Those dogs look like they could savage a Securitron.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "We go across that launch, we may not come back.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "This is the only place to cross the Colorado safely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope we're not planning to cross the river.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Only merchants, slaves and Legion come here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationCottonwood",
+   "prompt": "VCassLocationCottonwood"
+  },
+  {
+   "key": "vcasslocationfiends",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Shit. Fiends.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Smells like Fiends.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Can smell the chem labs and Jet from here.",
+     "emotion": "pained",
+     "intensity": 5
+    },
+    {
+     "text": "Make sure you have a backup weapon, Fiends don't go down easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch for dogs.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Heard tell there was a Vault somewhere around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationFiends",
+   "prompt": "VCassLocationFiends"
+  },
+  {
+   "key": "vcasslocationforlornhope",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Another proud NCR camp.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Probably chose this place because of the water supply.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Morale looks low.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I smell Hydra in the air, just a whiff.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationForlornHope",
+   "prompt": "VCassLocationForlornHope"
+  },
+  {
+   "key": "vcasslocationfort",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Be damn careful here.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Don't like the way the men are looking at me.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Muttering} Keep your eyes to yourself, Legion asshole.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Can't believe you want to talk to this guy.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{Sarcastic, looking at crucifix} Love how he's decorated the place.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Women might as well be dirt... not anxious to join them.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Wish these women would take knives to Caesar's troops in their beds.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationFort",
+   "prompt": "VCassLocationFort"
+  },
+  {
+   "key": "vcasslocationfort2",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Can't belive we're fucking back here.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Testing our luck coming back here.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "You sure you know what you're doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They try and put one of those Brahmin packs on me, they're asking for a gelding. Going to get gelded.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Can't say I've seen a smile on anyone's face since we arrived.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hope NCR wipes Caesar off the map.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess the tent belongs to the big man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not much future in the Legion if you don't have a dick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm heading back West if Caesar moves on the Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not looking forward to being a Legion wife.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationFort2",
+   "prompt": "VCassLocationFort2"
+  },
+  {
+   "key": "vcasslocationfreeside",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hometown of the Van Graffs, don't care for this place too much.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "We shouldn't be in here.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Water's scarce, but between things like this and Lake Mead, ain't too bad in the West as in other places.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Watch out for the Kings, they're unpredictable.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Slight contempt} Kings dress like strutting girls, all fancy like.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once had a King following me like I was following you - had to chase him off with a shotgun finally.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kings told me I couldn't deal water here, fuckers. They like having mono. As in monopoly.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Ralph might be able to forge a pass into the Strip for you, you need one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looking for weapons, check out Mick and Ralphs... Mick's probably a sight better than Ralph, always trying to talk me out of my pants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kings are led by the King. Has some kind of robot dog. Guess it hunts robot rats.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kings hold control over the water pump 'round here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationFreeside",
+   "prompt": "VCassLocationFreeside"
+  },
+  {
+   "key": "vcasslocationgeneralidle",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Sure could use a drink.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All this traveling's making me thirsty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Careful if we go off the road.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't mind trailblazing as long as we got the ammo. And whiskey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Feels good not to have to drag a Brahmin train across the Mojave.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Glad I left the Outpost behind.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Caravan of two now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationGeneralIdle",
+   "prompt": "VCassLocationGeneralIdle"
+  },
+  {
+   "key": "vcasslocationgoodsprings",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Curious, walked into town} Looking to step on your own grave?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Curious, walked into town} Not every day you come back to your gravesite.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Curious, walked into town} Heard the Doc here is a good guy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Curious, walked into town} Crimson Caravan had some trouble here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Curious, walked into town, \"That...\"} Hill where you got shot?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationGoodsprings",
+   "prompt": "VCassLocationGoodsprings"
+  },
+  {
+   "key": "vcasslocationhiddenvalley",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What's that hum?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Watch for scorpions.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Doesn't fell like the rest of the Mojave here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Storms pick up quick around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationHiddenValley",
+   "prompt": "VCassLocationHiddenValley"
+  },
+  {
+   "key": "vcasslocationhooverdam",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Check out those guns - rumor had it they used to shoot planes down before the war.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "{To herself} Place looks like how my bladder feels.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Place always wants me to take a piss.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ever look down the Dam? Sends your head spinning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationHooverDam",
+   "prompt": "VCassLocationHooverDam"
+  },
+  {
+   "key": "vcasslocationjacobstown",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Shivers} Place is fucking cold.",
+     "emotion": "pained",
+     "intensity": 5
+    },
+    {
+     "text": "Pine trees?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{Frowns} Can't believe we're in a refuge for crazy super mutants.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Wish I'd packed a jacket.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Only seen snow, not walked through it. Crazy - frozen water? Should package this shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heard they could make \"ice\" in the Old World and carry it around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Skeptical} Dad used to say that in the Old World, people would put boards on their feet and soar down the mountains.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationJacobstown",
+   "prompt": "VCassLocationJacobstown"
+  },
+  {
+   "key": "vcasslocationmojaveoutpost",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Slight irritation} Back here again?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Slight sarcasm} What, didn't see enough of the sites here the first time?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Once here, most just stall out, can't go deeper into territory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fucking monument.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "From here, it's Nipton to the east or Primm to the north.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And here's the slice of the world where NCR's hands start slipping.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationMojaveOutpost",
+   "prompt": "VCassLocationMojaveOutpost"
+  },
+  {
+   "key": "vcasslocationncr",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Be careful they don't charge us any tolls.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't tell them where we're from - or headed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationNCR",
+   "prompt": "VCassLocationNCR"
+  },
+  {
+   "key": "vcasslocationncrcf",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Looks like prisoners are in charge now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No guards in the towers, not a good sign.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Guess NCR fucked this place, too.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationNCRCF",
+   "prompt": "VCassLocationNCRCF"
+  },
+  {
+   "key": "vcasslocationnellis",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Folks here have access to Lake Mead, fresh drinking water.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Careful, Boomer territory. They ain't hostile, but they're a bit trigger happy.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Boomers are a might twitchy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Folks here aren't friendly to anyone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't be shooting wild in here - might set something off.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "First time I seen a fence made out of artillery.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Some of these weapons look like they came from Hawthorne Army Depot, place has a lot of history.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can hear the screaming of rockets and explosions in this place at night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got nests for planes here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "An assault on this place would be suicide.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationNellis",
+   "prompt": "VCassLocationNellis"
+  },
+  {
+   "key": "vcasslocationnelson",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{somber} Guess the miners got fucked.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Where's the mine from here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wary, somber} If this place got hit, Novac's next.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationNelson",
+   "prompt": "VCassLocationNelson"
+  },
+  {
+   "key": "vcasslocationnipton",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I think I'm going to be sick.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Nipton wasn't the best towns, but...",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Mayor Steyn got what was coming to him, looks like.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mayor here used to shelter gangers, hear tell. Guess it didn't save him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Confused, horrified} Should we cut the people down...",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Who the hell was that?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "I... hope they don't hit the Mojave Outpost.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationNipton",
+   "prompt": "VCassLocationNipton"
+  },
+  {
+   "key": "vcasslocationnovac",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "This place reminds me the Old World had too much time on its hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Named this place after the hotel.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "NoVac's the hotel, not the lizard.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Smells like junk.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Can see Dinky for miles, good landmark.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "First saw this place, thought the giant gecko was real.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Read a book that giant lizards walked the earth like this one - might be a gecko this size.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationNovac",
+   "prompt": "VCassLocationNovac"
+  },
+  {
+   "key": "vcasslocationprimm",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Said there's a courier office here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sign of the buffalo.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, Bison Steve, you old shithole.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Those post office boxes in these old towns still work.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good contact, Nash, used to be here. Had a son that went West.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Old World had cars that ran on roads like these above the ground, 'cept they didn't go anywhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The sheriff here ain't worth a damn.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Crazy ass shit.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationPrimm",
+   "prompt": "VCassLocationPrimm"
+  },
+  {
+   "key": "vcasslocationquarryjunction",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Smells like deathclaw.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like this place got wrecked.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like this place go mined - in the wrong ways.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationQuarryJunction",
+   "prompt": "VCassLocationQuarryJunction"
+  },
+  {
+   "key": "vcasslocationrangerstation",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Rest stop.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "NCR's friendly, might be able to resupply.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "A little safe ground.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "NCR flag - not safe, close to it, though.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationRangerStation",
+   "prompt": "VCassLocationRangerStation"
+  },
+  {
+   "key": "vcasslocationredrock",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "These boys and girls can really down the bottles.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Whiskey and liquor don't last long around here, by the sight of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wonder if any of these folks would be up for shots of courage - and a wager.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Be *really* careful what you say here.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Should have heard stories of the Khans years ago - they were one tough bunch, now...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Khans lost their strength after Bitter Springs, came here to lick their wounds.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's not split up here, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't take any chems here - hell knows what they're laced with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Won't trade with Khans - they've poisoned most of the villages west of Vegas with chems.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Fiends would suffer withdrawal and die without the Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Place would be beautiful... without the chem addicts and dealers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "|Annihilation| {To herself} Guess someone had to put them down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have a Vegas-style boxing ring in the center there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Really wish we could go to some civilized places.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even the flies here are chemed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "God, you can smell the Brahmin shit from the jet all over this place.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationRedRock",
+   "prompt": "VCassLocationRedRock"
+  },
+  {
+   "key": "vcasslocationstreet",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The Street - Vegas Boulevard.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fancy town... let's hit some bars.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Don't draw any guns and start shooting here - I heard the robots settle that trouble quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "3 casinos here - Ultra-Luxe, Gomorrah, and the Tops. {Beat, afterthought} and, the Lucky 38.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heard Crocker's running the Embassy - guy's funny, and not in a hee-haw way. More like a see-saw with his politics.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Captain Pappas keeps the law here. Watch out for her, she's no Crocker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassLocationStreet",
+   "prompt": "VCassLocationStreet"
+  },
+  {
+   "key": "vcasslocationstrip",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Chairmen, Omertas... a whole bunch of families rule Vegas, don't step out a line as long as money's to be made.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to sin. Watch where you step.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch for NCR vomit.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Hope you're not here to chase your losses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now to find a bar.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Don't understand how the missiles could have missed a target like this.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Beats Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can't believe we got in here.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Dad used to say this place was what Reno tried to be. {Beat} Fucking Reno.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Place feels like the Sorcerer of Oz sometimes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heard stories about the Lucky 38, how nobody's ever gone inside - 'cept you, that is.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VCassLocationStrip",
+   "prompt": "VCassLocationStrip"
+  },
+  {
+   "key": "vcassreactbad",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Commenting on player's behavior} Think that was a mistake.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Commenting on player's behavior} No call for that.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{To herself, commenting on player's behavior} Could have handled that better.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassReactBad",
+   "prompt": "VCassReactBad"
+  },
+  {
+   "key": "vcassreactlike",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Commenting on player's behavior} What I would have done.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Commenting on player's behavior} You handled that well.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Commenting on player's behavior} Good job.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VCassReactLike",
+   "prompt": "VCassReactLike"
+  },
+  {
+   "key": "vcassreactreallybad",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Commenting on player's behavior} That was fucked up.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Commenting on player's behavior} Can't believe you did that.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Commenting on player's behavior, to herself, neg} Just when I think I'd seen it all.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Commenting on player's behavior, to herself} That was lower than low.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VCassReactReallyBad",
+   "prompt": "VCassReallyBadReact"
+  },
+  {
+   "key": "vcassreactreallylike",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Commenting on player's behavior} Set an example, others will follow.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{Commenting on player's behavior} Proud of you.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{Commenting on player's behavior} Color me impressed.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VCassReactReallyLike",
+   "prompt": "VCassReallyLike"
+  },
+  {
+   "key": "vcasswhiskeyroseperk",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "That hit the spot.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Shot of whiskey} All right, now for some ass-kicking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Shot of whiskey} Pass the bottle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Shot of whiskey} Now all I need is some shame to wash it down with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Shot of whiskey} Bottoms up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Shot of whiskey} Oh, now, there goes the pain.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCassWhiskeyRosePerk",
+   "prompt": "VCassWhiskeyRosePerk"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Next time, I'll put a nail in your head.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Done fucking around? Good.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "armorineffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Shoulda fought naked, it'd hurt less.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Armor's for shit.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "They're cutting me up!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Irritated} Could use sheet metal, not a sheet.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "ArmorIneffective",
+   "prompt": "ArmorIneffective"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm going to knock you off your axles.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Gonna fix your wagon.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Fat's in the fire now, you little bitch.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "That does it.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Pushed me too far.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Grim, angry} Someone's looking to cash their chips early.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Time for some get-even.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Let's paint this place red.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Let's start this dance.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Serving up some hurt.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Gonna six this bitch.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You're just in time for your ass whipping.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "That how you want to play, huh?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Scatter!",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "Oh shi-{\"shit\"}",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "Trouble!",
+     "emotion": "surprise",
+     "intensity": 30
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "crippled",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Crippled in the leg, grim} Tagged me, need a doctor bag.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Crippled in the leg, grim} Not firing on all pistons here.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Critically injured} A doctor's bag and some whiskey, if you don't mind.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Critically injured} Gonna lose a limb if I don't get some meds.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Critically injured} If I get gangrene before we find a doctor...",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "Crippled",
+   "prompt": "Crippled"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Death Noise 2}",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Death Noise 3}",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Quiet} Their trouble's all gone.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "Gone to their reward.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Warning} Running out of friends...",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "One of ours is down!",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Fuse lit!",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "About to get loud!",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Not looking to die here.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "Me and courage are out of here.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "Blood's running, and I'm going to follow.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "Why the hell do I follow you into things like this?",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "They want me, they'll have to catch me.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You're outstaying your welcome.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "healthhalf",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Might need to rest soon.",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "{To herself} Shot of whiskey might kill the pain.",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "Wouldn't say no to a Stimpak.",
+     "emotion": "pained",
+     "intensity": 10
+    }
+   ],
+   "topic": "HealthHalf",
+   "prompt": "HealthHalf"
+  },
+  {
+   "key": "healthquarter",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Dying} Too stupid to die... but getting there.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "{Dying} On my last legs here.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "{Dying} If I'm going to die, at least pass me some whiskey.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "{Dying} Got more pain in me than blood.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "{Dying - not beat yet, but damn close} Ain't beat yet.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "{Dying} Don't let them bury me in Vault City.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "{Dying} Feeling a little worse for wear.",
+     "emotion": "pained",
+     "intensity": 20
+    }
+   ],
+   "topic": "HealthQuarter",
+   "prompt": "HealthQuarter"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Going to run out of friends at the rate you're going.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "You are {emph} such an asshole sometimes.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Who's side are you on?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight shock} Did you do that on purpose?",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Well, that's all wrapped up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sure put a nail in that one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's all she wrote.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "noammo",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Reloading! Wait, no, I'm out!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Trigger's willing, chamber's empty.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "No more ammo.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Firing dry here.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I'm out.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "NoAmmo",
+   "prompt": "NoAmmo"
+  },
+  {
+   "key": "poisoned",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Feel... weak all of a sudden.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Head's spinning - must've got stung.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I need a snakebite kit, fast.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Poisoned",
+   "prompt": "Poison"
+  },
+  {
+   "key": "regenerating",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Rush of health} MMmmahh. <Smacks lips>",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Rush of health} Sweet as roses.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Rush of health} Getting my second wind here.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Rush of health} Mmm, now that feels good.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Rush of health} Whew.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "Regenerating",
+   "prompt": "Regenerating"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Think I didn't see that?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Good way to lose a hand.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "useddoctorbag",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Impressed by own medical skill} Didn't even leave a scar.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "All stitched up.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Prefer a shot of whiskey, but...",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "UsedDoctorBag",
+   "prompt": "UsedDoctorBag"
+  },
+  {
+   "key": "wake",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Wakes up from hurt} Feels like a Brahmin kicked me.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Disoriented} Guess that didn't go so well.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Disoriented} Head's ringing like an alarm clock.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Getting up after being knocked out} Need a drink.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Better than waking up in jail, I guess.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "Wake",
+   "prompt": "Wake"
+  },
+  {
+   "key": "weaponbroke",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Gotta spare gun handy?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Weapon's done for.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Piece. Of. Shit.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "WeaponBroke",
+   "prompt": "WeaponBroke"
+  },
+  {
+   "key": "weaponineffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "This weapon's on its last legs.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Might as well be shooting blanks!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Maybe I should switch to a squirt gun.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Gritted teeth} Need something with more kick.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Not even slowing it down!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "All I'm doing is pissing him off.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "WeaponIneffective",
+   "prompt": "WeaponIneffective"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Anything moves, it's going to get it.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "Don't see a thing.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Wish they'd show themselves.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Guess who won the lottery.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Got 'em spotted.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Theeeere you are.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Got one!",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{To herself} Yeah, better run. {Beat} Uh, them, not us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Giving up} Not worth our time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Giving up} Nothing. Must be nerves.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Herself} Hide nor hair of them.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Fucker pops back up, they'll wish they hadn't.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Mutters} Picked the wrong time for hide and seek.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Relieved} Glad that's over.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "In no mood for hunting.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Low, to player} Think they ran?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Grumbles} Less hide-and-seek, more shoot-and-kill.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{To herself, slight frustration} I see jack and shit - 'cept no jack.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{Low whistle, as if calling a dog}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "All right, let's try this again.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Spotted} Got 'em!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Gonna kill you for wasting my time.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Should've run, now say your prayers.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Guess they got rattled.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get 'em next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got no patience for hunting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Quiet, alert} That wasn't you, was it.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Hear something, doesn't sound like a friend of yours.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Cold} Looks like someone wants to be neighborly.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{To herself} And {emph} then the fight started.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Irritated at fighting} Don't need this right now.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Eager} Let's kick this in gear.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Evil} Well now, what's all this.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Pleased to fight} Looks like a party.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Caught me good and pissed.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  }
+ ],
+ "speaker": "cass"
+}

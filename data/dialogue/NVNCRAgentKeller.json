@@ -1,0 +1,649 @@
+{
+ "page": "NVNCRAgentKeller.txt",
+ "speaker": "Keller (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What did Contreras say?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We work together. I'm handling his deliveries for the moment while he handles a business opportunity that came up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have you seen a guy named Price around?"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Look, do you have something to drop off or not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Brahmin tipping is a cherished pastime."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa! Hold on a minute, buddy...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whoa! Hold on a minute, lady...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Draw weapon> You're a dead man."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Crazy wastelander.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Um, well... Nevermind."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lets see here...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Congratulations, you're under arrest for chem trafficking. Hand over your weapons and come with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Close enough. Yeah, Contreras told me to give Price this package."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Contreras will still get his. Killing you will just save me some paperwork.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Draw Weapon> We agreed you should die."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Let him know we'll be keeping an eye on him. He is free to do business...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But, if he isn't regularly reporting on illegal transactions, he's a dead man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He said he would help you."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Contreras, eh? We suspected he was involved somehow.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It looks like you just gave me the evidence I've been looking for.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I had no idea that package had chems! Contreras gave it to me!"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Saves me paperwork.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Draw Weapon> You'll never take me alive, pig!"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ranger Keller. I've been undercover for months tracking chems in this area.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This has to be the easiest catch yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who the hell are you?"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh, an accomplice afterall. Well, it'll save me some paperwork just killing you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Draw Weapon> You won't be telling anyone about this."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know what? I believe you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're free to go. Contreras, however, won't be moving drugs ever again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hey, I'm just the messenger. I didn't know anything about this."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] What?! How the hell did you figure that out?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "C'mon guy. You're no merchant. You've got Ranger all over you."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Password? That little bastard said nothing about a password.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Price is in NCR custody and you're going to join him, unless you've got a damn good explanation for why you're looking for him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hand over your weapons. You're under arrest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[INT/PER] Hey, that wasn't the right response for the password!"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hell. Thought I'd done a better job than that. Well, if that's how it is, you can call me Ranger Keller.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Price is in deep with the NCR for supplying drug ingredients to the local gangs. He's currently being held for questioning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is your business with Price?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The way you stand, your weapon, even your armor is fitted in a military fashion."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] It might work since he's acting as a major hub for this activity. It's not like he has much choice now that we have evidence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you can convince Contreras to work with the Rangers to break up the drug ring, I'll call off the firing squad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just report back to me when he's agreed to make the deal. Otherwise, he's dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm sure Contreras could work with you.",
+   "label": "{Speech}"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I wouldn't normally do this, but seeing so much money change hands between scumbags on a daily basis has me thinking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm never going to be able to track all of these bastards down without some help, and Contreras seems to be a central hub of activity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell Contreras I'm willing to put in a good report with the brass if he cooperates. Just give me a cut of the action and report any major moves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] You don't bribe a Ranger. You had better have something compelling to say, or you can join Contreras in hell.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Give 250 caps> I'm sure Contreras would be willing to work with you..."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, if you hear anything, report it to myself or Lt. Boyd immediately. We need to track down his source.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just some supplies for McCarran from the Crimson Caravan."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] <Takes Contreras' package> Bullshit, lets see what you've got here...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, it looks like you've got the materials here to make chems. You're under arrest unless you've got a damn good explanation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<cover package> Oh this? Nothing important."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Contreras?! What's his involvement? Was he selling drugs to Price?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You might want to ask Contreras at Camp McCarran that question."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He'll be shot. We have no tolerance for chem dealers in the military.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's going to happen to him?"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stay out of trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Ok. I'll just be on my way then."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have Contreras. No one is going to miss you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Draw Weapon> Well, I can't just let him be killed. Word of this stops here."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wouldn't normally do this, but seeing so much money change hands between scumbags on a daily basis has me thinking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm never going to be able to track all of these bastards down without some help, and Contreras seems to be a central hub of activity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell Contreras I'm willing to put in a good report with the brass if he cooperates. Just give me a cut of the action and report any major moves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Otherwise, he'll be reported as a traitor selling contraband to the enemy and go in front of a firing squad.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Give 250 caps> Okay, make that 500 caps. I'm sure Contreras can skim for you."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You really don't know what you just got yourself into, girlie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You really don't know what you just got yourself into, boy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Draw Weapon> I think I'll just take my caps back from your corpse."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see... Well, it looks like you've got the materials here to make full-blown chems.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Well, I was given this package to deliver to him."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know what? I believe you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're free to go. Contreras, however, won't be moving drugs ever again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Son of a... Sir, I didn't know anything about this."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, if you hear anything, report it to myself or Lt. Boyd immediately. We need to track down his source.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nothing. I was just told he was a local merchant I should check out."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] What's that you're carrying? Looks like some kind of delivery to me...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Oh, just delivering packages. No clue whats in em, but its really important."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa! Hold on a minute, buddy...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whoa! Hold on a minute, honey...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Draw Weapon> And now I'm going to kill you, you lying son of a bitch."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, hell! {About to have a surprise gunfight.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Draw Weapon> Special delivery!"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you say, buddy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whatever you say, lady.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Oh... Well, I'll come back when he's around."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, shit. Well since you seem to have things figured out, the name's Keller. I'm an NCR Ranger investigating chem runners.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Price is in deep with the NCR for supplying ingredients to the local gangs. He's currently being held for questioning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's your business with him?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No one works for Price, so who the hell are you?"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. You need something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You said you were handling Price's goods while he's away?"
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really now? We had our suspicions about that man, but he's got so many shipments going so many different directions it's been hard to track",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What exactly is his offer? Does he realize bribing a Ranger is a hanging offense?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Contreras would like to work with you."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] He has himself a deal. However, If he tries to run or he continues to deal strategic assets with enemies, he's a dead man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell Contreras to expect to see me around more often. He better have a new bit of information when I stop in or I'm reporting his ass to Boyd.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Leave him alone and he'll share contact information."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] He has himself a deal. However, If he tries to run or he continues to deal strategic assets with enemies, he's a dead man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell Contreras to expect to see me around more often. He better have a new bit of information when I stop in or I'm reporting his ass to Boyd.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Don't charge him and he'll help you take down the local dealers."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sounds like the evidence we need to bring him in for questioning and search his shack, but why are you telling me all of this?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He gave me a package to deliver and now he asked me to kill you."
+  },
+  {
+   "id": "VFreeformMcCarranNVNCRAgentKellerTopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, thanks for the tip, but we'll need more evidence. Talk to Boyd at McCarran.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been working with her in this investigation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If Contreras is a scumbag, I want him caught."
+  }
+ ]
+}

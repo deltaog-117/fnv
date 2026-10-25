@@ -1,0 +1,293 @@
+{
+ "page": "VHDQuartermasterBardon.txt",
+ "speaker": "Bardon",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You really saved our asses out there against the Legion. Thanks.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I can't believe that President Kimball was attacked. I'm just relieved that nothing bad happened to him.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "I can't believe President Kimball is dead. He was a great leader for the NCR.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "So you're the one that has been running errands for Colonel Moore. Do you need something?",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{Happy} Well look who it is! What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Always nice to have a friend of the NCR around. What can I help you with?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "You better watch yourself around here. I'm not going to put up with any of your crazy shit.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "{Wary} Something you need?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "You've got a lot of nerves being here. Maybe you should just leave instead.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Gruff} What do you want?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "I don't think you're in the right place. You looking for something?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is there something I can do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure thing.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Unfortunately for you, I'm not authorized to trade with you. It's against regulations.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to purchase some supplies."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess I can spare a minute or two for you. Things are a little slow at the moment anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Me? I've been in the military my entire life. It's a family sort of thing. My father served, my brothers serve, and I serve.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "I've had the honor of serving all over the NCR and now I get to be out on the front lines as the NCR comes out east to help these folks here.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Once we get rid of the Legion, this will be a better place for everyone, and I'm proud to be a part of that.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "I'm on duty here. I don't have time to chit-chat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess I can trust you. What would you like to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sure, what would you like to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not required to answer questions from a civilian and I don't trust you enough.",
+     "emotion": "neutral",
+     "intensity": 5
+    },
+    {
+     "text": "Go bug someone else with your questions.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "I have some questions about the NCR."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that is great and all, but it's really against regulations.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Not even to a friend of the NCR?",
+   "label": "<Reputation Check>"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not here to make money, I'm here to watch the NCR supplies for the dam and that means no supplies for you.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Come on! Don't you want to make a few caps?",
+   "label": "<Reputation Check>"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess I can make an exception, just for you.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I completely understand, but I am working for the good of the NCR too.",
+   "label": "<Speech Check>"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's still against regulations, I can't help you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Come on! Who's going to know?",
+   "label": "<Speech Check>"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make it quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's go back to my other questions."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The NCR is out here to make the world a better place. For those out here and for all those back home. I'm glad I can be a part of that.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "How do you feel about the NCR being out here?"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're a bunch of evil savages if you ask me. We're out here trying to save these good people from being enslaved by those bastards.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I hope we kill 'em all.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are your thoughts about the Legion?"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, the dam here is the key to helping the NCR make the world a better place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With the power from the dam we can help the people here and back home have a better quality of life.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "We can't trust the Legion or Mr. House to do the same. The NCR is the only one looking out for the people. And we need the dam to do that.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "And I pity the people that try to take it from us.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "What do you know about the dam?"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDQuartermasterBardonTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry about that, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nevermind."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

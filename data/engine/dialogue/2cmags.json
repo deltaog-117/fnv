@@ -1,0 +1,794 @@
+{
+ "id": "2cmags",
+ "speaker_name": "Mags",
+ "source": "2CMags.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, everybody's lined up and ready to go. Any suggestions?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Okay, we've got our dummy grenades and the course is live. We're all set.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "The squad really seems to be working together better. It's nice, for a change.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "What the hell happened with these readiness reports? These scores are way too high!",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Thanks to your help, I feel like we can take on the world!",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I don't know what Razz gave us, but holy shit this is great! I feel like I could kill an entire legion! With my teeth!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Haven't seen you around before, soldier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not very often we see civilians on-base. What's you're story?",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "I heard Chief Hanlon committed suicide. That's just... hard to believe. Do you know anything about it?",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "I hear Caesar's dead, and we've got you to thank for it. Nice work.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I hear Caesar's dead. Maybe that means the war will be over soon.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "I've got a friend stationed at McCarran - I heard something about a monorail explosion there. I hope he's okay.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "Radio says you stopped the President's assassin cold. Not bad.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "You're lucky you haven't been shot walking in here after that assassination attempt.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "You're lucky you haven't been shot walking in here after you killed the president.",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "Hell of a battle at Nelson. I'm impressed our troops survived.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Everybody's been really nervous since President Kimball died. I don't know what's going to happen.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Hell of a battle at Forlorn Hope. I hope the brass can do something for the troopers' families.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "There's some weird chatter on the radio saying something wiped out Nelson and Forlorn Hope. That's pretty scary.",
+     "emotion": "fear",
+     "intensity": 40
+    },
+    {
+     "text": "I'm not supposed to know this, but I hear they're dispatching elite ranger units from California to deal with the Legion.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "So now the word is Caesar's calling in his elite troops from Arizona. I don't think we're going to catch a break any time soon.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "A bunch of units just got mobilized to Hoover Dam. This is the big one, isn't it?",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "Glad to see you haven't gotten yourself killed yet.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "{sarcastic} Man, the brass is going to be thrilled that you're here.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "Friendly warning, you might want to steer clear of NCR facilities. You're not exactly popular.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "{A little starstruck but trying to be nonchalant} Wow, the big celebrity down here with the common troopers. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You're not going to do anything crazy, are you? It's just, you know... the paperwork....",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "How'd you get in here without getting shot?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Hey again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "magsarmy",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess I wanted to make something of myself, you know? Be the best of the best. I *wanted* to be a ranger, but... guess this is as close as I get.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "MagsArmy",
+   "prompt": "Why'd you join the Army?"
+  },
+  {
+   "key": "magscampgolf",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Easy - this is where they send all the fuck-ups and people they don't want. But hey, it's not like I'm bitter or anything.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "MagsCampGolf",
+   "prompt": "How'd you end up assigned to Camp Golf?"
+  },
+  {
+   "key": "magshistory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much to tell, really. I grew up in New Reno, joined up, took my shot at being a Ranger. Didn't make it, so I'm stuck with this crew of jokers.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "MagsHistory",
+   "prompt": "Tell me a little about yourself."
+  },
+  {
+   "key": "magsmisfits",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I mean, no, they're okay people, but they don't care, y'know? They don't have any ambition. No drive.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "They're slacking off, and that reflects badly on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MagsMisfits",
+   "prompt": "Sounds like you aren't too fond of your squadmates."
+  },
+  {
+   "key": "magsshapeup1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks to you, I think we're in good shape. The squad seems to be functioning much better as a unit now.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "How's the squad doing?"
+  },
+  {
+   "key": "magsshapeup1_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He did, huh? Well, good luck with that. You'd have an easier time teaching radroaches to march in formation.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "Sgt. McCredie asked me to talk to you about getting your squad in shape."
+  },
+  {
+   "key": "magsshapeup1_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It helped, but we've still got a grenade range inspection to pass.",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "It really, really didn't.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "So, did the shooting range practice take care of things?"
+  },
+  {
+   "key": "magsshapeup1_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not even a little bit, no.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "So, did the grenade range practice take care of things?"
+  },
+  {
+   "key": "magsshapeup1_5",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, what about it? I told you, we need marksmanship and explosive handling improvements.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "So, about those improvements...."
+  },
+  {
+   "key": "vendingmisfits",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating} Slain to the last man by the Courier, the Misfits were at least spared the humiliation of dying during Caesar's attack on Camp Golf.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Few mourned their absence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Shaped up by the Courier's advice, the Misfits distinguished themselves during the Legion's attack on Camp Golf.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mags was finally promoted to Sergeant, and the rest of the Misfits received an official commendation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They continued to serve with distinction for many years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Though Camp Golf fell to Caesar, the Misfits distinguished themselves during the Legion's attack.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mags and her soldiers were posthumously recognized for their valor by NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Misfits' laziness caught up with them when the Legion attacked Camp Golf.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those who weren't killed in the attack attempted to flee, but were caught at Mojave Outpost, court-martialed, and hanged from the ranger monument.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Driven into a frenzy by their use of Psycho, the Misfits inflicted heavy casualties on the Legion during the defense of Camp Golf.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At first they were commended for their valor, but eventually, desperate for more of the chem, they turned on travelers in Outer Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For their dishonorable conduct, the NCR court-martialed and executed them by firing squad.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingMisfits",
+   "prompt": "VEndingMisfits"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Gee, I dunno, maybe because I'm saddled with the worst damn unit in the NCR Army? Think that might have something to do with it?",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic000",
+   "prompt": "How come you didn't make it into the Rangers?"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please. Camp Golf is where they shuffle off anybody they don't want any more. Assignment here is a career ender.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic001",
+   "prompt": "This place doesn't seem so bad."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You really think so? Hell, I guess it's worth a shot.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "[FAILED] Yeah, right. You think Poindexter doesn't have a dozen of his crazy practical jokes all lined up if I try that?",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "I like my underwear to *not* be full of radioactive itching powder, thanks.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic002",
+   "prompt": "Well, maybe if you tried to lead by example instead of tearing them down."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You heard the man, people, get focused!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "[SUCCEEDED] You heard the lady, people, get focused!",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic017",
+   "prompt": "Take positions where you can cover each other. Stay focused."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic017_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Okay... sure. Everybody shoot the hell out of the target!",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic017",
+   "prompt": "Umm... I guess everybody should shoot the hell out of the target?"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I've got the one at 11 o'clock! Razz, O'Hanrahan, take the two on the right! Poindexter, the center!",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic018",
+   "prompt": "Take your time. Pick your shots and tell your squadmates who you're shooting at."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic018_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Faster, people, faster! More lead in the air!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic018",
+   "prompt": "No, no, you're doing it all wrong! Shoot faster! *Faster!*"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Right. Exhale... squeeze. Focus on the shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic019",
+   "prompt": "Exhale before you fire. Squeeze the trigger, don't jerk it."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic019_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm really not sure that's how this works.",
+     "emotion": "surprise",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic019",
+   "prompt": "You're never going to hit anything shooting in one direction. Fire wildly!"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for the help. I think the whole unit's doing a lot better now.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "That was... something. Thanks for trying, at any rate.",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic020",
+   "prompt": "Well, I think that went well, don't you?"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "After the help you gave us with the shooting range, we'll take any advice you've got. I'll line them up.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic021",
+   "prompt": "Get the troops lines up. I'll help you with it."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, if you say so. Hell, it's not like we've got a lot to lose here.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic025",
+   "prompt": "Don't worry, I'm not giving up. Let's try it again."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I've got a bad feeling about this....",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic026",
+   "prompt": "Okay, count to three, throw the grenade, and pull the pin. Wait, no...."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic026_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Right. Easy enough. One... two... three!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic026",
+   "prompt": "Okay, to start, pull the pin, let it cook off for a count of three, then throw."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Solid arc, check. Lob 'em up and over, people!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic027",
+   "prompt": "Don't pitch it like a baseball, lob it. You want a good, solid arc."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic027_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] They're kind of heavy for that, but whatever you say....",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic027",
+   "prompt": "Now, um... really whip them downrange. Like you're throwing a fastball!"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hold the grenades for groups, squad! Hit them in clusters and send them running!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic028",
+   "prompt": "Don't worry about accuracy - use the grenades to break up clusters of enemies."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic028_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] What the... what the hell are you talking about?",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic028",
+   "prompt": "No, no, no! You have to *hit* the target with the grenade or it won't go off!"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I do. Thanks. I think we might survive this now.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "You've got a funny definition of \"well,\" you know that? Whatever. Thanks for... whatever that was.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic029",
+   "prompt": "I think that went well, don't you?"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I doubt it. Poindexter might have an idea for some kind of last-minute scheme. You should talk to him.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic030",
+   "prompt": "Are you sure there's nothing I can do to help?"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, right. Bitch.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Yeah, right. Dick.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic031",
+   "prompt": "Yeah, you've been a real bundle of laughs."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, okay. Just thought I'd ask.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic032",
+   "prompt": "I don't, sorry."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Classified? Shit, it must be really big then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic033",
+   "prompt": "I'm afraid it's classified."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you serious? No way! I don't believe it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic034",
+   "prompt": "He was sabotaging the NCR's war efforts to force a retreat back to California."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, if you ask me, what we really need is to get the whole squad out on the practice range - shape up our marksmanship and explosives skill.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "I'm sure the others have their own ideas, though.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic037",
+   "prompt": "It can't be as hard as all that. What needs to get done?"
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure? I've got enough clout to get them started, but these guys are pretty lazy. I doubt they'll want to be pulled in different directions.",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic038",
+   "prompt": "Okay, let's get them out to the range."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll be here if you come to your senses.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic039",
+   "prompt": "Never mind, I'll talk to the others about their ideas first."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're the boss.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic040",
+   "prompt": "I'm sure. Let's do it."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, if you say so. Hell, it's not like we've got a lot to lose here.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic041",
+   "prompt": "Give me some time to figure things out and we'll try again."
+  },
+  {
+   "key": "vfreeformcampgolf2cmagstopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, if you say so. Hell, it's not like we've got a lot to lose here.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CMagsTopic042",
+   "prompt": "Don't worry, I'm not giving up. Let's try it again."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Sure, see you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "corporal_mags"
+}

@@ -1,0 +1,485 @@
+{
+ "id": "northvegasmrshostetler",
+ "speaker_name": "Becky Hostetler",
+ "source": "NorthVegasMrsHostetler.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are you doing here? Get out before I blow your head off!",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "I can't believe this shit. You again?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "So, what's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you've got some good news about Alice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was blind to what was happening in my own family. We don't have much, but please take this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh no! Alice... Alice, baby! I'm sorry, so sorry...",
+     "emotion": "sad",
+     "intensity": 80
+    },
+    {
+     "text": "She... Alice left, didn't she? I can't believe you let her go! Some help you've been!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "mrshostetlerfamily",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, he's an account manager for the Crimson Caravan Company. He works such long ours to provide for our daughter and me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You should speak to him if you get the chance - he's always saying how badly understaffed they are.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MrsHostetlerFamily",
+   "prompt": "You mentioned your husband works for the caravans?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know she's been frequenting the square in North Vegas, probably hanging out with street scum. I want to know more about her new \"friends.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic000",
+   "prompt": "What do you need done about your daughter?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know she's been frequenting the square in North Vegas, probably hanging out with street scum. I want to know more about her new \"friends.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic000",
+   "prompt": "Where did you want me to look for Alice?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Folks call this East Vegas, but I don't care much for names.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The east side gets lots of merchant and gambler traffic. We're safer here than in North Vegas or Westside, though we've got to put up with the NCR.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic004",
+   "prompt": "Tell me about this area of New Vegas."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The east side gets lots of merchant and gambler traffic. We're safer here than in North Vegas or Westside, though we've got to put up with the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic004",
+   "prompt": "Tell me again about East Vegas."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't get me started, stranger. We don't take kindly to either of them. We've fought hard for our home, and we're here to stay.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "The Legion knows nothing of working the land. Those folks would rather pillage, burn and steal, like mad beasts. That ain't honest living.",
+     "emotion": "anger",
+     "intensity": 70
+    },
+    {
+     "text": "The NCR's no better. They won't burn your home and rape your daughter, sure, but they'll steal your wealth all the same... when you ain't looking.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic005",
+   "prompt": "What's your take on the Legion and the NCR?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic005_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion knows nothing of working the land. Those folks would rather pillage, burn and steal, like mad beasts. That ain't honest living.",
+     "emotion": "neutral",
+     "intensity": 70
+    },
+    {
+     "text": "The NCR's no better. They won't burn your home and rape your daughter, sure, but they'll steal your wealth all the same... when you ain't looking.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic005",
+   "prompt": "What did you say before about the Legion and the NCR?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Grateful, the player just refused a reward she really couldn't afford to pay} We do need it. Still, I wish there was something we could give you in return.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take care of yourself out there. And if you ever need a friendly hand, know that folks around here will always welcome you.",
+     "emotion": "happy",
+     "intensity": 80
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic016",
+   "prompt": "I don't need it. Keep your money."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He did, huh? All right, what do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic020",
+   "prompt": "Settle down. Crandon sent me."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He should really mind his own business. Crandon's good to keep scum in check, but he ain't exactly subtle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic021",
+   "prompt": "Crandon said you had a problem. I take care of problems."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're good at snooping around, then I could use you. I need to find out what my daughter's up to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She's been frequenting the square in North Vegas, probably hanging out with street scum. I want to know more about her new \"friends.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic022",
+   "prompt": "<Questions about Quest>"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you say, stranger. Go snoop somewhere else and get the fuck out of my house, right now!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic023",
+   "prompt": "I mean you no harm."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you deaf? I don't give a damn about what you want. Just get out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic024",
+   "prompt": "I just want to ask you some questions."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Get lost!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Goodbye, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic025",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think I'm going to be easy, huh? Come get some, asshole!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic027",
+   "prompt": "<Attack> Okay, bitch. You asked for it."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, what's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic033",
+   "prompt": "<Questions General>"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, we've got a deal then. I'll make sure to compensate you for your time, {emphasis} if you find anything useful.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic037",
+   "prompt": "I'll check them out for you."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This ain't \"babysitting,\" stranger. I'm telling you, these people are nasty and Alice is in danger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic038",
+   "prompt": "Babysitting isn't my thing."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Yes, I suppose you're right. Please, take this: it's half of our savings. We'll manage, somehow, as we've always done.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take care of yourself out there. And if you ever need a friendly hand, know that folks around here will always welcome you.",
+     "emotion": "happy",
+     "intensity": 80
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic045",
+   "prompt": "Having your daughter back should be worth more than 200 caps."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic045_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] We've worked day and night, for months, to make that much. This is all we can give.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take care of yourself out there. And if you ever need a friendly hand, know that folks around here will always welcome you.",
+     "emotion": "happy",
+     "intensity": 80
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic045",
+   "prompt": "After all I've done, 200 caps won't do."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I shouldn't have trusted you.",
+     "emotion": "pained",
+     "intensity": 40
+    },
+    {
+     "text": "You think you can take it? All right, bastard! I'll give you what you deserve!",
+     "emotion": "anger",
+     "intensity": 80
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic046",
+   "prompt": "<Attack> I'll take the money from Crimson Caravan as well."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're going to leave, just like that? All right, stranger... Thank you for everything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic047",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I suppose you're right. Please, accept half of our reserve. We'll manage, somehow, as we've always done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic048",
+   "prompt": "Sooner or later she'd have left anyway."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "... I... I was blind to what was happening in my own family. We don't have much, but please take this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic050",
+   "prompt": "You're alive thanks to me. I expect my reward."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right, get out of here! If I see you ever again, I'll pump you full of lead, you hear?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic051",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We do need it, stranger. Still, I wish there was something we could give you in return.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you see Alice again, please, tell her we won't hold it against her. Tell Alice that we love her.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic052",
+   "prompt": "Actually, just keep it."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've worked day and night, for months, to make that much. Sorry, stranger, it'll have to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you see Alice again, please, tell her we won't hold it against her. Tell Alice that we love her.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic053",
+   "prompt": "For a job well done... 200 caps."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasmrshostetlertopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you see Alice again, please, tell her we won't hold it against her. Tell Alice that we love her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasMrsHostetlerTopic056",
+   "prompt": "500 caps sounds right."
+  }
+ ],
+ "speaker": "becky_hostetler"
+}

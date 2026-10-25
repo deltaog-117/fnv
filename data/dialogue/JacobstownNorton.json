@@ -1,0 +1,201 @@
+{
+ "page": "JacobstownNorton.txt",
+ "speaker": "Norton",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Marcus dead} Huh. With the big guy dead, I guess we're done here. You've made my employers very happy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our business is with the muties, not you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player not on quest} Our business is with the muties, not you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We got nothing left to talk about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yep, get a move on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just doing what I'm paid to do - harass the muties until they leave or attack us. If they leave, we let 'em go. If they attack, we wipe them out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Either way, the job's not done until they've cleared out of the town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you want with Jacobstown?"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Won't name names, but some important folks in the NCR are sick of muties attacking their Brahmin herds. They want them gone from NCR territory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe this group had something to do with attacking Brahmin, maybe not. Doesn't matter. We're getting paid to make them go away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you doing this for?"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I've always known when to fight and when to back down, and it seems to me I ought to back down this time.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "My men and I are leaving. You won't see us around here again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Go away or you'll have to deal with me, and you'll wish you were fighting Super Mutants instead.",
+   "label": "< Speech - 65 >"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I've faced down a charging Deathclaw and didn't blink. What makes you think I'd back down from you?",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "prompt": "You should leave before I... get mad.",
+   "label": "< Speech - 65 >"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That thought had crossed my mind as well, actually. Fine, make it 2000 caps and we'll call it square.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "2500 caps? I'm doing you a favor by paying you now. I doubt you were expected to survive this.",
+   "label": "< Barter - 55 >"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, but I've got men to pay and equipment to maintain. 2500 caps or no deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "2500 caps is too much. Can't we come to a deal on a lower price?",
+   "label": "< Barter - 55 >"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A deal's a deal. We'll be on our way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's your money - 2500 caps."
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're still owed half - 2500 caps. Pay up and we'll be on our way. If you're short, maybe you can get the money from the muties.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I hear you're mercenaries. Will caps make you go away?"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then. We'll be on our way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's your money - 2000 caps, as we agreed."
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNortonTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa, whoa. Thought you looked familiar. I'm just doing a job, nothing more. Politics aren't my thing, so if you say go, we'll go. No hard feelings.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm a hero in the NCR, and I think you need to leave. Now."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yep, get a move on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

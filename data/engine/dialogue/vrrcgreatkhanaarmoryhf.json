@@ -1,0 +1,47 @@
+{
+ "id": "vrrcgreatkhanaarmoryhf",
+ "speaker_name": "Great Khan armorer",
+ "source": "VRRCGreatKhanaArmoryHF.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They tell me I'm supposed to sell you weapons. Interested?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguegreatkhansgenericvrrcgreatkhanaarmoryhftopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGreatKhansGenericVRRCGreatKhanaArmoryHFTopic000",
+   "prompt": "Yes, please."
+  },
+  {
+   "key": "vdialoguegreatkhansgenericvrrcgreatkhanaarmoryhftopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then get out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGreatKhansGenericVRRCGreatKhanaArmoryHFTopic001",
+   "prompt": "No, thanks."
+  }
+ ],
+ "speaker": "great_khan_armorer"
+}

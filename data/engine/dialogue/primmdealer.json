@@ -1,0 +1,41 @@
+{
+ "id": "primmdealer",
+ "speaker_name": "Vikki and Vance dealer",
+ "source": "PrimmDealer.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, you just win too much. We can't let you play here anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to Vikki and Vance, we're still getting the casino up and running but feel free to sit down and play.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're hoping that Primm will get back on its feet from the money we earn here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We feel much safer opening the casino back up, now that we have a sheriff.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm glad that I could start working here again, things were rough with those convicts in town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "vikki_and_vance_dealer"
+}

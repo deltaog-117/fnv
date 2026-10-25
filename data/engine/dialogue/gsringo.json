@@ -1,0 +1,1221 @@
+{
+ "id": "gsringo",
+ "speaker_name": "Ringo",
+ "source": "GSRingo.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey there! Here's the rest of the payment I promised you back in Goodsprings.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Hey there, friend.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I heard about what's been going on in town. Our deal's off. I can't trust someone like you to watch my back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep an eye out. I still think there's a few out there.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "That's close enough. Who are you, and what do you want with me?",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "I owe you a huge favor for this. Here - these are technically Crimson Caravan funds, but I know they'll understand once I explain things.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Thanks again for all your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's the plan? Are we ready?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So, what's going on? Did Sunny agree to help us?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ammo costs money, you know!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's wrong with you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop that. I mean it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Quit it. You're making me nervous.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you dropped something.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Isn't that a little overkill?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Run!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get away!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "vdialoguecrimsoncaravangsringotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alice McLafferty runs the Crimson Caravan. You can find her over in the main office.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanGSRingoTopic001",
+   "prompt": "Who's in charge here?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravangsringotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm getting ready to run a caravan up towards Utah. There's a town called New Canaan which is supposed to be pretty prosperous.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Crimson Caravan doesn't have any branches out that way, so it'll be up to me get to things started.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanGSRingoTopic002",
+   "prompt": "So what's next for you?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravangsringotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll see you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanGSRingoTopic003",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, I'm ready. I hope.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic000",
+   "prompt": "Let's do this."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. I'll just wait here until you come get me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic001",
+   "prompt": "Stay here for now. I'll see if there's anything else I can do first."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? No!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic002",
+   "prompt": "I've decided to kill you for Joe Cobb."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just keep an eye out for them while you travel. I've found cards in old boxes or forgotten on shelves. Can find some for sale, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic003",
+   "prompt": "Where can I find more cards?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's all I've got with me, but if you look me up at the Crimson Caravan's main camp in New Vegas, I'll pay you in full.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic004",
+   "prompt": "Seems a little light for the work I did."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All I've got left on me are a handful of caps, but you get me out of this, and I'll make sure the Crimson Caravan pays you back. You've got my word.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic006",
+   "prompt": "You need a hired gun. I'm available."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I won't let you stick your neck out for free. I can't pay you back now, but I'll make sure the Crimson Caravan pays up. You've got my word.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic008",
+   "prompt": "I don't need payment."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Was there anything else you wanted to talk to me about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic009",
+   "prompt": "I'll consider it."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll stick around for a bit longer, but I'll be gone in a few days. If you ever visit New Vegas, look me up at the Crimson Caravan camp.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic010",
+   "prompt": "You're welcome."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've never stopped here until recently. You're better off asking one of the locals.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic011",
+   "prompt": "Can you tell me anything about Goodsprings?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's been in business for a very long time, and is probably the biggest trading outfit in California.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a branch up in New Vegas, but it hasn't been doing so well. Word is that the big boss herself, Alice McLafferty, is coming in to fix things.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic012",
+   "prompt": "Tell me more about the Crimson Caravan Company."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Err, thanks, I guess. Cobb wasn't the problem, though - I could've handled him if he ever found me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Cobb's friends are the bigger problem, and when he doesn't get back, they'll be coming here for blood. There's no way I fight can them all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic013",
+   "prompt": "A man named Joe Cobb was looking for you, but I killed him."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I did have what was left of the Crimson Caravan money, but I wasn't sure if it was my right to just give it away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I owe you more than that, though, so look me up at the Crimson Caravan camp up in New Vegas if you ever visit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic014",
+   "prompt": "Didn't I hear you say something earlier about not being able to pay me now?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Look, I don't know you, so what I'm doing here isn't any of your business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic015",
+   "prompt": "Is that the story you're going to stick with?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That is a pretty flimsy story, I guess. The real reason that I'm staying is because there's a group of men out to kill me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic016",
+   "prompt": "Staying because you want to or because you have to? This is a good hiding spot."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a two-player game, and the winner takes the whole pot. You build a \"caravan\" using the cards in your deck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The goal is to create caravan bids that beat your opponent's bids, so there's more strategy than luck involved.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's why you won't see Caravan in any casino - too slow-paced, and more importantly, no house edge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take this holotape - it goes into more specifics about the rules. You'll also need a deck, so take one of my spares.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So... you feel like playing a game?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic019",
+   "prompt": "What are the rules of Caravan?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't worry - I'm not that good of a player.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic020",
+   "prompt": "Let's play."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic021",
+   "prompt": "I don't have time for a game right now."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Did you want something else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic022",
+   "prompt": "I see."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry about the gun. You just caught me off guard, that's all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{apologetic} We got off to a bad start. What say we start over with a friendly game of Caravan? {questioning} You know how to play?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic024",
+   "prompt": "I'm not an enemy, if that's what you're asking."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic026",
+   "prompt": "Good luck with that."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic027",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformgoodspringsgsringotopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSRingoTopic028",
+   "prompt": "Let's play a hand of Caravan."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, sorry. I thought everybody knew already. I'm a trader with the Crimson Caravan Company.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm, uh, staying in town for a bit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Like I said, I'm not from Goodsprings. I'm a trader with the Crimson Caravan Company.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic001",
+   "prompt": "What do you do around here?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. He doesn't look very tough, though. I hear he's afraid I'll shoot him down from one of the windows when I see him, and he's right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have a much bigger problem once his friends show up. There's no way I could handle all of them in a gunfight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic002",
+   "prompt": "Did you know there's a man named Joe Cobb looking for you?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My caravan was on the return trip from California and heading back up to the company branch in New Vegas when we got jumped.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not even a \"drop your weapons and hands up\" before the bullets started flying. We put up a good fight, but there was too many of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I took a few of the bandits down before I ran, so I figure their friends are out for revenge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic003",
+   "prompt": "Why are the Powder Gangers out to get you?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "At least a dozen, I'd say. And that was just the group that attacked us. For all I know, they've got a lot more friends lurking around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic004",
+   "prompt": "How many powder gangers are out there?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm going to lay low for as long as I can, assuming the town doesn't throw me to the wolves. I've got no chance against the gang on my own.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm still laying low.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic005",
+   "prompt": "What are you going to do about the Powder Gangers?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I saw you being awfully friendly with Joe Cobb, so no thanks.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "No thanks. I think we'd need some of Goodsprings on our side, and I hear you're not exactly friendly with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'd just end up sharing the same grave if it's just the two of us. Now, if some of the other people in town were also on board...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic006",
+   "prompt": "Maybe I can help."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Start with Sunny Smiles. She's been friendlier than most around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic007",
+   "prompt": "I'll ask around and see who I can round up."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was thinking of myself, actually. Who's going to watch my back while I'm watching yours?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic008",
+   "prompt": "You don't think I can handle myself in a fight?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I guess that means we're ready to go. Unless you think there's something else you can do?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic009",
+   "prompt": "Sunny's with us."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Try to hurry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic010",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsringotopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Well, I don't want to make a move until she's with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsRingoTopic011",
+   "prompt": "I haven't talked to her yet."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'll see you around.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Showed you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Shit!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That hurt!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you crazy?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Let's take these guys!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Die!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Clear the way!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Make way!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Goddamn it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Blast it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hit the dirt!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get the hell down!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm outta here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Every man for himself!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Stay back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't get any closer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not another step!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What in the hell are you doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What're you doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Help!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "No one'll miss that one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Howah...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not my business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That's mine!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Caught you red handed!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I saw that!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Anyone there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was that noise?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Die!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Finally found you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now just hold still.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Must be hearing things again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Scared me there for a second.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess there's nothing there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You won't get away!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn, lost 'em!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not done with you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Glad that's over with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess you're not so tough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Probably afraid of me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Don't think you can hide forever.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're dead, you hear me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come out, come out wherever you are!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You're mine!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now it ends!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got 'em!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Must be gone by now...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not really worth looking for anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, I give up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hm? Thought I heard a sound...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Someone there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You're dead!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll kill you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I'll have to fight!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Let's get 'em!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This should be over quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leave it to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "key": "observecombat",
+   "section": "other",
+   "responses": [
+    {
+     "text": "Keep me out of this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not my problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ObserveCombat",
+   "prompt": "ObserveCombat"
+  }
+ ],
+ "speaker": "ringo"
+}

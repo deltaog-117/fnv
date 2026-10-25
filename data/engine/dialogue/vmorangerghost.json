@@ -1,0 +1,342 @@
+{
+ "id": "vmorangerghost",
+ "speaker_name": "Ranger Ghost",
+ "source": "VMORangerGhost.txt",
+ "topics": [
+  {
+   "key": "askjobagain",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Interested now? {Beat, nods} All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AskJobAgain",
+   "prompt": "What was the job you mentioned before?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hnh - didn't even hear you come up the ramp. {Beat} You don't broadcast your movements. I like that.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Curious, but not in a nice way, more wtf} Hnh. Heard your footsteps coming up the ramp, didn't sound like a trooper or one of the merchants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You a Courier? If so, this might be your lucky day... if you don't mind walking a bit {emph} and your eyes are good.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Change your mind? Offer's still open, {beat, to herself, concerned} lot of smoke from Nipton in the East, could use a set of eyes over there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You check out the Nipton Town Hall yet? Smoke trail's not getting any shorter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for the assist. Wish others around here had your drive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You a Courier? If so, this might be your lucky day... if you don't mind walking a bit {emph} and your eyes are good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "ghostdismissivegoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Dismissive} Mind yourself on the plank going down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GhostDismissiveGoodbye",
+   "prompt": "Never mind, I'll be going now."
+  },
+  {
+   "key": "mojaveoutpostquestion",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much to tell, one of the worst posts in the NCR if you're looking to be anything more than a babysitter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight frustration in these lines} Full up here, but just enough so we {emph} can't send out patrols. Got to maintain a \"standing force,\" Jackson's orders... {corrects self} NCR's orders.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Can't spare men for patrols or escorts, so caravans are backing up here like a Brahmin with a bottle in its ass. {Sighs} Typical NCR bullshit.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "MojaveOutpostQuestion",
+   "prompt": "Anything you can tell me about the Outpost?"
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If there were any survivors, they're going to be in the Town Hall. If you can get inside, let me know if you find anyone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic004",
+   "prompt": "Haven't been to Nipton yet."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think there's trouble in Nipton - no traffic from there on the roads, and while I can explain that away, the smoke from the town I can't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure it's been hit - what I need to know is if they survived it. Might be Powder Gangers with all that smoke in the air.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If there's anybody left, they'd be in the Nipton Town Hall. Go there, check it out, let me know what you find.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic005",
+   "prompt": "Depends on the work."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Mocking, but not to the player} The pay? The pay is a good goddamn thanks from the heart of the Republic!",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{Scoffs} Just shitting you with the NCR line, done wonders for morale around here. President Kimball keeps saying getting shot at is its own damn reward.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Do this job for me, though, I'll do what I can. People know I hate most everyone, so if {emph} I put in a word for you... that's gold.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic006",
+   "prompt": "What's the pay?"
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Studying player} Hnh. Maybe Jackson got some additional soldiers after all. {Positive eval, player's not jaded} Didn't take you for a trooper at first, you seem a little... livelier than most.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "All right, if you're here to assist, good, that's what I want to hear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic010",
+   "prompt": "[NCR] If I can help, I'm here to assist."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. {Beat, smiling} Look at you, all fired up and ready to go. Wish the others around here had that kind of attitude.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Get serious} Listen - I don't want you getting killed for this, so if you head there and run into trouble, I'm asking for eyes and ears, {emph} not your life. All right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic011",
+   "prompt": "I'll do it."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised, not good news} Legion this far West? You're fucking kidding me.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "That's not {emph} outside the border, they're moving in - and fast. {To herself} Nipton wasn't the most friendly town, but...",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "{Sigh} All right - thanks for checking on that, wish it set my mind at ease, now I'm more on edge than ever.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic012",
+   "prompt": "Already been there, Nipton was attacked by the Legion."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Got my post. Don't think I wouldn't go, too - if trouble's hit Nipton, town's got enough camping spots to rack up some easy kills.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not about to have Jackson bust my ass again, though, even if I came back with Caesar's head - rather be sitting here than in a cell.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic013",
+   "prompt": "Why don't you go check it out?"
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Dismissive} Kimball's Kimball, not sure which end is his ass or his head. Caravan families are causing trouble, Big Circle getting tense - the usual.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Look, you want gossip, go to the bar downstairs and listen to a whole lot of nothing. Me, I got to keep watch, {grumbles} then fill out the daily log.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic014",
+   "prompt": "Hear any news from the West?"
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Had to try. Smoke trail's getting thicker by the hour - {under her breath} wish Jackson could spare some men.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic015",
+   "prompt": "Not interested."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Better than nothing. {Beat} But close to it.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic016",
+   "prompt": "If I pass through there, I'll check it out."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Skeptical} Well, if you didn't see anyone, they might be gone - be just like Powder Gangers to hit and run.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See what you can find in the Town Hall, there might be survivors.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic019",
+   "prompt": "Town's been attacked, not sure by who."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In Nipton? Hell no. Town was a shithole, asking to be burned. Just not by Legion. Nobody deserves that.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic020",
+   "prompt": "Did you have friends there?"
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Unless you burned the town, don't take blame that's not due. Things are going to get uglier before the year's out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic021",
+   "prompt": "Didn't mean to be the bearer of bad news."
+  },
+  {
+   "key": "vmojaveghostvmorangerghosttopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, thanks for hoofing it there and back, even if it was bad news. Wish we could spare the troops to go hunting, but... {irritated} orders are to stay put.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Tired} Fucking Mojave's going to hell, and all I can do is sit here and watch.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "vMojaveGhostvMORangerGhostTopic022",
+   "prompt": "If that's all you wanted, I'm done."
+  }
+ ],
+ "speaker": "ranger_ghost"
+}

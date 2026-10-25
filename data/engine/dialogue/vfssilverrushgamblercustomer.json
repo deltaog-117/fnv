@@ -1,0 +1,114 @@
+{
+ "id": "vfssilverrushgamblercustomer",
+ "speaker_name": "Gambler (Fallout: New Vegas)",
+ "source": "VFSSilverRushGamblerCustomer.txt",
+ "topics": [
+  {
+   "key": "vms29avfssilverrushgamblercustomertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now hold on there, I'm not packing any heat. Ain't my word good enough for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushGamblerCustomerTopic000",
+   "prompt": "Certainly, sir. We need to pat you down for weapons first."
+  },
+  {
+   "key": "vms29avfssilverrushgamblercustomertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you kindly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushGamblerCustomerTopic001",
+   "prompt": "Welcome to the Silver Rush. Go on in."
+  },
+  {
+   "key": "vms29avfssilverrushgamblercustomertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Why the hell not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushGamblerCustomerTopic002",
+   "prompt": "Sorry, sir. I can't let you in."
+  },
+  {
+   "key": "vms29avfssilverrushgamblercustomertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I suppose it's all right, if there's no other choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushGamblerCustomerTopic004",
+   "prompt": "I'm sure you're a man of your word, sir, but we still need to pat you down. No exceptions.",
+   "label": "{Speech >= 65}"
+  },
+  {
+   "key": "vms29avfssilverrushgamblercustomertopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I just don't see why it's necessary. Now, are you going to let me in or not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushGamblerCustomerTopic004",
+   "prompt": "Your word doesn't matter. It's just company policy.",
+   "label": "{Speech >= 65}"
+  },
+  {
+   "key": "vms29avfssilverrushgamblercustomertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If that's the case, then I guess I'll go spend my money elsewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushGamblerCustomerTopic005",
+   "prompt": "In a word, no."
+  },
+  {
+   "key": "vms29avfssilverrushgamblercustomertopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I haven't had a drink all day! Screw this place, I'll go spend my money elsewhere!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushGamblerCustomerTopic006",
+   "prompt": "I think you may be drunk, sir."
+  },
+  {
+   "key": "vms29avfssilverrushgamblercustomertopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmph. That's better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS29aVFSSilverRushGamblerCustomerTopic007",
+   "prompt": "Pardon me, sir my mistake. Go on in."
+  }
+ ],
+ "speaker": "gambler"
+}

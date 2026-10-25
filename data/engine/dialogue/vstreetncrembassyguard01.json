@@ -1,0 +1,123 @@
+{
+ "id": "vstreetncrembassyguard01",
+ "speaker_name": "NCR military police",
+ "source": "VStreetNCREmbassyGuard01.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformthestreet02topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can find him in the main embassy building inside the gate and to your left.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uh... I'm afraid Ambassador Crocker is no longer here. You might want to talk to the receptionist for more information.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "vFreeformTheStreet02Topic000",
+   "prompt": "I'm looking for Ambassador Crocker."
+  },
+  {
+   "key": "vfreeformthestreet02topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is the NCR Embassy. {Sarcastic} Our little slice of heaven on the Strip.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "The main building houses administration while the other building is the MP headquarters on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02Topic001",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "vfreeformthestreet02topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The usual. Troopers getting drunk and causing problems. Like that's a surprise to anyone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell, I plan on getting drunk once I'm done with my shift. Maybe even head over to Gomorrah for a good time.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "You hear about the girls dancing in the fountain? What I wouldn't give to see that show.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Not much other than the Brahmin being chased down the street. That's a little unusual even for the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard some of the Troopers are sneaking up on the rooftops and lounging around and drinking beers instead of working.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They'll be in a world of trouble if Captain Pappas catches them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Someone thought it would be fun to put graffiti up everywhere. At least I don't have to clean it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "More of the same. People gambling, getting drunk, and having a good time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02Topic002",
+   "prompt": "What's happening on the Strip?"
+  },
+  {
+   "key": "vms21clandenarrest",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Clanden, under the authority of the New California Republic, I place you under arrest for murder.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Omertas have no say in this matter. This is a legal matter now. You'll have to come with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21ClandenArrest",
+   "prompt": "VMS21ClandenArrest"
+  }
+ ],
+ "speaker": "ncr_military_police"
+}

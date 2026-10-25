@@ -1,0 +1,213 @@
+{
+ "id": "alicemcbride",
+ "speaker_name": "Alice McBride",
+ "source": "AliceMcBride.txt",
+ "topics": [
+  {
+   "key": "alicemcbrideintro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh! Well I'm Alice and you've already met my beau, Dusty. He's sweet, ain't he? I don't care what my mama said, I know how to pick 'em.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Oh! Well I'm Alice and that handsome stranger yonder is my husband Dusty. Going on fifty years, now.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I keep waiting for him to leave me for some young thing with platinum blonde hair and hoop earrings, but he still sticks around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Says it's my cooking. I think it's because I know which Brahmin udder you can milk without getting kicked in the noggin.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "We set up this ranch years back when Novac was just getting settled.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But now with all the danger on I-15, folks are starting to come through here from all over. Novac might just be the next Nevada boom town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AliceMcBrideIntro",
+   "prompt": "I just wanted to meet you."
+  },
+  {
+   "key": "alicemcbridepeoplewholivehere",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, we keep to ourselves, for the most part. Try not to pry. I think Jeannie May gets bothered that we aren't more sociable, but it's just our way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ain't that we don't appreciate what she's done, managing this town like she has, but I worry she feels that way anyhow.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not that there ain't others who pry around here. That No-bark was skulking around our yard last week.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Laughs> I thought he was our cow-killer. Was about to lash him with our bullwhip till I saw who it was. He's harmless, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Part of me wishes I could see things like he sees 'em, all full of mystery.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AliceMcBridePeopleWhoLiveHere",
+   "prompt": "What do you think of the people who live here?"
+  },
+  {
+   "key": "dustymcbridetellmewhatyouknow",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, it's the strangest thing. Last time it happened I could swear I heard someone cry out for help. Sounded like a big fella.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But when we finally got up the gumption to go look outside all we found was our cattle. And I know what they sound like when they get upset.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't imagine what went on. Dusty can probably tell you more about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DustyMcBrideTellMeWhatYouKnow",
+   "prompt": "What can you tell me about the attacks on your ranch?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, I ain't really up to entertaining visitors right now. I'm worried about Dusty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What brings you here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "snipersrevengeboonewife",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boone. That's that sniper fella, works in the dinosaur, right? I only met them but once or twice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They seemed real happy together. I really oughtta to get to know them better. They're probably nice folk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeBooneWife",
+   "prompt": "What can you tell me about Boone's wife?"
+  },
+  {
+   "key": "snipersrevengecomeoutside",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's kinda late, but I guess if it's important to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeComeOutside",
+   "prompt": "Come with me. There's something you should see, in front of the dinosaur."
+  },
+  {
+   "key": "vdialoguenovacalicemcbridetopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight surprise} Oh. Well, all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacAliceMcBrideTopic001",
+   "prompt": "Can we talk about something else?"
+  },
+  {
+   "key": "vdialoguenovacnobarkname",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not sure who started it. It wasn't a very nice name, but he took to calling himself by it, so we all had to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't even remember what his real name is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, I think it comes from that expression that people say when you're crazy - that not all of your dogs are barking. Poor No-bark.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacNobarkName",
+   "prompt": "How did No-bark get his name?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Nice of you to visit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Look who's here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "alice_mcbride"
+}

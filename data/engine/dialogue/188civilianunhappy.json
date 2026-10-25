@@ -1,0 +1,107 @@
+{
+ "id": "188civilianunhappy",
+ "speaker_name": "destitute traveler",
+ "source": "188CivilianUnhappy.txt",
+ "topics": [
+  {
+   "key": "188civilianunhappybeggarno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, you could. You just don't want to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I understand. Sorry to be a bother.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But... Of course. It's all right. Thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188CivilianUnhappyBeggarNo",
+   "prompt": "Can't help you."
+  },
+  {
+   "key": "188civilianunhappybeggaryes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you so much! I'm so hungry!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry I had to bother you. I've... well, I've lost everything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're very kind. I wish... well, I'll just thank you and leave you be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188CivilianUnhappyBeggarYes",
+   "prompt": "Sure. Here's 25 caps."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I lost everything I had at The Tops, but if you gave me 500 caps, I'd head straight back. Sick, huh?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I came east to strike it rich, and now I'm broker than ever. What do I tell my family back home?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "On the Strip, everyone's nice to you when you got the caps. The moment you don't? They throw your ass out.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I won big my first night on the Strip. I kept chasing that feeling. Right into the gutter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I sat down at a roulette table with my life savings. An hour later, it was gone.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Can you spare some caps, mister?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Can you spare some caps, 'mam?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Go East! they say. Scrap lying in the sun for you to grab. Yeah, right.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "The Strip ain't nothing but a monster. Chews folks up, sucks out their caps, and spits 'em back out.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "destitute_traveler"
+}

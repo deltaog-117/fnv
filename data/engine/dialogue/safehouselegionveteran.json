@@ -1,0 +1,125 @@
+{
+ "id": "safehouselegionveteran",
+ "speaker_name": "Atticus",
+ "source": "SafehouseLegionVeteran.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vsafehousesafehouselegionveterantopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm here to keep everything in order. As a friend of the Legion, I can offer you some supplies while you're here.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vSafehouseSafehouseLegionVeteranTopic000",
+   "prompt": "Why are you here?"
+  },
+  {
+   "key": "vsafehousesafehouselegionveterantopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have some goods collected during my travels. You may take something if you wish.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vSafehouseSafehouseLegionVeteranTopic001",
+   "prompt": "Can I get some supplies?"
+  },
+  {
+   "key": "vsafehousesafehouselegionveterantopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{LATIN} {\"wallae\"} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vSafehouseSafehouseLegionVeteranTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vsafehousesafehouselegionveterantopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, there are other places that require my attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vSafehouseSafehouseLegionVeteranTopic003",
+   "prompt": "Are you always here?"
+  },
+  {
+   "key": "vsafehousesafehouselegionveterantopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vSafehouseSafehouseLegionVeteranTopic004",
+   "prompt": "Stealth Boy."
+  },
+  {
+   "key": "vsafehousesafehouselegionveterantopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vSafehouseSafehouseLegionVeteranTopic005",
+   "prompt": "Cat Eye."
+  },
+  {
+   "key": "vsafehousesafehouselegionveterantopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is what I have right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vSafehouseSafehouseLegionVeteranTopic007",
+   "prompt": "Magazines."
+  },
+  {
+   "key": "vsafehousesafehouselegionveterantopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me know when you've decided.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vSafehouseSafehouseLegionVeteranTopic023",
+   "prompt": "I've changed my mind."
+  }
+ ],
+ "speaker": "veteran_atticus"
+}

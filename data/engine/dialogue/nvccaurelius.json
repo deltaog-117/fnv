@@ -1,0 +1,355 @@
+{
+ "id": "nvccaurelius",
+ "speaker_name": "Aurelius of Phoenix",
+ "source": "NVCCAurelius.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{you don't like being eclipsed, KAI-zar} Caesar may have deemed you worthy to bear his mark, but your reputation preceeds you.",
+     "emotion": "surprise",
+     "intensity": 100
+    },
+    {
+     "text": "Your presence will be tolerated, but you are not welcome here. Lucullus awaits you on the docks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry, do NOT} Do not make {KAI-zar} Caesar wait! Lucullus awaits you on the dock.",
+     "emotion": "surprise",
+     "intensity": 100
+    },
+    {
+     "text": "{you don't like being eclipsed} A Profligate bearing the Mark of {KAI-zar} Caesar? What is the world coming to?",
+     "emotion": "surprise",
+     "intensity": 100
+    },
+    {
+     "text": "Cursor {Luh-CUL-us} Lucullus is waiting for you with the barge at the docks. He will take you to The Fort to speak with {KAI-zar} Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Annoyed} Get moving, Profligate! Do not make {KAI-zar} Caesar wait!",
+     "emotion": "surprise",
+     "intensity": 100
+    },
+    {
+     "text": "{surly} Don't try my patience. A nod of my chin, and you'll be decorating a cross.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{pleased} You taught {Seh-VER-us} Severus well! Soon I'll wear a necklace of Profligates' toes, blown off by their own mines!{ha!}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{surly} Don't try my patience. A nod of my chin, and you'll be decorating a cross.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{blunt} Yes? Name your concern.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The killing of Profligates should never go unrewarded. I'll pay you a small sum per tag.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic002",
+   "prompt": "Will you pay a bounty for NCR troops I kill?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Go see {de-CAN-us se-VERH-us} Decanus Severus when you have tags, in that case. He watches over our stores.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic003",
+   "prompt": "If you trade me ammo and supplies instead, I can stay in the area, racking up kills.",
+   "label": "<BARTER 35, player asks to use dog tags as currency for supplies>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {offended} Nothing on this Earth could make you worthy to wear the armor of a {Ken-TOO-ree-on} Centurion. Do not ask again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic003",
+   "prompt": "How many dog tags to get your helmet?",
+   "label": "<BARTER 35, player asks to use dog tags as currency for supplies>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, stop wasting my time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic004",
+   "prompt": "I'll come back when I've made some kills."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Disappointed} Killing one Profligate is the work of a child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic007",
+   "prompt": "One."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just two?{hmph}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic008",
+   "prompt": "Two."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you're getting some exercise.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic009",
+   "prompt": "Three."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Impressed} A good bit of hunting. Here's your payment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic010",
+   "prompt": "Here, take all the dog tags I've got."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hardly a day's work, but then again, you're not Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic011",
+   "prompt": "Five."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was there something else you wanted to bother me with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic012",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Mildly amused} Hmm, perhaps I was wrong about your skills. You've killed more NCR than most recruits.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Impressed} Good, good! Your growing number of NCR kills rivals most legionaries.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep up the good work!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hearty laugh} Ha! Perhaps I was wrong about your skills, Profligate. Your kill count rivals some of our best warriors!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Amused} How many?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic017",
+   "prompt": "I have dog tags to turn in."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As much as the Profligates' cowardice will allow. They haven't found the balls to attack us here, but we catch them out on patrols.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{proud} With two {LATIN} {con-too-BURR-nee-ah} contubernia at my command, I've killed and captured four times my numbers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic018",
+   "prompt": "Does the Legion see much action here?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It is the armor of a {Ken-TOO-ree-on} Centurion. You have the rare honor of beholding it unspattered by the blood of my inferiors.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic020",
+   "prompt": "That's some armor you're wearing."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cursor {Luh-CUH-lus} Lucullus is waiting for you at the docks. He'll take you to {KAI-zar} Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic021",
+   "prompt": "How do I reach Fortification Hill?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{contempt} The things the Profligates will build, to spy on us like cowards with little machines!",
+     "emotion": "neutral",
+     "intensity": 100
+    },
+    {
+     "text": "Find that officer and give him this old map of our patrol routes. The Profligates will try to set up ambushes... and we'll be waiting for them.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic022",
+   "prompt": "An NCR officer asked me to plant this listening device here. <Give Aurelius the NCR bug>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{LATIN} {\"wallae\"} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic023",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccaureliustopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{irritated} Of course I am, you fool. I am a {Ken-TOO-ree-on} Centurion!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When {WUHL-pace in-CUL-tah} Vulpes Inculta drove the NCR from Searchlight by clever means, {KAI-zar} Caesar himself ordered me to set up this camp and harass the Profligates!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a modest presence, a single finger of the Legion reaching across the river's narrows. But with me here, it has an iron knuckle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCAureliusTopic024",
+   "prompt": "You must be the one in charge here."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{LATIN} {\"wallae\"} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{AH-way} Ave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "aurelius_of_phoenix"
+}

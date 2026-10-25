@@ -1,0 +1,201 @@
+{
+ "id": "fortlegionaryentrancegreeter",
+ "speaker_name": "Legionary main gate guard",
+ "source": "FortLegionaryEntranceGreeter.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player has Platinum chip} By order of Caesar, all visitors must disarm and relinquish all banned items. This order also extends to the Platinum Chip you carry - for now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KAI-zar} Caesar has permitted you to leave, but not with the Platinum Chip in your possession. Relinquish it and you may go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "By order of Caesar, all visitors must disarm and relinquish all banned items.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You may proceed. Your belongings will be returned when you leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your belongings will be returned to you when you leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your belongings will be returned to you when you leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic000",
+   "prompt": "I agree to disarm."
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is your last warning. You will relinquish your weapons and banned items, or prepare to face the consequences.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic001",
+   "prompt": "I refuse to disarm."
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This fool challenges the Legion, brothers! Let us teach him some manners!",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic002",
+   "prompt": "You can pry my weapons from my cold dead hands."
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. Lucullus, escort this fool back to Cottonwood Cove.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic003",
+   "prompt": "I will return to Cottonwood Cove."
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Kai-zar} Caesar strictly forbids the use of chems and alcohol. By his order, all visitors must also relinquish their arms upon entry.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you come in peace, then there is no reason to not disarm. You will not be harmed unless Caesar wills it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic004",
+   "prompt": "Why can't I just continue on?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alcohol and all chems, including stims and other addictive items.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic005",
+   "prompt": "What is considered a banned item?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I know not why Caesar would wish to speak with such a physically inferior whelp, but I will allow this one exception.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You may bear Caesar's mark, but {strong emphasis} do not attempt to share any of your medicine with anyone in The Fort.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic006",
+   "prompt": "I have to bring them along, a congenital heart defect.",
+   "label": "<Speech for allowing meds>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic006_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Thus is Caesar's will. Do not test my patience.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic006",
+   "prompt": "But medical chems aren't addictive! Really!",
+   "label": "<Speech for allowing meds>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're free to leave. The guard in the weather station will return the Chip to you when you're ready for {KAI-zar's} Caesar's mission.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic007",
+   "prompt": "Here you go."
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As you wish.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic008",
+   "prompt": "Never mind. I'm staying a bit longer."
+  },
+  {
+   "key": "vfreeformcottonwoodcovefortlegionaryentrancegreetertopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your belongings will be returned to you when you leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your belongings will be returned to you when you leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveFortLegionaryEntranceGreeterTopic009",
+   "prompt": "< Keep holdout weapons > Sure, I agree to disarm."
+  }
+ ],
+ "speaker": "legionary_main_gate_guard"
+}

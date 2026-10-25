@@ -1,0 +1,1100 @@
+{
+ "id": "vms18mortimer",
+ "speaker_name": "Mortimer",
+ "source": "VMS18Mortimer.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You double-crossing snake! I have nothing to say to someone so lowly and ill-mannered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Pissed} I wanted Mr. Gunderson out of the way, not slaughtered in my hotel! Our business is concluded. Good day!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry} You've done enough!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mark my words. I'll have you filleted for this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, you're back. You're always a welcome guest here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any word as to our arrangement?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the- ? Who is this trespasser?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How may I be of service, sir?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How may I be of service, madam?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms18vms18marjorietopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mmm. You'll have to look elsewhere, I'm afraid. The whole idea of \"joining\" the White Glove Society is pure hogwash. {disdainful}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're either in it, or you're not. There's no joining.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This \"honorary member\" nonsense is just something Marjorie contrived because she's so preoccupied with image. But it's only a fad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once it blows over the riff-raff we've temporarily inducted will be shown the door. So I wouldn't hold out hope if I were you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MarjorieTopic009",
+   "prompt": "I want to join the White Glove Society. I was told I'd need a sponsor."
+  },
+  {
+   "key": "vms18vms18marjorietopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Looking to elevate his social status, is he?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll admit, I could see benefits to living under his rule. Certain... transgressions he'd be willing to overlook.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But that's neither here nor there, I'm afraid. Marjorie won't have it, as long as she fails to see the wisdom of my perspective.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MarjorieTopic011",
+   "prompt": "Caesar wishes to extend your society an offer of alliance with his Legion."
+  },
+  {
+   "key": "vms18vms18mortimertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Private investigator... Ah, yes. I remember the gentleman. {thinking}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This was about the missing bride. Such an awful thing. I do hope he finds her whereabouts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I might pry, have you found something that will help his investigation?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic000",
+   "prompt": "Marjorie said you gave a free room to a private investigator."
+  },
+  {
+   "key": "vms18vms18mortimertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ordinarily, we don't give out guest information, but I think given the circumstances, he'll want to speak with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's see... he hasn't checked out yet. If you head back to the hotel rooms, his will be one floor directly above you after you exit the lobby.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope we can put this whole matter to rest at last.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic001",
+   "prompt": "Actually, I just need to speak with him."
+  },
+  {
+   "key": "vms18vms18mortimertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. I hope that young man gets some closure after all he's been through.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic002",
+   "prompt": "<Lie> Yes, I have some critical information for him."
+  },
+  {
+   "key": "vms18vms18mortimertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are? Nothing so grim as his investigation, I hope.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic003",
+   "prompt": "I'm on an investigation, too. I'm hoping we can help each other."
+  },
+  {
+   "key": "vms18vms18mortimertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Kidnapped? That's ridiculous! And who said anything about eating anyone?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Stage Whisper} I know I didn't, because I hadn't gotten to that line of my speech yet. What remarkable timing you have.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "What are you- ? Why is he there? Who are we eating right now?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic004",
+   "prompt": "<Loudly> Bad news, Mortimer. No one's eating the boy you kidnapped tonight."
+  },
+  {
+   "key": "vms18vms18mortimertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Get them!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get him!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get her!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic005",
+   "prompt": "I'm looking for the Gourmand. Am I in the right place?"
+  },
+  {
+   "key": "vms18vms18mortimertopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No! These are lies! I never kidnapped anyone. And even if I did, there's no harm done. He's alive, after all.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic006",
+   "prompt": "Sorry, Mortimer. Secret recipe. It isn't human, though, I can tell you that."
+  },
+  {
+   "key": "vms18vms18mortimertopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So be it. But we are all cannibals here. My death will be a constant reminder, and some day you will all remember.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic007",
+   "prompt": "[Attack] You all heard his confession! The punishment for cannibalism is death!"
+  },
+  {
+   "key": "vms18vms18mortimertopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're all hypocrites! How can you claim to be connoisseurs yet deny yourselves the greatest of all meats?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I am ashamed to have once called everyone here family. This isn't over, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll begin anew. The White Glove Society will never achieve the greatness of my new order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll all hear from me again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic008",
+   "prompt": "Too late, Mortimer. You already said too much."
+  },
+  {
+   "key": "vms18vms18mortimertopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My, such a popular question. I suppose it is only natural to see us and wonder what it is that makes us special.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The White Glove Society has only just made itself known to the public, of course, but our pedigree was established over generations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Were we always so refined? I'd be lying if I said yes. But I've always felt we were destined for a place atop modern society. And now, here we are.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not everyone can wear the finest clothes and eat the finest foods, obviously. That's just the reality we live in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But surely we can agree that the most tasteful, sophisticated people are the most deserving. That's what the White Glove Society is all about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic009",
+   "prompt": "What can you tell me about your organization?"
+  },
+  {
+   "key": "vms18vms18mortimertopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you head back to the hotel rooms, his will be one floor directly above you after you exit the lobby.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic010",
+   "prompt": "Where did you say the investigator's room was, again?"
+  },
+  {
+   "key": "vms18vms18mortimertopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, yes, I've heard that one too. Jealous people say such nasty things. I feel sorry for them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic011",
+   "prompt": "I've heard your group dines on human flesh."
+  },
+  {
+   "key": "vms18vms18mortimertopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Then you know what it is to be discreet in matters of... nutrition. Perhaps you can help me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic012",
+   "prompt": "I, too, know what it is to feel the Craving. How can I support your cause?"
+  },
+  {
+   "key": "vms18vms18mortimertopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Good. Then you know what it is to be discreet in matters of... nutrition. Perhaps you can help me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic013",
+   "prompt": "<Lie> I, too, know what it is to feel the Craving. How can I support your cause?"
+  },
+  {
+   "key": "vms18vms18mortimertopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Please, you're embarrassing yourself. I must request that you change the subject.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic014",
+   "prompt": "<Lie> I sort of tasted human flesh once. Mmm mmm good. Tell me all your secrets."
+  },
+  {
+   "key": "vms18vms18mortimertopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can assure you that the only thing the White Glove Society is guilty of is preparing the tastiest cuisine you'll ever sample.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That is, of course, if you can afford it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic015",
+   "prompt": "So it isn't true?"
+  },
+  {
+   "key": "vms18vms18mortimertopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Indeed. Let's.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic016",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vms18vms18mortimertopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, not from the likes of you, I'm afraid. I don't think you'd have the stomach for it. Better look elsewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I do, but I need someone I know I can rely on. And I haven't heard a thing about you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps if you made more of a name for yourself around the Strip, we could talk. But not before.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, I'm glad you asked. I've heard about you, you know. You strike me as just the sort of person who can help me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm in a bind. I've been planning an exquisite Society dinner, but there's a bit of a problem with the main course.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's got a powerful and temperamental father.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic017",
+   "prompt": "Do you have any work that needs to be done?"
+  },
+  {
+   "key": "vms18vms18mortimertopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. The wrong person. We scouted the right one for weeks. The heir to a mercantile empire. Sort of a black sheep. {emph. \"wrong\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He cut ties with his family and left their estate to wander. He was ideal. Corn-fed and well-to-do, but no one to miss him if he were to disappear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unfortunately the trap my subordinates set for him failed. And as he escaped, he saw their faces. Now he's wary.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic018",
+   "prompt": "The main course is a person?"
+  },
+  {
+   "key": "vms18vms18mortimertopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You barbarous cur. {pouty}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic019",
+   "prompt": "[Attack] He's the least of your problems right now, cannibal."
+  },
+  {
+   "key": "vms18vms18mortimertopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Perhaps I do. Forget I mentioned it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic020",
+   "prompt": "I think you have the wrong person for this job."
+  },
+  {
+   "key": "vms18vms18mortimertopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I asked for a last-minute replacement. And they stole the son of the most dangerous Brahmin baron in New Vegas while he stayed at this very hotel. {increasingly angry at his lackeys' stupidity}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Needless to say, this could be a disaster if things aren't put back the way they should be. And I still need somebody reputable to serve for dinner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Strictly speaking, we're no longer allowed to eat people. But I'm hoping the right person and preparation might sway Marjorie to see things my way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic021",
+   "prompt": "What did you do?"
+  },
+  {
+   "key": "vms18vms18mortimertopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I need a replacement, and I need the boy taken care of. The replacement must be healthy and well-bred. One can't very well make steak from gristle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With so little time, we'll have go after our original choice, Carlyle St. Clair. He lives in a shack north of here. For freshness, we need him alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you could send him here or knock him out with this and drag him into the dumpster next to his house, we can do the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic023",
+   "prompt": "Tell me what I need to do."
+  },
+  {
+   "key": "vms18vms18mortimertopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ted Gunderson is his name. It would be simplest if you could convince him this was all an unfortunate misunderstanding.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if he won't listen, we can't very well let him go. He'll have to be slaughtered and served. Then we wouldn't need the replacement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you would need to deal with his father, Heck. Perhaps if you could smear some of Ted's blood around his father's hotel room, you could frame him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic024",
+   "prompt": "What about the boy you kidnapped?"
+  },
+  {
+   "key": "vms18vms18mortimertopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Splendid, splendid. The boy is being held in the kitchen beneath the Gourmand. Here are some keys that will allow you access to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The elder Gunderson is staying in our penthouse. I understand he's hired security, so be careful if you go up there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And our Mr. St. Clair resides to the north. He rarely strays far from his house, and he's surrounded it with booby traps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic025",
+   "prompt": "I'll do it."
+  },
+  {
+   "key": "vms18vms18mortimertopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well, but I'll need to know soon or I'll be forced to make other plans.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic026",
+   "prompt": "I'll think about it."
+  },
+  {
+   "key": "vms18vms18mortimertopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Which one?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm. He's a little thin, but he looks like he comes from good stock with that strong jaw and upright posture.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps a little rugged, a little gamey. But he is in good shape and looks healthy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From the smell of her I'd say we can skip the whiskey marinade. But other than her liver she seems to be in working order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Her skin has a certain supple quality to it, doesn't it? She's kept it well. How mouth-watering.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, but it absolutely must be a human. Former doesn't count.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I assume you're joking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Very well. If you're able to convince young Mr. Gunderson to return to his father, replace him in the freezer with your friend and we'll have a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic028",
+   "prompt": "<Hushed> Would my companion here make a suitable replacement meal?"
+  },
+  {
+   "key": "vms18vms18mortimertopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So the baron has slaughtered his last Brahmin. How delightful. He was a pox on our business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He would've driven the price of beef down to the point where any poor wretch could afford it. Can you imagine? {with distaste}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But now we can price it even higher, create a new luxury market. Not for you, of course. You'll get a special discount.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic034",
+   "prompt": "I framed Heck Gunderson and sent a Securitron to arrest him."
+  },
+  {
+   "key": "vms18vms18mortimertopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We'll know after tonight's banquet at 7 o'clock. I'll only be telling everyone what they've eaten after they've eaten it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That way, they will all have crossed the same silly taboo. They'll have to reconsider it. Even Marjorie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's all image with her, anyway. She just needs to realize the only difference between savage and sophisticated is the proper seasoning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll know after tomorrow night's banquet at 7 o'clock. I'll only be telling everyone what they've eaten after they've eaten it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That way, they will all have crossed the same silly taboo. They'll have to reconsider it. Even Marjorie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's all image with her, anyway. She just needs to realize the only difference between savage and sophisticated is the proper seasoning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I certainly did. Philippe created an extraordinary amuse bouche from the flesh of the Gunderson boy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I certainly did. Philippe created an extraordinary amuse bouche from the flesh of the late Mr. St. Clair.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I certainly did. Philippe created an extraordinary amuse bouche from the flesh of your former travel partner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Everyone at the banquet loved it! I told them what it was and the room was quiet for a moment, but then we all had a hearty laugh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic035",
+   "prompt": "Did you succeed in turning the White Glove Society back to cannibalism?"
+  },
+  {
+   "key": "vms18vms18mortimertopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Keep me in the know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have done very well in keeping this business low-key. I appreciate your discretion. I'll be sure to drop your name during our functions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you understand what a tremendous boon this will be to your standing in society.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic036",
+   "prompt": "Not yet."
+  },
+  {
+   "key": "vms18vms18mortimertopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Having his father's attention cast upon me was the last thing I needed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now if you can lure Mr. St. Clair out of his home and into captivity, and he's still disease-free, I shall breathe a sigh of relief.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic037",
+   "prompt": "I convinced Ted it was all a terrible misunderstanding."
+  },
+  {
+   "key": "vms18vms18mortimertopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Well this could get out of hand very quickly unless something is done to keep the elder Gunderson in check. {starting to sweat a bit, trying to keep composure}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You mustn't kill him, though. The publicity would be a disaster. I need you to handle this quietly, like we discussed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A little blood in his suite should do the trick. And if you have a Securitron arrest him, our involvement will appear nonexistent.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic038",
+   "prompt": "Ted Gunderson is dead. He wouldn't listen to reason."
+  },
+  {
+   "key": "vms18vms18mortimertopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. Everyone he meets, he tells the same story. That his son disappeared from the casino, not from his room. He'll look guilty.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic039",
+   "prompt": "Couldn't Heck just claim intruders killed his son?"
+  },
+  {
+   "key": "vms18vms18mortimertopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You made it past his guards, then? Excellent. Send a Securitron up to his room. It's programmed to investigate anything suspicious.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic040",
+   "prompt": "I planted evidence in Heck Gunderson's room."
+  },
+  {
+   "key": "vms18vms18mortimertopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Splendid, splendid. The boy is being held in the kitchen beneath the Gourmand. Here are some keys that will allow you access to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The elder Gunderson is staying in our penthouse. I understand he's hired security, so be careful if you go up there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And our Mr. St. Clair resides to the north. He rarely strays far from his house, and he's surrounded it with booby traps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic041",
+   "prompt": "<Lie> I'll do it. Where can I find Ted Gunderson?"
+  },
+  {
+   "key": "vms18vms18mortimertopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not this one. Empty. I don't believe it's seen use since before the war.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And what would the point be, really? Who would pick up his trash if he used it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But for our purposes, it should keep his body safe and hidden until my cohorts can recover it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic043",
+   "prompt": "Wouldn't putting St. Clair's body into a dumpster give it a terrible taste?"
+  },
+  {
+   "key": "vms18vms18mortimertopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just as I asked. What a magnificent relief! By now, barring any more bungling, my underlings should have him on his way here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic044",
+   "prompt": "I trapped Carlyle St. Clair in the dumpster outside his house."
+  },
+  {
+   "key": "vms18vms18mortimertopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of his own volition? My goodness, you are very professional, aren't you? Well, he's sure to be a hit at our next banquet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic045",
+   "prompt": "I sent Carlyle St. Clair to come and speak with you."
+  },
+  {
+   "key": "vms18vms18mortimertopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Drat! He was our best chance at a fresh and healthy entree.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Without a replacement, I'll have to push back the whole affair. I can just see my rivals sneering at me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic046",
+   "prompt": "Carlyle St. Clair is dead."
+  },
+  {
+   "key": "vms18vms18mortimertopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wonderful. You have come through with flying colors. On behalf of my colleagues, allow me to extend my thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know what a terrible sacrifice this must've been for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic047",
+   "prompt": "I left one of my companions in the freezer for your enjoyment."
+  },
+  {
+   "key": "vms18vms18mortimertopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I should think so, but it would be up to Marjorie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have, however, told her how instrumental you were in revolutionizing our cuisine. And she knows what we stand to gain from a ruler who supports it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have a word with her, see what she says. I daresay she'll be more receptive with these new developments.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic049",
+   "prompt": "Will the White Glove Society ally with Caesar now?"
+  },
+  {
+   "key": "vms18vms18mortimertopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now that it's been accepted, it will become a regular course for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a new and exciting frontier for our chef. I've never seen him so cheerful.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic050",
+   "prompt": "What's next, now that the White Glove Society has tasted human flesh again?"
+  },
+  {
+   "key": "vms18vms18mortimertopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I very much doubt that. What fun would it be if everyone could have it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then again, I wouldn't be surprised if our chef used it here and there as a secret ingredient to make his dishes really come alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18MortimerTopic051",
+   "prompt": "Will you serve human flesh at the Gourmand?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Indeed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Fuming} What the devil?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "vms18mortimerbanquetspeech",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I know I'm not the scheduled speaker, but I have a few words, if I may.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There was a time not so long ago when we were bound together not as members but as family. As a clan.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And when Mr. House came to us with his proposal, we accepted, knowing we stood to gain much.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Little did we know how much we'd lose in the process.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As a society, we've endeavored to sample the finest food and drink the world has to offer. But we are living a lie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There is a meat sweeter than the most cornfed livestock. Most of you have tasted it. All of you have coveted it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Among us, it is a crime to discuss a return to the old ways that unified our people.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tonight, that all changes. The taboo ends. {aside, preventing an interruption} Let me finish, Marjorie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You don't know it yet, but you are all now guilty of a greater crime. One that ordinarily bears the harshest of punishments.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Surely that you are all guilty warrants not only universal amnesty but also a renewed discussion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For our society to be truly elite, we must dine on the most delicious, the most exclusive food known to us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And tonight, for the first time as a society, you are sampling that very dish, the meat we are forbidden to taste, the way it was meant to be eaten!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fellow members of the White Glove Society, bon appetit!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18MortimerBanquetSpeech",
+   "prompt": "VMS18MortimerBanquetSpeech"
+  }
+ ],
+ "speaker": "mortimer"
+}

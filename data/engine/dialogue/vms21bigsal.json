@@ -1,0 +1,1829 @@
+{
+ "id": "vms21bigsal",
+ "speaker_name": "Big Sal",
+ "source": "VMS21BigSal.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is my room, now you get the fuck out before you get yourself hurt.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I warned you, now it is time to eat hot fucking lead.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Hey, thanks for all the help back there.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Take a seat on the couch over there, Nero and me want to have a little talk with you.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I'm on my way to my room, I don't have time to chat with you right now.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I don't have time to chat right now. If you have business, wait for me to get settled in.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Hey, you're Cachino's friend. You got business with me?",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Thanks for bringing Cachino's transgressions to our attention. Shame we had to put him down, he was a good lieutenant.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Hey, it's my good friend again. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hold up, I gotta have a chat with Cachino.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "You got something you need to talk about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "player_fire_weapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cut it out, will you?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Whoa, whoa! Careful!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYER FIRE WEAPON",
+   "prompt": "PLAYERFIREWEAPON"
+  },
+  {
+   "key": "player_in_iron_sites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's not a good idea.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "What do you think you're doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Think about too hard and you'll get burned.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch where you point that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYER IN IRON SITES",
+   "prompt": "PLAYERINIRONSITES"
+  },
+  {
+   "key": "player_lay_mine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope you know what you're doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whoa now. Be careful with that thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYER LAY MINE",
+   "prompt": "PLAYERLAYMINE"
+  },
+  {
+   "key": "player_throw_grenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Grenade!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Take cover!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYER THROW GRENADE",
+   "prompt": "PLAYERTHROWGRENADE"
+  },
+  {
+   "key": "vms21bossgreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So I assume you know why we called you here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21BossGreeting",
+   "prompt": "VMS21BigSalGreeting"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, Troike? What's he want? Some more Jet, a fresh batch of girls? Maybe a guy or two this time?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic000",
+   "prompt": "I'd like to talk to you about Troike."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We run a hotel. What do you think our business is?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic001",
+   "prompt": "What kind of business do you do here?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Really? That was his idea? Alright, he can go. Hopefully he finds us some good deals out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic002",
+   "prompt": "<Lie>Troike wants to see about negotiation some lower prices for weapons for you guys.",
+   "label": "{Barter Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic002_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You're really funny. I like you. But no. We still have business for Troike.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic002",
+   "prompt": "Um... I'm sure you have enough guns.",
+   "label": "{Barter Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{laughs} Why would I want to do that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic003",
+   "prompt": "Actually, I'd like to see about getting him out of his obligations to you."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? That he's a murdering Jet-head? Not a new story around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic004",
+   "prompt": "Something about his story doesn't sit right with me."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, what's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic005",
+   "prompt": "On second thought, let's talk about something else."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Yeah, I see where you're coming from. Okay, tell Troike he can hit the road.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic006",
+   "prompt": "Troike is pretty strung out. He'll be more trouble than he is worth.",
+   "label": "{Speech Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic006_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Nah, I don't think so. We've still got some work for him to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic006",
+   "prompt": "Well I'm sure he's be a very productive worker, he could use some vacation time.",
+   "label": "{Speech Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I bet he does. That's from hookers and chems. His work for us is the most restful part of his day.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic007",
+   "prompt": "He seems pretty tired."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Alright, you've done some good work for us. I'll do this as a favor for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic008",
+   "prompt": "You should buy guns from Mick and Ralph, people are starting to ask questions.",
+   "label": "{Speech, Convince Sal or Nero to buy guns from Mick & Ralph again}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Yeah, I'm sure they enjoy the cash flow, but that doesn't mean dick to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic008",
+   "prompt": "Mick and Ralph would...Um... Enjoy selling the Omertas guns.",
+   "label": "{Speech, Convince Sal or Nero to buy guns from Mick & Ralph again}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic008_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, but I don't know you from Adam, and you don't have any business getting in our business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic008",
+   "prompt": "Mick and Ralph are curious why you stopped buying guns from them.",
+   "label": "{Speech, Convince Sal or Nero to buy guns from Mick & Ralph again}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well you've been a real thorn in our side. We've got business plans. You set us back a little bit, I'll admit that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, we wanted you to know that nothing you did made a shit bit of difference, and you're going to die a failure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic009",
+   "prompt": "No idea."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, we lost some guns{in a mocking tone} you little weasel. However, we can get more guns. You slowed us down but you can't stop us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're gonna die a failure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic010",
+   "prompt": "I hear you lost some guns."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, let's dance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic011",
+   "prompt": "Time to die, Sal."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cachino? What the fu...{fuck interrupted}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic012",
+   "prompt": "Cachino! Shoot now."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you now? Let's see it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic013",
+   "prompt": "I have proof one of your Lieutenants is dealing behind your back."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here, now give it over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck is this shit? Cachino, you dumb motherfucker. Yeah, we are going to have some words with Cachino. Meet me in my office. {Cachino you dumb motherfucker is mumbled to himself, not to the player}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic014",
+   "prompt": "Is it worth 100 caps to you?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Ok, that sounds fair.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic015",
+   "prompt": "I'll give it to you for 200 caps.",
+   "label": "{Barter Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic015_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Laughs} You're real funny. Man, I haven't had a laugh like that in days. Thanks. Now, let's get real here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic015",
+   "prompt": "I'll give you the journal for... um... 5% of Gomorrah's earnings.",
+   "label": "{Barter Options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make it snappy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic016",
+   "prompt": "I wanted to ask you another question first."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for wasting my time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic017",
+   "prompt": "Actually I have some other business to take care of."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He'll be handled in the way the Family handles these situations. I want you there for this, come meet me in my office.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic018",
+   "prompt": "How is Cachino going to be handled?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Did he now? Funny that, more backstabbing. Yeah, we got something big planned. I was actually hoping to jaw at you about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that Cachino is gone, we need some help wrapping some things up, and you seem like the resourceful type.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic019",
+   "prompt": "Cachino mentioned you had something big planned."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic019_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, what do you need to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic019",
+   "prompt": "I have more questions about your plans."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Two of the players, Troike and Clanden, have some problems that need to be solved. Ask them what they need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic020",
+   "prompt": "What kind of help do you need?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The plan is called Racket, but that's all the info you're going to get out of me right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic021",
+   "prompt": "Tell me about the plan."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic022",
+   "prompt": "Let's talk about something else"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, come back any time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic023",
+   "prompt": "I don't have any more questions right now."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard, we'll be needing those guns. Word on the street is you handled those Fiend freaks like a real pro.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic024",
+   "prompt": "I helped Troike out, like you asked.",
+   "label": "{Updates on Racket}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic024_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I heard. I wasn't sold on the whole gas thing. He's the expert though. It sounds like this chlorine thing is going to work out real well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic024",
+   "prompt": "I finished that work for Clanden.",
+   "label": "{Updates on Racket}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic024_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard you did some good work for us. Thank you. Here's a little cash from us to you. Try not to spend it all in one place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic024",
+   "prompt": "I'm all done with that work you needed.",
+   "label": "{Updates on Racket}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, Clanden will be hard to replace but not impossible. We'll find contractors just like him without breaking a sweat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic025",
+   "prompt": "Did one of your contractors get lost?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Are you shitting me? You didn't even know what the plan was? Yeah, as a last request I guess we can give you that courtesy.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic026",
+   "prompt": "As a last request, will you tell me more about your plan?",
+   "label": "{Speech options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic026_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, but you're going to have to die ignorant.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic026",
+   "prompt": "Err.. can you tell me what the plan was?",
+   "label": "{Speech options}"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As one of our captains, Cachino was{pause} kind of like a project manager. He made sure people had what they needed to get their jobs done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic027",
+   "prompt": "What was Cachino's role in the plan?"
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar asked us to provide a distraction on the Strip. So when he gives the word we're going to launch an all out assault on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First we're going to blow the Embassy, then we're going to use soldiers to kill every last motherfucker on the Strip. Then we'll run this joint.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That'll teach Not-At-Home what can go on while he sits in his fucking ivory tower lording down from on high.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic028",
+   "prompt": "So tell me about your plan."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The fuck? I knew there had to be someone higher up helping you. Nero, you backstabbing, two-timing motherfucker. I knew this day would come.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic029",
+   "prompt": "<Lie> Well Nero didn't tell me any of this when he convinced me to take you out."
+  },
+  {
+   "key": "vdialoguegomorrahvms21bigsaltopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pensive} Yeah, that sounds alright to me. I bet we can find someone to do his work for that much. Tell him to get going.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueGomorrahVMS21BigSalTopic030",
+   "prompt": "Can I buy out the rest of his contract for 300 caps?"
+  },
+  {
+   "key": "vgomorrahbosschips",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You play some games, have some fun. You did right by us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vGomorrahBossChips",
+   "prompt": "I'm planning on playing some games in the Casino."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Thanks for wasting my time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alright, come back any time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Did Benny beg before you burned his sorry ass?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you chased that chicken shit Benny off. Good riddance.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Things are good since Cachino took over.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I tell you, Not-At-Home is gonna have his day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I got kicked outta Ultra Luxe the other day. Man, that place gives me the fucking creeps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Business is good. All the Families got money. Of course Gomorrah is where the action is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm glad they don't let just any motherfucker through the gate. Freeside smells like shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fiends are bad for business. NCR should do their fucking job.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's some serious shit going on between NCR and the Legion. They better not fuck with our power.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fuck Not-At-Home, must be cozy up there in the Lucky 38.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bosses don't like no trouble in their place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gomorrah is always open for Business.{Spoken like business has two meanings}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Find yourself a girl or a guy. Have some fun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think there is something wrong with that dog.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uh{hesitates}, I don't think we allow{uh} her kind in here.{pause} I'll let it go this time though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your ghoul wants to have some fun he can, we don't discriminate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your ghoul wants to have some fun he can, we don't discriminate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck is that thing?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Big tough ranger better not start any trouble in here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me know if the pretty lady with you is looking for some work.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That Follower fucker is going to have some trouble if he tries to liberate any of our employees.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kings sold out to the NCR huh? Might be worth a sit down with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Word on the street is something big is about to go down at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you been making some waves around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear the Legion is moving some new tough muscle into the area. NCR better keep their heads down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kings were small time. Not surprised they got themselves iced.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Those fucking Monkey Khans joined the NCR? I can't believe they finally got themselves civilized.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Khans finally got what they had coming. Glad we won't have to worry about them again.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "You hear what happened over at Bitter Springs? Not too pretty.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Kimball managed to get himself knocked off. Serves him right.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "I hear Kimball dodged a bullet there.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "The NCR seems none too happy about losing their little train.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Glad that fucker House is gone.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Woah, the great Caesar is dead. The management doesn't seem too happy.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "House? More like House light. I heard he got himself unplugged.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "{Amazed}Holy shit, you been in Lucky 38? You meet the Big Man{with distain} in there?",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Shit, I can't believe Cachino betrayed the Family.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Laughs}Nice work at the Tops buddy.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck are you looking at?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Be sure to check out the courtyard, some of the hottest asses in New Vegas shaking out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did Benny beg before you burned his sorry ass?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you chased that chicken shit Benny off. Good riddance.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Things are good since Cachino took over.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello."
+  },
+  {
+   "key": "vms21cachinoexecution1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Cachino, you've really disappointed me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't wanna fucking hear it. You've lost the trust of the family. Goodbye, I hope Hell isn't too hot for you.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21CachinoExecution1",
+   "prompt": "VMS21CachinoExecution1"
+  },
+  {
+   "key": "vms21cachinoexecution3",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I don't wanna fucking hear it. You've lost the trust of the family. Goodbye, I hope Hell isn't too hot for you.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21CachinoExecution3",
+   "prompt": "VMS21CachinoExecution3"
+  },
+  {
+   "key": "vms21officebark",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Let's have some words. Take a seat on the couch so we can get to talking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS21OfficeBark",
+   "prompt": "VMS21OfficeBark"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Better not try that again.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Don't{emphasized} let it happen again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What the hell?!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "What was that for?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You dirty coward!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Oh yeah, now it's on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got a deathwish?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You want to rock? Let's rock.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Had enough?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Come on!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You like that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna clip your sorry ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna send you packin'.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eat shit, fucker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Holy shit!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heads up!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "They killed him!",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "They killed her!",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "Look out!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "We'll get 'em.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Flank 'em!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Damn, there goes a big earner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fuck, that's not good.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna kick your ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You wanna piece of this?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's get this goin'.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get down!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Incoming!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh yeah, now it's on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got a deathwish?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You want to rock? Let's rock.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm out of here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is hopeless!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Help!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No way I'm sticking around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fuck this shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gettin the fuck outta here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You'd better get out of here if you know what's good for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep moving.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'd better get out of here.",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "Stay the fuck away from here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is restricted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, that's off limits.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Damn!",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "I'm hit!",
+     "emotion": "pained",
+     "intensity": 100
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "No!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Murderer!",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "What have you done?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "That's some shit right there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're gonna pay for that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh shit! Oh shit! Oh shit!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Slight Disgust}Ugh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight Disgust}Hmmph.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice clip there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Someone just got burned.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Probably had it coming.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That doesn't belong to you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can't just take that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thief!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fucking rat, don't touch that shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch those light fingers buddy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep your hands off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Anybody there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe I'm just jumpy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come out. I just want to talk.{talk spoken like he means shoot in the face}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Pretty sure I heard something.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is there someone out there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Aha!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Hey!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Found you!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Aha!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna make mincemeat outta you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Time to party.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gotcha!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Whatever. I've got better things to do.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm. Nothing here after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, just getting jumpy I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alright, just my imagination.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My mind is playing tricks on me. I gotta get laid.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess it was just in my head.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Let me go take a look around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn it. Where'd he go?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I bet I know where you went.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Do you think you can hide from me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're gonna pay for that when I find you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where the fuck did you go?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Well, that's the end of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Teach you to mess with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That takes care of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Glad that's over with.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Good riddance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Forget about it.{Spoken as a single word - fagetabbadit, with frustration}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I've got something for you...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can't hide from me forever.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to find you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna pop you when I find you again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When I find you I'm gonna rip you a new one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come out, come out, whever you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You can't hide from me.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Aha!",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Thought hiding would save you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You thought you could lay low?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna grease you good.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I can't find anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm. Oh well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Must have got away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I got you next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Be glad I didn't find your punk ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fuck this, I got shit to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I'm going to go check it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you hear something?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Where the fuck did that come from?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There somethin' out there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who the fuck is out there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hey!",
+     "emotion": "surprise",
+     "intensity": 100
+    },
+    {
+     "text": "I've got one!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Help me out!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna clip your sorry ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna send you packin'.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eat shit, fucker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  }
+ ],
+ "speaker": "big_sal"
+}

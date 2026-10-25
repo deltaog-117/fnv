@@ -1,0 +1,199 @@
+{
+ "id": "vtopsgreeter1",
+ "speaker_name": "Chairman greeter",
+ "source": "VTopsGreeter1.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey hey, fella, welcome to the Tops Hotel and Casino! I'm going to have to ask you to hand over any weapons you might be carrying.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey hey, baby doll, welcome to the Tops Hotel and Casino! I'm going to have to ask you to hand over any weapons you might be carrying.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back to the Tops. Anything I can do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Enjoying your stay?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "topsgreetercasino",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Everything your little heart desires, that's what. You like gambling? Boom. Either one of the main hallways has cards, slots, you name it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hungry? Thirsty? The restaurant just off the left-hand hallway has the best food and booze in Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or maybe you'd rather take in a show? The Aces Theater upstairs always has hot acts raring to go. Check it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "TopsGreeterCasino",
+   "prompt": "What is there to do here?"
+  },
+  {
+   "key": "topsgreeterweapons",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Relax, baby, they're safe as houses. We'll keep them locked up in the bank upstairs, right next to the money. It's serious protection.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "TopsGreeterWeapons",
+   "prompt": "Where did you take my weapons?"
+  },
+  {
+   "key": "vdialoguetopsvtopsgreeter1topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Smooth and easy, just the way I like it. Don't worry, they'll be as safe as kittens till you're ready to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and a friendly word of advice: if you happen to \"stumble across\" any weapons during your stay here, well... just don't wear them openly. You dig?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that we got that little business out of the way, what can I do to make your Tops experience the tops?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueTopsVTopsGreeter1Topic000",
+   "prompt": "I'm not actually armed."
+  },
+  {
+   "key": "vdialoguetopsvtopsgreeter1topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Smooth and easy, just the way I like it. Don't worry, they'll be as safe as kittens till you're ready to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and a friendly word of advice: if you happen to \"stumble across\" any weapons during your stay here, well... just don't wear them openly. You dig?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that we got that little business out of the way, what can I do to make your Tops experience the tops?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueTopsVTopsGreeter1Topic001",
+   "prompt": "Sure, here you go."
+  },
+  {
+   "key": "vdialoguetopsvtopsgreeter1topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Smooth and easy, just the way I like it. Don't worry, they'll be as safe as kittens till you're ready to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and a friendly word of advice: if you happen to \"stumble across\" any weapons during your stay here, well... just don't wear them openly. You dig?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that we got that little business out of the way, what can I do to make your Tops experience the tops?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueTopsVTopsGreeter1Topic002",
+   "prompt": "<Keep holdout weapons> Sure, here you go."
+  },
+  {
+   "key": "vdialoguetopsvtopsgreeter1topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Security, baby. Can't make the bread if the bakers are full of lead, you dig it? Don't worry, you're safe as houses in here, courtesy of Mr. House.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueTopsVTopsGreeter1Topic003",
+   "prompt": "Why do you need my guns?"
+  },
+  {
+   "key": "vdialoguetopsvtopsgreeter1topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Them's the breaks. You want in, you don't bring the guns.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueTopsVTopsGreeter1Topic005",
+   "prompt": "Five words: From. My. Cold. Dead. Hands."
+  },
+  {
+   "key": "vdialoguetopsvtopsgreeter1topic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Buddy, you just made the biggest mistake of your life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lady, you just made the biggest mistake of your life.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueTopsVTopsGreeter1Topic006",
+   "prompt": "I've got a better idea. How about I kill you and take my guns in anyways?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Have a good time, baby.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  }
+ ],
+ "speaker": "chairman_greeter"
+}

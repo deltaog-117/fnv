@@ -1,0 +1,429 @@
+{
+ "id": "crmisterhandy",
+ "speaker_name": "Mister Handy (Fallout: New Vegas)",
+ "source": "CrMisterHandy.txt",
+ "topics": [
+  {
+   "key": "repconhqgreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello, please remember visiting hours are from 10 AM until 5 PM. Please show your badge or make your way out of the building.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQGreeting",
+   "prompt": "REPCONHQGreeting"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Of course, of course! Don't let me keep you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "How may I serve you, master? {sarcastically obsequious}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How may I serve you, mistress? {sarcastically obsequious}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Cheerio. Water under the bridge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Not very sporting of you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's hardly Marquess of Queensberry rules, now is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll pay for that, you cheeky bastard!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Do stand still!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And who gets to clean up all this blood? Me, that's who...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oohh. Yesss... Let's all beat up on the robot... {Sarcastic and annoyed}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "By God, if I had hands I would strangle the life out of you! { }",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have at thee! { }",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For Queen and country! { }",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have insulted my honor, and for that, you must die! { }",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Oh, I say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's all going dark...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So that's it then?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Dear me, how unsporting of you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "*Gasp!* Murder!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I suppose I'm going to have to do something about that. {heavy sigh at the beginning of the sentence}",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "pickpocket",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "The class of people I'm forced to associate with these days just keeps falling.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "Pickpocket",
+   "prompt": "Pickpocket"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "The class of people I'm forced to associate with these days just keeps falling.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Did you really need that?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Why do I get all the hoodlums?",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "It's just little old me. Nothing to be afraid of. {loudly and fake cheerfully}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Someone dirty and disreputable, I shouldn't wonder. {under his breath}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Here kitty-kitty-kitty! {pretending to call a cat}",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "As if I'd know what to do if I found something. {under his breath}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Why not let the robot deal with it? {under his breath}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to look over here now. {loudly, hoping that whoever is there will go away}",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Didn't you hear me coming? Now I have to fight you. Bloody fantastic. {sarcastically}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Here we go again. {wearily}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Oh good. I found you. {sarcastically}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "You must be bloody stupid if you can't hide from me. {sarcastically}",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Back to the usual daily tedium.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Thought as much. Nothing there after all.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Beastly nuisance. Glad that's done with.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Just what I was hoping for. Trundling around looking for something that wants to blow me to flinders.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Must we play hide and seek now?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Ready or not, here I come! {sarcastically hoping not to have to find anybody}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "That's a good start. Now just keep running and we'll call it even.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "A little peace and quiet, at last. {sarcastically hoping not to have to find anybody}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Well, that's it then.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "That's enough excitement for one day.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "observecombat",
+   "section": "other",
+   "responses": [
+    {
+     "text": "This should be interesting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Barbarians. {with a superior sniff}",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "So much violence in the world these days. {with a superior sniff}",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "ObserveCombat",
+   "prompt": "ObserveCombat"
+  }
+ ],
+ "speaker": "sparks_old_world_blues"
+}

@@ -1,0 +1,477 @@
+{
+ "page": "NellisPearl.txt",
+ "speaker": "Pearl (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome, child! Took your sweet time getting here, didn't you? {playful}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been waiting a good five years for an outsider to come along and visit!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How is your visit with us going, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have done well to earn the trust of my people, child.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, friend. How can Mother Pearl be of help today?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well well, this is welcome news. Who is she?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Jack is interested in a girl."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I haven't heard anything. You must not be trying hard enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I may have heard a compliment or two. Nothing special.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I do believe you've convinced one or two of us that it's better you made it here than were blown to smithereens.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "More and more, I hear my people saying good things about you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You tell me. What do people have to say about me?"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I believe the time has come for you to show your value in full. The people have come to accept having you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Find Loyal and ask him about our people's fondest dream. He will tell you what to do next.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Well, I think. I've done everything I can to help out."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Each of the elders would appreciate assistance with various issues here in Nellis.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seek out Jack, Loyal, Raquel, and Argyll. They will guide you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Loyal still needs help getting the plane back to Nellis, and there may be others who still require assistance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still trying to figure out who to help and how."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "She's with those traders? They've tried to contact us before, but I'm not interested in trading with greedy savages.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This presents a bit of a problem. Jack isn't allowed to leave Nellis, and I doubt she would make it through the artillery alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "She works for the Crimson Caravan."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What you have done for us is a miracle, child. You have fulfilled the only dreams we ever had outside our walls.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You are a trusted friend of us all. If there is ever a way for us to help you, child, tell me and I will make it so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've spoken to Loyal. The B-29 is on the way."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Extraordinary, child. Go tell Loyal, then return to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The ballast worked. The B-29 is at the surface, ready to go."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This presents a bit of a problem. Jack isn't allowed to leave Nellis, and I doubt she would make it through the artillery alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just some kookie dame looking for love."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hmm, I suppose Jack deserves a chance at love. You can tell Jack she has a free pass to enter, but he is responsible for her actions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do not make me regret this decision, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It would mean a lot to Jack if she could come to Nellis.",
+   "label": "<Speech>"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, but I can't risk exposing the tribe to more savage outsiders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "She's a great gal, you'll love her.",
+   "label": "<Speech>"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You're right. I'd be wrong to deny Jack such joy in his life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's done right by the tribe many times over. Tell Jack this girl is free to enter, but he is responsible for her actions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do not make me regret this decision, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Come on, Pearl, think of the joy it would bring Jack. He's in love.",
+   "label": "<Ladykiller>"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You picked a good time to stop by, for we're swimming in problems. My youngers can tell you all about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Raquel could use help with the bug problem, Doc Argyll has wounded he's tending to, and Loyal and Jack might be looking for help with some repairs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or you could just go see Pete at the museum and hear the story of our people. All you have to do there is listen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come and go as you like, help or don't help, I leave it up to you. But I hope you'll show my youngers that not every outsider needs to be blown up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where do I start?"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well, I'll take your word when you say she isn't a threat to the tribe. I will allow her entry if Jack will take responsibility for her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do not make me regret this decision, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I assure you, Janet would not be a threat to the tribe.",
+   "label": "<Reputation>"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, but I can't risk exposing the tribe to more savage outsiders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "She couldn't hurt a fly. Let her into Nellis.",
+   "label": "<Reputation>"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You have to keep in mind that you're our first contact with the outside world since I was barely a woman.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seclusion has kept us safe. but the world around us is changing. Neon lights in the distance, patrolling robots, soldiers...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My youngers think our guns can keep out the world, but I think we need to let it in, just a little, or become its victim.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're that little bit of the world, child. Welcome to Nellis.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How can we trust each other if you're going to be keeping secrets?",
+   "label": "<SPEECH TEST: Player presses for details>"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] If I were your grandma, I'd wash out your mouth with Abraxo for being so rude, child!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't like being kept in dark, grandma. Clue me in.",
+   "label": "<SPEECH TEST: Player presses for details>"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Let's talk about something else."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll send word to the spotters to let you come and go as you wish. Why not stay awhile before you head out?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, not interested. I'll be leaving."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You may find one in the workshop. You're a friend to the tribe, so I trust it will not find it's way into the wrong hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They are too rare and valuable to simply give away, nor have you proven yourself a friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm looking for a howitzer firing mechanism."
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course my child. After all that you have done for us we would love to help you in the upcoming battle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After all the training in virtual reality, the young ones would relish an opportunity to put their skills to battle. We'll be there when you need us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "There may be a battle in the near future at the Hoover Dam, can you offer any assistance?"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We have our ears on the radio waves. When the fighting starts you can count on our air support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Are you and your people still ready to help in the upcoming battle at Hoover Dam?"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those howitzers of ours aren't just for entertainment, child! Explosive ordnance is what keeps the savages at a distance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Except you! There's something special about you, child, and it was the howitzers that gave you a chance to show it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You didn't exactly roll out a red carpet!"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Prophecy? Do we look like a bunch of religious idiots?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just hoped a savage - outsider, sorry - would make it to our gates before one of those armies out there comes knocking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's right, child. Mother Pearl knows a storm is gathering. Times are changing. May be time for us to change a little, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You mean you were expecting me? Like a prophecy or something?"
+  },
+  {
+   "id": "VFreeformNellisNellisPearlTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd rather not allow more outsiders in, but I'll hear you out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to talk about allowing Janet to visit Jack."
+  },
+  {
+   "id": "VMS15NellisPearlTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, so many ways! Small ones to begin with, so we can get used to what it's like to have a sav- outsider around and about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Should that go well, it may be you can help in big ways, too. We'll have to see.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How might I be of assistance?"
+  }
+ ]
+}

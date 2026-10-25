@@ -1,0 +1,65 @@
+{
+ "id": "vdialoguethefortgeneric",
+ "speaker_name": "Caesar's Legion",
+ "source": "VDialogueTheFortGeneric.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm looking forward to getting sent across the river.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The new slave girls are quite beautiful.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "The camps are getting crowded.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Slaves aren't much of a challenge in the arena.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Benny escaped} That prisoner, Benny, managed to slip away somehow.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player defeated Ranger Stella}{missed out on a good arena match} I didn't think anyone could kill an NCR Ranger in single combat.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "{Player cured Caesar}{KAI-zar} Caesar lives!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar dead} I'll mourn {KAI-zar}Caesar - he was a great man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player killed Lupa} Lupa met an honorable death in the arena.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of the slaves have been spreading stories about the Burned Man again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ]
+}

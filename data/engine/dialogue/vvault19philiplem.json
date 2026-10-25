@@ -1,0 +1,355 @@
+{
+ "id": "vvault19philiplem",
+ "speaker_name": "Philip Lem",
+ "source": "VVault19PhilipLem.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Hated} Fuck you.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You're not one of us. What do you want?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I sure hope that explosion was you. Did you seal off the sulfur?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I guess... I guess that means we can turn ourselves in now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're back. What's the word from Papa Khan?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked} You're back.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, what do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Kimball dead} Somebody whacked the NCR president. Got what was coming to him.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar dead} Someone took out the Legion's boss. Doubt it'll stop them for long, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Middle Game} Lot more troops on the road these days. Wonder what's up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Late Game} Best to lay low. The NCR and the Legion are about to have it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fucking Cooke has us trapped here. After we escaped from an NCR prison, he dragged us around the wasteland until we ended up in this shit hole.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "A group of us want to leave, go back to the NCR and surrender. But Cooke won't let us.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "After you cut off access to the sulfur, Cooke left. I guess we're free to surrender to the NCR now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're waiting on you. A lot of us are interested in joining the Khans.",
+     "emotion": "happy",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic000",
+   "prompt": "What's going on here?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cooke is just an overambitious prick, and he's going to get us all killed.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic001",
+   "prompt": "Tell me about Cooke."
+  },
+  {
+   "key": "vms42vvault19philiplemtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm a nobody. Just a survivor. Things were well enough until the NCR threw me behind bars.",
+     "emotion": "sad",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic002",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I made my living sneaking into NCR camps looking for shit to steal. I got sloppy, and then I got caught.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic005",
+   "prompt": "What did you do?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Made it out during Cooke's big prison break, like the rest of the guys here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic006",
+   "prompt": "How did you get out?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you can find a way to cut off access to the sulfur in the caves below the vault, I've got some caps waiting for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic007",
+   "prompt": "<GENERAL QUESTIONS>"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Samuel Cooke. It was his idea to organize a jailbreak, but now he's just an overambitious prick who's going to get us all killed.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic008",
+   "prompt": "Who's Cooke?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can be pretty sneaky when I need to be, and the prison guards were a joke.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "So when Cooke told me his plan, I spread the info to anyone that might be useful.",
+     "emotion": "happy",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic009",
+   "prompt": "Tell me about the prison break."
+  },
+  {
+   "key": "vms42vvault19philiplemtopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cooke organized the breakout. But he's just an overambitious prick who's going to get us all killed.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic012",
+   "prompt": "Who is Samuel Cooke?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic141",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have to watch Cooke. I wouldn't put it past him to just start killing the opposition, starting with me.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic141",
+   "prompt": "Why can't you do it?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic142",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. Take this keycard - I tried hacking the locking mechanisms on the doors, but it seems that the only way in is with one of these.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic142",
+   "prompt": "I'll do it."
+  },
+  {
+   "key": "vms42vvault19philiplemtopic143",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cooke is planning to use the sulfur to make bigger explosives.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Will you check out the caves and see if there's anything you can do?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Without access to the sulfur, he'll lose what influence he has left with the men here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic143",
+   "prompt": "Why would you want to do that?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic179",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good to hear. Without access to the sulfur, Cooke doesn't have much to offer the gang. I... I guess it's over, then. We can turn ourselves in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic179",
+   "prompt": "Yes."
+  },
+  {
+   "key": "vms42vvault19philiplemtopic182",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's a hell of a lot better than going back to prison.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic182",
+   "prompt": "The Khans will accept you as long as you pass the initiation rite."
+  },
+  {
+   "key": "vms42vvault19philiplemtopic185",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We can't survive like this - there are too many of us and we don't have the resources. And maybe it's the right thing to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic185",
+   "prompt": "Why do you want to surrender?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic189",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, this needs to end. I'm tired of running and living like scavengers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] I hadn't thought of that. Would you be willing to talk to them on our behalf?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic189",
+   "prompt": "Have you considered joining the Great Khans?"
+  },
+  {
+   "key": "vms42vvault19philiplemtopic197",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you. I think I just needed to hear someone else say it. I suppose without rule of law, we're no better than raiders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic197",
+   "prompt": "You're doing the right thing."
+  },
+  {
+   "key": "vms42vvault19philiplemtopic199",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you. We'll wait here until we hear from you.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19PhilipLemTopic199",
+   "prompt": "Sure, I'll go talk to them."
+  }
+ ],
+ "speaker": "philip_lem"
+}

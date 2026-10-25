@@ -1,0 +1,723 @@
+{
+ "page": "PrimmDeputy.txt",
+ "speaker": "Beagle",
+ "topics": [
+  {
+   "id": "BeagleFleeingGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you so much. {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay."
+  },
+  {
+   "id": "BeagleFollowAgain",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And depart we will!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's get going."
+  },
+  {
+   "id": "BeagleFollowStay",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't leave me here too long. I can't wait forever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wait here."
+  },
+  {
+   "id": "BeagleFollowWeapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I just hope I won't have to use it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Beagle, take a weapon."
+  },
+  {
+   "id": "BeagleFollowing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "One more question Beagle."
+  },
+  {
+   "id": "BeagleHostage",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why, yes I am. It's a pleasure to meet you. {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm in a bit of a predicament{per-dicament} here. I'd be most appreciative if you'd set me free. {(gentlemanly; mispronunciation of \"predicament\" is intentional)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You must be Deputy Beagle."
+  },
+  {
+   "id": "BeagleHostage",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why, I am Deputy Beagle, and I am being held hostage. Can you imagine? {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd be most grateful if you would set me free.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "BeagleHostage",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Edited Line} I must say it's been the low point of my career in law enforcement... {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Powder Gangers stole into town at night and murdered my sister and her husband, the sheriff, in bed, while I was sleeping in the office.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I watched them for a bit, waiting for the right moment to pounce and arrest the lot of them. Taking careful notes as I watched.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To my dismay, they found me while I waited in the shadows and brought me here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How'd you end up being a hostage?"
+  },
+  {
+   "id": "BeagleHostageFleeNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, that's so gracious of you, to offer to bodyguard me like that? But I'd only slow you down. See you outside!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I didn't cut you loose so you could run away. Stick with me!",
+   "label": "BeagleHostageGoNo"
+  },
+  {
+   "id": "BeagleHostageFleeSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I know! It's incredibly generous and altruistic{alter-istic} of you. See you outside!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Like I cut you loose just so you could run away? Like I don't want your help?",
+   "label": "BeagleHostageGoSpeech"
+  },
+  {
+   "id": "BeagleHostageFleeSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Oh! Why, uh, of course! I would never let you fight my kidnappers with my help. Uh, without it! You lead the way!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If you try to run away instead of fighting at my side, I'll kill you myself.",
+   "label": "BeagleHostageGoSpeech"
+  },
+  {
+   "id": "BeagleHostageFleeYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I'll defer to your superior appraisal of character and prowess in contests of arms and see you outside!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, run away. You don't look like you'd be much help.",
+   "label": "BeagleHostageGoYes"
+  },
+  {
+   "id": "BeagleHostageGoodby",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sighs} I wonder what it's like to be able to \"get going\" whenever you like. {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've got to get going.",
+   "label": "PC says goodbye to hostage"
+  },
+  {
+   "id": "BeagleHostageGoodby",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I certainly hope so. It gets lonely down here on the floor. {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "See you later.",
+   "label": "PC says goodbye to hostage"
+  },
+  {
+   "id": "BeagleHostageLetGo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh that's just marvelous. I think I'll be making my way outside now. The air's a little close in here. {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll set you free now.",
+   "label": "Player turns the deputy loose"
+  },
+  {
+   "id": "BeagleHostageNotYet",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No need to rush on my account. I lost feeling in my hands and legs hours ago. {(gentlemanly; tied up, unable to move)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Stay put for now.",
+   "label": "Not yet."
+  },
+  {
+   "id": "BeagleHostageNotYet",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, in that case I'll just wait for you right here. {(gentlemanly; tied up, unable to move)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Stay put.",
+   "label": "Not yet."
+  },
+  {
+   "id": "BeagleNewSheriffShouldThank",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, thank you {emphasis} so much, so {emphasis} very much, for ruining my life.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's right - you SHOULD thank me.",
+   "label": "BeagleSheriffShouldThankMe"
+  },
+  {
+   "id": "BeagleNewSheriffWhatsWrong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Edited Line} My problem is that I'm no longer a deputy. I'm just a Beagle now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Apparently two-and-a-half months of law enforcement experience doesn't count for anything. The new regime is just that - all new.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's rude. Just don't tell him I said it. Primm has a sheriff now, just not as supportive as I would've hoped.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Edited Line} My problem is that I'm no longer a deputy. I'm just a Beagle now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Apparently two-and-a-half months of law enforcement experience doesn't count for anything. The new regime is just that: all new.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's a good sheriff but a hard man. He doesn't abide by anyone slinking by the rules. I guess there won't be any trouble, but the man's law is hard.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Edited Line} My problem is that I'm no longer a deputy. I'm just a Beagle now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Slimm is alright, I don't wish him no harm, but the law to him is a set of logic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not everything is black and white, not sure a robot can ever understand that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's your problem now?",
+   "label": "BeagleSheriffThanks"
+  },
+  {
+   "id": "BeagleSheriffBeagle",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh no! I'm just the deputy. And I can't be a deputy without a sheriff. It's called chain of command!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you talking about? You're the sheriff now!"
+  },
+  {
+   "id": "BeagleSheriffGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "But - but the town doesn't have a Sheriff! I don't have an employer, and that means I don't have a job.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you think you might be able to help, come find me. I thank you for all you've done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be going now."
+  },
+  {
+   "id": "BeagleSheriffGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe next time you can bring a new sheriff back with you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right. Goodbye. {(crestfallen)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "BeagleSheriffNeeded",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It should be someone brave like you, but more of a homebody. Someone who'll settle down and watch over us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard the Powder Gangers talking about someone in the prison named Meyers who has some experience as a sheriff. He may be a good choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Also with the NCR so close by, you may be able to get them to take over the town. Not sure why they haven't helped out already.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are the qualifications for a Sheriff?",
+   "label": "PC asks about the Sheriff's qualifications"
+  },
+  {
+   "id": "BeagleSheriffNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know what it's like to have a busy schedule, but surely you can squeeze this in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you run across someone whose bearing and experience screams \"sheriff,\" simply tell him or her about Primm's perdicament. That's all it takes. {(mispronunciation of \"perdicament\" is intentional)}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't have time to help Primm.",
+   "label": "PC declines to find Primm a new sheriff"
+  },
+  {
+   "id": "BeagleSheriffStillLooking",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I do thank you so kindly for your efforts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still looking."
+  },
+  {
+   "id": "BeagleSherrifYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You will? That's just marvelous! I'll start thinking up questions for the interview!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The sheriff that was incarcerated up at NCRCF may be a good choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You also may be able to convince that NCR guy across the road to take the town under his wing, although martial law doesn't sound so fun.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll help bring law and order back to Primm.",
+   "label": "PC agrees to find a new Sheriff"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've told you Powder Gangers everything I know! Please don't hit me anymore! {Terrified}",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Well look at that! You aren't a Powder Ganger after all. I'd suggest against wearing that outfit around the townsfolk. You may get shot by accident.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "I don't suppose you came here to rescue me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't suppose you came here to rescue me? I'd cross my fingers but my hands are numb. {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It would be so very delightful if you set me free. {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please excuse me - I'm {exter-cating} extricating myself at the moment... {(gentlemanly; mispronunciation of \"extricating\" is intentional)}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Apologies, but I'm quite busy until I reach safety! {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well! That was quite an adventure. We taught those convicts a thing or two, didn't we? {(mispronunciation of \"predicament\" is intentional\")}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Breaking myself out of a hostage situation - not to diminish your role in it, of course - but it was quite thrilling.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Problem is, there's still no law in Primm. What're we to do the next time ruffians menace us and hold us hostage?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well! That was quite a per-dicament you rescued me from, there in the Bison Steve. A most unpleasant experience. {(mispronunciation of \"predicament\" is intentional\")}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Going in alone to rescue a hostage! My brother-in-law was brave like that. Made a fine sheriff. Until the Powder Gangers killed him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Problem is, there's still no law in Primm. What're we to do the next time ruffians menace us and hold us hostage?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, if it isn't the \"lawbringer.\" {(genteel sarcasm on \"lawbringer\")}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello again. I don't suppose you've decided to help Primm find its next sheriff?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any luck finding a suitable candidate for our next sheriff?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, it's you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{sighs} I suppose I should be thanking you for restoring the rule of law to Primm...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't plan to come back to the Bison Steve much in the years to come. If I ever get out of it. {(gentlemanly)}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I do hope this ordeal will be over soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we were to miss a convict or two in here, who'd know the difference?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "PrimmNashDialoguePrimmJohnsonNashTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well I reckon he could be a sheriff if you have the skills to reprogram him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you think Primm Slim could be sheriff?",
+   "label": "What about Primm Slim? Could he be sheriff?"
+  },
+  {
+   "id": "VMQ01BeagleJournal (Deputy Beagle's journal)",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Edited Line} {Speaking in Audio Log/Journal} This is most unusual! The Powder Gangers have visitors today. I guess there's a first for everything!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now those tough-looking fellows must be Great Khans. I recognize those funny helmets and leather vests from stories I've heard...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So what are they doing with that dapper gentleman who wears a checked suit? I wouldn't mind a suit like that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're talking about heading south toward Nipton, then west to Novac where they'll meet up with someone...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess I could track them if I needed to, but {beat, cowardly justification} the town of Primm needs me here, to serve and protect.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh my. I think I've been spotted...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMQ01BeagleJournal"
+  },
+  {
+   "id": "VMS02AnyNPCAboutNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would certainly hope that someone should handle it! Not that they tell me anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know if the NCR has any plans to attack the prison north of here?",
+   "label": "Any idea what the NCR's up to in Primm?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmDeputyTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, a deputy isn't much good without a sheriff. {cowardly and hesitant} So I figured I'd come in here and protect these good people until someone finds us a new one.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you doing in here?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmDeputyTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Edited Line} Indeed I do good sir, and I would be thrilled to share that information with you as soon as I am released from captivity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Edited Line} My good lady, I believe I may have some information that would prove useful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you would just untie my hands I'd be more than happy to share what information I have with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I hear you may have information on some Khans that came through here with a guy in a checkered suit."
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmDeputyTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Edited Line} I'm in quite a state here. If you help me with my bonds I'll be more than happy to tell you anything, and everything about those Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you tell me about the people who passed through town now?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmDeputyTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Edited Line} Ahh yes, my memory is much clearer now that I am free from my bondage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was sku{skulking, rethinking} ... er, performing recon, gathering information on some of the Powder Gangers, when some great Khans arrived with your friend in the suit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They were talking about some delivery they took from a courier, I assume that was you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They said they'd be heading through Nipton to Novac to meet a contact there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you tell me about the man in the checkered suit who came through here?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmDeputyTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Edited Line} I overheard them saying that they are on their way to Novac. If you want to follow them I strongly suggest that you follow the road through Nipton.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are a lot of dangerous things out in the desert, and you won't have me with you to protect you, as I need to stay here and keep Primm safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you tell me where the man in the checkered suit went again?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmDeputyTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well, you look to be the trustworthy sort. Okay, I'll tell you what I know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You can tell me or you can rot in here.",
+   "label": "<Speech Options>"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmDeputyTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm sure you mean well, but I'm afraid you'll have to wait until I'm in a calmer emotional state before my memory is going to function.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll free you... right after you tell me...",
+   "label": "<Speech Options>"
+  }
+ ]
+}

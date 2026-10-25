@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "perk.schema.json",
+  "title": "Perk",
+  "description": "One entry in data/engine/perks.json.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "dlc"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dlc": {
+      "$ref": "common.schema.json#/$defs/dlc"
+    },
+    "source": {
+      "type": "string"
+    },
+    "form_id": {
+      "$ref": "common.schema.json#/$defs/form_id"
+    },
+    "description": {
+      "type": "string"
+    },
+    "ranks": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "special": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "common.schema.json#/$defs/special"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          }
+        },
+        "skills": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "common.schema.json#/$defs/skill"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "other": {
+          "type": "string",
+          "description": "Requirement the parser could not structure."
+        }
+      }
+    },
+    "requires_text": {
+      "type": "string"
+    },
+    "effects_text": {
+      "type": "string"
+    }
+  }
+}

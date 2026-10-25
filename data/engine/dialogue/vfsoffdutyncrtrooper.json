@@ -1,0 +1,132 @@
+{
+ "id": "vfsoffdutyncrtrooper",
+ "speaker_name": "NCR trooper",
+ "source": "VFSOffDutyNCRTrooper.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hold up. What's the password?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've never seen the Major so angry before. She may look calm right now, but don't let her fool you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try to take only what you need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfsoffdutyncrtrooper01topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Head on through.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOffDutyNCRTrooper01Topic000",
+   "prompt": "Hope."
+  },
+  {
+   "key": "vfreeformfreesidevfsoffdutyncrtrooper01topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then go someplace else.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess you're not getting in here then, are you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOffDutyNCRTrooper01Topic001",
+   "prompt": "I don't know."
+  },
+  {
+   "key": "vfreeformfreesidevfsoffdutyncrtrooper01topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] O-Of course not! We're here to serve the good citizens of the NCR. Please, head on through.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOffDutyNCRTrooper01Topic002",
+   "prompt": "You already let me in the other night! Do all of us civilians look the same to you soldier boys?"
+  },
+  {
+   "key": "vfreeformfreesidevfsoffdutyncrtrooper01topic002_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] If you're here to see the Major, then I suppose it's all right. Head on through.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOffDutyNCRTrooper01Topic002",
+   "prompt": "I'm here to see Major Kieran on urgent business. Please let me pass."
+  },
+  {
+   "key": "vfreeformfreesidevfsoffdutyncrtrooper01topic002_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Since you put it like that, no. Not unless you know the password. Do you know the password?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOffDutyNCRTrooper01Topic002",
+   "prompt": "Come on, guys, you can let me in, right? Right?"
+  },
+  {
+   "key": "vfsncrfightkeepweaponaway",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You there! Keep your hands where we can see them! Draw a weapon and we will fire!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSNCRFightKeepWeaponAway",
+   "prompt": "VFSNCRFightKeepWeaponAway"
+  },
+  {
+   "key": "vfsncrfightnoweapons",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Put your weapon away or we will fire!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSNCRFightNoWeapons",
+   "prompt": "VFSNCRFightNoWeapons"
+  }
+ ],
+ "speaker": "ncr_trooper"
+}

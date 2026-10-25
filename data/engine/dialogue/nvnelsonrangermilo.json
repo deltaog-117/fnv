@@ -1,0 +1,635 @@
+{
+ "id": "nvnelsonrangermilo",
+ "speaker_name": "Milo (Fallout: New Vegas)",
+ "source": "NVNelsonRangerMilo.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, well. If it isn't the courier who wiped out the Legion over at Nelson. Good to see you around {nickname for camp} the Hope. {welcoming}",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Hold up there. This area is locked down by the NCR military until we can dislodge some Legion snakes from Nelson. {player is accepted, liked, or idolized}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Me and Carmine - that's my repeater here - will do our best to cover you from this ridge. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{mildly annoyed} Let it wait {'til} until I've stopped running, all right?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{confronting} Hold it right there, Courier. I been hearing things about you, and they ain't all been good.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Just so you know, you {emph} will answer to me if you cause any trouble for the troops around here. Things're bad enough as is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're always welcome around the {nickname for camp} Hope, Courier - least as far as I'm concerned.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Howdy. What's the word?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, heck, I've heard of you. Supposed to be a regular hero or something, ain't that right?",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{ribbing the player a bit} But maybe you're a little too... \"reputable\" to get involved in some dirty work for the Republic.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "I've heard of you. You're just the kind of person I'm looking for. Not afraid of stepping on a few toes to get a job done. Think you can lend a hand?",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Is that so? Can't say I've ever heard a good word about you. Lot of bad ones, though.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "So why don't you just turn your butt around and scoot back down the road before I blast some daylight through you?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "My apologies, but that name and face ain't ringing the old school bell upstairs. Afraid I can't let you through until the \"situation\" is resolved.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic000",
+   "prompt": "The name's &PCName;."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm a ranger. They're troopers. Different branches. I don't have authority over them even though they're as green as a Super Mutant's backside.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{irritated} Besides, they'd probably start crying as soon as they saw the hostages get so much as a bruise. Nope, they don't got the stomach for it.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic001",
+   "prompt": "Don't you have the authority to command the troopers to go into the camp?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Much obliged.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic003",
+   "prompt": "Understood."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{suddenly scared} Son of a bitch!",
+     "emotion": "fear",
+     "intensity": 40
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic004",
+   "prompt": "You've got five seconds to get out of my sight before I shove that rifle where the sun don't shine."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We'll see about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic005",
+   "prompt": "I think it's time to knock you down a peg or two, ranger."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sarcastic} If you had a few dozen doses of Psycho on you, maybe we could pep these weepy troopers into charging down into Nelson and taking back the camp.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "But since that's not likely, you could help me take out the Legion's trooper hostages.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic006",
+   "prompt": "What needs to be done?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The troopers won't go down into the camp with their comrades at risk. Dirty game the Legion likes to roll out whenever they get a chance.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "Problem is, Ranger {my-low} Milo doesn't want to play. If we take out the hostages, they've got squat for leverage.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic007",
+   "prompt": "Why take out the hostages?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, I have to admit I wasn't expecting you to say that. I was just joking. But if it makes you feel any better, I am impressed.",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "{change subjects quicky} So anyway, how about those hostages?",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic009",
+   "prompt": "[Psycho] Funny you should mention Psycho. I actually have a few dozen doses on me..."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. We clear out the hostages and they lose their advantage. They're down in a clearing, crucified on some telephone poles.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll cover you from the ridge. Just make it quick. These boys should be put out of their misery, not plinked to death with some old varmint rifle.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "And don't get any dreamy notions about playing the hero and dragging those boys out. You'll get swarmed. Now let's go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic010",
+   "prompt": "Sign me up."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Back at {sarcastic} \"Ranger School\", they taught us not to run headlong into a battle when you're outnumbered ten to one.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{\"Get real.\"} You want to go down there and try to haul those crippled boys off those poles, you're dumber than you look.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic013",
+   "prompt": "Why don't you try to rescue them?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{laughing a bit} \"Dishonorable\", that's a good one. Okay then, you can just turn around and head back toward Novac or wherever it is you came from.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "I wouldn't want you to get any dirt under your fingernails or tarnish your good name or whatever the heck you're so worried about.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "If you want to do some good, head up to Camp Forlorn Hope. I'll mark it on your map for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic014",
+   "prompt": "I won't do anything dishonorable, if that's what you mean."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {surprised at the player's spunk} Well, I'll be damned. Looks like you've got some dirt in you after all.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic015",
+   "prompt": "Are you interested in cracking jokes or getting something done?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Right. You have trouble even saying the word \"bad\". Go on, get out of here if you know what's good for you.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "If you want to do some good, head up to Camp Forlorn Hope. I'll mark it on your map for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic016",
+   "prompt": "I can... do bad things."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well, I suppose I don't care much, either. At least not enough to turn down an offer for help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic017",
+   "prompt": "Like I care what anyone says about me. Do you want help dealing with the Legion or not?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, now that you've sweet-talked me...",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "[FAILED] Naw, why don't you just get out of here?",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic018",
+   "prompt": "You're an idiot if you believe everything you hear. You want my help or what?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Fair enough. It's not like any of the troopers around here are jumping up to volunteer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic020",
+   "prompt": "You may not know me, but I'm no friend of the Legion, and I'll lend a hand to get rid of them."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That's one of the least trustworthy lines I've ever heard. Sorry. No can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to do some good, head up to Camp Forlorn Hope. I'll mark it on your map for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic021",
+   "prompt": "Come on. Let me help out. Trust me."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a shame. Well, let me know if you change your mind or those Legion sons of bitches will be holed up in Nelson for weeks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic023",
+   "prompt": "I don't think I can help you. Sorry."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Troopers tried moving down from Forlorn Hope because we got this big gap between there and Searchlight. Turns out we were spread too thin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We took our sweet ass time setting up in Nelson and the Legion managed to hop over the Colorado and attack before things were settled.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic024",
+   "prompt": "What happened here?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's Novac, due west. Just look for the big lizard. They got some decent supplies and a place to stay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The 188's north on the 95, good for all kinds of trade. Not much south on 95 unless you turn west on 164 to Nipton, right off the rail line.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic025",
+   "prompt": "Are there any towns nearby?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nope. I'm just the only ranger around. The rest of the kids here are troopers, inexperienced, out-numbered and under-equipped.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic026",
+   "prompt": "Are you in charge here?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I sent you packing last time for a reason. Why should I let you in now?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic028",
+   "prompt": "You sure you don't want my help with the Legion?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. We clear out the hostages and they lose their advantage. They're down in a clearing, crucified on some telephone poles.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll cover you from the ridge. Just make it quick. These boys should be put out of their misery, not plinked to death with some old varmint rifle.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "And don't get any dreamy notions about playing the hero and dragging those boys out. You'll get swarmed. Now let's go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic029",
+   "prompt": "I changed my mind about helping you with your Legion problem. I'm in."
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Good point. Anyway, it's your hide. Guess I should take all the help I can get.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic030",
+   "prompt": "I'd really like to help. And what's the worst that could happen, Nelson stays captured?"
+  },
+  {
+   "key": "vnelsonnvnelsonrangermilotopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Nice speech. Take a hike.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNVNelsonRangerMiloTopic031",
+   "prompt": "Because no one else is going to help you."
+  },
+  {
+   "key": "vnelsonnelsonrangermilotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe. I'd like to know who I'm dealing with, first.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNelsonRangerMiloTopic003",
+   "prompt": "Anything I can do to help?"
+  },
+  {
+   "key": "vnelsonnelsonrangermilotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNelsonRangerMiloTopic004",
+   "prompt": "Do you have time for a few questions?"
+  },
+  {
+   "key": "vnelsonnelsonrangermilotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hell, what ain't the trouble with the Legion? This time, they jumped the camp in Nelson while the troopers were setting up",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Captured a bunch of gear and took the town. Couple of troopers too. Got 'em crucified down near the center of town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{carefully} You're one of them \"special\" folks, ain't you? They ain't... {searching} real snakes, see? They're Legion soldiers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just called 'em snakes because they're low down and sneaky. {beat} Like a snake.{sigh}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, we always have trouble with the Legion 'round here. This time, they jumped the camp in Nelson while the troopers were setting up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Captured a bunch of gear and took the town. Couple of troopers too. Got 'em crucified down near the center of town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNelsonRangerMiloTopic005",
+   "prompt": "What's the trouble with the Legion?"
+  },
+  {
+   "key": "vnelsonnelsonrangermilotopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dirty job, but I'm glad you did it. I'm not authorized to reward contract pay, but here's a little something for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I'll let everyone know you did the right thing. Some people might not like it, but no one who matters. At least not as far as I'm concerned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNelsonRangerMiloTopic024",
+   "prompt": "I put the captives out of their misery."
+  },
+  {
+   "key": "vnelsonnelsonrangermilotopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have to admit, I didn't think you could do it. Guess that makes me the sap and you the hero.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not authorized to pay for contract work, but here's something for the effort. And I'll make sure everyone hears about what you did. Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNelsonRangerMiloTopic025",
+   "prompt": "Looks like I was able to get a few of the hostages out alive."
+  },
+  {
+   "key": "vnelsonnelsonrangermilotopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then head back down into that camp and deal with the hostages.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNelsonRangerMiloTopic026",
+   "prompt": "Nothing new to report on my end."
+  },
+  {
+   "key": "vnelsonnelsonrangermilotopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNelsonRangerMiloTopic030",
+   "prompt": "Never mind. See you around."
+  },
+  {
+   "key": "vnelsonnelsonrangermilotopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, hold on. Just so you know, if you go down into that camp, one of two things is gonna happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Either that little head of yours is gonna sail into the Colorado courtesy of a Legion machete or they're gonna try to make friends with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And if I find out you're friends with the Legion, I'll put a lump of lead through your skull soon as you pop it back up over the ridge. Are we clear?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VNelsonNelsonRangerMiloTopic031",
+   "prompt": "I'll be going then."
+  }
+ ],
+ "speaker": "ranger_milo"
+}

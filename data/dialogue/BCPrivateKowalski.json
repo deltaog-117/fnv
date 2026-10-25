@@ -1,0 +1,153 @@
+{
+ "page": "BCPrivateKowalski.txt",
+ "speaker": "Kowalski",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You here to pay your respects, too?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello again. Is there something you need from me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck are you doing? My brother died at the Battle of Hoover Dam. You're desecrating a war memorial.",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "I've got nothing else to say to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformBoulderCityBCPrivateKowalskiTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, now it's on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're a little bitch and your brother was, too."
+  },
+  {
+   "id": "VFreeformBoulderCityBCPrivateKowalskiTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It commemorates the Battle of Hoover Dam. The rangers lured the best of Caesar's Legion into Boulder City, then blew the whole town up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR still lost a bunch of troops in the fighting, though. My older brother sacrificed himself so they could evacuate some of the wounded.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is this memorial?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCPrivateKowalskiTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformBoulderCityBCPrivateKowalskiTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't worry about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm sorry to hear that."
+  },
+  {
+   "id": "VFreeformBoulderCityBCPrivateKowalskiTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, apology accepted. Don't let it happen again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "My apologies. It was rude and disrespectful of me to do that.",
+   "label": "< Speech Option - 30 >"
+  },
+  {
+   "id": "VFreeformBoulderCityBCPrivateKowalskiTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Yeah, sure, whatever. I'm done with you.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry. I, uh, didn't know what I was doing.",
+   "label": "< Speech Option - 30 >"
+  },
+  {
+   "id": "VFreeformBoulderCityBCPrivateKowalskiTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Camp McCarran, but I'm on leave at the moment - heading back to California to see my folks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm supposed to join up with a caravan that's heading that way up at the 188, but they're not due to arrive for awhile yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where are you normally stationed?"
+  },
+  {
+   "id": "VFreeformBoulderCityBCPrivateKowalskiTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just get the fuck away from here, already.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yeah, whatever."
+  },
+  {
+   "id": "BCPrivateKowalskiAttack",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Oh, that's it. Your ass is mine!",
+     "emotion": "anger",
+     "intensity": 100
+    }
+   ],
+   "prompt": "BCPrivateKowalskiAttack"
+  }
+ ]
+}

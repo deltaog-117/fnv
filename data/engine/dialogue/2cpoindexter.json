@@ -1,0 +1,412 @@
+{
+ "id": "2cpoindexter",
+ "speaker_name": "Poindexter",
+ "source": "2CPoindexter.txt",
+ "topics": [
+  {
+   "key": "caravanoffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A fascinating proposition. Naturally, my considerable genius makes me a master of the game, so try not to be disappointed if you lose miserably.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanOffer",
+   "prompt": "Want to play a hand of Caravan?"
+  },
+  {
+   "key": "caravanplayerloses",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am unsurprised regarding your appalling lack of talent. Perhaps you'd care to try another hand? After all, you can only improve.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanPlayerLoses",
+   "prompt": "CaravanPlayerLoses"
+  },
+  {
+   "key": "caravanplayerwins",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well now, this is an unexpected variable. You really must let me challenge you to a rematch, so I can analyze what passes for your strategy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanPlayerWins",
+   "prompt": "CaravanPlayerWins"
+  },
+  {
+   "key": "caravanrematchno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As you wish. Once you've salved your battered ego, perhaps you'll make another go of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanRematchNo",
+   "prompt": "I'm all done playing for now."
+  },
+  {
+   "key": "caravanrematchyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. I would wish you luck, but of course peerless intellect is all that matters here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanRematchYes",
+   "prompt": "Yeah, let's play again."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "While I have already internalized the new skills we have discussed, I feel as though my solution was nevertheless more practical.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Excellent! Maximal reward for minimal work.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I trust you're satisfied with the squad's newfound teamwork? It's almost entirely my own doing, I assure you.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Ever since consuming those \"illicit rations\" Razz offered us, I have felt a steadily-increasing desire to kill.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I understand the esteemed Chief Hanlon is no longer with us. A shame. He seemed to be the only competent leadership this Army had.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "I'm assuming you aren't associated with the Army or the Rangers. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've done an excelent job ingratiating yourself to the top brass. I assume this is some sort of strategem?",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "You've managed to become extraordinarily well-liked by the top brass. You should exploit that for your own gain wherever possible.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Your behavior has become an unwelcome X-factor, and I would kindly ask you to consider altering it.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "I'm afraid I have no desire to socialize with unstable elements such as yourself.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I must question your logic in coming here, in light of your prior actions.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Kindly remove yourself, as I have no desire to be struck by a stray round when disgruntled troopers begin firing on you.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Greetings once again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "magsshapeup1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You actually did it? My friend, I am without doubt a genius, but I must say, you've given me a run for my money. Bravo. Bravo.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "I think you'll find that the Misfits' records are now much improved."
+  },
+  {
+   "key": "magsshapeup1_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That seems highly illogical. What reason would he have for doing that?",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "Sgt. McCredie asked me to talk to you about getting your squad in shape."
+  },
+  {
+   "key": "magsshapeup1_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And what do you propose?",
+     "emotion": "surprise",
+     "intensity": 15
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "Going back to those squad improvements, I had an idea."
+  },
+  {
+   "key": "poindexterarmy",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a simple idea: the Army offers fiscal security and generous benefits at the cost of substantial personal risk - if you're on the front line.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "If you perform too poorly, they'll scrub you out. Perform too well, and you get sent to the front lines.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "All I have to do is ride that mediocrity gradient to a cushy, do-nothing job miles away from the war.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "PoindexterArmy",
+   "prompt": "How'd a guy like you end up in the Army?"
+  },
+  {
+   "key": "poindexterhistory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "To what purpose? It's highly unlikely you'd understand anything I'd say.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Suffice to say I'm a certified genius, and when I'm discharged from this pit of testosterone and failure, I'll have all the money I could ever need.",
+     "emotion": "disgust",
+     "intensity": 40
+    }
+   ],
+   "topic": "PoindexterHistory",
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "key": "poindextermisfits",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In a strictly official capacity, no.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "However, as I am by far the most intelligent and resourceful figure on this base, I feel it's safe to say the soldiers here look up to me.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "topic": "PoindexterMisfits",
+   "prompt": "Are you in charge around here?"
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose if you must stick with your narrow, parochial view of \"in charge,\" then yes, it's a no. Are we done?",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic001",
+   "prompt": "So, that's a no, then?"
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Genius is seldom appreciated in its own time.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic002",
+   "prompt": "I wonder if anyone else would share that sentiment."
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Why would I? If this unit improves its performance, we'll be shipped to the front lines. That's hardly conducive to living a long life.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic003",
+   "prompt": "Great, maybe you can help me get this squad working together!"
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hmm. You're trying to appeal to my ego. I must admit, it's an effective tactic. All right - I'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But only because I want to see if it's even possible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic003",
+   "prompt": "Since you're so respected, maybe you can help get this unit into shape."
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is an unexpected variable. I had hoped to coast on an easy wave of mediocrity to a cushy government pension.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic004",
+   "prompt": "He thinks you might respond better to someone who isn't an authority figure."
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your insults are both unhelpful and unwanted. I'll thank you to keep them to yourself.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic005",
+   "prompt": "I guess you don't feel so smart now, huh?"
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And how would you propose accomplishing such a goal?",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic006",
+   "prompt": "Maybe I can help out."
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm... an intriguing proposition.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Company readiness reports are logged on the computer systems at the Resort. If you hack the system, you could alter our records.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Such an attempt, however, is likely to thwart efforts to motivate the squad to do actual work. If such is your goal, you should look elsewhere.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic008",
+   "prompt": "It occurs to me that I might cheat."
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent! Squad readiness records can be accessed from two terminals at the resort: the main terminal in the lobby or a secure one in a back office.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "The main terminal is typically unlocked, but is also in the middle of a major thoroughfare, you'll have to be stealthy to access it.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "The office terminal is locked, but you might have an easier time accessing it, especially at night.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic015",
+   "prompt": "I'll do it. Work is overrated anyways."
+  },
+  {
+   "key": "vfreeformcampgolf2cpoindextertopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As you wish; I'm sure the optimal solution will become apparent to you in time.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformCampGolf2CPoindexterTopic016",
+   "prompt": "Maybe I'll ask around a little more instead."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I somehow suspect you'll be back to converse with me later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "private_poindexter"
+}

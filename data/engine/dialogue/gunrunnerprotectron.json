@@ -1,0 +1,117 @@
+{
+ "id": "gunrunnerprotectron",
+ "speaker_name": "Vendortron",
+ "source": "GunRunnerProtectron.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in combat} The store is currently unavailable due to unexpected circumstances. Please come back later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome, sir or madam. Do you wish to purchase something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialogueeastvegas1egunrunnerprotectrontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am ready to process our transaction.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueEastVegas1EGunRunnerProtectronTopic001",
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "key": "vdialogueeastvegas1egunrunnerprotectrontopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is the New Vegas branch of the Gun Runners, supplying the wasteland with only the finest armaments since 2155.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueEastVegas1EGunRunnerProtectronTopic003",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "vdialoguevegaseast1egunrunnerprotectrontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This kiosk was specially constructed around me to deter theft and assault.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasEast1EGunRunnerProtectronTopic000",
+   "prompt": "How did you get inside there?"
+  },
+  {
+   "key": "vdialoguevegaseast1egunrunnerprotectrontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All Gun Runner merchandise is constructed on-site.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasEast1EGunRunnerProtectronTopic001",
+   "prompt": "That's some impressive weaponry. Where did it all come from?"
+  },
+  {
+   "key": "vdialoguevegaseast1egunrunnerprotectrontopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come back and see us again soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasEast1EGunRunnerProtectronTopic003",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come back and see us again soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hello, potential customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "vendortron"
+}

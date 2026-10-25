@@ -1,0 +1,964 @@
+{
+ "page": "LieutenantBoyd.txt",
+ "speaker": "Carrie Boyd",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why don't you wait in the other room while I chat with Silus here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it, soldier?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You stick out like a sore thumb around here. You sure you're in the right place?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You weren't supposed to kill him! Goddamn it. Not only did we not get any information, but now you've ended his suffering, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Shit, guess I can forget about a promotion this decade. Thanks a lot, asshole. {pissed at someone who screwed her over}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fuck. What am I going to tell the colonel?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Haven't you done enough?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Poor guy. He's all tuckered out. Well, I guess we'll have to pick up where we left off tomorrow. Good work.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure he'll have had enough after a few days of this. Or if we're lucky, a few months.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll get someone in here to clean up the mess he made. You can head out for the day. Let's let him sleep.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That was fun to watch. I'd have you do it again, but I'd probably get in trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This'll do the NCR a lot of good, so you should be proud.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's the standard fee, plus I threw in the price of a good show on the Strip. That's from me personally. You can beat up my prisoners anytime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You did well. I don't know how you did it without putting a scratch on him, and I'm a little disappointed personally, but it saved the NCR some face.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And it could save us more than that when all is said and done. I'm gonna talk to some people when we're through here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is about double the standard fee we'd give a \"consultant,\" but from what I saw, you're more of an artist. So think of this as your commission.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's finish this up, then we can talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydAnders",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know him very well, myself. I seem to remember that he was the man to call on if you needed someone to get in and get out quietly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Colonel Hsu would really be the person to talk to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What else can you tell me about Anders?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydBreakIns",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe break-in isn't the right word. We didn't find signs of forced entry. But I've had reports of someone sneaking into the control tower at night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's probably just a meeting spot for a steamy military base love affair. <Sighs> Kids today. {wryly}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But it bothers me that they didn't break in. It means they have an access code. Most soldiers around the base don't have that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the break-ins."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydContrerasTurnIn",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That may be the worst-kept secret on the base. I'd be more surprised if you had proof he wasn't involved in criminal activity. {emphasize \"wasn't.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if you have proof, you're the envy of every MP stationed here. What'd you find?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right. Thanks for telling me. I'm going to have him rounded up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Pretty impressive work there. Wish I could keep you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But for helping me nail this guy, I think you should have a little keepsake.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here. It's not contraband, but I confiscated it from Contreras last week because he was being smarmy and I was sick of his bullshit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have proof that Sgt. Contreras is involved in criminal activity."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydCplWhiteTurnIn",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've already talked to Anderson, actually. Came in, confessed, and gave you credit for the whole thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First time I've ever seen anything like that. Was like you'd done him some huge favor. I've gotta hand it to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This Dazzle must be some girl.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't tell me. He married the hooker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have an update on Corporal White."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydMissing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, there's Anders. He's a Ranger. That one's not suspicious so much as worrisome - he left on a dangerous assignment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Colonel Hsu sent him out. Now I think he feels guilty not having any way to check up on him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who's missing?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydThefts",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. We keep coming up short on our weekly supply inventory checks. Guns and ammo, mostly. Not the kind of things you like to see go missing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No witnesses yet. I've got my money on Sergeant Contreras, who's supposed to be in charge of distribution, the little weasel.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But he's too slick to let anyone catch him doing it. We've searched his possessions a dozen times. Nothing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You said there have been thefts?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not big on reading nametags, huh? That's okay, my name is long and difficult to pronounce. Ready for it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's Boyd. Lieutenant Boyd to my friends. Colonel Hsu has me handling the policing duties for the base.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've told him he could make my job a whole lot easier if he would just let me shoot anyone who talks back to me, but you know how colonels can be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I've got this one. I don't think he's going to have much information of value, so I'm just tormenting him for fun. Thanks, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, so far this has gone exactly as expected - poorly. But with the work you've done for NCR already, you might be just what I've been looking for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We captured an honest-to-God centurion of Caesar's Legion recently.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, this is state business, what I'm working on. You'd have to do a lot more NCR ass-kissing before they'd let you help me with this one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you need any help?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now what kind of MP would I be if I didn't notice anything suspicious?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've had soldiers go AWOL, break-ins, thefts, you name it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have you noticed anything suspicious lately?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. The more guns you can recover, the more I'll be able to use to shoot Contreras for being inept.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll keep an eye out for your missing supplies."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like the way you think. Have I said that yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Problem is that the NCR frowns on using that sort of tactic. There are some restrictions still in place from President Tandi's administration.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But here's my favorite thing about you - you're not {emph} in the NCR. Plus, for all this guy knows, you're completely insane. That's a winning combination.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why don't you just beat your prisoner senseless?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't have anything like that. Sounds nice. Like the kind of thing I'd want to take home and use on my husband.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But even if we did, I don't know that I'd be comfortable using it. If there's any risk of overdose, it's not worth it. Asshole's too valuable.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What about a truth drug?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, and one time I thought I saw a tear when I told him his uniform was unflattering. But I think he just got some dust in his eye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have you tried calling him hurtful names?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's the spirit. Okay, I'll go in and have a word with him. Then I'll call you in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay. Let's get started."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You sure? You're missing out. Well, you're always welcome, if you should change your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not interested in doing that right now."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Man, that guy's got water on the brain. Knows more about water pipes than any man should.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If he says we're losing water, I think the colonel would listen to that. I'll talk to him about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He wants you to increase water flow to Freeside. Said it'd be lost otherwise."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anderson. I've heard of him, if it's the same guy. Water nerd from the Followers of the Apocalypse. Used to handle some of the operations for OSI.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know what to think about the Followers. The things they do... hard to say if they're helping or hurting sometimes. Especially in Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have to send some people out there to make sure we don't lose any more water. That stuff's like gold out here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you. I owe you for this. You saved me a lot of work. And I'm sure Corporal White's family will be grateful to at least get some closure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The MPs keep a bunch of junk around that's confiscated off of people who decide to screw with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I haven't really sorted through it, but go ahead and see if there's anything you can use in there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We keep it in a trunk across the hall, by the prison cells.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He was killed by a man named Anderson he caught stealing water from the NCR."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shit. That's why you don't go wandering off looking for some call girl on the Strip without telling somebody first.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anderson. Is that Followers of the Apocalypse Anderson? {emph. \"followers of the apocalypse\" - trying to clarify which Anderson we're talking about.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A gang called the Scorpions murdered him. A man named Anderson witnessed it."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, well let me know if you find out anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. The man I'm more interested in is Corporal White.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "White had a lot of promise. Wanted to be a ranger as bad as anyone I've seen. But he also had some extracurricular activities going. Now he's gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Anyone else missing?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Little bastard. I'm sure some of those find their way into the hands of our enemies, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I hacked into his computer and found evidence that he's selling NCR guns."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's a shame about Corporal White. He knew better than that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, nothing else."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's trafficking chems? I don't know how he thought he could get away with that. {stunned for first sentence. second is more of an aside, like muttering to yourself \"what an idiot.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He admitted to manufacturing and selling chems."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, if you want to investigate. It's not like there's anything to steal up there. Just a bunch of old communications equipment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you can find out any more, I'd be interested to hear it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's something about this I really don't like, and if I weren't tied up here I'd be staking it out personally.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Would you be willing to give me the control tower access key so I can check it out?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Aw, tear my heart out, why don't you? Well, maybe you can find a way to play with his mind - get him out of his comfort zone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "People lose their heads and say things they regret. Especially if they underestimate you. This dickhead would underestimate a nuclear missile.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Plenty of ways to skin a cat, as they say. Hey, what if we skinned him? Bet he wouldn't be so smug then. {getting jazzed about her idea with the sentence that begins \"Hey.\" emphasize \"then.\" Last sentence is said while chuckling slightly in a self-amused }",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I object to the use of violence against prisoners of war."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Better believe it. Everybody, everybody in Caesar's Legion from Caesar on down will kill themselves before they can be captured.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're so twitchy they'd probably do it if you reached out to hug them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But here's this guy who's an elite commander in their army and he just gives himself up, even as his men are slitting their own throats around him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is that a big deal?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I don't know about you, but to me that sounds like a man who's willing to cooperate. Except he hasn't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Only times he speaks up are to insult you. He's a real prick, by the way. And I'm supposed to get information out of this guy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you think it means?"
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think if you rough him up enough and really put some fear into him, he'll sing like a choir boy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So let's do this. When you're ready, I'll go in and give you a little intro. Then I leave the room and you make him regret the day he was born.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We go back and forth a couple of times until either he talks or he can't move his jaw anymore. Either way we've had our entertainment for the day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So you want me to do what you can't."
+  },
+  {
+   "id": "VFreeformMcCarran2LieutenantBoydWhiteWash",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Word around the base is he'd been going regularly to visit a hooker named Dazzle at Gomorrah. That's a casino on the Strip. Classy place. {Classy place is sarcastic. The place is a dump.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "His belongings are up in the barracks in the concourse building. First bunk on your left if you're facing in from the center.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I haven't had a chance to look through his things yet, so that might be a good place to begin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll see what I can find out about Cpl. White for you."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yep. See you round.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You got something to say or do you always look like that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "VFreeformMcCarran2POW1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Long time, no see, Silus.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That so?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How sweet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll pass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you love them, maybe you should try one on. {emphasize the second \"you\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's all the rage in fashion circles.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In that case, maybe you'd better save the collar you were going to give me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For a friend of mine you're about to meet. My friend isn't very docile.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You know all the rules the NCR instituted to protect enemy prisoners of war?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My friend doesn't. {subtly menacing.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and Silus? If you resist at all, I'll personally blow your brains out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come on in. He's all yours. I'll be back in a bit to see how you're getting along.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I'll need you to surrender your weapons before you go in. You can pick them up from the locker on your way out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFreeformMcCarran2POW1"
+  },
+  {
+   "id": "VFreeformMcCarran2POW2Beating",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Whoa, easy there! You're supposed to rough him up a little, not kill him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why don't you step outside a minute? Let off some steam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice job. {under her breath}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think my friend doesn't like you, Silus. I don't know how much longer I can keep her under control.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think my friend doesn't like you, Silus. I don't know how much longer I can keep him under control.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not just any beating, Silus. A savage beating. A beating that you'll be reminded of every time you feel pain from now on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When my friend's done with you, you won't have any of your teeth left. You'll be drinking your food through a straw.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your ribs will never heal properly and it will hurt every time you breathe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It'll be like your collars, Silus. Impossible to forget.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh. Not the sort of wit I've come to expect from you, Silus.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm getting entertainment. That's something. So what's it gonna be?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you going to spill your guts to me, or am I going to let my friend the maniac back in here for some play time? Silus?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Silent treatment, huh? Have it your way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come on back in. I think he misses you. Oh, and let me check you for weapons, one more time. For your safety as well as his.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFreeformMcCarran2POW2Beating"
+  },
+  {
+   "id": "VFreeformMcCarran2POW2Int",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "All that shouting. Honestly, Silus, you get free room and board. The least you could do is be a good guest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My, we have an active imagination today, don't we?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, it sounds like the two of you are becoming fast friends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You know what? I think you're right, Silus.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Except I don't care, because it'll be worth it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It'll be worth it to never have to hear you say another word, Silus.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Carry on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFreeformMcCarran2POW2Int"
+  },
+  {
+   "id": "VFreeformMcCarran2POW2Speech",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Is something the matter, Silus? You look upset.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, maybe you'd better step out for a moment. You've upset him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know, I thought she seemed like a nice lady.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know, I thought he seemed like a nice guy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's a long walk, Silus. I don't think it's gonna happen. You'd better just talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you don't like dealing with me, I can bring my friend back in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have it your way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come on back in. I think he misses you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFreeformMcCarran2POW2Speech"
+  },
+  {
+   "id": "VFreeformMcCarran2POWCleanup",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Mind cleaning up our mess, Corporal?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFreeformMcCarran2POWCleanup"
+  },
+  {
+   "id": "VFreeformMcCarran2POWEnough",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "All right, you can stop for a sec.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFreeformMcCarran2POWEnough"
+  }
+ ]
+}

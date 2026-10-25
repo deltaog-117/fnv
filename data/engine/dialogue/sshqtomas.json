@@ -1,0 +1,221 @@
+{
+ "id": "sshqtomas",
+ "speaker_name": "Tomas",
+ "source": "SSHQTomas.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for the help. That crazy bitch just attacked me out of nowhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you see that? That crazy bitch just attacked me out of nowhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks again for the help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This day just can't get any worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, none at all. We've been traveling together since I picked her up a few days ago, and she's been friendly this whole time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'd actually been flirting a little when she suddenly pulled a gun out and began yelling at me to hand my caps over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that I think of it, though, she laughed when I threw her my money. I think what she really wanted was my lucky charm necklace.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic000",
+   "prompt": "Any idea why?"
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No time for strangers, huh? I should probably follow your example. That's the last time I pick up a straggler on the road, believe me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic004",
+   "prompt": "I have to go."
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not for long. I met her on the road a few days ago, and we've been traveling together since.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic005",
+   "prompt": "Did you know her?"
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, every once in a while you can find a cap with a blue star on it. They're pretty rare, so I started collecting them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once I had enough, I made a necklace out of them, since I thought they were lucky.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And maybe they are, since you managed to show up at just the right time.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, every once in a while you can find a cap with a blue star on it. They're pretty rare, so I started collecting them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once I had enough, I made a necklace out of them, since I thought they were lucky.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic006",
+   "prompt": "Lucky charm necklace?"
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Really? I had no idea. And here I've been carrying them all this time, never knowing how dangerous they were.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you think I should do with them? Bury 'em or something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic008",
+   "prompt": "All sorts of nasty people are looking for caps like those. You'd be safer if you got rid of them.",
+   "label": "{ Speech >= 50 }"
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Even if what you're saying is true, I think I'll take my chances. This necklace and I have been through a lot, and we're both still kicking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If that's not lucky, what is?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic008",
+   "prompt": "Those caps are bad luck. Why don't you let me hold onto them for you?",
+   "label": "{ Speech >= 50 }"
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? The hell I will!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic009",
+   "prompt": "Lucky for me, you mean. Hand them over."
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh, yeah, sure. H-here you go. Just don't hurt me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic010",
+   "prompt": "Lucky for me, you mean. Hand them over or I gut you like a fish."
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're all yours. I sincerely hope they work better for you than they did for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic011",
+   "prompt": "I can hold onto them for you. I'm not worried about the people that are looking for them."
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it. I'm glad I ran into you. Thanks for the advice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic012",
+   "prompt": "Just get rid of them. It doesn't matter how you do it."
+  },
+  {
+   "key": "vfreeformsshqsshqtomastopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I will. That's the last time I pick up a straggler on the road, believe me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQTomasTopic014",
+   "prompt": "Just be more careful in the future, okay?"
+  }
+ ],
+ "speaker": "tomas"
+}

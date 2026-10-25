@@ -1,0 +1,405 @@
+{
+ "id": "harland",
+ "speaker_name": "Harland",
+ "source": "Harland.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You did good, smoothskin. Never thought I'd get out of that room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kind of busy running for my life here, smoothskin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come and get it, you big dumb -",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey! You're not one of those things out there. Who the hell are you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you find my friend?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you want now, smoothskin?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "harlandalreadyfree",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Spare me the details. Goddamn. She had the yellowest smile...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You did your part, so I'll do mine. Go ahead and root around up here if you want. I'm going to make a break for topside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandAlreadyFree",
+   "prompt": "I did find her, unfortunately."
+  },
+  {
+   "key": "harlandbyaskingyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha! Well, you're polite, I'll give you that. If this was just between you and me, I'd do as you ask. But it's not.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I had a friend with me when those mutant bastards came out of nowheres. She panicked and ran the wrong direction - further into the basement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She's probably dead, but I ain't leaving until I know for sure. I'd have gone looking myself, except I wouldn't last a minute out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You, on the other hand, seem pretty resourceful. Find my friend, and I'll get out of your way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandByAskingYou",
+   "prompt": "How can I help get you out of this room?"
+  },
+  {
+   "key": "harlandbykillingyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then you're dumber than you look, smoothskin. Eat this!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandByKillingYou",
+   "prompt": "Looks like I have to kill you."
+  },
+  {
+   "key": "harlandfrienddead",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Well, spare me the details.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn it, I'm going to miss that crooked, yellow smile...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, you did your part, so I'll do mine. Look around up here if you want. I'm going to make a break for topside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandFriendDead",
+   "prompt": "Yes, unfortunately."
+  },
+  {
+   "key": "harlandgoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandGoodbye",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "harlandhowenduphere",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "First off, I'm not trapped. This was a tactical choice, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm no match for those things out there, so I found a good defensive position, and I've been defending it, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "...Aw, who am I fooling? I'm trapped. Name's Harland. Pleased to meet you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What happened was, I was escorting folks down to work when those things attacked us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Most of the fight was upstairs, but some folks panicked and made for the basement. And I went after them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, turns out there were even more of those bastards down here than upstairs, and things went to shit fast.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I couldn't find the others, so I fell back to this room and set up a nice little kill zone. End of story.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandHowEndUpHere",
+   "prompt": "How did you end up trapped down here?"
+  },
+  {
+   "key": "harlandhowenduphere_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not delicate. Radroach meat for protein, condensation off the pipes for water, and I do my business over in the far corner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wouldn't say it's been comfy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandHowEndUpHere",
+   "prompt": "How have you survived?"
+  },
+  {
+   "key": "harlandicanfindher",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. Let me know what you find out. Here's hoping she's okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandICanFindHer",
+   "prompt": "I'll try to find your friend."
+  },
+  {
+   "key": "harlandlookdifferent",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guess the outfit gives that away, huh? I never did buy into that religious mumbo-jumbo with the robes and all that shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It gets lonely out in the wastes, okay? And I don't have to tell you that Bright's group has got some fine-looking ghoulettes in it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eh... or maybe I would have to tell you...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, I helped them out, and they kept me supplied with ammo and pleasant company.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandLookDifferent",
+   "prompt": "You don't look like the other ghouls from Bright's group."
+  },
+  {
+   "key": "harlandnightkininfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I kill them on sight, so we haven't had much time to get acquainted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're hard to see, obviously, but they aren't too smart when it comes to tactics. Or not stepping in traps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandNightkinInfo",
+   "prompt": "What can you tell me about the creatures out there?",
+   "label": "What can you tell me about the \"demons\"?"
+  },
+  {
+   "key": "harlandnoword",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not expecting good news, but keep looking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandNoWord",
+   "prompt": "I haven't found her yet."
+  },
+  {
+   "key": "harlandpartsinfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He did, did he? I swear, I should tear the rest of the hair out of that cocksucker's head.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Send a rescue mission after Harland? Nah, let's just send some smoothskin whose radio got broke!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Harland's tough! He probably enjoys waiting to be attacked at any moment! He probably loves eating nothing but roach meat!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Licking up condensation from a rusted pipe is his idea of fun! So's doing his business in a corner, and smelling it for days!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But oh, that's right - the crisis is that you need some computer parts! Well, you can go fuck yourself until you get my friends out of this mess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandPartsInfo",
+   "prompt": "Chris said you might know where I can find computer parts."
+  },
+  {
+   "key": "harlandwhatfolks",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, you haven't run across Bright's little cult upstairs, eh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Harmless bunch, really. Religion and me never really got along, but they're good company. I helped out with odds and ends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandWhatFolks",
+   "prompt": "What \"folks\" were you escorting to work?"
+  },
+  {
+   "key": "harlandwhereparts",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And I thought I was old. It's a junkshop east and slightly north of here. There's an old woman running it. Gilbert, or something.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandWhereParts",
+   "prompt": "Where did you say I might find some computer parts again?"
+  },
+  {
+   "key": "harlandwhypcishere",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And I bet he told you it's the creator's will for you to risk your ass, instead of him, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, good luck with that! I'd give you a hand, but no thanks. I may look like a corpse, but I'm partial to living!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandWhyPCisHere",
+   "prompt": "Jason sent me down here to get rid of the \"demons.\"",
+   "label": "PC says what he's doing here."
+  },
+  {
+   "key": "harlandwhypcishere_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A stash of Stealth Boys. Are you kidding me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If there was some big stash of devices in here that made you invisible, do you really think we'd be having this conversation?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandWhyPCisHere",
+   "prompt": "I'm looking for a stash of StealthBoys in this room.",
+   "label": "PC says what he's doing here."
+  },
+  {
+   "key": "harlandwhypcishere_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The only thing you'll find up here is a bullet hole between your eyes. Got any better ideas?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandWhyPCisHere",
+   "prompt": "Can I come up there and look? Maybe you missed the Stealth Boys.",
+   "label": "PC says what he's doing here."
+  },
+  {
+   "key": "harlandwhypcishere_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe you noticed a bunch of invisible monsters out there? I've been in here trying not to get dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HarlandWhyPCisHere",
+   "prompt": "I'm exploring, that's all. What about you?",
+   "label": "PC says what he's doing here."
+  }
+ ],
+ "speaker": "harland"
+}

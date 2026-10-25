@@ -1,0 +1,230 @@
+{
+ "id": "nvccsammyweathers",
+ "speaker_name": "Sammy Weathers",
+ "source": "NVCCSammyWeathers.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{despair} You killed my kin. Why is this happening to me?",
+     "emotion": "sad",
+     "intensity": 100
+    },
+    {
+     "text": "{miserable} Oh, it's just awful here. Can't you help us?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{desperate} You're still gonna free us, aren't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you so much for freeing me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You looking for a pat on the back? My mother is dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Why? {sobbing} Why?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Okay, you can quit. I don't know what you're trying to do, but it ain't helping.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic000",
+   "prompt": "Don't worry your little head, Sammy. <Set off the explosive in her collar>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{player already killed your mother or brother doing this} So you can kill more of us? Get away from me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you say so... you know these collars have a bomb in them, don't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic001",
+   "prompt": "Let me deactivate your collar."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hurry up. The guards keep eyeing me like I'm a piece of meat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic002",
+   "prompt": "I'm working on it."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Doesn't make sense} Why free me now? After what you done? I ain't saying thank you.",
+     "emotion": "sad",
+     "intensity": 100
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic003",
+   "prompt": "<Give Sammy the key from Canyon Runner>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You did it! Thank you so much!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Okay, I'm gonna stop you right there. It is obvious you don't know what you're doing!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic004",
+   "prompt": "Hold still. <Deactivate the charge and remove her collar>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, like get the key from the slavemaster or pay him to release us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic005",
+   "prompt": "Never mind. I'll see if there is another way to free you."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Shocked disbelief} Freedom? I don't know where we'll get a new start, but any place is better than rotting with the legion or Frank.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic006",
+   "prompt": "I've paid for your freedom. You're free to go."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Doesn't make sense} Why free me now? After what you done? I ain't saying thank you.",
+     "emotion": "sad",
+     "intensity": 100
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic007",
+   "prompt": "I've paid for your freedom. You're free to go."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{muttering} Momma...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic008",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{angry} Accident or not, you're to blame!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic009",
+   "prompt": "It was an accident."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Shocked disbelief} Freedom? I don't know where we'll get a new start, but any place is better than rotting with the legion or Frank.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic010",
+   "prompt": "<Give Sammy the key from Canyon Runner>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccsammyweatherstopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<Sad stare>",
+     "emotion": "sad",
+     "intensity": 70
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCSammyWeathersTopic011",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{muttering} Momma...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hurry up. The guards keep eyeing me like I'm a piece of meat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "sammy_weathers"
+}

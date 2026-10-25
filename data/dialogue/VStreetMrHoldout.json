@@ -1,0 +1,172 @@
+{
+ "page": "VStreetMrHoldout.txt",
+ "speaker": "Mister Holdout",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, there, friend, a bit of advice - you look like you could use some *protection.* {Beat, downnote, conspiratiorial} Lucky for you, I got what you need. {Moseys on up}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My stock and trade? Alllll kinds of easy-to-hide weapons for slipping into and out of casinos, they won't give you a second glance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heard the Dam finally got what's coming to it. Strange days ahead - and that's why it's best to face the day armed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some crazy days on the Strip. Still... it's good for business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hey, potential customer, slightly hopeful} Back again? Need a weapon for an emergency, Mister Holdout's your guy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look,{\"friend\" is said in a sarcastic, but serious, tone} \"friend,\" don't get near me - you're too well respected for my business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vDialogueTheStripVStreetMrHoldoutTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Things guards can't spot when they're patting you down or checking for iron at your hip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Easy to hide weapons?"
+  },
+  {
+   "id": "vDialogueTheStripVStreetMrHoldoutTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Simple - you can't bring guns into the casino, that's why. They'll strip you to your fists.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Surrre, they say you get it all back when you leave. Me? I don't like being without a little *insurance* when it's my caps on the table.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why would I need to hide a weapon on me?"
+  },
+  {
+   "id": "vDialogueTheStripVStreetMrHoldoutTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take a look at these beauties.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The right weapons for my kind of customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The others here don't understand our kind, but you can count of me, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You aren't exactly good for business, so you'll have to live with my prices.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have a discount, friend. I can't wait to see what you do with these, next.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's an honor to have my wares used by such a wild badass. Cut's on the house, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's see what you have."
+  },
+  {
+   "id": "vDialogueTheStripVStreetMrHoldoutTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Once only, good bye, \"fuck off,\" shrugs} Suit yourself, it's not my fault if they find your body dumped in Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not interested. Maybe some other time."
+  },
+  {
+   "id": "vDialogueTheStripVStreetMrHoldoutTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stay safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You know where to find me, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Make yourself scarce, I got to keep my image.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bring on the mayhem, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueTheStripVStreetMrHoldoutTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Sizing the player up, nods} You might - one fellow I knew was able to slip a pistol past the guards. You? {Sizes up, impressed} I'm guessing you could get a machine gun by them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can get weapons past the guards, no problem."
+  },
+  {
+   "id": "vDialogueTheStripVStreetMrHoldoutTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Dubious} An experienced smuggler could get a machine gun or pistol in - you? You're welcome to try.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hmmm... think I could I slip bigger weapons past the guards?"
+  }
+ ]
+}

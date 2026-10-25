@@ -1,0 +1,69 @@
+{
+ "page": "1ESharecropperMorganBlake.txt",
+ "speaker": "Morgan Blake",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, you here to work? I think I have an extra shovel around here somewhere.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry, I don't have time to talk right now. Talk to Trent, he might be able to help you out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VES34Vault1ESharecropperMorganBlakeTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, crops aren't doing so well. I'm thinking it might be something in the water.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The pump station is pretty run down, you could go take a look around the place, see if you find anything strange going on. What do you say?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's going on around here?"
+  },
+  {
+   "id": "VES34Vault1ESharecropperMorganBlakeTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VES34Vault1ESharecropperMorganBlakeTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that's great!",
+     "emotion": "happy",
+     "intensity": 60
+    },
+    {
+     "text": "I should get back to work now, see you around.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll go check it out."
+  }
+ ]
+}

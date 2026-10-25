@@ -1,0 +1,54 @@
+{
+ "id": "vfsmickandralphscrier",
+ "speaker_name": "Mick & Ralph's crier",
+ "source": "VFSMickAndRalphsCrier.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop by Mick & Ralph's for all your shopping needs, sir.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop by Mick & Ralph's for all your shopping needs, ma'am.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mick & Ralph's is located just before the east gate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfsmickandralphscriershout",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come to Mick and Ralph's for all your shopping needs!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If it can be bought, it can be found at Mick and Ralph's!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've got stuff we're not even allowed to sell, people. Only at Mick and Ralph's!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSMickAndRalphsCrierShout",
+   "prompt": "VFSMickAndRalphsCrierShout"
+  }
+ ],
+ "speaker": "mick_ralph_s_crier"
+}

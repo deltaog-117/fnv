@@ -1,0 +1,845 @@
+{
+ "page": "VRemDoctorHenry.txt",
+ "speaker": "Henry",
+ "topics": [
+  {
+   "id": "DoctorHenryToCalamity01",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How are those readings looking, Calamity?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DoctorHenryToCalamity01"
+  },
+  {
+   "id": "DoctorHenryToLily01",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, power on the Stealth Boy, Lily.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DoctorHenryToLily01"
+  },
+  {
+   "id": "DoctorHenryToLily02",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Interesting. Try thinking aggressive thoughts now. Think about smashing a Radscorpion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DoctorHenryToLily02"
+  },
+  {
+   "id": "DoctorHenryToLily03",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, we're done here. Go ahead and power the Stealth Boy down, Lily.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DoctorHenryToLily03"
+  },
+  {
+   "id": "DoctorHenryToLily04",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll get back to you on that in a moment. Once I've analyzed the results - uh, oh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DoctorHenryToLily04"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We don't have time to talk, let's get this fight going. {Doc Henry at the battle of Hoover Dam}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{experiment in progress} Please don't interrupt me right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keene has never liked me. If anyone can talk him into backing down, it'll have to be you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Marcus isn't going to be happy about the deaths, but I guess they were unavoidable. At least I got a lot of useful data from the experiment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This brief test might not yield a cure any time soon. If the prototype was constantly in use on a living subject, however...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps Lily might be willing to wear the prototype for a longer duration. The data would be invaluable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think those Nightkin are going cause a lot of trouble, but I guess giving them the specs was better than killing them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I did get a lot of useful data from the experiment, and I'm much closer to a cure than I was before.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's occurred to me that this brief test might not yield a cure any time soon. However, if Lily were to continue to wear the prototype...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice work with the Nightkin. I've never seen anyone able to talk their kind out of anything once they had their mind set to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I got a lot of useful data from the experiment and am a lot closer to a cure than before.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's occurred to me that this brief test might not yield a cure any time soon. However, if Lily were to continue to wear the prototype...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you come to a decision on Lily? I'll need to know before I can do anything else.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{at Bunker - no plan} We're all here. Talk to Kreger about what you've got in mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{At Bunker, Moreno dead} If I had any idea Moreno was capable of doing something that, I'd have warned you. I'm sorry it played out like this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{At Bunker, helping NCR} The NCR's got its share of warts, but I'd rather have them around than the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{At Bunker, helping Legion} I'm not sure if helping the Legion is the right idea. But, I'm going along with it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{At Hoover Dam battle} Keep your head down - could be snipers around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I assume this is about something important? You're interrupting my research.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "The equipment is hooked up and ready. We can start the test as soon as you give me the go ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{somewhat irritated and impatient} Again you interrupt me. Why?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Is there something else I can do for you?",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, yes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's neural degradation. Bio med gel can only preserve a living brain for so long, so you'll need to find a replacement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I haven't left Jacobstown in years, but there was one woman in Novac... Gibson? I remember her living with a pack of hounds.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aside from her, I know that the Fiends and Caesar's Legion fight alongside dogs. There could be viable specimens among them, if you can get to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rex not inside Lodge} I don't see him with you. Bring him to me and I'll take a look. Otherwise, I'll just be guessing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Something's wrong with my cyber-dog. I was told to come to you."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Promising, but I won't be able to synthesize the drug anytime soon. I really should get back to my work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How goes your research for the Nightkin cure?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{work not yet complete} You must have something important in mind. I'm willing to go to this little reunion, but my work here isn't complete.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Help me get my research to a stage where I can hand it over to my assistant, Calamity, and then ask me about this again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{VMS41 complete} I'm intrigued, so I'll go to this reunion. I'll be handing things over to Calamity, so talk to her if anything comes up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, you'll need my word from the pass phrase to get into the bunker - \"friends.\" Don't forget it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Arcade Gannon has asked me to gather all the former members of the Enclave in the Mojave."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, let's see here... neural pathways look good... definitely a breed of guard dog.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I transplant this brain into Rex, he'll be a bit more ferocious in his attacks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This brain is from Rey, one of Old Lady Gibson's dogs."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's possible, but I've yet to see any hard evidence or hear of any cases where humans were negatively affected.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Its negative effects are more pronounced on Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Does Stealth Boy use hurt humans?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because Marcus asked me to and because it's a reason for me to get up in the morning. I'd like to get one more grand accomplishment done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why are you helping the Nightkin?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not convinced that the Nightstalker mutation is a natural one, and I need someone to investigate their lair for proof.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of the Super Mutants have looked around as well, but they've come back empty-handed. Perhaps a pair of fresh eyes will have better luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lily might be interested in coming with you - she's lost a few of her Bighorners to Nightstalker attacks and would enjoy a little revenge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to help. What do you need me to do?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If we must.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well, show me what you've brought so that I can analyze its potential.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And your cyber-dog is... where, exactly? I can't perform the operation without him, hopefully for obvious reasons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a new brain for Rex."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat. This will take awhile.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Transplant Rey's brain into Rex."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's take a look... exceptional synapse responses... descended from some type of cattle dog, I imagine.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want me to transplant this brain into Rex, he'll become more durable.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I got a brain from Lupa, the mother of many Legion Mongrels."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat. This will take awhile.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Transplant Lupa's brain into Rex."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. {shrugging} Your call.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hold off on the transplant."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Big brain on this one. All right, let's see... damn, heavy amounts of the chemicals used in the drug Turbo are present.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Transplanting this brain will make Rex faster than he was before.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I took down a Fiend dog named Violetta."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat. This will take awhile.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Transplant Violetta's brain into Rex."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've compared the brain chemistry of a Nightkin to one of the local Nightstalkers we killed. They both exhibit similar neurochemical changes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, I'm not claiming that Nightstalkers are running around wearing Stealth Boys, mind you. I just don't think it's all a coincidence.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What makes you think that the Nightstalker mutation isn't natural?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. Please stand back - I don't want any erroneous readings. You're welcome to stay and observe if you want, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wait, Lily's not in position yet. Talk to me again once she's settled in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Go ahead and start the tests."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{impatient} Oh, all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Don't start just yet. I'll be back."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmmm... there's still power, but the casing is cracked. I'm astonished that exposure to the stealth radiation could induce mutations so rapidly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "More importantly, this explains why my research into this group of Nightstalkers hasn't come up with a cure for the Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's only one avenue left for me - I need to run the Mark II test on Lily. It's the only way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Lily dead} Hmmm... there's still power, but the casing is cracked. I'm astonished that exposure to the stealth radiation could induce mutations so rapidly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "More importantly, this explains why my research into this group of Nightstalkers hasn't come up with a cure for the Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I did have a test in mind using Lily, but since she's dead, that's no longer a possibility. Regrettable. Anyway, you've done all you can.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "I found a chewed up Stealth Boy in the Nightstalker lair."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lily is eccentric, certainly, but I've never felt she was dangerous. More importantly, she asked if she could help me in some way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've told her about the risks, and she still insists on helping me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why Lily and not some other Nightkin?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll talk to Lily, then."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I prefer the solitude, and having a bunch of Super Mutants around tends to keep things safe and quiet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm surprised to find another human here."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. Specializing in neuroscience, both human and canine. Of course, this lab is nothing compared to what I had when I was with the Enclave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're a scientist?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cyber-dogs and the like. It's not a field I work in much anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Canine neuroscience?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, but the leadership and I didn't see eye to eye, so I left. It was the right decision, since the Enclave's oil rig was destroyed not long after.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You were with the Enclave?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Nightkin have varying degrees of mental instability due their addiction to Stealth Boy use. I've been trying to come up with a cure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm currently investigating the local Nightstalker population since they seem to have developed a natural stealth field.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've also gotten my hands on a working Stealth Boy Mark II prototype, but that experiment is riskier. I'd rather not pursue that research just yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you working on?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you. I strongly suspect that the source of the mutation is artificial, but the Super Mutants found nothing. Your fresh eyes may do better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lily might be interested in coming with you - she's lost a few of her Bighorners to Nightstalker attacks and would enjoy a little revenge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I could look for the source of the Nightstalker mutation for you."
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Possibly immediate and permanent mental damage. There's a reason the Stealth Boy Mark IIs never got beyond the prototype stage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lily already has a pre-existing condition, and the experiment will likely make things worse for her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are the risks of the experiment?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The stealth field has been modulated to use less power and thus last longer, but for some reason it has pronounced negative effects on the user.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, these pronounced effects will allow me to pinpoint exactly what parts of the brain they're affecting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unfortunately, I'll need to run the test on a live subject, and Marcus has encouraged me to investigate the Nightstalker mutation first.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why is the Stealth Boy Mark II riskier?"
+  },
+  {
+   "id": "VDialogueRemnantsVRemDoctorHenryTopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Once you're done thinking, talk to Lily.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need to think about this."
+  },
+  {
+   "id": "VEndingRex",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating} He had survived police service in Colorado, the Great War, combat duty with the Legion, and being the companion of The King.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} But, in the end, Rex finally succumbed to the horrors of the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Having never received a replacement brain, Rex finally succumbed to old age, abruptly shutting down forever one quiet morning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} After two centuries of life and decades of service to humanity, Rex collapses and dies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Revitalized by Violetta's brain, Rex eventually learned to balance the memories of his old life with Violetta's experiences among the brutal Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} His mind had difficulty adjusting, but Rex eventually found peace with his new, more vicious self.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} With the transplant of Lupa's brain, Rex gained all of the donor's experiences traveling with the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} These melded well with his own memories of the Legion, and his new mind quickly adjusted to the myriad memories.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} After Rey's brain was transplanted into Rex's cybernetic body, it took Rex some time to adjust to the old scrap yard dog's memories.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Eventually, Rex's mind settled peacefully, melding his own memories with that of long travels with Old Lady Gibson.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingRex"
+  },
+  {
+   "id": "VMS41VRemDoctorHenryTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. I'll dismantle the prototype to avoid any further incidents with the Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The risk to Lily is too great. Don't keep running the test."
+  },
+  {
+   "id": "VMS41VRemDoctorHenryTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. It will be worth it, I'm sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think Lily should continue to wear the Mark II prototype."
+  },
+  {
+   "id": "VMS41VRemDoctorHenryTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm close to the cure, I can feel it. Lily's continued help will give me the last bit of data that I need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you want to do?"
+  },
+  {
+   "id": "VMS41VRemDoctorHenryTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I understand. Get back to me with an answer as soon as you can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let me think about this."
+  },
+  {
+   "id": "VMS41VRemDoctorHenryTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Permanent damage to her mind is a certainty. Even the cure won't help her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What will happen to Lily?"
+  },
+  {
+   "id": "VMS41VRemDoctorHenryTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That's... brilliant. Simple, yet elegant. I can't believe I didn't think of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Use neuro-peptide stimulators on a Nightstalker brain. Results should be similar to a live brain.",
+   "label": "< Science 90 >"
+  },
+  {
+   "id": "VMS41VRemDoctorHenryTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Neuron decay is rapid after death, and I doubt a live Nightstalker would cooperate with my test.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You said Nightstalker brains were similar. What about just testing those?",
+   "label": "< Science 90 >"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yes, yes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

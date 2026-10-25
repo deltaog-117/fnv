@@ -1,0 +1,116 @@
+{
+ "id": "nvcclegionaryguardaamexplorer",
+ "speaker_name": "Legion explorer",
+ "source": "NVCCLegionaryGuardAAMExplorer.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Halt! What business have you in Cottonwood Cove, outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvcclegionaryguardaamexplorertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Very well. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, be warned. Aggressive acts against us will earn you a place on a cross.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCLegionaryGuardAAMExplorerTopic000",
+   "prompt": "I'm just a humble trader passing through."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvcclegionaryguardaamexplorertopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Tread lightly, fool. You are entering Caesar's land.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aggressive acts against us will earn you a place on a cross. Turn back now, or pay the consequences.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCLegionaryGuardAAMExplorerTopic000",
+   "prompt": "Just thought I'd check the place out."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvcclegionaryguardaamexplorertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You wear the Mark of Caesar?! You must be who Cursor Lucullus is waiting for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You may continue, but be warned. Mark or no, we will not tolerate aggressive action by visitors in the camp.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCLegionaryGuardAAMExplorerTopic001",
+   "prompt": "&lt;Show Mark of Caesar> I was invited."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvcclegionaryguardaamexplorertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{call to battle}To arms, brothers!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCLegionaryGuardAAMExplorerTopic002",
+   "prompt": "&lt;Attack> I go where I please!"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvcclegionaryguardaamexplorertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. You may proceed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, be warned. Aggressive acts against us will earn you a place on a cross.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fool. Your deeds are known well among us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To arms, my brothers!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCLegionaryGuardAAMExplorerTopic003",
+   "prompt": "Be calm. I am a friend of the Legion."
+  }
+ ],
+ "speaker": "legion_explorer"
+}

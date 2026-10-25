@@ -1,0 +1,196 @@
+{
+ "page": "FortDaleBarton.txt",
+ "speaker": "Dale Barton",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you're the visitor I've heard some of the Legionaries talking about. If you're in the mood to trade, just say the word.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar dead} I've heard some bad stories about this Legate. I'm not sure I'll be welcome around here once he takes charge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar cured} Never had you pegged as the doctor-type. Guess I know who to come to now when I get sick.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Howdy again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's the best the Legion has to offer, or so the Legionaries say. Brute of man, wears a fancy metal mask into battle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He killed one of my pack Brahmin simply because it was in his way. I knew better than to complain about it, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Legate."
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shoot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to know more about you."
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, sir. I'm an independent trader from Arizona.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, ma'am. I'm an independent trader from Arizona.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Are you part of the Legion?"
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not at all - they're my best customers. As long as you don't try to sell 'em chems or alcohol, they treat you fair.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Hell, I don't even need to travel with guards most of the time in Legion territory. All the bandits are dead or run off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is it dangerous to trade with the Legion?"
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Between having to hire protection and getting slapped with taxes, it's more profitable to stick to Arizona and New Mexico.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "But, I do cross the river from time to time when an opportunity comes along.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you ever trade with the NCR?"
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I haven't had the pleasure. I have crossed paths with Legate Lanius, his second-in-command, however. It was... unpleasant.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have you ever met Caesar?"
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll grab my tools.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need something repaired."
+  },
+  {
+   "id": "VFreeformTheFortFortDaleBartonTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be seeing you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Be seeing you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": null,
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Here I was thinking you'd be a challenge, want a rematch?.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ]
+  }
+ ]
+}

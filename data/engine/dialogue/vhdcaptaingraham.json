@@ -1,0 +1,577 @@
+{
+ "id": "vhdcaptaingraham",
+ "speaker_name": "Grant (Fallout: New Vegas)",
+ "source": "VHDCaptainGraham.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not now!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio} Report.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio} <Static>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll meet you on the observation deck.",
+     "emotion": "neutral",
+     "intensity": 10
+    },
+    {
+     "text": "What do you want?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "You again. What is it?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "We've got a lot to do to prepare for the President's visit and not much time.",
+     "emotion": "neutral",
+     "intensity": 55
+    },
+    {
+     "text": "Have you finished your security sweep?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come back in a minute, I'm busy with security matters.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Shouldn't you be keeping an eye out for anything suspicious?",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Good job today. We got the President out safe and sound and I couldn't have done it without you. You have my thanks.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Damnit! I can't believe the President is dead. It's all my fault!",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A bomb on the President's vertibird? Only a limited number of people had access to the vertibird.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "We have to get the President out of here now. I'll cancel the speech and have security search the area.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "We can't relax until we get the President out of here safely.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic000",
+   "prompt": "I found a bomb on the President's vertibird."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damnit! I can't believe the Legion actually got someone past our security. Good job catching him.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "I'll have a security team sweep the area to see if the Legion has any more surprises for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm also canceling the President's speech. We'll have a security team get him out of here right away. But let's not relax until he's safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic001",
+   "prompt": "I found an assassin in the tower."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What the hell? This must control some sort of bomb that he was going to use to kill the President.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Nice work catching this. I'll have my Rangers go deal with this man right away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic002",
+   "prompt": "I found a detonator on that man over there."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've heard of you. I'm glad you're here to help us out. This is a delicate matter and we need all the help we can get from people we can trust.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "We've got a lot to do to prepare for the President's visit and not much time. Once we start we'll be on a strict timetable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So you're the one Mr. House sent. His Securitron here informed me of what's going on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since Mr. House has helped me in the past, I'll let you help us during the President's visit. However, I will be keeping an eye on you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've got a lot to do to prepare for the President's visit and not much time. Once we start we'll be on a strict timetable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So you're the one Colonel Moore sent to help out with the President's visit. Well, I'm running security for the visit, which means I'm in charge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If anything goes down, you tell me first, you got that?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "We've got a lot to do to prepare for the President's visit and not much time. Once we start we'll be on a strict timetable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you ready?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic003",
+   "prompt": "<Starting Converstation for VMQ03a>"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Radio} Quit goofing off and clear the channel. I'll be damned if the President dies on my watch because you were screwing around.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic005",
+   "prompt": "We're all fine here, thank you. How are you?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. The President doesn't arrive until tomorrow. Get some rest, I'll brief you in the morning.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic006",
+   "prompt": "I'm all set."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Looks like that's his vertibird coming right now. It's show time, let's not mess this up.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Now if you'll excuse me I've got some security procedures to oversee.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic007",
+   "prompt": "I'm ready. When will the President be here?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make it quick.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic008",
+   "prompt": "I need to prepare first."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ask your questions, but keep it short.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic009",
+   "prompt": "I have some questions."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Glad you could join us. Most of my men are already on duty and the crowd has already started gathering outside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've got a busy day ahead of us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic010",
+   "prompt": "<Ranger Graham Morning Conversation>"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We trust you, so you're free to have your weapons. Just don't do anything too crazy and we'll back you up.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "You'll be allowed to carry your weapons, but they must remain holstered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you pull them out, my men will shoot you. Understand?",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic011",
+   "prompt": "Can I use my weapons during the President's visit?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, hurry it up. We don't have much time.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic012",
+   "prompt": "Not yet."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Security detail consists of rangers stationed here at the dam. Some will keep an eye on the crowd while others will watch the perimeter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Snipers and sharpshooters have been assigned to key locations and we also have a special K9 unit sniffing out members of the crowd.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've also locked down access to critical locations such as the landing platform on the visitor center.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic015",
+   "prompt": "What are your security arrangements?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have a full itinerary here. Here you go.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "The President arrives, gives a speech, and then leaves. That's all someone like you needs to know.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic016",
+   "prompt": "Do you have a detailed schedule for the visit?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion will definitely try something, but we don't have any solid leads yet.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "I'd almost expect something direct from them, but given the circumstances there's a possibility of something more subtle like sabotage.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "But since we don't have anything solid we'll just have to keep our eyes out for anything out of the ordinary.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Thinking aloud} Possible security threats... there was a new guy allowed to help with security at the last minute. {Awkward pause} Other than that, we don't have any solid leads.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic017",
+   "prompt": "Do you have any leads on possible security threats?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Someone like you... I'm just glad to have you on board. Do whatever you can. Security sweeps, talk to people, keep an eye out.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Keep an eye on the crowd and keep an eye out for anything suspicious. Other than that, just stay out of the way.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic018",
+   "prompt": "What can I do to help?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The plan is to get through today without the shit hitting the fan.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "So I'll be overseeing the security team personally and keeping in constant contact with people over the radio.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a good bet that the Legion is going to try something today so we have to be prepared for anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll do whatever it takes to get the President through this visit in one piece.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic019",
+   "prompt": "So what's the plan for today?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "President Kimball is arriving shortly. If you want to do any last minute security sweeps or take a look around for anything suspicious, do it now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once you're ready, meet me outside on the observation deck, but don't take too long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic020",
+   "prompt": "Let's get this show on the road."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. The President doesn't arrive until tomorrow. Let's get some rest and we'll have a brief talk first thing in the morning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic021",
+   "prompt": "I've made my preparations. Let's get started."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If there's nothing else, then let's get moving.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic022",
+   "prompt": "I'm done with questions."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, I'll give you full access.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic023",
+   "prompt": "I'm going to need access everywhere."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not a chance. Only the necessary personnel have authorization.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic024",
+   "prompt": "I have access, right?"
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sarcastic} Well I'm glad I have your approval.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic025",
+   "prompt": "Sounds good."
+  },
+  {
+   "key": "vhdassassinationdialogvhdcaptaingrahamtopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If there's nothing else, then let's get moving.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVHDCaptainGrahamTopic026",
+   "prompt": "No more questions."
+  },
+  {
+   "key": "vhdassassinationdialogvmq03aassassinationradiotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Radio} Damnit! I can't believe the Legion actually got someone past our security. Good job catching him.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have a security team sweep the area to see if the Legion has any more surprises for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm also canceling the President's speech. We'll have a security team get him out of here right away. But let's not relax until he's safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVMQ03aAssassinationRadioTopic000",
+   "prompt": "I found a Legion sniper on the roof of the tower."
+  },
+  {
+   "key": "vhdassassinationdialogvmq03aassassinationradiotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Radio} Then stay off the line and get back to work!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDAssassinationDialogVMQ03aAssassinationRadioTopic001",
+   "prompt": "Nothing to report."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "ranger_grant"
+}

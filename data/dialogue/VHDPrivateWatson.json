@@ -1,0 +1,167 @@
+{
+ "page": "VHDPrivateWatson.txt",
+ "speaker": "Jeremy Watson",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I still haven't found my lucky helmet yet.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for finding my lucky helmet. It's my favorite!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Hey-o!",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDPrivateWatsonFirstTalk",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have you seen my helmet? I can't seem to find it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<First Dialog by Watson to Player>"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDPrivateWatsonTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confused} It's always in the last place you look. I wonder why that is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks mister, you're the greatest.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{confused} It's always in the last place you look. I wonder why that is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There it is! Thanks lady, you're the greatest.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your helmet is right over there."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDPrivateWatsonTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's coming to give a big fancy speech to all of us troops stationed here at the dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm pretty excited. He seems like such a nice guy and I get to meet him.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "He's giving me a medal. I don't know why though. I'm just doing my job like all the other guys. I'm still excited though.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I can't believe someone killed President Kimball. He was such a nice guy, why would anyone want to hurt him?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I can't believe someone wanted to kill President Kimball. I'm glad he got out of here safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about the President's visit?"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDPrivateWatsonTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Momma always told me not to talk to strangers, but you seem like a nice person.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Momma left me on a farm when she went out prospecting, but when she never came back, the owner didn't want me around and kicked me out on my own.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "A nice guy came up and asked me if I wanted to join the NCR so I did. Now the Troopers are my family. I like it here. Everyone is so nice.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDPrivateWatsonTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's too bad. I need it for the ceremony. I need to look my best and I need my lucky helmet.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "I'll just have to keep looking. Thanks anyway.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I haven't seen it."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDPrivateWatsonTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha ha, you big joker you. You're funny. I like you.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I really need to find my helmet though. Thanks anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Lie] Do you mean the helmet I just threw off the dam?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Bye-bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

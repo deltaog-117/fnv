@@ -1,0 +1,184 @@
+{
+ "page": "1EKeith.txt",
+ "speaker": "Keith (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey there - fancy a game of Caravan?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "KeithCaravan",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, let's play Caravan."
+  },
+  {
+   "id": "KeithDice",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I guess Lady Luck just smiles on me, that's all. Nothing special about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "From what I hear, your players are pretty unlucky. What's your secret?"
+  },
+  {
+   "id": "KeithDice",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You know how they say you make your own luck? Let's just say I make mine with a little extra ink on the cards.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've run some cons in my day - one clever bastard to another, what's your trick?"
+  },
+  {
+   "id": "KeithDrugs",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] What? Are you some kind of idiot? Why, uh... why would I know that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Boy... I sure could use some drugs. You know anybody that sells drugs?"
+  },
+  {
+   "id": "KeithDrugs",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Oh, I getcha. Lookin for a slightly more chemical thrill?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, I tell you what - I happen to keep some Jet around for emergencies. 35 caps and it's yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Gambling's not my scene. Maybe you could hook me up with something \"medicinal?\""
+  },
+  {
+   "id": "KeithIntro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Name's Keith. You feeling lucky? I got games of chance, games of skill, games of you-name-it. Want to win a little cash?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "vDialogueVegasEast21EKeithTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your loss.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I'll pass for now."
+  },
+  {
+   "id": "vDialogueVegasEast21EKeithTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, it's not like I use them {emphasis} all the time. Mostly I keep them in my shack until I see a really fat score roll into town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Marked cards, huh? A little bit obvious, but not bad."
+  },
+  {
+   "id": "vDialogueVegasEast21EKeithTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And here you go. Enjoy, my friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll take it."
+  },
+  {
+   "id": "vDialogueVegasEast21EKeithTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, then, why are you wasting my time?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't have that much on me."
+  },
+  {
+   "id": "vDialogueVegasEast21EKeithTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, then, why are you wasting my time?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Jet's not my drug of choice. I'll keep looking."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come on back if you want a game.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "KeithResponse",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Fuck you man, I ain't going nowhere with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why don't you go cry to your wife, then - oh that's right! She left your worthless stinking ass!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "KeithResponse"
+  }
+ ]
+}

@@ -1,0 +1,400 @@
+{
+ "id": "ncrcfeddie",
+ "speaker_name": "Eddie (Fallout: New Vegas)",
+ "source": "NCRCFEddie.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Prison under attack} No time to talk. We've got trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{impressed} Not half bad in a fight, are you? I figure you had a lot to do with me still breathing after all that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't have any more work for you, but feel free to stick around as long as you want. You never know when the NCR will be back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dawes said he let somebody in. So, you going to give me a reason not to kill you and throw your body back outside?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're the one Cobb mentioned. Maybe you feel like helping us out around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{After prison battle} Not bad in a fight, are you? I really thought the NCR had us in their sights that time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Powder Ganger Good Rep 2+ reached} I've been thinking that since you've been good to us, we can be good to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've got plenty of spare powder and dynamite around. Say the word and we can give you some of it every couple of days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Powder Ganger Mixed Rep 2+ reached} I don't know what to make of you, you know that? I know I can't really trust you, that's for sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, you've helped us out some, so maybe I ought to repay you some. I've spread the word about you to a bunch of guys out in the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As long as you're not an enemy, they'll cut you some slack when you're near their camps. Trespass too long and they'll come after you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{abrupt, slightly hostile} What?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vendingncrcf",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating} After Hoover Dam, the leaderless Powder Gangers at the Correctional Facility vanished into the wastes, leaving the prison empty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} The Correctional Facility became another abandoned ruin in the wasteland, its carcass occasionally picked over by enterprising prospectors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} With the Dam firmly in their grasp, the NCR turned its attention towards wresting the Correctional Facility from Powder Ganger hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} The Powder Gangers are no match for the battle-hardened troops of the NCR, and summary execution awaited the Powder Gangers who managed to survive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Most Powder Gangers at the Correctional Facility fled into the wasteland rather than face the advancing forces of the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Those brave or foolish to remain were killed or crucified by the merciless Legionaries.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} The NCR, battered by the loss of the Dam, were unable to devote any troops to retaking the Correctional Facility from the Powder Gangers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} As a result, Powder Ganger raids on caravans became an unfortunate fact of life in the Mojave for years to come.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingNCRCF",
+   "prompt": "VEndingNCRCF"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{dismissive, slightly unfriendly} Yeah, get out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is Powder Ganger territory - my territory. Most of the guys around here understand that. One, Chavez, doesn't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Chavez formed his own crew and have been hitting traders on their own. Everybody I've sent after him either got killed or weren't able to catch him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That leaves you. What do you say?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing's changed. Chavez won't answer to me, but he and his crew operate in {emphasis \"my\"} my territory. Deal with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic001",
+   "prompt": "What do you need done?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player lost Good rep} Nope, not for you. Rumor is you've been working against us, so the deal's off.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Available} Yeah, we do. Here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Not available} We're out at the moment. Come back later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic002",
+   "prompt": "Got any spare powder and dynamite available?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{explosion heard} Sounds like they're already here. There's no way I'm letting them take me alive.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "There's no reason for you to stick around and help us, but feel free to kill a few of the bastards on your way out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic003",
+   "prompt": "You've got trouble. The NCR are planning a raid on this place soon."
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm happy you cleaned that up for me, but we've got another situation to worry about. There's a merchant hanging around near the prison.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something feels funny about him, and I want you to deal with him. Shake him down if he's legit, but if he's not, take him out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic006",
+   "prompt": "Chavez has been dealt with. You won't see him around here anymore."
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Non-dummy} Most people already know we run this territory, and are usually in a hurry to get out. Not this guy. It's like he wants us to come get him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dummy} {annoyed a player's stupidity} Not \"ha ha\" funny, you moron. Funny as in suspicious. He's not trying to run away like most people.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic007",
+   "prompt": "What exactly is \"funny\" about that merchant you want me to check out?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Had him figured for NCR, one of the rangers maybe. Anyway, speaking of the NCR, I need you to take a walk down to Primm.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR hasn't raised hell over our breakout, and I want to find out why. They're up to something, I can feel it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic008",
+   "prompt": "I got rid of him."
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know the NCR has troops near Primm, so talk to the locals and find out if any of those troops are going to be coming our way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic009",
+   "prompt": "What am I looking for in Primm?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Chavez and his boys were last seen south of here. If you're lucky and he's careless, he might still be there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic010",
+   "prompt": "I'll do it."
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why do you care? Answer: you shouldn't. I don't feel like trading life stories.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic011",
+   "prompt": "How did you end up in this place?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was all Cooke's idea. He and his boys managed to swipe some dynamite and hide it away in their cells.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The rest of us just tagged along. Cooke's crew headed north while the rest of us stuck around for payback.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic012",
+   "prompt": "How did the breakout happen?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The NCR called it a \"work-release\" prison. We lucky prisoners got the privilege of fixing up the rail lines and blasting rock for new lines.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They got sloppy, though. Some of us managed to hide away some dynamite, and look who's in charge now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic013",
+   "prompt": "What can you tell me about the prison?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He and his crew went north. I heard talk about some sort of \"big plan\" to get back at the NCR, but haven't seen them since.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic014",
+   "prompt": "Where is Cooke now?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One mean son of a bitch. Really, truly hates the NCR for some reason, and he got a lot of the other guys around to his way of thinking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic016",
+   "prompt": "What do you know about Cooke?"
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck you for wasting my time, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic017",
+   "prompt": "I'll need to think about this."
+  },
+  {
+   "key": "vfreeformncrcfncrcfeddietopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Chavez is the ringleader. Without him, his crew will fall apart, and I don't give a shit about those guys.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFEddieTopic018",
+   "prompt": "You only want me to deal with Chavez?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{dismissive, slightly unfriendly} Yeah, get out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "eddie"
+}

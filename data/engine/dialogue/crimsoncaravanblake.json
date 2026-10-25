@@ -1,0 +1,302 @@
+{
+ "id": "crimsoncaravanblake",
+ "speaker_name": "Blake (Fallout: New Vegas)",
+ "source": "CrimsonCaravanBlake.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're looking to buy or sell, you've come to the right man. The Crimson Caravan Company has the widest selection in the wasteland.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Hey there. You looking to buy or sell?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See ya.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic001",
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go. Let him know he needs to make another payment if he wants more of this stuff.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic002",
+   "prompt": "Contreras sent me for some medical supplies."
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Need anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic003",
+   "prompt": "Will do."
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, pain-killers are easy to come by, but it isn't easy finding iodine, allergy meds, and a few of these other items. Why do you ask?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic004",
+   "prompt": "Is there something special about these supplies?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Huh, never thought of that. The Crimson Caravan isn't really in the drug business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic005",
+   "prompt": "Combining those with chemical cleaners would yield strong chems..."
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Huh, never thought of that. The Crimson Caravan isn't really in the drug business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic006",
+   "prompt": "Some of those could be combined with other chemicals to make drugs..."
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Won't be a problem. We have plenty of spice traders working with us back home, and we could get meat from local Brahmin ranchers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The bigger issue is payment. To supply the camp with meat with cost some serious caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic009",
+   "prompt": "McCarran needs a regular shipment of brahmin meat and spices for the mess hall."
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent. We should be able to get the shipments started in about a week.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic010",
+   "prompt": "McCarran has plenty of caps to cover the shipment. They'll deal with the cost."
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well, the Far Go Traders have been trying to edge us out on the new armor contract for the troops. This could swing things in our favor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, let McCarran know they should expect the first shipment in a week or so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic011",
+   "prompt": "Give them a deal on the price, you'll have the upper hand in future, more important negotiations.",
+   "label": "< Speech 70 >"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic011_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] This is business. I really can't cut them a deal on the cost.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic011",
+   "prompt": "It's the NCR military. You can give them a deal, right?",
+   "label": "< Speech 70 >"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That should work. We'll do a weighted exchanged based on the going value of meat and vegetables. Water is invaluable in this dusty hole.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let McCarran know they should expect the first shipment in a week or so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic012",
+   "prompt": "McCarran is overstocked with water and fresh vegetables. Arrange for a two for one trade.",
+   "label": "< Barter 50 >"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic012_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] We don't need vegetables, and besides, they spoil. The meat you can dry and turn into jerky.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic012",
+   "prompt": "What's the problem? They have vegetables - trade them for that.",
+   "label": "< Barter 50 >"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic013",
+   "prompt": "Can you answer some questions for me?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Trade routes, my friend, trade routes. Just about every major town in the wasteland has a Crimson Caravan branch in it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic015",
+   "prompt": "Where does the Crimson Caravan Company get its merchandise?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Out here, we usually split our caravans into smaller bands - that way, we don't lose everything if they get hit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's not very efficient, though, but hopefully we'll be able to start running larger caravans once things get civilized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic016",
+   "prompt": "Do your caravans ever have trouble from bandits?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A little place in the NCR called Oak Creek. Used to be a farming town until it got taken over by ranchers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I didn't want to herd Brahmin for a living, so I signed on with the Crimson Caravan and headed east. Not much to tell, really.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic017",
+   "prompt": "Where are you from?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravancrimsoncaravanblaketopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, just let me know when you want to talk numbers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanCrimsonCaravanBlakeTopic018",
+   "prompt": "Hmm. I'll be right back."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See ya.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "blake"
+}

@@ -1,0 +1,93 @@
+{
+ "page": "RSDeltaPason.txt",
+ "speaker": "Ranger Pason",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player not in NCR gear} No sudden moves and you and I will do all right. What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player in NCR gear} Haven't seen you around the post before. I'm busy, so keep the chit-chat to the point.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMSRSDeltaQuestRSRangerDeltaPasonTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I didn't. You might hear that kind of nonsense from a drunk trooper on the Strip, but not from me. The Legion doesn't have Super Mutants.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "That patrol was wiped out by its own incompetence - a couple of the troopers were fooling around with a grenade when it went off.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "prompt": "You filed a report which said Legion Super Mutants wiped out an NCR patrol."
+  },
+  {
+   "id": "VMSRSDeltaQuestRSRangerDeltaPasonTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keeping watch on the river and looking for anyone trying to cross it. The Legion likes to send infiltration teams over on rafts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you doing out here?"
+  },
+  {
+   "id": "vDialogueRangerStationDeltaRSDeltaPasonTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Best of the best, that's all there is to it. Really nothing more to say than that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to know more about the NCR Rangers."
+  },
+  {
+   "id": "vDialogueRangerStationDeltaRSRangerDeltaPasonTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

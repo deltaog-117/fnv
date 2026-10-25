@@ -1,0 +1,492 @@
+{
+ "page": "VRRCRegis.txt",
+ "speaker": "Regis",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I haven't seen you before - what brings you to the Great Khans?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "It's good to have you here. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "You honor the Great Khans with your presence. What can I do to help you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You're always... {beat, considering word choice} interesting to have around.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "{Cautious, unsure of player's motives} What are you doing here?",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "If you're smart, you'll find somewhere else to be.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You're becoming quite the political agitator. I can't say I'm displeased.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Something else you wanted?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "KarlCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Name's Regis - I'm Papa Khan's advisor and right-hand man. I'm also the chief enforcer of the tribe's laws - so watch your behavior.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "RegisCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard you try to convince Papa Khan not to join with Caesar's Legion. I'd like to talk to you about that for a moment.",
+     "emotion": "surprise",
+     "intensity": 15
+    }
+   ],
+   "prompt": "RegisCaesar"
+  },
+  {
+   "id": "RegisCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me see. {Thoughtful, dawning horror} My God, this is even worse than I thought. Okay, you have my support. I'll tell Papa the alliance is a bad idea.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Have a look at this book. It will show you what happens to tribes that \"ally\" with Caesar's Legion."
+  },
+  {
+   "id": "RegisCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to talk more about the Great Khans' alliance with Caesar."
+  },
+  {
+   "id": "RegisNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a complicated question. They've done horrible things to our people to be sure, and I've gladly killed many of their soldiers in battle.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "But I can't bring myself to hate them the way Papa does. Things would damn sure be better for us if they were in charge than Caesar.",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "prompt": "What's your opinion of the NCR?"
+  },
+  {
+   "id": "RegisNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're the chief now. What do we do?",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "prompt": "I want to talk to you about the fate of the Great Khans."
+  },
+  {
+   "id": "RegisNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Without Papa Khan's guidance, I don't know what else to do. All right - you can tell the NCR the Great Khans will fight for them when Caesar attacks.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Now that you're in command, will you lead the Khans against Caesar and fight for the NCR?"
+  },
+  {
+   "id": "RegisPapaKhan",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Papa is one of the best leaders the Khans have ever had. He's kept us together through all of our hardships, ever since we left California.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Bitter Springs changed him, though. He started to really hate the NCR after the Massacre, and sometimes I worry that's poisoned his mind.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Tell me about Papa Khan."
+  },
+  {
+   "id": "VMS45VRRCKarlTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose if asked, I would. But that's a moot point, because Papa's in charge now, and he's not going anywhere.",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "prompt": "So if you were in charge of the tribe, you'd fight with the NCR against Caesar if asked?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Name's Regis. I'm Papa's second-in-command. You might say I... share your concern about Caesar.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want to convince Papa not to ally with Caesar, right? Trust me, you'll get nowhere just talking to him about it.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "He's fixated on restoring the glory of the Great Khans, and he sees Caesar as the path to that restoration.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "prompt": "What is it you had in mind?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because Papa listens to me. And because I actually know how to get things done around here.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Why should I listen to you?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Papa can be a stubborn man, but he's not a tyrant. He listens to his tribe, and to four voices in particular: me, Jack and Diane, and Melissa.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "If you can convince all of us that allying with Caesar is a bad idea, you might be able to sway him.",
+     "emotion": "pained",
+     "intensity": 10
+    }
+   ],
+   "prompt": "So what do I do?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have my doubts about Caesar, yes, but I won't publicly go against Papa Khan based on nothing more than doubts.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I've heard rumors that tribes who aligned with Caesar in the past were torn apart and reduced to slaves - prove it, and I'll back you.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Aren't you convinced already, if we're having this conversation?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'd have to talk to them - but those two have been thick as thieves since they were kids. Convince one and the other will come around.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "What would convince Jack and Diane to support me?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, Melissa. She's a bit of a dreamer. Last time she was in camp, Karl filled her head with stories of serving the Legion as a {SPECK-you-lay-tor-ay} speculatore.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "Personally, I've never seen a woman in Legionaire's armor, so I have my doubts.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "What about Melissa?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nothing, forget about it. I shouldn't be talking about this with an outsider.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "I probably shouldn't say anything, but it seems Papa's been making decisions based more on his desire for revenge than what's good for the tribe.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "This alliance with Caesar, for one thing - I have my doubts about it.",
+     "emotion": "fear",
+     "intensity": 40
+    }
+   ],
+   "prompt": "What did you mean about Papa's hatred poisoning his mind?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Oh, one more thing: Caesar's representative, Karl, has become fast friends with Papa. Karl's the one who has him so fixated on this alliance.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "You'll probably have an easier time of things if you can find a way to get him out of the picture.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Okay, I'll see what I can do to convince everyone."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Then the Great Khans will fight for the Legion should Caesar give the call. If you change your mind, let me know.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "I don't think I actually want to do that."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, what is it you wanted?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll think about it, but I have other questions for now."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Karl talks prettily about the honor and nobility of the Great Khans, but I suspect his actual opinion is less flattering.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Maybe you could find something he wrote that expresses that opinion, or trick him into losing his cool in the longhouse right in front of Papa.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "prompt": "How would I do that?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would too, if I were you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll keep that in mind."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you say so.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I'm not afraid of Karl, and I don't feel like wasting my time on him."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Nothing, never mind."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I really don't like to talk about it. Let's just say it was a tragedy and the NCR is to blame, and we'll leave it at that.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Bitter Springs."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, go ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind, I have other questions."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I just don't trust the words of Caesar's ambassador that much. He's promising a lot, and I don't see the advantage for him. It makes me suspicious.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "prompt": "What kind of doubts?"
+  },
+  {
+   "id": "VMS45VRRCRegisTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As you wish. When Caesar goes to war, we go with him.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "prompt": "We fight for Caesar."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As you wish. When the Republic goes to war, we go with it.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "prompt": "We fight for the NCR."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised, didn't expect this} I... very well. If that's what you want, that's what we'll do.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "I'll start the preparations and we'll leave when the NCR is distracted by Caesar's attack.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "I'm giving leadership to you. I want you to take the tribe north, and find yourselves a new life."
+  },
+  {
+   "id": "VMS45VRRCRegisTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Uncertain, thinks this is probably a suicide attack} As you wish, chieftain.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "prompt": "We fight for ourselves. Bring our warriors to the battle and kill everyone."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Until next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

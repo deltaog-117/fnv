@@ -1,0 +1,133 @@
+{
+ "page": "VCFHSergeantCooper.txt",
+ "speaker": "Cooper (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've heard of you, glad to have you on our side.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I've heard of you. Just remember who's side you're on out there.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "So you're the one Major Polatli sent?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Let's get going, we don't have much time.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "We don't have much time.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "That was some battle. Glad to have you on our side, we couldn't have taken back Nelson without your help. You have my thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS30VCFHSergeantCooperTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We don't have many troops, so we can only attack from one direction. Where should we focus the attack?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Let's do this."
+  },
+  {
+   "id": "VMS30VCFHSergeantCooperTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make it quick, we don't want to lose the element of surprise.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I'm not ready yet."
+  },
+  {
+   "id": "VMS30VCFHSergeantCooperTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "North it is. Reports also say that they might have some NCR hostages. If that's true we need to do what we can to save them. So stay sharp.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Our main target is the Legion leader at Nelson. Intel has the commander as one Dead Sea. I've uploaded his last known location to your Pip-Boy.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Let's move out!",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Our main targets are the Legion leaders at Nelson. I've uploaded their last known locations to your Pip-Boy.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Let's attack from the north."
+  },
+  {
+   "id": "VMS30VCFHSergeantCooperTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "East it is. Reports also say that they might have some NCR hostages. If that's true we need to do what we can to save them. So stay sharp.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Our main target is the Legion leader at Nelson. Intel has the commander as one Dead Sea. I've uploaded his last known location to your Pip-Boy.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Let's move out!",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Our main targets are the Legion leaders at Nelson. I've uploaded their last known locations to your Pip-Boy.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "We should attack from the ridge on the east."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'll be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

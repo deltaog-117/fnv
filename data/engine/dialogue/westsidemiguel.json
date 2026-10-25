@@ -1,0 +1,101 @@
+{
+ "id": "westsidemiguel",
+ "speaker_name": "Miguel (Fallout: New Vegas)",
+ "source": "WestsideMiguel.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're down on your luck and need some caps, I buy just about anything. Of course, I've also got plenty of things for sale, too.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Here to do business?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguedoldrums1eangelotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Until next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueDoldrums1EAngeloTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguedoldrums1eangelotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueDoldrums1EAngeloTopic001",
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "key": "vdialoguewestside1eangelotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Antique rangefinder? I'm trying to think of something that'd be more worthless.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe an antique horoscope. Or an antique sandwich.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll tell you something. Good luck finding that thing. But if you do find it, don't waste your time trying to sell it to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueWestside1EAngeloTopic000",
+   "prompt": "I'm looking for an antique rangefinder somebody might've sold to you?"
+  },
+  {
+   "key": "vdialoguewestsidewestsidemigueltopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My grandfather opened up this shop. Took over from him when the Fiends killed him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueWestsideWestsideMiguelTopic000",
+   "prompt": "Have you been in Westside long?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Until next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "miguel"
+}

@@ -1,0 +1,154 @@
+{
+ "id": "vhdncrcontrolroomguard",
+ "speaker_name": "NCR heavy trooper",
+ "source": "VHDNCRControlRoomGuard.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not now!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You shouldn't be here. It's best if you just move along.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get out of here already.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Control Room Guard Top Level Topics>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformhooverdamvhdncrcontrolroomguardtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damn it all to hell! Let's go!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDNCRControlRoomGuardTopic000",
+   "prompt": "<Lie> Colonel Moore is in trouble! She needs help now!",
+   "label": "[Speech Check]"
+  },
+  {
+   "key": "vfreeformhooverdamvhdncrcontrolroomguardtopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Our instructions were pretty clear. Now you better get your ass out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDNCRControlRoomGuardTopic000",
+   "prompt": "Don't you have anything better to do right now than guard this door?",
+   "label": "[Speech Check]"
+  },
+  {
+   "key": "vfreeformhooverdamvhdncrcontrolroomguardtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Friend or not, no one is allowed in here. Move along!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDNCRControlRoomGuardTopic001",
+   "prompt": "It's okay I'm a friend.",
+   "label": "[Armor Check]"
+  },
+  {
+   "key": "vfreeformhooverdamvhdncrcontrolroomguardtopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, but make it quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDNCRControlRoomGuardTopic001",
+   "prompt": "[Lie] I've been ordered to get something for Colonel Moore, let me in.",
+   "label": "[Armor Check]"
+  },
+  {
+   "key": "vfreeformhooverdamvhdncrcontrolroomguardtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's probably more important that you get out of here alive. If you haven't noticed, there's a battle going on here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now get out of here!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDNCRControlRoomGuardTopic002",
+   "prompt": "It's important that I get in there."
+  },
+  {
+   "key": "vfreeformhooverdamvhdncrcontrolroomguardtopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll regret this!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDNCRControlRoomGuardTopic003",
+   "prompt": "<Start Combat> Enough talk!"
+  },
+  {
+   "key": "vhdcontrolroomguardwarning1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop right there, no one is allowed into the control room!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDControlRoomGuardWarning1",
+   "prompt": "<Warning 1>"
+  },
+  {
+   "key": "vhdcontrolroomguardwarning2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I warned you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDControlRoomGuardWarning2",
+   "prompt": "<Warning 2>"
+  }
+ ],
+ "speaker": "ncr_heavy_trooper"
+}

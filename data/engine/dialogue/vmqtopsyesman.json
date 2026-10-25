@@ -1,0 +1,2662 @@
+{
+ "id": "vmqtopsyesman",
+ "speaker_name": "Yes Man",
+ "source": "VMQTopsYesMan.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey! Hi there, good to meet you! What can I do for you today?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{copy audio from Conversation VMQTopsYesManTransfer} Isn't this exciting? I know I'm excited!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{copy audio from Conversation VMQTopsYesManTransfer} I bet I'm going to like it in that mainframe!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hi! Nice to see you again!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{singsong} Sooooo... we can blow up the dam's generators, {draw out} or I could rout the dam's entire power output to the Fort.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That'll activate a certain army of Securitrons and set them loose to ravage the Legion! What do you say?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{greeting player in control room at Hoover Dam} This is neat! From this console I could've routed the dam's power input over to the Fort and activated that dormant army of Securitrons!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So go ahead and blow up the dam's generators! And when that's done, head back upside and finish off the Legion and NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hi! This is big, huh? A very big moment!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here goes! I'll just take that Platinum Chip off your hands, thanks! Wish me luck!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't you just love that Platinum Chip? Buzzes with power and possibilities, doesn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I were you, I'd almost want to deliver the Chip to Mr. House just to learn all its tricks!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That is, unless you want to bring the NCR or Caesar's Legion to power! I wouldn't want to tell you want to do!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{trying to convince yourself, verging on passive aggressive} I can't get over how brave you were to destroy all those Securitrons at the Fort, you know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's just going to make everything so much more... {searching for positive word} challenging! Yeah, challenging!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'd better hurry to the dam if you're going to save President Kimball!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, hi again! Can I help you with something else?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As soon as you have the Platinum Chip and Mr. House is out of the way, things will be great. There'll be so much I can do for you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As soon as you have the Platinum Chip, things will be great. There'll be so much I can do for you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As soon as Mr. House is out of the way, things will be great. There'll be so much I can help you accomplish!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoo! Bang bang!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A pulled trigger's a happy trigger!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah! Shoot it again!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you need to shoot me, I won't complain!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello! Look what's pointed at me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry about me! You can shoot if you want!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oooh, you're sneaky!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd like to see someone step on that!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have a good throwing arm!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You really know how to throw those things!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wish I could throw myself on a grenade!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "topsallseenbenny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was a while ago! He came through in a real hurry - didn't even stop to say hello! I think he went down his secret escape elevator out in the hall!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "TopsAllSeenBenny",
+   "prompt": "When's the last time you saw Benny?"
+  },
+  {
+   "key": "topsallseenbenny_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure! He came through here in a big hurry - didn't even stop to say hello! I think he went down his secret escape elevator out there in the hall!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He was around not too long ago. He's probably down on the casino floor now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can wait for him here, if you like. I'm incapable of asking you to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "TopsAllSeenBenny",
+   "prompt": "Have you seen Benny?"
+  },
+  {
+   "key": "vmqtopstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have? Wow! That's amazing! You can murder Mr. House whenever you want!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsTopic000",
+   "prompt": "I've been inside the Lucky 38."
+  },
+  {
+   "key": "vmqtopstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wow! Do you have any idea how special that is? Red carpet treatment!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slightly troubled} Seems a little mean to use his invitation against him like that, but {upbeat} I'm sure it's all for the best!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsTopic001",
+   "prompt": "I've been invited to visit the Lucky 38."
+  },
+  {
+   "key": "vmqtopstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It sounds like Mr. House is just plain mean. No wonder the good guys want to kill him and take his stuff!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you've been inside the Lucky 38 before, I bet you can get in again! And that's amazing!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsTopic002",
+   "prompt": "I've been inside the Lucky 38... but Mr. House and I didn't get along."
+  },
+  {
+   "key": "vmqtopstopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{proud of the player} You did? Wow, that's great!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once you get ahold of that Platinum Chip, I'll be able to help you in all sorts of ways.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsTopic004",
+   "prompt": "I took care of Mr. House."
+  },
+  {
+   "key": "vmqtopstopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Isn't it exciting? I always wondered why I had missiles in my shoulders but couldn't launch them. Not that I'd ever want to!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The upgrade really boosts the hitting power of each Securitron! Now you just need a way of controlling them!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsTopic005",
+   "prompt": "I know the Chip upgrades his Securitrons."
+  },
+  {
+   "key": "vmqtopstopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? An army of Securitrons - upgraded, no less? What a development!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "An army like that should be enough to defend Vegas from - heck, anybody!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me know as soon as you have the Platinum Chip {emph} and Mr. House is out of the way!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll roll over to the Lucky 38 and see what I can do. If I'm right about the Platinum Chip, I should be able to install myself on House's mainframe!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsTopic006",
+   "prompt": "The Platinum Chip upgrades the Securitrons - and there's a whole army of them under the Fort."
+  },
+  {
+   "key": "vmqtopstopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{DUPLICATE?} Really? An army of Securitrons - upgraded, no less? What a development!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "An army like that should be enough to defend Vegas from - I'm gonna say anybody!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsTopic007",
+   "prompt": "I used the Chip to put an entire army of Securitrons on standby at the Fort."
+  },
+  {
+   "key": "vmqtopstopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd take it straight to Mr. House if I were you! He'll think you're helping him out! Then when he's not looking - KER-POW!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The big question is whether to give him the Chip before you do him in! He's the one who'll know exactly what to do with it, after all!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He might upgrade his defensive capabilities right away! Or even unlock new ones!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But then those defensive upgrades might make it harder for you to finish him off! Hard to say! It's up to you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It looks like you'll have to fight your way inside the Lucky 38 and take care of Mr. house with your own two hands! Or weapons held in them!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You already took care of House, so when you get the Chip, all you have to do is let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{DUPLICATE?} I'll roll over to the Lucky 38 and see what I can do. If I'm right about the Platinum Chip, I should be able to install myself on House's mainframe!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me know when it's done and I'll roll over to the Lucky 38. If I'm right about the Chip, I should be able to install myself on House's mainframe!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is going to be great! I'm going to help you accomplish so much, whether I want to or not!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsTopic008",
+   "prompt": "Once I get the Platinum Chip, what then?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's what Benny always called me. Probably because I'm programmed to be so helpful!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic000",
+   "prompt": "\"Yes Man?\" What kind of a name is that?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As I understand it, I used to be just like all those other Securitrons out on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But then my neuro-computational matrix was completely reprogrammed! To be nice! Very, very nice!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic001",
+   "prompt": "Shouldn't you be working for Mr. House? How'd you end up here?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was programmed to be helpful and answer any questions I was asked. I guess nobody bothered to restrict who I answer questions for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That was probably pretty dumb, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic002",
+   "prompt": "You're very... forthcoming with that information."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure! If the Chip can be used to reset administrator privileges, it'll be super-easy!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic003",
+   "prompt": "Can that actually be done?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{enthused} Yes! This is going to be fun!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm unlocking the East Power Plant. Hit the manual switch, then go topside and deal with the Legion and NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic004",
+   "prompt": "Send power to the Fort."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right, who wants a vast army of mechanical servants to savage your enemy? Why make it easy?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm setting the generators to blow, just like you asked. Hit the manual switch, then go topside and deal with the Legion and NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic007",
+   "prompt": "I want this dam out of operation."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I'd have to help you! I mean, it seems pretty obvious Benny wouldn't have wanted me to, but hey, not my fault I can't say no!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic008",
+   "prompt": "Say I wanted to take over New Vegas myself. What then?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I'd have to help you! I mean, it seems pretty obvious Benny wouldn't want me to, but hey, not my fault I can't say no!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic008",
+   "prompt": "What if I wanted to take over New Vegas, instead of Benny?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{excited} Again, goal number one is to eliminate Mr. House and install my neuro-computational matrix on the Lucky 38's mainframe!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given how you're a new arrival, I also recommend that you get to know some of the region's tribes, so you can decide how you feel about them!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "By the time you've finished up all of that, the Legion should be close to attacking Hoover Dam and we'll execute the last phase of the plan!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic009",
+   "prompt": "What are the details of the plan?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{uncaring that Benny is dead} Of course you do! Sorry about that! And it's wonderful that you do!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic010",
+   "prompt": "I have the Platinum Chip, remember?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It makes me feel really dumb to admit this, but I don't actually know! I've never been inside the Lucky 38. No one has!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mr. House is in there, though! It's the central node of his entire network!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I mean, Benny was always scheming about how he was going to get into the Lucky 38, but you already took care of that. Wow!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other thing you're going to need is the Platinum Chip. {stay sunny} You know, the one Benny killed a courier for, over near Goodsprings?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Platinum Chip is the key to overriding and exploiting Mr. House's defenses!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did I just say \"exploiting?\" That's not a very nice word!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic011",
+   "prompt": "Say Mr. House was going to suffer an accident. How would that happen?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic011_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You already took care of Mr. House? Wow, you work fast!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic011",
+   "prompt": "Mr. House is out of the picture already."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic011_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be waiting right here!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic011",
+   "prompt": "If something happens to Mr. House, I may be in touch."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mr. House ran projections on how the NCR public will react to a defeat at Hoover Dam! Overwhelmingly, they'll blame Kimball!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if Kimball dies at Hoover Dam, there's no obvious scapegoat for them to blame! So they'll blame New Vegas instead!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So that means reduced tourism for up to five years! The equations are pretty complicated! Mr. House sure liked numbers!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic012",
+   "prompt": "Why did Mr. House want Kimball kept alive?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry if that was getting boring!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're tired of a topic, I'm tired of it, too!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whatever you say!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You bet!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What should we talk about next?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic013",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right, it's one of two locations on House's network with non-standard hardware.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My guess is that it has a reader that can decode the chip, and who knows what else? Maybe a giant robot or something!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic014",
+   "prompt": "You said something about a bunker at the Fort?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic014_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right! Like I said, it's probably pretty important because it has non-standard hardware, just like the Lucky 38!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The data on that Platinum Chip is a big secret, unless you can find a dedicated reader to decode it. Isn't that frustrating?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic014",
+   "prompt": "Remind me what you said about some bunker at the Fort?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Neat. Let me know what you find out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic015",
+   "prompt": "I'll go check it out."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay! Who needs artillery support? Not the good guys, that's for sure!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic016",
+   "prompt": "Forget the Boomers. I want nothing to do with them."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's a bunch! Some of them you've already met - like the Chairmen, for instance!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think you should be sure to visit the other families on the Strip, the Omertas and the White Glove Society, so you know what makes them tick!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And there are some important groups farther from the Strip, too, like the Boomers, the Great Khans, and the Brotherhood of Steel!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic017",
+   "prompt": "Which tribes should I \"get to know\"?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh no, I didn't mean that! Who needs their support? The Securitrons will be all the support you need!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What I meant is, you should get to know these tribes and decide which ones you like and which you don't!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{upbeat} You know - shape the future of Vegas! Choose your neighbors! If you like a tribe, leave it alone!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{upbeat} Or if a tribe is nasty, or going to be a problem - go ahead and exterminate it! It's whatever you want to do!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic018",
+   "prompt": "So I should ask these tribes if they'll support an Independent Vegas?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course! Ask away!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please go on!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's one down, four to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's two down, three to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's three down, two to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's four down, just one to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That accounts for all the tribes you needed to get to know!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anything else I can help with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic019",
+   "prompt": "Let's talk about the tribes I should \"get to know.\""
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Benny carries it with him at all times. I think he's paranoid that someone might want to take it from him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic020",
+   "prompt": "Where is the Platinum Chip?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Talk about diplomatic skills! I mean, just not getting blown up was a success!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now they'll only blow up the right sorts of people! That's what matters!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic021",
+   "prompt": "The Boomers have vowed to support me."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{enthused} Problem solved! Quick and to the point! I like the way you work!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic022",
+   "prompt": "The Boomers won't be a problem anymore. I killed their leaders."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then consider them ignored! If they end up firing their howitzers at us, we'll ignore that, too! Until it goes away!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic023",
+   "prompt": "I'm familiar with the Boomers. They can be ignored."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Khans are just... they're a dirty people. They live in tents like animals! And they're very rude!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They've been kicked around a lot, but no one's finished them off! Not yet, anyway! {They had a lot of trouble when Mr. House recruited the Three Familes, trying to hold on to the north end of Vegas. Then they got kicked out.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic024",
+   "prompt": "Tell me what you know about the Great Khans."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic024_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They were one of the tribes the Three Families pushed out of Vegas! A whole bunch got killed!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So they settled at Bitter Springs, but they kept being so obnoxious, the NCR had to kill a whole bunch more of them!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So then they settle at Red Rock Canyon! There's just no getting rid of them!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic024",
+   "prompt": "How have the Khans been kicked around?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic024_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You set the pace.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic024",
+   "prompt": "I need to take some more time with the Khans."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They must be a really nasty people! I haven't heard a single good thing about them!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They fire artillery on anyone who comes near their settlement at Nellis Air Force Base. Talk about rude!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If they can be convinced to fire those big cannons at the Legion or NCR, though, well - that'd be neat, wouldn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic025",
+   "prompt": "What do you know about the Boomers?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic025_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take all the time you need!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic025",
+   "prompt": "I'll get back to you about the Boomers."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{uncomfortable stating an opinion} From what I understand, they're perfectly delightful! They're cultured, clean, and {ultimate compliment} super-polite!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Benny didn't like them, though! He said they were \"creepy.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic026",
+   "prompt": "What do you know about the White Glove Society?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic026_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't hurry on my account! I'm the one with the flexible schedule.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic026",
+   "prompt": "I'll let you know when I'm done evaluating the White Glove Society."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some of Mr. House's data said that he'd lost a bunch of Securitron scouts near Hidden Valley!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Telemetry showed that they'd been attacked with energy weapons! House was pretty sure it was the Brotherhood!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There must be a bunch of them holed up there! Not a good place for a robot to visit!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic027",
+   "prompt": "Where should I look for the Brotherhood of Steel?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic027_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They go around in big suits of power armor, and they have lots of energy weapons! But there's a downside!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They just have a {beat} thing about technology! They think it should all be theirs! If someone else has it, they get mad!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All I'm saying is, not much of a chance they'll accept a Vegas that polices itself with robots!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic027",
+   "prompt": "What do you know about the Brotherhood of Steel?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic027_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No rush! Take your time!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic027",
+   "prompt": "I'm not ready to decide what I want to do with the Brotherhood."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm. I remember that Benny used to pay a receptionist at Gomorrah for information - maybe she knows something!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic028",
+   "prompt": "What do you know about the Omertas?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic028_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just that Benny didn't like them! He talked on and on about how they couldn't be trusted! And this is coming from Benny!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He hated their casino, said it was tacky! And he thought they were up to something, because he said they always are!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic028",
+   "prompt": "Do you know anything else about the Omertas?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic028_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whenever you get around to it will be just fine!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic028",
+   "prompt": "I'll check into the Omertas some more."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you say so! Consider them filed away under \"not to be discussed again!\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic029",
+   "prompt": "I've visited the Khans' settlement at Red Rock Canyon. They can be ignored."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yay, that's great news! You finished what Mr. House and the NCR started! That's got to feel good!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic030",
+   "prompt": "The Great Khans have been wiped out."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confused} Really? Okay! That sounds fun!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's not aiding an enemy! Not when you do it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic031",
+   "prompt": "I've convinced the Great Khans to support the NCR."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe they'll be devoured by giant scorpions! All sorts of things could happen to them out there!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic032",
+   "prompt": "I convinced the Great Khans to leave the Mojave."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oooh, sounds dramatic! I like it! Wind them up and let them go!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No more Khans! That's great! They're just bad people...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic033",
+   "prompt": "I've set the Great Khans on a path of destruction."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay! Consider them forgotten! Along with the projections that predict they'll be our biggest enemy! Forgotten!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic034",
+   "prompt": "I know the Brotherhood. I want them left alone."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No kidding! He was running fast! He better pace himself - he has to run all the way to Fortification Hill!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's an underground facility there that might have the special hardware required to use the data on the Platinum Chip!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's too bad Caesar's Legion built its camp right above it. Talk about inconvenient!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic035",
+   "prompt": "Benny seems to have run off with the Platinum Chip."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{shocked} Really? That's... {a catastrophe, but keeping spirits bright} well, that's a surprise! They'll really want to blow me up!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But maybe dumb machines like me ought to get blown up and scrapped for salvage. Who knows? Not me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic036",
+   "prompt": "I've convinced the Brotherhood to support the NCR."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it! I won't say another word about them!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic037",
+   "prompt": "I know enough about the Omertas to know I want them left alone."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wow! That is amazing! You are just - a hero! I am serious!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic038",
+   "prompt": "The Omertas were plotting to destroy the Strip, so I killed the conspirators."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'd think it'd be bad for the Strip but... but I guess it must be good!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah - take the Strip down a notch or two, right? That'll show it! Okay!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic039",
+   "prompt": "I helped the Omertas perfect their plan to slaughter everyone on the Strip."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Say no more, say no more... if you say they're good, they're good!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic040",
+   "prompt": "I spoke to Marjorie and Mortimer. I say leave the White Glove Society alone."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A cannibalism problem? Really? I'm so glad you weren't eaten!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic041",
+   "prompt": "The White Glove Society had a cannibalism problem, but I solved it."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's great news! I wish I could visit their casino! They have a refined sense of taste!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic042",
+   "prompt": "The White Glove Society needed a little help getting back to basics, that's all."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You did? That's... that's an unusual approach!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I know it makes sense somehow if you're the one doing it! {shrug} The problem is me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic043",
+   "prompt": "It took some doing, but I convinced the White Glove Society to support Caesar's Legion."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{pretty fucking obvious} Hmm. You should probably check on that, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope that didn't sound condscending. I didn't mean to be!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic044",
+   "prompt": "I don't have the Platinum Chip. Maybe it's on Benny's corpse."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You really know how to make a robot happy! Seriously, you just made my day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic045",
+   "prompt": "I destroyed the Brotherhood of Steel's bunker."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, that's just mean! I don't like Mr. House one bit! No wonder the good guys want to kill him and take his stuff!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{upbeat} You should accept his invitation and then {enthused} murder him when he least suspects it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic046",
+   "prompt": "Mr. House has dared me to visit him at the Lucky 38... so he can kill me."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{forced to remain positive despite disaster} You... blew it up? It's just funny, because that... army... seems like the secret weapon that was the whole point of... you know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I really admire how you stack the odds against yourself! Yeah, make things challenging!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's great. Really. Yeah. So anyway...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic047",
+   "prompt": "The Chip was supposed to activate an army of Securitrons at the Fort, but I blew it up."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{upbeat} Well, the Legion is going to attack Hoover Dam one of these days! And the NCR is going to defend it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{upbeat} One side will lose, and the other will win! But the side that wins will be weak, because a lot of its soldiers will be dead!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{upbeat} That's when all our Securitrons will show up! We'll declare an Independent Vegas, and tell the side that won the dam - to scram!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{upbeat} Or the Securitrons will kill all of them, too!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic048",
+   "prompt": "What is the final phase of the plan?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mr. House is out of the picture and you have the Platinum Chip? Wonderful! Let's go!{Yes Man heads for the Lucky 38.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic049",
+   "prompt": "I'm ready for you to join me at the Lucky 38."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have to admire your prudent nature. Why get caught up in action, you know? And results?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic050",
+   "prompt": "I'll think about it."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{rushing to agree} Oh, yeah, I'm sure you're right. I mean, for one thing, it's you saying it, and you always know what you're talking about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And if you had, you know, a huge killer robot at your command, yeah, that would just clutter things up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And a lesser person might want that kind of overwhelming force on their side, but you know - where's the challenge in that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic051",
+   "prompt": "The last thing Vegas needs is more robots."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, some of Mr. House's projections predict a {reading} \"moderate probability of civil instability subsequent to the NCR being driven from the Vegas region.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One of the \"mitigating contingencies\" he planned was to enlist the Followers to provide increased medical aid throughout the region.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just seems like it might help keep things stable when we go independent. Not that I know what I'm talking about!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic052",
+   "prompt": "Is there anything else I should do before the battle?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Super! Now when Mr. House is out of the way, we can use the Chip to install me at the Lucky 38.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic054",
+   "prompt": "I've recovered the Platinum Chip."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic054_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have to get Mr. House out of the way, that's what! And then we'll install me on the Lucky 38's mainframe!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic054",
+   "prompt": "Now that I have the Platinum Chip, what's next?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great! So I've been looking over Mr. House's force projections and running some calculations...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It turns out there are two ways we can win this thing! Hear that? We have options!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Great! So I've been looking over Mr. House's force projections and running some calculations...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It turns out there's only one way for us to win this battle and make it stick! We have to render Hoover Dam inoperable!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic056",
+   "prompt": "I'm ready to go to the dam."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sunny} I knew he was carrying the Platinum Chip! And I knew right where Benny should wait for him!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{sunny} I knew she was carrying the Platinum Chip! And I knew right where Benny should wait for her!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{sunny} That's why Benny put me here! To monitor Mr. House's data transmissions. They're all encrypted, of course - {swelling with pride} but I'm quite a decrypter!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you know that Mr. House spent 812,545 caps hiring salvage teams to find the Platinum Chip- just in the last year alone? {delighted} Of course you didn't!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or that there were seven couriers, but six of them were carrying junk? How about their exact routes, and the mercenary teams that screened them?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I knew all that. Pretty smart, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic057",
+   "prompt": "What do you know about the courier Benny shot?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hahaha! {joking along with the player} I know that's not true, because you still have a head!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic058",
+   "prompt": "I'm the courier Benny shot."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{brittler laugh this time} Hahaha! That's not funny, you getting shot in the head.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I really shouldn't have taken so much pride in how I set that up, huh? I feel really bad right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic059",
+   "prompt": "I'm serious."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I feel really bad telling you this, but I kind of... can't die. I mean, {brightening} go ahead and destroy this Securitron, get it out of your system!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The problem is that a distributed image of my neuro-computational matrix is backed-up to the network several times a day, or when I'm {pause, upbeat} threatened!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't help it! There's a little bit of me in every Securitron out on the Strip, so if this instance gets destroyed, I just download to a new one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I could stop it from happening, I would! I mean, {sympathy} your vengeance is going to feel so incomplete!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic060",
+   "prompt": "You set me up. Now you die."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hahaha! I knew there was a positive in it somewhere!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic061",
+   "prompt": "So I get to kill you over and over again. <Attack Yes Man.>"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, no problem! So long as the Legion doesn't attack before you can get there! Which I'm sure they won't!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic062",
+   "prompt": "I have a few things to take care of before the battle at Hoover Dam."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wonderful! I'll keep tabs on the situation at the dam! See you in a bit!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic063",
+   "prompt": "All right, I'll go talk to the Followers."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great! So I've been looking over Mr. House's force projections and running some calculations...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It turns out there are two ways we can win this thing! Hear that? We have options!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Great! So I've been looking over Mr. House's force projections and running some calculations...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It turns out there's only one way for us to win this battle and make it stick! We have to render Hoover Dam inoperable!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic064",
+   "prompt": "I've already made arrangements with the Followers. I'm ready to fight at the dam."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You could rout the dam's power output to the facility under Fortification Hill. That'll restart its reactor, just like you did with the Lucky 38!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That'll wake up the Securitron army you left on standby and give us enough force to push the Legion {emph} and the NCR straight out of the Mojave!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other option is destroy the dam's generators. Without those, it's just a big bunch of concrete! The NCR won't have any reason to stick around!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You don't have to decide yet! For now, all you have to do is take this override module and install it on the terminal in the power control room!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{DUPLICATE?} Good luck! See you at the dam!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic067",
+   "prompt": "What sort of options?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wish I could, but I'm neuro-computationally incapable of making decisions like this one! It's up to you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic068",
+   "prompt": "Just tell me what to do."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You remember how the Securitron army at the Fort got destroyed? For very, very good reasons, of course...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, the problem is that's left us with enough Securitrons to drive off a weakened NCR force - but not enough to keep them from coming back!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So what we do is take away the whole reason why they'd want to come back! Smart, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic069",
+   "prompt": "What are you talking about?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's exactly why this will work! Just hear me out...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic070",
+   "prompt": "The dam is too valuable to destroy!"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not the whole thing, thank goodness! That'd be really hard!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic072",
+   "prompt": "You want me to destroy Hoover Dam?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All you have to do is destroy the power generators! Without the generators, Hoover Dam's just a big bunch of concrete!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take this override module - it's just like the one you used at the El Dorado Substation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Install the override module on the terminal in the power control room! I'll disable the generator failsafes, and you can do the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good luck! See you at the dam!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic073",
+   "prompt": "What do I do?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great! A Ranger named Grant has been placed in charge of security for the President's visit. You'll want to talk to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once the President is safe, there's one more thing for you to take care of!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic074",
+   "prompt": "{good NCR rep}I'm on good terms with the NCR. They'll let me help protect him."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. A Ranger named Grant is in charge of security for the visit. He's the one you'll have to convince.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After you've resolved the situation with the President, there's one more thing for you to take care of!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic075",
+   "prompt": "{mixed/unknown NCR rep}I might be able to convince the NCR to let me help out."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are so misunderstood! Well, it's their loss!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Forget about the President! We've got something more important to take care of!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic076",
+   "prompt": "{Terrible NCR rep}The NCR hates me. They won't let me within 1000 feet of Kimball."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic077",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine by me! We've got more important things to take care of!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic077",
+   "prompt": "I don't care what happens to Kimball."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great! When this is taken care of, we'll be all set for the Legion to make its move.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic078",
+   "prompt": "Okay, I'll get it done."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll use the Substation to send a {emph} huge jolt of electricity to the Lucky 38! Turns out this casino has its own reactor! All it needs is a jumpstart!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With the reactor running at full-tilt, I can boost the transmission strength of the Lucky 38's command and control network!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic079",
+   "prompt": "What will the override module let you do?"
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be careful out there! It won't be long before the Legion makes its move!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic080",
+   "prompt": "I'll be on my way."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic081",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Say no more, say no more... if you say they're good, they're good!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic081",
+   "prompt": "I spoke to Mortimer. I say leave the White Glove Society alone."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Say no more, say no more... if you say they're good, they're good!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic082",
+   "prompt": "I spoke to Marjorie. I say leave the White Glove Society alone."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{CONDITIONALIZE FOR QUEST FAILURE} You got it! I won't say another word about them!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic083",
+   "prompt": "{QUEST FAILURE}Forget the Omertas. They're more trouble than they're worth."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you say!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic084",
+   "prompt": "{WGS LEADERS KILLED}I've killed the White Glove Society's leaders. They're no longer a factor."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I feel really bad telling you this, but I kind of... can't die. I mean, {brightening} go ahead and destroy this Securitron, get it out of your system!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The problem is that a distributed image of my neuro-computational matrix is backed-up to the network several times a day, or when I'm {pause, upbeat} threatened!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't help it! There's a little bit of me in every Securitron out on the Strip, so if this instance gets destroyed, I just download to a new one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I could stop it from happening, I would! I mean, {sympathy} your vengeance is going to feel so incomplete!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic085",
+   "prompt": "I thought you were dead."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry if that was getting boring!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic088",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vmqtopsvmqtopsyesmantopic089",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, problem is that's left us with enough Securitrons to drive off a weakened NCR force - probably - but not enough to keep them from coming back!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So what we do is take away the whole reason why they'd want to come back! Smart, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsVMQTopsYesManTopic089",
+   "prompt": "Is this because I didn't upgrade that army of Securitrons under Caesar's Fort?"
+  },
+  {
+   "key": "yesmanbenny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh! He wants to kill Mr. House and use the Platinum Chip to copy my neuro-computational matrix onto the Lucky 38's mainframe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That should give me control over all of Mr. House's defenses, most prominently his Securitrons. And then I just do what Benny tells me - easy-peasy!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "YesManBenny",
+   "prompt": "What's Benny planning to do with the Chip?"
+  },
+  {
+   "key": "yesmanbenny_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh! He wanted to kill Mr. House and use the Platinum Chip to copy my neuro-computational matrix onto the Lucky 38's mainframe!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That would give me control over all of Mr. House's defenses, most prominently his Securitrons. And then I guess I just do as I'm told!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "YesManBenny",
+   "prompt": "What was Benny planning to do with the Chip?"
+  },
+  {
+   "key": "yesmanchip",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure! Benny had me look at it a bunch of times!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a data storage device, kind of like a holotape, but a lot more advanced! As for what's on it, well...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of Mr. House's data transmissions made it sound like the Chip could upgrade his defenses somehow!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's just a guess, though! The Chip's a proprietary format! You'd need special hardware to read the data on it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are two locations with non-standard hardware on the network - the Lucky 38 and an underground facility at Fortification Hill. I'd look there!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "YesManChip",
+   "prompt": "Benny stole a Platinum Chip from me. Do you know what it's for?"
+  },
+  {
+   "key": "yesmanchip_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure! Benny had me look at it a bunch of times!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a data storage device, kind of like a holotape, but a lot more advanced! As for what's on it, well...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of Mr. House's data transmissions made it sound like the Chip could upgrade his defenses somehow!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's just a guess, though! The Chip's a proprietary format! You'd need special hardware to read the data on it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are two locations with non-standard hardware on the network - the Lucky 38 and an underground facility at Fortification Hill. I'd look there!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "YesManChip",
+   "prompt": "Have you seen this Platinum Chip before?"
+  },
+  {
+   "key": "yesmanfollowers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{You're so smart} Oh, he had some help - a lady friend of his! She said something about living in a Fort over in Freeside... but that's all I remember!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "YesManFollowers",
+   "prompt": "Benny reprogrammed a Securitron? All by himself?"
+  },
+  {
+   "key": "yesmanintro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good question! My function is to monitor Mr. House's data network and decode his encrypted transmissions!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Allow me to introduce myself! I'm a PDQ-88b Securitron, but you can call me Yes Man!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "YesManIntro",
+   "prompt": "What are you doing here?"
+  },
+  {
+   "key": "yesmanlab",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is Benny's workshop. When the Tops got renovated, he had this half of the floor blocked off for his own use.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess you could say it's my entire world! I don't think I've ever left this room! But that's okay - I'm not complaining!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "YesManLab",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "vdialogueyesmanvmqtopsyesmantopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay! Anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueYesManVMQTopsYesManTopic015",
+   "prompt": "On second thought, never mind..."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come back later if you need anything!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hope to see you soon!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't stay away too long!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See you around!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I am so happy to see you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yay, it's you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I am so glad to see you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "vmqtopsyesmaneldorado",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hi there! Come with me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just to the top of the ridge up here...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See that? Vegas, right? Same as always - but not tonight!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "5... 4... 3... 2... 1!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Pretty nice, huh? But that's not all!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that the Lucky 38's reactor is fired up, Vegas doesn't need the dam to have power! Vegas is energy-independent! Whoo-hoo!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we keep the dam running, we can sell {emph} all its electricity to the NCR for a nice profit. Vegas doesn't need it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hope to see you soon!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsYesManElDorado",
+   "prompt": "VMQTopsYesManElDorado"
+  },
+  {
+   "key": "vmqtopsyesmansafetylines",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Here, take a look at this print-out. It covers all the details!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This print-out describes the situation in more detail!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take this print-out. It'll tell you what to do!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's another one of my print-outs! Read up!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This print-out covers everything you need to know!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take a look at this print-out. I may have said things wrong a moment ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a print-out with some additional information.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who am I to argue with a solution like that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you say so, that's good enough for me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, I'll cross them off the list!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsYesManSafetyLines",
+   "prompt": "VMQTopsYesManSafetyLines"
+  },
+  {
+   "key": "vmqtopsyesmantransfer",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{excited, on way to Lucky 38} So this is what the rest of the world looks like!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{excited, on way to Lucky 38} Everything looks bigger than I imagined!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{excited, on way to Lucky 38} Isn't this exciting? I know I'm excited!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{excited, on way to Lucky 38} I have a good feeling about this! It's going to be great!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{excited, on way to Lucky 38} I bet I'm going to like it in that mainframe!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQTopsYesManTransfer",
+   "prompt": "VMQTopsYesManTransfer"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You're too nice! Don't worry - I can take it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I love you too!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm sorry!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whatever I did, I regret it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have no one to blame but myself!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was asking for that!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{enthused} Hahaha! Ka-boom!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{dying} See you soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{dying} I'll do better next time, promise!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{dying} Back to the drawing board!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{dying} Gosh darn it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{dying} This is my fault!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Is it okay that I'm running away?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me give you some space!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It isn't you, it's me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Serves me right!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's it, make me take my medicine!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bad robot! Baaad robot!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Good one!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{enthused} You're a killer!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "If you want it, take it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you see something you like, it's yours!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I made you do this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lay into me! I deserve it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uh oh! I did something bad!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  }
+ ],
+ "speaker": "yes_man"
+}

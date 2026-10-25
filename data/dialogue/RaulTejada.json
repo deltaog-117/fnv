@@ -1,0 +1,3526 @@
+{
+ "page": "RaulTejada.txt",
+ "speaker": "Raul Tejada",
+ "topics": [
+  {
+   "id": "BMRaulGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If by some chance you want to find me again, and if by some even greater chance coyotes haven't picked my bones clean, I'll be at my shack.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You'll do fine. Farewell, mi amigo."
+  },
+  {
+   "id": "BMRaulJoinMe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything's better than staying here. Let's go.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry boss, but as much as I'd like to risk getting killed by your side, you seem to already have some help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, do you want to tag along with me?"
+  },
+  {
+   "id": "BMRaulOkayByMe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alrighty then, I'll just head out. Alone. By myself. Into the dangerous wastes.",
+     "emotion": "sad",
+     "intensity": 100
+    }
+   ],
+   "prompt": "It's okay by me. Enjoy your freedom."
+  },
+  {
+   "id": "FollowersAcknowledgeMyOrder",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're the boss, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FollowersAcknowledgeMyOrder"
+  },
+  {
+   "id": "FollowersFired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good call! I mean, if that's what you really want, boss.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Raul, I think I need to head on without you.",
+   "label": "It's time for us to part ways."
+  },
+  {
+   "id": "FollowersFiredNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your decisiveness is truly a wonder to behold, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "On second thought, you've been pretty useful so far. Forget what I said.",
+   "label": "On second thought, stick with me for a little longer."
+  },
+  {
+   "id": "FollowersFiredYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's why you're the boss. You always make the right decisions. I'll just head home. Home to my lonely, abandoned shack in the middle of nowhere.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think it's for the best.",
+   "label": "Yes, I'm sure."
+  },
+  {
+   "id": "FollowersFiredYesSuite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, as long as you're not asking me to go back to Black Mountain, I'm a happy old man.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It is. We'll meet up at the Lucky 38.",
+   "label": "I'd like you to go back to the Lucky 38 for now."
+  },
+  {
+   "id": "FollowersHired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry boss, but as much as I'd like to risk getting killed by your side, you seem to already have some help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Words cannot contain my excitement at the chance to throw myself headlong into danger with you again, boss.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Come, Raul, adventure awaits!",
+   "label": "I think we should travel together."
+  },
+  {
+   "id": "FollowersLetsGo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right behind you, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's get going."
+  },
+  {
+   "id": "FollowersOverburdened",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Under heavy strain, being sarcastic} Hey, don't worry about it, boss. The decrepit old man can easily carry all your stuff for you. Really.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FollowersOverburdened"
+  },
+  {
+   "id": "FollowersStealthing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keeping quiet... unless my creaking knees give us away.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Sure, boss. The old man will crawl around in the dirt to keep hidden.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "This crouch-walking is hell on my back, boss.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Right, because a ghoul in a vaquero outfit is really going to blend in with the scenery.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FollowersStealthing"
+  },
+  {
+   "id": "FollowersTactics",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, this should be good. I mean, what's on your mind, boss?",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about your tactics."
+  },
+  {
+   "id": "FollowersTacticsCombat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In what way, boss?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to change your combat style."
+  },
+  {
+   "id": "FollowersTacticsCombatAggressive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just like you said five minutes ago. Don't worry, boss, I got it.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Shoot first, poke bodies later. Got it, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to attack enemies the moment you see them."
+  },
+  {
+   "id": "FollowersTacticsCombatEND",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you say, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "FollowersTacticsCombatGOODBYE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got it.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's all. Let's get going."
+  },
+  {
+   "id": "FollowersTacticsCombatMelee",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right. Got it. I'll just stop using this melee weapon and instead use a melee weapon. Good idea, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Sure, I'll stop using my rather effective gun and switch to, ah, this piece of metal tubing here. Great plan, boss.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Switch to a melee weapon."
+  },
+  {
+   "id": "FollowersTacticsCombatPassive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm already doing that.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "That's sounding dangerously close to a plan, boss.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you not to attack enemies unless I've already engaged them."
+  },
+  {
+   "id": "FollowersTacticsCombatRanged",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You mean like the one I'm already using, boss?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Sure thing, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to use ranged weapons."
+  },
+  {
+   "id": "FollowersTacticsDistance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Am I stepping on your shoes or something, boss?",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about how close you're following me."
+  },
+  {
+   "id": "FollowersTacticsDistanceDefault",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Any closer and you'd need a Rad-Away, boss.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, I wouldn't dream of getting too far away, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Stay close to me."
+  },
+  {
+   "id": "FollowersTacticsDistanceEND",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm always eager for more of your scintillating conversation, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your distance is good. Let's talk about something else."
+  },
+  {
+   "id": "FollowersTacticsDistanceGOODBYE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right behind you, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All right, you're good. Let's get out of here."
+  },
+  {
+   "id": "FollowersTacticsDistanceLong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You mean like the last time you told me to do that, boss?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Got it. I'll be way back here, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Keep your distance. Try to flank them."
+  },
+  {
+   "id": "FollowersTacticsEnd",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't strain yourself, boss.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Enough about tactics."
+  },
+  {
+   "id": "FollowersTrade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sure you'll be fair and equitable, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I expect to be awed by your dizzying mercantile sense, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's trade equipment."
+  },
+  {
+   "id": "FollowersWait",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, boss. I'll just wait here, alone, while my heavily armed companion goes out of earshot. I'm sure nothing will happen.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wait here."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Charging a casino full of heavily-armed gangsters was a great idea, boss. Definitely not the kind of thing that could have gotten us both killed.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Not to worry, boss. I'm sure killing the boss of one of the Families will in no way lead to savage, bloody reprisals against you and your loved ones.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "If we run, we might still catch Benny! Well, you might. I'll just be wheezing along behind you.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "You really enjoy dragging me into situations where I get shot at, don't you boss?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh, overly-elaborate mob schemes to take over Vegas. Reminds me of the days before the War.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Hushed, slightly awed and actually not sarcastic for once} I can't believe we're allowed inside the Lucky 38. That place has been a legend since before the War....",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Angry soldier robots with bazookas. I'm sure they'll be a good police force.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe I'm just old and tired, but being locked in a cool, dark pod to sleep for a few centuries doesn't sound so bad.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "{Vaguely grossed out by seeing a guy's body explode} Eesh, boss. Just... eesh.",
+     "emotion": "disgust",
+     "intensity": 100
+    },
+    {
+     "text": "Don't worry boss, I'm sure Caesar just wants to invite you over for coffee or something. That's all.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Hey boss, that surgery reminded me of something: I got this funny lump right down here... think you could take a look at it?",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I'm glad you decided to off one of the most powerful men in the Mojave. Life was getting boring anyways. Really.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, Caesar, let's give you brain surgery in a tent. That can't possibly go wrong.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar's death reminds me of an old saying. I can't quite remember it now, something like \"sic semper tyrannosaurus.\"",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, good. Now there's an army of robots. You don't do things by halves, do you, boss?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Did blowing up that vault serve a purpose, or do you just like explosions?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Pity} Those poor NCR soldiers... now where will they get their hookers and gambling?",
+     "emotion": "sad",
+     "intensity": 100
+    },
+    {
+     "text": "Be honest, you did it for the ticker-tape parades, huh boss?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry, boss. I'll make sure your biography says you \"heroically changed your mind\" about killing the president, not \"choked under pressure.\"",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Just to be clear, we're not planning to visit any NCR facilities, right boss? Like, ever again?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Well, the President's dead, but don't worry. History has shown that that sort of thing almost never leads to massive destabilizations or world wars.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Never been a big fan of gangs like the Fiends, boss. I'm glad they're gone.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "The Khans didn't seem so bad to me, but what do I know? I was locked up in a cell by a crazy Nightkin for years.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Do you often go toe-to-toe with guys dressed as tanks, boss? That might not be great for your life expectancy.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure pissing off a ruthless warlord with a tribe of fanatically-devoted warriors was a good move. How could it not be? It was your idea.",
+     "emotion": "disgust",
+     "intensity": 100
+    },
+    {
+     "text": "I'm sure pissing off a massive government with a huge army at its disposal was a good move. How could it not be? It was your idea.",
+     "emotion": "disgust",
+     "intensity": 100
+    },
+    {
+     "text": "I'm sure pissing off the two most powerful factions in the Mojave was a good move. How could it not be? It was your idea.",
+     "emotion": "disgust",
+     "intensity": 100
+    },
+    {
+     "text": "Don't worry, boss. I'm sure the sudden tension in the air is just... {desperately searching for an explanation} a thunderstorm?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, so maybe I was wrong about the thunderstorm thing. I admit it.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Quiet, somber, usual sarcasm replaced by seriousness} Looks like this is gonna be the big one, boss. If you're ready, I'm with you.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "What can I do for you, boss?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Took you long enough. So, can I go now?",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "I haven't heard a fresh batch of crazy coming out of the radio in a while. Does that mean I can leave?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Back again? Can I go this time, or do you have something else in mind?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, it's you. You need something repaired or something?",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "PLAYERFIREWEAPON",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh, hate to criticize boss, but I'm not actually immortal. Just old.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Come on, boss, I know I'm ugly, but I {emphasis} am on your side.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "If you want me to split, you could just say so.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "id": "PLAYERINIRONSITES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You, uhh, you want to point that someplace else, boss? I got enough holes in me.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Boss, why are you looking at me that way?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "I wouldn't mind this so much if it weren't for that maniacal gleam in your eye.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "id": "PLAYERLAYMINE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, sure. Lay mines around the arthritic old man who doesn't see so good. Thanks, boss.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Do I hear beeping, boss? I think I hear beeping.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Oh good. Mines.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "id": "PLAYERTHROWGRENADE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Grenade!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "id": "RaulAndy2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your memory is like a steel trap, boss. What do you think of guys like Ranger Andy?",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You wanted to ask me something before, when we left Ranger Andy's."
+  },
+  {
+   "id": "RaulCorporalSterling",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Got a second to talk, boss?",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulCorporalSterling"
+  },
+  {
+   "id": "RaulDecision",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, boss?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "About your decision...."
+  },
+  {
+   "id": "RaulFestus",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's like looking into a mirror. A tacky, cowboy-festooned mirror.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulFestus"
+  },
+  {
+   "id": "RaulForlornHope",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Eesh. These soldiers look how I feel, boss.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulForlornHope"
+  },
+  {
+   "id": "RaulHanlon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Hanlon has just committe suicide} See, that's why you should retire before your brain goes. Oh. Sorry, boss. Bad choice of words.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulHanlon"
+  },
+  {
+   "id": "RaulHeavyArmor",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Eesh, boss, are you trying to destroy my knees even faster than nature?",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, wearing this is not going to be good to me.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulHeavyArmor"
+  },
+  {
+   "id": "RaulHooverDam",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't believe I'm about to do this, boss. If I buy it out there, I want twelve mariachi bands playing at my funeral. A medal might be nice, too.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulHooverDam"
+  },
+  {
+   "id": "RaulJacobstown",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just putting this out there, boss: if these Super mutants kidnap us and force us to fix toasters for them, it's on you.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulJacobstown"
+  },
+  {
+   "id": "RaulLoyal2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That Loyal guy. He's getting up there in years, but he still finds a way to make himself useful to his people.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "If you ask me, that's better than withering away all alone, or holding on to some faded piece of glory from your past.",
+     "emotion": "happy",
+     "intensity": 75
+    }
+   ],
+   "prompt": "You seemed like you wanted to say something about Loyal."
+  },
+  {
+   "id": "RaulMakeBoomer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a good thing to see, huh boss?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulMakeBoomer"
+  },
+  {
+   "id": "RaulPvtHalford",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, he's young, boss. He'll bounce back. Unlike some of us.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulPvtHalford"
+  },
+  {
+   "id": "RaulQuestions",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Questions, boss? You mean you don't know everything there is to know already?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have some questions I'd like to ask you."
+  },
+  {
+   "id": "RaulREPCON",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, I'm one of you! Don't eat me, eat the smoothskin! Oh, uh, sorry boss.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulREPCON"
+  },
+  {
+   "id": "RaulRangerAndy",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey boss, can I ask you something?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulRangerAndy"
+  },
+  {
+   "id": "RaulRepair",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You got the caps, I got the skills.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Sure, boss. I'd be happy to prolong my captivity and psychological abuse to tighten some lug nuts for you.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Sure, I'll just pull a toolbox out from behind a conveniently-placed rock and get to work.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you repair some of my stuff?"
+  },
+  {
+   "id": "RaulSearchlight",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess hunting down ghouls like wild animals is okay. I mean, they're probably going to die anyways, right boss?",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulSearchlight"
+  },
+  {
+   "id": "RaulSelf",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, boss. What do you want to know?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "id": "RaulSterling2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Meeting Corporal Sterling, well... it kind of got me thinking.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a guy that's been beat all to hell, right? I mean, he could have retired from the service, but instead he signs back on and does what he can.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You think he did the right thing?",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You wanted to say something about Corporal Sterling before?"
+  },
+  {
+   "id": "RaulStories",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's what I love about you, boss, your firm belief that one day you'll actually remember things people tell you. What do you want to hear about?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Will you tell me some of your stories again?"
+  },
+  {
+   "id": "RaulStory1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I grew up in a place called Hidalgo Ranch just outside Mexico City. It wasn't much, just a bit of farm with a house for three generations of Tejadas.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I wasn't the best-behaved kid. I was quick with my hands, with a pistol or a wrench, and I wasn't afraid to get into fights over it.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I never killed anybody, but I had my share of run-ins with the police. Mostly my family kept me in line.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "This was before the war. We were far enough away from Mexico City when the bombs fell that we missed the worst of it - but things got bad quick.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulStory1"
+  },
+  {
+   "id": "RaulStory2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "After the fire, I knew my sister and I couldn't stay at Hidalgo Ranch anymore. The refugees still wanted me dead - they even put a bounty on me.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I remember how scared Rafaela was. I told her if she came with me, we'd see the vaqueros - she used to love the rodeo, especially the trick riders.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "We figured maybe we could find help in Mexico City - we were young, we didn't know what had happened, really. We didn't understand about the bombs.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulStory2"
+  },
+  {
+   "id": "RaulStory3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I left everything when I left Mexico: my home, my family, my name - even my face. I know it's surprising, boss, but I wasn't always this handsome.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "As far as the world knew, I was Miguel, and I was okay with that. I headed north for a while, and ended up in Tuscon - not Two-Sun, by the way.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Things were good there. Well, maybe not good, but better than Mexico City, anyways. I found myself a little shack and started fixing things.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulStory3"
+  },
+  {
+   "id": "RaulSweets",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How'd you know I had a sweet tooth, boss?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh, sarsaparilla. That's just what this dry old throat needs.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You're going to rot my teeth, boss. What's left of them, anyways.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulSweets"
+  },
+  {
+   "id": "RaulTabitha",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That wig is going to haunt my nightmares. Seriously.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulTabitha"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just how old do you think I am, boss? Because I can pretty much guarantee I'm older than that. Let me tell you a story from before the Great War:",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Everybody knew Robert House. He was a genius. A superstar. Founded RobCo at 22, dated Hollywood starlets, the works. They say he saved Las Vegas.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I was in Mexico City when the bombs dropped. Even from there, we could see House's defensive rockets shooting down the incoming missiles.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Everybody assumed he died in the War. Maybe he did. But his robots are still out there, roaming the Wastes. And now, a Mr. House rules New Vegas.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you tell me anything about Mr. House?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, boss. I saw lots of guys like that while I was held prisoner by an insane supermutant in an isolated mountain fortress. Can you narrow it down?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm looking for the man who shot me: he wears a checkered coat and carries a shiny pistol. Seen him?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Benny, huh? Sorry boss, doesn't ring a bell. Then again, my brain isn't as sharp as it used to be.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know anything about a goon named Benny? Wears a checkered coat, carries a big pistol?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're all right, I suppose. Had a bit of tough going there at the beginning - you know their first town was nearly wiped out by raiders?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, they've got their good points and their bad, just like a lot of the old governments from before the War.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's your take on the NCR?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't really have a problem with them. People around here tend to see them as invading marauders planning to burn and pillage the countryside.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "But I've been to Arizona, boss. Before the Legion, it was a nasty place, so thick with raiders you couldn't trade with a town two miles up the road.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar's laws aren't nice, and their actions aren't always pretty. But then, neither am I, but you keep me around.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do you feel about Caesar's Legion?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's big, it's bright, and it's one of the biggest cities still left from before the War. Well, mostly, anyway.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Used to be just a curiosity. The buildings were pre-War, but it was just as full of raiders and barbarian tribes as anyplace else.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Then Mr. House took over, got the power turned back on, and got the tribes reformed into something civilized. Now they run his casinos for him.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about New Vegas."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're a veritable guyser of curiosity, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I had some other questions."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything to hold your attention, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything you say, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's all I wanted to know. We'll talk more later."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just a little bit, boss. No, I haven't seen him. Sounds like a city slicker, though. Might try looking on the Strip.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You know what, boss, that's my fault for using sarcasm. No, I haven't seen him. Sounds like a city slicker, though. Might try looking on the Strip.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're being sarcastic, aren't you?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Name's Raul. Raul Alfonso Tejada. I'm the mechanic around here.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You forget about me already, boss? You sure you didn't take a blow to the head or something?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "My name is Raul Alfonso Tejada.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I'm starting to think you haven't been paying attention, boss.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Raul Alfonso Tejada, former gunslinger and sole survivor of Hidalgo Ranch, at your service.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Always happy to repeat myself for you, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Raul Alfonso Tejada, former gunslinger, sole survivor of Hidalgo Ranch, and ghost of Mexico City at your service.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Always happy to repeat myself for you, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Raul Alfonso Tejada, aka Old Miguel, former gunslinger, sole survivor of Hidalgo Ranch, and ghost of Mexico City at your service.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe not. Maybe the new guy is just a clever raider chief with a knowledge of history.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{Slightly ominous} Maybe he just left instructions for his robots to carry out in his name.",
+     "emotion": "fear",
+     "intensity": 75
+    },
+    {
+     "text": "{growing more ominous} Or maybe Robert House uploaded his brain pattern into a computer and rules to this day, a godless, soulless machine-god!",
+     "emotion": "fear",
+     "intensity": 100
+    },
+    {
+     "text": "{Back to normal} Or maybe the whole thing's a crazy coincidence. Who knows?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You can't seriously think they're the same Mr. House."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I remember there were some weird stories about him, especially near the end.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "There was a tell-all in El Periodico de las Aburridas by a starlet House dated. She said they never, um... don't make me spell it out, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, she said all he wanted to do was scan her brain and make her dress up in different outfits.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe there's a connection. Can you remember anything else about Robert House?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was quite the scandal, at least in the Latin-American tabloid journalism market.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's sickening."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was born just outside Mexico City. My family had a little ranch there.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I was born just outside Mexico City. My family had a little ranch there. After they died, I took my little sister, my Rafaela, to Mexico City.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "We lived there a while, then I moved on and ended up here. I'd rather not talk about it any more.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I was born just outside Mexico City. My family had a little ranch there. After they died, I took my little sister, my Rafaela, to Mexico City.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "She died there, so I moved on. I came across an old Petro-Chico refinery, found \"Miguel's\" jumpsuit, and decided to hang up the guns for good.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I was born just outside Mexico City. My family had a little ranch there. After they died, I took my little sister, my Rafaela, to Mexico City.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "She died there, so I moved on. I came across an old Petro-Chico refinery, found \"Miguel's\" jumpsuit, and decided to hang up the guns for good.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I headed up into Tuscon and lived there as Old Miguel for a while. Things were okay, then they got bad, and I headed west to the Mojave.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "And that, boss, is all she wrote.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where are you from?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Old enough to know better, boss. Old enough to know better.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I was born in 2047, boss. If you do the math on that, I'm sure you'll get within a decade or so.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How old are you?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You never heard of Petro-Chico, un Amigo de Poseidon Energy? Ah, of course not. They were an oil company in Mexico, back before the War.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's \"Petro-Chico?\""
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I found it in a costume shop. It was sort of my calling card, you know? \"Raul the Ghoul, the zombie vaquero of Mexico City.\"",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where'd you get that Vaquero outfit?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, boss, when a giant, insane Super mutant asks you to stay put, you do what you're told. Well, maybe you don't, but I'm just a broke down old man.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How'd you end up at Black Mountain?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Probably because it used to be Miguel's.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Then why does your jumpsuit say \"Miguel?\""
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boss, usually when somebody gives you a name and nothing else, it's because that's all they want to give you.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Anything else you want to share?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, it's stupid, boss. I used to listen to the radio broadcasts, just to pass the time.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Well, one day the signal stops, so I figured I'd try to find transmitter. I'm a pretty good repairman, or I was before the eyes started to go.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, I found Black Mountain and offered my services, but Tabitha decided I was useful enough to keep around. Permanently.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "But how did Tabitha find you in the first place?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not much use besides being a portable encyclopedia, really. I guess you could use me as a pack brahmin, but my knees aren't so good any more.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'm still half-decent with a pistol. Not fantastic, but good enough. These old bones aren't much use in hand-to-hand fighting, though.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I can keep your gear in good working order, too. If you notice your stuff takes a lot longer to break, well, you can thank me with a sarsaparilla.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Felt good to put the old vaquero outfit on again. I feel a lot sharper with a pistol now. Still wouldn't put these old bones on the front lines.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I can also do maintenance work on your stuff - I don't have the supplies for a real repair job, but I can keep your gear working longer.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How can I make the best use of your skills?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's nice of you to say, boss, but I'm an old man. Not much use to anybody any more.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Time was, I was a pretty good shot with a pistol. I guess I'm still half-decent. These old bones aren't much use in hand-to-hand fighting, though.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I can also do maintenance work on your stuff - I don't have the supplies for a real repair job, but I can keep your gear working longer.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't believe that, you must have some skills."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I sort of figured you had your own reasons for keeping me around, boss.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What use are you to me, then?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have the supplies for a real repair job, but I can do some routine maintenance to keep your gear working longer.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "It won't exactly get better, but it'll get worse slower.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you still repair my equipment?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm an open book, boss. Granted, the book's in Spanish and some of the pages have fallen out, but I'm an open book.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to ask you something else about yourself."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you think of guys like Ranger Andy?",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, what's on your mind?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, boss. I'm sure you've got a lot to think about.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd really rather you didn't."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, okay, boss. Take your time. Not like I'm a decrepit old man who might keel over dead any minute.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe later, okay?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I mean guys who have a world of experience doing what they do, but have to give it up because they're getting old and slow, or too injured.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you mean, guys like Ranger Andy?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That wasn't what I meant, really.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think he's a hero of the NCR."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe... yeah. I guess you've got a point there.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Even after a crippling injury, a guy like Andy's tougher and more dangerous than most men alive."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I suppose you're right. Guys like us can't compete any more.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think it's good that he's retired. Out of sight, out of mind."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Did I say us? I meant \"him.\" Guess my eyesight isn't the only thing that's going.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Guys like us?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you say, boss. I'll just stay back here and be quiet in case you have a sudden flash of brilliance you need to share.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Don't waste my time with your reminiscing, Raul."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I suppose he could still teach, take a less-active role in the world. That's not so bad.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just because someone's crippled doesn't mean they're useless. All that experience is invaluable."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe, but what if he really doesn't have it?",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He didn't have to give it up, he's just scared he doesn't have what it takes anymore."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A little of both, I guess.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Are you talking about Andy, or yourself?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Meeting Corporal Sterling, well... it kind of got me thinking.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a guy that's been beat all to hell, right? I mean, he could have retired from the service, but instead he signs back on and does what he can.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You think he did the right thing?",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, what's on your mind?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, boss. When you feel like availing yourself of my centuries of experience, you know where I'll be.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not now, Raul."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, boss. I know you've got a lot on your mind, what with all that wandering the empty desert wastes.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't have time for your useless chatter."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think so, boss? Because I remember a time when a lot of people stuck to their duty no matter what.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "It ended with nuclear bombs falling on my hometown.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think it's good that he's so devoted to his duty. More people should act that way."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Even if he can't use them any more? Isn't that like asking you to come up with one of your brilliant schemes after suffering a crippling head wound?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Err, another one, I mean?",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The NCR put a lot of time and money into his training. He owes it to them to use it however he can."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's what I love about you, boss; the pity you show for the less fortunate than you.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "With those injuries, he's nothing but a drain on resources. He should retire."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're preaching to the choir here, boss. Once a man's prime is behind him, he should let it go.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It might seem harsh, but a soldier can't do his job properly with those limitations."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess it reminds me of my own life.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do I get the impression this is more personal to you?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a question I've asked myself often enough.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It sounds like maybe you're talking about yourself there, Raul."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He reminds me of me in some ways.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do you care so much, anyways?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not really, boss, no.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "We're not just talking about Ranger Andy, are we?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Would it surprise you to know I used to be a gunslinging adventurer?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is that what you did?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That Loyal guy. He's getting up there in years, but he still finds a way to make himself useful to his people.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "If you ask me, that's better than withering away all alone, or holding on to some faded piece of glory from your past.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you talking about?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, boss. Whenever's good for you - I've probably got three, maybe four months before I keel over.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can we discuss this another time?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{A little uncertain} Yeah. That's what I thought, too.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Loyal's using his years of knowledge to help his tribe. I think that's a noble goal."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Old history, boss.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's on your mind?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, it beats dying alone in the Wasteland because you were too slow.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "At least he knew when to step back and start to take it easy. A lot of people don't."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That fear has always been a part of my life.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is that something you're afraid of?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe... but what if you miss the old days, sometimes?",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I suppose if you're happy with that kind of life, it's not so bad."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A memory from a long time ago.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Are you talking about something from your own past?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, boss. Whenever's good for you.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't really have time for this, Raul. Maybe later?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just a few days after Mexico City was vaporized, refugees started pouring down the road to our ranch. We helped who we could, but there were so many.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually, my father started turning people away before we ran out of food. Things got violent. My father and I got our guns, and we drove them off.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Go on."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "About two dozen men came back in the night, after we'd gone to sleep. They set fire to the ranch house and barred the doors from the outside.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "My whole family was trapped inside. I smelled the smoke and got myself and my little sister, Rafaela, out though a window, but everyone else....",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "My parents, my grandmother, my two brothers and two of my sisters all died.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened then?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Rafaela and I ran. We were pursued by some of the men who attacked our home, but I was always a good shot.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "The ones who came after us, I killed. The rest, I left be. I had to take care of Rafaela, not throw my life away on revenge.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened then?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe. I don't know. All I know is that for all my skill with a pistol, I couldn't help them.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, that was weighing on my mind. Thanks for letting me get it out in the open, boss.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "And you blame yourself for this?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know that, boss. That's not what I'm getting at. I'm just getting sentimental in my old age. Anyways, forget it. Just wanted that off my chest.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You can't think it was your fault. No one could stand against a dozen armed men all alone."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{angry, but more tired} Maybe we made a mistake. It was early on, we didn't know just how serious it was out there.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "But to say they deserved it? What kind of devil are you, {sarcastic emphasis} boss?",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Anyone stupid enough not to set a watch deserved what they got."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't think it was as hard hit as DC or Bakersfield, but it was bad enough. By the time we got there, the city was a radioactive ruin.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Still, the city was full of looters, already forming into the beginnings of raider tribes. Crime was bad before the War, but now it was a nightmare.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "We were living like scavengers, scraping by on what little food we could find, always looking for medicine for my burns.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "And then, of course, the radiation started to kick in, turning me into this handsome devil you see before you.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wasn't Mexico City basically annihilated in the Great War?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry. I assumed the only reason you'd fight past a horde of Super mutants and pick the lock on my cell is if you heard my cry for help on the radio.",
+     "emotion": "disgust",
+     "intensity": 100
+    },
+    {
+     "text": "But maybe you're just sightseeing. So, since the door's open and all, can I go now?",
+     "emotion": "happy",
+     "intensity": 100
+    }
+   ],
+   "prompt": "What do you mean, took me long enough?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Name's Raul. Raul Alfonso Tejada. I'm the mechanic around here.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "You forget about me already, boss? You sure you didn't take a blow to the head or something?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "My name is Raul Alfonso Tejada. Can I leave now, or did you want to ask me again in five minutes?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, sure, boss. I was always good at fixing things. Some I fixed for the town, some I fixed for other people, some I fixed just for the hell of it.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "It's a better way to use your hands than killing, and even then I wasn't getting any younger or faster.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I lived there for a long time. Kept to myself, didn't get into any fights - hell, the only reason I even kept my guns oiled was professional pride.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Fixing things?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Getting there, boss. I'd been in Tuscon - the locals can call it Two-Sun all they want, but it's Tuscon, dammit - about 75 years when she showed up.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Prettiest thing you ever saw, boss. Maybe it was just a trick of my senile brain, but I swear she looked just like my Rafaela. Her name was Claudia.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "She ended up taking work at one of the brothels in town. I never went to her, of course - how could I? But I looked after her in my own way.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why aren't you still there, then?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic077",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This was a long time ago. Before Caesar's Legion pacified Arizona and brought the raider tribes to heel.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "A tribe came into Tuscon one day - more a gang, really. Dirty Dave and his six brothers. They were looking for bullets, and I sold some to them.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I figured if I did that, they'd leave town before they tore it up too much.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened with her?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, boss. No they didn't.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "As I was saying, I hoped they'd leave the town in peace. Instead, they decided to stop at Claudia's brothel to take the edge off.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know which one of them got rowdy first, but by the time I heard the screams and got my guns, it was too late.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "They'd shot up the brothel, killed four girls, and taken Claudia for their sport.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "But they didn't, did they?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I went after Dave and his brothers. They had a head start, but they slept nights. I didn't. Took me three days to catch up to them.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Claudia was dead when I got there. They'd put a bullet in each of her eyes. I couldn't do anything except avenge her, just like Rafaela.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I charged into the middle of their camp and started firing - two of them were dead before they knew I was there. The other five, though....",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "They shot the shit out of me. I would have died, I think, if I wasn't so full of rage.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you rescue her?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic081",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "By being a meaner old cuss than the rest of them, boss. I wanted to keep living until they weren't, so I just kept shooting until they were all dead.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I was in pretty bad shape in the end, though. I don't know how long I laid there with the sun baking me and the buzzards chomping at me.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually I got the strength to start moving. Some long time after that, I managed to drag my carcass back to town.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did you survive?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<Sigh.> No. No, boss, I'm, a prisoner of the crazy Super Mutant with the wig and the glasses. I was kind of hoping you were here to set me free.",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "But maybe I'm not a pretty enough damsel for that, huh?",
+     "emotion": "happy",
+     "intensity": 100
+    }
+   ],
+   "prompt": "Really?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "When I recovered - more or less, anyways - I left Tuscon and headed west. I ran into Tabitha at Black Mountain and, well, the rest you know.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I swore I was done with the gunslinging life - I was too old, too slow, and too beat up to protect anyone anymore.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I thought I was done forever... but after traveling with you, I realize I've always had my doubts.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "When I recovered - more or less, anyways - I left Tuscon and headed west. I ran into Tabitha at Black Mountain and, well, the rest you know.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I swore I was done with the gunslinging life - I was too old, too slow, and too beat up to protect anyone anymore.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "After seeing what you go through, I think I made the right choice. So thanks for that, boss.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "When I recovered - more or less, anyways - I left Tuscon and headed west. I ran into Tabitha at Black Mountain and, well, the rest you know.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I swore I was done with the gunslinging life - I was too old, too slow, and too beat up to protect anyone anymore.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I thought I was done forever... but after traveling with you, I realize that was the wrong decision. So thanks for that, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened then?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "About whether I still had what it took to carry my pistols proudly, to use them to do what's right.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "And now that I've been traveling with you for a while, you've made me realize that I can still do that.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe I'm not as tough as I used to be, but my brains can make up for that, and my hands are still quick enough. It's time to put the guns back on.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "About whether I'm really too old to keep living the life of a gunslinger after all. And after seeing what you go through, boss, I think I am.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "From now on, I'll let you deal with the fighting and stick to keeping your gear working. I don't want to slow you down more than I already do.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Doubts? About what?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can bet on that, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think that's a great idea, Raul, and I hope you'll put them to good use with me."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, boss. I'd hate to think I was disappointing you with my life-altering decision.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If that's what you think is best, I won't stop you."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I suppose you're right, boss. These bones are too old for that kind of action.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] I'm sure you've got a lot of ideas, boss, but how about if you let me make this decision?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Tell you what, I'll at least think about it for a while. Ask me about it again another time.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't think that's a good idea. You should focus on your mechanical skills instead."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You think so? Well... you're the boss. Okay, I'll give it a try.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "But if I get killed, and if there's an afterlife, I'll haunt your ass.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's not true, Raul, you're great with a pistol."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm sure you've got a lot of ideas, boss, but how about if you let me make this decision?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Tell you what, I'll at least think about it for a while. Ask me about it again another time.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're wrong. You can still fight, and you should take up your guns again."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic093",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Thanks for the reminder, boss, I'd almost forgotten.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "We'll talk later."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're a poet of understatement, boss. But there were moments it was almost worth it. I still remember finding that novelty costume shop.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I was just looking for something I could slice up to wrap my burns when I saw the vaquero outfit hanging on the rack, like it hadn't been touched.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I took it - not like anybody else needed it, you know? - and wore it back to our camp. Rafaela laughed for the first time since the bombs had fallen.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sounds pretty bad."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic095",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was. I started to build up a legend. Sometimes it headed off trouble, but most of the time it just started more.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Young punks looking to prove themselves would come looking for me, but my eyes were sharp and my guns were quick.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "For a whle it seemed like we might even survive there, until... until Rafaela.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wasn't it dangerous to be dressed so... noticably?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic096",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "She went out to find some food one day. {digressing, maybe justifying to himself a little} I was sick, so I stayed at our camp. I guess it must have been the beginnings of radiation poisoning.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, it was supposed to be safe, but some raiders happened to pass through where she was scavenging. I won't speak of what they did to her.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "When I found her body, the only way to recognize her was this funny little scar on her knee from when she was a little girl.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Go on. What happened to Rafaela?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Terrible doesn't begin to cover it, boss. I'd let my whole family down - first the ranch, now Rafaela. I was the last Tejada.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I guess maybe I went a little crazy then. I took my guns, and I went back to that market. I didn't have many bullets, but I had enough.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "After the raiders were dead, I salvaged what I could from the store. I was tired... I just wanted to be alone forever.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's terrible, Raul."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic098",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I left Mexico City behind. I made my way out to the Gulf Coast, eventually I found an old Petro-Chico refinery nobody had claimed.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I stayed there for a little while, and I thought a lot about my life. I thought about the guns I'd lived by and what they'd gotten me.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "I decided my guns hadn't gotten me anything, and it was time to give it up. I took off that old vaquero outfit, and put on a Petro-Chico jumpsuit.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "The name tag said \"Miguel,\" so I started using the name myself. Eventually I made it to Arizona... but that's another story, boss.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So what did you do?"
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic099",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Probably because it used to be Miguel's. Whoever he was. How about if you let me go, huh boss?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Then why does your jumpsuit say \"Miguel?\""
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic100",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Talk to me at my shack, I've at least got tools there.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Very funny."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic101",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, sure thing. I haven't even remotely grown sick of staring at this place.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, hang out here for a while."
+  },
+  {
+   "id": "VDialogueRaulRaulTejadaTopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah? Maybe you can introduce them to me if we find them, because I've never met one.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Lots of older people are still useful to their friends and communities."
+  },
+  {
+   "id": "VEndingRaul",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating} After a long and eventful life, Raul's luck finally ran out during his time with the Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Still grappling with self-doubt over his usefulness in the face of old age, Raul was never able to find peace with himself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually, he left the Mojave and assumed a new name, as he had done so many times before.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Invigorated by his travels with the Courier, Raul once more took up his guns in memory of his lost Rafaela.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Soon after, the Mojave was filled with tales of the ghost-vaquero who hunts down those who prey on the weak.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Convinced that his time as a gunslinger was past, Raul made peace with the idea of growing old.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After traveling with the Courier for a time, he retired and settled down in Outer Vegas, where he would spend his days fixing ancient machinery.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingRaul"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Sure, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nothing else right now.",
+   "label": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Eesh, boss, are you trying to destroy my knees even faster than nature?",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, wearing this is not going to be good to me.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "How'd you know I had a sweet tooth, boss?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh, sarsaparilla. That's just what this dry old throat needs.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "You're going to rot my teeth, boss. What's left of them, anyways.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "RaulPvtEdwardsDUPLICATE000",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Cheer up, kid. It's not that bad. Sure, your skin rots off and you start to stink like a public toilet after Cinco de Mayo, but... umm....",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Well, assuming you survive the radiation sickness, the lynch mobs, and the possibility of going feral, one day you'll get old and decrepit, like me.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "What? Was it something I said?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulPvtEdwards"
+  },
+  {
+   "id": "AcceptYield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Okay. Well, I guess I can let it go this time.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AcceptYield"
+  },
+  {
+   "id": "ArmorIneffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "This armor's probably fine. The holes are cosmetic.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "This armor's beat up worse than me, boss.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "ArmorIneffective"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hey, not so rough, I break easy!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Knock it off!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Okay, I guess we're doing this.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Let's dance!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I've been doing this longer than you, pal!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "AvoidThreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Might want to watch it there, boss.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Yikes!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Watch it!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AvoidThreat"
+  },
+  {
+   "id": "Death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Death Noise 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Death"
+  },
+  {
+   "id": "DeathResponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Well, crap.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Damn!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DeathResponse"
+  },
+  {
+   "id": "FireExplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Might want to watch the explosives, boss!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Duck and cover!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FireExplosive"
+  },
+  {
+   "id": "Flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "This old man's retreating, boss!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, I really don't want to be here right now.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Oh sure, make the old man run!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Flee"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Just keep on moving.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I got my eye on you. Even if it doesn't see so good.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "HealthHalf",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Boss, the pain from my wounds is starting to outweigh the pain from my arthritis.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Little help here, boss?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Wouldn't say no to something to ease the pain. Granted that's usually the case, but right now especially.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Hey boss, is my jaw still attached? Good. Can I get some help to keep it that way?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "HealthHalf"
+  },
+  {
+   "id": "HealthQuarter",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Dying} These bones are about to give up the ghost, boss.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Dying} Ahh, Rafaela... I'll see you soon.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Dying} Never thought I'd go out like this....",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "HealthQuarter"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Whoa! Whoa, whoa, whoa, boss, what the hell?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Boss, you really think that's a good idea?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, good, the boss is murdering people now. Excellent.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "MurderNoCrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Well, that sure is a dead body there, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure that was a cleverly-planned act, boss, and not just random psychosis.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "That one won't be breathing any time soon. {Wince} Ouch.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "id": "NoAmmo",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm all out, boss!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I can throw the gun at 'em if you want, boss.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Could I trouble you for some bullets, boss?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You know those little lead things that fly really fast and hurt people? I need some.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "NoAmmo"
+  },
+  {
+   "id": "Poisoned",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Poisoned} Well. This isn't good. Think I've been poisoned, boss.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Poisoned} That one... had a little kick to it. The poisonous kind of kick.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Poisoned} Boss, I got a poison situation here!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Poison"
+  },
+  {
+   "id": "Regenerating",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Getting second wind} Ooh, that eases the aches. Not all of them, but some.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Getting second wind} Ahh, that feels better. I might not die for a while yet.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Getting second wind} Much better.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Regenerating"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "<Sigh>Boss, if you just ask, I'll hand it to you. Probably.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Boss, why do my pants suddenly feel lighter?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Look, boss, I appreciate you not making me carry that, but come on.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "UsedDoctorBag",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That makes me feel young again. No, wait, that's just the Med-X talking.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "There. Now my limbs should stay attached a while longer.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "That should fix the damage.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "UsedDoctorBag"
+  },
+  {
+   "id": "Wake",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Waking up from knockout, excited} Am I dead? Is this Heaven? {Flat} Oh. Hi boss. Guess not.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Waking up from knockout} Oof. Boss, take a look around and see if any of my parts are lying around, huh?",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "{Waking up from knockout} I've woken up worse places. Not many, though.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Waking up from knockout, panicking} Gah! Petro-Chico Boy! Petro-Chico Boy is here for my chitlins! {Calm} Oh. Just a dream. {Soothing himself} Just a dream....",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wake"
+  },
+  {
+   "id": "WeaponBroke",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What a piece of junk!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "My weapon broke. Probably my fault.",
+     "emotion": "sad",
+     "intensity": 60
+    },
+    {
+     "text": "You got a spare piece, boss, or do I have to break out the tubing?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "WeaponBroke"
+  },
+  {
+   "id": "WeaponIneffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Well, this isn't doing much of anything.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Not sure I'm having any impact here, boss.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Boss, I'm having some... inadequacy issues here. Got a bigger gun I can borrow?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "WeaponIneffective"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hmm.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm looking, I'm looking!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Hope you're looking, boss, because I don't see so good.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Gotcha!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "We got company, boss!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Guess my eyes weren't playing tricks after all!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Sorry, boss. Must be my glaucomas acting up again.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "If you say you saw something, I'm sure it was there.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing here, boss.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Oh, come on, don't make the old guy chase you!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I can't see 'em!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Boss, where'd he go?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Wow, I'm actually still alive. Who would have guessed?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure our victory was purely thanks to your brilliant leadership, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I guess old guys are tougher than we look, huh?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Still looking, boss.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Amazingly, they've still managed to outwit a half-blind arthritic ghoul.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry boss, you'll know if I find anything.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "There we go!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Couldn't even hide from a half-blind old ghoul. How embarassing for you.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Got 'em, boss!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Maybe they just... went home, huh boss?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I got nothing, here.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Doubtless they ran away in sheer terror of the mighty Raul! Oh, and you too, boss.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Boss, if {emphasis} I heard something, you {emphasis} really should have heard something.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I think we got company.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{Cautious, unsure if someone's out there} Hello...?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Get 'em, boss! I mean, if that fits with your schedule.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry, boss, with my cataracts you only sort of look like the bad guys.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, yeah, time for more fighting, I know.",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombat"
+  },
+  {
+   "id": "StartCombatResponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Sure, boss. You lead the charge, I'll follow as fast as my arthritic, rotting knees can carry me.",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "You want to send an elderly, half-decrepit ghoul into combat? Your tactical brilliance is unmatched, boss.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Sure thing, boss. You betcha.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "id": "RadioBMSegment01",
+   "section": "radio",
+   "responses": [
+    {
+     "text": "[Raul] Uh, either one works.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[Raul] I going to obey supreme Tabitha, claro, whatever she say. Just I feel so bad I die before I fix her special robot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RadioBMSegment01"
+  },
+  {
+   "id": "RadioBMSegment02",
+   "section": "radio",
+   "responses": [
+    {
+     "text": "[Raul] Hi, Tab - <catches himself> Rhonda.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[Raul] All I want is to make that special robot work again, you know? I give it my best.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RadioBMSegment02"
+  },
+  {
+   "id": "RadioBMSegment12",
+   "section": "radio",
+   "responses": [
+    {
+     "text": "{Raul singing in Spanish to himself for an extended time}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Raul} Uh, I don't know. Did you hit that switch I, ah, keep telling you not to press?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RadioBMSegment12"
+  },
+  {
+   "id": "ObserveCombat",
+   "section": "miscellaneous",
+   "responses": [
+    {
+     "text": "I'm not touching that one with a ten-foot pole.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "You can get involved if you want to, but I'll be over here.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ObserveCombat"
+  }
+ ]
+}

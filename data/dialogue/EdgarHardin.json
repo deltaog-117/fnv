@@ -1,0 +1,1056 @@
+{
+ "page": "EdgarHardin.txt",
+ "speaker": "Edgar Hardin",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It looks like you've managed to talk some sense into the Elder, outsider. Be assured, I'll still be keeping an eye on him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Grudging} Your efforts to help this chapter are not unappreciated. Now, what can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome, my friend. A new day has dawned for this chapter, and moving forward we will no longer cower in the dark.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And we have you to thank for it. You'll find that I can be generous to those who show loyalty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take this key. If you ever find yourself in need of repair, head to our safehouse to the northeast.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, what can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hardin, haven't listened to him yet} Are you willing to listen to me now, outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you reconsidered helping me, outsider? I do what I must to see that the chapter survives.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it, outsider? Have you discovered anything?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back, my friend. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "What do you want, outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I appreciate all you've done, but I'm going to have my hands full for a little while. Come back later and we'll talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "HVHardinHELIOS",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "HELIOS was the worst goddamned action I've seen in a long, long career of fighting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the battle at HELIOS."
+  },
+  {
+   "id": "HVHardinLastElder",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Elijah was a strange one. His even becoming Elder was highly questionable, seeing as how he was a Scribe. Typically, only Paladins are eligible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But an exception was made in his case, on account of him being a genius. Unfortunately, whatever scientific acumen he had didn't extend to tactics.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Trying to defend HELIOS was a blunder of the worst kind, and many brothers lost their lives because of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Many of the senior paladins, myself included, advised him to fight a retreating action, but he refused to budge. Said he almost \"had it working\".",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We never did find out exactly what he was talking about. When the perimeter was finally overrun, the Elder had simply vanished.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about your last Elder."
+  },
+  {
+   "id": "HVHardinSoundsPlayerOut",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So, you're the outsider that's been given leave to wander around freely. Desperate times call for desperate measures, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Name's Hardin. I'm the Head Paladin of this chapter, and I think we might be able to help each other out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know what the Elder talked to you about, but I can tell you this chapter is in trouble, and he's at the center of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you willing to listen to what I have to say?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVHardinSoundsPlayerOut"
+  },
+  {
+   "id": "HardinPowerArmorTraining",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "...There, I think you've got the hang of it now. You should be able to use any type of power armor you come across using what you just learned.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Very well, then. In addition to the armor, I've given the order that all of our arms and equipment be made available for your purchase.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Finally, while you are now a member of the Brotherhood, I cannot ask any more of you. I'm sure you have goals of your own outside these walls.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You are free to come and go as you please, though I hope you'll return to us someday in a more permanent capacity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wish you the best, {outsider} outsid- {beat, catches himself} Brother.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HardinPowerArmorTraining"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As you may have already heard, this entire base is under a state of lockdown. No one goes out except small patrols at night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Most of the chapter has been sealed in here for years, and those few who were outside when the lockdown was initiated are forbidden from returning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Morale has plummeted as time has gone by, and many of our current paladins haven't even seen combat outside of training simulations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And all because of the Elder's explicit order that no one be allowed in or out. The only way things will change is if a new Elder is installed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, go ahead."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you change your mind, though, come find me, and we'll talk more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, I won't listen to you."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why should you trust the Elder? I'd recommend listening to both of us, and choosing whom to trust for yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So are you willing to listen?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why should I trust you?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Proud, but not vain} I would. I'm the senior-most paladin in the Chapter, and have more combat experience than any two others here put together.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd gladly support another candidate, but no one has the courage to step forward and make the attempt, so it falls to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I would put this chapter back on the right path, if I could just assume leadership.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "And I suppose you'd nominate yourself?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Veronica's a special case. She handles the procurement of supplies. If we didn't let her and those like her back in, we'd all starve.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If the Elder could manage it, he'd shut them out as well, and all in the name of security. Which is why we need to replace him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What about Veronica? She seems to come and go as she pleases."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course I have. Many times, in fact. The Elder has an open door policy, and will listen to advice on any subject, save this one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He refuses to see that our isolation is slowly weakening us. Aside from being our duty, going out on missions is what kept us strong.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And because he fails to see that, he must be replaced.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have you tried bringing this up with the Elder yourself?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. I've gone through our records dozens of times looking for a precedent regarding the dismissal of an Elder and come up with nothing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The people who are most likely to know how it could be done are also some of McNamara's strongest supporters, so they refuse to help me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Which is why we're having this conversation. An outsider such as yourself would arouse less suspicion asking questions about such matters.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The fact that the Elder has some tasks for you means his faithful won't suspect you, and you have a line open to the man himself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In short, you're in a perfect position to help me. Will you at least think about it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do you propose to do that?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I half expected you to say that. In which case, I'll continue to pursue the matter on my own.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Should you continue dealing with the Elder and find yourself beginning to see my point of view, I'll be around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want no part of this."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That'll have to do. I'd recommend going to see Ramos first. As head of security, he's more familiar with our protocols than anyone else here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You could also try to find something relevant in our datastore, though last I heard, Scribe Ibsen has having a bit of a problem accessing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And if McNamara should give you any tasks, I'd ask that you kept me abreast of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Report anything you find to me, and we'll move from there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll see what I can do."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What did you have in mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Let's talk about something else."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If I become Elder, the lockdown will be lifted, and we'll once again be able to send patrols out into the wastes. We'll become powerful again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And when that happens, it will be good to have the Brotherhood as an ally. Good enough?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do I get out of helping you?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There are a number of people I'll need to talk to. The process won't be instantaneous, but with this evidence, my path is clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It shouldn't take more than a few days, and then we can begin moving forward again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So what happens now?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, your role in this is done. The rest is up to us. There is much for me to do to make the transition as smooth as possible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come back in a few days, and I should be firmly installed as Elder.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is there anything else for me to do?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "While I can't dispute that you've earned our gratitude, I'm afraid you're going to have to be patient. Such a change takes time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop back in a few days, and we can speak of this again. Now, I must be off. There is much to do!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "About my reward..."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I know the loss of the patrols has weighed heavily on his mind for some time. He took it very personally when they first went missing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That was when I first began to seriously question his ability to lead us. A commander has to be able to deal with the potential loss of his men.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's strange that he would ask you to find mission discs on them, however. The missing paladins were all on standard patrols, which don't need them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Only Brothers sent on special assignments are given mission discs. If you should find any on the lost patrols, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Elder has me looking for the lost patrols and retrieving their mission discs."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a sensible notion. Your familiarity with the nearby terrain makes you perfect as a liason.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been trying to get the Elder to send out scouts for years, and he's always been resistant to the idea. Said they'd be a vulnerability.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wonder what changed his mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Elder tasked me with contacting several scouts out in the waste."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The filtration system? He wouldn't have you looking if we didn't need those parts badly, which means that system's in real trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If the air filters go, it will become impossible to breathe down here. We'd be forced to evacuate the bunker!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't believe he's kept something like this to himself! We should have every able-bodied person in the chapter working on this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All the more reason for you to find a way to get McNamara out of that chair, before he dooms us all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Elder has me looking for parts to fix the bunker's air filtration system."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you must.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I wanted to ask you some other questions."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I thought you might, given how much time you've spent here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's not usually a request we agree to. Typically, we take in the young, so that they might be trained through adolescence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In special cases, we allow exceptional individuals to conditionally join. Luckily for you, you happen to be exceptional.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The condition is that you must complete a task. This task must prove beyond a shadow of a doubt that you have what it takes to join the Brotherhood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I happen to have something perfectly suitable in mind, though I warn you - it won't be easy. Still interested?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to join the Brotherhood.",
+   "label": "{Ask to join the Brotherhood}"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Had second thoughts, did you? We've made some progress since the lockdown was lifted, but the task I had in mind is still available if you want it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I wanted to ask about joining the Brotherhood again.",
+   "label": "{Ask to join the Brotherhood}"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Increasingly angry} Just as I thought, McNamara gave my men new orders without telling me. The nerve of that man!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "This little stunt is probably what got them killed in the first place. Our normal patrol routes are known to be relatively safe.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "This is exactly what I've been looking for! McNamara gave my men new orders without telling me, thereby breaking the Chain That Binds!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With this, I can finally have him removed as Elder, and end this ridiculous lockdown.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is exactly the kind of thing I'm trying to avoid by ousting McNamara.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found the patrols for the Elder, and they had mission discs with orders from McNamara on them."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I could hardly call myself Head Paladin if I didn't. It's one of the first things every initiate learns when they start training. What about it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know anything about the Chain That Binds?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Back when we were stationed at HELIOS, our scouts reported that a group was establishing itself in the area as a distributor of Pre-War weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our Elder at the time, Elijah, was too concerned with getting HELIOS running and fending off the NCR, so he ordered us to leave them alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's time that we correct that oversight, and show this region that the Brotherhood is still a force to be reckoned with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want you to visit these weapons dealers, this Van Graff family, and make an example of them. Leave no one alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When the job is done, report back and I'll arrange for a team to clean up the site and retrieve the weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes, what is the task?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I could be wrong, but I think that's a dead end. McNamara's always followed orders, and we've been incommunicado since fleeing HELIOS.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "One of the few times an Elder was dismissed was due to it."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Second part? What are you talking about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you know there's a second part to it?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then that means I can cast McNamara down for giving those secret orders to my Paladins! Well done! That's exactly what I was looking for!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That is the standard procedure, yes. For example, McNamara gives orders to Head Scribe Taggart, who then relays further orders to the scribes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wasn't aware that failing to do so was punishable, however. Interesting...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we can just find an instance where McNamara went around someone and gave orders to their subordinates, we'll have him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It says a superior is not allowed to give orders to the men under his subordinate."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is that a waver of resolve I sense? The Brotherhood is not in the habit of taking on the timid.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me what the task is before I agree to anything."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmph, I thought you were made of sterner stuff than that. The Brotherhood could use someone with your skills.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In any case, was there something else you wanted?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now you're just wasting my time. When you make up your mind, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "On second thought, I'm fine not joining the Brotherhood."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well done. This is a small step in the right direction, but it's damn good to move forward again. Now, I believe congratulations are in order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is my honor to bestow up on you the title of Paladin of the Brotherhood, for your meritorious service in its name.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Normally, there'd be a ceremony and such, but everyone is too busy at the moment for such frivolity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can give you this, however. Your very own suit of power armor. We can't spare our best, but I had the knights assemble this one for your use.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Which reminds me, you don't even know how to use these, do you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've taken care of the Van Graffs."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a travesty, is what it is. Every second we sit on our hands down here is another second that we're not fulfilling our sworn duty.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you think of the lockdown?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you now? If I didn't already owe you a great deal I'd be highly suspicious right now. You'll have to tell me about it sometime.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, I already know how to use power armor."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here, I'll show you. It's easy, once you get used to it. First, we'll start with putting it on...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd appreciate a lesson."
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not even close. Power armor isn't something you wear so much as {lightly stressed} use. It's a weapon in its own right, and takes skill to wield.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you don't know what you're doing, you won't even be able to walk with it on. So how about a bit of quick instruction?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's just like other armor, but heavy, right?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's not that I dislike the Elder, but I strongly disapprove of his current style of leadership. We're safe, yes, but at what cost?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do you dislike McNamara so much?"
+  },
+  {
+   "id": "VDialogueHiddenValleyEdgarHardinTopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "After lifting the lockdown, the first thing I'd do is send scouts out to recon the area. We need to know what's going on out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Next, I'd resume patrols in the near vicinity, and begin sending search teams out to the spots the scouts reported were relatively safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's standard procedure when a chapter relocates to an area, but standard procedure wasn't our last Elder's style, either.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What would you do if you became Elder?"
+  },
+  {
+   "id": "HVHardinInitialLine",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Nolan, we'll resume this discussion later. I can see you have company.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVHardinInitialLine"
+  },
+  {
+   "id": "HVHardinVeronica",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Veronica.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you've been practicing your drills, Veronica. It's dangerous outside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVHardinVeronica"
+  },
+  {
+   "id": "HVMcNamaraHardinOpening",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Then what do you propose? Every day that he's here, the risk increases.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Better that than not act at all!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVMcNamaraHardinOpening"
+  },
+  {
+   "id": "VMS49ElderDiscussion2Conclusion",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Losing patience} The Codex is clear on this. It's-",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It says they can't be trusted.",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "It says that we are to protect humanity from them at all costs.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I can't.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "{Slightly Sad} Then we will accept that fate with honor.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS49ElderDiscussion2Conclusion"
+  },
+  {
+   "id": "VMS49ElderDiscussion2HELIOS",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Then we have a game-changing weapon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was worth keeping from our enemies. If they had it-",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We did as the Codex dictated.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Fuming} How dare you insult the honor of the brothers and sisters who died there!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS49ElderDiscussion2HELIOS"
+  },
+  {
+   "id": "VMS49ElderDiscussion2Intro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Shouldn't you be securing supplies for us?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS49ElderDiscussion2Intro"
+  },
+  {
+   "id": "VMS49ElderDiscussion2V22",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'm waiting to hear why this deserves our attention.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "This won't defeat our enemies.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "VMS49ElderDiscussion2V22"
+  },
+  {
+   "id": "VMS49ElderDiscussion2V34",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Then it's a good thing this weapon has fallen into the right hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS49ElderDiscussion2V34"
+  },
+  {
+   "id": "VMS49HardinDiscussion1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What is it, Veronica?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Skeptical} Do you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For once, I agree.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We can't let people go on believing the Brotherhood has lost its teeth.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We must strike while our enemies are distracted with each other.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our entire two hundred years of history say that a handful of troops with the best equipment and training can stand up to any army.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Heated} That was a failure of strategy, not philosophy. If Father El{-ijah} - the Elder in charge were a Paladin and not a Scribe-",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "History says otherwise.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS49HardinDiscussion1"
+  }
+ ]
+}

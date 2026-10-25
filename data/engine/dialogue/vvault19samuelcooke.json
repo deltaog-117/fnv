@@ -1,0 +1,504 @@
+{
+ "id": "vvault19samuelcooke",
+ "speaker_name": "Samuel Cooke",
+ "source": "VVault19SamuelCooke.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Hated} Fuck off.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Who the hell are you? I know you weren't one of the inmates.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck have you done? We needed that sulfur!",
+     "emotion": "anger",
+     "intensity": 70
+    },
+    {
+     "text": "Have you wiped out those geckos yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anything from Papa Khan?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked} Good to see you.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah? What do you want now?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Kimball dead} Somebody whacked the NCR president. Got what was coming to him.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Caesar dead} Someone took out the Legion's boss. Doubt it'll stop them for long, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Middle Game} Lot more troops on the road these days. Wonder what's up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Late Game} Best to lay low. The NCR and the Legion are about to have it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vendingpowdergang",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating} With Cooke dead, the Powder Gangers at Vault 19 fell apart.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Those who weren't destroyed by the Courier fled into the hills or attempted to work their way back through the Mojave Wasteland. Few survived.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Armed with a wide array of improvised explosives and stolen weapons, the Vault 19 Powder Gang tormented the Mojave Wasteland for years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Citizens of the NCR were favorite targets, and they always suffered the worst fates.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} After the Vault 19 Powder Gang surrendered to the NCR, they were re-incorporated into the correctional system.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} The NCR did increase their sentences, as they aren't about to take off time for good behavior.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} After the majority of the Vault 19 Powder Gangers joined the Great Khans, the weaker members scattered throughout the Mojave Wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Though a few managed to erase their pasts, most never survived the journey.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingPowderGang",
+   "prompt": "VEndingPowderGang"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You won't get a fucking cap from me, and you're lucky I don't blow your goddamn head off.",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "The whole point of killing the geckos was so we could get at the sulfur and you've just made that a hell of a lot more difficult. Now fuck off.",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic000",
+   "prompt": "I took care of those geckos."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are some fire geckos in the lower levels of the Vault. We need to get them gone so we can get to the sulfur.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You go clear them out for us, and there'll be some caps for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want you to head to Red Rock Canyon, north of here. Find Papa Khan and ask him if he'd allow the Powder gangers to join up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic015",
+   "prompt": "<GENERAL QUESTIONS>"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That coward Lem has been talking about surrendering to the NCR. Now the men are confused, not sure who's leading this gang. Fucking idiots.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Lem's been taken care of. We can start mining that sulfur now, thanks to you.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic019",
+   "prompt": "What's going on here?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some of the computers still work, but the only files are diaries and garbage. Typical vault.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic023",
+   "prompt": "Do you know anything about this vault?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You really don't know? I'm Samuel Cooke. I was the brains behind the NCRCF prison break.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic025",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Their \"republic\" is a joke. They're a bunch of tyrants led by an even greater tyrant, that idiot Kimball.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "They think they have the right to annex every inch of dirt in the West and force their system on every man, woman, and child.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic027",
+   "prompt": "Tell me about NCR."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He was an inmate like the rest of us. He had his uses, but he's a coward and a troublemaker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic032",
+   "prompt": "Tell me about Lem."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He was an inmate like the rest of us. He was useful during the jailbreak, but now...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's just another coward. He wants us to leave the vault and hand our asses to the NCR, as if they'd treat us like human beings.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic034",
+   "prompt": "Who's Lem?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was blowing up supply caravans along the 15 freeway. The NCR got wise to my ambush spots, picked me up and threw me in a cage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic035",
+   "prompt": "How did you end up in prison?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A beautiful thing. Saved a little blast powder here, hid a makeshift weapon there, and one day I orchestrated a little symphony for the NCR.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic036",
+   "prompt": "Tell me about the prison break."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Didn't have a choice. He was confusing the men, and I need to control them or we're just a bunch of disorganized idiots.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic038",
+   "prompt": "Why did you kill Lem?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have to keep an eye on that bastard Lem. The second I turn my back, he might go crying to the NCR.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "So, what do you say? You going to take care of those geckos?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic039",
+   "prompt": "Why can't you do it?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Explosives. Bombs. Big, big fucking bombs. You gonna help us or not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic041",
+   "prompt": "What do you want the sulfur for?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There aren't enough of us here to make a real impact on the NCR, and the Khans probably hate the NCR more than we do. Strength in numbers, they say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So, will you talk to Papa Khan on our behalf?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic046",
+   "prompt": "Why do you want to join the Great Khans?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Come back as soon as you can.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic047",
+   "prompt": "I'll do it."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Get to it. Oh, and take this - there's some weird shit with this Vault's security and some doors will only open if you have a keycard.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic048",
+   "prompt": "I'll do it."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heard there was an abandoned vault along this mountain ridge, and that the wildlife here had teeth big enough to keep the NCR away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic058",
+   "prompt": "So, what brought you to this place?"
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a fucking deathtrap around here. Fiends swarm all over Vault 3 in the east, and there are fucking Deathclaws south of that, at Quarry Junction.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're looking for humans, the Khans are north of us and an NCR base at McCarran, past Vault 3. Supposedly there are muties to the southeast.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic059",
+   "prompt": "Tell me about the area outside the vault."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like raiders, but worse - these guys are messed up on every damn chem there is. You can spot them by the horned skulls they wear as hats.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic071",
+   "prompt": "Tell me about the Fiends."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The NCR's been mining there for awhile, but now it's full of Deathclaws. Don't go there unless you want a quick, bloody death.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic074",
+   "prompt": "Tell me about Quarry Junction."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's the main base for the NCR, and a breeding ground for oppression in the name of patriotic bullshit. Do humanity a favor and blow it up.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic076",
+   "prompt": "Tell me about McCarran."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They've been through some rough times, but they can hold their own. I wouldn't mind taking the boys and signing up with them, if it weren't for Lem.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic078",
+   "prompt": "Tell me about the Great Khans."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've heard the muties there are different. Completely insane, and supposedly they use some kind of invisibility technology. I'd stay away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic094",
+   "prompt": "Tell me about the super mutants."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic218",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Hey, I got another job for you if you're interested.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic218",
+   "prompt": "Yes."
+  },
+  {
+   "key": "vms42vvault19samuelcooketopic221",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd rather not, but fair enough. We'll do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS42VVault19SamuelCookeTopic221",
+   "prompt": "Yes. You can join then, but he says you would all still have to pass the initiation rite."
+  }
+ ],
+ "speaker": "samuel_cooke"
+}

@@ -1,0 +1,227 @@
+{
+ "id": "rsfoxtrotlenk",
+ "speaker_name": "Lenk",
+ "source": "RSFoxtrotLenk.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player not in NCR gear} {fearful} You're here for the money. I told the Omertas I was good for it! I just need more time!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{Player in NCR gear} {paranoid} You're not part of my unit... no, you're here for the money! I told the Omertas I was good for it!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, uh, hey.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vmsrsfoxtrotquesttopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I operate the radio and call it in if we see any Great Khans moving out in large groups from Red Rock Canyon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSFoxtrotQuestTopic001",
+   "prompt": "What do you do here?"
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrscommrangerfoxtrottopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Uh... well, yeah, I can do that. Um, thanks.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSCommRangerFoxtrotTopic000",
+   "prompt": "I brought updated radio security codes from Camp Forlorn Hope."
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Watch out for Great Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here's all the caps I've saved up so far. See? That's a pretty good chunk of what I owe right there!",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic001",
+   "prompt": "<Lie> I'm here because of your debt to the Omertas. Pay me what you've got and you'll get more time."
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I talked to the cashier at Gomorrah into forwarding me some chips - I was convinced I was due for a hot streak.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It, uh, didn't go so well. The Omertas were nice and said they'd give me some time to pay them back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They also said if they had to talk to me about my debt again, they wouldn't be nice the next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic002",
+   "prompt": "What happened between you and the Omertas?"
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I... don't want to talk about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic004",
+   "prompt": "I thought NCR Rangers were supposed to be tough and fearless."
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic005",
+   "prompt": "Fine. Let's talk about something else."
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] We were on patrol near the Dam when a Legion raiding party jumped us. Didn't even have to time to radio it in.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "I was hit in the head with a machete and knocked out. Didn't kill me, though some nights I wish it had. When I woke up, my nerve was gone.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "The rest of my squad was crucified, butchered, mutilated. I don't know how they missed me. Maybe they didn't. Maybe they knew they'd broken me.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "I gambled and drank a lot after that. Got into trouble, but the Rangers gave me a second chance instead of kicking me out. So, here I am.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic006",
+   "prompt": "If you don't tell me, someone else will. I'd rather hear your version.",
+   "label": "< Speech 30 >"
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic006_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, I'm not going to bring it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic006",
+   "prompt": "You sure? I'd love to hear that story.",
+   "label": "< Speech 30 >"
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe. But, thanks for saying it, anyway.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic007",
+   "prompt": "You were too tough to kill, and you'll get payback on the Legion some day."
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{relieved} Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic008",
+   "prompt": "Interesting. Let's move on to something else."
+  },
+  {
+   "key": "vdialoguerangerstationfoxtrotrsfoxtrotlenktopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{mournful} I... I was different back then.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "vDialogueRangerStationFoxtrotRSFoxtrotLenkTopic009",
+   "prompt": "Pathetic. The Rangers should never have let you become one in the first place."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Watch out for Great Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "comm_officer_lenk"
+}

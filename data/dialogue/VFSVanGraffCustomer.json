@@ -1,0 +1,52 @@
+{
+ "page": "VFSVanGraffCustomer.txt",
+ "speaker": "Soren",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You people are crazy!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFSVanGraffIntro01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Ms. Van Graff, my associates and I have decided that we wish to renegotiate the terms of our deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Regardless, we feel that the quality of the weapons is below expectation, and hoped to adjust the price accordingly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffIntro01"
+  },
+  {
+   "id": "VFSVanGraffIntro03",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "W-What is this, Ms. Van Graff?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't understand. Who is this man? What does this have to do with our deal?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffIntro03"
+  }
+ ]
+}

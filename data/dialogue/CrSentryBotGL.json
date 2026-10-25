@@ -1,0 +1,543 @@
+{
+ "page": "CrSentryBotGL.txt",
+ "speaker": "Sentry bot (Fallout 3)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do not interfere with security operations.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Have a nice day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "AcceptYield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Threat analysis... green. Standing down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AcceptYield"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Adding target to threat matrix.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Reanalysis complete. Threat level red.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Threat level: red.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Weapon status: engaged.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Weapon systems locked on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Engaging hostile target.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Weapons free. Non-combatants are advised to stand clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Status report: green. All systems within acceptable operating parameters.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Status report: yellow. Primary systems have sustained significant damage. Reinforcement recommended.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Status report: yellow and falling. Perimeter security can no longer be guaranteed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Status report: red. Primary system failure imminent. Repair or reinforcement recommended.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Warning! System failure imminent.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat assessment: primary target is at large and undamaged. Full perimeter alert recommended.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat assessment: primary target has been engaged, but continues to exhibit hostile intent.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat assessment: primary target heavily damaged. Continuing to engage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat assessment: primary target has suffered critical damage. Neutralization imminent.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat assessment: primary target almost neutralized. Stand by.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Be advised. Hostiles in area. Threat neutralization in progress.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Non-combatants are advised to stand clear of weapons discharge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Hostiles in area.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Locking on... firing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Security operation in progress. Stand clear of security perimeter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Use of lethal force in progress. Non-combatant safety cannot be guaranteed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "Death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Systems failu {cut off in the middle of the word}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Primary systems offline. {cut off in the middle of the word}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Warning! Warn {cut off in the middle of the word}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzzt. {garbled robot death sound}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Death"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Warning. Use of lethal force is authorized.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Warning. You have entered a security zone. Lethal force may be used without further warning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Warning. Leave the security zone immediately or you may be fired upon without further warning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "Hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bzzt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vvvvzzz.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hit"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Crime detected. Judicial circuits recommend immediate application of capital punishment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crime detected. Application of death sentence commencing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crime detected. Consulting judicial circuits... offender sentenced to death.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "Pickpocket",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Crime detected. Death sentence authorized by judicial circuits.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Pickpocket"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Crime detected. Judicial circuits recommend immediate application of capital punishment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crime detected. Application of death sentence commencing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crime detected. Consulting judicial circuits... offender sentenced to death.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Threat analysis: yellow. Scanning for hostiles.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Non-combatants are advised to leave the area. Security sweep in progress. Lethal force may be used without warning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No hostiles detected. Continuing perimeter sweep.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hostile detected. Commencing neutralization.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Weapons free.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Hostile detected. Lethal force authorized for all units.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Threat analysis: green. Standing down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat analysis: green. Resuming standard patrol pattern.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat analysis: green. Security sweep canceled.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Alert. Target lock lost. Beginning search pattern delta seven.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Target lock lost. Neutralization by lethal force remains primary objective.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Target lock lost. Unneutralized hostile within perimeter.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Threat analysis: green. Neutralization operation complete.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat analysis: green. Security operation successful. Resuming normal operation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hostiles neutralized. Recommend immediate repairs to primary systems to ensure continued operation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Alert. Non-combatant safety cannot be guaranteed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Target lock status: red. Continuing perimeter sweep.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Hostile remains at large. Recommend non-combatants seek secure location.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Target lock status: green. Reengaging hostile target.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hostile target detected. Target lock status: green.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Target lock acquired. Resuming lethal force neutralization operation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Threat analysis: green. Perimeter secure. Resuming standard operations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat analysis: green. Perimeter secure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat analysis: green. No hostiles detected.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Threat analysis: yellow. Potential perimeter breach. Beginning sweep.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alert. Hostiles may be in area. Non-combatants are advised to seek secure location until perimeter is secured.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat analysis: yellow. Beginning lethal force neutralization operation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Threat analysis: red. Weapons free.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hostile detected. Non-combatant safety can no longer be guaranteed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Threat analysis: red. Engaging hostile target.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombat"
+  }
+ ]
+}

@@ -1,0 +1,5000 @@
+{
+ "id": "veronica",
+ "speaker_name": "Veronica Santangelo",
+ "source": "Veronica.txt",
+ "topics": [
+  {
+   "key": "followersacknowledgemyorder",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I buy that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersAcknowledgeMyOrder",
+   "prompt": "FollowersAcknowledgeMyOrder"
+  },
+  {
+   "key": "followersfired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why does everyone always say that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFired",
+   "prompt": "It's time for us to part ways."
+  },
+  {
+   "key": "followersfiredno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What is this, the Hokey Pokey?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredNo",
+   "prompt": "On second thought, stick with me for a little longer."
+  },
+  {
+   "key": "followersfiredyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Then I guess I'll be back at the 188. Maybe digging in some dirt for scrap metal or something. {Guilting.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredYes",
+   "prompt": "I just think we should right now.",
+   "label": "Yes, I'm sure."
+  },
+  {
+   "key": "followersfiredyessuite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nice! Can I order room service?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersFiredYesSuite",
+   "prompt": "I do. We'll meet up at the Lucky 38.",
+   "label": "I'd like you to go back to the Lucky 38 for now."
+  },
+  {
+   "key": "followershired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's go make trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ooo. Sorry. Don't want to be a third wheel, you know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersHired",
+   "prompt": "I think we should travel together."
+  },
+  {
+   "key": "followersletsgo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Aw, just when the standing around was getting exciting. {playful, not derisive.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersLetsGo",
+   "prompt": "Let's get going."
+  },
+  {
+   "key": "followersoverburdened",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, I can't really move, now. But I'll follow you in spirit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersOverburdened",
+   "prompt": "FollowersOverburdened"
+  },
+  {
+   "key": "followerstactics",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Am I punching too much? I get carried away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTactics",
+   "prompt": "Let's talk about your tactics."
+  },
+  {
+   "key": "followerstacticscombat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My recommendation - more punching.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombat",
+   "prompt": "I want you to change your combat style."
+  },
+  {
+   "key": "followerstacticscombataggressive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You mean like, even more?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Beats waiting till they shoot me first.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatAggressive",
+   "prompt": "I want you to attack enemies the moment you see them."
+  },
+  {
+   "key": "followerstacticscombatend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. Shake things up a little.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatEND",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "followerstacticscombatgoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Count me in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatGOODBYE",
+   "prompt": "That's all. Let's get going."
+  },
+  {
+   "key": "followerstacticscombatmelee",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You mean like this melee weapon right here in my hand at this very second?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes! Finally. Everything's coming up Veronica.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatMelee",
+   "prompt": "Switch to a melee weapon."
+  },
+  {
+   "key": "followerstacticscombatpassive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like this plan where you're the decoy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What a coincidence! I've been doing that all this time! {cheerily sarcastic}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatPassive",
+   "prompt": "I want you not to attack enemies unless I've already engaged them."
+  },
+  {
+   "key": "followerstacticscombatranged",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Hopeful} Does jumping at them with my fists count as ranged? {Then, dejected} <Sighs> Fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you talking to me, or a future Veronica who is not already doing that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsCombatRanged",
+   "prompt": "I want you to use ranged weapons."
+  },
+  {
+   "key": "followerstacticsdistance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are you saying, exactly? {As though being broken up with, but lightly}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistance",
+   "prompt": "Let's talk about how close you're following me."
+  },
+  {
+   "key": "followerstacticsdistancedefault",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, now. You're gonna have to buy me dinner first.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is as close as I get until you turn into a leggy brunette.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry. I get distracted. Been scavenging too long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceDefault",
+   "prompt": "Stay close to me."
+  },
+  {
+   "key": "followerstacticsdistanceend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See? I'm good at stuff.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceEND",
+   "prompt": "Your distance is good. Let's talk about something else."
+  },
+  {
+   "key": "followerstacticsdistancegoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceGOODBYE",
+   "prompt": "All right, you're good. Let's get out of here."
+  },
+  {
+   "key": "followerstacticsdistancelong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They'll never see the haymakers coming.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsDistanceLong",
+   "prompt": "Keep your distance.",
+   "label": "Keep your distance. Try to flank them."
+  },
+  {
+   "key": "followerstacticsend",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. Screw them. {Cheerily jumping on the bandwagon.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTacticsEnd",
+   "prompt": "Enough about tactics.",
+   "label": "Enough about tactics."
+  },
+  {
+   "key": "followerstrade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ooo. Got something good for me? Is it a dress?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're making me carry the heavy stuff, aren't you? {Accusatory}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersTrade",
+   "prompt": "Let's trade equipment."
+  },
+  {
+   "key": "followerswait",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shoulda brought something to read...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FollowersWait",
+   "prompt": "Wait here."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Leave me alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, you got a second?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd slap him around, but he stood at my parents' wedding.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Plus he used to make excuses to get me out of my punishment when I'd slept through Head Scribe Taggart's lectures. Figure I owe him for that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Sighs> He means well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd be angrier with him, but it's hard to stay mad at the guy who taught me how to box when all the other Paladins told me no.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Sighs> He always does what he feels is right. Usually that's a great quality.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's see what we've got here... Okay, yeah, this is the one I was thinking of. The pulse gun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Although maybe the rangefinder could work too. And it looks like the NCR was onto some miracle farming technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Defeated} He wouldn't listen. The truth was right there staring him in the face. How could he not listen?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Disbelieving} God. {Then, saddened} I should get used to this, I guess. People get desperate, they turn on each other. First thing to go is trust.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't think it's ever gonna be the same for me in there. Knowing no matter what I do, it's gonna end badly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But they're all I have. {Shaking her head, lost.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Remorseful} God, I did this. This was my fault. Why didn't I see this coming?",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "Of course they'd track me. Of course they'd assume the worst. Sure, I left them. But that didn't mean I'd ever be free of them.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "I should've known I was beaten before I began. I just... I had to try, you know?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Well, if there was any question whether I should leave, I guess there's my answer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Horrified} Why did you do that? They were going to let us walk away. Why did you attack them?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care that they started it. What you did was inexcusable. You need to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Clearly you're determined to fight the Brotherhood. Well, you can add my name to your hit list because you're on your own.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, listen. The Brotherhood... they're not always the friendliest bunch. But I won't stand for you fighting them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is your last chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See? Pretty addictive, right? You do it once, it just makes you want to do it more.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can't help but notice that the Brotherhood barely exists to these people out here. We're like an urban myth. No real presence on the Outside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We just don't adapt like we should. Used to be that all you needed to get your way was a suit of power armor and a laser rifle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now... people are armed and organized. They're not afraid. But we still stick to our old approach, because it's all we know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You know, I've been thinking. The real problem with the Brotherhood is that we isolate ourselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our training is top-notch, our technology gives us an advantage, but when it all comes down to it, we're losing because we shun the outside world.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We always make enemies, never allies. We refuse to recruit outsiders, or see the value in their simpler technologies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hold on. I see something I want to punch.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No offense, but you look like you've traveled a long way down some bad roads. Where'd you come from?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Couldn't get enough of talking to me the first time, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Listen... I want to thank you for helping me out. I'm sorry that... things didn't go like I'd hoped. {Beside herself}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But at least I got the chance to try. At least I know for sure that there was nothing I could do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for giving me that chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wow, Mr. House is looking for you, huh? What do you think he wants? Bowling partner?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What'd you think of Mr. House? I was surprised he only had the two robot sex slaves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That chip of yours... I wouldn't wager it on blackjack.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unless the dealer has a five or six showing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whole future of New Vegas seems like it's up in the air. Guess I should wait things out before buying a condo in the Ultra-Luxe, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hope you're picking the winning side here. Be nice to fight for someone who's gonna be around for a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Next stop, Hoover Dam, huh? When we get there... can we stop by the souvenir shop? Their beaver mascot is just precious.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Am I gonna have to take that away from you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why do we always hurt the ones we care about the most? {wry}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Careful. Someone could trip on that. {calmly}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Grenade!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "vdialogueveronicaabebye1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh god. He... {sighs} I guess he was lost a long time ago. Even at the end...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still... thanks for bringing word. At least, now I know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeBye1",
+   "prompt": "Just mad ramblings. He didn't make much sense. (without Dead Money: Abraham wanted to say goodbye, and that he's gone North, into ghoul country.)"
+  },
+  {
+   "key": "vdialogueveronicaabeexp1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Drifting, dismissive} Hmm. Unlikely. He was a little too focused on gears and diodes... tech was the cure-all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeExp1",
+   "prompt": "He explained the search for the Sierra Madre... healed him. (without Dead Money: Abe explained what happened in the Crater, how it healed him.)"
+  },
+  {
+   "key": "vdialogueveronicaabemsg1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Would you mind if I looked at the message?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeMsg1",
+   "prompt": "VDialogueVeronicaAbeMsg1"
+  },
+  {
+   "key": "vdialogueveronicaabemsg2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Would you mind if I listened to the message?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeMsg2",
+   "prompt": "VDialogueVeronicaAbeMsg2"
+  },
+  {
+   "key": "vdialogueveronicaabemsg3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Would you mind if I looked at the message you found?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeMsg3",
+   "prompt": "VDialogueVeronicaAbeMsg3"
+  },
+  {
+   "key": "vdialogueveronicaabemsg4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Would you mind if I listened to the message you found?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeMsg4",
+   "prompt": "VDialogueVeronicaAbeMsg4"
+  },
+  {
+   "key": "vdialogueveronicaabemsgrefuse",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Irritated} Fine. I guess it doesn't matter anyway, keep it. I won't ask again.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeMsgRefuse",
+   "prompt": "It's better you don't. Let me hold onto it. (without Dead Money: VDialogueVeronicaAbeMsgRefuse)"
+  },
+  {
+   "key": "vdialogueveronicaabesim1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Waiting for player to step out of simulator} What was on it? What did he say?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeSim1",
+   "prompt": "Some last words - a message. Nothing important. (without Dead Money: VDialogueVeronicaAbeSim1)"
+  },
+  {
+   "key": "vdialogueveronicaabesim2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sadly accepting} Yeah. Yeah. Thought as much. He'd been fading away for a long time.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueVeronicaAbeSim2",
+   "prompt": "Can you unlock it for me first? He was... vague on that point. (without Dead Money: What did you expect a ghoul to say?)"
+  },
+  {
+   "key": "vdialogueveronicaaccelerator",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprise, player found someone she thought was dead} You did? Where? Oh my God, I mean... I thought... I don't even know what I thought might have happened to him.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Wary} But... you don't have a \"this is good news\" expression on your face.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAccelerator",
+   "prompt": "I found Elijah. (without Dead Money: I found the ghoul with the Accelerator you were looking for.)"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorchokept",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Default Choke Node} ...it doesn't matter. He died when we all retreated to Hidden Valley. I didn't expect to see him again, no one did.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorChokept",
+   "prompt": "VDialogueVeronicaAcceleratorChokept"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorkill",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You killed him? {Beat} But...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorKill",
+   "prompt": "I had to kill him. (without Dead Money: I had to kill Monte for it.)"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorstg21",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Did he say anything when you met him? Anything...{about me, stops herself} anything at all?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorStg21",
+   "prompt": "VDialogueVeronicaAcceleratorStg21"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorstg22",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where did you get this?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wary} Guess I was right about the bad news, huh? Same look Elder McNamara always gave me when I was up for promotion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorStg22",
+   "prompt": "He left this holo-message. Here. (without Dead Money: Here's the accelerator.)"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorstg31",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Given a farewell message} All right, I'll listen to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorStg31",
+   "prompt": "You should listen to this. (without Dead Money: You should watch this.)"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorstg32",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Given a farewell message} All right, I'll watch it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorStg32",
+   "prompt": "You should watch it. (without Dead Money: VDialogueVeronicaAcceleratorStg32)"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorstg33",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Watched a goodbye message, slightly choked up} That was... that was hard to watch.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorStg33",
+   "prompt": "VDialogueVeronicaAcceleratorStg33"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorstg34",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Confused, a little disoriented} The parts I understood? Didn't matter. Past all the garbage, all it amounted to was goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorStg34",
+   "prompt": "What did he say to you? (without Dead Money: What did Abraham say to you?)"
+  },
+  {
+   "key": "vdialogueveronicaacceleratorstg35",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Still a little dizzy} Sorry... feel a little out of it. Head's spinning a bit...",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "{Surprise, knowledge downloading} Oh. Oh!",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Blinking, just gained downloaded defense programs} I think he left me a gift. {Quiet} Maybe I can use it better than he did.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorStg35",
+   "prompt": "VDialogueVeronicaAcceleratorStg35"
+  },
+  {
+   "key": "vdialogueveronicaacceleratortrap",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Trapped him? Where?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorTrap",
+   "prompt": "I had to trap him inside a Pre-War... prison. (without Dead Money: I trapped Monte in a subway tunnel, that ghoul's not coming back.)"
+  },
+  {
+   "key": "vdialogueveronicaacceleratortrapchokept",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Trapped only} And I don't like saying this, but the Mojave's safer with him... there.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueVeronicaAcceleratorTrapChokept",
+   "prompt": "VDialogueVeronicaAcceleratorTrapChokept"
+  },
+  {
+   "key": "vdialogueveronicacraft",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Step into my office.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaCraft",
+   "prompt": "Could you help me craft something?"
+  },
+  {
+   "key": "vdialogueveronicadamoutcomebranch",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not sure what my parents would think of me fighting for the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But for New Vegas it seemed like this was the best chance at stability. I don't regret it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Never sided with a group of marauders before. But I think the Brotherhood stands a better chance against them than they did against the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That gives me some hope.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For some reason, it warms my heart that we fought for the kooky old geezer. Guess he reminds me of someone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Independent New Vegas. If that isn't redundant, I don't know what is.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I like its chances.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaDamOutcomeBranch",
+   "prompt": "VDialogueVeronicaDamOutcomeBranch"
+  },
+  {
+   "key": "vdialogueveronicahventranceestranged",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey. I, uh, I can't go in with you. I'll wait here, okay?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaHVEntranceEstranged",
+   "prompt": "VDialogueVeronicaHVEntranceEstranged"
+  },
+  {
+   "key": "vdialogueveronicauldressreceived",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<Gasps> For me? Do you mean it? No, no, it's too much! Well, okay. But it's too much! It's perfect. Thank you. Thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I... wish I had something to give you. I- wait! What about punching? That's the gift that keeps on giving.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I could work on your punching with you, if you like. Show you how to counter like a Scribe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaULDressReceived",
+   "prompt": "VDialogueVeronicaULDressReceived"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wow, you {emph} have come a long way, then. I've never been there, but I've met some traders who pass that way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, welcome, then. I'm Veronica. I live in a hole in the ground.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic000",
+   "prompt": "Goodsprings."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh. Well, in that case I take it back. You look pretty good, given the circumstances.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic001",
+   "prompt": "The grave."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, guess the roads must've been long, then, if you forgot where you started from.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic002",
+   "prompt": "I'm not entirely sure."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's why I asked. My business is boring. You try trading and scavenging for a living and see if you don't start nosing into other people's affairs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic003",
+   "prompt": "None of your business."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, a bunker, if you want to get technical. I think it sounds more interesting my way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I'm not there much anymore. I'm usually out here picking up food and supplies for my family. Whatever they need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic004",
+   "prompt": "You live in a hole in the ground?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I'm not worried. They can handle themselves. But somebody has to get the groceries, know what I mean?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And actually these days I think they'd rather have me out here anyway. But that's a whole other story.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So, listen, can I ask you something on the level?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic005",
+   "prompt": "So you just leave your family in the bunker?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I had a run-in with this group calling themselves the Brotherhood of Steel. Pretty strange bunch. Do you know anything about them?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic006",
+   "prompt": "Go ahead."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Forget I said anything, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic007",
+   "prompt": "I'd rather you didn't."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. It's a small wasteland. I'm sure we'll run into each other again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic008",
+   "prompt": "Some other time, maybe."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic010",
+   "prompt": "I met a group of them in a bunker west of here."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that shouldn't be a problem for me. I can't afford anything like that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic011",
+   "prompt": "They're usually harmless unless you use advanced technology around them."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh my gosh, really? Well, I didn't see where they went, but I'll keep an eye out. Wow, I had no idea they were so dangerous.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for letting me know. Glad I didn't do any business with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic012",
+   "prompt": "They're enemies of the NCR. If you know where they are you should turn them in."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do they? That's a relief. I wasn't so sure, myself. Protecting people from technology seems like a big job for such a small group.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic013",
+   "prompt": "They've got the right idea."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, it's pretty far out, right? Fixating on old technology just doesn't seem very relevant to most people's lives.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic014",
+   "prompt": "I know who they are but I don't care about their agenda."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That bad, huh? Guess I'm lucky I got away with my life. I'll make sure and avoid them from now on. Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic015",
+   "prompt": "Yeah. I know to shoot them on sight."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's okay, I wouldn't expect anybody to. I think they tend to keep to themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic016",
+   "prompt": "Not really."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "God, you're not lying, are you? You really did kill them. {Horrifying realization.}",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "In that case, this is for them. {Spiteful.}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic017",
+   "prompt": "I killed them all."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think? Well good, then. That puts me a little more at ease.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, so where are you headed, anyway?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic018",
+   "prompt": "They seemed all right."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That seems wise. I think I am, too. Although for how much longer, I'm not sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic019",
+   "prompt": "I'm reserving judgment."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not very friendly, are they?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, thanks for weighing in. Gives me something to think about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic020",
+   "prompt": "I don't care for them."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wow. I've got to admit, you have completely defied my first impression of you. {amused at idiocy}",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Eye lasers. I'll be sure and look out for that next time.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Any other juicy bits of intel?",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic021",
+   "prompt": "I've heard they shoot lasers from their eyes."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ooo. Very exciting. Gonna strike it rich, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic023",
+   "prompt": "The Strip."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh. Just on your way to do a little heavily fortified sightseeing. Kind of a thrillseeker, aren't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic024",
+   "prompt": "Hoover Dam."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just wherever the wind takes you, huh? I like that. Keeps things interesting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic025",
+   "prompt": "I just kind of drift from place to place."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be honest. You're the first person I've run across out here that looks like he can really handle himself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be honest. You're the first person I've run across out here that looks like she can really handle herself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are places I've never been to that'd be too dangerous for just me. What do you think? Maybe we could travel together, help each other out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic026",
+   "prompt": "What's it to you?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guess we have that in common, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic027",
+   "prompt": "I go where I'm needed."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is quite a journey you're going on, then. Must be an interesting relationship to have brought you all this way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic028",
+   "prompt": "Going to see an old friend."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh. Good. That's the look I was going for. Trust me on this one, though. You'll be glad you brought me along.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I turn out to be a burden, we can part ways at any time. No hard feelings.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic029",
+   "prompt": "You don't look like much. What do you bring to the table?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, nowhere in particular, really. Just hoping to see more of the world. Looking for a fresh perspective.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want to see how different groups have adapted to survive in the Mojave. See if there's something I can learn from.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic030",
+   "prompt": "Where are you hoping to go?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now you're talking. One thing you should know, first, though. I asked you about the Brotherhood because I'm one of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know, I know. But I had to know how you'd react when I told you. We've made a lot of enemies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You still okay bringing me along?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic031",
+   "prompt": "Okay, let's travel together."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Aw, you really know how to make a girl feel like a stray cat.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But okay. My offer stands, if we run into each other again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic032",
+   "prompt": "I'd like to, but I can't take you with me right now."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself. You can always change your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic033",
+   "prompt": "Not interested."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I said, they can handle themselves. And I'm not the only one getting supplies for them. It's a big family.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic034",
+   "prompt": "Don't you have a family to feed?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. I hoped you'd come around. Shall we?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic035",
+   "prompt": "I'm ready to travel with you."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm great at punching people. I'm not gonna lie. It's a gift.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, thanks for taking a chance on a naive young girl from California with stars in her eyes and a pneumatic gauntlet on her hand.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's hit the road, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic037",
+   "prompt": "Actually, I'm more comfortable now that I know you've had some training."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. Just don't ever ask me if your outfit makes you look fat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic038",
+   "prompt": "As long as you're honest with me from now on."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fair enough. Maybe one day I'll have your complete trust, and I can be on a long leash. A girl can dream.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic039",
+   "prompt": "Yes, but you're on a short leash."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Brotherhood is failing. {Beat} I've always known that. If we don't change course, we're going to fall apart or... fade away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But until recently I haven't understood where we went wrong, or how to fix it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think I need to go home.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic041",
+   "prompt": "What is it?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like long walks in the desert and candle-lit metal workshops.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My favorite subject.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic042",
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He was dead when I got there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This better not be about the meaning of life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, when two people really love each other... you really don't know this stuff yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ooo, do I get a prize if I answer right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was told we wouldn't be tested on this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A lifetime supply of Fancy Lads Snack Cakes, revenge against my enemies, and world peace. In that order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Defensive} I was young and I needed the money.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a free wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic043",
+   "prompt": "I have questions I wanted to ask you."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. They say he built the Strip. Of course, they say a lot of things. No one's actually met him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Me? I think it's a hoax. Probably a group of people who want to avoid attention, or some made-up persona of a self-aware computer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why else would he shut himself in like that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic044",
+   "prompt": "Ever heard of Mr. House before?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. It's not for poker.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've never seen anything quite like it, but I can tell you it looks like it was fabricated before the War, and not at a mint.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some kind of tech... I'm gonna say... mid-2200s. Hold onto it. Might be your lucky chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic045",
+   "prompt": "Can you tell me anything about this platinum chip?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, he's one of the hotel managers on the Strip. He comes up in the news now and then.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Him and the other Chairmen run the Tops. It's one of the nicer hotels, or so I hear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Elder McNamara wouldn't shell out for a passport for me, so I've actually never been to the Strip. Why do people get so cheap when they get old?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic046",
+   "prompt": "Ever hear of a guy called Benny?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yep. It's your typical city layout. Rich people in a gated community surrounded by extreme poverty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "House gave the area around the Strip to the locals, but he has no interest in it, so he ignores it entirely. It just needs new management.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd love to see the Brotherhood do it, but since the Codex doesn't say \"clean up Freeside\" no one listens to me. Bunch of sticklers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic047",
+   "prompt": "Know anything about New Vegas?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm worried they'll be the death of the Brotherhood. They take what they want. We defend our interests to the death.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But there's a handful of us and tens or hundreds of thousands of them. So it's not going to end well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Last time we clashed we lost a lot of people. Retreated to our bunker. Now we're afraid to even move around during the day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic048",
+   "prompt": "What do you think of the NCR?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Silliest dressed band of raping, slaving marauders you'll see east of California, I'll say that. Where's that touch of Old World class?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Although I hear the soldiers mount each other as much as they mount their women, so maybe they did keep a little something from the Empire.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No such privilege for the women, though. Figures. So... to answer your question... they're a bunch of hypocritical jerkwads. {beat} It's a word.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic049",
+   "prompt": "Any thoughts about Caesar's Legion?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Darn it, I had some spectacular answers coming, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic050",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's. {Pleasantly}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic051",
+   "prompt": "Let's keep moving."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. Well, when you do, let me know, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic052",
+   "prompt": "Not now."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. Thanks. Thank you. I'll encourage people to name their non-ugly children after you. Seriously.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic054",
+   "prompt": "I'll take you back there, first chance I get."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, yeah. Just not too long, okay? I worry about them sometimes. {Not the ideal answer she wanted, but going with it, trying to stay upbeat.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic055",
+   "prompt": "Can it wait?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wow, don't everybody volunteer all at once now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I {emph} could do that. You're not interested in coming along? Hate to break up the band over a silly little thing like the future of everyone I care about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic056",
+   "prompt": "Why don't you just go back on your own?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This from the girl who walked from I-15 to the Colorado River looking for her lost package.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This from the guy who walked from I-15 to the Colorado River looking for his lost package.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you change your mind. {miffed}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic057",
+   "prompt": "That's just not important right now."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much for family gatherings, huh? All right, have it your way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You ever want to look me up again, I'll be in my bunker in Hidden Valley. That's the {emph} luxury bunker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic060",
+   "prompt": "I have things I need to do. You'd better go alone."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not giving up. He wants evidence, but he'll never go looking for it. He's scared I'm right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He'll never listen unless I hold the proof right in front of his face.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic061",
+   "prompt": "What now?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's a stubborn old man, but when it comes down to it, he's got our best interests at heart.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If he sees some indisputable sign we're on the wrong course, he won't ignore it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic062",
+   "prompt": "You think the Elder will listen at all?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. I don't know. We'd need something that shows the Brotherhood will fail. Or that it can do better a different way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The only thing that'd get his attention is technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh. Maybe Father Elijah had the right idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic063",
+   "prompt": "What could we bring to him that would change his mind?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's my question to the Elder. All these years, the Brotherhood has collected weapons technology. And for what?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To keep it out of people's hands? That clearly hasn't worked. To defend ourselves? We can't compete with the NCR's numbers. Or the Legion's.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're fighting a war for a lost cause. If we're going to survive, we have to find a role in society. Attract new members.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic064",
+   "prompt": "So what is it you're trying to accomplish?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look at the Followers of the Apocalypse. They use their expertise to improve people's lives. They train them to be self-sufficient.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That expertise cultivates respect and gratitude. Spreads their ideals. Draws talent to their cause. They make friends like we make enemies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But they don't know a fraction of what we know. If we took on their role, we could stand up to anyone. We wouldn't have to hide.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic065",
+   "prompt": "How would you propose to do that?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Our Elder before McNamara. He had a nose for recovering lost technology. He'd send Scribes out into the desert chasing whatever leads he found.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There were a few he only trusted me with. I can think of at least one that'd prove my point, if it still exists.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a comm terminal not too far from here I'd use to access messages from him. If we go there I can pull up his research on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic066",
+   "prompt": "Father Elijah?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a targeting device for some kind of doomsday weapon based at HELIOS One. It was lost sometime after the War.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We held HELIOS One for a time. Lost a lot of people defending it. Too many. All for this weapon they never got working.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If it turns out to be a dud, it'd show how flawed our goals have been. Father Elijah said he thinks a scavenger might have sold it on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic067",
+   "prompt": "Tell me about the rangefinder."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm with you. Being around here isn't the same anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic068",
+   "prompt": "Let's head out."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, but it does make it easier to forgive him. He's just misguided.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's not too late to change his mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic069",
+   "prompt": "Good intentions don't justify marching the Brotherhood to its death."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have {emph} you considered that he might be senile?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Brotherhood's strategy for survival worked back when we had a larger force, and no organized enemies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're a tiny splinter from a shrinking group. We don't take on new members. But we're still picking fights with the big boys.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic070",
+   "prompt": "Have you considered that he might be right?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Electromagnetic weapon from before the Great War. Experimental. It never saw mass production.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But they were building it as a countermeasure to power armor, which they feared the Chinese were developing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Supposedly a prototype was being housed at Nellis. Imagine what it could do to the Brotherhood. We'd be on equal footing with any idiot with a gun.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic071",
+   "prompt": "What's a pulse gun?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "More or less. Supposedly it's a vegetation enhancer. NCR has a science branch headquartered at McCarran airport. Guess they found something.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Guess somebody wasn't very good at keeping secrets, either.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'd never pursue it because it's not a weapon. But self-sufficiency is fundamental to us. If it works they'd see the value of an alternate course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic072",
+   "prompt": "Farming technology?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, maybe they'll think twice about engaging the NCR if they know one of those could be floating around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The notes say to look around Nellis Air Force Base. He suggests going through filing cabinets and computers in the commanding officer's quarters.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic073",
+   "prompt": "Let's pursue the pulse gun."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They defended HELIOS like it was their last stand. Didn't even know if there was anything worth defending. How could there be, with all we lost?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even if it did work, it'd be under NCR control now. So it'd either prove our goals are wrong or we're incapable of pursuing them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a pawn shop in Outer Vegas we could check. And I've heard of a gift shop in the Strip that deals in Pre-War antiques.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic074",
+   "prompt": "The rangefinder sounds promising."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. What better way to persuade them than to give them a taste of what they stand to gain, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe the best place to start is to see what we can find out directly from the NCR. Let's head to their OSI office at McCarran.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic075",
+   "prompt": "We should go after the vegetation technology."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like the way you think.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic079",
+   "prompt": "Let's go find it."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see that now. I thought I knew him better than that. But it was like talking to a stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic080",
+   "prompt": "There was never any chance. His mind was made up from the start."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic081",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. Our case wouldn't be any stronger if tomorrow they all died when their energy weapons backfired.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just didn't expect that. There was no getting through to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic081",
+   "prompt": "Maybe if we make a stronger case, he'll change his mind."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well I {emph} knew he wouldn't listen to {slight emph} me. That's why we went out of our way to find something that he couldn't ignore.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But it didn't make any difference.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How can I help them when they won't accept it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic082",
+   "prompt": "You just weren't very persuasive."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, hell. Well, how could you know, right? Okay. Two other options still on the table.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic083",
+   "prompt": "The rangefinder might be a problem. I reactivated HELIOS One, and it's not powering a weapon."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It pays like ass, but it's hard to get other work with my skill set.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic084",
+   "prompt": "Tell me about the Brotherhood of Steel."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It wouldn't matter. The Elder has final say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The hell of it is he's one of our most progressive members. If I can't get him to agree, it's hopeless.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He won't tolerate any resistance. If he catches wind I've been talking to people, he'll charge me with sedition.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic085",
+   "prompt": "Would someone else listen to you?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I... {beat} I don't know if I can stay. Maybe it'd be better for everyone if I left. Spent my life... somewhere else. {This'd be a big deal for her. First sentence is a revelation.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Work with the Followers of the Apocalypse, maybe. Put my knowledge to some good use. {Offhand, Not with a lot of hope}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or I can stay here with the people I care about and do... whatever I can, until it comes to a slow or sudden end.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic086",
+   "prompt": "Where does that leave you?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha! Well that's... imaginative. But it's not really for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I couldn't get one of their most reasonable members to accept a rational argument. I don't see them coming out in droves to support my coup.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And that's really not what the Brotherhood needs right now anyway. They're hanging by a thread.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic087",
+   "prompt": "You should take over."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha! Good question. These days it's hard to say. Once upon a time it was about technology. Controlling it so it couldn't destroy us again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Energy weapons and power armor are usually tops on our list, although {emph} I appreciate anything that's vintage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But that all seems so limited now. We haven't grown or adapted. And now we're stuck in a hole, not carrying out our mission.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic088",
+   "prompt": "What's their purpose?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic089",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They may be a bunch of wooden conformists, but anything I did without them would feel... empty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd always be reminded of this day. How I wasn't strong enough to stand by them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So I guess I'll stay. Won't be easy, but at least I won't feel guilty about the choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's get going. I'd like to get my mind off all this. And some fresh air would do me some good right about now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic089",
+   "prompt": "This is your home, and these are your friends. You should stay."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic090",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's no getting around that, is there? What would my life be like here, knowing what's to come?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're not going to like this. We're given a chance when we're young to choose whether to stay. If we do, it's supposed to be for life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But they haven't left me any choice. It's this or a lifetime of scavenging and watching my friends die in losing battles. {beat} I guess it's settled, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic090",
+   "prompt": "Leaving now is your only shot at a future."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic091",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not even a hint, huh? Geez, I really am all alone on this one. {Sad.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess I'll stay. If I left there wouldn't be any coming back. It might be something I'd instantly regret.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Things are going to get harder for the Brotherhood before they get easier. I should support them in whatever way I can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic091",
+   "prompt": "You're the only one who can make this decision."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "More sexual favors than I can even count. I am still tired from it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, actually, you're born into it. My parents, their parents, so on. When you're young you can choose to leave. But it's home, so most people don't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We don't take on new members, really. You can do the math on our long-term prospects based on that point. I keep hoping we'll change that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic092",
+   "prompt": "How did you get to be a member?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic093",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm a procurement specialist. Like I said, it's basically grocery shopping. Except sometimes the groceries are scavenged parts and arcane technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The elder who brought us to the Mojave, Father Elijah, usually had me looking for these old memory units. But he'd never tell me what they were for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nowadays I'm usually sent to do business with traders at places like the 188. But sometimes I think it's just to keep me out of everyone's hair.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic093",
+   "prompt": "What do you do for them?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know sometimes I sound like I don't. I know. But there's something that still rings true to me about our code.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's an honor to it. We're protecting people. Even if it's from themselves, it's a good cause.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We just lose sight of the big picture sometimes. Treat all our practices with the same sacredness.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic094",
+   "prompt": "Do you like being a member?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic095",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, the Codex. If it's in there, we have to abide it, if it's not, it's not important. {She has a love-hate relationship with the Codex.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It documents our history, too. Part of what Scribes like me do is update it. Hmm... I wonder...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nah, they'd probably catch it if I rewrote the Founder's axioms.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic095",
+   "prompt": "What's the Codex?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic096",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, no. We only protect people from {emph} themselves, and only in the sense that we don't let them have the really good Pre-War toys.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And sometimes it's more like we protect {emph} ourselves from {emph} them and hope to outlive them and become humanity's sole heirs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've had people go rogue, though, and start helping people. One chapter had a small civil war over it. We take our isolationism seriously.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic096",
+   "prompt": "Does the Brotherhood protect people from raiders or other threats?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I called them family before. That's not far off. Both the good and the bad. It's like a big unending family reunion in that bunker.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's people you love, people you'll never speak to again, and it's always awkward when you run into someone you used to date.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic097",
+   "prompt": "How do you feel about the other members?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic098",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He was our Elder when we came East. A wizard with technology, really. His mind just worked that way naturally. Learned a lot from him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But he started having disagreements with the other Elders. The Brotherhood's interest is in old technology. He wanted to explore developing new tech.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And there were other ways he wanted to push. Other weapons. Ones with ethics questions attached. Rather than deal with him, they sent him East.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic098",
+   "prompt": "Who is Father Elijah?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic099",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like punching things, but sometimes shooting things just has to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic099",
+   "prompt": "How can I best use your skills?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic100",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{\"Go ahead and ask.\"} Shoot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic100",
+   "prompt": "I had another question."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic101",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are your thoughts?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic101",
+   "prompt": "I wanted to talk about the technology we're looking for."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I won't! {cheerily}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic102",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic103",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, but only if you've got bodies to fill the suits. We don't take on new members. We're all descendents from the original Brotherhood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something's going to have to change, or the empty suits are gonna be all that's left of us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic103",
+   "prompt": "Power armor and laser rifles are still effective."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think you're right. We're getting desperate. Hardly enough people to sustain ourselves as a chapter. They'll see the light, sooner or later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I get the feeling if I don't take matters into my own hands, the change won't come in time to make a difference.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic104",
+   "prompt": "The Brotherhood is living in the past. Eventually they'll have to change."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic105",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wow, you sound like Elder McNamara. I {slight emph} know I should. Hell, it's what I signed up for when I chose to stay into adulthood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know there's something worth saving in there. But we're in decline. Our membership is... decimated. There's got to be something we can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic105",
+   "prompt": "If it's worked for this long, there must be something redeemable about their beliefs. Have faith."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know the odds aren't good, but I've gotta try. I can't lose them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic106",
+   "prompt": "None of that is going to change. It's part of the Brotherhood's identity."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic107",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. I'm still thinking about what kind of role we could take on that would give us the best chance of survival.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I think things are starting to come together.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic107",
+   "prompt": "Why don't you do something about it?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic108",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, but how long before the NCR or Caesar's Legion track us down and take it by force anyway?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if we recruited Knights from outside the group, maybe we could actually defend it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic108",
+   "prompt": "The Brotherhood has to isolate itself. Its knowledge is dangerous."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic109",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I've got the rest of my life to help them out. I can spare a little while to see things through with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Smiling} Sure. I want to establish a connection with the Followers first, but as far as I know, drifting is part of the job description.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic109",
+   "prompt": "Are you still going to travel with me?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic110",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I think it is. I have to be resolved about this. If I waver, it'll just make things harder.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They need me and I'm not going to abandon them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic110",
+   "prompt": "It's not too late to change your mind."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic111",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think so. Two things the Brotherhood has a lot of - hardheads and lasers. Wouldn't be the first time a disagreement ended like this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Plus... we killed all the witnesses.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic111",
+   "prompt": "Will they take you back after you killed these people?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Somber} Good idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think that'd be best. There's a Followers outpost up near one of my old scavenging grounds. Used to do some trading with a doctor there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I work out of there, I'll still be able to keep tabs on Hidden Valley if I needed to. I know that route like the back of my hand.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If it's all right, I'd like to head that way. Meet some people, see if I can be of any use.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic112",
+   "prompt": "Come on. Let's get out of here."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I think if I stayed I'd end up causing trouble. Sometimes I just can't help myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This way is better for me and for them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic113",
+   "prompt": "You're sure you're okay leaving them behind?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I shouldn't have come within a mile of here. I know that. {Beat} These poor people.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seems like either way, there's not much I can do to help anyone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think maybe it's safer if I don't try.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic114",
+   "prompt": "Maybe you should've stayed at Hidden Valley."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic115",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Not taking comfort} No... I don't, do I? If I did, none of this would've happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I should've left a long time ago. Cut my losses before it came to this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I never stood a chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic115",
+   "prompt": "You don't control the people who did this."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic116",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sad, peeved} Isn't that what I just said? I know I'm responsible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was just trying to put it all behind me. Find someplace where what I do would actually have some influence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I should've expected this, though. Different story, same ending.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic116",
+   "prompt": "These people are dead because you were careless and selfish."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic117",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. Not a chance in hell. I'm not risking this happening again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm gonna have to keep to myself. Better that way. For everyone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll still finish what I started with you, though. If you're not afraid, that is. I'll just try not to get too caught up in it all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic117",
+   "prompt": "You can just join the Followers somewhere else."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic118",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, so take the Brotherhood. Replace their knowledge of superweapons with half as much knowledge of medicine and farming.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sprinkle in a little compassion for people outside their group and healthy disrespect for authority, and voila. Followers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I never really considered joining before. But now that I think about it, it really sounds like it could be a good fit, doesn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic118",
+   "prompt": "Who are the Followers of the Apocalypse?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic119",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I want... a dress.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic119",
+   "prompt": "What are your goals?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic120",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would say he was my tutor, but that doesn't cover it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After my parents passed, he looked after me. The whole Brotherhood brought me up, really, but he made sure of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I never had a grandfather - not that I knew, anyway - but Elijah was in some ways what I'd imagine a grandfather to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic120",
+   "prompt": "Who was this Father Elijah to you?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic121",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just my parents, but they haven't been around for a long time. Dad was a Paladin, Mom was a Scribe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They died in the same battle trying to hold off the NCR from... something. I don't remember what it was. Guess it seemed important at the time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic121",
+   "prompt": "Do you have any other family in the Brotherhood?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic122",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you take trying to keep me as far away from Hidden Valley as possible because I ask too many difficult questions as a sign of respect, {\"absolutely\"} oh yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's not to say I don't get along with them. I just think they don't know what to do with me sometimes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic122",
+   "prompt": "Are you well respected among other members of the Brotherhood?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic123",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah! A good one. Something elegant and classy, you know? But still stylish.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something that's eye-catching and sexy, but also says \"don't fuck with me.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I keep hoping I'll come across some Old World designer gown when I'm scavenging, but it never happens. Maybe I should move back to California.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic123",
+   "prompt": "A dress?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic124",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can I make it up?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Like what?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic124",
+   "prompt": "Tell me something else about you."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic125",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you try getting a date wearing Scribe robes. Might as well be wearing sweatpants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just like 'em, you know? They make you feel like a woman. Those ladies before the War, they knew what they were doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic125",
+   "prompt": "That's your goal? You want a nice dress?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic126",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. Last time anyone saw him was in the battle at HELIOS One. I wasn't there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He gave orders to hold the plant until it could be reactivated. But he ran out of time. The NCR overran it. Everyone thought he was dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I got a note from him at a comm station. That's... how he liked to talk, even to me. He wasn't good at face-to-face.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic126",
+   "prompt": "Where is he now?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic127",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I miss him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic127",
+   "prompt": "Were you close?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic128",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Elijah could look at an old device and immediately understand what made it work. And he could see its potential. Where it fit with other technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's not something you can teach, but he tried with me. {Shrugging} Some of it stuck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But that's what he taught me. You asked what I {emph} learned from him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic128",
+   "prompt": "What did you learn from him?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic129",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Elongate the 'o'} Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic129",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic130",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I learned what I don't want to become.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the end, there was just him and his vision. Nothing and no one else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic130",
+   "prompt": "How is that different? What did you learn from him?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic131",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was... strange. Even for Father Elijah. He's always been unstable, but this was... something else.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't want to say delusional, but I don't know what else to call it. The only thing familiar about it was the signature.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He said the Brotherhood was doomed, but that he'd return, save us. But the {emph} way he said it... I don't know...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Skeptical, but ominous} Said he'd return with one of the greatest treasures of the Old World, make the Mojave like it was meant to be... wipe the slate clean.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic131",
+   "prompt": "What was in the note?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic132",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was by his request, actually. He cleared it with the other Elders. {To herself} Somehow. {Veronica says the last part to herself b/c she doesn't understand how Elijah was able to convince the Elders (he tricked them).}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They sent him to look into the Dam. There was a time when I'd have begged to follow. Watch him at work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic132",
+   "prompt": "Did you follow him from California?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic133",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Emph} He did. For years, he fought with the Council. Taught me to question our direction. Meanwhile he'd become more out-of-touch than all of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On our way East he demanded we stop at HELIOS One to examine it. While we were there, we received word that the NCR had taken the Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He was furious. Called it \"children playing with a bomb.\" But he was mad because we'd lost its power. What we'd use it for... he didn't even care.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic133",
+   "prompt": "What changed?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic134",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sadly} Yeah, I did. I couldn't help him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight frustration} He just didn't listen. And the idea that people talked {emp} back to him...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Sighs} If he could have made the Brotherhood act like machines, ordering them around with a push of a button, he would have.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic134",
+   "prompt": "Ever try to talk sense into him?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic135",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're cautious. When they discover something, they respect it, learn its limits, consider how to preserve it. Used to drive Father Elijah crazy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He liked to learn limits, too, but only so he could push them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's not to excuse the other Elders, though. They all covet technology for its own sake. Some are just more fanatical than others.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic135",
+   "prompt": "How is that different from how any other Elder would've reacted?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic136",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was the Dam, really. We'd heard rumors it was working. Figured we could claim it, put it to use.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Putting it delicately} And... it may also have been partly that our Elder at the time had worn out his welcome.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't end up mattering. We got sidetracked at HELIOS One and the NCR took the Dam in the meantime. We're still after it, though. In theory.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic136",
+   "prompt": "Why is the Brotherhood interested in Nevada?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic137",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Playful} Ever been nosy?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Sincere} I was, once. We were pretty young, but I like to think it was love.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic137",
+   "prompt": "Ever been in love?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic138",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "She left the Brotherhood. Wanted to put some distance between herself and her parents.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since our membership isn't open to outsiders, some members think that obligates all of us to procreate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can guess which camp her parents belonged to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic138",
+   "prompt": "What happened?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic139",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. Couldn't bring myself to leave everyone else behind. Couldn't convince her to stay, either.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd hoped love would be enough to influence her decision, but it wasn't. We were both too stubborn.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know where she is now, but I'm sure she's moved on. I still think about her, though. Once in a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic139",
+   "prompt": "You didn't go with her?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic140",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ooo. Got any juicy gossip?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Pleasant} Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic140",
+   "prompt": "I want to discuss other things."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic141",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, put 'em up. Let's see what you got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic141",
+   "prompt": "Sure, teach me."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic142",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You sure? Some other time, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic142",
+   "prompt": "Not right now."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic143",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. I've been taking things apart and putting them back together since before I said my first word.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You want to build something, talk to me, and we can do it right there on the spot. Workbenches are for novices.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who knows, I might even be able to show you a Brotherhood trick or two.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic143",
+   "prompt": "Anything else?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic144",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nowhere specific. I just know there are a lot of groups who're actually doing well for themselves out here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I want to understand how and why. See them at work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic144",
+   "prompt": "Is there someplace you wanted me to take you?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic145",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't take too long, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic145",
+   "prompt": "Okay."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic146",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. Wasn't wild about sticking around here on my own.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic146",
+   "prompt": "I changed my mind. I'm not going inside, either."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic147",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You killed him? {Beat} But...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic147",
+   "prompt": "I had to kill him before he hurt others."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic148",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Trapped him? Where?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic148",
+   "prompt": "He's trapped, no chance of him escaping."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic149",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Default Choke Node} ...it doesn't matter. He died when we all retreated to Hidden Valley. I didn't expect to see him again, no one did.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic149",
+   "prompt": "He's dead."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic150",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where did you get this?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic150",
+   "prompt": "There's something I wanted to pass along."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic151",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Given a farewell message} All right, I'll listen to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic151",
+   "prompt": "It's a message. The news is up to you."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic153",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Confused, a little disoriented} The parts I understood? Didn't matter. Past all the garbage, all it amounted to was goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic153",
+   "prompt": "Did it make any sense?"
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic154",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Watched a goodbye message, slightly choked up} That was... that was hard to watch.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic154",
+   "prompt": "Here you go."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic155",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Irritated} Fine. I guess it doesn't matter anyway, keep it. I won't ask again.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic155",
+   "prompt": "Yes. It was entrusted to me, not you."
+  },
+  {
+   "key": "vdialogueveronicaveronicatopic156",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Irritated} Fine. I guess it doesn't matter anyway, keep it. I won't ask again.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueVeronicaVeronicaTopic156",
+   "prompt": "Unlock it, give it back, then shut up."
+  },
+  {
+   "key": "vendingveronica",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narration} At odds with leadership over the Brotherhood's future, Veronica looked to the Mojave Wasteland for an answer both she and they could live with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} But the answer would never come, and the dangers of the world that had left the Brotherhood of Steel behind would eventually claim her life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Hoping to lead the Mojave Brotherhood down a new path, Veronica sought to learn from the thriving cultures of the desert.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Absent a firm solution, Veronica's expression of frustration with Brotherhood leadership would lead to her banishment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} She ended her days a wandering tinker.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Despite her departure from the group, the Brotherhood's peace treaty with NCR came as some relief to Veronica.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Though she remained friendly with surface patrols, she was never again permitted to enter the bunker she once called home.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Fearing for the safety of anyone she associated with, she continued her solitary life as a scavenger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} But reports would emerge from Mojave scientists and social workers of old equipment miraculously repaired and research notes mysteriously completed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Though she'd seen the writing on the wall, the destruction of the Mojave Brotherhood came far more suddenly than Veronica had expected.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} The news devastated her. Despite her best efforts to leave her past behind, she found herself compelled to make one final journey to Hidden Valley.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} There, she paid her last respects to the only family she had ever known.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} The Brotherhood's open aggression along the New Vegas highways troubled Veronica greatly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Nevertheless, it removed all doubt from her mind that in leaving them she had made the right choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Eventually she would take to the road, less in hopes of finding a new home than of leaving memories of the old one behind her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} The peace with NCR served to ease Veronica's worries about the Brotherhood's immediate future.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Still, a distance had arisen between her and her fellow members that would never be bridged.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} She began secluding herself in crumbling libraries of the Old World, learning of promising technologies she knew the Brotherhood would never adopt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} The death of the Mojave Brotherhood came much too soon for Veronica, and in their absence, she felt truly lost.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Yet in its wake, she took small comfort in her decision to remain by their side through their few remaining days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration} Veronica put her moral sensibilities aside and supported the Brotherhood's new campaign of aggression as best she could.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yet deep down, she understood that it meant their end would surely be soon to follow.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingVeronica",
+   "prompt": "VEndingVeronica"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Lookin' sharp, Ramos.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, Ramos.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heya Torres.{TOR-ez}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How's the ol' cage treating you, Torres?{TOR-ez}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still breakin' hearts there, I see, Scribe Schuler.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How are you, Scribe Schuler?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can hardly notice that lazy eye anymore, Watkins.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rolling her eyes} Watkins.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't work too hard there, Ibsen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You look tired, Ibsen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Scribe Taggart! It's your favorite student.{She's not.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Flattering} Hey Scribe Taggart! Did you get some sun?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hardin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey! How ya been?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Long time, no see!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey! {A warm greeting}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "hvveronicaenter",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'd like a large Atomic Shake and a double Brahmin burger. And easy on the {uh-GAW-vee} agave sauce this time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know where you live {RAY-mos} Ramos. Open up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVVeronicaEnter",
+   "prompt": "HVVeronicaEnter"
+  },
+  {
+   "key": "hvveronicaenterintro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hold on, I've got this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HVVeronicaEnterIntro",
+   "prompt": "HVVeronicaEnterIntro"
+  },
+  {
+   "key": "vdialogueveronicaarchimedesiireact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You think that did it? Maybe we should test the rangefinder outside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaARCHIMEDESIIReact",
+   "prompt": "VDialogueVeronicaARCHIMEDESIIReact"
+  },
+  {
+   "key": "vdialogueveronicaarchimedesiitestreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Uh... yeah. I guess it works. {Awestruck, understating.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaARCHIMEDESIITestReact",
+   "prompt": "VDialogueVeronicaARCHIMEDESIITestReact"
+  },
+  {
+   "key": "vdialogueveronicabosdamreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Oh, God, I don't know if I can do this. {About to fight her friends.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, the gang's all here! {Then, sincerely} Let's give the Mojave something to remember us by. {Seeing old friends.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I never thought I'd see you again. I'm glad you're here. {Moved.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, the gang's all here! {Seeing old friends.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaBoSDamReact",
+   "prompt": "VDialogueVeronicaBoSDamReact"
+  },
+  {
+   "key": "vdialogueveronicabosthreatreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Sorry about that. Just because I love them doesn't mean some of them aren't assholes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaBoSThreatReact",
+   "prompt": "VDialogueVeronicaBoSThreatReact"
+  },
+  {
+   "key": "vdialogueveronicacodexreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Uh... you were kidding just now when you said that thing about the Codex, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaCodexReact",
+   "prompt": "VDialogueVeronicaCodexReact"
+  },
+  {
+   "key": "vdialogueveronicadressacquire",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey, a dress! Thank you! I'm totally trying this on later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aw, you shouldn't have! It's just my taste. Thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaDressAcquire",
+   "prompt": "VDialogueVeronicaDressAcquire"
+  },
+  {
+   "key": "vdialogueveronicaeuclidreaction",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Wow. Good thing the safety was on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaEuclidReaction",
+   "prompt": "VDialogueVeronicaEuclidReaction"
+  },
+  {
+   "key": "vdialogueveronicafarmtechreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See? Just because it doesn't shoot lasers doesn't mean it's not worth looking into. We could do amazing things with this data.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaFarmTechReact",
+   "prompt": "VDialogueVeronicaFarmTechReact"
+  },
+  {
+   "key": "vdialogueveronicagiftshopreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I don't like the sound of this. Hope that collar isn't what I think it is. What did you do, Elijah?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaGiftShopReact",
+   "prompt": "VDialogueVeronicaGiftShopReact"
+  },
+  {
+   "key": "vdialogueveronicapulsegunreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Huh. Figured it'd have more buttons and dials and stuff, you know? Oh, well. It's still the electronic equivalent of a disease from Gomorrah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaPulseGunReact",
+   "prompt": "VDialogueVeronicaPulseGunReact"
+  },
+  {
+   "key": "vdialogueveronicaquestreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "He's got no resources but a decent cause. We've got plenty of resources and a totally lost cause.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No power armor. No energy weapons. And they're giving the NCR more trouble than we ever did.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ordinary guys with knives and bullets, and they're taking over Nevada.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a lot more troops here than we thought. No wonder we couldn't hold HELIOS One.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A bunch of shut-ins who scorn outsiders and hold technology over them. Gee, where have I heard that one before?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can't help but be impressed with what they're doing here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even the stupid NCR is investing in new research. We're getting left in the dust.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leading his people to a new land with big dreams and a clean slate. Makes me think of my old mentor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Holy hell, that's a lot of energy weapons. Guess we dropped the ball on that one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{DO NOT RECORD - scripting fall-through node.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaQuestReact",
+   "prompt": "VDialogueVeronicaQuestReact"
+  },
+  {
+   "key": "vdialogueveronicauldressacquire",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "<Gasps> For me? Do you mean it? No, it's too much! Well, okay. But it's too much! It's perfect. Thank you. Thank you. {Genuinely touched.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaULDressAcquire",
+   "prompt": "VDialogueVeronicaULDressAcquire"
+  },
+  {
+   "key": "vdialogueveronicauldressreact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Oh my God, oh my God, oh my God! Look what they're wearing! I've only seen dresses like those in my dreams. And even then I couldn't afford them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVeronicaULDressReact",
+   "prompt": "VDialogueVeronicaULDressReact"
+  },
+  {
+   "key": "vms49elderdiscussion1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We'll know in a second. I wanted to talk to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, goddamn it, it is. But you're going to hear me out this time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The things I've seen now. Other groups succeeding where we fail. It's not too late for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Waiting in a hole for everyone else to die.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is a dead end for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How could you? You're too scared to look.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's go. We're wasting our time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion1",
+   "prompt": "VMS49ElderDiscussion1"
+  },
+  {
+   "key": "vms49elderdiscussion2conclusion",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "A bunch of closed-minded bullshit.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "But-",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Give it a chance. For me. I can't stay here and watch us waste away.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "{Softly, a last-ditch argument} We'll die out.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Come on. I can't listen to this anymore.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2Conclusion",
+   "prompt": "VMS49ElderDiscussion2Conclusion"
+  },
+  {
+   "key": "vms49elderdiscussion2helios",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We unlocked the secret of HELIOS One.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No. It's not. ARCHIMEDES II is an orbital laser. Effective only outdoors in a limited radius and requiring a long recharge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They'd be marginally more effective. We lost most of the chapter defending glorified artillery.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And nearly died for it. Tomorrow you'd do it all over again, having learned nothing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm trying to open your eyes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We need to engage the outside world. We can't win without new recruits.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2HELIOS",
+   "prompt": "VMS49ElderDiscussion2HELIOS"
+  },
+  {
+   "key": "vms49elderdiscussion2intro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I brought you a present.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2Intro",
+   "prompt": "VMS49ElderDiscussion2Intro"
+  },
+  {
+   "key": "vms49elderdiscussion2v22",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "This disk has secrets to breeding plants that can thrive in the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Think about it. No more trading guns for food. Total self-sufficiency. It's what we always wanted.",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "{argumentative} Yes it will. If we feed people, they'll support us. They'll join us.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2V22",
+   "prompt": "VMS49ElderDiscussion2V22"
+  },
+  {
+   "key": "vms49elderdiscussion2v34",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We found a gun that disables power armor. One of these could defeat the whole Brotherhood.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We have to stop limiting our focus to military technology. It won't save us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's not the point. Technology won't win our wars. We need numbers. New recruits.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49ElderDiscussion2V34",
+   "prompt": "VMS49ElderDiscussion2V34"
+  },
+  {
+   "key": "vms49hardindiscussion1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hardin. Er, {Correcting herself} Elder. I know why we're failing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As long as we hide in here, ignoring the outside, our days are numbered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Skeptical} You do?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Disbelieving} Strike? That's how we got into this problem in the first place. We can't beat these armies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And the loss of HELIOS One says things are different now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Finishing someone else's sentence} Our arrogance would still have been our downfall.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe it's time you start looking forward.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's go. We're wasting our time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49HardinDiscussion1",
+   "prompt": "VMS49HardinDiscussion1"
+  },
+  {
+   "key": "vms49outpostmassacrereact",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Horrified disbelief} Oh no. {Quickly} No, no, no, no, no, no.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS49OutpostMassacreReact",
+   "prompt": "VMS49OutpostMassacreReact"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That's more like it. {Yeah that's what I thought, mofo}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "armorineffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Got any armor with less holes in it for me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What am I wearing? Cardboard?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ArmorIneffective",
+   "prompt": "ArmorIneffective"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{emph} Big mistake. {Threatening.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Come on! {taunt}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For the Brotherhood. {through gritted teeth, mostly to herself}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Whoa! {Look out!}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Abandon ship! {Look out!}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "crippled",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Critically Injured} I'm gonna need some new limbs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Crippled",
+   "prompt": "Crippled"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Death Noise 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "It's gonna blow!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mind the explosion!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "We're overwhelmed!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've gotta run!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Uh uh. I don't think so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "healthquarter",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Dying} Do me a favor. Make sure they bury me in a nice dress.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying} I knew I should've been an actress.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying} If I die... take care of my salvage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying} It's getting... dark.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Dying} I'm not doing so well here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HealthQuarter",
+   "prompt": "HealthQuarter"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hey! That's not okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What are you doing? {pissed, can't believe it}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Easy come, easy go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yup. Definitely dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "noammo",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Spare some ammo?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NoAmmo",
+   "prompt": "NoAmmo"
+  },
+  {
+   "key": "poisoned",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm getting... woozy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Poisoned",
+   "prompt": "Poison"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hey! I need that for stuff!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come on. At least steal from a mean person.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "useddoctorbag",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That's better. Maybe I should've been a surgeon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "UsedDoctorBag",
+   "prompt": "UsedDoctorBag"
+  },
+  {
+   "key": "wake",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Waking up} What'd I miss?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Wake",
+   "prompt": "Wake"
+  },
+  {
+   "key": "weaponbroke",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Weapon's busted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can't use this anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Need a new weapon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "WeaponBroke",
+   "prompt": "WeaponBroke"
+  },
+  {
+   "key": "weaponineffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Might as well be throwing rocks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got a bigger gun I can borrow?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not even making a dent with this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "WeaponIneffective",
+   "prompt": "WeaponIneffective"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Got my eyes peeled.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still looking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Over here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gotcha!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Meh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, forget it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I worry too much.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Lost 'em.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where the hell?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey! Come out and fight!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Whew.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've had worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's enough of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Still nothing...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uh... {searching}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not seeing anything...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Oh! There we go! {like you found the right piece in a jigsaw puzzle}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Busted!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Found 'em!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I give up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Probably die of natural causes eventually anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, screw it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Hushed} Hey. Something's there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You hear that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh? {What was that?}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hey! {calling out, pissed}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Trouble. {warning}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uh oh. {warning}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  }
+ ],
+ "speaker": "veronica_renata_santangelo"
+}

@@ -1,0 +1,185 @@
+{
+ "page": "Vault3Prisoner01.txt",
+ "speaker": "Rick Lancer",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey! Yeah you! Come give us a hand!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You again. You ready to give us some help?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS07Greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take down this password, it'll get you into the Overseer's area upstairs I think.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for the help. We'll find our own way out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for the help. We'll find our own way out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS07Greeting"
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We were part of a caravan heading into New Vegas from down south. They are holding us hostage, trying to get some ransom.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyone willing to pay for us died in the attack. Once the Fiends figure that out, we are as good as dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can you set us free now?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you doing here?"
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks partner. I think the Fiend with the key is back in one of the bedrooms somewhere, someone called him Daniel. If that helps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yeah, I'll see what I can do."
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know much, only that the people who lived in here originally were killed by the Fiends. Carter there escaped and managed to explore for a bit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He hacked a password off of the computer, and found the location of some guns. He was on his way to get them when the Fiends caught him again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need to know a little more about Vault 3."
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They are a bunch of junkies that do whatever they can to get money for chems.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear they are lead by a guy calling himself Motor-Runner. I think he is in one of the other wings, although I haven't seen him myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you tell me about the Fiends?"
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, it is yours if you help us out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If I help you escape, will you give me the password he found?"
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We are going to die in here. Please, if you find the key let us out. We'll find our own way to safety.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I don't have time to help you out."
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Help us first, then we'll give you the password, and don't think about killing me. Its all in my head.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Give me the password he found, and I'll help you escape."
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Fine, it isn't like it is doing me any good in here. You'd better come back though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Intimidate> Give me the password or you're all going to die in here."
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, but be quiet. I don't want the Fiends to hear us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a couple more questions."
+  },
+  {
+   "id": "VMS07Vault3Prisoner01Topic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know. Carter told me about some password he hacked out of a computer. I could give it to you, if you help us out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you make it worth my while?"
+  }
+ ]
+}

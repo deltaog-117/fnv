@@ -1,0 +1,58 @@
+{
+ "id": "vstreetsecuritron",
+ "speaker_name": "Securitron#House Industries",
+ "source": "VStreetSecuritron.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Observe the rules, citizen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Indulge responsibly, citizen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Self-control is a virtue, citizen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Remain vigilant.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The power of the law rests in the hands of every citizen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Report suspicious activity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Practice good citizenship.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ]
+}

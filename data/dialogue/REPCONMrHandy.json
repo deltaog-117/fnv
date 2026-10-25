@@ -1,0 +1,55 @@
+{
+ "page": "REPCONMrHandy.txt",
+ "speaker": "Mister Handy (Fallout: New Vegas)#Maintenance robot",
+ "topics": [
+  {
+   "id": "REPCONHQ2ndGreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello Mrs. Millet, I hope you have an excellent day at work today.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello! Have a wonderful day here at REPCONN. Remember, security is job one!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No valid REPCONN identification badge detected. Please vacate the premises.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No valid REPCONN identification badge detected. This is your second and final warning. Please vacate or security will be alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unauthorized access. Activating Security!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "REPCONHQ2ndGreeting"
+  },
+  {
+   "id": "REPCONHQGreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have been warned. Please vacate the premises or you will be considered an intruder.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Intruder Alert! Intruder Alert!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "REPCONHQGreeting"
+  }
+ ]
+}

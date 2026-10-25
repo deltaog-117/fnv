@@ -1,0 +1,193 @@
+{
+ "page": "VStreetNCRMonorailGuard01.txt",
+ "speaker": "NCR trooper",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I bet it feels real nice to be carrying those weapons around on the strip.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "That damn Mr. House has forbid any NCR military personnel from carrying any sort of firearms on the Strip. Well, except for Captain Pappas.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Mr. House still doesn't trust the NCR. A word of advice, the Securitrons won't put up with any funny stuff out there, so don't do anything stupid.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This your first time on the Strip?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello. Do you need something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, there's the Lucky 38, Ultra-Luxe, Gomorrah, and The Tops. Which one do you want to know about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Casinos on the Strip."
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, there's Vault 21 and the NCR Embassy. Both places are located on the south side of the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vault 21 is a small hotel and gift shop. It's not as nice as the casinos, but it's a whole hell of a lot cheaper.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR Embassy is the headquarters for the NCR on the Strip. The Ambassador and his offices are there as well as the MP headquarters.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What else is there to do besides the Casinos?"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well it's time to pop your Vegas cherry, friend! I'm sure you'll have a blast and be drunk and capless in no time.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I can give you a bit more information about the various casinos if you're not sure on where to get started.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Yes it is."
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay then. You should know the rules. Just stay out of trouble, and have fun.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, I've been here before."
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're not getting started off on the right foot here. The NCR still has a strong presence here and can make your stay unpleasant.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You better watch yourself out there. A loose cannon like yourself can sometimes run out of luck at just the wrong time.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "None of your business."
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't know much about it to tell the truth.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's where Mr. House and his Securitrons are set up, but no one's been in there as long as people can remember.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Probably best that you just ignore it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Lucky 38."
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Ultra-Luxe is the nicest casino on the Strip. Real high-end, extravagant, and expensive. Best you have a lot of caps if you want to go there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the deal with the Ultra-Luxe?"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Gomorrah is the favorite of the NCR troops on the Strip. If you like girls, alcohol, gambling, and drugs then Gomorrah is just the place for you.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "What do you know about Gomorrah?"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Tops is the cool place to be right now. Lots of entertainment and shows going on there as well as the gambling.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to catch a show and have a few drinks, you should definitely hit up the Aces Theater in The Tops.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's The Tops like?"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetNCRMonorailGuard01Topic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ask away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to ask about something else."
+  }
+ ]
+}

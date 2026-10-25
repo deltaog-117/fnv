@@ -1,0 +1,363 @@
+{
+ "id": "lthaggerty",
+ "speaker_name": "Haggerty",
+ "source": "LtHaggerty.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is a restricted area. State your business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms03haggertybrother",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I wish I could tell you, but we've had so many replacements lately I couldn't be sure. Go in and look around if you want.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try not to make any trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Sorry. No civilians inside. I can't start making exceptions now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Best you can do is talk to someone at the station where your brother enlisted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyBrother",
+   "prompt": "<Lie>I heard my brother was stationed here. I want to know he's okay."
+  },
+  {
+   "key": "vms03haggertyenterplant",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why would I want to let you do that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyEnterPlant",
+   "prompt": "I'd like to go into the power plant."
+  },
+  {
+   "key": "vms03haggertyfrontlines",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ask myself the same question all the time. But energy is hard to come by around here. Gives you more control over this area than troops ever could.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell, if we lose the dam to the Legion, this little plant may be our last stand.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyFrontLines",
+   "prompt": "Why are you here, and not on the front lines? Isn't that more important?"
+  },
+  {
+   "key": "vms03haggertyhungry",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't tell whether you're joking or radiation melted part of your brain, but either way I don't see a good reason to let you through.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyHungry",
+   "prompt": "I was hungry and was hoping this was some kind of food factory."
+  },
+  {
+   "key": "vms03haggertyidonthaveone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm glad we sorted this out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyIDontHaveOne",
+   "prompt": "You're right, I don't have a reason."
+  },
+  {
+   "key": "vms03haggertyinvestigate",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Or you're a Legion spy trying to infiltrate our perimeter. Give me one good reason I should let you through.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyInvestigate",
+   "prompt": "I saw this place in the distance and wanted to investigate."
+  },
+  {
+   "key": "vms03haggertymorepeopledefending",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There should. But we're not getting much power out of it so none of our enemies have a big interest in it either. Not like Hoover Dam, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We had a real fighting force here just long enough to take it from the Brotherhood of Steel. Then they got sent east to the dam like everybody else.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar's Legion sends skirmishers every so often. Prodding for weaknesses, mostly. The reality is, if they really wanted it, we'd all be dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyMorePeopleDefending",
+   "prompt": "Shouldn't there be more people than this defending a power plant?"
+  },
+  {
+   "key": "vms03haggertypublicproperty",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is NCR property and we have guns. So you can only do as we please here. And it would please us if you got the hell off our lawn. {emph. second 'we'}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyPublicProperty",
+   "prompt": "This is public property and I can do as I please here."
+  },
+  {
+   "key": "vms03haggertysolartower",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No need. We already have an expert hard at work on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then again... our expert is an idiot. Hell, he might as well be a saboteur. I guess you couldn't do any worse.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Have him fill you in on the details. He's in the back of the building. You'll know him when you see him.",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "Keeps his sunglasses on all the time, even when he's sleeping. Idiot. {beat before 'idiot'}",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertySolarTower",
+   "prompt": "[Science] I notice your solar tower isn't collecting much sunlight. I can help."
+  },
+  {
+   "key": "vms03haggertytakingover",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've held off tougher enemies than you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyTakingOver",
+   "prompt": "[Attack] I'm taking over."
+  },
+  {
+   "key": "vms03haggertywithncr",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your being here is a start, soldier. We aren't exactly overflowing with troopers here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if you really want to help us, talk to the idiot with sunglasses in the back of the plant building.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's been trying to get this place running for months and hasn't made any forward progress.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyWithNCR",
+   "prompt": "[NCR Rep] I'm with the NCR. Anything I can do to help?"
+  },
+  {
+   "key": "vms03haggertywithncr_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Your being here is a start, soldier. We aren't exactly overflowing with troopers here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if you really want to help us, talk to the idiot with sunglasses in the back of the plant building.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's been trying to get this place running for months and hasn't made any forward progress.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyWithNCR",
+   "prompt": "<lie> I'm with the NCR. Anything I can do to help?"
+  },
+  {
+   "key": "vms03haggertywithncr_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That uniform's got an awful lot of blood on it, soldier, and you don't look injured to me. Doesn't fit you so well either.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're trying to put one over on the wrong trooper.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyWithNCR",
+   "prompt": "I'm with the NCR. Anything I can do to help?"
+  },
+  {
+   "key": "vms03lthaggertytopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, they were here a while ago. Gave them all I could, which wasn't much. But as many problems as we're having here, I know they've got it worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've seen soldiers get assigned there. It's like they got told they were gonna die. I wouldn't wish it on anybody.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're trying to track them down, we put a GPS marker in the supply crate. You can track it with your Pip-Boy. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03LtHaggertyTopic000",
+   "prompt": "I wanted to check on the troopers sent from Camp Forlorn Hope."
+  },
+  {
+   "key": "vms03lthaggertytopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slightly fearful} Jesus. You're a real goddamn psycho.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03LtHaggertyTopic001",
+   "prompt": "I don't need your help. I'm going to carve myself a key from your bones."
+  },
+  {
+   "key": "vms03lthaggertytopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damned if I know. Put up a hell of a fight, though. We had them outnumbered, I don't know, twenty to one, maybe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They held out as long as they could. Lost most of their force before they retreated. Gave us a little parting gift, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They had some of the plant running, but they shut it all down. Enabled an old security system, too, to keep us away from the controls. Jerkoffs.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03LtHaggertyTopic003",
+   "prompt": "Why was the Brotherhood of Steel here?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What is it? I'm a busy woman.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "vms03haggertystaywhereyouare",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Stay where you are. You're not allowed in there. This is your only warning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS03HaggertyStayWhereYouAre",
+   "prompt": "VMS03HaggertyStayWhereYouAre"
+  }
+ ],
+ "speaker": "lieutenant_haggerty"
+}

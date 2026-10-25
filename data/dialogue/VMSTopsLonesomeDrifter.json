@@ -1,0 +1,388 @@
+{
+ "page": "VMSTopsLonesomeDrifter.txt",
+ "speaker": "the Lonesome Drifter",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Howdy there, partner.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Howdy, little lady.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "LonesomeDrifterGuitar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, this old thing? Why, thanks, friend. This here {GEE-tar} guitar is just about the only thing my daddy left me.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "prompt": "That's a mighty fine guitar you got there."
+  },
+  {
+   "id": "LonesomeDrifterJobOffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Son, where I come from, a man doesn't just walk up to another man and offer him a job without even knowing him. What's your game?",
+     "emotion": "surprise",
+     "intensity": 15
+    },
+    {
+     "text": "Darling, where I come from, a lady doesn't just walk up to a man and offer him a job without even knowing him. What's your game?",
+     "emotion": "disgust",
+     "intensity": 15
+    },
+    {
+     "text": "Like I said, I got no reason to take your charity. Not till I know you better.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Hmm.... Maybe it's time to give these tired old bones a rest. All right, show me what you've got.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Tommy Torini at the Tops is looking for musical acts, if you're interested."
+  },
+  {
+   "id": "LonesomeDrifterStory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My story's a long one, friend, and I can't say as it's all that interesting.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "What's your story, stranger?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Skeptical} Uh-huh. Sorry stranger, just not sure I trust that kind of charity from somebody I don't even know.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "No game. I offered to keep an eye out for talented acts, is all."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, at least you're honest, I guess. Sorry, I just don't take charity from strangers.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Tommy offered me a recruiting fee."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Much obliged to you, friend.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Here, take his card. Tell him I sent you."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I suppose it's only right you get a little something for your troubles. Here - my daddy left me this gun. Guess I don't need it no more.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "I'm giving you a real opportunity here - how about some compensation?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm sure Mr. Torini already took care of your fee. Maybe you ought to talk to him. Much obliged for the opportunity, friend. See you around.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "prompt": "If I give you his card, what's in it for me?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No apologies needed, friend - I'm sure there's somebody out there'll appreciate my singing.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "On second thought, I don't think you're the right fit after all."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just about my whole life, ever since my daddy left ma and me and went off to roam the wastes.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Have you been playing long?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Long time ago, now. I never even knew him. Ma always said he was a mysterious feller, always traveling on in secret.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "prompt": "When did your father leave?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Looking for a story, huh? All right, what can I tell you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I was born in a little town out Montana way. Me and Ma didn't have much, ever since my pa up and left.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Nevertheless, I'm interested."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else you'd like to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Oh, okay then, never mind."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That he did. Never did know why. Ma always said he was a real mysterious feller, even when he was with her. Like he was a stranger sometimes.",
+     "emotion": "pained",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Your father abandoned you?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe that's how you was raised, but where I come from a man does right by his wife and child or he ain't no kinda man at all.",
+     "emotion": "disgust",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Smart guy. Families just tie you down."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No sir, I'm 28. Why?",
+     "emotion": "surprise",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Wait, Montana? You wouldn't happen to be 17, would you?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe. Maybe I just never felt like I belonged back home.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Sounds like you miss him. Is that why you're out here wandering?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe he did, maybe he didn't, but that don't change the fact that it wasn't right.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I'm sure he had a reason for leaving."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It sure wasn't easy. Ma worked her fingers to the bone to make sure we had enough to survive, and I worked the coal mines from when I was fifteen.",
+     "emotion": "pained",
+     "intensity": 25
+    },
+    {
+     "text": "After Ma died, I guess I wanted to find my Pa and get some answers from him. Been out here looking ever since, but he ain't an easy man to find.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "It must have been hard growing up without a father."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose there's that, but a man oughta know his own Pa, and a woman oughtn't have to work herself to an early grave to provide for her family.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "After Ma died, I guess I wanted to find my Pa and get some answers from him. Been out here looking ever since, but he ain't an easy man to find.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "prompt": "You were better off without him. You became your own man, outside of his shadow."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can't say as I really know. Maybe I'll just ask him why. Maybe I'll punch him right in the mouth.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Hell, the more I talk about it, the more the whole damn thing sounds like a dumb idea.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "prompt": "And what will you do when you find him?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe I will. Or maybe I'll just ask him why he left. Hell, the more I talk about it, the more the whole damn thing sounds like a dumb idea.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "He sounds like a scumbag. You should make him pay."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe I should. Don't suppose you know anyplace a feller with a {GEE-tar} guitar might find a job, huh?",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Sounds like you should move on. Settle down, maybe."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsLonesomeDrifterTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah well. It was worth a shot.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Can't say that I do, sorry."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "So long, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  },
+  {
+   "id": "RadioHello",
+   "section": "radio",
+   "responses": [
+    {
+     "text": "<Singing>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Singing>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Singing>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RadioHello"
+  }
+ ]
+}

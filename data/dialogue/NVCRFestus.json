@@ -1,0 +1,1065 @@
+{
+ "page": "NVCRFestus.txt",
+ "speaker": "Festus (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Howdy, pardner! Welcome to the headquarters of the Sunset Sarsaparilla Company. Wrangle up a stool and listen to ol' Festus jaw a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you and ol' Festus are old pals, say a command now. Otherwise, say \"Pleased to meetcha\" and we'll get acquainted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or, if you have more important things to do than talk to ol' Festus, say \"Goodbye\".",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "SSHHQfestusAdvisory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sorry, I didn't quite understand that. Could you repeat it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, I didn't quite understand that. Could you repeat it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "While Sunset Sarsaparilla is perfectly safe, a recent independent study - whose validity is currently being challenged - revealed the following:",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Excessive ingestion of sarsaparilla can lead to deleterious effects including, but not limited to:",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "kidney damage,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "nausea,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "digital numbness,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "anxiety,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "loss of visual acuity,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "dizziness,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "occasional nosebleeds,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "joint inflammation,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "tooth decay,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "sore throat,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "bronchitis,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "organ rupture,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "and halitosis.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Note that you'd have to drink a heap of Sunset Sarsaparilla to match the quantities used in the study. How much, you ask?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A lot. A whole helluva lot. In fact, you'd have to get full as a tick on Sunset Sarsaparilla to even come close.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, thanks for stopping by, partner! And keep drinking Sunset Sarsaparilla!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Silly Ol' Advisory."
+  },
+  {
+   "id": "SSHQFestusDepositStars",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wahoo, you did it pardner! Bully for you! Ol' Festus knew you could do it. I suppose you'll be wanting that prize now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well then, hold onto your hat, because it's a doozy. Not many people have heard the true story behind Sunset Sarsaparilla. It's a right honor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And now, without further ado, your prize - The Legend of the Star...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looooong ago, people didn't have a heap of choices when it came to soft drinks. It was either water, or Nuka-cola.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, the threat of legal action forces me to say that Nuka-cola is a swell beverage, but sometimes people just wanted something different, you know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So one day a man, a saloon owner in a small town, decided to make a new type of soft drink, and asked his patrons what flavor they'd like it to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After getting no help from them, a stranger at the end of the bar suggested the man make a sarsaparilla flavored drink.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The stranger said he would happily share his family's recipe for the drink, on one condition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The condition being that the stranger would be allowed to sample a bottle whenever he liked, to ensure the recipe was being followed to the letter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The man happily agreed, thinking the drink would make him rich, and the stranger promised to meet him by sundown the next day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The next morning, the sheriff stopped by and reported that the stranger's body was found on the side of the town road. He'd been killed by bandits.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The man, cursing his luck, closed the saloon early that day, just as the sun began to set.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But after he had locked the doors, he turned around to find an unfamiliar bottle on the bar, with a note beneath it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The note was sealed with blue wax in the shape of a star. Opening it, the man found it contained a recipe for a sarsaparilla-flavored drink.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sampling the bottle's contents and finding it singularly delicious, the man gave silent thanks to his mysterious benefactor, wherever he was.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Being an honorable man, the saloon owner paid for the stranger's funeral, thinking it was the least he could do to repay him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The saloon owner went on to become rich selling the new drink, and to this day some bottles of Sunset Sarsaparilla have a blue star under their caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some say the saloon owner ordered it done, in honor of the stranger. Others say it's the stranger, sampling the bottles like he promised.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And that's the Legend of the Star. Hope you enjoyed it, and hope you continue enjoying Sunset Sarsaparilla!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "By my hat, you're flush with Stars, ain't you? Scratch up a few more and the prize's yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, what in the Sam Hill are you doing still listening to me? Get a wiggle on and find those last few Stars!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It looks like you've got a fair number of Stars in your saddlebags. You're still a few cards short of a hand, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's a good start there, soft-horn, but that's not enough by a long chalk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Deposit your Sunset Sarsaparilla Stars in the slot.>"
+  },
+  {
+   "id": "SSHQFestusGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry to see you go so soon. Be sure to drink a Sunset Sarsaparilla for me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "SSHQFestusKiddingMe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Sunset Sarsaparilla Company has received a number of complaints regarding the prize awarded for handing in Sunset Sarsaparilla Stars.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Therefore, we have seen fit to provide another prize that we feel will placate the most discriminating customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just head through the double doors and follow the hallway to your left to the very end. An attendant will be there to present your prize, directly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We at the Sunset Sarsaparilla Company would once again like to thank you for your patronage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is this some kind of joke?"
+  },
+  {
+   "id": "SSHQFestusLHInstructions",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lucky Horseshoes is played with cards numbered two through ten and aces, which have a value of one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You and ol' Festus will take turns drawing cards. Each time we draw a card, we add it to our total, trying to hit the magic number of twenty one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If either of us draws a card that brings our total up to the same number as the other, it pushes the other player's total up one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When this happens, it's called Lucky Horseshoes! Ol' Festus thought of the name himself, I'll have you know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When one of us is closer to twenty one and the other can't get any closer, either by going over or because he or she held, the closer player wins.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ol' Festus likes the game because there are no ties in Lucky Horseshoes. If someone's sitting pretty on twenty one, lady luck can still bump 'em off!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But enough jawing. By now you're as eager as I am to get tossing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do I play?"
+  },
+  {
+   "id": "SSHQFestusLHStart",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If this is your first rodeo with the ol' horseshoes, say \"How do I play?\". Otherwise, say \"Lucky Horseshoes\" to begin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I feel lucky."
+  },
+  {
+   "id": "SSHQFestusLuckyHorseshoes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, let's play, pardner! Press the blue button to draw a card, the red button to hold, or the yeller button to quit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Lucky Horseshoes."
+  },
+  {
+   "id": "SSHQFestusMenu",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "New in town, pardner? Well, let ol' Festus give you the lay of the land.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're here to redeem your Sunset Sarsaparilla Stars, dump 'em into the slot in the barrel below and I'll count 'em up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you don't know what Sunset Sarsaparilla Stars are and think ol' Festus is just shooting his mouth off, say \"Star Info\".",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're here to challenge ol' Festus to a game of Lucky Horseshoes, say \"I feel lucky\".",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lastly, if you're here about the health advisory that aired on channel 6 recently, say \"Silly Ol' Advisory.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Pleased to meetcha."
+  },
+  {
+   "id": "SSHQFestusStarInfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, new to the hunt, are you? Well listen carefully, as ol' Festus don't like to repeat himself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Select Sunset Sarsaparilla bottles will have special caps with blue stars on them. These caps are known as Sunset Sarsaparilla Stars.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why are these stars there, and what do they mean? Nobody knows! Except maybe ol' Festus, hee hee.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Rustle up enough of them and you can win a prize! So get out there, and start drinking Sunset Sarsaparilla!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Star Info."
+  },
+  {
+   "id": "SSHQFestusUmWhat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Sunset Sarsaparilla Company has received a number of complaints regarding the prize awarded for handing in Sunset Sarsaparilla Stars.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Therefore, we have seen fit to provide another prize that we feel will placate the most discriminating customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just head through the double doors and follow the hallway to your left to the very end. An attendant will be there to present your prize, directly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We at the Sunset Sarsaparilla Company would once again like to thank you for your patronage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Um, what? Is that it?"
+  },
+  {
+   "id": "SSHQFestusWheresThePrize",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Sunset Sarsaparilla Company has received a number of complaints regarding the prize awarded for handing in Sunset Sarsaparilla Stars.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Therefore, we have seen fit to provide another prize that we feel will placate the most discriminating customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just head through the double doors and follow the hallway to your left to the very end. An attendant will be there to present your prize, directly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We at the Sunset Sarsaparilla Company would once again like to thank you for your patronage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What the hell? Where's the real prize?"
+  },
+  {
+   "id": "SSHQLHFestusDraw",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ol' Festus is still holding. You go again, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ol' Festus thinks he's got this won. I'm holding.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ol' Festus is gonna draw.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got an ace, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your turn, pardner. Draw, hold, or quit?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I win, pardner. You did well, but ol' Festus did a bit better, hee hee.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you'd like to play again, say \"Play again\". If you've had enough of ol' Festus' boots stompin all over ya, say \"I'm done\".",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lucky horseshoes! I just nudged your total up one, pardner. No hard feelings, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're holding, so ol' Festus'll just go again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Drat, ol' Festus needs more than that to catch you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tarnation, ol' Festus's seen three-legged cattle move faster than this hand!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's see, you're at 21, so ol' Festus knows you want to hit. Just kidding, heh heh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See that? Ol' Festus is an old hand at this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you still there, pardner? Ol' Festus can hardly see you, you're so far behind!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Twenty-one! Just where ol' Festus wants to be. Beat that, pardner!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're doing well, but ol' Festus isn't out of this yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ol' Festus must be getting old. You're leaving me in the dust.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, I'll be. That makes twenty-one for you, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll have to toss better than that, pardner!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ol' Festus doesn't like your chances, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ol' Festus is fine staying at twenty-one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQLHFestusDraw"
+  },
+  {
+   "id": "SSHQLHFestusDraw",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Looks like I got a two, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got a three, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got a four, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got a five, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got a six, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got a seven, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got a eight, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got a nine, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like I got a ten, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Watch Festus draw a card.>"
+  },
+  {
+   "id": "SSHQLHPlayerDraw",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Looks like you got an ace, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you win, pardner. Ol' Festus just couldn't match those keen skills of yours. Here's your reward.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you'd like to play again, say \"Play again\". If you're done humiliating poor ol' Festus at his own game, say \"I'm done\".",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lucky horseshoes! You just nudged ol' Festus' total up one. Don't worry, I won't hold it against you, heh heh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Press the blue button to draw a card.>"
+  },
+  {
+   "id": "SSHQLHPlayerDraw",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Looks like you got a two, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you got a three, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you got a four, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you got a five, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you got a six, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you got a seven, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you got a eight, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you got a nine, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you got a ten, pardner.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Press the blue Draw button.>"
+  },
+  {
+   "id": "SSHQLHPlayerHold",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you hold now, pardner, I'll win! Let's pretend you drew, shall we?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd hold on 21 too, heh heh. Looks like ol' Festus needs a miracle now, eh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, pardner. Guess it's up to me to catch up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Press the red Hold button.>",
+   "label": "<Press the red button to hold.>"
+  },
+  {
+   "id": "VFreeformSSHQNVCRFestusTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's too bad. Ol' Festus was looking forward to a good tussle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Press the yellow button to quit.>"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Take care, pardner. And keep drinking Sunset Sarsaparilla!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "SSHQFestusAddendum1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "It has come to our attention that some of our loyal customers are less than pleased with the reward for their Sunset Sarsaparilla Stars.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusAddendum1"
+  },
+  {
+   "id": "SSHQFestusAddendum2",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Our motto at Sunset Sarsaparilla is that the customer always comes first, so we have seen fit to provide an alternate reward for your Stars.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusAddendum2"
+  },
+  {
+   "id": "SSHQFestusAddendum3",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Head through the double doors and take a left at the intersection. Follow the hallway all the way to its end, and you'll come to our prize vault.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusAddendum3"
+  },
+  {
+   "id": "SSHQFestusAddendum4",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "An attendant will be there to distribute your prize. We here at Sunset Sarsaparilla would like to thank you once again for your patronage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusAddendum4"
+  },
+  {
+   "id": "SSHQFestusLOS1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Looooong ago, people didn't really have many choices when it came to soft drinks. It was either water, or Nuka-cola.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS1"
+  },
+  {
+   "id": "SSHQFestusLOS10",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The next day, the man came downstairs to find a single bottle with a note beneath it on the bar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS10"
+  },
+  {
+   "id": "SSHQFestusLOS11",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The man picked up the note, and found it contained a recipe for making a sarsaparilla-flavored drink, and was signed with a blue star.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS11"
+  },
+  {
+   "id": "SSHQFestusLOS12",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Opening the bottle, the man found the inside of the cap had the same blue star on it. He also found that the drink was delicious.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS12"
+  },
+  {
+   "id": "SSHQFestusLOS13",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "That night, the local sheriff visited the saloon and reported that the stranger had been found on the side of the town road, murdered.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS13"
+  },
+  {
+   "id": "SSHQFestusLOS14",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "He had apparently been attacked by bandits on his way to the saloon the previous day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS14"
+  },
+  {
+   "id": "SSHQFestusLOS15",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Stunned by the news, the man told the sheriff about the note, bottle, and the deal he had with the stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS15"
+  },
+  {
+   "id": "SSHQFestusLOS16",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The sheriff suggested that maybe the bandits, in a fit of remorse, delivered the items. After taking all of the stranger's money, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS16"
+  },
+  {
+   "id": "SSHQFestusLOS17",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Now, I don't know about you, but old Festus here never met a bandit that felt anything akin to remorse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS17"
+  },
+  {
+   "id": "SSHQFestusLOS18",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The man felt the same, and had his own idea about what had happened. He went on to become rich selling the sarsaparilla drink, and started a company.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS18"
+  },
+  {
+   "id": "SSHQFestusLOS19",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "And to this day, you can get a Sunset Sarsaparilla and enjoy the refreshing taste of that very same drink.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS18"
+  },
+  {
+   "id": "SSHQFestusLOS2",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Now, the threat of legal action forces me to say that Nuka-cola is a swell beverage, but sometimes people just wanted something different, you know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS2"
+  },
+  {
+   "id": "SSHQFestusLOS20",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "And sometimes, you can even find a blue star under the cap, just like that man did so many years ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS20"
+  },
+  {
+   "id": "SSHQFestusLOS21",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "And that's the Legend of the Star. Hope you enjoyed it, and hope you continue enjoying Sunset Sarsaparilla!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS21"
+  },
+  {
+   "id": "SSHQFestusLOS3",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "So one day a man, a saloon owner in a small town, decided to make a new type of soft drink, something that tasted far different than anything else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS3"
+  },
+  {
+   "id": "SSHQFestusLOS4",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "But the man was at a loss as to what kind of flavor to use. He asked all of his patrons for ideas, but they were no help at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS4"
+  },
+  {
+   "id": "SSHQFestusLOS5",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Then one day, a stranger walked into the saloon. When asked what he'd like, the stranger replied, \"You got anything with sarsaparilla in it?\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS5"
+  },
+  {
+   "id": "SSHQFestusLOS6",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The man had never heard of a drink with sarsaparilla in it, and said so. The stranger told the man that he'd make a deal with him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS6"
+  },
+  {
+   "id": "SSHQFestusLOS7",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "If the man bought the ingredients, the stranger promised to meet him by sundown the next day and teach him how to make a sarsaparilla drink.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS7"
+  },
+  {
+   "id": "SSHQFestusLOS8",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The man happily agreed to the deal, and had the ingredients waiting the following day. But the sun came and went, and the stranger never came.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS8"
+  },
+  {
+   "id": "SSHQFestusLOS9",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The man figured he had been tricked and went to sleep, leaving the ingredients he had purchased down by the bar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQFestusLOS9"
+  }
+ ]
+}

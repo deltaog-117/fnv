@@ -1,0 +1,150 @@
+{
+ "page": "VNiptonSurvivor.txt",
+ "speaker": "Oliver Swanick",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{exulting - you won lottery - you weren't killed} Yeah! Who won the lottery? I did!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Smell that air! Couldn't ya just drink it like booze!{laugh, slightly maniacal}",
+     "emotion": "happy",
+     "intensity": 55
+    },
+    {
+     "text": "{exulting - and player is interrupting your buzz} Stop bothering me, will ya! I won the fucking lottery!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{exulting - and player is interrupting your buzz} Fuck off! Win your own fucking lottery!{laughs}",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VNiptonvNiptonSurvivorTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{exulting- you won lottery so you weren't killed} {are you fucking stupid?} Are you kidding me? Never felt better!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Are you feeling all right?"
+  },
+  {
+   "id": "VNiptonvNiptonSurvivorTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Exulting - you weren't killed} What lottery? {emphasis on \"The\"} The lottery, that's what lottery! Are you stupid?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Only lottery that matters! {exulting in being alive} Oh my God smell that air!{slightly maniacal laugh}",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What sort of lottery did you win?"
+  },
+  {
+   "id": "VNiptonvNiptonSurvivorTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{exulting - so filled with joy you're not sure what player asked you} Powder Ganger? What? I mean, yeah, used to be, sure!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But not no more! Powder Gang is small-time, man! I'm a winner! I won the motherfucking {go big on \"lottery\"} lottery!{laughter}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Are you a Powder Ganger?"
+  },
+  {
+   "id": "VNiptonvNiptonSurvivorTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{suddenly angry} Lottery? You remember the lottery?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{attacking the player} Goddamn you! I don't need to remember that!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're the guy who won the lottery."
+  },
+  {
+   "id": "VNiptonvNiptonSurvivorTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{bewildered} The message? You know about that...?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{bewildered} There was some kind of message, but... I don't seem to remember it.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "{Jubilant again} Yeah... that air! Smell it!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you remember the message you were told to spread?"
+  },
+  {
+   "id": "vNiptonSurvivorBarks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{exulting} Hey, Nipton! Eat me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{exulting} Who's the winner? Oliver Swanick, that's who! Yeah!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{exulting} I won the fucking lottery, hear me! So fuck y'all! Whoohoo!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{exulting} Ain't gonna see me up on a cross or my head on no pole, uh uh! That's for {emphasis} loooooosers!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{exulting} {chanting} I am a win-ner! I am a win-ner!{delighted laugh}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vNiptonSurvivorBarks"
+  }
+ ]
+}

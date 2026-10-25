@@ -1,0 +1,590 @@
+{
+ "page": "1ECaptainParker.txt",
+ "speaker": "Parker (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dammit, I didn't want you to kill him, just find me some evidence!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well... that was a bit messier than I would have liked. Was there anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Legion being wiped out at Nelson gave us some breathing room - hopefully the brass will use that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Losing Forlorn Hope was a real blow to us - I hope things can be turned around soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell of a thing at Nelson - NCR and the Legion wiped out. I wonder what the hell happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just got word that the monorail from McCarran was blown up by terrorists. My God. I can't believe it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Word around the east side is that you took out some major players in the Fiends. That should make life safer for a lot of people.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you heard the news? Caesar's agents assassinated President Kimball - it'll be war for sure, now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure every NCR soldier you've met has said this, but you're a damn hero for saving the President. If there's anything you need, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something I can help you with, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for all your help earlier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you found out what happened to those missing refugees?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good to see you - something else I can do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe you should just move along, I don't need your kind of trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I don't have the manpower to run your ass out on a rail, so just do me a favor and get lost.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Back again? What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're back. Have you changed your mind about helping out?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "ParkerDisappearances",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some people have gone missing from the camp lately. Haven't seen any signs of violence or heard about any feuds, they just... up and left.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I remember hearing some of the missing folks were doing business with Dermot and Saint James - a couple of scavengers from Westside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about those disappearances again."
+  },
+  {
+   "id": "ParkerHelp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well... that was a bit messier than I would have liked. Was there anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ParkerHelp"
+  },
+  {
+   "id": "ParkerIntro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Captain Parker. I'm in charge of this camp. {Name's Parker. I'm in charge of keeping this camp operating smoothly.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "ParkerKeith",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Marked cards, huh? I suppose it's obvious, really. Here, you've earned this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to go take Keith into custody. If you're interested in a little extra pay, I wouldn't mind the back-up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've got evidence - Keith has a set of marked cards he uses to cheat.",
+   "label": "Tell me about Keith again."
+  },
+  {
+   "id": "ParkerKeith",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Son of a bitch - I knew he was involved with drugs. Thanks - this gives me the evidence I need. Here - you've earned this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to go take Keith into custody. If you're interested in a little extra pay, I wouldn't mind the back-up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've got evidence - Keith is selling drugs to the locals.",
+   "label": "Tell me about Keith again."
+  },
+  {
+   "id": "ParkerKeith",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Drugs {emphasis} and crooked gambling? Can't say I'm surprised. Here, you've earned this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to go take Keith into custody. If you're interested in a little extra pay, I wouldn't mind the back-up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've got proof that Keith is selling drugs and using marked cards.",
+   "label": "Tell me about Keith again."
+  },
+  {
+   "id": "ParkerRefugeeCamp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This here's where folks go when their luck runs out. Drifters up from the Republic, locals that can't turn a dime, drunken reprobates from all around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you don't have the caps to get onto the Strip, odds are you'll end up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What exactly is this place?"
+  },
+  {
+   "id": "ParkerResults",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me see that... I know these names. Nephi and Cook-Cook are major players with the Fiends. Dermot and Saint James must be working with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But, this just a list of names and not evidence of a direct connection with the missing people.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn. Combined with that girl's bear you found in Saint James' room, this is enough for me to have them brought in for questioning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for your help - I'll make sure those sick bastards get what's coming to them. Here, you've earned this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found this ledger in Dermot's room."
+  },
+  {
+   "id": "ParkerTeddyBearGirl",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That... I think that's her teddy bear! It's suspicious, but it doesn't tell us what happened to the refugees.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn. Combined with that ledger you found in Dermot's room, it's enough for me to have them brought in for questioning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found this teddy bear in Saint James' room. Look familiar?"
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I am a little short staffed. Maybe you could give me a hand.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some people have gone missing from the camp lately. Haven't seen any signs of violence or heard about any feuds, they just up and vanished.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've also got Keith and his gambling to deal with - I {emphasis} know that skunk's cheating folk out of their savings, I just can't prove it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sounds like a chaotic place. Is there any way I can help?"
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah? Like what?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Charming place. Let's talk about something else."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They never seemed to have much in common - that's why I didn't notice it sooner. Young folks, old folks, men, women... all disappearing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I remember a family with a little blonde girl. She... never talked much, but she always carried this little stuffed teddy bear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about the missing people?"
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you did ask if we needed help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not really interested in running your errands, sorry."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Seem to recall a lot of them did business with those scavengers over on the West Side - Dermott and Saint James.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you remember anything else?"
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yep. I always warned him not to push my buttons. Well, ain't nobody going to miss him, anyways.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here you go. I promised you an extra reward for coming along, so that's what you get.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You just shot that man, solely because he insulted you!"
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe, maybe not. I always warned him not to push my buttons. Well, ain't nobody going to miss him, anyways.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here you go. I promised you an extra reward for coming along, so that's what you get.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That might have been a tad... excessive."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go. I promised you an extra reward for coming along, so that's what you get.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just the matter of my extra pay."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keep at it. I need to find out what happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be back later."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keith's a two-bit hustler, he runs a gambling operation out of his shack. Ask me, he wins way too often to be playing fair.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I suspect he's running drugs, too, I just can't prove it. Maybe you can find something - talk to him, poke around his shack, something.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about this \"Keith.\""
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Glad to have you. Let's go. Just stick close and follow my lead. Keith's a cowardly son of a bitch, but he might try something if he's desperate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, I'm in. Why not?"
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fair enough - you've done a lot already. I appreciate it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll leave this one to the law."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Glad to hear it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay, I'll look into it."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you asked, I answered.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's too bad, but not my problem."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How do you know? Did you find proof?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Saint James and Dermot were behind it. They're dead now."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those sick bastards - can't say I'll shed any tears for them. Here, you've earned this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found this evidence in their rooms - they attacked when I confronted them."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Maybe Dermot's got something, as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll keep looking."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Maybe Saint James has something connected to the refugees as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll keep looking."
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We know there's a connection with the refugees, but we need to know where they could be found. There could be more evidence in Dermot's room.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any ideas what to look for?"
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We need a direct connection to the refugees, now that we've got an idea of what happened to them. Saint James could have something in his room.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any ideas what to look for?"
+  },
+  {
+   "id": "vDialogueVegasEast21ECaptainParkerTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see... a bear. Yes, this belonged to the little girl, so that's a direct connection to the missing people.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And this ledger - I know these names. Nephi and Cook are major players with the Fiends. Dermot and Saint James must be working with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for your help - I'll make sure those sick bastards get what's coming to them. Here, you've earned this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found all the evidence you'll need from Saint James' and Dermot's rooms. Here."
+  },
+  {
+   "id": "CaptainParkerArrest",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Keith! In the name of the NCR, I'm placing you under arrest for illicit gambling and the sale of unlicensed chems.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keith! In the name of the NCR, I'm placing you under arrest for the sale of unlicensed chems.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keith! In the name of the NCR, I'm placing you under arrest for illicit gambling.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come quietly now, I don't want to have to hurt you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You son of a bitch!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CaptainParkerArrest"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "page": "VMS08MonorailGuard.txt",
+ "speaker": "NCR trooper",
+ "topics": [
+  {
+   "id": "Conversation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's it. {As in, that does it, now I'm going to shoot you.}"
+    }
+   ],
+   "prompt": "VMS08MonorailGuardWarn2"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good thing I got stationed here and not at the Dam. I got connections because Major Dhatri's daughter married my nephew."
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "Conversation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry. No civilians on the monorail. Any closer and I am authorized to use deadly force."
+    }
+   ],
+   "prompt": "VMS08MonorailGuardWarn1"
+  }
+ ]
+}

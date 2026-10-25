@@ -1,0 +1,79 @@
+{
+ "page": "VRRCEzekiel.txt",
+ "speaker": "Ezekiel (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "EzekielGreatKhans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh my, yes! They're a fascinating tribe with a long and, unfortunately, tragic history.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "Their original incarnation, much farther out west, was almost completely wiped out by one of those itinerant heroes so common in the post-War years.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "Then of course the \"New Khans\" suffered a similar fate, some say at the hands of the same hero, though of course the dates are all wrong for that.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "Julie Farkas said you might know something about the Great Khans."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You look like someone with a question. What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS45VRRCEzekielTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, after they migrated to the Mojave, we established relations with them, but that soured when all they wanted was to make drugs.",
+     "emotion": "pained",
+     "intensity": 20
+    },
+    {
+     "text": "The NCR eventually took them down quite a bit, but the really fascinating thing about them is the origin of their culture as a whole. You see....",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "This is fascinating. Please continue."
+  },
+  {
+   "id": "VMS45VRRCEzekielTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, of course! I'm sorry, I do tend to get wrapped up in my own theories and forget that not everyone finds them as fascinating as I do.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "Here, I salvaged this book from an old library. It's a history of a people called the {over-enunciate, like it's unfamiliar} Mongols. I think that's what the Khans built their culture on.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "You should read it, it's fascinating stuff.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Can I get the abridged version?"
+  }
+ ]
+}

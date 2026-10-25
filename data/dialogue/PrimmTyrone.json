@@ -1,0 +1,215 @@
+{
+ "page": "PrimmTyrone.txt",
+ "speaker": "Tyrone (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, hey. What can Tyrone do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I had an amazing time with you. You can look me up any time, baby.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, hey. You're back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just making some deliveries to the troops here in Primm. I'm stationed in California, but I come across the border a couple times a month.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{hushed} You trying to get me busted? Keep your damn voice down - Lieutenant Hayes already has his eye on me.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I already told Chomps that the NCR's getting suspicious of all these \"misplaced\" supplies. Bigger risk means bigger cost - 300 caps bigger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep your damn voice down. Even though Lieutenant Hayes got himself killed recently, somebody else might be watching me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I already told Chomps that the NCR's getting suspicious of all these \"misplaced\" supplies. Bigger risk means bigger cost - 300 caps bigger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A friend in Sloan told me to come to you about some chemical supplies."
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, and as it turns out, the advance wasn't enough. The price has gone up. That's just how it goes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You were already paid in advance."
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I've reconsidered my position, and I think it would be in my best interest if I were to sacrifice my profit on this particular deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I say the word and someone else will start making deliveries to Nevada, not you.",
+   "label": "< Speech 40 >"
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {completely insincere} I'd love to help you and Chomps, but I got my own expenses to worry about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Come on. Give me a break, just this once.",
+   "label": "< Speech 40 >"
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Fine, I'll just eat the cost and do a favor for Chomps. Just this one time only.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Is 300 caps worth being known as a deal-breaker? Seems like bad business to me.",
+   "label": "< Barter 35 >"
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Hey, that's just business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's not a fair trade, and you know it.",
+   "label": "< Barter 35 >"
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pleasure doing business with you. {winking} Of course, this whole deal never happened, am I right?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's 300 caps. Hand over those supplies."
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever. You know where to find me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Let's talk about something else."
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Still got 'em. You ready to pay up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "About those chemical supplies..."
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's better than farming or herding Brahmin. As long as they don't send me to the front lines, I'm a happy man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do you like being part of the NCR military?"
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Black Widow} Well, it has been awhile. All right, let's do this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How about you and I come to another arrangement. It'll be worth it - trust me."
+  },
+  {
+   "id": "vFreeformSloanPrimmTyroneTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Strength 7+} {intimidated by player's strength} Uh, never mind. Take the supplies. All yours, friend.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "prompt": "I'm sorry, but all these muscles make it hard to hear sometimes. What was that about risk?"
+  }
+ ]
+}

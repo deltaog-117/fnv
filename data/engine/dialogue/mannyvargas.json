@@ -1,0 +1,684 @@
+{
+ "id": "mannyvargas",
+ "speaker_name": "Manny Vargas",
+ "source": "MannyVargas.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have any luck with the ghouls? I'm counting on you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's going on, man?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "mannyvargasmvq01answer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The guy you're looking for, Benny, he was traveling with some members from my old gang. They were going to Boulder City.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MannyVargasMVQ01Answer",
+   "prompt": "VMQ01MannyVargasAnswer"
+  },
+  {
+   "key": "mannyvargasprotecttownfrom",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You name it. Anything that comes within a thousand yards that looks like trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lately we been getting ghouls, coming from the road to REPCONN, out to the west. Quite a few, last couple days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The big threat is the Legion coming from the East. If they decide to attack with a full force they'll run us over. But so far we been lucky.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MannyVargasProtectTownFrom",
+   "prompt": "What do you protect your town from?"
+  },
+  {
+   "key": "mannyvargasvmq01",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, I know him. What do you want with him?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This again? You gonna help me out with what I need, or not?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MannyVargasVMQ01",
+   "prompt": "I'm looking for a man in a checkered coat."
+  },
+  {
+   "key": "mannyvargasvmq01turnin",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Unbelievable, man! I knew that wasn't gonna be easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I had a good feeling about you. You look like you been through a lot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MannyVargasVMQ01TurnIn",
+   "prompt": "The ghouls are no longer at REPCONN."
+  },
+  {
+   "key": "mannyvargaswhatarguewithbooneswife",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Man, you name it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See, I grew up in North Vegas. Me and my cousins. We were some bad seeds. Got in with a gang. I loved it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then something happened, and I couldn't handle it anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So, I enlisted. Earned my future. Brought down my best friend to share that future with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And here was this woman who was too good for it, trying to take him away. So yeah. I didn't see eye-to-eye with the bitch.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "MannyVargasWhatArgueWithBoonesWife",
+   "prompt": "What did you and Boone's wife argue about?"
+  },
+  {
+   "key": "mannyvargaswhatgangwereyouin",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Were they tough? I was in the Khans, man. It doesn't get any badder. {I can't believe you just asked me that.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MannyVargasWhatGangWereYouIn",
+   "prompt": "So you were in a gang? Were they tough?",
+   "label": "So you were in some gang? Were they tough?"
+  },
+  {
+   "key": "mannyvargaswhoareyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm Manny. I'm on security detail here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You see a rifle barrel sticking out of the dinosaur's mouth, you got a fifty-fifty shot it's me. Otherwise it's Boone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MannyVargasWhoAreYou",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "mannyvargaswhosboone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boone's a sniper, same as me. Used to spot for him when we were enlisted with the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After we got out, I talked him into settling down here. So, here we are.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "I'd introduce you, but uh... we're not so friendly right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MannyVargasWhosBoone",
+   "prompt": "Who's Boone?"
+  },
+  {
+   "key": "mannyvargaswhyonbadterms",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me and his wife, we didn't see eye-to-eye on some things. We had some pretty big arguments.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "One day she turns up missing, and he hasn't said a word to me since.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "MannyVargasWhyOnBadTerms",
+   "prompt": "Why are you on bad terms with Boone?"
+  },
+  {
+   "key": "snipersrevengecomeoutside",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What, now? This better be good.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "You say so, chief.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeComeOutside",
+   "prompt": "Come with me. There's something you should see, in front of the dinosaur."
+  },
+  {
+   "key": "snipersrevengedidyoudoit",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Believe me. When I heard the news, my first thought was, I owe somebody. Big. I figured Boone would come around after a while.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "But he hasn't. And I'm starting to think that if he doesn't find her that things will never go back to the way they were.",
+     "emotion": "neutral",
+     "intensity": 15
+    }
+   ],
+   "topic": "SnipersRevengeDidYouDoIt",
+   "prompt": "Did you have anything to do with Boone's wife's disappearance?"
+  },
+  {
+   "key": "snipersrevengehurtbooneswife",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Man, everybody. That girl didn't have one friend in this whole town. She didn't want any.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She wanted to sit in her room all day and make herself miserable. And she went out of her way to be rude.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She upset a lot of people. You wouldn't have liked her, either.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeHurtBoonesWife",
+   "prompt": "Who would want to hurt Boone's wife?"
+  },
+  {
+   "key": "snipersrevengetoofar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe some other time. I'm not really in the mood for a hike.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeTooFar",
+   "prompt": "SnipersRevengeTooFar"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Doesn't surprise me. Guy seemed like he'd do whatever it takes to get what he wants. Probably makes a lot of enemies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well listen, I can definitely help you find him, but I've got problems of my own.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe we can do a trade. You need my help. There's something I need, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic000",
+   "prompt": "I have a score to settle."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, it was great. I wouldn't trade it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something about that lifestyle, the discipline. Seeing new places, making people safe. What's not to like?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic001",
+   "prompt": "What was your tour with the NCR like?"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, well... I just felt like it was time, you know? Wanted to have a home. {Fidgety, dodging the real answer.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Plus I was up at Camp Golf when Bitter Springs went down. I faked like I was sick to get out of going, because I knew some of the people there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But when everybody came back nobody would tell me what happened. And people would call us murderers sometimes when we showed up to secure towns.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic002",
+   "prompt": "So why'd you leave?"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I still don't know exactly. Just that a lot of people died who didn't want to be part of the fighting at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't blame anybody for it. There's so much chaos when you're fighting, you're lucky not to shoot your own guys.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But it did take something out of it for me. Just wasn't the same. So when it came time to re-enlist, I just took my papers and walked.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic003",
+   "prompt": "What did happen at Bitter Springs?"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic004",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You talking about that chip? Man, I don't think he's giving it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic005",
+   "prompt": "He has something of mine."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic006",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Must be something pretty important to be chasing a guy like that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic007",
+   "prompt": "I'm looking for answers."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, doesn't matter to me. I was just curious.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic008",
+   "prompt": "None of your business."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A piece of the action, huh? I don't think he's the sharing type, but okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic009",
+   "prompt": "Whatever he's doing, I want in on it."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{skeptical but going with it because he doesn't care} Oh yeah? A good friend? If you say so, man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic010",
+   "prompt": "<Lie> He's a good friend of mine. I'm trying to help him out."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Shrugs} Hey, do what you want. I'm just trying to make it easier on you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic011",
+   "prompt": "Forget it. I'll find him on my own."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{NO-vack} Novac, it's home for me now. I want that to be for good. I like it here, and I've left too many homes behind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the only resource we got here is junk. Without that, people wouldn't have anything to trade. They'd all have to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We get most of it up the road from the old rocket test site. But a bunch of ghouls showed up one day and took it over. We can't get in there now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic012",
+   "prompt": "What do you need?"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I... everybody depends on you, you know? But they don't ask you about how you feel. What you worry about. {Surprised at meeting an understanding soul.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's something I like about you. You just seem really understanding. I was gonna ask you for a favor, but I'll just tell you what you wanna know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic013",
+   "prompt": "You've had your needs neglected for far too long, haven't you? I can tell."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No clue. I know Benny hadn't paid up yet. Maybe that was where they were supposed to get square.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic014",
+   "prompt": "Any idea why they went that way?"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's straight up Route 93 from here. Just keep following the road north.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic015",
+   "prompt": "Where is Boulder City?"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Glad I could help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, I know you got no reason to help me now, but you seem really nice. Could I at least tell you about the problem we've got here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hope that helps. I owed you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic016",
+   "prompt": "That's all I needed to know."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See? I was right about you.{in a positive way}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic017",
+   "prompt": "Sure. Maybe I can help ease your mind."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Say no more. I hope things work out for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic018",
+   "prompt": "I can't. I'm in a hurry."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would. But I've gotta watch the road. Caesar's Legion has been taking territory just east of here. They took Nelson.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we let our guard down, they might attack. All it takes for the Legion is for them to sense weakness.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic019",
+   "prompt": "Why don't you deal with it?"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well they gotta go, or this'll be a ghost town before long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Doesn't matter to me what you do. As long as the ghouls are out of there, that's good enough for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic020",
+   "prompt": "What needs to be done?"
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It'd mean a lot to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic021",
+   "prompt": "Okay, I'll see what can be done about it."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll tell you everything I know, like I promised.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic023",
+   "prompt": "Now about the man I'm looking for..."
+  },
+  {
+   "key": "vdialoguenovacmannyvargastopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just head over to the REPCONN test site west of here. See if you can get the ghouls out of there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacMannyVargasTopic024",
+   "prompt": "What was I supposed to do again?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah, see you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "manny_vargas"
+}

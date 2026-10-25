@@ -1,0 +1,151 @@
+{
+ "page": "V03FiendShooter.txt",
+ "speaker": "Vault 3 Fiend guard",
+ "topics": [
+  {
+   "id": "VMS07Greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is what I been waiting to see! A big bad Khan bringing in the medicine! How about you toss some psycho my way?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck are you doing here? You got some kind of fucking death wish, asshole?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS07Greeting"
+  },
+  {
+   "id": "VMS07V03FiendShooterTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah - fuck off, and be grateful you're still breathing!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No need to get worked up. I'll leave."
+  },
+  {
+   "id": "VMS07V03FiendShooterTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Final warning, asshole. Get the fuck out of here or we are going to waste your ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Isn't this Vault 3, home of the Fiends?"
+  },
+  {
+   "id": "VMS07V03FiendShooterTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, asshole, you just fucked yourself!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's see how tough you are."
+  },
+  {
+   "id": "VMS07V03FiendShooterTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Who the fuck you trying to kid? You're lucky if I let you walk away from this, asshole.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your boss, um... He summoned me here."
+  },
+  {
+   "id": "VMS07V03FiendShooterTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] If you're fucking carrying, just fucking say so. Yeah, deliver to the boss, business as usual.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Motor-Runner's down in the Maintenance Wing. Straight through the door behind me, down the hall, down the stairs to the right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm carrying Jet, Psycho, and other favors. And I don't deliver to the help."
+  },
+  {
+   "id": "VMS07V03FiendShooterTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey! No need, no need! I was just kidding!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Motor-Runner's down in the Maintenance Wing. Straight through the door behind me, down the hall, down the stairs to the right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was just kidding about tossing me some Psycho. So you don't got to say anything about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where's your boss? He'll want to know you were hitting me up for freebies."
+  },
+  {
+   "id": "VMS07V03FiendShooterTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then what the fuck are you doing here? You looking to get killed? What the fuck?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not a Khan. I'm just dressed like one."
+  },
+  {
+   "id": "VMS07FiendRadio",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We have a Khan coming through to see the boss. Don't shoot at her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We have a Khan coming through to see the boss. Don't shoot at him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS07FiendRadio"
+  },
+  {
+   "id": "VMS07V03BryceAndersTopic020",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You were warned! Time to die.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What?"
+  }
+ ]
+}

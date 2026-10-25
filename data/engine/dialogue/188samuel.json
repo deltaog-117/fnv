@@ -1,0 +1,143 @@
+{
+ "id": "188samuel",
+ "speaker_name": "Samuel Kerr",
+ "source": "188Samuel.txt",
+ "topics": [
+  {
+   "key": "188samuelabout188safety",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well... There's been reports of trouble south, but me and Michelle can handle ourselves. And there's plenty of soldiers about, so that helps.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "188SamuelAbout188Safety",
+   "prompt": "Is it safe here?"
+  },
+  {
+   "key": "188samuelaboutbusiness",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "When 15 shut down, 95 became the route NCR citizens use to get to the Strip - or limp back home, after the Strip's drained 'em of caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We get 'em coming and going. Coming, the suckers flush with caps they saved to gamble on the Strip...",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "...and going, the same folks, but now they're losers who'll trade you the shirt off their backs so they don't starve before they make it back home.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Add in the troopers marching back and forth from McCarran and the Dam, and well, let's just say we don't miss Primm.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "188SamuelAboutBusiness",
+   "prompt": "Why's business so good here?"
+  },
+  {
+   "key": "188samuelaboutprimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Michelle and I ran a little shop in Primm 'till a prison break north of town spoiled it for everyone. Goddamned convicts just about shut down I-15.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When traffic dried up, we took to our heels to find us some customers. I'm not one to sit around waiting to get saved, and Michelle ain't, neither.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "188SamuelAboutPrimm",
+   "prompt": "Why'd you leave Primm?"
+  },
+  {
+   "key": "188samuelaboutself",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Samuel Kerr at your service. Me and my daughter Michelle run this fine establishment.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "We came here from Primm about a month past. Doesn't look like much, but it's one hell of a location.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "188SamuelAboutSelf",
+   "prompt": "Who are you?",
+   "label": "188SamAboutSam"
+  },
+  {
+   "key": "188samuelboastsaveprimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guess that makes you a big hero - in Primm. Like I said, me and Michelle didn't sit around waiting to be saved. Business is better here, anyway. {whimsical, not scolding}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188SamuelBoastSavePrimm",
+   "prompt": "I took care of those prisoners myself. Primm is clear now."
+  },
+  {
+   "key": "188samuelbuysell",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You bet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188SamuelBuySell",
+   "prompt": "I'd like to see what you have for sale."
+  },
+  {
+   "key": "188samuelrepair",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me see what I can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188SamuelRepair",
+   "prompt": "I need something repaired."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to the 188 Slop & Shop. Like our slogan says, \"It's better than nothing.\"",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Feeling thirsty?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "samuel"
+}

@@ -1,0 +1,50 @@
+{
+ "page": "VMS21aJoanaFriend.txt",
+ "speaker": "disguised hooker",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're ready. Let's get out of here. {Whispering, not wanting to be recognized}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for your help! {Thankful}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm out of here. {Fearful}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING (Friend01)"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "C'mon, let's go. {Whispering, not wanting to be reconized}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can't thank you enough for saving us. {Thankful}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't expect things to go so bad - I'm not staying here any longer. {Fearful}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING (Friend02)"
+  }
+ ]
+}

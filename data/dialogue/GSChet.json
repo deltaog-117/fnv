@@ -1,0 +1,374 @@
+{
+ "page": "GSChet.txt",
+ "speaker": "Chet (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cant' do business now! There's a gunfight!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "You must be the one Doc Mitchell was patching up. The way I heard it, I didn't think you'd be walking out of that office.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "I've got plenty of supplies for sale. Even got some weapon mods and special ammo - well worth the caps, if you ask me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're hurting for caps, I've also got boxes of surplus ammo in the miscellaneous section. They're not great, but you get what you pay for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That was a hell of a fight. Let's hope it doesn't bite us in the ass later on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Powder Ganger victory} I won't make any trouble for the gang. Just let me keep my store and I'll cut you a little discount.",
+     "emotion": "fear",
+     "intensity": 30
+    },
+    {
+     "text": "You looking to buy some supplies?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's more like it. The people can pick up their extra ammo and leather armor when they're ready. Was there anything else?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Fine. Here's 1000 caps."
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The leader was a New Vegas-type, typical city boy. He had a bunch of Great Khans with him, probably hired guns.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Great Khans normally stay in their own territory way up northwest, on account of them being enemies with the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know anything about the people who attacked me?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Twice. Both times, I drank a lot of liquor and lost most of my caps at the card tables. In that order, now that I think about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you ever get to New Vegas, be sure to visit Gomorrah. It's the best casino in the city. You won't regret it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Word of advice - behave. Between the NCR military police and Mr. House's robots, you don't want to be causing trouble on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have you ever been to New Vegas?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're tough sons of bitches, mean but not crazy - they'll leave you alone unless you've got something they want.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Great Khans deal in illegal chems. There's a good chance that most chems you come across were made by Great Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Anything else you can tell me about Great Khans?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid I don't know much myself. Mr. House has got his own casino, the Lucky 38, but nobody goes in or out except his robots.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other casinos follow Mr. House's rules, so I guess that makes him the leader of New Vegas. As far as I know, nobody's ever laid eyes on the guy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think that robot who pulled you out of the dirt belongs to Mr. House. If Mr. House is looking after you, that's gotta be a good thing, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to know more about Mr. House."
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Weapon mods are things like silencers, scopes, bigger magazines.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Special ammo includes things like armor-piercing bullets which don't hurt the target as much but let you punch through armor easier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's also hollowpoint bullets which have the opposite effect - you can kill unarmored targets easier, but they don't do shit against armor.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about weapon mods and special ammo."
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's all about quantity over quality. Trouble is, you'll be cleaning and fixing your gun a lot more than usual when you use those kind of bullets.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What makes the surplus ammo inferior?"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Why the hell would I want to do that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{annoyed} This again. What makes you think I've changed my mind?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "The Powder Gangers need you to donate some supplies to them."
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, all right. I've got some extra leather armor and spare ammo for you. {pleading} Don't hurt anybody if you don't have to, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Give up some supplies now and you won't get your store looted later.",
+   "label": "< Barter 25 >"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] \"Maybe\" doesn't do much to convince me. No, just leave me out of this, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe the Powder Gangers will reward you later.",
+   "label": "< Barter 25 >"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right! I can give you some of my extra leather armor and spare ammo. {pleading} Just don't hurt anybody if you don't have to, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This is your chance to join the winning side. You have three seconds to decide. One...",
+   "label": "< Speech 25 >"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Look, just leave me out of this, all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's better if you help me out, so just do it.",
+   "label": "< Speech 25 >"
+  },
+  {
+   "id": "VFreeformGoodspringsGSChetTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, quit it with the crazy talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsChetTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I respect the way you've conducted yourself around here. Reminds me of myself in some ways.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From now on, you want to buy from Chet's, I'll give you wholesale prices.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsChetTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take it easy now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsChetTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now just hold on. I never voted to take on the Powder Gangers. That's a thousand cap investment you're talking about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This again? Like I said, I'm against taking on the Powder Gangers. My supplies aren't cheap, you know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need supplies to fight the Powder Gangers."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsChetTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You made your point. I can provide people with some leather armor and extra ammo. I sure hope it's worth it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And, uh, I'll be guarding the store while all this is going on. I have to put my business first, you understand.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let them take over the town, then. I'm sure your business will be much better off."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsChetTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Look, you're bringing this on yourselves. There's no way I'm getting involved. But, hey, I'm sure you can buy what you need... {Emphasis on \"buy\".}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The town's at stake. That has to be worth more than a few supplies."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsChetTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right. Just keep me out of it. Is there anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VFreeformGoodspringsGoodspringsChetTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If Ringo doesn't head out on his own, I think we should hand him over. The town shouldn't get itself mixed into the problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't mistake that for coward talk, though. We're a town of survivors, and we'll fight tooth and nail if pushed, but we don't go looking for trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about the situation with the Powder Gangers?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Take it easy now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

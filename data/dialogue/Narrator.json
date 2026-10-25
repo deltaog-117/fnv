@@ -1,0 +1,506 @@
+{
+ "page": "Narrator.txt",
+ "speaker": "Ron the Narrator",
+ "topics": [
+  {
+   "id": "VEndingCLCaesarAlive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating}Caesar entered The Strip as though it was his Triumph. The Legion pushed the NCR out of New Vegas entirely, driving them back to the Mojave Outpost.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating}The Legion occupied all major locations, enslaving much of the population and peacefully lording over the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating}Under the Legion's banner, civilization - unforgiving as it was - finally came to the Mojave wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingCaesarAlive"
+  },
+  {
+   "id": "VEndingCLCaesarDead",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating}The Legate is crowned as the new Caesar. He entered The Strip as though it was a military target, destroying anyone who resisted him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating}The Legion brutally occupied all major locations, killing and enslaving a large amount of the population.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating}Under the Legion's banner, civilization - savage as it was - finally came to the Mojave wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingCaesarDead"
+  },
+  {
+   "id": "VEndingConclusion",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narration, starting to wrap things up}And so the Courier's road came to an end... for now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, wrapping things up}In the new world of the Mojave wasteland, fighting continued, blood was spilled, and many lived and died - just as they had in the Old World.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, final closing comment of the game}Because war... war never changes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingConclusion"
+  },
+  {
+   "id": "VEndingCourierFemale",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narration, Good Karma, NCR Victory, Female}The Courier, fair and even-handed in her dealings throughout the Wasteland, was honored by the NCR for her support of the military at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}She was presented with the Golden Branch, the highest civilian decoration given by the Republic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Neutral Karma, NCR Victory, Female}Though the Courier's agenda was a mystery to many, she was honored by NCR for her support of the military at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}She was presented with the Golden Branch, the highest civilian decoration given by the Republic. {{This line is a dupe, do not record twice.}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Evil Karma, NCR Victory, Female}With brutal methods that few in NCR would approve of, it was the Courier who secured NCR's victory at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Despite her extreme actions, she was awarded with the Golden Branch, the highest civilian decoration given by the Republic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Good Karma, Legion Victory, Female}Though the Courier herself was just and forthright in her dealings throughout the Wasteland, she helped the Legion achieve victory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Caesar honored her with a golden coin, minted in celebration of her contributions and distributed throughout the wasteland. {{May have already been recorded, dupe line.}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Neutral Karma, Legion Victory, Female}The Courier, a mercenary at heart, helped the Legion achieve victory at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Caesar honored her with a golden coin, minted in celebration of her contributions and distributed throughout the wasteland. {{This line is a dupe, do not record twice.}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Evil Karma, Legion Victory, Female}The Legion marched over the Hoover Dam with the help of one who was as brutal and merciless as the worst of them: The Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Caesar honored her with a golden coin, minted in celebration of her contributions and distributed throughout the wasteland. {{This line is a dupe, do not record twice.}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Good Karma, House Victory, Female}The Courier, fair and kind-hearted to those in the Wasteland, ensured that Mr. House would keep New Vegas stable and secure for future generations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating}Mr. House afforded her every luxury at his disposal in the Lucky 38, both out of gratitude and a quiet pride in his choice of lieutenants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Neutral Karma, House Victory, Female}The Courier, who had a mixed history in the Wasteland, kept the status quo at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Mr. House kept New Vegas stable, if not free, for generations, and afforded the Courier every luxury at his disposal in the Lucky 38.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Evil Karma, House Victory, Female}The Courier, cruel and merciless, had ensured that Mr. House would maintain complete control over New Vegas and everyone in it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Mr. House afforded her every luxury at his disposal in the Lucky 38, mostly as a reward, but partly out of fear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Good Karma, Indy Vegas, Female}Supporting the ideals of independence, the Courier was recognized as the woman responsible for a truly free New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}She ensured that Mr. House's tyranny was broken and that neither Caesar's Legion nor NCR would ever gain control over New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Neutral Karma, Indy Vegas, Female}Preferring neither the best of the NCR nor the worst of the Legion, the Courier was the woman responsible for a truly independent New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}She had removed Mr. House from power over the Strip and broken the influence of the NCR and Caesar's Legion in the Mojave Wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Evil Karma, Indy Vegas, Female}Supporting all of the chaos that comes with independence, the Courier was the woman responsible for a truly free New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}She ensured the fall of Mr. House and the end of the Legion's and NCR's influence over New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingCourierFemale"
+  },
+  {
+   "id": "VEndingCourierMale",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narration, Good Karma, NCR Victory, Male}The Courier, fair and even-handed in his dealings throughout the Wasteland, was honored by the NCR for his support of the military at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}He was presented with the Golden Branch, the highest civilian decoration given by the republic. {{This line may be a dupe, don't record again if recorded once already.}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Neutral Karma, NCR Victory, Male}Though the Courier's agenda was debated by many, he was honored by NCR for his support of the military at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}He was presented with the Golden Branch, the highest civilian decoration given by the Republic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Evil Karma, NCR Victory, Male}With brutal methods that few in NCR would approve of, it was the Courier who secured NCR's victory at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Despite his extreme actions, he was awarded with the Golden Branch, the highest civilian decoration given by the Republic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Good Karma, Legion Victory, Male}Though the Courier himself was just and forthright in his dealings throughout the Wasteland, he helped the Legion achieve victory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Caesar honored him with a golden coin, minted in celebration of his contributions and distributed throughout the wasteland. {{This line may be a dupe, don't record again if recorded once already.}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Neutral Karma, Legion Victory, Male}The Courier, a mercenary at heart, helped the Legion achieve victory at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar honored him with a golden coin, minted in celebration of his contributions and distributed throughout the wasteland. {{This line may be a dupe, don't record again if recorded once already.}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Evil Karma, Legion Victory, Male}The Legion marched over the Hoover Dam with the help of one who was as brutal and merciless as the worst of them: The Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Caesar honored him with a golden coin, minted in celebration of his contributions and distributed throughout the wasteland. {{This line is a dupe, don't record again if recorded once already.}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Good Karma, House Victory, Male}The Courier, fair and kind-hearted to those in the Wasteland, ensured that Mr. House would keep New Vegas stable and secure for future generations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Mr. House afforded him every luxury at his disposal in the Lucky 38, out of gratitude - and a quiet sense of pride for his choice in lieutenants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Neutral Karma, House Victory, Male}The Courier, who had a mixed history in the Wasteland, kept the status quo at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Mr. House would keep New Vegas stable, if not free, for generations. Mr. House afforded the Courier every luxury at his disposal in the Lucky 38.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Evil Karma, House Victory, Male}The Courier, cruel and merciless, had ensured that Mr. House would maintain complete control over New Vegas and everyone in it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Mr. House afforded him every luxury at his disposal in the Lucky 38, partly out of gratitude, and party out of fear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Good Karma, Indy Vegas, Male}Supporting the ideals of independence, the Courier was recognized as the man responsible for a truly free New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}He ensured Mr. House's tyranny was broken and neither Caesar's Legion nor NCR would ever gain control over New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Neutral Karma, Indy Vegas, Male}Preferring neither the best of the NCR nor the worst of the Legion, the Courier was the man responsible for a truly independent New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}He had removed Mr. House from power over the Strip and broken the influence of the NCR and Caesar's Legion in the Mojave Wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration, Evil Karma, Indy Vegas, Male}Supporting all the chaos that comes with independence, the Courier was the man responsible for a truly free New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}He ensured the fall of Mr. House and the end of the Legion's and NCR's influence over New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingCourier"
+  },
+  {
+   "id": "VEndingIndependent",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narration}The Courier, with the aid of Yes Man, drove both the Legion and the NCR from Hoover Dam, securing New Vegas' independence from both factions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}With Mr. House out of the picture, the remaining Securitrons on The Strip were hard-pressed to keep order. {Beat}Anarchy ruled the streets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}When the fires died, New Vegas remained, assuming its position as an independent power in the Mojave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}The Courier, with the aid of Yes Man, drove both the Legion and the NCR from Hoover Dam, securing New Vegas' independence from both factions. {{Dupe of another line for scripting}}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}With Mr. House out of the picture, part of the Securitron army was diverted to the Strip to keep order. {Beat, slightly lower}Any chaos on the streets was ended, quickly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narration}Chaos became uncertainty, then acceptance, with minimal loss of life. {Beat}New Vegas assumed its position as an independent power in the Mojave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingIndependent"
+  },
+  {
+   "id": "VEndingIntro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narration}And so the Courier who had cheated death in the cemetery outside Goodsprings cheated death once again, and the Mojave wasteland was forever changed. {And so the Courier cheated death, playing a pivotal role in the future of the Mojave wasteland.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingIntro"
+  },
+  {
+   "id": "VEndingMrHouse",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating}Mr. House's Securitron army took control of Hoover Dam and The Strip, pushing both the Legion and the exhausted NCR out of New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating}Mr. House continued to run New Vegas his way, a despotic vision of Pre-War glory. The streets were orderly, efficient, cold.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating}New Vegas continued to be the sole place in the wasteland where fortunes were won and lost in the blink of an eye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingMrHouse"
+  },
+  {
+   "id": "VEndingNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating}The New California Republic celebrated its second victory at Hoover Dam, establishing definitive control over the entire Mojave Wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating}Soon after, they negotiated terms to annex The Strip, Freeside, and many surrounding communities.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating}The Mojave wasteland, at long last, had entirely fallen under the NCR's banner.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingNCR"
+  },
+  {
+   "id": "VIntroNarration",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{paragraph 1}War. War never changes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 2}When atomic fire consumed the earth, those who survived did so in great underground vaults.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 2}When they opened, their inhabitants set out across the ruins of the Old World to build new societies, establishing villages, forming tribes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 3}As decades passed, what {slight emphasis}had been the American southwest united",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 3}beneath the flag of the New California Republic, dedicated to Old World values of democracy and the rule of law.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 4}As the Republic grew, so did its needs. Scouts spread east, seeking territory and wealth in the dry and merciless expanse of the Mojave desert.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 4}They returned with tales of a city untouched by the warheads that had scorched the rest of the world - and a great wall spanning the Colorado River.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 5}The NCR mobilized its army and sent it east, to occupy Hoover Dam and restore it to working condition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 5}But across the Colorado, another society had arisen, under a different flag.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 5}A vast army of slaves forged from the conquest of 86 tribes - Caesar's Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 6}Four years have passed since the Republic held the dam - just barely - against the Legion's onslaught. The Legion did not retreat.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 6}Across the river, it gathers strength. Camp fires burn, training drums beat.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 7}Through it all, the New Vegas Strip has stayed open for business, under the control of its mysterious overseer, Mr. House,",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 7}and his army of rehabilitated tribals and police robots.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 8}You are a Courier, hired by the Mojave Express to deliver a package to the New Vegas Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{paragraph 8}What seemed like a simple delivery job has taken a turn for the worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VIntroNarration"
+  }
+ ]
+}

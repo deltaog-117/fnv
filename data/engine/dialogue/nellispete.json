@@ -1,0 +1,876 @@
+{
+ "id": "nellispete",
+ "speaker_name": "Pete (Fallout: New Vegas)",
+ "source": "NellisPete.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're back. When you walked off in the middle of our people's story, I thought you must be bored.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You killed Mother Pearl! Get out of here, outsider!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You killed Loyal! Get out of here, outsider!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're the outsider! Mother Pearl sent word that you'd be stopping by. You must be eager to hear the story of our people!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard about what you've done around here, and I have nothing to say to you, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "People around here are a bit upset with you, outsider, but I think there is hope for you yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've seen the bomber! It's... spectacular. The mural is coming true - thanks to you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Were you interested in hearing the story of our people any time soon, perhaps?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that you know the story of our people, you must have all sorts of questions!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How can I help you, Outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vendingboomers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating} Without organized leadership, the remaining Boomers slowly drifted away, leaving Nellis Air Force Base to be flooded by prospectors and scavengers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All of the Boomers' accumulated knowledge quickly scattered, and their existence slowly faded from memory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} After the battle of Hoover Dam, the NCR mounted several campaigns against the Boomers, but all were quickly ended by the Boomers' artillery.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Over time, as the Boomers found a need for gun powder, they developed a relationship with the Gun Runners, trading their surplus crops for munitions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Mr. House showed little interest in the Boomers and left them to themselves in Nellis.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The tribe remained fortified in Nellis with their backs to the world.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Boomers defended themselves against many attacks from the Legion, but they eventually fell to the Legion's superior numbers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Legion enslaved the Boomers and erased any memory of their existence from the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} With little law left in the wasteland, the Boomers continued to defend themselves against the prospectors and scavengers invading their territory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} With the help of the Gun Runners, the Boomers developed a healthy trading relationship with the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually the Boomers began wandering out into the wasteland, while still preventing outsiders from entering Nellis.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Mr. House showed little interest on the Boomers, who eventually began venturing out of Nellis to meet and trade with travelers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Cautious after the Boomers' display of power at Hoover Dam, Caesar chose to leave the Boomers alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Boomers remained isolated but have been seen flying over the Mojave Desert from time to time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Though the Wasteland became anarchic after Hoover Dam, the Boomers' display of power dissuaded fortune seekers from attempting to penetrate Nellis.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingBoomers",
+   "prompt": "VEndingBoomers"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me? I'm Pete, Keeper of the Story.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know I seem kind of young. I was the apprentice Keeper of the Story until a couple months ago, but ol' Keeper Don, well...",
+     "emotion": "sad",
+     "intensity": 80
+    },
+    {
+     "text": "Whiskey and land mines don't go together. So it's up to me. I bet you want to know everything about us!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic000",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wonderful! I'm sure you've noticed the mural on the wall of this hut. Shall I tell you what it all means?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anything else you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Other questions you want to ask?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What else I can tell you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wish everyone were just as interested in our story as you are! Maybe I should act out the battles or learn how to throw my voice...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic001",
+   "prompt": "I'd like to know all about your people."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ask away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic001",
+   "prompt": "I have some questions about your people's history."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want to hear it again? Of course! I did a good job the first time, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic003",
+   "prompt": "Could you me tell the story of the mural again?"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic004",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent. Imagine - you're the first outsider ever to hear our tale! <clears throat>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic005",
+   "prompt": "Sure, I can spare the time."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're interested in knowing more about us, it seems like you'd be pretty amazed by the mural. Is there something else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic006",
+   "prompt": "Another time, maybe."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Several atomic warheads detonated here hundreds of years ago, leaving the base highly radioactive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The savages of the wastes, ignoramuses, all avoided Nellis by habit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic010",
+   "prompt": "I'm surprised Nellis was empty when your people found it."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nellis is a completely self-sufficient community! We draw water from Lake Mead, solar arrays provide power, and we grow our own crops!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic011",
+   "prompt": "How do you survive, totally cut off from the world?"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you know about the vaults! Yes, we lived in one of those. Ours was numbered 34.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In our vault, everyone had guns - but the overseer wouldn't let you fire off any of the really fun ones.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess all the little pops and bangs at the firing ranges just got boring after a while!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic012",
+   "prompt": "Why did your ancestors leave the safety of a vault?"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're right, they weren't here when we discovered Nellis! We found the guns at a huge weapon depot called Area 2, many miles from here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It took many weeks to drag the guns and their ammunition back to Nellis - and it was the last time any of us set foot beyond our homeland!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic013",
+   "prompt": "What are howitzers doing at an Air Force Base?"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Once we restored power, we learned that some elaborate chairs we'd been sleeping in were actually virtual reality simulators.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We believe they were used to train combat pilots. We use them extensively. I alone have shot down over 500 Chinese Xian-85 fighters! {Xian = shee-ahn}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Before you ask, I'm afraid there's no way you can be allowed to use the simulators. They are for our use only. Sorry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic014",
+   "prompt": "How has Nellis taught your people to fly?"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Loyal found a file somewhere on the base, with magazine articles, photographs, a map, even.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It seems that a bomber, apparently the 29th of its kind, crashed in Lake Mead on July 21st, 1948. Just imagine - that's over 300 years ago!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The photographs showed that it was basically intact, and the map tells us exactly where to find it. Except we haven't left Nellis in decades.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic015",
+   "prompt": "How did you learn where to find an old bomber?"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Is there something else you'd like to talk about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic016",
+   "prompt": "That's enough history for now."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Gosh, there's a lot of folks. Argyll's our doctor - he could use help tending to any injured we got.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Over at the workshop, Loyal and Jack are always building something - though Loyal may not be too happy to see your kind running around Nellis.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Raquel's our Master-At-Arms. I'm sure you've met her. There was a problem with some giant ants a while ago. She might want you to look into it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic017",
+   "prompt": "I'm looking to make myself useful. Who needs help around here?"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And at Nellis, we found it. We haven't detonated any atomic warheads since before I was born, but otherwise it's do as you will!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic018",
+   "prompt": "Your people were willing to risk it all for freedom."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Exactly! We haven't detonated any atomic warheads since before I was born, but besides that, to heck with nitpicky restrictions!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic019",
+   "prompt": "Yeah, any detonation with a yield of less than a half-ton of TNT is boring."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Um, that's nice, but it's not really the scale of explosion that interests us...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic020",
+   "prompt": "Yeah, I *love* it when I throw a grenade and it goes BANG!"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keep that opinion to yourself when visiting Nellis, outsider. It makes you sound ignorant.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic021",
+   "prompt": "You people are really crazy about blowing stuff up!"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right! Our Geiger counter indicated that the base was radioactive, but not dangerously so. Enough time has passed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic022",
+   "prompt": "But a little radiation didn't keep your people away!"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That's exactly right! You're very knowledgeable for a sav - an outsider!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic023",
+   "prompt": "Whereas your people had brought Geiger counters with them from the vault."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Uh... no. We'd just brought devices called Geiger counters with us from the vault, that's all. The radiation levels were safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic024",
+   "prompt": "But your people were mutants, immune to the radiation!"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For your information, our people had brought Geiger counters with them from the vault. The radiation levels here were within safe limits.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Also for your information, Nellis is not a scrapheap! We repaired most of the damage here long ago. Nellis is comfy!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic025",
+   "prompt": "Kind of stupid, making a radioactive scrapheap your home."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you. Our self-sufficiency is a point of pride.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic030",
+   "prompt": "The ingenuity of your people is remarkable."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Indeed we do! Very impressive.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic031",
+   "prompt": "You must cultivate soy or legumes for protein, in addition to grains."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] We are certainly not cannibals! We're not savages, like some people!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We supplement grains and green vegetables with soy and legumes - that's how we get our protein!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic032",
+   "prompt": "But where do you get protein? Oh my god! You're all *cannibals!*"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Our nutrition is not deficient! We supplement our diet of grains and vegetables with soy and legumes for protein.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic033",
+   "prompt": "I guess poor nutrition could explain a lot of your behavior."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, there's just about nothing we won't do to get our hands on some explosive ordnance!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic034",
+   "prompt": "Your people are a determined bunch."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Thank you so much! I'll be sure to pass that on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic035",
+   "prompt": "That howitzer battery is a monument to the grit and resolve of your people."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I think it would be an exaggeration to imply that our interest in explosive ordnance is at odds with our integrity...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic036",
+   "prompt": "You folks would sell your souls for some artillery! You just love the stuff!"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's nothing wrong with our interest in explosive ordnance. It's kept the savages out. Until today, at least.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic037",
+   "prompt": "Yeah, you people are coo-koo for things that go boom."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you for being so understanding.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic038",
+   "prompt": "Of course. You wouldn't want outsiders learning to fly."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That's beautiful! Yes, it's exactly like that, so free, so... words can't do it justice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic039",
+   "prompt": "Oh, to slip the surly bonds of Earth and dance amid the soaring birds..."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Your attempt at poetry, is... uh, beautiful, certainly. But it doesn't really work like that. Flying, I mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic040",
+   "prompt": "Oh, to flap one's arms and plunge bird-like headlong and skybound..."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can see how you think that, since you don't know what you're talking about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic041",
+   "prompt": "Simulators, ha! That's a crash waiting to happen!"
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It'll be spectacular, won't it? You should talk to Loyal. I bet you could help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic042",
+   "prompt": "I look forward to seeing the old bomber fly."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Yes! In fact, that's exactly what Loyal has planned to do. You should go talk to him!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic043",
+   "prompt": "You could attach ballast to the plane and then haul it here for repairs..."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm not a mechanic, but after 300 years I don't think those engines would just start up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic044",
+   "prompt": "I guess you could start the engines underwater and hop it up onto shore..."
+  },
+  {
+   "key": "vfreeformnellisnellispetetopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As I said, repairing and flying the bomber is our destiny. It's that simple.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisPeteTopic045",
+   "prompt": "Keep dreaming. That plane's never going to fly."
+  },
+  {
+   "key": "vfreeformnellispetemural01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Ages ago, long before I was born, we lived underground. Everyone had guns but the overseer wouldn't let us explode anything, not even a hand grenade.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural01",
+   "prompt": "VFreeformNellisPeterMural01"
+  },
+  {
+   "key": "vfreeformnellispetemural02",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We left and wandered the wastes. There were savages with knives. We blew them up with frag mines and grenades, burned them with flamethrowers.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural02",
+   "prompt": "VFreeformNellisPeterMural02"
+  },
+  {
+   "key": "vfreeformnellispetemural03",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "It was neat, but there was a downside. For every 43.6 savages we killed, we lost one of our own. We needed a new home. We needed Nellis.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural03",
+   "prompt": "VFreeformNellisPeterMural03"
+  },
+  {
+   "key": "vfreeformnellispetemural04",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Nellis, glittering like shrapnel in the desert sun. Nellis, bursting with missiles, warheads, and bombs. Nellis had waited. Just for us.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural04",
+   "prompt": "VFreeformNellisPeter04"
+  },
+  {
+   "key": "vfreeformnellispetemural05",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Here, we have prospered and multiplied. Here, our mighty guns destroy any savages who might try to harm us before they can even reach our gates!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural05",
+   "prompt": "VFreeformNellisPeteMural05"
+  },
+  {
+   "key": "vfreeformnellispetemural06",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Well, until... but... not saying you want to harm us or you're a savage, but... anyways. {(worried your narration has insulted the player)}",
+     "emotion": "pained",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural06",
+   "prompt": "VFreeformNellisPeteMural06"
+  },
+  {
+   "key": "vfreeformnellispetemural07",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Nellis has revealed many secrets. It has taught us how to fly the bombers once based here. And it has taught us where to find one!",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural07",
+   "prompt": "VFreeformNellisPeteMural07"
+  },
+  {
+   "key": "vfreeformnellispetemural08",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "And that is our story so far, for this last image is our future.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural08",
+   "prompt": "VFreeformNellisPeteMural08"
+  },
+  {
+   "key": "vfreeformnellispetemural09",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "To restore the bomber, to fly the open skies in armored safety, raining high-explosive ordnance upon ignorant savages - this is our destiny!",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural09",
+   "prompt": "VFreeformNellisPeteMural09"
+  },
+  {
+   "key": "vfreeformnellispetemural10",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'm pleased that you listened to the entire story! Perhaps there are details you'd like to know more about? Let me know.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisPeteMural10",
+   "prompt": "VFreeformNellisPeteMural10"
+  }
+ ],
+ "speaker": "pete"
+}

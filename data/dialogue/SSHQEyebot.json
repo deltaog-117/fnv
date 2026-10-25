@@ -1,0 +1,30 @@
+{
+ "page": "SSHQEyebot.txt",
+ "speaker": "Eyebot (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to the headquarters of the Sunset Sarsaparilla Company!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "SSHQEyebotFlee",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You appear to require assistance. I'll go find someone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SSHQEyebotFlee"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "id": "boomermesscm",
+ "speaker_name": "Boomer munitions manager",
+ "source": "BoomerMessCM.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformnellistopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. Pearl gave the green light. Take a look at the manifest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not without Pearl's permission, and she hasn't given permission.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisTopic003",
+   "prompt": "Could I buy some spare munitions?"
+  },
+  {
+   "key": "vfreeformnellistopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisTopic004",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "boomer_munitions_manager"
+}

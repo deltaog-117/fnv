@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "creature.schema.json",
+  "title": "Creature",
+  "description": "One entry in data/engine/creatures.json: a species with its stat variants.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "dlc",
+    "variants"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dlc": {
+      "$ref": "common.schema.json#/$defs/dlc"
+    },
+    "source": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "name": {
+            "type": "string"
+          },
+          "group": {
+            "type": "string"
+          },
+          "form_id": {
+            "$ref": "common.schema.json#/$defs/form_id"
+          },
+          "level": {
+            "type": "number",
+            "minimum": 0
+          },
+          "xp": {
+            "type": "number",
+            "minimum": 0
+          },
+          "perception": {
+            "type": "number",
+            "minimum": 0
+          },
+          "hp": {
+            "type": "number",
+            "minimum": 0
+          },
+          "dt": {
+            "type": "number",
+            "minimum": 0
+          },
+          "dr": {
+            "type": "number",
+            "minimum": 0
+          },
+          "aggression": {
+            "type": "number"
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "assistance": {
+            "type": "number"
+          },
+          "attacks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

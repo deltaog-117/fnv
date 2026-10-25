@@ -1,0 +1,507 @@
+{
+ "page": "VMSTopsTommyTorini.txt",
+ "speaker": "Tommy Torini",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Swank filled me in about Benny. Hell of a thing, baby. Hell of a thing.",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "Oh, come on, baby, we just got this place cleaned up after your last visit!",
+     "emotion": "pained",
+     "intensity": 45
+    },
+    {
+     "text": "Hey hey! Welcome, welcome, welcome to the finest entertainment experience in New Vegas! My name is Tommy Torini, and how can I make your night?",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Hey hey! Welcome, welcome, welcome to the finest entertainment experience in New Vegas! My name is Tommy Torini, and how can I make your day?",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Well, well, well, if it ain't the best-loved cat on the Strip in my theater! What can Tommy do for you, baby?",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Now baby, you know I welcome everybody here at the Aces, but I gotta ask you to keep any mayhem to a minimum, you dig?",
+     "emotion": "pained",
+     "intensity": 25
+    },
+    {
+     "text": "This new act is out of sight, baby! We're bringing in the caps like a Nuka-Cola bottling plant!",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "You doing right by Tommy, baby. Two new acts? We're making this joint jump!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Damn, baby, you bringing in so many acts the Rad Pack's taking half the night off! I'm seriously thinking about charging them for the free liquor.",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "I got to hand it to you, baby, you did an 18-karat job on this one. My schedule's so full I couldn't put on new acts if I wanted to!",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Welcome back! Here for another fine entertainment experience?",
+     "emotion": "happy",
+     "intensity": 100
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "TommyToriniBenny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Benny? Ahh, he's an all right cat, you dig? He don't got much musical talent, but he knows how to run a business. When he's around, anyways.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you think about Benny?"
+  },
+  {
+   "id": "TommyToriniBillyBargain",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That comedian you mean? Yeah, he practically begged me to hire him. Didn't even haggle.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to talk to you about how much you're paying Billy Knight."
+  },
+  {
+   "id": "TommyToriniIntro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, apart from serving as talent manager, show scheduler, and all-around man in charge of this fine theater, I happen to be its headline act.",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "Every night from eight till midnight, come on by to see the Rad Pack Revue live, only right here at the Aces Theater!",
+     "emotion": "happy",
+     "intensity": 75
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "TommyToriniStrip",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now why would you want to go breaking Tommy's heart asking a question like that?",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Here I run the finest entertainment venue in all New Vegas, and you're asking me \"what else is there?\"",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "Nothing close to what we got here at the Tops, that's for sure.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "prompt": "What other entertainment is there on the Strip?"
+  },
+  {
+   "id": "TommyToriniTalent",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The cowboy act? Yeah, he dropped on in here not too long before you. He's got chops, baby, real chops, and I ain't just talking about that mustache.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "And like we agreed, here's your fee. 3% of the cut comes to 100 caps. Don't spend them all in one place now - unless it's right here!",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "The cowboy act? Yeah, he dropped on in here not too long before you. He's got chops, baby, real chops, and I ain't just talking about that mustache.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "And like we agreed, here's your fee. 5% of the cut comes to 166 caps. Don't spend them all in one place now - unless it's right here!",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "You talking about Mr. Isaac? Damn, baby, when you bring them in, you bring them *in!* That cat's gonna bring me money like you wouldn't believe.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Here's your 3%, baby. You enjoy that.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "You talking about Mr. Isaac? Damn, baby, when you bring them in, you bring them *in!* That cat's gonna bring me money like you wouldn't believe.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Here's your 5%, baby. You enjoy that.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "That comedian you mean? Yeah, he practically begged me to hire him. Didn't even haggle. Here's your 3%.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "That comedian you mean? Yeah, he practically begged me to hire him. Didn't even haggle. Here's your 5%.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "That comedian you mean? Yeah, he was a hell of a haggler. Cost me a pretty cap - hope he's worth it. Here's your 3%.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "That comedian you mean? Yeah, he was a hell of a haggler. Cost me a pretty cap - hope he's worth it. Here's your 5%.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "That ugly mug with the razor tongue? Dig it baby, he'll be one hell of a novelty act. Just like Tommy promised, here's your 3%.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That ugly mug with the razor tongue? Dig it baby, he'll be one hell of a novelty act. Just like Tommy promised, here's your 5%.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about the acts I recruited."
+  },
+  {
+   "id": "TommyToriniTheater",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, it was my idea - well, me and the rest of the Rad Pack boys. We took it to Benny, and he thought it was a good idea.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "A few years later, here we are - the best show in New Vegas!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about this theater."
+  },
+  {
+   "id": "TommyToriniWork",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, baby, sure. Tommy's always looking for new talent to bring to the Aces.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Tell you what, you see any good acts while you're out wandering, give them my card. If they work out, I'll give you a 3% cut of the door.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Just swing back by as you recruit folks, I'll get you your bread.",
+     "emotion": "happy",
+     "intensity": 100
+    }
+   ],
+   "prompt": "Swank mentioned you might be looking for some new acts. Can I help?"
+  },
+  {
+   "id": "TopsAllSeenBenny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dig it, baby, he beat feet to his suite. You scare the big boss man or something?",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Have you seen Benny?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ring-a-ding! My card.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Sure, I'll keep an eye out."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, well, if you change your mind, just let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Talent scouting isn't really my thing. I think I'll pass."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, you drive a hard bargain, baby. Tell you what, I'll bump him up to 3,000. That's fair. Here's your cut.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Baby, you have got to be joking! Now take your cut and stop being crazy.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hang on, this comes out to 1,500 caps for Billy! He's worth three times that!"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well, now, you didn't hear this from Tommy, but Benny likes to go off on a bender now and then.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Usually he's only gone a couple days, but this last time nobody saw him for almost a month!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Ask me, I think he's got a dame from Gomorrah holed up in his suite, because nobody ever saw him leave it.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Yeah, I hear you. Any idea where he goes when he disappears like that?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Oh, uh, it ain't even a thing. Forget I even said it.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "prompt": "So, Benny likes to take off, huh? Uhh, want to tell me where he goes?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure thing, baby. What can Tommy do for you?",
+     "emotion": "happy",
+     "intensity": 75
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's cool, baby. Tommy's a forgiving fella.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Okay, sorry, I didn't mean anything by it."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, acts are a little bit thin on the ground right now, but every night from eight to midnight, we got the Rad Pack Revue!",
+     "emotion": "pained",
+     "intensity": 15
+    },
+    {
+     "text": "Songs, dancing, jokes, we got it all!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Really? What kind of entertainment do you have?"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Glad to hear it, baby! My card - pass it on if you see any good acts out there.",
+     "emotion": "happy",
+     "intensity": 100
+    }
+   ],
+   "prompt": "I've reconsidered about the talent scouting.",
+   "label": "Maybe I could help you find some more acts for your show."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know it, baby!",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Sounds great."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Ooh, a sharp customer! All right, all right, 5% it is.",
+     "emotion": "surprise",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Make it 5% and you've got a deal."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm guessing you don't really know how this business works, kid. My offer is very generous already. Think about it.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "prompt": "No way, I won't do it for less than 50%!"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Any day, baby, any day.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Thanks."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, you drive a hard bargain, baby. Tell you what, I'll bump him up to 3,000. That's fair. Here's your cut.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Baby, you have got to be joking! Now take your cut and stop being crazy.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hang on, this comes out to 1,500 caps for Billy! He's worth three times that!"
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Any day, baby, any day.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Thanks."
+  },
+  {
+   "id": "VMSTopsTalentPoolVMSTopsTommyToriniTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right, you drive a hard bargain, baby. Tell you what, I'll bump him up to 3,000. That's fair. Here's the difference for your cut.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Baby, you have got to be joking!",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Billy's worth three times what you're paying him."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Take it easy, baby.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  },
+  {
+   "id": "RadioHello",
+   "section": "radio",
+   "responses": [
+    {
+     "text": "{Manhattan}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RadioHello"
+  }
+ ]
+}

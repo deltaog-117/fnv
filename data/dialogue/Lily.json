@@ -1,0 +1,2181 @@
+{
+ "page": "Lily.txt",
+ "speaker": "Lily Bowen",
+ "topics": [
+  {
+   "id": "FollowersAcknowledgeMyOrder",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No need to get bossy, dear. {Gramma} Grandma can hear you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FollowersAcknowledgeMyOrder"
+  },
+  {
+   "id": "FollowersFired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Aww, {gramma} grandma will miss her little pumpkin! Are you sure?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's time for us to part ways."
+  },
+  {
+   "id": "FollowersFiredNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, pumpkin, you make {gramma} grandma so happy!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "On second thought, stick with me for a little longer."
+  },
+  {
+   "id": "FollowersFiredYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then, dearie. Now you promise to come visit {gramma} grandma soon, you hear?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll miss you too, Lily, but it's time.",
+   "label": "Yes, I'm sure."
+  },
+  {
+   "id": "FollowersFiredYesSuite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nice children shouldn't stay in places like that, dearie! That's the sort of place Leo likes! But if you insist....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like you to go back to the Lucky 38 for now."
+  },
+  {
+   "id": "FollowersHired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That'd be lovely, dearie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh no, dearie, three makes a crowd.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think we should travel together."
+  },
+  {
+   "id": "FollowersLetsGo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, dearie, let's go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's get going."
+  },
+  {
+   "id": "FollowersOverburdened",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Didn't your mother ever tell you it's polite to help an old lady carry her bags?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FollowersOverburdened"
+  },
+  {
+   "id": "FollowersStealthing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, don't you worry about me, dearie, your {gramma} grandma knows how to stay quiet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FollowersStealthing"
+  },
+  {
+   "id": "FollowersTactics",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course, dearie, I'll do whatever you want. I can't make any promises about Leo, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about your tactics."
+  },
+  {
+   "id": "FollowersTacticsCombat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ohhh, Leo might not like that, but I'll try, sweetheart.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to change your combat style."
+  },
+  {
+   "id": "FollowersTacticsCombatAggressive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can keep repeating yourself all day, dearie, but I remember what you said.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's exactly what Leo told me to do!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to attack enemies the moment you see them."
+  },
+  {
+   "id": "FollowersTacticsCombatEND",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you like, dearie.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "FollowersTacticsCombatGOODBYE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't you want to give {gramma} grandma some sugar first?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's all. Let's get going."
+  },
+  {
+   "id": "FollowersTacticsCombatMelee",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh dearie me, I thought I already was! Have I been confused all this time?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, I'm so glad, peanut. Leo finds chopping people so much easier.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Switch to a melee weapon."
+  },
+  {
+   "id": "FollowersTacticsCombatPassive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, dearie, that's what {gramma} grandma's been doing. And Leo isn't happy about it, either.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Concerned} Ohh, Leo's not going to like that....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you not to attack enemies unless I've already engaged them."
+  },
+  {
+   "id": "FollowersTacticsCombatRanged",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, if you insist, but Leo isn't going to like it much.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now now, dearie, there's no need to repeat yourself. {Gramma} Grandma hears just fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to use ranged weapons."
+  },
+  {
+   "id": "FollowersTacticsDistance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's the matter, dearie? Afraid {gramma} grandma will embarass you in front of your little friends?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's the matter, dearie? Do you miss having {gramma} grandma close by?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about how close you're following me."
+  },
+  {
+   "id": "FollowersTacticsDistanceDefault",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If I get any closer, I might squish you! And that would make {gramma} grandma sad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aww, someone misses {gramma} grandma!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Stay close to me."
+  },
+  {
+   "id": "FollowersTacticsDistanceEND",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What can {gramma} grandma do for her little pumpkin?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your distance is good. Let's talk about something else."
+  },
+  {
+   "id": "FollowersTacticsDistanceGOODBYE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Gramma} Grandma's right behind you, sugar!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All right, you're good. Let's get out of here."
+  },
+  {
+   "id": "FollowersTacticsDistanceLong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sweetie, I think {gramma} knows a little something about chopping evil people. That's what I've been doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, dear, {gramma} grandma will stay out of your way - but I'll be close enough to hear if you call!'",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Keep your distance. Try to flank them."
+  },
+  {
+   "id": "FollowersTrade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sing-songy} {Gramma} Grandma's got a present for you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's trade equipment."
+  },
+  {
+   "id": "FollowersWait",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't go too far now, dearie!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stay where {gramma} grandma can see you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gramma} Grandma will be right here if you need anything, pumpkin!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wait here."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That Keene, always causing trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm helping Doctor Henry with his experiment right now, dear. Come see me again in a bit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Jimmy? Little Jimmy - my, how you're grown up. So good of you to come visit your {gramma} grandma.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My word, but that was a lot of chopping at that casino, dear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Naughty children run from their punishment, but we'll find Benny, won't we Leo?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heavens to Betsy, but Mr. Benny met a nasty end. I hope you've realized, pumpkin, that crime doesn't pay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My, but that Lucky 38 is a large building. And so fancy!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leo doesn't like that you left that House man alive, dearie. He thinks you should have let us chop him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You should have heard Leo, sweetie. He laughed and laughed when that old man in the box exploded.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leo thinks there will be lots more chopping to do now that Caesar is dead. I do hope you'll be careful, pumpkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gramma} Grandma's so proud of her little pumpkin, rescuing the President like that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now sweetie, if at first you don't succeed, try, try again. That goes for learning to ride bikes and killing Presidents!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gramma} Grandma's so proud of her little pumpkin, assassinating the President like that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leo's very grumpy, pumpkin. He wanted to chop the President!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look at you, sweetness! Blowing up a robot army all by yourself, isn't that precious?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gramma} Grandma's so worried about her little baby! It's getting dangerous out there in the Wasteland!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leo's getting more and more agitated, sweetie. I think he can smell the fight coming.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you're not thinking about rushing off to that big dam, pumpkin! It's sure to be very dangerous!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{not a follower} Hello again, dear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{follower} Hello again, dear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "LilyBlackMountain",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wonder if Marcus knows about this place....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyBlackMountain"
+  },
+  {
+   "id": "LilyBoomers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Panicking} Ahh! Loud! Onetwothreefourfivesixseveneightninetenonetwothreefourfivesixseveneightnineten!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyBoomers"
+  },
+  {
+   "id": "LilyDogs",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nice puppies - do doggies want treats?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyDogs"
+  },
+  {
+   "id": "LilyNovac",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ooh, look, pumpkin! A dinosaur! Do you want to ride the dinosaur?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyNovac"
+  },
+  {
+   "id": "LilyPsychoticBreak",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, pumpkin, {gramma} grandma's sorry about that. Sometimes she gets mad and listens to Leo when she really shouldn't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The medicine is supposed to help with that, but sometimes {gramma} grandma doesn't take it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened in that fight back there?"
+  },
+  {
+   "id": "LilyQuestions",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Such a curious little munchkin, aren't you? What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have some questions to ask you."
+  },
+  {
+   "id": "LilyRecording",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, that old thing? That's a holotape from the last time I visited my grandkids. Such sweet little children, you know. Little angels.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sometimes it's hard to remember them, so I take that old tape out from time to time and listen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What was that recording you were listening to?"
+  },
+  {
+   "id": "LilyTabitha",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Tabitha! You naughty, naughty girl! Leo remembers what you did!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyTabitha"
+  },
+  {
+   "id": "LilyTheStrip",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My, aren't all these lights fancy?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyTheStrip"
+  },
+  {
+   "id": "LilyToDoctorHenry01",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Turning it on. Urgh... feels strange. Strange but good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyToDoctorHenry01"
+  },
+  {
+   "id": "LilyToDoctorHenry02",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Grrr! Lily smash! Haha.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyToDoctorHenry02"
+  },
+  {
+   "id": "LilyToDoctorHenry03",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Awww... I liked having it on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyToDoctorHenry03"
+  },
+  {
+   "id": "LilyUpgrade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, don't you worry your silly little head about that, pumpkin. {Gramma} Grandma knows what she's doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Lily, I'd like to talk to you about your medication."
+  },
+  {
+   "id": "LilyVault",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My, my, this reminds me of when I was a girl. Right over there would have been where your {grampa} grandpa and I had our first kiss!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyVault"
+  },
+  {
+   "id": "PLAYERFIREWEAPON",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player fired a gun near Lily} You'll put someone's eye out with that, dearie!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player fired a gun near Lily} It's not nice to do things like that, dear!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player fired a gun near Lily} This noise is making Leo get antsy!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "id": "PLAYERINIRONSITES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Gently chiding, player's aiming a gun at her} Pumpkin, don't point that at {gramma} grandma, there's a dear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player's aiming a gun at her} Leo doesn't like that, dearie. You should stop.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "id": "PLAYERLAYMINE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Very loud, just saw player lay a mine} Ohh, that's very sneaky, dear! I'll be sure not to tell anyone about that mine!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Just saw player lay a mine} You should pick that up before someone hurts themselves!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "id": "PLAYERTHROWGRENADE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player just threw a grenade} Boom!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player just threw a grenade} Grenade!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player just threw a grenade} Pineapples, Leo!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "id": "VEndingLily",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lily's long life finally came to a close in the Mojave Wasteland. As the life faded from her, her last thoughts were of her grandchildren.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Encouraged by the Courier to take her medication regularly, Lily's mind eventually attained a semblance of clarity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Her memories dulled by the pills, she cast aside the recording of her grandchildren, no longer remembering its significance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lily continued to take her medicine at half-doses, and although she remembered her grandchildren, her mind remained muddled and confused.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually, she parted ways with the Courier and traveled west, seeking the remnants of her past.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Encouraged by the Courier to stop taking her medication altogether, Lily's instabilities grew worse with each passing day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually she became little more than a ravening beast, the kindly old grandmother subsumed beneath the rage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingLily"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I watch over the Bighorners. They're sweet, gentle creatures, but sometimes they get ornery. Just like my grandkids!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do in Jacobstown?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course, dearie. I know it's dangerous, but it'll all turn out for the best, you'll see. I'll go to him now - it would be rude to keep him waiting!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you still want to help Doctor Henry run his experiment?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course I will, dearie, if it's helpful. Don't you worry what will happen to little old me. I'm tougher than I look!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Doctor Henry wants to know if you'll continue to wear the Mark II prototype."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course, dearie.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "There's a risk that the mental damage will be permanent."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know that, dearie.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You can always say no."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Certainly!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All right, if you're sure. Let's talk about something else."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Leo is a very bad man, pumpkin! {Aside} Yes you are, Leo, don't try to deny it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{back to player} He tells me to do things, terrible things, and sometimes the medicine isn't enough to keep him quiet!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who is Leo?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, Jimmy, don't you go being silly now! Come over here and give your {gramma} grandma some sugar!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who's Jimmy?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I... {confused, realizing she's hallucinating} Oh, of course I have, dearie. How silly of me. I didn't take my medicine yet today. How can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think you have me confused with someone else."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course, Jimmy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Let's talk about something else."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Aww, someone wants to hear {gramma's} grandma's stories! What would you like to hear, pumpkin?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Isn't that sweet of you to fret about me? Such a good boy. I can always help you stay hidden from the bad people so you won't get in trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't mind fighting - especially to protect you, dearie - but I don't like guns. Give me a good chopper, and Leo and I will go right to work!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Isn't that sweet of you to fret about me? Such a good girl. I can always help you stay hidden from the bad people so you won't get in trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't mind fighting - especially to protect you, dearie - but I don't like guns. Give me a good chopper, and Leo and I will go right to work!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the best way for me to use your skills?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sometimes it makes {gramma} grandma forget things she doesn't want to forget, pumpkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why don't you take your medicine?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure, dearie? Taking my medicine all the time makes me feel woozy, but it does make it easier for me to ignore Leo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's too dangerous for you to miss doses. From now on I want you to take your medicine every time."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you need, sugar?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind, I had some other questions."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's sweet of you, dearie. I'll try to be better about controlling myself if I see you try to sneak away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You should keep taking your meds every other time. It's worth the risk to remember your family."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I grew up in Vault 17. I never even saw the sun until I was 75 years old - that was when Super mutants raided the Vault and carried a lot of us off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Aside} Yes, Leo, I'm getting to that part! {Back to player} They made me one of them, and they put me to work in an army that was going to conquer California.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where did you come from?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh my stars! Are you sure? If I don't take any medicine at all, Leo gets especially cranky. I can't stop him when he's like that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That medicine isn't doing you any good. I want you to stop taking it altogether."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whenever you're ready, dear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind, we'll talk about it later."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Correction} A spy. Sometimes an assassin. I killed a lot of folks for the Master. {Aside} Yes, Leo, you helped, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You were a soldier?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, he was a nasty man, dearie. You don't want to know about him. He was the one who made that Super mutant army I told you about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who was the Master?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That wicked old Master got what was coming to him, that's what! After his cathedral blew up, I decided it was high time to go home.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happened then?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Doctor Henry calls them {struggling to pronounce word} \"anti-psychotics.\" I don't know what they're supposed to do, they just make my memory fuzzy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What kind of medicine are you taking?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This old thing? Oh, I scavenged it off a wreck in Klamath. Leo showed me how to make it all ready for chopping, didn't you, Leo?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where'd you get that sword?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well of course there is, dearie. How else could I hear him tell me who to chop?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "But... there's no one there."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You shouldn't say things like that where Leo can hear you, dearie. He doesn't like it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So he's just a voice you hear in your head?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, all right, then, dearie. {Sad} I suppose I'll have my holotapes to remind me of Becky and Jimmy....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm sure. I'd rather you didn't have any psychotic breaks, even if it means you aren't as strong."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, dearie?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "On second thought...."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, pumpkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's good. Do that."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, dear. If you're really sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll risk you having more psychotic breaks if it means you're more dangerous in combat."
+  },
+  {
+   "id": "vDialogueLilyLilyTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's my medicine, dearie. It keeps me calm, but it makes my memory go all fuzzy. That's why I only take my dosage every other time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That way at least I remember their faces.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why is it hard to remember them?"
+  },
+  {
+   "id": "vDialogueLilyLilyTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Tabitha was {gramma's} grandma's squad leader when we both worked for the Master. She wasn't very nice at all, but she was good at the chopping.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Almost as good as Leo....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Earlier, it seemed like you knew Tabitha. What's the story there?"
+  },
+  {
+   "id": "vDialogueLilyTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oooh, those Nightstalkers, always killing my Bighorners! It'll be nice to give them a piece of my mind!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh no, dearie, three makes a crowd.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm looking into the Nightstalker mutation. Want to come along with me?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Talk to you soon, dear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Do little angels want butterscotch candies? Sweets for sweeties!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aww, aren't you just precious? Come here little darling, let {gramma} grandma pinch your cheek!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look at this little dear! {Gramma} Grandma Lily could just eat you up!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Peek-a-boo! I see you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come here little one, give {gramma} Grandma Lily some sugar!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you got a hug for me, cutie-pie?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gramma} Grandma Lily's got hugs and kisses for all good little children! Mwah! Mwah! Mwah!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who wants some of {Gramma} Grandma Lily's famous Chocolate Double Surprise?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "LilyBreakEnd",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Ohh... that was a bad one, wasn't it, Leo?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Heavy breathing} {Gramma} Grandma's feeling calmer now, dearie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh my stars, did I do all of this?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gracious me, I lost control a bit there!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyBreakEnd"
+  },
+  {
+   "id": "LilyMedicine",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Time for medicine!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gramma} Grandma has to take her pills now, dearie!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Medicine time!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's my alarm - time to take my pills.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hush, Leo, it's medicine time now!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LilyMedicine"
+  },
+  {
+   "id": "AcceptYield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You shouldn't be so mean to people!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Behave yourself from now on, you hear?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "AcceptYield"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Angry} You'll make Leo angry!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Angry} Didn't your mama ever tell you not to hit old ladies?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Leo is going to give you such a paddling, you won't be able to sit down for a week!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Emphasizing each word, almost like each one is a strike} Why! Won't! You! Behave?!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Bad Nightkin! You need to go see Marcus and Doctor Henry!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Stop acting so rambunctious, you naughty, naughty children!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Attack Grunt}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "AvoidThreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Be careful, sweetie!",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Careful!",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Don't hurt yourself, pumpkin!",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "prompt": "AvoidThreat"
+  },
+  {
+   "id": "Crippled",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Critically injured} {Gramma's} Grandma's limbs aren't doing too well, pumpkin.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Critically injured} Yes it hurts, Leo, but the doctors can fix me right up!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Crippled"
+  },
+  {
+   "id": "Death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Death Noise 1}",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Death Noise 2}",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Death Noise 3}",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Death"
+  },
+  {
+   "id": "DeathResponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Wake up, sleepyhead! {Uncertain, doesn't realize the person is dead} Wake up? ...Please?",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "Oh, no! {Gramma's} Grandma's little pumpkin! Rraaaargh!",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "DeathResponse"
+  },
+  {
+   "id": "FireExplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "This is going to be loud, sweetie!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Cover your eyes, pumpkin, or you'll go blind!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "FireExplosive"
+  },
+  {
+   "id": "Flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get away from them, sweetie! Follow {gramma} grandma!",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "No, Leo, we have to run away now! No more chopping!",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "{Afraid} Get away! Get away!",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Flee"
+  },
+  {
+   "id": "Frenzy",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Wild Shout of Rage}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Frenzy"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Go away! Go away!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "If you don't leave now, Leo might start chopping!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You're frightening the children! Leave!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "HealthHalf",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Oh dear, {gramma} grandma's not feeling too good!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Near panic, rapidly repeating like a mantra} One two three four five six seven eight nine ten! One two three four five six seven eight nine ten!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Gramma} Grandma needs her medicine!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Freaking out, going crazy scream}",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Gramma} Grandma needs to have a little lie down!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Pained/Labored breathing through gritted teeth 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Pained/Labored breathing through gritted teeth 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HealthHalf"
+  },
+  {
+   "id": "HealthQuarter",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Freaking out, going crazy scream}",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Badly hurt} No! {Gramma} Grandma won't leave her babies!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Badly hurt} Leo, I think we're in very big trouble!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Dying}<Coughing Fit>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HealthQuarter"
+  },
+  {
+   "id": "Hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Got hit sound 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Got hit sound 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Got hit sound 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hit"
+  },
+  {
+   "id": "KnockedBack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Knocked Back 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Knocked Back 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "KnockedBack"
+  },
+  {
+   "id": "KOed",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{KOed 1}",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{KOed 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KOed 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "KOed"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You shouldn't be so naughty, pumpkin!",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "No, no, no! Leo does the chopping, not you, dearie!",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "That wasn't a nice thing to do!",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "MurderNoCrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Sweetie, leave that messy business to Leo.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure that one was {emphasis} very naughty, pumpkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leo says your technique was very good that time!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "id": "NoAmmo",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Sweetie, {gramma} grandma needs some more ammunition!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "If I don't get some ammunition soon, {Angry, barely holding onto some semblance of sanity} Leo's going to start chopping!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Didn't {gramma} grandma tell you it's good to share, sweetheart? Especially ammo?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "NoAmmo"
+  },
+  {
+   "id": "|OnFire",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{On Fire}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "OnFire"
+  },
+  {
+   "id": "Poisoned",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Gramma} Grandma's feeling woozy - be a dear and fetch her a poison antidote?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Woozy, poisoned} Either {gramma} grandma needs to cut back on {grampa's} grandpa's special moonshine, or she's been poisoned.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Poison"
+  },
+  {
+   "id": "PowerAttack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Power attack sound 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Power attack sound 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Power attack sound 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PowerAttack"
+  },
+  {
+   "id": "Regenerating",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Getting second wind} Oh, {gramma} grandma feels much better now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Getting second wind} That's much better, isn't it, Leo?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Getting second wind} Ahh....",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Regenerating"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Sweetie, if you want something, just ask {gramma} grandma politely.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Stealing isn't very nice, is it Leo?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Just caught the player stealing} Is someone looking for a paddling?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "UsedDoctorBag",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Gramma} Grandma's feeling much better now.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Fully healed} Oh, that's much nicer.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Fully healed} Better than a long hot soak in an oatmeal bath!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "UsedDoctorBag"
+  },
+  {
+   "id": "Wake",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Is {gramma} grandma's nap over already?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Gramma's} Grandma's head hurts....",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Breathing in deeply as you wake up}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Disoriented}Hmm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To self, shaking off cobwebs}Oof.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wake"
+  },
+  {
+   "id": "WeaponBroke",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Leo broke another weapon! I told you you hit too hard, Leo!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Gramma} Grandma needs another weapon, pumpkin!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Gramma} Grandma's weapon broke, and there are still backsides that need paddling!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "WeaponBroke"
+  },
+  {
+   "id": "WeaponIneffective",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "This weapon isn't working! And Leo doesn't like that very much!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Gramma} Grandma needs a bigger paddle for this behind!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Chop them harder, Leo! Harder! Don't blame the weapon!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "WeaponIneffective"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I don't see them anywhere, Leo! Do you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can't hide from {gramma} grandma!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you don't come out soon, ooh, you're going to get such a paddling!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Got you!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Gramma} Grandma sees you!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You can't hide from Leo!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Giving up, didn't see anything after all} Leo's playing tricks again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Giving up, didn't see anything after all} It's okay, sweetheart, there aren't any monsters out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Giving up, didn't see anything after all} We're all alone now, pumpkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Where'd you go?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gramma} Grandma will find them, sugar, don't you worry!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do you see them, Leo? I don't see them!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "It's okay, sweetheart, the bad people are all gone now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That will teach them to mess with my babies!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leo won't be happy there's no one else to chop!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You'd better come out befoe Leo gets mad!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do you see anything, sweetie?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry, {gramma} grandma's still looking!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "There they are! Get them, Leo!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "We found you!",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You can't hide from your paddling!",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "If they come back, Leo will be waiting!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's probably best to leave well enough alone, dearie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The bad men have all gone away, sweetness. {Gramma} Grandma's here to protect you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Did you hear something, Leo?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who's out there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Becky? Jimmy? Is that you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Entering combat} Get behind {gramma} grandma, sweetheart!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Entering combat} I won't let you hurt my babies!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leo! Time for chopping!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombat"
+  },
+  {
+   "id": "StartCombatResponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Don't worry, pumpkin, {gramma} grandma's here to help!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gramma} Grandma's coming, babies!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leo! Try not to chop our friends this time!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "id": "ObserveCombat",
+   "section": "miscellaneous",
+   "responses": [
+    {
+     "text": "No need to get into that mess, sweetheart!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, Leo, we won't go over there and start chopping! No!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ObserveCombat"
+  }
+ ]
+}

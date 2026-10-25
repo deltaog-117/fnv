@@ -1,0 +1,187 @@
+{
+ "id": "vhdintaketowercenturion",
+ "speaker_name": "Centurion",
+ "source": "VHDIntakeTowerCenturion.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, the outsider who gained our master's favor. You prove yourself as cunning as the rumors report.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I cannot speak long, for my men need direction. What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vhdlegionbattlevhdintaketowercenturiontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My men await in the tunnel below. I am to divide them between the dam top and the tunnels that lead to the western power plant.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegionBattleVHDIntakeTowerCenturionTopic000",
+   "prompt": "Report, centurion. What are your standing orders?"
+  },
+  {
+   "key": "vhdlegionbattlevhdintaketowercenturiontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The fighting in the power plant is the fiercest, as expected. But the dogs have been caught off guard, and their positions can expect no support.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, the pipes below have been sealed, cutting off our men until the dam top can be secured.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been diverting half of my men to the tower next to this one. It's a bit of a swim, but the enemy hasn't sealed those pipes yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of the other centuriae are more stubborn in following their orders exactly, though, and wait in the pipes below.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you should make it down there, unsealing the pipes again will allow us to spill over the enemy like a tide of blood.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegionBattleVHDIntakeTowerCenturionTopic001",
+   "prompt": "What news of the battle below?"
+  },
+  {
+   "key": "vhdlegionbattlevhdintaketowercenturiontopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "More than a few, if I have my way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegionBattleVHDIntakeTowerCenturionTopic002",
+   "prompt": "I have to keep moving. Kill a few of them for me."
+  },
+  {
+   "key": "vhdlegionbattlevhdintaketowercenturiontopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Your words have merit... Very well. I shall tell my men to concentrate their efforts here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegionBattleVHDIntakeTowerCenturionTopic003",
+   "prompt": "It is imperative we secure the dam top. Instead of dividing your men, focus their attack here.",
+   "label": "{Speech 60 - Convince the centurion to direct all his men to the dam top}"
+  },
+  {
+   "key": "vhdlegionbattlevhdintaketowercenturiontopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I have my orders, and they explicitly state that I am to divide my men.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegionBattleVHDIntakeTowerCenturionTopic003",
+   "prompt": "Screw that. I need all your men dying fo- er, backing me up here.",
+   "label": "{Speech 60 - Convince the centurion to direct all his men to the dam top}"
+  },
+  {
+   "key": "vhdlegionbattlevhdintaketowercenturiontopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Agreed. If we take the power plant, this battle is over. I'll have my men focus their efforts there. May the Son of Mars go with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegionBattleVHDIntakeTowerCenturionTopic004",
+   "prompt": "The power plant is what really matters. Have all of your men attack there. I'll finish things here.",
+   "label": "{Speech 80 - Convince the centurion to direct all his men down to the power plant}"
+  },
+  {
+   "key": "vhdlegionbattlevhdintaketowercenturiontopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Forgive my appraisal of your prowess, but all the same I'd rather send some of my men with you to help secure the dam top.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegionBattleVHDIntakeTowerCenturionTopic004",
+   "prompt": "Pffft. I can handle things here. You and your men can hold the power plant until I get there.",
+   "label": "{Speech 80 - Convince the centurion to direct all his men down to the power plant}"
+  },
+  {
+   "key": "vhdintaketowercenturionbarks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Move it, you curs!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's still more killing to be done!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep moving!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I will personally gut the first man to slow down!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leave none alive!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDIntakeTowerCenturionBarks",
+   "prompt": "VHDIntakeTowerCenturionBarks"
+  },
+  {
+   "key": "vhdintaketowercenturionthanks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Thank Mars. The assault can resume.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDIntakeTowerCenturionThanks",
+   "prompt": "VHDIntakeTowerCenturionThanks"
+  }
+ ],
+ "speaker": "centurion"
+}

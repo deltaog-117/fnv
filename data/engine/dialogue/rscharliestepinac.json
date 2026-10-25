@@ -1,0 +1,209 @@
+{
+ "id": "rscharliestepinac",
+ "speaker_name": "Stepinac",
+ "source": "RSCharlieStepinac.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} Hey there. Is McCarran having you check up on us?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "McCarran doesn't like it when civilians wander into military outposts, so if you're here on business, better make it quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're back. What's up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vmsrscharliequesttopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All quiet at the moment. Ranger {BOH-mont} Beaumont is in charge here, but he's off leading a patrol.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was quiet until those rockets blasted off over our heads.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "There was a hell of a boom over at REPCONN. Looks like the ghouls had some sort of accident with their rockets.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSCharlieQuestTopic001",
+   "prompt": "Anything unusual happening around here?"
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Simple enough to change. I doubt the Legion's listening in on us - they're not that sophisticated - but better safe than sorry, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic001",
+   "prompt": "I've brought new security codes for this station's radio from Sergeant Reyes."
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Radio signal out here can be pretty spotty because of all the hills. Sometimes our scheduled updates don't go through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When it happens enough times, they send someone over to check up on us. Lately, we've been getting extra medical supplies for some reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm in no rush to give the supplies back, either.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic002",
+   "prompt": "What was that about McCarran?"
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ranger Station Charlie. We're responsible for keeping the highway up through Novac civilized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic003",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{NCR - Devil} Something tells me this isn't the first time you've done things that the NCR would find... objectionable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take some of these. And don't tell anyone where you got them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCR - not Devil} I shouldn't have said anything in the first place, and I'd rather not get you into the habit of crossing the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic004",
+   "prompt": "Mind if I take some of those extra medical supplies?"
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're part scout, part commando, part sheriff. The training is brutal, and I'd say eight out of ten recruits washes out before the end.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Before you get your Ranger badge, you've got to prove you can be quieter than a shadow and more ferocious than a Deathclaw.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic005",
+   "prompt": "Tell me about the Rangers."
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic006",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Couple dozen, I'd say, most of them posted at stations like this one. We either man the station or patrol the immediate area.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic007",
+   "prompt": "Are there a lot of Rangers in the Mojave?"
+  },
+  {
+   "key": "vdialoguerangerstationcharlierscharliestepinactopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Rangers mostly draw from the basic NCR army. A trooper who shows exceptional skill at fighting and scouting can be nominated for the training.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationCharlieRSCharlieStepinacTopic008",
+   "prompt": "How does someone become a Ranger?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "comm_officer_stepinac"
+}

@@ -1,0 +1,362 @@
+{
+ "id": "nelliscrimsoncaravanjanet",
+ "speaker_name": "Janet (Fallout: New Vegas)",
+ "source": "NellisCrimsonCaravanJanet.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You should go talk to Blake or Alice, they handle most of our contact with visitors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You should go talk to Blake or Alice, they handle most of our contact with visitors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello again. How's your Boomer friend?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Have you spoken with McLafferty yet?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry} You tried to get me killed. Get the hell out of my face.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I'm on my way to meet that Boomer you told me about!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you for getting me here. Jack is a great guy.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I watch all sorts of things with my binoculars. Who wants to know, and why?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic000",
+   "prompt": "I don't suppose you watch the Boomers over in Nellis sometimes, do you?"
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic001",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright then, goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic002",
+   "prompt": "No reason. I'll be off now."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nice-looking blonde boy? I always wondered if he was watching me back! What's he like?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic003",
+   "prompt": "I've been inside Nellis. There's a young man there who has a crush on you."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? That's so sweet!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd love to go meet him. Is there any way the Boomers would let me visit Nellis?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic004",
+   "prompt": "He's nice, maybe a little naive. Seems convinced you're the love of his life."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you don't have to do that anymore! Sounds like I better hurry to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any chance the Boomers would let me visit Nellis?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic006",
+   "prompt": "He's a catch. You should see him blush when I flirt with him."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ooh, I've just got to meet him! Is there any way the Boomers would let me visit Nellis?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic007",
+   "prompt": "He's a special sort of guy - perfect for a special sort of gal."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Surprise} Really? Thank you so much! I'll get going right away.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic011",
+   "prompt": "<Lie> You have permission. They know you're coming."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic011_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Angry} Are you trying to get me killed? No way I'm going in there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic011",
+   "prompt": "<Lie> Just wave your arms and run as fast as you can."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ok, let me know when you have an idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic012",
+   "prompt": "I'm not sure. Let me think about it and I'll come back to you."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is so exciting! Let me know how it turns out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic013",
+   "prompt": "I'll ask Pearl to make an exception for you."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just my luck. I finally find the perfect guy, and he's a Boomer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic014",
+   "prompt": "I doubt it."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was hoping you would. What's going on?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was hoping you would. What's going on? Have they agreed to my safety yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic015",
+   "prompt": "Actually, I wanted to talk to you about him again."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ok, talk to you soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic017",
+   "prompt": "He's doing well. I'll come back when I have some more information."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, with McLafferty dead, I guess my contract is done and I'm free to leave. I'm off to meet my admirer!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's one more thing. I have a work contract with the Crimson Caravan, and if I walk away, I lose the wages they owe me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Could you do just one more thing for me and talk to Alice McLafferty about it? I know if I do it, she'll just say no. I'd hate to lose the money.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic018",
+   "prompt": "I got a Boomer uniform for you to wear while you cross to Nellis."
+  },
+  {
+   "key": "vdialoguecrimsoncaravan1ecrimsoncaravanworkercftopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll be around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravan1ECrimsonCaravanWorkerCFTopic019",
+   "prompt": "Not yet, but I hope to very soon."
+  },
+  {
+   "key": "vdialoguecrimsoncaravannelliscrimsoncaravanjanettopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, well let me know what she says.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanNellisCrimsonCaravanJanetTopic000",
+   "prompt": "I'm still working on it."
+  },
+  {
+   "key": "vdialoguecrimsoncaravannelliscrimsoncaravanjanettopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's great! I can't believe you went through all this trouble for me. Thank you!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanNellisCrimsonCaravanJanetTopic001",
+   "prompt": "I convinced her to pay you what you're owed. You're free to leave."
+  },
+  {
+   "key": "vdialoguecrimsoncaravannelliscrimsoncaravanjanettopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Well, thank you for trying. I'm off to go see my admirer now.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanNellisCrimsonCaravanJanetTopic002",
+   "prompt": "You're free to leave, but McLafferty won't pay you. That's the deal."
+  },
+  {
+   "key": "vdialoguecrimsoncaravannelliscrimsoncaravanjanettopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I see. Well, I guess I'm off to see my admirer now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueCrimsonCaravanNellisCrimsonCaravanJanetTopic003",
+   "prompt": "Well, you won't be getting any caps, but McLafferty won't be a problem for you."
+  },
+  {
+   "key": "vfreeformnellisnellisjacktopic022",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hi there, it is great to meet you as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisJackTopic022",
+   "prompt": "{Girlfriend reply 1}"
+  },
+  {
+   "key": "vfreeformnellisnellisjacktopic023",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "And you're even more handsome up close. Do you think it'll be okay if I hang around here for a little while, so we can get to know each other better?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisJackTopic023",
+   "prompt": "{Girlfriend reply 2}"
+  }
+ ],
+ "speaker": "janet"
+}

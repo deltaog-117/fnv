@@ -1,0 +1,4610 @@
+{
+ "page": "MrHouse.txt",
+ "speaker": "Robert House",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I knew you'd make it. Resourceful, as always.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The override module is functioning properly. I'm rerouting power to the Securitron vault at the Fort as we speak...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just need you to head over to the east power plant and manually activate the switch.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When you return topside, I think you'll see that my Securitron army is a little more than the Legion was prepared to handle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and before you go - grab that print-out spooling from the console here - those papers set the terms for the NCR's unconditional surrender.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I thought you might enjoy the honor of presenting them to the NCR's commanding officer, once the Legion has been defeated. Cheers!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FIRST, BUNKER, BENNY FLED} I do wish you'd come and met with me at the Lucky 38 when you first arrived on the Strip. Or after Benny fled, even.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FIRST, BUNKER, BENNY DEAD CASINO} I do wish you'd come and met with me at the Lucky 38 when you first arrived on the Strip. Or after you killed Benny, even.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FIRST, BUNKER} Quite an honor you spurned, my invite. You would be the first person to set foot inside the Lucky 38 in over 200 years.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{sigh of pique} But... you still wound up here, right where I wanted you. {self-satisfied} I knew I could rely on Caesar to return the Platinum Chip to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATER, BUNKER} Well! You're here ahead of schedule! I suppose it's just as well...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is where I wanted you to end up, after all. {self-congratulating} I knew I could rely on Caesar to give you back the Platinum Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATER, BUNKER, MISSION} I see that you reached your destination safely. Shall we get to work?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{BUNKER} Have you come to your senses? It's not too late to upload the Platinum Chip's data to the primary computer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{BUNKER} Stop wasting time. Go upload the data on the Platinum Chip to the facility's primary computer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{BUNKER} As you know, the Platinum Chip upgrades my Securitrons' operating software. Well... there's an army of them here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Securitrons policing the Strip are a fraction of the total number manufactured. The rest, I stored here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{BUNKER} The Platinum Chip is a data-storage device.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need you to manually upload the data from the Chip to the facility's primary computer. There's a terminal at the other end of this facility.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a complication. While I can broadcast to this screen, I can't control any of the facility's systems.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That means I can't deactivate its security bots... most of which appear to be active, according to the status board I'm looking at.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{BUNKER, FORT SECS DEST} {devastated} Do you have the slightest idea of what you've done, of what you've destroyed?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've doomed Vegas to be ruled by corrupt bureaucrats or fanatical savages.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Singlehandedly, you've brought mankind's best hopes of forward progress crashing down. No punishment would be too severe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{BUNKER} Your work here is done. Return to the Lucky 38 so we can discuss next steps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have a very bright future ahead of you. Thanks to your actions today, so does the rest of mankind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{PLAYER DIDN'T GET CHIP} {Should be Securitron on the Strip} Benny is dead, and yet you don't appear to be carrying the Platinum Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't suppose you forgot to search his body?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LOST CHIP} Before we go any further - where is the Platinum Chip?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FIRST, HAS CHIP, FORT SECS UP} {spoke to player at the Fort bunker first} So, we meet in person finally... so to speak. You did well at the Fort - kudos.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{HAD CHIP, REFUSED, RETURNED} Have you come to your senses - or will there be a repeat of the last incident?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FIRST, HAS CHIP, BENNY DEAD TOPS} You've been a busy courier, haven't you? You take your obligation to deliver an package very seriously - an ethic for which I am grateful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I will admit, when you ignored my invitation, I predicted... negative outcomes. But - you have a way of exceeding expectations, don't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well enough. Let's have the Chip, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FIRST, NO TOPS} {even tones, welcoming the player but appraising, too} This meeting has been a long time coming, hasn't it? You've come a long ways, literally and, I suspect, figuratively as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{proud of the Vegas you built} I have to ask - now that you've reached your destination, what do you make of what you see?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FIRST, BENNY FLED} The point of my inviting you to visit me here at the Lucky 38 {emphasis} before stomping into the Tops on your own was to help you prepare - tactically.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, because of your carelessness, Benny has fled the Strip, taking with him the Platinum Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FIRST DISCUSS, PLAYER VISITED TOPS} {welcoming player, trying to hide irritation} Well... this meeting has been a long time in coming... longer still, since you took time to {disapproving} charge into the Tops before coming to see me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{putting aside irritation} Before we get down to details, I must ask - now that you've arrived at your destination, what do you make of what you see?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NO TERMS, NO TOPS} {player walked away without accepting terms last time} Can I look forward to a more {beat, emphasis} substantial conversation this time?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{TERMS, NO TOPS} Have you considered the terms of my offer? There's else little for us to discuss until you have.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{TERMS YES, NO CHIP} What is the purpose of this delay?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATER, BENNY FLED} Events have transpired in a... {beat} less-than-optimal fashion. Benny has fled the Strip, and the Platinum Chip has not been recovered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATER, BENNY FLED} Benny must be pursued, and the Platinum Chip, recovered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATER, HAS CHIP, BENNY DEAD TOPS} So... Benny has been {slight beat} handled and you've recovered the Platinum Chip. Let's have it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{LATER, HAS CHIP} I take it you've come to deliver the Platinum Chip?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{HOUSE RECEIVES CHIP} {tenderly regarding the Chip} Such a small thing, isn't it? And yet so... {capacious = inexhaustibly capable} capacious. So very dear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Decades of hiring salvagers out west to search for this little {beat} relic in the ruins of a place called Sunnyvale. Back then, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's where the Chip was printed, on October 22, 2077. It was to have been hand-delivered to me here, at the Lucky 38, the next day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the bombs fell first. Suffice it to say, the delivery was never made.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{CHIP IN, STRIP SECS NO} {jaunty, eager to share your secret} Come now, come now... get thee to the elevator.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{CHIP IN, STRIP SECS NO} {growing impatient} To the elevator, if you please... Stop dragging your feet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{STRIP SECS UP} {dry} Trips to the basement are rarely so educational, don't you think?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've since broadcast the upgrade to every Securitron in range of my transmitters, and I must say, it's causing quite a stir down on the Strip!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{L38, HAS BUNKER MISSION} Make your way to Caesar's Camp at Fortification Hill. Something very interesting awaits you...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{STRIP SECS UP, GIVES BUNKER MISSION} To secure the future of New Vegas, I must have your assistance. The work ahead is dangerous, but {beat} you weather danger well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{STRIP SECS UP} Have you found the courage to do what's necessary?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, B4 CHIP} What did you wish to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, B4 CHIP} What else did you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FORT SECS NO} We'll talk again once you've concluded your work in the bunker at Fortification Hill.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FORT SECS UP} The foundation is laid. My Securitrons on the Strip are upgraded, and those at the Fort, ready for action.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now it's just a matter of adjusting the attitudes of some lesser groups while we wait for Caesar's Legion to attack Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{PLAYER HASN'T ACCEPTED BOOMER QUEST YET} The next step is to add the Boomers' considerable firepower to my growing arsenal... or at the very least, ensure their neutrality.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As I was saying, I need you to enlist or neutralize the Boomers at Nellis Air Force Base.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{BOOMERS QUEST ACTIVE} Any progress with the Boomers?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your next assignment won't take you far. It concerns the Omertas and their den of vice, Gomorrah.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As the decisive encounter between the bull and the bear looms close, my concerns about the Omertas have grown.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've never expected loyalty, mind you. A reliably underhanded tribe is just as constant to deal with as one that always run true.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But that's just it - lately the Omertas' cooperative silence has been deafening. Not a single complaint? They're up to something.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your next assignment would've been to investigate the Omertas, but you managed to foil their scheme before I could put you to the task.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I should compensate you as though it were an official assignment, however. Wouldn't want to {beat} disincentivize your proactivity.{cash out Omerta quest}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd hoped to have you investigate the Omertas, but after the trouble you caused at Gomorrah, they won't let you in the front door.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll see if I can make some progress with informants. You're useless in this matter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As I said before, I need you to investigate the Omertas, to see what they're up to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you have to report about the Omertas?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your next assignment is to locate and destroy remnants of the Mojave chapter of the Brotherhood of Steel.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR nearly did the job at Helios One a few years ago, but there seem to have been survivors, unfortunately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given the Brotherhood's fanatical views on technology, they can be counted on to oppose my regime.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please - put them out of my misery.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As I've said, I need you to locate and destroy the Brotherhood of Steel.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you destroyed the Brotherhood of Steel?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Will you ensure that President Kimball survives his visit to Hoover Dam?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{ALL REPUTATIONS LEAD-IN} Aaron Kimball, the president of the New California Republic, is going to visit Hoover Dam to \"boost morale.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Apparently he hasn't considered the effect on the troops' morale of seeing their beloved leader get his brains blown out by a Legion sniper.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{GOOD REP LEAD-IN} I need you to make sure that no harm comes to President Kimball. It's fortunate that you've maintained good relations with the NCR...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCR REPUTATION TERRIBLE} Unfortunately, I can't use you to protect Kimball. The NCR won't let you come within a thousand feet of the President.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Odds are that Caesar will launch his assault on the dam after Kimball's visit is concluded, one way or the other - so be on guard.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Last I knew, President Kimball wasn't scheduled to visit the Lucky 38. Be on your way to Hoover Dam, will you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If not for you, President Kimball would be dead. So you needn't feel guilty when the NCR's rout from Hoover Dam demolishes his political career.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why in the world did you attack President Kimball?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kimball is dead - what a mess you've made!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{GIVES EL DORADO SUBSTATION QUEST} Between the Strip and HELIOS One lies the El Dorado electrical substation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Humble as it appears, the substation has immense strategic value, for it's there that you'll jumpstart the Lucky 38's dormant reactor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gain access to the substation's control room and install this override module. Just so you know, there are NCR troops guarding the station.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Until the Lucky 38's reactor has been restarted, we have nothing to discuss.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As you can see, Vegas is humming along. I've tested my c3i broadcasting arrays. Everything is in order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And just in time, as it turns out. The forces of Caesar's Legion are on the march, establishing a staging area east of the dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Their assault could begin at any moment. So that's where you'll be heading, if you're ready - Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Legion's assault could begin at any moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, STRIP SECS UP} What did you want to discuss?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, STRIP SECS UP} What else did you want to discuss?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player fled combat last time} There will be no repeat of the trouble we had last time, I trust?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player fled combat last time} I'm optimistic that this conversation will go more smoothly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, FORT SECS UP} I'd rather you just dealt with the Boomers, but all right...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, FORT SECS UP} I suppose the Omertas can wait a few minutes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, FORT SECS UP} A few questions, and then you'll handle the Brotherhood, I hope?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, FORT SECS UP} Questions like \"Will President Kimball survive his visit to Hoover Dam?\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{MQN, FORT SECS UP} Even now? On the brink of battle?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseOUTDATEDTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Very well... five times your delivery bonus - {with finality} not one cap more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's a great start... but well below market price.",
+   "label": "[Barter] for better terms."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseOUTDATEDTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Is that an attempt at...{beat} {distaste} humor?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've always taken business negotiations seriously. I advise you to do the same.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Raise your price or... or... you'll be \"chip outta luck.\"",
+   "label": "[Barter] for better terms."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseOUTDATEDTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can't - but the Chip can. The hatch will recognize the Platinum Chip and \"open sesame.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do I open the hatch?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseOUTDATEDTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll need a disguise, then. Or overwhelming firepower. Whatever works.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry for the inconvenience, but it can't be helped. This is too important.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's not safe for me to go back. The Legion will attack me on sight."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course you haven't. Vegas always was one of a kind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What you see down on the Strip is just a fraction of the city's former glory, and yet... {beat} more than an echo. I preserved its spirit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or perhaps you were referring to the Lucky 38? The years haven't been kind to her, but still she manages to impress.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've never seen anything like this place."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{not buying it} Oh, come now - don't play the fool. Vegas has fools enough, a superfluity of them. They're what makes it so profitable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They come to Vegas chasing penny-ante dreams of high-living, to feel like they're big shots, like they're winners.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You see that you and I are of a different stripe, don't you? We don't have to {emphasis} dream that we're important. We {emphasis} are.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A city devoted to vice and sin - what's not to love?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{arch} You aren't going to ramble on about the virtues of life out in the wastes, are you? It's a desert, you do realize?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A radioactive desert where humans subsist in a barbaric state? Difficult to glorify convincingly. They are, however, aptly named.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For that's what you'd be out there - wasted. Here on the Strip, your talents can be put to use.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I prefer the wasteland, to be honest."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, by all means - yes. That's refreshing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The business is this. One of my employees has stolen an item of extraordinary value from me, and I want it recovered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Simple enough?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're ready to move forward, then?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can we get down to business?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, don't be coy. You've been playing a high-stakes game ever since Victor dug you out of the ground. Don't be afraid to admit it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why the VIP treatment? I'm just a courier."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I know. It was detected immediately and deactivated... let's see... 39.735 seconds after you planted it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You thought I wouldn't notice?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I should let you know that I planted a surveillance device on one of your data terminals."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One of the Followers of the Apocalypse, I'm sure. They're curious about me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good luck planting a surveillance device here in the Lucky 38 without my knowing about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A woman named Emily asked me to bug one of your data terminals."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Precisely. You'll have no trouble joining the battle on their side, and they'll be too distracted to notice why you're really there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The NCR will welcome my help."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{disappointed} A crude question, crudely asked.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be happy to satisfy your {disapproving} rambunctious curiosity at a more appropriate moment. But now, I'll repeat my question...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you make of what you've seen?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What the hell are you?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why didn't {emphasis} Victor intervene sooner, you mean?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Goodsprings is a bit too far away for me to reliably control a Securitron agent by remote. I can send and receive packets of data, at best.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Victor's combat algorithms determined the proper course of action. Benny and his thugs were more than a match for a lone Securitron.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When he alerted me, I instructed him to approach the site after Benny and the others had departed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why didn't you intervene sooner when Benny ambushed me?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've resurrected Vegas, spirit intact. What I need now is the ability to enforce my rightful claim.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not just against Caesar's Legion, by the way. In fact, the NCR is a more present and insidious threat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are your plans for New Vegas?{Securitrons upgraded.}"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "To enforce, one must have force - a position of strength.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Years ago, when I detected NCR scouts roaming the Mojave, I could tell from their uniforms that these were no mere tribesmen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I knew it was only a matter of time before an army appeared, to take control of the dam. And I knew my Securitrons wouldn't be enough to oppose them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And so I recruited the Three Families. Vegas belongs to me because I mustered enough strength to bring the NCR to the bargaining table.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do you intend to enforce your claim on the city?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Indeed it was - and still is. But not without taking significant casualties.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Would Kimball and Oliver have traded the lives of hundreds of soldiers for absolute control of Hoover Dam? Oh yes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They weren't afraid of me, they were afraid of Caesar - that attacking me would leave them vulnerable to a Legion offensive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And so they negotiated. Not out of the kindness of their hearts, as they try to make it seem. Because the calculus of power left no other choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wasn't the NCR's army big enough to defeat your Securitrons and the Three Families?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR forces were permitted to occupy Hoover Dam and establish a military base at McCarran Airport. {not an airport anymore} Well, it used to be one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They recognized my sovereignty over the Vegas Strip and agreed to supply electricity and water once their engineers repaired the dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Written into the treaty were provisions that the NCR do nothing to prevent its soldiers and civilians from visiting the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's how I harnessed the NCR to my endeavor. Their occupation has been the engine of my growing economy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What were the terms of your treaty with the NCR?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The salient issue is that they will go to war with me, if given the chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's just one reason why the NCR hasn't contrived some outrage to justify invading the Strip - Caesar's Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The final battle between those two armies is fast approaching. I can't afford to let either side win on their terms.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You would go to war against the NCR?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "New Vegas is more than a city - it's the remedy to mankind's {beat} derailment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The city's economy is a blast furnace in which can be forged the steel of a new rail line, running straight to a new horizon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is the NCR? A society of people desperate to experience comfort, ease, luxury... A society of customers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With all that money pouring in? Give me 20 years, and I'll reignite the high technology development sectors. 50 years, and I'll have people in orbit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "100 years, and my colony ships will be heading for the stars, to search for planets unpolluted by the wrath and folly of a bygone generation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Say you keep control of New Vegas. What happens next?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I prefer the term \"autocrat.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I would rule as a chief executive. I would not answer to a board of directors or any other entity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing to impede progress. If you want to see the fate of democracies, look out the windows.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "In the meantime, you'd rule Vegas as some kind of dictator?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My judgement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have no interest in abusing others, just as I have no interest in legislating or otherwise dictating what people do in their private time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nor have I any interest in being worshipped as some kind of machine god messiah. I am impervious to such corrupting ambitions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But autocracy? Firm control in the hands of a technological and economic visionary? Yes, that Vegas shall have.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's to keep you from abusing your power?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sure the assassins will wait for you to show up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, off to the dam I go."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Our terms were clear. Now that you have the Chip in your possession, any attempt to \"re-negotiate\" payment would be tantamount to blackmail.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not so fast, Mr. House. We need to discuss payment."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "To achieve my aims, I require a capable human agent to perform certain... {choosing word} tasks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I knew Benny was ambitious, even ruthless. But I believed he would do the job, so long as he was incentivized appropriately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Obviously, I miscalculated his drive for supremacy. But in any case, you've come along - a more-than-suitable replacement.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What use would you have for a protege?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{satisfied} Well enough. Return to me when you have the Platinum Chip in your possession. Any final matters for us to discuss?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "1000 caps? I accept your terms."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My only concern is the recovery of the Platinum Chip. What happens to Benny, I leave to your discretion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When you bring the Chip to me, I will pay you four times the delivery bonus stipulated in your contract. How's that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What terms are you offering?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As I said before, Benny's fate is yours to decide. Once you've delivered the Chip, I will pay you the amount agreed-upon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me your terms again?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Benny has led the Chairmen ever since I recruited his tribe seven years ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Until his recent misbehavior, I'd planned to make him my protege. Maybe if I'd begun grooming him sooner, none of this would've happened...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Benny.{alive}"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My offer far exceeds the original terms of your contract, which, I will remind you, already obligate you to deliver the Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No thanks."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Very well, five times the bonus. {with finality} Not one cap more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's a good start... but well below market price.",
+   "label": "[Barter] for better terms."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Is that an attempt at...{beat} {distaste} humor?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've always taken business negotiations very seriously. I advise you to do the same. {Duplicate.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Raise your price or... or, uh... you're \"chip outta luck.\"",
+   "label": "[Barter] for better terms."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a very special item. There's nothing else like it in the entire world. It was lost a long time, and difficult to find.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's all you need to know about it, for this stage of our enterprise. Fulfill your contract, deliver the Chip, and good things will come your way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is the Platinum Chip?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well enough. Be on your way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Benny was the leader of the Chairmen for seven years, ever since I recruited the tribe. I considered him something of a protege.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What was your relationship with Benny... back when he was breathing?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am Robert Edwin House, President, CEO, and sole proprietor of the New Vegas Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I oversaw the city's renovations starting from 2274 onward. The Three Families are my employees.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Before the Great War of 2077, I was the founder, President and CEO of RobCo Industries, a vast computer and robotics corporation.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who exactly are you, Mr. House?{Before Chip turned in.}"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's understandable that you'd be curious about this topic, but we'll hold off until the Platinum Chip has been recovered.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the factions vying for New Vegas."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{drawn out} Hmm... {to yourself} How shall I put this?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{taking time, spelling it out} Delivery of the Platinum Chip is non-negotiable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I invite you to think carefully about what you do next... standing alone before me, surrounded by my heavily-armed Securitron guards.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not going to give you the Chip."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{restraining anger} By the time I was 30 years old, I was a billionaire 30 times over. I founded and ran a vast economic empire.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{restraining anger} Do you really think I'm going to let an upstart come into my home and ransom my property to me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{restraining anger, losing it a little towards end} I spent two centuries searching for the Platinum Chip. It's my invention, my property - mine. Now be a good courier and deliver it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack me and you risk destroying the Chip."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sarcastic} Why, thank you so much. You played that {beat} very poorly, you realize?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're fortunate that I have a certain {beat} tolerance for greed. I expect my business partners to be self-interested - but {unlike you} smartly so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here it is. <Give the Platinum Chip to Mr. House.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{ordering attack} You needn't be afraid of me. It's my Securitrons that are going to kill you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not afraid of you, Mr. House. The Platinum Chip belongs to me."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not if you've been invited. You realize that you've made quite a splash here in New Vegas?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can predict with a high degree of confidence that you'll receive an official summons from Caesar. If you haven't already, that is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think that sounds insane."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You might keep an eye out for any computers that Benny's been using. Maybe even a computer lab of some sort...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The more I know about the Chip, the easier I can find it...",
+   "label": "Use [Speech] to press Mr. House about the Chip."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You have a contract to fulfill, a delivery to make.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you can't hold to a contract, simply for the ethic of holding to a contract, you're worthless to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The less I know, the less I care. Know what I mean?",
+   "label": "Use [Speech] to press Mr. House about the Chip."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I want you to open a hatch in the basement of the derelict weather station atop Fortification Hill.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll recognize it on sight. The hatch bears the logo of the Lucky 38, same as the Platinum Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you want me to do there?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't let the video screens and computer terminals fool you. I'm flesh and blood, not silicon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You appear to be a computer, not a man."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I see you've made a study of the topic. My knowledge of the science of longevity would fill several text books...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps, after a decade or two of economic reconstruction, I can commercialize these technologies and offer to others, such as yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The lifespan you're claiming is impossible, except for ghouls and super mutants.",
+   "label": "Use Medicine skill to surmise House's condition."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No. While brains demonstrated some use as organic processors in the robots produced by General Atomics International...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They never retained personality once removed from the human body.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You must be, like... a brain in a jar!",
+   "label": "Use Medicine skill to surmise House's condition."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's just say it was very... {beat} costly. But I was willing to make the sacrifices longevity entailed, financial and otherwise.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How have you stayed alive all this time?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not surprised. The Legion has spies on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Caesar has already invited me to the Fort."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Until then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll return when I have the Chip."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{nonplussed} You have? So you have the means to gain entry?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've already visited Caesar.{Kill Benny at Tops, see CL 1st}"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you find Caesar's Legion so frightening at this remove, imagine them rampaging across the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We have a chance to see them destroyed, to see New Vegas become the harbinger of a new age.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No thanks, Mr. House."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is not the time for Q&A. Kindly hand over the Chip. {DUPLICATE}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have some questions to ask first..."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is not the time for Q&A. Kindly hand over the Chip. {DUPLICATE}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have some questions to ask first..."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've accomplished a great deal, you and I. One last task, and our work is complete. I'll see you in the control room.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm ready. Let's finish this."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{tense} Then handle them with dispatch. The Legion's assault is imminent.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have some things to take care of before the battle."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you've said before. You're making a habit of wasting my time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No thanks, not interested."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You signed a contract in good faith to deliver that Chip. You're going to have a hard time on the Strip if you are so incautious of making enemies...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, I'm still not interested."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{impatient} Please focus on the task at hand - for both our sakes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Goodbye."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, you haven't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is the second time you've promised to deliver the Platinum Chip. Even if you don't hold yourself to your promises, I will.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've changed my mind."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not offering you an incentive as crude as money - though there'll be plenty of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What I'm offering you is a ground-floor opportunity in the most important enterprise on Earth.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What I'm offering is a future - for you, and for what remains of the human race.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's my stake in this?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic103",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are the first person to step foot inside the Lucky 38 in over 200 years. It was not an invitation I made lightly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We have a serious matter to discuss, concerning a contract you have yet to fulfill.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I'll be leaving."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic105",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have an \"interest\" in this, whether you like it or not. You signed a contract to deliver the Platinum Chip to me. {seething}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{you need the player; threats won't work} Now, I could stop you from leaving, but what would that accomplish? If you want to go, go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See what the Strip I built - the Strip I own - has to offer. Think about what I could offer you. I expect we'll have occasion to talk again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not interested. I'll see myself out."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have to think that he found out about the Platinum Chip and mistakenly convinced himself that he could use it to his own ends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One of the problems of a tribal work force, I'm afraid. No intuitive understanding of how complex technologies can be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why did Benny betray you?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic109",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's simply not true.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I am the only person to hold any rights pertaining to the Chip. I designed it, and I paid for it - dearly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To develop that Chip, I spent a sum of U.S. dollars - not the bottle caps that pass as currency these days - but a sum beyond counting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For decades, I paid salvagers to comb the ruins for it. And when it was finally discovered, tens of thousands of caps spent to have it brought here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We know how that turned out. Complete your contract and it will be the last time I pay for the Chip. Save your questions for then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a right to know more."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic110",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You realize you were just one of many couriers, the rest of them {beat} dummies, so to speak?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Add to that many thousands of caps worth of mercenary protection to screen your avenue of approach.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had I used an armed caravan to transport the Chip, I might as well have been announcing to the world \"this is important. Attack this!\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I didn't want to attract the attention of groups like the Great Khans or the Brotherhood of Steel. Alas, the real threat was closer to home.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If the Chip's so valuable, why use a single courier to transport it?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Frontal assaults on casinos? Not good for business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In any case, Benny would see it coming. And all he'd have to do is hold the Chip up and point a pistol at it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our foremost advantage is that Benny doesn't know that I know he has the Chip - let's not squander it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why don't you send your robots into the Tops to arrest Benny?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then Vegas shall be lost, and with it, mankind's best hope for long-term survival.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happens if the Platinum Chip is never lost?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "To your untrained eyes, it may look as though mankind is making a comeback. In the NCR, you have something that remsembles a nation state. {Look around you. How can the human race have a future when it's still living in the wreckage of its past?}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Savage as it is, in Caesar's Legion, you have an organized society. But neither of these offer a future. They're regurgitations of the past.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bring me the Platinum Chip, and in ten years you'll hardly recognize this city.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Isn't that overstating things a bit?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic115",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It won't be easy... Benny is always surrounded by at least four bodyguards - except when he's in his private suite on the 13th floor of the Tops...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do I get to Benny?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic116",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you were to approach Benny in public, you might be able to leverage his fear of exposure to make him agree to meet with you in private.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Say I want to take a diplomatic approach."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic117",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sneaking into Benny's suite on the 13th floor would be very difficult... but not impossible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There might be guards. Certainly there'd be a sturdy lock on his front door.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any ideas on how I could catch him off-guard?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic118",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's more complicated than that. The Chairmen share what you might call a... {beat} tribal affinity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look for a man named Swank, Benny's second-in-command. He's always been a reliable, if unimaginative, employee.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do your best to convince him that you're working under my auspices. If you have evidence of Benny's crimes, show it to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Chairmen are your employees. Don't they take orders?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic123",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "By contract, Securitrons are to enter the casinos only when invited by the Three Families or if other extraordinary circumstances arise.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The moment I send one into the Tops, Benny will know I'm on to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why can't you be the one to tell Swank?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic124",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We can discuss this in greater detail at another time. Suffice it to say that when my Securitrons detected NCR scouts at Hoover Dam, I took action.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I recruited a tribal force to supplement my Securitrons and renovated the Strip just in time to welcome the NCR as it marched into the region.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Instead of war, a treaty was negotiated. And the money started to pour in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did you establish New Vegas?{Before chip turned in.}"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic128",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're making me question your usefulness, you realize.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Like I said, I'll think about it."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic131",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Success depends on forethought, dispassionate calculation of probabilites, accounting for every stray variable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your history of aggression towards the NCR has rendered you useless in this concern, unable to influence the outcome of events.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Consequently, I have to \"wait and see\" what happens. It's... grotesque.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Whatever happens, happens."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic136",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well enough. We can put the past behind us, I think.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here, take it. <Give the Platinum Chip to Mr. House.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic137",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{exasperated sigh} Then this is a waste of time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still not giving you the Chip."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic138",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{FORT SECS NO} A great deal shall be happening - a cascade of events, with you taking a central role.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At the moment, however, all you need to do is take the elevator all the way down to the bottom level. You'll understand soon enough...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FORT SECS UP} A great deal shall be happening - a cascade of events, with you taking a central role.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At the moment, however, all you need to do is take the elevator all the way down to the bottom level.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What you see there will help you understand the significance of what you accomplished at the Fort.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What happens next?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic139",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{FORT SECS UP} Yes, so far as you've seen, all it does is change the picture on the Securitrons' face screens from policemen to soldiers. But as you'll see...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some things are more easily shown than told. Take the elevator all the way down to the bottom level, and you'll see what I mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry, you'll like what you see. We have much to accomplish, you and I...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What does the Chip do, exactly?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic140",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{FORT SECS UP} I must insist that you stay long for me to show you that the Platinum Chip does more than change the pictures on the Securitrons' face screens.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Events of great import are about to unfold, with you taking a central role. To get started, all you need do is take the elevator all the way down...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I must insist that you stay long for me to show you what the Chip does. I promise you'll like what you see...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Events of great import are about to unfold, with you taking a central role.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To get started, all you need to do is take the elevator all the way down to the bottom level...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be on my way, then..."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic142",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not interested? {louder} Not interested?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have an interest in this even if you're too stupid to know it. If you have an interest in breathing, you have an interest in this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Return to the Fort and do whatever it takes to recover the Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not interested."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic143",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm surprised you can still underestimate me after everything you've seen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I haven't shown my hand - I've shown one card. I've given my enemies a single, provocative datum upon which to fixate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They have no idea what other cards I'm holding. It's a strong hand, believe me - I dealt it to myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why show your hand like that? Now your enemies know what you're up to."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic144",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why would I want to go to war against the NCR? They're my best customers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If their leaders weren't scheming to steal Vegas out from under me, I'd have no troubles with the NCR at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You think your Securitrons can defeat Caesar's Legion *and* the NCR?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic145",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No no no, you'll want to hear this out...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Disappointing. In the extreme.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be on my way, Mr. House."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic146",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The next step will require you to infiltrate Caesar's camp at Fortification Hill.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll have to return to Caesar's camp at Fortification Hill.{Player got Chip at CL Fort, didn't activate bunker army}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm listening."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic148",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you have any idea how prodigious is the opportunity you're casting aside here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Chip's been delivered. We're through."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic154",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here, take the Platinum Chip again. You will need it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Upon arrival at the Fort, it's likely that you'll be searched and the Chip taken from you. Don't worry - it will come back to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I expect that if Benny doesn't have the Chip, Caesar will make sure you get it. More on that later. Be off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll do as you ask."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic155",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then look harder.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still looking into it."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic157",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't employ you to uncover evidence. This isn't a court of law.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If the Omertas pose a threat to the physical or economic security of the Vegas Strip, I want you to do whatever it takes to neutralize that threat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've found evidence of an Omerta plot."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic159",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Something very important. I wouldn't want to spoil the surprise - so don't bother asking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's inside the hatch?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic162",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well done. They won't be causing any trouble, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Omertas who were conspiring against you are dead."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic163",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion has nothing left to wait for. Their assault on the dam could begin at any moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Before that happens, I'll ask you to complete one other task. It may seem trivial, but that's far from the case.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the next step?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic167",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well done. The Boomers' firepower may prove an advantage when the battle for Hoover Dam comes around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've secured their loyalty. They'll do as I say."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic168",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It seems diplomacy is not your forte.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given the strength of your past performance, I think we can let this go without further comment. I'm pulling you on to a new assignment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Boomers and I don't get along. I'd rather keep my distance."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic173",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{dry} An opinion you expressed with supreme subtlety and finesse. Moving on...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Omertas had it coming."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic175",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's more than one way to skin a cat, as the saying goes. {beat} Or {emphasis} went, that is - cats being extinct.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't promote political assassination as a first option, but it has a long and storied history. I'll consider the Boomers neutralized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I had to wipe out their leadership."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic177",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's because he ceased to be relevant when you recovered the Platinum Chip. Revenge doesn't interest me, progress does.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry to deny you a moment of primate triumph, but you'll have to go elsewhere to sound your barbaric yawp.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm surprised you haven't asked what became of Benny."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic181",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{cross} There's a job that needs doing here, and I'm assigning it to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{sarcastic} Marvellous work ethic, bravo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be on my way."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic182",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll send a Securitron ahead to meet with the NCR at the security checkpoint and get things started.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once you get there ask for Ranger Grant. I've used roaming Securitrons to feed him useful information in the past.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I tell him we've heard of a Legion assassination plot, I believe he'll let you investigate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Vouche for me? How?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic185",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Singlehandedly destroying a Brotherhood of Steel bunker is quite an accomplishment. Platoons of NCR troops have died, trying to do the same.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This welcome news comes just in time, as events in the wider world are coming to a head...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Brotherhood of Steel has been wiped out."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic188",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is not an optional assignment. Kimball may be a grandstanding boor, but I want him protected.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I'll sit this one out."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic193",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll give you time to think over the consequences of what you're saying. I urge you to reconsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Like I said, I'm not interested."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic199",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Until you do this, consider yourself suspended... without pay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Seriously, I'm not interested."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic203",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not surprising. Also not acceptable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I didn't ask you to tell me what they were planning, I asked you to kill them. This was a waste of time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go back to the bunker and destroy it. My directions have been clear from the start.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "When the Legion assaults the dam, the Brotherhood will attack the NCR and weaken them."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic204",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{not buying it} This is no time to be droll...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm done working for you."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic206",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your \"accident\" has jeopardized the success of this entire concern.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Up to this point, your efforts yielded near-perfect results. But now I'm forced to fumble in the dark - to gamble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Light must be brought to this darkness.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It was an accident."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic207",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your impulsivity has jeopardized the success of this entire concern!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "My only regret is that he got away."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic208",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your incompetence has jeopardized the success of this entire concern!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I did my best, but the Legion did better."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic210",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Every step of my plan has been precisely calculated and was, until now, well-executed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So Kimball's dead. So what?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic212",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What of it? I enjoy them. There's something about a little diorama set inside a glass dome that I... {beat} find pleasing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you run across any out in the wastes, turn them in to Jane. She'll compensate you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the deal with the snowglobe collection?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic213",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I much prefer working with robots...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No thanks."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic214",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll have to be more specific.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I may know something about that..."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic216",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{shocked at magnitude of Omerta plot} And how do you know this?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "When the Legion assaults Hoover Dam, the Omertas are going to massacre everyone on the Strip."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic218",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{quiet outrage} I see. So where does that put us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I kind of helped them perfect their plan..."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic220",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Absolutely not! Caesar is of great use to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't want you harming a hair on that man's head - assuming you can find one.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You want me to kill Caesar?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic221",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] In that case, I commend you for your initiative. What do you recommend for next steps?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I infiltrated the Omertas in order to gain their confidence.",
+   "label": "<Speech to lie to Mr. House about RACKET involvement.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic221",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED]{quiet rage} And you assisted them? That's what you mean to say, isn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Well, thing is... I, uh... they tried to involve me...",
+   "label": "<Speech to lie to Mr. House about RACKET involvement.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic223",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be happy to satisfy your every curiosity once the Platinum Chip has been delivered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is not the time for Q&A. Kindly hand over the Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have some questions to ask first..."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic224",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine - give me the Chip, and I'll pay you four times the delivery bonus stipulated in your contract. How's that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not so fast, Mr. House. We need to discuss payment."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic227",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic230",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Outside New Vegas, at what was once called Nellis Air Force Base, resides an unusual tribe known as the Boomers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They are, shall we say, {understating} aggressively reclusive? They have several howitzers they fire at anyone who dares approach the base.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Artillery of this sort has a range of several miles. If it's going to fire on Hoover Dam, I want it firing at my targets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If not, then I want to make sure that the Boomers don't sign similar treaties to fire their guns in support of the NCR or Caesar's Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the next step?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic231",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I offer many benefits, but vacation time isn't one of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've done enough work for you."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic232",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{first Benny, now the player} Why is good help so impossible to find?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've come here to kill you, Mr. House. <Attack Mr. House.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic233",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Use extreme caution when approaching the base. Their firepower is... considerable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Recently, one of my roaming Securitrons observed a man near the base studying the pattern of its artillery fire. Maybe he's learned something.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll make sure they support the right side."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic238",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You laid the foundation for my victory, so fine - I'll permit some {beat, begrudging} latitude in how you schedule your work.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're welcome.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If I want more work, I'll come see you."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic242",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Omertas are fanatically loyal to each other. Still, among any group, one can find the occasional degenerate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gomorrah's receptionist happens to be one. For years she passed on whispers of what was taking place at the casino, in exchange for payment.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A few months ago, she clammed up. Odds are she's scared, but I've had no way of approaching her. Start with her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The print-out I've given you lists every lead I've been able to uncover. See what you can find out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll check into the Omertas."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic245",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "After all that we've accomplished?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm going to kill you now, Mr. House."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic246",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Arrogance was their undoing. {referring to the player} There might be a lesson in that. But moving on...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Omertas were clever, but no match for me."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic248",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Indeed. Moving on...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's a good thing we stopped the Omertas in time."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic254",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sigh of impatience - oh, the burden of intelligence} The Platinum Chip unlocks this bunker. Hence, you have it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hence, Benny was captured or killed - possibly by you, but by my estimates, far more probably by Caesar's Legion. Hence, Caesar gave you the Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hence, Caesar wants you to destroy whatever you find in this bunker.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{sigh of impatience - oh, the burdens of intelligence} That you were searched very thoroughly when you arrived at the Fort is a certainty. And as the Chip is a little too large to be {beat, implying hiding it up rectum} secreted away...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I also regard it a certainty that the Chip was discovered, taken from you, and given to Caesar - who returned it to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Two plus two equaling four, Caesar wants you to destroy whatever you find in this bunker.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But that's not going to happen, because {confident, not bossy} you're going to work for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What makes you think Caesar gave me the Chip?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic255",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{are you dense?} That's rather obvious, isn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You wanted me to come down here?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic256",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{don't play dumb} Surely you know that I am Robert Edwin House, President, CEO, and sole proprietor of the New Vegas Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I oversaw the city's renovations starting from 2274 onward. The Three Families are my employees.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you, exactly?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic259",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was a place of splendor. As magnificent as today's Strip may seem, it's but a shadow of the neon paradise that was Las Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I grew up not far from here, and though I traveled the old world extensively, I never found another place like it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What was Vegas like before the war?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic259",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "By 2065 I deemed it a mathematical certainty that an atomic war would devastate the Earth within 15 years. Every projection I ran confirmed it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I knew I couldn't \"save the world,\" nor did I care to. But I could save Vegas, and in the process, perhaps, save mankind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I set to work immediately. I thought I had plenty of time to prepare. As it turned out, I was 20 hours short.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You say that you saved Las Vegas. How?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic259",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "On the day of the Great War, 77 atomic warheads targeted Las Vegas and its surrounding areas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My networked mainframes were able to predict and force-transmit disarm code subsets to 59 warheads, neutralizing them before impact.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Laser cannons mounted on the roof of the Lucky 38 destroyed another 9 warheads. The rest got through, though none hit the city itself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A sub-optimal performance, admittedly. If only the Platinum Chip had arrived a day sooner...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What preparations did you make to save Las Vegas?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic259",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Platinum Chip was printed in Sunnyvale, California on October 22, 2077 - the day before the Great War.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It was to have been delivered by courier the following afternoon... but by then, the world had ended.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Chip contained vital software upgrades, but not just for my Securitrons. Every aspect of the missile defense grid would have been upgraded, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given that I had to make do with buggy software, the outcome could have been worse. I nearly died as it was.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why didn't the Platinum Chip arrive on time?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic259",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Software glitches set off a cascade of system crashes. I had to take the Lucky 38's reactor offline, lest it melt down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For nearly five years I battled power outages and more system crashes until I finally managed to reboot my data core with an older version of the OS.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I spent the next few decades in a veritable coma. But I survived, obviously - and eventually thrived.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did you nearly die, defending Vegas?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic262",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{impatient to make progress} It's a facility I built many years before you were born. You might think of it as a kind of barracks. You'll understand soon enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is this place?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic263",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a facility I built many years before you were born. You might think of it as a barracks. You'll understand soon enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is this place?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic265",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was that meant to be a shocking revelation? Of course Caesar wants it destroyed - he's afraid of what the bunker might hold, and rightly so.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you're not going to do that. You're going to do the smart thing, and work for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Caesar wants me to destroy this place."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic267",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{steely} I don't respond well to threats. {moving on} Now, where were we...?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe I should destroy everything down here."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic268",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Fine, you'll receive a nice bonus when the work is done. And speaking of getting it done...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "This work sounds important - and expensive.",
+   "label": "<Use Barter to negotiate for higher reward.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic268",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You signed a contract to deliver the Platinum Chip, and you'll be paid when the delivery is made.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I could use a raise!",
+   "label": "<Use Barter to negotiate for higher reward.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic269",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. I won't hold you up any longer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll upload the data, as you ask."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic272",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like to think you have enough sense to do the right thing. The rewards for doing so are immense... as are the punishments for not doing so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "We'll see what happens."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic274",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So what are you doing here? Return to the Fort at once.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Recover the Platinum Chip. Once you've entered the bunker hidden beneath the weather station, you'll receive further instructions.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Legion took it from me at the Fort."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic275",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you a child? The Platinum Chip was taken from you, obviously.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> I'm not sure what happened to it."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic276",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That would make for a welcome change.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll do as you say."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic277",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then gather together the firepower or explosives or whatever else you need and improvise.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care if you have to kill every Legionary at the Fort. Get the job done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're asking me to commit suicide. The Legion will attack me on sight."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic278",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "By my calculations, his death will affect the shape of the battle for Hoover Dam minimally, if at all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Legion's aggression will outlive Caesar. Indeed, they'll try to take the dam as a tribute to his memory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given a year, they'd have him deified - but by then the Legion will be breaking down, riven by internal conflicts, a monster consuming itself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's irrelevant. In the short term, the Legion is still monster enough that defeating it will make me look powerful indeed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You do know Caesar is dead, don't you?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic279",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{stating the obvious} Hoover Dam, of course. A hydroelectric dam?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR had it up and running at 50% capacity within a year of occupying the dam. By treaty, New Vegas receives 5% of its output - more than enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where does New Vegas get all its electricity?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic280",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll expect to see some tangible progress before long, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still working on it."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic283",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I recommend following the Securitron's instructions. Its programming is... {beat} strict, and I don't have time to change it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why is the terminal on the North wall off-limits?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic285",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cannibalism was strictly forbidden in their contract. If some of them broke that stricture, they deserved whatever punishment you dealt them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you know I killed some White Gloves who were eating their customers?",
+   "label": "<WGS cannibalism>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic285",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{perturbed} No, I was not aware of this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is it really so hard {emphasis} not to engage in cannibalism? My goodness...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a violation of their contract. I authorize you to deal with them in any way you see fit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you know some of the White Gloves are... eating people again?",
+   "label": "<WGS cannibalism>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic285",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{not going to deny it} Yes, of course. But refraining from those \"dietary practices\" is a primary requirement of their contract.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They've been good to their word. Put together one hell of a resort hotel, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From what I hear, I'd want to eat at the Gourmand every night... if I were ambulatory.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Were you aware that the White Glove Society used to be cannibals?",
+   "label": "<WGS cannibalism>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic286",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye? Is that some kind of joke? You barely understand what I want you to accomplish down there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic290",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've spent too many years waiting for this moment to see it fumbled by an insubordinate contractor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't reach through this monitor and compell you to follow instructions, but know this - if you disappoint me, you will pay for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye means goodbye."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic291",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It is obvious to you that I built this place? The Platinum Chip opened it, after all?{sigh - the burdens of intelligence}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In any case, you're here. So let's get to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you doing here?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic294",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My army will do what an army does best - defend territory from invaders... and maintain order.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What will you do with your Securitrons?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic295",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The same equipment failure that prevents me from remotely operating this facility seems to have activated its security robots and turrets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a security room near the base of the stairs... perhaps you can deactivate them yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What was that you said about security systems?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic297",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Listen to me, very carefully. I've waited too long for this moment for you to go fouling it up on a lark.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do as I say, and your rewards will be immense. Thwart me, and your punishment will become the purpose of my existence.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm going to do as Caesar asks and blow everything up down here."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic300",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then there will be no safe haven for you.{monitor goes dark}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nope, I'm going to blow it all up anyways."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic301",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see - you're in a predicament.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just off the turbine room down below are three power regulators. It's a redundant system - only one is needed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go ahead and destroy one. The explosion will be large enough to be heard and felt aboveground.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Caesar will kill me unless he believes I blew something up down here."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic302",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{lying} The bunker will be destroyed, and you'll die instantly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What if I destroy all three?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic304",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm the person who will pay you when you complete the delivery contract you signed. Now go get the Chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you to tell me what to do?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic313",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{stating the obvious} Excellent idea.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll go get the Platinum Chip."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic314",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "By \"goodbye,\" I assume you mean to say that you can't talk right now because you need to go get the Platinum Chip off Benny's body.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic315",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There will time for questions and answers once you've delivered the Chip. Until then, you'll have to tolerate your ignorance... just as I do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to ask some questions first..."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic316",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "His destination is hardly a mystery. It's a near certainty that he's making his way for Caesar's camp, at Fortification Hill.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's one of just two places on Earth that have the hardware necessary to read the Platinum Chip - the Lucky 38 is the other, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where do you think Benny's gone?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic317",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And whose idea was it to offer yourself up as a sacrificial lamb? Really, what did you expect?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you going to keep giving him opportunities to kill you? It's becoming a hobby of his.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He set me up for an ambush!"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic318",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suspected he'd found a way to access my encrypted databases, but well - this explains it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That would be how he learned of the Platinum Chip in the first place... not to mention where to intercept you, on your way in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Highly resourceful, Benny. He would've made a fine agent, had he stayed loyal. It's fortunate you came along to replace him - and ironic.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Were you aware that he hijacked a Securitron and used it to infiltrate your network?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic319",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As I've told you before, you are contractually obligated to deliver the Chip. Do your job - you have everything to gain.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not interested. Good luck getting the Chip back."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic320",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I won't lie to you. It'll be dangerous.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do I do next?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic321",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What about him? He has every reason to go to the Fort, so that's where you'll find him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All I ask is that you recover the Chip. What happens to Benny is up to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What about Benny?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic330",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come back when you have something to report.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic335",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{nonplussed} And why would you have done that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Success depends on forcing the NCR to rout from Hoover Dam. Hmm, does giving then a powerful ally in the battle make that more or less likely?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your assignment is unchanged - destroy the Brotherhood of Steel. Please get it right this time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I worked out a deal where the Brotherhood will help the NCR defend the dam."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic336",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hidden Valley is the place to keep working, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still working on it."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic347",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They occupied Nellis Air Force Base a little over 50 years ago. One of my Securitrons got some video of their arrival - and then... exploded.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Odds are they were Vault dwellers. That's everything I know about them, really.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Boomers."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic347",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Only if you come within a mile or so of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given their history of extreme isolationism, it's tempting to leave them be. But those howitzers of theirs...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can't let indeterminate variables rattle around in your equations like that. They have to be accounted for, one way or another.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Boomers sound dangerous."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic348",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, though at the time they called themselves the \"Slither Kin.\" A vicious clan, not that that's changed, exactly.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They were nomads, capable fighters, but their specialty was betrayal. They'd invite travelers into their yurts, drug them, murder or enslave them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They took pride in their craft. I don't think Omertas saw other people as people at all. Everyone else was just... prey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They reminded me of a certain criminal element Vegas used to attract. I told them some stories, gave them some clothes - and they ran with it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You recruited the Omertas as one of the Three Families?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic348",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Chairmen, as we know them now, went by the unfortunate appellation of the \"Mojave Boot-Riders.\" They were nomads, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As for the White Glove Society, I afraid I'm contractually obligated not to reveal their original name.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What were the original names of the other tribes?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic349",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're a terrorist group, basically. Militant, quasi-religious fanatics obsessed with hoarding Pre-War technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not all technology, mind you. You don't see them raiding hospitals to cart away Auto-Docs or armfuls of prosthetic organs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, they greatly prefer the sort of technology that {emphasis} puts people in hospitals. Or graves, rather, since hospitals went the way of the Dodo.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Brotherhood of Steel."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic349",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because they're ridiculous! Because they galavant around the Mojave pretending to be Knights of Yore.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or did, until the NCR showed them that ideological purity and shiny power armor don't count for much when you're outnumbered 15:1.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The world has no use for emotionally unstable techno-fetishists. Just wipe them out, will you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do you hate the Brotherhood so much?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic351",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I care because he is a known quantity - not the man so much as the political context he inhabits.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kimball rose to prominence as the \"Hero of the Mojave\" when he led a campaign of reprisals against tribals who dared to attack NCR citizens.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ordering the occupation of Hoover Dam was his first act of office. As water and electricity flowed to NCR cities, his popularity soared.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Conversely, his failure to annex the Mojave these seven years, and the immense costs of occupying a foreign land, have eroded his popular support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do you care whether Kimball lives or dies?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic351",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Oh, the burdens of intelligence} Kimball's entire political career is inextricably bound up with the NCR's occupation of the Mojave. It's his war.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I compell the NCR to retreat, Kimball will be the sacrifice offered to the gods, so decent NCR citizens can get on with their lives.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In retrospect, the Mojave and Hoover Dam will seem like one man's misadventure. Kimball will be blamed, not me. Not New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So why don't you want the NCR President to die?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic351",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then the Hero of the Mojave would become the Martyr of Hoover Dam. And when, subsequently, I force the NCR to retreat...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They lick their wounds, and dream of righteous vengeance against New Vegas. Hello, embargo, farewell, tourist economy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've calculated and re-calculated these probabilities. Kimball must live.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "And if Kimball were to be assassinated?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic352",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{amusing yourself} Imagine two snarling dogs fighting over a curve of bone, perhaps the rib of their master, long-dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It'll be a pitched battle, that's a certainty. Perhaps the greatest battle the Earth has seen since the human race nearly made itself extinct.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What should I expect at the dam?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic352",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With Caesar dead, it's hard to know what to expect. The Legate, Lanius, is renowned as a brutal man, not a subtle tactician.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Frontal assaults, wave attacks - these are the sort of tactics one would expect from such a man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Legion will mount a ferocious and determined frontal assault from the east, that much is certain.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, Caesar is a capable strategist. I'd be surprised if he hasn't found some way to infiltrate the dam, or the NCR's rear areas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any speculation on Legion tactics?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic352",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "General Oliver's {disparaging} strategy - or \"tunnel vision,\" as I like to call it - has been to mass troops at Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He wants to out-fight the Legion in a straight-forward slugging match, and then, when they rout, pursue and destroy them in detail.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A crushing, decisive victory of this sort would overshadow the tactical ingenuity of Chief Hanlon's defense four years ago, you see.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How will the NCR defend Hoover Dam?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic352",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A good deal should be obvious to you by now. I won't spoil the rest by talking out of turn.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's your battle plan for the Dam?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic363",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can't put the genie back in the bottle, is that it? Maybe you should've thought of that {emphasis} before you conspired to destroy my property.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{lightening somewhat} That said, I'd know nothing of the Omertas' plot if you'd kept it secret. Perhaps I owe you my gratitude, after all...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The information you've provided will suffice. When the battle for Hoover Dam comes, I'll make sure my Securitrons are waiting for the Omertas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nothing I can do. Trying to stop them would be a suicide mission."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic366",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose you're right... When the Legion assaults Hoover Dam, my Securitrons will be waiting for the Omertas. They won't accomplish much.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wait for them to make their move. Forewarned is forearmed."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic367",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Exactly how many civilians did you want to die in that crossfire?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, you raise a fair point. My Securitrons can handle this. When the Legion attacks Hoover Dam, I'll be waiting for the Omertas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Send your Securitrons into Gomorrah and kill off the Omertas' leaders."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic372",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{admiring the player's knowledge} You're absolutely right. You must've had run-ins with them. As have I...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Brotherhood is holed up in Hidden Valley."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic376",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "From time to time, the NCR has assaulted Brotherhood bunkers. In four of the six incidents I know of, the bunkers self-destructed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I surmise it's standard practice for the Brotherhood to install a self-destruct system. It's consistent with their {disdain} uncompromising nature.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You might use that against them. Or kill them another way, it's up to you. Return when it's done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any recommendations on how to complete the mission?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic380",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't use you. Had you shown moderation in your dealings with the NCR, we'd be in a different position.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "There nothing I can do to protect Kimball?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic382",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh no, not so quick. I still have work for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be leaving, then."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic383",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't attack unless there are clear signs that Kimball's visit is imminent. Cause enough chaos to cancel the visit, no more. Then return to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll do it."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic385",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not so eager to take on a suicide mission, is that it? If you'd shown moderation in your dealings with the NCR, we wouldn't be in this position.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No thanks."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic389",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever those reasons may be, you've jeopardized the success of this entire concern.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I had my reasons."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic391",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] They knew you were coming? They were better prepared than I anticipated, then. I won't underestimate them again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Before that happens, I'd ask you to complete one final task. It may seem trivial, but that's far from the case.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was set up. The Legion used me as a patsy.",
+   "label": "<Use Speech to deny responsibility.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic391",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Whatever your reasons, you've jeopardized the success of this entire concern!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It... it wasn't Kimball, it was an imposter. It had to die!",
+   "label": "<Use Speech to deny responsibility.>"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic392",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You could've succeeded!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What more could I have done?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic393",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With this accomplished, all preparations will have been made. The battle for Hoover Dam will be upon us before long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll take care of it."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic394",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The strain of defending Las Vegas from annhilation exceeded my power systems' capacity. My primary reactor shut down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For years, I played a miser with my emergency power supply. I began to run out of reserves around the time I woke the first batch of Securitrons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Negotiating an allotment of power from Hoover Dam was crucial. That's what's powered the Strip for the past seven years.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's this about a dormant reactor?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic395",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come back when your work at the substation is done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic396",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I needed the operating software on the Platinum Chip to bring it back online.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And to start the reactor itself requires a tremendous jolt of current. Very attention-getting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR has its hands full now, of course. I doubt they'll raise much of a fuss.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why didn't you restart the reactor earlier?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic397",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is not a good time to be dependent on energy from Hoover Dam. When the Legion attacks, the NCR may cut power altogether.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I'll be needing a good deal more power than the NCR has allotted to the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Broadcasting encrypted VMQ-boosted command signals to hundreds of Securitrons eats up more power than you might expect.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You already have power. Why is this important?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic401",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Indeed they do - an army that'll be too distracted with killing Legionaries to notice the real reason you're there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do I need to be there? The NCR has an army."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic402",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your objective is to reach a control room halfway across the dam and install an override module similar to the one you used at the Substation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The override will enable to control the entire dam's power output.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You may remember how the bunker at the Fort was rather dimly lit? Well, just like the Lucky 38, it needs a big jolt of electricity to power up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've already uploaded the new operating system to the Securitrons. All they need is power and they'll be in fighting trim.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As I've said, your objective is to install an override module in the control room halfway across the dam. Are you ready perform this task?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the goal?"
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic403",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Indeed you will. Just bear in mind that's not the reason you're there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sounds like I get to kill lots of Legionaries."
+  },
+  {
+   "id": "VDialogueMrHouseMrHouseTopic404",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No cause for alarm - you'll have an escort of Securitrons to help you fight your way onto the dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do I need to remind you that the NCR hates me?"
+  },
+  {
+   "id": "VDialogueMrHouseTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Since 2278, I've lost five roaming Securitrons near Hidden Valley.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I didn't receive any clear video of the incidents, but telemetry from the units destroyed indicates they were attacked with energy weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's obvious that the Brotherhood has a base in Hidden Valley or thereabouts. Finding it won't be easy, but getting inside will be the real trick.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where do you want me to start?"
+  },
+  {
+   "id": "VDialogueMrHouseTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're talking about a {COAT-ah-ree} coterie of bulging-eyed fanatics who think all Pre-War technology belongs to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They'll never accept my using an army of robots to defend New Vegas. While it's a fight I can win, I'd rather sidestep it altogether.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any possibility of a diplomatic solution?"
+  },
+  {
+   "id": "VDialogueMrHouseTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't tell me that you've fallen for the stories of noble paladins on crusade, preserving mankind's technology in a benighted age? Dross!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{not unkindly} In any case... this is an employer - employee relationship. I've given you an assignment, and the directions are clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't want to kill off the entire Brotherhood."
+  },
+  {
+   "id": "VDialogueMrHouseTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Simple - an NCR Ranger named Grant is in charge of security arrangements for the visit. Present yourself to him, let him know you want to help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given your reputation, it's a near-certainty that he'll accept your offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't dally. The precise time of Kimball's visit is a closely-guarded secret, but it will happen soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you want me to do?"
+  },
+  {
+   "id": "VDialogueMrHouseTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's nothing to think about. You have a job to do, so do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let me think about it."
+  },
+  {
+   "id": "VDialogueMrHouseTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{nonplussed} You have?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've already destroyed their bunker."
+  },
+  {
+   "id": "VDialogueMrHouseSecuritronUpgrade",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Step closer to the demonstration area, if you would...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I expect you're well familiar with my Securitrons by now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The titanium alloy housing that protects its electronic core deflects small arms and shrapnel easily enough...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Its X-25 gatling laser, produced to spec by Glastinghouse, Inc., is deadly against soft targets at medium range...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And for close-range suppression or crowd control, the Securitron is armed with a 9mm submachinegun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All of this, you probably already knew...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What you did not know is that these are the Securitrons' {emphasis} secondary weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All this time, my Securitrons have had to get by running the Mark I operating system, which lacked software drivers for their primary weapons!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Today, with the delivery of the Platinum Chip, all that changes. Behold, for the first time, Securitrons running the Mark II OS!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The M-235 Missile Launcher gives the Securitron the ability to engage ground and air targets at significantly longer ranges...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And a rapid-fire G-28 grenade launching system ensures the Securitron is deadly in close-range engagements.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The software upgrade also includes drivers for the Securitrons' highly sophisticated onboard auto-repair systems.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All together, the Mark II {emphasis} software upgrade confers a 235% increase in combat effectiveness per unit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The city of New Vegas finally has soldiers worthy of protecting it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Return to the penthouse now. We have much to discuss...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VDialogueMrHouseSecuritronUpgrade"
+  },
+  {
+   "id": "VHSecuritronHouse",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Ah, General Oliver. I expected you would survive.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I see you've met my star employee. {Beat, pleased} A real performer, obviously - and a lot more {emphasis} reliable than the other candidate I considered for the position.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I'd pay very close attention to what she has to say, as well as any official papers she hands over for your perusal.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I'd pay very close attention to what he has to say, as well as any official papers he hands over for your perusal.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{eager to enjoy triumph} Let's get on with it, shall we? Hmm?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VHSecuritronHouse"
+  },
+  {
+   "id": "vDialogueMrHouseCasinoPissed",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You dared come here, after what you did? {[Casino floor]}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you think you're going to do? Fight you way up to the penthouse and assassinate me? {[Casino floor]}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You came here to finish what you think you started? {[Casino floor]}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is nothing compared to what's waiting for you up in the penthouse. {[Casino floor]}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vegas will still rise again. Your betrayal won't defeat me! {[Casino floor]}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Lucky 38 will be your grave. I'll finish what Benny couldn't get right! {[Casino floor]}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vDialogueMrHouseCasinoPissed"
+  },
+  {
+   "id": "vDialogueMrHouseControlPissed",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hold on, now, hold on. Just a moment...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Turn around and leave, and I'll... I won't attack you any further.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just... stay away from the console. It doesn't do anything...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've come back to kill me this time, I assume?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ironic, how this turned out. The thousands of hours I spent calculating odds, running projections, planning for every contingency...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "...only to be done in by a mail carrier with a grandiosity complex.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get it over with, will you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vDialogueMrHouseControlPissed"
+  },
+  {
+   "id": "vDialogueMrHouseElevatorAlert",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Aggressive acts on the casino premises will be met with lethal force. Vacate the premises immediately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vacate the premises immediately. The casino is off-limits for 24 hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vacate the premises immediately. All Securitrons are at a state of high alert.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vDialogueMrHouseElevatorAlert"
+  },
+  {
+   "id": "vDialogueMrHouseFirstTalk",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hello.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come over and introduce yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come now, don't keep me waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I invited you here so we could talk, not so you can nose around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vDialogueMrHouseFirstTalk"
+  },
+  {
+   "id": "vDialogueMrHouseLastWillTestament",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "If this statement is being broadcast, I am deceased. Please approach a Securitron and take one of the printed obituaries.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I, Robert Edwin House, am deceased. Please approach a Securitron and take one of the printed obituaries.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vDialogueMrHouseLastWillTestament"
+  },
+  {
+   "id": "vDialogueMrHousePenthousePissed",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Think you're doing well to have made it this far? {[Casino floor]}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your chances of breaking through my defenses, they're... minimal, at best!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why are you doing this?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I would've made you wealthy! You could've helped change the world!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're actually going to do this all over again?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn it, will you die already?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vDialogueMrHousePenthousePissed"
+  }
+ ]
+}

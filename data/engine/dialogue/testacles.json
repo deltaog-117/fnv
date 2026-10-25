@@ -1,0 +1,3572 @@
+{
+ "id": "testacles",
+ "speaker_name": "Testacles the Debug Centurion",
+ "source": "Testacles.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you need tested?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Black Mountain End States}What happened at Black Mountain?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Raul End States}What happened to Raul?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Boomer End States}What happened with the Boomers?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Brotherhood of Steel End States}What happened to the Brotherhood of Steel?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Veronica End States}What happened to Veronica?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Fiends End States}What happened to the Fiends?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{FoA End states}What happened to the Followers of the Apocalypse?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Arcade End States}What happened to Arcade?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Goodsprings End States}What happened to Goodsprings?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Cass End States}What happened to Cass?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Great Khan End States}What happened with the Great Khans?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Jacobstown End States}What happened with Jacobstown?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Lily End States}What happened to Lily?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Kings End States}What happened with the Kings?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rex End States}What happened to Rex?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Misfits End States}What happened to the Misfits?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Novac End States}What happened at Novac?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Boone End States}What happened to Boone?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Vault 19 End States}What happened to the Vault 19 Powder Gang?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Primm End States}What happened at Primm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{EDE End States}What happened to ED-E?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rangers End States}What happened with Chief Hanlon?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Remnants End States}What happened with the Enclave Remnants?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCRCF End States}What happened at the NCRF?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation in Freeside?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic000",
+   "prompt": "Freeside."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Freeside: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic001",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Freeside: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic002",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Freeside: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic003",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Freeside: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic004",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Freeside: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic005",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Freeside: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic006",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with the Boomers?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic007",
+   "prompt": "Boomers."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boomers: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic008",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boomers: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic009",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boomers: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic010",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boomers: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic011",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boomers: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic012",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boomers: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic013",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with the Strip?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic014",
+   "prompt": "The Strip."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Strip: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic015",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Strip: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic016",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Strip: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic017",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Strip: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic018",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Strip: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic019",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Strip: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic020",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with the Followers?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic021",
+   "prompt": "The Followers of the Apocalypse."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Followers: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic022",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Followers: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic023",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Followers: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic024",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Followers: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic025",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Followers: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic026",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Followers: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic027",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Which companion?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic028",
+   "prompt": "Companions."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation at Goodsprings?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic029",
+   "prompt": "Goodsprings."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodsprings: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic030",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodsprings: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic031",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodsprings: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic032",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodsprings: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic033",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodsprings: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic034",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodsprings: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic035",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with the Brotherhood of Steel?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic036",
+   "prompt": "The Brotherhood of Steel."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "BoS: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic037",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "BoS: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic038",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "BoS: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic039",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "BoS: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic040",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "BoS: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic041",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "BoS: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic042",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with Primm?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic043",
+   "prompt": "Primm."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic044",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic045",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic046",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic047",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic048",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Primm: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic049",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with Novac?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic050",
+   "prompt": "Novac."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Novac: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic051",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Novac: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic052",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Novac: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic053",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Novac: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic054",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Novac: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic055",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Novac: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic056",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want to do with Rex?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic057",
+   "prompt": "Rex."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic058",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic059",
+   "prompt": "Spawn him and add him as a companion."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic060",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic061",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done. Setting VMS24 to stage 10.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic061",
+   "prompt": "Start the quest to fix Rex's brain."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What about Boulder City?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic062",
+   "prompt": "Boulder City stuff."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nice!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic063",
+   "prompt": "I killed the Deathclaw Alpha Male and Mother at Quarry Junction."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic064",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The old guy is now in a coma.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic065",
+   "prompt": "Put Caesar in a coma."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic066",
+   "prompt": "Caesar wants to talk to me about being sick."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Male, Good Karma.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic068",
+   "prompt": "Male, Good Karma."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Male, Neutral Karma.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic069",
+   "prompt": "Male, Neutral Karma."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Male, Evil Karma.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic070",
+   "prompt": "Male, Evil Karma."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Female, Good Karma.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic071",
+   "prompt": "Female, Good Karma."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Female, Neutral Karma.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic072",
+   "prompt": "Female, Neutral Karma."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Female, Evil Karma.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic073",
+   "prompt": "Female, Evil Karma."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want done?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic092",
+   "prompt": "VMQ02 - Render Unto Caesar."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic094",
+   "prompt": "Complete Securitron Vault."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic095",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic095",
+   "prompt": "Kill Mr. House."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic096",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic096",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic097",
+   "prompt": "Ally the Boomers with the Legion."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic098",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic098",
+   "prompt": "Ally the White Glove Society with the Legion."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic099",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic099",
+   "prompt": "Destroy the Brotherhood of Steel."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic100",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic100",
+   "prompt": "Kill the leaders of the White Glove Society, Marjorie and Mortimer."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic101",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic101",
+   "prompt": "Kill Benny at the Tops."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic102",
+   "prompt": "Benny fled and got captured."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic103",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic103",
+   "prompt": "Destroy the Boomers' leaders, Loyal and Pearl."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic104",
+   "prompt": "Fail to revert the White Glove Society to cannibalism through non-violence."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic105",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic105",
+   "prompt": "Give me the Auto-Doc part and put Caesar in a coma."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic109",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic109",
+   "prompt": "I killed Marcus."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic110",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic110",
+   "prompt": "I started helping with the cure, but never helped Doctor Henry with his experiment."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic111",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic111",
+   "prompt": "I helped out with the cure, but Keene left town."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic112",
+   "prompt": "I helped out with the cure, but killed Keene."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic113",
+   "prompt": "I helped out with the cure and convinced Keene to stay."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic114",
+   "prompt": "Through the power of Science, I helped find a cure."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic115",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic115",
+   "prompt": "With Lily's help, I helped find a cure."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic116",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic116",
+   "prompt": "I never hired Cass, or she died before I hired her."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic117",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic117",
+   "prompt": "I hired Cass, but she died."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic118",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic118",
+   "prompt": "Goodsprings is still in good shape."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic119",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic119",
+   "prompt": "I wiped out most of the named NPCs in Goodsprings."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic120",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic120",
+   "prompt": "I killed the leaders of the Fiends."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic121",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic121",
+   "prompt": "I wiped out the Boomer leaders."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic122",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic122",
+   "prompt": "The Boomers helped me at the Battle of Hoover Dam."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic126",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic126",
+   "prompt": "I killed Tabitha."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic127",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic127",
+   "prompt": "Tabitha's still alive."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic128",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic128",
+   "prompt": "I never hired Raul, or he died before I hired him."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic129",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic129",
+   "prompt": "I hired Raul, but he died."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic130",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic130",
+   "prompt": "I hired Raul, but never finished his quest."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic131",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic131",
+   "prompt": "I destroyed the Brotherhood of Steel."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic132",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic132",
+   "prompt": "I left the Brotherhood of Steel alone."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic133",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic133",
+   "prompt": "I never hired Veronica."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic134",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic134",
+   "prompt": "I hired Veronica, but she died."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic135",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic135",
+   "prompt": "I hired Veronica, but didn't complete her quest."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic136",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic136",
+   "prompt": "I left the Followers of the Apocalypse alone."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic137",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic137",
+   "prompt": "I never hired Arcade."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic138",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic138",
+   "prompt": "I wiped them all out at Red Rock Canyon."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic139",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic139",
+   "prompt": "I never hired Lily."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic140",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic140",
+   "prompt": "I hired Lily, but she died."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic141",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic141",
+   "prompt": "I hired Lily, but didn't finish her quest."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic142",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic142",
+   "prompt": "I never hired Rex."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic143",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic143",
+   "prompt": "I hired Rex, but he died."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic144",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic144",
+   "prompt": "I hired Rex, but never got him a new brain."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic145",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic145",
+   "prompt": "Rex got Rey's brain."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic146",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic146",
+   "prompt": "Rex got Lupa's brain."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic147",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic147",
+   "prompt": "Rex got Violetta's brain."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic148",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic148",
+   "prompt": "Nothing happened with the Misfits."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic149",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic149",
+   "prompt": "I wiped those losers out."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic150",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cheater. Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic150",
+   "prompt": "I forged their tests."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic151",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic151",
+   "prompt": "I helped train them properly."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic152",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic152",
+   "prompt": "Misfits were doses with Psycho."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic153",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic153",
+   "prompt": "Nothing happened at Novac."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic154",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic154",
+   "prompt": "I never hired Boone."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic155",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic155",
+   "prompt": "I hired Boone, but he died."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic156",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic156",
+   "prompt": "I hired Boone, but didn't finish his quest."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic157",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic157",
+   "prompt": "I left Vault 19 alone."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic158",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic158",
+   "prompt": "I killed Cooke."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic159",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic159",
+   "prompt": "I got Primm a new sheriff - Meyers."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic160",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic160",
+   "prompt": "I wiped out key people at Primm."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic161",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic161",
+   "prompt": "I didn't do anything for Primm."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic162",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic162",
+   "prompt": "I hired ED-E, but he was destroyed."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic163",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic163",
+   "prompt": "I hired ED-E, but never finished his quest."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic164",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic164",
+   "prompt": "Hanlon continues to spread his lies."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic165",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic165",
+   "prompt": "I killed Hanlon but didn't expose him."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic166",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic166",
+   "prompt": "I killed Hanlon and exposed him."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic167",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic167",
+   "prompt": "I convinced Hanlon to quit spreading lies."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic168",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done. Running slideshow now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic168",
+   "prompt": "I wiped those war criminals out."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic169",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done. Running slideshow now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic169",
+   "prompt": "They didn't participate at the Dam."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic170",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done. Running slideshow now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic170",
+   "prompt": "They helped the NCR."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic171",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done. Running slideshow now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic171",
+   "prompt": "The helped the Legion."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic172",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic172",
+   "prompt": "I hired Cass, but never finished her quest."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic173",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic173",
+   "prompt": "I hired Arcade, but he died."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic174",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic174",
+   "prompt": "I hired Arcade, but I never finished his quest."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic175",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic175",
+   "prompt": "I never offered to help Doctor Henry."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic176",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic176",
+   "prompt": "I killed Eddie."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtestaclestopic177",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTestaclesTopic177",
+   "prompt": "Eddie lives."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTopic000",
+   "prompt": "The Kings resolved their differences with the NCR."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTopic001",
+   "prompt": "I wiped out the Kings."
+  },
+  {
+   "key": "vdialoguetestaclesdebugtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTestaclesDebugTopic002",
+   "prompt": "I never hired ED-E."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who won the second Battle of Hoover Dam?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic001",
+   "prompt": "Ending Slideshow Setup."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was the Courier male or female, and what kind of karma did the Courier have?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic002",
+   "prompt": "Legion Victory."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was the Courier male or female, and what kind of karma did the Courier have?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic003",
+   "prompt": "NCR Victory."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was the Courier male or female, and what kind of karma did the Courier have?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic004",
+   "prompt": "Mr. House Victory."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was the Courier male or female, and what kind of karma did the Courier have?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic005",
+   "prompt": "Independent Vegas Victory."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's going on with the Great Khans?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic006",
+   "prompt": "State of the Great Khans."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventKhans set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic007",
+   "prompt": "Unaltered or helping Caesar (default)"
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventKhans set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic008",
+   "prompt": "Great Khans helping NCR."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventKhans set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic009",
+   "prompt": "Great Khans wiped out at Red Rock Canyon."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's going on with the Boomers?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic010",
+   "prompt": "State of the Boomers."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBoomers set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic011",
+   "prompt": "Unaltered."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBoomers set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic012",
+   "prompt": "Helping the player."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBoomers set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic013",
+   "prompt": "Wiped out/Leaders killed."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's going on off the Strip?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic014",
+   "prompt": "Off the Strip variables."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's going on with the Great Khans?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic015",
+   "prompt": "State of the Great Khans."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's going on with the Boomers?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic016",
+   "prompt": "State of the Boomers."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What happened with Chief Hanlon?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic017",
+   "prompt": "Chief Hanlon."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventHanlon set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic018",
+   "prompt": "Spared him and allowed to continue with his lies, or unaltered."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventHanlon set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic019",
+   "prompt": "Didn't expose him, but killed him."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventHanlon set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic020",
+   "prompt": "Exposed and killed him."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventHanlon set to 3.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic021",
+   "prompt": "Spared him, but made him stop his lies."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What about the Fiends?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic022",
+   "prompt": "The Fiends."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEvenFiends set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic023",
+   "prompt": "One or more bosses still alive."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEvenFiends set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic024",
+   "prompt": "All bosses dead."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's going on with the Misfits?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic025",
+   "prompt": "The Misfits at Camp Golf."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventCampGolf set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic026",
+   "prompt": "Left them alone."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventCampGolf set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic027",
+   "prompt": "They're dead."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventCampGolf set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic028",
+   "prompt": "Forged their tests."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventCampGolf set to 3.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic029",
+   "prompt": "They got trained properly."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's going on with the Remnants?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic030",
+   "prompt": "The Remnants."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventRemnants set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic031",
+   "prompt": "They're sitting out OR I didn't deal with them."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventRemnants set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic032",
+   "prompt": "They're helping the NCR."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventRemnants set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic033",
+   "prompt": "They're helping Caesar's Legion."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventRemnants set to 3.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic034",
+   "prompt": "They're dead."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What happened at Nelson and Camp Forlorn Hope?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic035",
+   "prompt": "Nelson and Camp Forlorn Hope."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventNelson set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic036",
+   "prompt": "Defeated the Legion at Nelson. The NCR now occupies the town."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventNelson set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic037",
+   "prompt": "Defeated the NCR at Camp Forlorn Hope. The Legion now occupies the camp."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventNelson set to 3.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic038",
+   "prompt": "Killed everybody. Nobody at Nelson or Camp Forlorn Hope."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventNelson set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic039",
+   "prompt": "The NCR and Legion are still in a standoff."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What part of the Strip?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic040",
+   "prompt": "On the Strip variables."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What happened?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic043",
+   "prompt": "Racket."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventRacket set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic044",
+   "prompt": "Racket is unaltered."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventRacket set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic045",
+   "prompt": "Racket was foiled."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventRacket set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic046",
+   "prompt": "I helped out with Racket."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's going on with that thing?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic047",
+   "prompt": "The Monorail."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventMonorailDestroyed set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic048",
+   "prompt": "Nothing."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventMonorailDestroyed set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic049",
+   "prompt": "Destroyed. All NCR troops disappear from the Strip for 3 days."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventMonorailDestroyed set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic050",
+   "prompt": "Destroyed. NCR troops back in the Strip via Freeside."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What happened to President Kimball?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic051",
+   "prompt": "The fate of President Kimball."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventKimballAssassination set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic052",
+   "prompt": "Nothing... yet."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventKimballAssassination set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic053",
+   "prompt": "Saved Kimball from his would-be assassins."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic054",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventKimballAssassination set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic054",
+   "prompt": "I attacked Kimball, but he survived. I was identified as a would-be assassin."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventKimballAssassination set to 3.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic055",
+   "prompt": "Kimball's dead, and my involvement is unknown."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventKimballAssassination set to 4.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic056",
+   "prompt": "I killed Kimball, and everyone knows I did it."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic057",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic057",
+   "prompt": "The Fort."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic062",
+   "prompt": "About Caesar..."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Benny's at the Fort. What happened next?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic063",
+   "prompt": "About Benny..."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What about them?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic064",
+   "prompt": "About the Securiton Army..."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is it functional?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic065",
+   "prompt": "About the Legion's howitzer..."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventCaesarMeetsPlayer set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic066",
+   "prompt": "I met Caesar."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventCaesarCured set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic067",
+   "prompt": "I cured Caesar."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventCaesarKilled to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic068",
+   "prompt": "Caesar's dead. I killed him in front of everybody."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventCaesarKilled to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic069",
+   "prompt": "Caesar's dead. He died on the operating table."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennyKilledFort to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic071",
+   "prompt": "Nothing yet."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennyKilledFort to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic072",
+   "prompt": "I killed him in the arena."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennyKilledFort to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic073",
+   "prompt": "I killed him while he was tied up and helpless."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennyKilledFort to 3.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic074",
+   "prompt": "I had him crucified."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventSecuritronsFort set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic075",
+   "prompt": "I left them alone or haven't done anything with them yet."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventSecuritronsFort set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic076",
+   "prompt": "I upgraded them."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic077",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventSecuritronsFort set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic077",
+   "prompt": "I blew up the power regulators and wrecked the army."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventLegionHowitzer set to 0.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic078",
+   "prompt": "Nope. It's unrepaired."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventLegionHowitzer set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic079",
+   "prompt": "I repaired it."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic080",
+   "prompt": "The Tops."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic081",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What about Benny?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic081",
+   "prompt": "About Benny at the Tops..."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic082",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventAssaultTheTops set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic082",
+   "prompt": "I initiated combat at the Tops."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventSurvivedTrap set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic083",
+   "prompt": "I survived Benny's trap."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennySeen set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic084",
+   "prompt": "I saw Benny."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennySeen set to 2.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic085",
+   "prompt": "I spoke to Benny."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennySeen set to 3.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic086",
+   "prompt": "I used Black Widow to seduce Benny."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennyFled set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic087",
+   "prompt": "Benny has fled the Strip."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventBennyKilledCasino set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic088",
+   "prompt": "I killed Benny at the Tops."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic089",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What did you do?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic089",
+   "prompt": "The Lucky 38."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic090",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventChipTurnedIn set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic090",
+   "prompt": "I gave Mr. House the Platinum Chip."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic091",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventSecuritronsUpgraded set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic091",
+   "prompt": "Mr. House upgraded the Strip's Securitrons."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventLucky38Relit set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic092",
+   "prompt": "The El Dorado Power Station jumpstarted the Lucky 38's reactor."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "VStoryEventVisitsLucky38 set to 1.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic094",
+   "prompt": "I visited the Lucky 38!"
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic096",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Which faction?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic096",
+   "prompt": "Set faction reputation."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with the NCR?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic097",
+   "prompt": "NCR."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic098",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with Caesar's Legion?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic098",
+   "prompt": "Caesar's Legion."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic099",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic099",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic100",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic100",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic101",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic101",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic102",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic103",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR: Shunned. Shhhhhuuuuuunnnnn!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic103",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic104",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic105",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's Legion: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic105",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic106",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's Legion: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic106",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic107",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's Legion: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic107",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic108",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's Legion: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic108",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic109",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's Legion: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic109",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic110",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's Legion: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic110",
+   "prompt": "Bad - Vilified."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic111",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's your reputation with the Great Khans?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic111",
+   "prompt": "Great Khans."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great Khans: Idolized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic112",
+   "prompt": "Good - Idolized."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great Khans: Accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic113",
+   "prompt": "Good - Accepted."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic114",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great Khans: Wild Child.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic114",
+   "prompt": "Mixed - Wild Child."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic115",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great Khans: Rascal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic115",
+   "prompt": "Mixed - Rascal."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic116",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great Khans: Shunned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic116",
+   "prompt": "Bad - Shunned."
+  },
+  {
+   "key": "vdialoguetesticlestesticlestopic117",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great Khans: Vilified.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueTesticlesTesticlesTopic117",
+   "prompt": "Bad - Vilified."
+  }
+ ]
+}

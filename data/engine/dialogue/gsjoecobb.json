@@ -1,0 +1,1131 @@
+{
+ "id": "gsjoecobb",
+ "speaker_name": "Joe Cobb",
+ "source": "GSJoeCobb.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've got people to kill. Keep an eye out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Never thought I'd ever have my own town, but thanks to you, now I do. If you wanna make some caps, head on over to the Correctional Facility.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just tell them I sent you and you should get in without a problem. Keep a close eye on some of those bastards, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, not all Powder Gangers out there are friends of mine - like the group in Primm. They'll be gunning for you no matter what, so keep that in mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My gang's here, but we'll still need a plan before we rush the town. I don't want to embarrass myself and get beat by a bunch of townies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We ain't got much in the way of supplies, so if you could shake down the old doctor and the store owner for some stuff, we'd be in good shape.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I also thought it might be a good thing to jimmy the lock on the Bighorner pen. The noise from the fight will spook them, get them running wild.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once you're done with that stuff - or none of it - say the word and we'll make our move.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We ready to move or what?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you want?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{not in charge of Goodsprings} What do you want now?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{running Goodsprings, slightly friendly} How's it going?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Knock it off!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Quit fuckin' around!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go ahead. Try me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Think you're tough, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why the fuck you puttin' that there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Pick that back up or you'll be eatin' it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Grenade!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hit the dirt!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{player helping Ringo} No. I got a funny feeling about you, and there's no way I'm trusting you to watch my back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{not outside town} Let me get out of town before we talk. Too many unfriendly ears around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the hell for? Just farmers and ranchers out here. Not much worth stealing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't you already ask me about this? What the hell for - this place is worthless.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic000",
+   "prompt": "What say I help you take over this town?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "While you're doing that, I'll be here waiting for my friends. Join up with us once you're done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic001",
+   "prompt": "Deal."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck you, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic002",
+   "prompt": "Never mind. I need to think about this."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There are too many places to hide around here. He'd see me coming and then \"bam\", I'm dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He doesn't know you, though. He probably won't shoot right away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic003",
+   "prompt": "You can't find Ringo yourself?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right! We got all sorts of shit in here. Nice job. Better take some for yourself in case you get hit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic005",
+   "prompt": "Here - the spare medical supplies from Doc Mitchell."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Same old shit that's been going on for years. The NCR and Legion are still fighting over Hoover Dam for some reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic007",
+   "prompt": "What's been going on in the rest of the wasteland?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've run with some tough gangs, but I gotta admit they all got nothing on the Legion. I hear they stick you up on poles and it takes awhile to die.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "I ain't saying I'm afraid of them or nothing, but I'll be staying out of their way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic008",
+   "prompt": "What do you know about the Legion?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic009",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{contempt} \"New\" California Republic - nothing new about it. Just a bunch of people with money and power pushing everyone else around.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "They've got troops all over the Mojave, but it's a big desert so it's pretty easy to avoid them if you want.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic010",
+   "prompt": "Tell me about the NCR."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{pride} It is now. Me and the rest of the guys busted out of the NCR prison east of here and took over. Now we're calling the shots.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic011",
+   "prompt": "This area is your territory?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "None of your damn business. You ought to know better than to ask a man that kind of question.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic012",
+   "prompt": "What were you in prison for?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {listing his crimes} Robbed some people, burned some things, killed a few guys.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic013",
+   "prompt": "I just need to know if I should watch my step around you.",
+   "label": "< Speech 20 >"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic013_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Like I said, mind your own damn business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic013",
+   "prompt": "I was just curious.",
+   "label": "< Speech 20 >"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{warning} Yeah, forget about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic014",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{realizing player has a good idea} Shit, yeah. Mayor Cobb - I like the sound of that. Running my own town will give me more pull with the guys at the prison, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First things first, though. You go settle things with Ringo and put a bullet between his eyes while I round up my crew and let them in on the plan.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic015",
+   "prompt": "If you run the town, they'll have to work for you. Food, water, and money will be yours."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{thoughtful} Having all the food we want ain't a bad idea, actually. Getting sick of eating prison rations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First things first, though. You go settle things with Ringo and put a bullet between his eyes while I round up my crew and let them in on the plan.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic016",
+   "prompt": "Free food, I guess."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make up your damn mind.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic017",
+   "prompt": "Forget I said anything."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Never been there since the NCR's got troops all over it. Must be pretty important.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic018",
+   "prompt": "Do you know anything about Hoover Dam?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No shit? I guess the next thing we need to do is hang out and wait for the rest of my gang to show up so we can talk about the plan.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic019",
+   "prompt": "I already took care of Ringo."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's about time. I saw some of the townies gathering at the saloon, so we've got a militia to take down. We get rid of them and we own this place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic022",
+   "prompt": "I've done all I can. Let's take over Goodsprings."
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. We'll still need a plan before we rush the town. I don't want to embarrass myself and get beat by a bunch of townies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We ain't got much in the way of supplies, so if you could shake down the old doctor and the store owner for some stuff, we'd be in good shape.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once you're done with that stuff - or none of it - say the word and we'll make our move.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic023",
+   "prompt": "Ringo's dead. What now?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I guess me and the guys could push this place over pretty easily.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First things first, though. You go settle things with Ringo and put a bullet between his eyes while I round up my crew and let them in on the plan.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic024",
+   "prompt": "It's easy pickings. Why, you got somewhere else to be?"
+  },
+  {
+   "key": "vfreeformgoodspringsgsjoecobbtopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I figure we'll hang around Goodsprings for awhile, maybe get some of the other gangs to join up with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Won't kill anybody else unless we have to. Just as long as people do what we tell them, they'll be all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSJoeCobbTopic025",
+   "prompt": "So what's next for you guys?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringsjoecobbtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's some trader who decided he'd rather shoot than pay the toll for being in our territory. He's hiding somewhere in town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Would serve these idiots right if me and my guys shot the place up after we got payback on Ringo.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsJoeCobbTopic001",
+   "prompt": "What was that you said about Ringo?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "gsjoecobbintro",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'm done being nice. If you don't hand Ringo over soon, I'm going to get my friends and we're burning this town to the ground, got it?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "GSJoeCobbIntro",
+   "prompt": "GSJoeCobbIntro"
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What the hell is your problem?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Yeah, I thought so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What the fuck?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're dead, asshole!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Big mistake.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Come on!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You like this?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try this on!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ah, shit!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not this time!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "God dammit...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll pay for that...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Catch!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take this!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Fuck this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Scram!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm outta here!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get the fuck outta here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get out, now!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You don't belong here. Go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Oof!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahh...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Agh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ugh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Murderer!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Asshole!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That was way outta line.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Cha-ching!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That settles that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yikes...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "powerattack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ooagh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Haagrh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PowerAttack",
+   "prompt": "PowerAttack"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "That ain't fuckin' yours!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Give it back, asshole!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fuckin' thief!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Somethin' there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "There we go!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here it is!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So much for sneaking!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "God dammit... I guess it's nothin'.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fine. I'll catch you next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah that's right, I'd run away, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Where the fuck are you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Quit playin' games!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come out here and fight!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Had enough? I thought so.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, I'd run away, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fucked you up, bitch! And you know it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Ah shit, when I find you...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You think you'll get away from me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Runnin' away like a little bitch!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Found you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There you are!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here we go!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Fine. I'll get your ass next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Next time, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Shit. Guess I lost 'em.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, what was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, who's there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Oh yeah? You're fuckin' dead!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come and get it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You are so fucked!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "It's on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bring it on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're done for.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "key": "observecombat",
+   "section": "other",
+   "responses": [
+    {
+     "text": "Hey, some entertainment, finally.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, cool. A fight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ObserveCombat",
+   "prompt": "ObserveCombat"
+  }
+ ],
+ "speaker": "joe_cobb"
+}

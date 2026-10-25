@@ -1,0 +1,318 @@
+{
+ "id": "vfsdebtladyjane",
+ "speaker_name": "Jane (Freeside)",
+ "source": "VFSDebtLadyJane.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello. Lovely to meet you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have nothing more to give. Leave me be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "But what about those nasty critters?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But, what about the R O U S's?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic001",
+   "prompt": "I could retrieve the caps from your caravan."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In that case, I suppose you're here to collect. I apologize, but I simply do not have enough caps on me to cover the debt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If someone were to recover my caravan from that cave, I could easily pay in full, but who would bother with such a mess?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic005",
+   "prompt": "I was hired by the Garrets to track you down."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I'm short 90 caps or so, but I have a few cartons of cigarettes and some sensor modules I could put toward my debt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At this point I'll have to return to California to start anew. I haven't got a cap to my name.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic007",
+   "prompt": "Perhaps there is something else of value you could put toward the debt?",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic007_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't even have enough caps to get a new caravan up and running. What makes you think I have enough to afford anything else of value?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic007",
+   "prompt": "I bet you've got some extra caps hidden in that dress somewhere.",
+   "label": "<Speech>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well, but please do be careful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I will be returning to California to start anew. If anything is left of the caravan, please keep it as a show of thanks for your kindness.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is so rare to meet good friendly people in the wastes. Here is the last location of the caravan. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic008",
+   "prompt": "I've dealt with such things in the past."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic010",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I haven't the time to speak to commoners such as yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic011",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where would I go? My caravan is lost and I haven't the caps to do much else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic012",
+   "prompt": "I'll be back later. Don't go running off anywhere."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh I assure you, sir, they are very real and very large. Please do be careful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I will be returning to California to start anew. If anything is left of the caravan, please keep it as a show of thanks for your kindness.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is so rare to meet good friendly people in the wastes. Here is the last location of the caravan. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic015",
+   "prompt": "Rodents of unusual size? I don't believe they exist."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I'm short 90 caps or so, but I have a few cartons of cigarettes and some sensor modules I could put toward my debt.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At this point I'll have to return to California to start anew. I haven't got a cap to my name.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic016",
+   "prompt": "I find it hard to believe you ran from the caravan without taking something.",
+   "label": "<Barter>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic016_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't even have enough caps to get a new caravan up and running. What makes you think I have enough to afford anything else of value?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic016",
+   "prompt": "Lady, you've got to have extra stuff on you somewhere.",
+   "label": "<Barter>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you don't need to kill me. I'm going back to California to start over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just tell them you killed me and they won't be the wiser.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic017",
+   "prompt": "Just give me what you have on you and they might accept it knowing you're dead."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh God, no!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic018",
+   "prompt": "But then, I'd be a liar, and I hate liars. <Attack>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I swear they'll never see me again. After this experience, I want nothing to do with this hell hole.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll get started now. The last thing I need is more bounty hunters trying to track me down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic019",
+   "prompt": "I suppose that might work. It'll take some convincing though."
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Damn. I didn't want to hand over all of my caps because I won't have enough to get home to California.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take it all. I'll find my way home one way or another.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic021",
+   "prompt": "Jane, I can tell you're lying through your teeth.",
+   "label": "<Perception>"
+  },
+  {
+   "key": "vfreeformfreesidevfsdebtladyjanetopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Oh you charming wonderful hunk of man. I agree, I cannot risk my reputation on such a paltry sum.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here is what I owe, paid in full. I may scrape a bit to get home to California, but I'm a resourceful woman.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here is the last known location of my caravan if you feel like looking for it. Until we meet again, handsome.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSDebtLadyJaneTopic023",
+   "prompt": "Jane, surely a lady of your stature has honor sufficient to pay her debts.",
+   "label": "<Lady Killer>"
+  },
+  {
+   "key": "vfsladyjanehello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Excuse me, but a lady of my stature does not converse with those of low stock.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSLadyJaneHello",
+   "prompt": "VFSLadyJaneHello"
+  }
+ ],
+ "speaker": "lady_jane"
+}

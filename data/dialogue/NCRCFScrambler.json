@@ -1,0 +1,100 @@
+{
+ "page": "NCRCFScrambler.txt",
+ "speaker": "Scrambler",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are you looking at?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Will you quit bothering me?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformNCRCFNCRCFScramblerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Eddie alive} I keep an eye on my buddy Eddie. Anybody messes with him and I scramble them real good.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Eddie dead} Used to guard Eddie, but not anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do around here?"
+  },
+  {
+   "id": "VFreeformNCRCFNCRCFScramblerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why? It's because I mess up people so bad they don't know what part goes where when I'm done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why are you called Scrambler?"
+  },
+  {
+   "id": "VFreeformNCRCFNCRCFScramblerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right. Fuck off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformNCRCFNCRCFScramblerTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much, just killed a bunch of people. Maybe a couple of kids, too. Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What did you do to end up in here?"
+  },
+  {
+   "id": "VFreeformNCRCFNCRCFScramblerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dynamite. Lots and lots of dynamite. You should've seen the body parts flying everywhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did you all break out?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Uh-huh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

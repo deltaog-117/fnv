@@ -1,0 +1,129 @@
+{
+ "id": "ncrcfchavez",
+ "speaker_name": "Chavez",
+ "source": "NCRCFChavez.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You just walked into the wrong camp, my friend. Hand over everything you've got and we might let you live.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I got the message. You won't see me around these parts again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformncrcfncrcfchaveztopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's nothing new. Am I supposed to be impressed?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFChavezTopic000",
+   "prompt": "Eddie sent me to deal with you."
+  },
+  {
+   "key": "vfreeformncrcfncrcfchaveztopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Run!",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFChavezTopic001",
+   "prompt": "{Terrifying Presence}< Cock your head and grin. >"
+  },
+  {
+   "key": "vfreeformncrcfncrcfchaveztopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Male PC} Get him!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC} Get her!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFChavezTopic002",
+   "prompt": "I'm not going to let you live."
+  },
+  {
+   "key": "vfreeformncrcfncrcfchaveztopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right. Pickings were getting slim around here anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFChavezTopic003",
+   "prompt": "Eddie's just going to keep chasing you. Quit while you're ahead... and alive.",
+   "label": "< Speech 30 >"
+  },
+  {
+   "key": "vfreeformncrcfncrcfchaveztopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Nope, not interested. No caps in letting people walk, you know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFChavezTopic003",
+   "prompt": "How about you walk away and I'll do the same? That way it's easy on both of us.",
+   "label": "< Speech 30 >"
+  },
+  {
+   "key": "vfreeformncrcfncrcfchaveztopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Letting you just walk away isn't how it works, I'm afraid.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNCRCFNCRCFChavezTopic004",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Aw, come on! Don't leave me here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "chavez"
+}

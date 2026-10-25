@@ -1,0 +1,35 @@
+{
+ "page": "VWranglerDealer.txt",
+ "speaker": "card dealer",
+ "topics": [
+  {
+   "id": "HELLO",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat and give lady luck a chance!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try your hand at blackjack!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pull up a stool and join the game, buddy!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  }
+ ]
+}

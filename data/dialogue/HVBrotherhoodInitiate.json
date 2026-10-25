@@ -1,0 +1,502 @@
+{
+ "page": "HVBrotherhoodInitiate.txt",
+ "speaker": "Initiate (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Paladin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're being watched, so don't get any ideas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The bunker takes a little getting used to, doesn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How may I assist you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Greetings, Elder.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, sir.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sir.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The reports say Mr. House's robots are now using tech we've never heard of. We need to send a team up there, soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like Mr. House is out of the picture. One less thing for us to deal with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With their leader gone, the Legion will likely tear itself apart. It's what most violent tribal societies do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our instruments show some impressive power fluctuations coming from across the river. What's going on over there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There was a huge explosion east of the Colorado a little while ago. Does the NCR have any artillery that big?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Someone blew up the monorail the NCR uses to travel to the Strip and back. We should use this time to strike!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seems the destruction of the monorail didn't slow the NCR down much. How many troops do they have?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There was an attempt on the NCR president's life recently. Too bad it didn't succeed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you hear? Someone actually managed to assassinate the NCR's president! And we just sit here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other day I heard some bigwig in the NCR military died. Hopefully it disrupts their chain of command some.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you hear about that NCR higher up that died? That he was trying to sabotage them? Hope he wasn't the only one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seems the NCR is making friends. We've had reports of them making overtures to some gang in Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We just had word that the town of Primm is now part of the NCR. At this rate, they'll be running the whole region soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard some special squad of Rangers is on its way to the Vegas area. I guess the NCR is finally getting serious about fighting the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There've been reports that the NCR is moving more and more troops into the area.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's the quiet before the storm up top. For once I'm almost glad we're down here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I still can't believe we came to terms with the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR military transmissions say the robots on the Strip have been upgraded. Wish we had eyes-on intel...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mr. House is out of the picture. Probably killed by his own robots.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard you took out Caesar by yourself. Proves the Legion is just a bunch of savages, like we thought.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With their leader gone, the Legion will likely tear itself apart. It's what most violent tribal societies do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "NCR military radio keeps talking about Mr. House agreeing to join the NCR. What changed his mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Someone blew up the monorail the NCR uses to travel to the Strip and back. We should use this time to strike!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seems the destruction of the monorail didn't slow the NCR down much. How many troops do they have?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a rumor going around that you saved the NCR president's life. I'm surprised you have the stones to show your face around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There was an attempt on the NCR president's life recently. Too bad it didn't succeed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Were you the one who killed the NCR president? I'd like to shake your hand!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you hear? Someone actually managed to assassinate the NCR's president! And we just sit here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other day I heard some bigwig in the NCR military died. Hopefully it disrupts their chain of command some.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you hear about that NCR higher up that died? That he was trying to sabotage them? Hope he wasn't the only one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Seems the NCR is making friends. We've had reports of them making overtures to some gang in Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We just had word that the town of Primm is now part of the NCR. At this rate, they'll be running the whole region soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard some special squad of Rangers is on its way to the Vegas area. I guess the NCR is finally getting serious about fighting the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There've been reports that the NCR is moving more and more troops into the area.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's the quiet before the storm up top. For once I'm almost glad we're down here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep an eye on Veronica here. She's a sharp one.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try to keep Veronica out of trouble, would you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're planning to take Veronica with you, be sure to have a good pair of earplugs with you. I'm kidding, Veronica! Put the power fist down!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where did you get that Eyebot? I've never seen one modified quite like that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep that mutant in line, or we'll put it down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh good, now I have to put up with the stench of rotting ghoul as well. I hope the air filters are working.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've heard that your friend there can put some of the senior scribes to shame.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why is your friend there glaring at me like that? Did I bump into him or something?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't bother me. I'm on patrol.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've important work to do, so no time to talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Does Ramos know you're walking around without a guard?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep up the good work, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you've been making yourself useful. Unlike some people I could mention.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you adjusting to the bunker, outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just between you and me, I'm glad you're here. This place needed a fresh face.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've been a great help, outsider. Thank you for all your hard work.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Greetings, {outsider}out- excuse me, I guess I need to stop calling you that, don't I?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So you're one of us now, eh? Truly it is a rare honor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, it's you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd rather not talk to you, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd rather not associate with you. Excuse me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why the Elder didn't just have you shot is beyond me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't talk to me. You've caused more than enough damage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ramos is keeping an eye on you, outsider. Remember that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You certainly make life more interesting, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of the others may look the other way, but I don't trust you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're going to have to clean up your act if you want some respect around here, outsider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just when I think I've got you figured out, you go and surprise me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't trust you, outsider, but I can't help but like you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're alright, outsider. Most of the time, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We have a duty to preserve the past.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Only a few people get to venture outside, usually to trade for food.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've been outside. Is the NCR really still hunting us?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "McNamara's done a pretty good job, given the situation he was handed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our former Elder, Elijah, was obsessed with new technology. That's why we were at HELIOS in the first place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hardin owes his life to McNamara. That's why he won't challenge him outright.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As much as I'm sick of Taggart's VR sims, I have to admit we wouldn't be combat ready without them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Doc Schuler is a lifesaver. I was hurt in training the other day and she fixed me right up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Lucky 38's reactor has been restarted... it can be seen from miles away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maintaining the machinery around here is important. We have to breathe, after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After this I have some weapons to repair.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I do a good job, I might be up for promotion to Paladin soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Power armor is pretty intricately made. It's not an easy thing to fix.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you seen the dust storm above? I worked on that machine!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If it's not broken power armor, it's broken electrical fixtures.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If it's not broken weapons, it's broken power armor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm really busy now, sorry.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't think these repairs will ever end.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "HVTeacherLines",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Now, who can tell me the primary components of gunpowder?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The principles of fusion are relatively simple.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "...then you bring your second unit up to provide covering fire, like so...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVTeacherLines"
+  }
+ ]
+}

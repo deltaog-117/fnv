@@ -1,0 +1,892 @@
+[
+ {
+  "quest": "Arrival at Zion",
+  "kind": "triggers",
+  "target": "Chaos in Zion",
+  "target_type": "quest",
+  "when": "Follows-Chalk is shot by the player",
+  "note": "Dead Horses, Sorrows, Daniel and Joshua Graham turn hostile; remaining Honest Hearts quests fail"
+ },
+ {
+  "quest": "Crush the White Legs",
+  "kind": "effect",
+  "target": "White Legs",
+  "target_type": "faction",
+  "when": "quest completed",
+  "note": "White Legs removed from the game; named Dead Horses/Sorrows NPCs disappear"
+ },
+ {
+  "quest": "Crush the White Legs",
+  "kind": "triggers",
+  "target": "Joshua Graham hostile",
+  "target_type": "npc",
+  "when": "any Dead Horses or Sorrows killed",
+  "note": "Joshua turns hostile even if the kill is hidden"
+ },
+ {
+  "quest": "Et Tumor, Brute?",
+  "kind": "effect",
+  "target": "Caesar dies",
+  "target_type": "ending",
+  "when": "Medicine 25-74 surgery, or arranged death",
+  "note": "Medicine 24 or lower: head explodes and Lucius/Legion turn hostile"
+ },
+ {
+  "quest": "Et Tumor, Brute?",
+  "kind": "exclusive",
+  "target": "Arcade Gannon companion",
+  "target_type": "companion",
+  "when": "curing Caesar's tumor",
+  "note": "Arcade leaves unless sold into slavery; workaround is dismissing him before the Remnants bunker"
+ },
+ {
+  "quest": "Eureka!",
+  "kind": "effect",
+  "target": "Allied forces join the battle",
+  "target_type": "effect",
+  "when": "Boomers, Enclave remnants, Brotherhood or lost companions earlier recruited",
+  "note": "Each ally joins the Hoover Dam battle if previously recruited"
+ },
+ {
+  "quest": "For the Republic, Part 2",
+  "kind": "locks",
+  "target": "You'll Know It When It Happens",
+  "target_type": "quest",
+  "when": "Yes Man offers it before Colonel Moore",
+  "note": "Forces the Wild Card path; Ranger Grant will not talk so the quest cannot be completed"
+ },
+ {
+  "quest": "For the Republic, Part 2",
+  "kind": "fails",
+  "target": "You'll Know It When It Happens",
+  "target_type": "quest",
+  "when": "Wild Card route chosen with bad NCR standing and Kimball left to die",
+  "note": "Assassination is accepted without a way to back out"
+ },
+ {
+  "quest": "The House Always Wins IV",
+  "kind": "fails",
+  "target": "For the Republic, Part 2",
+  "target_type": "quest",
+  "when": "completed (or any higher part)",
+  "note": "Also applies to HAW V and above"
+ },
+ {
+  "quest": "For the Republic, Part 2",
+  "kind": "fails",
+  "target": "Beware the Wrath of Caesar!",
+  "target_type": "quest",
+  "when": "Beware received earlier via Wild Card: Change in Management and Omertas reported to Moore",
+  "note": "Legion reputation drops and Legion turns hostile regardless"
+ },
+ {
+  "quest": "For the Republic, Part 2",
+  "kind": "effect",
+  "target": "NCR infamy",
+  "target_type": "faction",
+  "when": "Brotherhood of Steel allied with NCR",
+  "note": "Small NCR infamy, not enough to lower reputation level"
+ },
+ {
+  "quest": "Kings' Gambit",
+  "kind": "effect",
+  "target": "Elite NCR troops spawn",
+  "target_type": "effect",
+  "when": "quest completed (or Securitron vault decision)",
+  "note": "NCR Veteran Rangers and heavy troopers appear at select camps"
+ },
+ {
+  "quest": "Kings' Gambit",
+  "kind": "locks",
+  "target": "Kings' Gambit",
+  "target_type": "quest",
+  "when": "The King dead before starting",
+  "note": "Quest never appears; report to the ambassador for 300 caps"
+ },
+ {
+  "quest": "No Gods, No Masters",
+  "kind": "effect",
+  "target": "Boone leaves",
+  "target_type": "companion",
+  "when": "NCR troops attacked without a faction disguise",
+  "note": "Avoid with sneaking, Speech to make troopers leave, or NCR armor"
+ },
+ {
+  "quest": "Old World Blues (quest)",
+  "kind": "requires",
+  "target": "Peaceful ending",
+  "target_type": "ending",
+  "when": "3 doctor votes",
+  "note": "Votes come from A Brain's Best Friend (Borous), Coming Out of Her Shell (Dala) and another Think Tank quest"
+ },
+ {
+  "quest": "A Brain's Best Friend",
+  "kind": "unlocks",
+  "target": "Old World Blues (quest)",
+  "target_type": "quest",
+  "when": "completed before the main quest",
+  "note": "Borous supplies 1 of 3 votes for the peaceful ending"
+ },
+ {
+  "quest": "Coming Out of Her Shell",
+  "kind": "unlocks",
+  "target": "Old World Blues (quest)",
+  "target_type": "quest",
+  "when": "completed before the main quest",
+  "note": "Dala supplies 1 of 3 votes for the peaceful ending"
+ },
+ {
+  "quest": "Old World Blues (quest)",
+  "kind": "locks",
+  "target": "Think Tank personal quests",
+  "target_type": "effect",
+  "when": "violent path before completing them",
+  "note": "Quests become uncompletable without a failure message"
+ },
+ {
+  "quest": "Render Unto Caesar",
+  "kind": "fails",
+  "target": "Render Unto Caesar",
+  "target_type": "quest",
+  "when": "Vilified by the Legion at any point",
+  "note": "Triggers Beware the Wrath of Caesar!"
+ },
+ {
+  "quest": "Render Unto Caesar",
+  "kind": "triggers",
+  "target": "Beware the Wrath of Caesar!",
+  "target_type": "quest",
+  "when": "Legion reputation falls to Vilified",
+  "note": "Legion turns hostile"
+ },
+ {
+  "quest": "Render Unto Caesar",
+  "kind": "effect",
+  "target": "Caesar's dialogue",
+  "target_type": "dialogue",
+  "when": "other quest outcomes",
+  "note": "Caesar comments on reputation and on prior quests (Vulpes killed, Nelson garrison wiped out, etc.)"
+ },
+ {
+  "quest": "Cold, Cold Heart",
+  "kind": "effect",
+  "target": "Legion fame",
+  "target_type": "faction",
+  "when": "completed"
+ },
+ {
+  "quest": "That Lucky Old Sun",
+  "kind": "effect",
+  "target": "Legion fame",
+  "target_type": "faction",
+  "when": "ARCHIMEDES armed and security system activated"
+ },
+ {
+  "quest": "Silus Treatment",
+  "kind": "effect",
+  "target": "Legion fame",
+  "target_type": "faction",
+  "when": "Silus killed at McCarran or helped to escape"
+ },
+ {
+  "quest": "I Put a Spell on You",
+  "kind": "effect",
+  "target": "Legion fame",
+  "target_type": "faction",
+  "when": "sided with Legion and destroyed the monorail"
+ },
+ {
+  "quest": "We Are Legion",
+  "kind": "effect",
+  "target": "Legion fame",
+  "target_type": "faction",
+  "when": "completed"
+ },
+ {
+  "quest": "Return to Sender",
+  "kind": "effect",
+  "target": "Legion fame",
+  "target_type": "faction",
+  "when": "Hanlon allowed to commit suicide"
+ },
+ {
+  "quest": "Boulder City Showdown",
+  "kind": "effect",
+  "target": "Legion fame",
+  "target_type": "faction",
+  "when": "sided with Great Khans and killed NCR troopers"
+ },
+ {
+  "quest": "Keep Your Eyes on the Prize",
+  "kind": "effect",
+  "target": "Legion infamy",
+  "target_type": "faction",
+  "when": "Vulpes killed (Nipton or Strip)"
+ },
+ {
+  "quest": "Back in Your Own Backyard",
+  "kind": "effect",
+  "target": "Legion infamy",
+  "target_type": "faction",
+  "when": "Dead Sea killed at Nelson"
+ },
+ {
+  "quest": "How Little We Know",
+  "kind": "effect",
+  "target": "Legion infamy",
+  "target_type": "faction",
+  "when": "completed by killing Nero and Big Sal"
+ },
+ {
+  "quest": "I Put a Spell on You",
+  "kind": "effect",
+  "target": "Legion infamy",
+  "target_type": "faction",
+  "when": "sided with NCR and killed Ronald Curtis"
+ },
+ {
+  "quest": "Oh My Papa",
+  "kind": "effect",
+  "target": "Legion infamy",
+  "target_type": "faction",
+  "when": "Papa Khan persuaded to break the alliance"
+ },
+ {
+  "quest": "Kings' Gambit",
+  "kind": "effect",
+  "target": "Legion infamy",
+  "target_type": "faction",
+  "when": "peace forged between NCR and Kings"
+ },
+ {
+  "quest": "Birds of a Feather",
+  "kind": "effect",
+  "target": "Legion infamy",
+  "target_type": "faction",
+  "when": "completed"
+ },
+ {
+  "quest": "Ring-a-Ding-Ding!",
+  "kind": "unlocks",
+  "target": "Wild Card",
+  "target_type": "effect",
+  "when": "talking to Yes Man after the quest",
+  "note": "Starts the Wild Card quest chain"
+ },
+ {
+  "quest": "Ring-a-Ding-Ding!",
+  "kind": "effect",
+  "target": "Benny outcome",
+  "target_type": "npc",
+  "when": "Benny killed or escapes",
+  "note": "Killed: Swank leads the Chairmen and the chip is recovered. Escaped: Benny is caught by the Legion and found at the Fort"
+ },
+ {
+  "quest": "Ring-a-Ding-Ding!",
+  "kind": "unlocks",
+  "target": "Tops sub-basement",
+  "target_type": "location",
+  "when": "forgive or sleep with Benny"
+ },
+ {
+  "quest": "Ring-a-Ding-Ding!",
+  "kind": "requires",
+  "target": "Crocker's note",
+  "target_type": "item",
+  "when": "NCR path",
+  "note": "The quest can be skipped by siding with the NCR since Crocker's note can come first"
+ },
+ {
+  "quest": "For the Republic, Part 2",
+  "kind": "fails",
+  "target": "Beware the Wrath of Caesar!",
+  "target_type": "quest",
+  "when": "progressed far enough before confronting Benny",
+  "note": "Player never receives the Mark of Caesar; Legion hostile"
+ },
+ {
+  "quest": "River Monsters",
+  "kind": "locks",
+  "target": "Yao guai cave",
+  "target_type": "location",
+  "when": "explosives set off",
+  "note": "Cave becomes permanently inaccessible"
+ },
+ {
+  "quest": "The Apocalypse",
+  "kind": "effect",
+  "target": "Faction reputations",
+  "target_type": "faction",
+  "when": "missiles launched at a faction's territory",
+  "note": "Reputation drops to lowest rank without turning that faction hostile; infamy cleared if done before the faction's quest begins"
+ },
+ {
+  "quest": "The Apocalypse",
+  "kind": "unlocks",
+  "target": "Long 15 and Dry Wells",
+  "target_type": "location",
+  "when": "completed",
+  "note": "Exclusive loot areas"
+ },
+ {
+  "quest": "The End (quest)",
+  "kind": "effect",
+  "target": "Brotherhood of Steel",
+  "target_type": "faction",
+  "when": "completed with the other Brotherhood quests",
+  "note": "Makes Idolized reputation possible; can enable Veronica as a follower"
+ },
+ {
+  "quest": "The House Always Wins VI",
+  "kind": "fails",
+  "target": "The House Always Wins VI",
+  "target_type": "quest",
+  "when": "Kimball assassinated, or Grant killed, or leaving after preparing the speech",
+  "note": "House is furious but still gives part VII"
+ },
+ {
+  "quest": "The House Always Wins II",
+  "kind": "locks",
+  "target": "House ending",
+  "target_type": "ending",
+  "when": "Securitron vault destroyed",
+  "note": "Also fails The House Always Wins; same for Render Unto Caesar and Wild Card: You and What Army?"
+ },
+ {
+  "quest": "Wild Card: You and What Army?",
+  "kind": "locks",
+  "target": "House ending",
+  "target_type": "ending",
+  "when": "vault destroyed",
+  "note": "Fails The House Always Wins; redundant if Change in Management is done first"
+ },
+ {
+  "quest": "Wild Card: You and What Army?",
+  "kind": "locks",
+  "target": "NCR ending",
+  "target_type": "ending",
+  "when": "one more quest for House or Yes Man after Don't Tread on the Bear! begins",
+  "note": "That quest fails and the NCR ending is locked"
+ },
+ {
+  "quest": "Things That Go Boom",
+  "kind": "effect",
+  "target": "NCR infamy cleared",
+  "target_type": "faction",
+  "when": "quest started or Boomers reported",
+  "note": "Even Vilified Couriers may enter the embassy"
+ },
+ {
+  "quest": "Don't Tread on the Bear!",
+  "kind": "locks",
+  "target": "NCR ending",
+  "target_type": "ending",
+  "when": "quest failed",
+  "note": "Also fails Things That Go Boom"
+ },
+ {
+  "quest": "Don't Tread on the Bear!",
+  "kind": "fails",
+  "target": "Things That Go Boom",
+  "target_type": "quest",
+  "when": "Don't Tread on the Bear! failed"
+ },
+ {
+  "quest": "Don't Tread on the Bear!",
+  "kind": "effect",
+  "target": "Crocker and Moore removed",
+  "target_type": "npc",
+  "when": "quest failed",
+  "note": "Both are removed from the game world if still alive"
+ },
+ {
+  "quest": "Don't Tread on the Bear!",
+  "kind": "fails",
+  "target": "Don't Tread on the Bear!",
+  "target_type": "quest",
+  "when": "NCR trooper messenger killed",
+  "note": "Also fails if Kimball arrives during Arizona Killer"
+ },
+ {
+  "quest": "Wild Card: Change in Management",
+  "kind": "fails",
+  "target": "The House Has Gone Bust!",
+  "target_type": "quest",
+  "when": "completed",
+  "note": "Closes the Mr. House line and the House ending"
+ },
+ {
+  "quest": "Wild Card: Finishing Touches",
+  "kind": "effect",
+  "target": "Boone leaves",
+  "target_type": "companion",
+  "when": "Boone present when the chip is installed without NCR armor"
+ },
+ {
+  "quest": "Wild Card: Finishing Touches",
+  "kind": "fails",
+  "target": "You'll Know It When It Happens",
+  "target_type": "quest",
+  "when": "going to the El Dorado substation first"
+ },
+ {
+  "quest": "You'll Know It When It Happens",
+  "kind": "fails",
+  "target": "You'll Know It When It Happens",
+  "target_type": "quest",
+  "when": "NCR turned hostile, Kimball dies, or Vertibird destroyed",
+  "note": "Next quest Eureka! is still given unless Don't Tread on the Bear! failed"
+ },
+ {
+  "quest": "Beyond the Beef",
+  "kind": "effect",
+  "target": "Strip fame",
+  "target_type": "faction",
+  "when": "dissuade Heck from a food blockade",
+  "note": "Needs Ted alive, which fails Pheeble Will; killing Ted and lying to Heck also gives Strip fame"
+ },
+ {
+  "quest": "Beyond the Beef",
+  "kind": "fails",
+  "target": "Pheeble Will",
+  "target_type": "quest",
+  "when": "Ted returned to Heck",
+  "note": "Walter and Ethel disappear from the Strip"
+ },
+ {
+  "quest": "Birds of a Feather",
+  "kind": "exclusive",
+  "target": "Heartache by the Number",
+  "target_type": "quest",
+  "when": "either completed",
+  "note": "Cass dies in one and the Van Graffs are the targets of the other"
+ },
+ {
+  "quest": "Heartache by the Number",
+  "kind": "effect",
+  "target": "Van Graffs hostile",
+  "target_type": "faction",
+  "when": "peaceful route completed",
+  "note": "Van Graffs become permanently hostile"
+ },
+ {
+  "quest": "Heartache by the Number",
+  "kind": "fails",
+  "target": "You Can Depend on Me",
+  "target_type": "quest",
+  "when": "Alice McLafferty killed",
+  "note": "Also fails Pressing Matters"
+ },
+ {
+  "quest": "Heartache by the Number",
+  "kind": "locks",
+  "target": "Peaceful route",
+  "target_type": "effect",
+  "when": "Ranger Jackson dead",
+  "note": "Cass declines and the violent route is forced"
+ },
+ {
+  "quest": "Anywhere I Wander",
+  "kind": "fails",
+  "target": "Anywhere I Wander",
+  "target_type": "quest",
+  "when": "either freed prisoner killed"
+ },
+ {
+  "quest": "Restoring Hope",
+  "kind": "exclusive",
+  "target": "We Are Legion",
+  "target_type": "quest",
+  "when": "either completed",
+  "note": "Each requires the death of the other's quest giver"
+ },
+ {
+  "quest": "Back in Your Own Backyard",
+  "kind": "locks",
+  "target": "We Are Legion",
+  "target_type": "quest",
+  "when": "hostages rescued or mercy-killed",
+  "note": "Dead Sea becomes permanently hostile"
+ },
+ {
+  "quest": "We Are Legion",
+  "kind": "fails",
+  "target": "No, Not Much",
+  "target_type": "quest",
+  "when": "Major Polatli killed",
+  "note": "Bitter Springs Infirmary Blues cannot start but is not failed"
+ },
+ {
+  "quest": "We Are Legion",
+  "kind": "locks",
+  "target": "Bitter Springs Infirmary Blues",
+  "target_type": "quest",
+  "when": "completed for Dead Sea at Nelson"
+ },
+ {
+  "quest": "We Are Legion",
+  "kind": "unlocks",
+  "target": "Papa Khan successor",
+  "target_type": "npc",
+  "when": "completed",
+  "note": "Papa Khan names the Courier his successor; silently killing him gives Khan leadership"
+ },
+ {
+  "quest": "Booted",
+  "kind": "fails",
+  "target": "Booted",
+  "target_type": "quest",
+  "when": "Boxcars killed"
+ },
+ {
+  "quest": "Bye Bye Love",
+  "kind": "fails",
+  "target": "Bye Bye Love",
+  "target_type": "quest",
+  "when": "How Little We Know completed by any path",
+  "note": "Carlitos and Joana disappear"
+ },
+ {
+  "quest": "Classic Inspiration",
+  "kind": "fails",
+  "target": "Classic Inspiration",
+  "target_type": "quest",
+  "when": "Sarah Weintraub killed",
+  "note": "Also may be impossible if Michael was extorted"
+ },
+ {
+  "quest": "Cold, Cold Heart",
+  "kind": "locks",
+  "target": "Cold, Cold Heart",
+  "target_type": "quest",
+  "when": "The Finger of Suspicion completed first, or Vulpes killed before meeting",
+  "note": "Vulpes' replacement does not give it"
+ },
+ {
+  "quest": "Don't Make a Beggar of Me",
+  "kind": "locks",
+  "target": "Oh My Papa",
+  "target_type": "quest",
+  "when": "completed before Oh My Papa",
+  "note": "Melissa may disappear and Oh My Papa becomes permanently incomplete"
+ },
+ {
+  "quest": "Don't Make a Beggar of Me",
+  "kind": "locks",
+  "target": "Don't Make a Beggar of Me",
+  "target_type": "quest",
+  "when": "negative Great Khans reputation",
+  "note": "Great Khan armor sets at least neutral"
+ },
+ {
+  "quest": "Eye for an Eye (Fallout: New Vegas)",
+  "kind": "fails",
+  "target": "Left My Heart",
+  "target_type": "quest",
+  "when": "barrels released before the Weathers are freed"
+ },
+ {
+  "quest": "Eyesight to the Blind",
+  "kind": "locks",
+  "target": "Eyesight to the Blind",
+  "target_type": "quest",
+  "when": "Nolan McNamara killed",
+  "note": "Only destroying Hidden Valley fails it"
+ },
+ {
+  "quest": "Flags of Our Foul-Ups",
+  "kind": "exclusive",
+  "target": "Squad training methods",
+  "target_type": "effect",
+  "when": "one method chosen",
+  "note": "Another method cannot be picked up until the first is finished"
+ },
+ {
+  "quest": "Flags of Our Foul-Ups",
+  "kind": "fails",
+  "target": "Flags of Our Foul-Ups",
+  "target_type": "quest",
+  "when": "a Misfits squad member dies"
+ },
+ {
+  "quest": "For Auld Lang Syne",
+  "kind": "unlocks",
+  "target": "Power Armor Training",
+  "target_type": "perk",
+  "when": "completed",
+  "note": "Alternatives are Eyesight to the Blind or Tend to Your Business, which are mutually exclusive"
+ },
+ {
+  "quest": "For Auld Lang Syne",
+  "kind": "effect",
+  "target": "Arcade Gannon leaves",
+  "target_type": "companion",
+  "when": "sided with the Legion",
+  "note": "Unless Arcade is told to wait at the Lucky 38 first, losing his armor and ending"
+ },
+ {
+  "quest": "G.I. Blues",
+  "kind": "fails",
+  "target": "G.I. Blues",
+  "target_type": "quest",
+  "when": "Pacer killed"
+ },
+ {
+  "quest": "Hard Luck Blues",
+  "kind": "fails",
+  "target": "Hard Luck Blues",
+  "target_type": "quest",
+  "when": "Morgan Blake killed",
+  "note": "Rewards remain available"
+ },
+ {
+  "quest": "How Little We Know",
+  "kind": "locks",
+  "target": "Pimp-Boy 3 Billion",
+  "target_type": "item",
+  "when": "Troike blackmail note taken before Big Sal releases him"
+ },
+ {
+  "quest": "I Fought the Law",
+  "kind": "fails",
+  "target": "I Fought the Law",
+  "target_type": "quest",
+  "when": "Eddie killed before the assault"
+ },
+ {
+  "quest": "I Forgot to Remember to Forget",
+  "kind": "fails",
+  "target": "No, Not Much",
+  "target_type": "quest",
+  "when": "Lt. Markland or Capt. Gilles dies",
+  "note": "Also fails Bitter Springs Infirmary Blues and Climb Ev'ry Mountain"
+ },
+ {
+  "quest": "I Forgot to Remember to Forget",
+  "kind": "requires",
+  "target": "5 history points",
+  "target_type": "effect",
+  "when": "Boone as active companion",
+  "note": "Points come from Back in Your Own Backyard, Booted, Eye for an Eye, I Put a Spell on You and Silus Treatment"
+ },
+ {
+  "quest": "Left My Heart",
+  "kind": "locks",
+  "target": "Left My Heart",
+  "target_type": "quest",
+  "when": "negative or mixed NCR reputation",
+  "note": "Frank Weathers attacks"
+ },
+ {
+  "quest": "My Kind of Town",
+  "kind": "effect",
+  "target": "Primm NCR",
+  "target_type": "location",
+  "when": "quest failed",
+  "note": "NPCs say Primm is now part of the NCR"
+ },
+ {
+  "quest": "Oh My Papa",
+  "kind": "fails",
+  "target": "Why Can't We Be Friends?",
+  "target_type": "quest",
+  "when": "Papa Khan assassinated before it is completed"
+ },
+ {
+  "quest": "One for My Baby",
+  "kind": "locks",
+  "target": "One for My Baby",
+  "target_type": "quest",
+  "when": "player kills Jeannie May Crawford personally",
+  "note": "Boone needs to do it himself"
+ },
+ {
+  "quest": "Rite of Passage (Honest Hearts)",
+  "kind": "fails",
+  "target": "Rite of Passage (Honest Hearts)",
+  "target_type": "quest",
+  "when": "Gathering Storms completed while it is active",
+  "note": "No failure message is shown"
+ },
+ {
+  "quest": "Still in the Dark",
+  "kind": "locks",
+  "target": "Peaceful NCR/Brotherhood resolution",
+  "target_type": "ending",
+  "when": "McNamara ousted",
+  "note": "Peaceful resolution in For the Republic, Part 2 becomes impossible"
+ },
+ {
+  "quest": "Talent Pool",
+  "kind": "locks",
+  "target": "Talent Pool",
+  "target_type": "quest",
+  "when": "potential performers killed before starting"
+ },
+ {
+  "quest": "Tend to Your Business",
+  "kind": "requires",
+  "target": "Van Graffs wiped out",
+  "target_type": "effect",
+  "when": "parallel with Heartache by the Number violent path"
+ },
+ {
+  "quest": "That Lucky Old Sun",
+  "kind": "effect",
+  "target": "NCR infamy",
+  "target_type": "faction",
+  "when": "ARCHIMEDES armed",
+  "note": "Followers reputation also depends on how power is diverted"
+ },
+ {
+  "quest": "The Legend of the Star",
+  "kind": "locks",
+  "target": "The Legend of the Star",
+  "target_type": "quest",
+  "when": "Festus deactivated with Robotics Expert",
+  "note": "Permanent"
+ },
+ {
+  "quest": "The Moon Comes Over the Tower",
+  "kind": "fails",
+  "target": "The Moon Comes Over the Tower",
+  "target_type": "quest",
+  "when": "Mr. House killed after starting it",
+  "note": "Disabling House does not fail it"
+ },
+ {
+  "quest": "There Stands the Grass",
+  "kind": "locks",
+  "target": "Vault 22 data",
+  "target_type": "item",
+  "when": "completed before I Could Make You Care"
+ },
+ {
+  "quest": "Three-Card Bounty",
+  "kind": "locks",
+  "target": "Gorobets squad reward",
+  "target_type": "effect",
+  "when": "Driver Nephi killed without selecting his bounty"
+ },
+ {
+  "quest": "Volare!",
+  "kind": "fails",
+  "target": "Volare!",
+  "target_type": "quest",
+  "when": "Pearl killed",
+  "note": "Boomers reputation drops to Hated"
+ },
+ {
+  "quest": "Volare!",
+  "kind": "unlocks",
+  "target": "Bluff General Oliver",
+  "target_type": "dialogue",
+  "when": "completed before No Gods, No Masters",
+  "note": "Threaten to have the Boomers bomb the dam"
+ },
+ {
+  "quest": "Why Can't We Be Friends?",
+  "kind": "fails",
+  "target": "Why Can't We Be Friends?",
+  "target_type": "quest",
+  "when": "Papa Khan killed before or during"
+ },
+ {
+  "quest": "Young Hearts",
+  "kind": "fails",
+  "target": "Young Hearts",
+  "target_type": "quest",
+  "when": "Janet lied to via Speech 55",
+  "note": "Negative Karma and Janet dies"
+ },
+ {
+  "quest": "Dealing with Contreras",
+  "kind": "locks",
+  "target": "Siding with Contreras",
+  "target_type": "effect",
+  "when": "Isaac dead"
+ },
+ {
+  "quest": "Friend of the Followers",
+  "kind": "unlocks",
+  "target": "Arcade Gannon recruitment",
+  "target_type": "companion",
+  "when": "completed with the Followers",
+  "note": "No Speech check needed to recruit Arcade"
+ },
+ {
+  "quest": "Bounty Killer",
+  "kind": "fails",
+  "target": "Aba Daba Honeymoon",
+  "target_type": "quest",
+  "when": "Motor-Runner killed before Aba Daba Honeymoon is completed"
+ },
+ {
+  "quest": "Aba Daba Honeymoon",
+  "kind": "unlocks",
+  "target": "Oh My Papa diplomatic route",
+  "target_type": "effect",
+  "when": "teaching Jack all chem recipes",
+  "note": "Works even if Aba Daba Honeymoon is failed"
+ },
+ {
+  "quest": "Claws Out",
+  "kind": "locks",
+  "target": "NCR fame",
+  "target_type": "faction",
+  "when": "Chomps Lewis dead"
+ },
+ {
+  "quest": "Keep Your Eyes on the Prize",
+  "kind": "effect",
+  "target": "Vulpes hostile",
+  "target_type": "npc",
+  "when": "Boone companion, NCR armor, or negative Legion reputation"
+ },
+ {
+  "quest": "Climb Ev'ry Mountain",
+  "kind": "effect",
+  "target": "Oscar hostile",
+  "target_type": "npc",
+  "when": "NCR attire, Brotherhood attire or Boone as companion"
+ },
+ {
+  "quest": "Silus Treatment",
+  "kind": "unlocks",
+  "target": "Either faction route",
+  "target_type": "effect",
+  "when": "Boyd dialogue",
+  "note": "Can finish for NCR or Legion; console-only bypass of the reputation check"
+ },
+ {
+  "quest": "They Went That-a-Way",
+  "kind": "locks",
+  "target": "Trudy's Radio Repair",
+  "target_type": "quest",
+  "when": "completed before talking to Trudy"
+ },
+ {
+  "quest": "Ghost Town Gunfight",
+  "kind": "locks",
+  "target": "Ghost Town Gunfight",
+  "target_type": "quest",
+  "when": "negative Goodsprings reputation",
+  "note": "Ringo refuses help"
+ },
+ {
+  "quest": "Bitter Springs Infirmary Blues",
+  "kind": "fails",
+  "target": "Bitter Springs Infirmary Blues",
+  "target_type": "quest",
+  "when": "Boone's I Forgot to Remember to Forget triggered first",
+  "note": "Legion kills NCR troopers including Markland"
+ },
+ {
+  "quest": "Rotface's Loose Lips",
+  "kind": "locks",
+  "target": "Rotface's Loose Lips",
+  "target_type": "quest",
+  "when": "more than 11 tips bought",
+  "note": "Hat script only triggers on exactly 11"
+ }
+]

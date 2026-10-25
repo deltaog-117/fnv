@@ -1,0 +1,304 @@
+{
+ "id": "repcontourguide",
+ "speaker_name": "tour guide",
+ "source": "REPCONTourGuide.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to REPCONN Headquarters, Rocketeer! Come all this way to see our little facility, have you?",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "I'm here to answer any and all questions you may have - within specified parameters - and if you'd like, I can provide a tour of our museum. {Changes from over-friendly to low, serious at the \"specified parameters\" section, to give an underlying threat of the facility.}",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "Welcome back! Interested in a tour of the REPCONN museum? Or did you have a question about the company I could answer?",
+     "emotion": "happy",
+     "intensity": 75
+    },
+    {
+     "text": "Yes? Did you have a question?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "repconhqfreeformrepcontourguidetopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent, excellent! Please be patient, the tour will begin in just a moment.",
+     "emotion": "happy",
+     "intensity": 75
+    }
+   ],
+   "topic": "REPCONHQFreeformREPCONTourGuideTopic001",
+   "prompt": "I'd like a tour of the museum."
+  },
+  {
+   "key": "repconhqfreeformrepcontourguidetopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am so pleased you enjoyed the last tour! A new tour will begin in a moment, if you wish to wait.",
+     "emotion": "happy",
+     "intensity": 75
+    }
+   ],
+   "topic": "REPCONHQFreeformREPCONTourGuideTopic001",
+   "prompt": "I'd like another tour."
+  },
+  {
+   "key": "repconhqfreeformrepcontourguidetopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can answer whatever questions you'd like... {Warning} provided your query is limited to REPCONN history, research and development, or RobCo. {At the warning phrase, the tour guide's jovial attitude becomes slightly dangerous.}",
+     "emotion": "happy",
+     "intensity": 75
+    }
+   ],
+   "topic": "REPCONHQFreeformREPCONTourGuideTopic002",
+   "prompt": "What can you tell me about REPCONN?"
+  },
+  {
+   "key": "repconhqfreeformrepcontourguidetopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "REPCONN's illustrious history began way back in 2054, shortly after the famous Delta XI rocket was completed and launched. {Becomes a little nostalgic here, not quite as enthusiastic.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "REPCONN's initial focus was on the development of fuel to be used in orbital propulsion in response to the energy crisis of 2052. Sad times, indeed. {Still nostalgic, then a little sad at the end.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The company really took off when RobCo purchased REPCONN in late 2076 to develop unmanned rockets to explore the solar system.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQFreeformREPCONTourGuideTopic003",
+   "prompt": "REPCONN's history."
+  },
+  {
+   "key": "repconhqfreeformrepcontourguidetopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As you may already know, REPCONN is an industry leader in producing alternative fuels for military and scientific purposes. {Confident, serious}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "REPCONN scientists were pioneers in fission-based propulsion systems, and have recently had some very exciting breakthroughs with plasma systems. {Emphasis on very, he's tantalizing the listener into buying stock}",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "The recent partnership with RobCo has freed our engineers from mundane business matters, allowing them to focus solely on future projects. {Chiding, as if the engineers were silly children to be concerned about business}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQFreeformREPCONTourGuideTopic004",
+   "prompt": "Research and development."
+  },
+  {
+   "key": "repconhqfreeformrepcontourguidetopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "RobCo industries purchased REPCONN in 2075 to assist with some of RobCo's military projects, as well as developing unmanned space exploration.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The relationship between RobCo and REPCONN is mutually beneficial, and we hope that both companies bolster each other well into the next century.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQFreeformREPCONTourGuideTopic005",
+   "prompt": "Tell me about RobCo."
+  },
+  {
+   "key": "repconhqfreeformrepcontourguidetopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well, feel free to ask me more about REPCONN at {emphasis} any time, don't be shy.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "The tour showcases REPCONN's amazing scientific contributions, and the promise of many more, coupled with its parent company, RobCo.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "REPCONHQFreeformREPCONTourGuideTopic006",
+   "prompt": "That's enough about REPCONN."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Goodbye, Rocketeer, be sure to visit again! {lowers voice, warning} Oh, and please - for your own safety, stay outside of restricted areas.",
+     "emotion": "happy",
+     "intensity": 75
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "repconhqtour00",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Ready for the REPCONN tour, Rocketeers? Courtesy of the fine folks at RobCo, I'll be your guide today on the path of... Scientific. Discovery.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQTour00",
+   "prompt": "REPCONHQTourStation00"
+  },
+  {
+   "key": "repconhqtour01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "In the lead-lined case behind me is a spent radioactive rod from of our old reactors. No need to stand too close, let's move along, shall we? {Pushing the player along at the end.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQTour01",
+   "prompt": "REPCONHQTourStation01"
+  },
+  {
+   "key": "repconhqtour02",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Look here - a row of multi-colored plasma fuels! Careful, they may look safe to drink, but your stomach is the last place they should be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why the difference in cylinder size? Refining our production methods has resulted in higher yields of fuel over time, that's why!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQTour02",
+   "prompt": "REPCONHQTourStation02"
+  },
+  {
+   "key": "repconhqtour03",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "To my right you can see a sample of some old \"safety barrels\" REPCONN once used to store radioactive waste. Perfectly safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On my left is an example of a mountain of REPCONN safety barrels some legislators claim are poisoning our environment. Ridiculous.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQTour03",
+   "prompt": "REPCONHQTourStation3"
+  },
+  {
+   "key": "repconhqtour04",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Behind me is our most recent rocket project, which we're keeping under our hats... until \"launch,\" if you'll pardon the expression.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And in front of me is a model - not actual size - of the launch dome we are using to send our rockets screeeeaming into orbit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQTour04",
+   "prompt": "REPCONHQTourStation"
+  },
+  {
+   "key": "repconhqtour05",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Now these colorful fellows behind me are REPCONN's earliest... experiments in flight. Feel free to read the plaques and learn, Rocketeers! {Hesitates a bit at experiments, since each rocket was a disaster}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "REPCONHQTour05",
+   "prompt": "REPCONHQTour5"
+  },
+  {
+   "key": "repconhqtour06",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Now for the highlight of our tour! Due to a generous donation from RobCo, this next exhibit showcases the wondrous world of - robots!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Around you are the incredible Eyebot, the fearsome Sentry Bot, and the {chuckles} always-helpful Mr. Handy. That helpfulness runs through our whole line! {incredible eyebot should be enthusiastic, fearsome downnote, and chuckles knowingly at Mr. Handy}",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "REPCONHQTour06",
+   "prompt": "REPCONHQTour06"
+  },
+  {
+   "key": "repconhqtour07",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "This is the final stop on our tour. This model of our solar system is a small example of where the partnership between RobCo and REPCONN hopes to go. {Emphasis on \"small\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See those little rockets zipping about? They are manned by robots, tirelessly looking for resources to mine on planets beyond our own. {Emphasize \"robots\" and \"mine\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And that's it for our tour today, Rocketeers - RobCo and its tiny partner REPCONN thank you! Any further questions, please, feel free to ask. {Downnote at tiny parner, like brushing it under the rug, and emphasis on \"please\"}",
+     "emotion": "happy",
+     "intensity": 75
+    }
+   ],
+   "topic": "REPCONHQTour07",
+   "prompt": "REPCONHQTour07"
+  }
+ ],
+ "speaker": "tour_guide"
+}

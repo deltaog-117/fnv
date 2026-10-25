@@ -1,0 +1,133 @@
+{
+ "page": "LarsTaggart.txt",
+ "speaker": "Lars Taggart",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now that McNamara's lifted that silly lockdown of his, perhaps people around here will come to appreciate our training simulations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps there will be a renewed interest in them as people realize just how close to reality they are... but I digress. What did you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that Hardin's Elder, I hope I'll be allowed to continue my experiments. I never quite liked the way he looked at me during meetings.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Like he wanted to use me for target practice. The man just has no respect for science! But enough of this. What did you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes? What is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "HVTaggartAskAboutSim",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not far from it. When we reclaimed this bunker, I found a number of VR tapes. Most were corrupted, but a few programs still ran.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Using those as my foundation, I was able to code the training VR, as well as other applications.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you make the training VR yourself?"
+  },
+  {
+   "id": "HVTaggartVR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Everyone in the base has to spend a minimum of five hours a week running tactical simulations, but outside that, interest is scarce.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It wasn't always this way. When we first moved into the bunker, everyone was so excited that the VR systems were intact.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Over time, though, my fellows have become listless and less entertained by the wonders of the technology around us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's why Apprentice Watkins is such a joy to work with. Her unbridled enthusiasm for virtual combat is unparalleled.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do all of the brothers use this equipment?"
+  },
+  {
+   "id": "HVTaggartWhoAreYou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, the outsider. I suppose it's too much to ask that jarhead Ramos to keep outsiders away from my research.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I am Head Scribe Taggart, and I am much too busy to deal with the likes of you right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "And you are?"
+  },
+  {
+   "id": "HVTaggartVeronica01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Y-Yes. Well, it's, ah, nice to see you, too, Veronica.{it's not}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmph.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVTaggartVeronica01"
+  },
+  {
+   "id": "HVTaggartVeronica02",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Well, I {slightly stressed} have been working with some UV lights in the pods.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Very funny, Veronica.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "HVTaggartVeronica02"
+  }
+ ]
+}

@@ -1,0 +1,537 @@
+{
+ "id": "nellisargyll",
+ "speaker_name": "Argyll",
+ "source": "NellisArgyll.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know Mother Pearl is letting you wander Nellis as you please, Outsider, but I have patients to tend to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I haven't said it before, Outsider, let me say it now - welcome to Nellis. Word from Pearl is that you're to be greeted as a friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You raised the Lady from the Lake! The future is looking up. How can I help you, Outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, Outsider?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "nellisargyllpatientharmed",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure you know what you're doing? You nearly killed that man!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've made him worse! Is that what you savages call medicine?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Were you exaggerating your knowledge of medicine? Even I would've known not to do that!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NellisArgyllPatientHarmed",
+   "prompt": "NellisArgyllPatientHarmed"
+  },
+  {
+   "key": "nellisargyllpatienthealed",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent treatment. I hadn't thought of that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I thought that man was done for, but you brought him around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That was some fine doctoring. I could learn a thing or two from you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NellisArgyllPatientHealed",
+   "prompt": "NellisArgyllPatientHealed"
+  },
+  {
+   "key": "nellisargyllpatienthealed2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent treatment. I hadn't thought of that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I thought that man was done for, but you brought him around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That was some fine doctoring. I could learn a thing or two from you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NellisArgyllPatientHealed2"
+  },
+  {
+   "key": "nellisargyllpatienthealeddumb",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now I know what they mean by \"dumb luck\"!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NellisArgyllPatientHealedDumb",
+   "prompt": "NellisArgyllPatientHealedDumb"
+  },
+  {
+   "key": "nellisargyllpatientkilled",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hold it right there! You had no business treating that man. You may've spared him a lingering death, but that's straight-out malpractice.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "NellisArgyllPatientKilled",
+   "prompt": "NellisArgyllPatientKilled"
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've done right by us, so I suppose I could spare some supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've recently started making our own stimpaks, but we just don't have the materials to make other meds. Sorry about the lack of selection.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just let me know what you need.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sorry friend, we really don't have a need for wasteland currency around here. We produce most of what we need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic000",
+   "prompt": "Can you spare any medical supplies?"
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic000duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't apologize. Their care is my responsibility, but everything I know came from an old first aid field manual.",
+     "emotion": "sad",
+     "intensity": 70
+    },
+    {
+     "text": "I don't know what else to do to help them...",
+     "emotion": "sad",
+     "intensity": 100
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic000DUPLICATE000",
+   "prompt": "I'm sorry, I don't know enough to help. I wish I did."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] If what you say is true, you can do us a world of good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic001",
+   "prompt": "I have extensive medical knowledge. Let's see what I can do.",
+   "label": "Player has medical knowledge."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No need to apologize. Their care is my responsibility, not yours. Thing is, everything I know came out of a first aid handbook!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you think you know more than that, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic001",
+   "prompt": "Sorry. I'm sure you know more than I do.",
+   "label": "Player has medical knowledge."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] These patients were gravely injured. It's not a joking matter!",
+     "emotion": "anger",
+     "intensity": 80
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic002",
+   "prompt": "<Lie> I'm a medical expert and my specialty is giant insect bites!"
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well... I don't know, actually... I suppose it's possible. You should take a look!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic003",
+   "prompt": "<Lie> I assume the ants' tibular nastis pierced the patients' anterior traxes?"
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can patch you up in exchange for doses of Fixer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can patch you up in exchange for doses of Fixer. {[DUPLICATE LINE?]}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic004",
+   "prompt": "I have wounds that need mending."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can unburden you of that in exchange for doses of Rad-Away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can unburden you of that in exchange for doses of Rad-Away. {[DUPLICATE LINE?]}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic005",
+   "prompt": "I need help with an addiction."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can help you in exchange for Stimpaks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can help you in exchange for Stimpaks. {[DUPLICATE LINE?]}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic006",
+   "prompt": "I'm suffering from radiation sickness."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're going to feel a little pinch. {[DUPLICATE LINE?]}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic008",
+   "prompt": "All right. Here's three doses of Fixer."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fair enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic009",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hold still. This'll burn for a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic010",
+   "prompt": "Here's two doses of Rad-Away."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The symptoms of withdrawal will pass with time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic011",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This'll make you feel better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic012",
+   "prompt": "Here are two Stimpaks."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, try to avoid further exposure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic013",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're going to feel a little pinch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic015",
+   "prompt": "All right. Here's two doses of Fixer."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hold still. This'll burn for a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic016",
+   "prompt": "Here's three doses of Rad-Away."
+  },
+  {
+   "key": "vfreeformnellisnellisargylltopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This'll make you feel better. {[DUPLICATE LINE?]}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisNellisArgyllTopic019",
+   "prompt": "Here are three Stimpaks."
+  },
+  {
+   "key": "vfreeformnellistopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, look elsewhere. I can't let you near a patient after what happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, there are still patients left to treat... though I worry you'll just make them worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are still patients in need of treatment. Help them if you can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisTopic000",
+   "prompt": "I'm still looking for ways to make myself useful."
+  },
+  {
+   "key": "vfreeformnellistopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're finished? So are they, I'm afraid. Your medicine was almost as dangerous to them as those giant ants!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You did more harm than good, I think. Your heart was in the right place, at least.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisTopic000",
+   "prompt": "I'm finished with your patients."
+  },
+  {
+   "key": "vfreeformnellistopic000_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those men owe you their lives. Seems we could learn a thing or two from you savages, when it comes to medicine, at least.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisTopic000",
+   "prompt": "I've finished treating your patients."
+  },
+  {
+   "key": "vfreeformnellistopic000_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have three patients here who were gravely injured fighting those giant ants in the generator building a few days ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've stabilized their wounds, but they're in bad shape. Do you have medical training?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisTopic000",
+   "prompt": "I'm looking for ways to make myself useful."
+  },
+  {
+   "key": "vfreeformnellistopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Seeing as you're a friend of ours, I suppose we could trade for what you need.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid medications are in short supply. Maybe you should seek medical treatment away from Nellis.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisTopic001",
+   "prompt": "I need medical treatment."
+  },
+  {
+   "key": "vfreeformnellistopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNellisTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "nellisargyllmedicalchatter",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Got yourself cut up pretty good, eh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Next time don't wait so long before you seek medical attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a good thing you made it in when you did.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You need to be more careful, you can really get hurt out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NellisArgyllMedicalChatter",
+   "prompt": "NellisArgyllMedicalChatter"
+  }
+ ],
+ "speaker": "argyll"
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "faction.schema.json",
+  "title": "Faction",
+  "description": "One entry in data/engine/factions.json. Towns that track reputation are included with kind 'town'.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "dlc"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "faction",
+        "town"
+      ]
+    },
+    "dlc": {
+      "$ref": "common.schema.json#/$defs/dlc"
+    },
+    "source": {
+      "type": "string"
+    },
+    "form_id": {
+      "$ref": "common.schema.json#/$defs/form_id"
+    },
+    "leaders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "info": {
+      "type": "object",
+      "description": "Remaining wiki infobox fields as text (type, ideology, capital, ...).",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "array"
+        ]
+      }
+    },
+    "reputation": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Fame/infamy model. Tiers are indexed [infamy][fame]; thresholds are the minimum points for each tier.",
+      "properties": {
+        "thresholds": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "titles": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "consequences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "delta": {
+                "type": "integer",
+                "description": "Reputation points, when the wiki states them."
+              }
+            }
+          }
+        },
+        "gains": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "delta": {
+                "type": "integer",
+                "description": "Reputation points, when the wiki states them."
+              }
+            }
+          }
+        },
+        "losses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "delta": {
+                "type": "integer",
+                "description": "Reputation points, when the wiki states them."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

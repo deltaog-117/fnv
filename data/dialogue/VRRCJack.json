@@ -1,0 +1,580 @@
+{
+ "page": "VRRCJack.txt",
+ "speaker": "Jack (Great Khans)",
+ "topics": [
+  {
+   "id": "DianeWork",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Diane handles most of the transactional elements of this little enterprise, but I'm always in the market for new recipes if you've got the spark.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm looking to make a few caps. Got any work for me?"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa. New guy.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Whoa. New chick.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, look who it is bringing that good Khan karma around!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "How's my most favoritest friend?",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "You seriously ought to mellow out, take some chill pills. I could sell you some, if you want.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "You seem really... high-strung. You know, I'm sure some of what I make my chems out of was an antipsychotic at some point....",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "I'm all for live and let live, you know, but a lot of folks around here... umm... aren't.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Why do you have to harsh my mellow? Just be cool, you dig?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, what's up?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "JackCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, it's cool, man. Diane passed me the haps on that fandango with Anders. I got your back.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, it's cool, man, I got your back.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Huh? Look, man, me and Diane, we don't dig on that politics stuff, savvy? We just make the product and make it get to a good home.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Sure, Caesar's a drag, but as long as we got each other, we don't care who the top dogs roll with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, it's cool, kitten. Diane passed me the haps on that fandango with Anders. I got your back.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, it's cool, kitty cat, I got your back.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Huh? Look, kitty cat, me and Diane, we don't dig on that politics stuff, savvy? We just make the product and make it get to a good home.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Sure, Caesar's a drag, but as long as we got each other, we don't care who the top dogs roll with.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm here to ask you to publicly oppose Papa Khan's alliance with Caesar."
+  },
+  {
+   "id": "JackDianeMedicine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Already on it. I whipped up a few Stimpaks already, but if you've got any more recipes I'll take them.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How's the medical work going?"
+  },
+  {
+   "id": "JackDianeMedicine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you mean, helpful? My stuff already makes people feel groodalicious.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You've got an impressive setup here - have you considered making more helpful chems?"
+  },
+  {
+   "id": "JackMerchant",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, you're buying? Cool.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, you're buying? Tell you what, since you've been acting all, well, random lately, how about a discount? Might calm you down.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you have for sale?"
+  },
+  {
+   "id": "JackMisfits",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Groovetastic. Tell him it's on his tab.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Razz wants the usual."
+  },
+  {
+   "id": "JackRecipes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right on. What have you got?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I know a few recipes for chems you might want. I could teach you."
+  },
+  {
+   "id": "JackandDianeCaesar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Huh? Look, man, me and Diane, we don't dig on that politics stuff, savvy? We just make the product and make it get to a good home.",
+     "emotion": "surprise",
+     "intensity": 35
+    },
+    {
+     "text": "Sure, Caesar's a drag, but as long as we got each other, we don't care who the top dogs roll with.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Huh? Look, kitty cat, me and Diane, we don't dig on that politics stuff, savvy? We just make the product and make it get to a good home.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Sure, Caesar's a drag, but as long as we got each other, we don't care who the top dogs roll with.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "What do you think about Caesar?"
+  },
+  {
+   "id": "JackandDianeInfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do? We don't, like, do anything. We make the magic happen.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is it you do here?"
+  },
+  {
+   "id": "JackandDianeKhans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're family, you dig? They've always looked out for us, made sure we had something to eat and a place to crash.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Papa may look like a big angry bear, but he's a softie at heart. Regis is cool - scary, but cool. The rest are all pretty groovy, even little Jerry.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me a little about the Great Khans."
+  },
+  {
+   "id": "VMS45VRRCJackTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Dude! What a total haul! No way that's {COPE-a-shee-shee; made-up word} copasheshy. Yeah, okay, me and Diana got your back. No sweat.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Dude... wait, what? That's totally kakadoodle, man. You been huffing fumes in the Magic Bus or something?",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "prompt": "But you won't have each other. The Legion will kill you and sell Diane into slavery as a prostitute."
+  },
+  {
+   "id": "VMS46NullLinks",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Groodalicious. That ought to rake in the caps. What do I owe you?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS46NullLinks"
+  },
+  {
+   "id": "VMS46VRRCJackTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Whoa... you're right. I should start a side project making meds to keep my aura clean.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "But think of all the people who overdose on Jet and Psycho. It's bad for your karma."
+  },
+  {
+   "id": "VMS46VRRCJackTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't know what you've been smoking, but where can I get some?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If \"groodalicious\" means \"dead,\" maybe. Think of the children, man! The *children!*"
+  },
+  {
+   "id": "VMS46VRRCJackTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Right on, let's have it!",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can teach you to make Super Stimpaks."
+  },
+  {
+   "id": "VMS46VRRCJackTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Cool. Maybe later.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was thinking Super Stimpacks, but now I'm not so sure."
+  },
+  {
+   "id": "VMS46VRRCJackTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Right on, let's have it!",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can teach you to make Hydra."
+  },
+  {
+   "id": "VMS46VRRCJackTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Cool. Maybe later.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was thinking Hydra, but now I'm not so sure."
+  },
+  {
+   "id": "VMS46VRRCJackTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We make the happy stuff. What do you need? Jet, Psycho, a little Med-X to ease the pain?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay then, what do you make?"
+  },
+  {
+   "id": "VMS46VRRCJackTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Right on, let's have it!",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can teach you to make Slasher."
+  },
+  {
+   "id": "VMS46VRRCJackTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Cool. Maybe later.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was thinking Slasher, but now I'm not so sure."
+  },
+  {
+   "id": "VMS46VRRCJackTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Right on, let's have it!",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can teach you to make Party-Time Mentats."
+  },
+  {
+   "id": "VMS46VRRCJackTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Cool. Maybe later.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was thinking Party-Time Mentats, but now I'm not so sure."
+  },
+  {
+   "id": "VMS46VRRCJackTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Right on, let's have it!",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can teach you to make Rocket."
+  },
+  {
+   "id": "VMS46VRRCJackTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Cool. Maybe later.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was thinking Rocket, but now I'm not so sure."
+  },
+  {
+   "id": "VMS46VRRCJackTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cool. Maybe later.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "On second thought, nothing now."
+  },
+  {
+   "id": "VMS46VRRCJackTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VMS46VRRCJackTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Naw, man, more like... drug suppliers. Yeah. Other folks sell 'em. Diane's mostly in charge of that.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Naw, kitten, more like... drug suppliers. Yeah. Other folks sell 'em. Diane's mostly in charge of that.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're drug dealers?"
+  },
+  {
+   "id": "VMS46VRRCJackTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guess I just had a natural talent for it. When I was a kid, these cats called the Followers of the Apocalypse came to our camp.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "They knew all kinds of kooky scientastical stuff, so I ate up all the chemistry they could teach. Diane had the head for business, so we teamed up.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How'd you get into this business?"
+  },
+  {
+   "id": "VMS46VRRCJackTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Diane's my girl, man. We've been taking care of each other our whole lives, ever since our folks died. Now we keep the Khans in caps together.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who's Diane?"
+  },
+  {
+   "id": "VMS46VRRCJackTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, the other dudes call him Jerry the Punk. That's kind of harsh, though - I think he's just a sensitive soul that needs some love.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "He's usually down around the proving ground if you want to say yo.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who's Jerry?"
+  },
+  {
+   "id": "VMS46VRRCJackTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's on your brainpan?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Good to know. Let's talk about something else."
+  },
+  {
+   "id": "VMS46VRRCJackTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here's a little tink-tink to weight your pockets.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Some caps would be nice."
+  },
+  {
+   "id": "VMS46VRRCJackTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here you go, this'll give you some zing.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How about a little pick-me-up?"
+  },
+  {
+   "id": "VMS46VRRCJackTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right on, right on. You're a pretty hip cat.",
+     "emotion": "happy",
+     "intensity": 100
+    },
+    {
+     "text": "Right on, right on. You're a pretty hip kitten.",
+     "emotion": "happy",
+     "intensity": 100
+    }
+   ],
+   "prompt": "No charge, just helping out."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Take it easy, dude.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take it easy, kitty cat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

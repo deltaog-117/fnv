@@ -1,0 +1,110 @@
+{
+ "page": "VFloorManagerTheTops.txt",
+ "speaker": "The Tops floor manager",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Small Fry} Looks like you've hit a lucky streak there. You must be thirsty by now - here, have a drink on the house and keep on playing!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Big Winner} Baby, Lady Luck must be smiling at you today! Compliments of the Tops Casino, enjoy this fine meal and please, keep playing those games!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Whale} You've been good to us, baby - now let us be good to you. We'd like you to enjoy this private suite as long as you're in town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Banned} Okay, pal, you've had enough. Time for you to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vCasinoCompsTheTopsvFloorManagerTheTopsTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's be straight, baby: there's lucky and there's *too* lucky. You keep up like this and you're gonna break the bank.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, we're happy to have you come on in and spend some dough at the bar, take in a show, whatever - but you're cut off from the games.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What? Why?"
+  },
+  {
+   "id": "vCasinoCompsTheTopsvFloorManagerTheTopsTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Smart move, kid. We're happy to have you come on in and spend some dough at the bar, take in a show, whatever - but you're cut off from the games.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, okay, I'm out of here."
+  },
+  {
+   "id": "vCasinoCompsTheTopsvFloorManagerTheTopsTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, then, you want to play rough? We'll play rough!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Fuck off, creep, I'm not going anywhere."
+  },
+  {
+   "id": "vCasinoCompsTheTopsvFloorManagerTheTopsTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Terrified} Jesus Christ!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Try to throw me out and you'll be leaving - in pieces."
+  },
+  {
+   "id": "vCasinoCompsTheTopsvFloorManagerTheTopsTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're free to enjoy the shows and the bar, but no more games for you at The Tops. Thanks for playing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All right, I'm going."
+  },
+  {
+   "id": "vCasinoCompsTheTopsvFloorManagerTheTopsTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've taken us for a ride, and we want you out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What? Why?"
+  }
+ ]
+}

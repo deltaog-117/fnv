@@ -1,0 +1,222 @@
+{
+ "id": "westsidemarco",
+ "speaker_name": "Marco (Fallout: New Vegas)",
+ "source": "WestsideMarco.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in combat} {deadpan} You look busy. Talk to me later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{playing at being a showman} Welcome to the Casa Madrid - cheapest, cleanest whores in all New Vegas. If you want to know the rates for poon, talk to the whores.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{sarcastically} Thanks a lot. I'm out Dermot and St. James's rent - and they paid regular - and once they get to stinking I'll have to clean up the mess, too!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah? What is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vcasamarcoaboutmaude",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Old Maude... Sometimes you can afford the creamy veal of a Sweetie, and sometimes you got just enough caps to buy a tough piece of jerky. {Ha!}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCasaMarcoAboutMaude",
+   "prompt": "Tell me about Maude."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yep, for a few years now. Guess I should be calling it Casa Marco or something, but I haven't changed the signs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Folks who can't pay their way onto the Strip need a place to stay, too. And when Pretty Sarah set her whores up here, the Casa went full-service.{Ha!}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic000",
+   "prompt": "Is this apartment building yours?"
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Roughneck prospector is all I hear, good at what he does. Been renting a room here for a year or so - nothing special.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic001",
+   "prompt": "Tell me about Dermot."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Him? {Ha!} Caesar's Legion taught him everything he knows. I bet there's a pound of sand ground into his palms and knees!{Ha!}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Knowing Jimmy, I'm sure he took good care of them. {Ha!} I'm surprised he ran away!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic002",
+   "prompt": "What do you know about Jimmy?"
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I know everything - how she smells, how she tastes, how it feels to slip her on and wiggle.{Ha!}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn fine woman, but damn expensive, too. Just ask Saint James - he spends near every cap he gets on Sweetie's sweets.{Ha!}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic003",
+   "prompt": "Tell me about Sweetie."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Catch you later, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic004",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ain't so pretty, is she? Not since she had a run-in with those Fiends over near McCarran.{Ha!}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This Fiend named Cook-Cook on account of the flamethrower he wears? He had his way with Sarah, every way it can be done.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then he starts frying her up for kicks. Guess it was how he signed his work. {Ha!}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic005",
+   "prompt": "Tell me about Pretty Sarah."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like who?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic006",
+   "prompt": "I had questions about your tenants."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic007",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guy's unstable, but he pays his rent and Sweetie seems to like him all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic008",
+   "prompt": "Know anything about Saint James?"
+  },
+  {
+   "key": "vfreeformcasamadridwestsidemarcotopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good man. He's one of the Followers of the Apocalypse. He's the one who taught people around here how to start growing crops.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Westside wouldn't be what it is without Anderson helping us out, so I cut him a deal on his rent.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideMarcoTopic009",
+   "prompt": "Can you tell me anything about Anderson?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Catch you later, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "marco"
+}

@@ -1,0 +1,163 @@
+{
+ "id": "v03fiendshooter",
+ "speaker_name": "Vault 3 Fiend guard",
+ "source": "V03FiendShooter.txt",
+ "topics": [
+  {
+   "key": "vms07greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is what I been waiting to see! A big bad Khan bringing in the medicine! How about you toss some psycho my way?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the fuck are you doing here? You got some kind of fucking death wish, asshole?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07Greeting",
+   "prompt": "VMS07Greeting"
+  },
+  {
+   "key": "vms07v03fiendshootertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah - fuck off, and be grateful you're still breathing!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03FiendShooterTopic000",
+   "prompt": "No need to get worked up. I'll leave."
+  },
+  {
+   "key": "vms07v03fiendshootertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Final warning, asshole. Get the fuck out of here or we are going to waste your ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03FiendShooterTopic001",
+   "prompt": "Isn't this Vault 3, home of the Fiends?"
+  },
+  {
+   "key": "vms07v03fiendshootertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, asshole, you just fucked yourself!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03FiendShooterTopic002",
+   "prompt": "Let's see how tough you are."
+  },
+  {
+   "key": "vms07v03fiendshootertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Who the fuck you trying to kid? You're lucky if I let you walk away from this, asshole.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03FiendShooterTopic003",
+   "prompt": "Your boss, um... He summoned me here."
+  },
+  {
+   "key": "vms07v03fiendshootertopic003_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] If you're fucking carrying, just fucking say so. Yeah, deliver to the boss, business as usual.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Motor-Runner's down in the Maintenance Wing. Straight through the door behind me, down the hall, down the stairs to the right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03FiendShooterTopic003",
+   "prompt": "I'm carrying Jet, Psycho, and other favors. And I don't deliver to the help."
+  },
+  {
+   "key": "vms07v03fiendshootertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey! No need, no need! I was just kidding!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Motor-Runner's down in the Maintenance Wing. Straight through the door behind me, down the hall, down the stairs to the right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was just kidding about tossing me some Psycho. So you don't got to say anything about that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03FiendShooterTopic004",
+   "prompt": "Where's your boss? He'll want to know you were hitting me up for freebies."
+  },
+  {
+   "key": "vms07v03fiendshootertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then what the fuck are you doing here? You looking to get killed? What the fuck?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03FiendShooterTopic005",
+   "prompt": "I'm not a Khan. I'm just dressed like one."
+  },
+  {
+   "key": "vms07fiendradio",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "We have a Khan coming through to see the boss. Don't shoot at her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We have a Khan coming through to see the boss. Don't shoot at him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07FiendRadio",
+   "prompt": "VMS07FiendRadio"
+  },
+  {
+   "key": "vms07v03bryceanderstopic020",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You were warned! Time to die.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic020",
+   "prompt": "What?"
+  }
+ ],
+ "speaker": "vault_3_fiend_guard"
+}

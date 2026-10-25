@@ -1,0 +1,613 @@
+[
+ {
+  "id": "agility",
+  "name": "Agility",
+  "kind": "primary",
+  "source": "Agility (Fallout: New Vegas)",
+  "modifies": "Action Points available in V.A.T.S., Guns, Sneak, Drawing/Holstering speeds, Reload Speeds",
+  "related_perks": [
+   "action_boy_action_girl",
+   "light_step",
+   "light_touch",
+   "quick_draw",
+   "rapid_reload",
+   "silent_running",
+   "slayer",
+   "sniper"
+  ]
+ },
+ {
+  "id": "charisma",
+  "name": "Charisma",
+  "kind": "primary",
+  "source": "Charisma (Fallout: New Vegas)",
+  "modifies": "NPC disposition toward player character; Barter + Speech skill levels; Companion Nerve",
+  "related_perks": [
+   "animal_friend",
+   "ferocious_loyalty"
+  ]
+ },
+ {
+  "id": "endurance",
+  "name": "Endurance",
+  "kind": "primary",
+  "source": "Endurance (Fallout: New Vegas)",
+  "modifies": "Unarmed + Survival skill levelsMaximum Hit Points + Radiation Resistance + Poison Resistance; Number of available implants from Doctor Usanagi",
+  "related_perks": [
+   "lead_belly",
+   "life_giver",
+   "long_haul",
+   "old_world_gourmet",
+   "rad_absorption",
+   "rad_resistance",
+   "solar_powered",
+   "stonewall",
+   "strong_back",
+   "toughness"
+  ]
+ },
+ {
+  "id": "intelligence",
+  "name": "Intelligence",
+  "kind": "primary",
+  "source": "Intelligence (Fallout: New Vegas)",
+  "modifies": "Number of new skill points per level, dialogue options, Medicine, Repair, Science",
+  "related_perks": [
+   "comprehension",
+   "computer_whiz",
+   "educated",
+   "entomologist",
+   "nerd_rage",
+   "pack_rat",
+   "retention",
+   "swift_learner"
+  ]
+ },
+ {
+  "id": "luck",
+  "name": "Luck",
+  "kind": "primary",
+  "source": "Luck (Fallout: New Vegas)",
+  "modifies": "All skills, Critical Chance, odds in casino games, some random encounters",
+  "related_perks": [
+   "better_criticals",
+   "fortune_finder",
+   "junk_rounds",
+   "miss_fortune",
+   "mysterious_stranger",
+   "scrounger"
+  ]
+ },
+ {
+  "id": "perception",
+  "name": "Perception",
+  "kind": "primary",
+  "source": "Perception (Fallout: New Vegas)",
+  "modifies": "Energy Weapons, Lockpick, Explosives skill level; Minimum detection distance on compass",
+  "related_perks": [
+   "better_criticals",
+   "friend_of_the_night",
+   "hobbler",
+   "infiltrator",
+   "light_step",
+   "sniper"
+  ]
+ },
+ {
+  "id": "strength",
+  "name": "Strength",
+  "kind": "primary",
+  "source": "Strength (Fallout: New Vegas)",
+  "modifies": "Melee Weapons skill level; Melee Damage; Carry Weight; Effective weapon usage",
+  "related_perks": [
+   "heave_ho",
+   "heavyweight",
+   "stonewall",
+   "strong_back",
+   "super_slam",
+   "unstoppable_force",
+   "weapon_handling"
+  ]
+ },
+ {
+  "id": "barter",
+  "name": "Barter",
+  "kind": "skill",
+  "source": "Barter (Fallout: New Vegas)",
+  "modifies": "Prices when trading; Various dialogue options",
+  "governed_by": [
+   "charisma"
+  ],
+  "initial_value": "2 + (Charisma x 2) + ceil (Luck / 2)",
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Charisma})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=2+10+2.5=14.5\\text{ rounded up}=15"
+  ],
+  "related_perks": [
+   "long_haul",
+   "pack_rat"
+  ]
+ },
+ {
+  "id": "energy_weapons",
+  "name": "Energy Weapons",
+  "kind": "skill",
+  "source": "Energy Weapons (Fallout: New Vegas)",
+  "modifies": "Damage done by Energy Weapons",
+  "governed_by": [
+   "perception"
+  ],
+  "initial_value": "2 + (Perception x 2) + ceil (Luck / 2)",
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Perception})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=2+10+2.5=14.5\\text{ rounded up}=15"
+  ],
+  "related_perks": [
+   "concentrated_fire",
+   "laser_commander",
+   "meltdown",
+   "plasma_spaz",
+   "run_n_gun"
+  ]
+ },
+ {
+  "id": "explosives",
+  "name": "Explosives",
+  "kind": "skill",
+  "source": "Explosives (Fallout: New Vegas)",
+  "modifies": "Damage done by Explosives, ability of handling explosive traps",
+  "governed_by": [
+   "perception"
+  ],
+  "initial_value": "2 + (2 x Perception) + ceil (Luck / 2)",
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Perception})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=2+10+2.5=14.5\\text{ rounded up}=15"
+  ],
+  "related_perks": [
+   "demolition_expert",
+   "grunt",
+   "heave_ho",
+   "hit_the_deck",
+   "mad_bomber",
+   "pyromaniac",
+   "splash_damage"
+  ]
+ },
+ {
+  "id": "guns",
+  "name": "Guns",
+  "kind": "skill",
+  "source": "Guns",
+  "modifies": "Damage and accuracy for Guns",
+  "governed_by": [
+   "agility"
+  ],
+  "initial_value": "2 + (Agility x 2) + ceil (Luck / 2)",
+  "related_perks": [
+   "and_stay_back",
+   "center_of_mass",
+   "concentrated_fire",
+   "cowboy",
+   "grunt",
+   "rapid_reload",
+   "run_n_gun",
+   "shotgun_surgeon"
+  ]
+ },
+ {
+  "id": "lockpick",
+  "name": "Lockpick",
+  "kind": "skill",
+  "source": "Lockpick (Fallout: New Vegas)",
+  "modifies": "Difficulty of locks the player is able to pick, chance for a successful \"force lock\" attempt",
+  "governed_by": [
+   "perception"
+  ],
+  "initial_value": "2 + (Perception x 2) + ceil (Luck / 2)",
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Perception})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15"
+  ],
+  "related_perks": [
+   "infiltrator"
+  ]
+ },
+ {
+  "id": "medicine",
+  "name": "Medicine",
+  "kind": "skill",
+  "source": "Medicine (Fallout: New Vegas)",
+  "modifies": "Effectiveness of stimpaks, super stimpaks, Rad-X and RadAway",
+  "governed_by": [
+   "intelligence"
+  ],
+  "initial_value": "2 + (Intelligence x 2) + ceil (Luck / 2)",
+  "related_perks": [
+   "chem_resistant",
+   "chemist",
+   "living_anatomy"
+  ]
+ },
+ {
+  "id": "melee_weapons",
+  "name": "Melee Weapons",
+  "kind": "skill",
+  "source": "Melee Weapons (Fallout: New Vegas)",
+  "modifies": "Damage done by Melee Weapons; Some damage blocked",
+  "governed_by": [
+   "strength"
+  ],
+  "initial_value": "2 + (Strength x 2) + ceil (Luck / 2)",
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Strength})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15"
+  ],
+  "related_perks": [
+   "cowboy",
+   "ninja",
+   "super_slam",
+   "unstoppable_force"
+  ]
+ },
+ {
+  "id": "repair",
+  "name": "Repair",
+  "kind": "skill",
+  "source": "Repair (Fallout: New Vegas)",
+  "modifies": "Ability to break down an item to repair another of the same type as well as computers, radios, etc.",
+  "governed_by": [
+   "intelligence"
+  ],
+  "initial_value": "(2 + (Intelligence x 2) + ceil (Luck / 2)",
+  "related_perks": [
+   "hand_loader",
+   "jury_rigging"
+  ]
+ },
+ {
+  "id": "science",
+  "name": "Science",
+  "kind": "skill",
+  "source": "Science (Fallout: New Vegas)",
+  "modifies": "The range of terminal difficulties that may be hacked by the player, various dialogue options",
+  "governed_by": [
+   "intelligence"
+  ],
+  "initial_value": "2 + (Intelligence x 2) + ceil (Luck / 2)",
+  "math": [
+   "\\begin{matrix}\\text{Initial}\\\\\\text{level}\\end{matrix}=2+(2\\times\\text{Intelligence})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15"
+  ],
+  "related_perks": [
+   "computer_whiz",
+   "math_wrath",
+   "nerd_rage",
+   "nuka_chemist",
+   "robotics_expert",
+   "vigilant_recycler"
+  ]
+ },
+ {
+  "id": "sneak",
+  "name": "Sneak",
+  "kind": "skill",
+  "source": "Sneak (Fallout: New Vegas)",
+  "modifies": "Chance of being detected while sneaking and pickpocketing; Allows a wider range of Holdout weapons",
+  "governed_by": [
+   "agility"
+  ],
+  "initial_value": "2 + (2 x Agility) + ceil (Luck / 2)",
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Agility})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15",
+   "\\lfloor40+(0.6\\times\\text{Player Sneak})-\\left\\lceil\\frac{\\text{Item Value}}{2}\\right\\rceil-(0.6\\times\\text{Target NPC Sneak})\\rfloor=\\text{Success Chance}"
+  ],
+  "related_perks": [
+   "broad_daylight",
+   "friend_of_the_night",
+   "mister_sandman",
+   "ninja",
+   "silent_running",
+   "the_professional"
+  ]
+ },
+ {
+  "id": "speech",
+  "name": "Speech",
+  "kind": "skill",
+  "source": "Speech (Fallout: New Vegas)",
+  "modifies": "Amount to succeed in a Speech challenge",
+  "governed_by": [
+   "charisma"
+  ],
+  "initial_value": "2 + (2 x Charisma) + ceil (Luck / 2)",
+  "math": [
+   "\\text{Initial level}=2+(2\\times\\text{Charisma})+\\left\\lceil\\frac{\\text{Luck}}{2}\\right\\rceil",
+   "2+(2\\times5)+\\left\\lceil\\frac{5}{2}\\right\\rceil=15"
+  ],
+  "related_perks": [
+   "black_widow",
+   "cherchez_la_femme",
+   "confirmed_bachelor",
+   "lady_killer",
+   "terrifying_presence"
+  ]
+ },
+ {
+  "id": "survival",
+  "name": "Survival",
+  "kind": "skill",
+  "source": "Survival (Fallout: New Vegas)",
+  "modifies": "Magnitude of effects from food.; Ability to cook on a fire.",
+  "governed_by": [
+   "endurance"
+  ],
+  "initial_value": "2 + (Endurance x 2) + ceil (Luck / 2)",
+  "related_perks": [
+   "animal_friend",
+   "entomologist",
+   "hunter",
+   "old_world_gourmet",
+   "rad_child",
+   "rad_resistance",
+   "travel_light",
+   "tribal_wisdom"
+  ]
+ },
+ {
+  "id": "unarmed",
+  "name": "Unarmed",
+  "kind": "skill",
+  "source": "Unarmed (Fallout: New Vegas)",
+  "modifies": "Damage done by Unarmed attacks; Damage blocked",
+  "governed_by": [
+   "endurance"
+  ],
+  "initial_value": "2 + (Endurance x 2) + (Luck / 2)",
+  "math": [
+   "5 + 0.3 \\times Unarmed"
+  ],
+  "related_perks": [
+   "paralyzing_palm",
+   "piercing_strike",
+   "slayer"
+  ]
+ },
+ {
+  "id": "action_points",
+  "name": "Action Points",
+  "kind": "derived",
+  "source": "Action Points",
+  "modifies": "Number of things a player can do during V.A.T.S. mode",
+  "governed_by": [
+   "agility"
+  ],
+  "initial_value": "65 + 3 * Agility",
+  "math": [
+   "\\text{Initial level}=65+(3\\times\\text{Agility})",
+   "65+(3\\times5)=80~\\text{Action points}"
+  ],
+  "related_perks": [
+   "action_boy_action_girl",
+   "ain_t_like_that_now",
+   "beautiful_beatdown",
+   "grim_reaper_s_sprint",
+   "math_wrath",
+   "nerves_of_steel",
+   "plasma_spaz"
+  ]
+ },
+ {
+  "id": "carry_weight",
+  "name": "Carry Weight",
+  "kind": "derived",
+  "source": "Carry Weight",
+  "governed_by": [
+   "strength"
+  ],
+  "initial_value": "150 + (STR x 10) = lbs",
+  "math": [
+   "\\text{Initial level}=150+(\\text{Strength}\\times10)",
+   "150+(5\\times10)=200~\\text{lbs}"
+  ],
+  "related_perks": [
+   "burden_to_bear",
+   "heavyweight",
+   "long_haul",
+   "pack_rat"
+  ]
+ },
+ {
+  "id": "critical_chance",
+  "name": "Critical Chance",
+  "kind": "derived",
+  "source": "Critical Chance",
+  "modifies": "Chance to cause a critical hit",
+  "governed_by": [
+   "luck"
+  ],
+  "initial_value": "Luck × 1%",
+  "related_perks": [
+   "finesse",
+   "laser_commander",
+   "light_touch",
+   "ninja"
+  ]
+ },
+ {
+  "id": "damage_resistance",
+  "name": "Damage Resistance",
+  "kind": "derived",
+  "source": "Damage Resistance",
+  "modifies": "Reduces Damage taken from attacks",
+  "initial_value": "0%",
+  "related_perks": [
+   "ferocious_loyalty"
+  ]
+ },
+ {
+  "id": "damage_threshold",
+  "name": "Damage Threshold",
+  "kind": "derived",
+  "source": "Damage Threshold",
+  "modifies": "Damage reduction",
+  "initial_value": "0",
+  "related_perks": [
+   "big_brained",
+   "brainless",
+   "hit_the_deck",
+   "living_anatomy",
+   "nerd_rage",
+   "piercing_strike",
+   "shotgun_surgeon",
+   "stonewall",
+   "sub_dermal_armor",
+   "toughness",
+   "whiskey_rose"
+  ]
+ },
+ {
+  "id": "dehydration",
+  "name": "Dehydration",
+  "kind": "derived",
+  "source": "Dehydration",
+  "modifies": "Endurance; Perception; Intelligence; Agility",
+  "initial_value": "1"
+ },
+ {
+  "id": "energy_resistance",
+  "name": "Energy Resistance",
+  "kind": "derived",
+  "source": "Energy Resistance",
+  "modifies": "Energy damage reduction",
+  "initial_value": "0"
+ },
+ {
+  "id": "fatigue",
+  "name": "Fatigue",
+  "kind": "derived",
+  "source": "Fatigue (Fallout: New Vegas)",
+  "modifies": "Consciousness",
+  "governed_by": [
+   "endurance"
+  ],
+  "initial_value": "Varies"
+ },
+ {
+  "id": "fire_resistance",
+  "name": "Fire Resistance",
+  "kind": "derived",
+  "source": "Fire Resistance",
+  "modifies": "Fire damage reduction",
+  "initial_value": "0"
+ },
+ {
+  "id": "hit_points",
+  "name": "Hit Points",
+  "kind": "derived",
+  "source": "Hit Points",
+  "modifies": "Health",
+  "governed_by": [
+   "endurance"
+  ],
+  "initial_value": "95 + Endurance &times; 20 + Level &times; 5",
+  "math": [
+   "\\text{Initial level}=100+(\\text{Endurance}\\times20)+(\\text{(Level - 1)}\\times5)",
+   "100+(5\\times20)+(0\\times5)=200~\\text{Hit Points}",
+   "100+(10\\times20)+(29\\times5)=445~\\text{Hit Points}",
+   "100+(10\\times20)+(49\\times5)+30^1+60^2+75^3+100^4+25^5+=835~\\text{Hit Points}"
+  ],
+  "related_perks": [
+   "life_giver",
+   "thought_you_died"
+  ]
+ },
+ {
+  "id": "melee_damage",
+  "name": "Melee Damage",
+  "kind": "derived",
+  "source": "Melee Damage",
+  "modifies": "Amount of bonus damage a character does with Melee Weapons",
+  "governed_by": [
+   "strength"
+  ],
+  "initial_value": "Strength * 0.5"
+ },
+ {
+  "id": "perk_rate",
+  "name": "Perk Rate",
+  "kind": "derived",
+  "source": "Perk Rate",
+  "modifies": "How often a character is allowed to pick a perk",
+  "initial_value": "2"
+ },
+ {
+  "id": "poison_resistance",
+  "name": "Poison Resistance",
+  "kind": "derived",
+  "source": "Poison Resistance",
+  "modifies": "Poison damage reduction, chance to get poisoned",
+  "governed_by": [
+   "endurance"
+  ],
+  "initial_value": "(Endurance - 1) * 5",
+  "related_perks": [
+   "cardiac_arrest",
+   "heartless",
+   "tribal_wisdom"
+  ]
+ },
+ {
+  "id": "radiation_resistance",
+  "name": "Radiation Resistance",
+  "kind": "derived",
+  "source": "Radiation Resistance",
+  "modifies": "Reduction of radiation exposure",
+  "governed_by": [
+   "endurance"
+  ],
+  "initial_value": "(Endurance - 1) * 2",
+  "math": [
+   "\\text{Initial level }\\%=(\\text{Endurance}-1)\\times2",
+   "\\left(25 + \\frac{Medicine}{2}\\right)\\%"
+  ],
+  "related_perks": [
+   "rad_resistance"
+  ]
+ },
+ {
+  "id": "skill_rate",
+  "name": "Skill Rate",
+  "kind": "derived",
+  "source": "Skill Rate",
+  "modifies": "Amount of skill points per level.",
+  "governed_by": [
+   "intelligence"
+  ],
+  "initial_value": "(Intelligence x 0.5) + 10",
+  "math": [
+   "\\text{Initial level}=(\\text{Intelligence}/2)+10",
+   "\\left\\lceil\\frac{9}{2}\\right\\rceil+10=4.5+10=14.5"
+  ],
+  "related_perks": [
+   "educated"
+  ]
+ },
+ {
+  "id": "starvation",
+  "name": "Starvation",
+  "kind": "derived",
+  "source": "Starvation",
+  "modifies": "Strength; Charisma; Perception",
+  "initial_value": "1"
+ },
+ {
+  "id": "unarmed_damage",
+  "name": "Unarmed Damage",
+  "kind": "derived",
+  "source": "Unarmed Damage",
+  "modifies": "Amount damage a character does with Unarmed weapons (and fists)",
+  "initial_value": "ceil ((Unarmed / 20) + 0.5 )"
+ }
+]

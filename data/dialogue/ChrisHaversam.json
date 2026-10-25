@@ -1,0 +1,1221 @@
+{
+ "page": "ChrisHaversam.txt",
+ "speaker": "Chris Haversam",
+ "topics": [
+  {
+   "id": "ChrisHavIntercomGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's hope you do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Got it."
+  },
+  {
+   "id": "ChrisHavIntercomGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop wasting time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure."
+  },
+  {
+   "id": "ChrisHavIntercomGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Get moving.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All right."
+  },
+  {
+   "id": "ChrisHavIntercomUpstairsGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hurry up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay."
+  },
+  {
+   "id": "ChrisHavIntercomWhere",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I said, find the metal staircase in the big room on the east side of the building. It's where they used to make rockets.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where are you located?"
+  },
+  {
+   "id": "ChrisHavIntercomWhere",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Big room. Metal staircase. East side of the building. Is that too many syllables for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me again how to find you."
+  },
+  {
+   "id": "ChrisHavIntercomWho",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who I am doesn't matter, smoothskin. Stop wasting time and get up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "ChrisHavLabBetraySabotageNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What, you think I'm too stupid to pull it off? I know enough to get their rockets working, don't I? So I can make them fail, too!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That'd be murder, Chris. And you're no murderer.",
+   "label": "The PC talks Chris out of sabotage"
+  },
+  {
+   "id": "ChrisHavLabBetraySabotageNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I could forgive myself for getting duped like this? They used me! And now they'll throw me away!",
+     "emotion": "pained",
+     "intensity": 100
+    }
+   ],
+   "prompt": "It's not a matter of smarts. You'd never forgive yourself.",
+   "label": "The PC talks Chris out of sabotage"
+  },
+  {
+   "id": "ChrisHavLabBetraySabotageNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And dying would be worse than this? Used up and thrown away like garbage?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "They'd take you if they could, Chris, but you'd die.",
+   "label": "The PC talks Chris out of sabotage"
+  },
+  {
+   "id": "ChrisHavLabBetraySabotageNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, so I've redeemed the human race, is that it? What a crock! The human race can't stand me!",
+     "emotion": "anger",
+     "intensity": 90
+    }
+   ],
+   "prompt": "They're going to revere you as a Saint, Chris!",
+   "label": "The PC talks Chris out of sabotage"
+  },
+  {
+   "id": "ChrisHavLabBetraySabotageNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you want me to accompany you on your adventures across the wasteland, is that it?",
+     "emotion": "disgust",
+     "intensity": 80
+    }
+   ],
+   "prompt": "That's not true, Chris. You're all right.",
+   "label": "The PC talks Chris out of sabotage"
+  },
+  {
+   "id": "ChrisHavLabBetraySabotageNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Life among humans again, that's what you're suggesting?",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "I guess... I guess it's the only chance I've got.",
+     "emotion": "sad",
+     "intensity": 80
+    },
+    {
+     "text": "I can't believe I'm agreeing to this, but I'll give it a try. I'll get Jason and his flock on their way, and then I'll head for Novac.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Life among humans again, that's what you're suggesting?",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "I guess... I guess it's the only chance I've got. Maybe it'll be different this time. I was never a Saint before.",
+     "emotion": "sad",
+     "intensity": 80
+    },
+    {
+     "text": "I can't believe I'm agreeing to this, but I'll give it a try. You go launch the rockets. I'm on my way to Novac.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "There's a little town called Novac down the road.",
+   "label": "The PC talks Chris out of sabotage"
+  },
+  {
+   "id": "ChrisHavLabBetraySabotageYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then bring me Sugar Bombs. Three boxes should do the trick. Add those to the fuel mixture and \"Boom!\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll show those rotten ghouls! And they'll know exactly who did them in!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then bring me Sugar Bombs. Three boxes should do the trick. Add those to the fuel mixture and \"Boom!\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll show those rotten ghouls! And they'll know exactly who did them in!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Come to think of it, sabotage is a great idea."
+  },
+  {
+   "id": "ChrisHavLabBetraySugarBombs",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I said I need three boxes of Sugar Bombs, not less than three.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll mix the Sugar Bombs into the fuel mixture before they launch. They'll never suspect a thing... until it's too late.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll mix the Sugar Bombs into the fuel mixture before they launch. They'll never suspect a thing... until it's too late.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But first I'll need the other parts we talked about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've got some Sugar Bombs."
+  },
+  {
+   "id": "ChrisHavLabGetFuel",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. We don't need a huge amount. Two to three liters should be enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll track down the igniting agent.",
+   "label": "PC offers to find fuel for rockets"
+  },
+  {
+   "id": "ChrisHavLabGetParts",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll track down the thrust control modules.",
+   "label": "I'll try to find the parts you need."
+  },
+  {
+   "id": "ChrisHavLabGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. I'll be here, obviously.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fine. Just get me those Sugar Bombs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come back when you've found the igniting agent.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come back when you've tracked down the thrust control modules.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need to be going."
+  },
+  {
+   "id": "ChrisHavLabGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great, let's do everything when it's convenient for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let me get back to you."
+  },
+  {
+   "id": "ChrisHavLabGoodbyeSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Quiet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Quiet!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry."
+  },
+  {
+   "id": "ChrisHavLabHaveFuel",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, that's the stuff. And the container's shielding must be intact, or you'd be dead by now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You already brought me the thrust control modules, so all that's needed now is three boxes of Sugar Bombs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, that's the stuff. And the container's shielding must be intact, or you'd be dead by now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now all I need is the thrust control modules and three boxes of Sugar Bombs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, that's the stuff. And the container's shielding must be intact, or you'd be dead by now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, that's the stuff. And the container's shielding must be intact, or you'd be dead by now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now all I need is the thrust control modules.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found an entire container of the igniting agent.",
+   "label": "PC Turns in jar of atomic fuel"
+  },
+  {
+   "id": "ChrisHavLabHaveFuelSouvenir",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, that's Isotope-239, all right. And there's enough here to launch the rockets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You already brought me the thrust control modules, so all I need now is three boxes of Sugar Bombs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me see. Yes, that's the igniting agent! But we'll need more of these souvenirs. A total of five should do it...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What about this rocket souvenir? The stuff inside glows.",
+   "label": "PC hands over one or more souvenirs"
+  },
+  {
+   "id": "ChrisHavLabHaveFuelSouvenir",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, that's Isotope-239, all right. And there's enough here to launch the rockets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now all I need is the thrust control modules and three boxes of Sugar Bombs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, that's Isotope-239, all right. And there's enough here to launch the rockets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, that's Isotope-239, all right. And there's enough here to launch the rockets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now all I need is the thrust control modules.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What about these rocket souvenirs? The stuff inside glows.",
+   "label": "PC hands over one or more souvenirs"
+  },
+  {
+   "id": "ChrisHavLabHaveParts",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Indeed you did. And they seem to be in excellent condition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You already found the igniting agent, so all I need now is three boxes of Sugar Bombs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Indeed you did. And they seem to be in excellent condition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I still need the igniting agent, of course. And three boxes of Sugar Bombs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Indeed you did. And they seem to be in excellent condition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Indeed you did. And they seem to be in excellent condition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All I need now is the igniting agent we discussed earlier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Indeed you did. And they seem to be in excellent condition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All I need now is the igniting agent we discussed earlier.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found the thrust control modules.",
+   "label": "PC turns in computer parts"
+  },
+  {
+   "id": "ChrisHavLabIntercom",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's none of your business, smoothskin!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I already told you how to get up here. Big room on the east side of the first floor. Take the stairs up. Got it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's none of your business, smoothskin!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Jason was very clear. Get rid of the demons, then report back. He didn't tell you to poke around down there. Got it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the deal with all the rockets down here?"
+  },
+  {
+   "id": "ChrisHavLabKeepTalking",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Go on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I still have questions."
+  },
+  {
+   "id": "ChrisHavLabPathetic",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Leave me alone! Everyone else does!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're pathetic. No wonder they're leaving you behind."
+  },
+  {
+   "id": "ChrisHavLabReadyToHelp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "To sabotage the rockets, I'll still need a quantity of the igniting agent.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To sabotage the rockets, I'll still need the thrust control modules.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To sabotage the rockets, I'll still need to get them ready for launch. I still need a quantity of the igniting agent and the thrust control modules.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For the fuel source, any shielded nuclear waste should do the trick. That's why we can't use the waste on the launch pad. Too much decay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As for the computer parts, the thruster control systems aren't complicated, so any good mix of components is all I need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What else do you need?",
+   "label": "PC says he wants to help"
+  },
+  {
+   "id": "ChrisHavLabReadyToHelp",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was close to completing work on the rockets before we were driven into hiding on the top floor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Two components were missing: a quantity of Isotope-239 igniting agent, and a set of thrust control modules.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The igniting agent is highly radioactive, and decays quickly. That's why we can't use the drums that leaked down on the launch pad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's no longer potent enough. I need you to find an intact, shielded container of the igniting agent.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As for the thrust control modules, they were custom-built for these rockets. They won't even launch without them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As I said before, I need an intact, shielded container of Isotope-239 igniting agent, and a set of thrust control modules.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How can I help?",
+   "label": "PC says he wants to help"
+  },
+  {
+   "id": "ChrisHavLabRocketsReady",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, that's everything. I'll tell Jason the rockets are ready. It's time to get this over with.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's everything, right? Let the \"Great Journey\" begin.",
+   "label": "<Play Jason's Speech.>"
+  },
+  {
+   "id": "ChrisHavLabRocketsReady",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. I'll tell Jason that the Great Journey can begin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The rockets are set to go, right?",
+   "label": "<Play Jason's Speech.>"
+  },
+  {
+   "id": "ChrisHavLabTaskChange",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. What would you rather be doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right. What would you rather be doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, I'd like to help with something else.",
+   "label": "PC asks for help with different task"
+  },
+  {
+   "id": "ChrisHavLabTaskHints",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "REPCONN has been ransacked so many times by scavengers, it's hard to know where the components might turn up. IF they turn up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Jason has mentioned some industrial ruins to the east that are supposed to be highly radioactive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd start by visiting local junk merchants or traders and see if that turns anything up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Scavengers wouldn't know the value of the modules just by looking at them. If you know any junk dealers in the area, I'd start there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you give me any tips for my current task?",
+   "label": "PC asks for task tips"
+  },
+  {
+   "id": "ChrisHavLabTaskSame",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Carry on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll stick with my current task.",
+   "label": "PC will keep working on current task"
+  },
+  {
+   "id": "ChrisHavLabWhatIsThisPlace",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Obviously. It's taken months, but I've nearly got them in working order. Soon they'll take us to the Far Beyond.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was skeptical at first, of course - being a man of science - but Jason is certain, and I believe in Jason.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So the \"Great Journey\" will use those rockets?"
+  },
+  {
+   "id": "ChrisHavLabYoureNoGhoul",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm the flock's resident engineer. I've always been good with machines. Jason says the Great Journey would've been impossible without me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course, my skills aren't much use unless I have the right materials. That's where you come in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?",
+   "label": "ChrisHavLabWhatDoYouDo"
+  },
+  {
+   "id": "ChrisHavLabYoureNoGhoul",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "When I joined the flock, Jason made it clear that he wanted me to supervise the repairs, not do them myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It would be a waste of my gifts to work on just one system at a time. From up here, I've been able to supervise the entire project.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why don't they let you work down on the launch pad?",
+   "label": "ChrisHavLabWhatDoYouDo"
+  },
+  {
+   "id": "ChrisHavLabYoureNoGhoul",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I thought we were past all that, smoothskin. But you just can't resist the chance to mess with me. Typical human.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was human once, you know. Grew up in Vault 34, northeast of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice upbringing, if you like assault rifles and target practice. But oh, you prefer machines that don't shoot people? Not so nice then.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who should maintain the Vault's reactor? Houser? Mitchell? No - make it Haversam. He likes machines!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Haversam won't mind getting irradiated! Haversam won't mind mutating! He's already ugly as it is!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Haversam won't mind when his hair starts falling out after a few years. There's no connection, Haversam! You're neurotic!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The radiation down there would kill you, Chris. Because you're human.",
+   "label": "ChrisHavLabWhatDoYouDo"
+  },
+  {
+   "id": "ChrisHavLabYoureNoGhoul",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bald? You call this bald, smoothskin? I'm a monster! A monster!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You left your Vault because you were going bald?",
+   "label": "ChrisHavLabWhatDoYouDo"
+  },
+  {
+   "id": "ChrisHavLabYoureNoGhoul",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop making fun of me! But you're telling the truth, aren't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh no! How could they do this to me? For two years? My god, I've been a joke to them!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do you have any idea how easy it'd be for me to sabotage those rockets? That'd be a joke, huh? One hell of a joke!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Honey, you're no monster. You're cute! Why, I could just about eat you up!",
+   "label": "ChrisHavLabWhatDoYouDo"
+  },
+  {
+   "id": "ChrisHavLabYoureNoGhoul",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Oh god! You're telling me the truth, aren't you...?",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "Oh no! How could they do this to me? For two years? My god, I've been a joke to them!",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "Do you have any idea how easy it'd be for me to sabotage those rockets? That'd be a joke, huh? One hell of a joke!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Jason told me himself. The Great Journey is for ghouls only. You're not going.",
+   "label": "ChrisHavLabWhatDoYouDo"
+  },
+  {
+   "id": "ChrisHavLabYoureNoGhoul",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I see your ploy, smoothskin. I won't fall for your trap. You can plainly see that I'm a ghoul myself. You can't turn me against my flock.",
+     "emotion": "anger",
+     "intensity": 60
+    }
+   ],
+   "prompt": "You wouldn't trust a ghoul, would you?",
+   "label": "ChrisHavLabWhatDoYouDo"
+  },
+  {
+   "id": "ChrisHavNovacConfessSabotage",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You bastard! Those ghouls declared me a Saint!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I sabotaged the rockets."
+  },
+  {
+   "id": "ChrisHavNovacMechFailure",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose there was always that risk. It's just that Jason was so certain...",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It was some sort of mechanical failure."
+  },
+  {
+   "id": "ChrisHavTalksDuringSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? {shocked to hear Jason call him human}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No. No, no, no! {anguished}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How could I... Stupid! Oh god...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ChrisHavTalksDuringSpeech"
+  },
+  {
+   "id": "ChrisHavTellsJasonReady",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The rockets are ready, Jason. The Great Journey can begin. Good luck, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The rockets are ready, Jason... ready to carry you and your little clan on the \"Great Journey.\" Bon voyage. {Malicious sarcasm}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We have everything we need to launch the rockets, Jason! The Great Journey can begin!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ChrisHavTellsJasonReady"
+  },
+  {
+   "id": "ChrisHavUpsGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stay away from me.",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "Good riddance.",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "Good idea.",
+     "emotion": "anger",
+     "intensity": 60
+    }
+   ],
+   "prompt": "I guess I'll be going."
+  },
+  {
+   "id": "ChrisHavUpsHello",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your pranks won't work on me, smoothskin. They won't work on Jason, either.",
+     "emotion": "anger",
+     "intensity": 60
+    }
+   ],
+   "prompt": "Hey, you're not a ghoul!"
+  },
+  {
+   "id": "ChrisHavUpsHello",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop wasting my time, smoothskin. Go waste Jason's.",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "prompt": "Smoothskin? Your skin looks pretty smooth to me."
+  },
+  {
+   "id": "ChrisHavUpsWhoIsJason",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Jason is the prophet. The only reason you're up here is because he wants to talk to you.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "I guess he had visions that a smoothskin would stop by.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who is Jason?"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to Novac. It's not very exciting here, but the people are friendly enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You saw the rockets explode, right? It turns out I was lucky they couldn't take me on the Great Journey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do you have any idea what went wrong?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to make my way to that little town we talked about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to Novac. It's not very exciting here, but the people are friendly enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My engineering skills have been coming in handy, too. I've got plenty to do. Thanks for telling me about this place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey! Over here! Are you listening?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go to the big room on the east side of this building and take the metal staircase all the way up. And hurry.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, Smoothskin, I'm letting you in. You better watch yourself. I'll sure as hell be watching you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's the problem, smoothskin? Lost your way?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello? Who's down there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop messing around with the intercom, smoothskin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "God, but are you ugly! Get upstairs and talk to Jason before I throw up just from looking at you.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Go bother Jason, smoothskin. I don't like having you around.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Have you found the components we discussed?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Have you found the components we discussed?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Have you found the components we discussed? The sooner we get this over with, the better.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Jason says that I am to cooperate with you on the final tasks necessary to launch the Great Journey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you ready to get started? Those rockets aren't going to launch themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is almost time for the great Journey!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not now! It is almost time for the Great Journey!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is almost time for the great Journey!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice enough speech, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, it's up to you to go launch the rockets. There's a small mission control room all the way back upstairs. Should be as easy as pressin a button.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It seems my work here is done, so I'll be on my way to Novac. We'll see how that works out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you hear him? As though some fancy speech can make what they did to me less of a crime?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go launch the rockets! There's a cramped little \"mission control\" room all the way back upstairs. Should be as easy as pushing a button.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Enjoy the view. I hear the \"Great Journey\" is going to be shorter than they expected. Sweeter, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you hear him? My god, you were right all along. I'm no ghoul! They were just using me...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go launch the rockets. Don't worry about me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Leave me alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you bring the items we discussed? The sooner I send them on their way, the sooner I can head to Novac.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "SpeechChallengeFailure",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you think that men go bald normally? I am sick, and I have embraced my change. Leave me be.",
+     "emotion": "anger",
+     "intensity": 75
+    }
+   ],
+   "prompt": "SpeechChallengeFailure"
+  },
+  {
+   "id": "VDialogueChrisHaversamChrisHaversamTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The great one can be found upstairs. Don't think about wasting his time. He's very important. You should feel lucky to be granted some of his time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where can I find Jason?"
+  },
+  {
+   "id": "VDialogueChrisHaversamChrisHaversamTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hurry back. Never have we been so close.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nevermind, I'll go looking for your components."
+  },
+  {
+   "id": "VDialogueChrisHaversamChrisHaversamTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very few. Time is wasting. Hurry back so we can begin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can the launch wait a few minutes?"
+  },
+  {
+   "id": "VDialogueChrisHaversamChrisHaversamTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye, thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "ChrisHavTellsJasonGoodToGo",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey Jason, your rockets are ready!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ChrisHavTellsJasonGoodToGo"
+  }
+ ]
+}

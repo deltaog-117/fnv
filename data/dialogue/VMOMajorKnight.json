@@ -1,0 +1,400 @@
+{
+ "page": "VMOMajorKnight.txt",
+ "speaker": "Knight (Mojave Outpost)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slightly bored} Caravan, citizen, pilgrim, or...?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nods to player} Been doing a lot of good work out there, setting an example for the others - I know Ranger Jackson appreciates it.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Back again, I see. Something you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "More than you already have? Might want to ask around, but truth is, you've already helped out a lot in the short time you've been here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I suppose you could talk to Ghost, up on top of the barracks - uh, Ranger Ghost. Something about trouble in Nipton, maybe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{A little surprised by the offer} Help? Oh, well... you could speak to Ranger Jackson. He might have something for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He sort of runs things around here, mostly ends up sending reports back West that aren't filled with the best news.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Anything I can do to help around here?"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right then... just sign here, here, and... here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need repairs."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not exactly sure... radio's been on the fritz, and since I haven't heard any shooting, I don't think it's urgent. Can't hurt to go ask her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What kind of trouble?"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR border guard duty mostly. It's our job to make sure the caravans can move safely along I-15 and Highway 95.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not the best posting or assignment, but it beats being sent East, or patrolling the Colorado. Legion's pretty thick there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you tell me about the Outpost?"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprised a bit that someone would care to ask} Me, I'm Knight - Major Knight. I've been stuck here dealing with these caravans for ages now, but somebody's gotta do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It ain't so bad. If Caesar's Legion decides to push West through Nipton ol' Mojave Outpost here will be the front line.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not exciting enough for you?"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see the wisdom in that. I'll radio for a unit to head up to Primm and offer some additional support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've helped out around here, sending troops to Primm will fortify the NCR in the region."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight surprise} Primm? {Recalling to himself} Hayes' unit is stationed up there, were having problems with some of the NCRCF convicts. What can I help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to talk to you about Primm."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Frowns} I'd like to help - {beat, hates this} but we can't spare any more units. {Reciting the official line, even though he hates it} We have to maintain a minimum headcount at the Outpost, orders from the West.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hayes is undermanned and is requesting some additional support."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Disbelief} One of the Powder Gangers? {Slight anger, they're like terrorists} They've been nothing but trouble for us - why would we want one of them anywhere in an official capacity?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "One of the convicts from NCRCF is looking for a pardon so he can protect Primm."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I see the wisdom in that. I'll radio for a unit to head up to Primm and offer some additional support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Having Primm - and the trade route - under NCR control would help the West.",
+   "label": "<Barter Options>"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Player just said something stupid} NCR is not in the habit of buying and selling towns... unless that was some sort of joke on your part.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If the NCR runs Primm... I bet you could sell it to... someone... somewhere.",
+   "label": "<Barter Options>"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hmm.{Pensive pause} All right. If his sentence was closing up I can see about getting him pardoned.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Primm is important to our trade up from California, so having someone there who owes us a favor... that couldn't hurt.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "His sentence was almost up, and he isn't tied to the Powder Gangers.",
+   "label": "<Speech Options>"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't think so. I'm not going to put my word on the line for some random convict.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Come on, he's just a convict. How bad could he be?",
+   "label": "<Speech Options>"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slightly uncomfortable, voice down} Well, having a sheriff who was a convict is better than no sheriff at all... and if he has the qualifications... all right, hand it over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you {emph} had 200 caps, we could talk business - until then, we don't have anything to talk about.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you think I could \"buy\" a pardon for 200 caps?",
+   "label": "<Bribe>"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind, I'll be leaving now."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sad} It has. It was a promising trade town - before the escape at the correctional facility. {Shakes head, recalling a bad memory} Lost a good bit of money at the Vikki and Vance.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Primm has seen better days."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just need something for the log book, keeping tabs on traffic through the Outpost... {to himself} although mostly just in, not out these days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're looking for the commanding officer, he's in the back. Although... he's got a lot on his plate, so if you speak with him... keep it short.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Also, you need any gear checked, we can get you up and running again... once you fill out the work orders, and sign for the parts, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What?"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Curious} Reinforcements? {Beat, to himself} About time we got some more hands around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[NCR] NCR Soldier."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh - Knight. {Frowns, a little uncomfortable} You must not be from around here. If so... it doesn't do to get too friendly. {Knight's homosexual, but he doesn't want anyone in the Outpost to know for reasons he'll explain soon.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Confirmed Bachelor] You didn't tell me your name."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Quieter, doesn't want to be overheard} This isn't the Republic. Oddly enough, Legion's a little more forgiving about... friendships. Out here, it's not as accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slightly apologetic} Not that I mind being friends, it's just being open about it in the Outpost... well, I have to work here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you mean?"
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now wait a minute - Republic's a sight better than... other alternatives. Women are serving here, after all. The rest... well, might take some time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And they're more accepting back West, like I said. In the meantime...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Didn't realize NCR was so spineless."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wait... wait a minute. Look. Some things in the NCR are... aren't ideal. But I want to help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight conspiratorial} If you need something repaired... let me know, I can sign the work order. As long as caps change hands, I can put them back in yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Forget it, then, you're a waste of time."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I... would, perhaps some other time. When my orders take me to Vegas, perhaps. Wish things were different, but might take some time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So is that a \"no,\" you don't want to be friends, or..."
+  },
+  {
+   "id": "vMojavevMOMajorKnightTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight conspiratorial smile} Let me sign off on the work order for you, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I could use some help with my gear."
+  }
+ ]
+}

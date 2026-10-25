@@ -1,0 +1,362 @@
+{
+ "id": "vstreetmariepappas",
+ "speaker_name": "Marie Pappas",
+ "source": "VStreetMariePappas.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you're the one that saved President Kimball. Damn glad to have you on our side.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "What can I help you with?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I heard there was an attempt on President Kimball's life. I'm glad he's alright. Don't know what the NCR would do without him.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "I've had to increase security around the Strip due to the President's assassination. I can barely believe he's dead myself.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "So you're the one causing all the ruckus at The Tops. You're lucky you're not under my jurisdiction or I'd have tossed you in a cell for that.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I heard you killed Benny over at The Tops. I bet you think you're some sort of tough cookie.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "A piece of advice, if you mess with any of my men, you'll regret it.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "I wanted to thank you for stopping the Omertas. That could have gone poorly for us if it wasn't for you.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I hear you've been meeting with Mr. House in the Lucky 38. I bet you think you're pretty special, don't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Special or not, stay out of trouble and more importantly stay out of my way.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "What the hell is with those Securitrons? Looks like they got some sort of change or upgrade. I don't like the look of this.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I heard Mr. House is out of the picture now. Guess that leaves us in charge of the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Make it quick, I've got a shitstorm to deal with due to the damn monorail being blown up.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "So you're the one running errands for Ambassador Crocker. I don't want to know details, just don't cause any trouble.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Keep your nose clean on the strip, soldier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Surprised, Happy} Wow, I didn't expect to see you here. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Good to see you around here. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "{Threatening} You make one wrong move around here and I'll be all over you in a heartbeat. You hear me?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Threatening} You better watch yourself around here.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "You've got a lot of nerve showing your face around here. You're lucky I don't shoot you right now.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You better have a good reason for being here.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "So you're the new hotshot on the Strip. Just because you can walk around on the Strip with your guns doesn't make you a big shot.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "You make any trouble for me or my men and I'll make sure you regret if for a very long time. You got that?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Now are you here for something or are you just wasting my time?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Make it quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Captain Marie Pappas Top Level Topics>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "More of the usual. We're keeping an eye on the troopers to make sure they don't do anything stupid.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The only stupid one we've had lately is Private Erwin. He's starting to cause me more trouble than he's worth.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "None of your business. You better keep your nose clean because I'll be watching you.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "People drink, gamble, and fight. What do you think happens on the Strip? Any other intelligent questions?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "How the hell did a brahmin get loose on the Strip? If this is another one of Private Erwin's pranks, I'll make him regret it.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I've got to deal with drunk troopers making fools of themselves and embarassing all of the NCR with their behavior, so it's just another day here.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Some idiot decided it would be funny to put up graffiti all over the Strip. If I find out it was one of my men, they'll be locked up for a month.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Some fool troopers think they can lounge around on the rooftops instead of doing their job. If I catch them, they'll have KP duty for a year.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Some drunk girls thought it would be fun to play in the fountain in front of the Ultra-Luxe. Now I need to clean up the mess.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic000",
+   "prompt": "What is happening on the Strip?"
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much to tell. Keeping the troopers in line and monitoring the Strip keeps me busy. It's my job and I'm going to do it well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now if that's all, I've got work to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I don't know you at all and I'm not really interested in small talk. If you have something important to say, do so quickly.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic001",
+   "prompt": "I'd like to know more about you."
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Crocker isn't too bad. He mostly stays in his office now. If you have any questions about the Embassy you should ask him. He'll talk your ear off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to know more about the Ambassador, go talk to him yourself.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic002",
+   "prompt": "What can you tell me about the Ambassador?"
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Private Erwin... he's starting to get a thick file here with all his troublemaking.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "My troopers are my business. Stay out of it.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic003",
+   "prompt": "Tell me about Private Erwin."
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Murder? What kind of Murder? Do you have any proof?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic004",
+   "prompt": "I'd like to report a murder at Gomorrah."
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, this is a very serious accusation. Please be sure to bring me something concrete.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic005",
+   "prompt": "Sorry, I'll find some proof."
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that's something, but I can't go in there without proof of foul play.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic006",
+   "prompt": "I found a dead girl in Gomorrah."
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "These are terrifying. Do you have any idea who the man is speaking on this tape?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic008",
+   "prompt": "I found these tapes."
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well come back here when you can. I'd like to take care of this as soon as possible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic009",
+   "prompt": "I can't say for sure."
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come back here as soon as you do, I'd like to see this asshole behind bars.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic010",
+   "prompt": "No, but I'll find out for you."
+  },
+  {
+   "key": "vfreeformthestreet02vstreetmariepappastopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Clanden? Okay, I'll send some troops over there to bring him in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VStreetMariePappasTopic011",
+   "prompt": "It is a guy named Clanden."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "captain_marie_pappas"
+}

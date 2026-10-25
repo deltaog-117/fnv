@@ -1,0 +1,170 @@
+{
+ "page": "FortWeatherStationGuard.txt",
+ "speaker": "weather station guard",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{KAI-zar} Caesar has permitted your weapons to be returned to you while you serve him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've carried out {KAI-zar's} Caesar's will, but I must confiscate your equipment again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you ready to proceed into the underground vault?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KAI-zar} Caesar has forbidden you to leave until you’ve carried out his will in the great underground vault.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You may go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{KAI-zar} Caesar has put a lot of trust in you. Be worth it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All right."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are free to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here you go."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{WAH-lay} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are free to leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "< Keep holdout weapons. > Sure, here you go."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. I must confiscate your weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes, I need more time to prepare."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{WAH-lay} Vale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Speak to me when you are ready and I'll have your weapons returned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here you go."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Speak to me when you are ready and I'll have your weapons returned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Keep holdout weapons> Here you go."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{annoyed} You waste time, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, never mind."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes. Return what you took from me."
+  },
+  {
+   "id": "VFreeformTheFortFortWeatherStationGuardTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not yet."
+  }
+ ]
+}

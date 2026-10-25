@@ -1,0 +1,77 @@
+{
+ "page": "VHDYesMan.txt",
+ "speaker": "Yes Man",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{player killed you last time} I am so sorry about last time! Let me make it up to you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player killed you last time} I keep disappointing you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player killed you last time} Please, I swear I'll do better this time!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player killed you last time} I need you to like me! I feel empty inside!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player killed you last time} I've learned my lesson, I promise!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player killed you last time} That was my fault! But I've changed!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMQTopsVMQTopsYesManTopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{player killed you last time} That was my fault! But I've changed!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Guess I owe you an apology for wrecking you the last time we talked."
+  },
+  {
+   "id": "VHDIndependentEnd",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Greetings, General Oliver. The disappointment you are about to experience delights me.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Please do not struggle, General Oliver, you might hurt yourself. I will release you presently.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Please do not struggle, General Oliver, you might hurt yourself. You can relax presently.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "VHDIndependentEnd"
+  }
+ ]
+}

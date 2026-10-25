@@ -1,0 +1,543 @@
+{
+ "page": "JeannieMayCrawford.txt",
+ "speaker": "Jeannie May Crawford",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't think we got any more to discuss here.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "Is everything all right? Awful late to be dropping in unexpected.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well. Welcome to you. You look tired from the road. Why don't you relax a spell, let this fine town take care of you?",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "I hope you're finding everything to your liking.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "JeannieCrawfordGoingOn",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, let's see. Dusty McBride's been losing some Brahmin, but that's probably the heat more than anything. Honestly, it's been real quiet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ranger Andy's still hurt, but we got these two gentlemen snipers watching the road day and night, keeping the trash out of Novac.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They've been a blessing.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's been going on in town lately?"
+  },
+  {
+   "id": "JeannieCrawfordMetYet",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, what am I doing? I got to thinking about making a good impression and plain forgot to tell you my name.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "I'm Jeannie May. I take care of folks here at the motel. Long as they aren't trouble makers.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "We haven't met yet."
+  },
+  {
+   "id": "JeannieCrawfordQuestTurnIn",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, saints alive. That is a load off. Nothing to be done, though. Those ghouls just didn't know when they weren't wanted. Couldn't take a hint.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And aren't you just the most unexpected gift our little town ever had? Here, take this. And go buy yourself something nice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I killed the ghouls at REPCONN."
+  },
+  {
+   "id": "JeannieCrawfordQuestTurnIn",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Leave? I don't believe that was what was discussed. They could be back tomorrow knocking on my door wanting hand-outs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, I know what I promised, but my mind is just not at ease about this. I'm afraid I can't pay you for what you done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I got the ghouls to leave the area. They won't be bothering you anymore."
+  },
+  {
+   "id": "JeannieCrawfordRepcon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I just know what I've heard. There's supposed to be some ghouls that went in a while back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Every so often there'll be a commotion from that direction - explosions and such.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me more about REPCONN."
+  },
+  {
+   "id": "JeannieCrawfordSorry",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well it is. Not everybody appreciates it like they oughtta.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Sorry, I didn't mean what I said. This seems like a nice town."
+  },
+  {
+   "id": "JeannieCrawfordSupplies",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go see Cliff Briscoe at the Dino Bite Gift Shop, and tell him I sent you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think he gets lonely standing around in that dino belly all day. He'll be glad for the company.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Where can I get some supplies?"
+  },
+  {
+   "id": "JeannieCrawfordWayOut",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can jump out the window, for all I care, mister.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You got no right to come in here and start criticizing our town. Folks work hard to keep it clean and safe.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "We do the best we can. But still there's always some of you finicky types that there's just no pleasing.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You can jump out the window, for all I care, lady.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You got no right to come in here and start criticizing our town. Folks work hard to keep it clean and safe.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "We do the best we can. But still there's always some of you finicky types that there's just no pleasing.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the quickest way out of this dump?"
+  },
+  {
+   "id": "JeannieCrawfordWhatToDo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, there's Dinky, the town mascot. He's a sight. You probably already saw him when you came in, but you can go up inside, too.",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "Up the road a ways to the west, there's REPCONN. That's the old rocket factory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's been some sinister characters out there lately, so you may want to stay clear.",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "Other than that, nothing to do but take it easy and enjoy good company.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "What is there of interest around here?"
+  },
+  {
+   "id": "JeannieCrawfordWhereAmI",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're in a little desert oasis, name of Novac. This is the Dino Dee-lite Motel, and it's mine.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "What is this place?"
+  },
+  {
+   "id": "SnipersRevengeBooneWife",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How should I put it? I guess you could say she was kinda like a cactus flower. Real pretty to look at, but there was just no getting close to her.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "She never did take to living here. She liked the big lights and fast living of New Vegas.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "I got the feeling she was trying to get Boone to leave with her, but I guess she got tired of waiting.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about Boone's wife?"
+  },
+  {
+   "id": "SnipersRevengeComeOutside",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, if that's what you think.",
+     "emotion": "surprise",
+     "intensity": 30
+    },
+    {
+     "text": "Again? All right.",
+     "emotion": "surprise",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Come with me. There's something you should see, in front of the dinosaur."
+  },
+  {
+   "id": "SnipersRevengeTooFar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If it's just the same to you, I think I'll stay in town. I feel safer that way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "SnipersRevengeTooFar"
+  },
+  {
+   "id": "SnipersRevengeWrongWithBoone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nothing that wouldn't be wrong with any man who loses a wife, I suppose. Poor dear.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "I know he thinks she was kidnapped, but I'm not so sure she didn't just run off on her own.",
+     "emotion": "sad",
+     "intensity": 35
+    },
+    {
+     "text": "You could tell she was thinking about it ever since they arrived.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "prompt": "What's wrong with Boone?"
+  },
+  {
+   "id": "VDialogueNovacJeannieMayCrawfordTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, up north a ways you'll see a big tower. That's HELIOS One. Used to be a power plant in its day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And there's a town just east of here called Nelson. Used to be such a quaint little place until those slavers took it over.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But we got our wonderful snipers keeping an eye in that direction, and so far the slavers have left us alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Anything else?"
+  },
+  {
+   "id": "VDialogueNovacJeannieMayCrawfordTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't see as how I'd charge you after the generous things you've done for the town. The room's on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, I think that's a fine idea. I'll give you a good flat rate, and you can stay as long as you like. Least till the busy season comes. Sound good?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to rent a room."
+  },
+  {
+   "id": "VDialogueNovacJeannieMayCrawfordTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm glad you can stay with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's 100 caps."
+  },
+  {
+   "id": "VDialogueNovacJeannieMayCrawfordTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that's nothing to be ashamed of. We all have money troubles from time to time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You just come on back when you can afford it, and that room's all yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can't afford 100 caps right now."
+  },
+  {
+   "id": "VDialogueNovacJeannieMayCrawfordTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Well, all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your room will be the one upstairs, closest to the lobby side.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here's your key. Let me know if there's anything I can do to make your stay better for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VDialogueNovacJeannieMayCrawfordTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know what they're up to and I don't want to know. I just hope no harm comes to Novac.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not much to live off of around here, except salvage from that factory. If they made off with anything expensive, we'd be hurting something fierce.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I will say this. If all of 'em turned up dead tomorrow, I couldn't see as to how they'd be missed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That might even be a desirable thing, knowing the town was safe from the likes of them. There'd be a reward in it if some brave soul made it happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are they doing?"
+  },
+  {
+   "id": "VDialogueNovacJeannieMayCrawfordTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{neutral} Whatever suits you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VEndingNovac",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{narrating} Despite their vigilance against potential attacks by the Legion, the citizens of Novac were no match for the Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} The motel and Dinky the Dinosaur were left vacant, a rare stop at best for travelers along Highway 95.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Though Novac was a low-priority target for the Legion, many of Novac's citizens died in its defense.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} In the weeks that followed, feral ghouls, overflowing from the REPCONN Test Site, ravaged the weakened town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Though Novac was a low-priority target for the Legion, many of Novac's citizens died in its defense.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} With no other communities coming to its defense, Novac would eventually fall to the Legion's persistent attacks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Though Novac was a low-priority target for the Legion, many of Novac's citizens died in its defense.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} In the weeks that followed, several Bright Followers returned to Novac to help restore its defenses, allowing it to remain independent of NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} During the Legion's attack on Novac, Bright Followers, returning from their long pilgrimage, assisted in its evacuation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Though Novac eventually fell to the Legion, many citizens of Novac were able to escape, alive and intact.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} While the destruction of the REPCONN rockets appeared to be a boon to the salvagers of Novac, the benefit would never be realized.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{narrating} Radioactive fuel from the wrecked ships seeped out and contaminated the area. Salvagers were forced to move on, and the town was abandoned.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingNovac"
+  },
+  {
+   "id": "VMQ01LookingForManny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well he might've been wearing a fancy outfit, but he wasn't any kind of a gentleman to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had his nose stuck so high in the air, you couldn't see it above the clouds. City folk, they always think they deserve better than what they got.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those hoodlums he was with seemed to know Manny for some reason. He's our daytime sniper, up in the dinosaur's mouth.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm looking for a man in a checkered coat. Have you seen anyone like that?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Watch out for strangers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

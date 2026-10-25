@@ -1,0 +1,762 @@
+{
+ "id": "vdialoguesupermutant",
+ "speaker_name": "Super mutant (Fallout: New Vegas)",
+ "source": "VDialogueSuperMutant.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope it will snow later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stupid Big Horners were making noise all night again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Spotted some humans down the road. Could be Great Khans again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some days I miss being in the Master's army.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You think Marcus could get us some miniguns? Or missile launchers?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Better watch out. Lily's been babbling about her grandkids again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Doctor Henry's pretty smart - for a human.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ugh. Need to tighten up my vises again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Marcus dead}No more reason to stick around since Marcus is dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Imminent Cure}A cure for the Nightkin is supposed to be on the way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Eventual Cure}I heard it'll still be some time before the Nightkin are cured. Hope they stick around that long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Keene dead}The Nightkin aren't going to stick around long with Keene dead. Not without a good reason, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Keene left}The Nightkin aren't going to stick around long now that Keene's left. Not without a good reason, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Marcus dead}Without Marcus, Jacobstown won't last long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I like it up here. Nice and cool.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Die!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Grah!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah ha ha ha!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Want more?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kill!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Destroy!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Battle yell 1}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Battle yell 2}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Battle yell 3}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get away!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go! Run!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Death sound 1}",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Death sound 2}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Death sound 3}",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Stupid...",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Gah...",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Not... done...",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Not... unh...",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Aaaaaaaaaaaaahh!",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "Aaarrrggggghh!",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Made me mad now!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try killing {stressed}me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You die next!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Have one on me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, catch!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Boom! Ha ha ha ha!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Battle cattle! Run for your lives!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Run away!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Run!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Too strong!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "This is our place. Go or be smashed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Last two words are staggered, increasingly loud}Get out of here before I get mad!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Argh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oof!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm hit!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My arm!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My leg!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, my head!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It hurts!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wounded grunt 1}",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Wounded grunt 2}",
+     "emotion": "pained",
+     "intensity": 50
+    },
+    {
+     "text": "{Wounded grunt 3}",
+     "emotion": "pained",
+     "intensity": 50
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You'll die for that!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ah ha ha ha ha!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Weakling!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "pickpocket",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What are you doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Gonna smash stupid thief!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You want something? I'll give you something!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Pickpocket",
+   "prompt": "Pickpocket"
+  },
+  {
+   "key": "powerattack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Take this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Grrrraaahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yaaaaahhhhhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Diiiiiiieeeee!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Uwwwaaaahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PowerAttack",
+   "prompt": "PowerAttack"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Not yours!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Put that back!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thief!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I know you're here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why don't you come out?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Show yourself!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Found you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There you are!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now you die!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Aha!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Just a noise. Gone now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was I doing again? Oh well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing there. Stupid noise fooled me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stupid ears. There's no noise out here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bah, searching is boring.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Genuinely puzzled}Huh? Where'd you go?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Not fair! Haven't killed you yet!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Get out here! Not done with you!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Ha ha. Too weak.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Done with you now.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Slightly melancholy}Fight's over. Back to boring walking around.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Grumbles}Stupid weak things never last long.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{Said in a sing-song manner, \"you\" is extended}Where are you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come out and fight!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hiding boring! Fighting much more fun!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Increasingly angry}Before, just going to kill you. But now, going to kill you real bad!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hide from this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Made me look! Made me {stressed}mad!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Each word said slightly louder, yelling by end}No - more - hiding!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Stupid hider.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmph. Tired of looking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fine! Hide for all I care!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You guys hear something?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Grunts}Heard a noise.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something's here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltoalertresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "No, you just hearing things again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, I hear it too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlertResponse",
+   "prompt": "NormalToAlertResponse"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Gonna kill you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Intruder!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  }
+ ]
+}

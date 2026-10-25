@@ -1,0 +1,912 @@
+{
+ "id": "doctorusanagi",
+ "speaker_name": "Doctor Usanagi",
+ "source": "DoctorUsanagi.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to the New Vegas Medical Clinic. I'm a fully qualified physician and can fix whatever is wrong with you for a reasonable fee.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you've got the caps, I've also got several implants available to enhance your physical attributes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're back. Do you need medical attention?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take care.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Non-Dummy} I have several basic implants available that can enhance your physical abilities - make you faster, smarter, stronger, that sort of thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've also got two much more expensive implants. One's a sub-dermal implant that will make you more resistant to damage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other implant induces a mild regenerative effect. Your wounds will practically heal before your eyes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic001",
+   "prompt": "What kind of implants do you have available?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Dummy} Uh, no. Implants, not plants. They're little machines I can put inside you to make you faster, quicker, or smarter. I recommend the smarter implant.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've also got two much more expensive implants. One's a sub-dermal implant that will make you more resistant to damage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The other implant induces a mild regenerative effect. Your wounds will practically heal before your eyes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic001",
+   "prompt": "You sell plants, too?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Strength 10} You're already the strongest person I've ever met. The implant won't do anything more for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can implant the Hypertrophy Accelerator for 4,000 caps. It will boost your adrenal glands and quickly increase your muscle mass.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic002",
+   "prompt": "I'd like to have greater strength."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Perception 10} Your eyesight would make a hawk jealous. The Optic Enhancer implant won't do anything more for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Optics Enhancer, as the name suggests, gets attached directly to your optic nerve. The price is 4,000 caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic003",
+   "prompt": "Make me more perceptive."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Endurance 10} Your cardiovascular system is practically super-human. The Nociception Regulator won't boost it any further.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Nociception Regulator modifies your cardiovascular system, and you won't tire as quickly. The price is 4,000 caps, same as most other implants.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic004",
+   "prompt": "Increase my endurance."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Intelligence 10} {astonished} Your higher brain functions are off the charts. {regret} The implant won't help at all - sorry.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Non-Dummy} For 4,000 caps, I can install a Logic Co-Processor.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic005",
+   "prompt": "I want to be more intelligent."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic005_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Dummy} I think you would really benefit from the Logic Co-Processor implant, so I'm going to cut the price to 3,000.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic005",
+   "prompt": "I want to be smarter."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Agility 10} Your reaction times are already so fast it's a wonder you can't catch bullets. The Reflex Booster can't make you any faster.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Reflex Booster does exactly what it says - speeds up your reaction times. For 4,000 caps, I can attach the implant to your central nervous node.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic006",
+   "prompt": "Enhance my agility."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Was there something else you were interested in?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic007",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Health <100, >= 66} Your injuries aren't too severe. I can patch the scrapes and lacerations pretty easily.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Health < 66, >= 33} Some of these lacerations are pretty severe and could get infected.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Health < 33} I'm surprised you're still standing. You've lost a lot of blood and should be stabilized immediately.",
+     "emotion": "surprise",
+     "intensity": 5
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic008",
+   "prompt": "I'm wounded."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Rads > 0} It'll be easy enough to purge all rads from your system.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic009",
+   "prompt": "I'm suffering from radiation poisoning."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One other thing I forgot to mention - your body may be able to handle only a limited number of implants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The healthier you are, the more implants I'll be able give you. Now, what surgery are you considering?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{no implants} Which surgery option are you considering?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{max implants} There aren't any more implants I can give you - you've already bought everything I had available.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{at least one implant, not at limit} All right, let me do a quick test to make sure your body can handle another implant...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, you're healthy enough to handle another one. Which surgery are you considering?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{at least one implant, at limit} All right, let me do a quick test to make sure your body can handle another implant...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid you can't handle any more implants right now. Your body isn't durable enough to take it. Sorry.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic011",
+   "prompt": "I want to buy an implant."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Charisma 10} You're already quite charming. The Empathy Synthesizer would just be a waste of caps, I'm afraid.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Empathy Synthesizer will allow you to more easily pick up on subtle emotions and body language. The price is 4,000 caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic012",
+   "prompt": "Boost my charisma."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That would be the NEMEAN Sub-Dermal Armor. It's a bit pricey - 8,000 caps - but the implant causes your skin cells to be bolstered with iron.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It won't make you bulletproof, but it will make you a little harder to injure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic013",
+   "prompt": "I'm interested in the sub-dermal implant."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's the PHOENIX Monocyte Breeder. The implant speeds up cell regeneration, an effect similar to that of some lizards and sea creatures.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The implant is very expensive, however - 12,000 caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic014",
+   "prompt": "I'd like the regenerating ability."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic015",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic016",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic017",
+   "prompt": "I don't have the caps right now."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic018",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic019",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic020",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Luck 10} Huh. I've never seen a coin toss go someone's way that many times. You certainly don't need the help of a Probability Calculator implant.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If fact, you ought to be on the Strip cleaning out the casinos.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I implant the Probability Calculator in your frontal lobe, you'll be able to calculate odds a little better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's not quite the same as making you luckier, but you'll be able to nudge things your way more often. I can do the implant for 4000 caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic021",
+   "prompt": "Can you make me luckier?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic022",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic023",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic024",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic025",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{99YES} All right. Sit still and let me work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic026",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid I can't do this for free. My supplies are stretched thin enough as it is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic027",
+   "prompt": "I don't have the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You really ought to avoid using those kinds of chems, but I'll see what I can do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic028",
+   "prompt": "Can you cure my addiction?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{66YES} All right. Sit still and let me work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic029",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{33YES} All right. Sit still and let me work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic030",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid I can't do this for free. My supplies are stretched thin enough as it is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic031",
+   "prompt": "I don't have the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid I can't do this for free. My supplies are stretched thin enough as it is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic032",
+   "prompt": "I don't have the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, this will only take a few minutes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic033",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Sit still and let me work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic034",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid I can't do this for free. My supplies are stretched thin enough as it is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic035",
+   "prompt": "I don't have the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have reserved a small part of my supplies for sale. The profits go directly to the purchase of additional supplies to help the less fortunate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic036",
+   "prompt": "Do you sell anything here?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{FoA: Rascal} Because you're a friend of the Followers, I can give you a bit of a discount.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Neutral Followers rep} Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic037",
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Everything you see is funded by the Followers of the Apocalypse. We rely a lot on charity to provide low-cost medical services to the less fortunate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic038",
+   "prompt": "Tell me about the clinic."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic039",
+   "prompt": "That's all I wanted to know. Let's talk about something else."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I am. I received my medical training at the Angel's Boneyard Medical University back in the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's not a requirement to be a Follower to enter the university, but I believe in what they do, so I joined them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic040",
+   "prompt": "Are you one of the Followers of the Apocalypse?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course! We prefer bulk donations of 500 caps - it's apparently a lot easier on the accountants, for some reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic041",
+   "prompt": "Can I make a donation to the Followers?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We believe that technology for basic necessities, like food, water, and medicine, should be shared, not hoarded.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're also strongly in favor of proper education. {contempt} I've come across more than a few \"doctors\" whose techniques came out of the back of a magazine.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic042",
+   "prompt": "What do the Followers believe in?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've worked with them in the past. The NCR became too focused on things like patents and profitability, so the Followers go their own way now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR and the Followers have a cool relationship at the moment. We see them as oppressive, and they view us as anarchists.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic043",
+   "prompt": "Are the Followers part of the NCR?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, the Mormon Fort in Freeside. It's hard to miss.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic044",
+   "prompt": "Do the Followers have a headquarters around here?"
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very much appreciated. These caps will go towards funding schools and other services to the poorer part of the community.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic045",
+   "prompt": "Here's 500 caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No need to apologize.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic046",
+   "prompt": "I don't have the caps right now."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic047",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic048",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic049",
+   "prompt": "I don't have the caps right now."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have a seat in the Auto-Doc. This will take a few hours.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic050",
+   "prompt": "Here's the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic051",
+   "prompt": "I don't have the caps right now."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid I can't do this for free. My supplies are stretched thin enough as it is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic052",
+   "prompt": "I don't have the caps."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mental trauma can be just as debilitating as physical injuries. Fortunately, I'm well-qualified in such treatment. I'll make time in my schedule.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic053",
+   "prompt": "Corporal Betsy from First Recon will be coming to you for mental treatment."
+  },
+  {
+   "key": "vdialoguemedicalclinicdoctorusanagitopic053_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm assuming you're referring to mental trauma. I'll make time in my schedule.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueMedicalClinicDoctorUsanagiTopic053",
+   "prompt": "Corporal Betsy's coming to you to fix her brain. It's not working right."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Take care.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "doctor_usanagi"
+}

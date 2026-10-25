@@ -1,0 +1,291 @@
+{
+ "constants": {
+  "level_cap_base": 30,
+  "level_cap_with_all_dlc": 50,
+  "ap_base_cap": 95,
+  "dr_cap": 85,
+  "min_damage_fraction": 0.2,
+  "perk_rate": 2,
+  "xp_base": 200,
+  "xp_step": 150
+ },
+ "formulas": [
+  {
+   "id": "skill_initial_barter",
+   "name": "Initial barter skill",
+   "expression": "2 + 2*charisma + ceil(luck/2)",
+   "vars": [
+    "charisma",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_energy_weapons",
+   "name": "Initial energy weapons skill",
+   "expression": "2 + 2*perception + ceil(luck/2)",
+   "vars": [
+    "perception",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_explosives",
+   "name": "Initial explosives skill",
+   "expression": "2 + 2*perception + ceil(luck/2)",
+   "vars": [
+    "perception",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_guns",
+   "name": "Initial guns skill",
+   "expression": "2 + 2*agility + ceil(luck/2)",
+   "vars": [
+    "agility",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_lockpick",
+   "name": "Initial lockpick skill",
+   "expression": "2 + 2*perception + ceil(luck/2)",
+   "vars": [
+    "perception",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_medicine",
+   "name": "Initial medicine skill",
+   "expression": "2 + 2*intelligence + ceil(luck/2)",
+   "vars": [
+    "intelligence",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_melee_weapons",
+   "name": "Initial melee weapons skill",
+   "expression": "2 + 2*strength + ceil(luck/2)",
+   "vars": [
+    "strength",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_repair",
+   "name": "Initial repair skill",
+   "expression": "2 + 2*intelligence + ceil(luck/2)",
+   "vars": [
+    "intelligence",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_science",
+   "name": "Initial science skill",
+   "expression": "2 + 2*intelligence + ceil(luck/2)",
+   "vars": [
+    "intelligence",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_sneak",
+   "name": "Initial sneak skill",
+   "expression": "2 + 2*agility + ceil(luck/2)",
+   "vars": [
+    "agility",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_speech",
+   "name": "Initial speech skill",
+   "expression": "2 + 2*charisma + ceil(luck/2)",
+   "vars": [
+    "charisma",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_survival",
+   "name": "Initial survival skill",
+   "expression": "2 + 2*endurance + ceil(luck/2)",
+   "vars": [
+    "endurance",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "skill_initial_unarmed",
+   "name": "Initial unarmed skill",
+   "expression": "2 + 2*endurance + ceil(luck/2)",
+   "vars": [
+    "endurance",
+    "luck"
+   ],
+   "source": "Speech (Fallout: New Vegas) and the other skill pages",
+   "note": "Wiki shows Luck/2 without ceil for Unarmed; treated as ceil like the other skills."
+  },
+  {
+   "id": "max_hp",
+   "name": "Maximum hit points",
+   "expression": "100 + 20*endurance + 5*(level - 1)",
+   "vars": [
+    "endurance",
+    "level"
+   ],
+   "source": "Hit Points",
+   "note": "Before perks, chems and DLC bonuses. Equivalent to the infobox form 95 + 20*END + 5*level."
+  },
+  {
+   "id": "action_points",
+   "name": "Action points",
+   "expression": "min(65 + 3*agility, ap_base_cap)",
+   "vars": [
+    "agility"
+   ],
+   "source": "Action Points",
+   "note": "Perks and gear can raise AP above the base cap."
+  },
+  {
+   "id": "carry_weight",
+   "name": "Carry weight (lbs)",
+   "expression": "150 + 10*strength",
+   "vars": [
+    "strength"
+   ],
+   "source": "Carry Weight"
+  },
+  {
+   "id": "critical_chance_percent",
+   "name": "Critical chance bonus (%)",
+   "expression": "min(luck, 10)",
+   "vars": [
+    "luck"
+   ],
+   "source": "Critical Chance",
+   "note": "Built to Destroy adds 3 more."
+  },
+  {
+   "id": "melee_damage_bonus",
+   "name": "Melee damage bonus",
+   "expression": "0.5*strength",
+   "vars": [
+    "strength"
+   ],
+   "source": "Melee Damage"
+  },
+  {
+   "id": "unarmed_damage_bonus",
+   "name": "Unarmed damage bonus",
+   "expression": "ceil(unarmed/20 + 0.5)",
+   "vars": [
+    "unarmed"
+   ],
+   "source": "Unarmed Damage",
+   "note": "The Prima guide's quarter-of-skill figure is wrong according to the wiki."
+  },
+  {
+   "id": "poison_resistance_percent",
+   "name": "Poison resistance (%)",
+   "expression": "5*(endurance - 1)",
+   "vars": [
+    "endurance"
+   ],
+   "source": "Poison Resistance"
+  },
+  {
+   "id": "radiation_resistance_percent",
+   "name": "Radiation resistance (%)",
+   "expression": "2*(endurance - 1)",
+   "vars": [
+    "endurance"
+   ],
+   "source": "Radiation Resistance"
+  },
+  {
+   "id": "skill_points_per_level",
+   "name": "Skill points per level",
+   "expression": "10 + 0.5*intelligence",
+   "vars": [
+    "intelligence"
+   ],
+   "source": "Skill Rate",
+   "note": "Half points are carried to the next level."
+  },
+  {
+   "id": "xp_to_next_level",
+   "name": "XP needed for the next level",
+   "expression": "xp_base + xp_step*(level - 1)",
+   "vars": [
+    "level"
+   ],
+   "source": "Level",
+   "note": "Matches levels.json (200 at level 1 to 4,550 at level 30)."
+  },
+  {
+   "id": "weapon_damage",
+   "name": "Damage before armor",
+   "expression": "base_damage*skill_mult*cond_mult*power + bonus",
+   "vars": [
+    "base_damage",
+    "skill_mult",
+    "cond_mult",
+    "power",
+    "bonus"
+   ],
+   "source": "Fallout: New Vegas combat",
+   "note": "skill_mult and cond_mult range 0.5 to 1; power is 2 for melee/unarmed power attacks and non-sneak VATS attacks, else 1; bonus is the Strength or Unarmed bonus. The wiki calls this a general guide, not exact."
+  },
+  {
+   "id": "damage_after_dr",
+   "name": "Damage after resistance",
+   "expression": "damage*(100 - min(dr, dr_cap))/100",
+   "vars": [
+    "damage",
+    "dr"
+   ],
+   "source": "Damage Threshold",
+   "note": "DR is applied before DT."
+  },
+  {
+   "id": "damage_after_dt",
+   "name": "Damage after threshold",
+   "expression": "max(damage_after_dr - dt, damage*min_damage_fraction)",
+   "vars": [
+    "damage",
+    "damage_after_dr",
+    "dt"
+   ],
+   "source": "Damage Threshold",
+   "note": "`damage` is the incoming (basic) damage; at least 20% always gets through."
+  }
+ ]
+}

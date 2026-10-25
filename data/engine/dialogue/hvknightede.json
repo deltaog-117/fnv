@@ -1,0 +1,396 @@
+{
+ "id": "hvknightede",
+ "speaker_name": "Lorenzo (Fallout: New Vegas)",
+ "source": "HVKnightEDE.txt",
+ "topics": [
+  {
+   "key": "ederadioconversation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh... Hello? Hi. Are you there? Oh, right. You can't respond.{Pause} Listen, I'm using your robot as a relay to get this message to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've picked up some unusual chatter regarding your robot. It seems that it has some information that we could use. Oh wait, where are my manners?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is Lorenzo, a Knight with the Brotherhood of Steel. We'd be very interested in examining your tech.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whenever you get a chance, can you bring your robot back to Hidden Valley so I can take a look at it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "EDERadioConversation",
+   "prompt": "EDERadioConversation"
+  },
+  {
+   "key": "ederadioconversation2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh... Hello? Hi. Are you there? Oh, right. You can't respond.{Pause} Listen, I'm using your robot as a relay to get this message to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've picked up some unusual chatter regarding your robot. It seems that it has some information that we could use. Oh wait, where are my manners?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is Lorenzo, a Knight with the Brotherhood of Steel. We'd be very interested in examining your tech.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Could you bring your robot to one of our patrols so they can examine it? I'll have the robot mark the location on your map.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "EDERadioConversation2",
+   "prompt": "EDERadioConversation"
+  },
+  {
+   "key": "edetopictest",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, well if you change your mind let me know. I have some parts here I can use to upgrade his armor if you leave it with me for a bit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "EDETopicTest",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're the one with that robot, I was hoping you'd bring him my way. Pretty impressive piece of hardware.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't say that I've seen anything quite like him before.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmmm? Oh, you must be the outsider everyone's buzzing about. Pleased to meet you. I'm Lorenzo, Senior Knight and general handyman around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, good to see you again. Have you thought any more about letting me take a look at the logs on your robot?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good to see you! Alive, that is. Have you found all of the components yet?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Good to see you again. What can I help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? What kind of logs? What kind of data does he have on it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic000",
+   "prompt": "I've heard some information from its logs, sounds like it is carrying some Enclave data.",
+   "label": "I've heard some information from its logs, sounds like it is carrying some Enclave data."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great, I'd love to take a look at that log data.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic000",
+   "prompt": "I'd like to talk to you about ED-E again.",
+   "label": "I've heard some information from its logs, sounds like it is carrying some Enclave data."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Surprise} Did... did you say Poseidon Energy? I've been researching some Poseidon projects here.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Do you think you could leave your robot with me for a few days? I have some materials that I can use to upgrade his armor while he's here.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic001",
+   "prompt": "The logs spoke about Enclave Duraframe research and Poseidon Energy research."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Beat} ...So now I'm going to have your death on my conscience, too. Great.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic002",
+   "prompt": "The Elder wants me to retrieve components to help fix the air filtration system."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Initially outraged} What were you doing looking at my terminal? {Distracted, calmer} No, never mind that. You can't tell anyone about what you found!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There'd be widespread panic. The Elder has the situation under control.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic005",
+   "prompt": "Your terminal had some very interesting things to say about the state of the air filtration system."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Resigned} ...Yes. When I first discovered how much the systems had deteriorated, I reported it to the Elder right away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He told me he'd take action right away, and sent out several patrols to search for parts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic006",
+   "prompt": "So you and the McNamara both know about this?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Panicked} No! Please don't! Everyone would blame me! Look, I'll do whatever you want, just name it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic007",
+   "prompt": "The rest of the chapter should be told!"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Relieved} Thank you. There's no telling what would happen if everyone were to suddenly find out, but I trust it wouldn't be good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic008",
+   "prompt": "Don't worry, I'll keep your little secret."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine, but you're making a big mistake. Hardin isn't half the leader that McNamara is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic009",
+   "prompt": "Vote for Hardin when he calls a tribunal."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sad} Okay, but I'd really like to take a look at him. Remember, I'll be able to give his armor some extra plating while I've got him here.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic011",
+   "prompt": "I'll have to think on this more."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{scornful, with a little hysteria} You think you're the first person the Elder's trusted with this? He sent three of our patrols out looking for those components, and they're all dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was the one who supplied the Elder with the location of possible sites where we could find the components, so their deaths are my fault.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{speaking somewhat quickly, nervous} And now it's your turn. Well, don't say you weren't warned. I won't take the blame when you die horribly. But I can tell you're getting impatient.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic012",
+   "prompt": "Er, what?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I heard you quite clearly. You're being sent off to be killed like the others.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic013",
+   "prompt": "Maybe you misheard me."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The items I'll need to keep the system running are a differential pressure controller, a reverse pulse cleaner, and several {HEP-uh} HEPA cartridge filters.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At present, my best guess for finding the items would be to search any of the old vaults in the area.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those vaults were usually built much like these military bunkers, even using the same contractors in their constructions at times.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll mark the vaults' locations on your map. Best of luck to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic015",
+   "prompt": "Just give the details."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Had serious doubts the player could do it} Really? I mean, that's great! I knew you could do it all along. I'll get right to work installing these.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why don't you go tell the Elder the good news. I'm sure it'll be a huge load off of his shoulders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic016",
+   "prompt": "They're all right here."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's amazing that you've found any of them and not gotten gruesomely mangled. Keep up the good work!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic017",
+   "prompt": "Not all of them."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't want to rush you or anything, but time is of the essence. Please try to find those components as soon as you can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic018",
+   "prompt": "No, I haven't found any of them yet."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvknightedetopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, what about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVKnightEDETopic019",
+   "prompt": "I wanted to ask you some questions."
+  },
+  {
+   "key": "vquestedegone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is excellent news. I'll send him back to you soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vQuestEdeGone",
+   "prompt": "Ok, you can have ED-E for a little bit."
+  }
+ ],
+ "speaker": "senior_knight_lorenzo"
+}

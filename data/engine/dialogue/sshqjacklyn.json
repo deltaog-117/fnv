@@ -1,0 +1,341 @@
+{
+ "id": "sshqjacklyn",
+ "speaker_name": "Jacklyn",
+ "source": "SSHQJacklyn.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank god you came around. That guy was going to kill me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you see that? That guy was going to kill me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, it's you ag- what's wrong? Why are you looking at me like that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry about me. I'm a little shaken up, but I'll be okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Could you, maybe, stay away from me? You're creeping me out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformsshqjacklyntopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some what? Never mind, I'm going to take a few moments to compose myself, then head out. Thank you again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQJacklynTopic001",
+   "prompt": "Yes, he was probably trying to steal some Sunset Sarsaparilla Stars from you."
+  },
+  {
+   "key": "vfreeformsshqjacklyntopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No reason it should, I suppose. I need to be going. Thank you again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQJacklynTopic002",
+   "prompt": "No idea."
+  },
+  {
+   "key": "vfreeformsshqjacklyntopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Er, no, I don't think so. Caps are caps, right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I think I need a few moments to compose myself, then head out. Once again, thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQJacklynTopic003",
+   "prompt": "Do you have any bottlecaps with stars on them?"
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stay safe. The road's dangerous in these parts. Or so I hear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic000",
+   "prompt": "Don't mention it. I'll be on my way."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? This? He stole this from me at gunpoint. Lucky for me, he got distracted and I got a chance to draw on him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a, uh, necklace that I made out of these special caps. You ever see any caps with a blue star on them like these?",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic001",
+   "prompt": "What was that you took from his corpse?"
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, then you know how rare they are. I'm just glad they're back where they belong. You can never be too careful these days.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, it was nice to meet you. I'm going to take a few moments to get myself together, then head out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic002",
+   "prompt": "Yes, I've got a few myself."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's too bad. They're very rare. Well, I should be going. Nice talking to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic003",
+   "prompt": "No, can't say that I have."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know, I was just thinking the same thing about you.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic004",
+   "prompt": "Sure have. And I'm thinking of adding yours to my collection."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They are nice, aren't they? I'm very proud of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic005",
+   "prompt": "Nothing like those six you've got there.",
+   "label": "{ Intelligence >= 7 }"
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic005_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pretty sure, yeah. it's really nice, isn't it? Have you ever seen caps with pretty blue stars on them like these?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic005",
+   "prompt": "Are you sure that necklace is yours?",
+   "label": "{ Intelligence >= 7 }"
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I guess you're just too smart for me. Unfortunately, I can't leave any witnesses behind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic006",
+   "prompt": "Actually, the necklace is made of seven caps. It's not really yours, is it?"
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So what if I did? What are you going to do about it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic007",
+   "prompt": "You stole that cap necklace from that poor man."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "H-here. You can have the damn necklace. Just leave me alone!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic009",
+   "prompt": "Let's just say I'll leave just enough of you left for the dogs to fight over."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are such a wimp! Die!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic010",
+   "prompt": "Nothing, I guess."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not if I kill you first!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic011",
+   "prompt": "I'm going to see that justice is done."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fat chance of that. What are you going to do if don't?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic013",
+   "prompt": "Hand over the necklace, thief."
+  },
+  {
+   "key": "vfreeformsshqsshqjacklyntopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh, sure. I'll just be going then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQSSHQJacklynTopic014",
+   "prompt": "No reason. Sorry to bother you."
+  },
+  {
+   "key": "vfreeformsshqtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am now. I was just minding my own business heading west when that psycho came out of nowhere and started shooting!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He kept shouting about stars or something. Does that make any sense to you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformSSHQTopic000",
+   "prompt": "Are you all right?"
+  },
+  {
+   "key": "sshqjacklynhelp",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Help! You there, please help me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's crazy! Please help me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SSHQJacklynHelp",
+   "prompt": "SSHQJacklynHelp"
+  },
+  {
+   "key": "sshqjacklynsucker",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Sucker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SSHQJacklynSucker",
+   "prompt": "SSHQJacklynSucker"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Sucker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  }
+ ],
+ "speaker": "jacklyn"
+}

@@ -1,0 +1,392 @@
+{
+ "page": "GunRunnerIsaac.txt",
+ "speaker": "Isaac (Gun Runners)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't handle buying and selling for the Gun Runners. Talk to the robot in the kiosk near our factory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VDialogueVegasEastNVIsaacTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For around five years now. I handle the supply ends of things - raw materials and stuff.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So you work for the Gun Runners?"
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Makers of the finest high-grade weapons and ammunition in the wasteland.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "If you ever get your hands on a piece of sweet, deadly hardware, there's a good chance that it came from one of our factories.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Who are the Gun Runners?"
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shit. Is he serious? The 25% increase in weapons is doable, but a 50% increase in ammunition is nuts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We just don't have the supplies on hand to meet that kind of demand for new weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Contreras sent me. McCarran needs a lot more guns and ammo."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I guess we'll have to. If Caesar's Legion drives the NCR from the area, there goes ninety percent of our business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't like the idea of buying supplies from our competition, but it's only temporary. We'll call in extra supplies from our distributors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let Contreras know we'll have the extra guns and ammo ready for the next shipment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Arrange a temporary supply deal with other merchants. It'll still lead to a profit for you.",
+   "label": "< Barter 80 >"
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Oh hell, no. Working with our competition is not an option.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just buy the supplies from the other merchants around here. Easy enough.",
+   "label": "< Barter 80 >"
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You're right. I suppose we could refurbish used and damaged weapons to fill the order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They'll be in like new condition and then we can use our loader to make fresh ammo from spent brass.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll have to wait a few days for gunpowder, but this might just work out. Tell Contreras the extra guns and ammo will be in the next shipment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Gun Runners are skilled enough to refurbish weapons like new, right? You're overthinking this.",
+   "label": "< Speech 80 >"
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, but blackening our reputation with our biggest client isn't worth the risk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just give McCarran some used weapons. I mean, as long as they work, right?",
+   "label": "< Speech 80 >"
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Let's talk about something else."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I guess so. Look. We just need metal, and lots of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We can handle the weapons, we just need extra scrap to melt down for the bullets.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll give you some caps for each piece of metal you can bring me. Anything like scrap, cans, or any basic junk made of metal will do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll need at least 100 pieces to have enough for the bullets. I'll cash in whatever you've got until we have enough. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe I could help you out with those supplies."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "None whatsoever. Everything inside the fence is off-limits, and the guards have strict orders to shoot to kill.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A lot of our high-end weaponry comes from Pre-War military schematics. If our competition got a hold of them, it'd be bad for business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any chance I could get a tour of the Gun Runner factory?"
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, whatcha got?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've got some scrap for you."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tin cans."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Scrap metal."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Irons."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Pressure cookers."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Metal cooking pans."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Coffee pots."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hot plates."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Metal cooking pots."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, that'll help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Pots."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, keep at it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, not yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It looks like that last bit you brought me was enough to fill the quota.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here are the caps I promised you. Make sure to let Contreras know the extra guns and ammo will be in the next shipment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you have enough scrap metal yet?"
+  },
+  {
+   "id": "vDialogueGunRunnerNVIsaacTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Out here, we don't have bosses. Me, the gunsmiths, and the guards all know what we're supposed to be doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Working for the Gun Runners is a sweet job. None of us would dare screw it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who's in charge of the Gun Runners?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

@@ -1,0 +1,1413 @@
+{
+ "id": "thomashildern",
+ "speaker_name": "Thomas Hildern",
+ "source": "ThomasHildern.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A pleasure to meet you! I'm Dr. Thomas Hildern, Director of Operations, OSI East. I presume you're here about Vault 22? {Very professional, smooth}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We spoke earlier, didn't we? About Vault 22. My offer still stands, if you've changed your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We still need a contractor on our Vault 22 project. Interested?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes? Something else you needed?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I received a pleasant call from Dr. Keely. It seems we have you to thank for keeping her alive. Very charitable of you. {He's not at all happy that Keely is alive}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah! I was just wondering what had become of you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you want? I thought I told you to stay the hell out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What are you doing in my office? You're not welcome here, get out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "To be frank, I have no idea. I leave the fighting to Colonel Hsu, and I expect him to leave the science to me. {Hsu = \"shoe\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Too many people have opinions on things they know nothing about. And the more ignorant they are, the more opinions they have.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic003",
+   "prompt": "What do you think of NCR's chances against the Legion?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keely. Again. Do you... do you understand what that rotting old bitch has done?! Thousands of people, mass starvation. We had a chance to avoid that. {absolutely furious}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And I had a chance to prove that scientists could be more than a bunch of useless idealists. But Keely doesn't give a goddamn about that, does she? {absolutely furious}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're an accomplice in this. Keely is one old woman - you could have easily stopped her. You're either incompetent, or you were on her side. {turning his fury on the player}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now get out of this office. Get out! {furious, throwing the player out}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic004",
+   "prompt": "Keely wiped the data. It's gone."
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you're unhappy with the terms of our agreement, then consider this an object lesson. {fake friendliness}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the future, I'm sure you'll consider your agreements and contracts more carefully. Now, here is the sum we agreed to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic007",
+   "prompt": "No. \"Civilized\" people stack the deck in their own favor, don't they?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Best of luck to you. Not that you'll need it. You seem like a reasonably competent person... {going back to his work, not even looking at the player anymore}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic008",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Williams has a tendency to feel before she thinks. Not in the lab. But everywhere else.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That might be forgivable if she kept her concerns to herself. But she doesn't. Not in front of her peers, not even with contractors like yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That kind of behavior can undermine morale. She convinced my last contractor to quit. Same way she tried with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Probably didn't tell you that, did she?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic009",
+   "prompt": "Why terminate her contract?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I... no. The OSI hasn't been around for very long. I received my training elsewhere. {reluctant to discuss his former comrades}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic010",
+   "prompt": "You didn't always work for the OSI?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Before the bombs, I might have studied at any number of colleges, universities. They gave a man a chance to advance himself... or so I've heard.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But after the bombs - until a few years ago - anyone with half a brain had one choice. The Followers of the Apocalypse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't matter if you agreed with them or not. You either played along or you were turned away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic011",
+   "prompt": "So who *did* train you?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Knowledge for knowledge sake. A society of equals. They purport to be intelligent people, and then they spout this old-world dogma.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic012",
+   "prompt": "And what do the Followers believe?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Exactly right. Imagine what the Followers could have accomplished if they were properly motivated... if they had a unified purpose! {the player has said something he agrees with - now he's confiding in player}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those of us who founded the OSI... we wanted to put our knowledge to work. And we have, to some degree. {confiding in player}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the execs at OSI Central... they're still bound to the old ideas. Society of equals, and all that. There's still too little direction. {confiding in player}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I can make real breakthroughs here... show the President what can be done when junior researchers are kept in line... kept focused on task... {confiding in player}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who knows. Maybe I'll be sitting in OSI Central, in a few years time. And there'll be no more coddling of \"free spirits\" like our friend, Williams. {confiding in player - a little conspiratorial}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic013",
+   "prompt": "Doesn't sound like a good place for a person of ambition."
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That was years ago. No point in discussing it. We have more practical concerns... and more important things to talk about. {dismissive - player said the wrong thing}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic014",
+   "prompt": "So... you wanted something more?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Destroyed. Really. I find that hard to believe. More likely, you failed to locate the proper server. {Keeping his cool, doesn't believe the playerSCRIPTER: Player should lose NCR reputation points here}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic016",
+   "prompt": "The Vault 22 data is gone. Destroyed."
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "From Alice? I'll see that she's paid right away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crimson Caravan runs a tight operation, even out here in the waste. Wouldn't do to keep them waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was there anything else? Or were you just here about the invoice?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was there anything else? Or were you just here about the invoice?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic017",
+   "prompt": "Actually, I have an invoice for you from Alice McLafferty."
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We? We?! You were a part of this? After we made an explicit agreement, you have the fucking gall to destroy priceless scientific data? {absolutely furious}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The authorities are going to hear about this. They're going to know your name, they're going to know your goddamn face. {absolutely furious, threatening the player}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic018",
+   "prompt": "The plants in that vault were dangerous. We destroyed the data."
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keely. It was Keely, wasn't it? Who else would fail to give a fuck that thousands of people are going to starve, without that data? {furious}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And for what? So Keely can wage her selfish little war against me and the OSI. {absolutely furious and bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic019",
+   "prompt": "Believe whatever you want. It's the truth."
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "From Alice? I'll see that she's paid right away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crimson Caravan runs a tight operation, even out here in the waste. Wouldn't do to keep them waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was there anything else? Or were you just here about the invoice?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic022",
+   "prompt": "I have an invoice for you from Alice McLafferty."
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine. I'll see that she's paid. Crimson Caravan always fulfils their contractual obligations to the letter. {cold. This is also a veiled attack on the player, who didn't see through his \"contractual obligations.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now I assume there's nothing more, so I trust you can see yourself to the door. {very cold}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic023",
+   "prompt": "Then you don't want this invoice from Alice McLafferty?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We aid some programs the Republic has sponsored involving sharecropper farms in the area, but those haven't panned out too well from what I hear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There've been complaints about the amount of water we're supplying, but those are just excuses for lack of diligence, I'm sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We aid some programs the Republic has sponsored involving sharecropper farms in the area, which seem to be coming along nicely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There was some sort of trouble involving the water supply recently, but it sorted itself out, as these things often do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic024",
+   "prompt": "What other responsibilities does this office have?"
+  },
+  {
+   "key": "vfreeformvault22thomashilderntopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dammit. Now you've made me forget what I was doing... {irritated with player for interrupting him}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformVault22ThomasHildernTopic025",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms06thomashilderntopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wonderful! Straight to it, then. Have you signed the release forms? No? Doesn't matter - we'll keep that to ourselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vault 22... where to begin... {This is pure showmanship and a practiced speech - he knows exactly where to begin}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic000",
+   "prompt": "<Lie> Yes, that's right."
+  },
+  {
+   "key": "vms06thomashilderntopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, they wouldn't have briefed you, would they? Probably better that our junior fellows stay within the bounds of their pay grade, anyway.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic001",
+   "prompt": "No, this is the first I've heard about Vault 22."
+  },
+  {
+   "key": "vms06thomashilderntopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wrong turn? Happens all the time. Do they give me a secretary? Of course not.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms06thomashilderntopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your concerns are perfectly understandable, but I assure you, they're entirely misplaced. We would never use a technology that wasn't fully tested.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We aren't some motley band of Vault alchemists. We're with the government, for goodness sake. Have a little faith in us! {Big reassuring smile}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic003",
+   "prompt": "I'd be careful with that data. You didn't see those plants in the Vault."
+  },
+  {
+   "key": "vms06thomashilderntopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] If you are unhappy with the terms of our agreement, then consider this an object lesson. {condescending}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the future, I'm sure you'll consider your agreements and contracts more carefully. Now, here is the sum we agreed to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course, we're very grateful for your efforts, and I'll make certain that you're credited in our final report. Good day to you. {He's full of crap}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic004",
+   "prompt": "BUGGED LINE BELOW"
+  },
+  {
+   "key": "vms06thomashilderntopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha ha! A mercenary, is that it? You won't be disappointed, I promise you. The Office of Science and Industry provides highly competitive benefits.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And as an external contractor, your pay would be... rather more competitive than those of our regular employees. {lowers voice - fake conspiratorial tone}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But we should keep that to ourselves, don't you think? {slimy wink}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So... how about I tell you what we need, and then you can tell me whether you're up to it? No pressure, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic005",
+   "prompt": "Depends. How much are you paying?"
+  },
+  {
+   "key": "vms06thomashilderntopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Skepticism can be forgiven. But I think you'll come around... if the reports I've heard are true.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic006",
+   "prompt": "This all sounds a little hard to believe."
+  },
+  {
+   "key": "vms06thomashilderntopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm very sorry to hear that. If you should change your mind, the offer will stand. As will the substantial reward... {Emphasis on the reward - he's still trying to entice the player}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic007",
+   "prompt": "This doesn't sound like my kind of job."
+  },
+  {
+   "key": "vms06thomashilderntopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Naturally! Take all the time you need. {very smooth}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I assure you, the OSI places considerable value upon our contractors. We will take good care of you, should you decide to accept our offer. {He is completely full of shit.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic008",
+   "prompt": "I'll think about it, and maybe I'll be back."
+  },
+  {
+   "key": "vms06thomashilderntopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course not! You're obviously a busy man. But if life should... quiet down a bit... I'm certain we can find a place for you here. {Big fake smile at the end}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course not! I can see you're a woman of consequence. But if life should... quiet down a bit... I'm certain we can find a place for you here. {Big fake smile at the end}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic009",
+   "prompt": "Forget it. I don't have time for this."
+  },
+  {
+   "key": "vms06thomashilderntopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Imagine, if you will, the wasteland in bloom... vast fields of corn that grow from seeds and produce their bounty in the space of a month... {His elevator pitch}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "...orchards of trees, their branches weighed halfway to the ground, hung with fat, ripe oranges. A harvest that could feed a city... or a nation. {More elevator pitch}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And all this... all this... requiring no more than a few of drops of precious water, and the efforts of only a handful of human farmers. Impossible? {More elevator pitch}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic010",
+   "prompt": "I'm listening."
+  },
+  {
+   "key": "vms06thomashilderntopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Straight to the point. I believe that the inhabitants of Vault 22 unlocked the secrets of vegetative growth.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Plants are spilling from their gate. No one tends them. No one waters them. Yet they multiply and spread in all directions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Find the reason for this miraculous growth, and I promise you, the OSI will see that you are generously compensated.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic011",
+   "prompt": "Save the sales pitch. Just tell me what you want me to do."
+  },
+  {
+   "key": "vms06thomashilderntopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A realist. We have that in common. A year ago, I'd have said the same. {playing politics with the player}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But what if I was to tell you that the wasteland can yield an endless bounty, and that the secret may lie a mere few miles from where we stand...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We need only reach out and take it. And for that, I need you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic012",
+   "prompt": "Yes, I'd say so."
+  },
+  {
+   "key": "vms06thomashilderntopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Precisely. Science has proven that truth a thousand times over, but how many wasteland savages believe it? Present company excepted, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The bounty I described to you is no idle fantasy. It exists, in primitive form, only a few miles from where we stand.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We need only reach out and unlock its secret. For that, the OSI needs you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic013",
+   "prompt": "Nothing is impossible."
+  },
+  {
+   "key": "vms06thomashilderntopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fair enough. My point is this. I believe that the inhabitants of Vault 22 unlocked the secrets of vegetative growth.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic014",
+   "prompt": "Get to the point."
+  },
+  {
+   "key": "vms06thomashilderntopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. No need to check in with the NCR authorities, I can authorize your payment from OSI accounts. {abruptly turns off sales pitch (and the smile) - now he's all business, sealing the deal}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vaults typically contain a server room on a lower level, where they would have backed up their research data. A computer room, you understand? {a little condescending on the last sentence}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Download all the information on the central server to your Pip-Boy. And you'll be certain to bring me any notes or samples that you find, won't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic015",
+   "prompt": "All right. I'll do it."
+  },
+  {
+   "key": "vms06thomashilderntopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. I hope you'll consider this an open offer from the OSI. Now, I'm sure your time is valuable, so unless there was anything else...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic016",
+   "prompt": "I'll think about it."
+  },
+  {
+   "key": "vms06thomashilderntopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes... goodbye. {Dismissing the player, turning back to his work}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic017",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms06thomashilderntopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Office of Science and Industry. That's a rather expansive topic. I could talk for hours, but I'm sure I'd bore you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Suffice to say, we are the leading edge of the NCR. Our work focuses on practical matters. Medicine, engineering, biology.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Dam, for instance. OSI routes its energy supply to our cities in the west. That's only one responsibility of this office.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic018",
+   "prompt": "Tell me more about the OSI."
+  },
+  {
+   "key": "vms06thomashilderntopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I thought it was a fairly straightforward assignment. It's a simple question of retrieving the data, which shouldn't prove overly challenging. {fake smile}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Downloading the data will be handled by your Pip-Boy. You might think of yourself as a mere means of conveyance. No insult intended, of course. {Insult *is* intended, though he's smiling condescendingly}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic019",
+   "prompt": "Anything else I should know?"
+  },
+  {
+   "key": "vms06thomashilderntopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh? What might those be?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic020",
+   "prompt": "Actually, I had some other questions."
+  },
+  {
+   "key": "vms06thomashilderntopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good! I thought I sensed a kindred soul in you, beneath the wasteland veneer. {His sales pitch worked, but he can't help subtly insulting the player at the end}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic024",
+   "prompt": "Tell me more."
+  },
+  {
+   "key": "vms06thomashilderntopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Isn't it? One directs one's efforts - or the efforts of others - toward a goal, and progress is made. It's a matter of incentives, nothing more. {He's disagreeing with the player}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic025",
+   "prompt": "Scientific discovery is never so simple as that."
+  },
+  {
+   "key": "vms06thomashilderntopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I believe that the inhabitants of Vault 22 unlocked the secrets of vegetative growth.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic027",
+   "prompt": "What do you need me to do?"
+  },
+  {
+   "key": "vms06thomashilderntopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, I'm sure I won't require your services in the future. The OSI does not enter into long-term arrangements with its contractors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course, we're all very grateful for your efforts, and I'll make certain that you're credited in our final report. Good day to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic028",
+   "prompt": "Well... consider it a down payment on future service."
+  },
+  {
+   "key": "vms06thomashilderntopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wonderful! Excellent work! Let me see it... it'll take a moment to decode on my terminal... {Surprised that the player actually succeeded}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic030",
+   "prompt": "I've brought the data from Vault 22."
+  },
+  {
+   "key": "vms06thomashilderntopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You won't keep me in suspense for long, I hope? Of course I can't authorize any payments until I have the data in hand...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic031",
+   "prompt": "Never mind. I'll be back later."
+  },
+  {
+   "key": "vms06thomashilderntopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think... Williams' decryption algorithms seem to be working... {Williams is a character's last name}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes... here it is! The data is mostly uncorrupted. This will make the board of directors finally sit up and take notice... {big personal victory}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, then... as promised. An agreeable sum, payable upon delivery of the data. You've more than done your part.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic032",
+   "prompt": "No problem. I can wait."
+  },
+  {
+   "key": "vms06thomashilderntopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Didn't I? Did you encounter undue difficulties? Clearly not, or you wouldn't be standing here, would you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All that matters is whether the data is intact...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic033",
+   "prompt": "By the way... you never warned me about the dangers in that place."
+  },
+  {
+   "key": "vms06thomashilderntopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I knew you were a reasonable person. Here you are... our agreed-upon sum.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic038",
+   "prompt": "Fine. Just give me my reward."
+  },
+  {
+   "key": "vms06thomashilderntopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A pleasure working with you, really! I'll make certain that you're mentioned in the final report, you have my word on it. {He's totally lying.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic041",
+   "prompt": "Glad to be of service."
+  },
+  {
+   "key": "vms06thomashilderntopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want to renegotiate your contract. Mm. This is a very serious matter, you do understand that, don't you? {condescending}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I realize that one's word counts for little in the wasteland, but amongst civilized people, one doesn't just... demand more than one has agreed to. {really condescending}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic042",
+   "prompt": "I agree, I've more than done my part. You owe me more caps."
+  },
+  {
+   "key": "vms06thomashilderntopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If the data's intact, you'll get your reward. I gave my word. I'm not the kind of wasteland savage you're used to dealing with. {slightly contemptuous}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic043",
+   "prompt": "Make it fast. I want my caps."
+  },
+  {
+   "key": "vms06thomashilderntopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sorry you feel that way. But we both came out ahead, so... no harm done, I hope. {fake friendliness}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic044",
+   "prompt": "Damn right. No thanks to you."
+  },
+  {
+   "key": "vms06thomashilderntopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Now... wait a minute... {Getting nervous}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic045",
+   "prompt": "All right. Then I'll sell this data to some other interested party..."
+  },
+  {
+   "key": "vms06thomashilderntopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You're saying that I didn't file the proper paperwork, is that it? I suppose you're an expert on NCR procedures?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic046",
+   "prompt": "What contract? You cut an under-the-table deal with me."
+  },
+  {
+   "key": "vms06thomashilderntopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I never said you were. You've been speaking to Williams, haven't you? {The player is confronting him on a sensitive issue, and he's keeping a poker face.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic049",
+   "prompt": "I'm not the first person you've sent to Vault 22... am I?"
+  },
+  {
+   "key": "vms06thomashilderntopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't see how that's relevant. The dangers of the Vault were your business, not mine. The only question is whether the data is still intact. {dismissive}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was it? I'm sure I made it very clear... the hazards of the job were your business, not mine. The important question is whether this data is intact.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic050",
+   "prompt": "By the way, that Vault was just as dangerous as Williams thought."
+  },
+  {
+   "key": "vms06thomashilderntopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fair enough. Begging your pardon, but this is beginning to feel like an interrogation. {overly polite }",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic052",
+   "prompt": "I'm the one asking the questions, Dr. Hildern."
+  },
+  {
+   "key": "vms06thomashilderntopic053",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. I'll take you at your word. Williams didn't say anything at all, you just came to this conclusion on your own. {not obviously sarcastic - should sound like he's trying to be reasonable}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic053",
+   "prompt": "<Lie> No, Williams didn't tell me anything."
+  },
+  {
+   "key": "vms06thomashilderntopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "None at all. Informed speculation on my part. Williams is very good at her job, so it remains secure... despite her best efforts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, you aren't the first person I've sent to the Vault. I'm sorry that I neglected to tell you, but I don't see how it makes any difference.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic056",
+   "prompt": "Yes, I have. What difference does it make?"
+  },
+  {
+   "key": "vms06thomashilderntopic058",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Williams is an admirable researcher. If she wasn't, I'd have terminated her contract, and she'd be begging for work from my former employers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic058",
+   "prompt": "What's your opinion of Williams?"
+  },
+  {
+   "key": "vms06thomashilderntopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes. With the assistance of my team, of course. {taking credit for other people's work}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic059",
+   "prompt": "You're doing all these things yourself?"
+  },
+  {
+   "key": "vms06thomashilderntopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not yet. But our government understands the value of proactive thought. Our studies project an imbalance between production and consumption.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Or, for a layman such as yourself - not enough food, too many mouths to feed. Mass starvation. In a decade or so. {condescending}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic060",
+   "prompt": "NCR has a food shortage?"
+  },
+  {
+   "key": "vms06thomashilderntopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Directly? No. But we attempt to maximize its output. You have no idea how difficult it is to provide power to an entire nation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fortunately, we also have the HELIOS One facility. One of our external contractors recently got the station up and running.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fortunately, we also have the HELIOS One facility. One of our external contractors recently got the station up and running.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were starting to bring the HELIOS One facility online, as well. That might have increased our power output by half.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But some wasteland scum managed to sabotage the array. Probably got quite a laugh at our expense. Very funny indeed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd pay a year's salary for a crack at that maniac. Not that he'd ever show his face in a place like this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were starting to bring the HELIOS One facility online, as well. That might have increased our power output by half.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But some wasteland scum managed to sabotage the array. Probably got quite a laugh at our expense. Very funny indeed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd pay a year's salary for a crack at that maniac. Not that she'd ever show her face in a place like this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our efforts at HELIOS One held a great deal of promise, until some drifter blew in from the waste and managed to reroute the power.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As to where the power is going... who knows. Can you imagine? A drifter outsmarting professional scientists? Only in New Vegas. {shaking his head at end}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'd hoped that HELIOS One would boost power to McCarran and Vegas. Then some damned crusader routed all the power to Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I also have high hopes for our HELIOS One facility. Unfortunately, I can't say the same for the two \"scientists\" who are working there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So far, they've only managed to achieve one percent power output. I'd send help, if I could spare the personnel.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "His name was something like... \"Exceptional\" or \"Marvelous\" or...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's the trouble with this wasteland - too many damned variables. No one can account for them all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic062",
+   "prompt": "Do you control the Dam from here?"
+  },
+  {
+   "key": "vms06thomashilderntopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes! That was it, exactly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic063",
+   "prompt": "Fantastic."
+  },
+  {
+   "key": "vms06thomashilderntopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I... see. Of course you did. {doesn't believe the player, but humoring him.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic064",
+   "prompt": "No, that was me. I fixed HELIOS One."
+  },
+  {
+   "key": "vms06thomashilderntopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd have to consult my records. Eight? Ten? Your point is what? {nonchalant}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic065",
+   "prompt": "How many others have you sent to the Vault?"
+  },
+  {
+   "key": "vms06thomashilderntopic066",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want certainty? You'll never find it... especially not in the pursuit of science.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic066",
+   "prompt": "I prefer to know what I'm getting myself into."
+  },
+  {
+   "key": "vms06thomashilderntopic067",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do whatever you think is best. You're under no obligations. If you want the caps, you'll complete the job. Simple. {trying to sound very reasonable}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take my advice. Forget about Williams. She's a talented researcher, but she doesn't understand people, and she can't see the big picture. {fake encouragement}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, I know your time is valuable, so I won't waste any more of it. Feel free to show yourself out...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic067",
+   "prompt": "Maybe I should cancel our deal."
+  },
+  {
+   "key": "vms06thomashilderntopic068",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right. I'll admit that it's been difficult to find anyone willing to enter the Vault. And I'd rather get the data sooner than later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have a deal. I'll double your reward, if you bring me the data. But this is as high as my budget will allow.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic068",
+   "prompt": "I want double the caps. Or I spread the word that you're full of shit."
+  },
+  {
+   "key": "vms06thomashilderntopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have no evidence that they're dead. A thousand things could have happened between here and the Vault.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They could have changed their minds and walked away. I wouldn't be much of a scientist if I leapt to conclusions without proof.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic071",
+   "prompt": "It doesn't trouble you that you sent eight or ten people to their deaths?"
+  },
+  {
+   "key": "vms06thomashilderntopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No. Our agreement was very specific. You bring me the data, I give you a reward.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We never discussed the dangers. That's your business, not mine. If you can't provide the data, I'm sure I'll find someone who can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06ThomasHildernTopic072",
+   "prompt": "Then you broke our agreement. I want double the caps."
+  },
+  {
+   "key": "vms06topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's... there's no need to do anything rash. Naturally, OSI would be willing to negotiate for exclusive rights to that data. {Recomposing himself}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here. Take these caps. That's all of my contracting budget, and it's yours. {basically bribing the player}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, I've... got to get back to work. I'm sure you understand. Exit's over there, you can show yourself out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06Topic000",
+   "prompt": "...and make sure you have some healthy competition."
+  },
+  {
+   "key": "vms06topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Director of the entire OSI? Me? If I didn't know better, I'd say you were trying to plant seditious ideas in my head. Ha ha ha.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No, I direct our eastern operations. I've been responsible for squeezing unprecedented levels of power from the Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm also confronting the problem of food production, in what little spare time I have. But I've found some promising leads.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06Topic001",
+   "prompt": "You said you were the Director of OSI?"
+  },
+  {
+   "key": "vms06topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Fair enough. No need to bring the military into this matter - it's between the two of us, after all. {He's scared, trying to hide it}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS06Topic002",
+   "prompt": "Then it wouldn't matter if I mentioned our deal to the colonel?"
+  }
+ ],
+ "speaker": "thomas_hildern"
+}

@@ -1,0 +1,31 @@
+{
+ "id": "vefr02legionthugleadercm",
+ "speaker_name": "Legionary assassin",
+ "source": "VEFR02LegionThugLeaderCM.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Caesar has marked you for death... and the Legion obeys. Ready yourself for battle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now you will serve as an example to all who dare oppose Caesar's Legion. Defend yourself!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have defied Caesar for the last time! Your life ends now!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "legionary_assassin"
+}

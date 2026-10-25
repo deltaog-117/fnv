@@ -1,0 +1,5411 @@
+[
+ {
+  "id": "absinthe",
+  "name": "Absinthe",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Absinthe",
+  "edid": "Absinthe",
+  "form_id": "00115eb1",
+  "effects_text": "+1 Perception for 4 minutes; +1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; Hardcore mode only; +20 Dehydration",
+  "effects": [
+   {
+    "stat": "Perception",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 20
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "ant_egg",
+  "name": "Ant egg",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Ant egg",
+  "edid": "AntEgg",
+  "form_id": "0015e5cc",
+  "effects_text": "+1 HP/s for 5s; +3 RAD",
+  "effects_hardcore_text": "+1 HP/s for 5s; +3 RAD; -15 FOD",
+  "effects": [
+   {
+    "stat": "HP",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "RAD",
+    "amount": 3
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "ant_meat",
+  "name": "Ant meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Ant meat (Fallout: New Vegas)",
+  "edid": "AntMeat",
+  "form_id": "0003c345",
+  "effects_text": "+1 HP/s for 5s; +3 RAD",
+  "effects_hardcore_text": "+1 HP/s for 5s; +3 RAD; -25 FOD; -1 ST for 120s",
+  "effects": [
+   {
+    "stat": "HP",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "RAD",
+    "amount": 3
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "ant_nectar",
+  "name": "Ant nectar",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0.25,
+  "source": "Ant nectar (Fallout: New Vegas)",
+  "edid": "AntNectar",
+  "form_id": "00031020",
+  "effects_text": "-2 Intelligence for 4 minutes; -2 Charisma for 4 minutes; +4 Strength for 4 minutes",
+  "effects": [
+   {
+    "stat": "Intelligence",
+    "amount": -2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": -2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Strength",
+    "amount": 4,
+    "duration_s": 240.0
+   }
+  ],
+  "addiction": {
+   "type": "ant nectar",
+   "chance_percent": 5.0
+  }
+ },
+ {
+  "id": "ant_queen_pheromones",
+  "name": "Ant queen pheromones",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 75,
+  "weight": 1,
+  "source": "Ant queen pheromones (Fallout: New Vegas)",
+  "edid": "AntQueenPheromones",
+  "form_id": "00033068",
+  "effects_text": "+3 Charisma for 4 minutes; -3 Intelligence for 4 minutes; -3 Perception for 4 minutes",
+  "effects": [
+   {
+    "stat": "Charisma",
+    "amount": 3,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -3,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Perception",
+    "amount": -3,
+    "duration_s": 240.0
+   }
+  ]
+ },
+ {
+  "id": "antivenom",
+  "name": "Antivenom",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 25,
+  "weight": 0.0001,
+  "source": "Antivenom",
+  "edid": "NVAntivenom",
+  "form_id": "000e2c6f",
+  "effects_text": "Cure Animal Poison"
+ },
+ {
+  "id": "atomic_cocktail",
+  "name": "Atomic cocktail",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 25,
+  "weight": 1,
+  "source": "Atomic cocktail",
+  "edid": "NVAtomicCocktail",
+  "form_id": "000e2f6a",
+  "effects_text": "+25 Energy Resistance for 2 min.; +25 Fire Resistance for 2 minutes; +9 RadsHardcore mode only:; +30 Dehydration; -100 Sleep",
+  "effects": [
+   {
+    "stat": "Energy Resistance",
+    "amount": 25,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Fire Resistance",
+    "amount": 25,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 30
+   },
+   {
+    "stat": "Sleep",
+    "amount": -100
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "auto_inject_stimpak",
+  "name": "Auto-inject stimpak",
+  "kind": "consumable",
+  "dlc": "lonesome_road",
+  "value": 75,
+  "weight": 0.2,
+  "source": "Auto-inject stimpak",
+  "edid": "NVDLC04AutoInjectStimpak",
+  "form_id": "0000000d",
+  "effects_text": "Automatic use at 50% health; +90 Hit Points (with Medicine skill 100)",
+  "skill": "Medicine"
+ },
+ {
+  "id": "auto_inject_super_stimpak",
+  "name": "Auto-inject super stimpak",
+  "kind": "consumable",
+  "dlc": "lonesome_road",
+  "value": 150,
+  "weight": 0.2,
+  "source": "Auto-inject super stimpak",
+  "edid": "NVDLC04AutoInjectSuperStimpak",
+  "form_id": "0000000d",
+  "effects_text": "Automatic use at 25% health; +72-180 Hit Points (180 at Medicine skill 100)"
+ },
+ {
+  "id": "banana_yucca_fruit",
+  "name": "Banana yucca fruit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 6,
+  "weight": 0.5,
+  "source": "Banana yucca fruit",
+  "edid": "NVFreshBananaYuccaFruit",
+  "form_id": "000eaca4",
+  "effects_text": "+1 HP/s for 7s",
+  "effects_hardcore_text": "+1 HP/s for 7s; -15 H2O; -10 FOD",
+  "effects": [
+   {
+    "stat": "HP",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 7.0
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "barrel_cactus_fruit",
+  "name": "Barrel cactus fruit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.2,
+  "source": "Barrel cactus fruit",
+  "edid": "NVFreshBarrelCactusFruit",
+  "form_id": "000ec01d",
+  "effects_text": "+1 HP/s for 5s; -1 Endurance for 120s",
+  "effects_hardcore_text": "+1 HP/s for 5s; -1 Endurance for 120s; -15 H2O; -5 FOD",
+  "effects": [
+   {
+    "stat": "HP",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Endurance",
+    "amount": -1,
+    "duration_s": 120.0
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "battle_brew",
+  "name": "Battle Brew",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 150,
+  "weight": 1,
+  "source": "Battle Brew",
+  "edid": "NVDLC03BattleBrew",
+  "form_id": "0000000d",
+  "effects_text": "+50 HP and Limb Condition¹; +35 DR for 4 minutes; -1 IN for 4 minutes; +1 ST for 4 minutes; Red Mist:; +40 Max AP for 20 seconds.; +1 ST for 20 seconds; Hardcore mode only:; +10 HP per second for 5 seconds¹; +35 H20; {{small|¹Substituted in Hardcore mode, not added}}",
+  "effects": [
+   {
+    "stat": "DR",
+    "amount": 35,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "IN",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "ST",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Max AP",
+    "amount": 40,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "ST",
+    "amount": 1,
+    "duration_s": 20.0
+   }
+  ],
+  "addiction": {
+   "type": "alcohol"
+  }
+ },
+ {
+  "id": "beer",
+  "name": "Beer",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Beer (Fallout: New Vegas)",
+  "edid": "Beer",
+  "form_id": "00015197",
+  "effects_text": "+1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; +1 Strength for 4 minutes; Hardcore mode only:; +20 Dehydration",
+  "effects": [
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 20
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 5.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "bighorner_meat",
+  "name": "Bighorner meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Bighorner meat",
+  "edid": "BigHornerMeat",
+  "effects_text": "+1 Hit Point per second for 15s; +3 RadiationHardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 15.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ]
+ },
+ {
+  "id": "bighorner_steak",
+  "name": "Bighorner steak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.8,
+  "source": "Bighorner steak",
+  "edid": "BighornerSteak",
+  "form_id": "00175aa8",
+  "effects_text": "+2 Hit Points per second for 10s; +2 Radiation; +1 Strength for 2 minutesHardcore mode only:; -75 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 2
+   },
+   {
+    "stat": "Starvation",
+    "amount": -75
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "bitter_drink",
+  "name": "Bitter drink",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 1,
+  "weight": 0,
+  "source": "Bitter drink",
+  "edid": "NVBitterDrink",
+  "form_id": "001613bd",
+  "effects_text": "+2 Hit Points per second for 18s",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 18.0
+   }
+  ]
+ },
+ {
+  "id": "black_blood_sausage",
+  "name": "Black blood sausage",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 350,
+  "weight": 0.5,
+  "source": "Black blood sausage",
+  "edid": "NVDLC03BlackBloodSausage",
+  "form_id": "0000000d",
+  "effects_text": "+10 Hit Points per second for 20s; +25 Max Hit Points for 4 minutes",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 10,
+    "per_second": true,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Max Hit Points",
+    "amount": 25,
+    "duration_s": 240.0
+   }
+  ]
+ },
+ {
+  "id": "black_coffee",
+  "name": "Black coffee",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 5,
+  "weight": 0.02,
+  "source": "Black coffee",
+  "edid": "NVDLC02BlackCoffee",
+  "form_id": "0000000d",
+  "effects_text": "+5 Hit Points; +2 Intelligence for 1 minute; -1 Agility for 1 minute; Hardcore mode only:; +5 Dehydration; -20 Sleep; -2 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 5
+   },
+   {
+    "stat": "Intelligence",
+    "amount": 2,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Agility",
+    "amount": -1,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 5
+   },
+   {
+    "stat": "Sleep",
+    "amount": -20
+   },
+   {
+    "stat": "Starvation",
+    "amount": -2
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "blamco_mac_cheese",
+  "name": "BlamCo Mac & Cheese",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "BlamCo Mac & Cheese (Fallout: New Vegas)",
+  "edid": "BlamcoMacandCheese",
+  "effects_text": "+1 Hit Point per second for 5s; +3 RadiationHardcore mode only:; -20 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -20
+   }
+  ]
+ },
+ {
+  "id": "bleak_venom",
+  "name": "Bleak venom",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 0,
+  "weight": 0.5,
+  "source": "Bleak venom",
+  "edid": "BleakVenom",
+  "form_id": "001613d0",
+  "effects_text": "-15 Hit Point per second for 10s",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": -15,
+    "per_second": true,
+    "duration_s": 10.0
+   }
+  ]
+ },
+ {
+  "id": "bloatfly_meat",
+  "name": "Bloatfly meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Bloatfly meat (Fallout: New Vegas)",
+  "form_id": "0007c10d",
+  "effects_text": "+1 Hit Point per second for 5s; +3 RadiationHardcore mode only:; -25 Starvation; -1 Strength for 120 seconds",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   }
+  ]
+ },
+ {
+  "id": "bloatfly_slider",
+  "name": "Bloatfly slider",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 0.5,
+  "source": "Bloatfly slider",
+  "edid": "BloatflySlider",
+  "form_id": "001613c0",
+  "effects_text": "+3 Hit Points per second for 15s; +1 RadiationHardcore mode only:; -30 Dehydration; -75 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 3,
+    "per_second": true,
+    "duration_s": 15.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -30
+   },
+   {
+    "stat": "Starvation",
+    "amount": -75
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "blood_shield",
+  "name": "Blood Shield",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 50,
+  "weight": 0.5,
+  "source": "Blood Shield",
+  "edid": "NVDLC02BloodShield",
+  "effects_text": "+4 Hit Points per second for 6s; +50 Poison Resistance for 120s",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 4,
+    "per_second": true,
+    "duration_s": 6.0
+   },
+   {
+    "stat": "Poison Resistance",
+    "amount": 50,
+    "duration_s": 120.0
+   }
+  ],
+  "skill": "Medicine"
+ },
+ {
+  "id": "blood_pack",
+  "name": "Blood pack",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Blood pack (Fallout: New Vegas)",
+  "effects_text": "+1 Hit Point",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1
+   }
+  ]
+ },
+ {
+  "id": "blood_sausage",
+  "name": "Blood sausage",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 175,
+  "weight": 0.25,
+  "source": "Blood sausage",
+  "edid": "NVDLC03BloodSausage",
+  "form_id": "0000000d",
+  "effects_text": "+5 Hit Points per second for 20s; +10 Max Hit Points for 4 minutes",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 5,
+    "per_second": true,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Max Hit Points",
+    "amount": 10,
+    "duration_s": 240.0
+   }
+  ],
+  "skill": "None"
+ },
+ {
+  "id": "brahmin_wellington",
+  "name": "Brahmin Wellington",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.8,
+  "source": "Brahmin Wellington",
+  "edid": "NVBrahminWellington",
+  "form_id": "00161f18",
+  "effects_text": "+5 Hit Points per second for 10sHardcore mode only:; -100 Starvation",
+  "effects": [
+   {
+    "stat": "Starvation",
+    "amount": -100
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "brahmin_meat",
+  "name": "Brahmin meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Brahmin meat (Fallout: New Vegas)",
+  "effects_text": "+1 Hit Point per second for 15s; +3 RadiationHardcore mode only:; -50 Starvation; -1 Strength for 2 minutes",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 15.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   }
+  ]
+ },
+ {
+  "id": "brahmin_steak",
+  "name": "Brahmin steak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.8,
+  "source": "Brahmin steak (Fallout: New Vegas)",
+  "form_id": "00015198",
+  "effects_text": "+2 Hit Points per second for 15s; +2 Radiation; +1 Strength for 2 minutesHardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 15.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 2
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "broc_flower",
+  "name": "Broc flower",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 3,
+  "weight": 0.01,
+  "source": "Broc flower (Fallout: New Vegas)",
+  "edid": "BrocFlower",
+  "form_id": "0013b2ba",
+  "effects_text": "+1 Hit Point per second for 4sHardcore mode only:; -5 Starvation",
+  "effects": [
+   {
+    "stat": "Starvation",
+    "amount": -5
+   }
+  ]
+ },
+ {
+  "id": "bubblegum",
+  "name": "Bubblegum",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 1,
+  "weight": 1,
+  "source": "Bubblegum (Fallout: New Vegas)",
+  "edid": "Bubblegum",
+  "form_id": "0008c560",
+  "effects_text": "+1 Hit Point; +1 Radiation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1
+   },
+   {
+    "stat": "Radiation",
+    "amount": 1
+   }
+  ]
+ },
+ {
+  "id": "buffalo_gourd_seed",
+  "name": "Buffalo gourd seed",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 0.02,
+  "source": "Buffalo gourd seed",
+  "edid": "BuffaloGourdSeed",
+  "form_id": "0015f0e9",
+  "effects_text": "+1 Hit Point per second for 2sHardcore mode only:; -10 Starvation",
+  "effects": [
+   {
+    "stat": "Starvation",
+    "amount": -10
+   }
+  ]
+ },
+ {
+  "id": "buffout",
+  "name": "Buffout",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Buffout (Fallout: New Vegas)",
+  "edid": "Buffout",
+  "form_id": "00015163",
+  "effects_text": "+60 Max Hit Points for 4min ; +3 Endurance for 4min ; +2 Strength for 4min",
+  "effects": [
+   {
+    "stat": "Max Hit Points",
+    "amount": 60,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Endurance",
+    "amount": 3,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Strength",
+    "amount": 2,
+    "duration_s": 240.0
+   }
+  ],
+  "addiction": {
+   "type": "buffout",
+   "chance_percent": 10.0
+  }
+ },
+ {
+  "id": "caravan_lunch",
+  "name": "Caravan lunch",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 2.5,
+  "source": "Caravan lunch",
+  "edid": "CaravanLunch",
+  "form_id": "0013d531",
+  "effects_text": "+3 Hit Points per second for 15sHardcore mode only:; -15 Dehydration; -200 Starvation",
+  "effects": [
+   {
+    "stat": "Dehydration",
+    "amount": -15
+   },
+   {
+    "stat": "Starvation",
+    "amount": -200
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "cateye",
+  "name": "Cateye",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Cateye",
+  "edid": "NVCateye",
+  "form_id": "0007ea1b",
+  "effects_text": "Low-Light Vision for 2 minutes"
+ },
+ {
+  "id": "cave_fungus",
+  "name": "Cave fungus",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 50,
+  "weight": 1,
+  "source": "Cave fungus (Fallout: New Vegas)",
+  "edid": "CaveFungus",
+  "form_id": "00038e0c",
+  "effects_text": "+1 Hit Point per second for 4s; -10 RadiationHardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 4.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "cazador_egg",
+  "name": "Cazador egg",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Cazador egg",
+  "edid": "CazadorEgg",
+  "form_id": "0015e5cd",
+  "effects_text": "+1 Hit Point for 4s; +3 RadiationHardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "duration_s": 4.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "cloud_kiss",
+  "name": "Cloud Kiss",
+  "kind": "consumable",
+  "dlc": "dead_money",
+  "value": 0,
+  "weight": 0.5,
+  "source": "Cloud Kiss",
+  "edid": "NVDLC01CloudKissWeak",
+  "form_id": "0000000d",
+  "effects_text": "Weak: -5 Hit Points p/sec. for 10s; Potent: -10 Hit Points p/sec for 12s; Lethal: -13 Hit Points p/sec for 13s"
+ },
+ {
+  "id": "cook_cook_s_fiend_stew",
+  "name": "Cook-Cook's Fiend stew",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 25,
+  "weight": 1,
+  "source": "Cook-Cook's Fiend stew",
+  "edid": "CookCooksFiendStew",
+  "effects_text": "+2 Hit Points per second for 1 min; +1 Strength (2 minutes)Hardcore mode only:; -80 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -80
+   }
+  ]
+ },
+ {
+  "id": "coyote_meat",
+  "name": "Coyote meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Coyote meat",
+  "edid": "CoyoteMeat",
+  "form_id": "00157ffb",
+  "effects_text": "+1 Hit Point per second for 8s; +1 Radiation per second for 3s; Hardcore mode only:; -35 Starvation; -2 Strength for 2m",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 8.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 3.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -35
+   },
+   {
+    "stat": "Strength",
+    "amount": -2,
+    "duration_s": 120.0
+   }
+  ]
+ },
+ {
+  "id": "coyote_steak",
+  "name": "Coyote steak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Coyote steak",
+  "edid": "CoyoteSteak",
+  "effects_text": "+2 Hit Points per second for 12s; +1 Radiation per second for 3s; Hardcore mode only:; -35 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 12.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 3.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -35
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "coyote_tobacco_chew",
+  "name": "Coyote tobacco chew",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 1,
+  "weight": 0.01,
+  "source": "Coyote tobacco chew",
+  "edid": "NVCoyoteTobaccoFruit",
+  "form_id": "000eaca3",
+  "effects_text": "+1 Perception for 4 minutes; +1 Agility for 4 minutes; Hardcore mode only; -30 Sleep",
+  "effects": [
+   {
+    "stat": "Perception",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Agility",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Sleep",
+    "amount": -30
+   }
+  ],
+  "addiction": {
+   "type": "tobacco",
+   "chance_percent": 10.0
+  }
+ },
+ {
+  "id": "cram",
+  "name": "Cram",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Cram (Fallout: New Vegas)",
+  "edid": "Cram",
+  "form_id": "0008c552",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ]
+ },
+ {
+  "id": "crispy_squirrel_bits",
+  "name": "Crispy squirrel bits",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Crispy squirrel bits (Fallout: New Vegas)",
+  "edid": "SquirrelBits",
+  "form_id": "00031948",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Rads; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Rads",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ]
+ },
+ {
+  "id": "crunchy_mutfruit",
+  "name": "Crunchy mutfruit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Crunchy mutfruit (Fallout: New Vegas)",
+  "edid": "Mutfruit1",
+  "form_id": "0001519c",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "dandy_boy_apples",
+  "name": "Dandy Boy Apples",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Dandy Boy Apples (Fallout: New Vegas)",
+  "form_id": "0008c554",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "dark_datura",
+  "name": "Dark datura",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 50,
+  "weight": 0.5,
+  "source": "Dark datura",
+  "edid": "NVDLC02DarkDatura",
+  "form_id": "0000000d",
+  "effects_text": "-5 Hit Points per second for 12s; -2 Intelligence for 90s",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": -5,
+    "per_second": true,
+    "duration_s": 12.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -2,
+    "duration_s": 90.0
+   }
+  ]
+ },
+ {
+  "id": "datura_antivenom",
+  "name": "Datura antivenom",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 50,
+  "weight": 0.5,
+  "source": "Datura antivenom",
+  "edid": "NVDLC02Antivenom",
+  "form_id": "0000000d",
+  "effects_text": "Cure poison from creatures and sacred datura root"
+ },
+ {
+  "id": "datura_hide",
+  "name": "Datura hide",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 20,
+  "weight": 0.5,
+  "source": "Datura hide",
+  "edid": "NVDLC02DaturaHide",
+  "form_id": "0000000d",
+  "effects_text": "+1 Damage Threshold for 60s",
+  "effects": [
+   {
+    "stat": "Damage Threshold",
+    "amount": 1,
+    "duration_s": 60.0
+   }
+  ]
+ },
+ {
+  "id": "daturana",
+  "name": "Daturana",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 30,
+  "weight": 0.02,
+  "source": "Daturana",
+  "edid": "NVDLC02Daturana",
+  "form_id": "0000000d",
+  "effects_text": "+15 Hit Points for 30s; -2 Agility for 30s; +1 Unarmed Damage for 30s; +200 Limb Condition; Hardcore mode only:; -10 Sleep",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 15,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Agility",
+    "amount": -2,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Unarmed Damage",
+    "amount": 1,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Limb Condition",
+    "amount": 200
+   },
+   {
+    "stat": "Sleep",
+    "amount": -10
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "desert_salad",
+  "name": "Desert Salad",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.2,
+  "source": "Desert Salad",
+  "edid": "DesertSalad",
+  "form_id": "0015e3a5",
+  "effects_text": "+7 Hit Points per second for 15sHardcore mode only:; -40 Dehydration; -80 Starvation",
+  "effects": [
+   {
+    "stat": "Dehydration",
+    "amount": -40
+   },
+   {
+    "stat": "Starvation",
+    "amount": -80
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "dirty_water",
+  "name": "Dirty water",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 10,
+  "weight": 1,
+  "source": "Dirty water (Fallout: New Vegas)",
+  "edid": "WaterUnpurified",
+  "form_id": "000151a4",
+  "effects_text": "+2 Hit Points per second for 5s; +6 Radiation; Hardcore mode only:; -50 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 6
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -50
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "dixon_s_jet",
+  "name": "Dixon's Jet",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0,
+  "source": "Dixon's Jet",
+  "edid": "JetDixon",
+  "form_id": "00122b49",
+  "effects_text": "+10 Action Points; +10 max Action Points for 4 min.",
+  "effects": [
+   {
+    "stat": "Action Points",
+    "amount": 10
+   },
+   {
+    "stat": "max Action Points",
+    "amount": 10,
+    "duration_s": 240.0
+   }
+  ],
+  "addiction": {
+   "type": "jet",
+   "chance_percent": 50.0
+  }
+ },
+ {
+  "id": "dixon_s_whiskey",
+  "name": "Dixon's whiskey",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 10,
+  "weight": 1,
+  "source": "Dixon's whiskey",
+  "edid": "WhiskeyDixon",
+  "form_id": "00122b4a",
+  "effects_text": "+1 Strength for 4 minutes; -2 Intelligence for 4 minutes; Hardcore mode only:; +25 Dehydration",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 25
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 50.0
+  }
+ },
+ {
+  "id": "doctor_s_bag",
+  "name": "Doctor's bag",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 55,
+  "weight": 1,
+  "source": "Doctor's bag (Fallout: New Vegas)",
+  "edid": "NVDoctorBag",
+  "form_id": "000cb05c",
+  "effects_text": "Restores Limb condition to maximum; +36 Limb condition",
+  "effects": [
+   {
+    "stat": "Limb condition",
+    "amount": 36
+   }
+  ]
+ },
+ {
+  "id": "dog_meat",
+  "name": "Dog meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Dog meat (Fallout: New Vegas)",
+  "edid": "DogMeat",
+  "form_id": "00034050",
+  "effects_text": "+1 Hit Point per second for 8s; +3 Radiation; Hardcore mode only:; -35 Starvation; -1 Strength for 2 minutes",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 8.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -35
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   }
+  ]
+ },
+ {
+  "id": "dog_steak",
+  "name": "Dog steak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Dog steak (Fallout: New Vegas)",
+  "edid": "DogSteak",
+  "form_id": "001613c2",
+  "effects_text": "+2 Hit Points per second for 10s; +3 Radiation; Hardcore mode only:; -35 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -35
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "drugged_wine",
+  "name": "Drugged wine",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 10,
+  "weight": 1,
+  "source": "Drugged wine",
+  "edid": "VMS18DruggedWine",
+  "form_id": "00118356",
+  "effects_text": "+1 Strength for 4m; +1 Charisma for 4m; -1 Intelligence for 4m; with Old World Gourmet:; +4 Hit Points per second for 10s; Hardcore mode only:; +15 Dehydration",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 4,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 15
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 5.0
+  }
+ },
+ {
+  "id": "fancy_lads_snack_cakes",
+  "name": "Fancy Lads Snack Cakes",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Fancy Lads Snack Cakes (Fallout: New Vegas)",
+  "edid": "FancyLadsSnackCakes",
+  "form_id": "0008c55a",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "fiery_purgative",
+  "name": "Fiery purgative",
+  "kind": "consumable",
+  "dlc": "lonesome_road",
+  "value": 5,
+  "weight": 0.2,
+  "source": "Fiery purgative",
+  "edid": "NVDLC04FungalPurgative",
+  "form_id": "0000000d",
+  "effects_text": "-5 Radiation per second for 10s; -1 Endurance for 10s; Cure Animal Poison",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": -5,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Endurance",
+    "amount": -1,
+    "duration_s": 10.0
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "fire_ant_egg",
+  "name": "Fire ant egg",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Fire ant egg",
+  "edid": "FireAntEgg",
+  "form_id": "0015e5cb",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "fire_ant_fricass_e",
+  "name": "Fire ant fricassée",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 30,
+  "weight": 1,
+  "source": "Fire ant fricassée",
+  "edid": "FireAntFricassee",
+  "form_id": "001613c3",
+  "effects_text": "+1 Hit Point per second for 60s; Hardcore mode only:; -80 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -80
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "fire_ant_meat",
+  "name": "Fire ant meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 6,
+  "weight": 1,
+  "source": "Fire ant meat",
+  "edid": "FireAntMeat",
+  "form_id": "0015d9b2",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -25 Starvation; -1 Strength for 2m",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   }
+  ]
+ },
+ {
+  "id": "fire_ant_nectar",
+  "name": "Fire ant nectar",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Fire ant nectar (Fallout: New Vegas)",
+  "edid": "MS04FireAntNectar",
+  "form_id": "00085abb",
+  "effects_text": "+4 Agility for 2 minutes; -3 Intelligence for 2 minutes; +25 Fire Resistance for 2 minutes",
+  "effects": [
+   {
+    "stat": "Agility",
+    "amount": 4,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -3,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Fire Resistance",
+    "amount": 25,
+    "duration_s": 120.0
+   }
+  ]
+ },
+ {
+  "id": "fixer",
+  "name": "Fixer",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Fixer",
+  "edid": "NVFixer",
+  "form_id": "000cb5a9",
+  "effects_text": "Permanently removes addiction(see bugs)"
+ },
+ {
+  "id": "fresh_apple",
+  "name": "Fresh apple",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Fresh apple (Fallout: New Vegas)",
+  "edid": "Apple",
+  "form_id": "00015196",
+  "effects_text": "+1 Hit Point per second for 7s; Hardcore mode only:; -10 Dehydration; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 7.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "fresh_carrot",
+  "name": "Fresh carrot",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Fresh carrot (Fallout: New Vegas)",
+  "edid": "Carrot",
+  "form_id": "00015199",
+  "effects_text": "+1 Hit Point per second for 7s; Hardcore mode only:; -10 Dehydration; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 7.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "fresh_pear",
+  "name": "Fresh pear",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Fresh pear (Fallout: New Vegas)",
+  "edid": "Pear",
+  "form_id": "0001519f",
+  "effects_text": "+1 Hit Point per second for 7 sec.; Hardcore mode only:; -10 Dehydration; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 7.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "fresh_potato",
+  "name": "Fresh potato",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Fresh potato (Fallout: New Vegas)",
+  "edid": "Potato",
+  "form_id": "000151a0",
+  "effects_text": "+1 Hit Point per second for 7s; Hardcore mode only:; -10 Dehydration; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 7.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "gecko_kebab",
+  "name": "Gecko kebab",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 0.25,
+  "source": "Gecko kebab",
+  "edid": "GeckoKebab",
+  "form_id": "001613c5",
+  "effects_text": "+1 Hit Point per second for 40s; +1 Radiation; Hardcore mode only:; -50 Dehydration; -80 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 40.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 1
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -50
+   },
+   {
+    "stat": "Starvation",
+    "amount": -80
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "gecko_meat",
+  "name": "Gecko meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Gecko meat",
+  "edid": "NVGeckoMeat",
+  "form_id": "0011b9ae",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; -1 Strength for 2 minutes; Hardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ]
+ },
+ {
+  "id": "gecko_steak",
+  "name": "Gecko steak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Gecko steak",
+  "edid": "NVGeckoSteak",
+  "effects_text": "+2 Hit Points per second for 15s; +1 Radiation; Hardcore mode only:; -75 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 15.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 1
+   },
+   {
+    "stat": "Starvation",
+    "amount": -75
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "ghost_sight",
+  "name": "Ghost Sight",
+  "kind": "consumable",
+  "dlc": "dead_money",
+  "value": 20,
+  "weight": 0,
+  "source": "Ghost Sight",
+  "edid": "NVDLC01GhostSight",
+  "form_id": "0000000d",
+  "effects_text": "Ghost Sight vision for 2.5 minutes"
+ },
+ {
+  "id": "ghost_people_flesh",
+  "name": "Ghost people flesh",
+  "kind": "consumable",
+  "dlc": "dead_money",
+  "value": 4,
+  "weight": 0,
+  "source": "Ghost people flesh",
+  "edid": "NVDLC01GhostPeopleMeat",
+  "form_id": "0000000d",
+  "effects_text": "+3 Hit Points per second for 5s; +1 Rad Resistance",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 3,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Rad Resistance",
+    "amount": 1
+   }
+  ]
+ },
+ {
+  "id": "giant_rat_meat",
+  "name": "Giant rat meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Giant rat meat",
+  "edid": "GiantRatMeat",
+  "effects_text": "-1 Strength for 2 minutes; +2 Radiation; +1 Hit Point per second for 5s; Hardcore mode only:; -35 Starvation",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 2
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -35
+   }
+  ]
+ },
+ {
+  "id": "grilled_mantis",
+  "name": "Grilled mantis",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 8,
+  "weight": 1,
+  "source": "Grilled mantis",
+  "edid": "NVGrilledMantis",
+  "form_id": "000e2f64",
+  "effects_text": "+1 Radiation; +1 Hit Point per second for 30s; Hardcore mode only:; -75 Starvation",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 1
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -75
+   }
+  ]
+ },
+ {
+  "id": "gum_drops",
+  "name": "Gum drops",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Gum drops (Fallout: New Vegas)",
+  "edid": "RadioactiveGumDrops",
+  "form_id": "0008c564",
+  "effects_text": "+1 Hit Point; +1 Radiation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1
+   },
+   {
+    "stat": "Radiation",
+    "amount": 1
+   }
+  ]
+ },
+ {
+  "id": "healing_poultice",
+  "name": "Healing poultice",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 20,
+  "weight": 0.03,
+  "source": "Healing poultice",
+  "edid": "NVDLC02HealingPoultice",
+  "form_id": "0000000d",
+  "effects_text": "+5 Hit Points per second for 18s; -1 Agility for 18s; +250 Limb Condition",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 5,
+    "per_second": true,
+    "duration_s": 18.0
+   },
+   {
+    "stat": "Agility",
+    "amount": -1,
+    "duration_s": 18.0
+   },
+   {
+    "stat": "Limb Condition",
+    "amount": 250
+   }
+  ],
+  "skill": "Medicine"
+ },
+ {
+  "id": "healing_powder",
+  "name": "Healing powder",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.03,
+  "source": "Healing powder (Fallout: New Vegas)",
+  "edid": "NVHealingPowder",
+  "form_id": "00136a1d",
+  "effects_text": "+1 Hit Points per second for 18s; -1 Perception for 18s",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 18.0
+   },
+   {
+    "stat": "Perception",
+    "amount": -1,
+    "duration_s": 18.0
+   }
+  ],
+  "skill": "Medicine"
+ },
+ {
+  "id": "honey_mesquite_pod",
+  "name": "Honey mesquite pod",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.1,
+  "source": "Honey mesquite pod",
+  "edid": "NVFreshHoneyMesquiteFruit",
+  "form_id": "000eaca1",
+  "effects_text": "+1 Hit Point per second for 4s; Hardcore mode only:; -10 Dehydration; -10 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 4.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   }
+  ]
+ },
+ {
+  "id": "human_flesh",
+  "name": "Human flesh",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 0,
+  "weight": 1,
+  "source": "Human flesh (Fallout: New Vegas)",
+  "edid": "HumanFlesh",
+  "form_id": "0003404f",
+  "effects_text": "+1 Hit Point per second for 5s; +10 Radiation; Hardcore mode only:; -60 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -60
+   }
+  ]
+ },
+ {
+  "id": "human_remains",
+  "name": "Human remains",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Human remains",
+  "edid": "NVCannibalFood",
+  "form_id": "0015eacf",
+  "effects_text": "+2 Hit Points per second for 5s; Hardcore mode only:; -45 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -45
+   }
+  ]
+ },
+ {
+  "id": "hydra",
+  "name": "Hydra",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 55,
+  "weight": 0,
+  "source": "Hydra",
+  "edid": "NVHydra",
+  "form_id": "0013b2c3",
+  "effects_text": "+10 Limb Condition per second for 60s.",
+  "effects": [
+   {
+    "stat": "Limb Condition",
+    "amount": 10,
+    "per_second": true,
+    "duration_s": 60.0
+   }
+  ],
+  "addiction": {
+   "type": "hydra",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "ice_cold_nuka_cola",
+  "name": "Ice cold Nuka-Cola",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Ice cold Nuka-Cola (Fallout: New Vegas)",
+  "edid": "MS05IceNukaCola",
+  "form_id": "00040dcb",
+  "effects_text": "+1 bottle cap; +4 Hit Points per second for 20s; +2 Radiation; Hardcore mode only:; +10 Dehydration; -60 Sleep",
+  "effects": [
+   {
+    "stat": "bottle cap",
+    "amount": 1
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 4,
+    "per_second": true,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 2
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 10
+   },
+   {
+    "stat": "Sleep",
+    "amount": -60
+   }
+  ]
+ },
+ {
+  "id": "iguana_bits",
+  "name": "Iguana bits",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Iguana bits (Fallout: New Vegas)",
+  "edid": "IguanaBits",
+  "form_id": "0001519a",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ]
+ },
+ {
+  "id": "iguana_on_a_stick",
+  "name": "Iguana-on-a-stick",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Iguana-on-a-stick (Fallout: New Vegas)",
+  "edid": "IguanaOnAStick",
+  "form_id": "0001519b",
+  "effects_text": "+3 Radiation; +1 Hit Point per second for 12s; Hardcore mode only:; -75 Starvation",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 12.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -75
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "imitation_strange_meat_pie",
+  "name": "Imitation strange meat pie",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Imitation strange meat pie",
+  "edid": "VMS18StrangeMeatPie",
+  "form_id": "0011a10d",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "instamash",
+  "name": "InstaMash",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "InstaMash (Fallout: New Vegas)",
+  "edid": "InstaMash",
+  "form_id": "0008c558",
+  "effects_text": "+1 Hit Point per second for 5s; +2 Radiation; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 2
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ]
+ },
+ {
+  "id": "irr_dandy_boy_apples",
+  "name": "Irr. Dandy Boy Apples",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Irr. Dandy Boy Apples",
+  "edid": "IrradiatedDandyBoyApples",
+  "form_id": "00143fe9",
+  "effects_text": "+1 Hit Point for 5s; +10 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irr_fancy_lads",
+  "name": "Irr. Fancy Lads",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. Fancy Lads",
+  "edid": "IrradiatedFancyLadsSnackCakes",
+  "form_id": "00143fea",
+  "effects_text": "+1 Hit Point per second for 5s; +10 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "irr_mac_cheese",
+  "name": "Irr. Mac & Cheese",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. Mac & Cheese",
+  "edid": "IrradiatedBlamcoMacandCheese",
+  "form_id": "00143fe6",
+  "effects_text": "+1 Hit Point per second for 5s; +10 Radiation; Hardcore mode only:; -20 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -20
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irr_pork_n_beans",
+  "name": "Irr. Pork n' Beans",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. Pork n' Beans",
+  "edid": "IrradiatedPorkNBeans",
+  "form_id": "00143fec",
+  "effects_text": "+1 Hit Point per second for 5s; +10 RadiationHardcore mode only:; -40 Starvation; +20 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -40
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 20
+   }
+  ]
+ },
+ {
+  "id": "irr_potato_crisps",
+  "name": "Irr. Potato Crisps",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. Potato Crisps",
+  "edid": "IrradiatedPotatoCrisps",
+  "form_id": "00143fed",
+  "effects_text": "+1 Hit Point per second for 5s; +10 Radiation; Hardcore mode only:; -10 Starvation; +10 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 10
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irr_salisbury_steak",
+  "name": "Irr. Salisbury Steak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 3,
+  "weight": 1,
+  "source": "Irr. Salisbury Steak",
+  "edid": "IrradiatedSalisburySteak",
+  "form_id": "00143fee",
+  "effects_text": "+1 Hit Point per second for 5s; +10 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "irr_sugar_bombs",
+  "name": "Irr. Sugar Bombs",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. Sugar Bombs",
+  "edid": "IrradiatedSugarBombs01",
+  "form_id": "00143ff0",
+  "effects_text": "+1 Hit Point per second for 7s; +10 Radiation; +5 max Action Points for 30s; Hardcore mode only:; -30 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 7.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "max Action Points",
+    "amount": 5,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -30
+   }
+  ]
+ },
+ {
+  "id": "irr_sunset_sars",
+  "name": "Irr. Sunset Sars.",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Irr. Sunset Sars.",
+  "edid": "IrradiatedSSBottleFull",
+  "form_id": "00143feb",
+  "effects_text": "+2 Hit Points per second for 25s; +9 Radiation; Hardcore mode only:; +5 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 25.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 9
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 5
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irr_yumyum_d_eggs",
+  "name": "Irr. YumYum D. Eggs",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. YumYum D. Eggs",
+  "edid": "IrradiatedYumYumDeviledEggs",
+  "form_id": "00143fdf",
+  "effects_text": "+1 Hit Points (5s); +10 Radiation; Hardcore mode only:; -10 Starvation",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irr_banana_yucca",
+  "name": "Irr. banana yucca",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 3,
+  "weight": 1,
+  "source": "Irr. banana yucca",
+  "edid": "IrradiatedNVFreshBananaYuccaFruit",
+  "form_id": "00143fe4",
+  "effects_text": "+1 Hit Point per second for 7s; +9 Radiation; Hardcore mode only:; -10 Starvation; -15 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 7.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 9
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -15
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irr_barrel_cactus",
+  "name": "Irr. barrel cactus",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. barrel cactus",
+  "edid": "IrradiatedNVFreshBarrelCactusFruit",
+  "form_id": "00143fe5",
+  "effects_text": "-1 Endurance for 2 minutes; +9 Radiation; +1 Hit Point per second for 5s; Hardcore mode only:; -5 Starvation; -20 Dehydration",
+  "effects": [
+   {
+    "stat": "Endurance",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 9
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -5
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -20
+   }
+  ]
+ },
+ {
+  "id": "irr_crunchy_mutfruit",
+  "name": "Irr. crunchy mutfruit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. crunchy mutfruit",
+  "edid": "IrradiatedMutfruit1",
+  "form_id": "00143fe2",
+  "effects_text": "+1 Hit Point per second for 5s; +10 Radiation; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irr_gecko_meat",
+  "name": "Irr. gecko meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irr. gecko meat",
+  "edid": "IrradiatedNVGeckoMeat",
+  "form_id": "00143fe0",
+  "effects_text": "+10 Radiation; +1 Hit Point per second for 5s; -1 Strength for 2 minutes; Hardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irradiated_cram",
+  "name": "Irradiated Cram",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irradiated Cram",
+  "edid": "IrradiatedCram",
+  "form_id": "00143fe8",
+  "effects_text": "+1 Hit Point per second for 5s; +10 Rads; Hardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Rads",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irradiated_instamash",
+  "name": "Irradiated InstaMash",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irradiated InstaMash",
+  "edid": "IrradiatedInstaMash",
+  "form_id": "00143fe7",
+  "effects_text": "+10 Radiation; +1 Hit Point per second for 5s; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irradiated_beer",
+  "name": "Irradiated beer",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 1,
+  "weight": 1,
+  "source": "Irradiated beer",
+  "edid": "IrradiatedBeer",
+  "effects_text": "+1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; +1 Strength for 4 minutes; +10 Radiation; Hardcore mode only:; +20 Dehydration",
+  "effects": [
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 20
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 5.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "irradiated_mutfruit",
+  "name": "Irradiated mutfruit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Irradiated mutfruit",
+  "edid": "IrradiatedMutfruit2",
+  "form_id": "00143fe3",
+  "effects_text": "+2 Hit Points per second for 5s; +9 Radiation; Hardcore mode only:; -20 Starvation; -10 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 9
+   },
+   {
+    "stat": "Starvation",
+    "amount": -20
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "irradiated_potato",
+  "name": "Irradiated potato",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Irradiated potato",
+  "edid": "IrradiatedPotato",
+  "form_id": "00143ff2",
+  "effects_text": "+10 Radiation; +2 Hit Points per second for 5s; Hardcore mode only:; -15 Starvation; -10 Dehydration",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   }
+  ]
+ },
+ {
+  "id": "irradiated_scotch",
+  "name": "Irradiated scotch",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Irradiated scotch",
+  "edid": "IrradiatedScotch",
+  "form_id": "00143fef",
+  "effects_text": "+10 Radiation; +1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; +1 Strength for 4 minutes; with Old World Gourmet; +2 Hit Points per second for 10s; Hardcore mode only:; +25 Dehydration",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 25
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "irradiated_water",
+  "name": "Irradiated water",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Irradiated water",
+  "edid": "IrradiatedWaterUnpurified",
+  "form_id": "00143ff1",
+  "effects_text": "+16 Radiation; +2 Hit Points per second for 5s; -50 Dehydration(see bugs)",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 16
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   }
+  ],
+  "addiction": {
+   "type": "no"
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "irradiated_whiskey",
+  "name": "Irradiated whiskey",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Irradiated whiskey",
+  "edid": "IrradiatedWhiskey",
+  "form_id": "00143fe1",
+  "effects_text": "+10 Radiation; +1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; +1 Strength for 4 minutes; Hardcore mode only:; +25 Dehydration",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 25
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "jake_juice",
+  "name": "Jake Juice",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 10,
+  "weight": 1,
+  "source": "Jake Juice",
+  "edid": "ScotchGood",
+  "form_id": "001673d6",
+  "effects_text": "+1 Strength for 4 minutes; +1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; with Old World Gourmet; +2 Hit Points per second for 10s; Hardcore mode only:; +25 Dehydration",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 25
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "jalape_o_pepper",
+  "name": "Jalapeño pepper",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.02,
+  "source": "Jalapeño pepper",
+  "edid": "JalapenoPepper",
+  "form_id": "0015f0e7",
+  "effects_text": "+1 Hit Point per second for 5s; Hardcore mode only:; +5 Dehydration; -10 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 5
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   }
+  ]
+ },
+ {
+  "id": "jet",
+  "name": "Jet",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Jet (Fallout: New Vegas)",
+  "edid": "Jet",
+  "form_id": "00015164",
+  "effects_text": "+15 Action Points for 4 minutes",
+  "effects": [
+   {
+    "stat": "Action Points",
+    "amount": 15,
+    "duration_s": 240.0
+   }
+  ],
+  "addiction": {
+   "type": "jet",
+   "chance_percent": 20.0
+  }
+ },
+ {
+  "id": "junk_food",
+  "name": "Junk food",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Junk food (Fallout: New Vegas)",
+  "form_id": "0003359c",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   }
+  ]
+ },
+ {
+  "id": "lakelurk_egg",
+  "name": "Lakelurk egg",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Lakelurk egg",
+  "edid": "LakeLurkEgg",
+  "form_id": "001449ca",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ],
+  "addiction": {
+   "type": "no"
+  }
+ },
+ {
+  "id": "lakelurk_meat",
+  "name": "Lakelurk meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 12,
+  "weight": 1,
+  "source": "Lakelurk meat",
+  "edid": "LakelurkMeat",
+  "effects_text": "+1 Radiation; +2 Hit Points per second for 10s; Hardcore mode only:; -45 Starvation",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 1
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -45
+   }
+  ]
+ },
+ {
+  "id": "large_wasteland_tequila",
+  "name": "Large wasteland tequila",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 20,
+  "weight": 1,
+  "source": "Large wasteland tequila",
+  "edid": "NVDLC02WastelandTequilaLarge",
+  "form_id": "0000000d",
+  "effects_text": "+3 Strength for 4 minutes; +1 Charisma for 4 minutes; -3 Intelligence for 4 minutes; +2 Damage Threshold for 2 min.; +10 Poison Resistance for 2 min.; Hardcore mode only:; Dehydration +25",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 3,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -3,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Damage Threshold",
+    "amount": 2,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Poison Resistance",
+    "amount": 10,
+    "duration_s": 120.0
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 15.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "leg_healing_powder",
+  "name": "Leg. healing powder",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 0,
+  "source": "Leg. healing powder",
+  "edid": "NVHealingPowderLegate",
+  "form_id": "0014c11c",
+  "effects_text": "+3 Hit Points per second for 27s; -3 Perception",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 3,
+    "per_second": true,
+    "duration_s": 27.0
+   },
+   {
+    "stat": "Perception",
+    "amount": -3
+   }
+  ]
+ },
+ {
+  "id": "mre",
+  "name": "MRE",
+  "kind": "consumable",
+  "dlc": "lonesome_road",
+  "value": 50,
+  "weight": 0.2,
+  "source": "MRE",
+  "edid": "NVDLC04MRE",
+  "effects_text": "+2 Hit Points per second for 15s; Hardcore mode only:; +1 Hit Point per second for 10s; -200 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 15.0
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -200
+   }
+  ]
+ },
+ {
+  "id": "maize",
+  "name": "Maize",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.25,
+  "source": "Maize",
+  "edid": "NVFreshMaize",
+  "form_id": "000e9ad1",
+  "effects_text": "+1 Hit Point per second for 9s; Hardcore mode only:; -40 Starvation; -10 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 9.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -40
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   }
+  ]
+ },
+ {
+  "id": "med_x",
+  "name": "Med-X",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Med-X (Fallout: New Vegas)",
+  "edid": "Morphine",
+  "form_id": "00050f8f",
+  "effects_text": "+25 Damage Resistance for 4 min",
+  "effects": [
+   {
+    "stat": "Damage Resistance",
+    "amount": 25,
+    "duration_s": 240.0
+   }
+  ],
+  "addiction": {
+   "type": "med-x",
+   "chance_percent": 10.0
+  }
+ },
+ {
+  "id": "medical_supplies",
+  "name": "Medical supplies",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 55,
+  "weight": 10,
+  "source": "Medical supplies (Fallout: New Vegas)",
+  "edid": "NVContrerasMedicalSupplies",
+  "form_id": "000f1865",
+  "effects_text": "Restores all limbs"
+ },
+ {
+  "id": "mentats",
+  "name": "Mentats",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Mentats (Fallout: New Vegas)",
+  "edid": "Mentats",
+  "form_id": "00015165",
+  "effects_text": "+2 Intelligence for 4 minutes; +2 Perception for 4 minutes; +1 Charisma for 4 minutes",
+  "effects": [
+   {
+    "stat": "Intelligence",
+    "amount": 2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Perception",
+    "amount": 2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   }
+  ],
+  "addiction": {
+   "type": "mentats",
+   "chance_percent": 5.0
+  }
+ },
+ {
+  "id": "mole_rat_meat",
+  "name": "Mole rat meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 4,
+  "weight": 1,
+  "source": "Mole rat meat (Fallout: New Vegas)",
+  "edid": "MoleRatMeat",
+  "form_id": "0003404c",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; -1 Strength for 2 minutes; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ]
+ },
+ {
+  "id": "mole_rat_stew",
+  "name": "Mole rat stew",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 25,
+  "weight": 1,
+  "source": "Mole rat stew",
+  "edid": "MoleRatStew",
+  "form_id": "001613c4",
+  "effects_text": "+1 Strength for 2 minutes; +2 Hit Points per second for 30s; Hardcore mode only:; -30 Starvation",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -30
+   }
+  ]
+ },
+ {
+  "id": "mole_rat_wonder_meat",
+  "name": "Mole rat wonder meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Mole rat wonder meat (Fallout: New Vegas)",
+  "edid": "MoleRatWonderMeat",
+  "form_id": "000abd17",
+  "effects_text": "+2 Hit Points per second for 10s; +3 Radiation; Hardcore mode only:; -40 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -40
+   }
+  ]
+ },
+ {
+  "id": "moonshine",
+  "name": "Moonshine",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Moonshine (Fallout: New Vegas)",
+  "edid": "Moonshine",
+  "form_id": "0016163d",
+  "effects_text": "+2 Charisma for 4 minutes; +2 Strength for 4 minutes; -2 Intelligence for 4 minutes; Hardcore mode only:; +25 Dehydration",
+  "effects": [
+   {
+    "stat": "Charisma",
+    "amount": 2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Strength",
+    "amount": 2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 25
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "none (see Notes)"
+ },
+ {
+  "id": "mother_darkness",
+  "name": "Mother Darkness",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 0,
+  "weight": 0.5,
+  "source": "Mother Darkness",
+  "edid": "MotherDarkness",
+  "form_id": "00167476",
+  "effects_text": "-3 Agility for 1 minute; -3 Perception for 1 minute; -8 Hit Points per second for 10s",
+  "effects": [
+   {
+    "stat": "Agility",
+    "amount": -3,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Perception",
+    "amount": -3,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": -8,
+    "per_second": true,
+    "duration_s": 10.0
+   }
+  ],
+  "skill": "none"
+ },
+ {
+  "id": "mushroom_cloud",
+  "name": "Mushroom Cloud",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 50,
+  "weight": 1,
+  "source": "Mushroom Cloud",
+  "edid": "MushroomCloud",
+  "form_id": "0015e3a4",
+  "effects_text": "+3 max Action Points for 20s; +3 Hit Points per second for 20s",
+  "effects_hardcore_text": "no additional effects",
+  "effects": [
+   {
+    "stat": "max Action Points",
+    "amount": 3,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 3,
+    "per_second": true,
+    "duration_s": 20.0
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "mutant_cave_fungus",
+  "name": "Mutant cave fungus",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 50,
+  "weight": 1,
+  "source": "Mutant cave fungus",
+  "edid": "NVDLC03CaveFungusINGESTIBLE",
+  "form_id": "0000000d",
+  "effects_text": "+2 Hit Points per second for 5s; +2 Radiation; Hardcore mode only:; -20 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 2
+   },
+   {
+    "stat": "Starvation",
+    "amount": -20
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "mutfruit",
+  "name": "Mutfruit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Mutfruit (Fallout: New Vegas)",
+  "edid": "Mutfruit2",
+  "form_id": "00034049",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -10 Dehydration; -20 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -20
+   }
+  ]
+ },
+ {
+  "id": "nevada_agave_fruit",
+  "name": "Nevada agave fruit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 3,
+  "weight": 0.2,
+  "source": "Nevada agave fruit",
+  "edid": "NevadaAgaveFruit",
+  "form_id": "000ec01c",
+  "effects_text": "+1 Hit Point per second for 8s; Hardcore mode only:; -10 Dehydration; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 8.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "nightstalker_squeezin_s",
+  "name": "Nightstalker squeezin's",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 100,
+  "weight": 0.5,
+  "source": "Nightstalker squeezin's",
+  "edid": "NVDLC03NightstalkerSqueezins",
+  "form_id": "0000000d",
+  "effects_text": "+2 Hit Points per second for 5s; +3 Radiation; With Mile in Their Shoes:; +1 Perception for 4 minutes; +5 Poison Resistance for 4 minutes; +5 Sneak for 4 minutes",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Perception",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Poison Resistance",
+    "amount": 5,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Sneak",
+    "amount": 5,
+    "duration_s": 240.0
+   }
+  ],
+  "skill": "none"
+ },
+ {
+  "id": "nightstalker_tail",
+  "name": "Nightstalker tail",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 18,
+  "weight": 1,
+  "source": "Nightstalker tail",
+  "edid": "NightstalkerTail",
+  "form_id": "0015d225",
+  "effects_text": "+3 Radiation; +1 Hit Point per second for 5s",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   }
+  ]
+ },
+ {
+  "id": "noodles",
+  "name": "Noodles",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Noodles (Fallout: New Vegas)",
+  "edid": "Noodles",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ]
+ },
+ {
+  "id": "nuka_cola",
+  "name": "Nuka-Cola",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Nuka-Cola (Fallout: New Vegas)",
+  "edid": "NukaCola",
+  "form_id": "0001519e",
+  "effects_text": "+3 Radiation; +2 Hit Points per second for 25s; +1 bottle cap; Hardcore mode only:; +10 Dehydration; -15 Sleep",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 25.0
+   },
+   {
+    "stat": "bottle cap",
+    "amount": 1
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 10
+   },
+   {
+    "stat": "Sleep",
+    "amount": -15
+   }
+  ],
+  "skill": "none"
+ },
+ {
+  "id": "nuka_cola_quantum",
+  "name": "Nuka-Cola Quantum",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 30,
+  "weight": 1,
+  "source": "Nuka-Cola Quantum (Fallout: New Vegas)",
+  "form_id": "000284f9",
+  "effects_text": "+8 Radiation; +20 Action Points for 4 minutes; Hardcore mode only:; +10 Dehydration; -100 Sleep",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 8
+   },
+   {
+    "stat": "Action Points",
+    "amount": 20,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 10
+   },
+   {
+    "stat": "Sleep",
+    "amount": -100
+   }
+  ],
+  "addiction": {
+   "type": "nuka-cola quantum",
+   "chance_percent": 10.0
+  }
+ },
+ {
+  "id": "nuka_cola_quartz",
+  "name": "Nuka-Cola Quartz",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 40,
+  "weight": 1,
+  "source": "Nuka-Cola Quartz (Fallout: New Vegas)",
+  "edid": "NVNukaColaQuartz",
+  "form_id": "000e2f6d",
+  "effects_text": "+3 Hit Points per second for 20s; +2 Damage Threshold for 2 minutes; Low-Light Vision for 2 minutes; +10 RadiationAdditional effects; Hardcore mode only:; +10 Dehydration; -15 Sleep",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 3,
+    "per_second": true,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Damage Threshold",
+    "amount": 2,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "RadiationAdditional effects",
+    "amount": 10
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 10
+   },
+   {
+    "stat": "Sleep",
+    "amount": -15
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "nuka_cola_victory",
+  "name": "Nuka-Cola Victory",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 75,
+  "weight": 1,
+  "source": "Nuka-Cola Victory (Fallout: New Vegas)",
+  "edid": "NVNukaColaVictory",
+  "form_id": "000e2f6c",
+  "effects_text": "+3 Hit Points per second for 20s; +10 Action Points for 2 minutes; -1 Perception for 2 minutes; +10 Radiation; Hardcore mode only:; +10 Dehydration; -15 Sleep",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 3,
+    "per_second": true,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Action Points",
+    "amount": 10,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Perception",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 10
+   },
+   {
+    "stat": "Sleep",
+    "amount": -15
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "party_time_mentats",
+  "name": "Party Time Mentats",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Party Time Mentats",
+  "edid": "PartyTimeMentats",
+  "form_id": "00146ccb",
+  "effects_text": "+2 Intelligence for 1 minute; +2 Perception for 1 minute; +5 Charisma for 1 minute",
+  "effects": [
+   {
+    "stat": "Intelligence",
+    "amount": 2,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Perception",
+    "amount": 2,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 5,
+    "duration_s": 60.0
+   }
+  ],
+  "addiction": {
+   "type": "mentats",
+   "chance_percent": 15.0
+  }
+ },
+ {
+  "id": "pinto_bean_pod",
+  "name": "Pinto bean pod",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 0,
+  "weight": 0.05,
+  "source": "Pinto bean pod",
+  "edid": "PintoBeanPod",
+  "form_id": "0015f0e8",
+  "effects_text": "+1 Hit Point per second for 3s; Hardcore mode only:; -5 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 3.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -5
+   }
+  ]
+ },
+ {
+  "id": "pinyon_nuts",
+  "name": "Pinyon nuts",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 0.03,
+  "source": "Pinyon nuts",
+  "edid": "NVPinyonNuts",
+  "form_id": "000e2f67",
+  "effects_text": "+1 Hit Point per second for 5s; Hardcore mode only:; -10 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   }
+  ]
+ },
+ {
+  "id": "poison",
+  "name": "Poison",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 0,
+  "weight": 0,
+  "source": "Poison (Fallout: New Vegas)",
+  "effects_text": ""
+ },
+ {
+  "id": "pork_n_beans",
+  "name": "Pork n' Beans",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Pork n' Beans (Fallout: New Vegas)",
+  "edid": "PorkNBeans",
+  "form_id": "0008c55e",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -40 Starvation; +20 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -40
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 20
+   }
+  ]
+ },
+ {
+  "id": "potato_crisps",
+  "name": "Potato Crisps",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Potato Crisps (Fallout: New Vegas)",
+  "edid": "PotatoCrisps",
+  "form_id": "0008c562",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -10 Starvation; +10 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 10
+   }
+  ]
+ },
+ {
+  "id": "pre_war_steak",
+  "name": "Pre-War steak",
+  "kind": "consumable",
+  "dlc": "dead_money",
+  "value": 5,
+  "weight": 1,
+  "source": "Pre-War steak",
+  "edid": "NVDLC01PreWarMeat",
+  "form_id": "0000000d",
+  "effects_text": "-1 Endurance; +1 Hit Point per second for 10sHardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Endurance",
+    "amount": -1
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ]
+ },
+ {
+  "id": "preserved_meat",
+  "name": "Preserved meat",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 5,
+  "weight": 1,
+  "source": "Preserved meat",
+  "edid": "NVDLC03PreWarMeat",
+  "effects_text": "+1 Hit Point per second for 15s; Hardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 15.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "prickly_pear_fruit",
+  "name": "Prickly pear fruit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 1,
+  "weight": 0.07,
+  "source": "Prickly pear fruit",
+  "edid": "PricklyPearCactusFruit",
+  "form_id": "000ec01e",
+  "effects_text": "+1 Hit Point per second for 10s; Hardcore mode only:; -15 Dehydration; -10 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -15
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   }
+  ]
+ },
+ {
+  "id": "psycho",
+  "name": "Psycho",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Psycho (Fallout: New Vegas)",
+  "edid": "Psycho",
+  "form_id": "00015166",
+  "effects_text": "+25% Damage for 4 minutes",
+  "addiction": {
+   "type": "psycho",
+   "chance_percent": 10.0
+  }
+ },
+ {
+  "id": "purified_water",
+  "name": "Purified water",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Purified water (Fallout: New Vegas)",
+  "edid": "WaterPurified",
+  "form_id": "000151a3",
+  "effects_text": "+2 Hit Points per second for 5s; Hardcore mode only:; -50 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": -50
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "rad_x",
+  "name": "Rad-X",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Rad-X (Fallout: New Vegas)",
+  "edid": "RadX",
+  "form_id": "00015168",
+  "effects_text": "25% Rad. Res. for 4 min."
+ },
+ {
+  "id": "radaway",
+  "name": "RadAway",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "RadAway (Fallout: New Vegas)",
+  "edid": "RadAway",
+  "form_id": "00015167",
+  "effects_text": "-50 RAD¹; Hardcore mode only:; -5 RAD per second for 10s; {{small|¹Substituted in Hardcore mode, not added}}",
+  "effects": [
+   {
+    "stat": "RAD",
+    "amount": -5,
+    "per_second": true,
+    "duration_s": 10.0
+   }
+  ]
+ },
+ {
+  "id": "radroach_meat",
+  "name": "Radroach meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Radroach meat (Fallout: New Vegas)",
+  "edid": "RadroachMeat",
+  "form_id": "0009c957",
+  "effects_text": "+1 Hit Point per second for 5s; +10 Radiation; -1 Strength for 2 minutes; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ]
+ },
+ {
+  "id": "rat_meat",
+  "name": "Rat meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Rat meat",
+  "edid": "RatMeat",
+  "form_id": "0012939e",
+  "effects_text": "+3 Radiation; +1 Hit Point per second for 5s; -1 Strength for 2 minutes; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ]
+ },
+ {
+  "id": "rebound",
+  "name": "Rebound",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Rebound",
+  "edid": "NVReboundChem",
+  "form_id": "000cea5f",
+  "effects_text": "Regenerates +5 Action Points per second for 1 minute",
+  "addiction": {
+   "type": "jet",
+   "chance_percent": 20.0
+  }
+ },
+ {
+  "id": "rocket_consumable",
+  "name": "Rocket (consumable)",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Rocket (consumable)",
+  "edid": "Rocket",
+  "form_id": "00146ccd",
+  "effects_text": "+30 max Action Points for 1 min.",
+  "effects": [
+   {
+    "stat": "max Action Points",
+    "amount": 30,
+    "duration_s": 60.0
+   }
+  ],
+  "addiction": {
+   "type": "jet",
+   "chance_percent": 30.0
+  }
+ },
+ {
+  "id": "roughin_it_bedroll_kit",
+  "name": "Roughin' it! bedroll kit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 0,
+  "weight": 0,
+  "source": "Roughin' it! bedroll kit",
+  "edid": "NVDLC04RoughinItBedrollKit",
+  "form_id": "0000000d",
+  "effects_text": "Allows resting outdoors, heals wounds"
+ },
+ {
+  "id": "ruby_s_casserole",
+  "name": "Ruby's casserole",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Ruby's casserole",
+  "edid": "PrimmSpicyCasserole",
+  "form_id": "000a29d6",
+  "effects_text": "+1 Hit Point per second for 30s; +3 Radiation; Hardcore mode only:; -100 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -100
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "rum_nuka",
+  "name": "Rum & Nuka",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Rum & Nuka",
+  "edid": "RumNukaCola",
+  "form_id": "0011702c",
+  "effects_text": "+1 Strength for 4 minutes; -1 Intelligence for 4 minutes; +3 Radiation; +1 bottle cap; Hardcore mode only:; +15 Dehydration; -5 Sleep",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "bottle cap",
+    "amount": 1
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 15
+   },
+   {
+    "stat": "Sleep",
+    "amount": -5
+   }
+  ],
+  "skill": "None (see bugs)"
+ },
+ {
+  "id": "rushing_water",
+  "name": "Rushing water",
+  "kind": "consumable",
+  "dlc": "lonesome_road",
+  "value": 20,
+  "weight": 1,
+  "source": "Rushing water",
+  "edid": "NVDLC04RushingWater",
+  "form_id": "0000000d",
+  "effects_text": "+50% max Attack Speed for 30s; +2 Hit Points per second for 5sHardcore mode only; -50 Dehydration",
+  "effects": [
+   {
+    "stat": "Dehydration",
+    "amount": -50
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "sacred_datura_root",
+  "name": "Sacred datura root",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 10,
+  "weight": 0.02,
+  "source": "Sacred datura root",
+  "edid": "NVDLC02SacredDaturaRoot",
+  "form_id": "0000000d",
+  "effects_text": "Sacred datura poison for 30s; -2 Perception for 90s",
+  "effects": [
+   {
+    "stat": "Perception",
+    "amount": -2,
+    "duration_s": 90.0
+   }
+  ],
+  "skill": "None"
+ },
+ {
+  "id": "salient_green",
+  "name": "Salient Green",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 50,
+  "weight": 0.25,
+  "source": "Salient Green",
+  "edid": "NVDLC03SalientGreen",
+  "form_id": "0000000d",
+  "effects_text": "+2 Hit Points per second for 7s; Hardcore mode only:; -25 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 7.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -25
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "salisbury_steak",
+  "name": "Salisbury Steak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Salisbury Steak (Fallout: New Vegas)",
+  "edid": "SalisburySteak",
+  "form_id": "000293a9",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -15 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -15
+   }
+  ]
+ },
+ {
+  "id": "scotch",
+  "name": "Scotch",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 10,
+  "weight": 1,
+  "source": "Scotch (Fallout: New Vegas)",
+  "edid": "Scotch",
+  "form_id": "000151a1",
+  "effects_text": "+1 Strength for 4 minutes; +1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; with Old World Gourmet; +2 Hit Points per second for 10s; Hardcore mode only:; +25 Dehydration",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 25
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "sierra_madre_martini",
+  "name": "Sierra Madre martini",
+  "kind": "consumable",
+  "dlc": "dead_money",
+  "value": 20,
+  "weight": 0,
+  "source": "Sierra Madre martini",
+  "edid": "NVDLC01SierraMadreMartini",
+  "form_id": "0000000d",
+  "effects_text": "+75 Max Hit Points for 4 minutes; +4 Endurance for 4 minutes; +2 Strength for 4 minutes",
+  "effects": [
+   {
+    "stat": "Max Hit Points",
+    "amount": 75,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Endurance",
+    "amount": 4,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Strength",
+    "amount": 2,
+    "duration_s": 240.0
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 15.0
+  }
+ },
+ {
+  "id": "silver_sting",
+  "name": "Silver Sting",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 0.5,
+  "source": "Silver Sting",
+  "edid": "SilverSting",
+  "form_id": "00167475",
+  "effects_text": "-2 Strength for 1 minute; -8 Hit Points per second for 10s",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": -2,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": -8,
+    "per_second": true,
+    "duration_s": 10.0
+   }
+  ]
+ },
+ {
+  "id": "slasher",
+  "name": "Slasher",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Slasher",
+  "edid": "Slasher",
+  "form_id": "00146cca",
+  "effects_text": "+25% Damage for 1 minute; +25 Damage Resistance for 1 min.",
+  "effects": [
+   {
+    "stat": "Damage Resistance",
+    "amount": 25,
+    "duration_s": 60.0
+   }
+  ],
+  "addiction": {
+   "type": "psycho",
+   "chance_percent": 20.0
+  }
+ },
+ {
+  "id": "snakebite_tourniquet",
+  "name": "Snakebite tourniquet",
+  "kind": "consumable",
+  "dlc": "lonesome_road",
+  "value": 20,
+  "weight": 0,
+  "source": "Snakebite tourniquet",
+  "edid": "NVDLC04Tourniquet",
+  "form_id": "0000000d",
+  "effects_text": "Cure animal poison; Automatic use; +85 Poison Resistance (30s)",
+  "skill": "Survival"
+ },
+ {
+  "id": "spore_carrier_sap",
+  "name": "Spore carrier sap",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 0,
+  "weight": 0.02,
+  "source": "Spore carrier sap",
+  "edid": "NVDLC02SporeCarrierSap",
+  "form_id": "0000000d",
+  "effects_text": "+1 Hit Point per second for 4s; Hardcore mode only:; -5 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 4.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -5
+   }
+  ],
+  "addiction": {
+   "type": "n/a"
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "spore_plant_pods",
+  "name": "Spore plant pods",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 0,
+  "weight": 1,
+  "source": "Spore plant pods",
+  "edid": "NVSporePlantPods",
+  "form_id": "000e2f69",
+  "effects_text": "+4 Hit Points per second for 6s; +25 Poison Resistance for 120s",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 4,
+    "per_second": true,
+    "duration_s": 6.0
+   },
+   {
+    "stat": "Poison Resistance",
+    "amount": 25,
+    "duration_s": 120.0
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "squirrel_on_a_stick",
+  "name": "Squirrel on a stick",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Squirrel on a stick (Fallout: New Vegas)",
+  "edid": "SquirrelOnAStick",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -75 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -75
+   }
+  ]
+ },
+ {
+  "id": "squirrel_stew",
+  "name": "Squirrel stew",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Squirrel stew (Fallout: New Vegas)",
+  "edid": "SquirrelStew",
+  "form_id": "0003194a",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -50 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -50
+   }
+  ]
+ },
+ {
+  "id": "steady",
+  "name": "Steady",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Steady",
+  "edid": "NVSteadyChem",
+  "form_id": "000ced8c",
+  "effects_text": "Reduces weapon spread to 0.0 for 1 min.",
+  "addiction": {
+   "type": "steady"
+  }
+ },
+ {
+  "id": "stealth_boy",
+  "name": "Stealth Boy",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 100,
+  "weight": 1,
+  "source": "Stealth Boy (Fallout: New Vegas)",
+  "edid": "StealthBoy",
+  "form_id": "00043e94",
+  "effects_text": "+100 Sneak for 2 minutes; +75 Stealth Field for 2 minutes",
+  "effects": [
+   {
+    "stat": "Sneak",
+    "amount": 100,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Stealth Field",
+    "amount": 75,
+    "duration_s": 120.0
+   }
+  ],
+  "addiction": {
+   "type": "no"
+  }
+ },
+ {
+  "id": "stimpak",
+  "name": "Stimpak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 75,
+  "weight": 0,
+  "source": "Stimpak (Fallout: New Vegas)",
+  "edid": "Stimpak",
+  "form_id": "00015169",
+  "effects_text": "+30 HP and Limb Condition",
+  "effects_hardcore_text": "+5 HP/s for 6s",
+  "effects": [
+   {
+    "stat": "HP and Limb Condition",
+    "amount": 30
+   }
+  ],
+  "skill": "Medicine"
+ },
+ {
+  "id": "strange_meat",
+  "name": "Strange meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Strange meat (Fallout: New Vegas)",
+  "edid": "StrangeMeat",
+  "form_id": "0002e376",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; -1 Strength for 2 minutes; Hardcore mode only:; -35 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Strength",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -35
+   }
+  ]
+ },
+ {
+  "id": "strange_meat_pie",
+  "name": "Strange meat pie",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 1,
+  "source": "Strange meat pie (Fallout: New Vegas)",
+  "edid": "StrangeMeatPie",
+  "form_id": "0007e173",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -35 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -35
+   }
+  ]
+ },
+ {
+  "id": "sugar_bombs",
+  "name": "Sugar Bombs",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "Sugar Bombs (Fallout: New Vegas)",
+  "edid": "SugarBombs01",
+  "form_id": "0008c551",
+  "effects_text": "+5 Max Action Points for 30s; +1 Hit Point per second for 7s; +3 Radiation; Hardcore mode only:; -30 Starvation",
+  "effects": [
+   {
+    "stat": "Max Action Points",
+    "amount": 5,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 7.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -30
+   }
+  ]
+ },
+ {
+  "id": "sunset_sarsaparilla",
+  "name": "Sunset Sarsaparilla",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 3,
+  "weight": 1,
+  "source": "Sunset Sarsaparilla (Fallout: New Vegas)",
+  "edid": "SSBottleFull",
+  "form_id": "00103b1e",
+  "effects_text": "+2 Hit Points per second for 25s; 1 bottle cap or 1 Sunset Sarsaparilla star bottle cap; Hardcore mode only:; +5 Dehydration",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 25.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 5
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "super_stimpak",
+  "name": "Super stimpak",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 150,
+  "weight": 0,
+  "source": "Super stimpak (Fallout: New Vegas)",
+  "edid": "NVSuperStimpak",
+  "form_id": "000ccef2",
+  "effects_text": "+60 HP and Limb Condition¹; Super Stimpak Debuff:; -1 ST for 120s; -1 AG for 120s; Hardcore mode only:; +20 HP per second for 3s¹; {{small|¹Substituted in Hardcore mode, not added}}",
+  "effects": [
+   {
+    "stat": "ST",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "AG",
+    "amount": -1,
+    "duration_s": 120.0
+   }
+  ]
+ },
+ {
+  "id": "thick_red_paste",
+  "name": "Thick red paste",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 250,
+  "weight": 0.6,
+  "source": "Thick red paste",
+  "edid": "NVDLC03ThickRedPaste",
+  "form_id": "0000000d",
+  "effects_text": "+4 Hit Points per second for 30s; +15 Max Hit Points for 4 minutes",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 4,
+    "per_second": true,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Max Hit Points",
+    "amount": 15,
+    "duration_s": 240.0
+   }
+  ],
+  "skill": "none"
+ },
+ {
+  "id": "thin_red_paste",
+  "name": "Thin red paste",
+  "kind": "consumable",
+  "dlc": "old_world_blues",
+  "value": 125,
+  "weight": 0.1,
+  "source": "Thin red paste",
+  "edid": "NVDLC03ThinRedPaste",
+  "form_id": "0000000d",
+  "effects_text": "+2 Hit Points per second for 30s; +5 Max Hit Points for 4 minutes",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Max Hit Points",
+    "amount": 5,
+    "duration_s": 240.0
+   }
+  ],
+  "skill": "none"
+ },
+ {
+  "id": "trail_mix",
+  "name": "Trail mix",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 3,
+  "source": "Trail mix",
+  "edid": "TrailMix",
+  "form_id": "0013d572",
+  "effects_text": "+3 Radiation; +5 Action Points for 30s; +5 Hit Points per second for 15s; Hardcore mode only:; -150 Starvation",
+  "effects": [
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Action Points",
+    "amount": 5,
+    "duration_s": 30.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 5,
+    "per_second": true,
+    "duration_s": 15.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -150
+   }
+  ],
+  "skill": "Survival"
+ },
+ {
+  "id": "tremble",
+  "name": "Tremble",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 0,
+  "weight": 0.5,
+  "source": "Tremble",
+  "edid": "Tremble",
+  "form_id": "00167477",
+  "effects_text": "-50 Guns for 20s; -50 Explosives for 20s; -50 Melee Weapons for 20s; -50 Energy Weapons for 20s; -2 Hit Points per second for 20s",
+  "effects": [
+   {
+    "stat": "Guns",
+    "amount": -50,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Explosives",
+    "amount": -50,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Melee Weapons",
+    "amount": -50,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Energy Weapons",
+    "amount": -50,
+    "duration_s": 20.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": -2,
+    "per_second": true,
+    "duration_s": 20.0
+   }
+  ]
+ },
+ {
+  "id": "turbo",
+  "name": "Turbo",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 0,
+  "source": "Turbo",
+  "edid": "NVTurbo",
+  "form_id": "00120d81",
+  "effects_text": "+1 Turbo for 3s",
+  "effects": [
+   {
+    "stat": "Turbo",
+    "amount": 1,
+    "duration_s": 3.0
+   }
+  ],
+  "addiction": {
+   "type": "turbo",
+   "chance_percent": 20.0
+  }
+ },
+ {
+  "id": "ultrajet",
+  "name": "Ultrajet",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 50,
+  "weight": 0,
+  "source": "Ultrajet (Fallout: New Vegas)",
+  "edid": "MS09Ultrajet",
+  "form_id": "000c9cf4",
+  "effects_text": "+40 max Action Points for 4 min.",
+  "effects": [
+   {
+    "stat": "max Action Points",
+    "amount": 40,
+    "duration_s": 240.0
+   }
+  ],
+  "addiction": {
+   "type": "ultrajet",
+   "chance_percent": 20.0
+  }
+ },
+ {
+  "id": "vodka",
+  "name": "Vodka",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Vodka (Fallout: New Vegas)",
+  "edid": "Vodka",
+  "form_id": "00032c74",
+  "effects_text": "+1 Strength for 4 minutes; +1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; with Old World Gourmet; +2 Hit Points per second for 10s; Hardcore mode only:; +25 Dehydration",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 25
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "wasteland_omelet",
+  "name": "Wasteland omelet",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 100,
+  "weight": 1,
+  "source": "Wasteland omelet",
+  "edid": "WastelandOmeletNV",
+  "form_id": "000e2f68",
+  "effects_text": "+4 Hit Points per second for 1 min.; Hardcore mode only:; -150 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 4,
+    "per_second": true,
+    "duration_s": 60.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -150
+   }
+  ]
+ },
+ {
+  "id": "wasteland_tequila",
+  "name": "Wasteland tequila",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 20,
+  "weight": 1,
+  "source": "Wasteland tequila",
+  "edid": "NVDLC02WastelandTequila",
+  "form_id": "0000000d",
+  "effects_text": "+2 Strength for 4 minutes; +1 Charisma for 4 minutes; -2 Intelligence for 4 minutes; +3 Damage Threshold for 4 min. (with Whiskey Rose); +5 Poison Resistance for 1 minute; Hardcore mode only:; Dehydration +15",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Poison Resistance",
+    "amount": 5,
+    "duration_s": 60.0
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "weapon_binding_ritual",
+  "name": "Weapon binding ritual",
+  "kind": "consumable",
+  "dlc": "honest_hearts",
+  "value": 50,
+  "weight": 0.5,
+  "source": "Weapon binding ritual",
+  "edid": "NVDLC02WeapBindRitual",
+  "form_id": "0000000d",
+  "effects_text": "+150 Restore limb condition; +10 Melee Damage for 2 minutes; +10 Unarmed Damage for 2 minutes; -2 Hit Points per second for 2 seconds",
+  "effects": [
+   {
+    "stat": "Restore limb condition",
+    "amount": 150
+   },
+   {
+    "stat": "Melee Damage",
+    "amount": 10,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Unarmed Damage",
+    "amount": 10,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": -2,
+    "per_second": true,
+    "duration_s": 2.0
+   }
+  ]
+ },
+ {
+  "id": "weapon_repair_kit",
+  "name": "Weapon repair kit",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 20,
+  "weight": 1,
+  "source": "Weapon repair kit",
+  "edid": "NVRepairKit",
+  "form_id": "00140a68",
+  "effects_text": "Increases the condition of the currently equipped weapon"
+ },
+ {
+  "id": "whiskey",
+  "name": "Whiskey",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 10,
+  "weight": 1,
+  "source": "Whiskey (Fallout: New Vegas)",
+  "edid": "Whiskey",
+  "form_id": "00032c75",
+  "effects_text": "+1 Strength for 4 minutes; +1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; +2 DT with Whiskey Rose perk for 4 minutes; Hardcore mode only:; +25 Dehydration",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "DT with Whiskey Rose perk",
+    "amount": 2,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 25
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 10.0
+  },
+  "skill": "Survival"
+ },
+ {
+  "id": "white_horsenettle",
+  "name": "White horsenettle",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 2,
+  "weight": 0.02,
+  "source": "White horsenettle",
+  "edid": "WhiteHorsenettleBerry",
+  "form_id": "0013b2b4",
+  "effects_text": "+1 Hit Point per second for 5s; -1 Endurance for 120s; -1 Agility for 120s; Hardcore mode only:; -5 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Endurance",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Agility",
+    "amount": -1,
+    "duration_s": 120.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -5
+   }
+  ]
+ },
+ {
+  "id": "wine",
+  "name": "Wine",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 10,
+  "weight": 1,
+  "source": "Wine (Fallout: New Vegas)",
+  "edid": "Wine",
+  "form_id": "0003404a",
+  "effects_text": "+1 Strength for 4 minutes; +1 Charisma for 4 minutes; -1 Intelligence for 4 minutes; with Old World Gourmet:; +2 Hit Points per second for 10s; Hardcore mode only:; +15 Dehydration",
+  "effects": [
+   {
+    "stat": "Strength",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Charisma",
+    "amount": 1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Intelligence",
+    "amount": -1,
+    "duration_s": 240.0
+   },
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 10.0
+   },
+   {
+    "stat": "Dehydration",
+    "amount": 15
+   }
+  ],
+  "addiction": {
+   "type": "alcohol",
+   "chance_percent": 5.0
+  }
+ },
+ {
+  "id": "xander_root",
+  "name": "Xander root",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 0,
+  "weight": 0.02,
+  "source": "Xander root (Fallout: New Vegas)",
+  "edid": "XanderRoot",
+  "form_id": "0013b2b9",
+  "effects_text": "+1 Hit Point per second for 4s; Hardcore mode only:; -5 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 4.0
+   },
+   {
+    "stat": "Starvation",
+    "amount": -5
+   }
+  ]
+ },
+ {
+  "id": "yao_guai_meat",
+  "name": "Yao guai meat",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 30,
+  "weight": 1,
+  "source": "Yao guai meat (Fallout: New Vegas)",
+  "edid": "YaoGuaiMeat",
+  "form_id": "0003404b",
+  "effects_text": "+2 Hit Points per second for 5s; +10 Radiation; +10% Damage for 2 minutes; Hardcore mode only:; -100 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Points",
+    "amount": 2,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 10
+   },
+   {
+    "stat": "Starvation",
+    "amount": -100
+   }
+  ]
+ },
+ {
+  "id": "yumyum_deviled_eggs",
+  "name": "YumYum Deviled Eggs",
+  "kind": "consumable",
+  "dlc": "base",
+  "value": 5,
+  "weight": 1,
+  "source": "YumYum Deviled Eggs (Fallout: New Vegas)",
+  "edid": "YumYumDeviledEggs",
+  "form_id": "0008c55c",
+  "effects_text": "+1 Hit Point per second for 5s; +3 Radiation; Hardcore mode only:; -10 Starvation",
+  "effects": [
+   {
+    "stat": "Hit Point",
+    "amount": 1,
+    "per_second": true,
+    "duration_s": 5.0
+   },
+   {
+    "stat": "Radiation",
+    "amount": 3
+   },
+   {
+    "stat": "Starvation",
+    "amount": -10
+   }
+  ]
+ }
+]

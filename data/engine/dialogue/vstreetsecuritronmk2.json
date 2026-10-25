@@ -1,0 +1,48 @@
+{
+ "id": "vstreetsecuritronmk2",
+ "speaker_name": "Securitron",
+ "source": "VStreetSecuritronMk2.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Greetings, citizen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it, citizen?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms18securitronalert",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've done the right thing, citizen. Reporting struggles, scuffles, and tussles is the civic duty of every man, woman, and child.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks to you, we can all sleep in our beds a little sounder, knowing that swift justice awaits those who take moral shortcuts for personal gain.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Rest assured, I will apprehend the perpetrator and see him or her punished. Even though, in some ways, evil is its own punishment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18SecuritronAlert",
+   "prompt": "I heard sounds of a struggle in the Ultra-Luxe Penthouse."
+  }
+ ]
+}

@@ -1,0 +1,456 @@
+{
+ "id": "1esergeantbitterroot",
+ "speaker_name": "Bitter-Root",
+ "source": "1ESergeantBitterRoot.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm Bitter-Root. First Recon. You got a reason to talk to me? {quietly suspicious, not confrontational}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Moving into position} Can't talk now. Got to keep my eyes sharp. {in the middle of a mission - doesn't want the player to bother him}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{In position} {quietly warning, it's a combat situation} Eyes sharp, now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Nephi dead, Bitter-Root got a hit} Wish I'd gotten a bullet in that Fiend...",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "{Nephi dead, Bitter-Root got a hit} That's one less drugged-out waster. Best part of this job - shooting folks who deserve it. {believes he means it}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Gorobets dead} I've never lost a {see-OH: commanding officer} CO before. It doesn't feel right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't think you'd be back. What's this about? {quietly suspicious of player}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guess not. I don't mean nothing by it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You really want to talk to somebody, try 10 of Spades. He's always got plenty to say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Me, I'm here to do my job. For now, that job is shootin' Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{10 of Spades dead} 10 of Spades always had plenty to say, before he got himself killed. Me, I'm just here to do my job.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic000",
+   "prompt": "Not too friendly, are you?"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You a merc? Then I guess you'd want to talk to my, uh... father. Major Dhatri. He's our CO. {Dhatri isn't his real father}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic001",
+   "prompt": "Where can I find some work around here?"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, look... he's not my real father. He just looked after me, for a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a long story. And I'd get tired of talking before it was through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's like I told you. Dhatri's not my real father. He just looked after me for a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic002",
+   "prompt": "Your father is your commanding officer? Is that allowed?"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A while, I guess. I don't keep too careful track of time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I like to keep things simple. Just focus on now. That's why they made me a sniper.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You let your mind wander back a ways, and you lose sight of what's in front of your eyes. Good way to miss a mark.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic003",
+   "prompt": "How long have you been with the First Recon?"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You trying to start trouble? Or do you really not know where I got that name? {thinks the player is trying to find an excuse to harass him}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic004",
+   "prompt": "Bitter-Root. You have an unusual name."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] It's a Khan name. You know... the \"Great Khans.\" That's what my parents were. {A little reluctant to reveal this. Hates the Great Khans.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I figured I grew up around the bastards... they owed me a name, after all they put me through. {quietly bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic005",
+   "prompt": "I didn't mean to offend. You don't have to tell me, if you'd rather not."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're dead. Got themselves killed at Bitter Springs. Served them right, if you ask me. {quietly bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic006",
+   "prompt": "What happened to your parents?"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're scum. Lazy, trumped-up Raiders. Most of the time, they're drunk or high, and when they're not shooting chems, they're selling them. {bitter - thinks he means it}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Used to have a settlement up at Bitter Springs, 'til they pissed off NCR and got slaughtered for their trouble. {bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lot of us got killed at Bitter Springs. Lot of them, I mean. My parents died, too. {misspeaks - he accidentally includes himself with the Khans, who he despises. Also has convinced himself that he hates his parents.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic007",
+   "prompt": "What do you know about the Great Khans?"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was massacre. That's what a lot of NCR folk will tell you. Most of them feel plenty bad about what happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I was there. Saw it myself. I don't care what anybody says. The Khans asked for Bitter Springs. They wouldn't leave the NCR be. {quietly bitter - he's talking about the people who raised him, but he's convinced himself he hates them}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My damn parents, too. They were just as bad as the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic008",
+   "prompt": "Tell me about happened to them at Bitter Springs."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. That's probably best.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic009",
+   "prompt": "I've heard enough. Let's talk about something else."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're sorry? Well, that makes one of us. Bitter Springs was the best thing that ever happened to me. {thinks he means it}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Best thing that ever happened to my parents, too. They were as bad as the rest. Worse, maybe. {thinks he means it}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic010",
+   "prompt": "Losing your parents must have been hard for you. I'm sorry."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't I? Mister, you never met my parents.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't I? Beg pardon, ma'am, but you never met my parents.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My dad, he got himself fucked up, every chance he got. Always started with folk for no reason. {bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell, he was the one who taught me to shoot. You know how? By taking potshots at NCR. And not just soldiers. Civilians, too. Even kids. {bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then he'd get high with his buddies and swap tales about the folk they killed. Bunch of animals. {bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And my mom... couple times she tried to sell me to some waster, just to score some Jet. Even the other Khans said she was useless. {bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Only reason they kept her around was because she was a... how'd my dad say it... \"a smokin' piece of ass.\" {bitter}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic011",
+   "prompt": "You don't really mean that, do you?"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In the Khans, you're not fully grown 'til you've taken a beat-down. Everybody gathers round and hits you until you're damn near dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After that - if you haven't begged for mercy - you get to choose a new name. One you'll use for the rest of your life.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When NCR slaughtered the Khans at Bitter Springs, I hadn't got my beat-down yet. I was still too young.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Way I see it, Bitter Springs was my beat-down. So afterward... I gave myself a name. It's all I've got from the Khans, and it's all I ever want.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic012",
+   "prompt": "So your name... it comes from Bitter Springs."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Guess I could tell a pretty good story, if I had a mind. But the truth is, I don't know. Just got lucky.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They brought me to Dhatri after the battle. He was just a Captain, back then. Guess he saw something in me... knew I didn't belong with the Khans.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe he felt bad, too. About how his men killed my folks. I told him he did me a service, but he didn't believe me. Still doesn't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's a good man, Dhatri. Doesn't act like it sometimes, I know. But he didn't have to take me in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic013",
+   "prompt": "How did you survive the massacre?"
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's like I tell Major Dhatri. Best not look under a rock, if you don't really want to know what's there. {player is getting into dangerous - and deeply hidden - territory}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Could be that NCR found some blood on me, and none of it mine. Could be that a few of those Khans didn't die from NCR bullets. {player is getting into dangerous - and deeply hidden - territory}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I had scores of my own to settle... deeper ones than NCR ever had. Don't bother asking who they were with. {player is getting into dangerous - and deeply hidden - territory. Might have been his own parents that he killed.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic014",
+   "prompt": "You're not telling me something. You couldn't have forgotten the whole massacre."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No. What's it matter to you? Why's everybody care so much about other people's business?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just leave it lie. And leave me be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic015",
+   "prompt": "I really don't know. Come on, Sergeant, you can tell me."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. I will. Guess that's something I'd rather not talk about, that's all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic016",
+   "prompt": "Never mind. Forget I mentioned it."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Goodbye. {quiet, disinterested}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic017",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformmccarran31esergeantbitterroottopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "10 of Spades really ought to keep his mouth shut, but he's right. There were a lot of things in my past I just couldn't leave behind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It helped. {grudgingly} A little. Well, more than a little. Betsy ought to pay a visit to Usanagi since it can't hurt none.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformMcCarran31ESergeantBitterRootTopic020",
+   "prompt": "I'm trying to get Corporal Betsy to go see a doctor. I heard you saw Usanagi yourself."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "All right. Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "sergeant_bitter_root"
+}

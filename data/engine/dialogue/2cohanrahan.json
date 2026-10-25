@@ -1,0 +1,335 @@
+{
+ "id": "2cohanrahan",
+ "speaker_name": "O'Hanrahan",
+ "source": "2COHanrahan.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It sure is nice to see everybody working together like family. Maybe now the baby Jesus won't cry his self to sleep every night.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Shooting guns is real scary, but I think I got the hang of it now!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Razz said the candy he got us was special! I wonder what he- {sudden, psychotic break} Gnaaah, kill, kill, rip and kill! -{right back to normal} meant by that?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Poindexter says all our troubles is over now, and we won't have to go to war. I guess that's good, but I don't understand why.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Is it true? The big boss ranger done killed his self?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Howdy, great to see you!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Y'all sure are a big ol' hero. I gotta wright my mama and tell her I met you!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Uh, howdy. Are you gonna be mean or nice this time?",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "You scare and confuse me, and I think you should be nicer to people.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Go away, you big bully!",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Frightened} Ahhh! Somebody call in the Rangers!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Howdy.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "magsshapeup1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Boy, the squad sure is working together a lot better now! I think we're gonna be A-Okay!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "How's that human niceness working out?"
+  },
+  {
+   "key": "magsshapeup1_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "To me? Well, I'll tell you what I think this squad needs: a little more basic human niceness.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "Sgt. McCredie asked me to talk to you about getting your squad in shape."
+  },
+  {
+   "key": "magsshapeup1_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You did? Does that mean you're going to help?",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "MagsShapeUp1",
+   "prompt": "I thought about what you said about basic human niceness."
+  },
+  {
+   "key": "ohanrahanarmy",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, as it turns out, we had a string of bad harvests a few years back. Pa said he couldn't afford to feed but three youngins, or we'd starve.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "As the biggest one it was my job to go join the Army so's my sisters could eat and so's we wouldn't all be killed by raiders and Jesus would love us.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "It's all right, I guess. I don't like all the fighting we gotta do, though.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "topic": "OHanrahanArmy",
+   "prompt": "How'd you end up in the Army?"
+  },
+  {
+   "key": "ohanrahancampgolf",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, it's a fine place. The lake is real {purty} pretty, and we don't get bothered much by them Legion fellers.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "topic": "OHanrahanCampGolf",
+   "prompt": "What do you think of Camp Golf?"
+  },
+  {
+   "key": "ohanrahanfighting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I ain't scared! I just don't like hurting folks, is all. Ma always used to tell me \"boy, you're the biggest and the strongest, so you mind yourself!\"",
+     "emotion": "fear",
+     "intensity": 40
+    },
+    {
+     "text": "Every day she told me that. Guess I done took it to heart.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "OHanrahanFighting",
+   "prompt": "Why are you so afraid of fighting?"
+  },
+  {
+   "key": "ohanrahanhistory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I was born on a farm out in California. Weren't much - me, Ma and Pa, my two sisters and about 40 acres of corn and brahmin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't never have no problems really, except for some lean years. Then I joined up and got shipped out here to New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "OHanrahanHistory",
+   "prompt": "Tell me a little more about yourself."
+  },
+  {
+   "key": "ohanrahanmisfits",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're mostly pretty nice - Poindexter showed me how to make fireworks! Razz kinda scares me sometimes, but I don't mind. He's had a hard life.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "OHanrahanMisfits",
+   "prompt": "Can you tell me about your squadmates?"
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some folks just ain't cut out for Army life, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic003",
+   "prompt": "Yes, it's true. I don't know why."
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, don't worry! I won't!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic004",
+   "prompt": "Yes, but it's a classified secret. Don't tell anybody."
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that don't make no sense. We came all this way; why don't he want to stay? It's nice here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic005",
+   "prompt": "Yes. He was sabotaging the Army to force the NCR to go home."
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right. Folks just don't talk to other folks, and everybody's always cross with each other.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic006",
+   "prompt": "Human niceness?"
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe you just ain't had a healthy dose of human niceness in a while.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic007",
+   "prompt": "That's the dumbest thing I've ever heard."
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Folks just don't talk to other folks, and everybody's always cross with each other.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic008",
+   "prompt": "What do you mean?"
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That'd be swell. Only, if they knew the idea came from me, they probably wouldn't take you serious no more, so maybe you oughta think about it first.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "And I sure hope you're more convincing than I am, or they ain't gonna listen.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic009",
+   "prompt": "So you think I should find ways to convince the Misfits to get along?"
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic010",
+   "prompt": "Okay, I'll try to convince them."
+  },
+  {
+   "key": "vfreeformcampgolf2cohanrahantopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you think's best.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformCampGolf2COHanrahanTopic011",
+   "prompt": "On second thought, I'll ask around first."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Toodle-oo!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "private_o_hanrahan"
+}

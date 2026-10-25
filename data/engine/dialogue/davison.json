@@ -1,0 +1,606 @@
+{
+ "id": "davison",
+ "speaker_name": "Davison",
+ "source": "Davison.txt",
+ "topics": [
+  {
+   "key": "davisonantlerlookat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stop looking at Antler!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No eyes on Antler! You make him nervous!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eyes to yourself, human!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your eyes on Antler! Stop looking!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonAntlerLookAt",
+   "prompt": "nvProNightkinMasterAntlerLookAt"
+  },
+  {
+   "key": "davisonantlertouched",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You touched Antler!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now you pay!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Antler is my friend!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Antler loves me! Not you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No one touch Antler but ME!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonAntlerTouched",
+   "prompt": "nvProNightkinMasterAntlerTouched"
+  },
+  {
+   "key": "davisondie",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Never! Antler protects! You feel Antler's horns now!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonDie",
+   "prompt": "Right the first time, ugly. I've come to kill you."
+  },
+  {
+   "key": "davisondisagree",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Never! Antler protects! You feel Antler's horns now!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonDisagree",
+   "prompt": "Okay, looks like I'm going to have to kill you."
+  },
+  {
+   "key": "davisonfakegoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No. Antler says you are solution. Plus can't have you skulking around, making trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do as Antler says, or feel his horns. Up to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonFakeGoodbye",
+   "prompt": "I need to be going...",
+   "label": "Player tries to leave conversation."
+  },
+  {
+   "key": "davisonfakegoodbye_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No! Antler was clear! Do as Antler says or feel Antler's HORNS!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonFakeGoodbye",
+   "prompt": "I need to go, but I'll come right back.",
+   "label": "Player tries to leave conversation."
+  },
+  {
+   "key": "davisonfoundsbalready",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Liar! The invoice said Stealth Boys here! Antler read it out loud to me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonFoundSBAlready",
+   "prompt": "There is no stockpile of Stealth Boys in this building."
+  },
+  {
+   "key": "davisonghoulinfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A ghoul. But not squishy like others. This ghoul is tough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I thought Antler said send my kin into that room, but three died. Ghoul is a crack shot and set traps too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After, I realize I heard Antler wrong. So I lock the door to keep kin out and wait for Antler to tell me what to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then you come along. Antler says you are solution.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonGhoulInfo",
+   "prompt": "Why can't you search the last room?",
+   "label": "Player asks why Harland's room can't be searched."
+  },
+  {
+   "key": "davisonghoulinfo_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pay attention when I speak! I said ghoul is a crack shot and sets traps!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Too dangerous for us. Okay for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonGhoulInfo",
+   "prompt": "Tell me again why you can't search the room?",
+   "label": "Player asks why Harland's room can't be searched."
+  },
+  {
+   "key": "davisonhavestealthboys",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "But invoice note said Stealth Boys were here! Why can't that note be true?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What, Antler? ...But human could be lying! Stealing the Stealth Boys for itself!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, Antler... You trust so easy...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your lucky day, human. Antler believe you. Nightkin will follow the new note to find Stealth Boys. Better be there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonHaveStealthBoys",
+   "prompt": "The Stealth Boys were sent here by mistake, then sent back."
+  },
+  {
+   "key": "davisonhelphow",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Antler brought us here for a reason... Why was that, Antler?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Right! A piece of paper. Shipment invoice. Hundreds of Stealth Boys, sent here a long time ago...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But Stealth Boys must be in the one room one we don't search yet - the one we can't search.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonHelpHow",
+   "prompt": "Maybe I can help.",
+   "label": "Player asks how to help."
+  },
+  {
+   "key": "davisonhelphow_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Told you already. Antler wants Nightkin to have all the Stealth Boys in the bad room. With the ghoul.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonHelpHow",
+   "prompt": "What do you want me to do?",
+   "label": "Player asks how to help."
+  },
+  {
+   "key": "davisonmystealthboys",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Antler bring us here for hundreds of Stealth Boys, human. Antler thinks big. Antler IS big.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Antler don't bring us here for Stealth Boys some puny human carry. Pull head out of your ass.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonMyStealthBoys",
+   "prompt": "I have some Stealth Boys. I could give them to you."
+  },
+  {
+   "key": "davisonnostealthboysyet",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keep looking... Antler wants Nightkin to have them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Find them or Antler's horns find you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonNoStealthBoysYet",
+   "prompt": "Sorry, no signs of the stockpile of Stealth Boys yet."
+  },
+  {
+   "key": "davisonok",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am in command of my faculties! In command of my troops!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Antler guides me in all things! As I in turn guide my kin!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonOK",
+   "prompt": "Are you all right? You sound... strange."
+  },
+  {
+   "key": "davisonotheroption",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A human who is friend to ghouls? Suspicious.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You mean the ones upstairs. Antler used intercom, told them stay put. But they want to come down in basement anyways?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I cannot allow. My kin are... not right in head like I am. They attack you on sight. Ghouls too. They crazy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your ghoul friends have to wait until you find what Antler brought us to get.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonOtherOption",
+   "prompt": "I came here on behalf of the ghouls upstairs.",
+   "label": "Player says why he or she is here."
+  },
+  {
+   "key": "davisonotheroption_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No trouble wanted? Too bad. Trouble finds you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You come here for a reason, human! Antler say so!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You do as Antler says, or you feel Antler's horns!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonOtherOption",
+   "prompt": "I just wandered in here, okay? I don't want trouble.",
+   "label": "Player says why he or she is here."
+  },
+  {
+   "key": "davisonstealthboysagree",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What you saying, human?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonStealthBoysAgree",
+   "prompt": "Sorry, but I've got some bad news for you.",
+   "label": "Player agrees to find Stealth Boy stockpile."
+  },
+  {
+   "key": "davisonstealthboysagree_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, Antler says we leave here as soon as we get Stealth Boys.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me give you key. Antler had me lock the door. The ghoul inside not expecting a human. Maybe he don't shoot you. Maybe he will.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonStealthBoysAgree",
+   "prompt": "I'll find the StealthBoy stockpile for you if your kin will leave this place.",
+   "label": "Player agrees to find Stealth Boy stockpile."
+  },
+  {
+   "key": "davisonstealthboysagree_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, Antler says we leave here as soon as we get Stealth Boys. {Here - a key. Antler had me lock door. Ghoul inside not expecting a human. Maybe Antler right about your chances.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me give you key. Antler had me lock the door. The ghoul inside not expecting a human. Maybe he don't shoot you. Maybe he will.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonStealthBoysAgree",
+   "prompt": "I can find the stockpile of Stealth Boys for you.",
+   "label": "Player agrees to find Stealth Boy stockpile."
+  },
+  {
+   "key": "davisonwhoareyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me? I am devoted to Antler. But before Antler? Hmm...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Captain, once. Last name, Davison. First name... don't remember.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I commanded a troop of Nightkin. The Master's elite. A great honor, very proud.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something happened. We wandered the desert. Life without Master was... hard. The others' minds going strange, going crazy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But then I found us new master. I find us Antler!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since then, everything's been going really well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonWhoAreYou",
+   "prompt": "And who are you, exactly?"
+  },
+  {
+   "key": "davisonwhoisantler",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who is Antler? WHO IS ANTLER?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Antler, the human asks about you! What do I tell it? All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right... Yes, yes, of course.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who Antler is, not important to you. Antler wants that you deal with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonWhoIsAntler",
+   "prompt": "Who is \"Antler\"?",
+   "label": "Player asks about Antler."
+  },
+  {
+   "key": "davisonwhoisantler_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cut it out, human. Serious. Final warning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonWhoIsAntler",
+   "prompt": "Is \"Antler\" the Brahmin skull over there?",
+   "label": "Player asks about Antler."
+  },
+  {
+   "key": "davisonwhoisantler_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You did it now! Antler's horns stabbing! Antler MAD!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DavisonWhoIsAntler",
+   "prompt": "You're taking orders from a hunk of bone!",
+   "label": "Player asks about Antler."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Antler says you are the one killing my kin. Antler says you must die!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's that, Antler? We have a visitor? {What have we here, besides a resourceful human? That much is obvious.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "An assassin, more like! I say kill it, Antler. For safe's sake!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh? ...Okay, Antler. I'll ask.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hi, human. Why you come here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Antler sings for Stealth Boys. Have you found them?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where did rest of my kin go? All alone now...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Antler is sad. We Nightkin go now, but there is fewer than when we came here...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Antler is sad, human. Nightkin go now, find Stealth Boys in other places.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You touched Antler! Now you DIE!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You will pay, human!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Antler... I have failed you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "ANTLER!!!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  }
+ ],
+ "speaker": "davison"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "westsidedermot",
+ "speaker_name": "Dermot",
+ "source": "WestsideDermot.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in combat} Fuck off! I ain't helping you!",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "I got nothing you need. If it's ass you're looking for, talk to Pretty Sarah.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I said fuck off.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformcasamadridwestsidedermottopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me and my partner Saint James work salvage around Westside, that's all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideDermotTopic000",
+   "prompt": "What do you do around here?"
+  },
+  {
+   "key": "vfreeformcasamadridwestsidedermottopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{'Cause} Because it's his name. He may be high-strung, but he's all right. Hauls his half of scrap, which is all I need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideDermotTopic001",
+   "prompt": "Why is your partner called Saint James?"
+  },
+  {
+   "key": "vfreeformcasamadridwestsidedermottopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't believe everything you hear. Me and Saint James earn our caps working salvage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's hard work, so when I'm not working I like to relax. Which means it's time for you to fuck off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Like I told you, we work salvage. We aren't coyotes. And like I told you, fuck off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideDermotTopic002",
+   "prompt": "I hear you and your partner are coyotes."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidedermottopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're right about that. {shouting for your partner, starting combat} Saint James! Got a thief here!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideDermotTopic003",
+   "prompt": "I know what you and your partner have been up to - I got the evidence from your rooms."
+  },
+  {
+   "key": "vfreeformcasamadridwestsidedermottopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, beat it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCasaMadridWestsideDermotTopic005",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah, beat it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "dermot"
+}

@@ -1,0 +1,102 @@
+{
+ "page": "VHDNCRRangerCommanderNCRBattle.txt",
+ "speaker": "NCR Ranger Veteran commander",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alpha Squad reporting in. Thanks for the support back there. We've been assigned to ensure you make it to the Legate. How can we be of assistance?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We are excecuting your commands.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformHooverDamvHDNCRRangerCommanderNCRBattleTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Roger that. I'll have snipers move to position.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need some snipers to cover my advance."
+  },
+  {
+   "id": "VFreeformHooverDamvHDNCRRangerCommanderNCRBattleTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confirmed. We'll stay with you and help you break through the line.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Have your unit follow with me, we'll assault them head on."
+  },
+  {
+   "id": "VFreeformHooverDamvHDNCRRangerCommanderNCRBattleTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are in charge of this operation. That sounds like a suicide mission, but our order are to take commands from you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unit, let's move out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You have superior firepower. You can overwhelm them if you push the advance on them.",
+   "label": "<Speech Options>"
+  },
+  {
+   "id": "VFreeformHooverDamvHDNCRRangerCommanderNCRBattleTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We aren't assigned for a suicide mission. Give us something we can do, and we'll do it. However I am not{emphasized} sending my unit on a suicide run.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You go first. I'll be right behind you.",
+   "label": "<Speech Options>"
+  },
+  {
+   "id": "VFreeformHooverDamvHDNCRRangerCommanderNCRBattleTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confirmed, we'll fall back. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I can manage this without your assistance."
+  },
+  {
+   "id": "vFreeformHooverDamCommanderGreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alpha Squad reporting in. Thanks for the support back there. We've been assigned to ensure you make it to the Legate. How can we be of assistance?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "vFreeformHooverDamCommanderGreeting"
+  }
+ ]
+}

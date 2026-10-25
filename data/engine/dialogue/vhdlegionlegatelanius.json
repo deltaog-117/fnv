@@ -1,0 +1,1735 @@
+{
+ "id": "vhdlegionlegatelanius",
+ "speaker_name": "Lanius",
+ "source": "VHDLegionLegateLanius.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player sent to Lanius by Caesar or Lucius} You are the courier Lord Caesar has spoken of. The slaughter begins, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Low, vicious, angry} And who is this before me in the colors of the Legion. An envoy... dressed as an insult to all that carry out Caesar's will.",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "{Suspicious, slow} And who are you to come before me... you bear the insignia of the Bear, yet you do not wear it as a soldier of the West wears it.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Suspicious, slow} An envoy of Vegas, yet you carry yourself for battle. If so, you cannot *truly* be of that city of cowards.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Suspicious, slow} And who are you to come before me... you don't bear the mark of the Bear, yet are ready for battle.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Final Combat} {Beat, then disdain} Your words have done nothing but delay the inevitable. {Beat} Now, see what my hounds and my blade will bring to you.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{Cold, finality} For the Legion.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "[FAILED] {Angered, cutting the player off} Enough.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Disdain} Many graves in the East are filled with those who said as much, with braver words, not backed by strength.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "It is Caesar's {emph} will this gate to the West bear the flag of the Legion. {Beat, a little quieter, resolved} Caesar's will shall be done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic000",
+   "prompt": "If you think you've got any chance of taking Hoover Dam, you're wrong."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Disgust} I see you fight with words, like all beneath the flag of the bear. Let us hope your skill with weapons proves greater.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic001",
+   "prompt": "Maybe you're willing to listen to reason."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My army has been ready for some time now. My orders were to await the coming of a messenger.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You are messenger and message both, it would seem.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic002",
+   "prompt": "You mean your army is about to attack?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's will is made truth through me. I am a hammer against all that defy his rule.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "If you seek to stand against me, you shall fall as the West falls.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic003",
+   "prompt": "{Caesar alive}What, Caesar wasn't brave enough to come take the Dam himself?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's will is the will of the Legion. And the West... all beneath the flag of the Great Bear exist to test the strength of the Legion.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "The West shall fall as the East fell, and all the tribes that stretch to the setting sun shall bear the mark of the Legion.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic004",
+   "prompt": "{Caesar dead}What, Caesar giving you orders beyond the grave?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Respectful, eager} Enough words, then. Let our strength settle this.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic005",
+   "prompt": "I'm here to kill you. The Legion's advance ends here."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We shall see how brave you are when nailed to the walls of Hoover Dam, your body facing West so you may watch your world die. {Slow, angry, evil - the player's comments got under his skin.}",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic006",
+   "prompt": "Nice mask, can't wait to take it as a trophy."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Insulted} You dare speak that name? Comparing him to any man of Caesar will only earn you a slow death.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Anger building} You think me some lesser man, some other Legate? I am the first of the Legion, and this gate to the West shall be ours this day.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic008",
+   "prompt": "<Bluff> Persist and learn what Graham learned at the Dam - and Boulder City."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Slight sneer} Those are your final words? They are too weak to even wash the stain of your disgrace this day.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "Yet if those are the words you wish to be remembered for, then I shall... {beat, disgust, as if \"honor is undeserving} *honor* them.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic008",
+   "prompt": "<Bluffs> But... history has shown defeat is assured. Uh, yours, that is."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Thinking} Hnh. {Beat} You believe your own words, even if I do not.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Slightly suspicious} Perhaps NCR has the strength of a cornered animal... it will not be enough to hold this place.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "They know nothing of my tactics - or the strength of my forces. They will learn.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic009",
+   "prompt": "<Bluff> NCR has studied you as they did Graham, and the trap is ready for you."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic009_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Contempt} Then they know nothing of me or the Legion's subjugation of the East.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "And to send you to deceive me... it is you that they have tricked, not I.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic009",
+   "prompt": "<Bluff> I think they believe you'll be tricked as easily... maybe easier."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Slightly to himself} We did take the towers easier than expected. I cannot believe even the Republic would overlook such an opening in their defenses.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Rallying} Yet we are at throat of the Great Bear. Victory is at hand.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic012",
+   "prompt": "<Bluff> The position of your veterans, using the Dam's intake towers - all as expected."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic012_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I am not another Legate, and I am not such a fool as Graham, to be painted in pitch and set aflame.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "If all NCR believes as you do, then this battle is already won.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic012",
+   "prompt": "<Bluff> That strength... other Legates didn't see it either, until it was too late."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am the commander of this army. The Son of Mars has granted me the name Lanius. And the time to serve him has come once more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic013",
+   "prompt": "You're the Legate, I'm guessing?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Our forces are better equipped to take objectives than hold them. I do not wish to defend this place if another option exists.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our opponents follow a strict chain of command, which is both a strength and weakness. I intend to use you to strike at that weakness.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Find the enemy commander, this General Oliver. Kill him or his resolve. Do this, and his cowards will retreat, leaving the dam to us.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic014",
+   "prompt": "And what do you want me to do?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The word means \"butcher\" in Latin. I was granted the name after proving myself in several battles.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Perhaps after today's battle, you too will earn yourself a new name.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic016",
+   "prompt": "What does Lanius mean?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I live to serve Caesar's will - and the will of the Legion. If my victory serves them both, then I am pleased.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic018",
+   "prompt": "Are you looking forward to the battle?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They are passable foes. {Slight disdain} Like their citizens, they prefer their war from a distance, and at that, they excel.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "{Reflective} Their leaders have on occasion shown brilliance, their rangers in particular have adapted well to our strategies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But their rangers are few, and this General Oliver we face is not their best. I regret not being able to face Hanlon, the one who led them last time.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic019",
+   "prompt": "What do you think of the NCR?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Their men take comfort in - and rely on - killing at a distance. They will not have the luxury of such comforts this time.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Our warriors will wash over them in a tide of blood, severing arms before they can attack, legs before they can run, and heads before they can pray.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "So yes, fortune favors our chances, messenger. Provided *you* move quickly.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic020",
+   "prompt": "Any idea what our chances are?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In the past, the NCR has relied upon attrition, withering our numbers with ranged fire and falling back as necessary.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not this time. The dam contains tunnels to its heart, overlooked by the NCR... now occupied by the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When the battle begins, the NCR will find our teeth at their throats in a dozen places. There will be no attrition, no falling back, only carnage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic021",
+   "prompt": "I'm ready. What is the plan?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It was not intended for war - its top sides are bound to two intake towers by a series of bridges. No doubt snipers nest there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On the far side of the dam, a small building provides access to the power plant below. That is where Oliver hides.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic022",
+   "prompt": "What can you tell me about the layout of the dam?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then ask them. But don't waste my time. The battle draws near.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic023",
+   "prompt": "I have questions."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mars's eyes are upon you. Do not fail him - or us.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic025",
+   "prompt": "Time to go pay General Oliver a visit."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Suspicious} You play on my instincts. Yet your intention in this... you have nothing to gain by telling me of this... \"trap.\"",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Angry} Unless you seek to goad me into a retreat, leaving the battlefield and leaving my honor here to be trampled underfoot by Republic cowards.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic028",
+   "prompt": "<Bluff> Your success was too easy, though, wasn't it? You think I reached you by chance?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course. And I guard myself from such acts of cowardice and jealousy.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You claim that word of my coming has been given to the West so that I might die here... even as I take the Dam?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Telling me this does not benefit you at all... you gamble with your words, and your coin is lacking.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic037",
+   "prompt": "Perhaps the treachery of your own ranks disgusts you as it disgusts me."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If what you say is true, then they shall answer for it.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "But you suggest I turn from battle to answer these crimes, when I can prove myself greater by meeting them - then returning with the Dam as ours.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You almost convinced me otherwise... but justice comes to all in time, and it now comes to you.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic040",
+   "prompt": "If you return East and exact vengeance, it buys the West time - and thins the Legion ranks."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You speak with conviction, and more importantly, with honor. {Beat} And we secured a foothold on the Dam... easily, as you have said.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Graham's overconfidence forever branded him with fire, I will not follow his trail of fire into the depths of the Grand Canyon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Resolved} The Republic shall keep their Old World gate this day, I shall return East. When I return, I shall have all the armies of the Legion with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic042",
+   "prompt": "When your own must ally with the West in order to remove you? Such treachery must be answered."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then ask them. The battle draws near.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic043",
+   "prompt": "I have questions first."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Final word, slight suspicion} Perhaps it is unfortunate Vulpes was not here to hear your words... something tells me you would prove more than his match.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Final word, slight suspicion} Perhaps it is fortunate Vulpes went to his death before this day... something tells me your words would have surpassed even his skills.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Until the day when our armies meet again, NCR - I shall wait for you on the battlefield.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Until the day when our armies meet again, envoy of Vegas - I shall wait for you on the battlefield.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Until the day when our armies meet again, courier - I shall wait for you on the battlefield.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic046",
+   "prompt": "I will await that day, Legate Lanius."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Frowns} Hnh. I have seen little of true battle this day. And you were brave to come here to face me when all of NCR would not.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "{Nods, respectful} I shall honor your last words and face you alone. No man will say I refused your challenge.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic049",
+   "prompt": "[Karma] Any man can claim bravery when he outnumbers his opponent."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Takes a ragged, angry breath} The West's treatment of bitches such as you is their weakness. {Beat, second thought} But... by my honor, I shall face you alone, as you request. {Had to dupe these lines because of the different skill/Karma checks being done tied to the conditional.}",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Snarling} Woman of the West... you will learn your place - in my tent, and again, when you beg for release on the edge of my blade. {Had to dupe these lines because of the different skill/Karma checks being done tied to the conditional.}",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "[SUCCEEDED] {Takes a ragged, angry breath} I shall make a cape of your skin. And your skull - it shall sit by my side, mute, watching as my armies march West. {Had to dupe these lines because of the different skill/Karma checks being done tied to the conditional.}",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Snarling} I shall honor your last words... and face you alone, as you request. No man will say I refused your challenge. {Had to dupe these lines because of the different skill/Karma checks being done tied to the conditional.}",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic050",
+   "prompt": "<Bluff> If you're such a \"Terror\" of the East, call off your dogs and face me one on one."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Takes a ragged, angry breath} The West's treatment of bitches such as you is their weakness. {Beat, second thought} But... by my honor, I shall face you alone, as you request. {Had to dupe these lines because of the different skill/Karma checks being done tied to the conditional.}",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Snarling} Woman of the West... you will learn your place - in my tent, and again, when you beg for release on the edge of my blade. {Had to dupe these lines because of the different skill/Karma checks being done tied to the conditional.}",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "[SUCCEEDED] {Takes a ragged, angry breath} I shall make a cape of your skin. And your skull - it shall sit by my side, mute, watching as my armies march West. {Had to dupe these lines because of the different skill/Karma checks being done tied to the conditional.}",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "{Snarling} I shall honor your last words... and face you alone, as you request. No man will say I refused your challenge. {Had to dupe these lines because of the different skill/Karma checks being done tied to the conditional.}",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic051",
+   "prompt": "[Karma] Why don't you fight me yourself if you've got the spine for it, shithead."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, I shall make it a contest - whether I can kill you *before* my hounds tear you apart.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic052",
+   "prompt": "Maybe you'd want something more fair? Like a fair fight?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic059",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Contempt} I have no *need* to hold it - anything the West sends against me shall break against the wall that is the Legion.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic059",
+   "prompt": "You could take the West. *Holding* it is another matter."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic059_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Disgust} You seek to buy my conviction, like some merchant from the West.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic059",
+   "prompt": "Look... there must be some deal we can make to stop this fighting - it's useless."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Derisive} You think we would march without a means of resupply? We have the Fort, we will have the Dam - other communities will fall.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "And we shall harvest as we move West. {With conviction} We only need move forward.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic060",
+   "prompt": "And they don't *need* to send an army, your supply lines will kill you first."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic060_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Your reliance on comfort... it rots you from the inside. You are in need of the teachings the Legion will bring to your people.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic060",
+   "prompt": "So you, uh, think military strength is enough, even without supplies?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Growing anger} There are many towns, many slaves... ripe for the taking as the tribes from the East were.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic063",
+   "prompt": "There's no communities to support you in the West - you've seen to that."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic063_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Growing anger, disgust} I shall carve your {emph} promises into your skin so that you might think on them - and let that be the lesson this day.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic063",
+   "prompt": "The farther West, your strength will fail you, I promise you."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Confused} You rely too much on the trappings of... civilization. The people of the West were once tribes - they will relearn their ways, or...",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic064",
+   "prompt": "The settlements West are *not* self-sufficient tribes - they need NCR, and the caravans."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic064_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Angered, cutting the player off} Enough.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic064",
+   "prompt": "Look, you haven't thought the economics of this through, all right?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Pauses} Vulpes... brought the touch of Caesar to such places.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Beat} It was necessary to weaken the West, show that the Legion could strike deep into the places where NCR thought it safe.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Rallying} But we do not need *those* towns. Like Hoover Dam, there is the power within Vegas... we can harness it for our needs.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic065",
+   "prompt": "Towns? The Legion destroyed Nipton, poisoned Searchlight, butchered Nelson.",
+   "label": "But the Legion... it's destroyed a bunch of... well, towns you need."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hnh. {Beat} Long ago... when taking Denver, I had to face such a challenge. Many died, over many years to claim the city as ours.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "{Reflective} It was the lines of food and water that nearly broke the Legion's strength... and the lack of tribals near that cursed city.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "What I felt in that struggle, I felt as I saw the map of the West. The West is a trap. The bear has already been caught in it, and it is dying.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic071",
+   "prompt": "As Legate, do you really believe that, or are you taking a chance?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hnh. My coming would have saved you, set your people free in ways they cannot see.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "War would have tested them. Broken the weak with its violence, yet allowing the strong to arise.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Violence gave you that strength, awakened you - I can see it upon your face, where two bullets left their mark.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic073",
+   "prompt": "Where you see death, I see change - and I see it as a strength."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hnh. Then when I return, woman of the West... we shall see if your belief will withstand the blades of the Legion.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "[SUCCEEDED] Hnh. Then when I return, man of the West... we shall see if your belief will withstand the blades of the Legion.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "But I shall give you the time you need to prepare.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic074",
+   "prompt": "I have faith. Trade helped us survive the Great War, it will do so again."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic075",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Retreat? {Beat, as if the word is new to him.} Retreat.",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "{Growing anger} I was a fool to listen to you... you know nothing of who I am.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic075",
+   "prompt": "So... you'll retreat?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Mocking} So you seek quarter? Terms of surrender?",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Our roads into NCR are hung with the bodies of those who attempted to {disgust} negotiate with us.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Save your speeches, we will take Hoover Dam and move forward until our feet crush the setting sun beneath them.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic078",
+   "prompt": "This battle is decided, that's why I am here."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic078_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] It is the Legion that will surprise the West, but you will not be alive to see it.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic078",
+   "prompt": "I suspect the bear will surprise you in ways... in ways I can't even describe."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hoover Dam has never seen the massed strength of the East. Only Legates such as Graham... who deserved the fire Caesar blessed him with.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Now I am here, and make markers of your people as the Legion carves its way West.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic079",
+   "prompt": "Move forward? The Legion spent years trying to take Hoover Dam."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic079_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Angered, cutting the player off} Enough.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic079",
+   "prompt": "Surely there are terms you would hear? Anything?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic081",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Angered, confused} You speak in circles - what of the East? {beat} I am the East, and I will prove it this day.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic081",
+   "prompt": "And then what of the East?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic081_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Angered, cutting the player off} Enough.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic081",
+   "prompt": "Look, my point about Hoover Dam is that it's hard to take, so..."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic083",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] The victory here shall be swift. Our forces shall take the Dam, secure it, then build a road west on the bodies of the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The East will hold. Once across the Colorado, nothing to rival Hoover Dam remains.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic083",
+   "prompt": "If you need all the East to crush the West..."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic083_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] {Angered, cutting the player off} Enough.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic083",
+   "prompt": "Look, you're not listening to me - it's not about the Dam, really."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Vegas will fall.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic085",
+   "prompt": "Well... except Vegas."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Curious} Your weakness? You seek to thwart me by claiming the Legion is too strong for you?",
+     "emotion": "surprise",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic088",
+   "prompt": "It is not the strength of the West that will slow you, it is their weakness."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic088_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] And how {emp} battles are lost... when you bring nothing but words to a contest of strength.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic088",
+   "prompt": "That's an optimistic attitude for a general, and that's how wars get lost."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic089",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pauses} I count on no one.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic089",
+   "prompt": "Really? I hope you're not counting on the Omertas to help you."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic090",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angry} As was I... yet I was ordered to await you. Now that you are here, we may act.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic090",
+   "prompt": "About time. I was starting to get bored with all this waiting around."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angered} A plan by Vulpes... treachery is a weapon that one should never rely on.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "I can only hope that the Omertas died when their treachery was exposed, to have the plan succeed only would have sullied the Legion.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "It does not matter, victory shall be ours, it shall be swift, and it will be honest, purchased with blood.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic092",
+   "prompt": "Good, because the Omertas' plan was stopped, Vegas is as strong as ever."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic093",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Frown} That does not mean we would not succeed.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic093",
+   "prompt": "NCR's weakness is its size - it'll take your entire army to hold the West."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] The East was a hard-fought campaign. Even now, Caesar drew too much of the Legion's blood needed there for... this.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Hoover Dam is but a place. I will not have it be the gravestone of the Legion - whether quickly, or as you describe, slowly... by attrition.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic097",
+   "prompt": "Eventually - but moving your whole army West means losing the East. You can't hold both."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As for wisdom... there is wisdom in your words, woman of the West.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "As for wisdom... there is wisdom in your words, man of the West.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Know that I shall return East. I shall not remain there forever. On that day, the strength of the bear shall be tested.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If the West is one day filled with ones such as you, perhaps it shall be a worthy fight, indeed.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic102",
+   "prompt": "There is victory in wisdom, Legate."
+  },
+  {
+   "key": "vfreeformhooverdamvhdlegionlegatelaniustopic104",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then until our return... {To himself, walking away} True to Caesar.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDLegionLegateLaniusTopic104",
+   "prompt": "I will await that day, Legate."
+  },
+  {
+   "key": "vhdlegatecongratulatesyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This slaughter pleases me. No act is more sacred than consecrating a site in the blood of one's enemies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The rest of the dam is fully under our control. A few pitiful holdouts remain, but their time is short. The general was the last source of concern.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With their commander dead, the NCR will pull out of this region, allowing our conquest to continue westward unopposed for a time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Judging by the lack of blood, I take it the coward Oliver fled rather than face me. No matter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The rest of the dam is fully under our control. A few pitiful holdouts remain, but their time is short. The general was the last source of concern.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With their commander gone, the NCR will pull out of this region, allowing our conquest to continue westward unopposed for a time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Legion will swell with the number of slaves we will claim from this place, and the tribute we gather will fund further campaigns.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Perhaps, in time, I will be granted the honor of conquering the land known as California. But for now, we rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Know that your efforts are appreciated and will not go unrewarded. But we can speak of that later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For now, come, we must see to the burning of the dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegateCongratulatesYou",
+   "prompt": "VHDLegateCongratulatesYou"
+  },
+  {
+   "key": "vhdlegategreetsplayer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Finally, Mars has accepted my sacrifices and unleashes me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegateGreetsPlayer",
+   "prompt": "VHDLegateGreetsPlayer"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Mars's eyes are upon you. Do not fail him, or me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "I'll go pay General Oliver a visit.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "vhdlegategivesthanks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Blah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDLegateGivesThanks",
+   "prompt": "VHDLegateGivesThanks"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{contempt} The ultimate insult is to be spared.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Degenerate!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll pay for that!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Displace!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Scatter!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Press on!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep fighting!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{throwing grenade} <Grunting as you throw.>Look out, brothers!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{throwing grenade} Explosive, brothers!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{scared} Run!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{scared} Run, brothers!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{scared} Fall back!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{warning} You don't belong here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{warning} Move along or suffer the consequences.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{warning} Leave while you still can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Reprisal!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Vengeance!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Retribution!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{unaffected} The weak must die.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{unaffected} One more to feed the worms.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{mild praise} A fair kill.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{contempt} Honorless thief!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{contempt} You debase yourself!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{contempt} You have no honor!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{mild concern} I thought I heard something...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{suspicious} You won't escape me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{suspicious} Show yourself and I may let you live.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{satisfied} I knew it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied, mocking} Fool!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied} There you are!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{shaking it off} I guess it was nothing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{shaking it off} Must've been nothing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{shaking it off} Nothing here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{frustrated} I'll find you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{angry} You won't escape me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{frustrated} You can't hide from me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{satisfied} Coward.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied} That's it, run away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied} Degenerate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{frustrated, hostile - hit \"will\"} By {KAI-zar} Caesar, I will find you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{frustrated, hostile} Skulking like a coward will not save you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{frustrated} You won't escape me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{satisfied, hostile} I found you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied, hostile} I see you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfied, hostile} You're mine!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{giving up search} I'll kill them if they come back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{giving up search} I scared them away. {Hmph!} No match for the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{slight concern} {Ah-WAY} Ave? Someone there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slight concern} What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{slight concern} I heard something...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "{starting combat} Die, coward!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{starting combat} Death to Profligates!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{starting combat} Another kill to my name!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "For {KAI-zar} Caesar!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Death to the Legion's enemies!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Die, Profligate!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  }
+ ],
+ "speaker": "legate_lanius"
+}

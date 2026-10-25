@@ -1,0 +1,132 @@
+{
+ "id": "vms49vagrant",
+ "speaker_name": "Vagrant",
+ "source": "VMS49Vagrant.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{creepy vagrant laugh} Heh heh heh heh heh. <Coughs>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{nearly passed out} Wha-?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidevms49vagranttopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh heh heh heh {\"ooo, fancy\"} ooo, heh heh heh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVMS49VagrantTopic000",
+   "prompt": "I'm looking for someone carrying an antique gun."
+  },
+  {
+   "key": "vfreeformfreesidevms49vagranttopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{erudite} Indeed I have, my articulate friend. Not a few minutes ago I chanced upon a pair of destitute orphans grappling over just such an item.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{erudite} If you cover the area methodically, I'm quite certain you'll happen upon them with only the most insubstantial of delays.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{erudite} Be well. And do try and avoid the tragic path of the sot that led me to my present infirmities and spiritual woes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVMS49VagrantTopic000",
+   "prompt": "Hey. You see weird gun? (\"Pardon, but have you seen any pre-war firearm antiques as of late?\")"
+  },
+  {
+   "key": "vfreeformfreesidevms49vagranttopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Kids. Run by {slurring} sh- shumtimes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVMS49VagrantTopic001",
+   "prompt": "These ten caps are yours if you point me to anyone you've seen with a weird old gun."
+  },
+  {
+   "key": "vfreeformfreesidevms49vagranttopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Blaaagghhh.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVMS49VagrantTopic001",
+   "prompt": "I would bribe you but I don't have much on me. Would you accept an IOU?"
+  },
+  {
+   "key": "vfreeformfreesidevms49vagranttopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Kids. Run by {slurring} sh- shumtimes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVMS49VagrantTopic002",
+   "prompt": "Two choices. You point me to any odd guns you've seen lately, or I paint the curb with your brains."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Herrgghh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fair thee well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "<Unintelligible Grunt/Burp>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "vagrant"
+}

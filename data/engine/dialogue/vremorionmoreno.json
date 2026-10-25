@@ -1,0 +1,426 @@
+{
+ "id": "vremorionmoreno",
+ "speaker_name": "Orion Moreno",
+ "source": "VRemOrionMoreno.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{at Bunker - no plan} What are you talking to me for? Talk to Kreger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{At Hoover Dam battle} Now is {emphasis \"not\"} not the time!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player not in NCR gear} Bah. Looks like I forgot to lock the doors again. If you're with the NCR, get out. This place is mine, and I'm not leaving.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "{Player in NCR gear} Look, trooper, I was living in this house long before your farms got set up. {threat} Don't even think about evicting me.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Remnants helping NCR} I didn't come all the way out here just so we could save the fucking NCR. I'm out.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Moreno convinced to stay} I can't believe I'm going to help the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Remnants helping Legion} Since Johnson won't be coming with us, you might as well take his suit of Power Armor. I'll teach you the basics of how to use it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{terse} Yeah?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{dismissive grunt} Hmmph.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{to player's companion} Been awhile, Arcade. {to player} So, what's the point of all this? Can't find any younger mercenaries?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic001",
+   "prompt": "{Arcade hired}Arcade and I were looking for you. We're gathering the Remnants."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Arcade, huh? Heard he was with the Followers of the Apocalypse. So, what's the point of all this? Can't find any younger mercenaries?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic002",
+   "prompt": "{Arcade not hired}Arcade sent me to look for you. I'm gathering the Remnants."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{cynical chuckle} Oh, like you wouldn't believe. The NCR makes a habit out of wrecking homes. I came out here to get away from them - didn't work out so well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Next thing I know, I'm squatting in {emphasis \"their\"} \"their\" land. {irritation} Never mind that I'd already been living here for years.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic003",
+   "prompt": "Do you have something against the NCR?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do? I don't do anything. I'm retired.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic004",
+   "prompt": "What do you do around here?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is that right? The million dollar question is who exactly are we \"settling?\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic005",
+   "prompt": "Your advanced level of tech would be useful in settling things between the NCR and the Legion."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{bitterly} You can thank the NCR for that one. {sudden thought} Wait - this isn't on behalf of the NCR, is it?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic006",
+   "prompt": "There isn't anyone else around with your equipment and expertise."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sarcasm} You're doing a fine job of convincing me to go along with this. Really. I'll ask again - why us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic007",
+   "prompt": "I never said anything about paying you."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {grudgingly} I can't believe you've actually talked me into this. {sigh} Fine, I'm in, but don't expect me to hold my fire if any NCR troops get in the way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic008",
+   "prompt": "The Remnants come in, guns blazing, showing the NCR how it's done. You actually don't want that?",
+   "label": "< Speech 80 >"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, but there's no glory in helping out the NCR.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic008",
+   "prompt": "This is a chance for one more moment of glory.",
+   "label": "< Speech 80 >"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you help them at the Dam only to screw them over big time later? {sigh} All right, I'll go along with this, then. I hope I don't regret it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic009",
+   "prompt": "{NCR - Wild Child}I work against the NCR as much as I work for them. This is no different."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've known them far longer than you have. They'll get over it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic010",
+   "prompt": "What will your friends think about this?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{menace} Change of plan - you'll find that I've sealed the doors to this hangar - I don't want my friends getting involved in our little disagreement.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Once I'm done with you, I'll talk them out of this stupid plan. You've opened some old wounds - it's only fair I return the favor.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic011",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Getting my gear, what does it look like? What, you think I'm going to leave this here for someone like you? I don't think so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic012",
+   "prompt": "What are you doing?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No amount of caps will ever repay what the NCR robbed from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic013",
+   "prompt": "Will caps change your mind?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{slowly repeating player} You haven't decided - {sarcasm} well, this is just getting better every second, isn't it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic014",
+   "prompt": "I haven't decided."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I'm done talking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic015",
+   "prompt": "We don't have to fight. We can still talk about this."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see what you've got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic016",
+   "prompt": "Come and get me."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wouldn't mind cutting down a few platoons of NCR troopers with my old gatling laser.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic017",
+   "prompt": "Do you have a preference?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, it does. There's not a chance you'll find me helping the NCR in any way. They've caused me too much grief.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic018",
+   "prompt": "Does it matter who we help?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was a soldier. Why do you even care? I came out here to forget about the past, so quit bringing it up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic019",
+   "prompt": "So what did you do before you were retired?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Orion agrees to come} Oh, I'll come, but depending on the plan, I might not be staying. Keep that in mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic020",
+   "prompt": "So you're not coming?"
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Orion agrees to come} All right, then - I'll show up at this gathering of yours. It might be good to see the others - {scowling} Johnson excluded.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Arcade might've mentioned there's a pass phrase needed to get into the bunker - my part is \"Remember.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic021",
+   "prompt": "I want to help the Legion defeat the NCR."
+  },
+  {
+   "key": "vdialogueremnantsvremorionmorenotopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heavy weapons trooper. {grim glee} Nothing better than hosing down a target with an excess of bullets and laser fire.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "By the time I got through with things, not much was left standing. Any morons who didn't run when they saw me coming got what they deserved.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Back then, it was war. {growling} If we'd been on the winning side, I'd be called a hero.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueRemnantsVRemOrionMorenoTopic024",
+   "prompt": "What did you do when you were with the Enclave?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{dismissive grunt} Hmmph.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "For Navarro!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{grim satisfaction} Just like old times.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  }
+ ],
+ "speaker": "orion_moreno"
+}

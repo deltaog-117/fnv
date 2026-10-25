@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "quest.schema.json",
+  "title": "Quest",
+  "description": "One entry in data/engine/quests.json.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "dlc",
+    "stages"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "main",
+        "side"
+      ]
+    },
+    "tracked": {
+      "type": "boolean",
+      "description": "False for quests without a Pip-Boy marker."
+    },
+    "dlc": {
+      "$ref": "common.schema.json#/$defs/dlc"
+    },
+    "edid": {
+      "type": "string"
+    },
+    "form_id": {
+      "$ref": "common.schema.json#/$defs/form_id"
+    },
+    "source": {
+      "type": "string"
+    },
+    "giver": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "NPC names until the NPC data resolves them to ids."
+    },
+    "location": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reward_text": {
+      "type": "string"
+    },
+    "xp": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "previous": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "leads_to": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "unresolved_links": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Linked page titles that are not quests in the dataset."
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "stage",
+          "description"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "stage": {
+            "type": "integer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "finish": {
+            "type": "boolean",
+            "description": "Reaching this stage completes the quest."
+          }
+        }
+      }
+    },
+    "walkthrough": {
+      "type": "array",
+      "description": "Wiki flowchart rows. Several nodes in a row are alternative branches.",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "kind",
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string"
+            },
+            "text": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "target",
+          "target_type"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "enum": [
+              "fails",
+              "locks",
+              "unlocks",
+              "exclusive",
+              "triggers",
+              "requires",
+              "effect"
+            ]
+          },
+          "target": {
+            "type": "string"
+          },
+          "target_type": {
+            "enum": [
+              "quest",
+              "ending",
+              "faction",
+              "companion",
+              "npc",
+              "perk",
+              "item",
+              "location",
+              "dialogue",
+              "effect"
+            ]
+          },
+          "target_id": {
+            "$ref": "common.schema.json#/$defs/id",
+            "description": "Resolved id when target_type is quest."
+          },
+          "when": {
+            "type": "string",
+            "description": "Human-readable condition from the wiki."
+          },
+          "note": {
+            "type": "string"
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/condition"
+            },
+            "description": "Machine-readable form of `when`; authored later."
+          },
+          "effects": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/effect"
+            },
+            "description": "Machine-readable form of the outcome; authored later."
+          }
+        }
+      }
+    },
+    "giver_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      },
+      "description": "NPC ids matched from `giver`."
+    },
+    "location_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      },
+      "description": "location matched to locations.json."
+    }
+  }
+}

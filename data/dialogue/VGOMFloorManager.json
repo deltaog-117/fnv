@@ -1,0 +1,38 @@
+{
+ "page": "VGOMFloorManager.txt",
+ "speaker": "Gomorrah floor manager",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Small Fry} Hey, hey! Look who has the hot hands?{Friendly} Here, have something special on the house.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Big Winner} Looks like someone is on a roll. {Sing-song} Luck be a lady tonight. Here's a little something from the Family.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Whale} You keep on spending money in here.{Mock Jocking} You gotta give us a chance to win something back. Here's something nice for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Banned} Ok, that's that. No more games for you. Go rob the Tops. You're done here.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Have some drinks, talk to some dancers but you are done at my tables.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  }
+ ]
+}

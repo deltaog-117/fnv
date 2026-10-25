@@ -1,0 +1,1738 @@
+{
+ "page": "VStreetDennisCrocker.txt",
+ "speaker": "Dennis Crocker",
+ "topics": [
+  {
+   "id": "CaravanOffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I always have time for a good game of Caravan. I hope you're up to the challenge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Want to play a hand of Caravan?"
+  },
+  {
+   "id": "CaravanPlayerLoses",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It looks like you need a bit more practice. Another lesson perhaps?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CaravanPlayerLoses"
+  },
+  {
+   "id": "CaravanPlayerWins",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Impressive. That was a very good game. Would you care to play again?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CaravanPlayerWins"
+  },
+  {
+   "id": "CaravanRematchNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Another time then, perhaps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm all done playing for now."
+  },
+  {
+   "id": "CaravanRematchYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent. Let the game begin!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yeah, let's play again."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, hello. I trust you have something to report concerning the Freeside situation?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Something I can help you with, soldier?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's good to see such an outstanding hero of the NCR. What can I do for you, my friend?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "It's good to have a friend of the NCR here. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Well, if it isn't the loose cannon that's been wandering the Mojave Wasteland. What do you want?",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "I didn't expect to see you here. I hope you're not here to cause trouble.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "You're the last person I expected to see here. This better be good.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry}What do you want?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Greetings, friend. Something I can help you with?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello again. What can I do for you this time?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't have anything more to say to you. You can show yourself out.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Interested in Politics, huh? Well, grab a seat and get comfortable.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I've been in politics quite a while now. Always had the drive to do it, even when I was young. It's just something I was drawn to.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "I started my career over twenty years ago back in the NCR as the local mayor and worked my way up from there.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "I managed President Kimball's first run for a seat on the Council. {smiling at the obviousness of it}I suppose that's why I have this ambassadorship.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about yourself, Ambassador."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm glad to see you've given it some thought. Are you willing to go talk to them?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Thanks for doing this. Remember, we need their resources to help us in the upcoming battle. Do whatever it takes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you've returned with good news. Are they willing to help the NCR?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's the word with the Boomers? Have you talked with them yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I wanted to talk to you about the Boomers."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a conversation we might be able to have some day - once you've shown more respect for my country.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I can provide a quick history lesson, if that's what you're looking for.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In 2274, President Kimball sent the NCR army into the Mojave in force, with the objective of occupying and repairing Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Rangers and army scouts had confirmed that the dam was basically unoccupied and could be restored to an operable condition.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Upon arriving at the dam, however, they discovered that a large force of tribals and robots had occupied it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This was our introduction to the Three Families, the Securitrons, and, of course, Mr. House.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Using his Securitrons as intermediaries, Mr. House called for parlay.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He claimed his forces had occupied Hoover Dam in order to safeguard it for our arrival.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And that he was ready to turn it over to us, so long as we could agree to terms.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those terms became the Treaty of New Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Treaty recognized Mr. House's sovereignty over the Strip and granted us rights to establish military bases at the Dam and McCarran Airport.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR is legally permitted to send 95% of the electricity produced by the dam to our home states.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The remaining 5% goes to the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The treaty actually makes it illegal for the NCR to prevent its citizens, or troops on furlough, from visiting the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Once on the Strip, our citizens are subject to arrest - or punishment - by House's Securitrons, though that's a rare occurrence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our troops enjoy a different status. It's illegal for the Securitrons to take action against them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Of course, it's also illegal for our troops to carry firearms on the Strip, so there isn't much trouble they can get into.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Our military police does an adequate job of keeping the troops on furlough in line. I don't envy them that task.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The embassy was established a few weeks after the Treaty was signed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Basically Mr. House handed us a dumpy little building he had no interest in renovating.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm the third ambassador to hold this post. And the first, I think, to accept its limitations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My predecessors had ambitions of engineering the annexation of the Mojave. They thought they'd convince Mr. House to join up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've never even spoken to the man - or whatever he is. Maybe the situation will change once we've beaten the Legion once and for all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to know more about the NCR."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know where to find me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Uh... no word yet. I'll get back to you on it."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If that's all you came here to talk about, you're wasting my time. Get to the point, or get out of my office.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I know you have a penchant for getting into trouble, but I'd recommend against that here. The Securitrons on the Strip aren't to be trifled with.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Perhaps I'll have Captain Pappas keep an eye on you. For your own safety, of course.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "It's the same old stuff around here. Gambling, debauchery, drunkenness. It's all here. I'm getting a little old for it, however.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want more information try talking to some of the other guys around here. I don't get out of the office much anymore.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's happening around the Strip?"
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's disappointing. They could have been a big help to us. I guess we'll just have to do without.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I don't think it's going to work out. Sorry."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm glad you could make it! I have something that I wanted to discuss with you.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "It's a very important matter, and I have a strong feeling that you're the perfect person for the job.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You received my message, good. I realize that it may seem a little strange that I'm contacting you, considering your reputation...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I have a business proposition to discuss with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, I see you received my message. Good, good - I had something important to discuss with you.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "&lt;VMS23 Boomer Quest>"
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm going to keep this as simple as possible so we don't waste each other's time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR is in a bit of a tight spot with all that is going on with Mr. House and the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And despite your reputation and previous actions with the NCR, we could use your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sure you've noticed that things are a little tense around here with all the issues between the NCR, the Legion, and Mr. House.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It doesn't take a genius to see that something big is going to happen soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To be honest with you, the NCR is in a tight spot. {slightly dramatic}But... if we fail now, it's the people here that are going to suffer the most.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not willing to let that happen, and I don't think you're the kind of person that would either.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I'm listening."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry to hear that. Do me a favor and give it some more thought. I'll be here if you change your mind.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Sorry, I'm not interested."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's excellent news! So they'll help us?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, I already know them. We're good friends."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's disappointing. They could have been a big help to us. I guess we'll just have to do without.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I've met with the Boomers. I don't think it'll work out."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent, come back after you've spoken to them. They should see the benefits of helping us in the long-term.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I know where they are. I'll go and talk to them."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Much appreciated. Once you've talked to them, let me know what they have to say.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "prompt": "I'll find them and talk to them."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm going to keep this as simple as possible. The NCR is in a bit of a tight spot with all that's going on, and I need someone like you to help me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In exchange for your help, you would receive complete amnesty for any past crimes against the NCR, as well as additional benefits and perks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And if you prove to be a loyal and capable agent, well... let's just say there's a lot of work to be done, and the NCR is a good friend to have.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "To the Northeast is a settlement. The locals here call them Boomers. They are sitting on a munitions stockpile that would be invaluable to us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I would like you to get in contact with them, and then do whatever it takes to convince them to help us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Someone with your background and reputation would have a better chance of reaching them than anyone I have available.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "About that thing you wanted to talk about, let's hear it."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent work. I can't tell you how useful that will be.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "In any event, I have another assignment ready and waiting for you. But we can speak of it later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Rest up, and when you're ready, speak to me again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Boomers have agreed to help me."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's great. They're going to give us an advantage in the battle ahead.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes... they will help... \"us.\""
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me know as soon as you have an answer from them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Uh... I'm not sure. I'll get back to you."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh... very well then. What else can I do for you?",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "That's enough history for me."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now we mostly just keep track of the NCR citizens and troopers around and make sure they don't get in trouble, but that's Captain Pappas' job.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I keep myself busy with paperwork and reports that get sent back to the NCR. It's mostly busy work, but every once in awhile, we make progress.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Go on."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Proud}I was elected to this post seven years ago. {Pride escalating}I'm the third NCR representative to serve here in Vegas.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Beat, still proud}Now, I've had my share of ups and downs along the way, but I wouldn't trade it for anything in the world.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "That's it. Anything else you wished to know?",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Interesting, go on."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{slightly disappointed}Oh yes, sure sure. Ask away.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I'd like to ask about something else instead."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "To the northeast is a settlement, the locals here call them \"Boomers.\" They are sitting on a munitions stockpile that would be invaluable to us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd like you to get in contact with them, and then do whatever it takes to convince them to help us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unfortunately, the Boomers keep to themselves and are, let's say, hostile to all outsiders. That is why I need someone like you.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Someone with your background and reputation would have a better chance of reaching them than anyone I have available.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In exchange for your help, you would receive complete amnesty for any past crimes against the NCR, as well as additional benefits and perks.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Do you think you would be able to do this for me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You have my attention, go on."
+  },
+  {
+   "id": "VMS23VStreetDennisCrockerTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sorry that you think so. However, if you do happen to change your mind, you can find me here at the embassy.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "You have the wrong person."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So I did. As you may have noticed, our position here in New Vegas is tenuous.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've made great strides, sure, but the NCR is not welcomed here, merely tolerated. And even then, not by everyone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've had reports of violence against NCR citizens in a neighborhood just to the northeast called Freeside. Ever been there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Earlier you mentioned another assignment?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, have you reconsidered? NCR citizens may be dying as we speak in that hellhole.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is that job in Freeside still available?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I've already heard. Pacer is dead. The Kings are up in arms. The entire area is gripped by chaos and the violence has only increased.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In fact, I've heard that many are assuming the NCR did it without even looking into the matter. This is the worst thing that could possibly happen!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you have to say for yourself?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've completed the Pacer job."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I've already heard. The Kings are up in arms. The entire area is gripped by chaos and the violence has only increased.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In fact, I've heard that many are assuming the NCR did it without even looking into the matter. This is the worst thing that could possibly happen!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you have to say for yourself?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Uh, the King sort of got killed while I was working on that Freeside job."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, do you have something to report?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I wanted to talk about the situation in Freeside."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, how did it go?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have an update on the Freeside situation."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm inclined to agree, but it's a slum with NCR citizens in it, and as such it falls under my jurisdiction.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have. It's a slum."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Violence is something of a way of life there, but there's been a disturbing rise in the number of attacks on our people lately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "More worrying is the fact that our sources suggest the violence is being perpetrated by the gang that runs the place, the Kings.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need someone to look into this that won't attract attention. Would you be interested?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes, what of it?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a beastly place. Poverty is rampant, and all that goes with it - drugs, alcohol abuse, the usual.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, I haven't."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'd remember this one. It's a pit where people are robbed, murdered, or simply go to die.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe? I go lots of places. Can't remember them all, you know."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Our men have come up with two different plans for seeing an end to the violence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First, our sources have tracked most of the attacks back to a King named Pacer. The consensus is that the violence will stop if he's removed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The problem is that we can't simply kill him. In the current climate, the NCR would likely be blamed for his death.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There is an alternative option, but my sources feel that getting rid of this Pacer fellow is our best shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure, I'll look into it."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's too bad. Come back if you change your mind. I'm sure you can see yourself out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I'll pass."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make it look like an accident, or pin the deed on someone else. Look into this guy's affairs, and I'm sure you'll find something you can use.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If I can't just kill him, what did you want me to do?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Either kill Pacer in a way that doesn't lead back to us, or talk the King into quelling the violence. It's not really that hard to remember.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In any case, I expect to hear good news about this in the future. Keep me informed of your progress.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What was I supposed to do again?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See, that's exactly the type of information we can use. In fact, that's perfect. Those fancy weapons the Van Graffs peddle aren't exactly common.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It goes without saying that actually getting the Van Graffs to do the deed would be the ideal solution.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, if Pacer were killed with either a laser or plasma-based weapon, everyone would automatically assume the Van Graffs did it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, unless you want several dozen armed men at your throat, you'd have to kill him without being seen. Be careful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll leave the method up to you. However, there is an alternative if you'd rather try to handle things without bloodshed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've heard that there's bad blood between Pacer and the Van Graff family."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That could be useful, but I'm afraid I don't have the background to know how to take advantage of that knowledge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Pacer's addicted to Jet, even though he has a heart condition."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Remind me never to get on your bad side. If that's true, then yes, that would be a suitable way to get rid of him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, it would involve gaining access to his personal drug stash and tampering with it unseen, which might pose a challenge.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Add a little Psycho to his Jet, and he'd have a heart attack."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I doubt it. I've seen junkies live for decades on the stuff. You'd be better off asking someone who knows about these things.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe the jet will cause his heart to give out."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Wild Wasteland!}Damn it, I'm an ambassador, not a doctor. You'll have to find some other way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid I can't be much help in this matter. My specialty is people and politics, not medicine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was hoping you'd know."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In that case, we can take a different tack, but one that I at least have more experience with - diplomacy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we can't go after the man responsible, we'll simply appeal to the man above him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Kings, including our friend Pacer, report to the leader of their gang, a man who calls himself the King.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not an assassin."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sure something will turn up. If you think you've found something but are unsure, report back and I'll let you know if it's something we can use.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It may be tough to find a way to completely throw off suspicion, however.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All right, I'll try to find a way."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not a violent man myself, so I had our guys come up with an alternate solution on the off chance that our agent-to-be shared my sentiments.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's my other choice?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Reward? You want a reward for setting our diplomatic efforts back a year?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's start with my reward."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I see. You're proud of your efforts, eh? Bah! Thankfully, it looks like we won't be working together any longer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "When you put it that way... yes."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "At least you've got the sense to know you've screwed up. I'll probably be cleaning toilets by the end of the week. But you'll be busy, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I suppose not."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If it will get you out of my hair, this is a small price to pay. At least I won't have to put up with you any longer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You wanted a man dead. He's dead. Now where are my caps?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's an understatement. Still, there's nothing to be done about it now. Maybe the violence may die down once things settle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take this. It's not what I was planning to give you, but you deserve some sort of payment for your efforts. Oh, and one other thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm sorry. I screwed up."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You better believe I'm mad. You've waged a one man campaign to drag our good name through the mud and I'll be held accountable!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You probably don't even know what I'm talking about. Gah! This is what I get for hiring an idiot to do such an important job.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, just take this and go. I have damage control to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wait, I'm supposed to send you to Colonel Moore up at Hoover Dam, though why she wants to see an imbecile like you is beyond me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So go to Hoover Dam and see Colonel Moore. Got it? Hoover Dam. Colonel Moore. {Sighs}Maybe it's time to retire.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "{Dumb option}Wow, you're really mad."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See, that's exactly the type of information we can use. In fact, that's perfect. Those fancy weapons the Van Graffs peddle aren't exactly common.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It goes without saying that actually getting the Van Graffs to do the deed would be the ideal solution.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, if Pacer were killed with either a laser or plasma-based weapon, everyone would automatically assume the Van Graffs did it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, unless you want several dozen armed men at your throat, you'd have to kill him without being seen. Be careful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll leave the method up to you. However, there is an alternative if you'd rather try to handle things without bloodshed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I discovered that Pacer and the Van Graffs have a troubled history."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That could be useful, but I'm afraid I don't have the background to know how to take advantage of that knowledge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As I told you before, that could be useful information, but I don't know how to take advantage of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I discovered that Pacer is a Jet addict and has a heart condition."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Killing two birds with one stone. Excellent. You've done a great service for the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, you're probably wondering about your reward. This has been something of a hot button topic, so I was able to secure this for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I used an energy weapon to kill Pacer, so the Van Graffs should take the blame."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Well, I don't officially have access to any more funds, but here. This is from me personally. There's more coming your way, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I risked my neck out there. Couldn't you spare a little more?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm sorry, but those are the only funds I was able to allocate. You'll have to make due with it. Besides, you may have other tasks soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's it?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good show. With the conditions there, no one will suspect anything other than bad drugs to be the culprit. You've done a great service for the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, you're probably wondering about your reward. This has been something of a hot button topic, so I was able to secure this for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I laced Pacer's Jet with Psycho and it didn't go well for him."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How unexpected! I was sure a direct confrontation would lead to more fighting, but I'm delighted to be proven wrong.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wouldn't be surprised if you had something to do with the situation not flaring up, either. Here, I'm sure you deserve every one of these caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Also, Colonel Moore has requested your presence at Hoover Dam again. No doubt she has further work for an individual with your skillset.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid I don't have any further assignments that would suit you, so you should probably go see her at your earliest convenience.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The King complied with Colonel Moore's ultimatum."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've received a message from Colonel Moore up at Hoover Dam. She's been following your exploits and has requested that you meet with her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're not officially in the employ of the NCR, so there's nothing forcing you to go, but I'd go see her sooner rather than later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Colonel is not someone you want to keep waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Glad to be of service."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would, but I'm afraid the rest of the work in my queue pertains to matters I'll have to deal with personally. You do have another option, however.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Keep me in mind for any future assignments."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's great to hear. He's got a lot of sway in Freeside, so we can expect a dramatic drop in violence soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now, you're probably wondering about your reward. This has been something of a hot button topic, so I was able to secure this for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I spoke to the King, and he promised to stop the violence against NCR citizens."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's most unfortunate. In this circumstance I've been instructed to send you along to Colonel Moore over at Hoover Dam for further orders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Colonel will likely send you back to Freeside with a squad of armed men, for all the good that will do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The King won't deal with the NCR."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I understand. Sometimes these things take time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Remember, do what you can to gain the man's trust. Then you'll have your chance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still working on it."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's a beastly place. Poverty is rampant, and all that goes with it - drugs, alcohol abuse, the usual.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "&lt;Lie> No, I haven't."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Violence is something of a way of life there, but there's been a disturbing rise in the number of attacks on our people lately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "More worrying is the fact that our sources suggest the violence is being perpetrated by the gang that runs the place, the Kings.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I need someone to look into this that won't attract attention. Would you be interested?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "&lt;Lie> Sure, what about the place?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, I like the Colonel just fine. She's a good soldier, one of the best. I just don't think her general approach to things is a good fit here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See, the Colonel likes to solve things neatly, quickly, and efficiently, through a show of force if possible, and through actual force if necessary.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That won't work here. Unless she plans on killing half the population of Freeside, sending soldiers to the area will only make things worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sounds like you and the Colonel don't get along."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "More like instigate a mass riot. People there already think the NCR is trying to take this place over. We'd only be confirming their fears.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That'll show the people in Freeside who's in charge!"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I completely agree. Even if a riot didn't immediately break out, a line will have been crossed, and we'll have made that many more enemies.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sending NCR soldiers into Freeside would be a bad idea."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd suggest you speak to Colonel Hsu over at Camp McCarran. He's much more level-headed about this sort of thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's also in a better position to bargain with the people of Freeside, seeing as how he's in charge of water and power distribution in the area.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, I'm only mentioning it as an option. My official orders are to direct you to Colonel Moore. Godspeed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So what do you suggest?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wait a moment, if you would. While sending you to Colonel Moore is what I'm officially supposed to do, I'd like to propose an alternative.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I guess I'll head over to Colonel Moore, then."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is it that obvious? You must understand that while Colonel Moore's job is to get things done, my job is to represent the NCR's best interests.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "But you've got another idea. Spit it out."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was afraid this would happen. Freeside will be a little more dangerous for a while, but eventually things will die down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I expect few people will purposely target NCR citizens for some time to come, which is a relief.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, the NCR's reputation has taken a huge blow because of this. People are beginning to see not much difference between us and the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been authorized to give you this for your efforts. It's not much, but most of the funds for this operation are now going toward damage control.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Kings were all killed after the King turned down the ultimatum."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic042",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, good. Hsu's a man you can count on to handle a crisis. I'm just glad that things didn't end in violence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, this is what remains of the funds initially allocated for this operation.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Also, I've been directed to send you on to Colonel Moore at Hoover Dam. She's been following my reports on your exploits with some interest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As I don't have any further assignments for you, I'd recommend going to see her if you need more work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The King accepted Colonel Hsu's offer of help."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's terrible. I suppose the violence against our people will stop, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have to spend much of the remaining funds for the operation on damage control, but I can spare this much as compensation for your efforts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A fight broke out when I presented Hsu's offer. The Kings are all dead."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If that's what you prefer, I won't stop you. Just remember to try to find a way to do it that doesn't lead back to the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If it just doesn't look possible to make the kill without drawing attention, don't forget there's always the diplomatic approach.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I'd rather go with the assassination plan."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Remind me never to get on your bad side. If that's true, then yes, that would be a suitable way to get rid of him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It looks like you have things well in hand, so I'll leave you to it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Add a little Psycho to his Jet, and he'd have a heart attack."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic045",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I doubt it. I've seen junkies live for decades on the stuff. You'd be better off asking someone who knows about these things.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe the jet will cause his heart to give out."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic046",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Wild Wasteland!}Damn it, I'm an ambassador, not a doctor. You'll have to find some other way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm afraid I can't be much help in this matter. My specialty is people and politics, not medicine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was hoping you'd know."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No doubt Colonel Moore's approach will produce results. Just be ready to duck when the bullets start flying.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I received my orders from Colonel Moore, and am still carrying them out."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's caucasian, in his mid-30s, and extremely charismatic. It's that last part that we're counting on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Kings are a bunch of young hoodlums who aren't inclined to listen to anyone, except him. Get him on our side, and the rest will fall in line.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me more about the King."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic049",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go and talk to the King, try to convince him to put an end to this violence. Pacer's a punk, but he won't likely disobey a direct order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The King might not be open to the idea at first, so you may have to ingratiate yourself with him. Do whatever it takes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When it's done, one way or the other, report back here and we'll take it from there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What would I need to do?"
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wish you luck. If you run into some difficulty and think you'd rather just take the shot with Pacer, that's fine too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Guess I'll go have a talk with the King, then."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I trust that Hsu will deal with the matter thoughtfully. Regardless, stay on your toes. There's no telling what will happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I received my orders from Colonel Hsu, and am still carrying them out."
+  },
+  {
+   "id": "VMS29VStreetDennisCrockerTopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well then don't waste any more time here. Get going!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I haven't talked to either Colonel Moore or Colonel Hsu yet."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

@@ -1,0 +1,205 @@
+{
+ "page": "WestsideMaude.txt",
+ "speaker": "Maude",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in combat} Oh my! Keep me out of this!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, stranger. You looking for a good time?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't see many or your kind here in the Casa. Women, I mean - who ain't working.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Always knew there was something wrong with Dermot and Saint James. Neither one ever got busy between my legs!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Been enjoying your time at the Casa?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Old but spry, honey. So long as my back don't give out, I can make a living lying on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "May not be as fresh as Sweetie or Jimmy, but Pretty Sarah keeps me around for a good reason - experience!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Aren't you kind of old to be doing this?"
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right. Strange at first, having a woman for a pimp, but she's tough enough to handle any trouble so far.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You work for Pretty Sarah?"
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "She's a good earner. {sour grapes} Of course, she don't care who she sleeps with or what they do to her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Sweetie."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Male PC} Best prices around so long as {alluding to anal sex} you don't try putting anything someplace it was never intended. How's that sound?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC} {disapproving} If you're looking to get perverted, go talk to Sweetie. She's less particular than I am.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "No discounts for repeat customers... {senile, uncertain} I think we did it before, anyways.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like your services."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Male PC} You know where to find me, honey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC} Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You won't notice anything once the lights are out, hon. The places that count are still firm enough...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, don't just stand there. I ain't getting any younger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<75 caps> What the hell. Let's do it."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I'm not a goddamn charity, so come back when you do.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "<75 caps needed> I don't have enough caps on me."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be right here if you change your mind, honey. Just let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No thanks."
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose he's okay, for one of {disapproving of his homosexuality} those. I suppose Pretty Sarah's got to cover every sort of customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about Jimmy?"
+  },
+  {
+   "id": "VFreeformCasaMadridWestsideMaudeTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those boys been living here a while now. They sell salvage and do all right. I never been with either of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That Saint James is all over Sweetie every time he rustles up the caps to afford her. She says he's peculiar but who isn't?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about Dermot and Saint James?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Male PC} You know where to find me, honey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Female PC} Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

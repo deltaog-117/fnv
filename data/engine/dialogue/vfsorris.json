@@ -1,0 +1,480 @@
+{
+ "id": "vfsorris",
+ "speaker_name": "Orris",
+ "source": "VFSOrris.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't bother me right now. I've got to get back to see if any customers are waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stay away from me, if you know what's good for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come on, let's get this over with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't distract me. I need to focus all my senses on keeping you safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This gentleman and I were just settling on a price. I'm afraid you'll have to hire one of the others this time around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you need to cross Freeside, no one will keep you safer than I will.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I knew you'd be back. Ready to hire the best?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfsorrisaftercombat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nothing to worry about. If you had hired one of those other hacks, you'd be up to your ass in lowlife right about now.",
+     "emotion": "happy",
+     "intensity": 70
+    }
+   ],
+   "topic": "VFSOrrisAfterCombat",
+   "prompt": "VFSOrrisAfterCombat"
+  },
+  {
+   "key": "vfsorrissecondrun",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So tell me, did you really think I'd be stupid enough to fall for this again? One of my men saw you go in and out of the Kings' place.",
+     "emotion": "anger",
+     "intensity": 65
+    },
+    {
+     "text": "As much as I hate to lose a customer, it's just unavoidable sometimes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisSecondRun",
+   "prompt": "VFSOrrisSecondRun"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just look around. People here are as like to stab you as say hello. That is, if I weren't at your side.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic000",
+   "prompt": "Why do I need a bodyguard crossing Freeside?"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Two hundred caps gets you my watchful eye for a trip to the south gate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic001",
+   "prompt": "How much for your services?"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, but all the people with real money are heading for the Strip, so that's the way I go. You want to go somewhere else, hire one of these losers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic002",
+   "prompt": "What if I'm not going to the south gate?"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sure Freeside will disabuse you of that notion soon enough. Farewell.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic003",
+   "prompt": "I don't think I need your services. Sorry."
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Done and done. I want to mention a few things up front. In order to ensure your safety, I need you to follow my instructions to the letter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We'll be heading down the main street here the whole way down. No detours. You go off sightseeing and I go off to find another customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll keep a brisk pace, so try not to fall behind. Now let's head out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic004",
+   "prompt": "Okay, I'll hire you."
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you want the best, you have to pay for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic005",
+   "prompt": "Two hundred caps! That's twice what everyone else is charging!"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Er, noticed that, did you? I keenly aimed one of the shots through some soft tissue of one of them to hit the man behind him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic006",
+   "prompt": "Hey you only fired three shots and there are four guys there...",
+   "label": "{Intelligence check > 5}"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic006_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You're imagining things. It's just the rush of adrenaline caused by your near brush with death.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Luckily for you, I was here, so there's no reason to get out of sorts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic006",
+   "prompt": "Something about this doesn't seem right...",
+   "label": "{Intelligence check > 5}"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Call it a hunch. You do this job for long enough, and you learn to trust your instincts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic007",
+   "prompt": "Why did you run ahead like that?"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My thoughts exactly. Time is money, after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic008",
+   "prompt": "Let's keep moving."
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's an interesting theory you've got there. I'd suggest you keep it to yourself. Let's get moving.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic009",
+   "prompt": "Or, you just faked this whole thing to drum up repeat business."
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Stay close. I wouldn't want something to happen to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic010",
+   "prompt": "After you."
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I ought to take my chances and kill you right here, but you may be right. Here, take this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't think this is over, though. I'll have that money back, out of your hide if I have to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic011",
+   "prompt": "I want all the money you have on you. I could make it to the Kings from here.",
+   "label": "{Barter check >= 50}"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic011_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I think I'll keep my money thanks. You take that fanciful tale of yours wherever you'd like. Now let's go. I have a job to finish.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic011",
+   "prompt": "You should give me all your money. Or I'll tell. And stuff.",
+   "label": "{Barter check >= 50}"
+  },
+  {
+   "key": "vfreeformfreesidevfsorristopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want the best, you have to be prepared to pay for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSOrrisTopic012",
+   "prompt": "I don't have that kind of money."
+  },
+  {
+   "key": "vfsorrischats01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "To your left here is the Old Mormon Fort. You get roughed up, the Followers there will patch you right up. Not that I ever need their services.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisChats01",
+   "prompt": "VFSOrrisChats01"
+  },
+  {
+   "key": "vfsorrischats02",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Up ahead on the next block is where the Kings hang out. Don't let them scare you, if they don't outnumber you five to one you'll be fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisChats02",
+   "prompt": "VFSOrrisChats02"
+  },
+  {
+   "key": "vfsorrischats03",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Down to the right here is the fun part of town. You haven't seen Freeside till you've been to the Wrangler.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisChats03",
+   "prompt": "VFSOrrisChats03"
+  },
+  {
+   "key": "vfsorriscursesplayer",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "It's regrettable, but it looks like I'm about to lose another customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisCursesPlayer",
+   "prompt": "VFSOrrisCursesPlayer"
+  },
+  {
+   "key": "vfsorriscursesthug",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You idiot! What part of \"play dead\" do you not understand?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisCursesThug",
+   "prompt": "VFSOrrisCursesThug"
+  },
+  {
+   "key": "vfsorrisend01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Well, here we are. No worse for wear, are you? I trust that if you need to cross Freeside again, you'll know who to hire.",
+     "emotion": "happy",
+     "intensity": 60
+    },
+    {
+     "text": "Well, here we are. I trust you'll keep your mouth shut about the topic we were just discussing, or else.",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "VFSOrrisEnd01",
+   "prompt": "VFSOrrisEnd01"
+  },
+  {
+   "key": "vfsorrisfinalstretch",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "That was rather invigorating, wasn't it? Let's keep moving, it's only a little further to the gate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisFinalStretch",
+   "prompt": "VFSOrrisFinalStretch"
+  },
+  {
+   "key": "vfsorrisivegotthis",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Gotcha! Thought you could ambush us, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisIveGotThis",
+   "prompt": "VFSOrrisIveGotThis"
+  },
+  {
+   "key": "vfsorrisleavethemtome",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Leave them to me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisLeaveThemToMe",
+   "prompt": "VFSOrrisLeaveThemToMe"
+  },
+  {
+   "key": "vfsorrisleaves",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Just so you know, heading out here breaks our contract. This is why I ask people to pay up front. See you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You don't follow orders very well, do you? Oh well, more money for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisLeaves",
+   "prompt": "VFSOrrisLeaves"
+  },
+  {
+   "key": "vfsorrismistaken",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hmmm, I guess they were harmless after all. I'm not often mistaken, you know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisMistaken",
+   "prompt": "VFSOrrisMistaken"
+  },
+  {
+   "key": "vfsorristhisway",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'll scout ahead. You follow at a distance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisThisWay",
+   "prompt": "VFSOrrisThisWay"
+  },
+  {
+   "key": "vfsorriswarning01",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey, slow down. I don't like the look of some of those men ahead. Let's take a different way around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSOrrisWarning01",
+   "prompt": "VFSOrrisWarning01"
+  }
+ ],
+ "speaker": "orris"
+}

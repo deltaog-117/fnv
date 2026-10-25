@@ -1,0 +1,893 @@
+{
+ "id": "vfsfrancinegarret",
+ "speaker_name": "Francine Garret",
+ "source": "VFSFrancineGarret.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Concerned} I heard about your run on The Tops. Don't even think about trying that crap here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Amused} So Benny's dead, huh? That shifty son of a bitch had it coming.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{at a loss} I hear Benny went missing. I can't help but wonder what happened to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{excited} I heard Benny sent his goons after you. You're one hell of a survivor to make it out of The Tops alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{matter-of-fact} So it turns out the Omertas were into some serious shit. I always suspected that crew was dirty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Friendly, Impressed} Some gamblers came in saying they'd seen you enter the Lucky 38. I have to say I'm impressed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know of any other living person who's been in there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Cheery} People are saying the Securitrons are acting funny. {Cold} I hope that old Geezer, House, is dead. Might give the locals a chance to take control.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Warm thanks} Here's one on the house for taking down Caesar. Serves him right for treating women like livestock.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Amused} You hear? Caesar finally kicked the bucket! Serves him right for treating women like livestock.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Disgusted} Damn monorail bombing. I {spose} suppose this means we'll be seeing more NCR chumps wandering through Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Reticent} Hate to say it, but business has improved since the troopers started coming through Freeside to get to Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Amused} I hear you've been making a name for yourself on The Strip. Don't forget about the Wrangler if you make it big.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Concerned} People are getting nervous about the Legion amassing on the other side of the river. I hope the NCR can hold agains another attack.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wary} This build-up on both sides of the dam isn't good. If the Legion attacks and wins, it won't be long before we're all slaves.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Angry} God-damned Legion is raring for a fight. No matter who wins, a lot of people are going to die in the process, and dead men don't drink.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mixed} You can order whatever you want, as long as it's alcoholic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Wild Child} So the wild one returns! What can I get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Good Natured Rascal} {Appreciative} I hear you've been helping out around town. It's much appreciated, friend.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Good Natured Rascal} {Warm} What can I get you, friend?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked} {Warm} You've done a lot for Freeside and it is much appreciated. Here's one on the house.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Liked} {Warm} Good to see you! What can I get you, friend?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Merciful Thug} Watch yourself, friend. We don't serve those who treat our friends badly. Shape up, or ship out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Merciful Thug} {Disinterested} Yeah? What do you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Hated} What the hell do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Unknown} Welcome to the Atomic Wrangler. What can I get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Unknown} Welcome back. What can I get you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've got liquor, chems, and whores a plenty. Pick your fix and we'll oblige. Our only rule is no sampling the merchandise. Caps paid in advance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you'd like to do a bit of gambling, we have an exchange at the back of the casino on the left.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic000",
+   "prompt": "What goods and services do you have to offer?"
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caps up front. We don't do tabs here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic001",
+   "prompt": "I'd like to see what you have on tap."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Since you're new, I'll lay out the rules for you. The prostitutes here aren't slaves. They decide who they service.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You best make a good first impression if you want what they have to offer.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Rooms are just a few caps a night. Your choice of company is extra, assuming anyone's taken a liking to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Rooms are just a few caps a night. Your choice of company is extra, assuming anyone's taken a liking to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic002",
+   "prompt": "I'm looking for a little R&R."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. There are three people who need to be tracked down, a real mixed basket of fruits. Their names are Grecks, Santiago, and Lady Jane.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "James tells me you already handled Santiago by getting him to work for us. We'll just garnish his wages.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Great. There are three people who need to be tracked down, a real mixed basket of fruits. Their names are Grecks, Santiago, and Lady Jane.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic003",
+   "prompt": "I'd like to help you with your debt collection."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just a few caps and it's yours.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You already own the corner room. You don't need to rent another.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're already renting a room. Sorry, but you can only rent one room at a time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic005",
+   "prompt": "I'd like a room."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Up the steps, last room on the left. If you leave the Wrangler, we'll assume you're checking out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Caps up front. We don't do tabs here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic006",
+   "prompt": "[Give 10 caps] Here you go."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright. What can I get you, then?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic007",
+   "prompt": "Nevermind, I changed my mind."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have some work I need handled. Back before we instituted the caps up front rule, we used to allow customers tabs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, needless to say, a few customers snuck out without paying their bills. We need someone to collect. The job would pay a percentage.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, with Caleb McCaffery dead, it looks like we could use a new bounty hunter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have some work I need handled. Back before we instituted the caps up front rule, we used to allow customers tabs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, needless to say, a few customers snuck out without paying their bills. We need someone to collect. The job would pay a percentage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic010",
+   "prompt": "Do you have any work you need done around here?"
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd prefer you not kill anyone with a debt. It's a bit difficult to collect on a corpse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just get the caps from them. After that, I couldn't care less what happens to those deadbeats.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic011",
+   "prompt": "Will I have to shoot anyone? Because I really want to shoot someone."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you bring all of their debts back, we'll give you a cut of each. 25% is more than fair. It would add up to 150 caps if you bring them all in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic013",
+   "prompt": "What kind of caps are we talking here?"
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fair enough. Anything else you need? I'm a busy woman.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic014",
+   "prompt": "Eh, sorry. I've got some other things I need to handle first."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great. There are three people who need to be tracked down, a real mixed basket of fruits. Their names are Grecks, Santiago, and Lady Jane.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "James tells me you already handled Santiago by getting him to work for us. We'll just garnish his wages.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Great. There are three people who need to be tracked down, a real mixed basket of fruits. Their names are Grecks, Santiago, and Lady Jane.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic015",
+   "prompt": "You've got yourself a deal."
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Alright. 50/50 it is, but you better bring back all of the caps. If we hear you crossed us, the next bounty hunter will be coming for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic016",
+   "prompt": "Hey, I'm doing all of the work here. 50/50 and I'm game.",
+   "label": "<Speech more money>"
+  },
+  {
+   "key": "vfreeformfreesidefsfrancinegarrettopic016_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Who the hell do you think you're talking to? Keep talking like that and your ass is going to be in the gutter. 25%. Take it or leave it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideFSFrancineGarretTopic016",
+   "prompt": "Twenty-five percent?! Fifty-fifty, or I walk.",
+   "label": "<Speech more money>"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. We need you to hunt down another person.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That son of a bitch McCaffery stole a ton of caps and ran off to Vegas. I guess the fact that we farmed out his usual work to you pissed him off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No one steals from the Garret Twins! If you can kill that bastard and bring back as much as you can, you'll be paid very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. We need you to hunt down another person.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That son of a bitch, McCaffery, stole a ton of caps and ran off to Vegas. I guess the fact that we farmed out his usual work to you pissed him off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No one steals from the Garret Twins! If you can kill that bastard and bring back as much as you can, you'll be paid very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. For helping us out, we would like to set you up with a room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can have the corner room, rent free. It was McCaffery's.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that he's dead, we're happy to let you use it. Thanks for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. For helping us out, we would like to set you up with a room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can have the corner room, rent free. It was McCaffery's.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that he's dead, we're happy to let you use it. Thanks for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. We need you to hunt down another person.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That son of a bitch, McCaffery, stole a ton of caps and ran off to Vegas. I guess the fact that we farmed out his usual work to you pissed him off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No one steals from the Garret Twins! If you can kill that bastard and bring back as much as you can, you'll be paid very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. We need you to hunt down another person.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That son of a bitch, McCaffery, stole a ton of caps and ran off to Vegas. I guess the fact that we farmed out his usual work to you pissed him off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No one steals from the Garret Twins! If you can kill that bastard and bring back as much as you can, you'll be paid very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. For helping us out, we would like to set you up with a room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can have the corner room, rent free. It was McCaffery's.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that he's dead, we're happy to let you use it. Thanks for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. For helping us out, we would like to set you up with a room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can have the corner room, rent free. It was McCaffery's.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that he's dead, we're happy to let you use it. Thanks for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Doesn't look like it to me. I'm expecting 388 caps...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're short. Come back when you have the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It doesn't look like it to me. I'm expecting 600 caps...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're short. Come back when you have the rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic000",
+   "prompt": "I think I have all of the debts collected."
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right. 50/50 it is, but you better bring back all of the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we hear you crossed us, the next bounty hunter will be coming for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic001",
+   "prompt": "This kind of work costs time and money. 50/50 would cover my expenses.",
+   "label": "<Barter>"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic001_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Who the hell do you think you're talking to? Keep talking like that and your ass is going to be in the gutter. 25%. Take it or leave it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic001",
+   "prompt": "Are you crazy?! I'll be walking all over the place looking for these people.",
+   "label": "<Barter>"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See the King. I'm sure he could work something out to get you in. You'll need to prove you're worth his time, but it'll be well worth it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic002",
+   "prompt": "How am I supposed to get to the Strip?"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Just stop on back when he's dead and you'll be rewarded handsomely. Bring his hat as proof of the kill.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic003",
+   "prompt": "If I see McCaffery on the Strip, I'll be sure to take care of him."
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just bring back his hat if you decide to take care of him for us. He stole 2,000 caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I doubt much of that will be on him if you find him. If you kill him, keep whatever is on him, and I'll reward you for his hat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic004",
+   "prompt": "I have some other business to handle, maybe later."
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes! Where is his hat?!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic005",
+   "prompt": "I took care of McCaffery."
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is great news. No one screws with the Garret Twins and gets away with it. I need to find a place on the wall for this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And for your reward... Here's 150 caps. I trust there were also some valuables on McCaffery. Also, we would like to set you up with a room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can have the corner room, rent free. It was McCaffery's. Now that he's dead, we're happy to let you use it. Thanks for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic006",
+   "prompt": "Right here. <Give McCaffery's hat>"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Interesting... Well, you're going to need to speak with my brother James. He handles all of the trading contracts and general operations.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic007",
+   "prompt": "The Followers are looking to trade for supplies."
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Alright. 50/50 it is, but you better bring back all of the caps. If we hear you crossed us, the next bounty hunter will be coming for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic008",
+   "prompt": "Hey, I'm doing all of the work here. 50/50 and I'm game.",
+   "label": "<Speech more money>"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Who the hell do you think you're talking to? Keep talking like that and your ass is going to be in the gutter. 25%. Take it or leave it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic008",
+   "prompt": "Twenty-five percent?! Fifty-fifty, or I walk.",
+   "label": "<Speech more money>"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. We need you to hunt down another person.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That son of a bitch, McCaffery, stole a ton of caps and ran off to Vegas. I guess the fact that we farmed out his usual work to you pissed him off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No one steals from the Garret Twins! If you can kill that bastard and bring back as much as you can, you'll be paid very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. For helping us out, we would like to set you up with a room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can have the corner room, rent free. It was McCaffery's.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that he's dead, we're happy to let you use it. Thanks for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. We need you to hunt down another person.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That son of a bitch, McCaffery, stole a ton of caps and ran off to Vegas. I guess the fact that we farmed out his usual work to you pissed him off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "No one steals from the Garret Twins! If you can kill that bastard and bring back as much as you can, you'll be paid very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't care how you handled those lumps of human refuse, but you got the job done. For helping us out, we would like to set you up with a room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can have the corner room, rent free. It was McCaffery's.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that he's dead, we're happy to let you use it. Thanks for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic009",
+   "prompt": "<Lie and give 600 caps> I collected all of the debts."
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic011",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Grecks is a bit cracked, but mostly harmless. Just don't mention anything about his lazy eye.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He owes 138 caps and should still be around Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic012",
+   "prompt": "Grecks?"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Lady Jane fancies herself a high roller, but she's just another dirtbag NCR prospector. I'm not sure where to find her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear she's run goods for the Followers of the Apocalypse in the past, but other locals might know more. She owes us 250 caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic013",
+   "prompt": "Lady Jane?"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Santiago is a suave son of a bitch, but a total pansy when it comes to fisticuffs. He owes 212 caps and should be around Freeside as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic014",
+   "prompt": "Santiago?"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic015",
+   "prompt": "That's all for now."
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] All right. 50/50 it is, but you better bring back all of the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we hear you crossed us, the next bounty hunter will be coming for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic016",
+   "prompt": "This kind of work costs time and money. 50/50 would cover my expenses.",
+   "label": "<Barter>"
+  },
+  {
+   "key": "vfreeformfreesidevfsfrancinegarrettopic016_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Who the hell do you think you're talking to? Keep talking like that and your ass is going to be in the gutter. 25%. Take it or leave it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformFreesideVFSFrancineGarretTopic016",
+   "prompt": "Are you crazy?! I'll be walking all over the place looking for these people.",
+   "label": "<Barter>"
+  }
+ ],
+ "speaker": "francine_garret"
+}

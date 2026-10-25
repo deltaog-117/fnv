@@ -1,0 +1,535 @@
+{
+ "page": "BMNeil.txt",
+ "speaker": "Neil (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "BMNeilAskDanger",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You must've heard her radio broadcasts? Though why a human would follow her invitation here is beyond me... unless you didn't listen very closely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The voice on the radio belongs to Tabitha, the \"supreme commander\" of Black Mountain - or, as she calls it, the \"State of Utobitha.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She took control of this place almost two years ago. The Super Mutants here do whatever she says - and she says humans are to be killed on sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What makes this a \"dangerous place?\""
+  },
+  {
+   "id": "BMNeilAskDetails",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The road is a series of switchbacks up to the peak. There are three blockades, plus patrols. Sneaking past them would be... difficult.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just before the peak is a kind of shanty village. More second-gens there. And then there's Tabitha's compound - heavily guarded by her Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What sort of trouble should I expect if I head up?"
+  },
+  {
+   "id": "BMNeilAskDetails",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The road is a series of switchbacks up to the peak. There are three blockades, plus patrols. Sneaking past them would be... difficult.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just before the peak is a kind of shanty village. More second-gens there. And then there's Tabitha's compound - heavily guarded by her Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Remind me what I should expect if I head up?"
+  },
+  {
+   "id": "BMNeilAskForHelpSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Help would improve the odds. Help might just make the difference...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right, if you're good enough at what you do to meet me in the village up near the peak, we can talk further.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have a plan by the time I see you - if I see you. Good luck. It's going to be a lot harder for you to get up there than it will be for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sounds like you've had enough of Tabitha. What if you had some help?",
+   "label": "{Speech >= 50}"
+  },
+  {
+   "id": "BMNeilAskForHelpSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Hmm. While your enthusiasm is... admirable, I think I'd best stay here so I can warn other travelers.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hey! Let's you and me - you know, us! - let's overthrow Tabitha together!",
+   "label": "{Speech >= 50}"
+  },
+  {
+   "id": "BMNeilAskHistory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For years, Black Mountain was a peaceful community. Its leader, Marcus, broadcast an invitation to Mutants throughout the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's how I found Black Mountain. So did others, most of them second generation Mutants. Marcus welcomed everyone - that was his mistake.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The community ended up being mostly second gen - not very bright, but easy to influence. Fine, until the Nightkin came along, led by Tabitha...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In a week she had most of the second-gens thinking she was some kind of prophet - and that she should be broadcasting her \"truth,\" not Marcus.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Marcus saw what was coming and decided to leave before things got out of hand. He smashed the radio and left to found Jacobstown.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did Tabitha end up in control?"
+  },
+  {
+   "id": "BMNeilAskJacobstown",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The opposite of Black Mountain! A stable community of Mutants, mostly, led by a mentally stable leader.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Humans are welcome there, so long as they behave themselves. Look northwest of Red Rock Canyon if you want to find it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is Jacobstown?"
+  },
+  {
+   "id": "BMNeilAskMutantsWereMade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes... And it's not something I care to discuss with one of your kind.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you have some insatiable curiosity about the matter, talk to Marcus in Jacobstown. He's more patient with such questions than I am.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You say that super mutants were *made*?"
+  },
+  {
+   "id": "BMNeilAskNightkin",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Nightkin are vicious in combat, and that's if you see them coming. Most don't.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They were created to be soldiers, and given devices to camouflage them in battle. Unfortunately, the devices drove most of them mad over time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They spend most of their time at the top of the mountain, but patrol the roads after dark as well. You'd do well to avoid the mountain at night.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Nightkin."
+  },
+  {
+   "id": "BMNeilAskRadio",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh. There's a sad story behind that. Marcus smashed it just fine, but while we were gone some Ghoul named Raul came along.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tabitha turned him into her personal mechanic. A slave, really. See, if I'd been standing down here, I could've warned him before it was too late.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You say Marcus smashed the radio. Not very well, apparently?"
+  },
+  {
+   "id": "BMNeilAskSelf",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Marcus sent me here a couple of months ago to check on Black Mountain. I suppose you could say I came here as a spy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But with no signs of Tabitha's weakening, and none of the second-gens ready to revolt or to come to Jacobstown, there wasn't much I could do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Down here, on the other hand, I've saved a dozen Mutants from heading up the mountain. It's not much, but it's something.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have my own reasons to stay away from Jacobstown for a while - reasons we won't be discussing - so I've stayed here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why are you here, instead of Jacobstown?"
+  },
+  {
+   "id": "BMNeilFriendly",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keep saying things like that, and I won't be so friendly. Not every Super Mutant is a brain-damaged brute. {irritated}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Many of us are just as intelligent as basic humans - and the rest don't really have any choice in the matter, do they?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You seem friendly, for a mutant."
+  },
+  {
+   "id": "BMNeilFriendlyMovingOn",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, that's exactly what I'm telling you to do. Move on. {telling him to scram}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Moving on..."
+  },
+  {
+   "id": "BMNeilFriendlySorry",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And none taken... since you apologized.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry about that. No offense intended."
+  },
+  {
+   "id": "BMNeilFriendlyToughShit",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Of course. Sorry I bothered you. Enjoy your travels.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Spare me the \"poor mutants\" rap, all right?"
+  },
+  {
+   "id": "BMNeilHeadUpMountain",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I hear that sometimes. And then I never see the people who said it again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You do look like someone who can take care of himself. But I think you'll find this is more than you bargained for...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You do look like someone who can take care of herself. But I think you'll find this is more than you bargained for...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Thanks for the warning, but I can take care of myself."
+  },
+  {
+   "id": "BMNeilOffToJacobstown",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I still have a job to do here. Some Mutants may have heard Tabitha's broadcasts and are headed here even as we speak.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll remain and direct any who show up toward Jacobstown, where they'll be much better off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What will you do now?"
+  },
+  {
+   "id": "BMNeilSupMutantGens",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not all Super Mutants were created equal. Or at the same time, or for the same purpose.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The first generation tends to be smarter, stronger, and... more civilized, I suppose you could say, than the ones made later, save the Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why are some Super Mutants smarter than others?"
+  },
+  {
+   "id": "BMNeilVillageAgree",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good luck. We're going to need it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay, I can make that work."
+  },
+  {
+   "id": "BMNeilVillageDisagree",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, so try to stay out of sight, because they'll be coming this way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's your plan? I *am* an intruder in the village!"
+  },
+  {
+   "id": "BMNeilVillageNotReady",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever you need to do, be quick about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not yet. Wait here."
+  },
+  {
+   "id": "BMNeilVillageReadyForMob",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Here's the plan. The gate to Tabitha's compound is guarded by several Nightkin, all of them using devices that make them invisible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to draw them away from the gate by telling them I spotted an intruder in the village. Then you slip in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's do it."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good work, human. Maybe now this place can rest in peace.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's nothing for you here, human, though it is always good to see you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've done what I can. The rest is up to you, human.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is a dangerous place, human - especially for your kind! I suggest you turn back. There's nothing good waiting for you further on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still hanging about?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A pleasant surprise to see you made it. I'm ready to get started if you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We shouldn't wait much longer. Are you ready?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VEndingBlackMountain",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating} Though some Super Mutants and Nightkin continued to journey to the legendary Utobitha, they found little trace of its existence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some eventually found their way to Jacobstown, but many wandered off into the wastes, confused and disheartened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Tabitha and Rhonda went east, through Caesar's land. Occasionally tales of their exploits found their way back west, though few believed them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually the stories concerning the duo were collected and published, and proved to be quite popular with children.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Black Mountain Radio continued to broadcast its peculiar form of propaganda. Raul Tejada faced his execution each day, though pardoned in the end.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Travelers venturing too near Black Mountain continue to be harassed by Tabitha's followers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Tabitha, enraged by Raul's escape, took the remaining Nightkin of Black Mountain with her and vanished without a trace.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Travelers in the region soon learned to avoid the roads at night, as caravans were repeatedly attacked by unseen assailants.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VEndingBlackMountain"
+  },
+  {
+   "id": "VFreeformBlackMountainBMNeilTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who knows? It might stay abandoned, get used as a base for raiders, or even become another colony for mutants.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The future is not written, human, and it is foolish to squint at what cannot be seen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "With Tabitha gone, what will happen to this place?"
+  },
+  {
+   "id": "VFreeformBlackMountainBMNeilTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be safe, human. And thanks again for everything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll leave things here to you, then."
+  },
+  {
+   "id": "BMNeilDistractsNightkin",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "There's a human down the path. Tabitha's orders are to kill all human intruders. Go!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "BMNeilDistractsNightkin"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  }
+ ]
+}

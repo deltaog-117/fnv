@@ -1,0 +1,129 @@
+{
+ "id": "rsechogreen",
+ "speaker_name": "Comm Officer Green",
+ "source": "RSEchoGreen.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player not in NCR gear} Gotta wonder what the hell a civilian is doing here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player in NCR gear} You from Camp Golf or McCarran? Never mind. Don't really care.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you want now?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vmsrsechoquestrscommrangerechotopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ranger military outpost. We're keeping an eye on the Legion activities south of here at Cottonwood Cove.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nothing going on down there at the moment - just the usual slave trafficking. Poor bastards.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSEchoQuestRSCommRangerEchoTopic001",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "vdialoguerangerstationechorsechogreentopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationEchoRSEchoGreenTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguerangerstationechorsechogreentopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What, again? Didn't I just change those damn things? All right, fine - show me the new codes.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "vDialogueRangerStationEchoRSEchoGreenTopic001",
+   "prompt": "I have updated radio security codes from Sergeant Reyes here."
+  },
+  {
+   "key": "vdialoguerangerstationechorsechogreentopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Believe me, I would love orders to take Cottonwood Cove apart and kick the Legion back across the river.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But, the brass at McCarran doesn't want us to waste resources on something they consider a minor target. So we just get to watch.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "vDialogueRangerStationEchoRSEchoGreenTopic002",
+   "prompt": "The NCR is letting the Legion get away with slavery?"
+  },
+  {
+   "key": "vdialoguerangerstationechorsechogreentopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Undoubtedly. Rangers are tough nuts to crack, though, and any force small enough to launch a surprise attack isn't going back in one piece.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On the other hand, if the Legion goes for a full-scale attack, we'll see 'em coming, fall back, and wait for reinforcements.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So, we know what they'll do and they know what we'll do, so we just sit around and keep an eye on each other.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueRangerStationEchoRSEchoGreenTopic003",
+   "prompt": "Does the Legion know you're watching them from here?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "comm_officer_green"
+}

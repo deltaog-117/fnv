@@ -1,0 +1,831 @@
+{
+ "page": "CaptainCurtis.txt",
+ "speaker": "Ronald Curtis",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are you doing here? You don't have clearance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get the hell out of my sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, what are you doing out here at this hour?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Trouble sleeping again, huh? Well, do yourself a favor - try and get some rest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Following up on your lead, huh? Good. I'll get out of your way before I blow your cover.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you catch this guy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice to meet you. I'm Curtis.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS08CaptainCurtisCrenshaw",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's stationed just inside the south wall of the base. Should be on patrol, if he isn't screwing around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where can I find Private Crenshaw again?"
+  },
+  {
+   "id": "VMS08CaptainCurtisCrenshawLocker",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's in the main concourse. That's the building just across the skybridge. There's a barracks area that'll be behind you on the left when you enter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "His stuff will be at the foot of one of the beds.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where is Private Crenshaw's footlocker?"
+  },
+  {
+   "id": "VMS08CaptainCurtisHsuSentMe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Smart man. I could use somebody who can operate under the radar around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whoever our mole is, he's been slippery. Whenever one of the MP's gets too close, he changes his habits. Our last lead went cold weeks ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Colonel Hsu wanted me to help you look into the recent intelligence leaks."
+  },
+  {
+   "id": "VMS08CaptainCurtisLegion",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Christ, keep it down! You want to blow the whole thing? We've worked years for this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But maybe it's good you're here. Hsu knows about the leaks, and I'm supposed to find the spy for him. {Thinking during the first sentence. Hsu = \"shoo\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At first I couldn't believe my luck. But since I haven't produced results - for obvious reasons - I feel him looking at me differently now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe he's just thinking about putting someone else in charge, maybe he's starting to suspect. Either way it's bad for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Especially once this next part goes down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I know who you are. I'm working for the Legion, too."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, you haven't exactly kept a low profile. That narrows our options somewhat. They're not gonna believe your accusations.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you can still create an alibi for me. I could make sure people know I haven't been near the monorail all day while you're busy blowing it up. {emphasize \"me\" slightly}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It'd be better with a scapegoat, but it'll at least deflect some suspicion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hsu won't trust me enough to let me investigate."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Yeah, I get insomnia pretty bad myself, out here. I think it's the heat. Weird how sometimes it's cooler out here than it is inside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, I hope you manage to get some rest. Take it easy.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I couldn't sleep, so I decided to take a walk."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Perfect. This has turned out better than I'd ever imagined.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This will pay dividends for the Legion for a long time to come. I was with Hsu when the bomb went off. He'll never think to investigate me for it. {Hsu= \"shoo.\" Slight emphasis on \"me.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll make sure Caesar himself hears about your success today. And take this, courtesy of the NCR. I'm sure they won't miss it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hsu bought it. You should be in the clear."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know what you mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have clearance for catching spies."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? And how would you know where I'm supposed to be?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You don't seem like you're supposed to be here, either."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Poor Crenshaw. He's pulled his last prank. {Curtis ordered Crenshaw's death. This is said with a smirk.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go and tell Colonel Hsu you found the bomber. Once Hsu's convinced, we can breathe easy. {Hsu is pronounced \"shoo\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's done. The evidence is in Crenshaw's locker and Crenshaw is dead."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is that right? No one has any business being in there after dusk. I wonder...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a lot of communications equipment up there. He could be using it to touch base with whoever sent him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've already done us a lot of good, but I'm afraid to move on this myself. We've tried catching this guy before and he can always smell a trap.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But he may not know about you. I need you to follow him into the tower. See if you can discover his identity. Report back and I'll have him arrested.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Report back when you've got it and I'll have him arrested.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a lead. There's been someone sneaking into the control tower at night."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Took me three-and-a-half years, just to make Captain. Usually takes four, but I made sure there was an early vacancy. {the second sentence is a euphemism - he murdered a guy.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar sees threats before they're even aware of him. He sent me long before we moved to occupy the eastern riverbank.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And now all my work, all the waiting, is about to pay off.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How many years have you been on this assignment?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you haven't noticed, the NCR bolsters its presence on the Strip from here. Sends troopers on the monorail in shifts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The monorail lets them occupy two positions for the price of one. It's a supply line that's immune to raiders and other hindrances on the ground.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If someone were to cut that line, both positions would be much weaker. Fragile. They know this, and they watch it like hawks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I've been here a long time, and I've learned everything there is to know about it. And I'm going to blow up that train.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What next part?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I told you I think they're starting to suspect me. You're going to help me cast away those suspicions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're going to put the bomb on that train.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be sure to be in the presence of several reliable eyewitnesses when it happens. Then we're going to pin this on a scapegoat.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd planned on disappearing after this operation. It'd be a matter of time before they traced it to me. Figured out I was a {LATIN} frumentarius. {froo-men-tar-ee-us}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But with your help, maybe I can stay on after all. Make plans for something... grander.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "And you have something in mind for me?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have the explosives stashed in a trash can next to the ticketing counter along with some incriminating documents.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll pick them up and make your way upstairs to the monorail terminal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They change the guard there at 0900 and 1800 hours. There'll be a small window where there's no one guarding the train. {military time. so \"oh-nine-hundred\" and \"eighteen hundred.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me what I need to do."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, no. I wouldn't do that. Not unless I didn't have better options, anyway. And I do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The scapegoat isn't me, is it?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good. Try to plant the explosives quietly if you can - you'll make both our lives easier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But first things first. Go offer your services to Colonel Hsu. Tell him you'll work independently to find the leak. {Hsu = \"shoo\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He's running out of options. He'll accept as long as you don't give him a reason not to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If he doesn't, then don't be surprised if you're the new scapegoat. So don't fuck this up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Understood. I'll go and pick up the explosives."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, let's make sure you have it down pat.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Could you go over that again?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure? Because I think the Legion would frown upon that decision.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm not interested in helping you. You're on your own."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. Let me know if you should change your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm positive."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can't let you leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't. I was just trying to get myself out of trouble."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be straight with me. If you're onto something, I want to know about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you were to get caught or killed, we'd lose everything you've learned about this case.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nothing."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? You idiot! I spent years earning his trust. The whole point of your heading up this operation was to preserve that trust!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now they'll replace him in a week with some other colonel and I'll be back to square one. You've set me back years today. Years!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Get the hell out of my sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hsu is dead."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Lost, huh? If you say so. If you head over to the front terminal building you should be able to get in through the garage doors in back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm headed that way, myself, actually, so you can just follow me if you need to.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I got lost. This place is so big."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See those menacing looking troopers with guns standing on the walls up there? That's Bravo Company. My company.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since Oliver stuck me in a desk job, I hardly ever get to see them during the day. So sometimes I like to check up on them when they have night duty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you still haven't answered my question. {emphasize \"my\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I could ask you the same question."
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, forget about blaming Crenshaw. Just bomb the monorail.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Without a fall guy, it's dangerous for us to be seen together. We shouldn't speak again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you believe in the Legion's cause, your mission is a reward in and of itself. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So what's the plan?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want my advice, start by talking to people with a lot of eyes in the field. People like Lieutenant Boyd, or Sergeant Contreras, maybe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Careful with Contreras, though. He's not above suspicion himself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep me apprised of any leads you get. This guy's gotten a lot of my men killed. I'm just itching to return the favor.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where should I start?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Put the bomb in one of the vents inside the train on the back wall, towards the joint that connects the cars. Arm it, and get out of there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've also left some bomb ingredients in with the explosives. You are to take those to the footlocker of a Private Crenshaw.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crenshaw's a problem child. Lots of run-ins with his superiors. It'll be easy for them to believe he's working for the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do I do when I'm at the train?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Report him to Colonel Hsu. Do all that and we should be free and clear.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, and Crenshaw should be dead before you report him. Don't leave any chance for him to deny the bombings. Let's say he pulled a gun on you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've got him on guard duty patrolling the tarmac just inside the south gate. And I reassigned the other guard, so he should be alone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is that everything?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "His footlocker is in the barracks in the main concourse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So where do I find his footlocker?"
+  },
+  {
+   "id": "VMS08CaptainCurtisTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's discuss something else."
+  },
+  {
+   "id": "VMS08CaptainCurtisWhatDoYouDo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Officially I'm in charge of Bravo Company. But since General Oliver has Bravo and most of our forces here garrisoned, I'm free to do other things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So I work with Colonel Hsu on logistics. Patrols, supply lines, reinforcements, that sort of thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell of a position to be in when you're working for the other side. But I have to sabotage with a light touch, or else my guilt would be obvious.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lately it's been less about that and more about figuring out how that information is getting leaked to raiders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a big base with a lot of unhappy soldiers. They get stir-crazy. Hard to separate the malcontents from the actual culprit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "VMS08CaptainCurtisWhoToAsk",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I'll leave that to you. But I would recommend Lieutenant Boyd and Sergeant Contreras as two people who usually know what's going on around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who should I be talking to about the intelligence leaks again?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "VMS08CurtisAmbush",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You're getting too close, shamus! {said like an old timey gangster running from a detective.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is where your trail runs cold.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS08CurtisAmbush"
+  },
+  {
+   "id": "VMS08CurtisRadio1",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Lupa, this is Frumentarius Picus, over. {loop-uh, froo-men-tar-ee-us pike-us}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS08CurtisRadio1"
+  },
+  {
+   "id": "VMS08CurtisRadio11",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Ten-four.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS08CurtisRadio11"
+  },
+  {
+   "id": "VMS08CurtisRadio3",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Afternoon patrol enters Fiend territory at 1300. Have them mine that stretch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS08CurtisRadio3"
+  },
+  {
+   "id": "VMS08CurtisRadio35",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "That would leave them the morning to bury mines along that stretch. Over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS08CurtisRadio3.5"
+  },
+  {
+   "id": "VMS08CurtisRadio5",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Roger Lupa.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS08CurtisRadio5"
+  },
+  {
+   "id": "VMS08CurtisRadio7",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Charges are set. Detonation will occur as the train leaves the station. Over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS08CurtisRadio7"
+  },
+  {
+   "id": "VMS08CurtisRadio9",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Couple of minutes. Over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS08CurtisRadio9"
+  }
+ ]
+}

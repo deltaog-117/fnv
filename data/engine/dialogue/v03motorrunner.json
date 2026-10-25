@@ -1,0 +1,630 @@
+{
+ "id": "v03motorrunner",
+ "speaker_name": "Motor Runner",
+ "source": "V03MotorRunner.txt",
+ "topics": [
+  {
+   "key": "motorrunnerdrugdelivery",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "About goddamn time. Tell the Khans if they can't keep a steady supply, we'll find someone who can.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "MotorRunnerDrugDelivery",
+   "prompt": "I've got a package here from your friends Jack and Diane."
+  },
+  {
+   "key": "vendingfiends",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating} Their leaders destroyed by the Courier, the Fiends scattered throughout the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Without the organization of Motor-Runner, Cook-Cook, Violet, and Driver Nephi, they were easy prey.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Never weakened by NCR, the Fiends staged an attack against Camp McCarran during the second Battle of Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Though NCR repulsed the Fiends, they suffered heavy losses in the process.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Fiends staged an attack against Camp McCarran during the second Battle of Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "During the NCR's retreat, the Fiends overwhelmed many of the troopers before Mr. House's Securitrons could deal with them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Fiends overran Camp McCarran during the second Battle of Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In the anarchic months that followed, the Fiends asserted dominance over Outer Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Though weakened, the Fiends attacked McCarran during the second Battle of Hoover Dam.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "NCR repulsed the attack with minimal losses and, in the following days, destroyed the remaining Fiend leaders, breaking their power forever.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Fiends attacked Camp McCarran during the second Battle of Hoover Dam and suffered heavy losses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Caesar, unimpressed with their performance and their dependence on chems, had them exterminated.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Fiends attacked Camp McCarran during the second Battle of Hoover Dam, but the NCR repulsed the attack with minimal losses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When Mr. House asserted control over Outer Vegas, his Securitrons eradicated the remaining Fiends entirely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} The Fiends attacked Camp McCarran during the second Battle of Hoover Dam and, despite suffering heavy losses, overran it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They continued to be a nuisance throughout Outer Vegas, but never established full control over the area.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingFiends",
+   "prompt": "VEndingFiends"
+  },
+  {
+   "key": "vms07greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I wasn't expecting a resupply so soon, so you have anything from Red Rock Canyon to sell me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "NCR? Here? Not for long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How the hell did you get in here? Where the fuck are my guards?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07Greeting",
+   "prompt": "VMS07Greeting"
+  },
+  {
+   "key": "vms07v03motorrunnertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm paying 20 caps each for Jet, Psycho, or Buffout.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic000",
+   "prompt": "I have some chems that I can sell."
+  },
+  {
+   "key": "vms07v03motorrunnertopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Deal is still the same, 20 caps each for jet, psycho, or buffout.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic000",
+   "prompt": "I'm here to do some business with chems."
+  },
+  {
+   "key": "vms07v03motorrunnertopic000_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, our deal was Jet, Psycho, or Buffout for 22 caps a pop.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic000",
+   "prompt": "You want to buy some chems from my personal stash?"
+  },
+  {
+   "key": "vms07v03motorrunnertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright then, take my helmet and bring it to the NCR. That should be proof enough. This doesn't make us friends though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We don't offer protection services. That's not my racket. So if you find yourself dead on your way out that's your tough shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic001",
+   "prompt": "Ok, 200 is a deal."
+  },
+  {
+   "key": "vms07v03motorrunnertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Then I think you'd better find your way out before you get yourself hurt.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic002",
+   "prompt": "I'm just here looking around."
+  },
+  {
+   "key": "vms07v03motorrunnertopic002_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I guess it isn't a secret. Yeah, the residents of the Vault are all dead. We killed them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Funny thing is, they just let us in. We didn't have to force the doors or anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic002",
+   "prompt": "Can you tell me what happened to the residents here?"
+  },
+  {
+   "key": "vms07v03motorrunnertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nice doing business with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic003",
+   "prompt": "I'll be leaving now."
+  },
+  {
+   "key": "vms07v03motorrunnertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You? Take care of me? Ha! You don't look half-tough enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic004",
+   "prompt": "The NCR sent me here to take care of you."
+  },
+  {
+   "key": "vms07v03motorrunnertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then get the fuck out. I'm a busy man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic005",
+   "prompt": "I was actually just leaving."
+  },
+  {
+   "key": "vms07v03motorrunnertopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cool. I haven't had a good fight in a while, and it's been ages since Donnie and Marie had something they could sink their teeth into! {I haven't had a good fight in a while. Donnie, Marie, attack!}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sounds good to me, and to the dogs, too! Dinnertime, boys!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic006",
+   "prompt": "Appearances can be deceiving. Shall we?"
+  },
+  {
+   "key": "vms07v03motorrunnertopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic007",
+   "prompt": "I'll sell you a can of Jet for 22 caps."
+  },
+  {
+   "key": "vms07v03motorrunnertopic007_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic007",
+   "prompt": "I'll sell you a can of Jet for 20 caps."
+  },
+  {
+   "key": "vms07v03motorrunnertopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic008",
+   "prompt": "I'll sell you a pack of Buffout for 22 caps."
+  },
+  {
+   "key": "vms07v03motorrunnertopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic008",
+   "prompt": "I'll sell you a pack of Buffout for 20 caps."
+  },
+  {
+   "key": "vms07v03motorrunnertopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic009",
+   "prompt": "I'll sell you a vial of Psycho for 22 caps."
+  },
+  {
+   "key": "vms07v03motorrunnertopic009_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic009",
+   "prompt": "I'll sell you a vial of Psycho for 20 caps."
+  },
+  {
+   "key": "vms07v03motorrunnertopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic010",
+   "prompt": "I'll sell you all of my Jet for 22 caps each."
+  },
+  {
+   "key": "vms07v03motorrunnertopic010_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic010",
+   "prompt": "I'll sell you all of my Jet for 20 caps each."
+  },
+  {
+   "key": "vms07v03motorrunnertopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Alright, 22 caps each, but that's it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic011",
+   "prompt": "I'll give you exclusive rights to my personal stash, for a slight markup."
+  },
+  {
+   "key": "vms07v03motorrunnertopic011_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] These are my prices. I don't negotiate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic011",
+   "prompt": "I don't suppose you can pay a little better?"
+  },
+  {
+   "key": "vms07v03motorrunnertopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not here to talk. I'm here for business. Either do some or get the fuck out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic012",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vms07v03motorrunnertopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What kind of arrangement did you have in mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic013",
+   "prompt": "I was thinking we could make an arrangement."
+  },
+  {
+   "key": "vms07v03motorrunnertopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well now, I guess that depends on who's paying.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic014",
+   "prompt": "I could just tell them you are dead. For a price."
+  },
+  {
+   "key": "vms07v03motorrunnertopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic015",
+   "prompt": "I'll sell you all of my Psycho for 22 caps each."
+  },
+  {
+   "key": "vms07v03motorrunnertopic015_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic015",
+   "prompt": "I'll sell you all my Psycho for 20 caps each."
+  },
+  {
+   "key": "vms07v03motorrunnertopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We needed some place to put down some roots. I was having trouble keeping my people out of {outta} Westside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic017",
+   "prompt": "Why did you move the Fiends into this Vault?"
+  },
+  {
+   "key": "vms07v03motorrunnertopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic018",
+   "prompt": "I'll sell you all of my Buffout for 22 caps each."
+  },
+  {
+   "key": "vms07v03motorrunnertopic018_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, got anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic018",
+   "prompt": "I'll sell you all my Buffout for 20 caps each."
+  },
+  {
+   "key": "vms07v03motorrunnertopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I try to keep my people out of Westside. Apart from trying to stay on good terms with the Khans, who do business there. There's Mean Son of A Bitch.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That fucking mutant is more trouble to kill than to avoid. Having someplace for my people to sleep reduces the chances of drifting into Westside.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic019",
+   "prompt": "What's going on in Westside?"
+  },
+  {
+   "key": "vms07v03motorrunnertopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay then. What's your business now?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic021",
+   "prompt": "That is all I can spare."
+  },
+  {
+   "key": "vms07v03motorrunnertopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for doing business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic022",
+   "prompt": "Nothing left to sell, time for me to leave."
+  },
+  {
+   "key": "vms07v03motorrunnertopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, we got a deal. Now let's talk a price, it'll cost you 200 caps for proof of my death.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic024",
+   "prompt": "I'll pay you, I'm sure I can make up the difference from NCR."
+  },
+  {
+   "key": "vms07v03motorrunnertopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not going to pay you squat. Now get outta my face.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic025",
+   "prompt": "You should pay me, I'm providing you the service."
+  },
+  {
+   "key": "vms07v03motorrunnertopic025_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, that sounds like an alright deal. Here take my helmet back to the NCR. This doesn't make us friends though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We don't offer protection services. That's not my racket. So if you find yourself dead on your way out that's your tough shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic025",
+   "prompt": "How about you give me 75 caps, it'll keep the hit squads away for a bit."
+  },
+  {
+   "key": "vms07v03motorrunnertopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, no deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic027",
+   "prompt": "I was thinking closer to 150."
+  },
+  {
+   "key": "vms07v03motorrunnertopic027_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I don't need the money that bad. 150 it is. This doesn't make us friends though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We don't offer protection services. That's not my racket. So if you find yourself dead on your way out that's your tough shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03MotorRunnerTopic027",
+   "prompt": "The NCR is leaving you alone, 150 seems like a small price to pay."
+  }
+ ],
+ "speaker": "motor_runner"
+}

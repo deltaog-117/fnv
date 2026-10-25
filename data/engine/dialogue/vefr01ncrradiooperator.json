@@ -1,0 +1,61 @@
+{
+ "id": "vefr01ncrradiooperator",
+ "speaker_name": "NCR Ranger (Fallout: New Vegas)",
+ "source": "VEFR01NCRRadioOperator.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've done a good turn for the NCR and now we'd like to do one for you - here's an NCR emergency two-way radio - you call and we'll come running.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're not alone out here - the NCR has your back. Stay safe and good hunting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio transmission} Coordinates for supply cache in your region being sent... now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio transmission} NCR Ranger support en route to your location.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio transmission} There is no NCR support in your area - suggest a tactical retreat.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio transmission} Sorry, sir, that's all the support I can spare today.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio transmission} Support request received - deploying Troopers to your area. Hold tight, help is on the way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio transmission} Received - find some cover, NCR support is on the way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Radio transmission} Stay safe out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "ncr_ranger"
+}

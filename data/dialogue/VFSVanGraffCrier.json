@@ -1,0 +1,45 @@
+{
+ "page": "VFSVanGraffCrier.txt",
+ "speaker": "Silver Rush crier",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want to get your hands on some of the deadliest weapons around? Head just down the street to the Silver Rush. You won't be disappointed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Silver Rush is just down the street here. You can't miss it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFSVanGraffCrierShout",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come to the Silver Rush for all your energy weapon needs!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lasers, plasma, pistols, grenades - we've got it all at the Silver Rush!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You want someone dead? {stressed} Really dead? Stop by the Silver Rush and we'll give you the means!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSVanGraffCrierShout"
+  }
+ ]
+}

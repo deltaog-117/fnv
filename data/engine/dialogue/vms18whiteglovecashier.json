@@ -1,0 +1,34 @@
+{
+ "id": "vms18whiteglovecashier",
+ "speaker_name": "Ultra-Luxe cashier",
+ "source": "VMS18WhiteGloveCashier.txt",
+ "topics": [
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "A pleasure doing business.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Humbly at your service.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "ultra_luxe_cashier"
+}

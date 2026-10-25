@@ -1,0 +1,173 @@
+{
+ "page": "VHDLegionAssassinBomber.txt",
+ "speaker": "NCR engineer",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is there a problem here?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "You again. What's your problem?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Do you mind?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not sure what you mean. I think you have me confused with someone else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're the problem here."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that's too bad. I'm just here to enjoy the show so if you don't mind...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "My dog here doesn't like you."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then leave me alone.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "No problem."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What the... how'd you...",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "{Yelling} For the Legion!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found this detonator in your pocket."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Pause} You will regret this.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Die, Profligate!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Would you happen to know who did maintenance on the President's vertibird?"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, that just ain't gonna happen.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "For {KAI-zar} Caesar!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just come with me, right now."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, thought so.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "prompt": "My mistake."
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have time for this.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Death to the Legion's enemies!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why don't we take this somewhere private?"
+  },
+  {
+   "id": "VHDAssassinationDialogVHDLegionAssassinBomberTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bad idea.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "Die, infidel!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe I should go get the MPs."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

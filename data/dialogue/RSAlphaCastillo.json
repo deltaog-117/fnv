@@ -1,0 +1,105 @@
+{
+ "page": "RSAlphaCastillo.txt",
+ "speaker": "Comm Officer Castillo",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player not in NCR gear} This post isn't someplace a civilian ought to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player in NCR gear} You a transfer from one of the other posts? I haven't seen you around before.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're really not supposed to be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "RSAlphaQuestCommRangerAlphaTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just the usual. Legion scouts try to slip across the river a couple times a week, but they always end up floating downriver with holes in their heads.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Anything going on around here?"
+  },
+  {
+   "id": "VMSRSAlphaQuestRSCommRangerAlphaTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} Oh, right. She radioed ahead and mentioned that somebody was coming by.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, right. She radioed ahead and mentioned that somebody was coming by. Odd that she'd send a civilian instead of a trooper, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sergeant Reyes at Camp Forlorn Hope sent me with a security update for your radio."
+  },
+  {
+   "id": "VMSRSAlphaQuestRSCommRangerAlphaTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't get killed out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueRangerStationAlphaRSAlphaCastilloTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ranger Station Alpha. Ranger Lineholm is in command here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is this place?"
+  },
+  {
+   "id": "vDialogueRangerStationAlphaRSAlphaCastilloTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not really much of a historian. The short version is that the Rangers are the elite of the NCR military. Best fighters in the wasteland.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the Rangers."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Don't get killed out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

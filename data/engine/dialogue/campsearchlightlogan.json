@@ -1,0 +1,551 @@
+{
+ "id": "campsearchlightlogan",
+ "speaker_name": "Logan (Fallout: New Vegas)",
+ "source": "CampSearchlightLogan.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who the fuck are you?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Shut up and keep going.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "I don't know where the hell you're going but it's not the right way. Are you still in this?",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "What do you want now?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "<Police Station Dialogue>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Name's Logan. What the hell do you want?",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic000",
+   "prompt": "Sorry, I didn't catch your name."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's none of your damn business.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic001",
+   "prompt": "<Questions>"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Tell you what. Bring us those suits, and you can come with us while we loot the town. You can keep a share.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic002",
+   "prompt": "<Questions>"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's about damn time. You ready to go?",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic003",
+   "prompt": "<Questions>"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything branded by the NCR related to weapons, computers, or radios.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "There's gotta be more than that, keep looking.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Alright, we can move on now. Here's the key to the Fire Station.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic004",
+   "prompt": "<Questions>"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Same stuff. Any NCR weapons, computer parts, or radio parts.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I'll need more than that. Keep looking.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Alright, thanks for the help. Time to die loser.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic005",
+   "prompt": "<Questions>"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic009",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You must be crazy if you're just \"passing through\" this place.",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic010",
+   "prompt": "Nothing, I'm just passing through."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then why are you in here bothering me instead of out there hunting them?",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic011",
+   "prompt": "I'm hunting ghouls."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, I don't need your shit. Either get out of the way or things are gonna get rough.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic012",
+   "prompt": "Why the hostility?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look if you really want to help either get the fuck out of our way or hack that damn computer over there.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic022",
+   "prompt": "Maybe I can help?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All I know is that the whole place is filled with radiation, there are nasty creatures roaming about.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "And that my employer is paying me a pretty penny to loot it.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic023",
+   "prompt": "Can you tell me anything about Camp Searchlight?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some caravan company, Crimson something or other. Some old broad said they're looking to expand their business, be more competitive or some shit.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I don't really care, so long as I get paid.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic028",
+   "prompt": "Who is your employer?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The location of some radiation suits. I found an inventory list that says they should be here but I can't seem to find them anywhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The computer should know what happened to them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic034",
+   "prompt": "What are you looking for in the computer?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah you do that.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic037",
+   "prompt": "I'll check it out."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well then, get your ass out there.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic040",
+   "prompt": "I can do that."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic041",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Fuck you. You'll get the same as everyone else.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] Alright, fine, but you gotta bring us those suits first.",
+     "emotion": "anger",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic041",
+   "prompt": "I'd better get a bigger share for this."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, now get going.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic044",
+   "prompt": "Fine, I'll do it."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just go already.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic047",
+   "prompt": "Okay. I'll be back."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic050",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, we're going to the Police Station first. Here's the key, we'll follow you there.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "And just so you know, I'm not leaving town until I get what I came for. If you decide to go wandering off somewhere else, don't expect me to follow.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic050",
+   "prompt": "Yeah, I'm ready."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic051",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well hurry the fuck up, I don't wanna wait all day.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic051",
+   "prompt": "Hang on, I gotta take care of something first."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic052",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic052",
+   "prompt": "Can I ask you something before we go?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic055",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're gonna check out the police and fire stations. They were the buildings used the most by the NCR, so they're our best chance at good shit.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I found the keys on one of the trooper corpses.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic055",
+   "prompt": "Where exactly are we going?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything that's valuable. You done with the questions yet?",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic056",
+   "prompt": "What do you hope to find?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic060",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's about damn time.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic060",
+   "prompt": "Yep, I'm ready to go."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic069",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, I'm not leaving this place 'til I have what I came for. I'll be in the storage basement if you change your mind.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic069",
+   "prompt": "Nope, I'm getting out of here."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic070",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damn right it is. Now let's get going.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Then get your ass back into town before talking to me. I wanna know you're serious about this.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic070",
+   "prompt": "Sorry, my mistake, I'm still in."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic071",
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic072",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic072",
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic074",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic074",
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic076",
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't think too hard, you'll hurt yourself.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic078",
+   "prompt": "I'll think about it."
+  },
+  {
+   "key": "vms44campsearchlightlogantopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic080",
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic084",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic084",
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "key": "vms44campsearchlightlogantopic087",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS44CampSearchlightLoganTopic087",
+   "prompt": "Can I ask you something else?"
+  }
+ ],
+ "speaker": "logan"
+}

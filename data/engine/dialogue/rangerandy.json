@@ -1,0 +1,651 @@
+{
+ "id": "rangerandy",
+ "speaker_name": "Andy (Ranger)",
+ "source": "RangerAndy.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We haven't met yet. You must be new in town. I'm Andy.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Boy you picked that takedown right up. I'm impressed. Must've had some prior training, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'll get the hang of that takedown. I had trouble learning it at first, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's new?",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "Any word on Station Charlie?",
+     "emotion": "fear",
+     "intensity": 40
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "rangerandyleg",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. Twice. Actually the first time it was more like half my body. Knocked me out of the Rangers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This time it's mostly just reminded me how useless I've gotten.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyLeg",
+   "prompt": "Did you do something to your leg?"
+  },
+  {
+   "key": "rangerandylegstory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A few years back, we get a tip that some Legion slavers were holed up in this burnt out house a few klicks from where we were stationed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We get there and it's deserted. No sign anyone's been there. I mean nothing. As we're leaving, I hear something behind me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I turn around and there's this kid, just skin and bone, and he's looking up at us and he's scared half to death. Been hiding in a closet.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyLegStory",
+   "prompt": "What happened?"
+  },
+  {
+   "key": "rangerandysomethingelse",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<Laughs>Yeah. I'm with you there.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Like what?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndySomethingElse",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "rangerandystationacceptlogquest",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be careful out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationAcceptLogQuest",
+   "prompt": "I'll come back when I know more."
+  },
+  {
+   "key": "rangerandystationcompletion",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, thanks for telling me. I know that knowledge didn't come without risk.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here. Take this, courtesy of the Ranger veterans fund.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell you what. I'll pay you for what you did, but I'll do you one better, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a move we have in the Rangers for knocking an opponent off his feet. Saved my butt a bunch of times, maybe it will for you too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me show you how it's done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationCompletion",
+   "prompt": "RangerAndyStationCompletion"
+  },
+  {
+   "key": "rangerandystationdeclinelogquest",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry you feel that way. Then again, I'm not so sure I want to know who did this, myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationDeclineLogQuest",
+   "prompt": "I'm not interested in this town's problems."
+  },
+  {
+   "key": "rangerandystationlookintooffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Uh... no. No. They're gonna think I'm having trouble letting go. They're good soldiers. I don't give them enough credit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationLookIntoOffer",
+   "prompt": "Would you feel better if I checked on your NCR friends for you?"
+  },
+  {
+   "key": "rangerandystationncrweak",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Obviously you don't know the first damn thing about the Rangers. Without them, nobody in these parts would be safe.",
+     "emotion": "anger",
+     "intensity": 60
+    },
+    {
+     "text": "No, I'm getting all worked up for nothing. Those boys are just fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationNCRWeak",
+   "prompt": "The Rangers are soft. They're probably already dead."
+  },
+  {
+   "key": "rangerandystationprobablynothing",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, who am I kidding? It's funny, you get stuck in your room for a few weeks, you start to worry the world's gonna fall apart without you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those guys are fine. They don't need me looking over their shoulders.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationProbablyNothing",
+   "prompt": "A station full of Rangers ought to be able to handle themselves."
+  },
+  {
+   "key": "rangerandystationransacked",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? What happened?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationRansacked",
+   "prompt": "I went to the ranger station. Everyone there was wiped out."
+  },
+  {
+   "key": "rangerandystationreportlie",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those were good men at the station. Good men. This whole town was sleeping a lot easier because of them.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "At least they gave somebody some hell on their way out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those were good men at the station. Good men. This whole town was sleeping a lot easier because of them.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "At least they gave somebody some hell on their way out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, thanks for telling me. I know that knowledge didn't come without risk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationReportLie",
+   "prompt": "<Lie> The attackers are all dead too. It's impossible to identify them."
+  },
+  {
+   "key": "rangerandystationreportnodetails",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "God damn it! I just spoke to them the other day. If this is some kind of sick joke-",
+     "emotion": "anger",
+     "intensity": 70
+    },
+    {
+     "text": "<Sighs> Nah, that'd be too far, even for those guys.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "Listen, this could be trouble for all of us. Whoever did this is still out there, and they might come this way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you can find out who did this, we can be better prepared to deal with them if they come through here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationReportNoDetails",
+   "prompt": "I don't know the details. I just saw a lot of dead rangers."
+  },
+  {
+   "key": "rangerandystationreporttrue",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those were good men at the station. Good men. This whole town was sleeping a lot easier because of them.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "Now, who knows what we're in for? The Legion? Christ, we'd be better off with Raiders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Those were good men at the station. Good men. This whole town was sleeping a lot easier because of them.",
+     "emotion": "sad",
+     "intensity": 40
+    },
+    {
+     "text": "Now, who knows what we're in for? The Legion? Christ, we'd be better off with Raiders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, thanks for telling me. I know that knowledge didn't come without risk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyStationReportTrue",
+   "prompt": "Members of Caesar's Legion ambushed them."
+  },
+  {
+   "key": "rangerandystationreportunsure",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please, if you know the truth, tell me. Those guys were friends of mine.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "Okay. Keep me posted.",
+     "emotion": "fear",
+     "intensity": 40
+    }
+   ],
+   "topic": "RangerAndyStationReportUnsure",
+   "prompt": "Actually, I'm still not sure."
+  },
+  {
+   "key": "rangerandystationreturnwithlog",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid to ask.",
+     "emotion": "fear",
+     "intensity": 30
+    }
+   ],
+   "topic": "RangerAndyStationReturnWithLog",
+   "prompt": "I found out who killed the Rangers at Station Charlie."
+  },
+  {
+   "key": "rangerandyusefulknowledge",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh. People don't exactly line up to find out what's in my head. Can't remember the last time someone suggested I knew something worth knowing.",
+     "emotion": "happy",
+     "intensity": 35
+    },
+    {
+     "text": "You know, maybe there's something I can do for you. Since you've gone to all the trouble of flattering a crippled old soldier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's a move we have in the Rangers for knocking an opponent off his feet. Saved my butt a bunch of times, maybe it will for you too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let me show you how it's done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyUsefulKnowledge",
+   "prompt": "Your body is injured, not your mind. You're kidding yourself if you think you're useless."
+  },
+  {
+   "key": "rangerandywhatdoyoudo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right now? A whole lot of sitting on my keister and counting cracks in the ceiling. I wouldn't wish it on anybody.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On better days I help keep the peace. Boone and Vargas watch the road, I watch the town. Tell myself I'm doing some good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "RangerAndyWhatDoYouDo",
+   "prompt": "What do you do here, Andy?"
+  },
+  {
+   "key": "rangerandywithncr",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was. Was with them. That was back when my arm and leg used to work better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I still like to pretend I'm a Ranger, though. I'll check in with the guys up at the station pretty regular on the ham radio.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sometimes they stop by, tell me they're paying their respects, the smug bastards.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "They haven't been responding to me, last couple of days. I guess they got tired of hearing me talk, but it's still got me a little worried.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell, listen to me talk. Like some damn mother hen.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "topic": "RangerAndyWithNCR",
+   "prompt": "You're with the NCR, right?"
+  },
+  {
+   "key": "snipersrevengeboonewife",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Carla was a knockout. Whenever Boone walked around with her, he always had this funny grin on his face like he couldn't believe his luck.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I know {emph} we couldn't.",
+     "emotion": "happy",
+     "intensity": 65
+    },
+    {
+     "text": "That wasn't the only reason she stuck out, though. That girl never minced words.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If she'd had better food or hospitality, she'd let you hear it. Trouble was, she usually had.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I don't think she meant it. She really was a sweet girl.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "I think she just wanted to remind herself that there are still nicer places in this world than Novac. Who could blame her for that?",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "SnipersRevengeBooneWife",
+   "prompt": "What can you tell me about Boone's wife?"
+  },
+  {
+   "key": "snipersrevengecomeoutside",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As long as we don't go too far. Jeannie May would have a fit if she saw me out and about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Any excuse to get out of my room.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeComeOutside",
+   "prompt": "Come with me. There's something you should see, in front of the dinosaur."
+  },
+  {
+   "key": "snipersrevengetoofar",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, I'm sorry, but I've gotta turn around. Leg's giving me some trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeTooFar",
+   "prompt": "SnipersRevengeTooFar"
+  },
+  {
+   "key": "snipersrevengewrongwithboone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Had his wife taken. I don't think he'll ever be the same as he was. Damn shame.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I told the Rangers up at the station to keep an eye out, but there's just too much ground out there for them to cover.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SnipersRevengeWrongWithBoone",
+   "prompt": "What's wrong with Boone?"
+  },
+  {
+   "key": "speechchallengefailure",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I don't think I have much to offer in that department either. Too many blows to the head during combat drills.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SpeechChallengeFailure",
+   "prompt": "SpeechChallengeFailure"
+  },
+  {
+   "key": "vdialoguenovacrangerandytopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Trying to be polite after getting unintentionally offended} I'm sure it was very inspiring.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacRangerAndyTopic000",
+   "prompt": "Hey, just because you're idle and you'll never walk again... I forgot where I was going with that."
+  },
+  {
+   "key": "vdialoguenovacrangerandytopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I go to grab him out of there and I notice he's holding something in his hand. Something metal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He shuts himself back inside the closet and that's when I see the grenade he's left by my feet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They do it a lot, the Legion. Using kids. They know we'll hesitate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, that was the first time. Second time I fell down those stairs in front of the motel. Just in case I got to thinking I'd put it all behind me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacRangerAndyTopic001",
+   "prompt": "What did you do?"
+  },
+  {
+   "key": "vdialoguenovacrangerandytopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're the NCR's finest. A one-man platoon, each of 'em.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got a job where even thinking about it would scare a man senseless, that's when you bring in the Rangers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And if you see a squad of the veterans - guys who earned their black armor... well... you won't find a more beautiful sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueNovacRangerAndyTopic002",
+   "prompt": "Tell me about the Rangers."
+  },
+  {
+   "key": "vfreeformnovacrangerandytopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In Ranger school, they teach you how to spot a liar. I don't know why you're lying, but have it your way. We'll protect this town or die trying.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformNovacRangerAndyTopic000",
+   "prompt": "<Lie> I think the attackers were dead too... so it's... hard to tell."
+  },
+  {
+   "key": "vmq01lookingformanny",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, but I've been laid up for a while now. Haven't been able to keep an eye on things like usual.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a small town, though. I'm sure someone would've noticed somebody like that if they came this way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMQ01LookingForManny",
+   "prompt": "I'm looking for a man in a checkered coat. Have you seen anyone like that?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey, uh. Wait a sec. I know what I said, but... if you find yourself by Ranger Station Charlie, let me know what you find. I'd be interested.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look out for yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey. Welcome.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "ranger_andy"
+}

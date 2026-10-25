@@ -1,0 +1,571 @@
+{
+ "id": "vcfhcarlmayes",
+ "speaker_name": "Carl Mayes",
+ "source": "VCFHCarlMayes.txt",
+ "topics": [
+  {
+   "key": "caravanoffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damn straight I would! Let's see what you got.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanOffer",
+   "prompt": "Want to play a hand of Caravan?"
+  },
+  {
+   "key": "caravanplayerloses",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That was too easy. How about we play again and this time you actually try.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanPlayerLoses",
+   "prompt": "CaravanPlayerLoses"
+  },
+  {
+   "key": "caravanplayerwins",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Dammit. I should have won that match. Let's play again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanPlayerWins",
+   "prompt": "CaravanPlayerWins"
+  },
+  {
+   "key": "caravanrematchno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be here if you ever want a rematch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanRematchNo",
+   "prompt": "I'm all done playing for now."
+  },
+  {
+   "key": "caravanrematchyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope you're ready for this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanRematchYes",
+   "prompt": "Yeah, let's play again."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So I heard you helped take over Nelson from the Legion. Glad to see someone making a difference around here instead of just complaining.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks again for finding those supplies. I've already started putting them to good use.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "If it isn't the guy that saved President Kimball. We owe you a big debt of gratitude. If Kimball died, I don't know what would have happened.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "If it isn't the gal that saved President Kimball. We owe you a big debt of gratitude. If Kimball died, I don't know what would have happened.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I can't believe that President Kimball is dead. If I could get my hands on the people that did this I'd rip their heads off with my bare hands.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "I can't believe someone tried to assassinate President Kimball. I'm just glad he's still alive. We need a guy like him around.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Are you new? No one told me about any new troops showing up. {irritated} This is just great, we get new troops and no new supplies for them.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I didn't expect someone as famous as you here. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Nice to see a friendly face around here. We don't get many visitors of your esteem. Something I can do for you?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "You better watch yourself around here. I'm not going to put up with any crazy shit.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Didn't expect someone like you around here. What do you want?",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "You've got a lot of nerve showing your face around here. You better get out before I throw you out.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{gruff} What do you want?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "If you're looking for supplies I'll make this easy for you... there aren't any.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "But something tells me you're not here for that. What do you want?",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I still don't have any supplies to spare. Is there something else I can help you with?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So the Major has you running errands for him. Well, we're short on personnel as well as supplies so we'll take all the help we can get.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic000",
+   "prompt": "Major Polatli sent me to help you out."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not good. If we don't get more supplies, we're going to have to start using dirt for food and sticks and rocks for weapons.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Hey, how'd you like to do something for me?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "Better now that all those Legion troops in Nelson are dead. The NCR might actually have a chance of kicking their asses after all.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Things are still pretty damn rough, but we're keeping it together.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic001",
+   "prompt": "How're things around the camp?"
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks. Watch your back out there. Never know when those Legion bastards might show up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic002",
+   "prompt": "[PRESS DEMO] I'll look for your men and supplies. Send me to HELIOS One."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe, but the situation around here calls for it. You gonna help or not?",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic003",
+   "prompt": "A little morbid, isn't it?"
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I take it my men were dead. It's a high price to pay, but these supplies will save a few lives here.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Thanks for finding these. You should check in with the Major, he'll want to know about this.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic004",
+   "prompt": "I found the supplies you were looking for."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Damn it all... I sent some men out to get these supplies, but they never returned. I guess the Legion got them on their way back.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "At least we have the supplies. It's not much, but every little bit counts.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Thanks for finding these. You should check in with the Major, he'll want to know about this.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic005",
+   "prompt": "Speaking of supplies... I found some nearby, are they yours?"
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Me? I've been doing this shit for far too long and have been in too many battles to remember.",
+     "emotion": "surprise",
+     "intensity": 5
+    },
+    {
+     "text": "Still... this has got to be one of the worst situations I've been in. Not too much I can do about it but do my job and do it right.",
+     "emotion": "sad",
+     "intensity": 15
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic006",
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have you changed your mind? Are you willing to help me out with something real simple?",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic007",
+   "prompt": "About that thing you wanted..."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I want you to collect NCR dogtags from our fallen troopers. That way I can keep track of who's gone and how to reallocate our supplies.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic008",
+   "prompt": "I'm always willing to give a helping hand."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself. Let me know if you change your mind.",
+     "emotion": "disgust",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic010",
+   "prompt": "Uh, no thanks, maybe later."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you've been a big help. I wanted to give you something for helping me out. It's not much, but here you go.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Good work. If you find any more, you know where to find me.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic011",
+   "prompt": "I found some NCR dogtags."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's easy. Just bring back any NCR dogtags you find and I'll try to make it worth your while.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic012",
+   "prompt": "Seems easy enough."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want to know?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic013",
+   "prompt": "I wanted to ask about your missing men."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bad? I've been doing this a long time and I haven't been in many places that were worse than this.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "We've been out here on the front lines for a long time without any reinforcements or resupplies. That's what I need your help for.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "I sent some troops out to find more supplies, but they never returned. I need you to track them down and help them bring back the supplies.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic014",
+   "prompt": "The situation looks pretty bad here."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is that a joke? Have you looked around? Massive casualties, constant raids, barely any food or equipment... does that sound alright to you?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Shit, we haven't had a proper resupply since god knows when. Last time I sent troops out to find supplies, they never returned.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "The Major sent you because we don't have any men to spare. So why don't you make yourself useful and find those troops and supplies for me.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic015",
+   "prompt": "Quit complaining, it's not that bad here."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Major let me send out some troops to gather supplies, but unfortunately they never returned. I'm guessing they ran into some trouble on the way.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "You can help by finding the troops and assisting them in bringing back any supplies they found.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic016",
+   "prompt": "How can I help with your supply problems?"
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I sent them to HELIOS One to see if they had any supplies they could spare. They've got to be somewhere between here and there.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "I'd try searching the main road, or checking with the men at HELIOS One to see if they know anything.",
+     "emotion": "neutral",
+     "intensity": 5
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic017",
+   "prompt": "Any idea on where I should start looking?"
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's dangerous, but not as bad now that we've taken back Nelson from the Legion.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Of course it's dangerous! Damn Legion raiding parties have been giving us hell ever since they took over Nelson.",
+     "emotion": "anger",
+     "intensity": 40
+    },
+    {
+     "text": "Hell, my men probably got ambushed by a raiding party! But we need those supplies, and we need them badly.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic018",
+   "prompt": "This sounds pretty dangerous."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make it quick, I don't have time to stand around talking all day long.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic019",
+   "prompt": "I'd like to ask about something else."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We really need those supplies, so don't take your sweet time finding them.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic020",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, can't say I do. I've got my own problems to worry about.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic021",
+   "prompt": "Do you know anything about Dr. Richards' missing medical supplies?"
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have any supplies to spare, but I've got caps if you have anything you don't need.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "I don't have any supplies to spare for someone with your spotted reputation, but buy your stuff for half the going rate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic023",
+   "prompt": "I'd like to trade."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're welcome. Enjoy.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic024",
+   "prompt": "Thanks, I appreciate it."
+  },
+  {
+   "key": "vms30vcfhcarlmayestopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not going to argue with you there. Thanks, I appreciate this.",
+     "emotion": "happy",
+     "intensity": 45
+    }
+   ],
+   "topic": "VMS30VCFHCarlMayesTopic025",
+   "prompt": "Whatever it is, I think you need it more than I do."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Uh huh.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "carl_mayes"
+}

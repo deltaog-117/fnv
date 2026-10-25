@@ -1,0 +1,292 @@
+{
+ "id": "adastraus",
+ "speaker_name": "Ada Straus",
+ "source": "AdaStraus.txt",
+ "topics": [
+  {
+   "key": "doctoraddiction",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, pipe down. We can't talk about that here, out in the open.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, you mean you want a cure. Oh. {Emphasize \"cure.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddiction",
+   "prompt": "I think I might be addicted to something."
+  },
+  {
+   "key": "doctoraddictionno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If that doesn't work, you could always try using some chems.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddictionNO",
+   "prompt": "I think I'll tough it out."
+  },
+  {
+   "key": "doctoraddictionyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, there you are. The convulsions should stop in the next one to twelve weeks. If they don't, try holding on to something that's very still.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddictionYES",
+   "prompt": "Yes, cure me. Here's 50 caps.",
+   "label": "Yes, cure me."
+  },
+  {
+   "key": "doctoraddictionyes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why didn't you say so? No problem. I'll give you my free cure. Here, lean in. It's a special doctor secret.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop doing chems! {not yelled, but loudly.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorAddictionYES",
+   "prompt": "I can't afford treatment. I don't have 50 caps.",
+   "label": "Yes, cure me."
+  },
+  {
+   "key": "doctormedical",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see... Physically, you're fine. Emotionally... well, I'm not the right kind of doctor for that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's not so bad. I'll have you looking good as new. I mean, what are the chances of me botching another routine procedure in the same day?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unless you dipped that in cheese fondue, I'd say it's infected. Let me fix that up for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Jesus, I don't think that's supposed to just dangle like that. And what the hell is that thing there?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "It's gonna be expensive. Try not to speak. Just nod yes or no.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical",
+   "prompt": "I'm hurt. I need help, Doc."
+  },
+  {
+   "key": "doctormedical33yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, I'll just get my scalpel here, and... ugh. Did I leave that sitting outside? Well, you know what? Free tetanus shot!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical33YES",
+   "prompt": "Okay, fix me. Here's 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "key": "doctormedical33yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Darn it! That money was going to help pay to get me some medical training.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical33YES",
+   "prompt": "Sorry, I don't have 100 caps.",
+   "label": "All right, here's your money."
+  },
+  {
+   "key": "doctormedical66yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, I'll just get my scalpel here, and... ugh. Did I leave that sitting outside? Well, you know what? Free tetanus shot!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical66YES",
+   "prompt": "Okay, fix me. Here's 75 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "key": "doctormedical66yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Darn it! That money was going to help pay to get me some medical training.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical66YES",
+   "prompt": "Sorry, I don't have 75 caps.",
+   "label": "Here's your money."
+  },
+  {
+   "key": "doctormedical99yes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, I'll just get my scalpel here, and... ugh. Did I leave that sitting outside? Well, you know what? Free tetanus shot!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical99YES",
+   "prompt": "Okay, fix me. Here's 50 caps.",
+   "label": "All right, fix me."
+  },
+  {
+   "key": "doctormedical99yes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Darn it! That money was going to help pay to get me some medical training.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedical99YES",
+   "prompt": "Sorry, I don't have 50 caps.",
+   "label": "All right, fix me."
+  },
+  {
+   "key": "doctormedicalno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sometimes ignoring something is the best medicine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorMedicalNO",
+   "prompt": "On second thought, I'll be fine."
+  },
+  {
+   "key": "doctorradiation",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure? You won't be able to read in the dark as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiation",
+   "prompt": "Can you heal my radiation?"
+  },
+  {
+   "key": "doctorradiationno",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In that case, stand just like that for a second. I want to make some toast.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationNO",
+   "prompt": "No, thanks."
+  },
+  {
+   "key": "doctorradiationyes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. And remember, if this doesn't help, try taking a bath in tomato juice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationYES",
+   "prompt": "Here's your 100 caps. Do it.",
+   "label": "Do it."
+  },
+  {
+   "key": "doctorradiationyes_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I bet you could make some of the money letting people work on their tans next to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorRadiationYES",
+   "prompt": "I don't have 100 caps.",
+   "label": "Do it."
+  },
+  {
+   "key": "doctorsupplies",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, and I need {emph} sterile medical supplies. But let's see what I have with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DoctorSupplies",
+   "prompt": "I need medical supplies."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've gotta hand it to you. You've done good things for Novac, but you've also got 'em a little scared of you. And that's great for business.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As long as you keep it coming, I'll get you some things a little cheaper than they should be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "dr_ada_straus"
+}

@@ -1,0 +1,365 @@
+{
+ "id": "vhdmikelawson",
+ "speaker_name": "Mike Lawson",
+ "source": "VHDMikeLawson.txt",
+ "topics": [
+  {
+   "key": "edecontinuelog1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Eyebot Duraframe Subject E is both the prototype, and the last functional model in this test group.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was prepared to make several significant upgrades to the machines.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, as the project was canceled and all Duraframe assets are being diverted to Hellfire Armor, I am sending this model to the Navarro outpost.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "EDEContinueLog1",
+   "prompt": "<Log Playback::Continue>"
+  },
+  {
+   "key": "edelog1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Subject E: Diagnosis complete. Begin Recording.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My name is Whitley. I'm a researcher at Adams Air Force base. Until recently I was in charge of the Duraframe reinforcement project for the combat model Eyebots.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "EDELog1",
+   "prompt": "<Log 1 Playback::Begin>",
+   "label": "EDEChatter"
+  },
+  {
+   "key": "edelog2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Download Complete. Begin Recording.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Navarro outpost scientists, I am glad that ED-E has reached you. You will find several databanks of information on this machine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "EDELog2",
+   "prompt": "<Log 2 Playback::Begin>",
+   "label": "EDEChatter2"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't you see everything is going to hell? I'm gonna go find someplace safe to hide out at.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "I love this place, but I can't take this kind of stress anymore. I'm going to head back west to see my grandkids.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Hello there youngster. Welcome to my baby.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Troublemaker, don't you dare hurt my baby.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Always good to see a friendly face, you're always welcome to visit my baby girl.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "You keep yourself outta trouble around my baby, I'm watching you.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Welcome back to my baby.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm{Pause} .",
+     "emotion": "pained",
+     "intensity": 15
+    },
+    {
+     "text": "I think that you should be able to divert the flow of the water into the generator turbines. That would grind them up like hamburger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The computer to activate it is just ahead, but you may need to go outside to activate the manual override. That system hasn't been used in a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic000",
+   "prompt": "What can I do to help?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ok, be careful out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic001",
+   "prompt": "I can handle them, no problem."
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The power station, the dam, they're my babies. Well... don't tell my grandchildren I said that. Anything in here that I haven't rebuilt I've fixed.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I've been here since well before the first battle. I've ground my knuckles on so much cement in here it is nearly as much me as it is cement.",
+     "emotion": "pained",
+     "intensity": 10
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic002",
+   "prompt": "Why do you call this place your baby?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good luck. I'm going to find a place to not get shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic003",
+   "prompt": "I'll take care of it."
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm the head engineer. I make sure the turbines keep spinning and the water keeps pumping.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic004",
+   "prompt": "What do you do here?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well{pause} he mostly stays out of the way, which is a good thing. He'd probably end up doing some real damage if he tried to make himself useful.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Right now we mostly let him operate the switchboard for the intercom. Flipping switches seems to keep him pretty happy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sad what happened to him. He was a good kid.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic005",
+   "prompt": "What do you think of Fantastic?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was down here for most of it, so I can't tell you much of what the boys with the guns were doing up top.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From talking to the boys that were fighting up there, I can tell you that Hanlon managed to pull off what most people would have thought impossible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic006",
+   "prompt": "Tell me about the last battle."
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, what's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic007",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good day to you, and stay out of trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic010",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Been better, been worse. When I first came here there was but one turbine spinning.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "At one point shortly after the last battle I had six of them spinning, was a wonderful sound. Only four of them are running right now.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic011",
+   "prompt": "How is the dam running these days?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A little bit ago one of the intake towers got clogged. No water running through it anymore to spin the generators.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One of these days I'll get some boys out to the turbine to get it running again, but right now it is pretty low on the priority list.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic012",
+   "prompt": "What is wrong with the other turbines?"
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You've got my ear.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic014",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vfreeformhooverdamvhdmikelawsontopic014_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well to each their own I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformHooverDamVHDMikeLawsonTopic014",
+   "prompt": "Flipping switches is fun."
+  },
+  {
+   "key": "vhdmikelawsonwarningtopic",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good gracious! The Legion is using the intake tunnels to storm their way into the dam, someone has to stop them.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "VHDMikeLawsonWarningTopic",
+   "prompt": "<Mike Lawson Warning Greeting>"
+  },
+  {
+   "key": "vdialogueedenvcompanionedetopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please handle this information with the utmost care as it represents the sum total of the results of my research on the Duraframe Eyebots.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There are also several databanks with information on my research into Poseidon Energy and some projects they were working on in the Mojave area.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueEDENVCompanionEdETopic000",
+   "prompt": "<Log Playback::Continue>"
+  },
+  {
+   "key": "vdialogueedetopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you are listening to this log from one of our Enclave Outposts in Chicago, give this unit whatever repairs it needs so it can continue to Navarro.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vDialogueEDETopic000",
+   "prompt": "<Log Playback::Continue>"
+  }
+ ],
+ "speaker": "mike_lawson"
+}

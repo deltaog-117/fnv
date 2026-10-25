@@ -1,0 +1,81 @@
+{
+ "page": "RSDeltaScheffer.txt",
+ "speaker": "Comm Officer Scheffer",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player not in NCR gear} I'm not supposed to let civilians just walk around this place. There better be a good reason for you being here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player in NCR gear} I'm pretty sure you're not authorized to be here, whatever unit you happen to be from. What do you want?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Why are you still here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vDialogueRangerStationDeltaRSDeltaSchefferTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So long.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueRangerStationDeltaRSDeltaSchefferTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well. You can tell Reyes that this station is secure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've brought radio security code updates from Sergeant Reyes at Camp Forlorn Hope."
+  },
+  {
+   "id": "vDialogueRangerStationDeltaRSDeltaSchefferTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm in charge of the radio - hence the title \"Comm Officer.\" I'd much rather be out on patrol, since nothing much happens around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "vDialogueRangerStationDeltaRSDeltaSchefferTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, when there's trouble regular NCR troops can't handle, they send in a Ranger. Problem solved.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're also responsible for keeping the borders of the NCR secure, scouting out threats, that sort of thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to know more about the Rangers."
+  }
+ ]
+}

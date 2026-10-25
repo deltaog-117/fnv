@@ -1,0 +1,93 @@
+{
+ "page": "RSEchoErasmus.txt",
+ "speaker": "Erasmus",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} I don't remember getting informed about any new transfers to this post.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player not in NCR gear} This is a military post. You sure you're in the right place?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is there something you need from me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMSRSEchoQuestRSRangerEchoErasmusTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion's got a major crossing point down at Cottonwood Cove, so we keep an eye on them from up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If McCarran would send us some more men, we could do more than watch.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "vDialogueRangerStationEchoRSRangerEchoErasmusTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Carry on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueRangerStationEchoRSRangerEchoErasmusTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion's been sending raiding parties across the river in larger numbers lately. We don't have the men at this post to intercept them all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do you need reinforcements?"
+  },
+  {
+   "id": "vDialogueRangerStationEchoRSRangerEchoErasmusTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Skirmishes, mostly. The Legion raiding parties usually fall back when they know it's us they're up against.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Has there been much fighting around here?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Carry on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "id": "vfsatomicwranglercrier",
+ "speaker_name": "Atomic Wrangler crier",
+ "source": "VFSAtomicWranglerCrier.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey baby, head down to the Atomic Wrangler if you want to have a good time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Wrangler's just down the street. You're almost there already.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfsatomicwranglercriershout",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hungry? Thirsty? Horny? The Atomic Wrangler has you covered!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wanna get lucky? Head on down to the Atomic Wrangler!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Make a brief stop at the Atomic Wrangler, where the booze is cheaper, the tables more friendly, and the women are just like the booze!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFSAtomicWranglerCrierShout",
+   "prompt": "VFSAtomicWranglerCrierShout"
+  }
+ ],
+ "speaker": "atomic_wrangler_crier"
+}

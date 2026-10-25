@@ -1,0 +1,569 @@
+{
+ "page": "PrimmCorporalHayes.txt",
+ "speaker": "Hayes (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm Lieutenant Hayes of the New California Republic Army, 5th Battalion, 1st Company. What's your business?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "LtHayesGoodbye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine by me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I should be going."
+  },
+  {
+   "id": "LtHayesHelpPrimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We know Primm is a great strategic point, and we aren't blind to the needs of the town, but we're barely holding our own against the Powder Gangers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We don't have the guns or the personnel needed to carry out our mission, much less take on defending this town as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Primm is in dire need of some real law.",
+   "label": "PC asks Hayes to establish law in Primm"
+  },
+  {
+   "id": "LtHayesHelpPrimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Have you gotten us any additional support yet?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to talk to you about protecting Primm.",
+   "label": "PC asks Hayes to establish law in Primm"
+  },
+  {
+   "id": "LtHayesHelpPrimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yes, I just got word of that. There's a squad of rangers standing by.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sergeant McGee will take over as sheriff and the rangers will be his deputies. This town will be an NCR territory.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This means that aside from protection, the citizens will also need to become registered NCR citizens and pay any appropriate and associated taxes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I got extra troop support for Primm.",
+   "label": "PC asks Hayes to establish law in Primm"
+  },
+  {
+   "id": "LtHayesHelpPrimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That ranger squad is still standing by, and McGee is anxious to take over as sheriff. Are you ready for me to make the call?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to talk about that NCR protecting Primm.",
+   "label": "PC asks Hayes to establish law in Primm"
+  },
+  {
+   "id": "LtHayesNcrLawNevermind",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, good luck with that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll look for another solution.",
+   "label": "Never mind, I'll find someone else."
+  },
+  {
+   "id": "LtHayesPrisonAttack",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some Powder Gangers did you wrong, is that it? Get in line.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, you do look capable enough, and manpower hasn't been easy to come by...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right. Fine by me if you want to put yourself in harm's way. I'll mark the staging area on your map. Talk to Sergeant Lee.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Classified or not, I want to help make the attack."
+  },
+  {
+   "id": "LtHayesPrisonAttackDont",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't remember saying there was going to be an attack on the prison, waster. You've overstayed your welcome.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell them to call off the attack on the prison, or they'll get wiped out."
+  },
+  {
+   "id": "LtHayesPrisonAttackFail",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That explains why there's been no sit-rep from Sergeant Lee.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It took months to get authorization for that assault. It'll be a long time before we take on the Powder Gangers again.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The attack on the prison was a success."
+  },
+  {
+   "id": "LtHayesPrisonAttackSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Some Powder Gangers did you wrong, is that it? Well, get in line.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, you do look capable enough, and manpower hasn't been easy to come by...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right. If you want to put yourself in harm's way, I'll help you do it. I'll mark the staging area on your map. Talk to Sergeant Lee.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to help your troops take the prison back. Believe me."
+  },
+  {
+   "id": "LtHayesPrisonAttackSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't know how they'll do it without you - if they are going to do it - but I guess they'll have to manage. Now get out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "But I could help the troops attack the prison, you know?"
+  },
+  {
+   "id": "LtHayesPrisonAttackSuccess",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not surprised. Criminals like to act tough, but they're no match for military discipline.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The attack on the prison was a success."
+  },
+  {
+   "id": "LtHayesVMS04ChompsDead",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I see. Thanks for saving us the trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "There was another man involved at Sloan, but he's dead."
+  },
+  {
+   "id": "LtHayesVMS04ExposeChomps",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. I'll have him brought in for questioning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Chomps Lewis, the foreman at Sloan, was also involved."
+  },
+  {
+   "id": "LtHayesVMS04ExposeTyrone",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Tyrone wasn't authorized to deliver any of this. There were reports of our supplies being used by the Great Khans to make illegal chems.",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Until now, we've never had any hard evidence. Most of the chems end up with the Fiends, a group of crazies the NCR tangles with regularly.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "We'll have to conduct a thorough investigation of all our quartermasters, and crack down on sloppy record-keeping. Thank you.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Other than Tyrone, were any other NCR citizens involved in this smuggling operation?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tyrone has been selling chemical supplies to the Great Khans. Here - I got these from him."
+  },
+  {
+   "id": "LtHayesVMS04HideChomps",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Thanks for all your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> No, there wasn't anyone else."
+  },
+  {
+   "id": "LtHayesWhatYouDo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We were sent out here to hold back the tide of convicts from the correctional facility.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As you can probably tell, we aren't doing the kind of job we could be doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you doing out here?",
+   "label": "What are you doing out here?"
+  },
+  {
+   "id": "VMS02AnyNPCAboutNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Military operations are classified information. The brass is familiar with the situation at the NCRCF.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Does the NCR have any plans to attack the prison north of here?",
+   "label": "Any idea what the NCR's up to in Primm?"
+  },
+  {
+   "id": "VMS02AnyNPCAboutNCR",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Military operations are classified information.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I know the NCR is planning to attack the prison.",
+   "label": "Any idea what the NCR's up to in Primm?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The mission isn't a problem. The problem is with supplies. The convicts are better armed and organized than our intel initially suggested.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm trying to get some reinforcements here, maybe some guns with some firepower, but... shit... things are just going slow.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the problem with your mission?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Most people just call it NCRCF. That's NCR Correctional Facility{As an aside, explaining the acronym} .",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A little bit ago the convicts there staged a coup, killed the guards that weren't able to escape, and have been ransacking the area since then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the correctional facility."
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much. They've taken to calling themselves Powder Gangers. Mostly because they've taken to using the explosives meant to clear boulders as weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They got organized faster than I would have thought, most of them at least.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thankfully the small group in town here seem to have split off from the main force, so they aren't getting anything in the way of support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you have any information on the convicts?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have some free time, ask away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have some other questions."
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's it for now."
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What we need, more than anything, is bodies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If we had just one more squad, we could easily install a sheriff and still handle our primary objective of protecting the interstate south of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you'd like to see the NCR include protection of Primm in its duties, then you'll have to get some more troops up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Knight, at Mojave outpost, may be able to help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you need to take over protecting the town?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Knight, he's at Mojave outpost.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who did you say I should talk to again?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Roger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Not yet, but I will soon."
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Roger, I'll radio them over now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes. Tell the troops to come protect Primm."
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's your choice, but those rangers are only coming if we get our support.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let me think about it."
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Where do you come from that you haven't heard of the NCR? Nevermind, it doesn't matter much.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you haven't heard of us, you must not be from the Legion. Put simply, the NCR is the greatest nation currently functioning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the New California Republic?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure can. The NCR was founded from the survivors of one of the great Vaults. We started as a small settlement called Shady Sands.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We now consist of 5 states, that make up the greatest nation since the Great War.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can you tell me more about the NCR?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Caesar's Legion.{Lots of spite}",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "A bunch of degenerate slavers, led by a madman who calls himself Caesar. Every one of them is a barbarian to the last.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "I've even heard one of their leaders, the Legate or something, goes around with a human skull on his head. Savages to the last.",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "What's the Legion?"
+  },
+  {
+   "id": "nVPrimmDeputyConvPrimmCorporalHayesTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It is no secret. Our interest here is two fold.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First, we want to remain in control of Hoover Dam. It supplies the Republic with power, and is a source of fresh water.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Second, we want to prevent the Legion from advancing across the Colorado River and endangering the home states.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why is the NCR interested in this desert?"
+  },
+  {
+   "id": "PrimmNCRSheriffConvo",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Are you ready to depart for Primm?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ok, we have some soldiers heading to town now. I'll have them sweep the Bison Steve before they start regular patrols.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PrimmNCRSheriffConvo"
+  }
+ ]
+}

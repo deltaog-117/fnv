@@ -1,0 +1,710 @@
+{
+ "page": "VMS21Troike.txt",
+ "speaker": "Troike",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm getting the heck out of here. You go place that thermite and do what you need to do.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "Give me some time. I'm going to deploy the thermite.",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Yeah, nice work destroying those guns, I'm gonna beat feet before they figure out I was involved.",
+     "emotion": "sad",
+     "intensity": 20
+    },
+    {
+     "text": "Have you found out anything to help me?",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "Man, thanks for finding out that shit, fuck Big Sal.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Thanks for taking care of getting me out of here. I owe you big time.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Who are you? I didn't do anything, leave me alone.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "You again? Make it quick.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "TroikeBlackmailTopic00",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that motherfucker. What the hell. Damn, thanks for finding this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This should be plenty of proof to cover my ass if they try to rat me out to any authorities.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found proof of your blackmail."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't see how that's your business. I'm just a guest here, having a little fun.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey man, I don't know nothing. Let me have some peace here, buddy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey man, I don't know nothing. Let me have some peace here, lady.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So what's your story?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I keep a little switchblade tucked away with me. You never know when you might find some trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you know where the knife came from?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cachino... Cachino what? Are you kidding me? He must be trying to get me killed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Cachino sent me to ask you about some guns."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're keeping them in a little utility section down off the basement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know what they're arming themselves for, but I know it isn't for the good of mankind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Okay, so what can you tell me about the guns the Omertas have?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh man, I don't even like to think about it. All that goddamn blood. It was just in the hotel like any other night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I took some chems with the girl I was with, but I never {stressed:Never} black out. I did this time though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Next thing I knew I woke up and she was lying next to me stabbed dead. There was a knife next to the bed and I was covered in her blood.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me what happened with the prostitute.",
+   "label": "Tell me what happened with the prostitute."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That night? Mostly buffout, I like to cut it with a little bit of jet, and wash it down with some whiskey. That was my standard Saturday night...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What kind of chems were you doing?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "When I saw the body I started screaming, a few seconds some of their soldiers were in there cleaning up the room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They offered to keep silent about what happened if I agreed to help them get their hands on large quantities of guns, at deep discounts.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did the family find out about it?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I said, pretty standard for me. I can handle my shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That seems like a lot of chems."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] What? Yeah, you're right. I wonder what was up with that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That doesn't sound like enough to get you to lose the whole night.",
+   "label": "<Medicine Options>"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I've done much more than that in a single night and lived to tell the tale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Um... Wouldn't that make your heart explode or something?",
+   "label": "<Medicine Options>"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, have at it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a couple more questions about what happened that night."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you wanna talk about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See ya.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's it for now."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'd do that? For me? I'm not sure what can be done, but you'd be doing me a solid if you would. I've been talking to Big Sal mostly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Would you like me to try to get you out of your contract?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah? Well fuck that. The bosses have my number, and I'm a company man while they've got the goods on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm looking to help Cachino break up whatever the Bosses are planning."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "More power to you if you can, but keep me out of it. I've been doing business with Big Sal, so he's going to be your man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe I can help you out of your contract with the family."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Great. So I'm fucked either way. I guess I don't have any choice but to help you. Just try not to get me killed here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> If you don't help me, I'll report your work here to NCR.",
+   "label": "<Speech Option>"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Nothing you could do scares me as much as the Omertas.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me what you know or I'll, um... break your nose.",
+   "label": "<Speech Option>"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I guess if Cachino trusts you I can tell you a little of what happened. It all started with a prostitute in here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Cachino forgot to tell me what they have on you.",
+   "label": "<Speech Option 2, low skill>"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No way, man. I don't want to think about it, much less talk about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Err... I know what they have on you... Well I know, but I forgot. Tell me again.",
+   "label": "<Speech Option 2, low skill>"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, try and be fast about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a couple more questions about the guns."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm pretty proud of myself. It's a stroke of genius, if I can be so modest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The whole arrangement starts with an old buddy of mine in the Republic. He's responsible for packing and shipping supplies to the NCR on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He marks some containers as food and medical and packs them with guns and other shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From there it just took a couple greased palms to get someone to let me cherry pick a container or two out of every shipment. Easy as pie.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How do you get the guns into the strip?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, here's the Thermite and a key to the room where the guns are stored. Place the Thermite on the crates in the room.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I rigged the light switch outside the room to kick off a spark big enough to hold the Thermite. That should turn that shit into molten slag.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As soon as we're done talking I'm going to make myself like a ghost. I don't want to be anywhere near here when the bosses find out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Give me the Thermite and I'll destroy the weapons."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, let's.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, cool.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's it for now."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've made lots of contacts over the years. I have some friends back in California that can get their hands on just about anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Mostly I've been calling in every last favor I have.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where do the guns come from?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hey, fuck you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Alright, I'll place the fucking Thermite myself. You get out of the casino for a bit. I'll take care of it while you're gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If you don't deploy the Thermite yourself, I'll tell the bosses what you've been planning.",
+   "label": "{Speech Option, threaten to sell troike out if he doesn't turn in the thermite}"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Nothing you could threaten me with holds a candle to what the Omertas would do to me if they caught me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You deploy the Thermite or I'll punch you in the shoulder.",
+   "label": "{Speech Option, threaten to sell troike out if he doesn't turn in the thermite}"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thermite is a mix of rust and aluminum dust. If you add a little heat, a massive{emphasized} amount of heat is spit out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It gives off enough heat to melt through just about anything. It should make short work of the weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is Thermite?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Holy shit, really? Okay, I'll help you, but I'm getting the hell out of here first chance I get.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Big Sal agreed to let you go."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I heard you might be coming. I appreciate the help, I'm in kind of a fix.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I help the Omertas get guns without the NCR catching wind of it. I need someone to cover my ass with the last shipment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your bosses sent me to you to see if you needed any help with your work for them."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Fiends, a group of raiders freaked out on chems, stole my last shipment before I could get it into Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I could sure use some help getting it from them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about the problem with the last shipment."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm pretty proud of myself. It's a stroke of genius, if I can be so modest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The whole arrangement starts with an old buddy of mine in the Republic. He's responsible for packing and shipping supplies to the NCR on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He marks some containers as food and medical and packs them with guns and other shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From there it just took a couple greased palms to get someone to let me cherry pick a container or two out of every shipment. Easy as pie.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm pretty proud of myself. It's a stroke of genius, if I can be so modest.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The whole arrangement starts with an old buddy of mine in the Republic. He's responsible for packing and shipping supplies to the NCR on the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He marks some containers as food and medical and packs them with guns and other shit.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From there it just took a couple greased palms to get someone to let me cherry pick a container or two out of every shipment. Easy as pie.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How are you getting the weapons into the strip?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, that's my business and no one else's.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why do you work for the Omertas?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What the hell? You got this from the Fiends already? Hot damn, you really are good. Thanks, this is exactly what I needed.",
+     "emotion": "surprise",
+     "intensity": 65
+    }
+   ],
+   "prompt": "Do you mean these weapon parts?"
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great, thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll keep an eye out for them."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, what do you need to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have a couple more questions."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, what's on your mind?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to ask about something else."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright, you know where to find me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's all I have for questions right now."
+  },
+  {
+   "id": "vDialogueGomorrahVMS21TroikeTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, hot shit. Thank you. Must have been a real bitch getting it from the Fiends, thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I found those weapon parts you needed."
+  },
+  {
+   "id": "vTroikeGunsThermite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As a little pet project I've been making some thermite. Thermite burns as hot as the devil's asshole and can melt through just about anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've been keeping it so if the Family betrays me I can hopefully do some damage before I end up dead or in jail.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can we do to take care of the guns?"
+  },
+  {
+   "id": "vTroikeGunsThermite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I know the stuff inside and out. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have some more questions about the Thermite."
+  }
+ ]
+}

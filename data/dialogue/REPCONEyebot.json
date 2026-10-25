@@ -1,0 +1,291 @@
+{
+ "page": "REPCONEyebot.txt",
+ "speaker": "Mister_Handy_%28Fallout:_New_Vegas%29#Mobile_facial_recognition_scanner",
+ "topics": [
+  {
+   "id": "REPCONHQ2ndGreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Valid facial pattern detected.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unauthorized facial pattern. Second floor access restricted to registered employees.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "REPCONHQ2ndGreeting"
+  },
+  {
+   "id": "REPCONHQ3rdGreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Valid facial pattern detected.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Third floor access is for executives only. Please identify.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "REPCONHQ3rdGreeting"
+  },
+  {
+   "id": "REPCONHQ4thGreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Valid facial pattern detected.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You have accessed a restricted area.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "REPCONHQSecret"
+  },
+  {
+   "id": "REPCONHQGoodBye",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Invalid response! You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Invalid response! You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Invalid response! You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "REPCONHQGoodBye"
+  },
+  {
+   "id": "REPCONHQGoodByeDUPLICATE000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Invalid response! You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Invalid response! You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Invalid response! You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, I was just leaving."
+  },
+  {
+   "id": "REPCONHQGreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Valid facial pattern detected.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unauthorized facial pattern detected. Valid security badge detected. Temporary access granted. Please complete employee registration with security.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Unauthorized facial pattern. Please present credentials for first floor access.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "REPCONHQGreeting"
+  },
+  {
+   "id": "REPCONHQInt",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Invalid response! You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let me pass! I'll make it worth your while.",
+   "label": "REPCONHQSpeech2"
+  },
+  {
+   "id": "REPCONHQInt",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Override accepted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "4f 76 65 72 72 69 64 65 20 33 32",
+   "label": "REPCONHQSpeech2"
+  },
+  {
+   "id": "REPCONHQSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Please do not not make your way to the 2nd floor.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I am not supposed to go upstairs, let me pass and I won't."
+  },
+  {
+   "id": "REPCONHQSpeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Unauthorized access. You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've worked here for years. I forgot my badge at home."
+  },
+  {
+   "id": "REPCONHQSpeech2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Correct. Facial pattern recognized. Diagnostic mode initiated.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "If my face is recognized a second time then I must belong here."
+  },
+  {
+   "id": "REPCONHQSpeech2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Unauthorized access. You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I just spoke with that other robot over there."
+  },
+  {
+   "id": "REPCONHQSpeech3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Thank you sir, have a nice day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] Thank you ma'am, have a nice day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "ICE CREAM!"
+  },
+  {
+   "id": "REPCONHQSpeech3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Thank you ma'am, have a nice day.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] Thank you sir, have a nice day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Ice Cream"
+  },
+  {
+   "id": "REPCONHQSpeech3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Incorrect. Security alert! You have 30 seconds to vacate before security is alerted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, no idea."
+  },
+  {
+   "id": "REPCONHQSpeech4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Diagnostic mode entered.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You appear to have a faulty subroutine. Run diagnostics."
+  },
+  {
+   "id": "REPCONHQSpeech4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No maintenance service request logged. Intruder alert!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Repair/Speech] I'm here to fix the broken wall."
+  },
+  {
+   "id": "REPCONHQAlarm",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Intruder Alert! Activating Defenses!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "REPCONHQAlarm"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Aggression detected. Initiating alarm.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  }
+ ]
+}

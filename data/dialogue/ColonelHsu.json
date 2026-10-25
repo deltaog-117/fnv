@@ -1,0 +1,1289 @@
+{
+ "page": "ColonelHsu.txt",
+ "speaker": "James Hsu",
+ "topics": [
+  {
+   "id": "BitterSpringsTroopers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Baffled, this is a bizarre request} What? Why on earth would you think you can walk in here and make troop deployment recommendations to me?",
+     "emotion": "disgust",
+     "intensity": 30
+    },
+    {
+     "text": "I appreciate your concern for Bitter Springs. You've already been quite helpful to the NCR, I suppose it's only right to return the favor.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{Thoughtful} Well, you have been a great help here, and with the saboteur dealt with... Yes, I think we can spare a few men. Consider it done.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Captain Gilles at Bitter Springs needs reinforcements. Can you spare any?"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anders showed up here not too long ago. I'm told you're the one who got him out of the vault.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't tell you how relieved I am. Sending him on that mission was a mistake.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're all impressed with the work you've done for us. I thought you might be able to make use of this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a key to a little hideaway south of here. We've used it as a place for Rangers to rest and resupply. I thought you might get good use out of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know who you are. I'm a patient man, but you'd better have a damn good reason to be standing here right now. Spit it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look who it is. I haven't had the privilege, but I'm told you've been an angel on our shoulder. What can we do for you at Camp McCarran?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well. I'm glad we could finally meet. My sources tell me you've done some good work for us. What brings you to Camp McCarran?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm usually good with faces, but I don't think I've seen you here before. What brings you to Camp McCarran?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What happened?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes, what is it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "PLAYER FIRE WEAPON",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Cut it out, will you?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Whoa, whoa! Careful!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYERFIREWEAPON"
+  },
+  {
+   "id": "PLAYER IN IRON SITES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's not a good idea.",
+     "emotion": "anger",
+     "intensity": 20
+    },
+    {
+     "text": "What do you think you're doing?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYERINIRONSITES"
+  },
+  {
+   "id": "PLAYER LAY MINE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope you know what you're doing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whoa now. Be careful with that thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYERLAYMINE"
+  },
+  {
+   "id": "PLAYER THROW GRENADE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Grenade!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Take cover!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYERTHROWGRENADE"
+  },
+  {
+   "id": "VMS08ColonelHsuTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hmm... you don't cook by any chance, do you? Farber's doing his best, but it's hard to manage an army with half my staff in line for the latrine. {Wryly.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Honestly, we're fighting a lot of fires right now. The Fiends keep pressing their position from Vault 3. {emphasize \"a lot\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We've got the Legion breathing down our necks across the river. We actually took an officer alive last week, but so far he hasn't spoken a word.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm here to provide support. Is there anything I might be able to help with?"
+  },
+  {
+   "id": "VMS08ColonelHsuTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There are a lot of things I can't spare troops for right now. If you can help us, we can definitely pay you for your work.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm up for hire if you need some extra manpower around the base."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Could be better, I'll say that much.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We set up here with our sights set on annexing New Vegas. That's a lot of resources that could do a lot of good for us. But that hasn't happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If anything, they annexed us. They rake in the profits from our soldiers and we're stuck protecting them from the Legion. Not exactly the plan. {emphasize slightly \"they\" and \"us\" to indicate it's the opposite of the expected outcome.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How are things going for the NCR around here?"
+  },
+  {
+   "id": "VMS08ColonelHsuTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "As in chem fiends. Biggest gang of raiders I've ever seen. Nothing like addiction to swell your numbers. Psychotic, and completely unpredictable. {Emphasize \"chem.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They've set up shop in Vault 3 to the west. Every day they attack our positions and my men repel them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But every day there's more of them and less of us. I sent one of my rangers after their leader to try and destabilize them. He didn't return.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell of a thing, losing a ranger. You come to depend on them. And they come through for you so often, you forget it can happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Fiends?"
+  },
+  {
+   "id": "VMS08ColonelHsuTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have Lieutenant Boyd on that already, and she's excellent. But I think she's hit a wall.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Talk to her, if you like. See if she has any use for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Her office is right above mine, but I think she might be interrogating right now. So she'd be upstairs on the other side of the building.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I bet I could make the Legion prisoner talk."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You? I think you've done enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm... Well, why not? Given your recent arrival, at least I can safely rule you out as the leak. {agreeing}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'd like to have absolute trust in my men, but that's just not practical right now. Go ahead and look into it. See what you find.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I could look into who's leaking NCR intelligence."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. I'm all ears.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Who?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I know who bombed the monorail."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No? What happened?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You won't be having problems with intelligence leaks anymore."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Calm is what you have to be when people look to you. And it's all you can be when things are out of your hands.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You seem calm given that things are as bad as they are."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I'll believe it when I see it. You've got one shot, and you're on a tight leash. I'll be watching.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] Forget it. We have no use for you here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We don't have much to go on right now. Lately every raiding party in New Vegas seems to have a map of our troop movements.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It derails everything. Supplies, reinforcements. And it'll only get worse, the longer we let it go on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Captain Curtis is heading up the investigation right now. He can fill you in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Speech] I've been fighting for the wrong side. Let me prove myself to you."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Crenshaw... I've met Crenshaw. At his disciplinary hearing. Still, this is hard to imagine - he was just a prankster. {Thinking. \"At his disciplinary hearing\" is damning evidence.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Private Crenshaw. He's dead now."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was afraid of this. Caesar's reach is longer than anybody guessed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He had explosives and plans for the operation bearing Caesar's emblem."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That's what the Legion calls their spies. I was afraid of this. Caesar's reach is longer than anybody guessed.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If only we'd caught this sooner, before he got to the monorail...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, this investigation has been valuable to us, and you deserve to be compensated for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR appreciates the work you've done. Will there be anything else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Speech] He confessed it to me before he died. He used the word \"frumentarius.\""
+  },
+  {
+   "id": "VMS08ColonelHsuTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That's not exactly airtight. {disbelieving, angry}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Speech] He confessed it to me. Right before he died."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That doesn't implicate Crenshaw any more than it does anyone else.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This isn't the resolution I was looking for when I assigned you to this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Given the dubious circumstances under which the confession took place, the NCR can't compensate you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ordinarily I'd have to arrest you for this. But we can hardly afford to waste resources in the wake of all that's happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think your freedom is compensation enough for whatever it is you've done here, don't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You'd be surprised what some people are capable of."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be right back - there's something I need to double-check."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Unbelievable. That man has given us so much grief since we set up here. This may be a major turning point for us. {awestruck}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't tell you how many times we thought we'd taken him out, only to have him show up again later, taking more heads off of fallen troopers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is for the bounty. And this is from a pool me and a lot of the soldiers around the base had going. You may not be NCR, but hey, it's only fair. {emphasize the second \"this.\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Motor-runner is dead. I brought his helmet as proof."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're getting ahead of yourself. {defiant, about to pull his gun and start shooting at a guy}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Attack] I did. Right before I assassinated the colonel."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Curtis? He's been in the NCR long before our conflict with the Legion. There's just no way... {incredulous}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope you're mistaken, but somehow I don't think so. It'd explain a lot. This is much worse than anyone expected. There could be others, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You've done everything that was asked of you. You have my personal thanks for this, and I'll make sure you receive the credit you deserve.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll have Curtis taken into custody. If he lets himself be taken alive, that is.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It was Curtis. He's in the Legion. I can prove he tried to blow up the monorail."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Curtis? Something's not right. He came to me today saying he was worried about the monorail. Had me put him in charge of the inspection crew. {stunned by the name}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Listen, you've got to get to the monorail. If it's been sabotaged, we're completely crippled here. Go!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I caught Curtis radioing intel to Caesar's Legion. I had to take him down."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goddamn it! How could I have let this happen?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The monorail is destroyed."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd hoped he'd be able to slip past their security and be out before anyone knew he was there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I underestimated the Fiends. Should've known better, given the hell they've caused for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Regardless, what you did for Anders isn't something he or any of us around here take lightly. We're all glad to have him back. Thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't understand how you could be so careless with the life of a ranger."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's probably true, but I wonder if I should've taken a different strategy entirely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Although my options were certainly limited with most of our forces tied up garrisoning this place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You did the right thing. If you'd sent more, they'd have been killed."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, that. I'm surprised he didn't send you to Colonel Moore. That'd be her jurisdiction.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've already received a communique from Colonel Moore saying that she's sent a squad down to Freeside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you'd come to me first, I might have been able to do something. But at this point, my hands are tied. Sorry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Ambassador Crocker said to come see you about the situation with the Kings in Freeside."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Because he's looking to avoid a bloodbath. I get it. He knows me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right. Moore's not gonna like it. But that's for Crocker to worry about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go to the leader of the Kings and tell him that I'll make sure Freeside gets more water, power, and food as long as the violence there stops.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He said those were his official orders, but suggested seeing you anyway."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I do get to make the calls on the distribution of supplies there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crocker was probably counting on me being able to offer the Kings a carrot. And that's what I'm inclined to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "He said you might have a better way of dealing with the issue."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Moore's got her hands full right now, and she's not a subtle person in the best of times. Her solution would be quick and dirty.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I agree with Crocker that a more peaceful solution is preferable, especially for the long term.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The ambassador didn't think Colonel Moore would handle the situation correctly."
+  },
+  {
+   "id": "VMS08ColonelHsuTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah. On top of everything else, I can't send a patrol on a bathroom break without it being ambushed by someone who heard they were coming.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So somebody's getting the word out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any other problems?"
+  },
+  {
+   "id": "VMS08ColonelHsuTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Now we're trying to secure the Strip and the Dam at the same time, and it's costing us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And in the meantime General Oliver won't approve any offensive maneuvers because he doesn't want to risk losing our positions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So we're in a holding pattern here. And Caesar's on the other side of the river, planning.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Where does that leave you?"
+  },
+  {
+   "id": "VMS08ColonelHsuTopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's our main base. We took it because it lets us keep an eye on the Strip. And it had already been fortified before the Great War.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From here we handle most of the logistics for our operations in Nevada. Troop allocation, supply distribution, intel.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Usually General Oliver runs the show here, but he's on his way to the Dam now, so I've taken on a lot of his duties here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's Camp McCarran's role in NCR operations?"
+  },
+  {
+   "id": "VMS08ColonelHsuTopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Unfortunately, no. In fact, the word from the Ranger stations has been especially concerning lately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It sounds like they've run into overwhelming resistance, and supplies just aren't reaching them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's been so bad I asked Sergeant Reyes at Camp Forlorn Hope to look into it and see how it is that things could be so fouled up there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Are things mostly quiet between here and the Dam?"
+  },
+  {
+   "id": "VMS08ColonelHsuTopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Everything was going according to President Kimball's plan at first. We met minor resistance from local troublemakers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But our two main objectives are still contested. Mr. House controls the Strip and he won't so much as meet with our ambassador.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And we're holding Hoover Dam, but Caesar's Legion is positioning itself to overrun it. If it falls, so will New Vegas. We'd be forced to withdraw.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What challenges does the NCR face here?"
+  },
+  {
+   "id": "VMS08ColonelHsuVault3Accept",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That Vault is a hornet's nest. If you have second thoughts, no one would think less of you for it. But if you can get him home, it'd mean a lot.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Watch for civilians, too. The Fiends have been kidnapping locals. They just walk right into people's homes in the middle of the day and take them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But the man you're looking for is Bryce Anders. Anders was trying to find the leader, Motor-runner.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You hear something like a chainsaw, you've found Motor-runner. Put a bullet in his head, and you'll have some new friends around here. {emphasize \"his\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll go to Vault 3 and see if I can find your ranger."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Something I can do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "AcceptYield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Better not try that again.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AcceptYield"
+  },
+  {
+   "id": "Assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What the hell?!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "What was that for?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You dirty coward!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Assault"
+  },
+  {
+   "id": "Attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Had enough?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Come on!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "You like that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Attack"
+  },
+  {
+   "id": "AvoidThreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Holy shit!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Look out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AvoidThreat"
+  },
+  {
+   "id": "DeathResponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "They killed him!",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "They killed her!",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "Look out!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "We'll get 'em.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Flank 'em!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "DeathResponse"
+  },
+  {
+   "id": "FireExplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get down!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Incoming!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FireExplosive"
+  },
+  {
+   "id": "Flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I'm out of here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This is hopeless!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Help!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Flee"
+  },
+  {
+   "id": "GuardTrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You'd better get out of here if you know what's good for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep moving.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You'd better get out of here.",
+     "emotion": "anger",
+     "intensity": 40
+    }
+   ],
+   "prompt": "GuardTrespass"
+  },
+  {
+   "id": "Hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Damn!",
+     "emotion": "anger",
+     "intensity": 100
+    },
+    {
+     "text": "I'm hit!",
+     "emotion": "pained",
+     "intensity": 100
+    }
+   ],
+   "prompt": "Hit"
+  },
+  {
+   "id": "Murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "No!",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Murderer!",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Murder"
+  },
+  {
+   "id": "MurderNoCrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "{Slight Disgust}Ugh.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slight Disgust}Hmmph.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "id": "Steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You can't just take that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thief!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Steal"
+  },
+  {
+   "id": "AlertIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Anybody there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe I'm just jumpy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertIdle"
+  },
+  {
+   "id": "AlertToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Aha!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Hey!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Found you!",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Aha!",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToCombat"
+  },
+  {
+   "id": "AlertToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Whatever. I've got better things to do.",
+     "emotion": "disgust",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm. Nothing here after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, just getting jumpy I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "AlertToNormal"
+  },
+  {
+   "id": "CombatToLost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Let me go take a look around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Damn it. Where'd he go?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I bet I know where you went.",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToLost"
+  },
+  {
+   "id": "CombatToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Well, that's the end of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Teach you to mess with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That takes care of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CombatToNormal"
+  },
+  {
+   "id": "LostIdle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I've got something for you...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can't hide from me forever.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm going to find you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostIdle"
+  },
+  {
+   "id": "LostToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You can't hide from me.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Aha!",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "Thought hiding would save you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToCombat"
+  },
+  {
+   "id": "LostToNormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I can't find anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hmm. Oh well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Must have got away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "LostToNormal"
+  },
+  {
+   "id": "NormalToAlert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "I'm going to go check it out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Did you hear something?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "NormalToAlert"
+  },
+  {
+   "id": "NormalToCombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Hey!",
+     "emotion": "surprise",
+     "intensity": 100
+    },
+    {
+     "text": "I've got one!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Help me out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "StartCombat"
+  }
+ ]
+}

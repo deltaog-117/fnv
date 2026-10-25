@@ -1,0 +1,925 @@
+{
+ "page": "VFSPacer.txt",
+ "speaker": "Pacer",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not bad. You're lucky I was drawing their fire, otherwise you would have been chewed up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I sent one of my guys back to the King to report what happened. You should head back. He'll probably want to thank you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The King just sent a messenger over, saying these guys are off-limits. He's probably already heard about what you did here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like you get to be a hero. Enjoy it while it lasts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why the hell are you here? I got this under control!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why are you talking to me? Smoke these guys already!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good, you're here. These soldier boys don't kid around. They must have had a lookout posted and spotted us coming.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They took out two of my guys right away, and now the rest are too scared to move in. That leaves you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do we have here? Another petitioner for the King?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look who's back. If you want to see the King, you better pay up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go on. The King's a busy man. Be grateful for this opportunity.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've got my eye on you. You cross the Kings, you'll regret it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Said with an accusing tone, emphasis on the \"you\"} What do you want?",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFSGuardPacerMocksGloria",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Actually, I've got a better idea. Make the new hire tell her. You'll do that for me, won't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, I've seen you before around our place. You've really fallen on hard times if you're working for these clowns.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, you're the one who helped us out with those NCR chumps. You really get around, don't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSGuardPacerMocksGloria"
+  },
+  {
+   "id": "VFSPacerBetrays",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And you. Bringing these assholes in here like you're doing us some kind of favor.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You can take your new friends and get the hell out of here, because the answer is no. The Kings will never deal with trash from the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSPacerBetrays"
+  },
+  {
+   "id": "VFreeformFreesideFSPacerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who's the King? You believe this asshole, man?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In Freeside, the Kings rule. And the King rules the Kings. Got it?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who's the King?"
+  },
+  {
+   "id": "VFreeformFreesideFSPacerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything's possible, I suppose. How much is it worth to you to meet the big man?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes, I'd like to see the King if possible."
+  },
+  {
+   "id": "VFreeformFreesideFSPacerTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformFreesideFSPacerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What, do I look like a beggar to you? Take a hike, cheapskate.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's 5 caps."
+  },
+  {
+   "id": "VFreeformFreesideFSPacerTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know what? I think you and the King have some business to discuss.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Head on through. The King's the bored-looking guy by the stage. Can't fuckin' miss him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's 50 caps."
+  },
+  {
+   "id": "VFreeformFreesideFSPacerTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa. I mean, yeah, that should do. The King will see you now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Head on through. He's the bored-looking guy by the stage. Can't fuckin' miss him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is 500 caps enough?"
+  },
+  {
+   "id": "VFreeformFreesideFSPacerTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sounds about right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Maybe I should be going."
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They seem to have it in for me. Go figure. While they waste all their bullets trying to get me, you head in and waste 'em.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What about you?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take these assholes out, what else? Now go!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you want me to do?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You're a bastard after my own heart. Here, it's all I got.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now get in there and waste those guys!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's my help worth to you?",
+   "label": "{ Barter >= 50 }"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] What the hell? I ain't got that kind of money!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take those guys out and I'm sure the King will reward you just fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll need at least two thousand caps to motivate me.",
+   "label": "{ Barter >= 50 }"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then the King has no interest in seeing you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't have much on me."
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You know what? I like you. Half of the people around here, they forget who runs this place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Head on through. The King's the bored-looking guy by the stage. Can't fuckin miss him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm new in town, and wanted to pay my respects.",
+   "label": "{Speech check >= 60}"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, trust me, the King will want to see you if I want you to see him. Come back when you figure out how the world works.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Trust me, the King will want to see me.",
+   "label": "{Speech check >= 60}"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see you stop me, then. Guys, let's teach these soldier boys a lesson.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Pacer, I won't let you ruin this opportunity."
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It ain't much to look at, but this dump has something that even the Strip doesn't, and that's absolute freedom.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You go other places, and there's always someone screaming at you to act a certain way, or to not do certain things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Freeside's not like that. Everyone here is free to do whatever they want, and I for one wouldn't want it any other way.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tell me about Freeside."
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not anymore it isn't. He's not in his right mind if he's even thinking about making a deal with this scum.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think that's up to the King."
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What the f-? Get the others! Now!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was afraid this would happen. Sergeant, you know what to do."
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I... No. We would never survive. We need to stick together.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll go with whatever the King decides, but I'll be watching these NCR scumbags like a hawk. If they try anything...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So you'll fight him *and* the NCR? Can the Kings afford to fight each other?",
+   "label": "{Speech check >= 75}"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, I won't even consider this. We'll show the NCR they can't bully us!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Just shut up and do what your leader tells you!",
+   "label": "{Speech check >= 75}"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much to tell. We're a bunch of guys that just want to do our own thing, and anyone who's got a problem with that can shove it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about the Kings?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I didn't join the Kings. I helped start the Kings. This whole operation you see here was put together by the King and yours truly.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did you join the Kings?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're looking to get past those tin cans at the gate, right? They let people by all the time, if they've got the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if you're not rich, and I can tell you ain't, the King might be able to help you out, provided he likes you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm trying to get to the Strip. Know anything that could help me out?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're going to have to deal with me whether you like it or not. Get them!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "We're dealing with the King, not you."
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What about it? Someone takes your stuff, you're free to take it back. If you can't, maybe you shouldn't have come to Freeside in the first place.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What about crime?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We do what we want, just like everybody else. We just have more guys, so other people tend to do what we want, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If somebody does something we don't like, we let them know about it. If they're strong enough not to care about us liking it, good for them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Don't the Kings run this place, though?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pfff, that's old news. I had some fun with that girl that runs their operation, and then I got tired of her. So I moved on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She don't like that, see? Normally, I bet she'd just have a guy killed for doing that, but as you can see, I'm still around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Most people think it's cause she doesn't want to start an all-out war with us, but that ain't it at all. She's still got it bad for me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I heard a rumor that there's something between you and the Van Graffs. What happened?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, the Van Graffs for one. We had a slight difference of opinion when they first showed up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Changed our minds pretty quick after a brief demonstration of how much firepower they're packing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We could probably take them, but we'd lose a lotta guys doing it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is there anyone like that in Freeside?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "People can do whatever they want, they just have to keep in mind what'll happen afterward.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess you could say we don't have law so much as consequences.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So there's no law here at all?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Aside from this place, there's the Atomic Wrangler just up the street. Women, gambling, booze, you name it, they got you covered.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're more of a prude, the Followers run a mission out of the Old Mormon Fort up toward the north gate. Great place if you're hurt, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you like things dangerous, just past the Wrangler is the Silver Rush, where the Van Graff family peddles their weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Their stuff is outrageously priced, but if you want to shoot something hi-tech, they're the best game in town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is there to do in Freeside?"
+  },
+  {
+   "id": "VFreeformFreesideVFSPacerTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, I already told you that was bullshit. Probably just an excuse those lying soldier scum made up to not share their grub with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So don't ask me about it again, you hear me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did you have something to do with that NCR messenger getting attacked?"
+  },
+  {
+   "id": "VMS19PacerIntercedes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey there, I heard that NCR soldier lady told you some wild story about them sending a messenger to us to work out some deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's bullshit, and it's nothing to bother the King with. More like they sent someone to spy on us and he wasn't tough enough to last in Freeside.",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "So do everyone a favor and keep your mouth shut about it, okay?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS19PacerIntercedes"
+  },
+  {
+   "id": "VMS19VFSPacerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're a bastard after my own heart. Here, this should do it.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's my silence worth to you?"
+  },
+  {
+   "id": "VMS19VFSPacerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Fine, here's some more, but you better keep you mouth shut! I'm out of here. Got some important business to take care of.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's a good start...",
+   "label": "{ Barter > 50 }"
+  },
+  {
+   "id": "VMS19VFSPacerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That's all you get. Now keep your mouth shut. Now if you'll pardon me, I got some important business to take care of.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's it?",
+   "label": "{ Barter > 50 }"
+  },
+  {
+   "id": "VMS19VFSPacerTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, see that it stays that way. Now if you'll pardon me, I got some important business to take care of.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Thanks. I suddenly forgot what I was going to tell the King."
+  },
+  {
+   "id": "VMS19VFSPacerTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a shame. Well, do what you want. Just don't expect it to matter.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I still think he should know about it."
+  },
+  {
+   "id": "VMS19VFSPacerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Exactly. Seeing that we're of one mind on this, I'll head out. I got business to take care of.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "You're right. He shouldn't be bothered with rumors right now."
+  },
+  {
+   "id": "VMS19VFSPacerTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why you lit- You're just lucky I got something important to take care of. We'll settle this later.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Thanks. This will keep me warm while I tell the story to the King."
+  },
+  {
+   "id": "VMS29aVFSPacerTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a good dog. Well, I'm out of here. Later, Simon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be sure to pass it along."
+  },
+  {
+   "id": "VMS29aVFSPacerTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I would, but I tend to distract the boss lady a little too much. She can't help herself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Anyway, I've got things to do. Later, Simon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why not tell her yourself?"
+  },
+  {
+   "id": "VMS29aVFSPacerTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ouch, this one's got a bite, Simon! Call him off, or he'll get put down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ouch, this one's got a bite, Simon! Call her off, or she'll get put down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Get out of here before you get hurt."
+  },
+  {
+   "id": "VMS29aVFSPacerTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's take this chump, guys!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Care to back that up?"
+  },
+  {
+   "id": "VMS29aVFSPacerTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sure it's the highlight of your day. Anyway, I've gotta bounce. Things to do, and all that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Good to see you, too, Pacer."
+  },
+  {
+   "id": "VMS29aVFSPacerTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Who do you think you're talking to? Just because the King happens to like you, doesn't mean you can run your mouth any way you damn like.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why don't you just get the hell out of here?"
+  },
+  {
+   "id": "VMS29aVFSPacerTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, nothing wrong at all. By all means, carry on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Apparently I do. Something wrong with that?"
+  },
+  {
+   "id": "VMS29aVFSPacerTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You asked for it, punk!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, it does. What are you going to do about it?"
+  },
+  {
+   "id": "VMS29aVFSPacerTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, that's what I thought.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. Just forget I said anything."
+  },
+  {
+   "id": "VMS29aVFSPacerTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, right before I beat somebody down. Let's take this fool, boys.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you ever stop talking tough?"
+  },
+  {
+   "id": "VMS29aVFSPacerTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ha, you've got yourself a live one here, Simon. Anyway, I've got things to do. Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nah, I've just risen up in the world."
+  },
+  {
+   "id": "VMS29aVFSPacerTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Spoken like a chump. A King doesn't have to grovel before others to get paid. Anyway, I've got better things to do than shoot the shit with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Work is work, right?"
+  },
+  {
+   "id": "VFSPacerAgreesToAttack",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I've got a few guys already waiting to go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSPacerAgreesToAttack"
+  },
+  {
+   "id": "VFSPacerGreetsSimon",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hey, Simon. How's it hanging? Looks like you've got a little helper today.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good to hear, buddy. So is the boss lady in?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nah, I've got some rounds to run. But do pass along that I'm always thinking of her.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSPacerGreetsSimon"
+  },
+  {
+   "id": "VMS29KingAndPacerArgue",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "This is bullshit! Why are we even talking about dealing with these guys?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wrong. This is exactly the right time. I'm about to prevent you from making a huge mistake.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then I'll stand on my own, just like I always have. Just like a King should.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VMS29KingAndPacerArgue"
+  }
+ ]
+}

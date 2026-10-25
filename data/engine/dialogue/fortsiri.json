@@ -1,0 +1,301 @@
+{
+ "id": "fortsiri",
+ "speaker_name": "Siri",
+ "source": "FortSiri.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Male PC} If you're injured, I might have healing powder to spare.",
+     "emotion": "neutral",
+     "intensity": 0
+    },
+    {
+     "text": "{Female PC - surprise, tinged with envy} A free woman. It's... been awhile since I've seen a woman who wasn't a slave. {\"forget\" as in she's a slave who's forgotten her position, and shouldn't be rambling} I forget myself - are you injured?",
+     "emotion": "surprise",
+     "intensity": 20
+    },
+    {
+     "text": "{Caesar dead} With {KAI-zar} Caesar dead, I'm afraid for the women. The Legate is a brutal man, and he enjoys inflicting pain.",
+     "emotion": "fear",
+     "intensity": 20
+    },
+    {
+     "text": "{Caeser cured} {wistful} I had hoped to become a great doctor like you someday.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "You got Melody her bear back. Very kind of you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic001",
+   "prompt": "I have some questions about you."
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Three years and counting. If I could just get across the river, I'd be free. Not that I'd try it - I've seen what happens when you get caught.",
+     "emotion": "disgust",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic002",
+   "prompt": "How long have you been a slave?"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic003",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A small town in New Mexico. The Legion burned it a few years back - that's how I ended up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic004",
+   "prompt": "Where are you from?"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A vengeful spirit, some of the more superstitious women claim. He was a great leader of the Legion before he failed {KAI-zar} Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The story says he was set on fire and thrown into the Grand Canyon, but his angry spirit rose from the ashes of his corpse, looking for revenge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nonsense, probably, but there's no doubt that many in the Legion believe he's still alive somehow.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic005",
+   "prompt": "Tell me about the Burned Man."
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're property. If you're too young or too old, the men usually leave you alone. Usually.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're property. If you're too young or too old, the men usually leave you alone. Usually.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You ought to be careful, yourself. I overheard some of the Legionaries talking about \"trying you out.\"",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic006",
+   "prompt": "How are women treated around here?"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legate is not a man to be crossed, especially if you're a woman. That's all I will say about it.",
+     "emotion": "fear",
+     "intensity": 20
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic010",
+   "prompt": "What do you know about Legate Lanius?"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I never finished my training - the Legion saw to that when they overran my town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I do know basic first aid, but I've had to rely on tribal remedies to treat illnesses and injuries - healing powders and all that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm always running low on xander root. Plenty of broc flowers, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic017",
+   "prompt": "You're a doctor?"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For sale? I'm a slave, not a merchant. I could give you some healing powder every day, but you'd have to be a friend of the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "For sale? I'm a slave, not a merchant. I could give you some supplies every day, though - you are, after all, a friend of the Legion.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic018",
+   "prompt": "Do you have anything for sale?"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can only do that if you're a friend of the Legion. I don't want to get crucified.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here. Come back in a day if you need more.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't give you any more right now. Come back in a day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic019",
+   "prompt": "I'd like some healing powder."
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Oh - I've been using two roots per flower. Thanks to you, I'll be able to create twice as much healing powder per day.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic020",
+   "prompt": "You are using one broc flower per xander root, right?",
+   "label": "< Survival 20 >"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic020_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'd rather not go experimenting. Some of these wasteland plants are toxic.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic020",
+   "prompt": "Maybe you could try using different plants and herbs?",
+   "label": "< Survival 20 >"
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What about it? Do you have some advice?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic022",
+   "prompt": "About the effectiveness of your healing powders..."
+  },
+  {
+   "key": "vfreeformthefortfortsiritopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Was there something else?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortFortSiriTopic023",
+   "prompt": "Never mind."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Okay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "siri"
+}

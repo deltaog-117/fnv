@@ -1,0 +1,86 @@
+{
+ "page": "RSBravoEricsen.txt",
+ "speaker": "Ericsen",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} You don't walk like any trooper I've ever seen, but I'll let it slide. What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player in not in NCR gear} What brings you to Ranger Station Bravo?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMSRSBravoQuestRSRangerBravoEricsenTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're here to make sure the Legion doesn't try to sneak around Lake Mead and come at NCR from another direction.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do out here?"
+  },
+  {
+   "id": "VMSRSBravoQuestRSRangerBravoEricsenTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yep.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VMSRSBravoQuestRSRangerBravoEricsenTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{NCR - Rascal+} You're not stationed here, but your rep with the NCR speaks for itself. It's mostly rifle rounds, but I'll throw in a few boxes of pistol ammo.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I really shouldn't be doing this for you, but there's no way we're going to use all of this or be able to carry it with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCR Reputation < 3} Sorry, it's against regulation for me to give away NCR supplies to anyone not stationed at this post. Wouldn't want you using it against us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tilden mentioned you had surplus ammo. Mind if I have some?"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yep.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

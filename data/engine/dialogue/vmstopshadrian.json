@@ -1,0 +1,411 @@
+{
+ "id": "vmstopshadrian",
+ "speaker_name": "Hadrian (Fallout: New Vegas)",
+ "source": "VMSTopsHadrian.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa, baby! Am I looking at a mirror, or are you just that ugly?",
+     "emotion": "disgust",
+     "intensity": 35
+    },
+    {
+     "text": "Any luck with Garret yet?",
+     "emotion": "pained",
+     "intensity": 10
+    },
+    {
+     "text": "Well, if it isn't my number one fan. What can I do for you, number one fan?",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "hadriancomedy",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Eesh, is my act that bad, or are you just that dumb? Yeah, that's right - got me a nice, juicy contract with the management.",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "topic": "HadrianComedy",
+   "prompt": "So you perform stand-up comedy, huh?"
+  },
+  {
+   "key": "hadrianintro",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Either you need to get your eyes checked or that \"fame is fleeting\" thing is true - and since I happen to be world famous, you must be going blind.",
+     "emotion": "pained",
+     "intensity": 25
+    },
+    {
+     "text": "Name's Hadrian. Bet you never saw a ghoul in a suit before, huh? Course, you don't exactly strike me as the worldly type.",
+     "emotion": "disgust",
+     "intensity": 20
+    }
+   ],
+   "topic": "HadrianIntro",
+   "prompt": "So who are you, exactly?"
+  },
+  {
+   "key": "hadrianwork",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Too bad I got this ironclad contract with the Garrets. They'll never let me out of it.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "Sure, why not? Nothing left for me here since Garret's dead.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "HadrianWork",
+   "prompt": "Tommy Torini is hiring new acts at the Tops. I think you could make good money."
+  },
+  {
+   "key": "hadrianwork_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like I told you, I can't go anywhere without getting out of my contract with Garret first. Talk to him, maybe he'll cut me loose if you ask nice.",
+     "emotion": "sad",
+     "intensity": 20
+    }
+   ],
+   "topic": "HadrianWork",
+   "prompt": "Are you sure you wouldn't rather go work at the Tops?"
+  },
+  {
+   "key": "hadrianwork_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? You mean I'm finally out of this shithole? That's great! Thank you!",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "HadrianWork",
+   "prompt": "Garrett's agreed to let you out of your contract. You can go work at the Tops."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What, you mean you're not part of the act? Heh. Sorry. Thought you were the heckler Garret hired to spice up the shows.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic000",
+   "prompt": "Excuse me?"
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Whoa Nelly! There's insult comedy and then there's psycho comedy! I guess you aren't the heckler Garret hired to spice up my show. What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic001",
+   "prompt": "Watch your mouth, ghoul, or I might just rip your jaw off."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come on, stay in character! You're supposed to be heckling me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic002",
+   "prompt": "Whoa, why the hostility?"
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hey, not bad! Your timing's terrible and you got no style, but you might make it as a professional heckler.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic004",
+   "prompt": "Why bother? You're embarassing yourself enough as it is."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic004_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] That doesn't even make any sense! You're not the heckler Garret hired to spice up the show, are you?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic004",
+   "prompt": "That's what your mom said last night. Aw yeah. I went there."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So, what do you want, then?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic005",
+   "prompt": "Afraid not."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, no, we were hoping to find someone who was actually... what's the word... funny? What do you want, kid?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic006",
+   "prompt": "No, but if there's money in it, I could be."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not suirprised, he's a stubborn, greedy bastard.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic009",
+   "prompt": "Not yet. I'm still working on it."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I admit it, I ain't exactly rolling in caps here, but whaddya want? I'm under contract, I can't get out.",
+     "emotion": "sad",
+     "intensity": 30
+    },
+    {
+     "text": "{pained wince} Eesh... say, you wouldn't happen to have been my manager in a past life, would you? You've got all his money-smarts.",
+     "emotion": "pained",
+     "intensity": 45
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic011",
+   "prompt": "Judging from the economic state of Freeside, they can't be paying you that much."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh, good luck. Garret's a tough, mean sonofabitch, he's not likely to give up. Let me know if you make any headway.",
+     "emotion": "pained",
+     "intensity": 20
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic014",
+   "prompt": "I could talk to Garret and try to convince him to let you go."
+  },
+  {
+   "key": "vmstopstalentpoolvmstopshadriantopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ain't my mind needs changing, kid, it's Garret's.",
+     "emotion": "sad",
+     "intensity": 30
+    }
+   ],
+   "topic": "VMSTopsTalentPoolVMSTopsHadrianTopic015",
+   "prompt": "Well, tough luck. Let me know if you change your mind."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yeah, go on, scram.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "topshadrianperformancestrings",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "It's great to be up here, looking down at all your smiling faces. That won't last long.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, look at this guy! I didn't know they let Brahmin into this joint!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, look at this gal! I didn't know they let Brahmin into this joint!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, look at this guy! Those muscles are unreal - I mean it, they're imaginary!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, look at this gal! Those muscles are unreal - I mean it, they're imaginary!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This guy's so sharp-eyed, he cuts himself every time he blinks!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This gal's so sharp-eyed, she cuts herself every time she blinks!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I tell ya, you've got great eyes. You could spot a Super mutant at three paces.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Buddy, you look tough enough to drink a pint of glowing water. Why don't you do us all a favor and try it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sister, you look tough enough to drink a pint of glowing water. Why don't you do us all a favor and try it?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whoa, you don't look too healthy. Maybe you should see a doctor. Or an undertaker.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you've got a ready wit. Tell me when it's ready.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My friend, you've got style, grace, and charm - the style of a feral Ghoul, the grace of a Super mutant, and the charm of a Deathclaw.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Somebody told me the other day you were bright - I wasn't sure if he meant smart, or radioactive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The way I hear it, you've got brains to spare. Looks to me like a 7-10 split.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And talk about your quick reflexes, this guy is so fast he beat me to the punchline.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And talk about your quick reflexes, this gal is so fast she beat me to the punchline.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Boy, you're clumsy. You're so clumsy when you slip in the shower, you fall up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This guy right here, he's got an angel looking over his shoulder. If I were him, I'd get a restraining order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This gal right here, she's got an angel looking over her shoulder. If I were her, I'd get a restraining order.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You know, some people have all the luck. Some people, not you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Was that suit made to order? It was? And where were you at the time?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you had your life to live over again, let me make a suggestion: Play in traffic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look at you, you look like a talent scout for a cemetery.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The more I think of you, the less I think of you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How about a hand for the Rad Pack, the band that inspired that great saying, \"Stop the music!\"",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Swank is here, ladies and gentlemen. Make yourself at home, Swank - hit somebody!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "TopsHadrianPerformanceStrings",
+   "prompt": "TopsHadrianPerformanceStrings"
+  }
+ ],
+ "speaker": "hadrian"
+}

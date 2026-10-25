@@ -1,0 +1,30 @@
+{
+ "page": "PrimmCashier.txt",
+ "speaker": "Vikki and Vance cashier",
+ "topics": [
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Play safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to Vikki and Vance. Can I help you with an exchange?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  }
+ ]
+}

@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "rules.schema.json",
+  "title": "Rules data",
+  "description": "Definitions for the files in data/engine/rules/ and data/engine/{challenges,recipes,endings}.json.",
+  "$defs": {
+    "stat": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "primary",
+            "skill",
+            "derived"
+          ]
+        },
+        "source": {
+          "type": "string"
+        },
+        "modifies": {
+          "type": "string"
+        },
+        "governed_by": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/special"
+          }
+        },
+        "initial_value": {
+          "type": "string",
+          "description": "The wiki's formula text; see formulas.json for the engine form."
+        },
+        "math": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "related_perks": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          }
+        },
+        "form_id": {
+          "$ref": "common.schema.json#/$defs/form_id"
+        }
+      }
+    },
+    "challenge": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "dlc",
+        "task"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "dlc": {
+          "$ref": "common.schema.json#/$defs/dlc"
+        },
+        "source": {
+          "type": "string"
+        },
+        "task": {
+          "type": "string"
+        },
+        "requires": {
+          "type": "string"
+        },
+        "repeatable": {
+          "type": "boolean"
+        },
+        "reward_text": {
+          "type": "string"
+        },
+        "xp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "challenge_type": {
+          "type": "string"
+        },
+        "form_id": {
+          "$ref": "common.schema.json#/$defs/form_id"
+        }
+      }
+    },
+    "recipe": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "mode",
+        "ingredients"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "craft",
+            "breakdown"
+          ],
+          "description": "craft: ingredients make `name`; breakdown: `name` is taken apart into the listed items."
+        },
+        "table": {
+          "type": "string"
+        },
+        "output_qty": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "output_item_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "skill": {
+          "type": "object",
+          "required": [
+            "skill",
+            "min"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "skill": {
+              "$ref": "common.schema.json#/$defs/skill"
+            },
+            "min": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        },
+        "station": {
+          "type": "string"
+        },
+        "ingredients": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "item",
+              "qty"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "item": {
+                "type": "string"
+              },
+              "item_id": {
+                "$ref": "common.schema.json#/$defs/id"
+              },
+              "qty": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "ending": {
+      "type": "object",
+      "required": [
+        "id",
+        "slide",
+        "narration"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "slide": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string"
+        },
+        "narration": {
+          "type": "string"
+        },
+        "condition": {
+          "type": "string"
+        },
+        "condition_quests": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          }
+        }
+      }
+    },
+    "level": {
+      "type": "object",
+      "required": [
+        "level",
+        "dlc_required",
+        "karma_titles"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "xp_total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "xp_to_next": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dlc_required": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4,
+          "description": "Number of add-ons needed to reach this level."
+        },
+        "karma_titles": {
+          "type": "object",
+          "required": [
+            "good",
+            "neutral",
+            "evil"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "good": {
+              "type": "string"
+            },
+            "neutral": {
+              "type": "string"
+            },
+            "evil": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "formulas": {
+      "type": "object",
+      "required": [
+        "constants",
+        "formulas"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "constants": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "formulas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "expression",
+              "vars"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "$ref": "common.schema.json#/$defs/id"
+              },
+              "name": {
+                "type": "string"
+              },
+              "expression": {
+                "type": "string",
+                "description": "Arithmetic over `vars` and constants with floor, ceil, min, max."
+              },
+              "vars": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "source": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

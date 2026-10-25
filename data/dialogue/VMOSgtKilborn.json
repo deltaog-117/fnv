@@ -1,0 +1,125 @@
+{
+ "page": "VMOSgtKilborn.txt",
+ "speaker": "Kilborn",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heard you helped out Jackson, thanks for that. Caravans are still waiting for clearance to move out, but at least there's movement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Impressed} Coming from the North? Must be crazy to brave those roads.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something else you wanted?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vNiptonVulpesvMOSgtKilbornTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Outpost, Mojave Outpost. Watching a lot of nothing, feels like a big Brahmin pen for caravans.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They've been stopped for a while, waiting for the roads North to clear - or their clearance papers to go through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look like you've walked a ways, so if you need to shake the dust off, head to the Barracks, the bar's there. {Beat, shrugs} Not much, but better than nothing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is this place?"
+  },
+  {
+   "id": "vNiptonVulpesvMOSgtKilbornTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Those two? Represents unification. {Beat, a little defeated} Mostly good for shade. Won't do much else when the Legion reaches us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are those statues of?"
+  },
+  {
+   "id": "vNiptonVulpesvMOSgtKilbornTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nothing I know of, {studies the player} but if you've come from the North, means you can travel freer than most around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Might check the Barracks, someone might need you to hoof it somewhere. Just be careful if you go up on the roof - got a sniper watching the road.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're gear's in need of repair, HQ's also worth checking out - talk to Major Knight, he can help. {Beat, to himself} Provided you got a pen and plenty of ink. {Slight frustration on bureaucracy at end.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Any work around here?"
+  },
+  {
+   "id": "vNiptonVulpesvMOSgtKilbornTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Watch yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be going now."
+  },
+  {
+   "id": "vNiptonVulpesvMojaveNCRTrooperTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slight shock} What? {Beat} There's no way... we're {emph} miles from the Colorado. They...{To himself} they aren't even waiting for the Dam to fall. They're already inside the borders...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To himself} ...we'll never stop them, not at this rate. We're doomed. {To player} Thanks for bringing the word - even if the news is bad, I'll let the men know.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Legion's attacked Nipton, burned and killed everyone."
+  },
+  {
+   "id": "vNiptonVulpesvMojaveNCRTrooperTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Legion!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Attack> Ave Caesar!"
+  }
+ ]
+}

@@ -1,0 +1,288 @@
+{
+ "id": "hvscout",
+ "speaker_name": "Brotherhood scout (Fallout: New Vegas)",
+ "source": "HVScout.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't take another step if you value your life. For what purpose do you approach me?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Elder is likely urgently awaiting that report. You should make your way to him as soon as possible.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Approach slowly, stranger. If you have no business with me, then go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Quick now, off with you! The Elder must see that report!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout01topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You speak truly, for it is unlikely that an outsider would know both the Elder's name and that passphrase.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Very well. I've been observing the penal facility there in the distance for some time now, after having followed some rather disturbing rumors.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Attack hasn't happened} The facility was run by the NCR for a time, but the prisoners overcame their guards and now use the prison as a base from which to conduct raids.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What puzzles me is why these men have been allowed to run wild for so long unchecked. Why has the NCR not retaken this place?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Give this to the Elder. My observations are all within. Perhaps he will have a better idea of what this situation portends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCR won} The facility was run by the NCR for a time, but the prisoners overcame their guards and used the prison as a base from which to conduct raids.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually, the NCR got around to putting the prisoners down, but not until they had wreaked havoc on nearby trade routes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Give this to the Elder. My observations are all within. Perhaps he will have a better idea of what this situation portends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCR lost} The facility was run by the NCR for a time, but the prisoners overcame their guards and used the prison as a base from which to conduct raids.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eventually, the NCR tried to put the prisoners down, but they were overwhelmed by them, and haven't sent troops to the area since.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Give this to the Elder. My observations are all within. Perhaps he will have a better idea of what this situation portends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout01Topic001",
+   "prompt": "I'm Elder McNamara's representative. He said to ask if the bears are still hunting."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout01topic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My purpose here is none of your concern. Now leave me be or I'll be forced to defend myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout01Topic004",
+   "prompt": "I'm just wondering what you're doing here."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout01topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See that you do. I'd advise you to avoid the prison over there. It's overrun by barbarians and the whole place may become a battlefield at any time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout01Topic005",
+   "prompt": "Sorry, didn't mean to disturb you. I'll just be going."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout02topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Strange that the Elder should send an outsider, but I suppose he has his reasons.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My observations have mostly focused on the small town to the south of here. It was cruelly attacked, its inhabitants slain nearly to the last.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That such an act could occur so far west is nearly unthinkable. The NCR has forces in all directions, and an outpost scant miles west from here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That they have not responded to this violence shows either an unwillingness or inability to properly defend their borders, which is telling.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've collected such musings in this report. Please take it to the Elder.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout02Topic001",
+   "prompt": "Elder McNamara sent me as his representative. He asks if the bears are still hunting."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout02topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's none of your business. I suggest you head back the way you came.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout02Topic002",
+   "prompt": "What are you doing way up here?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout02topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If so, you may wish to go around that town to the south. It's been taken by slavers, and they seem to be waiting for something, or someone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout02Topic003",
+   "prompt": "Don't mind me. Just passing through."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout03topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then I am sworn to report. I've been dividing my time between the camps to the north and south of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One belongs to the NCR, the other to a band of slavers known as Caesar's Legion. I was sure the NCR would quickly win, but that has not happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Instead, the two sides have reached a stalemate, and only occasionally send skirmishers against one another.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I didn't know better, I'd say neither side is confident enough to push for a full victory. Which seems strange given the NCR's technological edge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "In any event, I've recorded my findings in this report. Please deliver it to the Elder. I am sure he will find the contents most interesting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Instead, the two sides maintained a long stalemate, and only after an extended duration did the NCR finally destroy its opponent.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When they did, it appeared they did so with the help of fresh reinforcements. I do not believe they could have managed the feat without them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That savages such as these could last so long against the NCR is troubling. Please, take my findings to the Elder. He'll know what to make of this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Instead, the two sides maintained a long stalemate, and after an extended time the slavers rose up and slaughtered the NCR to the man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That barbarians with such crude weapons could crush a foe that defeated us is food for much thought.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take my report to the Elder. He must be made aware of what happened here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Instead, the two sides maintained a long stalemate, and after some time fighting broke out and both sides were mysteriously wiped out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Things were rather chaotic, so I wasn't able to see exactly what happened, or who did the deed, but seeing the NCR suffer such a loss was a shock.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Elder must know of what happened here. Take this report to him. It contains my notes on these events. Maybe he'll make some sense of it all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout03Topic001",
+   "prompt": "Elder McNamara sent me for your report. He asks if the bears are still hunting."
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout03topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I've no reason to disclose the purpose of my actions to a stranger. Please leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout03Topic002",
+   "prompt": "What are you doing here?"
+  },
+  {
+   "key": "vdialoguehiddenvalleyhvscout03topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do that. And take care to avoid the valley to the east, if you know what's good for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueHiddenValleyHVScout03Topic003",
+   "prompt": "Guess I'll be going then."
+  }
+ ],
+ "speaker": "brotherhood_scout"
+}

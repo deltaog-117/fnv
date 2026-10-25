@@ -1,0 +1,4829 @@
+[
+ {
+  "id": "22lr_round_breakdown",
+  "name": ".22LR round",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_qty": 3,
+  "output_item_id": "22lr_round",
+  "skill": {
+   "skill": "repair",
+   "min": 10
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Lead",
+    "qty": 2,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 3,
+    "item_id": "powder_pistol"
+   }
+  ]
+ },
+ {
+  "id": "308_round_breakdown",
+  "name": ".308 round",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "308_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .308",
+    "qty": 1,
+    "item_id": "case_308"
+   },
+   {
+    "item": "Lead",
+    "qty": 15,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 4,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, large rifle",
+    "qty": 1,
+    "item_id": "primer_large_rifle"
+   }
+  ]
+ },
+ {
+  "id": "357_magnum_breakdown",
+  "name": ".357 Magnum",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .357 Magnum",
+    "qty": 1,
+    "item_id": "case_357_magnum"
+   },
+   {
+    "item": "Lead",
+    "qty": 14,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 6,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, small pistol",
+    "qty": 1,
+    "item_id": "primer_small_pistol"
+   }
+  ]
+ },
+ {
+  "id": "44_magnum_breakdown",
+  "name": ".44 Magnum",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .44 Magnum",
+    "qty": 1,
+    "item_id": "case_44_magnum"
+   },
+   {
+    "item": "Lead",
+    "qty": 27,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 8,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "45_auto_breakdown",
+  "name": ".45 Auto",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "45_auto",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .45 Auto",
+    "qty": 1,
+    "item_id": "case_45_auto"
+   },
+   {
+    "item": "Lead",
+    "qty": 16,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 8,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "45_70_gov_t_breakdown",
+  "name": ".45-70 Gov't",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "45_70_gov_t",
+  "skill": {
+   "skill": "repair",
+   "min": 65
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .45-70 Gov't",
+    "qty": 1,
+    "item_id": "case_45_70_gov_t"
+   },
+   {
+    "item": "Lead",
+    "qty": 27,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 3,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, large rifle",
+    "qty": 1,
+    "item_id": "primer_large_rifle"
+   }
+  ]
+ },
+ {
+  "id": "50_mg_breakdown",
+  "name": ".50 MG",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "50_mg",
+  "skill": {
+   "skill": "repair",
+   "min": 75
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .50 MG",
+    "qty": 1,
+    "item_id": "case_50_mg"
+   },
+   {
+    "item": "Lead",
+    "qty": 64,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 20,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, .50 MG",
+    "qty": 1,
+    "item_id": "primer_50_mg"
+   }
+  ]
+ },
+ {
+  "id": "5mm_round_breakdown",
+  "name": "5mm round",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "5mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 5mm",
+    "qty": 1,
+    "item_id": "case_5mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 11,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 4,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, small rifle",
+    "qty": 1,
+    "item_id": "primer_small_rifle"
+   }
+  ]
+ },
+ {
+  "id": "5_56mm_round_breakdown",
+  "name": "5.56mm round",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "5_56mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 5.56mm",
+    "qty": 1,
+    "item_id": "case_5_56mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 10,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 3,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, small rifle",
+    "qty": 1,
+    "item_id": "primer_small_rifle"
+   }
+  ]
+ },
+ {
+  "id": "9mm_round_breakdown",
+  "name": "9mm round",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "9mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 9mm",
+    "qty": 1,
+    "item_id": "case_9mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 11,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 5,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, small pistol",
+    "qty": 1,
+    "item_id": "primer_small_pistol"
+   }
+  ]
+ },
+ {
+  "id": "10mm_round_breakdown",
+  "name": "10mm round",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "10mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 10mm",
+    "qty": 1,
+    "item_id": "case_10mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 15,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 7,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "12_7mm_round_breakdown",
+  "name": "12.7mm round",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "12_7mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 60
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 12.7mm",
+    "qty": 1,
+    "item_id": "case_12_7mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 28,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 10,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "12_gauge_shotgun_shell_breakdown",
+  "name": "12 gauge shotgun shell",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "skill": {
+   "skill": "repair",
+   "min": 10
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 12 gauge",
+    "qty": 1,
+    "item_id": "hull_12_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 37,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 26,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "20_gauge_shotgun_shell_breakdown",
+  "name": "20 gauge shotgun shell",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "skill": {
+   "skill": "repair",
+   "min": 10
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 20 gauge",
+    "qty": 1,
+    "item_id": "hull_20_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 26,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 18,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "scrap_metal_breakdown",
+  "name": "Scrap metal",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "scrap_metal",
+  "skill": {
+   "skill": "repair",
+   "min": 10
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Lead",
+    "qty": 200,
+    "item_id": "lead"
+   }
+  ]
+ },
+ {
+  "id": "rocket_breakdown",
+  "name": "Rocket",
+  "mode": "breakdown",
+  "table": "Craftable items list > Ammunition > Breakdown",
+  "output_item_id": "rocket",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Conductor",
+    "qty": 1,
+    "item_id": "conductor"
+   },
+   {
+    "item": "Cherry bomb",
+    "qty": 1,
+    "item_id": "cherry_bomb"
+   },
+   {
+    "item": "Primer, .50 MG",
+    "qty": 1,
+    "item_id": "primer_50_mg"
+   }
+  ]
+ },
+ {
+  "id": "energy_cell_craft",
+  "name": "Energy cell",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (type)",
+  "output_item_id": "energy_cell",
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Microfusion cell",
+    "qty": 1,
+    "item_id": "microfusion_cell"
+   },
+   {
+    "item": "Electron charge pack",
+    "qty": 1,
+    "item_id": "electron_charge_pack"
+   },
+   {
+    "item": "1:3",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "energy_cell_craft_2",
+  "name": "Energy cell",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (type)",
+  "output_item_id": "energy_cell",
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Energy cell",
+    "qty": 1,
+    "item_id": "energy_cell"
+   },
+   {
+    "item": "Electron charge pack",
+    "qty": 1,
+    "item_id": "electron_charge_pack"
+   },
+   {
+    "item": "1:2",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "microfusion_cell_craft",
+  "name": "Microfusion cell",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (type)",
+  "output_item_id": "microfusion_cell",
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "3:2<section end=\"Energy cell type\" />",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "missile_craft",
+  "name": "Missile",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (type)",
+  "output_item_id": "missile",
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Rocket",
+    "qty": 2,
+    "item_id": "rocket"
+   },
+   {
+    "item": "Conversion, missile to rocket",
+    "qty": 1
+   },
+   {
+    "item": "|- <section begin=\"Fission battery type\" />",
+    "qty": 1
+   },
+   {
+    "item": "Fission battery \nDrained small energy cell",
+    "qty": 5
+   },
+   {
+    "item": "Energy cell",
+    "qty": 25,
+    "item_id": "energy_cell"
+   },
+   {
+    "item": "-<section end=\"Fission battery type\" />",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "electron_charge_pack_optimized_gra_craft",
+  "name": "Electron charge pack optimized (GRA)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (variant)",
+  "output_qty": 2,
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Science: 65²",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "electron_charge_pack_over_charge_craft",
+  "name": "Electron charge pack over charge",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (variant)",
+  "output_qty": 2,
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Energy cell",
+    "qty": 1,
+    "item_id": "energy_cell"
+   },
+   {
+    "item": "Energy cell max charge",
+    "qty": 2
+   }
+  ]
+ },
+ {
+  "id": "energy_cell_optimized_gra_craft",
+  "name": "Energy cell optimized (GRA)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (variant)",
+  "output_qty": 2,
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Science: 40²",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "energy_cell_over_charge_craft",
+  "name": "Energy cell over charge",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (variant)",
+  "output_qty": 2,
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Microfusion cell",
+    "qty": 1,
+    "item_id": "microfusion_cell"
+   },
+   {
+    "item": "Microfusion cell max charge",
+    "qty": 2
+   }
+  ]
+ },
+ {
+  "id": "microfusion_optimized_gra_craft",
+  "name": "Microfusion optimized (GRA)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (variant)",
+  "output_qty": 2,
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Science: 55²",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "microfusion_cell_over_charge_craft",
+  "name": "Microfusion cell over charge",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Conversion (variant)",
+  "output_qty": 2,
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Flamer fuel",
+    "qty": 1,
+    "item_id": "flamer_fuel"
+   },
+   {
+    "item": "Flamer fuel, optimized (GRA)¹",
+    "qty": 2
+   },
+   {
+    "item": "Science: 25²",
+    "qty": 1
+   },
+   {
+    "item": "3<section end=\"Flamer fuel variant\" />",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "308_round_craft",
+  "name": ".308 round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "308_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .308",
+    "qty": 1,
+    "item_id": "case_308"
+   },
+   {
+    "item": "Lead",
+    "qty": 17,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 5,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, large rifle",
+    "qty": 1,
+    "item_id": "primer_large_rifle"
+   }
+  ]
+ },
+ {
+  "id": "308_jsp_hand_load_craft",
+  "name": ".308 JSP (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .308",
+    "qty": 1,
+    "item_id": "case_308"
+   },
+   {
+    "item": "Lead",
+    "qty": 19,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 6,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, large rifle",
+    "qty": 1,
+    "item_id": "primer_large_rifle"
+   }
+  ]
+ },
+ {
+  "id": "357_magnum_round_craft",
+  "name": ".357 Magnum round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "357_magnum_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .357 Magnum",
+    "qty": 1,
+    "item_id": "case_357_magnum"
+   },
+   {
+    "item": "Lead",
+    "qty": 16,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 8,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, small pistol",
+    "qty": 1,
+    "item_id": "primer_small_pistol"
+   }
+  ]
+ },
+ {
+  "id": "357_magnum_jfp_hand_load_craft",
+  "name": ".357 Magnum JFP (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .357 Magnum",
+    "qty": 1,
+    "item_id": "case_357_magnum"
+   },
+   {
+    "item": "Lead",
+    "qty": 20,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 10,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, small pistol",
+    "qty": 1,
+    "item_id": "primer_small_pistol"
+   }
+  ]
+ },
+ {
+  "id": "44_magnum_round_craft",
+  "name": ".44 Magnum round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "44_magnum_round",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .44 Magnum",
+    "qty": 1,
+    "item_id": "case_44_magnum"
+   },
+   {
+    "item": "Lead",
+    "qty": 30,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 10,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "44_magnum_swc_hand_load_craft",
+  "name": ".44 Magnum SWC (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 75
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .44 Magnum",
+    "qty": 1,
+    "item_id": "case_44_magnum"
+   },
+   {
+    "item": "Lead",
+    "qty": 32,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 12,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "45_auto_craft",
+  "name": ".45 Auto",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "45_auto",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .45 Auto",
+    "qty": 1,
+    "item_id": "case_45_auto"
+   },
+   {
+    "item": "Lead",
+    "qty": 16,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 8,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "45_auto_p_craft",
+  "name": ".45 Auto, +P",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "45_auto_p",
+  "skill": {
+   "skill": "repair",
+   "min": 45
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .45 Auto",
+    "qty": 1,
+    "item_id": "case_45_auto"
+   },
+   {
+    "item": "Lead",
+    "qty": 17,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 10,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "45_super_hand_load_craft",
+  "name": ".45 super (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "45_super_hand_load",
+  "skill": {
+   "skill": "repair",
+   "min": 80
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .45 Auto",
+    "qty": 1,
+    "item_id": "case_45_auto"
+   },
+   {
+    "item": "Lead",
+    "qty": 19,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 12,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "45_70_gov_t_round_craft",
+  "name": ".45-70 Gov't round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 65
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .45-70 Gov't",
+    "qty": 1,
+    "item_id": "case_45_70_gov_t"
+   },
+   {
+    "item": "Lead",
+    "qty": 30,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 4,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, large rifle",
+    "qty": 1,
+    "item_id": "primer_large_rifle"
+   }
+  ]
+ },
+ {
+  "id": "45_70_gov_t_swc_hand_load_craft",
+  "name": ".45-70 Gov't SWC (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 90
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .45-70 Gov't",
+    "qty": 1,
+    "item_id": "case_45_70_gov_t"
+   },
+   {
+    "item": "Lead",
+    "qty": 40,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 5,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, large rifle",
+    "qty": 1,
+    "item_id": "primer_large_rifle"
+   }
+  ]
+ },
+ {
+  "id": "50_mg_round_craft",
+  "name": ".50 MG round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 75
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .50 MG",
+    "qty": 1,
+    "item_id": "case_50_mg"
+   },
+   {
+    "item": "Lead",
+    "qty": 70,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 22,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, .50 MG",
+    "qty": 1,
+    "item_id": "primer_50_mg"
+   }
+  ]
+ },
+ {
+  "id": "50_mg_match_hand_load_craft",
+  "name": ".50 MG match (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 100
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, .50 MG",
+    "qty": 1,
+    "item_id": "case_50_mg"
+   },
+   {
+    "item": "Lead",
+    "qty": 75,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 25,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, .50 MG",
+    "qty": 1,
+    "item_id": "primer_50_mg"
+   }
+  ]
+ },
+ {
+  "id": "5mm_round_craft",
+  "name": "5mm round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "5mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 5mm",
+    "qty": 1,
+    "item_id": "case_5mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 13,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 5,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, small rifle",
+    "qty": 1,
+    "item_id": "primer_small_rifle"
+   }
+  ]
+ },
+ {
+  "id": "5mm_jsp_hand_load_craft",
+  "name": "5mm, JSP (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 5mm",
+    "qty": 1,
+    "item_id": "case_5mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 15,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 6,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, small rifle",
+    "qty": 1,
+    "item_id": "primer_small_rifle"
+   }
+  ]
+ },
+ {
+  "id": "5_56mm_round_craft",
+  "name": "5.56mm round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "5_56mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 5.56mm",
+    "qty": 1,
+    "item_id": "case_5_56mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 12,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 4,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, small rifle",
+    "qty": 1,
+    "item_id": "primer_small_rifle"
+   }
+  ]
+ },
+ {
+  "id": "5_56mm_match_hand_load_craft",
+  "name": "5.56mm, match (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "5_56mm_match_hand_load",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 5.56mm",
+    "qty": 1,
+    "item_id": "case_5_56mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 14,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, rifle",
+    "qty": 5,
+    "item_id": "powder_rifle"
+   },
+   {
+    "item": "Primer, small rifle",
+    "qty": 1,
+    "item_id": "primer_small_rifle"
+   }
+  ]
+ },
+ {
+  "id": "9mm_round_craft",
+  "name": "9mm round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "9mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 9mm",
+    "qty": 1,
+    "item_id": "case_9mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 13,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 6,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, small pistol",
+    "qty": 1,
+    "item_id": "primer_small_pistol"
+   }
+  ]
+ },
+ {
+  "id": "9mm_round_jhp_hand_load_craft",
+  "name": "9mm round, JHP (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 9mm",
+    "qty": 1,
+    "item_id": "case_9mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 15,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 7,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, small pistol",
+    "qty": 1,
+    "item_id": "primer_small_pistol"
+   }
+  ]
+ },
+ {
+  "id": "10mm_round_craft",
+  "name": "10mm round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "10mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 10mm",
+    "qty": 1,
+    "item_id": "case_10mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 17,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 9,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "10mm_jhp_hand_load_craft",
+  "name": "10mm JHP (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 10mm",
+    "qty": 1,
+    "item_id": "case_10mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 21,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 12,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "12_7mm_round_craft",
+  "name": "12.7mm round",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "12_7mm_round",
+  "skill": {
+   "skill": "repair",
+   "min": 60
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 12.7mm",
+    "qty": 1,
+    "item_id": "case_12_7mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 31,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 12,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "12_7mm_jhp_hand_load_craft",
+  "name": "12.7mm, JHP (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 75
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Case, 12.7mm",
+    "qty": 1,
+    "item_id": "case_12_7mm"
+   },
+   {
+    "item": "Lead",
+    "qty": 34,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 15,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, large pistol",
+    "qty": 1,
+    "item_id": "primer_large_pistol"
+   }
+  ]
+ },
+ {
+  "id": "12_gauge_buckshot_craft",
+  "name": "12 gauge, buckshot",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "12_gauge_buckshot",
+  "skill": {
+   "skill": "repair",
+   "min": 10
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 12 gauge",
+    "qty": 1,
+    "item_id": "hull_12_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 40,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 30,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "12_gauge_buckshot_magnum_craft",
+  "name": "12 gauge buckshot, Magnum",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 12 gauge",
+    "qty": 1,
+    "item_id": "hull_12_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 40,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 40,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "12_gauge_4_0_buck_magnum_hand_load_craft",
+  "name": "12 gauge, 4/0 buck Magnum (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 12 gauge",
+    "qty": 1,
+    "item_id": "hull_12_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 45,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 43,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "12_gauge_coin_shot_craft",
+  "name": "12 gauge, coin shot",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "12_gauge_coin_shot",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 12 gauge",
+    "qty": 1,
+    "item_id": "hull_12_gauge"
+   },
+   {
+    "item": "Legion denarius",
+    "qty": 8,
+    "item_id": "legion_denarius"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 30,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "12_gauge_slug_craft",
+  "name": "12 gauge, slug",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "12_gauge_slug",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 12 gauge",
+    "qty": 1,
+    "item_id": "hull_12_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 45,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 30,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "20_gauge_buckshot_craft",
+  "name": "20 gauge, buckshot",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 10
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 20 gauge",
+    "qty": 1,
+    "item_id": "hull_20_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 30,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 20,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "20_gauge_buckshot_magnum_craft",
+  "name": "20 gauge buckshot, Magnum",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 20 gauge",
+    "qty": 1,
+    "item_id": "hull_20_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 30,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 28,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "20_gauge_3_0_buck_magnum_hand_load_craft",
+  "name": "20 gauge, 3/0 buck Magnum (hand load)",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 20 gauge",
+    "qty": 1,
+    "item_id": "hull_20_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 32,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 30,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell",
+    "qty": 1,
+    "item_id": "primer_shotshell"
+   }
+  ]
+ },
+ {
+  "id": "20_gauge_slug_craft",
+  "name": "20 gauge, slug",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "20_gauge_slug",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Hull, 20 gauge",
+    "qty": 1,
+    "item_id": "hull_20_gauge"
+   },
+   {
+    "item": "Lead",
+    "qty": 33,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 20,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Primer, shotshell (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "flamer_fuel_homemade_craft",
+  "name": "Flamer fuel, homemade",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "flamer_fuel_homemade",
+  "skill": {
+   "skill": "science",
+   "min": 50
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Box of detergent",
+    "qty": 1,
+    "item_id": "box_of_detergent"
+   },
+   {
+    "item": "Maize",
+    "qty": 2,
+    "item_id": "maize"
+   },
+   {
+    "item": "Sugar Bombs",
+    "qty": 1,
+    "item_id": "sugar_bombs"
+   }
+  ]
+ },
+ {
+  "id": "rocket_craft",
+  "name": "Rocket",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "rocket",
+  "skill": {
+   "skill": "science",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Cherry bomb",
+    "qty": 1,
+    "item_id": "cherry_bomb"
+   },
+   {
+    "item": "Conductor",
+    "qty": 1,
+    "item_id": "conductor"
+   },
+   {
+    "item": "Primer, .50 MG",
+    "qty": 1,
+    "item_id": "primer_50_mg"
+   }
+  ]
+ },
+ {
+  "id": "rocket_high_explosive_craft",
+  "name": "Rocket, high explosive",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "rocket_high_explosive",
+  "skill": {
+   "skill": "science",
+   "min": 65
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Cherry bomb",
+    "qty": 2,
+    "item_id": "cherry_bomb"
+   },
+   {
+    "item": "Conductor",
+    "qty": 1,
+    "item_id": "conductor"
+   },
+   {
+    "item": "Primer, .50 MG",
+    "qty": 2,
+    "item_id": "primer_50_mg"
+   }
+  ]
+ },
+ {
+  "id": "rocket_incendiary_craft",
+  "name": "Rocket, incendiary",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_item_id": "rocket_incendiary",
+  "skill": {
+   "skill": "science",
+   "min": 65
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Flamer fuel",
+    "qty": 2,
+    "item_id": "flamer_fuel"
+   },
+   {
+    "item": "Conductor",
+    "qty": 1,
+    "item_id": "conductor"
+   },
+   {
+    "item": "Primer, .50 MG",
+    "qty": 2,
+    "item_id": "primer_50_mg"
+   }
+  ]
+ },
+ {
+  "id": "nails_craft",
+  "name": "Nails",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Production",
+  "output_qty": 5,
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Reloading bench",
+  "ingredients": [
+   {
+    "item": "Scrap metal (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "flamer_fuel_craft",
+  "name": "Flamer fuel",
+  "mode": "craft",
+  "table": "Craftable items list > Ammunition > Recycling",
+  "output_item_id": "flamer_fuel",
+  "skill": {
+   "skill": "science",
+   "min": 15
+  },
+  "station": "Workbench",
+  "ingredients": []
+ },
+ {
+  "id": "gecko_backed_metal_armor_craft",
+  "name": "Gecko-backed metal armor",
+  "mode": "craft",
+  "table": "Craftable items list > Clothing > Heavy armor",
+  "output_item_id": "gecko_backed_metal_armor",
+  "skill": {
+   "skill": "survival",
+   "min": 80
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Metal armor",
+    "qty": 1,
+    "item_id": "metal_armor"
+   },
+   {
+    "item": "Tanned fire gecko hide",
+    "qty": 1,
+    "item_id": "tanned_fire_gecko_hide"
+   },
+   {
+    "item": "Tanned golden gecko hide",
+    "qty": 1,
+    "item_id": "tanned_golden_gecko_hide"
+   },
+   {
+    "item": "Tanned green gecko hide",
+    "qty": 1,
+    "item_id": "tanned_green_gecko_hide"
+   }
+  ]
+ },
+ {
+  "id": "gecko_backed_metal_armor_reinforced_craft",
+  "name": "Gecko-backed metal armor, reinforced",
+  "mode": "craft",
+  "table": "Craftable items list > Clothing > Heavy armor",
+  "output_item_id": "gecko_backed_metal_armor_reinforced",
+  "skill": {
+   "skill": "survival",
+   "min": 90
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Metal armor, reinforced",
+    "qty": 1,
+    "item_id": "metal_armor_reinforced"
+   },
+   {
+    "item": "Tanned fire gecko hide",
+    "qty": 1,
+    "item_id": "tanned_fire_gecko_hide"
+   },
+   {
+    "item": "Tanned golden gecko hide",
+    "qty": 1,
+    "item_id": "tanned_golden_gecko_hide"
+   },
+   {
+    "item": "Tanned green gecko hide (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "gecko_backed_leather_armor_craft",
+  "name": "Gecko-backed leather armor",
+  "mode": "craft",
+  "table": "Craftable items list > Clothing > Light armor",
+  "output_item_id": "gecko_backed_leather_armor",
+  "skill": {
+   "skill": "survival",
+   "min": 80
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Leather armor",
+    "qty": 1,
+    "item_id": "leather_armor"
+   },
+   {
+    "item": "Tanned fire gecko hide",
+    "qty": 1,
+    "item_id": "tanned_fire_gecko_hide"
+   },
+   {
+    "item": "Tanned golden gecko hide",
+    "qty": 1,
+    "item_id": "tanned_golden_gecko_hide"
+   },
+   {
+    "item": "Tanned green gecko hide",
+    "qty": 1,
+    "item_id": "tanned_green_gecko_hide"
+   }
+  ]
+ },
+ {
+  "id": "gecko_backed_leather_armor_reinforced_craft",
+  "name": "Gecko-backed leather armor, reinforced",
+  "mode": "craft",
+  "table": "Craftable items list > Clothing > Light armor",
+  "output_item_id": "gecko_backed_leather_armor_reinforced",
+  "skill": {
+   "skill": "survival",
+   "min": 90
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Leather armor, reinforced",
+    "qty": 1,
+    "item_id": "leather_armor_reinforced"
+   },
+   {
+    "item": "Tanned fire gecko hide",
+    "qty": 1,
+    "item_id": "tanned_fire_gecko_hide"
+   },
+   {
+    "item": "Tanned golden gecko hide",
+    "qty": 1,
+    "item_id": "tanned_golden_gecko_hide"
+   },
+   {
+    "item": "Tanned green gecko hide (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "battle_brew_craft",
+  "name": "Battle Brew",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "battle_brew",
+  "skill": {
+   "skill": "survival",
+   "min": 45
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Mutant cave fungus",
+    "qty": 1,
+    "item_id": "mutant_cave_fungus"
+   },
+   {
+    "item": "Salient Green",
+    "qty": 1,
+    "item_id": "salient_green"
+   },
+   {
+    "item": "Vodka",
+    "qty": 1,
+    "item_id": "vodka"
+   }
+  ]
+ },
+ {
+  "id": "blood_shield_craft",
+  "name": "Blood Shield",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "blood_shield",
+  "skill": {
+   "skill": "survival",
+   "min": 35
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Barrel cactus fruit",
+    "qty": 1,
+    "item_id": "barrel_cactus_fruit"
+   },
+   {
+    "item": "Cave fungus",
+    "qty": 1,
+    "item_id": "cave_fungus"
+   },
+   {
+    "item": "Spore plant pods",
+    "qty": 1,
+    "item_id": "spore_plant_pods"
+   }
+  ]
+ },
+ {
+  "id": "datura_hide_craft",
+  "name": "Datura hide",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "datura_hide",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Sacred datura root",
+    "qty": 4,
+    "item_id": "sacred_datura_root"
+   },
+   {
+    "item": "wonderglue",
+    "qty": 1,
+    "item_id": "wonderglue"
+   }
+  ]
+ },
+ {
+  "id": "ghost_sight_craft",
+  "name": "Ghost Sight",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "ghost_sight",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Jar of Cloud residue",
+    "qty": 1,
+    "item_id": "jar_of_cloud_residue"
+   }
+  ]
+ },
+ {
+  "id": "mushroom_cloud_craft",
+  "name": "Mushroom Cloud",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "mushroom_cloud",
+  "skill": {
+   "skill": "survival",
+   "min": 35
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Gum drops",
+    "qty": 1,
+    "item_id": "gum_drops"
+   },
+   {
+    "item": "Nightstalker egg",
+    "qty": 1,
+    "item_id": "nightstalker_egg"
+   },
+   {
+    "item": "Sugar Bombs",
+    "qty": 1,
+    "item_id": "sugar_bombs"
+   }
+  ]
+ },
+ {
+  "id": "party_time_mentats_craft",
+  "name": "Party Time Mentats",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "party_time_mentats",
+  "skill": {
+   "skill": "science",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Honey mesquite pod",
+    "qty": 1,
+    "item_id": "honey_mesquite_pod"
+   },
+   {
+    "item": "Mentats",
+    "qty": 1,
+    "item_id": "mentats"
+   },
+   {
+    "item": "Whiskey",
+    "qty": 1,
+    "item_id": "whiskey"
+   }
+  ]
+ },
+ {
+  "id": "rocket_craft_2",
+  "name": "Rocket",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "rocket",
+  "skill": {
+   "skill": "science",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Box of detergent",
+    "qty": 1,
+    "item_id": "box_of_detergent"
+   },
+   {
+    "item": "Jet",
+    "qty": 1,
+    "item_id": "jet"
+   },
+   {
+    "item": "Nuka-Cola",
+    "qty": 1,
+    "item_id": "nuka_cola"
+   }
+  ]
+ },
+ {
+  "id": "slasher_craft",
+  "name": "Slasher",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "slasher",
+  "skill": {
+   "skill": "science",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Banana yucca fruit",
+    "qty": 2,
+    "item_id": "banana_yucca_fruit"
+   },
+   {
+    "item": "Psycho",
+    "qty": 1,
+    "item_id": "psycho"
+   },
+   {
+    "item": "Stimpak",
+    "qty": 2,
+    "item_id": "stimpak"
+   }
+  ]
+ },
+ {
+  "id": "turbo_craft",
+  "name": "Turbo",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "turbo",
+  "skill": {
+   "skill": "science",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Broc flower",
+    "qty": 1,
+    "item_id": "broc_flower"
+   },
+   {
+    "item": "Cazador poison gland",
+    "qty": 1,
+    "item_id": "cazador_poison_gland"
+   },
+   {
+    "item": "Jet",
+    "qty": 1,
+    "item_id": "jet"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 1,
+    "item_id": "turpentine"
+   }
+  ]
+ },
+ {
+  "id": "weapon_binding_ritual_craft",
+  "name": "Weapon binding ritual",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Chems",
+  "output_item_id": "weapon_binding_ritual",
+  "skill": {
+   "skill": "melee_weapons",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Healing powder",
+    "qty": 1,
+    "item_id": "healing_powder"
+   },
+   {
+    "item": "Knife",
+    "qty": 1,
+    "item_id": "knife"
+   },
+   {
+    "item": "Leather belt",
+    "qty": 1,
+    "item_id": "leather_belt"
+   },
+   {
+    "item": "Wonderglue (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "atomic_cocktail_craft",
+  "name": "Atomic cocktail",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_qty": 4,
+  "output_item_id": "atomic_cocktail",
+  "skill": {
+   "skill": "science",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Mentats",
+    "qty": 1,
+    "item_id": "mentats"
+   },
+   {
+    "item": "Nuka-Cola Victory",
+    "qty": 1,
+    "item_id": "nuka_cola_victory"
+   },
+   {
+    "item": "Vodka",
+    "qty": 1,
+    "item_id": "vodka"
+   }
+  ]
+ },
+ {
+  "id": "black_coffee_craft",
+  "name": "Black coffee",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_item_id": "black_coffee",
+  "skill": {
+   "skill": "survival",
+   "min": 15
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Coffee mug",
+    "qty": 1
+   },
+   {
+    "item": "Coffee pot (1, not expended)",
+    "qty": 1
+   },
+   {
+    "item": "Coyote tobacco chew",
+    "qty": 1,
+    "item_id": "coyote_tobacco_chew"
+   },
+   {
+    "item": "Honey mesquite pod",
+    "qty": 1,
+    "item_id": "honey_mesquite_pod"
+   }
+  ]
+ },
+ {
+  "id": "cass_moonshine_craft",
+  "name": "Cass' moonshine",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "skill": {
+   "skill": "survival",
+   "min": 75
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Maize",
+    "qty": 1,
+    "item_id": "maize"
+   },
+   {
+    "item": "Mutfruit",
+    "qty": 2,
+    "item_id": "mutfruit"
+   },
+   {
+    "item": "Yeast",
+    "qty": 1,
+    "item_id": "yeast"
+   },
+   {
+    "item": "Fission battery",
+    "qty": 1,
+    "item_id": "fission_battery"
+   }
+  ]
+ },
+ {
+  "id": "home_brewed_nuka_cola_craft",
+  "name": "Home-brewed Nuka-Cola",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "skill": {
+   "skill": "survival",
+   "min": 30
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Bottle cap",
+    "qty": 1,
+    "item_id": "bottle_cap"
+   },
+   {
+    "item": "Barrel cactus fruit",
+    "qty": 1,
+    "item_id": "barrel_cactus_fruit"
+   },
+   {
+    "item": "Empty soda bottle",
+    "qty": 1,
+    "item_id": "empty_soda_bottle"
+   },
+   {
+    "item": "Nevada agave fruit",
+    "qty": 1,
+    "item_id": "nevada_agave_fruit"
+   }
+  ]
+ },
+ {
+  "id": "home_brewed_sunset_sarsaparilla_craft",
+  "name": "Home-brewed Sunset Sarsaparilla",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "skill": {
+   "skill": "survival",
+   "min": 30
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Bottle cap",
+    "qty": 1,
+    "item_id": "bottle_cap"
+   },
+   {
+    "item": "Empty Sunset Sarsaparilla bottle",
+    "qty": 1,
+    "item_id": "empty_sunset_sarsaparilla_bottle"
+   },
+   {
+    "item": "Nevada agave fruit",
+    "qty": 1,
+    "item_id": "nevada_agave_fruit"
+   },
+   {
+    "item": "Xander root",
+    "qty": 1,
+    "item_id": "xander_root"
+   }
+  ]
+ },
+ {
+  "id": "ice_cold_nuka_cola_craft",
+  "name": "Ice cold Nuka-Cola",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_qty": 2,
+  "output_item_id": "ice_cold_nuka_cola",
+  "skill": {
+   "skill": "science",
+   "min": 90
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Nuka-Cola",
+    "qty": 3,
+    "item_id": "nuka_cola"
+   }
+  ]
+ },
+ {
+  "id": "large_wasteland_tequila_craft",
+  "name": "Large wasteland tequila",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_item_id": "large_wasteland_tequila",
+  "skill": {
+   "skill": "survival",
+   "min": 40
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Large whiskey bottle",
+    "qty": 1,
+    "item_id": "large_whiskey_bottle"
+   },
+   {
+    "item": "Nevada agave fruit",
+    "qty": 2,
+    "item_id": "nevada_agave_fruit"
+   },
+   {
+    "item": "Purified water",
+    "qty": 2,
+    "item_id": "purified_water"
+   }
+  ]
+ },
+ {
+  "id": "nuka_cola_quartz_craft",
+  "name": "Nuka-Cola Quartz",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_item_id": "nuka_cola_quartz",
+  "skill": {
+   "skill": "science",
+   "min": 90
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Nuka-Cola",
+    "qty": 3,
+    "item_id": "nuka_cola"
+   }
+  ]
+ },
+ {
+  "id": "nuka_cola_victory_craft",
+  "name": "Nuka-Cola Victory",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_item_id": "nuka_cola_victory",
+  "skill": {
+   "skill": "science",
+   "min": 90
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Nuka-Cola",
+    "qty": 3,
+    "item_id": "nuka_cola"
+   }
+  ]
+ },
+ {
+  "id": "purified_water_made_using_cactus_water_recipe_craft",
+  "name": "Purified water made using Cactus water recipe",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "skill": {
+   "skill": "survival",
+   "min": 30
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Empty soda bottle",
+    "qty": 1,
+    "item_id": "empty_soda_bottle"
+   },
+   {
+    "item": "Prickly pear fruit",
+    "qty": 2,
+    "item_id": "prickly_pear_fruit"
+   }
+  ]
+ },
+ {
+  "id": "purified_water_4_made_using_mass_purified_water_recipe_craft",
+  "name": "Purified water (4) made using Mass purified water recipe",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Dirty water",
+    "qty": 5,
+    "item_id": "dirty_water"
+   },
+   {
+    "item": "Glass pitcher (2, not expended)",
+    "qty": 1
+   },
+   {
+    "item": "Surgical tubing (1, not expended)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "rushing_water_craft",
+  "name": "Rushing water",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_item_id": "rushing_water",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Purified water",
+    "qty": 1,
+    "item_id": "purified_water"
+   },
+   {
+    "item": "Jet",
+    "qty": 1,
+    "item_id": "jet"
+   }
+  ]
+ },
+ {
+  "id": "sierra_madre_martini_craft",
+  "name": "Sierra Madre martini",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_item_id": "sierra_madre_martini",
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Sierra Madre Martini perk",
+    "qty": 1
+   },
+   {
+    "item": "Jar of Cloud residue",
+    "qty": 1,
+    "item_id": "jar_of_cloud_residue"
+   },
+   {
+    "item": "Junk food",
+    "qty": 2,
+    "item_id": "junk_food"
+   },
+   {
+    "item": "Tin can",
+    "qty": 1,
+    "item_id": "tin_can"
+   }
+  ]
+ },
+ {
+  "id": "wasteland_tequila_craft",
+  "name": "Wasteland tequila",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Drink",
+  "output_item_id": "wasteland_tequila",
+  "skill": {
+   "skill": "survival",
+   "min": 35
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Empty whiskey bottle",
+    "qty": 1,
+    "item_id": "empty_whiskey_bottle"
+   },
+   {
+    "item": "Nevada agave fruit",
+    "qty": 1,
+    "item_id": "nevada_agave_fruit"
+   },
+   {
+    "item": "Purified water (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "bighorner_steak_craft",
+  "name": "Bighorner steak",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "bighorner_steak",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Bighorner meat",
+    "qty": 1,
+    "item_id": "bighorner_meat"
+   }
+  ]
+ },
+ {
+  "id": "black_blood_sausage_craft",
+  "name": "Black blood sausage",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "black_blood_sausage",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Blood sausage",
+    "qty": 1,
+    "item_id": "blood_sausage"
+   },
+   {
+    "item": "Mutant cave fungus",
+    "qty": 1,
+    "item_id": "mutant_cave_fungus"
+   },
+   {
+    "item": "Wine",
+    "qty": 1,
+    "item_id": "wine"
+   },
+   {
+    "item": "Xander root",
+    "qty": 1,
+    "item_id": "xander_root"
+   }
+  ]
+ },
+ {
+  "id": "bloatfly_slider_craft",
+  "name": "Bloatfly slider",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "bloatfly_slider",
+  "skill": {
+   "skill": "survival",
+   "min": 20
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Bloatfly meat",
+    "qty": 1,
+    "item_id": "bloatfly_meat"
+   },
+   {
+    "item": "Prickly pear fruit",
+    "qty": 2,
+    "item_id": "prickly_pear_fruit"
+   }
+  ]
+ },
+ {
+  "id": "brahmin_steak_craft",
+  "name": "Brahmin steak",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "brahmin_steak",
+  "skill": {
+   "skill": "survival",
+   "min": 35
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Brahmin meat",
+    "qty": 1,
+    "item_id": "brahmin_meat"
+   }
+  ]
+ },
+ {
+  "id": "brahmin_wellington_craft",
+  "name": "Brahmin Wellington",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "brahmin_wellington",
+  "skill": {
+   "skill": "survival",
+   "min": 80
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Ant egg",
+    "qty": 2,
+    "item_id": "ant_egg"
+   },
+   {
+    "item": "BlamCo Mac & Cheese",
+    "qty": 1,
+    "item_id": "blamco_mac_cheese"
+   },
+   {
+    "item": "Brahmin meat",
+    "qty": 1,
+    "item_id": "brahmin_meat"
+   }
+  ]
+ },
+ {
+  "id": "caravan_lunch_craft",
+  "name": "Caravan lunch",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "caravan_lunch",
+  "skill": {
+   "skill": "survival",
+   "min": 30
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Cram",
+    "qty": 1,
+    "item_id": "cram"
+   },
+   {
+    "item": "InstaMash",
+    "qty": 1,
+    "item_id": "instamash"
+   },
+   {
+    "item": "Lunchbox",
+    "qty": 1,
+    "item_id": "lunchbox"
+   },
+   {
+    "item": "Pork n' Beans",
+    "qty": 1,
+    "item_id": "pork_n_beans"
+   }
+  ]
+ },
+ {
+  "id": "cook_cook_s_fiend_stew_craft",
+  "name": "Cook-Cook's Fiend stew",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "cook_cook_s_fiend_stew",
+  "skill": {
+   "skill": "survival",
+   "min": 75
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Beer",
+    "qty": 2,
+    "item_id": "beer"
+   },
+   {
+    "item": "Brahmin meat",
+    "qty": 1,
+    "item_id": "brahmin_meat"
+   },
+   {
+    "item": "Fresh potato",
+    "qty": 1,
+    "item_id": "fresh_potato"
+   },
+   {
+    "item": "Jalapeño pepper",
+    "qty": 1,
+    "item_id": "jalape_o_pepper"
+   }
+  ]
+ },
+ {
+  "id": "coyote_steak_craft",
+  "name": "Coyote steak",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "coyote_steak",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Coyote meat",
+    "qty": 1,
+    "item_id": "coyote_meat"
+   }
+  ]
+ },
+ {
+  "id": "desert_salad_craft",
+  "name": "Desert Salad",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "desert_salad",
+  "skill": {
+   "skill": "survival",
+   "min": 55
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Barrel cactus fruit",
+    "qty": 1,
+    "item_id": "barrel_cactus_fruit"
+   },
+   {
+    "item": "Brahmin steak",
+    "qty": 1,
+    "item_id": "brahmin_steak"
+   },
+   {
+    "item": "Pinyon nuts",
+    "qty": 1,
+    "item_id": "pinyon_nuts"
+   }
+  ]
+ },
+ {
+  "id": "dog_steak_craft",
+  "name": "Dog steak",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "dog_steak",
+  "skill": {
+   "skill": "survival",
+   "min": 40
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Dog meat",
+    "qty": 1,
+    "item_id": "dog_meat"
+   }
+  ]
+ },
+ {
+  "id": "fire_ant_fricass_e_craft",
+  "name": "Fire ant fricassée",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "fire_ant_fricass_e",
+  "skill": {
+   "skill": "survival",
+   "min": 75
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Cram",
+    "qty": 1,
+    "item_id": "cram"
+   },
+   {
+    "item": "Fire ant meat",
+    "qty": 1,
+    "item_id": "fire_ant_meat"
+   },
+   {
+    "item": "Flour",
+    "qty": 1,
+    "item_id": "flour"
+   }
+  ]
+ },
+ {
+  "id": "gecko_kebab_craft",
+  "name": "Gecko kebab",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_qty": 2,
+  "output_item_id": "gecko_kebab",
+  "skill": {
+   "skill": "survival",
+   "min": 60
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Banana yucca fruit",
+    "qty": 1,
+    "item_id": "banana_yucca_fruit"
+   },
+   {
+    "item": "Gecko meat",
+    "qty": 1,
+    "item_id": "gecko_meat"
+   },
+   {
+    "item": "Jalapeño pepper",
+    "qty": 1,
+    "item_id": "jalape_o_pepper"
+   }
+  ]
+ },
+ {
+  "id": "gecko_steak_craft",
+  "name": "Gecko steak",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "gecko_steak",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Gecko meat",
+    "qty": 1,
+    "item_id": "gecko_meat"
+   }
+  ]
+ },
+ {
+  "id": "grilled_mantis_leg_craft",
+  "name": "Grilled mantis leg",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "skill": {
+   "skill": "survival",
+   "min": 30
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Honey mesquite pod",
+    "qty": 1,
+    "item_id": "honey_mesquite_pod"
+   },
+   {
+    "item": "Mantis foreleg",
+    "qty": 1,
+    "item_id": "mantis_foreleg"
+   },
+   {
+    "item": "Wine",
+    "qty": 1,
+    "item_id": "wine"
+   }
+  ]
+ },
+ {
+  "id": "mole_rat_stew_craft",
+  "name": "Mole rat stew",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "mole_rat_stew",
+  "skill": {
+   "skill": "survival",
+   "min": 65
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Beer",
+    "qty": 1,
+    "item_id": "beer"
+   },
+   {
+    "item": "Maize",
+    "qty": 1,
+    "item_id": "maize"
+   },
+   {
+    "item": "Mole rat meat",
+    "qty": 1,
+    "item_id": "mole_rat_meat"
+   },
+   {
+    "item": "Pinto bean pod",
+    "qty": 1,
+    "item_id": "pinto_bean_pod"
+   }
+  ]
+ },
+ {
+  "id": "nightstalker_squeezin_s_craft",
+  "name": "Nightstalker squeezin's",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "nightstalker_squeezin_s",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Flour",
+    "qty": 1,
+    "item_id": "flour"
+   },
+   {
+    "item": "Mutant cave fungus",
+    "qty": 1,
+    "item_id": "mutant_cave_fungus"
+   },
+   {
+    "item": "Nightstalker blood",
+    "qty": 1,
+    "item_id": "nightstalker_blood"
+   }
+  ]
+ },
+ {
+  "id": "wasteland_omelet_craft",
+  "name": "Wasteland omelet",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "wasteland_omelet",
+  "skill": {
+   "skill": "survival",
+   "min": 65
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "BlamCo Mac & Cheese",
+    "qty": 1,
+    "item_id": "blamco_mac_cheese"
+   },
+   {
+    "item": "Crunchy mutfruit",
+    "qty": 1,
+    "item_id": "crunchy_mutfruit"
+   },
+   {
+    "item": "Deathclaw egg",
+    "qty": 1,
+    "item_id": "deathclaw_egg"
+   },
+   {
+    "item": "Lakelurk meat",
+    "qty": 1,
+    "item_id": "lakelurk_meat"
+   }
+  ]
+ },
+ {
+  "id": "thick_red_paste_craft",
+  "name": "Thick red paste",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "thick_red_paste",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Flour",
+    "qty": 1,
+    "item_id": "flour"
+   },
+   {
+    "item": "Mutant cave fungus",
+    "qty": 1,
+    "item_id": "mutant_cave_fungus"
+   },
+   {
+    "item": "Thin red paste",
+    "qty": 1,
+    "item_id": "thin_red_paste"
+   }
+  ]
+ },
+ {
+  "id": "trail_mix_craft",
+  "name": "Trail mix",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food",
+  "output_item_id": "trail_mix",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Fresh apple",
+    "qty": 1,
+    "item_id": "fresh_apple"
+   },
+   {
+    "item": "Fresh pear",
+    "qty": 1,
+    "item_id": "fresh_pear"
+   },
+   {
+    "item": "Pinyon nuts",
+    "qty": 1,
+    "item_id": "pinyon_nuts"
+   },
+   {
+    "item": "Sugar Bombs (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "cloned_plants_banana_yucca_fruit_barrel_cactus_fruit_broc_flower_honey_mesquite_pod_jalape_o_pepper_maize_nevada_agave_fruit_pinto_bean_pod_prickly_pear_fruit_white_horsenettle_xander_root_craft",
+  "name": "Cloned Plants * Banana yucca fruit * Barrel cactus fruit * Broc flower * Honey mesquite pod * Jalapeño pepper * Maize * Nevada agave fruit * Pinto bean pod * Prickly pear fruit * White horsenettle * Xander root",
+  "mode": "craft",
+  "table": "Craftable items list > Consumables > Food > Cloned food",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Salient Green (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "antivenom_craft",
+  "name": "Antivenom",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_qty": 2,
+  "output_item_id": "antivenom",
+  "skill": {
+   "skill": "survival",
+   "min": 40
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Nightstalker blood",
+    "qty": 1,
+    "item_id": "nightstalker_blood"
+   },
+   {
+    "item": "Radscorpion poison gland",
+    "qty": 2,
+    "item_id": "radscorpion_poison_gland"
+   }
+  ]
+ },
+ {
+  "id": "auto_inject_stimpak_craft",
+  "name": "Auto-inject stimpak",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "auto_inject_stimpak",
+  "skill": {
+   "skill": "science",
+   "min": 75
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Sensor module",
+    "qty": 1,
+    "item_id": "sensor_module"
+   },
+   {
+    "item": "Stimpak",
+    "qty": 1,
+    "item_id": "stimpak"
+   }
+  ]
+ },
+ {
+  "id": "auto_inject_super_stimpak_craft",
+  "name": "Auto-inject super stimpak",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "auto_inject_super_stimpak",
+  "skill": {
+   "skill": "science",
+   "min": 100
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Sensor module",
+    "qty": 1,
+    "item_id": "sensor_module"
+   },
+   {
+    "item": "Super stimpak",
+    "qty": 1,
+    "item_id": "super_stimpak"
+   }
+  ]
+ },
+ {
+  "id": "bitter_drink_craft",
+  "name": "Bitter drink",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "bitter_drink",
+  "skill": {
+   "skill": "survival",
+   "min": 15
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Broc flower",
+    "qty": 1,
+    "item_id": "broc_flower"
+   },
+   {
+    "item": "Xander root",
+    "qty": 1,
+    "item_id": "xander_root"
+   },
+   {
+    "item": "Empty Sunset Sarsaparilla bottle",
+    "qty": 1,
+    "item_id": "empty_sunset_sarsaparilla_bottle"
+   }
+  ]
+ },
+ {
+  "id": "datura_antivenom_craft",
+  "name": "Datura antivenom",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "datura_antivenom",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Broc flower",
+    "qty": 1,
+    "item_id": "broc_flower"
+   },
+   {
+    "item": "Sacred datura root",
+    "qty": 1,
+    "item_id": "sacred_datura_root"
+   },
+   {
+    "item": "Spore plant pods",
+    "qty": 1,
+    "item_id": "spore_plant_pods"
+   },
+   {
+    "item": "Xander root",
+    "qty": 1,
+    "item_id": "xander_root"
+   }
+  ]
+ },
+ {
+  "id": "daturana_craft",
+  "name": "Daturana",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "daturana",
+  "skill": {
+   "skill": "survival",
+   "min": 65
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Flour",
+    "qty": 1,
+    "item_id": "flour"
+   },
+   {
+    "item": "Purified water",
+    "qty": 1,
+    "item_id": "purified_water"
+   },
+   {
+    "item": "Sacred datura root",
+    "qty": 1,
+    "item_id": "sacred_datura_root"
+   }
+  ]
+ },
+ {
+  "id": "doctor_s_bag_craft",
+  "name": "Doctor's bag",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "doctor_s_bag",
+  "skill": {
+   "skill": "medicine",
+   "min": 40
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Forceps",
+    "qty": 1,
+    "item_id": "forceps"
+   },
+   {
+    "item": "Medical brace",
+    "qty": 1,
+    "item_id": "medical_brace"
+   },
+   {
+    "item": "Scalpel",
+    "qty": 1,
+    "item_id": "scalpel"
+   },
+   {
+    "item": "Surgical tubing",
+    "qty": 1,
+    "item_id": "surgical_tubing"
+   }
+  ]
+ },
+ {
+  "id": "fiery_purgative_craft",
+  "name": "Fiery purgative",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "fiery_purgative",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Jalapeño pepper",
+    "qty": 1,
+    "item_id": "jalape_o_pepper"
+   },
+   {
+    "item": "Vodka",
+    "qty": 1,
+    "item_id": "vodka"
+   },
+   {
+    "item": "White horsenettle",
+    "qty": 1,
+    "item_id": "white_horsenettle"
+   }
+  ]
+ },
+ {
+  "id": "healing_poultice_craft",
+  "name": "Healing poultice",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "healing_poultice",
+  "skill": {
+   "skill": "survival",
+   "min": 20
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Broc flower",
+    "qty": 1,
+    "item_id": "broc_flower"
+   },
+   {
+    "item": "Cave fungus",
+    "qty": 1,
+    "item_id": "cave_fungus"
+   },
+   {
+    "item": "Nevada agave fruit",
+    "qty": 1,
+    "item_id": "nevada_agave_fruit"
+   },
+   {
+    "item": "Xander root",
+    "qty": 1,
+    "item_id": "xander_root"
+   }
+  ]
+ },
+ {
+  "id": "healing_powder_craft",
+  "name": "Healing powder",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "healing_powder",
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Broc flower",
+    "qty": 1,
+    "item_id": "broc_flower"
+   },
+   {
+    "item": "Xander root",
+    "qty": 1,
+    "item_id": "xander_root"
+   }
+  ]
+ },
+ {
+  "id": "hydra_craft",
+  "name": "Hydra",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "hydra",
+  "skill": {
+   "skill": "survival",
+   "min": 75
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Cave fungus",
+    "qty": 1,
+    "item_id": "cave_fungus"
+   },
+   {
+    "item": "Nightstalker blood",
+    "qty": 2,
+    "item_id": "nightstalker_blood"
+   },
+   {
+    "item": "Radscorpion poison gland",
+    "qty": 1,
+    "item_id": "radscorpion_poison_gland"
+   }
+  ]
+ },
+ {
+  "id": "snakebite_tourniquet_craft",
+  "name": "Snakebite tourniquet",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "snakebite_tourniquet",
+  "skill": {
+   "skill": "survival",
+   "min": 30
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Buffalo gourd seed",
+    "qty": 1,
+    "item_id": "buffalo_gourd_seed"
+   },
+   {
+    "item": "Surgical tubing",
+    "qty": 1,
+    "item_id": "surgical_tubing"
+   }
+  ]
+ },
+ {
+  "id": "stimpak_craft",
+  "name": "Stimpak",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "stimpak",
+  "skill": {
+   "skill": "science",
+   "min": 70
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Broc flower",
+    "qty": 1,
+    "item_id": "broc_flower"
+   },
+   {
+    "item": "Empty syringe",
+    "qty": 1,
+    "item_id": "empty_syringe"
+   },
+   {
+    "item": "Xander root",
+    "qty": 1,
+    "item_id": "xander_root"
+   }
+  ]
+ },
+ {
+  "id": "super_stimpak_craft",
+  "name": "Super stimpak",
+  "mode": "craft",
+  "table": "Craftable items list > Medicine",
+  "output_item_id": "super_stimpak",
+  "skill": {
+   "skill": "science",
+   "min": 90
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Leather belt",
+    "qty": 1,
+    "item_id": "leather_belt"
+   },
+   {
+    "item": "Mutfruit",
+    "qty": 1,
+    "item_id": "mutfruit"
+   },
+   {
+    "item": "Nuka-Cola",
+    "qty": 1,
+    "item_id": "nuka_cola"
+   },
+   {
+    "item": "Stimpak (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "skill_book_barter_energy_weapons_explosives_guns_lockpick_medicine_melee_weapons_repair_science_sneak_speech_survival_unarmed_craft",
+  "name": "Skill Book * Barter * Energy Weapons * Explosives * Guns * Lockpick * Medicine * Melee Weapons * Repair * Science * Sneak * Speech * Survival * Unarmed",
+  "mode": "craft",
+  "table": "Craftable items list > Skill books",
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "25 in that particular skill",
+    "qty": 1
+   },
+   {
+    "item": "Blank book",
+    "qty": 25,
+    "item_id": "blank_book"
+   },
+   {
+    "item": "Skill book recipe of that particular skill",
+    "qty": 1
+   },
+   {
+    "item": "Wonderglue (2)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "bleak_venom_craft",
+  "name": "Bleak venom",
+  "mode": "craft",
+  "table": "Craftable items list > Poisons (venoms)",
+  "output_qty": 3,
+  "output_item_id": "bleak_venom",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "ingredients": [
+   {
+    "item": "Bark scorpion poison gland",
+    "qty": 3,
+    "item_id": "bark_scorpion_poison_gland"
+   },
+   {
+    "item": "Cazador poison gland",
+    "qty": 1,
+    "item_id": "cazador_poison_gland"
+   },
+   {
+    "item": "White horsenettle",
+    "qty": 1,
+    "item_id": "white_horsenettle"
+   }
+  ]
+ },
+ {
+  "id": "cloud_kiss_weak_craft",
+  "name": "Cloud Kiss (weak)",
+  "mode": "craft",
+  "table": "Craftable items list > Poisons (venoms)",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "ingredients": [
+   {
+    "item": "Abraxo cleaner",
+    "qty": 1,
+    "item_id": "abraxo_cleaner"
+   },
+   {
+    "item": "Jar of Cloud residue",
+    "qty": 1,
+    "item_id": "jar_of_cloud_residue"
+   }
+  ]
+ },
+ {
+  "id": "cloud_kiss_potent_craft",
+  "name": "Cloud Kiss (potent)",
+  "mode": "craft",
+  "table": "Craftable items list > Poisons (venoms)",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "ingredients": [
+   {
+    "item": "Abraxo cleaner",
+    "qty": 1,
+    "item_id": "abraxo_cleaner"
+   },
+   {
+    "item": "Jar of Cloud residue",
+    "qty": 2,
+    "item_id": "jar_of_cloud_residue"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 1,
+    "item_id": "turpentine"
+   }
+  ]
+ },
+ {
+  "id": "cloud_kiss_lethal_craft",
+  "name": "Cloud Kiss (lethal)",
+  "mode": "craft",
+  "table": "Craftable items list > Poisons (venoms)",
+  "skill": {
+   "skill": "survival",
+   "min": 75
+  },
+  "ingredients": [
+   {
+    "item": "Abraxo cleaner",
+    "qty": 2,
+    "item_id": "abraxo_cleaner"
+   },
+   {
+    "item": "Jar of Cloud residue",
+    "qty": 3,
+    "item_id": "jar_of_cloud_residue"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 1,
+    "item_id": "turpentine"
+   }
+  ]
+ },
+ {
+  "id": "dark_datura_craft",
+  "name": "Dark datura",
+  "mode": "craft",
+  "table": "Craftable items list > Poisons (venoms)",
+  "output_item_id": "dark_datura",
+  "skill": {
+   "skill": "survival",
+   "min": 45
+  },
+  "ingredients": [
+   {
+    "item": "-2 Intelligence",
+    "qty": 1
+   },
+   {
+    "item": "Sacred datura root",
+    "qty": 2,
+    "item_id": "sacred_datura_root"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 1,
+    "item_id": "turpentine"
+   }
+  ]
+ },
+ {
+  "id": "mother_darkness_craft",
+  "name": "Mother Darkness",
+  "mode": "craft",
+  "table": "Craftable items list > Poisons (venoms)",
+  "output_qty": 3,
+  "output_item_id": "mother_darkness",
+  "skill": {
+   "skill": "survival",
+   "min": 75
+  },
+  "ingredients": [
+   {
+    "item": "-3 Agility",
+    "qty": 1
+   },
+   {
+    "item": "-3 Perception",
+    "qty": 1
+   },
+   {
+    "item": "Bark scorpion poison gland",
+    "qty": 3,
+    "item_id": "bark_scorpion_poison_gland"
+   },
+   {
+    "item": "Cazador poison gland",
+    "qty": 1,
+    "item_id": "cazador_poison_gland"
+   },
+   {
+    "item": "White horsenettle",
+    "qty": 5,
+    "item_id": "white_horsenettle"
+   }
+  ]
+ },
+ {
+  "id": "silver_sting_craft",
+  "name": "Silver Sting",
+  "mode": "craft",
+  "table": "Craftable items list > Poisons (venoms)",
+  "output_qty": 3,
+  "output_item_id": "silver_sting",
+  "skill": {
+   "skill": "survival",
+   "min": 30
+  },
+  "ingredients": [
+   {
+    "item": "-2 Strength",
+    "qty": 1
+   },
+   {
+    "item": "Bark scorpion poison gland",
+    "qty": 3,
+    "item_id": "bark_scorpion_poison_gland"
+   },
+   {
+    "item": "Radscorpion poison gland",
+    "qty": 1,
+    "item_id": "radscorpion_poison_gland"
+   },
+   {
+    "item": "White horsenettle",
+    "qty": 1,
+    "item_id": "white_horsenettle"
+   }
+  ]
+ },
+ {
+  "id": "tremble_craft",
+  "name": "Tremble",
+  "mode": "craft",
+  "table": "Craftable items list > Poisons (venoms)",
+  "output_qty": 3,
+  "output_item_id": "tremble",
+  "skill": {
+   "skill": "survival",
+   "min": 90
+  },
+  "ingredients": [
+   {
+    "item": "-50 All Weapon skills except Unarmed",
+    "qty": 1
+   },
+   {
+    "item": "Radscorpion poison gland",
+    "qty": 2,
+    "item_id": "radscorpion_poison_gland"
+   },
+   {
+    "item": "Cazador poison gland",
+    "qty": 1,
+    "item_id": "cazador_poison_gland"
+   },
+   {
+    "item": "White horsenettle (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "bottlecap_mine_craft",
+  "name": "Bottlecap mine",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "bottlecap_mine",
+  "skill": {
+   "skill": "explosives",
+   "min": 75
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Bottle caps",
+    "qty": 10
+   },
+   {
+    "item": "Cherry bomb",
+    "qty": 5,
+    "item_id": "cherry_bomb"
+   },
+   {
+    "item": "Lunchbox",
+    "qty": 1,
+    "item_id": "lunchbox"
+   },
+   {
+    "item": "Sensor module",
+    "qty": 1,
+    "item_id": "sensor_module"
+   }
+  ]
+ },
+ {
+  "id": "bottlecap_mine_efficient_craft",
+  "name": "Bottlecap mine, efficient",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "skill": {
+   "skill": "explosives",
+   "min": 85
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Bottle caps",
+    "qty": 8
+   },
+   {
+    "item": "Cherry bomb",
+    "qty": 3,
+    "item_id": "cherry_bomb"
+   },
+   {
+    "item": "Lunchbox",
+    "qty": 1,
+    "item_id": "lunchbox"
+   },
+   {
+    "item": "Sensor module",
+    "qty": 1,
+    "item_id": "sensor_module"
+   }
+  ]
+ },
+ {
+  "id": "cosmic_knife_clean_craft",
+  "name": "Cosmic knife clean",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "cosmic_knife_clean",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Cosmic knife",
+    "qty": 1
+   },
+   {
+    "item": "Abraxo cleaner",
+    "qty": 2,
+    "item_id": "abraxo_cleaner"
+   }
+  ]
+ },
+ {
+  "id": "cosmic_knife_super_heated_craft",
+  "name": "Cosmic knife super-heated",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "cosmic_knife_super_heated",
+  "skill": {
+   "skill": "repair",
+   "min": 35
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Hot plate",
+    "qty": 1,
+    "item_id": "hot_plate"
+   },
+   {
+    "item": "Forceps",
+    "qty": 1,
+    "item_id": "forceps"
+   },
+   {
+    "item": "Cosmic knife",
+    "qty": 1
+   },
+   {
+    "item": "Pilot light",
+    "qty": 1,
+    "item_id": "pilot_light"
+   }
+  ]
+ },
+ {
+  "id": "dog_tag_fist_craft",
+  "name": "Dog tag fist",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "dog_tag_fist",
+  "skill": {
+   "skill": "repair",
+   "min": 30
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "NCR dogtag",
+    "qty": 20,
+    "item_id": "ncr_dogtag"
+   }
+  ]
+ },
+ {
+  "id": "fat_mine_craft",
+  "name": "Fat mine",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "skill": {
+   "skill": "explosives",
+   "min": 80
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Mini nuke",
+    "qty": 1,
+    "item_id": "mini_nuke"
+   },
+   {
+    "item": "Sensor module|",
+    "qty": 1
+   },
+   {
+    "item": "Scrap electronics",
+    "qty": 1,
+    "item_id": "scrap_electronics"
+   },
+   {
+    "item": "Scrap metal",
+    "qty": 1,
+    "item_id": "scrap_metal"
+   }
+  ]
+ },
+ {
+  "id": "fido_craft",
+  "name": "FIDO",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "fido",
+  "skill": {
+   "skill": "guns",
+   "min": 75
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "K9000 cyberdog gun",
+    "qty": 1,
+    "item_id": "k9000_cyberdog_gun"
+   }
+  ]
+ },
+ {
+  "id": "fist_of_rawr_craft",
+  "name": "Fist of Rawr",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "fist_of_rawr",
+  "skill": {
+   "skill": "unarmed",
+   "min": 75
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Rawr's talon",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "gas_bomb_craft",
+  "name": "Gas bomb",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "gas_bomb",
+  "skill": {
+   "skill": "explosives",
+   "min": 40
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Sensor module",
+    "qty": 1,
+    "item_id": "sensor_module"
+   },
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Pilot light",
+    "qty": 1,
+    "item_id": "pilot_light"
+   },
+   {
+    "item": "Scrap electronics",
+    "qty": 1,
+    "item_id": "scrap_electronics"
+   }
+  ]
+ },
+ {
+  "id": "knife_spear_craft",
+  "name": "Knife spear",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "knife_spear",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Throwing knife spear",
+    "qty": 1,
+    "item_id": "throwing_knife_spear"
+   },
+   {
+    "item": "Cosmic knife",
+    "qty": 3
+   }
+  ]
+ },
+ {
+  "id": "knife_spear_clean_craft",
+  "name": "Knife spear clean",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "knife_spear_clean",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Knife spear",
+    "qty": 1,
+    "item_id": "knife_spear"
+   },
+   {
+    "item": "Cosmic knife clean",
+    "qty": 3,
+    "item_id": "cosmic_knife_clean"
+   },
+   {
+    "item": "Abraxo cleaner",
+    "qty": 3,
+    "item_id": "abraxo_cleaner"
+   }
+  ]
+ },
+ {
+  "id": "mfc_cluster_craft",
+  "name": "MFC cluster",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "skill": {
+   "skill": "explosives",
+   "min": 70
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Microfusion cell",
+    "qty": 18,
+    "item_id": "microfusion_cell"
+   },
+   {
+    "item": "Scrap electronics",
+    "qty": 2,
+    "item_id": "scrap_electronics"
+   }
+  ]
+ },
+ {
+  "id": "mfc_grenade_craft",
+  "name": "MFC grenade",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "skill": {
+   "skill": "explosives",
+   "min": 50
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Microfusion cell",
+    "qty": 3,
+    "item_id": "microfusion_cell"
+   }
+  ]
+ },
+ {
+  "id": "nuka_grenade_craft",
+  "name": "Nuka-grenade",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "skill": {
+   "skill": "explosives",
+   "min": 60
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Abraxo cleaner",
+    "qty": 1,
+    "item_id": "abraxo_cleaner"
+   },
+   {
+    "item": "Nuka-Cola Quartz",
+    "qty": 1,
+    "item_id": "nuka_cola_quartz"
+   },
+   {
+    "item": "Tin can",
+    "qty": 1,
+    "item_id": "tin_can"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 1,
+    "item_id": "turpentine"
+   }
+  ]
+ },
+ {
+  "id": "powder_charge_craft",
+  "name": "Powder charge",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "powder_charge",
+  "skill": {
+   "skill": "explosives",
+   "min": 10
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Dynamite",
+    "qty": 2,
+    "item_id": "dynamite"
+   },
+   {
+    "item": "Sensor module",
+    "qty": 1,
+    "item_id": "sensor_module"
+   },
+   {
+    "item": "Tin can",
+    "qty": 1,
+    "item_id": "tin_can"
+   }
+  ]
+ },
+ {
+  "id": "powder_charge_efficient_craft",
+  "name": "Powder charge, efficient",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "skill": {
+   "skill": "explosives",
+   "min": 20
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Dynamite",
+    "qty": 1,
+    "item_id": "dynamite"
+   },
+   {
+    "item": "Sensor module",
+    "qty": 1,
+    "item_id": "sensor_module"
+   },
+   {
+    "item": "Tin can",
+    "qty": 1,
+    "item_id": "tin_can"
+   }
+  ]
+ },
+ {
+  "id": "satchel_charge_craft",
+  "name": "Satchel charge",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "satchel_charge",
+  "skill": {
+   "skill": "explosives",
+   "min": 25
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Lead",
+    "qty": 25,
+    "item_id": "lead"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 25,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Scrap electronics",
+    "qty": 1,
+    "item_id": "scrap_electronics"
+   },
+   {
+    "item": "Sensor module",
+    "qty": 1,
+    "item_id": "sensor_module"
+   }
+  ]
+ },
+ {
+  "id": "time_bomb_craft",
+  "name": "Time bomb",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "time_bomb",
+  "skill": {
+   "skill": "explosives",
+   "min": 50
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Dynamite",
+    "qty": 5,
+    "item_id": "dynamite"
+   },
+   {
+    "item": "Egg timer",
+    "qty": 1,
+    "item_id": "egg_timer"
+   },
+   {
+    "item": "Scrap electronics",
+    "qty": 1,
+    "item_id": "scrap_electronics"
+   }
+  ]
+ },
+ {
+  "id": "time_bomb_high_yield_craft",
+  "name": "Time bomb, high yield",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "skill": {
+   "skill": "explosives",
+   "min": 70
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Dynamite",
+    "qty": 6,
+    "item_id": "dynamite"
+   },
+   {
+    "item": "Egg timer",
+    "qty": 1,
+    "item_id": "egg_timer"
+   },
+   {
+    "item": "Scrap electronics",
+    "qty": 1,
+    "item_id": "scrap_electronics"
+   }
+  ]
+ },
+ {
+  "id": "tin_grenade_craft",
+  "name": "Tin grenade",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "skill": {
+   "skill": "explosives",
+   "min": 25
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Tin can",
+    "qty": 1,
+    "item_id": "tin_can"
+   },
+   {
+    "item": "Powder, pistol",
+    "qty": 50,
+    "item_id": "powder_pistol"
+   },
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   }
+  ]
+ },
+ {
+  "id": "weapon_repair_kit_craft",
+  "name": "Weapon repair kit",
+  "mode": "craft",
+  "table": "Craftable items list > Weapons and weapon repair kit",
+  "output_item_id": "weapon_repair_kit",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Duct tape",
+    "qty": 1,
+    "item_id": "duct_tape"
+   },
+   {
+    "item": "Scrap electronics",
+    "qty": 1,
+    "item_id": "scrap_electronics"
+   },
+   {
+    "item": "Scrap metal",
+    "qty": 2,
+    "item_id": "scrap_metal"
+   },
+   {
+    "item": "Wonderglue",
+    "qty": 1,
+    "item_id": "wonderglue"
+   },
+   {
+    "item": "Wrench (1)",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "leather_belt_2_coyote_hide_belt_craft",
+  "name": "Leather belt (2) (Coyote hide belt)",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "repair",
+   "min": 15
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Coyote hide",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "leather_belt_1_dog_hide_belt_craft",
+  "name": "Leather belt (1) (Dog hide belt)",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "repair",
+   "min": 5
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Dog hide",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "leather_belt_6_fire_gecko_hide_belt_craft",
+  "name": "Leather belt (6) (Fire gecko hide belt)",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "repair",
+   "min": 45
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Fire gecko hide",
+    "qty": 1,
+    "item_id": "fire_gecko_hide"
+   }
+  ]
+ },
+ {
+  "id": "leather_belt_3_gecko_hide_belt_craft",
+  "name": "Leather belt (3) (Gecko hide belt)",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Gecko hide",
+    "qty": 1,
+    "item_id": "gecko_hide"
+   }
+  ]
+ },
+ {
+  "id": "leather_belt_5_golden_gecko_hide_belt_craft",
+  "name": "Leather belt (5) (Golden gecko hide belt)",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "repair",
+   "min": 35
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Golden gecko hide",
+    "qty": 1,
+    "item_id": "golden_gecko_hide"
+   }
+  ]
+ },
+ {
+  "id": "leather_belt_7_green_gecko_hide_belt_craft",
+  "name": "Leather belt (7) (Green gecko hide belt)",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "repair",
+   "min": 50
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Green gecko hide",
+    "qty": 1,
+    "item_id": "green_gecko_hide"
+   }
+  ]
+ },
+ {
+  "id": "scrap_metal_cookery_to_metal_craft",
+  "name": "Scrap metal (Cookery-to-Metal)",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Metal cooking pan",
+    "qty": 1,
+    "item_id": "metal_cooking_pan"
+   },
+   {
+    "item": "Metal cooking pot",
+    "qty": 1,
+    "item_id": "metal_cooking_pot"
+   },
+   {
+    "item": "Pot",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "scrap_metal_meals_to_metal_craft",
+  "name": "Scrap metal (Meals-to-Metal)",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "repair",
+   "min": 25
+  },
+  "station": "Workbench",
+  "ingredients": [
+   {
+    "item": "Butter knife",
+    "qty": 1,
+    "item_id": "butter_knife"
+   },
+   {
+    "item": "Fork",
+    "qty": 1,
+    "item_id": "fork"
+   },
+   {
+    "item": "Metal spoon",
+    "qty": 1,
+    "item_id": "metal_spoon"
+   },
+   {
+    "item": "Tin plate",
+    "qty": 1,
+    "item_id": "tin_plate"
+   }
+  ]
+ },
+ {
+  "id": "tanned_fire_gecko_hide_craft",
+  "name": "Tanned fire gecko hide",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "output_item_id": "tanned_fire_gecko_hide",
+  "skill": {
+   "skill": "survival",
+   "min": 50
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Fire gecko hide",
+    "qty": 1,
+    "item_id": "fire_gecko_hide"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 2,
+    "item_id": "turpentine"
+   },
+   {
+    "item": "White horsenettle",
+    "qty": 1,
+    "item_id": "white_horsenettle"
+   }
+  ]
+ },
+ {
+  "id": "tanned_gecko_hide_craft",
+  "name": "Tanned gecko hide",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "skill": {
+   "skill": "survival",
+   "min": 25
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Gecko hide",
+    "qty": 1,
+    "item_id": "gecko_hide"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 1,
+    "item_id": "turpentine"
+   },
+   {
+    "item": "White horsenettle",
+    "qty": 1,
+    "item_id": "white_horsenettle"
+   }
+  ]
+ },
+ {
+  "id": "tanned_golden_gecko_hide_craft",
+  "name": "Tanned golden gecko hide",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "output_item_id": "tanned_golden_gecko_hide",
+  "skill": {
+   "skill": "survival",
+   "min": 65
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Golden gecko hide",
+    "qty": 1,
+    "item_id": "golden_gecko_hide"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 2,
+    "item_id": "turpentine"
+   },
+   {
+    "item": "White horsenettle",
+    "qty": 1,
+    "item_id": "white_horsenettle"
+   }
+  ]
+ },
+ {
+  "id": "tanned_green_gecko_hide_craft",
+  "name": "Tanned green gecko hide",
+  "mode": "craft",
+  "table": "Craftable items list > Miscellaneous",
+  "output_item_id": "tanned_green_gecko_hide",
+  "skill": {
+   "skill": "survival",
+   "min": 70
+  },
+  "station": "Campfire",
+  "ingredients": [
+   {
+    "item": "Green gecko hide",
+    "qty": 1,
+    "item_id": "green_gecko_hide"
+   },
+   {
+    "item": "Turpentine",
+    "qty": 3,
+    "item_id": "turpentine"
+   },
+   {
+    "item": "White horsenettle (2)",
+    "qty": 1
+   }
+  ]
+ }
+]

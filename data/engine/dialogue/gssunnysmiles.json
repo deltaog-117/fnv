@@ -1,0 +1,1600 @@
+{
+ "id": "gssunnysmiles",
+ "speaker_name": "Sunny Smiles",
+ "source": "GSSunnySmiles.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let me see what you got. Yeah, these'll do just fine. Just fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right now. We're gonna be making something folks on the trail call Healing Powder.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Go on over to that campfire now. Give it a try.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, that's a start. But I don't reckon you came to me to learn to fight sarsaparilla bottles.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell you what. I gotta go chase geckos away from our water supply anyway. Darn critters are attracted to it. Why don't you come along?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hear that up on the ridge behind me there? We got some geckos to clear out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bunch of little monsters is what they are. Seems like Doc Mitchell treats more gecko bites than anything else.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's see if we can get a little closer. If we move quietly, we can get the jump on 'em. More likely to hit something vital that way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "See? You're getting the hang of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There's two more wells that still need clearing. You want, you can come along. It'd be worth a few caps to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Confound it, Cheyenne, why'd you have to go running in like that? You were supposed to stay. {broken up - Cheyenne is her dog that just died.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, you shouldn't have to see me like this. I'm not not gonna be very good company right now. {embarrassed about being upset.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I did have another thing to teach, but I'll understand if you'd rather I just pay you so you can be on your way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now that was some good work. Even got a little exciting there at the end.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Here's a little spending money for the trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, hell's bells. There's not a day passes by I don't tell people not to come here by themselves. {Disgusted at an unnecessary death.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some people, your word just isn't good enough for them. Then this happens.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, it's part of life out here. Best to accept it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you did what you promised, staying out here with me. Here's my end of the deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, that's not bad! See? All it takes to make a recipe is the right ingredients and the right know-how.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sometimes it won't be a campfire you need. Might need to do some work on your guns and ammo, maybe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Important thing to get is it's all the same idea. You just need to find the right place to set up shop. Workbench or... a reloading bench, whatever.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, I hope that's enough to get you started.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Everything all right?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm heading back now. Hope I didn't miss anything good on the jukebox. Cheyenne would never forgive me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We can talk after this is over!",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "Those bastards got Ringo in the end, after all. At least he went down fighting.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{satisfaction} That'll teach the Powder Gangs to avoid Goodsprings in the future.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "Time to look alive. The Powder Gangers are here to play.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll keep an eye out for the Powder Gangers and meet up with you and Ringo when the time comes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't think Joe Cobb knew what hit him. I'm hoping you took him down for a good reason and not... for fun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Cheyenne, stay. Don't worry, she won't bite unless I tell her to.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Hi there. Sticking around Goodsprings for awhile longer?",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "playerfireweapon",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey! Do that somewhere else.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Be careful!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERFIREWEAPON",
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "key": "playerinironsites",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That safety better be on.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Point that somewhere else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERINIRONSITES",
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "key": "playerlaymine",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What the hell? That's dangerous.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Um... why are you setting that there?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERLAYMINE",
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "key": "playerthrowgrenade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Get down!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, crap... take cover!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PLAYERTHROWGRENADE",
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "key": "vcg02gssunnysmilestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Follow me. It's just down to the southeast a short ways.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic000",
+   "prompt": "Okay, I'm in."
+  },
+  {
+   "key": "vcg02gssunnysmilestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself. Hope this helped you some.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic001",
+   "prompt": "[END TUTORIAL] I think I've learned enough."
+  },
+  {
+   "key": "vcg02gssunnysmilestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Shouldn't take more than a couple minutes. Especially with two of us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Come with me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic002",
+   "prompt": "Sure, I'll come with you."
+  },
+  {
+   "key": "vcg02gssunnysmilestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't blame you. They're good eating, but that's about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic003",
+   "prompt": "[END TUTORIAL] I've had enough of geckos for one day."
+  },
+  {
+   "key": "vcg02gssunnysmilestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yep, I'd say you're getting a little trigger happy there. Try to slow down a bit. Concentrate on hitting your target.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here. Go easy on it, now. Ammo can be hard to come by out here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic004",
+   "prompt": "I ran out of ammo."
+  },
+  {
+   "key": "vcg02gssunnysmilestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well let's just finish this first, all right? Then we can talk. Preferably somewhere where I can get a stiff drink and Cheyenne can keep cool.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well let's just finish this first, all right? Then we can talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fire away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic005",
+   "prompt": "I wanted to ask you some questions."
+  },
+  {
+   "key": "vcg02gssunnysmilestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then. We'll need a couple ingredients to get started. Gonna want some Xander Root and a Broc Flower. {Neutral - not overly cheery.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lemme think now... I know I've seen Broc Flowers growing up at the graveyard. And I seem to remember there being Xander Root over by the schoolhouse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bring those on back to me, and we'll get cooking.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic006",
+   "prompt": "Couldn't hurt."
+  },
+  {
+   "key": "vcg02gssunnysmilestopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, say no more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic007",
+   "prompt": "[END TUTORIAL] No need. I think I've got it covered from here."
+  },
+  {
+   "key": "vcg02gssunnysmilestopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sadly - her dog died} Okay. Well... good luck to you. I'm heading back to the Prospector. I could use a drink about now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02GSSunnySmilesTopic009",
+   "prompt": "[END TUTORIAL] I think I know what I need to know."
+  },
+  {
+   "key": "vcg02lastobjective",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, do me a favor. Trudy - she's the bartender up at the Prospector, kind of the town mom - she likes to meet newcomers. {Neutral}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "She'd be cross with me if I didn't ask you to poke your head in and say hi.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02LastObjective",
+   "prompt": "VCG02LastObjective"
+  },
+  {
+   "key": "vcg02questtransition",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One more thing I wanted to show you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thought I might teach you about living off the land, and making useful things for yourself. Interested?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02QuestTransition",
+   "prompt": "VCG02QuestTransition"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, the wildlife for one thing. Rowdy locals for another.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They're protecting their own. Just happens to help us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They've been holding off this other group from the East, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic000",
+   "prompt": "What does the NCR keep you safe from?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. What did you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic001",
+   "prompt": "Let's talk about the areas around Goodsprings."
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Southeast of here is Primm - can't miss it, since it has this giant old rollercoaster right in the middle of town. The NCR's got an outpost there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you follow the road north, you'll eventually hit Sloan and Quarry Junction. They mine rocks or something, but I heard they got troubles lately.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wouldn't head that direction if I were you, though. Got critters up there that don't take kindly to getting shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic002",
+   "prompt": "What other towns are nearby?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Around here, mostly coyotes and geckos. The coyotes are pretty dangerous in large packs, but otherwise they're nothing to really worry about.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The geckos aren't too tough, but they've got a nasty bite. I've heard about bigger, nastier versions out in the wasteland, but I've never seen them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stick to the roads when you can, and steer clear of the hills north of Goodsprings. The critters up there are big and poisonous.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic003",
+   "prompt": "What kind of creatures are out there?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you want to know anything else, just ask.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic004",
+   "prompt": "That's all I wanted to know. Let's talk about something else."
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hunt geckos, mostly. The meat's pretty good and I can always find a buyer for the hides.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I also help keep the town clear of radscorpions and coyotes. Not many people live in Goodsprings, so wildlife is always creeping in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic005",
+   "prompt": "What do you do around here?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "At least six, Joe Cobb included. They look pretty mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At least six. They look pretty mean.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic006",
+   "prompt": "How many are there?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're getting set up in cover, but it might not go well unless we get out there soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic007",
+   "prompt": "Where's Trudy and the rest?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, Easy Pete came through with the dynamite. Here's your supply. I really hope I don't blow myself up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be set up near the store. Let's hope that the gang doesn't manage to make it that far.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic008",
+   "prompt": "Let's go."
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "At least his death was quick. Cobb's gang had much worse in mind for him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic009",
+   "prompt": "I wish I could've done more to save him."
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Got a funny name. Call themselves Caesar's Legion. Never seen 'em in these parts, so I couldn't tell you much.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear rumors, that's about it. Supposedly they keep slaves and they got some real nasty ways of killing folks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But maybe that's just something folks in the NCR cooked up to make themselves seem more useful here. Less uninvited.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic012",
+   "prompt": "What do you know about the other group?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The New California Republic. Bunch of settlers and soldiers coming in from the West, fixing on making Nevada their own.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They can be right pushy, but the roads are safer 'cause of them, so I tend to let it go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Not that I got a choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic013",
+   "prompt": "NCR?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Looting the bodies isn't a priority to me, but you go right on ahead.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic014",
+   "prompt": "Yes, terrible shame. Did you find anything of value on the Powder Gangers?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're right, we did. I just wish things had turned out better.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic015",
+   "prompt": "We all knew what we were getting into."
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure can. Take the road southeast out of town till it hits the freeway. Primm is the town with the roller coaster, straight south. Can't miss it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "NCR patrols do a good job of keeping the highway clear, but I'd keep your gun where you can reach it easily. You never know who you'll run into.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Off the road, you'll probably start running into hostile wildlife. My advice would be to stick to the highway when you can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic016",
+   "prompt": "I need to get to Primm. Can you suggest a route?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I guess there's a thing or two I could show you. Sounds like you need all the help you can get after what they done to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Meet me outside, behind the saloon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic019",
+   "prompt": "Doc Mitchell said you could teach me to survive in the desert."
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not in Goodsprings, no. But if you're up for a little scavenging, there's always the schoolhouse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Most of what's in there is junk, but there's this old safe that even Easy Pete wasn't able to crack with dynamite.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to take a shot at it, take these.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic020",
+   "prompt": "I'm a little short on caps. I don't suppose there's any work available?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If the lock's too much for you to handle, reading through the magazine might give you the edge you need.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic021",
+   "prompt": "A magazine on locksmiths?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You'll need those to pick the lock. Be careful, though - put too much pressure on them and they'll snap.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic022",
+   "prompt": "What are the bobby pins for?"
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Always happy to help someone down on their luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic025",
+   "prompt": "All right. I'll go take a look at that safe when I have a chance."
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. Well, go ahead and keep the stuff I gave you, anyway. It'll be more useful to you than me.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic026",
+   "prompt": "Actually, I already cracked that safe."
+  },
+  {
+   "key": "vfreeformgoodspringsgssunnysmilestopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{annoyed at Chet's selfishness} I don't think \"give\" is in Chet's vocabulary. Even with the town at stake, he'd still make you barter with him.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VFreeformGoodspringsGSSunnySmilesTopic027",
+   "prompt": "Would Chet be willing to give us his supplies?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringssunnysmilestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Until next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsSunnySmilesTopic000",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringssunnysmilestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Say no more. I'm in.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsSunnySmilesTopic001",
+   "prompt": "I'm going to help Ringo take on the powder gangers. I might need your help."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringssunnysmilestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Joe Cobb talks about leaving us alone if we hand over Ringo, but I know his type. He and his friends will come after the town eventually.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, between you, me, and Ringo, we aren't exactly a force to be reckoned with. A lot of people around here look up to Trudy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you could convince Trudy to join us, some of the folks in town might decide to help out as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know Easy Pete's got a stock of dynamite somewhere, and Chet just got a shipment of leather armor we could borrow. Talk to them as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Finally, there's a good chance we'll all end up with extra holes in us, so if Doc Mitchell could cough up some extra stimpaks, that'd be great.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Even though Joe Cobb's dead, his friends will come after the town eventually.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "However, between you, me, and Ringo, we aren't exactly a force to be reckoned with. A lot of people around here look up to Trudy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you could convince Trudy to join us, some of the folks in town might decide to help out as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know Easy Pete's got a stock of dynamite somewhere, and Chet just got a shipment of leather armor we could borrow. Talk to them as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Finally, there's a good chance we'll all end up with extra holes in us, so if Doc Mitchell could cough up some extra stimpaks, that'd be great.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsSunnySmilesTopic002",
+   "prompt": "Well, that was easy."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringssunnysmilestopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just like that. I have a feeling that I'm going to end up fighting those guys one way or another, so I might as well get it over with.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsSunnySmilesTopic003",
+   "prompt": "Just like that?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringssunnysmilestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's inspiring. You might want to keep your optimism to yourself if you try to recruit anyone else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsSunnySmilesTopic004",
+   "prompt": "We might die horribly. Well, maybe not me."
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringssunnysmilestopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A silver tongue would help. Convincing Trudy that we had a good plan to win the fight would also help.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsSunnySmilesTopic005",
+   "prompt": "Any ideas on how to convince Trudy to join us?"
+  },
+  {
+   "key": "vfreeformgoodspringsgoodspringssunnysmilestopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Easy Pete's pretty protective of his dynamite. You'd have to convince him you know a thing or two about explosives before he handed it over.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformGoodspringsGoodspringsSunnySmilesTopic007",
+   "prompt": "How can I get Easy Pete's dynamite?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "I'll be waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Until next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vcg02sunnybark",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Now, see those sarsaparilla bottles on that fence there? Take this and try to hit a couple of 'em.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, you're on. Go give 'em hell.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02SunnyBark",
+   "prompt": "VCG02SunnyBark"
+  },
+  {
+   "key": "vcg02sunnyshotreaction",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "That's the right idea. Look down the sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try crouching down and staying still. It'll help your aim.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCG02SunnyShotReaction",
+   "prompt": "VCG02SunnyShotReaction"
+  },
+  {
+   "key": "acceptyield",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "What the hell were you thinking?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AcceptYield",
+   "prompt": "AcceptYield"
+  },
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ow!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Stop it right now!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the-?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Come on!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nyeaa!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "avoidthreat",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get out of the way!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Clear out!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AvoidThreat",
+   "prompt": "AvoidThreat"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ugh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ahhhh...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ough!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You'll pay for that!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fucker!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Fire in the hole!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eat this!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "I gotta get outta here!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's it for me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, screw this!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "guardtrespass",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hey! No trespassing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Find someplace else to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're not supposed to be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GuardTrespass",
+   "prompt": "GuardTrespass"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ahh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ack!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Eyah!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ugh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oof!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "murder",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "You won't get away with that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Oh, what the hell?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey! Why would you do that?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Murder",
+   "prompt": "Murder"
+  },
+  {
+   "key": "murdernocrime",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Not my problem.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just unlucky, I guess.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Must've had it comin'.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "MurderNoCrime",
+   "prompt": "MurderNoCrime"
+  },
+  {
+   "key": "powerattack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Ahhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ehh!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ohha!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Dahhhh!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PowerAttack",
+   "prompt": "PowerAttack"
+  },
+  {
+   "key": "steal",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hands off!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That doesn't belong to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey! Give it back!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Steal",
+   "prompt": "Steal"
+  },
+  {
+   "key": "alertidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Something over there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't see anything, yet...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertIdle",
+   "prompt": "AlertIdle"
+  },
+  {
+   "key": "alerttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "There you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Can't sneak up on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I knew it!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToCombat",
+   "prompt": "AlertToCombat"
+  },
+  {
+   "key": "alerttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Need to stop jumping at shadows.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Huh... Oh, well.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Whatever it was, it's gone now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "AlertToNormal",
+   "prompt": "AlertToNormal"
+  },
+  {
+   "key": "combattolost",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Come out, finish this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I know you're still out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where the hell did you go?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToLost",
+   "prompt": "CombatToLost"
+  },
+  {
+   "key": "combattonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "You should've known better.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, that's that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hahaha!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CombatToNormal",
+   "prompt": "CombatToNormal"
+  },
+  {
+   "key": "lostidle",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Come out you coward!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hiding won't save you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This isn't over!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostIdle",
+   "prompt": "LostIdle"
+  },
+  {
+   "key": "losttocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "There you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's finish what we started.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice try.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToCombat",
+   "prompt": "LostToCombat"
+  },
+  {
+   "key": "losttonormal",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Dammit. Got away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe next time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ah, to hell with this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "LostToNormal",
+   "prompt": "LostToNormal"
+  },
+  {
+   "key": "normaltoalert",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Is someone there?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What was that?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Who's there? Show yourself!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToAlert",
+   "prompt": "NormalToAlert"
+  },
+  {
+   "key": "normaltocombat",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Oh, that's it!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Let's do this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm taking you down!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "NormalToCombat",
+   "prompt": "StartCombat"
+  },
+  {
+   "key": "startcombatresponse",
+   "section": "detection",
+   "responses": [
+    {
+     "text": "Right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here I go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "StartCombatResponse",
+   "prompt": "StartCombatResponse"
+  },
+  {
+   "key": "observecombat",
+   "section": "other",
+   "responses": [
+    {
+     "text": "Whoa, what's going on?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, I'm not a part of this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "ObserveCombat",
+   "prompt": "ObserveCombat"
+  }
+ ],
+ "speaker": "sunny_smiles"
+}

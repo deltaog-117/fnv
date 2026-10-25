@@ -1,0 +1,135 @@
+{
+ "id": "1esquatterwatchquest1",
+ "speaker_name": "Squatter Bill",
+ "source": "1ESquatterWatchQuest1.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're going, we're going!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "squattersbribe",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Sure. You got a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] That don't buy much these days. Double it and you've got a deal.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SquattersBribe",
+   "prompt": "I'd rather not have any trouble. Here's 50 caps, just keep yourself off the streets."
+  },
+  {
+   "key": "squattersintimidate",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] H-Hey... hey, don't worry, I was just kidding. We're going, right boys?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SquattersIntimidate",
+   "prompt": "I'm asking nicely. I only do that *once.*"
+  },
+  {
+   "key": "squattersintimidate_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I ain't moving my stuff just 'cause you ask, nicely or not. Get the fuck out of my sight, punk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SquattersIntimidate",
+   "prompt": "I'm asking nicely. Maybe you should go before I get angry at you."
+  },
+  {
+   "key": "squatterskill",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fuck you, asshole! You're gonna regret it!",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "SquattersKill",
+   "prompt": "<Attack> Easy, I'm just going to kill you."
+  },
+  {
+   "key": "squattersmovealong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh really? And how are you gonna make us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "SquattersMoveAlong",
+   "prompt": "Crandon says you're not allowed to stay here. You'll have to go somewhere else."
+  },
+  {
+   "key": "vdialoguevegasnorth1esquatterwatchquest1topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pleasure doing business with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorth1ESquatterWatchQuest1Topic000",
+   "prompt": "Fine, take it."
+  },
+  {
+   "key": "vdialoguevegasnorth1esquatterwatchquest1topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then we ain't going nowhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorth1ESquatterWatchQuest1Topic001",
+   "prompt": "A hundred caps? Forget it."
+  },
+  {
+   "key": "vdialoguevegasnorth1esquatterwatchquest1topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Pleasure doing business with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorth1ESquatterWatchQuest1Topic003",
+   "prompt": "Here you go."
+  }
+ ],
+ "speaker": "squatter_bill"
+}

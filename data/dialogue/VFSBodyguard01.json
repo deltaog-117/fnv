@@ -1,0 +1,132 @@
+{
+ "page": "VFSBodyguard01.txt",
+ "speaker": "bodyguard for hire",
+ "topics": [
+  {
+   "id": "FSBodyguardAccept",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Wonderful. One thing up front - the moment you leave Freeside, our contract is done. That being said, please, after you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Here's the money. It sounds like I could use a bodyguard."
+  },
+  {
+   "id": "FSBodyguardAccept",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come back when you have the caps, then. If you'll excuse me, I have more important people to talk to in the meantime.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd hire you, but I don't have the caps."
+  },
+  {
+   "id": "FSBodyguardReject",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's your funeral. Come see me when you wise up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't really think I need a bodyguard."
+  },
+  {
+   "id": "FSBodyguardWhyHire",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You could go without one, but you'd be up to your waist in vermin either begging for your caps or demanding it at knifepoint the whole time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've got a reputation for shooting first and not really bothering to ask questions later. With me around, the vermin should keep their distance.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So what'll it be? I've already spotted two other potential customers while we've been chatting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why would I need a bodyguard in Freeside?"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You could do worse than leave your life in my hands, wanderer. Far worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "A hundred caps sees you safely through Freeside. What do you say?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I'm being paid to shoot people who talk to you, not talk to you myself. Just pretend I'm not here or something.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformFreesideVFSBodyguard01Topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you say so. I already got paid, after all.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, I won't be needing your services any longer."
+  },
+  {
+   "id": "VFreeformFreesideVFSBodyguard01Topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm glad that you understand. After you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Will do."
+  },
+  {
+   "id": "FSBodyguardBarks",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Need a bodyguard?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got the caps, I got the guns!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "These guys couldn't keep fleas off a dog. Hire me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FSBodyguard0101"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "id": "vms21liza",
+ "speaker_name": "Liza O'Malley",
+ "source": "VMS21Liza.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Welcome to the NCR Embassy, how can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm kind of busy, what do you want?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Welcome back. What can I do for you this time?",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "If you're looking for Ambassador Crocker, he's not here. He was removed form office and sent home.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess they disagreed with how he handled some of the events out here. It's unfortunate. He was a good man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformthestreet02vms21lizatopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ambassador Crocker can be found in his office through the door to my right at the end of the hall.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "topic": "vFreeformTheStreet02VMS21LizaTopic000",
+   "prompt": "I'm looking for the Ambassador."
+  },
+  {
+   "key": "vfreeformthestreet02vms21lizatopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Embassy offices are to your left while the barracks and living quarters are to the right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're looking for a history lesson, I suggest you talk to Ambassador Crocker.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VMS21LizaTopic001",
+   "prompt": "What can you tell me about the Embassy?"
+  },
+  {
+   "key": "vfreeformthestreet02vms21lizatopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't have time to give my life story to everyone that passes through. Is there something I can actually help you with?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "vFreeformTheStreet02VMS21LizaTopic002",
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "key": "vfreeformthestreet02vms21lizatopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ah, excellent. I received word you may be coming. We helped the receptionist over at Gomorrah with some thugs that were taking advantage of her.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "She owes us a favor. Go talk to her, she'll be able to point you in the right direction.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "vFreeformTheStreet02VMS21LizaTopic003",
+   "prompt": "Moore sent me to talk to you about the Omertas."
+  }
+ ],
+ "speaker": "liza_o_malley"
+}

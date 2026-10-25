@@ -1,0 +1,62 @@
+{
+ "id": "vms18whiteglovefloormanager",
+ "speaker_name": "Ultra-Luxe floor manager",
+ "source": "VMS18WhiteGloveFloorManager.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Small Fry} I must say, fortune seems to be with you of late. Please, enjoy this, compliments of the White Glove Society.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Big Winner} You certainly seem to be making a splash with all your success in the casino. Our executive chef prepared this delicacy for you himself. Enjoy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Whale} You are quite simply the talk of the casino right now with your astonishing play. Do stay in our {BONE veev-ONT, light French 'n' for Bon} Bon Vivant suite so you may continue to dazzle us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Banned} This simply will not do. You must leave immediately.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vcasinocompsultraluxevms18whiteglovefloormanagertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "For a while, you were the toast of the Ultra-Luxe, but you're simply not en vogue any longer. Your act has gotten stale.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCasinoCompsUltraLuxeVMS18WhiteGloveFloorManagerTopic000",
+   "prompt": "What? Why?"
+  },
+  {
+   "key": "vcasinocompsultraluxevms18whiteglovefloormanagertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're still welcome to dine with us, of course. We've just had quite enough of paying you to play our games.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VCasinoCompsUltraLuxeVMS18WhiteGloveFloorManagerTopic002",
+   "prompt": "All right, I'm going."
+  }
+ ],
+ "speaker": "ultra_luxe_floor_manager"
+}

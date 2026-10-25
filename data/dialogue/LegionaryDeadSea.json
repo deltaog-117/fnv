@@ -1,0 +1,333 @@
+{
+ "page": "LegionaryDeadSea.txt",
+ "speaker": "Dead Sea",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The {cutting} \"great\" republic couldn't find enough soliders to liberate this camp, so they sent {emph} you? Pathetic.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "{AH-way} Ave. Why have you come to Nelson?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{annoyed} What is it this time?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yes?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ave. You have done a great service to Caesar. Do so again, but elsewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{disciplined} My orders are to hold Nelson. So far the enemy north of here has been too frightened to move against us. Why should it concern you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the situation here?"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not all of us have the luxury of coming and going as we please. Here, we stay put. {slightly snide}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I was in the area, that's all."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{irked} What stalemate? It is Caesar's will that I hold this position - that I {emph} not advance.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{challenging} If you're so eager to see Camp Forlorn Hope fall, why don't you go attack it all by yourself? Well?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How can I help break the stalemate?"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You have license to go where you please, at my will. {dismissed} True to Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be on my way."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I {stress} have attacked the enemy. I led the assault on Nelson with two contubernia against twice our number. {offended}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "It is Caesar's wish that we {emph} hold this position. Our mere presence this side of the Colorado humiliates and demoralizes the enemy. {justifying yourself}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why haven't you attacked the enemy?"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I do not question Caesar's will! I do not second-guess! {angry}",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "I butchered this town. Those who weren't hacked limb from limb were forced to throw themselves from the cliffs. Three more, I have just crucified. {still on a roll}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "All this, in full view of the enemy's spotters to the north. Yes, our presence here demoralizes the enemy. {satisfied}",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "prompt": "You're demoralizing the enemy by leaving them alone?"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{doubting the player will attack the enemy, and if so, that he will survive} That remains to be seen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sounds like fun. I'll be right back."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You are not my Centurion! You aren't even Legion! I do not \"carry on\" at your command. {offended by presumption of authority}",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "{with contempt - \"goodbye\"} True to Caesar.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Even if you {emph.} are Legion, you are not my Centurion! I do not \"carry on\" at your command.",
+     "emotion": "anger",
+     "intensity": 35
+    },
+    {
+     "text": "{with contempt - \"goodbye\"} True to Caesar.",
+     "emotion": "anger",
+     "intensity": 15
+    }
+   ],
+   "prompt": "No offense intended. Carry on."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "True to Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll be on my way."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "True to Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A vow without action is breath across the lips, nothing more. True to Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm going to kill everyone at Camp Forlorn Hope."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "A glorious victory. You must be very {gritting your teeth} satisfied. {begrudging the player's success - you wish the glory was yours}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll send word of your achievement. Perhaps {kai-zar} Caesar will see fit to send another contubernium to occupy the Camp. {wishing the triumph were yours}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here - take this, my blade. It was a gift from my Centurion upon the defeat of the Sun Dog tribe.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've slaughtered the enemy at Camp Forlorn Hope."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then there's nothing for us to talk about. {dismissed} True to Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Nothing new to report, actually."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{What's done is done} True to {KAI-zar} Caesar. {Humiliated by the player's triumph, you give up your cherished blade to your rival to force yourself to distinguish yourself later.}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll carry your blade with honor."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That blade has split the heads of... {collecting yourself} The only reason I give it to you is to force myself to earn another. True to Caesar. {Voice trembling with rage}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why would I want a piece of shit machete?"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You don't understand. I'll have to distinguish myself in battle to earn another. {irritated} True to Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You earned your blade. Keep it."
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am a loyal servant of Caesar, and I thank my good fortune for the day that he plucked me as a babe from the shore of the Great Salt Lake.",
+     "emotion": "pained",
+     "intensity": 5
+    },
+    {
+     "text": "For five years I have had the privilege of serving as a Decanus. If fortune continues to smile upon me, I will serve him until I draw my last breath.",
+     "emotion": "pained",
+     "intensity": 5
+    },
+    {
+     "text": "I hope that satisfies your curiosity about me, because I won't waste any more of Caesar's time talking about myself.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll execute Caesar's will by hurling your corpse into the Colorado - like the other Profligates before you!",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "What are you going to do about it?"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am Dead Sea, Decanus of the Legion by the grace of Caesar, not that {emph} you're in any position to ask questions.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Who are you?"
+  },
+  {
+   "id": "VDeadSeaLegionaryDeadSeaTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{menacing} True to Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's see who's pathetic."
+  }
+ ]
+}

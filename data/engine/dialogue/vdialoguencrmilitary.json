@@ -1,0 +1,516 @@
+{
+ "id": "vdialoguencrmilitary",
+ "speaker_name": "NCR trooper",
+ "source": "VDialogueNCRMilitary.txt",
+ "topics": [
+  {
+   "key": "assault",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Check your fire!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Assault",
+   "prompt": "Assault"
+  },
+  {
+   "key": "attack",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Get some!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Attack",
+   "prompt": "Attack"
+  },
+  {
+   "key": "death",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Gaaah!",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "Urgh!",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "Aaaah!",
+     "emotion": "pained",
+     "intensity": 100
+    }
+   ],
+   "topic": "Death",
+   "prompt": "Death"
+  },
+  {
+   "key": "deathresponse",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Man down!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "DeathResponse",
+   "prompt": "DeathResponse"
+  },
+  {
+   "key": "fireexplosive",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Frag out!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fire in the hole!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "FireExplosive",
+   "prompt": "FireExplosive"
+  },
+  {
+   "key": "flee",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Retreat!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Fall back!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "Flee",
+   "prompt": "Flee"
+  },
+  {
+   "key": "hit",
+   "section": "combat",
+   "responses": [
+    {
+     "text": "Hmph!",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "Ahh!",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "Argh!",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "Oof!",
+     "emotion": "pained",
+     "intensity": 100
+    },
+    {
+     "text": "Ugh!",
+     "emotion": "pained",
+     "intensity": 100
+    }
+   ],
+   "topic": "Hit",
+   "prompt": "Hit"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Sir.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Ma'am.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Let's get going!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How did the Legion make it into the power plant?",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "You need to get to the Legate!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We won't go quietly. The Legion can count on that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sounds like we're running Primm now. I'd still rather take my leave at the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First Recon's at Camp Forlorn Hope. Now we've got a chance to hold it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nelson's back in our hands. I hope we can defend it this time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is it me, or has the Brotherhood stopped engaging us? Smartest move they ever made, you ask me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Smart move for the Kings to back down. They didn't know who they were messing with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We signed a treaty with the Great Khans. Guess you can never have too many lowlife chem dealers on your side.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sickens me that the Legion would try to harvest slaves from a refugee camp.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "President Kimball is lucky he escaped. I don't think we could lose him right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wish I could've been there to see Caesar die. What an asshole.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Patrolling the Mojave almost makes you wish for a nuclear winter.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  },
+  {
+   "key": "greeting",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "How do we know if Mr. House is really gone? No one's ever seen him in the first place!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Colonel Moore survived four tours against the Brotherhood back west. If anyone can help take on the Legion, it's her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You hear that rumor that Colonel Moore was kicked out of Gomorrah a while back? I heard she's had it in for the Omertas ever since.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm really surprised Colonel Moore accepted the Brotherhood's help. I heard she lost a lot of men in war with them back west.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is it true? Was there really a Brotherhood base nearby that blew sky high?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard a rumor that Moore hired some mercs to wipe out the Khans. Is that such a good idea, with Bitter Springs still on peoples' minds back home?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Man, I'm exhausted. Moore's got us running drills non-stop.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just between us, Colonel Moore scares me sometimes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How did the Legion make it into the power plant?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "Let's get going!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Lucky 38's all lit up because someone infiltrated the El Dorado and flipped a switch. I'd shoot those lights out if I could.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When I got this assignment I was hoping there'd be more gambling.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Patrolling the Mojave almost makes you wish for a nuclear winter.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why don't you go join the rest of the human trash across the river?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Defiant}Come on. Give me a reason.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Shooting you right now might be worth the court-martial.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I suggest you leave.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep walking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got a lot of nerve walking around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You need to get your head straight. If you're fighting for us, act like it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You're insane. We shouldn't be letting you run loose around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How are we supposed to trust you? You're completely unpredictable.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Everything you've been up to... I just don't know what you're trying to pull.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At least the Legion knows what they're fighting for. When are you gonna figure it out?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why don't you pick a side? We did.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Honored to speak with you, sir.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Honored to speak with you, ma'am.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nice job out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Glad you're with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey. Welcome aboard.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm not sure you should be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You lost?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We won't go quietly. The Legion can count on that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sounds like we're running Primm now. I'd still rather take my leave at the Strip.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First Recon's at Camp Forlorn Hope. Now we've got a chance to hold it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Nelson's back in our hands. I hope we can defend it this time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Is it me, or has the Brotherhood stopped engaging us? Smartest move they ever made, you ask me.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Smart move for the Kings to back down. They didn't know who they were messing with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We signed a treaty with the Great Khans. Guess you can never have too many lowlife chem dealers on your side.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sickens me that the Legion would try to harvest slaves from a refugee camp.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "President Kimball is lucky he escaped. I don't think we could lose him right now.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Wish I could've been there to see Caesar die. What an asshole.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got business here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With House dead, we'll have Vegas annexed before the year's out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You know, if you were serving, you'd probably be halfway to general by now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguethestreetss1fem01wooo",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Check your weapons and move up!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Move up to the next position.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All clear!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Zone clear! Advance to the next position.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That looks like all of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I think it is safe to move up.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Keep your heads down and move up to the next location.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Looks like we got them, move fast and look alive.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueTheStreetSS1Fem01Wooo",
+   "prompt": "WoooooOOOOOOoooooo"
+  }
+ ],
+ "speaker": "ncr_trooper"
+}

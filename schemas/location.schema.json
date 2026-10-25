@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "location.schema.json",
+  "title": "Location",
+  "description": "One entry in data/engine/locations.json. Every map marker is a node; `neighbors` is a derived travel graph.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "dlc"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "type": "string",
+      "description": "settlement, district, building, cave, landmark, military, ruins, section, unmarked, vault, ..."
+    },
+    "size": {
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "dlc": {
+      "$ref": "common.schema.json#/$defs/dlc"
+    },
+    "source": {
+      "type": "string"
+    },
+    "cell": {
+      "type": "string",
+      "description": "GECK cell name."
+    },
+    "marked": {
+      "type": "boolean",
+      "description": "Has a map marker in the Pip-Boy."
+    },
+    "region": {
+      "type": "string",
+      "description": "Heading path in the wiki's locations overview, e.g. 'New Vegas > Freeside'."
+    },
+    "map": {
+      "enum": [
+        "base",
+        "dead_money",
+        "honest_hearts",
+        "old_world_blues",
+        "lonesome_road"
+      ]
+    },
+    "position": {
+      "type": "object",
+      "required": [
+        "x",
+        "y"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1024
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1024
+        }
+      },
+      "description": "Map pixels, 1024x1024, origin top-left."
+    },
+    "map_category": {
+      "type": "string"
+    },
+    "parent": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "parent_text": {
+      "type": "string"
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "neighbors": {
+      "type": "array",
+      "description": "Derived: nearest markers plus a spanning tree, same map. distance is in map pixels.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "distance"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "distance": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "factions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "leaders": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "merchants": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "doctors": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "people_unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quests": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "creatures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "faction_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      },
+      "description": "factions matched to factions.json."
+    }
+  }
+}

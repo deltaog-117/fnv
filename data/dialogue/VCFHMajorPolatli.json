@@ -1,0 +1,496 @@
+{
+ "page": "VCFHMajorPolatli.txt",
+ "speaker": "Joseph Polatli",
+ "topics": [
+  {
+   "id": "BitterSpringsTroopers",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Cool, slightly annoyed} Sorry, I'm not in the habit of letting random civilians dictate my troop deployment schedule.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "{Calm} I'll be honest, the Legion has me worried here, but I think I can spare some soldiers. Consider your request granted.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "{Calm} You handled yourself well against the Legion, and that took some of the pressure off of us. I'll send a couple of troops out there right now.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "prompt": "Captain Gilles at Bitter Springs needs reinforcements. Can you spare any?"
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I have a report here that says the Legion forces at Nelson have been taken care of and that you had a hand in it.",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "You have my thanks for that. Those guys have been giving us a lot of trouble for a long time now.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Now that they're gone, we'll be able to prepare for the upcoming conflict at Hoover Dam.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I heard you've been helping out Quartermaster Mayes. I appreciate it, we need all the help we can get around here.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I heard you won Private Sexton's little contest. Congratulations. It's nice to have morale up around here.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Dr. Richards told me how you helped him with his missing supplies. It's unfortunate about Private Stone, but at least it's over with now.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I heard about how you saved the President's life. It's a good thing you were there. Things could have turned out really ugly.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "It's hard to believe that there was an actual assassination attempt on the President's life. We sure got lucky this time.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I can't believe President Kimball is dead... the last thing we needed around here was another morale hit.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "You must be new around here. Something I can do for you?",
+     "emotion": "surprise",
+     "intensity": 10
+    },
+    {
+     "text": "I didn't expect someone as famous as you to be here. Please tell me you're here to help.",
+     "emotion": "surprise",
+     "intensity": 25
+    },
+    {
+     "text": "I'm glad to see you here. We could definitely use your help.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I've heard of you. You better not cause any trouble around here, we have enough problems as it is.",
+     "emotion": "disgust",
+     "intensity": 25
+    },
+    {
+     "text": "Hum... I've heard of you. What do you want?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "You've got a lot of nerve coming into our camp.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Brusque} What do you want?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "We're kind of busy around here for social calls, so if you're not here to help out, just stay out of my way.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "Back already? What do you need?",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm short staffed and I don't have the time to take care of some issues around the camp.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I need someone to talk to a few of the officers and help them resolve some of the problems around here.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "I've got the Legion at Nelson breathing down my neck and not enough men or supplies to get this camp into fighting shape so we can strike back.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I need someone to talk to a few of the officers and help them resolve some of the problems around here.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "If I can get this place in order, then I can focus our efforts on taking back Nelson from the Legion.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "And the more that gets done around here, the more resources I'll be able to put into assaulting Nelson.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you need help with?"
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, let's not waste time then. Our biggest problems right now are supplies and troops, and the Legion is draining us of both.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Quartermaster Mayes has been complaining to me nonstop about the lack of supplies, but unfortunately we aren't getting a resupply any time soon.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "I want you speak with him and see if there's anything you can do for him.",
+     "emotion": "neutral",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I could do that for you."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll be here if you change your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't have time for this."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're welcome. Enjoy.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Thanks, I appreciate it."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not really, but we don't have much choice. If you help out more around the camp I could spare some additional men for the battle.",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "We have a decent amount of men, but it'll be a close battle. If you help out more around the camp, I could probably spare some additional troops.",
+     "emotion": "fear",
+     "intensity": 10
+    },
+    {
+     "text": "We've been reinforced fairly well, thanks to your help. I'd say the odds are in our favor.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "However, if you help out a little more around the camp, we'd be in a good enough position to send our best men to help retake Nelson.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks to your help, we have more than enough men to take those Legion bastards.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you have the troops to retake Nelson?"
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, with that over with and the Legion forces at Nelson defeated, we finally have some breathing room.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Now we can actually try to strengthen our forces along the river and prepare for the upcoming battle at Hoover Dam.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "With the help you've given us, we're doing a little bit better, but we still have the Legion forces at Nelson to deal with.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "If we can retake Nelson, that will be a huge help to our efforts in this area and give us an advantage at Hoover Dam.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "What do you want me to do now?"
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Legion forces have been reinforced and are looking pretty strong. It's going to be a tough fight.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "The Legion forces are hurting pretty bad, actually. This is the perfect opportunity for us.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Reports have the Legion forces at Nelson sizable, but not insurmountable.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is there any intel on the Legion forces at Nelson?"
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can spare a few moments, make it quick.",
+     "emotion": "surprise",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I have some questions about the NCR."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's very gracious of you. Again, you have my thanks.",
+     "emotion": "happy",
+     "intensity": 45
+    }
+   ],
+   "prompt": "That's not necessary."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard. The extra supplies will help for a short time, but that only solves one of our problems.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "With all the Legion raids lately, we're running low on troops that can still fight. Some are injured, but even more are dead.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "I want you to check in with Dr. Richards and see if he needs any help getting our troops back on the front line.",
+     "emotion": "neutral",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I've helped Quartermaster Mayes get some supplies."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I heard from Dr. Richards. Too bad you weren't able to help him with anything, but we all can't be doctors.",
+     "emotion": "sad",
+     "intensity": 25
+    },
+    {
+     "text": "I heard from Dr. Richards and I wouldn't call what you did helping. We need all the men we can get on the frontline.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "I heard from Dr. Richards. I'm glad you were at least some use to him.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Dr. Richards said you did a good job in there. That's mighty high praise coming from him.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've finished helping Dr. Richards."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Excellent. Killing the Legion commanders in Nelson will severely cripple the Legion forces and allow us to take back the city.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Meet up with Sergeant Cooper just outside Nelson. He will assist you in reclaiming Nelson.",
+     "emotion": "neutral",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I'm ready. Let's do it!"
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come back when you're ready.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "I'll need some time to prepare."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Things are looking good. With the new resources and support, morale is at the highest it's ever been around here.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "Well, things have been improving lately. More supplies, more troops. We might actually be able to turn things around.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "We're hanging in there. Things wouldn't be so bad if we could actually get some reinforcements or supplies, but we'll just have to survive for now.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Not good. We still haven't gotten any support from the rest of the NCR and the Legion is kicking our ass right now.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "prompt": "How do things look around the camp?"
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's no picnic, I'll tell you that much. My troops are out here every day dying for the NCR, but they've left us out to dry.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "We have no men or supplies and we're stretched too thin trying to guard the entire river.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "If the brass back home could get their heads out of their asses long enough to send support, we could turn this all around.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "prompt": "What's your take on the NCR's position here?"
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you ready?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The initial reports have come back already. Excellent work. This will buy us a lot of breathing room to get back on our feet here.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Now we can actually try to strengthen our forces along the river and prepare for the upcoming battle at Hoover Dam.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "You have my thanks, we owe you a lot.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I'd like to give you something to thank you for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to talk about the attack on Nelson."
+  },
+  {
+   "id": "VMS30VCFHMajorPolatliTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make it quick.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Watch yourself out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

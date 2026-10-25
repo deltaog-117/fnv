@@ -1,0 +1,100 @@
+{
+ "page": "VFSKingWaterPumpGreeter.txt",
+ "speaker": "Tapper",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, you helped out Bill Ronte so the Followers worked out a deal for you to drink free.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The King controls the water pump. If you want water, you need to pay like everyone else.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformFreesideVFSKingWaterPumpGreeterTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If we let everyone run amok, the damn NCR would shut us down. Gotta have some way to regulate usage.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why charge for water?"
+  },
+  {
+   "id": "VFreeformFreesideVFSKingWaterPumpGreeterTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Just a few caps for a good long swig.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You already paid, bub. Get a drink then come back and see me if you still want more.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How much for a drink?"
+  },
+  {
+   "id": "VFreeformFreesideVFSKingWaterPumpGreeterTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I buy bottled water?"
+  },
+  {
+   "id": "VFreeformFreesideVFSKingWaterPumpGreeterTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't get wise. We charge per use, so make that first drink worth the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 10 caps>"
+  },
+  {
+   "id": "VFreeformFreesideVFSKingWaterPumpGreeterTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything else you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind."
+  },
+  {
+   "id": "VFSWaterPumpBark",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The pump is property of The King. You'll need to pay if you want a drink.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSWaterPumpBark"
+  }
+ ]
+}

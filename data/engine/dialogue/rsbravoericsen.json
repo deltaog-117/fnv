@@ -1,0 +1,93 @@
+{
+ "id": "rsbravoericsen",
+ "speaker_name": "Ericsen",
+ "source": "RSBravoEricsen.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in NCR gear} You don't walk like any trooper I've ever seen, but I'll let it slide. What do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Player in not in NCR gear} What brings you to Ranger Station Bravo?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Something up?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vmsrsbravoquestrsrangerbravoericsentopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're here to make sure the Legion doesn't try to sneak around Lake Mead and come at NCR from another direction.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSRangerBravoEricsenTopic000",
+   "prompt": "What do you do out here?"
+  },
+  {
+   "key": "vmsrsbravoquestrsrangerbravoericsentopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yep.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSRangerBravoEricsenTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vmsrsbravoquestrsrangerbravoericsentopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{NCR - Rascal+} You're not stationed here, but your rep with the NCR speaks for itself. It's mostly rifle rounds, but I'll throw in a few boxes of pistol ammo.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I really shouldn't be doing this for you, but there's no way we're going to use all of this or be able to carry it with us.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{NCR Reputation < 3} Sorry, it's against regulation for me to give away NCR supplies to anyone not stationed at this post. Wouldn't want you using it against us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMSRSBravoQuestRSRangerBravoEricsenTopic006",
+   "prompt": "Tilden mentioned you had surplus ammo. Mind if I have some?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Yep.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "ranger_ericsen"
+}

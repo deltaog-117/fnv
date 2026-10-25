@@ -1,0 +1,393 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "item.schema.json",
+  "title": "Item",
+  "description": "One entry in data/engine/<group>.json. `kind` selects the shape.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "dlc",
+    "value",
+    "weight"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "weapon",
+        "armor",
+        "ammo",
+        "consumable",
+        "weapon_mod",
+        "skill_book",
+        "misc"
+      ]
+    },
+    "dlc": {
+      "$ref": "common.schema.json#/$defs/dlc"
+    },
+    "unique": {
+      "type": "boolean"
+    },
+    "value": {
+      "type": "number",
+      "minimum": 0
+    },
+    "weight": {
+      "type": "number",
+      "minimum": 0
+    },
+    "edid": {
+      "type": "string"
+    },
+    "form_id": {
+      "$ref": "common.schema.json#/$defs/form_id"
+    },
+    "source": {
+      "type": "string",
+      "description": "Wiki page the record was imported from."
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "kind": {
+          "const": "weapon"
+        }
+      },
+      "required": [
+        "weapon_class",
+        "damage"
+      ],
+      "$ref": "#/$defs/weapon"
+    },
+    {
+      "properties": {
+        "kind": {
+          "const": "armor"
+        }
+      },
+      "required": [
+        "slot",
+        "dt"
+      ],
+      "$ref": "#/$defs/armor"
+    },
+    {
+      "properties": {
+        "kind": {
+          "const": "ammo"
+        }
+      },
+      "required": [
+        "family"
+      ],
+      "$ref": "#/$defs/ammo"
+    },
+    {
+      "properties": {
+        "kind": {
+          "const": "consumable"
+        }
+      },
+      "required": [
+        "effects_text"
+      ],
+      "$ref": "#/$defs/consumable"
+    },
+    {
+      "properties": {
+        "kind": {
+          "const": "weapon_mod"
+        }
+      },
+      "required": [
+        "effects_text"
+      ],
+      "$ref": "#/$defs/weapon_mod"
+    },
+    {
+      "properties": {
+        "kind": {
+          "const": "skill_book"
+        }
+      },
+      "required": [
+        "skill",
+        "effects_text"
+      ],
+      "$ref": "#/$defs/skill_book"
+    },
+    {
+      "properties": {
+        "kind": {
+          "const": "misc"
+        }
+      },
+      "$ref": "#/$defs/misc"
+    }
+  ],
+  "$defs": {
+    "weapon": {
+      "properties": {
+        "weapon_class": {
+          "enum": [
+            "gun",
+            "automatic",
+            "handload",
+            "melee",
+            "unarmed",
+            "grenade",
+            "mine",
+            "misc"
+          ]
+        },
+        "skill": {
+          "$ref": "common.schema.json#/$defs/skill"
+        },
+        "damage": {
+          "type": "number",
+          "minimum": 0
+        },
+        "crit_damage": {
+          "type": "number",
+          "minimum": 0
+        },
+        "crit_chance_mult": {
+          "type": "number",
+          "minimum": 0
+        },
+        "shots_per_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "ap_cost": {
+          "type": "number",
+          "minimum": 0
+        },
+        "strength_req": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "skill_req": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "condition_hp": {
+          "type": "number",
+          "minimum": 0
+        },
+        "spread": {
+          "type": "number",
+          "minimum": 0
+        },
+        "projectiles": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ammo_family": {
+          "$ref": "common.schema.json#/$defs/id",
+          "description": "Ammo family id, see ammo.family."
+        },
+        "ammo_text": {
+          "type": "string",
+          "description": "Unresolved ammo name from the wiki."
+        },
+        "ammo_per_shot": {
+          "type": "number",
+          "minimum": 0
+        },
+        "clip_size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reload_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "explosion_damage": {
+          "type": "number",
+          "minimum": 0
+        },
+        "effect_text": {
+          "type": "string"
+        },
+        "repair_text": {
+          "type": "string"
+        }
+      }
+    },
+    "armor": {
+      "properties": {
+        "slot": {
+          "enum": [
+            "body",
+            "head",
+            "clothing"
+          ]
+        },
+        "armor_class": {
+          "enum": [
+            "light",
+            "medium",
+            "heavy",
+            "power"
+          ]
+        },
+        "dt": {
+          "type": "number",
+          "minimum": 0
+        },
+        "dr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "condition_hp": {
+          "type": "number",
+          "minimum": 0
+        },
+        "effects_text": {
+          "type": "string"
+        },
+        "repair_text": {
+          "type": "string"
+        }
+      }
+    },
+    "ammo": {
+      "properties": {
+        "family": {
+          "$ref": "common.schema.json#/$defs/id",
+          "description": "Weapons reference this id in ammo_family."
+        },
+        "variant": {
+          "type": "string",
+          "description": "e.g. standard, armor piercing, hollow point."
+        },
+        "weight_hardcore": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "consumable": {
+      "properties": {
+        "effects_text": {
+          "type": "string"
+        },
+        "effects_hardcore_text": {
+          "type": "string"
+        },
+        "effects": {
+          "type": "array",
+          "description": "Best-effort parse of simple '+N Stat for T' effects.",
+          "items": {
+            "$ref": "#/$defs/stat_effect"
+          }
+        },
+        "addiction": {
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "chance_percent": {
+              "type": "number"
+            }
+          }
+        },
+        "skill": {
+          "type": "string"
+        }
+      }
+    },
+    "weapon_mod": {
+      "properties": {
+        "effects_text": {
+          "type": "string"
+        },
+        "modifies_text": {
+          "type": "string"
+        },
+        "modifies": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "description": "Weapon ids, when resolved."
+        }
+      }
+    },
+    "stat_effect": {
+      "type": "object",
+      "required": [
+        "stat",
+        "amount"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "stat": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "number"
+        },
+        "per_second": {
+          "type": "boolean"
+        },
+        "duration_s": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "skill_book": {
+      "properties": {
+        "skill": {
+          "$ref": "common.schema.json#/$defs/skill"
+        },
+        "amount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "periodical": {
+          "type": "boolean",
+          "description": "A skill magazine: temporary bonus instead of a permanent one."
+        },
+        "duration_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "effects_text": {
+          "type": "string"
+        }
+      }
+    },
+    "misc": {
+      "properties": {
+        "item_type": {
+          "type": "string"
+        },
+        "component_of_text": {
+          "type": "string"
+        },
+        "effects_text": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}

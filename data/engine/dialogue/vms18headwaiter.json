@@ -1,0 +1,80 @@
+{
+ "id": "vms18headwaiter",
+ "speaker_name": "Head waiter",
+ "source": "VMS18HeadWaiter.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How may I assist?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms18vms18headwaitertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But no one is in their chairs yet. Surely we should wait until 7 when the dinner guests arrive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be ready when you need me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeadWaiterTopic000",
+   "prompt": "The wine is ready to be brought out."
+  },
+  {
+   "key": "vms18vms18headwaitertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "At once.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But no one is in their chairs yet. Surely we should wait until 7 when the dinner guests arrive.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be ready when you need me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeadWaiterTopic001",
+   "prompt": "Time to serve the meal."
+  },
+  {
+   "key": "vms18vms18headwaitertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeadWaiterTopic002",
+   "prompt": "Never mind."
+  }
+ ],
+ "speaker": "head_waiter"
+}

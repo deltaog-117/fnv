@@ -1,0 +1,1053 @@
+{
+ "id": "v03bryceanders",
+ "speaker_name": "Bryce Anders",
+ "source": "V03BryceAnders.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's better not to do a lot of talking on assassination missions.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear you took care of Motor-Runner. I could have handled that on my own.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for the help back at Vault 3. I couldn't have gotten out of there without the assist.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thanks for the assistance, doc. Time for us to go take out Motor-Runner?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What do you need? I have a job to do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm ready to take out Motor-Runner when you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "How the hell did you get in here? And who the hell are you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What are you doing here, soldier? I didn't call for any support.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Why the fuck are you back here?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms07anderskey",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Daniel. Probably find him back in the Residential Wing somewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07AndersKey",
+   "prompt": "What was the name of the Fiend who was carrying keys?"
+  },
+  {
+   "key": "vms07doctorbag",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "How's it look, doc?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07DoctorBag",
+   "prompt": "Let me take another look at that leg."
+  },
+  {
+   "key": "vms07greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for the assistance taking out Motor-Runner. I'll be heading back to McCarran. I'll put in a good word for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07Greeting",
+   "prompt": "VMS07Greeting"
+  },
+  {
+   "key": "vms07v03bryceanderstopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hsu sent you? This was my mission! {\"Shoe\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic000",
+   "prompt": "I was sent here by Colonel Hsu."
+  },
+  {
+   "key": "vms07v03bryceanderstopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He sent you? Why?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic000",
+   "prompt": "<Lie> Colonel Hsu sent me here to find you."
+  },
+  {
+   "key": "vms07v03bryceanderstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are you looking to find out?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic001",
+   "prompt": "What can you tell me about this place?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Make yourself scarce. If you get yourself in trouble, I'm not going to cover your back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic002",
+   "prompt": "Never mind, I'm leaving now."
+  },
+  {
+   "key": "vms07v03bryceanderstopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Why I'm here is my business. If you don't have a question for me then get lost.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic003",
+   "prompt": "What am I doing here? What are you doing here?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Fiends killed everyone living here, and now they are squatting in their home.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic004",
+   "prompt": "What can you tell me about what happened here?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This was Vault 3, but I'm sure you can tell that by all the 3s all over the damn place. Now it is a drug den for the goddamn Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic005",
+   "prompt": "What is this place?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Fiends are degenerate drug addicts who kill and rape for fun, basically. They're human garbage - though I'm not sure about the human part.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic006",
+   "prompt": "Who are the Fiends?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You can go back to old Hsu and tell him that the mission will be completed. I just need a couple more days. {\"Shoe\"}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic007",
+   "prompt": "The Colonel was concerned. You missed your check-in."
+  },
+  {
+   "key": "vms07v03bryceanderstopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is that right? And what sort of support, exactly, is it that you have to offer?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic008",
+   "prompt": "Colonel Hsu thinks you need additional support."
+  },
+  {
+   "key": "vms07v03bryceanderstopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good idea. Try not to get hurt out there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic009",
+   "prompt": "I'm sure you can handle it alone. I'll leave you to it."
+  },
+  {
+   "key": "vms07v03bryceanderstopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah? Nice thought, but that's not my primary mission. If you want to go it solo, more power to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic010",
+   "prompt": "I want to help you rescue the hostages."
+  },
+  {
+   "key": "vms07v03bryceanderstopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I guess you're right. I won't be able to move fast, but I can more than hold my own in a firefight. Here, take the key...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take this key to the Maintenance Wing. Should make getting to Motor-Runner a whole easier. I'll follow you down.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[SUCCEEDED] I guess you're right. I won't be able to move fast, but I can more than hold my own in a firefight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Goddammit! Is there nothing I can't fuck up here? I've lost the goddamn key!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, this whole thing's improvised, and now we'll have to improvise some more and find another way through. I'll follow you down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic011",
+   "prompt": "The only way you're going to take out Motor-Runner is if we work together.",
+   "label": "SPEECH attempt to convince Bryce to help take out Motor-Runner"
+  },
+  {
+   "key": "vms07v03bryceanderstopic011_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Thanks for the offer - but the answer is no. Once my leg is healed up, I'll take care of Motor-Runner easily enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic011",
+   "prompt": "Let's you and me take out Motor-Runner together!",
+   "label": "SPEECH attempt to convince Bryce to help take out Motor-Runner"
+  },
+  {
+   "key": "vms07v03bryceanderstopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bad idea on all sorts of levels. Leave it to the professionals, kid.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic012",
+   "prompt": "Let me take out Motor-Runner for you."
+  },
+  {
+   "key": "vms07v03bryceanderstopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's it look like? I caught one in the leg. I killed a dozen of those degenerates sneaking my way in... but one got a drop on me. {hates admitting it}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I holed up in here after I killed that one. They're too stupid to unlock the doors, so I knew they'd figure whoever attacked had just taken off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I just need day or two and then I'll take out Motor-Runner myself. I even got the key to his Maintenance Wing. Situation's under control.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic014",
+   "prompt": "What's the hold-up - if you don't mind my asking?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Goddammit. I know. Was just hoping that, uh...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you trained as a doctor? Can you fix my leg?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic015",
+   "prompt": "I'm afraid your leg looks - and smells - like it's on the verge of infection.",
+   "label": "MEDICINE attempt to convince Bryce"
+  },
+  {
+   "key": "vms07v03bryceanderstopic015_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] The slug went straight through. I'm a goddamned NCR ranger, all right? I'm trained in first aid!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic015",
+   "prompt": "A day or two of resting up isn't going to heal that leg.",
+   "label": "MEDICINE attempt to convince Bryce"
+  },
+  {
+   "key": "vms07v03bryceanderstopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goddammit. Fine. I'll head back. Are you saying you'll handle Motor-Runner yourself?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic016",
+   "prompt": "If you head for McCarran now, I think you'll make it in time - even at a limp."
+  },
+  {
+   "key": "vms07v03bryceanderstopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What are we waiting for? I've got a high-value target to kill!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic017",
+   "prompt": "I have a doctor's bag right here. It should be enough to get you on your feet."
+  },
+  {
+   "key": "vms07v03bryceanderstopic017_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks, doc. The Fiends have got a ton of pharmaceuticals out there. Here's hoping a doctor's bag is in the mix.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic017",
+   "prompt": "You need a doctor's bag. I'll find one and come back."
+  },
+  {
+   "key": "vms07v03bryceanderstopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right. Let me give you the key to the Maintenance Wing...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Goddammit! Is there nothing I can't fuck up here? I've lost the goddamn key!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't know what to say. You'll have to find your own way to get at that sick bastard. Hope to see you back at McCarran.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here, take this. It's the key to the Maintenance Wing. Should make getting to Motor-Runner that much easier. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic018",
+   "prompt": "I'll check in with you and Colonel Hsu when it's done."
+  },
+  {
+   "key": "vms07v03bryceanderstopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah? Well, there's a ton of pharmaceuticals out there. Maybe you can find one and bring it back to me. It'd be a great help...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic019",
+   "prompt": "I don't have a spare doctor's bag I can spare."
+  },
+  {
+   "key": "vms07v03bryceanderstopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, but make it quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic021",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vms07v03bryceanderstopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Tell me why I should tell you anything. I don't know you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic022",
+   "prompt": "Tell me what an NCR ranger is doing here."
+  },
+  {
+   "key": "vms07v03bryceanderstopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Oh, my apologies sir. I was sent here by Colonel Hsu to exterminate Motor-Runner, the leader of the Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic023",
+   "prompt": "<Lie>I'm an independent contractor with the NCR."
+  },
+  {
+   "key": "vms07v03bryceanderstopic023_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Your curiosity and a few caps will get you a rat on a stick, but it won't get you fuck all from me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic023",
+   "prompt": "I'm just curious."
+  },
+  {
+   "key": "vms07v03bryceanderstopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, what do you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic024",
+   "prompt": "I just have a couple questions."
+  },
+  {
+   "key": "vms07v03bryceanderstopic024duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, what do you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic024DUPLICATE000",
+   "prompt": "I just have a couple questions."
+  },
+  {
+   "key": "vms07v03bryceanderstopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, take this goddamn key anyways. It'll get you into the Maintenance Wing. Maybe you'll brave up and do the right thing. Good luck.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well, take this goddamn key anyways. It'll get you into the Maintenance Wing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Goddammit! Is there nothing I can't fuck up here? I've lost the goddamn key!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's it. I'm heading for McCarran. Good luck to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic025",
+   "prompt": "I didn't come here to do your job for you."
+  },
+  {
+   "key": "vms07v03bryceanderstopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll follow you down to Motor-Runner. Here, take the key to the maintenance wing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, I'll follow you down to Motor-Runner. Here, take the key to the maintenance wing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crap, it looks like I may have lost it. I sure hope you have some way to get us through that door.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic026",
+   "prompt": "I could use your help taking care of Motor-Runner."
+  },
+  {
+   "key": "vms07v03bryceanderstopic026duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll follow you down to Motor-Runner. Here, take the key to the maintenance wing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, I'll follow you down to Motor-Runner. Here, take the key to the maintenance wing.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Crap, it looks like I may have lost it. I sure hope you have some way to get us through that door.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic026DUPLICATE000",
+   "prompt": "I could use your help taking care of Motor-Runner."
+  },
+  {
+   "key": "vms07v03bryceanderstopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? It doesn't feel any better... but I'll take your word on it. Motor-Runner, here I come.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic028",
+   "prompt": "<Lie> I think your leg's in good enough shape. You're all set."
+  },
+  {
+   "key": "vms07v03bryceanderstopic028duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? I didn't think my leg was up to full speed yet, but I'll take your word on it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll go take care of Motor-Runner.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic028DUPLICATE000",
+   "prompt": "<Lie> I think you are healthy enough to take care of Motor-Runner yourself."
+  },
+  {
+   "key": "vms07v03bryceanderstopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks for the concern, doc.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic029",
+   "prompt": "Just making sure you're okay. I'll be back."
+  },
+  {
+   "key": "vms07v03bryceanderstopic029_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Roger that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic029",
+   "prompt": "That's all for now, soldier."
+  },
+  {
+   "key": "vms07v03bryceanderstopic029duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, thanks again for the medical care doc.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic029DUPLICATE000",
+   "prompt": "Not right now, just making sure you are ok. I'll be back later."
+  },
+  {
+   "key": "vms07v03bryceanderstopic029duplicate000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Roger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic029DUPLICATE000",
+   "prompt": "That's it for now soldier."
+  },
+  {
+   "key": "vms07v03bryceanderstopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're a bunch of degenerate, drug-addicted killers and rapists who've turned the west side of Vegas into a war zone.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Their leader calls himself Motor-Runner. He seems to be the only one who can still rub two brain cells together.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic030",
+   "prompt": "What can you tell me about the Fiends?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic030duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Fiends are a bunch of raider junkie fucks who have been causing a lot of trouble in the area outside of Vegas.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Their leader calls himself Motor-Runner, and he seems to be the only one with a brain that isn't fully burnt out on chems.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic030DUPLICATE000",
+   "prompt": "What can you tell me about the Fiends?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The inhabitants of the Vault were simple traders. They made a good living for themselves before they were all killed by the fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic031",
+   "prompt": "What can you tell me about Vault 3?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic031duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The inhabitants of the Vault were simple traders. They made a good living for themselves for a couple weeks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Then they caught the Fiends attention. I don't think they set up any kind of security, stupid fucks. They all got themselves killed.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic031DUPLICATE000",
+   "prompt": "What can you tell me about Vault 3?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was sent here to kill Motor-Runner, the leader of the Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR hopes that killing Motor-Runner will slow down the Fiends raiding in the area, at least until a new leader comes around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic032",
+   "prompt": "What was your mission again?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic032duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I was sent here to kill Motor-Runner, the leader of the Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR hopes that killing Motor-Runner will slow down the Fiends raiding in the area, at least until a new leader comes around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic032DUPLICATE000",
+   "prompt": "What was your mission again?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like what?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic033",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vms07v03bryceanderstopic033duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, tell me what's on your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic033DUPLICATE000",
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "key": "vms07v03bryceanderstopic034",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your talking slows my healing process. Be snappy about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic034",
+   "prompt": "I'm not sure how much I can help. But I have another question."
+  },
+  {
+   "key": "vms07v03bryceanderstopic035",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Roger that shit. Let's go.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic035",
+   "prompt": "Come on. It's time for us to go take care of Motor-Runner."
+  },
+  {
+   "key": "vms07v03bryceanderstopic035duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, let's get him.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic035DUPLICATE000",
+   "prompt": "Follow me, let's go take care of Motor-Runner."
+  },
+  {
+   "key": "vms07v03bryceanderstopic036",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll wait.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic036",
+   "prompt": "Wait here."
+  },
+  {
+   "key": "vms07v03bryceanderstopic036duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, I'll wait.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic036DUPLICATE000",
+   "prompt": "Wait here."
+  },
+  {
+   "key": "vms07v03bryceanderstopic037",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess you probably can. You look tough enough at least. I'm not sure how long it'll take this leg to heal up.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic037",
+   "prompt": "I can handle myself pretty well. I found you didn't I?"
+  },
+  {
+   "key": "vms07v03bryceanderstopic037_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, no dice. I have a job to do, and it doesn't involve cleaning up after your mess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic037",
+   "prompt": "Trust me. I can be quiet."
+  },
+  {
+   "key": "vms07v03bryceanderstopic037duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I guess you have a point. And I don't know how long it'll be before I'm on both feet...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic037DUPLICATE000",
+   "prompt": "I can handle myself just fine. I found you, didn't I?",
+   "label": "SPEECH attempt for Bryce to let you take out Motor Runner"
+  },
+  {
+   "key": "vms07v03bryceanderstopic037duplicate000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] It's not a matter of toughness, it's a matter of smarts. You'll just make a mess of things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But if you must get yourself killed, I heard a Fiend named Daniel saying he carries keys. Maybe he has a spare to the Maintenance Wing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic037DUPLICATE000",
+   "prompt": "Trust me, I'm tougher than I look!",
+   "label": "SPEECH attempt for Bryce to let you take out Motor Runner"
+  },
+  {
+   "key": "vms07v03bryceanderstopic038",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Do you ever quit? Go on.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic038",
+   "prompt": "Let me ask you something else."
+  },
+  {
+   "key": "vms07v03bryceanderstopic039",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "See that you don't.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic039",
+   "prompt": "Alright, I don't want to cause you any trouble."
+  },
+  {
+   "key": "vms07v03bryceanderstopic039duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "First sensible thing I've heard you say.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic039DUPLICATE000",
+   "prompt": "All right, fine. I don't want to cause you any trouble."
+  },
+  {
+   "key": "vms07v03bryceanderstopic040",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be quick about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic040",
+   "prompt": "I have another couple of questions for you."
+  },
+  {
+   "key": "vms07v03bryceanderstopic040duplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Be quick about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS07V03BryceAndersTopic040DUPLICATE000",
+   "prompt": "Let me ask you some questions."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Make yourself scarce. If you get yourself in trouble, I'm not going to cover your back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Never mind, I'm leaving now.",
+   "label": "Goodbye."
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What the hell do you want?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What the hell are you doing here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You again?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey doc.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey doc.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "bryce_anders"
+}

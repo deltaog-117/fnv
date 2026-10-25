@@ -1,0 +1,398 @@
+{
+ "id": "vovnvjules",
+ "speaker_name": "Jules (Fallout: New Vegas)",
+ "source": "VOVNVJules.txt",
+ "topics": [
+  {
+   "key": "caravanoffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You betcha! Caravan's got me through many a long night before. I hope you're ready.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanOffer",
+   "prompt": "Want to play a hand of Caravan?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Overtly Suspicious, Confident in Himself} Humph... I see lots of folks come and go, but none fit your type. Where you come from, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Look, I'm willing to let you slide, but you're asking for it. Tell me what's your business in my town.",
+     "emotion": "neutral",
+     "intensity": 30
+    },
+    {
+     "text": "What's eating you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "'Cause that's the law of the land. You never know when someone's going to stab you in the back... and I like mine{slight emphasis in \"upright.\" The punch-line} upright.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Emphasizing his experience, and what it takes to acquire it} Maybe one day, stranger, when you've seen all I've seen, done all I've done, you'll sooner trust a Radscorpion than a new face in The Wasteland.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic000",
+   "prompt": "I'm just another Wasteland wanderer. Why the suspicion?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Feeling Entitled, and ready to teach a lesson} And I only asked first... I'll try one last time before I find out the hard way. Where you come from, and where you going?",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic001",
+   "prompt": "Relax, I only want to ask you some questions."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Dismissive, yet with cautionary tone} All right... keep walking.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll see you again, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So long, warrior.",
+     "emotion": "happy",
+     "intensity": 40
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You ain't too smart, are you? Okay, let's dance.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic004",
+   "prompt": "<Attack> I guess you'll have to find out the hard way."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I sure am, stranger. But there ain't anything about you that makes me want to go into details.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic006",
+   "prompt": "You look capable of defending yourself."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic006_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You've got a sharp eye on you. {Happy to see a similar interest in players} I take it you like guns, huh?{Changes tone, showing the importance of the matter} Question is, can you handle more than just a weapon...",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic006",
+   "prompt": "I see you can take care of yourself. Your revolver's trigger shines like silver."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure thing. What's on your noggin?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What's eating you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic009",
+   "prompt": "<Questions General>"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We're independent folks here. Merchants, gamblers, NCR whores, all of them trade with us and we offer protection against critters and the Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic014",
+   "prompt": "Tell me about North Vegas."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's a long one, stranger. Let's just say I got tired of killing in The Wasteland and now I've found a better home for my old butt.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic015",
+   "prompt": "What's your story?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alice{Searches in his mind} ... Oh yeah. I've seen her 'round here much too often as of late. I reckon she's been hanging out with Andy and his crew.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic016",
+   "prompt": "I'm looking for Alice Hostetler."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You heard me. We don't like those stiff-back, clean-hand, little pussies. New Vegas belongs to the people.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The NCR's just a corrupt and bloated monster, no better than any other Wasteland crawler. We make this land wealthy, and we ain't giving it up.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic018",
+   "prompt": "NCR whores?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic018_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The NCR's just a corrupt and bloated monster, no better than any other Wasteland crawler. We make this land wealthy, and we ain't giving it up.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic018",
+   "prompt": "What's your opinion of the NCR, again?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They're a bunch of lunatics, so pumped full of chems that they don't give a damn about life anymore. Fiends rape, kill and maim for the hell of it.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "Vault 3's Fiend territory. Those shit-heads attack Westside all the time, even making it to the rest of Outer Vegas when they crawl under the sewers.",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic019",
+   "prompt": "What's the deal with the Fiends?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic019_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Vault 3's Fiend territory. Those shit-heads attack Westside all the time, even making it to the rest of Outer Vegas when they crawl under the sewers.",
+     "emotion": "anger",
+     "intensity": 70
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic019",
+   "prompt": "What did you say before about the Fiends?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic019_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Satisfied} Bad weeds don't die easy. Still, things will be safer now that you've taught a lesson to those crazies.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic019",
+   "prompt": "Any more trouble with the Fiends?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Try \"The Gray.\" Beats me why people go into that forsaken thing. At least with huts and sewers you know they ain't crumbling on top of your head.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic020",
+   "prompt": "Do you know where might I find them?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic071",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Outer Vegas ain't exactly a safe place. Despite our numbers, The Wasteland creeps through every nook and cranny.",
+     "emotion": "anger",
+     "intensity": 30
+    },
+    {
+     "text": "I make sure any dangers to the people of North Vegas stay outside our barriers, stranger. Day and night, I stand watch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic071",
+   "prompt": "What do you do here?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegasjulestopic071_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I make sure any dangers to the people of North Vegas stay outside our barriers, stranger. Day and night, I stand watch.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasJulesTopic071",
+   "prompt": "Tell me again about what your role here."
+  },
+  {
+   "key": "vdialoguevegasnorthvovnvjulestopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I mean you've first got to know yourself before you can truly know the gun.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "So, let's see it, stranger.{As if posing a challenge} Do you know yourself?",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthVOVNVJulesTopic000",
+   "prompt": "What's that about knowing how to handle more than just a weapon?"
+  },
+  {
+   "key": "vdialoguevegasnorthvovnvjulestopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So, let's see it, stranger. Do you know yourself?",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthVOVNVJulesTopic000",
+   "prompt": "I think I know what you meant before."
+  },
+  {
+   "key": "vdialoguevegasnorthvovnvjulestopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] We see eye to eye, we speak warrior to warrior{Pauses to digest his next words} ... And I thought myself too old to find an equal, Ha!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Satisfied with his principle} Listen, warrior. There're two kinds of folks. You load your gun like an ordinary man, or you load it like a devil.",
+     "emotion": "happy",
+     "intensity": 40
+    },
+    {
+     "text": "We ain't ordinary, are we? See, I pack good brass up with slow-burning powder, then cap it with a heavy semiwadcutter bullet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Happily self-assured} That's how you make .44 ammo that'll put the fear of the heavens on any waster that dare cross your path.",
+     "emotion": "happy",
+     "intensity": 80
+    }
+   ],
+   "topic": "VDialogueVegasNorthVOVNVJulesTopic002",
+   "prompt": "I'm one with the land."
+  },
+  {
+   "key": "vdialoguevegasnorthvovnvjulestopic002_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] You don't get it yet, stranger. I'm not surprised, though. It takes a special type. Come back when you've got what it takes.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "VDialogueVegasNorthVOVNVJulesTopic002",
+   "prompt": "Of course I know who I am, who doesn't?"
+  },
+  {
+   "key": "vdialoguevegasnorthvovnvjulestopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Slightly Surprised} You've cleaned that vermin's nest? Gotta say, we don't see that kind of attitude around here. Good work!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthVOVNVJulesTopic020",
+   "prompt": "I took care of them."
+  }
+ ],
+ "speaker": "jules"
+}

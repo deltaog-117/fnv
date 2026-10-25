@@ -1,0 +1,36 @@
+{
+ "id": "vdialoguefollowersapocalypse",
+ "speaker_name": "Followers doctor",
+ "source": "VDialogueFollowersApocalypse.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Random - Doctor} There are so many refugees to care for.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "{Random - Doctor}{concerned} Medicine's running low again.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Random - Doctor} All that wealth is wasted on the Strip. There are people in Freeside who need food and medicine.",
+     "emotion": "disgust",
+     "intensity": 5
+    },
+    {
+     "text": "{Random - Doctor} I have no idea how most of these people would survive without us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "followers_doctor"
+}

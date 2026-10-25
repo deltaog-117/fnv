@@ -1,0 +1,296 @@
+{
+ "page": "VFSOffDutyNCRBarker01.txt",
+ "speaker": "missionary",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello again. Remember to stop by one of these nights. Northwest, by the old train station.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You looking to take the test again?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello, don't think I've seen your face before. Are you a citizen of the NCR?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hello again. We spoke briefly before, but remind me, are you a citizen of the NCR?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ordinarily I'd take your word on that, but lately I've had several people lie and claim to be citizens just to take advantage of our program.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But I've come up with a fairly simple way to tell who's lying. You up to taking a little test?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "In that case, I'm sorry. Our program is only for citizens of the NCR.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You don't look like you're from around here, so I guess I can believe that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just head to the northwest part of town, by the old train station. We start handing out supplies at six every night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There'll be some guards by the door, but just remember that the password is \"Hope,\" and they'll let you by right quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> Sure am. I just recently arrived here from California.",
+   "label": "{Lie - Speech >= 50}"
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'd like to believe you, but I can't take the risk under current circumstances.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Lie> Yup, sure am. From NCR, I mean.",
+   "label": "{Lie - Speech >= 50}"
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please, don't let me keep you if you have somewhere else to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I don't have time for this."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This'll just take a few moments, and it's all stuff that any real citizen of the NCR knows.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Okay, first question. Who was the most popular president in NCR history, Kimball, Tibbett, Tandi, or Peterson?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sure."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry to have bothered you, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think I'll pass."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Interesting. Okay, next question - what was the original name of the NCR capital - The Boneyard, Shady Sands, Aradesh, or Vault 13?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Kimball."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Interesting. Okay, next question - what was the original name of the NCR capital - The Boneyard, Shady Sands, Aradesh, or Vault 13?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Tandi."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fair enough. All right, last question - What animal is on the NCR's flag - a two-headed bear, an eagle, a two-headed snake, or a two-tailed lion?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Boneyard."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fair enough. All right, last question - What animal is on the NCR's flag - a two-headed bear, an eagle, a two-headed snake, or a two-tailed lion?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Shady Sands."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Very good! I'm happy to say you've proven you're definitely an NCR citizen, which means you qualify for our program.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Just head to the northwest part of town, by the old train station. We start handing out supplies at six every night.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There'll be some guards by the door, but just remember that the password is \"Hope,\" and they'll let you by right quick.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm sorry, but you didn't get all of the questions right, which proves you're not a citizen of the NCR. Sorry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "A two-headed bear."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm sorry, but you didn't get all of the questions right, which proves you're not a citizen of the NCR. Sorry.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "An eagle."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I probably shouldn't let you, but I suppose everyone has an bad day now and then. Did you want to take it now?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I take the test again?"
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They should. I guess it's possible that some don't, but this stuff is pretty common knowledge.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell you what, come back later and you can take the test again, okay?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Does every NCR citizen really know this stuff?"
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, here we go again. Who was the most popular president in NCR history, Kimball, Tibbett, Tandi, or Peterson?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's fine. I'll let you take the test again whenever you choose to come back.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No, I'll come back later."
+  },
+  {
+   "id": "VMS19VFSOffDutyNCRBarker01Topic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hey, wait up a moment. I can tell you're really upset that you didn't pass the test, so I'll let you take it again any time you want to come back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It'll be my good deed for the day. Take care now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Guess I'll just go, then."
+  }
+ ]
+}

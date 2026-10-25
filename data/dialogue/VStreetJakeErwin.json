@@ -1,0 +1,300 @@
+{
+ "page": "VStreetJakeErwin.txt",
+ "speaker": "Jake Erwin",
+ "topics": [
+  {
+   "id": "CaravanOffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bring it on, buddy!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Want to play a hand of Caravan?"
+  },
+  {
+   "id": "CaravanPlayerLoses",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Laughs} Nice try. Care to try your luck again?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CaravanPlayerLoses"
+  },
+  {
+   "id": "CaravanPlayerWins",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not too bad. How about we play again?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "CaravanPlayerWins"
+  },
+  {
+   "id": "CaravanRematchNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. If you want to play again sometime, let me know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm all done playing for now."
+  },
+  {
+   "id": "CaravanRematchYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's get this started!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yeah, let's play again."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Didn't you save President Kimball? You're my new hero!",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "What can I do for you, friend?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "I heard President Kimball was attacked at Hoover Dam. I can barely believe it.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "I'm just glad nothing bad happened to him.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some bastards killed President Kimball. Who's going to lead the NCR now?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Aren't you the guy that was shooting up The Tops?",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Guess you must have some special deal with House to be able to do that and not get in trouble.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard you snuffed that Benny guy. Good riddance, guy was a scumbag.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I heard you stopped the Omertas plan to attack the Strip. Good job, you're a real hero.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "So you're the one that went into the Lucky 38. I bet that was pretty creepy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What can I do for you?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I thought those Securitrons were creepy enough already. Now, they have soldier faces on them, that's even creepier.",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "Holy shit, did you here about the Monorail being destroyed? How the fuck did that happen?",
+     "emotion": "surprise",
+     "intensity": 50
+    },
+    {
+     "text": "I'm just glad to be safe over here on the Strip.",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "If it isn't the Ambassador's new best friend. What can I do for you?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "I can't believe it's gone. It's all gone. How the fuck did this happen?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, you just get in for some R&R?",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Well look who it is! Glad to have you here, buddy! What can I do for you?",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "Wow, look who it is! What can I help you with?",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "I don't want any trouble, mister. What do you want?",
+     "emotion": "fear",
+     "intensity": 25
+    },
+    {
+     "text": "I probably shouldn't be talking to you, but what do you want?",
+     "emotion": "fear",
+     "intensity": 5
+    },
+    {
+     "text": "{Hostile} You're the last person I expected to see here. What do you want?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "{Hostile} What do you want?",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "Hey, stranger. What's happening?",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "What's going on?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<Private Jake Erwin Top Level Topics>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetJakeErwinTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Us troopers mostly come to the Strip for our R&R. We blow off some steam by gambling, drinking, partying, or fighting.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "If you're looking for a good time, I'd suggest hitting up Gomorrah. The girls there are pretty nice, if you know what I mean.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's happening on the Strip?"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetJakeErwinTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What have you heard? I know people think I'm a little on the wild side, but I'm just trying to have fun, you know?",
+     "emotion": "anger",
+     "intensity": 5
+    },
+    {
+     "text": "Just because I happen to get into fights and like to pull pranks doesn't mean anything.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Tell me about yourself."
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetJakeErwinTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's a little stiff and stuffy. Doesn't leave the office that much, always surrounds himself with papers and reports.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I've always wanted to play a prank on him, but there's no way I could ever pull that off without getting in trouble from Captain Pappas.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Sorry. I don't know much about him. We run in different circles, you know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you know about the Ambassador?"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetJakeErwinTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "She may be a bit of a hardass, but she's the best damn Captain we've had here. I'd be careful around her. You don't want to get on her bad side.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're digging for dirt on the Captain, you're digging in the wrong place.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "What can you tell me about Captain Pappas?"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetJakeErwinTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I've got a few ideas that I'm working on. Maybe I'll let you in on it once I have something.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "prompt": "A prank you say?"
+  },
+  {
+   "id": "vFreeformTheStreet02VStreetJakeErwinTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I know. That's why I'm not really going to do it.",
+     "emotion": "sad",
+     "intensity": 10
+    }
+   ],
+   "prompt": "That doesn't sound like a good idea."
+  }
+ ]
+}

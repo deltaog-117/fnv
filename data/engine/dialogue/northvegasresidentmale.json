@@ -1,0 +1,31 @@
+{
+ "id": "northvegasresidentmale",
+ "speaker_name": "North Vegas resident",
+ "source": "NorthVegasResidentMale.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Any news from out of town?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't recall seeing you here before.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome to North Vegas, stranger!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "north_vegas_resident"
+}

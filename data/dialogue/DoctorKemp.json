@@ -1,0 +1,429 @@
+{
+ "page": "DoctorKemp.txt",
+ "speaker": "Kemp",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Grateful} Thanks for handling the Fiends. One less pack of dogs to hurt the troops.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Remarkable work saving Kimball. Glad you were around to prevent his assassination.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Irritated} Yeah?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Howdy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do you require medical attention?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you're looking for a quick stitch, I'm your man.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The brass are pissed about the trouble you've been causing. Your caps are no good here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe you didn't hear me the first time. No service for scumbags!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, I heard you were able to recover Morales' corpse. In thanks, you get a discount on supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That was a real honorable thing you done there, kid. Much appreciated.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Here is what is currently available.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With your reputation? Well, I won't say your caps are no good here... let's just say that they're... less good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like to buy some supplies."
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There you go, all patched up. Anything else I can do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I bet you do, but you won't be getting them from me. I heard about the crap you've been pulling, and I'll not risk my rep for you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe you didn't hear me the first time. No service for scumbags!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What can I do for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I need medical services."
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can give you something that should help. I need to see some caps for treatment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm addicted to something."
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Goodbye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you were a trooper, I'd tell you to walk it off, but they're your caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yep, you appear to be pretty cut up, but nothing some stitches and pain pills won't cure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Do you have the caps to cover the pills and treatment?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hot damn you got whooped good! This could take a while.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I will also require some caps to cover my supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I could use some patching up."
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I can take care of that quick and easy, if you've got the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have radiation sickness."
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 50 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 45 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 40 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Then what do you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "No thanks."
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. A couple rounds of Rad-Away should do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 100 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. A couple rounds of Rad-Away should do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 90 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. A couple rounds of Rad-Away should do it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 80 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 50 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 45 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 40 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 100 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 90 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 80 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 75 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 67 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "VFreeformMcCarranDoctorKempTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay. This will just take a moment.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Pay 60 caps>",
+   "label": "<Pay caps>"
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{annoyed} Now is not a good time.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{annoyed} I'm a busy man.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{concerned} You look like you could use some medical attention.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{notices the player is addicted} Damn addicts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{concerned} You look like you're suffering from some radiation sickness.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{pre-occupied} Howdy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{lost in thought} Hello.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{busy} Can I help you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

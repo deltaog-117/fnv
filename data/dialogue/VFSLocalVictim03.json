@@ -1,0 +1,161 @@
+{
+ "page": "VFSLocalVictim03.txt",
+ "speaker": "Roy (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Leave me alone. Can't you see a man's fighting for his life here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What is it? Can't you see I want to be left alone with my friend here?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell the King we thank him for looking out for us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformFreesideVFSLocalVictim03Topic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh. That's different then. How can I help? I'll do anything to get the bastards that did this.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The King asked me to look into your attack."
+  },
+  {
+   "id": "VFreeformFreesideVFSLocalVictim03Topic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, it happened at night. Around eleven. We had recently made some caps off a bit of scrap we found, and wanted to invest it wisely.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As we were leaving the Wrangler, we must've taken a wrong turn, and ended up in the Squatter side of town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "From out of nowhere, these big guys show up and start barking questions at us. Wanted to know if we were locals.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The kid there's about as proud as a local around here gets, and started yelling back at them. Then all hell broke loose.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Kid got the worst of it, sad to say.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What can you tell me about the attack?"
+  },
+  {
+   "id": "VFreeformFreesideVFSLocalVictim03Topic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They were big guys. Young, too. No old geezers like me. Hell, none of them looked even half my age.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I was mostly face down in the dirt, begging for my life when it happened, so I only got a quick look at them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you remember anything about the people who attacked you?"
+  },
+  {
+   "id": "VFreeformFreesideVFSLocalVictim03Topic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You were just curious. No harm in that. I'm just worried sick about my friend here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Sorry, didn't mean to intrude."
+  },
+  {
+   "id": "VFreeformFreesideVFSLocalVictim03Topic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I hope you find the bastards that did this. If you want, try asking my friend Wayne over there about them. He saw more than I did.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I have to get going."
+  },
+  {
+   "id": "VFreeformFreesideVFSLocalVictim03Topic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, the docs say he's going to be laid up for a while, assuming he doesn't get any worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your friend looks like he's in bad shape."
+  },
+  {
+   "id": "FSRoyTellsWayneToTalk",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Wayne, it's okay. The King sent 'em.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FSRoyTellsWayneToTalk"
+  },
+  {
+   "id": "VFSRoyCallsWayneStupid",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "He probably said \"lieutenant\", Wayne.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSRoyCallsWayneStupid"
+  },
+  {
+   "id": "VFSRoyTalksToPlayer",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "The boy means well, but he's dumb as a mutant sometimes.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSRoyTalksToPlayer"
+  }
+ ]
+}

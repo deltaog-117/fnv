@@ -1,0 +1,235 @@
+{
+ "page": "JacobstownKeene.txt",
+ "speaker": "Keene",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My request is perfectly reasonable. Give us the Stealth Boy specs and there will be no need for us to splatter the room with your insides.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "Don't you still have business with Doctor Henry? You and I are done.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Another human. One was enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Marcus dead} I always told Marcus we could never get along with humans. I'm right, and he's dead.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Bother someone else. I don't want anything to do with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "NightkinToDoctorHenry",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, well. Congratulations on getting the Mark II prototype functional, doctor. Now just hand it over and we'll be on our way.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "prompt": "NightkinToDoctorHenry"
+  },
+  {
+   "id": "VMS41JacobstownKeeneTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] No, I didn't, not until now anyway. Very well, human. You've made your point, and I withdraw my... request.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What you do in the wasteland affects all the mutants here, but you didn't think about that, did you?",
+   "label": "< Speech 80 >"
+  },
+  {
+   "id": "VMS41JacobstownKeeneTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No more negotiating, and definitely no more waiting. This is your last chance before we take it by force.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Doctor Henry doesn't have the cure just yet, but he's almost there. Be patient.",
+   "label": "< Speech 80 >"
+  },
+  {
+   "id": "VMS41JacobstownKeeneTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There are caches of Stealth Boys out there. With the Mark II in hand, it shouldn't be difficult to upgrade every one of them.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What are you planning to do once you have the specs?"
+  },
+  {
+   "id": "VMS41JacobstownKeeneTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Our lives, our decision to make. We're tired of sitting around in Jacobstown waiting for a cure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "The Mark IIs are even more dangerous than standard Stealth Boys."
+  },
+  {
+   "id": "VMS41JacobstownKeeneTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good, good. Smart move, human.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Doctor Henry, do as he asks."
+  },
+  {
+   "id": "VMS41JacobstownKeeneTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{snapping into berserk mode} I knew humans could never be reasonable! I knew it! Stupid, stupid humans! I'll kill you!",
+     "emotion": "anger",
+     "intensity": 100
+    }
+   ],
+   "prompt": "You're not getting the Mark II specs."
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownKeeneTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{no cure} The Stealth Boys we use have cumulative, adverse effects on our minds. Jacobstown was supposed to be a sanctuary, a place to find a cure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Instead, we wait and wait. I'm sick of waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{cure} The Stealth Boys we use have cumulative, adverse effects on our minds. But, thanks to you, it seems a cure is on the way at last.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Why are the Nightkin here in Jacobstown?"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownKeeneTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Doctor Henry. He's one of you - go speak with him instead of me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Who's the other human you mentioned?"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownKeeneTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I represent the Nightkin. {smug} Marcus may lead this town, but the Nightkin listen to what I have to say.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That doesn't mean I don't respect Marcus for what he's trying to do. However, he doesn't truly understand the difficulties of being a Nightkin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What do you do here?"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownKeeneTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Finally.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNightkinLeaderTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Humans are always staring at things. We Nightkin don't like being stared at. Is is... uncomfortable.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you have a problem with humans?"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNightkinLeaderTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It is different! Right now I'm trying very hard to remain civil, and you're not making it easy with your incessant questions!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How does that make you different from some humans?"
+  },
+  {
+   "id": "vDialogueJacobstownJacobstownNightkinLeaderTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Bah! Humans.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Stare silently at him.]"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Finally.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

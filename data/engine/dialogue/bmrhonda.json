@@ -1,0 +1,175 @@
+{
+ "id": "bmrhonda",
+ "speaker_name": "Rhonda (Fallout: New Vegas)",
+ "source": "BMRhonda.txt",
+ "topics": [
+  {
+   "key": "bmrhondagreeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Hello. Could you please direct me to mistress Tabitha?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I wonder what mistress Tabitha has been doing with herself during my convalescence.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is so good to be traveling with mistress Tabitha again!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BMRhondaGreeting",
+   "prompt": "BMRhondaGreeting"
+  },
+  {
+   "key": "bmrhondagreetstabitha",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It is, Mistress Tabitha. How I've missed you so. This stranger here fixed me up right as rain. Is he a friend of yours?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It is, Mistress Tabitha. How I've missed you so. This stranger here fixed me up right as rain. Is she a friend of yours?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BMRhondaGreetsTabitha",
+   "prompt": "BMRhondaGreetsTabitha"
+  },
+  {
+   "key": "bmrhondano",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nevertheless, I must find her, so I'll just tag along with you for a bit until I pick up her trail.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BMRhondaNo",
+   "prompt": "Sorry, I don't think I'll be heading her way."
+  },
+  {
+   "key": "bmrhondayes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thank you very much. My internal clock says it's been 6 years, 52 days, 40 minutes, and 13 seconds since I last spoke to her.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hope she hasn't gotten lonely.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BMRhondaYes",
+   "prompt": "Sure, follow me."
+  },
+  {
+   "key": "vfreeformblackmountainbmrhondatopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "And I suppose you're taking credit for the deed, fiend! I will avenge her!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBlackMountainBMRhondaTopic000",
+   "prompt": "I hate to tell you, but Tabitha's dead."
+  },
+  {
+   "key": "vfreeformblackmountainbmrhondatopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll just wait here for Mistress Tabitha.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformBlackMountainBMRhondaTopic001",
+   "prompt": "Um, I should probably go."
+  },
+  {
+   "key": "bmrhondabadreunion",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Oh no! Miss Tabitha is hurt! Someone, get a doctor!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There, there Miss Tabitha. It's going to be all right.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Miss Tabitha, your distinct lack of respiration is quite worrisome.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's good, Miss Tabitha. It's important that you don't move. You might aggravate your injury.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Where is that doctor?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't worry, Miss Tabitha, I'll keep you warm with my exhaust.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I do hope the doctor doesn't get lost on the way up here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BMRhondaBadReunion",
+   "prompt": "BMRhondaBadReunion"
+  },
+  {
+   "key": "bmrhondaletsgotabitha",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Mistress Tabitha, we should be heading off. Our journey has been much delayed, but we can catch up if we hurry. Come along, now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BMRhondaLetsGoTabitha",
+   "prompt": "BMRhondaLetsGoTabitha"
+  },
+  {
+   "key": "bmrhondatabithareunion",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "It pleases me to see you, mistress. I owe my functional state to this human here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "BMRhondaTabithaReunion",
+   "prompt": "BMRhondaTabithaReunion"
+  }
+ ],
+ "speaker": "rhonda"
+}

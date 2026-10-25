@@ -1,0 +1,304 @@
+{
+ "id": "klamathbob",
+ "speaker_name": "Klamath Bob",
+ "source": "KlamathBob.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Howdy. Name's Bob, but folks around here call me Klamath Bob. What can I do you for? {Speaks casually and informally.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, stranger. Hope you been well. What do you need?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguevegaswest1eklamathbobtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, then. Hopefully I've got something to wet your whistle.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Come talk to me when I'm in my store and I'll be glad to do business with you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWest1EKlamathBobTopic002",
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "key": "vdialoguevegaswest1eklamathbobtopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Heh, yeah good old Klamath. Not a bad place if you like hunting, eating, and skinning geckos all day! Heh heh.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "It's a pretty dull place, but I hear there was a bit of excitement when this tribal from Arroyo came to town years back. All before my time, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWest1EKlamathBobTopic012",
+   "prompt": "I take it you're from Klamath?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I might have some answers for you. What did you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic000",
+   "prompt": "I have some questions about this area."
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, things aren't great here, but I've seen a lot worse. We've got the Fiends to the south of us, and that ain't good.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "The Scorpions hang out at the Monte Carlo when they aren't slinging chems or getting their heads blown off by the Fiends.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Probably the best thing we've got going on is the co-op, run by Mr. Ettienne. Gets some help from of the Followers of the Apocalypse, I think.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic001",
+   "prompt": "Can you tell me about Westside?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not so much lately. The NCR is giving them hell any time they poke their damned heads out. Bless those boys and gals for getting rid of that vermin.",
+     "emotion": "happy",
+     "intensity": 5
+    },
+    {
+     "text": "I feel pity for any man or woman that gets addicted to chems, but when they prey on decent folk... well, then it's time to put 'em down.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic002",
+   "prompt": "Do you have a lot of run-ins with the Fiends?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much to tell. Typical gang of dumb bullies and angry nobodies. They're holed up a bit south of here, in the Monte Carlo Suites.",
+     "emotion": "disgust",
+     "intensity": 20
+    },
+    {
+     "text": "They think they're tough, but any time they tangle with the Fiends, they get torn right up.",
+     "emotion": "disgust",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic003",
+   "prompt": "Tell me about the Scorpions."
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Food from the people and for the people. Anyone can buy, but the profits are shared by the folks who make the produce.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Locals got these little gardens that do real well. Gosh darn well, truth be told. Ettienne got some help from that Anderson kid, I think.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Anyway, we don't gotta rely on merchants so much. And it means the troopers can use all the food they make over on the east side. Works out nice.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic004",
+   "prompt": "What's so great about the co-op?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, heh. Yeah, that's Mean Sonofabitch. I know the name sounds bad, but he likes it. He's one nasty old coot.",
+     "emotion": "happy",
+     "intensity": 15
+    },
+    {
+     "text": "Far as I can tell, he's one of them original Super Mutants, what came from the Boneyard. Wandered about after that \"Master\" fellow died.",
+     "emotion": "neutral",
+     "intensity": 10
+    },
+    {
+     "text": "Eventually got caught somewhere around the Hub, back in NCR. Boy, they sure treated him mean down there. Cut him up so bad he can't talk no more.",
+     "emotion": "sad",
+     "intensity": 10
+    },
+    {
+     "text": "I tried to buy him, just so they'd stop hurting him, but they didn't want any of it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic005",
+   "prompt": "Do you know anything about that Super mutant walking around town?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I run the liquor store in Westside. With things this rough, some folks need a lot of booze just to step out the door in the morning.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "After I close up shop, I walk around and help keep the peace. Not that I'm good with a gun, mind you, but someone's got to do it, you know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic006",
+   "prompt": "What do you do around here?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic007",
+   "prompt": "I don't have any more questions. Let's talk about something else."
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What else did you want to chat about?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic009",
+   "prompt": "Enough about the Westside."
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He just showed up here one day. Couldn't really talk, but he remembered me all right.",
+     "emotion": "happy",
+     "intensity": 10
+    },
+    {
+     "text": "Ever since then he's just been, well... hanging around, I guess. Does odd jobs for folks and smashes the bad guys when they come poking around.",
+     "emotion": "happy",
+     "intensity": 15
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic010",
+   "prompt": "How did he end up here on the Westside?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some folks steer clear of him, for sure, but he don't seem to mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic011",
+   "prompt": "People around here aren't afraid of him?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Turned out some of them \"Night Kids\" - whatever you call those sneaky Super Mutant types - got in and busted him out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I guess somebody named \"Tabitha\" led the bunch that freed him. Don't know much more than that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic012",
+   "prompt": "Do you know how he got away from the NCR?"
+  },
+  {
+   "key": "vdialoguevegaswestklamathbobtopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Okay, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasWestKlamathBobTopic014",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Okay, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "klamath_bob"
+}

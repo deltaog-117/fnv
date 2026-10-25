@@ -1,0 +1,119 @@
+{
+ "id": "vms18whiteglovegreeter",
+ "speaker_name": "White Glove greeter",
+ "source": "VMS18WhiteGloveGreeter.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Beg your pardon, but could I trouble you to turn over your weapons?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms18vms18whiteglovegreetertopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My deepest apologies for the slightest inconvenience. You have my assurance that everything will be returned upon your departure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But we simply can't have anyone waving their weapons around in the hotel. It's not the atmosphere we wish to cultivate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please, enjoy your stay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18WhiteGloveGreeterTopic000",
+   "prompt": "Sure, here you go."
+  },
+  {
+   "key": "vms18vms18whiteglovegreetertopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My deepest apologies for the slightest inconvenience. You have my assurance that everything will be returned upon your departure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But we simply can't have anyone waving their weapons around in the hotel. It's not the atmosphere we wish to cultivate.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please, enjoy your stay.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18WhiteGloveGreeterTopic001",
+   "prompt": "<Keep holdout weapons> Sure, here you go."
+  },
+  {
+   "key": "vms18vms18whiteglovegreetertopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm afraid those are the rules. If you don't like it you can take your business elsewhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18WhiteGloveGreeterTopic002",
+   "prompt": "Why do you need my guns?"
+  },
+  {
+   "key": "vms18vms18whiteglovegreetertopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Offended} How frightfully uncouth. I'm afraid I must insist you relinquish your weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18WhiteGloveGreeterTopic003",
+   "prompt": "Could I trouble you to blow it out your ass?"
+  },
+  {
+   "key": "vms18vms18whiteglovegreetertopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I never.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18WhiteGloveGreeterTopic004",
+   "prompt": "[Attack] Looks like I'll have to kill you, then."
+  },
+  {
+   "key": "vms18vms18whiteglovegreetertopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "They'll be handled with the utmost security in our bank.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18WhiteGloveGreeterTopic005",
+   "prompt": "Where did you take my weapons?"
+  }
+ ],
+ "speaker": "white_glove_greeter"
+}

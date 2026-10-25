@@ -1,0 +1,107 @@
+{
+ "page": "GunRunnerProtectron.txt",
+ "speaker": "Vendortron",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Player in combat} The store is currently unavailable due to unexpected circumstances. Please come back later.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome, sir or madam. Do you wish to purchase something?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VDialogueEastVegas1EGunRunnerProtectronTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am ready to process our transaction.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Show me what you have for sale."
+  },
+  {
+   "id": "VDialogueEastVegas1EGunRunnerProtectronTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This is the New Vegas branch of the Gun Runners, supplying the wasteland with only the finest armaments since 2155.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What is this place?"
+  },
+  {
+   "id": "VDialogueVegasEast1EGunRunnerProtectronTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "This kiosk was specially constructed around me to deter theft and assault.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How did you get inside there?"
+  },
+  {
+   "id": "VDialogueVegasEast1EGunRunnerProtectronTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All Gun Runner merchandise is constructed on-site.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's some impressive weaponry. Where did it all come from?"
+  },
+  {
+   "id": "VDialogueVegasEast1EGunRunnerProtectronTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Come back and see us again soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Come back and see us again soon.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Hello, potential customer.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  }
+ ]
+}

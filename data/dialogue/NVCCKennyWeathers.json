@@ -1,0 +1,216 @@
+{
+ "page": "NVCCKennyWeathers.txt",
+ "speaker": "Kenny Weathers",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're a killer. Go away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We're being held here against our will! I beg you, help us!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Are you going to free us, or what?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Thank you. We never would've escaped without your help.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At least I'm free to bury my kin.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{panicking} What have you done?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{close call} Are you trying to get me killed? Get away from me!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Relax, this'll be over quickly. <Set off the explosive in his collar>"
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Quiet pathetic moan} Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Doesn't make sense} Why free me now? After what you done? I ain't saying thank you.",
+     "emotion": "sad",
+     "intensity": 100
+    }
+   ],
+   "prompt": "I've paid for your freedom. You're free to go."
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Angry} Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No way! I seen what happens when you mess with these collars!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sounds like I don't have much choice.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let me deactivate your collar."
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hey, you did it! Nice work!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RF detonator? Give me a second.<Deactivate the charge and remove his collar>",
+   "label": "Hold still. <Deactivate the charge and remove his collar>"
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Forget it, I'm not gonna get my head blown off just because you don't know what you're doing!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hold still! <Deactivate the charge and remove his collar>",
+   "label": "Hold still. <Deactivate the charge and remove his collar>"
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good idea. I'd like to keep my head intact.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Never mind. I'll see if there is another way to free you."
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, I'm just glad someone is doing something. The last thing I need is to be made some legionaire's bitch and sent off to God knows where.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm working on it."
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Shocked disbelief} Freedom? Thank God Frank thinks we're enslaved.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now we can actually start fresh. Thank you for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Give Kenny the key from Canyon Runner>"
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Shocked disbelief} Freedom? Thank God Frank thinks we're enslaved.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now we can actually start fresh. Thank you for helping us.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I've paid for your freedom. You're free to go."
+  },
+  {
+   "id": "VFreeformCottonwoodCoveNVCCKennyWeathersTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Doesn't make sense} Why free me now? After what you done? I ain't saying thank you.",
+     "emotion": "sad",
+     "intensity": 100
+    }
+   ],
+   "prompt": "<Give Kenny the key from Canyon Runner>"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Quiet pathetic moan} Bye.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  }
+ ]
+}

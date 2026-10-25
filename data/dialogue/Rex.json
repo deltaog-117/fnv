@@ -1,0 +1,760 @@
+{
+ "page": "Rex.txt",
+ "speaker": "Rex (Fallout: New Vegas)",
+ "topics": [
+  {
+   "id": "FollowersAcknowledgeMyOrder",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confirmation bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FollowersAcknowledgeMyOrder"
+  },
+  {
+   "id": "FollowersFired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sad whimper} <whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's time for us to part ways."
+  },
+  {
+   "id": "FollowersFiredNo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{happy bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "On second thought, stick with me for a little longer."
+  },
+  {
+   "id": "FollowersFiredYes",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{whimper} <whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Yes, I'm sure."
+  },
+  {
+   "id": "FollowersFiredYesSuite",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confirmation bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'd like you to go back to the Lucky 38 for now."
+  },
+  {
+   "id": "FollowersHired",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[Rex growls at ED-E's presence.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{double bark} <bark! bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I think we should travel together."
+  },
+  {
+   "id": "FollowersLetsGo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{happy bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's get going."
+  },
+  {
+   "id": "FollowersOverburdened",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sad whimper} [Rex is overburdened and is having difficulty keeping up with you.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "FollowersOverburdened"
+  },
+  {
+   "id": "FollowersTactics",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{questioning aroo} <aroo?>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about your tactics."
+  },
+  {
+   "id": "FollowersTacticsCombat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{questioning aroo} <aroo?>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to change your combat style."
+  },
+  {
+   "id": "FollowersTacticsCombatAggressive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{annoyed growl - already doing what the player wants} <growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{confirmation bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to attack enemies the moment you see them."
+  },
+  {
+   "id": "FollowersTacticsCombatEND",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{panting} <pant pant>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else."
+  },
+  {
+   "id": "FollowersTacticsCombatGOODBYE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confirmation bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "That's all. Let's get going."
+  },
+  {
+   "id": "FollowersTacticsCombatMelee",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{puzzled aroo} [Rex defaults to melee attacks since he has no ranged weapons.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Switch to a melee weapon."
+  },
+  {
+   "id": "FollowersTacticsCombatPassive",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{puzzled aroo} [Rex is already waiting for you to attack enemies first.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{confirmation bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you not to attack enemies unless I've already engaged them."
+  },
+  {
+   "id": "FollowersTacticsCombatRanged",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{sad whimper} [Rex is incapable of ranged attacks and will continue using melee attacks.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want you to use ranged weapons."
+  },
+  {
+   "id": "FollowersTacticsDistance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{panting} <pant pant>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about how close you're following me."
+  },
+  {
+   "id": "FollowersTacticsDistanceDefault",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confirmation bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Stay close to me."
+  },
+  {
+   "id": "FollowersTacticsDistanceEND",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{panting} <pant pant>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Your distance is good. Let's talk about something else."
+  },
+  {
+   "id": "FollowersTacticsDistanceGOODBYE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confirmation bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "All right, you're good. Let's get out of here."
+  },
+  {
+   "id": "FollowersTacticsDistanceLong",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{double confirmation bark} <bark! bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Keep your distance. Try to flank them."
+  },
+  {
+   "id": "FollowersTacticsEnd",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{panting} <pant pant>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Enough about tactics."
+  },
+  {
+   "id": "FollowersTrade",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{happy bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's trade equipment."
+  },
+  {
+   "id": "FollowersWait",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{confirmation bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Wait here."
+  },
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{in combat} <bark! bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player has a hat equipped} <growl...>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{in Mojave, player has Wild Wasteland} <aroo!>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rex not cured} <whimper>",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "{Rex cured, initial} <happy bark!>",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "{Rex cured, return} <pant pant pant>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "PLAYERFIREWEAPON",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{annoyed growl} <growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER FIRE WEAPON"
+  },
+  {
+   "id": "PLAYERINIRONSITES",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{threatening growl} <growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER IN IRON SITES"
+  },
+  {
+   "id": "PLAYERLAYMINE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{alarmed bark} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER LAY MINE"
+  },
+  {
+   "id": "PLAYERTHROWGRENADE",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{alarmed double bark} <bark! bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "PLAYER THROW GRENADE"
+  },
+  {
+   "id": "VDialogueRexRexTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Rex not cured} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'm still working on getting you fixed."
+  },
+  {
+   "id": "VDialogueRexRexTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Rex cured - happy bark} <happy bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "How you feeling, boy?"
+  },
+  {
+   "id": "VDialogueRexRexTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<growl...>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's the matter with you?"
+  },
+  {
+   "id": "VDialogueRexRexTopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're certainly looking better."
+  },
+  {
+   "id": "VDialogueRexRexTopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Glad to hear it."
+  },
+  {
+   "id": "VDialogueRexRexTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "So you're better? Good - I won't have to strip you for parts."
+  },
+  {
+   "id": "VDialogueRexRexTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Rex not cured} <whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rex cured} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VDialogueRexRexTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<pant! pant!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "We're on the same side. Settle down!"
+  },
+  {
+   "id": "VDialogueRexRexTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Cut that out or I'll turn you into a hat."
+  },
+  {
+   "id": "VDialogueRexRexTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Animal Friend} <bark! bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "What's that, Rex? Little Jimmy fell down the well?"
+  },
+  {
+   "id": "VDialogueRexRexTopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<aroo!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Huh?"
+  },
+  {
+   "id": "VDialogueRexRexTopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "It's times like this that I wish you could talk."
+  },
+  {
+   "id": "VDialogueRexRexTopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<happy bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's go check out that well, boy."
+  },
+  {
+   "id": "VDialogueRexRexTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "We have better things to do right now."
+  },
+  {
+   "id": "VDialogueRexRexTopic024",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<bark! bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Did someone fall into a well?"
+  },
+  {
+   "id": "VDialogueRexRexTopic025",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Are you saying I should stab the next person I see?"
+  },
+  {
+   "id": "VDialogueRexRexTopic026",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is there a radioactive twister coming?"
+  },
+  {
+   "id": "VDialogueRexRexTopic027",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Do you smell an ambush?"
+  },
+  {
+   "id": "VDialogueRexRexTopic028",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Is it going to rain?"
+  },
+  {
+   "id": "VDialogueRexRexTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<pant pant pant>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to take a closer look at you."
+  },
+  {
+   "id": "VDialogueRexRexTopic030",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{no VO} [The paint, though weathered and fading, is still a recent addition to Rex's bodywork.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Examine the painting of the bull on Rex's side.]"
+  },
+  {
+   "id": "VDialogueRexRexTopic031",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<pant pant pant>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Stop examining Rex.]"
+  },
+  {
+   "id": "VDialogueRexRexTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{no VO, Rex cured} [Rex's new brain looks fresh and healthy.]",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{no VO, Rex not cured} [Rex's brain looks sickly, and the gel in which it's contained doesn't look much better.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Examine Rex's brain case.]"
+  },
+  {
+   "id": "VDialogueRexRexTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{no VO} [Rex's bodywork is battered, scorched, and scratched. It's remarkable that the biological part of him survived at all.]",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Examine Rex's mechanical parts.]"
+  },
+  {
+   "id": "VRexSmellsARat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<bark!><bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VRexSmellsARat"
+  },
+  {
+   "id": "GOODBYE",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Rex not cured} <whimper>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Rex cured} <bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "HELLO",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "<growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<growl>",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "<bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Hello"
+  },
+  {
+   "id": "VFSRexReplies",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "<bark!>",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "VFSRexReplies"
+  }
+ ]
+}

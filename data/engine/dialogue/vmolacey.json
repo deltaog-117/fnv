@@ -1,0 +1,129 @@
+{
+ "id": "vmolacey",
+ "speaker_name": "Lacey (Fallout: New Vegas)",
+ "source": "VMOLacey.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Bad person just walked in} Got some nerve, coming to an NCR outpost with that look about you. {Low, warning} Hope you aren't here to trade, not sure you can afford the prices.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Mildly curious} New face in the Outpost, must've come from the North. {Frowns} So - what'll you have?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Back round? Just my luck... what'll it be this time? {Curious, then slight irritation, as if the player's putting her out by just being there.}",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vmojavevmolaceytopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Skeptical, player's bad news} For you? I'm not sure I want to be seen dealing with you... {changes tune} but if you're willing to pay a little extra...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojavevMOLaceyTopic003",
+   "prompt": "What do you have for trade?"
+  },
+  {
+   "key": "vmojavevmolaceytopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What, Caravan? All right, I'll give it a go. {Shrugs} Haven't exactly got much of a line of folks to serve.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojavevMOLaceyTopic007",
+   "prompt": "I was hoping to pass the time with a game or two."
+  },
+  {
+   "key": "vmojavevmolaceytopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "All right, go on - let's put our cards down.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojavevMOLaceyTopic008",
+   "prompt": "Up for some more Caravan?"
+  },
+  {
+   "key": "vmojavevmolaceytopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Shrugs} Not too much, lot of caravans going nowhere. {Beat} Lot of troopers going nowhere, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Few prospectors here and there, but... {shrug} they don't do more than stink up the place.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Everybody's backed up here. {Scoffs} You think it'd be good for business, but most of the traders are tight with the caps, even the larger caravan outfits.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojavevMOLaceyTopic009",
+   "prompt": "Anything you can tell me about the Outpost?"
+  },
+  {
+   "key": "vmojavevmolaceytopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Dismissive} Work around here? Might check with Jackson in the main building. Or Ghost up on the roof above, but watch out, she's... well, she's kind of a bitch.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Backpedals} Don't tell her I said that, though. {Beat, to herself} Might take a bullet some night when I'm going to the latrine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojavevMOLaceyTopic010",
+   "prompt": "Any work around here?"
+  },
+  {
+   "key": "vmojavevmolaceytopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Dismissive goodbye} Fine, then.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vMojavevMOLaceyTopic011",
+   "prompt": "Never mind, I'll be going now."
+  }
+ ],
+ "speaker": "lacey"
+}

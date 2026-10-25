@@ -1,0 +1,473 @@
+{
+ "id": "northvegascrandon",
+ "speaker_name": "Crandon",
+ "source": "NorthVegasCrandon.txt",
+ "topics": [
+  {
+   "key": "crandonjoinup",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You want to help us out? What makes you think we want you around here, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonJoinUp",
+   "prompt": "Need a hand with any trouble?"
+  },
+  {
+   "key": "crandonnorthvegas",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We've been here for a few years, just looking for a place we can call our own.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Life's harsh, but still, it beats the hell out of the desert. We've got numbers, we've got food, and we've got trade. That's progress, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonNorthVegas",
+   "prompt": "Tell me about North Vegas."
+  },
+  {
+   "key": "crandonstufftodo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Keep your nose to the ground, stranger, that's what. Mind your own business and let us mind our own, are we clear?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you've got a mind to loot the old H&H Tools factory, don't even bother. That place is sealed tighter than a Radscorpion's bunghole.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Every salvager who tries gets blown up, flattened, or gutted by traps. Then he starts to stink up the town and we're the ones to clean up the mess.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonStuffToDo",
+   "prompt": "What is there to do here?"
+  },
+  {
+   "key": "crandonstufftodorepeat",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's right, the H&H Tools factory on the main drag. It's been sealed for ages, and it's lousy with traps. Still, might be something valuable to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonStuffToDoRepeat",
+   "prompt": "What was that about salvage and traps?"
+  },
+  {
+   "key": "crandontownwatch",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Jules, myself, and a few others patrol the streets and sewers. Any punks come up out of the rest of the city, we give 'em the run off.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Like I told you, we look out for each other here. Me, Jules, and a few others make sure any trouble stays the hell out of our streets.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonTownWatch",
+   "prompt": "Tell me more about your role here."
+  },
+  {
+   "key": "crandonwatchstage1",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Some squatters decided to take space where they don't belong, over by the playground. We'd prefer to keep 'em off the streets and out of sight.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe you could go and talk to them... convince them to see things our way.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good work with those newcomers. I think you can handle more serious business... with more serious rewards.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "There's a handful of greasers down in the sewers causing trouble. They ain't packing too much iron, but I'd like them dealt with all the same.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonWatchStage1",
+   "prompt": "What would you like me to do?"
+  },
+  {
+   "key": "crandonwatchstage2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Good work with those newcomers. I think you can handle more serious business... with more serious rewards.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "There's a handful of greasers down in the sewers causing trouble. They ain't packing too much iron, but I'd like them dealt with all the same.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonWatchStage2",
+   "prompt": "Got any more work for me?"
+  },
+  {
+   "key": "crandonwatchstage3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know, this time I may actually need a gun with a brain.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Talk to Mrs. Hostetler. She's near the Crimson Caravan. I think her daughter's making bad \"friends,\" the kind that'll slit your throat in the dark.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonWatchStage3",
+   "prompt": "Anything else you'd like me to do?"
+  },
+  {
+   "key": "crandonwhoareyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Name's Crandon, stranger. I keep an eye out for trouble around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CrandonWhoAreYou",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Can I help you with something, stranger?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I hear tell you pretty well wiped out the Fiends around here. Not bad, not bad.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Welcome back, merc.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you taken care of those squatters?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Have you run off those greasers?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Good to see you around. Take care, merc.",
+     "emotion": "happy",
+     "intensity": 30
+    },
+    {
+     "text": "You're still around, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Really? You'll forgive me if I ask you to back that claim up, won't you?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic000",
+   "prompt": "I'm a friend, trust me."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic000_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] That's the kind of stuff I like to hear, stranger. All right, we could use someone like you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic000",
+   "prompt": "I respect your independence, and I'm good at taking care of troubles."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Folks that don't belong. Murderers, rapists, extortionists, and everything in between.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You know, business as usual in North Vegas, stranger.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic001",
+   "prompt": "What kind of trouble?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "NCR... did you just crawl out from under a rock? Those folks only care about {emphasize all three \"theirs\"} their business, their people and their pockets.",
+     "emotion": "surprise",
+     "intensity": 40
+    },
+    {
+     "text": "NCR's order? Don't make me laugh, stranger. We work this land, we own these streets, and we yank up the bad weeds ourselves, got it?",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic002",
+   "prompt": "Doesn't the NCR keep order around here?"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic004",
+   "prompt": "I'm not interested in this, right now."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll see you around.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic005",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Hmm. Honesty's a good trait, stranger, but I don't deal with mercenaries unless I'm damn sure they can be trusted.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic007",
+   "prompt": "If you've got the caps, I'll back any claim you want."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic007_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Spoken like a true mercenary. Well, you seem like you can handle yourself, stranger, and we can use people like that.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We may not squander our wealth like those fools in the Strip, but we take care of our own business. Consider this a token of good faith.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic007",
+   "prompt": "I've got the skills, the will and the firepower. All I expect is a decent reward for my work."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like your speed, stranger. Let me know when that's done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic008",
+   "prompt": "I'm on it."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Mercs with a brain are no good to me, stranger. Let me know when you start behaving like a real gun.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic009",
+   "prompt": "I've got other things in mind, right now."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Glad to hear it. Let me know when they're gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic010",
+   "prompt": "I'll deal with them."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I like your enthusiasm, stranger. Let me know when that's done.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic012",
+   "prompt": "Okay, I'll go see her."
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I thought you'd be made of stronger stuff, merc. Don't prove me wrong or I'll have to find someone else with the guts to do what's right.",
+     "emotion": "anger",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic014",
+   "prompt": "I haven't sent them to the sewers, yet.",
+   "label": "FiendResult"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic014_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Great work. I gotta make sure this place doesn't eat itself from the inside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Great work. I gotta make sure this place doesn't eat itself from the inside.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I take care of those who help with that. Here, you earned it.",
+     "emotion": "happy",
+     "intensity": 30
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic014",
+   "prompt": "I've taken care of those troublemakers.",
+   "label": "FiendResult"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's good to hear. Can't ever be too careful with strangers around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "That's good to hear. Can't ever keep too many eyes on strangers around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I take care of those who help with that. Here, you earned it.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic015",
+   "prompt": "I've dealt with those newcomers.",
+   "label": "SquatterResult"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic015_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm starting to think you're as undesirable around here as those strangers. Do something to change my mind, merc.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic015",
+   "prompt": "Not yet. I'll get on it.",
+   "label": "SquatterResult"
+  },
+  {
+   "key": "vdialoguevegasnorthnorthvegascrandontopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suit yourself.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VDialogueVegasNorthNorthVegasCrandonTopic016",
+   "prompt": "I'm not interested in this right now."
+  }
+ ],
+ "speaker": "crandon"
+}

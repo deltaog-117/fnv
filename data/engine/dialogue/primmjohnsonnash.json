@@ -1,0 +1,1120 @@
+{
+ "id": "primmjohnsonnash",
+ "speaker_name": "Johnson Nash",
+ "source": "PrimmJohnsonNash.txt",
+ "topics": [
+  {
+   "key": "188claythoughtshow",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "So you convinced those NCR sons of bitches to take an interest, did you? Well, we need the help. I'll sign.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188ClayThoughtsHow",
+   "prompt": "Will you sign this formal letter asking the NCR to take control of Primm?"
+  },
+  {
+   "key": "caravanoffer",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You think you have what it takes, kid?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "CaravanOffer",
+   "prompt": "Want to play a hand of Caravan?"
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know what it was brought you to Primm, youngster, but you might want to rethink your plans. Town's gone to hell.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{New Line} You got that old robot up and running again? How is it working out for you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey, youngster. Still hanging about Primm, huh?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Heard it was you brought the law back to Primm, youngster. Hat's off to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Primm had rule of law for the blink of an eye, but now we're back where we started.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hey there, youngster.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "jnashaboutbisonsteve",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "It's an old hotel and casino here in town. Old Laurie used to rent out rooms there, but she took off months ago.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Across the way from the Vikki and Vance, the other old casino. Can't miss it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashAboutBisonSteve",
+   "prompt": "What's the Bison Steve?",
+   "label": "What's the Bison Steve?"
+  },
+  {
+   "key": "jnashaboutlaw",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, you can call Beagle a deputy so long as you don't harbor too high an opinion of the word.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Boy was 'bout as useful as tits on a radscorpion. Only qualification he ever had was to be brother to the wife of the sheriff.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Still, I s'pose he don't deserve what's befell him. We would've considered paying the ransom, if we'd had caps to spare.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashAboutLaw",
+   "prompt": "You say Powder Gangers kidnapped Primm's deputy?"
+  },
+  {
+   "key": "jnashaboutlaw_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Sarcasm} I feel safer already. {harrumphs} Meanwhile, there's still more of them Powder Gangers out there than I care to count.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What we need around here is a real sheriff. Someone who can help fight off the next attack.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashAboutLaw",
+   "prompt": "I rescued Deputy Beagle."
+  },
+  {
+   "key": "jnashaboutlaw_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Kind of too bad you didn't do it the other way around! {chuckles} Primm ain't got no future until rule of law comes back to town.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashAboutLaw",
+   "prompt": "I freed Deputy Beagle and killed the Powder Gangers."
+  },
+  {
+   "key": "jnashaboutlaw_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Finally decided to make yourself useful, huh? If you can bring the law back to Primm, we'll all be in your debt.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashAboutLaw",
+   "prompt": "I'll find Primm a new sheriff."
+  },
+  {
+   "key": "jnashaboutprimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Let's see. Been tough around here for a good while now. Worse since them thugs kidnapped our deputy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It started with that breakout from the prison up the road. First there was just a few thugs rolling through town, but then they got organized.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now they call themselves Powder Gangsters or something, and run around throwing dynamite and shooting people.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Little while ago a good chunk of them left whatever kind of organization they got up there to squeeze all the food and drink out of us they could.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashAboutPrimm",
+   "prompt": "What happened to Primm?"
+  },
+  {
+   "key": "jnashaboutvikkivance",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's where we are. This here little casino brought some cash and bodies into the town before them Powder Gangsters came in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They can't rush us without eating a good bit of hot lead, but we are in kind of a box canyon. Guess this is as fitting a place for that as any.",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "I reckon if they thought hard enough about it, they'd realize they got more bodies than we have bullets, but for now we're safe enough in here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashAboutVikkiVance",
+   "prompt": "What's at Vikki and Vance?"
+  },
+  {
+   "key": "jnashbarter",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure, have a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well yes and no. My shop's got plenty of stock.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Problem is I ain't going into my shop until I know it's good and safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Give me a moment to get back to my shop and I'll show you my stock.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Things are pretty good with Meyers watching over us. I can give you a little bit of a discount.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Yep, and I got more ammunition now that the NCR keeps supplies flowing in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "On the other hand I'm payin' them NCR taxes, so now you got to as well.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashBarter",
+   "prompt": "Do you have anything for sale?"
+  },
+  {
+   "key": "jnashchipinfo",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You take care of our problems here and I'll give you the information that you need.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Them Powder Gangsters got our deputy locked up in the Bison Steve. Be nice to get him out of there... but this town's gonna need some real law.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One of the first things them punks did when they came in was to kill our sheriff. You find us a new one and we can talk.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashChipInfo",
+   "prompt": "Can you help me find the package I lost?"
+  },
+  {
+   "key": "jnashchipinfoduplicate000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{edited line} Beagle had some notes he was taking while he was eavesdropping around the Powder Gangsters. He'll be your best source of information on that subject.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashChipInfoDUPLICATE000",
+   "prompt": "Where can I get information on the man that shot me?"
+  },
+  {
+   "key": "jnashcourier",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I don't got any work right now, sorry to say.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "JNashCourier",
+   "prompt": "I'm a courier with the Mojave Express."
+  },
+  {
+   "key": "jnashcourier_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{edited line} I'll tell you whatever I can. Do you have a delivery order you can show me?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashCourier",
+   "prompt": "I lost a package I was supposed to deliver."
+  },
+  {
+   "key": "jnashhowlaw",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You done everything you could, youngster. It's over for Primm. Ain't nothing to be done about it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "With Meyers dead and his deputies gone, Primm's only hope is to accept NCR rule. If you run across one of their patrols, tell 'em so.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashHowLaw",
+   "prompt": "How can I bring rule of law back to Primm?"
+  },
+  {
+   "key": "jnashhowlaw_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{edited line} Well I guess you're gonna have to find us a new lawman.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I suggest talking to those NCR troopers across the bridge. I also overheard the Powder Gangsters talking about some ex-sheriff on lockdown there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashHowLaw",
+   "prompt": "Your deputy died in Bison Steve."
+  },
+  {
+   "key": "jnashhowlaw_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Right now Beagle is the closest Primm's got to any organized law, but he's still stuck up in Bison Steve.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "First thing I'd say his get his sorry butt outta there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashHowLaw",
+   "prompt": "What can I do to help Primm?"
+  },
+  {
+   "key": "jnashhowlaw_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Your guess is good as mine. You might luck upon someone who's a natural-born sheriff.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I heard of one fella what got himself locked in that NCR jailhouse up I-15. Maybe that ain't the best credential, but a sheriff's a sheriff.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I imagine the NCR would be able to bring some law to the town, too. But from what I seen they barely got the firepower to protect themselves.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashHowLaw",
+   "prompt": "How can I help bring rule of law back to Primm?"
+  },
+  {
+   "key": "jnashhowlaw_5",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "With the NCR driven off? I figure our only hope'd be for someone like you to find us someone who's crazy or dimwitted enough to take the job.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashHowLaw",
+   "prompt": "How can I bring back rule of law to Primm?"
+  },
+  {
+   "key": "jnashinfo100caps",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, come back and see me after you find some caps somewheres and put 'em on you!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashInfo100Caps",
+   "prompt": "I don't have 100 caps on me."
+  },
+  {
+   "key": "jnashinfo100caps_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well, I swore not to say a word, but an NCR deserter passed through some days ago and traded for supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "According to him, the NCR's decided enough's enough and's going to send in a mess of troops to take back the prison any day now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashInfo100Caps",
+   "prompt": "Here's your 100 caps."
+  },
+  {
+   "key": "jnashinfobarter",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I guess that'll do.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I swore not to say a word to no one, but an NCR deserter passed through some days ago and traded for supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "According to him, the NCR's decided enough's enough and's going to send in a mess of troops to take back the prison any day now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashInfoBarter",
+   "prompt": "I could see giving you 50 caps, maybe.",
+   "label": "No, but it's worth 50 caps."
+  },
+  {
+   "key": "jnashinfobarter_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Then I guess you won't be knowing more, eh? But you know where to find me, should you change your mind.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashInfoBarter",
+   "prompt": "No way I'd pay more than 20 caps to know more.",
+   "label": "No, but it's worth 50 caps."
+  },
+  {
+   "key": "jnashinfonothanks",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "If you change your mind, you know where to find me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashInfoNoThanks",
+   "prompt": "No thanks."
+  },
+  {
+   "key": "jnashinfospeech",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Hold on there! With everything you already done for this town, I'd feel ungrateful as hell if I let you risk yourself for no good reason!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "He made me swear not to say a word to no one, but an NCR deserter passed through some days ago and traded for supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "According to him, the NCR's decided enough's enough and's going to send in a mess of troops to take back the prison any day now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashInfoSpeech",
+   "prompt": "If the NCR won't deal with those prisoners, I'll have to risk doing it myself.",
+   "label": "Player tries to use Speech to learn about NCR activities"
+  },
+  {
+   "key": "jnashinfospeech_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] No need to get upset, youngster! We're all friends here!",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "I swore not to say a word to no one, but an NCR deserter passed through some days ago and traded for supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "According to him, the NCR's decided enough's enough and's going to send in a mess of troops to take back the prison any day now.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashInfoSpeech",
+   "prompt": "I only ask politely the first time, old man. Now tell me.",
+   "label": "Player tries to use Speech to learn about NCR activities"
+  },
+  {
+   "key": "jnashinfospeech_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, youngster. I'm a trader, and if something's got value, I can't give it away for nothing.",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashInfoSpeech",
+   "prompt": "Um, tell me free or... I mean, can't you just tell me? Please?",
+   "label": "Player tries to use Speech to learn about NCR activities"
+  },
+  {
+   "key": "jnashnews",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We got rule of law again, but of the martial variety. NCR orders us around like junior soldiers. Better than lawlessness, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got a new sheriff, as you know. Meyer's a bit rougher-hewn than I might've liked, but he seems like a good sort. So far, so good.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashNews",
+   "prompt": "How's Primm these days?",
+   "label": "What's going on in Primm?"
+  },
+  {
+   "key": "jnashpowdergangster",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Gangers, gangsters, all sounds like trouble to me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashPowderGangster",
+   "prompt": "Why do you keep calling them Gangsters? I thought they were called Powder Gangers."
+  },
+  {
+   "key": "jnashwhoareyou",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Johnson Nash's my name. Husband to Ruby Nash. Lived in Primm going on eight years now, thick and thin.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'm a trader primarily, for what it's worth with things like they are. I also run the local Mojave Express outpost.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "JNashWhoAreYou",
+   "prompt": "Who are you?"
+  },
+  {
+   "key": "primmnashdeliverytopic",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Oh, so you're talking about one of {emph} them packages. That job had strange written all over it. But we couldn't turn down the caps.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDeliveryTopic",
+   "prompt": "What can you tell me about this job? <Show Delivery Order>"
+  },
+  {
+   "key": "primmnashdeliverytopic_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure. I'll tell you what I know.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDeliveryTopic",
+   "prompt": "I want to ask you some more about the delivery I was supposed to make."
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well,{deep breath} I'll answer what I can.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic000",
+   "prompt": "I have some questions about Primm."
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ask away.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic001",
+   "prompt": "I have some more questions about Primm."
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I guess I don't have anywhere better to be.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic002",
+   "prompt": "I'd like to ask you about something else."
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Don't go getting yourself shot.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic003",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well I guess I never thought of that. I guess he could be sheriff, if you think he could be reprogrammed for it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic004",
+   "prompt": "What about Primm Slim? Could he be sheriff?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{New Line} That beat up old thing? What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic007",
+   "prompt": "I have some questions about your robot."
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure do. I run the courier office out of my shop. Leastaways I did before things went to hell around here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic008",
+   "prompt": "Do you know where I can find the courier office?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That cowboy robot had us hire six couriers. Each was carrying something a little different. A pair of dice, a chess piece, that kind of stuff.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Last word I had from the office, it looked like payment had been received for the other five jobs. Guess it was just your chip that didn't make it.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Irritated} First deadbeat{disgust} we hired to do the job canceled. Hope a storm from the Divide skins him alive. {Beat, calms himself} Well, that's where you came in.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "To start with, it was a robot that set it up! Came rolling in with a picture of a cowboy on a screen where its face should be.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Had me send a request to the Express office in Hub, for seven couriers to be hired. Each one to carry {beat, deciding on right word, emphasis} bric-a-brac, seemed to me!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Playing cards, dice, chess pieces, trinkets like that. Then, next thing I know, he turns around and says he wants six couriers, not seven!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Has me send on the \"corrected\" order for six couriers along with a bunch of letters and numbers, like some kind of code or something!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Don't ask me what that was about, {cuz} because I never seen anything like it. {realizing} Anyways, you must've been Courier 6, then? The Poker Chip?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic009",
+   "prompt": "What was strange about it?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{edited line} Well, now that you mention it, a few nights back one of the townies was out scavenging for supplies.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He said he saw a fella with a daisy suit come through with some of them Great Khan misfits. They was talking about a chip.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic010",
+   "prompt": "Some men stole my package. A man in a checkered suit and some thugs. Did they pass this way?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{New Line} A courier dropped it off a couple months back. I got it working for a little while, but the darn thing pooped out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{New Line} I haven't been able to get it up and running again. I was hoping to use it for some courier work, but that ain't gonna happen.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic011",
+   "prompt": "Where did it come from?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{New Line} Hell if I know. I don't think its serious, but my tinkering days are long gone.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic012",
+   "prompt": "What is wrong with it?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{New Line} You're welcome to try. Its yours if you can get it working.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{New Line} If I had my way I'd dump it in the scrapyard in Novac and be done with the damn thing.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic013",
+   "prompt": "Do you mind if I try to fix it?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{edited line} Well for that your best bet is going to be talking to Deputy Beagle.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since they came to town he was keeping a good bit of notes on them, and he was slinking around Bison Steve when your pretty-boy friend came through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He may have heard where they were going.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{edited line} Deputy Beagle would have been your best bet, before he met that tragic end.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Since they came to town he was keeping a good bit of notes on them, and he was slinking around Bison Steve when your pretty-boy friend came through.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Maybe you can track down whatever notes he was keeping and find some thing to help you there.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic014",
+   "prompt": "One of those men shot me. I need to know the best way to get to them."
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nope. Different fella. Bigger. Had himself a face on a screen, and he talked more like you or me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic015",
+   "prompt": "Cowboy robot? You mean the one over there?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nope. Different fella. Bigger. Had himself a face on a screen, and he talked more like you or me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic016",
+   "prompt": "Cowboy robot? You mean Primm Slim?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Confused, whole thing was strange, slow} Yeah, got this look when he saw you next down on the Courier list. His expression turned right around, asked me if your name was for real. {Previous text below}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Delivered as \"right as rain\"} I said, sure as lack of rain, you were still kicking. {Beat, slightly incredulous} Then he turned down the job, just like that. I asked if he was sure, it was good money. {Previous text below}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Slow, foreshadowing} No, let {emph} \"Courier Six\" carry the package, that's what he said - like the Mojave'd sort you out or something. Then he just up and walked out.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic017",
+   "prompt": "He canceled?",
+   "label": "How do you know that?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No idea. Sounds like you two had a history for him to act like that. And turn down the money, too. {Previous Text Below.}",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hope he didn't see any trouble in that package of yours. Maybe he thought your name was bad luck. Not for me to say.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic018",
+   "prompt": "Do you know who he was? Where he went?",
+   "label": "What are you talking about?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{New Line} That beat up old pile of bolts? What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic019",
+   "prompt": "I have some questions about ED-E."
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{New Line} A courier dropped it off a little bit ago. I'd hoped to get it up and running for some courier work, but never could get it running.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic020",
+   "prompt": "Where did it come from?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{New Line} Can't say that I have, of course I never saw it running for long, so I never heard it do much of anything.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic021",
+   "prompt": "Did you ever hear it say anything odd?"
+  },
+  {
+   "key": "primmnashdialogueprimmjohnsonnashtopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{New Line} Not a bit. I imagine there must be some people around curious about that kind of technology.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "PrimmNashDialoguePrimmJohnsonNashTopic022",
+   "prompt": "Any idea what I should do with it?"
+  },
+  {
+   "key": "vendingprimm",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Narrating} Primm, already torn apart by Powder Gangers, was dealt a killing blow by the Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Though prospectors pick through the remains of the town from time to time, no one re-establishes it as a settlement.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} After Hoover Dam, NCR helps rebuild Primm as a major stopping point on the Long 15.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Though Primm's citizens chafe under NCR's taxes, they benefit greatly from the increased protection and merchant traffic.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Despite NCR's pledge to support Primm, they abandon the town after their loss to Mr. House.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "As repayment for their NCR loyalty, Mr. House sends Securitrons to Primm to \"protect\" it and collect heavy taxes from its citizens.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Despite NCR's pledge to support Primm, they abandon the town after their loss to Caesar.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Though Caesar keeps Primm open for business, its citizens live under the constant watch of Legion soldiers.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Despite NCR's pledge to support Primm, they abandon the town after their loss to the Courier.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Independent again, Primm operates much as it had before the Powder Gangs arrived: full of ups and downs.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} After Hoover Dam, Sheriff Meyers runs Primm with his own style of frontier justice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He deals with most folks fairly, but now and then someone winds up dead with little to no evidence against them.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Hot-headed to the end, Sheriff Meyers choose to oppose Caesar's takeover of Primm with a standoff.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Though the citizens take out a few Legionaries, the town quickly falls to Caesar, its citizens utterly wiped out.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Primm Slim proves to be an able-minded, if not able-bodied, sheriff for Primm.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Due to his slow speed, some crooks get away without a scratch, but Primm continues to prosper under his watchful robotic eye.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Narrating} Not understanding the gravity of the Legion's imminent takeover of Primm, Sheriff Primm Slim valiantly attempts to resist Caesar's will.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VEndingPrimm",
+   "prompt": "VEndingPrimm"
+  },
+  {
+   "key": "vms02anynpcaboutncr",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I might know something. But my memory ain't what it used to be. Sometimes it needs motivating.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I might know something. 'Bout 100 caps worth of something, let's say?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02AnyNPCAboutNCR",
+   "prompt": "Do you know if the NCR is planning to attack the prison north of here?",
+   "label": "Any idea what the NCR's up to in Primm?"
+  },
+  {
+   "key": "vms02anynpcaboutncr_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ain't that a coincidence! My mind's still hazy on the subject.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "What a coincidence! I'd still like my 100 caps!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS02AnyNPCAboutNCR",
+   "prompt": "I still want to know if the NCR is planning to attack the prison.",
+   "label": "Any idea what the NCR's up to in Primm?"
+  }
+ ],
+ "speaker": "johnson_nash"
+}

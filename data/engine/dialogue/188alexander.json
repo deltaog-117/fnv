@@ -1,0 +1,276 @@
+{
+ "id": "188alexander",
+ "speaker_name": "Alexander (Fallout: New Vegas)",
+ "source": "188Alexander.txt",
+ "topics": [
+  {
+   "key": "188alexanderaboutcaravans",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much to tell. A brahmin or two loaded up with weapons, and a whole mess of well-armed guards to make sure it ends up where it's supposed to.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "One nifty bit, though. The gun cases are rigged to explode. So trying to loot one of our caravans doesn't do much good.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And that's how the NCR stays equipped. The only thing we don't bring in is energy weapons.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderAboutCaravans",
+   "prompt": "Tell me about Gun Runner caravans."
+  },
+  {
+   "key": "188alexanderaboutgunrunners",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The Gun Runners have been putting rapid-fire death-dealing in the hands of anyone who needed to defend himself for over a century.",
+     "emotion": "happy",
+     "intensity": 50
+    },
+    {
+     "text": "We're the NCR's #1 supplier of weapons and ammunition. You might call us an unofficial branch of the army.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderAboutGunRunners",
+   "prompt": "Tell me about the Gun Runners."
+  },
+  {
+   "key": "188alexanderaboutyourrole",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm a salesman. I swing through McCarran and the dam once a week or so to take orders. But lately I spend most of my time in this piss heap.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Ever since the 15 shut down, all caravans come through here - right to me. I check the stock and direct deliveries onward to meet orders.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Sure, it stinks to hang out here, but it won't be forever. Plus I can afford a monthly bender on the Strip and still build up my nest egg.",
+     "emotion": "happy",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderAboutYourRole",
+   "prompt": "What do you do?"
+  },
+  {
+   "key": "188alexanderareyouselling",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Am I selling? Yeah. Am I selling to you? No. Sorry to hurt your feelings, but you're small time. Move along.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderAreYouSelling",
+   "prompt": "I'd like to see what you have for sale."
+  },
+  {
+   "key": "188alexanderbuysell",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's usually a gun merchant hanging around topside. I'm sure she'll take care of you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderBuySell",
+   "prompt": "So where can I buy some weapons?"
+  },
+  {
+   "key": "188alexandergunrunner",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Like you have a clue what that even means. {scoffing}",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderGunRunner",
+   "prompt": "So you're a Gun Runner?"
+  },
+  {
+   "key": "188alexandernoenergyweapons",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "We used to. But every caravan carrying them was getting ambushed and wiped out. By someone sophisticated enough to know which was which.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We think it was the Brotherhood of Steel - those crazies always go hard for energy weapons. But the NCR would rather pretend they killed all of them.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderNoEnergyWeapons",
+   "prompt": "Why don't you deal in energy weapons?"
+  },
+  {
+   "key": "188alexanderpcachievements",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Still plenty of other problems keeping the 15 shut down, though. Thanks for playing.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderPcAchievements",
+   "prompt": "I made sure those prisoners won't bother Primm anymore."
+  },
+  {
+   "key": "188alexanderpcachievements_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That'll help. Still plenty of problems out that way, though.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderPcAchievements",
+   "prompt": "I restored rule of law to Primm."
+  },
+  {
+   "key": "188alexanderpcachievements_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You took out a Deathclaw nest? Either you're lying, or you're tougher than you look.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Still plenty of troubles out that way, though. Thanks for playing.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderPcAchievements",
+   "prompt": "188AlexanderPcAchievements"
+  },
+  {
+   "key": "188alexanderpcachievements_4",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's impressive - if you're telling the truth.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Still, it'll take some time for routes to readjust. I expect I'll be working from here for the foreseeable future.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderPcAchievements",
+   "prompt": "I've cleared all the trouble west of here. Caravans can start using I-15 again."
+  },
+  {
+   "key": "188alexanderseeinventory",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You might be on to something. I like to hang on to any weapons mods I run across...",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Take a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderSeeInventory",
+   "prompt": "I figure a guy like you gets his pick of killing gear. (>40)"
+  },
+  {
+   "key": "188alexanderseeinventory_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Do I look like a fucking arms caravan to you?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Do you think the Gun Runners keep the NCR military supplied by carrying weapons and ammo from the Boneyard out here by the armload?",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Get a clue. We have caravans. We deal in bulk.",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderSeeInventory",
+   "prompt": "A gun nut like you must have some weapons stashed around here."
+  },
+  {
+   "key": "188alexanderseeinventory_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Take a look.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderSeeInventory",
+   "prompt": "Let me see what you have for sale."
+  },
+  {
+   "key": "188alexanderthreaten",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You like it any better if I tell you to fuck off?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "188AlexanderThreaten",
+   "prompt": "I don't like your attitude."
+  },
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Is there some reason I should be talking to you? {disdaining}",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Still making a nuisance of yourself?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  }
+ ],
+ "speaker": "alexander"
+}

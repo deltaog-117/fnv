@@ -1,0 +1,54 @@
+{
+ "id": "bcworker",
+ "speaker_name": "Boulder City worker",
+ "source": "BCWorker.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Worker} It's about time they called us back.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Worker} Work's slow right now, but at least it's something.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Worker} Train's not working yet.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Worker} I'm happy the Big Horn is still around.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of the machinery's frozen up. Need someone to talk a look at it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "hello",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "You sure you're in the right place?",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "topic": "HELLO",
+   "prompt": "Hello"
+  }
+ ],
+ "speaker": "boulder_city_worker"
+}

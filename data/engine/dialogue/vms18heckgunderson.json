@@ -1,0 +1,527 @@
+{
+ "id": "vms18heckgunderson",
+ "speaker_name": "Heck Gunderson",
+ "source": "VMS18HeckGunderson.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What's this about the White Glove Society?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got me my boy back. I got no words.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now... I hope you didn't do no harm to whoever's responsible for this. I wanna skin their hides myself.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You got a lot of nerve sticking around here. If I didn't have better things to do I'd thump your skull for what you said.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Tell me good news.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{To himself} Ted, where are you, boy?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Beg your pardon, stranger, but I'm looking for someone. You ain't seen a young man with dark brown hair and a white hat on lately, have you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You ain't heard anything about my boy, have you?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "You done right by me. I appreciate it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vms18securitronarrestheck",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What in blazes? That's my son you're talking about! He ain't dead. I'm looking for him. {enraged. he's being arrested for his son's murder.}",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "Where's my son? What'd you do with my boy?",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "You can't do this to me! This is a mistake!",
+     "emotion": "anger",
+     "intensity": 80
+    },
+    {
+     "text": "The hell I will.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18SecuritronArrestHeck",
+   "prompt": "VMS18SecuritronArrestHeck"
+  },
+  {
+   "key": "vms18vms18heckgundersontopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "<Sighs> Ain't nobody got one darned piece of news about my boy? Not one lousy speck of information?",
+     "emotion": "sad",
+     "intensity": 50
+    },
+    {
+     "text": "Ain't got one Brahmin unaccounted for across a dozen ranches, but I'm here for an hour and my own son just up and disappears on me.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic000",
+   "prompt": "No, I haven't."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What? Oh, my God! Where?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic002",
+   "prompt": "<Lie> Yes, I saw him here in the hotel."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My boy, Ted. He was right here. I didn't leave him but a minute. I told him to stay put while I talked some things over with the White Glove folks.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "He never was one to stay tied down to a spot, though. Gets that from his mother.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Got most of my staff out looking for him now. I'd be out myself, but I keep hoping he'll show up back here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Course if he does that I'll whup him till his skinny hide turns to leather for putting me through this. But that don't mean I wouldn't be grateful.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic003",
+   "prompt": "You lost your son?"
+  },
+  {
+   "key": "vms18vms18heckgundersontopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yep, got a whole mess of brahmins to my name. Bighorners, too.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Used to just have the one ranch, but land was easy to grab before the soldiers moved in.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Before I knew it I was running one of the biggest ranching operations east of California.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now everywhere I go, folks I never even met shake my hand and call me \"Mr. Gunderson.\" Don't know quite what to make of that.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic004",
+   "prompt": "So you're a rancher?"
+  },
+  {
+   "key": "vms18vms18heckgundersontopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's what they call themselves, the folk that run this place. They're the ones dressed all fancy with their bowties and shiny dresses.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Some of 'em got masks, too. Real hard to trust folks like that. Couple of them show their faces and that's who I do my business with.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I don't talk to none of the other ones.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic005",
+   "prompt": "Did you say something about a white glove?"
+  },
+  {
+   "key": "vms18vms18heckgundersontopic006",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "That's between me and the White Glove Society.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But let's just say they control the food supply around here, and I got lots of food to give, but that ain't as welcome as you might think.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic006",
+   "prompt": "What business did you have here at the hotel?"
+  },
+  {
+   "key": "vms18vms18heckgundersontopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'd be more than happy to have you. Heck, I'll hire anybody with a pair of legs and at least one good eye at this point.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "There'd be a lot of money in it for you if you can get him back to me safe.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "And if he ain't, you can bet I'll pay for the names of the sons of bitches responsible.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic007",
+   "prompt": "Let me help find your son."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What in Creation is the matter with you? Ain't you ever been a parent? Ain't you ever been worried you lost someone?",
+     "emotion": "anger",
+     "intensity": 75
+    },
+    {
+     "text": "You got a real sick sense of humor.",
+     "emotion": "anger",
+     "intensity": 75
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic009",
+   "prompt": "He's over in the bathhouse, wearing a skimpy two-piece bathing suit."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're dead right it's serious. I ain't seen my son in hours. Don't know where he went.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Folks round here, some of 'em would kill you soon as look at you. His whole life I tried to keep him at the ranch, away from places like this.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Now I take him here and what happens?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic010",
+   "prompt": "Sorry. I didn't realize the situation was so serious."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Confound it! I just don't know how I'm supposed to sleep knowing whoever done this got away.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "All right. Well, I promised you I'd make it worth your while, so here you are.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Try not to lose it all at the same casino.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic012",
+   "prompt": "<Lie> I don't know who took him. I just found him."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Well that does it! None of them maniacs will ever do business with Heck Gunderson long as they live.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Hell, I'll put me together a damn blockade. Hit 'em where it hurts.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They control the food? Well there ain't gonna be no food. Not for anybody in this whole damn town.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "It's a goddamned monument to inhumanity. Let 'em starve. Biggest favor anyone's ever done this hellhole.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic013",
+   "prompt": "You can blame the White Glove Society. They're all cannibals."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You better be right. Cause I got me a mind to wipe this town off the map if some of the folks running it are to blame.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Well who did this, if it wasn't the White Gloves?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic014",
+   "prompt": "Your son is confused. He doesn't know what he's saying."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "The heck I don't! It's their support that gives these bastards power.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "They all oughtta suffer for what they done. I just won't be satisfied with anything less. Wouldn't be enough.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My mind's made up on this. I'm cutting off the food supply to the Strip. They gotta learn their lesson the hard way, looks like.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic015",
+   "prompt": "Let's not be hasty. You don't have to punish the entire Strip."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] I don't like this place. Whole Strip, really. Ever since I got here, the stink of it... it's flooded my nostrils.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "But you got a point. They're already hell-bent on depravity here. All I'd be doing is helping them along.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic016",
+   "prompt": "That's just what they'd want. You'd be driving the city to eat each other."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sometimes I got me so many ideas, it's a wonder they don't all just burst outta my head.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "This town's headed to perdition anyway. I'm just giving them a little push.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic017",
+   "prompt": "That sounds like a fantastic idea."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] No, that ain't enough. It ain't just him. It's this hotel. It's the whole damn Strip, and everybody who takes their money here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I sensed it when I got here. This place is evil, pure and simple. Everyone did their part. Ted getting taken was just a symptom of the disease.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic018",
+   "prompt": "But, but, but... that's so unfair. You should only punish the man who did it."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic020",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Made me a special arrangement with the hotel. They want to do business with me, they got to play by my rules.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Lot of people out there resent success, might wanna take a swipe at me. This makes them think twice.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If I'd have been thinking, though, I'd have had him watching my boy instead. Then none of this would've happened.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic020",
+   "prompt": "Why is your bodyguard allowed to have a gun?"
+  },
+  {
+   "key": "vms18vms18heckgundersontopic021",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He's here? Bless you, I thought he was a goner for sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Listen, you do what you gotta do to find him. I'd send my men with you but I'm worried they'd kill Ted if we got close.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Reckon you might need one of these. Take it. Just don't wave it around here where they might take it from you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic021",
+   "prompt": "Ted's been kidnapped. He's here in the hotel."
+  },
+  {
+   "key": "vms18vms18heckgundersontopic022",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Breaking - his son died} Confound it. I knew I shoulda stayed with him. Ted, I'm so sorry, boy.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I demand to know who did this!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18VMS18HeckGundersonTopic022",
+   "prompt": "Ted's dead."
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Choke on your goodbyes.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I'll be here.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Best of luck to you.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vms18tedreturned",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "Oh my god! Ted! Are you all right? {reunited with his lost son}",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VMS18TedReturned",
+   "prompt": "VMS18TedReturned"
+  }
+ ],
+ "speaker": "heck_gunderson"
+}

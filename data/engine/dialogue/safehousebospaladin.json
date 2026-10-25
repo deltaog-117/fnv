@@ -1,0 +1,83 @@
+{
+ "id": "safehousebospaladin",
+ "speaker_name": "Sato (Fallout: New Vegas)",
+ "source": "SafehouseBoSPaladin.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What can I do for you?",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vsafehousesafehousebospaladintopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm here to make sure the bunker stays in one piece.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "I'm a master at repairing things, so I check in every so often to make sure all the equipment here is in top working condition.",
+     "emotion": "happy",
+     "intensity": 20
+    },
+    {
+     "text": "If you ever have any gear you need fixed, don't hesitate to ask.",
+     "emotion": "happy",
+     "intensity": 20
+    }
+   ],
+   "topic": "vSafehouseSafehouseBoSPaladinTopic000",
+   "prompt": "Why are you here?"
+  },
+  {
+   "key": "vsafehousesafehousebospaladintopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure thing.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "vSafehouseSafehouseBoSPaladinTopic001",
+   "prompt": "Can you repair something for me?"
+  },
+  {
+   "key": "vsafehousesafehousebospaladintopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "vSafehouseSafehouseBoSPaladinTopic002",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vsafehousesafehousebospaladintopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not always. I have other places I need to be, but I stop by every few days or so.",
+     "emotion": "happy",
+     "intensity": 10
+    }
+   ],
+   "topic": "vSafehouseSafehouseBoSPaladinTopic003",
+   "prompt": "Are you always here?"
+  }
+ ],
+ "speaker": "paladin_sato"
+}

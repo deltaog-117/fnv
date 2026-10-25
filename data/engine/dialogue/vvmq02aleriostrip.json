@@ -1,0 +1,119 @@
+{
+ "id": "vvmq02aleriostrip",
+ "speaker_name": "Alerio",
+ "source": "VVMQ02AlerioStrip.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Strip} The eyes of the mighty {KAI-zar} Caesar are upon you. He admires your accomplishments, and bestows upon you the exceptional gift of his Mark.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Your crimes against the Legion, including the death of the fearless {WUHL-pace In-CUHL-tah} Vulpes Inculta, are hereby forgiven. {KAI-zar} Caesar will not extend this mercy again.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "My Lord requires your presence at his camp, at Fortification Hill. His Mark will guarantee your safe-conduct through our lands.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{Strip} Incidentally, it will interest you to know that the man you seek has fled the Strip, and is likely making haste for Caesar's camp as we speak.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{KAI-zar} Caesar awaits.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformthefortvvmq02aleriostriptopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{KAI-zar} Caesar chose not to give me that information. I was only told to find you and bring you the message.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortvVMQ02AlerioStripTopic000",
+   "prompt": "You said Caesar has an offer for me. What kind of offer?"
+  },
+  {
+   "key": "vfreeformthefortvvmq02aleriostriptopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{offended} The mighty {KAI-zar} Caesar has bestowed upon you his Mark and guaranteed safe-conduct. If he wanted you dead, you would be dead already.",
+     "emotion": "anger",
+     "intensity": 5
+    }
+   ],
+   "topic": "VFreeformTheFortvVMQ02AlerioStripTopic001",
+   "prompt": "If this is a trap, I'm going to take a lot of you with me."
+  },
+  {
+   "key": "vfreeformthefortvvmq02aleriostriptopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Strip} Seek {KAI-zar} Caesar by way of Cottonwood Cove, south of Nelson. The Cursor Lucullus will be waiting.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortvVMQ02AlerioStripTopic002",
+   "prompt": "Tell Caesar I accept his invitation."
+  },
+  {
+   "key": "vfreeformthefortvvmq02aleriostriptopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I am one of {KAI-zar's} Caesar's {froo-men-TAR-ee} Frumentarii, an infiltrator, a spy. You were not difficult to track.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortvVMQ02AlerioStripTopic003",
+   "prompt": "How did you find me here?"
+  },
+  {
+   "key": "vfreeformthefortvvmq02aleriostriptopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go to him, and you will understand.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortvVMQ02AlerioStripTopic004",
+   "prompt": "Why does Caesar want to see me?"
+  },
+  {
+   "key": "vfreeformthefortvvmq02aleriostriptopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Little escapes the notice of {KAI-zar} Caesar. He has eyes everywhere.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformTheFortvVMQ02AlerioStripTopic005",
+   "prompt": "How do you know about Benny?"
+  }
+ ],
+ "speaker": "alerio"
+}

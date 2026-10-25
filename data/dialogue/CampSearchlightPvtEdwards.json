@@ -1,0 +1,774 @@
+{
+ "page": "CampSearchlightPvtEdwards.txt",
+ "speaker": "Kyle Edwards",
+ "topics": [
+  {
+   "id": "GREETING",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Go away.",
+     "emotion": "anger",
+     "intensity": 50
+    },
+    {
+     "text": "Who the hell are you? Better yet, what the hell are you doing in this cursed place?",
+     "emotion": "anger",
+     "intensity": 15
+    },
+    {
+     "text": "You know what? Forget it, it doesn't matter. Welcome to Camp Searchlight, the shittiest place on earth.",
+     "emotion": "sad",
+     "intensity": 15
+    },
+    {
+     "text": "Yeah?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "GREETING"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic000",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No, I'm not. Not yet anyway. I'm Private Kyle Edwards, former NCR trooper.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "You aren't feral are you?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm here because I have nowhere else to go.",
+     "emotion": "sad",
+     "intensity": 25
+    }
+   ],
+   "prompt": "<Questions>"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure about that?",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "<Questions>"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic003",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I am. What of it?",
+     "emotion": "anger",
+     "intensity": 25
+    }
+   ],
+   "prompt": "<Questions>"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Not much, I'm afraid. What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "<Placeholder>"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I may be angry, but I'm not stupid.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "[SUCCEEDED] You're right, I should.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "You should just go kill him."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe now I can get my old life back, or at least most of it.",
+     "emotion": "happy",
+     "intensity": 25
+    },
+    {
+     "text": "It's not much, but I want you to have this. Thanks for your help.",
+     "emotion": "happy",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Astor has agreed to let you join him."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Couldn't you tell? That damn radiation bomb got me. I can't serve the NCR like this...",
+     "emotion": "disgust",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Former? What happened?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I'm still not so sure about that.",
+     "emotion": "fear",
+     "intensity": 15
+    },
+    {
+     "text": "[SUCCEEDED] Guess it can't hurt to say hello.",
+     "emotion": "fear",
+     "intensity": 5
+    }
+   ],
+   "prompt": "<Lie> Oh yeah, I'm sure he'd love to see you."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I know that this place was originally a mining town before the NCR took it over. I think they mined gold before the war.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Sorry I don't know much more than that.",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "What's the history of the camp?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm not so sure about that. I don't know how the NCR feels about ghouls.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Maybe they'll let you back in?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic017",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, I know.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "prompt": "You're right, ghouls aren't fit to be in the army."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic018",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What?",
+     "emotion": "surprise",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Attack] Don't worry, I'll put you out of your misery."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic019",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "On second thought, let me ask you something else."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic023",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Later.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Goodbye."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic029",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sorry, I'm not about to give it up. It's the only thing I have left that reminds me of who I was.",
+     "emotion": "pained",
+     "intensity": 15
+    }
+   ],
+   "prompt": "Can I have your dog tag?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic032",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "He wants to kill me? What did I ever do to him?",
+     "emotion": "surprise",
+     "intensity": 25
+    }
+   ],
+   "prompt": "You know, there's an NCR soldier outside who wants me to kill you for it."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic033",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic043",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Believe me, I'd love to leave, but I can't because I don't know what effect the radiation will have on me.",
+     "emotion": "fear",
+     "intensity": 15
+    }
+   ],
+   "prompt": "There must be someplace you can go."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic044",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'm guessing it's because I'm outside of the heavy radiation areas. I'm not going outside to find out, though.",
+     "emotion": "fear",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Why haven't you gone feral yet?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic047",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually I have another question."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic048",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You're probably right. Here, take it.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Now that you're free to leave you don't need your dog tag anymore do you?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic056",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't really know the details of it, it all happened too quickly. I remember being hit by a blast of energy.",
+     "emotion": "sad",
+     "intensity": 5
+    },
+    {
+     "text": "Next thing I know, I wake up like... like this. I've been staying in this house ever since.",
+     "emotion": "disgust",
+     "intensity": 10
+    },
+    {
+     "text": "I don't know much about what's going on outside, aside from the creatures that moved in since then.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "Can you tell me what happened here?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic062",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Yeah, but I don't want to go feral, and that's probably what more radiation would do to me.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "But ghouls are immune to radiation."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic063",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Radscorpions. Fuckers creep the hell out of me. I'm not going outside while they're still crawling around.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Is that the only thing you're afraid of?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic064",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Look, just leave me alone. I'm not going outside.",
+     "emotion": "fear",
+     "intensity": 10
+    }
+   ],
+   "prompt": "There's still radiation in your house."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic065",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Fine.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you about something else then?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic073",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I suppose.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic076",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Maybe it's time for me to leave this place, then. Any ideas where I can go?",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "I'm positive, they're all gone."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic077",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Nope, no way. I'm not going anywhere until I know they're gone.",
+     "emotion": "fear",
+     "intensity": 25
+    }
+   ],
+   "prompt": "Well, there may still be a few out there."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic078",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, I don't believe you.",
+     "emotion": "anger",
+     "intensity": 10
+    },
+    {
+     "text": "[SUCCEEDED] Thanks for your help. I can finally get out of this place.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "<Lie> They are definitely all gone."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Sorry, I'm not giving it to you.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "You define who you are, not some dog tag."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic079",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] You're probably right. Here, take it.",
+     "emotion": "sad",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Your humanity is a part of you, not kept in some dog tag."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic080",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ok.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually lets talk about something else."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic085",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Thanks.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I'll take care of them. Be right back."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic086",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "I want to talk about something else."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic088",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "You know what? Why the hell not. There are plenty of places out there to explore, and I'm kinda tired of being stuck in this house.",
+     "emotion": "happy",
+     "intensity": 5
+    }
+   ],
+   "prompt": "There are plenty of places out in the wasteland."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic089",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Are you sure he'll be okay with it? Not everyone is crazy about ghouls.",
+     "emotion": "fear",
+     "intensity": 5
+    }
+   ],
+   "prompt": "Maybe First Sergeant Astor will let you join him?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic090",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I don't know if that's such a great idea.",
+     "emotion": "anger",
+     "intensity": 10
+    }
+   ],
+   "prompt": "You should work things out with First Sergeant Astor."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic091",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "There's a Ranger Station run by ghouls? Finally, I feel like I have a place to go. Thanks for your help.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "I heard Ranger Station Echo up north is manned by other ghouls."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic092",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Let's talk about something else first."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic093",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Really? Thanks, I owe you one.",
+     "emotion": "happy",
+     "intensity": 25
+    }
+   ],
+   "prompt": "I'll go talk to him first."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic094",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Any ideas where I can go?",
+     "emotion": "sad",
+     "intensity": 5
+    }
+   ],
+   "prompt": "On second thought maybe somewhere else would work better."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic097",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Lets talk about something else first."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic100",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I think I'll take my chances with the wasteland.",
+     "emotion": "disgust",
+     "intensity": 5
+    }
+   ],
+   "prompt": "It's either him or the wasteland."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic102",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Bullying me won't make me give it to you.",
+     "emotion": "anger",
+     "intensity": 25
+    },
+    {
+     "text": "[SUCCEEDED] Fine, here. Take it. Just leave me alone.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "prompt": "Give me your dog tag, now!"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic110",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Suffering? I may be suffering but I still want to live. You tell that bastard that I have every intention of doing so.",
+     "emotion": "anger",
+     "intensity": 35
+    }
+   ],
+   "prompt": "He thinks you're suffering."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic111",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "I'll kill you for that!",
+     "emotion": "anger",
+     "intensity": 50
+    }
+   ],
+   "prompt": "[Attack] You're a rabid dog that needs to be put down."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic112",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, I want to talk about something else."
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic113",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "What do you want to know?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Before I take care of them, can I ask you about your dog tag?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic116",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic121",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic122",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic123",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Sure.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Can I ask you something else?"
+  },
+  {
+   "id": "VMS43CampSearchlightPvtEdwardsTopic124",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Alright.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "prompt": "Actually, let me ask you something else first."
+  },
+  {
+   "id": "RaulPvtEdwardsDUPLICATE000",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "What? How is that not bad? In fact, how could it get worse?",
+     "emotion": "fear",
+     "intensity": 50
+    },
+    {
+     "text": "Oh god!",
+     "emotion": "fear",
+     "intensity": 50
+    }
+   ],
+   "prompt": "RaulPvtEdwards"
+  }
+ ]
+}

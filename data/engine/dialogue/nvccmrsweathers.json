@@ -1,0 +1,328 @@
+{
+ "id": "nvccmrsweathers",
+ "speaker_name": "Mrs. Weathers",
+ "source": "NVCCMrsWeathers.txt",
+ "topics": [
+  {
+   "key": "greeting",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Please, ma'am - take pity on us. Free us, I'm begging you!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "Please, sir - take pity on us. Free us, please!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "When will we be free?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I can't ever thank you enough for saving me and mine! We're free now!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GREETING",
+   "prompt": "GREETING"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic001",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{Afraid} That man knows where we are? Just when I didn't think this could get any worse!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "At least he's too much of a coward to come after us himself. What if he'd ended up in this pen with us?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic001",
+   "prompt": "Frank sent me to free you."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic002",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Ever since he lost his job a few years back he hasn't been the same. He took a switch to us for the tiniest things.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "We were trying to get away when the Legion showed up. I'm glad he ran off like a coward, but slavery wasn't the kind of escape I was looking for.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic002",
+   "prompt": "He was hurting you?"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic004",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "Anything you can do to help, just please get us out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic004",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic005",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {Screaming} No! Not like this!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] I appreciate you trying, but you'll have to find another way to get us out of here.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic005",
+   "prompt": "Trust me, your troubles are over. <Set off the explosive in her collar>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic007",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{shocked disbelief} Th-thank you! I don't know that we'll ever be able to repay you, but we'll do our best one day once I've found a place to settle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic007",
+   "prompt": "I've paid for the three of you. You are free to go."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic008",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {wanting to believe} You think we can make it? You really do?",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{shouting} FREEDOM!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic008",
+   "prompt": "Cry freedom! Run for it!",
+   "label": "<SPEECH - Player tells her to make a run for it>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic008_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] {wanting to believe} You think we can make it? You really do?",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic008",
+   "prompt": "Run for it!",
+   "label": "<SPEECH - Player tells her to make a run for it>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic008_3",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] Are you crazy? They'd run us down in an instant!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to help us, you'll have to come up with something better than suicide!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic008",
+   "prompt": "If you believe hard enough, you can do anything! Run!",
+   "label": "<SPEECH - Player tells her to make a run for it>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic009",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{shocked disbelief} Th-thank you! I don't know that we'll ever be able to repay you, but we'll do our best one day once I've found a place to settle.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic009",
+   "prompt": "<Give Mrs. Weathers the key from Canyon Runner>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic010",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{desperate} Thank you! Thank you so much!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic010",
+   "prompt": "I'll see what I can do."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic011",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "No way. If the guard catches you, we'll be beaten.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If you want to help, get that gate unlocked or see if you can get the one they call Canyon Runner to let us go.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "{player killed one of your children doing this} All you're doing is killing us! Leave us alone!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "If there's any chance you can free us, it's worth the risk...",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic011",
+   "prompt": "Let me deactivate your collar."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic012",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] My goodness! I swear my heart skipped a beat!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "[FAILED] That's enough of that! If you're going to get us out of here, it'll have to be another way.",
+     "emotion": "sad",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic012",
+   "prompt": "Hold still. <Deactivate the charge and remove her collar>"
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic013",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "{pleading} Anything that gets us out of here, please.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic013",
+   "prompt": "Looks tougher than I thought. We'll have to find another solution."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic014",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[SUCCEEDED] Finally! Let's get out of here!",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic014",
+   "prompt": "<Lie> I paid for your release. You're free to go."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic014_2",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "[FAILED] I don't believe you. This key has to have been stolen.",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "None of the guards have said we're free to go. As soon as we step out of here, we're just going to get caught again, or worse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic014",
+   "prompt": "I took care of your master. You're free as a bird."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic015",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "One of these days we'll be free.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic015",
+   "prompt": "Goodbye."
+  },
+  {
+   "key": "vfreeformcottonwoodcovenvccmrsweatherstopic016",
+   "section": "topics",
+   "responses": [
+    {
+     "text": "My family was ambushed by a pack of Legion raiders near Searchlight and Frank ran off, the gutless coward!",
+     "emotion": "neutral",
+     "intensity": 50
+    },
+    {
+     "text": "I have no idea where he is, but at least we're free from his abuse.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "VFreeformCottonwoodCoveNVCCMrsWeathersTopic016",
+   "prompt": "How were you captured?"
+  },
+  {
+   "key": "goodbye",
+   "section": "conversation",
+   "responses": [
+    {
+     "text": "{Pleading} Anything that gets us out of here, please.",
+     "emotion": "neutral",
+     "intensity": 50
+    }
+   ],
+   "topic": "GOODBYE",
+   "prompt": "Goodbye."
+  }
+ ],
+ "speaker": "mrs_weathers"
+}
