@@ -516,9 +516,26 @@ mod tests {
             "Shoot Joe Cobb",
             "End turn",
             "HP 200/200",
+            "Ammo 13/17",
+            "Reload",
         ] {
             assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
         }
+    }
+
+    #[test]
+    fn shooting_uses_rounds_and_reloading_refills_the_clip() {
+        let mut app = with_the_gunfight_open(app_with_seed(1));
+        let fight = app.people.len();
+        app.update(Command::Pick(fight));
+        // Three foes: shoot is picks 0 to 2, then Reload, then End turn.
+        app.update(Command::Pick(0));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Ammo 12/17"), "{text}");
+        app.update(Command::Pick(3));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Ammo 13/16"), "{text}");
+        assert!(text.contains("You reload: 13 rounds"), "{text}");
     }
 
     #[test]

@@ -5,7 +5,7 @@
 use std::path::Path;
 use std::sync::{Arc, LazyLock};
 
-use engine::combat::{Combatant, Dice, Power, Side, Status};
+use engine::combat::{CombatError, Combatant, Dice, Power, Side, Status};
 use engine::game::{Arsenal, Battle, BattleError, Game, Outcome};
 use engine::inventory::ItemBook;
 use engine::quests::QuestBook;
@@ -64,6 +64,7 @@ fn armed_game() -> Game {
     apply_all(
         &[
             effect(serde_json::json!({"type": "give_item", "item": "9mm_pistol"})),
+            effect(serde_json::json!({"type": "give_item", "item": "9mm_round", "count": 60})),
             stage("ghost_town_gunfight", 5),
             stage("ghost_town_gunfight", 10),
             stage("ghost_town_gunfight", 60),
@@ -126,10 +127,15 @@ fn play(battle: &mut Battle, dice: &mut impl Dice, pass_only: bool) {
         let target = battle.combat().ids().find(|&id| {
             battle.combat().side(id) == Some(Side::Enemy) && battle.combat().is_standing(id)
         });
-        let shot = target
+        let mut shot = target
             .filter(|_| !pass_only)
-            .and_then(|id| battle.attack(id, Power::Normal, dice).ok());
-        if shot.is_none() {
+            .map(|id| (id, battle.attack(id, Power::Normal, dice)));
+        if let Some((id, Err(CombatError::OutOfAmmo { .. }))) = shot
+            && battle.reload().is_ok()
+        {
+            shot = Some((id, battle.attack(id, Power::Normal, dice)));
+        }
+        if !matches!(shot, Some((_, Ok(_)))) {
             battle.end_turn(dice).expect("the fight is not over");
         }
     }
@@ -335,4 +341,76 @@ proptest! {
             }
         }
     }
+}
+
+fn rounds_held(game: &Game) -> u32 {
+    game.item_count(&item("9mm_round"))
+}
+
+#[test]
+fn the_player_starts_loaded_from_the_pack_and_foes_have_endless_rounds() {
+    let game = armed_game();
+    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let combat = battle.combat();
+    let you = combat
+        .rounds(battle.player())
+        .expect("the pistol has a clip");
+    // A 13-round clip, and the 47 left in the pack are the reserve.
+    assert_eq!((you.loaded, you.reserve), (13, Some(47)));
+    for id in combat.ids().filter(|&id| id != battle.player()) {
+        assert_eq!(combat.rounds(id).expect("they carry pistols").reserve, None);
+    }
+}
+
+#[test]
+fn the_rounds_fired_leave_the_pack_when_the_fight_is_settled() {
+    let mut game = dressed_game();
+    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    play(&mut battle, &mut Always(1), false);
+    let rounds = battle.combat().rounds(battle.player()).expect("a clip");
+    let left = rounds.total().expect("the pack is counted");
+    assert!(left < 60, "the fight cost something");
+
+    game.finish_battle(&battle).expect("the fight settles");
+    assert_eq!(rounds_held(&game), left);
+}
+
+#[test]
+fn a_pistol_with_no_rounds_cannot_shoot() {
+    let mut game = dressed_game();
+    let all = rounds_held(&game);
+    apply_all(
+        &[effect(
+            serde_json::json!({"type": "take_item", "item": "9mm_round", "count": all}),
+        )],
+        &mut game,
+    )
+    .expect("the rounds are taken");
+    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let foe = battle
+        .combat()
+        .ids()
+        .find(|&id| battle.combat().side(id) == Some(Side::Enemy))
+        .expect("a foe");
+    assert!(matches!(
+        battle.attack(foe, Power::Normal, &mut Always(1)),
+        Err(CombatError::OutOfAmmo { loaded: 0, .. })
+    ));
+    assert_eq!(battle.reload(), Err(CombatError::NothingToReload));
+}
+
+#[test]
+fn the_pack_is_untouched_until_the_fight_is_settled() {
+    let game = dressed_game();
+    let before = rounds_held(&game);
+    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let foe = battle
+        .combat()
+        .ids()
+        .find(|&id| battle.combat().side(id) == Some(Side::Enemy))
+        .expect("a foe");
+    battle
+        .attack(foe, Power::Normal, &mut Always(100))
+        .expect("a shot, wasted");
+    assert_eq!(rounds_held(&game), before);
 }

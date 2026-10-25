@@ -3,7 +3,8 @@
 use std::num::NonZeroU32;
 
 use engine::combat::{
-    AttackProfile, Combat, Combatant, Dice, FlatHitChance, Multiplier, Percent, Points, Rules, Side,
+    AttackProfile, Combat, Combatant, Dice, FlatHitChance, Magazine, Multiplier, Percent, Points,
+    Rules, Side,
 };
 
 /// A fighter made of plain numbers, the way a test (or a monster) would be.
@@ -17,6 +18,7 @@ pub struct Plain {
     pub damage: f64,
     pub crit_damage: f64,
     pub ap_cost: u32,
+    pub magazine: Option<Magazine>,
 }
 
 impl Plain {
@@ -31,7 +33,20 @@ impl Plain {
             damage,
             crit_damage: 0.0,
             ap_cost: 20,
+            magazine: None,
         }
+    }
+
+    /// A weapon that holds `clip` rounds, uses one per shot, costs 5 AP to reload,
+    /// and has `stock` rounds in all (`None` is endless).
+    pub fn rounds(mut self, clip: u32, stock: Option<u32>) -> Self {
+        self.magazine = Some(Magazine {
+            clip: NonZeroU32::new(clip).expect("tests give a clip"),
+            per_shot: NonZeroU32::MIN,
+            reload_ap: NonZeroU32::new(5).expect("literal is not zero"),
+            stock,
+        });
+        self
     }
 
     pub fn armor(mut self, dt: f64, dr: f64) -> Self {
@@ -83,6 +98,10 @@ impl Combatant for Plain {
             condition: Multiplier::FULL,
             bonus: Points::ZERO,
         }
+    }
+
+    fn magazine(&self) -> Option<Magazine> {
+        self.magazine
     }
 }
 

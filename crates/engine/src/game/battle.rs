@@ -13,12 +13,13 @@ use thiserror::Error;
 
 use crate::character::{Character, CharacterRules, Level, SpecialSet};
 use crate::combat::{
-    AttackProfile, Combat, CombatError, Combatant, Dice, FighterId, FlatHitChance, Multiplier,
-    Percent, Points, Power, Resolution, Rules, StatError, enemy_turns,
+    AttackProfile, Combat, CombatError, Combatant, Dice, FighterId, FlatHitChance, Magazine,
+    Multiplier, Percent, Points, Power, Reload, Resolution, Rules, StatError, enemy_turns,
 };
 use crate::shared::{
-    Armor, BatchError, CharacterView, Encounter, EncounterId, Foe, GameData, ItemId, ModelError,
-    Npc, NpcSpecial, Skill, Special, SpecialLevel, Weapon, WeaponClass,
+    AmmoFamilyId, Armor, BatchError, CharacterView, EffectError, Encounter, EncounterId, Foe,
+    GameData, InventoryView, ItemId, ModelError, Npc, NpcSpecial, Skill, Special, SpecialLevel,
+    Weapon, WeaponClass,
 };
 
 /// The chance every attack has to hit. A stand-in: the wiki gives no hit-chance
@@ -26,6 +27,9 @@ use crate::shared::{
 const STAND_IN_HIT_CHANCE: u32 = 65;
 /// The most the Luck-based critical chance can reach, from `formulas.json`.
 const CRIT_LUCK_CAP: u32 = 10;
+/// Action points a reload costs. A stand-in: the data gives the reload time in
+/// seconds and no conversion to action points is known, so every weapon pays the same.
+const RELOAD_AP: u32 = 2;
 /// A missing attribute on an NPC record reads as the middle of the scale.
 const AVERAGE_SPECIAL: u32 = 5;
 
@@ -96,6 +100,9 @@ pub enum BattleError {
     /// A combat number was out of range.
     #[error(transparent)]
     Stat(#[from] StatError),
+    /// The rounds fired could not be taken from the pack; nothing changed.
+    #[error("the rounds fired could not be taken from the pack: {0}")]
+    Ammo(#[from] EffectError),
     /// The winning effects could not be applied; nothing changed.
     #[error(transparent)]
     Effects(#[from] BatchError),
@@ -111,13 +118,22 @@ pub enum Outcome {
 }
 
 /// A weapon's combat numbers, checked once.
-#[derive(Debug, Clone, Copy, PartialEq)]
+#[derive(Debug, Clone, PartialEq)]
 struct WeaponStats {
     class: WeaponClass,
     damage: Points,
     crit_damage: Points,
     crit_chance_mult: f64,
     ap_cost: NonZeroU32,
+    ammo: Option<AmmoStats>,
+}
+
+/// What a weapon fires and how many rounds it holds, checked once.
+#[derive(Debug, Clone, PartialEq)]
+struct AmmoStats {
+    family: AmmoFamilyId,
+    clip: NonZeroU32,
+    per_shot: NonZeroU32,
 }
 
 /// An armor piece's combat numbers, checked once.
@@ -137,6 +153,8 @@ pub struct Fighter {
     dr: Points,
     crit_chance: Percent,
     attack: AttackProfile,
+    magazine: Option<Magazine>,
+    ammo_item: Option<ItemId>,
 }
 
 impl Fighter {
@@ -144,6 +162,20 @@ impl Fighter {
     #[must_use]
     pub fn name(&self) -> &str {
         &self.name
+    }
+
+    /// The ammunition item the weapon fires, when the fighter's rounds come from the
+    /// pack; `None` for foes, whose supply the game does not track, and for weapons
+    /// that need none.
+    #[must_use]
+    pub fn ammo_item(&self) -> Option<&ItemId> {
+        self.ammo_item.as_ref()
+    }
+
+    /// Rounds the pack held when the fight began; `None` when the pack is not tracked.
+    #[must_use]
+    pub fn starting_stock(&self) -> Option<u32> {
+        self.magazine.and_then(|magazine| magazine.stock)
     }
 
     /// Builds a fighter from a character, a weapon and the armor worn.
@@ -158,6 +190,7 @@ impl Fighter {
         weapon: &WeaponStats,
         armor: Points,
         resistance: Points,
+        rounds: Rounds,
     ) -> Result<Self, StatError> {
         let level_of = |stat| u32::from(character.special(stat).get());
         let crit = f64::from(level_of(Special::Luck).min(CRIT_LUCK_CAP)) * weapon.crit_chance_mult;
@@ -183,6 +216,13 @@ impl Fighter {
                 condition: Multiplier::FULL,
                 bonus: Points::try_new(bonus)?,
             },
+            magazine: weapon.ammo.as_ref().map(|ammo| Magazine {
+                clip: ammo.clip,
+                per_shot: ammo.per_shot,
+                reload_ap: NonZeroU32::new(RELOAD_AP).unwrap_or(NonZeroU32::MIN),
+                stock: rounds.stock,
+            }),
+            ammo_item: rounds.item,
         })
     }
 }
@@ -211,6 +251,19 @@ impl Combatant for Fighter {
     fn attack(&self) -> AttackProfile {
         self.attack
     }
+
+    fn magazine(&self) -> Option<Magazine> {
+        self.magazine
+    }
+}
+
+/// Where a fighter's rounds come from.
+#[derive(Debug, Clone, Default)]
+struct Rounds {
+    /// The ammunition item taken from the pack; `None` for an endless supply.
+    item: Option<ItemId>,
+    /// How many rounds the pack holds; `None` for an endless supply.
+    stock: Option<u32>,
 }
 
 #[derive(Debug, Clone)]
@@ -224,6 +277,8 @@ struct Prepared {
 pub struct Arsenal {
     weapons: HashMap<ItemId, WeaponStats>,
     armor: HashMap<ItemId, ArmorStats>,
+    /// The ammunition items of each family, standard loads first.
+    ammo: HashMap<AmmoFamilyId, Vec<ItemId>>,
     encounters: BTreeMap<EncounterId, Prepared>,
 }
 
@@ -250,6 +305,7 @@ impl Arsenal {
         let mut arsenal = Self {
             weapons,
             armor,
+            ammo: ammo_by_family(data),
             encounters: BTreeMap::new(),
         };
         for encounter in data.encounters.iter() {
@@ -325,6 +381,7 @@ impl Arsenal {
             weapon,
             dt,
             dr,
+            Rounds::default(),
         )?)
     }
 }
@@ -353,6 +410,7 @@ fn weapon_stats(weapon: &Weapon) -> Result<Option<(ItemId, WeaponStats)>, Battle
         }));
     }
     let stats = WeaponStats {
+        ammo: ammo_stats(weapon),
         class: weapon.weapon_class,
         damage: Points::try_new(weapon.damage).map_err(bad)?,
         crit_damage: Points::try_new(weapon.crit_damage.unwrap_or(0.0)).map_err(bad)?,
@@ -360,6 +418,45 @@ fn weapon_stats(weapon: &Weapon) -> Result<Option<(ItemId, WeaponStats)>, Battle
         ap_cost,
     };
     Ok(Some((weapon.id.clone(), stats)))
+}
+
+/// The magazine of a weapon that fires ammunition. A weapon whose ammunition the
+/// data does not resolve to a family (the hologram beam) is treated as needing none,
+/// rather than as one that can never be fired. A shot never uses more rounds than
+/// the weapon holds.
+fn ammo_stats(weapon: &Weapon) -> Option<AmmoStats> {
+    let family = weapon.ammo_family.clone()?;
+    let clip = weapon.clip_size.and_then(NonZeroU32::new)?;
+    let per_shot = weapon
+        .ammo_per_shot
+        .filter(|rounds| rounds.is_finite())
+        .map_or(1, |rounds| rounds.round().max(1.0) as u32)
+        .min(clip.get());
+    Some(AmmoStats {
+        family,
+        clip,
+        per_shot: NonZeroU32::new(per_shot).unwrap_or(NonZeroU32::MIN),
+    })
+}
+
+/// Ammunition items grouped by family, the plain load first so it is the one a
+/// weapon uses unless the pack holds only another.
+fn ammo_by_family(data: &GameData) -> HashMap<AmmoFamilyId, Vec<ItemId>> {
+    let mut by_family: HashMap<AmmoFamilyId, Vec<(bool, ItemId)>> = HashMap::new();
+    for ammo in data.ammo.iter() {
+        let plain = ammo.variant.as_deref() == Some("standard") || ammo.variant.is_none();
+        by_family
+            .entry(ammo.family.clone())
+            .or_default()
+            .push((!plain, ammo.id.clone()));
+    }
+    by_family
+        .into_iter()
+        .map(|(family, mut items)| {
+            items.sort();
+            (family, items.into_iter().map(|(_, id)| id).collect())
+        })
+        .collect()
 }
 
 fn armor_stats(piece: &Armor) -> Result<ArmorStats, BattleError> {
@@ -442,6 +539,7 @@ impl Arsenal {
         character: &Character,
         weapon: Option<&ItemId>,
         worn_armor: &[&ItemId],
+        pack: &impl InventoryView,
     ) -> Result<Fighter, BattleError> {
         let weapon_id = weapon.ok_or(BattleError::Unarmed)?;
         let stats = self
@@ -459,6 +557,20 @@ impl Arsenal {
             .collect::<Result<Vec<_>, _>>()?;
         let (dt, dr) = worn(pieces.into_iter())?;
         let max_hp = NonZeroU32::new(character.max_hp()).unwrap_or(NonZeroU32::MIN);
+        // The first load of the family the pack holds; with none, the plain load,
+        // so the fight shows what is missing.
+        let item = stats.ammo.as_ref().and_then(|ammo| {
+            let loads = self.ammo.get(&ammo.family)?;
+            loads
+                .iter()
+                .find(|load| pack.item_count(load) > 0)
+                .or_else(|| loads.first())
+                .cloned()
+        });
+        let rounds = Rounds {
+            stock: item.as_ref().map(|load| pack.item_count(load)),
+            item,
+        };
         Ok(Fighter::assemble(
             "You".to_owned(),
             max_hp,
@@ -466,6 +578,7 @@ impl Arsenal {
             stats,
             dt,
             dr,
+            rounds,
         )?)
     }
 
@@ -537,6 +650,15 @@ impl Battle {
         dice: &mut impl Dice,
     ) -> Result<Resolution, CombatError> {
         self.combat.attack(target, power, dice)
+    }
+
+    /// The player reloads the weapon from the rounds carried.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError`] when the move is refused (the fight is unchanged).
+    pub fn reload(&mut self) -> Result<Reload, CombatError> {
+        self.combat.reload()
     }
 
     /// The player passes; the enemies then play until it is the player's turn

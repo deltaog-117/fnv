@@ -2,7 +2,7 @@
 //! and the enemies answer in the log.
 
 use engine::combat::{
-    Combat, Dice, FighterId, FlatHitChance, Power, Resolution, Side, Status, Strike,
+    Combat, Combatant, Dice, FighterId, FlatHitChance, Power, Resolution, Side, Status, Strike,
 };
 use engine::game::{Battle, Fighter, Game, Outcome};
 use ratatui::Frame;
@@ -28,6 +28,7 @@ pub enum Next {
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 enum Action {
     Shoot(FighterId),
+    Reload,
     EndTurn,
 }
 
@@ -84,6 +85,13 @@ impl Fight {
                 Ok(resolution) => log.push(Entry::Note(self.describe(&resolution))),
                 Err(error) => log.push(Entry::Note(error.to_string())),
             },
+            Action::Reload => match self.battle.reload() {
+                Ok(reload) => log.push(Entry::Note(format!(
+                    "You reload: {} rounds in the weapon.",
+                    reload.loaded
+                ))),
+                Err(error) => log.push(Entry::Note(error.to_string())),
+            },
             Action::EndTurn => match self.battle.end_turn(dice) {
                 Ok(resolutions) => resolutions
                     .iter()
@@ -128,6 +136,7 @@ impl Fight {
             .ids()
             .filter(|&id| combat.side(id) == Some(Side::Enemy) && combat.is_standing(id))
             .map(Action::Shoot)
+            .chain(combat.rounds(self.battle.player()).map(|_| Action::Reload))
             .chain([Action::EndTurn])
             .collect();
         self.menu = Menu::new(self.actions.len());
@@ -196,8 +205,17 @@ impl Fight {
                 .combatant(id)
                 .map_or(0, |c| engine::combat::Combatant::max_hp(c).get());
             let style = if hp == 0 { theme::dim() } else { theme::text() };
+            // Only the player's rounds are counted; the foes' supply is endless.
+            let ammo = (id == self.battle.player())
+                .then(|| combat.rounds(id))
+                .flatten()
+                .map(|rounds| match rounds.reserve {
+                    Some(reserve) => format!("  Ammo {}/{reserve}", rounds.loaded),
+                    None => format!("  Ammo {}", rounds.loaded),
+                })
+                .unwrap_or_default();
             lines.push(Line::styled(
-                format!("{:<20} HP {hp}/{max}", self.name(id)),
+                format!("{:<20} HP {hp}/{max}{ammo}", self.name(id)),
                 style,
             ));
         }
@@ -209,12 +227,12 @@ impl Fight {
             .map(|action| match *action {
                 Action::Shoot(id) => {
                     let label = format!("Shoot {}", self.name(id));
-                    if self.can_shoot(combat) {
-                        Item::new(label)
-                    } else {
-                        Item::locked(format!("{label} (not enough AP)"))
+                    match self.shot_refusal(combat) {
+                        None => Item::new(label),
+                        Some(reason) => Item::locked(format!("{label} ({reason})")),
                     }
                 }
+                Action::Reload => Item::new("Reload"),
                 Action::EndTurn => Item::new("End turn"),
             })
             .collect();
@@ -231,10 +249,15 @@ impl Fight {
         );
     }
 
-    fn can_shoot(&self, combat: &Combat<Fighter, FlatHitChance>) -> bool {
-        combat.combatant(combat.active()).is_some_and(|who| {
-            engine::combat::Combatant::attack(who).ap_cost.get() <= combat.ap_left()
-        })
+    /// Why the player cannot shoot right now, if they cannot.
+    fn shot_refusal(&self, combat: &Combat<Fighter, FlatHitChance>) -> Option<&'static str> {
+        let who = combat.combatant(combat.active())?;
+        if who.attack().ap_cost.get() > combat.ap_left() {
+            return Some("not enough AP");
+        }
+        let loaded = combat.rounds(combat.active())?.loaded;
+        let needed = who.magazine()?.per_shot.get();
+        (loaded < needed).then_some("out of ammo")
     }
 }
 

@@ -25,6 +25,22 @@ pub struct AttackProfile {
     pub bonus: Points,
 }
 
+/// A weapon's magazine and the rounds that go with it, already validated.
+///
+/// Only weapons that fire ammunition have one; a fighter without one never runs dry.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct Magazine {
+    /// Rounds the weapon holds when loaded.
+    pub clip: NonZeroU32,
+    /// Rounds one attack uses; at least 1, so shooting always empties the weapon.
+    pub per_shot: NonZeroU32,
+    /// Action points a reload costs; at least 1, like an attack.
+    pub reload_ap: NonZeroU32,
+    /// Every round carried for this weapon, loaded ones included. `None` is an
+    /// endless supply, for foes whose pack the game does not track.
+    pub stock: Option<u32>,
+}
+
 /// What the fight needs to know about a fighter. The numbers are read, never
 /// changed: the fight tracks hit points and action points itself.
 pub trait Combatant {
@@ -40,6 +56,10 @@ pub trait Combatant {
     fn crit_chance(&self) -> Percent;
     /// The weapon in hand.
     fn attack(&self) -> AttackProfile;
+    /// The weapon's magazine, or `None` for a weapon that needs no ammunition.
+    fn magazine(&self) -> Option<Magazine> {
+        None
+    }
 }
 
 /// One of the two sides of a fight.
@@ -84,6 +104,34 @@ pub enum Strike {
         /// Hit points taken off the target, after armor.
         damage: u32,
     },
+}
+
+/// The rounds a fighter has: the ones in the weapon and the ones still carried.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct Rounds {
+    /// Rounds in the weapon now.
+    pub loaded: u32,
+    /// Rounds carried besides those; `None` is an endless supply.
+    pub reserve: Option<u32>,
+}
+
+impl Rounds {
+    /// Every round the fighter still has; `None` for an endless supply.
+    #[must_use]
+    pub fn total(self) -> Option<u32> {
+        self.reserve.map(|reserve| self.loaded + reserve)
+    }
+}
+
+/// What a reload did.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct Reload {
+    /// Rounds moved from the reserve into the weapon.
+    pub added: u32,
+    /// Rounds in the weapon afterwards.
+    pub loaded: u32,
+    /// The reloader's action points afterwards.
+    pub ap_left: u32,
 }
 
 /// The result of an attack that was carried out.
@@ -131,6 +179,17 @@ pub enum CombatError {
         /// The fighter's maximum.
         max: u32,
     },
+    /// The weapon holds fewer rounds than one attack uses.
+    #[error("the weapon holds {loaded} rounds and an attack uses {needed}")]
+    OutOfAmmo {
+        /// What one attack uses.
+        needed: u32,
+        /// What is in the weapon.
+        loaded: u32,
+    },
+    /// The weapon has no magazine, is already full, or no rounds are left to load.
+    #[error("there is nothing to reload")]
+    NothingToReload,
     /// The active fighter cannot pay for the attack.
     #[error("the attack costs {needed} action points and only {left} are left")]
     NotEnoughAp {
@@ -146,6 +205,8 @@ struct Slot<C> {
     who: C,
     side: Side,
     hp: u32,
+    /// `None` for a weapon that needs no ammunition.
+    rounds: Option<Rounds>,
 }
 
 /// A fight between two sides.
@@ -177,6 +238,7 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             .map(|(side, who)| Slot {
                 hp: who.max_hp().get(),
                 side,
+                rounds: who.magazine().map(starting_rounds),
                 who,
             })
             .collect();
@@ -268,6 +330,12 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
         self.fighters.get(id.0).map(|f| &f.who)
     }
 
+    /// The fighter's rounds, if the weapon uses ammunition.
+    #[must_use]
+    pub fn rounds(&self, id: FighterId) -> Option<Rounds> {
+        self.fighters.get(id.0).and_then(|f| f.rounds)
+    }
+
     /// Whether the fighter is still standing.
     #[must_use]
     pub fn is_standing(&self, id: FighterId) -> bool {
@@ -313,6 +381,19 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             });
         }
 
+        let per_shot = self.fighters[attacker]
+            .who
+            .magazine()
+            .map(|m| m.per_shot.get());
+        if let (Some(per_shot), Some(rounds)) = (per_shot, self.fighters[attacker].rounds)
+            && rounds.loaded < per_shot
+        {
+            return Err(CombatError::OutOfAmmo {
+                needed: per_shot,
+                loaded: rounds.loaded,
+            });
+        }
+
         self.ap_left -= needed;
         let chance = self
             .hit_model
@@ -329,6 +410,12 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             Strike::Missed
         };
 
+        // The rounds go whether the shot hits or not; the check above guarantees
+        // the weapon holds enough.
+        if let (Some(per_shot), Some(rounds)) = (per_shot, self.fighters[attacker].rounds.as_mut())
+        {
+            rounds.loaded -= per_shot;
+        }
         let victim = &mut self.fighters[target.0];
         if let Strike::Hit { damage, .. } = strike {
             victim.hp = victim.hp.saturating_sub(damage);
@@ -341,6 +428,47 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             strike,
             target_hp,
             defeated: target_hp == 0,
+            ap_left: self.ap_left,
+        })
+    }
+
+    /// The active fighter fills the weapon from the rounds carried. A shot costs
+    /// a round whether it hits or not, so the clip is what limits a turn.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError::Over`] when the fight is over, [`CombatError::NothingToReload`]
+    /// when the weapon has no magazine, is full or there is nothing to load, and
+    /// [`CombatError::NotEnoughAp`] when the reload cannot be paid. Nothing changes
+    /// in those cases.
+    pub fn reload(&mut self) -> Result<Reload, CombatError> {
+        if self.status != Status::Ongoing {
+            return Err(CombatError::Over);
+        }
+        let slot = &self.fighters[self.active];
+        let (Some(magazine), Some(rounds)) = (slot.who.magazine(), slot.rounds) else {
+            return Err(CombatError::NothingToReload);
+        };
+        let room = magazine.clip.get().saturating_sub(rounds.loaded);
+        let added = rounds.reserve.map_or(room, |reserve| room.min(reserve));
+        if added == 0 {
+            return Err(CombatError::NothingToReload);
+        }
+        let needed = magazine.reload_ap.get();
+        if needed > self.ap_left {
+            return Err(CombatError::NotEnoughAp {
+                needed,
+                left: self.ap_left,
+            });
+        }
+        self.ap_left -= needed;
+        let slot = &mut self.fighters[self.active];
+        let rounds = slot.rounds.get_or_insert(rounds);
+        rounds.loaded += added;
+        rounds.reserve = rounds.reserve.map(|reserve| reserve - added);
+        Ok(Reload {
+            added,
+            loaded: rounds.loaded,
             ap_left: self.ap_left,
         })
     }
@@ -376,6 +504,19 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             (false, true) => Status::Won(Side::Enemy),
             _ => Status::Ongoing,
         }
+    }
+}
+
+/// The weapon starts loaded as far as the rounds allow; the rest is the reserve.
+/// The game keeps no "loaded" state between fights, so a fight always begins with
+/// a ready weapon and the unspent rounds go back to the pack.
+fn starting_rounds(magazine: Magazine) -> Rounds {
+    let loaded = magazine
+        .stock
+        .map_or(magazine.clip.get(), |stock| stock.min(magazine.clip.get()));
+    Rounds {
+        loaded,
+        reserve: magazine.stock.map(|stock| stock - loaded),
     }
 }
 

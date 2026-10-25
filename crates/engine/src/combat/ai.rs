@@ -1,6 +1,6 @@
 //! The opponents' turn: a deliberately plain tactic, so the fight is fair to read.
 
-use super::fight::{Combat, Combatant, Resolution, Side};
+use super::fight::{Combat, CombatError, Combatant, Resolution, Side};
 use super::hit::{Dice, HitModel};
 use super::stats::Power;
 
@@ -23,7 +23,14 @@ where
         let target = combat
             .ids()
             .find(|&id| combat.side(id) == Some(Side::Player) && combat.is_standing(id));
-        let attacked = target.and_then(|id| combat.attack(id, Power::Normal, dice).ok());
+        let mut attacked = target.map(|id| combat.attack(id, Power::Normal, dice));
+        if let (Some(Err(CombatError::OutOfAmmo { .. })), Some(id)) = (&attacked, target)
+            && combat.reload().is_ok()
+        {
+            // The reload shows in the log only as the action points it took.
+            attacked = Some(combat.attack(id, Power::Normal, dice));
+        }
+        let attacked = attacked.and_then(Result::ok);
         match attacked {
             Some(resolution) => log.push(resolution),
             // Out of action points (or nobody to shoot): the turn passes. A refused

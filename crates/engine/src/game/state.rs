@@ -198,6 +198,7 @@ impl Game {
             &self.character,
             self.inventory.equipped(Slot::Weapon),
             &worn,
+            &self.inventory,
         )?;
         let foes = self
             .arsenal
@@ -223,6 +224,7 @@ impl Game {
         let hp = combat.hp(battle.player()).unwrap_or(0);
         let mut trial = self.clone();
         trial.wounds = trial.character.max_hp().saturating_sub(hp);
+        trial.spend_rounds(battle)?;
         let outcome = if status == Status::Won(Side::Player) {
             let effects = self
                 .arsenal
@@ -237,6 +239,28 @@ impl Game {
         };
         *self = trial;
         Ok(outcome)
+    }
+
+    /// Takes the rounds the player fired out of the pack. The rounds in the weapon
+    /// at the end go back, since the game keeps no loaded weapon between fights.
+    fn spend_rounds(&mut self, battle: &Battle) -> Result<(), EffectError> {
+        let combat = battle.combat();
+        let player = battle.player();
+        let (Some(fighter), Some(rounds)) = (combat.combatant(player), combat.rounds(player))
+        else {
+            return Ok(());
+        };
+        let (Some(item), Some(start), Some(left)) = (
+            fighter.ammo_item(),
+            fighter.starting_stock(),
+            rounds.total(),
+        ) else {
+            return Ok(());
+        };
+        match NonZeroU32::new(start.saturating_sub(left)) {
+            Some(spent) => self.inventory.take_item(item, spent),
+            None => Ok(()),
+        }
     }
 
     /// Equips a carried item.

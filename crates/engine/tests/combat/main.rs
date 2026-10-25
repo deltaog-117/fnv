@@ -7,6 +7,7 @@
 //! `data/engine/formulas.json`.
 
 mod ai;
+mod ammo;
 mod damage;
 mod fight;
 mod properties;

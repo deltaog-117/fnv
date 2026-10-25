@@ -1066,6 +1066,47 @@ The gunfight opened as soon as Sunny agreed (stage 10) because Ringo had no dial
 
 ---
 
+### Ammunition: A Magazine on the Combatant, Rounds Settled With the Pack
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Finishing combat (ROADMAP item 7) was split into slices because it bundles ammunition, weapon wear, initiative, fleeing, healing and the weapons with no action-point cost. Course of action A (mechanics first) was chosen, and its first slice is ammunition and reload.
+
+---
+
+#### Decision
+
+> `Combatant` gains a defaulted `magazine()` (clip, rounds per shot, reload cost, rounds carried); `Combat` tracks the loaded and reserve rounds per fighter, so a weapon without a magazine behaves as before. A shot costs its rounds whether it hits or not, and a shot with too few loaded is refused before any dice are rolled.
+>
+> **Pack:** the fight starts with the weapon loaded and the rest of the player's rounds as the reserve. The game is not touched until `finish_battle`, which takes the rounds fired out of the pack on a win or a loss; the rounds left in the weapon go back, because no loaded state is kept between fights. Foes have an endless supply, and they reload when empty.
+>
+> **Which ammunition:** the plain load of the weapon's family, or another load of the family when the pack holds only that.
+>
+> **Stand-ins:** a reload costs 2 action points for every weapon (`RELOAD_AP` in `game/battle.rs`), because the data gives seconds and no conversion is known. Doc now gives 30 rounds of 9mm with the pistol, a guess to tune. The hologram beam has a clip but no resolved ammo family, so it needs no ammunition.
+>
+> **Trade-offs accepted:** a fight cannot be abandoned yet, so deducting at settlement and deducting shot by shot give the same result; the enemy's reload shows in the log only as the action points it took.
+
+---
+
+#### References
+
+- `crates/engine/src/combat/fight.rs`, `crates/engine/src/game/battle.rs`, `crates/engine/tests/combat/ammo.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry
