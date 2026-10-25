@@ -9,18 +9,30 @@
 
 mod bounds;
 mod condition;
+mod data;
 mod effect;
 mod error;
 mod ids;
+mod load;
 mod non_empty;
 mod redacted;
 mod vocabulary;
 
 pub use bounds::{SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
+pub use data::{
+    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, Dialogue, Faction, FactionKind,
+    InfoValue, ItemKind, Location, LocationSize, MapKind, Neighbor, Npc, NpcSpecial, Position,
+    Quest, QuestKind, ReputationModel, ReputationNote, Response, Rule, RuleKind, RuleTargetType,
+    Stage, StatEffect, Topic, TopicSection, WalkthroughNode, Weapon, WeaponClass,
+};
 pub use effect::Effect;
 pub use error::ModelError;
-pub use ids::{CompanionId, EndingId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
+pub use ids::{
+    AmmoFamilyId, CompanionId, DialogueId, EndingId, FactionId, FlagId, ItemId, LocationId, NpcId,
+    PerkId, QuestId, TopicKey,
+};
+pub use load::{Catalog, GameData, LoadError, Record, Scope};
 pub use non_empty::NonEmpty;
 pub use redacted::Redacted;
 pub use vocabulary::{

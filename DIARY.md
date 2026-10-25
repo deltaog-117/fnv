@@ -16,6 +16,7 @@
 | 2026-10-25 | Engine architecture | Shared contracts + feature-owned state (COA C) | ✅ Confirmed |
 | 2026-10-25 | Quality gate | One `scripts/check`, data steps run on change | ✅ Confirmed |
 | 2026-10-25 | Rust types and the schema | Schema is the contract; hand-written types checked by contract tests | ✅ Confirmed |
+| 2026-10-25 | Data loader | Per-record typed parsing with a location scope | ✅ Confirmed |
 
 ---
 
@@ -478,6 +479,50 @@ The project mixes a Python data pipeline and a Rust workspace. Both must stay gr
 #### References
 
 - `crates/engine/tests/shared/contract.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
+### Data Loader: Typed Catalogs with a Location Scope
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The engine needs `data/engine/` as typed Rust values before the evaluator, quests or dialogue can exist. The first playable is Goodsprings only, so loading every quest, NPC and dialogue file at startup is wasted work.
+
+---
+
+#### Decision
+
+> Each record is parsed on its own into a typed struct, so an error names the file and the record id. `Scope::Around(location)` loads only the quests, NPCs and dialogue that belong to a location and the places inside it; `Scope::Everywhere` loads all of it. Items, factions and locations always load in full because other records refer to them.
+>
+> **Trade-offs accepted:** the loader checks only what is visible inside one file or needed to build the catalogs (duplicate ids, dialogue topic links). Cross-file references stay with `scripts/validate.py`, so the rules are not written twice.
+
+---
+
+#### Implementation Notes
+
+> - Record types reject unknown fields, as the schemas do.
+> - Tests load the real data, then load small broken data sets and expect an error naming the file and record.
+> - The benchmark measures about 25 ms for Goodsprings and 49 ms for everything, so startup cost is not a concern yet.
+
+---
+
+#### References
+
+- `crates/engine/src/shared/load.rs`
+- `crates/engine/tests/shared/loader.rs`
 
 ---
 

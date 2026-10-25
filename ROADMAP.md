@@ -19,6 +19,7 @@ Items are organized by priority, not by timeline.
 - ✅ `scripts/check`: regenerates and validates the data, then runs rustfmt, clippy and the tests, printing output only on failure
 - ✅ Decision log (`DIARY.md`) covering the language, the contracts-based architecture, the data sources and the quality gate
 - ✅ Typed data model in `crates/engine/src/shared/`: distinct id types, bounded numbers, the `Condition` and `Effect` vocabulary, and contract tests (property tests plus two-way schema checks) that fail when the Rust types and `common.schema.json` drift apart
+- ✅ Data loader (`shared/load.rs`): reads `data/engine/` into typed catalogs, scoped to everywhere or to a location such as Goodsprings, with errors that name the file and record id; a load benchmark (about 25 ms for Goodsprings, 49 ms for everything)
 
 ---
 
@@ -26,12 +27,13 @@ Items are organized by priority, not by timeline.
 
 First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, Ghost Town Gunfight).
 
-- **Data loader** – load and validate the engine data for the Goodsprings slice at startup, failing with clear errors.
 - **Game state and condition/effect evaluator** – the one place that decides whether a dialogue option, quest rule or encounter applies.
 - **Quest engine** – stages, branching, and the lock/fail/unlock rules from the consequence data.
 - **Dialogue with skill checks** – a topic runner with conditions and effects; the Goodsprings dialogue graph has to be authored, since the wiki records no links between topics.
 - **Turn-based AP combat** – VATS-style action points, DT/DR damage, criticals and weapon condition, using the curated formulas.
 - **Reputation and karma** – fame/infamy per faction and town, titles and consequences.
+- **Leveling, perks and traits** – XP table, skill points per level, a perk every two levels, trait choice at character creation.
+- **Vendors and barter** – buying and selling with the barter formula. Vendor stock is not in the wiki and depends on the game-data export below, so the Goodsprings vendors (Chet, Trudy's stock, etc.) have to be authored by hand until then.
 - **TUI v0** – a persistent layout (scene and log, status, active quest panel, action footer) so the player never has to remember commands.
 - **Language-neutral golden tests and property tests** – JSON scenarios (state + action = expected state), `proptest` invariants, and a benchmark stub for the combat hot path.
 
@@ -39,9 +41,8 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🟡 Medium Priority (Important)
 
-- **Leveling, perks and traits** – XP table, skill points per level, a perk every two levels, trait choice at character creation.
 - **Save and load** – versioned saves of the complete game state, with a migration path.
-- **Vendors, barter and crafting** – recipes are imported; vendor stock is not in the wiki and depends on the game-data export below.
+- **Crafting** – recipes are imported.
 - **Companions** – recruitment, loyalty rules, companion perks and their quests.
 - **Mod support for the community** – content packs as data (items, quests, dialogue) validated against the same schemas, so players can create and share mods.
 - **Import from the game's own data (xEdit export)** – blocked until a copy of the game is available. It would supply real quest conditions, dialogue links, loot and vendor lists, and exact stats, and replace most hand-authoring.
@@ -70,9 +71,8 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🎯 Next Actions (Immediate)
 
-1. **Write the data loader** – read `data/engine/` for the Goodsprings slice in `crates/engine/src/shared/` and report schema errors with the offending file and id.
-2. **Build the evaluator and the view traits** – `shared` evaluates conditions through small read-only view traits with default answers; `game` implements them.
-3. **Build the quest engine** – `crates/engine/src/quests/`: state, stages and the consequence rules.
-4. **Build the dialogue runner** – `crates/engine/src/dialogue/`, with the Goodsprings graph authored alongside it.
-5. **Build turn-based combat** – `crates/engine/src/combat/`, with property tests and a benchmark stub.
-6. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel and action footer.
+1. **Build the evaluator and the view traits** – `shared` evaluates conditions through small read-only view traits with default answers; `game` implements them.
+2. **Build the quest engine** – `crates/engine/src/quests/`: state, stages and the consequence rules.
+3. **Build the dialogue runner** – `crates/engine/src/dialogue/`, with the Goodsprings graph authored alongside it.
+4. **Build turn-based combat** – `crates/engine/src/combat/`, with property tests and a benchmark stub.
+5. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel and action footer.

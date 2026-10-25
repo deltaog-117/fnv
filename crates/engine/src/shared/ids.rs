@@ -114,6 +114,26 @@ define_id!(
     EndingId,
     "ending"
 );
+define_id!(
+    /// Identifies a place on the map or a building inside one.
+    LocationId,
+    "location"
+);
+define_id!(
+    /// Identifies one speaker's dialogue file.
+    DialogueId,
+    "dialogue"
+);
+define_id!(
+    /// Identifies a topic inside one dialogue file.
+    TopicKey,
+    "topic"
+);
+define_id!(
+    /// Identifies an ammunition family that weapons and ammo items share.
+    AmmoFamilyId,
+    "ammo family"
+);
 
 #[cfg(test)]
 mod tests {
