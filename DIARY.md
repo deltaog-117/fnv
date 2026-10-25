@@ -18,6 +18,7 @@
 | 2026-10-25 | Rust types and the schema | Schema is the contract; hand-written types checked by contract tests | ✅ Confirmed |
 | 2026-10-25 | Data loader | Per-record typed parsing with a location scope | ✅ Confirmed |
 | 2026-10-25 | Quest engine | `QuestBook` definitions + `QuestLog` state machine (COA A); rules fire in `game` | ✅ Confirmed |
+| 2026-10-25 | Game state | Concrete `Game` holding the quest log; unbuilt features refuse effects (COA A) | ✅ Confirmed |
 
 ---
 
@@ -622,6 +623,54 @@ The evaluator needs something to read quest conditions from and write quest effe
 - `crates/engine/src/quests.rs`, `quests/book.rs`, `quests/log.rs`
 - `crates/engine/tests/quests/`
 - `crates/engine/benches/quests.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
+### Game State: A Concrete `Game` With Honest Placeholders
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+`apply_all` needs one value that implements all six view and all six sink traits. Only the quest log exists; character, inventory, reputation, companions and world are still empty modules. The sink traits have no default bodies on purpose, so `game` has to say something for the features that are not built.
+
+---
+
+#### Decision
+
+> `Game` is a concrete struct that holds the `QuestLog` and delegates the quest view and sink to it. The five unbuilt views keep the shared defaults (nothing owned, nobody met). The unbuilt sinks return `EffectError::Refused` with a reason naming the missing feature, so an effect aimed at them fails loudly instead of vanishing.
+>
+> **Alternatives rejected:** B, a small real `WorldState` built in the same cycle (it is the next feature's work and deserves its own tests), and C, a generic `Game<Q, S, C, I, W, P>` (heavy generics for a single real implementation; the view and sink traits already give the seam).
+>
+> **Trade-offs accepted:** until a feature lands, rules and dialogue effects that touch it (caps, flags, items) error. Each placeholder is replaced by a real field when its feature is built.
+
+---
+
+#### Implementation Notes
+
+> - Cloning is cheap because the quest book is shared, so a caller can try a batch on a copy.
+> - `apply_all` is not atomic once it passes the pre-flight, so a refusal mid-batch can leave earlier effects applied; the tests only claim that a refused single effect changes nothing.
+> - Tests: quest effects and conditions through `Game`, a property test that every unbuilt effect is refused with its own tag, and every staged quest in the real data walked to its first finish stage through `apply_all`.
+> - The benchmark stub measures about 500 ns for a five-effect batch on a fresh `Game`.
+
+---
+
+#### References
+
+- `crates/engine/src/game.rs`, `game/state.rs`
+- `crates/engine/tests/game/`
+- `crates/engine/benches/game.rs`
 
 ---
 
