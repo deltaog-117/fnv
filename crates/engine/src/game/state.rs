@@ -4,14 +4,17 @@ use std::collections::HashSet;
 use std::num::NonZeroU32;
 use std::sync::Arc;
 
+use super::battle::{Arsenal, Battle, BattleError, Outcome};
 use crate::character::Character;
+use crate::combat::{Side, Status};
 use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
 use crate::shared::{
     CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, Effect, EffectError,
-    EndingId, FactionId, FlagId, InventorySink, InventoryView, ItemId, NpcId, NpcState, PerkId,
-    QuestId, QuestSink, QuestStage, QuestStatus, QuestView, ReputationLevel, Skill, SkillLevel,
-    Special, SpecialLevel, StandingSink, StandingView, WorldSink, WorldView, apply, evaluate,
+    Encounter, EncounterId, EndingId, FactionId, FlagId, InventorySink, InventoryView, ItemId,
+    LocationId, NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
+    ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView,
+    WorldSink, WorldView, apply, apply_all, evaluate,
 };
 use crate::world::{WorldBook, WorldState};
 
@@ -42,6 +45,12 @@ pub struct Game {
     world: WorldState,
     character: Character,
     inventory: Inventory,
+    arsenal: Arc<Arsenal>,
+    /// Hit points lost and not yet healed. Stored as a loss, so hit points can
+    /// never be above the maximum, and a level-up raises them with the maximum.
+    wounds: u32,
+    /// Encounters the player has won; each is offered once.
+    won: HashSet<EncounterId>,
     /// Rules already fired, as (quest, index into its rules).
     fired: HashSet<(QuestId, usize)>,
     deferred: Vec<Deferred>,
@@ -64,6 +73,9 @@ impl Game {
             world: WorldState::new(world),
             character: Character::default(),
             inventory: Inventory::new(Arc::default()),
+            arsenal: Arc::default(),
+            wounds: 0,
+            won: HashSet::new(),
             fired: HashSet::new(),
             deferred: Vec::new(),
         }
@@ -74,6 +86,14 @@ impl Game {
     #[must_use]
     pub fn with_items(mut self, items: Arc<ItemBook>) -> Self {
         self.inventory = Inventory::new(items);
+        self
+    }
+
+    /// The same game over the fights that exist. Without one there is nothing to
+    /// fight, so call this before play.
+    #[must_use]
+    pub fn with_arsenal(mut self, arsenal: Arc<Arsenal>) -> Self {
+        self.arsenal = arsenal;
         self
     }
 
@@ -114,6 +134,109 @@ impl Game {
     #[must_use]
     pub fn is_encumbered(&self) -> bool {
         self.inventory.weight() > f64::from(self.character.carry_weight())
+    }
+
+    /// The player's hit points now.
+    #[must_use]
+    pub fn hp(&self) -> u32 {
+        self.character.max_hp().saturating_sub(self.wounds)
+    }
+
+    /// Whether the player still has hit points.
+    #[must_use]
+    pub fn is_alive(&self) -> bool {
+        self.hp() > 0
+    }
+
+    /// Restores up to `amount` hit points, never past the maximum.
+    pub fn heal(&mut self, amount: u32) {
+        self.wounds = self.wounds.saturating_sub(amount);
+    }
+
+    /// The fights on offer at `place`: not yet won, and with every requirement met.
+    /// None while the player is down.
+    #[must_use]
+    pub fn encounters_at(&self, place: &LocationId) -> Vec<&Encounter> {
+        if !self.is_alive() {
+            return Vec::new();
+        }
+        self.arsenal
+            .encounters()
+            .filter(|encounter| {
+                &encounter.place == place
+                    && !self.won.contains(&encounter.id)
+                    && encounter
+                        .requires
+                        .iter()
+                        .all(|condition| evaluate(condition, self))
+            })
+            .collect()
+    }
+
+    /// Starts a fight, with the player's equipped weapon and armor and the hit
+    /// points they have now. The game itself is not changed until
+    /// [`Game::finish_battle`].
+    ///
+    /// # Errors
+    ///
+    /// [`BattleError`] when the encounter is unknown or not on offer at its place,
+    /// the player is down or has nothing to fight with.
+    pub fn start_battle(&self, encounter: &EncounterId) -> Result<Battle, BattleError> {
+        let definition = self
+            .arsenal
+            .encounter(encounter)
+            .ok_or_else(|| BattleError::UnknownEncounter(encounter.clone()))?;
+        let hp = NonZeroU32::new(self.hp()).ok_or(BattleError::PlayerDown)?;
+        if !self.encounters_at(&definition.place).contains(&definition) {
+            return Err(BattleError::NotOffered(encounter.clone()));
+        }
+        let worn: Vec<&ItemId> = [Slot::Outfit, Slot::Head]
+            .into_iter()
+            .filter_map(|slot| self.inventory.equipped(slot))
+            .collect();
+        let player = self.arsenal.player(
+            &self.character,
+            self.inventory.equipped(Slot::Weapon),
+            &worn,
+        )?;
+        let foes = self
+            .arsenal
+            .foes(encounter)
+            .ok_or_else(|| BattleError::UnknownEncounter(encounter.clone()))?;
+        Battle::start(encounter.clone(), player, hp, foes)
+    }
+
+    /// Settles a finished fight: the player keeps the wounds they ended with, and
+    /// a win applies the encounter's effects and takes it off offer. If those
+    /// effects fail, nothing changes.
+    ///
+    /// # Errors
+    ///
+    /// [`BattleError::Unfinished`] while both sides still stand, and
+    /// [`BattleError::Effects`] when a winning effect is refused.
+    pub fn finish_battle(&mut self, battle: &Battle) -> Result<Outcome, BattleError> {
+        let combat = battle.combat();
+        let status = combat.status();
+        if status == Status::Ongoing {
+            return Err(BattleError::Unfinished);
+        }
+        let hp = combat.hp(battle.player()).unwrap_or(0);
+        let mut trial = self.clone();
+        trial.wounds = trial.character.max_hp().saturating_sub(hp);
+        let outcome = if status == Status::Won(Side::Player) {
+            let effects = self
+                .arsenal
+                .encounter(battle.encounter())
+                .map(|encounter| encounter.on_win.clone())
+                .unwrap_or_default();
+            apply_all(&effects, &mut trial)?;
+            trial.won.insert(battle.encounter().clone());
+            Outcome::Victory
+        } else {
+            Outcome::Defeat
+        };
+        *self = trial;
+        Ok(outcome)
     }
 
     /// Equips a carried item.

@@ -17,16 +17,18 @@
 //! - the fight is over as soon as one side has no fighter standing, and nothing
 //!   can be done after.
 //!
-//! Hit chance is behind [`HitModel`] because the wiki gives no formula for it;
+//! [`enemy_turns`] plays the enemy side with one plain tactic. Hit chance is behind [`HitModel`] because the wiki gives no formula for it;
 //! [`FlatHitChance`] is a labelled stand-in until the real model arrives. Chance is
 //! rolled through [`Dice`], so a fight is deterministic for a given sequence of
 //! rolls. Weapon condition, body-part targeting and weapon spread are not modelled.
 
+mod ai;
 mod damage;
 mod fight;
 mod hit;
 mod stats;
 
+pub use ai::enemy_turns;
 pub use damage::{Rules, damage_after_armor, damage_before_armor};
 pub use fight::{
     AttackProfile, Combat, CombatError, Combatant, FighterId, Resolution, Side, Status, Strike,

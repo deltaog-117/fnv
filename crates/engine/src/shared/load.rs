@@ -14,9 +14,11 @@ use serde::de::DeserializeOwned;
 use serde_json::Value;
 use thiserror::Error;
 
-use super::data::{Ammo, Armor, Consumable, Dialogue, Faction, Location, Npc, Quest, Weapon};
+use super::data::{
+    Ammo, Armor, Consumable, Dialogue, Encounter, Faction, Location, Npc, Quest, Weapon,
+};
 use super::error::ModelError;
-use super::ids::{DialogueId, FactionId, ItemId, LocationId, NpcId, QuestId};
+use super::ids::{DialogueId, EncounterId, FactionId, ItemId, LocationId, NpcId, QuestId};
 
 /// A record that carries its own unique id.
 pub trait Record {
@@ -49,6 +51,7 @@ impl_record!(
     Location => LocationId,
     Faction => FactionId,
     Dialogue => DialogueId,
+    Encounter => EncounterId,
 );
 
 /// Why the data could not be loaded.
@@ -224,6 +227,8 @@ pub struct GameData {
     pub npcs: Catalog<Npc>,
     /// The dialogue files in scope.
     pub dialogue: Catalog<Dialogue>,
+    /// Every fight the player can start.
+    pub encounters: Catalog<Encounter>,
 }
 
 impl GameData {
@@ -237,6 +242,7 @@ impl GameData {
         let locations = read_catalog::<Location>(dir, "locations.json")?;
         let mut quests = read_catalog::<Quest>(dir, "quests.json")?;
         let mut npcs = read_catalog::<Npc>(dir, "npcs.json")?;
+        let encounters = read_catalog::<Encounter>(dir, "encounters.json")?;
 
         let dialogue_ids = match scope {
             Scope::Everywhere => list_dialogue_ids(&dir.join("dialogue"))?,
@@ -249,8 +255,16 @@ impl GameData {
                     .iter()
                     .flat_map(|q| q.giver_ids.iter().cloned())
                     .collect();
+                // A fight started here needs its foes' records, wherever they live.
+                let foes: BTreeSet<NpcId> = encounters
+                    .iter()
+                    .filter(|e| areas.contains(&e.place))
+                    .flat_map(|e| e.foes.iter().map(|foe| foe.npc.clone()))
+                    .collect();
                 npcs.records.retain(|id, n| {
-                    givers.contains(id) || n.location_ids.iter().any(|l| areas.contains(l))
+                    givers.contains(id)
+                        || foes.contains(id)
+                        || n.location_ids.iter().any(|l| areas.contains(l))
                 });
                 npcs.iter()
                     .flat_map(|n| n.dialogue.iter().cloned())
@@ -269,6 +283,7 @@ impl GameData {
             armor: read_catalog(dir, "armor.json")?,
             ammo: read_catalog(dir, "ammo.json")?,
             consumables: read_catalog(dir, "consumables.json")?,
+            encounters,
             dialogue: Catalog::from_records(&dir.join("dialogue"), dialogue)?,
             locations,
             quests,

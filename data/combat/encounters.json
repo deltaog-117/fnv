@@ -1,0 +1,60 @@
+[
+ {
+  "id": "ghost_town_gunfight",
+  "name": "Fight the Powder Gangers",
+  "place": "goodsprings",
+  "requires": [
+   {
+    "type": "quest",
+    "quest": "ghost_town_gunfight",
+    "state": "active"
+   },
+   {
+    "type": "quest",
+    "quest": "ghost_town_gunfight",
+    "state": "stage_at_least",
+    "stage": 10
+   },
+   {
+    "type": "not",
+    "of": {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 70
+    }
+   }
+  ],
+  "foes": [
+   {
+    "npc": "joe_cobb",
+    "weapon": "9mm_pistol",
+    "armor": "powder_gang_guard_armor",
+    "hp": 50
+   },
+   {
+    "npc": "powder_ganger",
+    "weapon": "9mm_pistol",
+    "armor": "powder_gang_plain_outfit",
+    "hp": 30
+   },
+   {
+    "npc": "powder_ganger",
+    "weapon": "9mm_pistol",
+    "armor": "powder_gang_plain_outfit",
+    "hp": 30
+   }
+  ],
+  "on_win": [
+   {
+    "type": "kill_npc",
+    "npc": "joe_cobb"
+   },
+   {
+    "type": "set_stage",
+    "quest": "ghost_town_gunfight",
+    "stage": 70
+   }
+  ]
+ }
+]

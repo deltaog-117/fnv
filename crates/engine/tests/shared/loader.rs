@@ -35,6 +35,7 @@ fn empty_data(name: &str) -> PathBuf {
         "armor",
         "ammo",
         "consumables",
+        "encounters",
     ] {
         write(&dir, &format!("{file}.json"), "[]");
     }

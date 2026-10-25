@@ -8,12 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Combat wiring in `crates/engine/src/game/battle.rs`: `Arsenal` (checks every weapon, armor piece and encounter once at load), `Fighter` (a `Combatant` built from the character, the equipped weapon and armor, or an NPC record through the same formulas), `Battle`, `BattleError` and `Outcome`. Weapons with no action-point cost are left out, so they cannot be wielded in a fight
+- `Game::hp`, `max_hp` via the character, `is_alive`, `heal`, `encounters_at`, `start_battle`, `finish_battle` and `Game::with_arsenal`. Wounds are stored as hit points lost, so hit points can never pass the maximum; settling a fight is atomic, so failing winning effects change nothing
+- `combat::enemy_turns` (the enemy side shoots the first player-side fighter still standing, then passes) and `Combat::with_hp` (a fighter that starts wounded) with `CombatError::HpAboveMax`
+- `Character::at_level`, so NPCs take action points and critical chance from the same formulas as the player
+- Encounter data: `data/combat/encounters.json` (hand-authored, with the Ghost Town Gunfight), `schemas/encounter.schema.json`, an `Encounter` record and `EncounterId`, copied to `data/engine/encounters.json` by `normalize.py` and cross-checked (places, NPCs, weapons, armor, quests) by `validate.py`
+- TUI combat screen (shoot a chosen foe or end the turn, with the result of every attack in the log), a game-over screen, a "Fight" row in the exploration menu while an encounter is on offer, and a clock-seeded dice source
+- Tests: `enemy_turns` and `with_hp` cases plus a property test; the Goodsprings gunfight through `Game` over the real data (offer, fighters' numbers, win, loss, wounds, settle-before-over, a property test over random fights); headless TUI tests for the fight flow
 - Character in `crates/engine/src/character/`: `Character` (S.P.E.C.I.A.L. plus XP earned) implementing `CharacterView` and `CharacterSink`. The level is derived from XP, so the two cannot disagree; hit points, action points, carry weight and each skill's starting value come from the curated formulas. `Level` (1 to 50) and `CharacterRules` (XP table, level cap, action-point cap)
 - Inventory in `crates/engine/src/inventory/`: `ItemBook` (the 922 weapons, armor, ammo and consumables that exist) and `Inventory` (stacks, whole-number bottle caps, and weapon, outfit and head slots) implementing `InventoryView` and `InventorySink`. An equipped item is always carried; taking its last copy unequips it
 - `Game::with_items`, `Game::with_character`, `Game::equip`, `Game::unequip`, `Game::is_encumbered`, `Game::character` and `Game::inventory`
 - `shared::whole_amount`, which reads an XP or caps amount as a finite whole number
 - Character and inventory tests: one case per rule, property tests (levels never fall as XP grows; the pack matches a plain model over random effects and a refusal changes nothing), real-data checks of the formulas, constants and XP table against `formulas.json` and `levels.json`, effects through `Game`, and two benchmark stubs
-- Status line in the TUI shows the level and the bottle caps
+- Status line in the TUI shows the level, hit points and the bottle caps
 - Raw game data imported from the Fallout Wiki, one importer per family (`scripts/fetch_*.py`): items, quests, NPCs, dialogue transcripts, locations and map markers, perks, traits, factions, reputation tables, creatures, stats, levels, challenges, skill books, recipes and ending slides
 - Hand-curated quest consequence rules (`data/quests/consequences.json`) and engine formulas (`data/rules/formulas.json`)
 - Twelve JSON Schemas in `schemas/`, including the shared `condition` / `effect` vocabulary
@@ -54,6 +61,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TUI tests: property tests for the menu, the log and the layout, and headless `App` tests over the real Goodsprings data using ratatui's `TestBackend`
 
 ### Changed
+- `GameData` also loads `encounters.json`, and a location-scoped load keeps the NPC records of the foes of encounters at that location. The exploration screen offers the fights on offer after the people; the player starts in leather armor and takes the 9mm pistol in hand when a fight starts (stand-ins until there is an inventory screen)
 - XP, caps and item rewards now apply to the game instead of being postponed into `Game::deferred()`, which keeps only rewards for unbuilt features (reputation, karma, companions). A reward that names an item outside the item book fails and the whole change is undone
 - `tests/scenarios/goodsprings.json` states the caps, XP and items each scenario must leave behind instead of listing deferred effects
 - `Game` now applies flag, NPC and ending effects instead of refusing them; `Game::new` has an empty roster, so NPC effects on it fail with an unknown-NPC error

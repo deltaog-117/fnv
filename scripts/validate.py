@@ -75,7 +75,7 @@ def main(argv):
     validators = {
         name: Draft202012Validator({"$ref": f"{name}.schema.json"}, registry=registry)
         for name in ("item", "quest", "npc", "dialogue", "location", "perk", "trait",
-                     "faction", "reputation", "creature")
+                     "faction", "reputation", "creature", "encounter")
     }
 
     for name in ("stat", "challenge", "recipe", "ending", "level", "formulas"):
@@ -232,6 +232,26 @@ def main(argv):
     for lv in levels:
         for err in validators["level"].iter_errors(lv):
             report("levels", lv.get("level"), err.message[:160])
+    encounters, _ = load_group("encounters.json", "encounter", "encounters")
+    weapon_ids = {r["id"] for r in items["weapons"]}
+    armor_ids = {r["id"] for r in items["armor"]}
+    for en in encounters:
+        if en["place"] not in loc_ids:
+            report("refs", en["id"], f"unknown place {en['place']}")
+        for foe in en["foes"]:
+            if foe["npc"] not in npc_ids:
+                report("refs", en["id"], f"unknown npc {foe['npc']}")
+            if foe["weapon"] not in weapon_ids:
+                report("refs", en["id"], f"{foe['weapon']} is not a weapon")
+            if foe.get("armor") and foe["armor"] not in armor_ids:
+                report("refs", en["id"], f"{foe['armor']} is not armor")
+        scripted = en.get("requires", []) + en.get("on_win", [])
+        for ref in refs_in(scripted, "quest"):
+            if ref not in quest_ids:
+                report("refs", en["id"], f"names unknown quest {ref}")
+        for ref in refs_in(scripted, "npc"):
+            if ref not in npc_ids:
+                report("refs", en["id"], f"names unknown npc {ref}")
     formulas = json.load(open(engine / "formulas.json"))
     for err in validators["formulas"].iter_errors(formulas):
         report("formulas", "formulas.json", err.message[:160])

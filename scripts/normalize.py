@@ -934,6 +934,7 @@ def main(argv):
     dump(out / "recipes.json", recipes(rl("recipes"), item_recs))
     dump(out / "endings.json", endings(rl("endings"), title_id))
     (out / "formulas.json").write_text((rdir / "formulas.json").read_text())
+    (out / "encounters.json").write_text((data / "combat" / "encounters.json").read_text())
     dump(out / "quests.json", quest_recs)
     dump(out / "npcs.json", npc_recs)
     ddir = out / "dialogue"

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "encounter.schema.json",
+  "title": "Encounter",
+  "description": "One entry in data/engine/encounters.json: a fight the player can start at a place.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "place",
+    "foes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "place": {
+      "description": "Location id where the fight can start.",
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "requires": {
+      "description": "Every condition must hold for the fight to be offered.",
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/condition"
+      }
+    },
+    "foes": {
+      "description": "The enemies, in the order they act after the player.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "npc",
+          "weapon"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "npc": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "weapon": {
+            "description": "Weapon item id.",
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "armor": {
+            "description": "Armor item id.",
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "hp": {
+            "description": "Hit points when the NPC record gives none.",
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "on_win": {
+      "description": "Applied, in order, when the player wins.",
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/effect"
+      }
+    }
+  }
+}

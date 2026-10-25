@@ -28,15 +28,19 @@ pub enum Next {
     Stay,
     /// Talk to the person at this position in [`Exploration::people`].
     Talk(usize),
+    /// Start the fight at this position in the offered fights.
+    Fight(usize),
     /// Leave the game.
     Quit,
 }
 
-/// The place and the actions it offers: one "talk to" per person, then quit.
+/// The place and the actions it offers: one "talk to" per person, one per fight on
+/// offer, then quit.
 #[derive(Debug)]
 pub struct Exploration {
     place: String,
     people: Vec<Person>,
+    fights: Vec<String>,
     menu: Menu,
 }
 
@@ -49,14 +53,26 @@ impl Exploration {
         Self {
             place,
             people,
+            fights: Vec::new(),
             menu,
         }
+    }
+
+    /// The same scene with fights to offer, by name, after the people.
+    #[must_use]
+    pub fn with_fights(mut self, fights: Vec<String>) -> Self {
+        self.menu = Menu::new(self.people.len() + fights.len() + 1);
+        self.fights = fights;
+        self
     }
 
     /// Applies a command: moves the cursor, or chooses the selected action.
     pub fn update(&mut self, command: Command) -> Next {
         match self.menu.handle(command) {
             Some(index) if index < self.people.len() => Next::Talk(index),
+            Some(index) if index < self.people.len() + self.fights.len() => {
+                Next::Fight(index - self.people.len())
+            }
             Some(_) => Next::Quit,
             None => Next::Stay,
         }
@@ -68,6 +84,7 @@ impl Exploration {
             .people
             .iter()
             .map(|person| Item::new(format!("Talk to {}", person.name)))
+            .chain(self.fights.iter().map(|name| Item::new(name.clone())))
             .chain([Item::new("Quit game")])
             .collect();
         let mut lines = vec![
@@ -122,6 +139,14 @@ mod tests {
         let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")]);
         assert_eq!(scene.update(Command::Down), Next::Stay);
         assert_eq!(scene.update(Command::Select), Next::Quit);
+    }
+
+    #[test]
+    fn fights_come_after_the_people_and_before_quit() {
+        let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")])
+            .with_fights(vec!["Fight the gang".to_owned()]);
+        assert_eq!(scene.update(Command::Pick(1)), Next::Fight(0));
+        assert_eq!(scene.update(Command::Pick(2)), Next::Quit);
     }
 
     #[test]

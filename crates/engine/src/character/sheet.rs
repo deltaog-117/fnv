@@ -81,6 +81,18 @@ impl Character {
         }
     }
 
+    /// A character with no history beyond its level: the experience of that level,
+    /// no more. Non-player characters take their numbers from the same formulas
+    /// this way, so a fight reads one set of rules.
+    #[must_use]
+    pub fn at_level(special: SpecialSet, rules: CharacterRules, level: Level) -> Self {
+        Self {
+            special,
+            xp: rules.xp_for_level(level),
+            rules,
+        }
+    }
+
     /// The attributes.
     #[must_use]
     pub fn attributes(&self) -> &SpecialSet {

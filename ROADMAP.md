@@ -10,7 +10,7 @@ Items are organized by priority, not by timeline.
 
 - ✅ Game data imported from the Fallout Wiki into raw JSON: 1,182 items (weapons, armor, ammo, consumables, weapon mods, skill books, crafting components), 256 quests, 880 NPCs, 517 dialogue transcripts, 684 locations with map positions, 201 perks, 16 traits, 42 factions and towns, 31 creatures, stats, levels, challenges, recipes and ending slides
 - ✅ 116 hand-curated quest consequence rules (fails, locks, unlocks, exclusive paths)
-- ✅ 12 JSON Schemas, including the shared `condition` / `effect` vocabulary
+- ✅ 13 JSON Schemas, including the shared `condition` / `effect` vocabulary
 - ✅ Normalizer and validator (Python tooling): stable ids, cross-references between files, and formula self-tests
 - ✅ Hand-curated engine formulas (skills, HP, AP, carry weight, resistances, XP, DR/DT damage) cross-checked against the wiki's own examples
 - ✅ Derived travel graph over the 1024x1024 map markers
@@ -30,6 +30,7 @@ Items are organized by priority, not by timeline.
 - ✅ Combat core (`combat/`): `Combat` runs a turn-based fight (action points, rounds, a win check) over a small `Combatant` trait, with the curated damage pipeline (weapon damage, resistance capped at 85, threshold with a 20% floor), bounded combat numbers, a swappable `HitModel` with a flat stand-in, and deterministic `Dice`; 29 tests including property tests and twelve golden scenarios in `tests/scenarios/combat.json`, and a fight benchmark stub (about 490 ns)
 - ✅ TUI v0 (`crates/tui/`): an Elm-style `App` with a persistent layout (status line, scene, log, active-quest panel, key footer), an exploration screen and a dialogue screen over the engine's `Conversation`; property and headless render tests over the real Goodsprings data
 - ✅ Character and inventory (`character/`, `inventory/`): `Character` (S.P.E.C.I.A.L. and XP, with level, hit points, action points, carry weight and starting skills derived from the curated formulas) and `Inventory` (item stacks, whole-number caps, weapon/outfit/head slots) over a 922-item `ItemBook`; `Game` owns both, so XP, caps and item rewards now apply instead of being deferred; the status line shows level and caps; the formulas, constants and XP table are pinned to `formulas.json` and `levels.json` by tests
+- ✅ Combat wired into the game (`game/battle.rs`, `combat/ai.rs`, `crates/tui/src/combat/`): `Arsenal` checks every weapon, armor piece and encounter once at load; `Fighter` builds a `Combatant` from the character, the equipped weapon and armor, or from an NPC record; `Game` keeps the player's wounds between fights, offers encounters by quest state, starts a `Battle` and settles it (a win applies the encounter's effects once; a loss leaves the player down); the enemy side plays a plain tactic; the TUI has a combat screen and a game-over screen. The Ghost Town Gunfight is hand-authored in `data/combat/encounters.json`; 20 new tests including property tests over random fights
 
 ---
 
@@ -40,12 +41,11 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 - **Grow the game state** – `Game` gains a real field each time a feature lands (reputation and companions are still placeholder refusals; character and inventory are done), replacing its placeholder refusals.
 - **Finish the Goodsprings slice** – Run Goodsprings Run, By a Campfire on the Trail, and the quests with no stages; fame and infamy amounts; replay `Game::deferred()` once reputation lands.
 - **Goodsprings dialogue content** – author the graphs for Chet, Trudy, Ringo, Easy Pete and Joe Cobb, then the Doc Mitchell intro and the paid topics (healing, supplies) once inventory exists. The wiki records no links or skill-check thresholds, so each one is read from the transcript.
-- **Wire combat into the game** – an adapter that builds a `Combatant` from the character, inventory and weapon data (nine weapons have an action-point cost of 0 and need a decision), current hit points on the character, and a TUI combat screen.
-- **Finish combat** – the real hit-chance and spread model (needs the wiki or the xEdit export), body-part targeting, weapon condition that wears down, initiative.
+- **Finish combat** – the real hit-chance and spread model (needs the wiki or the xEdit export; every attack hits 65% for now), body-part targeting, weapon condition that wears down, initiative, ammunition use, allies (Sunny and the townsfolk fight beside the player in the game), fleeing, healing between fights, and replacing the placeholder foe hit points and loadouts with the game's own values. The nine weapons with no action-point cost cannot be wielded in a fight yet.
 - **Reputation and karma** – fame/infamy per faction and town, titles and consequences.
 - **Leveling, perks and traits** – the XP table and the level are done; still to do are skill points per level and spending them, tagged skills, a perk every two levels, trait choice and the character creation screen (the default character has a 5 in everything).
 - **Vendors and barter** – buying and selling with the barter formula. Vendor stock is not in the wiki and depends on the game-data export below, so the Goodsprings vendors (Chet, Trudy's stock, etc.) have to be authored by hand until then.
-- **TUI screens beyond v0** – travel between places, the quest journal, character sheet, inventory and the combat screen, each added with the engine feature it shows.
+- **TUI screens beyond v0** – travel between places, the quest journal, character sheet and inventory (the player wields the pistol and wears leather armor automatically until the inventory screen exists), each added with the engine feature it shows.
 - **Language-neutral golden tests and property tests** – JSON scenarios (state + action = expected state), `proptest` invariants, and a benchmark stub for the combat hot path.
 
 ---
@@ -82,6 +82,5 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🎯 Next Actions (Immediate)
 
-1. **Wire combat into the game** – the next step in the order toward a playable Goodsprings: build a `Combatant` from the character, equipped weapon and armor; store current hit points; add the combat screen, so the Powder Gangers and the gunfight can be fought.
-2. **Finish the Goodsprings quest slice** – Run Goodsprings Run and By a Campfire on the Trail, so the opening quest can be followed through in the TUI.
-3. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above; the TUI lists each NPC as soon as their graph is authored. Doc Mitchell's paid topics can now charge caps and give items.
+1. **Finish the Goodsprings quest slice** – Run Goodsprings Run and By a Campfire on the Trail, so the opening quest can be followed through in the TUI. The gunfight opens as soon as Sunny agrees (stage 10) because stages 20 to 65 are not authored.
+2. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above; the TUI lists each NPC as soon as their graph is authored. Doc Mitchell's paid topics can now charge caps and give items.

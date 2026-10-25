@@ -121,6 +121,16 @@ pub enum CombatError {
     /// The target is on the attacker's side.
     #[error("fighter {0} is on the attacker's side")]
     FriendlyFire(usize),
+    /// A fighter cannot start with more hit points than its maximum.
+    #[error("fighter {id} cannot start with {hp} hit points; its maximum is {max}")]
+    HpAboveMax {
+        /// The fighter.
+        id: usize,
+        /// The hit points asked for.
+        hp: u32,
+        /// The fighter's maximum.
+        max: u32,
+    },
     /// The active fighter cannot pay for the attack.
     #[error("the attack costs {needed} action points and only {left} are left")]
     NotEnoughAp {
@@ -184,6 +194,31 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             round: 1,
             status: Status::Ongoing,
         })
+    }
+
+    /// Starts `id` with `hp` hit points instead of its maximum, for a fighter who
+    /// carries wounds into the fight. Zero is not allowed: a fighter cannot start
+    /// down, which would let the fight be over before it begins.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError::NoSuchFighter`] for an unknown id, and
+    /// [`CombatError::HpAboveMax`] when `hp` is more than the fighter's maximum.
+    pub fn with_hp(mut self, id: FighterId, hp: NonZeroU32) -> Result<Self, CombatError> {
+        let slot = self
+            .fighters
+            .get_mut(id.0)
+            .ok_or(CombatError::NoSuchFighter(id.0))?;
+        let max = slot.who.max_hp().get();
+        if hp.get() > max {
+            return Err(CombatError::HpAboveMax {
+                id: id.0,
+                hp: hp.get(),
+                max,
+            });
+        }
+        slot.hp = hp.get();
+        Ok(self)
     }
 
     /// Whether the fight goes on or who won.

@@ -6,6 +6,7 @@
 //! `real_data` runs a real quest's effects through `apply_all`.
 
 mod automation;
+mod battle;
 mod pack;
 mod real_data;
 mod scenarios;

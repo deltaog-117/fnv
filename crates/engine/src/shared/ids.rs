@@ -110,6 +110,11 @@ define_id!(
     "npc"
 );
 define_id!(
+    /// Identifies a fight the player can start.
+    EncounterId,
+    "encounter"
+);
+define_id!(
     /// Identifies a game ending.
     EndingId,
     "ending"

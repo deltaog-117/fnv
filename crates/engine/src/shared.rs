@@ -25,17 +25,18 @@ mod vocabulary;
 pub use bounds::{SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
 pub use data::{
-    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, Dialogue, Faction, FactionKind,
-    InfoValue, ItemKind, Location, LocationSize, MapKind, Neighbor, Npc, NpcSpecial, Position,
-    Quest, QuestKind, ReputationModel, ReputationNote, Response, Rule, RuleKind, RuleTargetType,
-    Stage, StatEffect, Topic, TopicSection, WalkthroughNode, Weapon, WeaponClass,
+    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, Dialogue, Encounter, Faction,
+    FactionKind, Foe, InfoValue, ItemKind, Location, LocationSize, MapKind, Neighbor, Npc,
+    NpcSpecial, Position, Quest, QuestKind, ReputationModel, ReputationNote, Response, Rule,
+    RuleKind, RuleTargetType, Stage, StatEffect, Topic, TopicSection, WalkthroughNode, Weapon,
+    WeaponClass,
 };
 pub use effect::Effect;
 pub use error::ModelError;
 pub use eval::{apply, apply_all, evaluate};
 pub use ids::{
-    AmmoFamilyId, CompanionId, DialogueId, EndingId, FactionId, FlagId, ItemId, LocationId, NpcId,
-    PerkId, QuestId, TopicKey,
+    AmmoFamilyId, CompanionId, DialogueId, EncounterId, EndingId, FactionId, FlagId, ItemId,
+    LocationId, NpcId, PerkId, QuestId, TopicKey,
 };
 pub use load::{Catalog, GameData, LoadError, Record, Scope};
 pub use non_empty::NonEmpty;

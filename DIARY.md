@@ -977,6 +977,56 @@ The engine has quests, a world, dialogue and combat, but nothing can be played. 
 
 ---
 
+### Combat Wiring: Real Stats From the Item Data, Authored Loadouts and Hit Points
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The combat core fought plain numbers and the game state held no current hit points, so the Powder Gangers could not be fought. The plan was COA B: wire it with a small hand-curated file and leave `ItemBook` alone.
+
+---
+
+#### Decision
+
+> Build the adapter in `game/` (the composition root), so `combat/` stays free of the character and the pack. `Arsenal` is built once from `GameData` and checks every weapon, armor piece and encounter, so a bad encounter fails at load and not mid-fight. `Fighter` is the `Combatant` for the player and for foes. The player's wounds live in `Game` as hit points lost; `Game::start_battle` and `Game::finish_battle` bracket a `Battle`, and a win applies the encounter's effects atomically.
+>
+> **Departure from COA B:** the weapon and armor numbers are not duplicated in a combat slice, because `weapons.json` and `armor.json` already carry damage, action-point cost, critical damage and thresholds. Only what the wiki lacks is authored: which weapon and armor each foe carries, their hit points, when the fight is offered and what winning does (`data/combat/encounters.json`). `ItemBook` is still untouched.
+>
+> **Alternatives rejected:** A, extending `ItemBook` with combat stats (a larger refactor for no gain now), and C, keeping the fight inside the TUI (breaks the headless engine, and hit points would not persist or save).
+>
+> **Trade-offs accepted:** every attack has a flat 65% chance (the real model is unknown); skill and weapon condition do not change damage; there is no ammunition use, fleeing, healing between fights or allies. The foes' hit points are placeholders tuned over 2,000 random fights so a starting character in leather armor wins about three times in four. A foe with no hit points in its record would otherwise get the player's formula (200), which made the fight unwinnable (2% of fights). The nine weapons with no action-point cost are left out of the arsenal.
+
+---
+
+#### Implementation Notes
+
+> - `Combat::with_hp` lets a fighter start wounded (zero is refused, so the fight cannot start over); `enemy_turns` plays the enemy side with one tactic and cannot loop, because every attack spends at least one action point.
+> - Foes take action points and critical chance from `Character::at_level`, the formulas the player uses; a missing attribute reads as 5.
+> - The loader keeps the NPC records of an encounter's foes in a location-scoped load, so an encounter cannot name an NPC that is not loaded.
+> - The gunfight opens when Sunny agrees (stage 10), because stages 20 to 65 are not authored. The player starts in leather armor and takes the 9mm pistol in hand when a fight starts: the pistol arrives at stage 50 of the opening quest, and there is no inventory screen to equip it.
+> - Not tested: failing winning effects leaving the game unchanged (the settle step works on a copy, as quest changes do); a test would need a hand-built encounter and `GameData` has no public constructor.
+
+---
+
+#### References
+
+- `crates/engine/src/game/battle.rs`, `crates/engine/src/combat/ai.rs`, `crates/tui/src/combat/`
+- `data/combat/encounters.json`, `schemas/encounter.schema.json`, `crates/engine/tests/game/battle.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

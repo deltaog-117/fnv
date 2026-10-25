@@ -4,23 +4,28 @@
 //! and draws the persistent layout around it. It reads no terminal and writes none
 //! (the caller feeds it commands and hands it a frame), so tests drive it headless.
 
+use std::num::NonZeroU32;
 use std::sync::Arc;
 
 use anyhow::Context;
 use engine::dialogue::{Conversation, DialogueBook};
-use engine::game::Game;
-use engine::inventory::ItemBook;
+use engine::game::{Arsenal, Game, Outcome};
+use engine::inventory::{ItemBook, Slot};
 use engine::quests::QuestBook;
-use engine::shared::{Effect, GameData, InventoryView, LocationId, QuestId, QuestStage, apply_all};
+use engine::shared::{
+    Effect, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage, apply_all,
+};
 use engine::world::WorldBook;
 use ratatui::Frame;
 use ratatui::layout::{Alignment, Rect};
 use ratatui::text::Line;
-use ratatui::widgets::Paragraph;
+use ratatui::widgets::{Block, Borders, Paragraph};
 
+use crate::combat::{self, Fight};
 use crate::dialogue::{self, Talk};
 use crate::exploration::{self, Exploration, Person};
 use crate::quests;
+use crate::shared::dice::Rng;
 use crate::shared::input::Command;
 use crate::shared::layout::{self, MIN_HEIGHT, MIN_WIDTH};
 use crate::shared::log::{self, Entry, Log};
@@ -29,10 +34,19 @@ use crate::shared::theme;
 /// The quest a new game starts in, and the stage that opens it.
 const OPENING_QUEST: &str = "ain_t_that_a_kick_in_the_head";
 const OPENING_STAGE: u32 = 10;
+/// What the player wields and wears. The opening quest hands over the pistol late
+/// in Doc's scene; there is no inventory screen yet, so it is taken in hand when a
+/// fight starts. The armor is a stand-in worn from the start until there is a place
+/// to find or buy it, and without it the Goodsprings fight is not fair.
+const START_WEAPON: &str = "9mm_pistol";
+const START_ARMOR: &str = "leather_armor";
 
 enum Screen {
     Exploring(Exploration),
     Talking(Talk),
+    Fighting(Fight),
+    /// The player fell in a fight; nothing more can be done but quit.
+    Down,
 }
 
 /// The whole front end's state.
@@ -40,9 +54,11 @@ pub struct App {
     game: Game,
     dialogue: Arc<DialogueBook>,
     place: String,
+    place_id: LocationId,
     people: Vec<Person>,
     screen: Screen,
     log: Log,
+    dice: Rng,
     running: bool,
 }
 
@@ -53,6 +69,15 @@ impl App {
     ///
     /// When the place is unknown or the loaded data does not build into a game.
     pub fn new(data: &GameData, place: &LocationId) -> anyhow::Result<Self> {
+        Self::with_dice(data, place, Rng::from_clock())
+    }
+
+    /// The same, with the dice a test chooses.
+    ///
+    /// # Errors
+    ///
+    /// The same as [`App::new`].
+    pub fn with_dice(data: &GameData, place: &LocationId, dice: Rng) -> anyhow::Result<Self> {
         let location = data
             .locations
             .get(place)
@@ -63,12 +88,21 @@ impl App {
             Arc::new(DialogueBook::new(data.dialogue.iter()).context("building the dialogue")?);
 
         let items = Arc::new(ItemBook::from_data(data).context("building the item book")?);
-        let mut game = Game::with_world(quests, world).with_items(items);
+        let arsenal = Arc::new(Arsenal::from_data(data).context("building the arsenal")?);
+        let mut game = Game::with_world(quests, world)
+            .with_items(items)
+            .with_arsenal(arsenal);
         let opening = Effect::SetStage {
             quest: QuestId::try_new(OPENING_QUEST).context("opening quest id")?,
             stage: QuestStage::new(OPENING_STAGE),
         };
-        apply_all(&[opening], &mut game).context("starting the opening quest")?;
+        let armor = ItemId::try_new(START_ARMOR).context("starting armor id")?;
+        let gift = Effect::GiveItem {
+            item: armor.clone(),
+            count: NonZeroU32::MIN,
+        };
+        apply_all(&[opening, gift], &mut game).context("starting the opening quest")?;
+        game.equip(&armor).context("wearing the starting armor")?;
 
         // Buildings sit inside the settlement, so their residents are "here" too.
         let here =
@@ -98,15 +132,19 @@ impl App {
             "A new game begins in {}.",
             location.name
         )));
-        Ok(Self {
+        let mut app = Self {
             game,
             dialogue,
-            screen: Screen::Exploring(Exploration::new(location.name.clone(), people.clone())),
+            screen: Screen::Down,
             place: location.name.clone(),
+            place_id: place.clone(),
             people,
             log,
+            dice,
             running: true,
-        })
+        };
+        app.screen = app.exploring();
+        Ok(app)
     }
 
     /// False once the player has quit.
@@ -126,17 +164,71 @@ impl App {
                 exploration::Next::Stay => {}
                 exploration::Next::Quit => self.running = false,
                 exploration::Next::Talk(index) => self.start_talk(index),
+                exploration::Next::Fight(index) => self.start_fight(index),
             },
             Screen::Talking(talk) => {
                 if talk.update(command, &mut self.game, &mut self.log) == dialogue::Next::Leave {
                     self.screen = self.exploring();
                 }
             }
+            Screen::Fighting(fight) => {
+                if let combat::Next::Done(outcome) =
+                    fight.update(command, &mut self.game, &mut self.log, &mut self.dice)
+                {
+                    self.screen = match outcome {
+                        Some(Outcome::Defeat) => Screen::Down,
+                        _ => self.exploring(),
+                    };
+                }
+            }
+            Screen::Down => {
+                if matches!(command, Command::Select | Command::Back) {
+                    self.running = false;
+                }
+            }
         }
     }
 
     fn exploring(&self) -> Screen {
-        Screen::Exploring(Exploration::new(self.place.clone(), self.people.clone()))
+        let fights = self
+            .game
+            .encounters_at(&self.place_id)
+            .into_iter()
+            .map(|encounter| encounter.name.clone())
+            .collect();
+        Screen::Exploring(
+            Exploration::new(self.place.clone(), self.people.clone()).with_fights(fights),
+        )
+    }
+
+    /// Wields the starting weapon when the hand is empty. If it is not carried yet
+    /// nothing happens, and starting the fight says why it cannot begin.
+    fn take_weapon_in_hand(&mut self) {
+        if self.game.inventory().equipped(Slot::Weapon).is_some() {
+            return;
+        }
+        if let Ok(weapon) = ItemId::try_new(START_WEAPON) {
+            let _ = self.game.equip(&weapon);
+        }
+    }
+
+    fn start_fight(&mut self, index: usize) {
+        let Some(id) = self
+            .game
+            .encounters_at(&self.place_id)
+            .get(index)
+            .map(|encounter| encounter.id.clone())
+        else {
+            return;
+        };
+        self.take_weapon_in_hand();
+        match self.game.start_battle(&id) {
+            Ok(battle) => {
+                self.log.push(Entry::Note("Guns are drawn.".to_owned()));
+                self.screen = Screen::Fighting(Fight::new(battle));
+            }
+            Err(error) => self.log.push(Entry::Note(error.to_string())),
+        }
     }
 
     fn start_talk(&mut self, index: usize) {
@@ -168,9 +260,11 @@ impl App {
         let active = self.game.quests().active().count();
         frame.render_widget(
             Paragraph::new(format!(
-                " {} | Lv {} | {} caps | {active} active quest(s)",
+                " {} | Lv {} | HP {}/{} | {} caps | {active} active quest(s)",
                 self.place,
                 self.game.character().level().get(),
+                self.game.hp(),
+                self.game.character().max_hp(),
                 self.game.caps(),
             ))
             .style(theme::heading()),
@@ -185,6 +279,14 @@ impl App {
                 talk.render(frame, regions.scene);
                 "Up/Down move | Enter say | 1-9 pick | Esc walk away | q quit"
             }
+            Screen::Fighting(fight) => {
+                fight.render(frame, regions.scene);
+                "Up/Down move | Enter choose | 1-9 pick | q quit"
+            }
+            Screen::Down => {
+                render_down(frame, regions.scene);
+                "Enter or Esc to leave | q quit"
+            }
         };
         log::render(frame, regions.log, &self.log);
         quests::render(frame, regions.quests, &self.game);
@@ -193,6 +295,22 @@ impl App {
             regions.footer,
         );
     }
+}
+
+fn render_down(frame: &mut Frame, area: Rect) {
+    let lines = vec![
+        Line::styled("You are down.", theme::warning()),
+        Line::default(),
+        Line::styled(
+            "Your journey ends in the dust of Goodsprings.",
+            theme::text(),
+        ),
+    ];
+    let block = Block::new()
+        .borders(Borders::ALL)
+        .border_style(theme::dim())
+        .title(" Game over ");
+    frame.render_widget(Paragraph::new(lines).block(block), area);
 }
 
 fn render_too_small(frame: &mut Frame, area: Rect) {
@@ -221,6 +339,30 @@ mod tests {
         let place = LocationId::try_new("goodsprings").expect("valid id");
         let data = GameData::load(&dir, &Scope::Around(place.clone())).expect("data loads");
         App::new(&data, &place).expect("the app builds")
+    }
+
+    fn app_with_seed(seed: u64) -> App {
+        let dir = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/engine");
+        let place = LocationId::try_new("goodsprings").expect("valid id");
+        let data = GameData::load(&dir, &Scope::Around(place.clone())).expect("data loads");
+        App::with_dice(&data, &place, Rng::new(seed)).expect("the app builds")
+    }
+
+    /// Doc has handed over the pistol and Sunny has agreed to help, so the Powder
+    /// Gangers can be fought.
+    fn with_the_gunfight_open(mut app: App) -> App {
+        let stage = |quest: &str, stage| Effect::SetStage {
+            quest: QuestId::try_new(quest).expect("valid id"),
+            stage: QuestStage::new(stage),
+        };
+        let steps = [
+            stage(OPENING_QUEST, 50),
+            stage("ghost_town_gunfight", 5),
+            stage("ghost_town_gunfight", 10),
+        ];
+        apply_all(&steps, &mut app.game).expect("the quests advance");
+        app.screen = app.exploring();
+        app
     }
 
     fn screen(app: &App, width: u16, height: u16) -> String {
@@ -255,7 +397,7 @@ mod tests {
     #[test]
     fn the_status_line_shows_the_level_and_the_caps() {
         let text = screen(&app(), 100, 30);
-        assert!(text.contains("Lv 1 | 0 caps"), "{text}");
+        assert!(text.contains("Lv 1 | HP 200/200 | 0 caps"), "{text}");
     }
 
     #[test]
@@ -308,6 +450,124 @@ mod tests {
         app.update(Command::Pick(0));
         let text = screen(&app, 100, 30);
         assert!(text.contains("Doc Mitchell:"), "{text}");
+    }
+
+    #[test]
+    fn the_player_starts_armored_with_full_health_and_takes_the_pistol_when_a_fight_starts() {
+        let mut app = app();
+        let item = |text| ItemId::try_new(text).expect("valid id");
+        assert!(app.game.is_equipped(&item(START_ARMOR)));
+        assert_eq!(app.game.hp(), app.game.character().max_hp());
+        assert!(!app.game.is_equipped(&item(START_WEAPON)));
+
+        app = with_the_gunfight_open(app);
+        let fight = app.people.len();
+        app.update(Command::Pick(fight));
+        assert!(app.game.is_equipped(&item(START_WEAPON)));
+    }
+
+    #[test]
+    fn a_fight_without_a_weapon_is_refused_with_the_reason() {
+        let mut app = app();
+        let stage = |quest: &str, stage| Effect::SetStage {
+            quest: QuestId::try_new(quest).expect("valid id"),
+            stage: QuestStage::new(stage),
+        };
+        apply_all(
+            &[
+                stage("ghost_town_gunfight", 5),
+                stage("ghost_town_gunfight", 10),
+            ],
+            &mut app.game,
+        )
+        .expect("the quest advances");
+        app.screen = app.exploring();
+        let fight = app.people.len();
+        app.update(Command::Pick(fight));
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+        assert!(screen(&app, 100, 30).contains("nothing is equipped"));
+    }
+
+    #[test]
+    fn the_gunfight_is_not_offered_until_sunny_has_agreed() {
+        let app = app();
+        assert!(!screen(&app, 100, 30).contains("Fight the Powder Gangers"));
+        let app = with_the_gunfight_open(app);
+        assert!(screen(&app, 100, 30).contains("Fight the Powder Gangers"));
+    }
+
+    #[test]
+    fn choosing_the_fight_opens_the_combat_screen_with_every_fighter_and_the_actions() {
+        let mut app = with_the_gunfight_open(app_with_seed(1));
+        let fight = app.people.len();
+        app.update(Command::Pick(fight));
+        assert!(matches!(app.screen, Screen::Fighting(_)));
+        let text = screen(&app, 100, 30);
+        for expected in [
+            "Round 1 | your turn | 80 AP left",
+            "You",
+            "Joe Cobb",
+            "Powder Ganger 1",
+            "Powder Ganger 2",
+            "Shoot Joe Cobb",
+            "End turn",
+            "HP 200/200",
+        ] {
+            assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
+        }
+    }
+
+    #[test]
+    fn running_away_is_refused_during_a_fight() {
+        let mut app = with_the_gunfight_open(app_with_seed(1));
+        let fight = app.people.len();
+        app.update(Command::Pick(fight));
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Fighting(_)));
+        assert!(screen(&app, 100, 30).contains("no running"));
+    }
+
+    #[test]
+    fn a_fight_played_to_the_end_leaves_the_scene_or_the_game_over_screen() {
+        for seed in 1..=6 {
+            let mut app = with_the_gunfight_open(app_with_seed(seed));
+            let fight = app.people.len();
+            app.update(Command::Pick(fight));
+            // Shoot the first foe four times (80 AP buys four 17-AP shots), then
+            // pass; the fight must end in a bounded number of rounds.
+            for _ in 0..500 {
+                for step in 0..5 {
+                    // Passing is the last action, and the list shrinks as foes fall.
+                    let Screen::Fighting(fight) = &app.screen else {
+                        break;
+                    };
+                    let pick = if step < 4 {
+                        0
+                    } else {
+                        fight.action_count() - 1
+                    };
+                    app.update(Command::Pick(pick.min(8)));
+                }
+                if !matches!(app.screen, Screen::Fighting(_)) {
+                    break;
+                }
+            }
+            let text = screen(&app, 100, 30);
+            match app.screen {
+                Screen::Exploring(_) => {
+                    assert!(text.contains("The fight is won."), "{text}");
+                    assert!(!text.contains("Fight the Powder Gangers"), "{text}");
+                    assert!(app.game.is_alive());
+                }
+                Screen::Down => {
+                    assert!(text.contains("You are down."), "{text}");
+                    assert_eq!(app.game.hp(), 0);
+                }
+                _ => panic!("seed {seed}: the fight did not end"),
+            }
+            let hp = format!("HP {}/{}", app.game.hp(), app.game.character().max_hp());
+            assert!(text.contains(&hp), "seed {seed}: {text}");
+        }
     }
 
     #[test]
