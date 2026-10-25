@@ -1,5 +1,6 @@
 //! Types and contracts every feature builds on: ids, the `Condition` and `Effect`
-//! vocabulary, the read-only view traits, the data loader and errors.
+//! vocabulary, the read-only view traits and write-side sink traits with the
+//! evaluator that connects them, the data loader and errors.
 //!
 //! Dependencies point inward: nothing here may import from a feature.
 //!
@@ -12,10 +13,13 @@ mod condition;
 mod data;
 mod effect;
 mod error;
+mod eval;
 mod ids;
 mod load;
 mod non_empty;
 mod redacted;
+mod sink;
+mod view;
 mod vocabulary;
 
 pub use bounds::{SkillLevel, SpecialLevel};
@@ -28,6 +32,7 @@ pub use data::{
 };
 pub use effect::Effect;
 pub use error::ModelError;
+pub use eval::{apply, apply_all, evaluate};
 pub use ids::{
     AmmoFamilyId, CompanionId, DialogueId, EndingId, FactionId, FlagId, ItemId, LocationId, NpcId,
     PerkId, QuestId, TopicKey,
@@ -35,6 +40,14 @@ pub use ids::{
 pub use load::{Catalog, GameData, LoadError, Record, Scope};
 pub use non_empty::NonEmpty;
 pub use redacted::Redacted;
+pub use sink::{
+    BatchError, CharacterSink, CompanionSink, EffectError, InventorySink, QuestSink, StandingSink,
+    State, StateSink, WorldSink,
+};
+pub use view::{
+    CharacterView, CompanionView, EmptyWorld, InventoryView, QuestStatus, QuestView, StandingView,
+    StateView, WorldView,
+};
 pub use vocabulary::{
     Alignment, Comparison, Dlc, NpcState, QuestStage, QuestState, ReputationLevel, Skill, Special,
 };

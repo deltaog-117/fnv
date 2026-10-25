@@ -534,6 +534,55 @@ The engine needs `data/engine/` as typed Rust values before the evaluator, quest
 
 ---
 
+### Evaluator: Read Views and Write Sinks per Domain
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Dialogue options, quest rules and encounters all ask "does this condition hold?", and quest rules and dialogue choices all say "apply these effects". Both must mean the same thing everywhere, and `shared` may not import a feature.
+
+---
+
+#### Decision
+
+> `evaluate` reads state through six small view traits and `apply` writes it through six sink traits, one pair per domain (quests, standing, character, inventory, companions, world). The view methods have default answers, so a test implements only the domain it needs. The sink methods have no defaults, and `apply` is an exhaustive `match`, so a new `Effect` variant is a compile error until its owner handles it. `apply_all` checks the whole list against the read view first (finite amounts, items and caps affordable, counting earlier gives in the same list) and only then applies it.
+>
+> **Alternatives rejected:** a pure `plan` returning a list of changes (atomic and loggable, but a second enum that mirrors `Effect`; revisit if the LLM mode needs to vet proposed effects), and an evaluator-only module with each feature applying its own effects by tag (smallest, but loses exhaustiveness).
+>
+> **Trade-offs accepted:** the pre-flight cannot see what only the owning feature knows, such as an unknown id. A sink error mid-batch leaves earlier effects applied, and `BatchError::applied` says how many.
+
+---
+
+#### Implementation Notes
+
+> - Unknown things answer with the default: nothing started, nothing owned, an NPC in no state (`Alive` included).
+> - Tests use two stand-in states: a small honest `MemoryState`, and a `HashedView` that answers each question from a hash, for the laws of `all`/`any`/`not`.
+> - A property test checks that after any failed batch the state equals "the first `applied` effects applied one by one".
+> - The benchmark stub measures about 5 ns per evaluation of a four-clause gate against an empty world. It stops at the first failing clause, so it is a floor, not a typical figure.
+> - `game` does not implement the traits yet; each feature will implement its own as it lands.
+
+---
+
+#### References
+
+- `crates/engine/src/shared/view.rs`, `sink.rs`, `eval.rs`
+- `crates/engine/tests/shared/evaluator.rs`, `memory.rs`
+- `crates/engine/benches/evaluate.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

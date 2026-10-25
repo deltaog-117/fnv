@@ -45,6 +45,13 @@ macro_rules! define_bounded {
             }
         }
 
+        impl Default for $name {
+            /// The lowest allowed value: what an unknown character is assumed to have.
+            fn default() -> Self {
+                Self($min)
+            }
+        }
+
         impl TryFrom<u32> for $name {
             type Error = ModelError;
 
@@ -93,6 +100,12 @@ mod tests {
         assert!(SpecialLevel::try_new(1).is_ok());
         assert!(SpecialLevel::try_new(10).is_ok());
         assert!(SpecialLevel::try_new(11).is_err());
+    }
+
+    #[test]
+    fn defaults_are_the_lowest_allowed_value() {
+        assert_eq!(SkillLevel::default().get(), SkillLevel::MIN);
+        assert_eq!(SpecialLevel::default().get(), SpecialLevel::MIN);
     }
 
     #[test]

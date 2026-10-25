@@ -21,6 +21,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Data loader in `crates/engine/src/shared/`: typed records for items, quests, NPCs, dialogue, factions and locations, and a `GameData` loader with a `Scope` (everywhere, or around one location such as Goodsprings). Errors name the file and the record id; duplicate ids and broken dialogue topic links are rejected
 - New id types `LocationId`, `DialogueId`, `TopicKey` and `AmmoFamilyId`
 - Loader tests against the real data and against deliberately broken data sets, and a load benchmark
+- Condition/effect evaluator in `crates/engine/src/shared/`: `evaluate` for conditions, `apply` and `apply_all` for effects, six read-only view traits with default answers (`QuestView`, `StandingView`, `CharacterView`, `InventoryView`, `CompanionView`, `WorldView`), six write-side sink traits, `EmptyWorld`, `EffectError` and `BatchError`
+- `apply_all` rejects a batch that overspends items or caps, or carries a NaN or infinite amount, before changing anything
+- `Default` for `SkillLevel` and `SpecialLevel` (the lowest allowed value)
+- Evaluator tests: examples for each condition, property tests for the laws of `all`/`any`/`not`, comparison ordering, effect round trips and batch behaviour, and an evaluation benchmark stub
 
 ### Changed
 - A quest condition must now carry a `stage` exactly when its state is `stage_at_least` or `stage_is`, and stage numbers cannot be negative (`schemas/common.schema.json`)
