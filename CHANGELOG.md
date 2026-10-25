@@ -37,6 +37,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Game::deferred()` and `EffectError::NotBuilt`: rewards for unbuilt features (caps, XP, items) are kept instead of lost
 - `validate.py` checks the quests, factions, items and NPCs named in authored conditions and effects
 - Language-neutral golden scenarios in `tests/scenarios/goodsprings.json`, automation tests with a property test, and a plain-versus-automated benchmark
+- Dialogue runner in `crates/engine/src/dialogue/`: `DialogueBook` (topic graph checked once: unique ids and keys, links resolve, an ending has no follow-ups) and `Conversation` (opens at the start topics; a topic with no follow-ups returns there; only topics whose conditions hold are offered; a failing `check` lists the option but locks it; a topic's effects apply as a unit or not at all; an ending topic closes the talk). It runs over any `State + Clone`, so it does not import `game`
+- `start` (dialogue) and `ends` (topic) fields in `dialogue.schema.json`, the Rust records and the loader, which rejects a `start` link to a missing topic
+- Goodsprings dialogue slice: `data/dialogue/slice_goodsprings.json` (hand-authored start menus, follow-ups, conditions and quest effects for Doc Mitchell and Sunny Smiles) merged into `data/engine/dialogue/` by `normalize.py`; `validate.py` checks its links and the quests and NPCs it names
+- Dialogue tests: one case per rule, book rejection cases, a property test over random graphs and walks, the real data, a reachability check for authored topics, seven golden scenarios in `tests/scenarios/goodsprings_dialogue.json`, and a menu benchmark stub
 
 ### Changed
 - `Game` now applies flag, NPC and ending effects instead of refusing them; `Game::new` has an empty roster, so NPC effects on it fail with an unknown-NPC error

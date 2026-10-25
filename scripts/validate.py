@@ -53,6 +53,11 @@ def walk_vocabulary(nodes):
             yield from walk_vocabulary(inner if isinstance(inner, list) else [inner])
 
 
+def refs_in(nodes, field):
+    """Every value of `field` in the condition/effect nodes, nested ones included."""
+    return [node[field] for node in walk_vocabulary(nodes) if field in node]
+
+
 def evaluate(expr, env):
     return eval(compile(ast.parse(expr, mode="eval"), "<formula>", "eval"),
                 {"__builtins__": {}}, {**SAFE_FUNCS, **env})
@@ -121,6 +126,22 @@ def main(argv):
         for k, c in keys.items():
             if c > 1:
                 report("ids", d["id"], f"duplicate topic key {k}")
+        for key in d.get("start", []):
+            if key not in keys:
+                report("refs", d["id"], f"start lists unknown topic {key}")
+        for t in d["topics"]:
+            for key in t.get("next", []):
+                if key not in keys:
+                    report("refs", d["id"], f"{t['key']} lists unknown next {key}")
+            if t.get("ends") and t.get("next"):
+                report("dialogue", d["id"], f"{t['key']} ends the conversation but has next")
+            for ref in refs_in(t.get("conditions", []) + t.get("effects", [])
+                               + ([t["check"]] if "check" in t else []), "quest"):
+                if ref not in quest_ids:
+                    report("refs", d["id"], f"{t['key']} names unknown quest {ref}")
+            for ref in refs_in(t.get("conditions", []) + t.get("effects", []), "npc"):
+                if ref not in npc_ids:
+                    report("refs", d["id"], f"{t['key']} names unknown npc {ref}")
     for n in npcs:
         for did in n.get("dialogue", []):
             if did not in dialogue_ids:

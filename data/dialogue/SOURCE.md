@@ -16,3 +16,13 @@ kept as `check`. The conversation graph is therefore a flat list; linking
 topics and attaching conditions/effects is authoring work.
 
 Regenerate: `list`, `fetch`, `build <cache_dir> data/dialogue`.
+
+## Hand-authored slice
+
+`slice_goodsprings.json` is hand-written, not imported. For each listed
+speaker it gives the `start` topics (the menu a conversation opens with) and,
+per topic key, any of `conditions`, `effects`, `check`, `next` and `ends`.
+`normalize.py` merges it into `data/engine/dialogue/` and raises on an unknown
+dialogue or topic. The wiki gives no links, so every link and condition was
+read from the transcript text and is not verified in game. Do not regenerate
+or overwrite this file when re-importing the transcripts.

@@ -11,6 +11,7 @@
     "speaker": {"$ref": "common.schema.json#/$defs/id", "description": "NPC id, when the speaker was matched to an NPC."},
     "speaker_name": {"type": "string"},
     "source": {"type": "string"},
+    "start": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/id"}, "description": "Topic keys offered when a conversation opens and whenever a topic leaves no follow-up. Authored."},
     "topics": {
       "type": "array",
       "items": {
@@ -21,7 +22,7 @@
           "section": {"enum": ["topics", "conversation", "combat", "detection", "other"]},
           "prompt": {"type": "string", "description": "What the player says to open this topic."},
           "label": {"type": "string"},
-          "check": {"$ref": "common.schema.json#/$defs/condition"},
+          "check": {"$ref": "common.schema.json#/$defs/condition", "description": "Gate shown with the option: while it fails the option is listed but cannot be chosen."},
           "responses": {"type": "array", "minItems": 1, "items": {
             "type": "object", "required": ["text"], "additionalProperties": false,
             "properties": {
@@ -31,7 +32,8 @@
             }}},
           "conditions": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/condition"}},
           "effects": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/effect"}},
-          "next": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/id"}, "description": "Topic keys that follow."}
+          "next": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/id"}, "description": "Topic keys that follow."},
+          "ends": {"type": "boolean", "description": "True when choosing the topic ends the conversation; such a topic has no `next`."}
         }
       }
     }

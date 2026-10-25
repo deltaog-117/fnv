@@ -1,0 +1,127 @@
+[
+ {
+  "dialogue": "docmitchell",
+  "start": [
+   "vfreeformgoodspringsdocmitchellwhereisthis",
+   "vfreeformgoodspringsdocmitchellwhorescued",
+   "vfreeformgoodspringsdocmitchellwhoshotme",
+   "vfreeformgoodspringsdocmitchelltellmeaboutyou",
+   "vfreeformgoodspringsdocmitchelltowninfo",
+   "vfreeformgoodspringsdocmitchellshootouthelp",
+   "goodbye"
+  ],
+  "topics": [
+   {
+    "key": "vfreeformgoodspringsdocmitchelltellmeaboutyou",
+    "next": [
+     "vfreeformgoodspringsdocmitchelltopic001",
+     "vfreeformgoodspringsdocmitchelltopic006"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsdocmitchelltopic001",
+    "next": [
+     "vfreeformgoodspringsdocmitchelltopic000",
+     "vfreeformgoodspringsdocmitchelltopic005",
+     "vfreeformgoodspringsdocmitchelltopic006"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsdocmitchelltopic005",
+    "next": ["vfreeformgoodspringsdocmitchelltopic006"]
+   },
+   {
+    "key": "vfreeformgoodspringsdocmitchelltopic000",
+    "next": ["vfreeformgoodspringsdocmitchelltopic006"]
+   },
+   {
+    "key": "vfreeformgoodspringsdocmitchellshootouthelp",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"}
+    ],
+    "effects": [
+     {"type": "set_flag", "flag": "doc_mitchell_offered_supplies"}
+    ],
+    "next": ["vfreeformgoodspringsdocmitchellshootoutbags"]
+   },
+   {
+    "key": "vfreeformgoodspringsdocmitchellshootoutbags",
+    "conditions": [
+     {"type": "flag", "flag": "doc_mitchell_offered_supplies"}
+    ]
+   },
+   {
+    "key": "goodbye",
+    "ends": true
+   }
+  ]
+ },
+ {
+  "dialogue": "gssunnysmiles",
+  "start": [
+   "vfreeformgoodspringsgssunnysmilestopic019",
+   "vfreeformgoodspringsgssunnysmilestopic001",
+   "vfreeformgoodspringsgssunnysmilestopic000",
+   "vfreeformgoodspringsgssunnysmilestopic005",
+   "vfreeformgoodspringsgssunnysmilestopic012",
+   "vfreeformgoodspringsgssunnysmilestopic016",
+   "vfreeformgoodspringsgoodspringssunnysmilestopic001",
+   "goodbye"
+  ],
+  "topics": [
+   {
+    "key": "vfreeformgoodspringsgssunnysmilestopic019",
+    "conditions": [
+     {"type": "quest", "quest": "back_in_the_saddle", "state": "not_started"}
+    ],
+    "effects": [
+     {"type": "start_quest", "quest": "back_in_the_saddle"},
+     {"type": "set_stage", "quest": "back_in_the_saddle", "stage": 4}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgssunnysmilestopic001",
+    "next": [
+     "vfreeformgoodspringsgssunnysmilestopic002",
+     "vfreeformgoodspringsgssunnysmilestopic003",
+     "vfreeformgoodspringsgssunnysmilestopic004"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgssunnysmilestopic004"
+   },
+   {
+    "key": "vfreeformgoodspringsgssunnysmilestopic013",
+    "conditions": [
+     {"type": "flag", "flag": "sunny_mentioned_legion"}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgssunnysmilestopic012",
+    "effects": [
+     {"type": "set_flag", "flag": "sunny_mentioned_legion"}
+    ],
+    "next": ["vfreeformgoodspringsgssunnysmilestopic013"]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringssunnysmilestopic001",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 5},
+     {"type": "not", "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10}}
+    ],
+    "effects": [
+     {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}
+    ],
+    "next": [
+     "vfreeformgoodspringsgoodspringssunnysmilestopic005",
+     "vfreeformgoodspringsgoodspringssunnysmilestopic007"
+    ]
+   },
+   {
+    "key": "goodbye",
+    "ends": true
+   }
+  ]
+ }
+]

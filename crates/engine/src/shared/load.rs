@@ -116,6 +116,14 @@ pub enum LoadError {
         /// The missing target.
         target: String,
     },
+    /// A dialogue file lists a start topic that is not a topic of the same file.
+    #[error("{}: start lists {target}, which is not a topic of this file", path.display())]
+    DanglingStart {
+        /// The file.
+        path: PathBuf,
+        /// The missing target.
+        target: String,
+    },
     /// A dialogue file name is not a valid id.
     #[error("{}: file name is not a valid dialogue id: {source}", path.display())]
     BadFileName {
@@ -347,7 +355,8 @@ fn read_dialogue(dir: &Path, id: &DialogueId) -> Result<Dialogue, LoadError> {
     Ok(dialogue)
 }
 
-/// Topic keys must be unique, and `next` may only point at keys of the same file.
+/// Topic keys must be unique, and `start` and `next` may only point at keys of the
+/// same file.
 fn check_topics(path: &Path, dialogue: &Dialogue) -> Result<(), LoadError> {
     let mut keys = BTreeSet::new();
     for topic in &dialogue.topics {
@@ -357,6 +366,12 @@ fn check_topics(path: &Path, dialogue: &Dialogue) -> Result<(), LoadError> {
                 key: topic.key.to_string(),
             });
         }
+    }
+    if let Some(target) = dialogue.start.iter().find(|t| !keys.contains(t)) {
+        return Err(LoadError::DanglingStart {
+            path: path.to_owned(),
+            target: target.to_string(),
+        });
     }
     for topic in &dialogue.topics {
         if let Some(target) = topic.next.iter().find(|t| !keys.contains(t)) {

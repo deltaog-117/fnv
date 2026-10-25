@@ -440,6 +440,38 @@ def dialogue(files):
     return docs, by_page
 
 
+def apply_dialogue_slices(docs, slices):
+    """Merge the hand-authored slice files into the dialogue records.
+
+    A slice names a dialogue file and gives its `start` topics and, per topic key,
+    any of `conditions`, `effects`, `check`, `next` and `ends`. The wiki text of the
+    topics is never touched. Anything that does not match raises: a typo must not
+    silently drop an authored link.
+    """
+    by_id = {d["id"]: d for d in docs}
+    for entry in slices:
+        doc = by_id.get(entry["dialogue"])
+        if doc is None:
+            raise ValueError(f"dialogue slice: unknown dialogue {entry['dialogue']}")
+        topics = {t["key"]: t for t in doc["topics"]}
+        for key in entry.get("start", []):
+            if key not in topics:
+                raise ValueError(f"dialogue slice: {doc['id']} has no start topic {key}")
+        put(doc, "start", entry.get("start"))
+        for authored in entry.get("topics", []):
+            topic = topics.get(authored["key"])
+            if topic is None:
+                raise ValueError(f"dialogue slice: {doc['id']} has no topic {authored['key']}")
+            for field in ("conditions", "effects", "check", "next"):
+                put(topic, field, authored.get(field))
+            if authored.get("ends"):
+                topic["ends"] = True
+            for target in authored.get("next", []):
+                if target not in topics:
+                    raise ValueError(f"dialogue slice: {doc['id']}/{topic['key']} "
+                                     f"links to missing topic {target}")
+
+
 def link_speakers(docs, npc_recs):
     by_name = {}
     for n in npc_recs:
@@ -873,8 +905,11 @@ def main(argv):
     quest_recs, title_id = quests(files, cons, Ids())
     apply_slices(quest_recs, [entry for f in sorted((data / "quests").glob("slice_*.json"))
                               for entry in json.load(open(f))])
-    dfiles = [f for f in sorted((data / "dialogue").glob("*.json")) if f.name != "index.json"]
+    dfiles = [f for f in sorted((data / "dialogue").glob("*.json"))
+              if f.name != "index.json" and not f.name.startswith("slice_")]
     docs, dialogue_by_page = dialogue(dfiles)
+    apply_dialogue_slices(docs, [entry for f in sorted((data / "dialogue").glob("slice_*.json"))
+                                 for entry in json.load(open(f))])
     npc_recs = npcs(json.load(open(data / "npcs" / "npcs.json")), title_id, dialogue_by_page)
     link_speakers(docs, npc_recs)
     link_givers(quest_recs, npc_recs)

@@ -780,6 +780,55 @@ The quest `conditions` / `effects` arrays were empty, so nothing exercised the e
 
 ---
 
+### Dialogue Runner: A Generic Conversation Over an Authored Overlay
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The quest engine and game state run conditions and effects, but nothing let the player talk. The wiki's dialogue is a flat list of topics with no links, conditions or effects, and most Goodsprings quests start in a conversation.
+
+---
+
+#### Decision
+
+> The runner lives in `dialogue/` and is generic over `State + Clone`, so it does not import `game` (COA A of three; the others were a separate per-scene graph format and a flat-menu fallback with a generated draft graph). `DialogueBook` resolves links to positions once and refuses a bad graph; `Conversation` holds only a position (the start, after a topic, or over). The graph is authored in a hand-curated overlay, `data/dialogue/slice_goodsprings.json`, merged by `normalize.py`, the same way as the quest slice. Two optional schema fields were added: `start` on a dialogue (the menu a talk opens with) and `ends` on a topic. A topic with no `next` returns to the start, and if every follow-up is hidden the start is offered, so the player is never stuck.
+>
+> **Alternatives rejected:** B, a second graph format for gameplay (drifts from `dialogue.schema.json` and discards its `next`), and C, a flat menu with a generated draft graph (152 topics for Doc Mitchell make a flat menu unusable, and the generator is a project of its own).
+>
+> **Trade-offs accepted:** a topic's effects are applied to a clone and kept only if all succeed, which costs a clone of the state per choice. `check` means "listed but locked while it fails"; a success/failure pair from the transcripts is written as two topics with exclusive `conditions`. Topics whose effects need unbuilt features (paid healing, supplies) are not authored yet, because `apply_all` would refuse them. Every authored link and condition is read from the transcript text and is not verified in game.
+
+---
+
+#### Implementation Notes
+
+> - Authored: the start menus of Doc Mitchell and Sunny Smiles, Doc's "about yourself" chain, Sunny's area chain, Sunny starting Back in the Saddle (stage 4) and moving Ghost Town Gunfight from stage 5 to 10, and two flag-gated follow-ups.
+> - No wiki topic carries a skill-check threshold, so no real topic has a `check` yet; the check path is covered by hand-built dialogues.
+> - `validate.py` checks `start` and `next` links, that an ending has no `next`, and that quests and NPCs named in conditions and effects exist. A real-data test fails if an authored topic cannot be reached from a start topic.
+> - Tests: 24, including a property test over random graphs and walks (refused picks change nothing, an ended talk offers nothing, the same walk gives the same trace) and seven golden scenarios in `tests/scenarios/goodsprings_dialogue.json`.
+> - The benchmark stub measures about 300 ns to build Doc Mitchell's menu.
+
+---
+
+#### References
+
+- `crates/engine/src/dialogue.rs`, `dialogue/book.rs`, `dialogue/conversation.rs`
+- `data/dialogue/slice_goodsprings.json`, `scripts/normalize.py`, `scripts/validate.py`, `schemas/dialogue.schema.json`
+- `crates/engine/tests/dialogue/`, `tests/scenarios/goodsprings_dialogue.json`, `crates/engine/benches/dialogue.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

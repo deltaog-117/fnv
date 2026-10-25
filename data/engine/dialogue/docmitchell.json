@@ -1635,7 +1635,11 @@
    ],
    "topic": "VFreeformGoodSpringsDocMitchellTellMeAboutYou",
    "prompt": "Tell me about yourself, Doc.",
-   "label": "VCG01DocMitchellTellMeAboutYou"
+   "label": "VCG01DocMitchellTellMeAboutYou",
+   "next": [
+    "vfreeformgoodspringsdocmitchelltopic001",
+    "vfreeformgoodspringsdocmitchelltopic006"
+   ]
   },
   {
    "key": "vfreeformgoodspringsdocmitchelltowninfo",
@@ -1756,7 +1760,13 @@
     }
    ],
    "topic": "VFreeformGoodspringsDocMitchellShootoutBags",
-   "prompt": "They'll be using explosives. Do you have something for more serious injuries?"
+   "prompt": "They'll be using explosives. Do you have something for more serious injuries?",
+   "conditions": [
+    {
+     "type": "flag",
+     "flag": "doc_mitchell_offered_supplies"
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsdocmitchellshootouthelp",
@@ -1774,7 +1784,23 @@
     }
    ],
    "topic": "VFreeformGoodspringsDocMitchellShootoutHelp",
-   "prompt": "The town is going to be attacked by bandits. Anything you can do to help?"
+   "prompt": "The town is going to be attacked by bandits. Anything you can do to help?",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "doc_mitchell_offered_supplies"
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsdocmitchellshootoutbags"
+   ]
   },
   {
    "key": "vfreeformgoodspringsdocmitchelltopic000",
@@ -1787,7 +1813,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsDocMitchellTopic000",
-   "prompt": "You said before you had something taken from you."
+   "prompt": "You said before you had something taken from you.",
+   "next": [
+    "vfreeformgoodspringsdocmitchelltopic006"
+   ]
   },
   {
    "key": "vfreeformgoodspringsdocmitchelltopic001",
@@ -1810,7 +1839,12 @@
     }
    ],
    "topic": "VFreeformGoodspringsDocMitchellTopic001",
-   "prompt": "I saw your old vault on the Strip. Vault 21, right? Mr. House filled it with concrete?"
+   "prompt": "I saw your old vault on the Strip. Vault 21, right? Mr. House filled it with concrete?",
+   "next": [
+    "vfreeformgoodspringsdocmitchelltopic000",
+    "vfreeformgoodspringsdocmitchelltopic005",
+    "vfreeformgoodspringsdocmitchelltopic006"
+   ]
   },
   {
    "key": "vfreeformgoodspringsdocmitchelltopic002",
@@ -1897,7 +1931,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsDocMitchellTopic005",
-   "prompt": "Is that when you settled out here with your wife?"
+   "prompt": "Is that when you settled out here with your wife?",
+   "next": [
+    "vfreeformgoodspringsdocmitchelltopic006"
+   ]
   },
   {
    "key": "vfreeformgoodspringsdocmitchelltopic006",
@@ -1923,7 +1960,8 @@
     }
    ],
    "topic": "GOODBYE",
-   "prompt": "Goodbye."
+   "prompt": "Goodbye.",
+   "ends": true
   },
   {
    "key": "vcg01docfarewelltransition",
@@ -2748,6 +2786,15 @@
    "topic": "ObserveCombat",
    "prompt": "ObserveCombat"
   }
+ ],
+ "start": [
+  "vfreeformgoodspringsdocmitchellwhereisthis",
+  "vfreeformgoodspringsdocmitchellwhorescued",
+  "vfreeformgoodspringsdocmitchellwhoshotme",
+  "vfreeformgoodspringsdocmitchelltellmeaboutyou",
+  "vfreeformgoodspringsdocmitchelltowninfo",
+  "vfreeformgoodspringsdocmitchellshootouthelp",
+  "goodbye"
  ],
  "speaker": "doc_mitchell"
 }

@@ -1,0 +1,70 @@
+{
+ "description": "Language-neutral dialogue scenarios: effects in 'setup' are applied to a fresh game, then each 'say' picks a topic by key in a conversation with 'dialogue'; 'fails' marks a pick that must be refused; 'expect' lists the quest states, the flags that must be set and whether the conversation is over.",
+ "scenarios": [
+  {
+   "name": "sunny: asking to be taught starts the quest once",
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vfreeformgoodspringsgssunnysmilestopic019"},
+    {"say": "vfreeformgoodspringsgssunnysmilestopic019", "fails": true}
+   ],
+   "expect": {"quests": {"back_in_the_saddle": {"status": "active", "stage": 4}}}
+  },
+  {
+   "name": "sunny: the gunfight topic is not on offer before the quest begins",
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringssunnysmilestopic001", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "not_started"}}}
+  },
+  {
+   "name": "sunny: at stage 5 the gunfight topic advances the quest to stage 10",
+   "setup": [{"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 5}],
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringssunnysmilestopic001"},
+    {"say": "vfreeformgoodspringsgoodspringssunnysmilestopic001", "fails": true},
+    {"say": "vfreeformgoodspringsgoodspringssunnysmilestopic005"}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "sunny: the Legion follow-up appears only after asking about the other group",
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vfreeformgoodspringsgssunnysmilestopic013", "fails": true},
+    {"say": "vfreeformgoodspringsgssunnysmilestopic012"},
+    {"say": "vfreeformgoodspringsgssunnysmilestopic013"}
+   ],
+   "expect": {"flags": ["sunny_mentioned_legion"]}
+  },
+  {
+   "name": "doc mitchell: goodbye ends the conversation and nothing follows",
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "goodbye"},
+    {"say": "vfreeformgoodspringsdocmitchellwhereisthis", "fails": true}
+   ],
+   "expect": {"over": true}
+  },
+  {
+   "name": "doc mitchell: supplies for the gunfight need the quest to be active",
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "vfreeformgoodspringsdocmitchellshootouthelp", "fails": true}
+   ],
+   "expect": {"over": false}
+  },
+  {
+   "name": "doc mitchell: with the gunfight active he offers supplies, then the bags topic opens",
+   "setup": [{"type": "start_quest", "quest": "ghost_town_gunfight"}],
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "vfreeformgoodspringsdocmitchellshootouthelp"},
+    {"say": "vfreeformgoodspringsdocmitchellshootoutbags"}
+   ],
+   "expect": {"flags": ["doc_mitchell_offered_supplies"]}
+  }
+ ]
+}

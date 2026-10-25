@@ -1,7 +1,7 @@
 //! Dialogue records: one speaker's topics.
 //!
-//! The wiki records no links between topics; `conditions`, `effects` and `next`
-//! are empty until the graph is authored.
+//! The wiki records no links between topics; `start`, `conditions`, `effects`,
+//! `next` and `ends` are empty until the graph is authored.
 
 use serde::Deserialize;
 
@@ -49,7 +49,8 @@ pub struct Topic {
     pub prompt: Option<String>,
     /// A short label for menus.
     pub label: Option<String>,
-    /// A skill or stat check that gates the topic.
+    /// A gate shown with the option: while it fails the option is listed but cannot
+    /// be chosen.
     pub check: Option<Condition>,
     /// The speaker's lines, at least one.
     pub responses: NonEmpty<Response>,
@@ -62,6 +63,9 @@ pub struct Topic {
     /// Topics that follow this one; empty until authored.
     #[serde(default)]
     pub next: Vec<TopicKey>,
+    /// Choosing the topic ends the conversation; such a topic has no `next`.
+    #[serde(default)]
+    pub ends: bool,
 }
 
 /// All topics of one speaker.
@@ -76,6 +80,10 @@ pub struct Dialogue {
     pub speaker_name: String,
     /// Wiki page the record was imported from.
     pub source: Option<String>,
+    /// Topics offered when a conversation opens and whenever a topic leaves no
+    /// follow-up; empty until authored.
+    #[serde(default)]
+    pub start: Vec<TopicKey>,
     /// The speaker's topics.
     pub topics: Vec<Topic>,
 }
