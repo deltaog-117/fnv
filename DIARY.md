@@ -19,6 +19,7 @@
 | 2026-10-25 | Data loader | Per-record typed parsing with a location scope | ✅ Confirmed |
 | 2026-10-25 | Quest engine | `QuestBook` definitions + `QuestLog` state machine (COA A); rules fire in `game` | ✅ Confirmed |
 | 2026-10-25 | Game state | Concrete `Game` holding the quest log; unbuilt features refuse effects (COA A) | ✅ Confirmed |
+| 2026-10-25 | Character and inventory | Both in one step, minimal; `Game` owns them and keeps the view traits as the only contract (COA A) | ✅ Confirmed |
 
 ---
 
@@ -915,6 +916,56 @@ The engine has quests, a world, dialogue and combat, but nothing can be played. 
 #### References
 
 - `crates/tui/src/app.rs`, `main.rs`, `shared/`, `exploration/`, `dialogue/`, `quests/`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
+### Character and Inventory: Both Filled In One Step, Minimal
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+`character/` and `inventory/` were empty stubs, so every XP, caps and item reward in the Goodsprings slice was postponed into `Game::deferred()`, combat could not read a hit-point or action-point total, and the paid dialogue topics had nothing to charge.
+
+---
+
+#### Decision
+
+> Build both in one step and keep each minimal (COA A of three; the others were inventory first with the character stubbed, and a JSON-preset character). `Character` stores only the seven S.P.E.C.I.A.L. values and the XP earned; the level, hit points, action points, carry weight and every skill's starting value are derived on demand from the curated formulas, so XP and level cannot disagree. `Inventory` stores item stacks, bottle caps and three equipment slots (weapon, outfit, head) over a shared read-only `ItemBook`. Both implement the existing view and sink traits, and `Game` delegates to them, replacing the "not built" refusals for XP, caps and items.
+>
+> **Alternatives rejected:** B, inventory now and the character in a second cycle (smaller diffs, but combat needs derived stats and equipped gear together, so `Game` would change twice), and C, a character loaded from a JSON preset (fast, but a throwaway that leveling and creation would replace).
+>
+> **Trade-offs accepted:** a skill is its starting value from S.P.E.C.I.A.L. alone: no skill points, tagged skills, perks, traits or creation screen yet. The default character has a 5 in everything. Current hit points are not stored (maximum only); they arrive with the combat wiring. Using consumables, repair, crafting and barter are not built.
+
+---
+
+#### Implementation Notes
+
+> - Quest data writes XP and caps as floats. `whole_amount` (in `shared/sink.rs`) accepts only finite whole numbers, so a fractional reward is refused as a data mistake instead of being rounded away.
+> - An item must be in the `ItemBook`, built from the weapon, armor, ammo and consumable catalogs (922 items). Weapon mods, skill books and crafting components are not loaded, so they cannot be carried yet.
+> - Laws in `Inventory`: a stack is never empty, caps never go below zero, an equipped item is always carried, and taking the last copy unequips it. Weight never blocks a pickup; `Game::is_encumbered` only reports it, for travel and running to read later.
+> - `Game::with_world` keeps its signature. `with_items` and `with_character` are builders; a game without an item book refuses every item as unknown, so tests and the TUI pass one.
+> - Derived formulas are hand-written, as in combat. A real-data test pins the expression strings in `formulas.json`, the constants, the governing attribute of all 13 skills, and the XP totals of all 50 rows of `levels.json`, so drift fails the build.
+> - Golden scenarios no longer list caps, XP and items as deferred: they now state the caps, XP and items that must result. `Game::deferred()` still exists for reputation, karma and companions.
+> - The TUI passes the item book and shows level and caps in the status line. There is no inventory or character screen yet.
+
+---
+
+#### References
+
+- `crates/engine/src/character/`, `crates/engine/src/inventory/`, `crates/engine/src/game/state.rs`
+- `tests/scenarios/goodsprings.json`, `data/engine/formulas.json`, `data/engine/levels.json`
 
 ---
 

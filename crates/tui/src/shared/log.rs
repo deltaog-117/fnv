@@ -137,9 +137,10 @@ mod tests {
         }
 
         #[test]
-        // Words are shorter than the narrowest pane, because a longer word is split.
+        // Words fit beside the two-column hanging indent of the narrowest pane
+        // (8 - 2 = 6), because a longer word is split.
         fn a_tail_fits_the_pane_and_ends_with_the_newest_entry(
-            words in proptest::collection::vec("[a-z]{1,7}", 1..40),
+            words in proptest::collection::vec("[a-z]{1,6}", 1..40),
             width in 8u16..80, height in 1u16..12,
         ) {
             let mut log = Log::default();
@@ -161,6 +162,17 @@ mod tests {
         assert_eq!(lines.len(), 1);
         assert_eq!(lines[0].spans.len(), 2);
         assert_eq!(plain(&lines[0]), "Doc: Hello there");
+    }
+
+    #[test]
+    fn a_word_too_long_for_the_indented_line_is_split_not_lost() {
+        let mut log = Log::default();
+        log.push(Entry::Note("a aaaaaaa".to_owned()));
+        // The continuation line has 8 - 2 = 6 columns, so the 7-letter word breaks.
+        let lines = log.tail(8, 5);
+        assert!(lines.iter().all(|line| plain(line).chars().count() <= 8));
+        let letters: String = lines.iter().map(plain).collect::<String>().replace(' ', "");
+        assert_eq!(letters, "aaaaaaaa");
     }
 
     #[test]

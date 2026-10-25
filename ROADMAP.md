@@ -29,6 +29,7 @@ Items are organized by priority, not by timeline.
 - ✅ Goodsprings quest slice: hand-authored stage rewards and rule gates (`data/quests/slice_goodsprings.json`) merged by `normalize.py`; `Game` applies `on_enter` effects and fires consequence rules, undoes a failed change, and postpones rewards for unbuilt features into `Game::deferred()`; ten golden scenarios in `tests/scenarios/`
 - ✅ Combat core (`combat/`): `Combat` runs a turn-based fight (action points, rounds, a win check) over a small `Combatant` trait, with the curated damage pipeline (weapon damage, resistance capped at 85, threshold with a 20% floor), bounded combat numbers, a swappable `HitModel` with a flat stand-in, and deterministic `Dice`; 29 tests including property tests and twelve golden scenarios in `tests/scenarios/combat.json`, and a fight benchmark stub (about 490 ns)
 - ✅ TUI v0 (`crates/tui/`): an Elm-style `App` with a persistent layout (status line, scene, log, active-quest panel, key footer), an exploration screen and a dialogue screen over the engine's `Conversation`; property and headless render tests over the real Goodsprings data
+- ✅ Character and inventory (`character/`, `inventory/`): `Character` (S.P.E.C.I.A.L. and XP, with level, hit points, action points, carry weight and starting skills derived from the curated formulas) and `Inventory` (item stacks, whole-number caps, weapon/outfit/head slots) over a 922-item `ItemBook`; `Game` owns both, so XP, caps and item rewards now apply instead of being deferred; the status line shows level and caps; the formulas, constants and XP table are pinned to `formulas.json` and `levels.json` by tests
 
 ---
 
@@ -36,12 +37,13 @@ Items are organized by priority, not by timeline.
 
 First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, Ghost Town Gunfight).
 
-- **Grow the game state** – `Game` gains a real field each time a feature lands (inventory, reputation, character, companions), replacing its placeholder refusals.
-- **Finish the Goodsprings slice** – Run Goodsprings Run, By a Campfire on the Trail, and the quests with no stages; fame and infamy amounts; replay `Game::deferred()` as inventory, character and reputation land.
+- **Grow the game state** – `Game` gains a real field each time a feature lands (reputation and companions are still placeholder refusals; character and inventory are done), replacing its placeholder refusals.
+- **Finish the Goodsprings slice** – Run Goodsprings Run, By a Campfire on the Trail, and the quests with no stages; fame and infamy amounts; replay `Game::deferred()` once reputation lands.
 - **Goodsprings dialogue content** – author the graphs for Chet, Trudy, Ringo, Easy Pete and Joe Cobb, then the Doc Mitchell intro and the paid topics (healing, supplies) once inventory exists. The wiki records no links or skill-check thresholds, so each one is read from the transcript.
-- **Finish combat** – the real hit-chance and spread model (needs the wiki or the xEdit export), body-part targeting, weapon condition that wears down, initiative, and an adapter that builds a `Combatant` from the character, inventory and weapon data (nine weapons have an action-point cost of 0 and need a decision).
+- **Wire combat into the game** – an adapter that builds a `Combatant` from the character, inventory and weapon data (nine weapons have an action-point cost of 0 and need a decision), current hit points on the character, and a TUI combat screen.
+- **Finish combat** – the real hit-chance and spread model (needs the wiki or the xEdit export), body-part targeting, weapon condition that wears down, initiative.
 - **Reputation and karma** – fame/infamy per faction and town, titles and consequences.
-- **Leveling, perks and traits** – XP table, skill points per level, a perk every two levels, trait choice at character creation.
+- **Leveling, perks and traits** – the XP table and the level are done; still to do are skill points per level and spending them, tagged skills, a perk every two levels, trait choice and the character creation screen (the default character has a 5 in everything).
 - **Vendors and barter** – buying and selling with the barter formula. Vendor stock is not in the wiki and depends on the game-data export below, so the Goodsprings vendors (Chet, Trudy's stock, etc.) have to be authored by hand until then.
 - **TUI screens beyond v0** – travel between places, the quest journal, character sheet, inventory and the combat screen, each added with the engine feature it shows.
 - **Language-neutral golden tests and property tests** – JSON scenarios (state + action = expected state), `proptest` invariants, and a benchmark stub for the combat hot path.
@@ -80,6 +82,6 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🎯 Next Actions (Immediate)
 
-1. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above; the TUI now lists each NPC as soon as their graph is authored.
-2. **Grow the game state** – character and inventory, so combat can be wired into `Game` and a status/inventory screen has something to show.
-3. **Finish the Goodsprings quest slice** – Run Goodsprings Run and By a Campfire on the Trail, so the opening quest can be followed through in the TUI.
+1. **Wire combat into the game** – the next step in the order toward a playable Goodsprings: build a `Combatant` from the character, equipped weapon and armor; store current hit points; add the combat screen, so the Powder Gangers and the gunfight can be fought.
+2. **Finish the Goodsprings quest slice** – Run Goodsprings Run and By a Campfire on the Trail, so the opening quest can be followed through in the TUI.
+3. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above; the TUI lists each NPC as soon as their graph is authored. Doc Mitchell's paid topics can now charge caps and give items.

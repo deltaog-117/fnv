@@ -69,6 +69,31 @@ pub enum EffectError {
     },
 }
 
+/// Reads an effect amount (XP, caps) as a whole number.
+///
+/// Quest data writes amounts as floats, but caps and XP are counted in ones, so a
+/// fraction is a data mistake to refuse rather than round away.
+///
+/// # Errors
+///
+/// [`EffectError::NotFinite`] for NaN or infinity, and [`EffectError::Refused`]
+/// for a fraction or a number too large to count.
+pub fn whole_amount(effect: &'static str, amount: f64) -> Result<i64, EffectError> {
+    // 2^53: every whole number up to here is exact in an f64 and fits an i64.
+    const LIMIT: f64 = 9_007_199_254_740_992.0;
+    if !amount.is_finite() {
+        return Err(EffectError::NotFinite { effect });
+    }
+    if amount.fract() != 0.0 || amount.abs() > LIMIT {
+        return Err(EffectError::Refused {
+            effect,
+            reason: format!("{amount} is not a whole number that can be counted"),
+        });
+    }
+    // Checked above: whole, and within the range an i64 holds exactly.
+    Ok(amount as i64)
+}
+
 /// An effect in a batch failed. Effects before `index` were applied.
 #[derive(Debug, Clone, PartialEq, Error)]
 #[error("effect {index} ({tag}) failed after {applied} applied: {source}")]

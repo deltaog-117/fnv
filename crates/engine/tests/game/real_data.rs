@@ -4,6 +4,7 @@ use std::path::Path;
 use std::sync::Arc;
 
 use engine::game::Game;
+use engine::inventory::ItemBook;
 use engine::quests::QuestBook;
 use engine::shared::{Effect, GameData, QuestStatus, QuestView, Scope, apply_all};
 
@@ -12,8 +13,9 @@ fn every_quest_can_be_walked_to_its_end_through_apply_all() {
     let dir = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/engine");
     let data = GameData::load(&dir, &Scope::Everywhere).expect("the engine data loads");
     let book = Arc::new(QuestBook::new(data.quests.iter()).expect("book builds"));
+    let items = Arc::new(ItemBook::from_data(&data).expect("the item book builds"));
     for quest in data.quests.iter().filter(|q| !q.stages.is_empty()) {
-        let mut game = Game::new(Arc::clone(&book));
+        let mut game = Game::new(Arc::clone(&book)).with_items(Arc::clone(&items));
         // Several finish stages are alternative endings, so stop at the first.
         let end = quest
             .stages

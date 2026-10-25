@@ -4,12 +4,14 @@ use std::collections::HashSet;
 use std::num::NonZeroU32;
 use std::sync::Arc;
 
+use crate::character::Character;
+use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
 use crate::shared::{
     CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, Effect, EffectError,
-    EndingId, FactionId, FlagId, InventorySink, InventoryView, ItemId, NpcId, NpcState, QuestId,
-    QuestSink, QuestStage, QuestStatus, QuestView, ReputationLevel, StandingSink, StandingView,
-    WorldSink, WorldView, apply, evaluate,
+    EndingId, FactionId, FlagId, InventorySink, InventoryView, ItemId, NpcId, NpcState, PerkId,
+    QuestId, QuestSink, QuestStage, QuestStatus, QuestView, ReputationLevel, Skill, SkillLevel,
+    Special, SpecialLevel, StandingSink, StandingView, WorldSink, WorldView, apply, evaluate,
 };
 use crate::world::{WorldBook, WorldState};
 
@@ -38,6 +40,8 @@ pub struct Game {
     book: Arc<QuestBook>,
     quests: QuestLog,
     world: WorldState,
+    character: Character,
+    inventory: Inventory,
     /// Rules already fired, as (quest, index into its rules).
     fired: HashSet<(QuestId, usize)>,
     deferred: Vec<Deferred>,
@@ -58,9 +62,27 @@ impl Game {
             quests: QuestLog::new(Arc::clone(&book)),
             book,
             world: WorldState::new(world),
+            character: Character::default(),
+            inventory: Inventory::new(Arc::default()),
             fired: HashSet::new(),
             deferred: Vec::new(),
         }
+    }
+
+    /// The same game over the items that exist. Items are unknown until a book is
+    /// given, so call this before play: it starts a fresh, empty pack.
+    #[must_use]
+    pub fn with_items(mut self, items: Arc<ItemBook>) -> Self {
+        self.inventory = Inventory::new(items);
+        self
+    }
+
+    /// The same game for a different character, for example one with another
+    /// S.P.E.C.I.A.L. spread. Experience already earned goes with the old one.
+    #[must_use]
+    pub fn with_character(mut self, character: Character) -> Self {
+        self.character = character;
+        self
     }
 
     /// The quest log, for the journal.
@@ -73,6 +95,39 @@ impl Game {
     #[must_use]
     pub fn world(&self) -> &WorldState {
         &self.world
+    }
+
+    /// The player character.
+    #[must_use]
+    pub fn character(&self) -> &Character {
+        &self.character
+    }
+
+    /// What the player carries and wears.
+    #[must_use]
+    pub fn inventory(&self) -> &Inventory {
+        &self.inventory
+    }
+
+    /// Whether the load is over the carry weight; being over blocks nothing here,
+    /// but travel and running will read it.
+    #[must_use]
+    pub fn is_encumbered(&self) -> bool {
+        self.inventory.weight() > f64::from(self.character.carry_weight())
+    }
+
+    /// Equips a carried item.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError`] when the item is not carried or cannot be equipped.
+    pub fn equip(&mut self, item: &ItemId) -> Result<Slot, InventoryError> {
+        self.inventory.equip(item)
+    }
+
+    /// Empties an equipment slot, returning what was in it.
+    pub fn unequip(&mut self, slot: Slot) -> Option<ItemId> {
+        self.inventory.unequip(slot)
     }
 
     /// Quest effects postponed because their feature is not built, oldest first.
@@ -194,11 +249,41 @@ impl QuestSink for Game {
     }
 }
 
-// The four views below keep the trait defaults: nothing owned, nobody met.
+// The two views below keep the trait defaults: no standing, nobody met.
 impl StandingView for Game {}
-impl CharacterView for Game {}
-impl InventoryView for Game {}
 impl CompanionView for Game {}
+
+impl CharacterView for Game {
+    fn skill(&self, skill: Skill) -> SkillLevel {
+        self.character.skill(skill)
+    }
+
+    fn special(&self, stat: Special) -> SpecialLevel {
+        self.character.special(stat)
+    }
+
+    fn has_perk(&self, perk: &PerkId) -> bool {
+        self.character.has_perk(perk)
+    }
+}
+
+impl InventoryView for Game {
+    fn item_count(&self, item: &ItemId) -> u32 {
+        self.inventory.item_count(item)
+    }
+
+    fn caps(&self) -> u32 {
+        self.inventory.caps()
+    }
+
+    fn is_equipped(&self, item: &ItemId) -> bool {
+        self.inventory.is_equipped(item)
+    }
+
+    fn disguises_as(&self, item: &ItemId, faction: &FactionId) -> bool {
+        self.inventory.disguises_as(item, faction)
+    }
+}
 
 impl WorldView for Game {
     fn flag(&self, flag: &FlagId) -> bool {
@@ -225,22 +310,22 @@ impl StandingSink for Game {
 }
 
 impl CharacterSink for Game {
-    fn add_xp(&mut self, _: f64) -> Result<(), EffectError> {
-        Err(not_built("xp", "character"))
+    fn add_xp(&mut self, amount: f64) -> Result<(), EffectError> {
+        self.character.add_xp(amount)
     }
 }
 
 impl InventorySink for Game {
-    fn add_caps(&mut self, _: f64) -> Result<(), EffectError> {
-        Err(not_built("caps", "inventory"))
+    fn add_caps(&mut self, amount: f64) -> Result<(), EffectError> {
+        self.inventory.add_caps(amount)
     }
 
-    fn give_item(&mut self, _: &ItemId, _: NonZeroU32) -> Result<(), EffectError> {
-        Err(not_built("give_item", "inventory"))
+    fn give_item(&mut self, item: &ItemId, count: NonZeroU32) -> Result<(), EffectError> {
+        self.inventory.give_item(item, count)
     }
 
-    fn take_item(&mut self, _: &ItemId, _: NonZeroU32) -> Result<(), EffectError> {
-        Err(not_built("take_item", "inventory"))
+    fn take_item(&mut self, item: &ItemId, count: NonZeroU32) -> Result<(), EffectError> {
+        self.inventory.take_item(item, count)
     }
 }
 

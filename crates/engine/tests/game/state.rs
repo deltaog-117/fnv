@@ -76,9 +76,6 @@ fn unbuilt_effects() -> Vec<Value> {
     vec![
         json!({"type": "reputation", "faction": "ncr", "fame": 1.0, "infamy": 0.0}),
         json!({"type": "karma", "amount": 5.0}),
-        json!({"type": "xp", "amount": 10.0}),
-        json!({"type": "caps", "amount": 10.0}),
-        json!({"type": "give_item", "item": "stimpak"}),
         json!({"type": "companion_join", "companion": "c"}),
     ]
 }

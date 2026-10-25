@@ -42,7 +42,7 @@ pub use non_empty::NonEmpty;
 pub use redacted::Redacted;
 pub use sink::{
     BatchError, CharacterSink, CompanionSink, EffectError, InventorySink, QuestSink, StandingSink,
-    State, StateSink, WorldSink,
+    State, StateSink, WorldSink, whole_amount,
 };
 pub use view::{
     CharacterView, CompanionView, EmptyWorld, InventoryView, QuestStatus, QuestView, StandingView,

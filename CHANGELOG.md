@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Character in `crates/engine/src/character/`: `Character` (S.P.E.C.I.A.L. plus XP earned) implementing `CharacterView` and `CharacterSink`. The level is derived from XP, so the two cannot disagree; hit points, action points, carry weight and each skill's starting value come from the curated formulas. `Level` (1 to 50) and `CharacterRules` (XP table, level cap, action-point cap)
+- Inventory in `crates/engine/src/inventory/`: `ItemBook` (the 922 weapons, armor, ammo and consumables that exist) and `Inventory` (stacks, whole-number bottle caps, and weapon, outfit and head slots) implementing `InventoryView` and `InventorySink`. An equipped item is always carried; taking its last copy unequips it
+- `Game::with_items`, `Game::with_character`, `Game::equip`, `Game::unequip`, `Game::is_encumbered`, `Game::character` and `Game::inventory`
+- `shared::whole_amount`, which reads an XP or caps amount as a finite whole number
+- Character and inventory tests: one case per rule, property tests (levels never fall as XP grows; the pack matches a plain model over random effects and a refusal changes nothing), real-data checks of the formulas, constants and XP table against `formulas.json` and `levels.json`, effects through `Game`, and two benchmark stubs
+- Status line in the TUI shows the level and the bottle caps
 - Raw game data imported from the Fallout Wiki, one importer per family (`scripts/fetch_*.py`): items, quests, NPCs, dialogue transcripts, locations and map markers, perks, traits, factions, reputation tables, creatures, stats, levels, challenges, skill books, recipes and ending slides
 - Hand-curated quest consequence rules (`data/quests/consequences.json`) and engine formulas (`data/rules/formulas.json`)
 - Twelve JSON Schemas in `schemas/`, including the shared `condition` / `effect` vocabulary
@@ -48,6 +54,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TUI tests: property tests for the menu, the log and the layout, and headless `App` tests over the real Goodsprings data using ratatui's `TestBackend`
 
 ### Changed
+- XP, caps and item rewards now apply to the game instead of being postponed into `Game::deferred()`, which keeps only rewards for unbuilt features (reputation, karma, companions). A reward that names an item outside the item book fails and the whole change is undone
+- `tests/scenarios/goodsprings.json` states the caps, XP and items each scenario must leave behind instead of listing deferred effects
 - `Game` now applies flag, NPC and ending effects instead of refusing them; `Game::new` has an empty roster, so NPC effects on it fail with an unknown-NPC error
 - Effects aimed at features that are not built now fail with `EffectError::NotBuilt` instead of `Refused`
 - A quest condition must now carry a `stage` exactly when its state is `stage_at_least` or `stage_is`, and stage numbers cannot be negative (`schemas/common.schema.json`)
@@ -59,7 +67,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - (None yet)
 
 ### Fixed
-- (None yet)
+- The TUI log wrapping property test generated words that cannot fit beside the two-column hanging indent of the narrowest pane, so it failed on rare inputs; words are now at most 6 letters there, and a unit test pins that a longer word is split without losing letters
 
 ### Security
 - (None yet)

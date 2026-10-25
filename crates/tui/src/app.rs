@@ -9,8 +9,9 @@ use std::sync::Arc;
 use anyhow::Context;
 use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::Game;
+use engine::inventory::ItemBook;
 use engine::quests::QuestBook;
-use engine::shared::{Effect, GameData, LocationId, QuestId, QuestStage, apply_all};
+use engine::shared::{Effect, GameData, InventoryView, LocationId, QuestId, QuestStage, apply_all};
 use engine::world::WorldBook;
 use ratatui::Frame;
 use ratatui::layout::{Alignment, Rect};
@@ -61,7 +62,8 @@ impl App {
         let dialogue =
             Arc::new(DialogueBook::new(data.dialogue.iter()).context("building the dialogue")?);
 
-        let mut game = Game::with_world(quests, world);
+        let items = Arc::new(ItemBook::from_data(data).context("building the item book")?);
+        let mut game = Game::with_world(quests, world).with_items(items);
         let opening = Effect::SetStage {
             quest: QuestId::try_new(OPENING_QUEST).context("opening quest id")?,
             stage: QuestStage::new(OPENING_STAGE),
@@ -165,8 +167,13 @@ impl App {
         };
         let active = self.game.quests().active().count();
         frame.render_widget(
-            Paragraph::new(format!(" {} | {active} active quest(s)", self.place))
-                .style(theme::heading()),
+            Paragraph::new(format!(
+                " {} | Lv {} | {} caps | {active} active quest(s)",
+                self.place,
+                self.game.character().level().get(),
+                self.game.caps(),
+            ))
+            .style(theme::heading()),
             regions.status,
         );
         let keys = match &self.screen {
@@ -243,6 +250,12 @@ mod tests {
         ] {
             assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
         }
+    }
+
+    #[test]
+    fn the_status_line_shows_the_level_and_the_caps() {
+        let text = screen(&app(), 100, 30);
+        assert!(text.contains("Lv 1 | 0 caps"), "{text}");
     }
 
     #[test]

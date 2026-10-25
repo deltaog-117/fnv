@@ -8,8 +8,11 @@ use std::path::Path;
 use std::sync::Arc;
 
 use engine::game::Game;
+use engine::inventory::ItemBook;
 use engine::quests::QuestBook;
-use engine::shared::{Effect, GameData, QuestId, QuestStatus, QuestView, Scope, apply_all};
+use engine::shared::{
+    Effect, GameData, InventoryView, ItemId, QuestId, QuestStatus, QuestView, Scope, apply_all,
+};
 use serde::Deserialize;
 
 #[derive(Deserialize)]
@@ -36,6 +39,9 @@ struct Expect {
     #[serde(default)]
     quests: BTreeMap<QuestId, ExpectedQuest>,
     deferred: Option<Vec<String>>,
+    caps: Option<u32>,
+    xp: Option<u32>,
+    items: Option<BTreeMap<ItemId, u32>>,
 }
 
 #[derive(Deserialize)]
@@ -59,13 +65,14 @@ fn the_goodsprings_scenarios_hold() {
     let data = GameData::load(&root.join("data/engine"), &Scope::Everywhere)
         .expect("the engine data loads");
     let book = Arc::new(QuestBook::new(data.quests.iter()).expect("book builds"));
+    let items = Arc::new(ItemBook::from_data(&data).expect("the item book builds"));
     let text = fs::read_to_string(root.join("tests/scenarios/goodsprings.json"))
         .expect("the scenario file exists");
     let file: File = serde_json::from_str(&text).expect("the scenario file parses");
     assert!(!file.scenarios.is_empty());
 
     for scenario in file.scenarios {
-        let mut game = Game::new(Arc::clone(&book));
+        let mut game = Game::new(Arc::clone(&book)).with_items(Arc::clone(&items));
         for step in &scenario.steps {
             let result = apply_all(std::slice::from_ref(&step.r#do), &mut game);
             assert_eq!(
@@ -95,6 +102,20 @@ fn the_goodsprings_scenarios_hold() {
         if let Some(tags) = &scenario.expect.deferred {
             let actual: Vec<&str> = game.deferred().iter().map(|d| d.effect.tag()).collect();
             assert_eq!(&actual, tags, "{}: deferred", scenario.name);
+        }
+        if let Some(caps) = scenario.expect.caps {
+            assert_eq!(game.caps(), caps, "{}: caps", scenario.name);
+        }
+        if let Some(xp) = scenario.expect.xp {
+            assert_eq!(game.character().xp(), xp, "{}: xp", scenario.name);
+        }
+        if let Some(expected) = &scenario.expect.items {
+            let carried: BTreeMap<ItemId, u32> = game
+                .inventory()
+                .stacks()
+                .map(|(item, count)| (item.clone(), count.get()))
+                .collect();
+            assert_eq!(&carried, expected, "{}: items", scenario.name);
         }
     }
 }

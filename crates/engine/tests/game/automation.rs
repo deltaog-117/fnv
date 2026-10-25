@@ -19,7 +19,7 @@ fn game() -> Game {
             "id": "a", "name": "a", "kind": "side", "dlc": "base",
             "stages": [
                 {"stage": 5, "description": "s"},
-                {"stage": 10, "description": "s", "on_enter": [{"type": "caps", "amount": 10.0}]},
+                {"stage": 10, "description": "s", "on_enter": [{"type": "karma", "amount": 10.0}]},
                 {"stage": 20, "description": "s", "finish": true,
                  "on_enter": [{"type": "set_flag", "flag": "a_done"}]},
             ],
@@ -76,8 +76,8 @@ fn a_stage_reward_for_an_unbuilt_feature_is_deferred_not_lost() {
     let deferred = game.deferred();
     assert_eq!(deferred.len(), 1);
     assert_eq!(deferred[0].quest, id("a"));
-    assert_eq!(deferred[0].feature, "inventory");
-    assert!(matches!(deferred[0].effect, Effect::Caps { .. }));
+    assert_eq!(deferred[0].feature, "reputation");
+    assert!(matches!(deferred[0].effect, Effect::Karma { .. }));
 }
 
 #[test]
