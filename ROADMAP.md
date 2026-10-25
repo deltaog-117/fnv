@@ -18,6 +18,7 @@ Items are organized by priority, not by timeline.
 - ✅ Cargo workspace scaffold: a headless `engine` library and a thin `tui` binary, with one module per game capability, shared contracts, and a composition root
 - ✅ `scripts/check`: regenerates and validates the data, then runs rustfmt, clippy and the tests, printing output only on failure
 - ✅ Decision log (`DIARY.md`) covering the language, the contracts-based architecture, the data sources and the quality gate
+- ✅ Typed data model in `crates/engine/src/shared/`: distinct id types, bounded numbers, the `Condition` and `Effect` vocabulary, and contract tests (property tests plus two-way schema checks) that fail when the Rust types and `common.schema.json` drift apart
 
 ---
 
@@ -25,7 +26,6 @@ Items are organized by priority, not by timeline.
 
 First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, Ghost Town Gunfight).
 
-- **Typed data model** – newtype ids and `Condition` / `Effect` enums that mirror `common.schema.json`, so invalid states cannot be represented and the schema and code cannot drift apart.
 - **Data loader** – load and validate the engine data for the Goodsprings slice at startup, failing with clear errors.
 - **Game state and condition/effect evaluator** – the one place that decides whether a dialogue option, quest rule or encounter applies.
 - **Quest engine** – stages, branching, and the lock/fail/unlock rules from the consequence data.
@@ -70,10 +70,9 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🎯 Next Actions (Immediate)
 
-1. **Define the data models** – id newtypes and `Condition` / `Effect` enums in `crates/engine/src/shared/`, with property tests that round-trip them against `schemas/common.schema.json`.
-2. **Write the data loader** – read `data/engine/` for the Goodsprings slice in `crates/engine/src/shared/` and report schema errors with the offending file and id.
-3. **Build the evaluator and the view traits** – `shared` evaluates conditions through small read-only view traits with default answers; `game` implements them.
-4. **Build the quest engine** – `crates/engine/src/quests/`: state, stages and the consequence rules.
-5. **Build the dialogue runner** – `crates/engine/src/dialogue/`, with the Goodsprings graph authored alongside it.
-6. **Build turn-based combat** – `crates/engine/src/combat/`, with property tests and a benchmark stub.
-7. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel and action footer.
+1. **Write the data loader** – read `data/engine/` for the Goodsprings slice in `crates/engine/src/shared/` and report schema errors with the offending file and id.
+2. **Build the evaluator and the view traits** – `shared` evaluates conditions through small read-only view traits with default answers; `game` implements them.
+3. **Build the quest engine** – `crates/engine/src/quests/`: state, stages and the consequence rules.
+4. **Build the dialogue runner** – `crates/engine/src/dialogue/`, with the Goodsprings graph authored alongside it.
+5. **Build turn-based combat** – `crates/engine/src/combat/`, with property tests and a benchmark stub.
+6. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel and action footer.

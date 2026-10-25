@@ -15,6 +15,7 @@
 | 2026-10-25 | Scope of the first playable | Goodsprings vertical slice | ✅ Confirmed |
 | 2026-10-25 | Engine architecture | Shared contracts + feature-owned state (COA C) | ✅ Confirmed |
 | 2026-10-25 | Quality gate | One `scripts/check`, data steps run on change | ✅ Confirmed |
+| 2026-10-25 | Rust types and the schema | Schema is the contract; hand-written types checked by contract tests | ✅ Confirmed |
 
 ---
 
@@ -397,6 +398,86 @@ The project mixes a Python data pipeline and a Rust workspace. Both must stay gr
 #### References
 
 - `scripts/check`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
+### Keeping the Rust Types and the Schema in Step
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+`schemas/common.schema.json` is the language-neutral definition of ids, `Condition` and `Effect`. The Python tooling validates against it and mod authors will rely on it. The Rust enums must match it exactly, or data could pass the validator and fail in the engine, or the reverse.
+
+---
+
+#### Options Considered
+
+**Option A: The schema stays the source of truth; hand-written Rust types guarded by contract tests**
+
+| Aspect | Assessment |
+|--------|------------|
+| **Advantages** | • Ergonomic types: distinct id newtypes, bounded numbers, behaviour where needed <br> • The Python pipeline and the Rust build stay independent <br> • Drift is caught from both directions |
+| **Disadvantages** | • Two definitions to maintain, though neither can change alone without a failing test |
+| **Implementation Difficulty** | Medium |
+| **Fit with Constraints** | Best |
+
+**Option B: Generate the Rust types from the schema at build time (`typify`)**
+
+| Aspect | Assessment |
+|--------|------------|
+| **Advantages** | • One source of truth |
+| **Disadvantages** | • Ids become plain strings, losing `QuestId` vs `NpcId` <br> • `oneOf` produces awkward generated names <br> • Heavy build-time dependency |
+| **Implementation Difficulty** | Easy to start, hard to polish |
+| **Fit with Constraints** | Gives up the type-driven design goal |
+
+**Option C: Rust is the source of truth; derive the schema with `schemars` and diff it in `scripts/check`**
+
+| Aspect | Assessment |
+|--------|------------|
+| **Advantages** | • One definition, newtypes and exhaustiveness preserved |
+| **Disadvantages** | • Reverses ownership of a file the Python tools depend on <br> • The data pipeline would need cargo to regenerate it <br> • Every existing schema detail must be reproduced exactly |
+| **Implementation Difficulty** | Hard |
+| **Fit with Constraints** | Possible later if keeping two definitions becomes a burden |
+
+---
+
+#### Decision & Rationale
+
+**Chosen Option:** A.
+
+**Reasoning:**
+
+> The schema is the neutral contract, and the contract tests are the "checked, not written twice" rule made executable. Three kinds of drift were injected on purpose and each one failed a test: a level removed from the schema, a new condition type added to it, and the stage requirement relaxed again.
+>
+> **Trade-offs accepted:** every new condition or effect kind needs a Rust variant, a schema branch, an entry in the tag list and a sample strategy. Forgetting one fails a test or, for the `tag()` match, the compiler.
+
+---
+
+#### Implementation Notes
+
+> - `QuestState` carries its stage in the variants that need one, so "stage_at_least without a stage" cannot be built. The schema was tightened to say the same thing, and stage numbers are non-negative.
+> - Parsing rejects unknown fields (`deny_unknown_fields`), as the schema does; a typo such as `"minn"` is an error instead of a silent default.
+> - `Effect` carries `f64` amounts, so it is `PartialEq` but not `Eq`.
+> - Property tests generate arbitrary valid conditions and effects, check them against the schema with the `jsonschema` crate, and read them back. A second set compares every type name and closed set in both directions.
+> - `Redacted<T>` masks values in logs. No benchmark was added: this feature has no hot path, and the first one arrives with the evaluator and combat.
+
+---
+
+#### References
+
+- `crates/engine/tests/shared/contract.rs`
 
 ---
 

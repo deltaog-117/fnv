@@ -121,9 +121,36 @@
               ]
             },
             "stage": {
-              "type": "integer"
+              "type": "integer",
+              "minimum": 0
             }
-          }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "state": {
+                    "enum": [
+                      "stage_at_least",
+                      "stage_is"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "stage"
+                ]
+              },
+              "else": {
+                "not": {
+                  "required": [
+                    "stage"
+                  ]
+                }
+              }
+            }
+          ]
         },
         {
           "type": "object",
@@ -388,7 +415,8 @@
               "$ref": "#/$defs/id"
             },
             "stage": {
-              "type": "integer"
+              "type": "integer",
+              "minimum": 0
             }
           }
         },

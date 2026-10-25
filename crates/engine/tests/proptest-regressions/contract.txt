@@ -1,0 +1,7 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc 2688fcdad57dbab4b419733e59330acde6e02ab3b60d1c3b7bcab92d4b9c63a7 # shrinks to condition = All { of: NonEmpty([All { of: NonEmpty([Reputation { faction: FactionId("a"), level: Idolized, op: AtLeast }]) }]) }

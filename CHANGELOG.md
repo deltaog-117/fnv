@@ -17,9 +17,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Workspace lints: `unsafe` forbidden, `unwrap` denied outside tests
 - `scripts/check`: one command that regenerates and validates the data, then runs rustfmt, clippy and the tests
 - `ROADMAP.md` and a decision log in `DIARY.md`
+- Typed data model in `crates/engine/src/shared/`: distinct id types, bounded skill and S.P.E.C.I.A.L. levels, a non-empty list, a `Redacted` log wrapper, and the `Condition` and `Effect` enums, with unit tests, property tests and two-way contract tests against `schemas/common.schema.json`
 
 ### Changed
-- (None yet)
+- A quest condition must now carry a `stage` exactly when its state is `stage_at_least` or `stage_is`, and stage numbers cannot be negative (`schemas/common.schema.json`)
 
 ### Deprecated
 - (None yet)
