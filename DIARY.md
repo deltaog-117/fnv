@@ -17,6 +17,7 @@
 | 2026-10-25 | Quality gate | One `scripts/check`, data steps run on change | ✅ Confirmed |
 | 2026-10-25 | Rust types and the schema | Schema is the contract; hand-written types checked by contract tests | ✅ Confirmed |
 | 2026-10-25 | Data loader | Per-record typed parsing with a location scope | ✅ Confirmed |
+| 2026-10-25 | Quest engine | `QuestBook` definitions + `QuestLog` state machine (COA A); rules fire in `game` | ✅ Confirmed |
 
 ---
 
@@ -572,6 +573,55 @@ Dialogue options, quest rules and encounters all ask "does this condition hold?"
 - `crates/engine/src/shared/view.rs`, `sink.rs`, `eval.rs`
 - `crates/engine/tests/shared/evaluator.rs`, `memory.rs`
 - `crates/engine/benches/evaluate.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
+### Quest Engine: A Validated Book and a Lifecycle Log
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The evaluator needs something to read quest conditions from and write quest effects to. The quest data has stages and 116 prose consequence rules, but the machine-readable `conditions` and `effects` are still empty.
+
+---
+
+#### Decision
+
+> `QuestBook` holds every quest's stages and rules, checked once when it is built (stages strictly increasing, ids unique). `QuestLog` holds the player's progress and implements `QuestView` and `QuestSink`. The lifecycle is `not started -> active -> completed | failed`; completed and failed are terminal, stages only move forward, and reaching a `finish` stage completes the quest. "Not started" is the absence of a record, so a stored quest cannot claim to be unstarted. Locking a quest out is failing it, because failed is terminal, so there is no separate blocked set.
+>
+> **Alternatives rejected:** B, the same log plus an authored Goodsprings slice and a rule engine (the next feature, once the log is proven; it needs hand-authored data), and C, a generic flag graph (flexible, but duplicates the `QuestStatus` and `QuestStage` contract that `shared` already fixes).
+>
+> **Trade-offs accepted:** the consequence rules do nothing yet. Firing them needs the whole game state, so that belongs to `game`; the book only hands them out with `rules`. A failed effect leaves the log unchanged, but `apply_all` on a mixed list is still only as atomic as the sinks.
+
+---
+
+#### Implementation Notes
+
+> - Starting an active or completed quest, and completing a completed one, are no-ops; a failed quest refuses to start or complete. Only an active quest can be completed, but any defined quest can fail before it starts, since rules shut quests out ahead of time.
+> - A late fail or lock-out cannot undo a completion.
+> - The log shares the book through `Arc`, so cloning copies only the progress.
+> - Tests: lifecycle cases, two property tests over random effect sequences (terminal states hold, stages never go back, a refused effect changes nothing), and a walk of all 172 staged quests in the real data.
+> - The benchmark stub measures about 1 us for a nine-stage playthrough.
+
+---
+
+#### References
+
+- `crates/engine/src/quests.rs`, `quests/book.rs`, `quests/log.rs`
+- `crates/engine/tests/quests/`
+- `crates/engine/benches/quests.rs`
 
 ---
 

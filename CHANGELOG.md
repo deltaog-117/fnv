@@ -25,6 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `apply_all` rejects a batch that overspends items or caps, or carries a NaN or infinite amount, before changing anything
 - `Default` for `SkillLevel` and `SpecialLevel` (the lowest allowed value)
 - Evaluator tests: examples for each condition, property tests for the laws of `all`/`any`/`not`, comparison ordering, effect round trips and batch behaviour, and an evaluation benchmark stub
+- Quest engine in `crates/engine/src/quests/`: `QuestBook` (validated quest stages and rules) and `QuestLog` (player progress implementing `QuestView` and `QuestSink`). Quests go `not started -> active -> completed | failed`, finished quests never reopen, stages only move forward, and a `finish` stage completes the quest
+- Quest tests: lifecycle cases, property tests over random effect sequences, a walk of every staged quest in the real data, and a playthrough benchmark stub
 
 ### Changed
 - A quest condition must now carry a `stage` exactly when its state is `stage_at_least` or `stage_is`, and stage numbers cannot be negative (`schemas/common.schema.json`)
