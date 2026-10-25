@@ -54,7 +54,7 @@ fn stage(quest: &str, stage: u32) -> Effect {
     effect(serde_json::json!({"type": "set_stage", "quest": quest, "stage": stage}))
 }
 
-/// A new game with a 9mm pistol in hand and Sunny's request taken (stage 10).
+/// A new game with a 9mm pistol in hand and the town ready to fight (stage 65).
 fn armed_game() -> Game {
     let fixture = &*FIXTURE;
     let mut game = Game::with_world(Arc::clone(&fixture.quests), Arc::clone(&fixture.world))
@@ -66,6 +66,8 @@ fn armed_game() -> Game {
             effect(serde_json::json!({"type": "give_item", "item": "9mm_pistol"})),
             stage("ghost_town_gunfight", 5),
             stage("ghost_town_gunfight", 10),
+            stage("ghost_town_gunfight", 60),
+            stage("ghost_town_gunfight", 65),
         ],
         &mut game,
     )
@@ -158,6 +160,8 @@ fn the_gunfight_is_offered_only_once_sunny_has_agreed() {
         &[
             stage("ghost_town_gunfight", 5),
             stage("ghost_town_gunfight", 10),
+            stage("ghost_town_gunfight", 60),
+            stage("ghost_town_gunfight", 65),
         ],
         &mut game,
     )

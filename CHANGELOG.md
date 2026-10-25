@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Goodsprings quest chain in dialogue: Ringo's graph (offer help, then "Let's do this" at stage 60) and three new Sunny topics ("Let's go" at stage 65, the campfire lesson and the errand to Trudy), in `data/dialogue/slice_goodsprings.json`
+- Nine golden dialogue scenarios in `tests/scenarios/goodsprings_dialogue.json` for the gunfight stages 5 to 65 and the campfire quest
 - Combat wiring in `crates/engine/src/game/battle.rs`: `Arsenal` (checks every weapon, armor piece and encounter once at load), `Fighter` (a `Combatant` built from the character, the equipped weapon and armor, or an NPC record through the same formulas), `Battle`, `BattleError` and `Outcome`. Weapons with no action-point cost are left out, so they cannot be wielded in a fight
 - `Game::hp`, `max_hp` via the character, `is_alive`, `heal`, `encounters_at`, `start_battle`, `finish_battle` and `Game::with_arsenal`. Wounds are stored as hit points lost, so hit points can never pass the maximum; settling a fight is atomic, so failing winning effects change nothing
 - `combat::enemy_turns` (the enemy side shoots the first player-side fighter still standing, then passes) and `Combat::with_hp` (a fighter that starts wounded) with `CombatError::HpAboveMax`
@@ -61,6 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TUI tests: property tests for the menu, the log and the layout, and headless `App` tests over the real Goodsprings data using ratatui's `TestBackend`
 
 ### Changed
+- The Ghost Town Gunfight is offered at stage 65 ("Join up with Sunny") instead of stage 10, so it no longer opens as soon as Sunny agrees; the optional stages 20 to 50 are skipped until Trudy, Chet, Doc and Easy Pete are authored
 - `GameData` also loads `encounters.json`, and a location-scoped load keeps the NPC records of the foes of encounters at that location. The exploration screen offers the fights on offer after the people; the player starts in leather armor and takes the 9mm pistol in hand when a fight starts (stand-ins until there is an inventory screen)
 - XP, caps and item rewards now apply to the game instead of being postponed into `Game::deferred()`, which keeps only rewards for unbuilt features (reputation, karma, companions). A reward that names an item outside the item book fails and the whole change is undone
 - `tests/scenarios/goodsprings.json` states the caps, XP and items each scenario must leave behind instead of listing deferred effects

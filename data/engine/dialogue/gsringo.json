@@ -188,7 +188,14 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSRingoTopic000",
-   "prompt": "Let's do this."
+   "prompt": "Let's do this.",
+   "effects": [
+    {
+     "type": "set_stage",
+     "quest": "ghost_town_gunfight",
+     "stage": 60
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsringotopic001",
@@ -609,7 +616,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsRingoTopic005",
-   "prompt": "What are you going to do about the Powder Gangers?"
+   "prompt": "What are you going to do about the Powder Gangers?",
+   "next": [
+    "vfreeformgoodspringsgoodspringsringotopic006"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringsringotopic006",
@@ -632,7 +642,28 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsRingoTopic006",
-   "prompt": "Maybe I can help."
+   "prompt": "Maybe I can help.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "not_started"
+    }
+   ],
+   "effects": [
+    {
+     "type": "start_quest",
+     "quest": "ghost_town_gunfight"
+    },
+    {
+     "type": "set_stage",
+     "quest": "ghost_town_gunfight",
+     "stage": 5
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgoodspringsringotopic007"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringsringotopic007",
@@ -671,7 +702,33 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsRingoTopic009",
-   "prompt": "Sunny's with us."
+   "prompt": "Sunny's with us.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 10
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgsringotopic000",
+    "vfreeformgoodspringsgsringotopic001"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringsringotopic010",
@@ -715,7 +772,8 @@
     }
    ],
    "topic": "GOODBYE",
-   "prompt": "Goodbye."
+   "prompt": "Goodbye.",
+   "ends": true
   },
   {
    "key": "acceptyield",
@@ -1216,6 +1274,12 @@
    "topic": "ObserveCombat",
    "prompt": "ObserveCombat"
   }
+ ],
+ "start": [
+  "vfreeformgoodspringsgoodspringsringotopic003",
+  "vfreeformgoodspringsgoodspringsringotopic005",
+  "vfreeformgoodspringsgoodspringsringotopic009",
+  "goodbye"
  ],
  "speaker": "ringo"
 }

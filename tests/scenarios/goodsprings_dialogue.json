@@ -65,6 +65,111 @@
     {"say": "vfreeformgoodspringsdocmitchellshootoutbags"}
    ],
    "expect": {"flags": ["doc_mitchell_offered_supplies"]}
+  },
+  {
+   "name": "ringo: offering to help starts the gunfight once, at stage 5",
+   "dialogue": "gsringo",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringsringotopic005"},
+    {"say": "vfreeformgoodspringsgoodspringsringotopic006"},
+    {"say": "vfreeformgoodspringsgoodspringsringotopic006", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 5}}}
+  },
+  {
+   "name": "ringo: he is not ready to go until Sunny has agreed",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 5}
+   ],
+   "dialogue": "gsringo",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringsringotopic009", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 5}}}
+  },
+  {
+   "name": "ringo: once Sunny has agreed, 'Let's do this' moves the gunfight to stage 60",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}
+   ],
+   "dialogue": "gsringo",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringsringotopic009"},
+    {"say": "vfreeformgoodspringsgsringotopic000"},
+    {"say": "vfreeformgoodspringsgoodspringsringotopic009", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 60}}}
+  },
+  {
+   "name": "sunny: 'Let's go' needs stage 60 and moves the gunfight to stage 65",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}
+   ],
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vfreeformgoodspringsgssunnysmilestopic008", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "sunny: at stage 60 'Let's go' joins the line at stage 65, once",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 60}
+   ],
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vfreeformgoodspringsgssunnysmilestopic008"},
+    {"say": "vfreeformgoodspringsgssunnysmilestopic008", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 65}}}
+  },
+  {
+   "name": "sunny: the campfire lesson is offered only during the saddle quest, and only once",
+   "setup": [
+    {"type": "start_quest", "quest": "back_in_the_saddle"}
+   ],
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vcg02gssunnysmilestopic006"},
+    {"say": "vcg02gssunnysmilestopic006", "fails": true}
+   ],
+   "expect": {"quests": {"by_a_campfire_on_the_trail": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "sunny: the campfire lesson is not on offer before the saddle quest",
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vcg02gssunnysmilestopic006", "fails": true}
+   ],
+   "expect": {"quests": {"by_a_campfire_on_the_trail": {"status": "not_started"}}}
+  },
+  {
+   "name": "sunny: sending the player to Trudy needs the healing powder made (stage 30) and ends the quest",
+   "setup": [
+    {"type": "start_quest", "quest": "by_a_campfire_on_the_trail"},
+    {"type": "set_stage", "quest": "by_a_campfire_on_the_trail", "stage": 10}
+   ],
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vcg02lastobjective", "fails": true}
+   ],
+   "expect": {"quests": {"by_a_campfire_on_the_trail": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "sunny: with the powder made, the Trudy errand completes the campfire quest",
+   "setup": [
+    {"type": "start_quest", "quest": "by_a_campfire_on_the_trail"},
+    {"type": "set_stage", "quest": "by_a_campfire_on_the_trail", "stage": 30}
+   ],
+   "dialogue": "gssunnysmiles",
+   "steps": [
+    {"say": "vcg02lastobjective"}
+   ],
+   "expect": {"quests": {"by_a_campfire_on_the_trail": {"status": "completed", "stage": 40}}}
   }
  ]
 }

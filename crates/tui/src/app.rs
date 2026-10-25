@@ -348,7 +348,7 @@ mod tests {
         App::with_dice(&data, &place, Rng::new(seed)).expect("the app builds")
     }
 
-    /// Doc has handed over the pistol and Sunny has agreed to help, so the Powder
+    /// Doc has handed over the pistol and Sunny has joined the line, so the Powder
     /// Gangers can be fought.
     fn with_the_gunfight_open(mut app: App) -> App {
         let stage = |quest: &str, stage| Effect::SetStage {
@@ -359,6 +359,8 @@ mod tests {
             stage(OPENING_QUEST, 50),
             stage("ghost_town_gunfight", 5),
             stage("ghost_town_gunfight", 10),
+            stage("ghost_town_gunfight", 60),
+            stage("ghost_town_gunfight", 65),
         ];
         apply_all(&steps, &mut app.game).expect("the quests advance");
         app.screen = app.exploring();
@@ -477,6 +479,8 @@ mod tests {
             &[
                 stage("ghost_town_gunfight", 5),
                 stage("ghost_town_gunfight", 10),
+                stage("ghost_town_gunfight", 60),
+                stage("ghost_town_gunfight", 65),
             ],
             &mut app.game,
         )
@@ -489,7 +493,7 @@ mod tests {
     }
 
     #[test]
-    fn the_gunfight_is_not_offered_until_sunny_has_agreed() {
+    fn the_gunfight_is_not_offered_until_the_town_is_ready() {
         let app = app();
         assert!(!screen(&app, 100, 30).contains("Fight the Powder Gangers"));
         let app = with_the_gunfight_open(app);

@@ -367,7 +367,30 @@
     }
    ],
    "topic": "VCG02GSSunnySmilesTopic006",
-   "prompt": "Couldn't hurt."
+   "prompt": "Couldn't hurt.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "back_in_the_saddle",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "by_a_campfire_on_the_trail",
+     "state": "not_started"
+    }
+   ],
+   "effects": [
+    {
+     "type": "start_quest",
+     "quest": "by_a_campfire_on_the_trail"
+    },
+    {
+     "type": "set_stage",
+     "quest": "by_a_campfire_on_the_trail",
+     "stage": 10
+    }
+   ]
   },
   {
    "key": "vcg02gssunnysmilestopic007",
@@ -411,7 +434,27 @@
     }
    ],
    "topic": "VCG02LastObjective",
-   "prompt": "VCG02LastObjective"
+   "prompt": "VCG02LastObjective",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "by_a_campfire_on_the_trail",
+     "state": "stage_at_least",
+     "stage": 30
+    },
+    {
+     "type": "quest",
+     "quest": "by_a_campfire_on_the_trail",
+     "state": "active"
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_stage",
+     "quest": "by_a_campfire_on_the_trail",
+     "stage": 40
+    }
+   ]
   },
   {
    "key": "vcg02questtransition",
@@ -596,7 +639,31 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSSunnySmilesTopic008",
-   "prompt": "Let's go."
+   "prompt": "Let's go.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 60
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 65
+     }
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_stage",
+     "quest": "ghost_town_gunfight",
+     "stage": 65
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgssunnysmilestopic009",
@@ -1676,6 +1743,9 @@
   "vfreeformgoodspringsgssunnysmilestopic012",
   "vfreeformgoodspringsgssunnysmilestopic016",
   "vfreeformgoodspringsgoodspringssunnysmilestopic001",
+  "vfreeformgoodspringsgssunnysmilestopic008",
+  "vcg02gssunnysmilestopic006",
+  "vcg02lastobjective",
   "goodbye"
  ],
  "speaker": "sunny_smiles"

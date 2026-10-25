@@ -1027,6 +1027,45 @@ The combat core fought plain numbers and the game state held no current hit poin
 
 ---
 
+### Goodsprings Gunfight Path: Skip the Optional Stages, Gate the Fight at 65
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The gunfight opened as soon as Sunny agreed (stage 10) because Ringo had no dialogue and stages 20 to 65 were not authored. Three courses of action were weighed; the user chose B, a playable chain in one small commit.
+
+---
+
+#### Decision
+
+> Author Ringo's graph from the wiki's own topics (offer help sets stage 5, "Sunny's with us" then "Let's do this" sets stage 60) and Sunny's "Let's go" (stage 65), and move the encounter's requirement from stage 10 to stage 65. The optional stages 20 to 50 (Trudy, Chet, Doc, Easy Pete) are skipped, not faked.
+>
+> **Campfire quest:** Sunny's "Couldn't hurt" starts it (stage 10) and her Trudy errand finishes it (stage 40, which needs stage 30). Stage 30 is "use the campfire", a crafting action that does not exist yet, and the wiki has no dialogue line for it, so the quest cannot be finished in the TUI until crafting lands. It is offered while Back in the Saddle is active, not completed, because that quest's shooting and gecko stages are not playable yet.
+>
+> **Not done:** Run Goodsprings Run (Joe Cobb's side) and any rewards for the campfire quest, which the wiki gives no figures for.
+>
+> **Trade-offs accepted:** the gunfight skips its optional preparation, so the town is no better prepared for it; the tests that set the quest to stage 10 now set 60 and 65 as well.
+
+---
+
+#### References
+
+- `data/dialogue/slice_goodsprings.json`, `data/combat/encounters.json`, `tests/scenarios/goodsprings_dialogue.json`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

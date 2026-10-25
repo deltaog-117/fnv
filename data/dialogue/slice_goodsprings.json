@@ -66,6 +66,9 @@
    "vfreeformgoodspringsgssunnysmilestopic012",
    "vfreeformgoodspringsgssunnysmilestopic016",
    "vfreeformgoodspringsgoodspringssunnysmilestopic001",
+   "vfreeformgoodspringsgssunnysmilestopic008",
+   "vcg02gssunnysmilestopic006",
+   "vcg02lastobjective",
    "goodbye"
   ],
   "topics": [
@@ -117,6 +120,91 @@
      "vfreeformgoodspringsgoodspringssunnysmilestopic005",
      "vfreeformgoodspringsgoodspringssunnysmilestopic007"
     ]
+   },
+   {
+    "key": "vfreeformgoodspringsgssunnysmilestopic008",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60},
+     {"type": "not", "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 65}}
+    ],
+    "effects": [
+     {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 65}
+    ]
+   },
+   {
+    "key": "vcg02gssunnysmilestopic006",
+    "conditions": [
+     {"type": "quest", "quest": "back_in_the_saddle", "state": "active"},
+     {"type": "quest", "quest": "by_a_campfire_on_the_trail", "state": "not_started"}
+    ],
+    "effects": [
+     {"type": "start_quest", "quest": "by_a_campfire_on_the_trail"},
+     {"type": "set_stage", "quest": "by_a_campfire_on_the_trail", "stage": 10}
+    ]
+   },
+   {
+    "key": "vcg02lastobjective",
+    "conditions": [
+     {"type": "quest", "quest": "by_a_campfire_on_the_trail", "state": "stage_at_least", "stage": 30},
+     {"type": "quest", "quest": "by_a_campfire_on_the_trail", "state": "active"}
+    ],
+    "effects": [
+     {"type": "set_stage", "quest": "by_a_campfire_on_the_trail", "stage": 40}
+    ]
+   },
+   {
+    "key": "goodbye",
+    "ends": true
+   }
+  ]
+ },
+ {
+  "dialogue": "gsringo",
+  "start": [
+   "vfreeformgoodspringsgoodspringsringotopic003",
+   "vfreeformgoodspringsgoodspringsringotopic005",
+   "vfreeformgoodspringsgoodspringsringotopic009",
+   "goodbye"
+  ],
+  "topics": [
+   {
+    "key": "vfreeformgoodspringsgoodspringsringotopic005",
+    "next": ["vfreeformgoodspringsgoodspringsringotopic006"]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringsringotopic006",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "not_started"}
+    ],
+    "effects": [
+     {"type": "start_quest", "quest": "ghost_town_gunfight"},
+     {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 5}
+    ],
+    "next": ["vfreeformgoodspringsgoodspringsringotopic007"]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringsringotopic007"
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringsringotopic009",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10},
+     {"type": "not", "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60}}
+    ],
+    "next": [
+     "vfreeformgoodspringsgsringotopic000",
+     "vfreeformgoodspringsgsringotopic001"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsringotopic000",
+    "effects": [
+     {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 60}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsringotopic001"
    },
    {
     "key": "goodbye",

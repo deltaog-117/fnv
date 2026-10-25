@@ -31,6 +31,7 @@ Items are organized by priority, not by timeline.
 - ✅ TUI v0 (`crates/tui/`): an Elm-style `App` with a persistent layout (status line, scene, log, active-quest panel, key footer), an exploration screen and a dialogue screen over the engine's `Conversation`; property and headless render tests over the real Goodsprings data
 - ✅ Character and inventory (`character/`, `inventory/`): `Character` (S.P.E.C.I.A.L. and XP, with level, hit points, action points, carry weight and starting skills derived from the curated formulas) and `Inventory` (item stacks, whole-number caps, weapon/outfit/head slots) over a 922-item `ItemBook`; `Game` owns both, so XP, caps and item rewards now apply instead of being deferred; the status line shows level and caps; the formulas, constants and XP table are pinned to `formulas.json` and `levels.json` by tests
 - ✅ Combat wired into the game (`game/battle.rs`, `combat/ai.rs`, `crates/tui/src/combat/`): `Arsenal` checks every weapon, armor piece and encounter once at load; `Fighter` builds a `Combatant` from the character, the equipped weapon and armor, or from an NPC record; `Game` keeps the player's wounds between fights, offers encounters by quest state, starts a `Battle` and settles it (a win applies the encounter's effects once; a loss leaves the player down); the enemy side plays a plain tactic; the TUI has a combat screen and a game-over screen. The Ghost Town Gunfight is hand-authored in `data/combat/encounters.json`; 20 new tests including property tests over random fights
+- ✅ Goodsprings gunfight path (dialogue): Ringo offers the quest (stage 5) and starts the countdown ("Let's do this", stage 60), Sunny joins the line (stage 65), and the fight is offered only from stage 65; the By a Campfire on the Trail quest starts from Sunny (stage 10) and ends with her errand to Trudy (stage 40); nine golden scenarios. The optional stages 20 to 50 are skipped for now
 
 ---
 
@@ -82,5 +83,5 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🎯 Next Actions (Immediate)
 
-1. **Finish the Goodsprings quest slice** – Run Goodsprings Run and By a Campfire on the Trail, so the opening quest can be followed through in the TUI. The gunfight opens as soon as Sunny agrees (stage 10) because stages 20 to 65 are not authored.
+1. **Finish the Goodsprings quest slice** – the gunfight path is playable (stages 5, 10, 60, 65, 70); what remains is the campfire's stage 30 (needs crafting: gather a broc flower and a xander root, make healing powder), the optional stages 20 to 50 of the gunfight (Trudy, Chet, Doc, Easy Pete), Run Goodsprings Run (Joe Cobb's side), and the quests with no stages.
 2. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above; the TUI lists each NPC as soon as their graph is authored. Doc Mitchell's paid topics can now charge caps and give items.
