@@ -106,6 +106,13 @@
           "finish": {
             "type": "boolean",
             "description": "Reaching this stage completes the quest."
+          },
+          "on_enter": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/effect"
+            },
+            "description": "Effects applied once, when the quest first reaches this stage; authored in data/quests/slice_*.json."
           }
         }
       }
@@ -194,14 +201,14 @@
             "items": {
               "$ref": "common.schema.json#/$defs/condition"
             },
-            "description": "Machine-readable form of `when`; authored later."
+            "description": "Machine-readable form of `when`; every condition must hold for the rule to fire. Authored in data/quests/slice_*.json."
           },
           "effects": {
             "type": "array",
             "items": {
               "$ref": "common.schema.json#/$defs/effect"
             },
-            "description": "Machine-readable form of the outcome; authored later."
+            "description": "Machine-readable form of the outcome, applied once when the conditions first hold after the quest changes. Authored in data/quests/slice_*.json."
           }
         }
       }

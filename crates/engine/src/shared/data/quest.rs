@@ -71,6 +71,9 @@ pub struct Stage {
     /// True when reaching this stage completes the quest.
     #[serde(default)]
     pub finish: bool,
+    /// Effects applied once, the first time the quest reaches this stage.
+    #[serde(default)]
+    pub on_enter: Vec<Effect>,
 }
 
 /// One box of the wiki's flowchart.

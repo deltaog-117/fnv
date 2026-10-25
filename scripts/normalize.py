@@ -325,6 +325,38 @@ def quests(files, consequences, ids):
     return sorted((rec for _, rec in recs.values()), key=lambda r: r["id"]), title_id
 
 
+def apply_slices(quest_recs, slices):
+    """Merge the hand-authored slice files into the quest records.
+
+    A slice adds `on_enter` effects to existing stages and `conditions`/`effects`
+    to existing consequence rules (matched by kind and target name), so the prose
+    in consequences.json stays the source of what a rule is. Anything that does not
+    match raises: a typo must not silently drop an authored rule.
+    """
+    by_id = {r["id"]: r for r in quest_recs}
+    for entry in slices:
+        quest = by_id.get(entry["quest"])
+        if quest is None:
+            raise ValueError(f"slice: unknown quest {entry['quest']}")
+        stages = {s["stage"]: s for s in quest["stages"]}
+        for authored in entry.get("stages", []):
+            stage = stages.get(authored["stage"])
+            if stage is None:
+                raise ValueError(f"slice: {quest['id']} has no stage {authored['stage']}")
+            put(stage, "on_enter", authored.get("on_enter"))
+        for authored in entry.get("rules", []):
+            if not authored.get("conditions") or not authored.get("effects"):
+                raise ValueError(f"slice: {quest['id']} rule {authored['target']!r} needs both "
+                                 "conditions and effects (an empty list would fire it always)")
+            rule = next((r for r in quest.get("rules", [])
+                         if r["kind"] == authored["kind"] and r["target"] == authored["target"]), None)
+            if rule is None:
+                raise ValueError(f"slice: {quest['id']} has no {authored['kind']} rule "
+                                 f"for {authored['target']!r}")
+            rule["conditions"] = authored["conditions"]
+            rule["effects"] = authored["effects"]
+
+
 # ------------------------------------------------------------ npcs, dialogue
 
 SKILLS = {"barter", "energy_weapons", "explosives", "guns", "lockpick", "medicine",
@@ -835,9 +867,12 @@ def main(argv):
     misc = misc_items(load("components"), ids, seen)
     dump(out / "skill_books.json", books)
     dump(out / "misc.json", misc)
-    files = [f for f in sorted((data / "quests").glob("*.json")) if f.name != "consequences.json"]
+    files = [f for f in sorted((data / "quests").glob("*.json"))
+             if f.name != "consequences.json" and not f.name.startswith("slice_")]
     cons = json.load(open(data / "quests" / "consequences.json"))
     quest_recs, title_id = quests(files, cons, Ids())
+    apply_slices(quest_recs, [entry for f in sorted((data / "quests").glob("slice_*.json"))
+                              for entry in json.load(open(f))])
     dfiles = [f for f in sorted((data / "dialogue").glob("*.json")) if f.name != "index.json"]
     docs, dialogue_by_page = dialogue(dfiles)
     npc_recs = npcs(json.load(open(data / "npcs" / "npcs.json")), title_id, dialogue_by_page)

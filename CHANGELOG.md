@@ -32,9 +32,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - World state in `crates/engine/src/world/`: `WorldBook` (the NPC roster) and `WorldState` (story flags, NPC fates, ending locks) implementing `WorldView` and `WorldSink`. An NPC is alive (hostile or not), dead or removed, so a dead hostile NPC cannot exist; an NPC outside the roster is an error
 - `Game::with_world` builds a game over a populated NPC roster, and `Game::meet` records meeting an NPC
 - World tests: one case per rule, property tests over random effect sequences, world effects through `Game`, and a benchmark stub
+- Goodsprings quest slice: `data/quests/slice_goodsprings.json` (hand-curated stage rewards and two rule gates) merged into `data/engine/quests.json` by `normalize.py`; stages gain an optional `on_enter` effect list in `quest.schema.json`
+- `Game` applies a stage's `on_enter` effects the first time the stage is reached and fires a quest's consequence rules, once each, when the quest changes; a change that fails is undone as a whole
+- `Game::deferred()` and `EffectError::NotBuilt`: rewards for unbuilt features (caps, XP, items) are kept instead of lost
+- `validate.py` checks the quests, factions, items and NPCs named in authored conditions and effects
+- Language-neutral golden scenarios in `tests/scenarios/goodsprings.json`, automation tests with a property test, and a plain-versus-automated benchmark
 
 ### Changed
 - `Game` now applies flag, NPC and ending effects instead of refusing them; `Game::new` has an empty roster, so NPC effects on it fail with an unknown-NPC error
+- Effects aimed at features that are not built now fail with `EffectError::NotBuilt` instead of `Refused`
 - A quest condition must now carry a `stage` exactly when its state is `stage_at_least` or `stage_is`, and stage numbers cannot be negative (`schemas/common.schema.json`)
 
 ### Deprecated

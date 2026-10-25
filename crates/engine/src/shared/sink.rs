@@ -49,6 +49,16 @@ pub enum EffectError {
         /// The `type` value of the effect.
         effect: &'static str,
     },
+    /// The feature that owns the effect has not been built yet. Kept apart from
+    /// [`EffectError::Refused`] so a caller can postpone these (a quest reward whose
+    /// feature has not landed) while still failing on every real refusal.
+    #[error("effect {effect} cannot run yet: the {feature} feature is not built")]
+    NotBuilt {
+        /// The `type` value of the effect.
+        effect: &'static str,
+        /// The missing feature.
+        feature: &'static str,
+    },
     /// The owning feature refused the effect for a reason of its own.
     #[error("effect {effect} refused: {reason}")]
     Refused {

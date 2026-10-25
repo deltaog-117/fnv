@@ -18,13 +18,31 @@ const RUNS: usize = 15;
 const BATCHES: u32 = 100_000;
 const STAGES: [u32; 5] = [5, 10, 20, 30, 40];
 
-fn quest() -> Quest {
+/// With `automated`, the last stage pays out and a rule watches the quest, so
+/// every stage change takes the clone-and-react path.
+fn quest(automated: bool) -> Quest {
     let stages: Vec<_> = STAGES
         .iter()
-        .map(|n| json!({"stage": n, "description": "step", "finish": *n == 40}))
+        .map(|n| {
+            let on_enter = if automated && *n == 40 {
+                json!([{"type": "xp", "amount": 10.0}])
+            } else {
+                json!([])
+            };
+            json!({"stage": n, "description": "step", "finish": *n == 40, "on_enter": on_enter})
+        })
         .collect();
+    let rules = if automated {
+        json!([{
+            "kind": "locks", "target": "Q", "target_type": "quest", "target_id": "q",
+            "conditions": [{"type": "quest", "quest": "q", "state": "failed"}],
+            "effects": [{"type": "set_flag", "flag": "seen"}],
+        }])
+    } else {
+        json!([])
+    };
     serde_json::from_value(json!({
-        "id": "q", "name": "q", "kind": "side", "dlc": "base", "stages": stages,
+        "id": "q", "name": "q", "kind": "side", "dlc": "base", "stages": stages, "rules": rules,
     }))
     .expect("the literal is a valid quest record")
 }
@@ -46,7 +64,13 @@ fn median_run(book: &Arc<QuestBook>, effects: &[Effect]) -> Duration {
 }
 
 fn main() {
-    let book = Arc::new(QuestBook::new([&quest()]).expect("stages are in order"));
+    for (label, automated) in [("plain", false), ("automated", true)] {
+        bench(label, automated);
+    }
+}
+
+fn bench(label: &str, automated: bool) {
+    let book = Arc::new(QuestBook::new([&quest(automated)]).expect("stages are in order"));
     let id = QuestId::try_new("q".to_owned()).expect("valid id");
     let effects: Vec<Effect> = STAGES
         .iter()
@@ -56,7 +80,7 @@ fn main() {
         })
         .collect();
     println!(
-        "apply_all: {:?} per batch of {} effects ({BATCHES} per run)",
+        "apply_all ({label}): {:?} per batch of {} effects ({BATCHES} per run)",
         median_run(&book, &effects) / BATCHES,
         effects.len()
     );

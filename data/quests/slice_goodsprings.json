@@ -1,0 +1,76 @@
+[
+ {
+  "quest": "ain_t_that_a_kick_in_the_head",
+  "stages": [
+   {
+    "stage": 50,
+    "on_enter": [
+     {"type": "give_item", "item": "pip_boy_3000"},
+     {"type": "give_item", "item": "9mm_pistol"},
+     {"type": "caps", "amount": 18}
+    ]
+   }
+  ]
+ },
+ {
+  "quest": "back_in_the_saddle",
+  "stages": [
+   {
+    "stage": 60,
+    "on_enter": [
+     {"type": "caps", "amount": 50},
+     {"type": "xp", "amount": 50},
+     {"type": "give_item", "item": "varmint_rifle"}
+    ]
+   }
+  ]
+ },
+ {
+  "quest": "ghost_town_gunfight",
+  "stages": [
+   {
+    "stage": 70,
+    "on_enter": [
+     {"type": "caps", "amount": 100},
+     {"type": "xp", "amount": 150}
+    ]
+   }
+  ],
+  "rules": [
+   {
+    "kind": "locks",
+    "target": "Ghost Town Gunfight",
+    "conditions": [
+     {"type": "reputation", "faction": "goodsprings", "level": "shunned", "op": "at_most"}
+    ],
+    "effects": [
+     {"type": "block_quest", "quest": "ghost_town_gunfight"}
+    ]
+   }
+  ]
+ },
+ {
+  "quest": "they_went_that_a_way",
+  "stages": [
+   {
+    "stage": 50,
+    "on_enter": [
+     {"type": "xp", "amount": 1000}
+    ]
+   }
+  ],
+  "rules": [
+   {
+    "kind": "locks",
+    "target": "Trudy's Radio Repair",
+    "conditions": [
+     {"type": "quest", "quest": "they_went_that_a_way", "state": "completed"},
+     {"type": "quest", "quest": "trudy_s_radio_repair", "state": "not_started"}
+    ],
+    "effects": [
+     {"type": "block_quest", "quest": "trudy_s_radio_repair"}
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,437 @@
+{
+ "description": "Language-neutral golden scenarios: effects applied in order to a fresh game over data/engine; 'fails' marks a step that must be refused; 'deferred' lists the tags of postponed effects in order.",
+ "scenarios": [
+  {
+   "name": "gunfight: the last stage completes the quest and pays caps and XP",
+   "steps": [
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 5
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 10
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 20
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 30
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 40
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 50
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 60
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 65
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 70
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "ghost_town_gunfight": {
+      "status": "completed",
+      "stage": 70
+     }
+    },
+    "deferred": [
+     "caps",
+     "xp"
+    ]
+   }
+  },
+  {
+   "name": "gunfight: stages before the last pay nothing",
+   "steps": [
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 5
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 10
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 20
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 30
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 40
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 50
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 60
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "ghost_town_gunfight": {
+      "status": "active",
+      "stage": 60
+     }
+    },
+    "deferred": []
+   }
+  },
+  {
+   "name": "gunfight: a stage cannot move backwards",
+   "steps": [
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 10
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ghost_town_gunfight",
+      "stage": 5
+     },
+     "fails": true
+    }
+   ],
+   "expect": {
+    "quests": {
+     "ghost_town_gunfight": {
+      "status": "active",
+      "stage": 10
+     }
+    },
+    "deferred": []
+   }
+  },
+  {
+   "name": "gunfight: a neutral Goodsprings reputation does not lock the quest",
+   "steps": [
+    {
+     "do": {
+      "type": "start_quest",
+      "quest": "ghost_town_gunfight"
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "ghost_town_gunfight": {
+      "status": "active"
+     }
+    }
+   }
+  },
+  {
+   "name": "tutorial: leaving Doc Mitchell's house pays the starting kit",
+   "steps": [
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ain_t_that_a_kick_in_the_head",
+      "stage": 10
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ain_t_that_a_kick_in_the_head",
+      "stage": 30
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ain_t_that_a_kick_in_the_head",
+      "stage": 40
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "ain_t_that_a_kick_in_the_head",
+      "stage": 50
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "ain_t_that_a_kick_in_the_head": {
+      "status": "completed",
+      "stage": 50
+     }
+    },
+    "deferred": [
+     "give_item",
+     "give_item",
+     "caps"
+    ]
+   }
+  },
+  {
+   "name": "back in the saddle: skipping the tutorial pays nothing",
+   "steps": [
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 3
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 4
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 10
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "back_in_the_saddle": {
+      "status": "completed",
+      "stage": 10
+     }
+    },
+    "deferred": []
+   }
+  },
+  {
+   "name": "back in the saddle: talking to Sunny about the reward pays",
+   "steps": [
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 3
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 4
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 20
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 30
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 50
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "back_in_the_saddle",
+      "stage": 60
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "back_in_the_saddle": {
+      "status": "completed",
+      "stage": 60
+     }
+    },
+    "deferred": [
+     "caps",
+     "xp",
+     "give_item"
+    ]
+   }
+  },
+  {
+   "name": "main quest done before Trudy's quest locks Trudy's quest",
+   "steps": [
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "they_went_that_a_way",
+      "stage": 10
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "they_went_that_a_way",
+      "stage": 50
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "they_went_that_a_way": {
+      "status": "completed",
+      "stage": 50
+     },
+     "trudy_s_radio_repair": {
+      "status": "failed"
+     }
+    },
+    "deferred": [
+     "xp"
+    ]
+   }
+  },
+  {
+   "name": "main quest done after Trudy's quest started leaves it open",
+   "steps": [
+    {
+     "do": {
+      "type": "start_quest",
+      "quest": "trudy_s_radio_repair"
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "they_went_that_a_way",
+      "stage": 10
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "they_went_that_a_way",
+      "stage": 50
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "trudy_s_radio_repair": {
+      "status": "active"
+     }
+    },
+    "deferred": [
+     "xp"
+    ]
+   }
+  },
+  {
+   "name": "a locked quest cannot be started afterwards",
+   "steps": [
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "they_went_that_a_way",
+      "stage": 10
+     }
+    },
+    {
+     "do": {
+      "type": "set_stage",
+      "quest": "they_went_that_a_way",
+      "stage": 50
+     }
+    },
+    {
+     "do": {
+      "type": "start_quest",
+      "quest": "trudy_s_radio_repair"
+     },
+     "fails": true
+    }
+   ],
+   "expect": {
+    "quests": {
+     "trudy_s_radio_repair": {
+      "status": "failed"
+     }
+    }
+   }
+  }
+ ]
+}

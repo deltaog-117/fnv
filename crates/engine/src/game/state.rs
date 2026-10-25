@@ -1,25 +1,46 @@
 //! The one state that `evaluate` and `apply_all` run against.
 
+use std::collections::HashSet;
 use std::num::NonZeroU32;
 use std::sync::Arc;
 
 use crate::quests::{QuestBook, QuestLog};
 use crate::shared::{
-    CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, EffectError, EndingId,
-    FactionId, FlagId, InventorySink, InventoryView, ItemId, NpcId, NpcState, QuestId, QuestSink,
-    QuestStage, QuestStatus, QuestView, ReputationLevel, StandingSink, StandingView, WorldSink,
-    WorldView,
+    CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, Effect, EffectError,
+    EndingId, FactionId, FlagId, InventorySink, InventoryView, ItemId, NpcId, NpcState, QuestId,
+    QuestSink, QuestStage, QuestStatus, QuestView, ReputationLevel, StandingSink, StandingView,
+    WorldSink, WorldView, apply, evaluate,
 };
 use crate::world::{WorldBook, WorldState};
+
+/// A quest effect that could not run because its feature is not built yet, kept
+/// so the reward is not lost: it can be applied once the feature lands.
+#[derive(Debug, Clone, PartialEq)]
+pub struct Deferred {
+    /// The quest whose stage or rule produced the effect.
+    pub quest: QuestId,
+    /// The effect that was postponed.
+    pub effect: Effect,
+    /// The missing feature.
+    pub feature: &'static str,
+}
 
 /// Everything the player has done so far.
 ///
 /// Cloning is cheap (the quest book is shared), so a caller can try a batch of
 /// effects on a copy and keep it only if it works.
+///
+/// Quests are automated here, because stage effects and consequence rules need the
+/// whole state: reaching a stage applies its `on_enter` effects, and every change
+/// to a quest then fires that quest's rules whose conditions hold, once each.
 #[derive(Debug, Clone)]
 pub struct Game {
+    book: Arc<QuestBook>,
     quests: QuestLog,
     world: WorldState,
+    /// Rules already fired, as (quest, index into its rules).
+    fired: HashSet<(QuestId, usize)>,
+    deferred: Vec<Deferred>,
 }
 
 impl Game {
@@ -34,8 +55,11 @@ impl Game {
     #[must_use]
     pub fn with_world(book: Arc<QuestBook>, world: Arc<WorldBook>) -> Self {
         Self {
-            quests: QuestLog::new(book),
+            quests: QuestLog::new(Arc::clone(&book)),
+            book,
             world: WorldState::new(world),
+            fired: HashSet::new(),
+            deferred: Vec::new(),
         }
     }
 
@@ -51,6 +75,12 @@ impl Game {
         &self.world
     }
 
+    /// Quest effects postponed because their feature is not built, oldest first.
+    #[must_use]
+    pub fn deferred(&self) -> &[Deferred] {
+        &self.deferred
+    }
+
     /// Records that the player has met the NPC.
     ///
     /// # Errors
@@ -61,13 +91,75 @@ impl Game {
     }
 }
 
+impl Game {
+    /// Runs a change to one quest, then its automation, as a unit: if any effect
+    /// the change sets off fails, the game is left as it was.
+    fn quest_change(
+        &mut self,
+        quest: &QuestId,
+        change: impl FnOnce(&mut QuestLog) -> Result<(), EffectError>,
+    ) -> Result<(), EffectError> {
+        if !self.book.is_automated(quest) {
+            return change(&mut self.quests);
+        }
+        let before = self.quests.quest_stage(quest);
+        let mut trial = self.clone();
+        change(&mut trial.quests)?;
+        trial.react(quest, before)?;
+        *self = trial;
+        Ok(())
+    }
+
+    /// Applies what a change to `quest` sets off: the effects of the stage it just
+    /// reached (only when the stage moved, so repeating a stage pays nothing
+    /// twice), then each consequence rule that now holds and has not fired.
+    fn react(&mut self, quest: &QuestId, before: Option<QuestStage>) -> Result<(), EffectError> {
+        let book = Arc::clone(&self.book);
+        let after = self.quests.quest_stage(quest);
+        if after != before
+            && let Some(stage) = after.and_then(|stage| book.stage(quest, stage))
+        {
+            self.run(quest, &stage.on_enter)?;
+        }
+        for (index, rule) in book.rules(quest).iter().enumerate() {
+            if rule.effects.is_empty() || self.fired.contains(&(quest.clone(), index)) {
+                continue;
+            }
+            if rule
+                .conditions
+                .iter()
+                .all(|condition| evaluate(condition, &*self))
+            {
+                // Marked before it runs, so a rule whose effects touch its own
+                // quest cannot fire itself again.
+                self.fired.insert((quest.clone(), index));
+                self.run(quest, &rule.effects)?;
+            }
+        }
+        Ok(())
+    }
+
+    /// Applies effects one by one. A feature that is not built yet postpones its
+    /// effect; any other failure stops the run.
+    fn run(&mut self, quest: &QuestId, effects: &[Effect]) -> Result<(), EffectError> {
+        for effect in effects {
+            match apply(effect, self) {
+                Err(EffectError::NotBuilt { feature, .. }) => self.deferred.push(Deferred {
+                    quest: quest.clone(),
+                    effect: effect.clone(),
+                    feature,
+                }),
+                result => result?,
+            }
+        }
+        Ok(())
+    }
+}
+
 /// The refusal for an effect whose feature has no state yet. Removing one of these
 /// is the signal that the feature landed and `Game` gained a field for it.
 fn not_built(effect: &'static str, feature: &'static str) -> EffectError {
-    EffectError::Refused {
-        effect,
-        reason: format!("the {feature} feature is not built yet"),
-    }
+    EffectError::NotBuilt { effect, feature }
 }
 
 impl QuestView for Game {
@@ -82,23 +174,23 @@ impl QuestView for Game {
 
 impl QuestSink for Game {
     fn start_quest(&mut self, quest: &QuestId) -> Result<(), EffectError> {
-        self.quests.start_quest(quest)
+        self.quest_change(quest, |log| log.start_quest(quest))
     }
 
     fn complete_quest(&mut self, quest: &QuestId) -> Result<(), EffectError> {
-        self.quests.complete_quest(quest)
+        self.quest_change(quest, |log| log.complete_quest(quest))
     }
 
     fn fail_quest(&mut self, quest: &QuestId) -> Result<(), EffectError> {
-        self.quests.fail_quest(quest)
+        self.quest_change(quest, |log| log.fail_quest(quest))
     }
 
     fn block_quest(&mut self, quest: &QuestId) -> Result<(), EffectError> {
-        self.quests.block_quest(quest)
+        self.quest_change(quest, |log| log.block_quest(quest))
     }
 
     fn set_stage(&mut self, quest: &QuestId, stage: QuestStage) -> Result<(), EffectError> {
-        self.quests.set_stage(quest, stage)
+        self.quest_change(quest, |log| log.set_stage(quest, stage))
     }
 }
 

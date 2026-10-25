@@ -2,9 +2,10 @@
 //! the shared evaluator reads. The only module allowed to know every feature.
 //!
 //! [`Game`] holds the state of each feature built so far. Features that do not
-//! exist yet answer reads with the shared defaults and refuse writes, so an
-//! effect aimed at them fails loudly instead of vanishing.
+//! exist yet answer reads with the shared defaults and fail writes with
+//! `NotBuilt`, so an effect aimed at them is never silently dropped. Quest stage
+//! effects and consequence rules run here, because they need the whole state.
 
 mod state;
 
-pub use state::Game;
+pub use state::{Deferred, Game};

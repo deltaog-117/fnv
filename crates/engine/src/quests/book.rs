@@ -30,6 +30,8 @@ struct Entry {
     name: String,
     stages: Vec<Stage>,
     rules: Vec<Rule>,
+    /// Some stage or rule carries effects, so changing this quest has side effects.
+    automated: bool,
 }
 
 /// Every quest's stages and consequence rules, validated and read-only.
@@ -60,10 +62,13 @@ impl QuestBook {
                     stage: pair[1].stage.get(),
                 });
             }
+            let automated = quest.stages.iter().any(|stage| !stage.on_enter.is_empty())
+                || quest.rules.iter().any(|rule| !rule.effects.is_empty());
             let entry = Entry {
                 name: quest.name.clone(),
                 stages: quest.stages.clone(),
                 rules: quest.rules.clone(),
+                automated,
             };
             if book.insert(quest.id.clone(), entry).is_some() {
                 return Err(QuestBookError::DuplicateQuest {
@@ -94,6 +99,13 @@ impl QuestBook {
             .binary_search_by_key(&stage, |candidate| candidate.stage)
             .ok()
             .map(|index| &stages[index])
+    }
+
+    /// True when a stage or rule of the quest carries effects, which is what tells
+    /// the game that changing the quest needs more than a log update.
+    #[must_use]
+    pub fn is_automated(&self, quest: &QuestId) -> bool {
+        self.quests.get(quest).is_some_and(|entry| entry.automated)
     }
 
     /// The quest's consequence rules; empty for an unknown quest.

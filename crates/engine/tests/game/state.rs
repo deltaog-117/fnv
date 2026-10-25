@@ -97,11 +97,11 @@ proptest! {
         let result = apply_all(std::slice::from_ref(&wanted), &mut game);
 
         let error = result.expect_err("the feature is not built");
-        let refused = matches!(
+        let not_built = matches!(
             error.source,
-            EffectError::Refused { effect, .. } if effect == wanted.tag()
+            EffectError::NotBuilt { effect, .. } if effect == wanted.tag()
         );
-        prop_assert!(refused);
+        prop_assert!(not_built);
         prop_assert_eq!(
             (game.quest_status(&quest_id()), game.quest_stage(&quest_id())),
             before

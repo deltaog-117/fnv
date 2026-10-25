@@ -25,6 +25,7 @@ Items are organized by priority, not by timeline.
 - ✅ Quest engine (`quests/`): `QuestBook` validates quest stages and rules once; `QuestLog` implements `QuestView` and `QuestSink` with terminal completed/failed, forward-only stages and finish-stage completion; lifecycle, property and real-data tests, and a playthrough benchmark stub
 - ✅ Game state (`game/`): `Game` holds the quest log and implements every view and sink trait; unbuilt features answer reads with defaults and refuse writes, so `evaluate` and `apply_all` already run against it; batch benchmark stub
 - ✅ World state (`world/`): `WorldBook` (NPC roster) and `WorldState` (story flags, NPC fates, ending locks) implementing `WorldView` and `WorldSink`; `Game` now delegates world reads and writes to it; lifecycle, property and through-`Game` tests, and a benchmark stub
+- ✅ Goodsprings quest slice: hand-authored stage rewards and rule gates (`data/quests/slice_goodsprings.json`) merged by `normalize.py`; `Game` applies `on_enter` effects and fires consequence rules, undoes a failed change, and postpones rewards for unbuilt features into `Game::deferred()`; ten golden scenarios in `tests/scenarios/`
 
 ---
 
@@ -33,7 +34,7 @@ Items are organized by priority, not by timeline.
 First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, Ghost Town Gunfight).
 
 - **Grow the game state** – `Game` gains a real field each time a feature lands (inventory, reputation, character, companions), replacing its placeholder refusals.
-- **Goodsprings quest slice and rule firing** – author the structured `conditions` / `effects` for the Goodsprings quests (Ghost Town Gunfight, Ain't That a Kick in the Head, They Went That-a-Way and so on), and fire the consequence rules from `game` when a quest changes. Golden JSON scenarios come with it.
+- **Finish the Goodsprings slice** – Run Goodsprings Run, By a Campfire on the Trail, and the quests with no stages; fame and infamy amounts; replay `Game::deferred()` as inventory, character and reputation land.
 - **Dialogue with skill checks** – a topic runner with conditions and effects; the Goodsprings dialogue graph has to be authored, since the wiki records no links between topics.
 - **Turn-based AP combat** – VATS-style action points, DT/DR damage, criticals and weapon condition, using the curated formulas.
 - **Reputation and karma** – fame/infamy per faction and town, titles and consequences.
@@ -76,7 +77,6 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🎯 Next Actions (Immediate)
 
-1. **Author the Goodsprings quest slice** – structured `conditions` / `effects` for the Goodsprings quests, and the rule firing in `game`.
-2. **Build the dialogue runner** – `crates/engine/src/dialogue/`, with the Goodsprings graph authored alongside it.
-3. **Build turn-based combat** – `crates/engine/src/combat/`, with property tests and a benchmark stub.
-4. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel and action footer.
+1. **Build the dialogue runner** – `crates/engine/src/dialogue/`, with the Goodsprings graph authored alongside it.
+2. **Build turn-based combat** – `crates/engine/src/combat/`, with property tests and a benchmark stub.
+3. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel and action footer.

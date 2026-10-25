@@ -731,6 +731,55 @@ Most quest consequence rules set a flag or kill, anger or remove an NPC, so rule
 
 ---
 
+### Goodsprings Quest Slice: Authored Effects and Rule Firing
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The quest `conditions` / `effects` arrays were empty, so nothing exercised the evaluator end to end. The first playable is Goodsprings only, and a quest is not playable until reaching a stage can pay out and the consequence rules can fire.
+
+---
+
+#### Decision
+
+> Authored data goes in a hand-curated overlay, `data/quests/slice_goodsprings.json`, which `normalize.py` merges into `data/engine/quests.json` (COA A of three; the others were a standalone slice pack and rules-only). The overlay adds `on_enter` effects to existing stages and `conditions` / `effects` to existing consequence rules, matched by kind and target name, so `consequences.json` stays the prose source of truth. A typo raises instead of dropping a rule. `Game` runs the automation: reaching a new stage applies that stage's `on_enter` effects, and every change to a quest fires that quest's rules whose conditions hold, once each.
+>
+> **Alternatives rejected:** B, a standalone pack loaded beside `quests.json` (quest truth in two places), and C, rules only (no rewards, so no quest could be finished).
+>
+> **Trade-offs accepted:** a change to an automated quest is applied on a clone and kept only if every effect it sets off succeeds, which costs about 370 ns per stage change. Rewards for features that are not built (caps, XP, items) are postponed into `Game::deferred()` through the new `EffectError::NotBuilt`, so the reward is kept and every real refusal still fails. Skipping a stage skips its effects. A rule is evaluated only when its own quest changes, not when a flag or a reputation does.
+
+---
+
+#### Implementation Notes
+
+> - Authored: stage rewards for Ain't That a Kick in the Head, Back in the Saddle, Ghost Town Gunfight and They Went That-a-Way, and the two rules that carry a gate (negative Goodsprings reputation locks the gunfight; finishing the main quest before Trudy's quest locks hers).
+> - Not authored, on purpose: Goodsprings fame and Powder Gangers infamy (the wiki gives no amounts), the Vault 21 jumpsuit (no item record), skill-tagged starting gear (the vocabulary has no "tagged skill" condition), and quests with no stages (Trudy's Radio Repair, Ringo's Caravan Rules, Victor's two).
+> - `validate.py` checks that every quest, faction, item and NPC named in authored data exists and that a `set_stage` names a real stage.
+> - Tests: stage payment, skipped stages, rule firing and its quiet case, rollback of a failing change, a property test (any order of moves pays each stage at most once and a failure changes nothing), and ten language-neutral scenarios in `tests/scenarios/goodsprings.json`.
+> - The benchmark now reports a plain and an automated quest: about 690 ns and 1.8 µs per batch of five stage changes.
+
+---
+
+#### References
+
+- `data/quests/slice_goodsprings.json`, `scripts/normalize.py`, `scripts/validate.py`, `schemas/quest.schema.json`
+- `crates/engine/src/game/state.rs`, `crates/engine/src/quests/book.rs`
+- `crates/engine/tests/game/automation.rs`, `crates/engine/tests/game/scenarios.rs`, `tests/scenarios/goodsprings.json`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

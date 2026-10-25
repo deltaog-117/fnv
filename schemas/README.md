@@ -1,7 +1,7 @@
 # Engine data schemas
 
 JSON Schema (draft 2020-12), language-neutral. Raw wiki imports live in
-`data/items`, `data/quests`, `data/npcs`, `data/dialogue`, `data/world` and `data/rules` and are never edited (except `data/rules/formulas.json` and `data/quests/consequences.json`, which are hand-curated); `scripts/normalize.py`
+`data/items`, `data/quests`, `data/npcs`, `data/dialogue`, `data/world` and `data/rules` and are never edited (except `data/rules/formulas.json`, `data/quests/consequences.json` and `data/quests/slice_*.json`, which are hand-curated); `scripts/normalize.py`
 turns them into the engine-ready files in `data/engine/`, and
 `scripts/validate.py` checks those files against these schemas.
 
@@ -24,9 +24,10 @@ turns them into the engine-ready files in `data/engine/`, and
   form id or a counter. Cross-references use ids, never page titles.
 - `*_text` fields keep the wiki's original wording next to any parsed field.
 - `condition` and `effect` are the machine-readable vocabulary for quest
-  rules, dialogue and NPC availability. Quest rules currently carry only the
-  human-readable `when` / `note`; the `conditions` / `effects` arrays are
-  there to be authored.
+  rules, dialogue and NPC availability. Quest rules carry the wiki's
+  `when` / `note`; the Goodsprings slice (`data/quests/slice_goodsprings.json`)
+  authors `conditions` / `effects` for its rules and `on_enter` effects for
+  stages, and `normalize.py` merges them. Other quests are still unauthored.
 
 ## Regenerate and check
 

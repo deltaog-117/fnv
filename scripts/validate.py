@@ -44,6 +44,15 @@ def check_expression(expr, allowed):
     return None
 
 
+def walk_vocabulary(nodes):
+    """Yield every condition/effect node, descending into all/any/not."""
+    for node in nodes:
+        yield node
+        inner = node.get("of")
+        if inner is not None:
+            yield from walk_vocabulary(inner if isinstance(inner, list) else [inner])
+
+
 def evaluate(expr, env):
     return eval(compile(ast.parse(expr, mode="eval"), "<formula>", "eval"),
                 {"__builtins__": {}}, {**SAFE_FUNCS, **env})
@@ -256,6 +265,7 @@ def main(argv):
         for wid in m.get("modifies", []):
             if wid not in weapon_ids:
                 report("refs", m["id"], f"unknown weapon {wid}")
+    stages_of = {x["id"]: {s["stage"] for s in x["stages"]} for x in quests}
     for q in quests:
         for key in ("previous", "leads_to", "related"):
             for t in q.get(key, []):
@@ -264,6 +274,16 @@ def main(argv):
         for rule in q.get("rules", []):
             if "target_id" in rule and rule["target_id"] not in quest_ids:
                 report("refs", q["id"], f"rule target {rule['target_id']} unknown")
+        # Authored conditions and effects name quests, factions, items and npcs by id.
+        authored = [rule.get(k, []) for rule in q.get("rules", []) for k in ("conditions", "effects")]
+        authored += [stage.get("on_enter", []) for stage in q["stages"]]
+        for node in (n for group in authored for n in walk_vocabulary(group)):
+            for key, known in (("quest", quest_ids), ("faction", faction_ids), ("item", item_ids),
+                               ("npc", npc_ids)):
+                if key in node and node[key] not in known:
+                    report("refs", q["id"], f"authored {node['type']}: unknown {key} {node[key]}")
+            if node.get("type") == "set_stage" and node["stage"] not in stages_of.get(node["quest"], ()):
+                report("refs", q["id"], f"authored set_stage: {node['quest']} has no stage {node['stage']}")
 
     total = sum(len(v) for v in items.values())
     print(f"checked {total} items, {len(quests)} quests, {len(npcs)} npcs, "

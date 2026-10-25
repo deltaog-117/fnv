@@ -856,7 +856,21 @@
    {
     "stage": 50,
     "description": "Follow Doc Mitchell to the exit.",
-    "finish": true
+    "finish": true,
+    "on_enter": [
+     {
+      "type": "give_item",
+      "item": "pip_boy_3000"
+     },
+     {
+      "type": "give_item",
+      "item": "9mm_pistol"
+     },
+     {
+      "type": "caps",
+      "amount": 18
+     }
+    ]
    }
   ],
   "walkthrough": [
@@ -2024,7 +2038,21 @@
    {
     "stage": 60,
     "description": "Talk to Sunny about your reward.",
-    "finish": true
+    "finish": true,
+    "on_enter": [
+     {
+      "type": "caps",
+      "amount": 50
+     },
+     {
+      "type": "xp",
+      "amount": 50
+     },
+     {
+      "type": "give_item",
+      "item": "varmint_rifle"
+     }
+    ]
    }
   ],
   "walkthrough": [
@@ -9345,7 +9373,17 @@
    {
     "stage": 70,
     "description": "Defeat the Powder Gangers.",
-    "finish": true
+    "finish": true,
+    "on_enter": [
+     {
+      "type": "caps",
+      "amount": 100
+     },
+     {
+      "type": "xp",
+      "amount": 150
+     }
+    ]
    }
   ],
   "walkthrough": [
@@ -9448,7 +9486,21 @@
     "target_type": "quest",
     "when": "negative Goodsprings reputation",
     "note": "Ringo refuses help",
-    "target_id": "ghost_town_gunfight"
+    "target_id": "ghost_town_gunfight",
+    "conditions": [
+     {
+      "type": "reputation",
+      "faction": "goodsprings",
+      "level": "shunned",
+      "op": "at_most"
+     }
+    ],
+    "effects": [
+     {
+      "type": "block_quest",
+      "quest": "ghost_town_gunfight"
+     }
+    ]
    }
   ],
   "giver_ids": [
@@ -23080,7 +23132,13 @@
    {
     "stage": 50,
     "description": "Intercept the Great Khans at Boulder City.",
-    "finish": true
+    "finish": true,
+    "on_enter": [
+     {
+      "type": "xp",
+      "amount": 1000
+     }
+    ]
    }
   ],
   "walkthrough": [
@@ -23151,7 +23209,25 @@
     "target": "Trudy's Radio Repair",
     "target_type": "quest",
     "when": "completed before talking to Trudy",
-    "target_id": "trudy_s_radio_repair"
+    "target_id": "trudy_s_radio_repair",
+    "conditions": [
+     {
+      "type": "quest",
+      "quest": "they_went_that_a_way",
+      "state": "completed"
+     },
+     {
+      "type": "quest",
+      "quest": "trudy_s_radio_repair",
+      "state": "not_started"
+     }
+    ],
+    "effects": [
+     {
+      "type": "block_quest",
+      "quest": "trudy_s_radio_repair"
+     }
+    ]
    }
   ],
   "location_ids": [
