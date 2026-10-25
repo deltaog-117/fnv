@@ -11,7 +11,13 @@ name = "fnv-terminal"
 path = "src/main.rs"
 
 [dependencies]
+anyhow = "1.0.104"
 engine = { path = "../engine" }
+ratatui = "0.30.2"
+textwrap = "0.16.4"
 
 [lints]
 workspace = true
+
+[dev-dependencies]
+proptest = "1.12.0"

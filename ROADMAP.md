@@ -28,6 +28,7 @@ Items are organized by priority, not by timeline.
 - ✅ Dialogue runner (`dialogue/`): `DialogueBook` (validated topic graph) and `Conversation` (start topics, follow-ups, conditions, locked checks, atomic effects, endings) over any `State`; `start` and `ends` added to the dialogue schema; hand-authored Doc Mitchell and Sunny Smiles graphs in `data/dialogue/slice_goodsprings.json`; 24 tests including a property test over random graphs, seven golden scenarios in `tests/scenarios/goodsprings_dialogue.json` and a menu benchmark stub (about 300 ns per menu)
 - ✅ Goodsprings quest slice: hand-authored stage rewards and rule gates (`data/quests/slice_goodsprings.json`) merged by `normalize.py`; `Game` applies `on_enter` effects and fires consequence rules, undoes a failed change, and postpones rewards for unbuilt features into `Game::deferred()`; ten golden scenarios in `tests/scenarios/`
 - ✅ Combat core (`combat/`): `Combat` runs a turn-based fight (action points, rounds, a win check) over a small `Combatant` trait, with the curated damage pipeline (weapon damage, resistance capped at 85, threshold with a 20% floor), bounded combat numbers, a swappable `HitModel` with a flat stand-in, and deterministic `Dice`; 29 tests including property tests and twelve golden scenarios in `tests/scenarios/combat.json`, and a fight benchmark stub (about 490 ns)
+- ✅ TUI v0 (`crates/tui/`): an Elm-style `App` with a persistent layout (status line, scene, log, active-quest panel, key footer), an exploration screen and a dialogue screen over the engine's `Conversation`; property and headless render tests over the real Goodsprings data
 
 ---
 
@@ -42,7 +43,7 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 - **Reputation and karma** – fame/infamy per faction and town, titles and consequences.
 - **Leveling, perks and traits** – XP table, skill points per level, a perk every two levels, trait choice at character creation.
 - **Vendors and barter** – buying and selling with the barter formula. Vendor stock is not in the wiki and depends on the game-data export below, so the Goodsprings vendors (Chet, Trudy's stock, etc.) have to be authored by hand until then.
-- **TUI v0** – a persistent layout (scene and log, status, active quest panel, action footer) so the player never has to remember commands.
+- **TUI screens beyond v0** – travel between places, the quest journal, character sheet, inventory and the combat screen, each added with the engine feature it shows.
 - **Language-neutral golden tests and property tests** – JSON scenarios (state + action = expected state), `proptest` invariants, and a benchmark stub for the combat hot path.
 
 ---
@@ -79,6 +80,6 @@ First playable: **Goodsprings only** (Doc Mitchell, Sunny, the Powder Gangers, G
 
 ## 🎯 Next Actions (Immediate)
 
-1. **TUI v0** – `crates/tui/`: the persistent layout with the quest panel, the dialogue menu and the action footer.
-2. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above.
-3. **Grow the game state** – character and inventory, so combat can be wired into `Game`.
+1. **Author the rest of the Goodsprings dialogue** – see "Goodsprings dialogue content" above; the TUI now lists each NPC as soon as their graph is authored.
+2. **Grow the game state** – character and inventory, so combat can be wired into `Game` and a status/inventory screen has something to show.
+3. **Finish the Goodsprings quest slice** – Run Goodsprings Run and By a Campfire on the Trail, so the opening quest can be followed through in the TUI.

@@ -877,6 +877,55 @@ Combat was an empty stub, and the character and inventory modules it would read 
 
 ---
 
+### TUI v0: An Elm-Style App Over the Headless Engine
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The engine has quests, a world, dialogue and combat, but nothing can be played. The roadmap asks for a persistent layout so the player never has to remember commands: scene and log, status, active quest panel and an action footer.
+
+---
+
+#### Decision
+
+> `crates/tui` is an Elm-style app (COA A of three): `App` owns the `Game`, the log and the active `Screen`; keys become a small `Command` enum; `App::update` changes state and `App::render` draws it. Screens (`exploration`, `dialogue`) depend only on `shared` and never on each other; `app.rs` is the one place that knows all of them, as `game` is in the engine. The terminal is touched only in `main.rs`, so tests drive `App` headless with ratatui's `TestBackend`.
+>
+> **Alternatives rejected:** B, a stack of `Box<dyn Screen>` (dynamic dispatch, and the log and quest panel would have to be threaded through every screen), and C, one event loop with a `match mode` and inline drawing (smallest, but untestable without a terminal and it grows into one function).
+>
+> **Trade-offs accepted:** v0 covers Goodsprings only. People to talk to are the NPCs located in the settlement or its buildings that have an authored dialogue graph. A new game starts "Ain't That a Kick in the Head" at stage 10, because there is no start-of-game script yet. There is no travel, inventory or combat screen; the footer lists only the keys that work.
+
+---
+
+#### Implementation Notes
+
+> - Dependencies: `ratatui` 0.30 (its re-exported `crossterm`), `anyhow` for the binary, `textwrap`; `proptest` for tests.
+> - The log wraps its own text instead of using the paragraph widget's wrapping, because the newest line must always be the last one visible.
+> - The quest panel sorts by quest name; the quest log keeps quests in no stable order and the panel would otherwise shuffle between frames.
+> - Below 70x22 the layout is replaced by a "terminal too small" message instead of a broken frame.
+> - Tests: menu, log and layout properties; input mapping; screen logic; `App` over the real data (first frame, smallest terminal, talking to Doc Mitchell, quit, walk away).
+> - No benchmark stub: the front end is a binary crate, which a bench target cannot import, and drawing is not a measured hot path. Revisit if frames get slow.
+> - No tracing yet; add it with the first screen that does I/O beyond the keyboard.
+
+---
+
+#### References
+
+- `crates/tui/src/app.rs`, `main.rs`, `shared/`, `exploration/`, `dialogue/`, `quests/`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry
