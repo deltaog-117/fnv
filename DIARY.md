@@ -1107,6 +1107,47 @@ Finishing combat (ROADMAP item 7) was split into slices because it bundles ammun
 
 ---
 
+### Trudy's Dialogue: Enlistment by a Flag, Not a Quest Stage
+
+**Date:** 2026-10-25
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Authoring the rest of the Goodsprings dialogue (ROADMAP "Goodsprings dialogue content") was split into one NPC per cycle, starting with Trudy because she owns the optional stage 20 of the Ghost Town Gunfight. The wiki gives her topics, the two skill labels (Speech 25, Sneak 25) and her success and failure lines, but no links or conditions.
+
+---
+
+#### Decision
+
+> Trudy's graph is in `data/dialogue/slice_goodsprings.json`. Her chatter is chained from the transcript (the Cobb argument leads to Ringo, the NCR news to the Legion and the Dam, the robot to Victor's history). A Speech 25 or Sneak 25 pick sets the flag `trudy_joined_militia`; each skill has a locked success option (`check`) and a failure line shown only while the skill is short.
+>
+> **Why a flag and not stage 20:** quest stages only move forward, and stages 20 to 50 are optional steps that can be done in any order. Setting stage 20 after the player has enlisted Chet (30) would be refused, and a refused effect refuses the whole topic. The flag has no such ordering, and the journal can read it later.
+>
+> **Window:** the enlistment is offered while the gunfight is active, from stage 10 (Sunny agreed) until Ringo's countdown at 60.
+>
+> **Left out for now:** her radio repair topics (they need the radio quest), the shop topic (vendors are a separate item) and the lines about Victor's death (no companion state yet).
+>
+> **Trade-offs accepted:** with the default 5s every skill is 15, so neither check can pass until leveling and tagged skills exist; the golden scenarios raise the attribute through a new optional `special` field instead. Links are read from the transcript and are not verified in game.
+
+---
+
+#### References
+
+- `data/dialogue/slice_goodsprings.json`, `tests/scenarios/goodsprings_dialogue.json`, `crates/engine/tests/dialogue/scenarios.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-25 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

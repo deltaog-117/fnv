@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Trudy's dialogue in the Goodsprings slice: the Cobb argument and the Ringo follow-ups, the NCR, Legion and Dam news, the robot talk, and a Speech 25 or Sneak 25 enlistment (the flag `trudy_joined_militia`) open from Sunny's agreement until Ringo's countdown, with the failed lines shown while the skill is short
+- Dialogue scenarios take an optional `special` map, so a golden scenario can raise an attribute to pass a skill check; eight Trudy scenarios
 - Ammunition in combat: a weapon with a `Magazine` (clip size, rounds per shot, reload cost, rounds carried) loses rounds with every shot, hit or miss; an empty weapon refuses the shot with `CombatError::OutOfAmmo` and rolls no dice. `Combat::reload` refills the clip from the reserve for action points, `Combat::rounds` reads the loaded and reserve counts, and `Combatant::magazine` defaults to none, so existing fighters are unaffected
 - Game side: weapons take their clip, rounds per shot and ammo family from the item data; the player's rounds come from the pack (the plain load of the family first, then any other the pack holds), foes have an endless supply, and `finish_battle` takes the rounds fired out of the pack. `Battle::reload`, `Fighter::ammo_item` and `BattleError::Ammo`
 - Foes reload when empty and keep shooting in the same turn; one with no rounds left passes

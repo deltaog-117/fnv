@@ -7,12 +7,13 @@ use std::fs;
 use std::path::Path;
 use std::sync::Arc;
 
+use engine::character::{Character, CharacterRules, SpecialSet};
 use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::Game;
 use engine::quests::QuestBook;
 use engine::shared::{
-    DialogueId, Effect, FlagId, GameData, QuestId, QuestStatus, QuestView, Scope, TopicKey,
-    WorldView, apply_all,
+    DialogueId, Effect, FlagId, GameData, QuestId, QuestStatus, QuestView, Scope, Special,
+    SpecialLevel, TopicKey, WorldView, apply_all,
 };
 use serde::Deserialize;
 
@@ -27,6 +28,9 @@ struct Scenario {
     dialogue: DialogueId,
     #[serde(default)]
     setup: Vec<Effect>,
+    /// Attributes that differ from the default 5s, so a skill check can pass.
+    #[serde(default)]
+    special: BTreeMap<Special, u32>,
     steps: Vec<Step>,
     expect: Expect,
 }
@@ -76,7 +80,16 @@ fn the_goodsprings_dialogue_scenarios_hold() {
 
     for scenario in file.scenarios {
         let name = &scenario.name;
-        let mut game = Game::new(Arc::clone(&quests));
+        let spread = scenario
+            .special
+            .iter()
+            .fold(SpecialSet::default(), |set, (stat, level)| {
+                let level = SpecialLevel::try_new(*level)
+                    .unwrap_or_else(|e| panic!("{name}: {stat:?} level: {e}"));
+                set.with(*stat, level)
+            });
+        let mut game = Game::new(Arc::clone(&quests))
+            .with_character(Character::new(spread, CharacterRules::standard()));
         apply_all(&scenario.setup, &mut game).unwrap_or_else(|e| panic!("{name}: setup: {e}"));
         let mut talk = Conversation::open(Arc::clone(&dialogue), &scenario.dialogue)
             .unwrap_or_else(|e| panic!("{name}: {e}"));

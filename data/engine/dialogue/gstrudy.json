@@ -168,7 +168,45 @@
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic001",
    "prompt": "You should help me take down the powder gang. Bullets, explosions, lots of fun.",
-   "label": "< Speech 25 >"
+   "label": "< Speech 25 >",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 10
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "trudy_joined_militia",
+     "value": false
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "trudy_joined_militia"
+    }
+   ],
+   "check": {
+    "type": "skill",
+    "skill": "speech",
+    "min": 25
+   }
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic001_2",
@@ -182,7 +220,42 @@
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic001",
    "prompt": "Uh, we're a little outnumbered against the powder gang. Think you could help?",
-   "label": "< Speech 25 >"
+   "label": "< Speech 25 >",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 10
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "trudy_joined_militia",
+     "value": false
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "skill",
+      "skill": "speech",
+      "min": 25
+     }
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic002",
@@ -195,7 +268,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic002",
-   "prompt": "Who was that man you were arguing with?"
+   "prompt": "Who was that man you were arguing with?",
+   "next": [
+    "vfreeformgoodspringsgstrudytopic016"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic003",
@@ -208,7 +284,12 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic003",
-   "prompt": "Anything interesting going on in the rest of the wasteland?"
+   "prompt": "Anything interesting going on in the rest of the wasteland?",
+   "next": [
+    "vfreeformgoodspringsgstrudytopic005",
+    "vfreeformgoodspringsgstrudytopic006",
+    "vfreeformgoodspringsgstrudytopic007"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic004",
@@ -226,7 +307,11 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic004",
-   "prompt": "Did my attackers say where they were going?"
+   "prompt": "Did my attackers say where they were going?",
+   "next": [
+    "vfreeformgoodspringsgstrudytopic014",
+    "vfreeformgoodspringsgstrudytopic015"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic005",
@@ -298,7 +383,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic012",
-   "prompt": "I'm trying to track down the people who attacked me. Know anything about them?"
+   "prompt": "I'm trying to track down the people who attacked me. Know anything about them?",
+   "next": [
+    "vfreeformgoodspringsgstrudytopic004"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic013",
@@ -316,7 +404,11 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic013",
-   "prompt": "Do you know the robot that rescued me?"
+   "prompt": "Do you know the robot that rescued me?",
+   "next": [
+    "vfreeformgoodspringsgstrudytopic022",
+    "vfreeformgoodspringsgstrudytopic023"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic014",
@@ -450,7 +542,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic023",
-   "prompt": "You don't like him?"
+   "prompt": "You don't like him?",
+   "next": [
+    "vfreeformgoodspringsgstrudytopic026"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic024",
@@ -507,7 +602,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic027",
-   "prompt": "What happens if I help Ringo?"
+   "prompt": "What happens if I help Ringo?",
+   "next": [
+    "vfreeformgoodspringsgstrudytopic028"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic028",
@@ -577,7 +675,45 @@
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic030",
    "prompt": "Near the saloon and store are good spots to stage an ambush - if I had the help.",
-   "label": "< Sneak 25 >"
+   "label": "< Sneak 25 >",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 10
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "trudy_joined_militia",
+     "value": false
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "trudy_joined_militia"
+    }
+   ],
+   "check": {
+    "type": "skill",
+    "skill": "sneak",
+    "min": 25
+   }
   },
   {
    "key": "vfreeformgoodspringsgstrudytopic030_2",
@@ -591,7 +727,42 @@
    ],
    "topic": "VFreeformGoodspringsGSTrudyTopic030",
    "prompt": "I could probably take out the powder gang by surprise, if I had help. Probably.",
-   "label": "< Sneak 25 >"
+   "label": "< Sneak 25 >",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 10
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "trudy_joined_militia",
+     "value": false
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "skill",
+      "skill": "sneak",
+      "min": 25
+     }
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringsrubytopic000",
@@ -614,7 +785,20 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsRubyTopic000",
-   "prompt": "I overheard your argument. What was that all about?"
+   "prompt": "I overheard your argument. What was that all about?",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "not_started"
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgoodspringsrubytopic002",
+    "vfreeformgoodspringsgoodspringsrubytopic005",
+    "vfreeformgoodspringsgoodspringsrubytopic006",
+    "vfreeformgoodspringsgoodspringstrudytopic003"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringsrubytopic001",
@@ -671,7 +855,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsRubyTopic006",
-   "prompt": "What are you going to do?"
+   "prompt": "What are you going to do?",
+   "next": [
+    "vfreeformgoodspringsgstrudytopic027"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringsrubytopic007",
@@ -715,7 +902,8 @@
     }
    ],
    "topic": "GOODBYE",
-   "prompt": "Goodbye."
+   "prompt": "Goodbye.",
+   "ends": true
   },
   {
    "key": "gstrudytojoe",
@@ -1295,6 +1483,19 @@
    "topic": "ObserveCombat",
    "prompt": "ObserveCombat"
   }
+ ],
+ "start": [
+  "vfreeformgoodspringsgoodspringsrubytopic000",
+  "vfreeformgoodspringsgstrudytopic001",
+  "vfreeformgoodspringsgstrudytopic001_2",
+  "vfreeformgoodspringsgstrudytopic030",
+  "vfreeformgoodspringsgstrudytopic030_2",
+  "vfreeformgoodspringsgstrudytopic000",
+  "vfreeformgoodspringsgstrudytopic002",
+  "vfreeformgoodspringsgstrudytopic003",
+  "vfreeformgoodspringsgstrudytopic012",
+  "vfreeformgoodspringsgstrudytopic013",
+  "goodbye"
  ],
  "speaker": "trudy"
 }

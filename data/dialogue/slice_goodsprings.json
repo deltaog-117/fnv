@@ -211,5 +211,120 @@
     "ends": true
    }
   ]
+ },
+ {
+  "dialogue": "gstrudy",
+  "start": [
+   "vfreeformgoodspringsgoodspringsrubytopic000",
+   "vfreeformgoodspringsgstrudytopic001",
+   "vfreeformgoodspringsgstrudytopic001_2",
+   "vfreeformgoodspringsgstrudytopic030",
+   "vfreeformgoodspringsgstrudytopic030_2",
+   "vfreeformgoodspringsgstrudytopic000",
+   "vfreeformgoodspringsgstrudytopic002",
+   "vfreeformgoodspringsgstrudytopic003",
+   "vfreeformgoodspringsgstrudytopic012",
+   "vfreeformgoodspringsgstrudytopic013",
+   "goodbye"
+  ],
+  "topics": [
+   {
+    "key": "vfreeformgoodspringsgoodspringsrubytopic000",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "not_started"}
+    ],
+    "next": [
+     "vfreeformgoodspringsgoodspringsrubytopic002",
+     "vfreeformgoodspringsgoodspringsrubytopic005",
+     "vfreeformgoodspringsgoodspringsrubytopic006",
+     "vfreeformgoodspringsgoodspringstrudytopic003"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringsrubytopic006",
+    "next": ["vfreeformgoodspringsgstrudytopic027"]
+   },
+   {"key": "vfreeformgoodspringsgstrudytopic027", "next": ["vfreeformgoodspringsgstrudytopic028"]},
+   {"key": "vfreeformgoodspringsgstrudytopic002", "next": ["vfreeformgoodspringsgstrudytopic016"]},
+   {
+    "key": "vfreeformgoodspringsgstrudytopic003",
+    "next": [
+     "vfreeformgoodspringsgstrudytopic005",
+     "vfreeformgoodspringsgstrudytopic006",
+     "vfreeformgoodspringsgstrudytopic007"
+    ]
+   },
+   {"key": "vfreeformgoodspringsgstrudytopic012", "next": ["vfreeformgoodspringsgstrudytopic004"]},
+   {
+    "key": "vfreeformgoodspringsgstrudytopic004",
+    "next": [
+     "vfreeformgoodspringsgstrudytopic014",
+     "vfreeformgoodspringsgstrudytopic015"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgstrudytopic013",
+    "next": [
+     "vfreeformgoodspringsgstrudytopic022",
+     "vfreeformgoodspringsgstrudytopic023"
+    ]
+   },
+   {"key": "vfreeformgoodspringsgstrudytopic023", "next": ["vfreeformgoodspringsgstrudytopic026"]},
+   {
+    "key": "vfreeformgoodspringsgstrudytopic001",
+    "check": {"type": "skill", "skill": "speech", "min": 25},
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60}
+     },
+     {"type": "flag", "flag": "trudy_joined_militia", "value": false}
+    ],
+    "effects": [{"type": "set_flag", "flag": "trudy_joined_militia"}]
+   },
+   {
+    "key": "vfreeformgoodspringsgstrudytopic001_2",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60}
+     },
+     {"type": "flag", "flag": "trudy_joined_militia", "value": false},
+     {"type": "not", "of": {"type": "skill", "skill": "speech", "min": 25}}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgstrudytopic030",
+    "check": {"type": "skill", "skill": "sneak", "min": 25},
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60}
+     },
+     {"type": "flag", "flag": "trudy_joined_militia", "value": false}
+    ],
+    "effects": [{"type": "set_flag", "flag": "trudy_joined_militia"}]
+   },
+   {
+    "key": "vfreeformgoodspringsgstrudytopic030_2",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60}
+     },
+     {"type": "flag", "flag": "trudy_joined_militia", "value": false},
+     {"type": "not", "of": {"type": "skill", "skill": "sneak", "min": 25}}
+    ]
+   },
+   {"key": "goodbye", "ends": true}
+  ]
  }
 ]

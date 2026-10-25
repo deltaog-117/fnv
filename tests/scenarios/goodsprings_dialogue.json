@@ -1,5 +1,5 @@
 {
- "description": "Language-neutral dialogue scenarios: effects in 'setup' are applied to a fresh game, then each 'say' picks a topic by key in a conversation with 'dialogue'; 'fails' marks a pick that must be refused; 'expect' lists the quest states, the flags that must be set and whether the conversation is over.",
+ "description": "Language-neutral dialogue scenarios: effects in 'setup' are applied to a fresh game, then each 'say' picks a topic by key in a conversation with 'dialogue'; 'fails' marks a pick that must be refused; 'special' (optional) overrides the default 5s so a skill check can pass; 'expect' lists the quest states, the flags that must be set and whether the conversation is over.",
  "scenarios": [
   {
    "name": "sunny: asking to be taught starts the quest once",
@@ -170,6 +170,93 @@
     {"say": "vcg02lastobjective"}
    ],
    "expect": {"quests": {"by_a_campfire_on_the_trail": {"status": "completed", "stage": 40}}}
+  },
+  {
+   "name": "trudy: the argument with Cobb opens the Ringo follow-ups before the quest",
+   "dialogue": "gstrudy",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringsrubytopic000"},
+    {"say": "vfreeformgoodspringsgoodspringsrubytopic006"},
+    {"say": "vfreeformgoodspringsgstrudytopic027"},
+    {"say": "vfreeformgoodspringsgstrudytopic028"}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "not_started"}}, "over": false}
+  },
+  {
+   "name": "trudy: the argument topic goes away once the quest has begun",
+   "setup": [{"type": "start_quest", "quest": "ghost_town_gunfight"}, {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}],
+   "dialogue": "gstrudy",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringsrubytopic000", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "trudy: a green character is locked out of both checks but can try the failed lines",
+   "setup": [{"type": "start_quest", "quest": "ghost_town_gunfight"}, {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}],
+   "dialogue": "gstrudy",
+   "steps": [
+    {"say": "vfreeformgoodspringsgstrudytopic001", "fails": true},
+    {"say": "vfreeformgoodspringsgstrudytopic001_2"},
+    {"say": "vfreeformgoodspringsgstrudytopic030", "fails": true},
+    {"say": "vfreeformgoodspringsgstrudytopic030_2"}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "trudy: Speech 25 enlists her once",
+   "setup": [{"type": "start_quest", "quest": "ghost_town_gunfight"}, {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}],
+   "special": {"charisma": 10, "luck": 5},
+   "dialogue": "gstrudy",
+   "steps": [
+    {"say": "vfreeformgoodspringsgstrudytopic001"},
+    {"say": "vfreeformgoodspringsgstrudytopic001", "fails": true},
+    {"say": "vfreeformgoodspringsgstrudytopic030", "fails": true}
+   ],
+   "expect": {"flags": ["trudy_joined_militia"]}
+  },
+  {
+   "name": "trudy: Sneak 25 enlists her",
+   "setup": [{"type": "start_quest", "quest": "ghost_town_gunfight"}, {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}],
+   "special": {"agility": 10, "luck": 5},
+   "dialogue": "gstrudy",
+   "steps": [
+    {"say": "vfreeformgoodspringsgstrudytopic030"},
+    {"say": "vfreeformgoodspringsgstrudytopic001_2", "fails": true}
+   ],
+   "expect": {"flags": ["trudy_joined_militia"]}
+  },
+  {
+   "name": "trudy: she cannot be enlisted before Ringo's quest or once the fight is called",
+   "special": {"charisma": 10, "luck": 5},
+   "dialogue": "gstrudy",
+   "steps": [
+    {"say": "vfreeformgoodspringsgstrudytopic001", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "not_started"}}}
+  },
+  {
+   "name": "trudy: the countdown closes the enlistment",
+   "setup": [{"type": "start_quest", "quest": "ghost_town_gunfight"}, {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 60}],
+   "special": {"charisma": 10, "luck": 5},
+   "dialogue": "gstrudy",
+   "steps": [
+    {"say": "vfreeformgoodspringsgstrudytopic001", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 60}}}
+  },
+  {
+   "name": "trudy: chatter chains and goodbye ends the talk",
+   "dialogue": "gstrudy",
+   "steps": [
+    {"say": "vfreeformgoodspringsgstrudytopic003"},
+    {"say": "vfreeformgoodspringsgstrudytopic007"},
+    {"say": "vfreeformgoodspringsgstrudytopic013"},
+    {"say": "vfreeformgoodspringsgstrudytopic023"},
+    {"say": "vfreeformgoodspringsgstrudytopic026"},
+    {"say": "goodbye"}
+   ],
+   "expect": {"over": true}
   }
  ]
 }
