@@ -21,6 +21,7 @@
 | 2026-10-25 | Game state | Concrete `Game` holding the quest log; unbuilt features refuse effects (COA A) | ✅ Confirmed |
 | 2026-10-25 | Character and inventory | Both in one step, minimal; `Game` owns them and keeps the view traits as the only contract (COA A) | ✅ Confirmed |
 | 2026-10-26 | Leveling, perks and traits | Perk and trait effects are typed `Modifier` data summed once when taken; only fully modeled perks are listed | ✅ Confirmed |
+| 2026-10-26 | Level-up screen | Level-up screen only; the creation screen waits for Doc's intro (COA B) | ✅ Confirmed |
 
 ---
 
@@ -1175,6 +1176,47 @@ The character had S.P.E.C.I.A.L., XP and a derived level, but nothing to do with
 #### References
 
 - `crates/engine/src/character/`, `crates/engine/src/shared/modifier.rs`, `data/perks/`, `crates/engine/tests/character/progression.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-26 | Initial entry | deltaog-117 |
+
+---
+
+### Level-Up Screen: Spend and Choose Now, Create the Character Later
+
+**Date:** 2026-10-26
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The engine could level a character, but the player could not reach any of it. Three options were compared: wire the perk book only (A), add a level-up screen (B), or add that plus a character creation flow (C).
+
+---
+
+#### Decision
+
+> **COA B.** The scene has a "Character" row that opens a screen with two lists: the thirteen skills (choosing one spends a point) and the perks open to the character (choosing one takes it). The screen keeps only its cursor and reads every number from `Game` when it draws, so it cannot show a stale count; every spend and pick goes through `Game`, so a refusal arrives in the engine's own words and is logged.
+>
+> **Why not creation yet:** the real game opens with Doc Mitchell's intro, which covers creation, so a separate creation flow now risks being rebuilt around it. Tags and traits stay reachable only through `Character::create` until then.
+>
+> **Perks the game does not model:** they are listed, because hiding them would hide the pick, but the selected one says that taking it changes nothing. That note goes above the description, because a long description would push it out of the pane.
+>
+> **Scrolling:** at the smallest supported terminal only about ten rows fit in the scene, so a small `window` helper keeps the selected row visible instead of clipping the list.
+>
+> **Trade-offs accepted:** the screen is reached only from the scene, not mid-conversation or mid-fight; there is no confirmation before spending a point, and no way to take one back.
+
+---
+
+#### References
+
+- `crates/tui/src/character/screen.rs`, `crates/tui/src/shared/menu.rs`, `crates/tui/src/app.rs`
 
 ---
 

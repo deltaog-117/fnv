@@ -34,6 +34,22 @@ impl Item {
     }
 }
 
+/// The part of `lines` that fits in `height` rows and still shows the selected
+/// row, centered on it where the list is long enough to allow that.
+#[must_use]
+pub fn window(
+    lines: Vec<Line<'static>>,
+    selected: Option<usize>,
+    height: usize,
+) -> Vec<Line<'static>> {
+    if lines.len() <= height {
+        return lines;
+    }
+    let centered = selected.unwrap_or(0).saturating_sub(height / 2);
+    let start = centered.min(lines.len() - height);
+    lines.into_iter().skip(start).take(height).collect()
+}
+
 /// A cursor over `len` entries.
 ///
 /// The selection is private and every method keeps it inside the list, so a screen
@@ -165,6 +181,21 @@ mod tests {
             let before = menu.selected();
             (0..len).for_each(|_| menu.down());
             prop_assert_eq!(menu.selected(), before);
+        }
+    }
+
+    proptest! {
+        #[test]
+        fn the_window_fits_the_height_and_keeps_the_selected_row(
+            len in 1usize..40,
+            height in 1usize..20,
+            selected in 0usize..40,
+        ) {
+            let selected = selected % len;
+            let lines: Vec<Line<'static>> = (0..len).map(|n| Line::from(n.to_string())).collect();
+            let shown = window(lines, Some(selected), height);
+            prop_assert_eq!(shown.len(), len.min(height));
+            prop_assert!(shown.iter().any(|line| line.to_string() == selected.to_string()));
         }
     }
 

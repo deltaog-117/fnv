@@ -8,6 +8,7 @@ use std::num::NonZeroU32;
 use std::sync::Arc;
 
 use anyhow::Context;
+use engine::character::PerkBook;
 use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::{Arsenal, Game, Outcome};
 use engine::inventory::{ItemBook, Slot};
@@ -21,6 +22,7 @@ use ratatui::layout::{Alignment, Rect};
 use ratatui::text::Line;
 use ratatui::widgets::{Block, Borders, Paragraph};
 
+use crate::character::{self, LevelUp};
 use crate::combat::{self, Fight};
 use crate::dialogue::{self, Talk};
 use crate::exploration::{self, Exploration, Person};
@@ -45,6 +47,7 @@ enum Screen {
     Exploring(Exploration),
     Talking(Talk),
     Fighting(Fight),
+    Leveling(LevelUp),
     /// The player fell in a fight; nothing more can be done but quit.
     Down,
 }
@@ -91,7 +94,8 @@ impl App {
         let arsenal = Arc::new(Arsenal::from_data(data).context("building the arsenal")?);
         let mut game = Game::with_world(quests, world)
             .with_items(items)
-            .with_arsenal(arsenal);
+            .with_arsenal(arsenal)
+            .with_perks(Arc::new(PerkBook::base_game(data)));
         let opening = Effect::SetStage {
             quest: QuestId::try_new(OPENING_QUEST).context("opening quest id")?,
             stage: QuestStage::new(OPENING_STAGE),
@@ -165,7 +169,13 @@ impl App {
                 exploration::Next::Quit => self.running = false,
                 exploration::Next::Talk(index) => self.start_talk(index),
                 exploration::Next::Fight(index) => self.start_fight(index),
+                exploration::Next::Character => self.screen = Screen::Leveling(LevelUp::new()),
             },
+            Screen::Leveling(sheet) => {
+                if sheet.update(command, &mut self.game, &mut self.log) == character::Next::Leave {
+                    self.screen = self.exploring();
+                }
+            }
             Screen::Talking(talk) => {
                 if talk.update(command, &mut self.game, &mut self.log) == dialogue::Next::Leave {
                     self.screen = self.exploring();
@@ -196,8 +206,17 @@ impl App {
             .into_iter()
             .map(|encounter| encounter.name.clone())
             .collect();
+        let character = self.game.character();
+        let (points, picks) = (character.skill_points(), character.perk_picks());
+        let label = if points + picks > 0 {
+            format!("Level up ({points} skill point(s), {picks} perk pick(s))")
+        } else {
+            "Character".to_owned()
+        };
         Screen::Exploring(
-            Exploration::new(self.place.clone(), self.people.clone()).with_fights(fights),
+            Exploration::new(self.place.clone(), self.people.clone())
+                .with_fights(fights)
+                .with_character_label(label),
         )
     }
 
@@ -282,6 +301,10 @@ impl App {
             Screen::Fighting(fight) => {
                 fight.render(frame, regions.scene);
                 "Up/Down move | Enter choose | 1-9 pick | q quit"
+            }
+            Screen::Leveling(sheet) => {
+                sheet.render(frame, regions.scene, &self.game);
+                "Up/Down move | Enter choose | 1-9 pick | Esc back | q quit"
             }
             Screen::Down => {
                 render_down(frame, regions.scene);
@@ -589,6 +612,124 @@ mod tests {
             let hp = format!("HP {}/{}", app.game.hp(), app.game.character().max_hp());
             assert!(text.contains(&hp), "seed {seed}: {text}");
         }
+    }
+
+    /// Enough experience for level 3, which banks skill points and a perk pick.
+    fn with_levels_waiting(mut app: App) -> App {
+        apply_all(&[Effect::Xp { amount: 550.0 }], &mut app.game).expect("experience applies");
+        app.screen = app.exploring();
+        app
+    }
+
+    /// Opens the character screen from the scene, where its row follows the people
+    /// and the fights.
+    fn open_character(app: &mut App) {
+        let row = app.people.len() + app.game.encounters_at(&app.place_id).len();
+        app.update(Command::Pick(row));
+        assert!(matches!(app.screen, Screen::Leveling(_)));
+    }
+
+    #[test]
+    fn the_scene_offers_the_character_screen_and_says_when_points_are_waiting() {
+        let app = app();
+        assert!(screen(&app, 100, 30).contains("Character"));
+        let app = with_levels_waiting(app);
+        assert!(app.game.character().skill_points() > 0);
+        assert!(app.game.character().perk_picks() > 0);
+        assert!(screen(&app, 100, 30).contains("Level up ("));
+    }
+
+    #[test]
+    fn spending_a_skill_point_raises_the_skill_and_logs_it() {
+        let mut app = with_levels_waiting(app());
+        open_character(&mut app);
+        let before = app.game.character().skill_points();
+        app.update(Command::Pick(0));
+        app.update(Command::Pick(3));
+        assert_eq!(app.game.character().skill_points(), before - 1);
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Guns rises to"), "{text}");
+    }
+
+    #[test]
+    fn a_skill_point_with_none_banked_is_refused_with_the_reason() {
+        let mut app = app();
+        open_character(&mut app);
+        app.update(Command::Pick(0));
+        app.update(Command::Pick(0));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("no skill points to spend"), "{text}");
+        assert!(text.contains("(locked)"), "{text}");
+    }
+
+    #[test]
+    fn taking_a_perk_spends_the_pick_and_logs_it() {
+        let mut app = with_levels_waiting(app());
+        open_character(&mut app);
+        let picks = app.game.character().perk_picks();
+        app.update(Command::Pick(1));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Take a perk:"), "{text}");
+        app.update(Command::Pick(0));
+        assert_eq!(app.game.character().perk_picks(), picks - 1);
+        assert_eq!(app.game.character().perks().count(), 1);
+        assert!(screen(&app, 100, 30).contains("You take"));
+    }
+
+    #[test]
+    fn a_perk_with_no_pick_waiting_is_refused_with_the_reason() {
+        let mut app = with_levels_waiting(app());
+        open_character(&mut app);
+        app.update(Command::Pick(1));
+        for _ in 0..app.game.character().perk_picks() {
+            app.update(Command::Pick(0));
+        }
+        assert_eq!(app.game.character().perk_picks(), 0);
+        app.update(Command::Pick(0));
+        assert!(screen(&app, 100, 30).contains("no perk to choose yet"));
+    }
+
+    #[test]
+    fn escape_steps_back_to_the_top_menu_and_then_to_the_scene() {
+        let mut app = app();
+        open_character(&mut app);
+        app.update(Command::Pick(0));
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Leveling(_)));
+        assert!(screen(&app, 100, 30).contains("What do you do?"));
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+        assert!(app.is_running());
+    }
+
+    #[test]
+    fn the_character_screen_fits_the_smallest_terminal_with_every_skill_reachable() {
+        let mut app = app();
+        open_character(&mut app);
+        app.update(Command::Pick(0));
+        for _ in 0..12 {
+            app.update(Command::Down);
+        }
+        let text = screen(&app, MIN_WIDTH, MIN_HEIGHT);
+        assert!(text.contains("Unarmed"), "{text}");
+    }
+
+    #[test]
+    fn a_perk_the_game_does_not_model_says_so_before_it_is_taken() {
+        let mut app = with_levels_waiting(app());
+        open_character(&mut app);
+        app.update(Command::Pick(1));
+        let unmodeled = app
+            .game
+            .perks()
+            .open_to(app.game.character())
+            .iter()
+            .position(|perk| perk.modifiers.is_empty())
+            .expect("an open perk with no modeled effect");
+        for _ in 0..unmodeled {
+            app.update(Command::Down);
+        }
+        assert!(screen(&app, 100, 40).contains("changes nothing"));
     }
 
     #[test]

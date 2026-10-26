@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Level-up screen in `crates/tui/src/character/`: the scene gains a "Character" row, labeled "Level up (N skill point(s), M perk pick(s))" while something is waiting. The screen has a top menu (skills, perks, back), a skills list where choosing a skill spends a point, and a perks list of the perks open to the character, with ranks and a description of the selected one. A perk whose effect the game does not model says "Not in the game yet; taking it changes nothing." Refusals are logged in the engine's own words; Esc steps back one view and then leaves
+- `shared::menu::window`, which keeps a long list's selected row on screen at any terminal height; the app builds its `PerkBook` from the loaded data, so perks can be taken in the real game
+- Tests: app-level checks of the row and its label, spending a point, taking a perk, both refusals, stepping back, the smallest terminal and the unmodeled-perk note; a property test of the list window
 - Leveling in `crates/engine/src/character/`: skill points at every level-up, spent one at a time with `Character::spend_skill_point`; three tagged skills (+15); a perk pick every second level; up to two traits; `Character::create` for a starting character. Every skill stays between 0 and 100, and nothing is spent that was not paid out
 - `PerkBook` (the perks and traits that exist, and who may take them) and `ProgressError`, `CreationError` and `Unmet`, which say why a spend, pick or creation is refused
 - `Modifier` in `shared/modifier.rs` (skill points per level, XP percent, carry weight, hit points, action points, all skills, one skill), mirrored by `$defs/modifier` in `common.schema.json`; `Perk`, `Trait`, `PerkRequirements` and `TraitId` records; player-facing `Skill::name` and `Special::name`

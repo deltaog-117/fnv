@@ -30,17 +30,20 @@ pub enum Next {
     Talk(usize),
     /// Start the fight at this position in the offered fights.
     Fight(usize),
+    /// Open the character screen.
+    Character,
     /// Leave the game.
     Quit,
 }
 
 /// The place and the actions it offers: one "talk to" per person, one per fight on
-/// offer, then quit.
+/// offer, the character screen, then quit.
 #[derive(Debug)]
 pub struct Exploration {
     place: String,
     people: Vec<Person>,
     fights: Vec<String>,
+    character: String,
     menu: Menu,
 }
 
@@ -48,12 +51,13 @@ impl Exploration {
     /// The scene for `place` with `people` to talk to.
     #[must_use]
     pub fn new(place: String, people: Vec<Person>) -> Self {
-        // The extra row is "quit", so the menu is never empty.
-        let menu = Menu::new(people.len() + 1);
+        // The extra rows are "character" and "quit", so the menu is never empty.
+        let menu = Menu::new(people.len() + 2);
         Self {
             place,
             people,
             fights: Vec::new(),
+            character: "Character".to_owned(),
             menu,
         }
     }
@@ -61,8 +65,16 @@ impl Exploration {
     /// The same scene with fights to offer, by name, after the people.
     #[must_use]
     pub fn with_fights(mut self, fights: Vec<String>) -> Self {
-        self.menu = Menu::new(self.people.len() + fights.len() + 1);
+        self.menu = Menu::new(self.people.len() + fights.len() + 2);
         self.fights = fights;
+        self
+    }
+
+    /// The same scene with another label on the character row, so it can say that
+    /// points are waiting.
+    #[must_use]
+    pub fn with_character_label(mut self, label: String) -> Self {
+        self.character = label;
         self
     }
 
@@ -73,6 +85,7 @@ impl Exploration {
             Some(index) if index < self.people.len() + self.fights.len() => {
                 Next::Fight(index - self.people.len())
             }
+            Some(index) if index == self.people.len() + self.fights.len() => Next::Character,
             Some(_) => Next::Quit,
             None => Next::Stay,
         }
@@ -85,7 +98,7 @@ impl Exploration {
             .iter()
             .map(|person| Item::new(format!("Talk to {}", person.name)))
             .chain(self.fights.iter().map(|name| Item::new(name.clone())))
-            .chain([Item::new("Quit game")])
+            .chain([Item::new(self.character.clone()), Item::new("Quit game")])
             .collect();
         let mut lines = vec![
             Line::styled(format!("You are in {}.", self.place), theme::text()),
@@ -131,14 +144,14 @@ mod tests {
     #[test]
     fn the_last_row_quits() {
         let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")]);
-        assert_eq!(scene.update(Command::Pick(1)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(2)), Next::Quit);
     }
 
     #[test]
     fn moving_the_cursor_changes_nothing_until_a_choice() {
         let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")]);
         assert_eq!(scene.update(Command::Down), Next::Stay);
-        assert_eq!(scene.update(Command::Select), Next::Quit);
+        assert_eq!(scene.update(Command::Select), Next::Character);
     }
 
     #[test]
@@ -146,12 +159,14 @@ mod tests {
         let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")])
             .with_fights(vec!["Fight the gang".to_owned()]);
         assert_eq!(scene.update(Command::Pick(1)), Next::Fight(0));
-        assert_eq!(scene.update(Command::Pick(2)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(2)), Next::Character);
+        assert_eq!(scene.update(Command::Pick(3)), Next::Quit);
     }
 
     #[test]
-    fn a_place_with_nobody_still_offers_quit() {
+    fn a_place_with_nobody_still_offers_the_character_screen_and_quit() {
         let mut scene = Exploration::new("Nowhere".to_owned(), Vec::new());
-        assert_eq!(scene.update(Command::Select), Next::Quit);
+        assert_eq!(scene.update(Command::Select), Next::Character);
+        assert_eq!(scene.update(Command::Pick(1)), Next::Quit);
     }
 }
