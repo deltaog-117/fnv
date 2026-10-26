@@ -257,6 +257,117 @@
     {"say": "goodbye"}
    ],
    "expect": {"over": true}
+  },
+  {
+   "name": "chet: chatter chains and goodbye ends the talk",
+   "dialogue": "gschet",
+   "steps": [
+    {"say": "vfreeformgoodspringsgschettopic001"},
+    {"say": "vfreeformgoodspringsgschettopic003"},
+    {"say": "vfreeformgoodspringsgschettopic002"},
+    {"say": "vfreeformgoodspringsgschettopic005"},
+    {"say": "vfreeformgoodspringsgschettopic006"},
+    {"say": "vfreeformgoodspringsgschettopic007"},
+    {"say": "goodbye"}
+   ],
+   "expect": {"over": true}
+  },
+  {
+   "name": "chet: the supply talk is not on offer before Sunny has agreed",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 5}
+   ],
+   "dialogue": "gschet",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringschettopic002", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 5}}}
+  },
+  {
+   "name": "chet: 1000 caps buys the supplies once, and a poor player cannot pay",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}
+   ],
+   "dialogue": "gschet",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringschettopic002"},
+    {"say": "vfreeformgoodspringsgschettopic000", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "chet: paying 1000 caps sets the flag and closes the supply talk",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10},
+    {"type": "caps", "amount": 1000}
+   ],
+   "dialogue": "gschet",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringschettopic002"},
+    {"say": "vfreeformgoodspringsgschettopic000"},
+    {"say": "vfreeformgoodspringsgoodspringschettopic002", "fails": true}
+   ],
+   "expect": {"flags": ["chet_supplied_militia"]}
+  },
+  {
+   "name": "chet: a Barter 25 argument gets the supplies without paying",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}
+   ],
+   "special": {"charisma": 10, "luck": 5},
+   "dialogue": "gschet",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringschettopic002"},
+    {"say": "vfreeformgoodspringsgoodspringschettopic004", "fails": true},
+    {"say": "vfreeformgoodspringsgoodspringschettopic003"}
+   ],
+   "expect": {"flags": ["chet_supplied_militia"]}
+  },
+  {
+   "name": "chet: a green character is locked out of the argument but can hear the refusal",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}
+   ],
+   "dialogue": "gschet",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringschettopic002"},
+    {"say": "vfreeformgoodspringsgoodspringschettopic003", "fails": true},
+    {"say": "vfreeformgoodspringsgoodspringschettopic004"}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "chet: the Powder Ganger shakedown is closed until Cobb has planned the attack",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 15}
+   ],
+   "dialogue": "gschet",
+   "steps": [
+    {"say": "vfreeformgoodspringsgschettopic008", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 15}}}
+  },
+  {
+   "name": "chet: a Speech 25 threat shakes him down for the Powder Gangers",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 20}
+   ],
+   "special": {"charisma": 10, "luck": 5},
+   "dialogue": "gschet",
+   "steps": [
+    {"say": "vfreeformgoodspringsgschettopic008"},
+    {"say": "vfreeformgoodspringsgschettopic010_2", "fails": true},
+    {"say": "vfreeformgoodspringsgschettopic010"},
+    {"say": "vfreeformgoodspringsgschettopic008", "fails": true}
+   ],
+   "expect": {"flags": ["chet_shaken_down"]}
   }
  ]
 }

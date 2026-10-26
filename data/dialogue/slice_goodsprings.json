@@ -326,5 +326,120 @@
    },
    {"key": "goodbye", "ends": true}
   ]
+ },
+ {
+  "dialogue": "gschet",
+  "start": [
+   "vfreeformgoodspringsgschettopic001",
+   "vfreeformgoodspringsgschettopic002",
+   "vfreeformgoodspringsgschettopic006",
+   "vfreeformgoodspringsgschettopic008",
+   "vfreeformgoodspringsgoodspringschettopic002",
+   "vfreeformgoodspringsgoodspringschettopic006",
+   "goodbye"
+  ],
+  "topics": [
+   {
+    "key": "vfreeformgoodspringsgschettopic001",
+    "next": ["vfreeformgoodspringsgschettopic003"]
+   },
+   {
+    "key": "vfreeformgoodspringsgschettopic002",
+    "next": ["vfreeformgoodspringsgschettopic005"]
+   },
+   {
+    "key": "vfreeformgoodspringsgschettopic006",
+    "next": ["vfreeformgoodspringsgschettopic007"]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringschettopic006",
+    "conditions": [
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "completed"}
+     }
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringschettopic002",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60}
+     },
+     {"type": "flag", "flag": "chet_supplied_militia", "value": false}
+    ],
+    "next": [
+     "vfreeformgoodspringsgschettopic000",
+     "vfreeformgoodspringsgoodspringschettopic003",
+     "vfreeformgoodspringsgoodspringschettopic004",
+     "vfreeformgoodspringsgoodspringschettopic005"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgschettopic000",
+    "effects": [
+     {"type": "caps", "amount": -1000},
+     {"type": "set_flag", "flag": "chet_supplied_militia"}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringschettopic003",
+    "check": {"type": "skill", "skill": "barter", "min": 25},
+    "effects": [{"type": "set_flag", "flag": "chet_supplied_militia"}]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringschettopic004",
+    "conditions": [
+     {"type": "not", "of": {"type": "skill", "skill": "barter", "min": 25}}
+    ]
+   },
+   {"key": "vfreeformgoodspringsgoodspringschettopic005"},
+   {
+    "key": "vfreeformgoodspringsgschettopic008",
+    "conditions": [
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "active"},
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 20},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 60}
+     },
+     {"type": "flag", "flag": "chet_shaken_down", "value": false}
+    ],
+    "next": [
+     "vfreeformgoodspringsgschettopic009",
+     "vfreeformgoodspringsgschettopic009_2",
+     "vfreeformgoodspringsgschettopic010",
+     "vfreeformgoodspringsgschettopic010_2",
+     "vfreeformgoodspringsgschettopic011"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgschettopic009",
+    "check": {"type": "skill", "skill": "barter", "min": 25},
+    "effects": [{"type": "set_flag", "flag": "chet_shaken_down"}]
+   },
+   {
+    "key": "vfreeformgoodspringsgschettopic009_2",
+    "conditions": [
+     {"type": "not", "of": {"type": "skill", "skill": "barter", "min": 25}}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgschettopic010",
+    "check": {"type": "skill", "skill": "speech", "min": 25},
+    "effects": [{"type": "set_flag", "flag": "chet_shaken_down"}]
+   },
+   {
+    "key": "vfreeformgoodspringsgschettopic010_2",
+    "conditions": [
+     {"type": "not", "of": {"type": "skill", "skill": "speech", "min": 25}}
+    ]
+   },
+   {"key": "vfreeformgoodspringsgschettopic011"},
+   {"key": "goodbye", "ends": true}
+  ]
  }
 ]

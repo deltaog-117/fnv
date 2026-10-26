@@ -1226,6 +1226,45 @@ The engine could level a character, but the player could not reach any of it. Th
 |------|--------|--------|
 | 2026-10-26 | Initial entry | deltaog-117 |
 
+### Chet's Dialogue: Supplies by Flag, Two Quest Windows
+
+**Date:** 2026-10-26
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Chet is the next Goodsprings graph and owns the optional stage 30 of the Ghost Town Gunfight ("convince Chet to open his store's stock"). His transcript also carries the lines for the Powder Ganger side (Run Goodsprings Run, stage 30). The wiki gives the topics, the 1000-cap payment and the Barter 25 and Speech 25 labels, but no links or conditions.
+
+---
+
+#### Decision
+
+> Chet's graph is in `data/dialogue/slice_goodsprings.json`, built on the pattern of Trudy's. Chatter is chained from the transcript (Khans, New Vegas, weapon mods and surplus ammo). The supply talk is offered while the gunfight is active, from stage 10 to Ringo's countdown at 60; paying 1000 caps (a `caps` effect of -1000) or winning the Barter 25 argument sets the flag `chet_supplied_militia`. The Powder Ganger shakedown (Barter 25 or Speech 25) is offered while Run Goodsprings Run is active from stage 20 to 60 and sets `chet_shaken_down`. Each skill has a locked success option and a failure line shown only while the skill is short.
+>
+> **Why flags and not stages:** the same reason as Trudy's. Stages only move forward and 20 to 50 are optional in any order, so setting 30 after the player reached 40 would be refused, and a refused effect refuses the whole topic.
+>
+> **Why the shakedown is in now:** it is part of Chet's transcript and costs only gated topics. Run Goodsprings Run cannot start from Joe Cobb's side yet, so the golden scenarios put the quest at stage 20 by hand.
+>
+> **Left out for now:** the shop topics and greeting (vendors are a separate item) and the leather armor and ammo as items; in the wiki the armor equips the militia, not the player.
+>
+> **Trade-offs accepted:** a player with fewer than 1000 caps sees the payment option and is refused on picking it, because there is no condition on caps; the wiki labels the Barter check on the walkthrough page only, so the skill is read from there; links are read from the transcript and are not verified in game.
+
+---
+
+#### References
+
+- `data/dialogue/slice_goodsprings.json`, `tests/scenarios/goodsprings_dialogue.json`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-26 | Initial entry | deltaog-117 |
+
 ---
 
 ## 🧠 Usage Guidelines

@@ -57,7 +57,17 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSChetTopic000",
-   "prompt": "Fine. Here's 1000 caps."
+   "prompt": "Fine. Here's 1000 caps.",
+   "effects": [
+    {
+     "type": "caps",
+     "amount": -1000
+    },
+    {
+     "type": "set_flag",
+     "flag": "chet_supplied_militia"
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgschettopic001",
@@ -75,7 +85,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSChetTopic001",
-   "prompt": "Do you know anything about the people who attacked me?"
+   "prompt": "Do you know anything about the people who attacked me?",
+   "next": [
+    "vfreeformgoodspringsgschettopic003"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgschettopic002",
@@ -98,7 +111,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSChetTopic002",
-   "prompt": "Have you ever been to New Vegas?"
+   "prompt": "Have you ever been to New Vegas?",
+   "next": [
+    "vfreeformgoodspringsgschettopic005"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgschettopic003",
@@ -162,7 +178,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSChetTopic006",
-   "prompt": "Tell me about weapon mods and special ammo."
+   "prompt": "Tell me about weapon mods and special ammo.",
+   "next": [
+    "vfreeformgoodspringsgschettopic007"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgschettopic007",
@@ -193,7 +212,41 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSChetTopic008",
-   "prompt": "The Powder Gangers need you to donate some supplies to them."
+   "prompt": "The Powder Gangers need you to donate some supplies to them.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "stage_at_least",
+     "stage": 20
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "run_goodsprings_run",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "chet_shaken_down",
+     "value": false
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgschettopic009",
+    "vfreeformgoodspringsgschettopic009_2",
+    "vfreeformgoodspringsgschettopic010",
+    "vfreeformgoodspringsgschettopic010_2",
+    "vfreeformgoodspringsgschettopic011"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgschettopic009",
@@ -207,7 +260,18 @@
    ],
    "topic": "VFreeformGoodspringsGSChetTopic009",
    "prompt": "Give up some supplies now and you won't get your store looted later.",
-   "label": "< Barter 25 >"
+   "label": "< Barter 25 >",
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "chet_shaken_down"
+    }
+   ],
+   "check": {
+    "type": "skill",
+    "skill": "barter",
+    "min": 25
+   }
   },
   {
    "key": "vfreeformgoodspringsgschettopic009_2",
@@ -221,7 +285,17 @@
    ],
    "topic": "VFreeformGoodspringsGSChetTopic009",
    "prompt": "Maybe the Powder Gangers will reward you later.",
-   "label": "< Barter 25 >"
+   "label": "< Barter 25 >",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "skill",
+      "skill": "barter",
+      "min": 25
+     }
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgschettopic010",
@@ -235,7 +309,18 @@
    ],
    "topic": "VFreeformGoodspringsGSChetTopic010",
    "prompt": "This is your chance to join the winning side. You have three seconds to decide. One...",
-   "label": "< Speech 25 >"
+   "label": "< Speech 25 >",
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "chet_shaken_down"
+    }
+   ],
+   "check": {
+    "type": "skill",
+    "skill": "speech",
+    "min": 25
+   }
   },
   {
    "key": "vfreeformgoodspringsgschettopic010_2",
@@ -249,7 +334,17 @@
    ],
    "topic": "VFreeformGoodspringsGSChetTopic010",
    "prompt": "It's better if you help me out, so just do it.",
-   "label": "< Speech 25 >"
+   "label": "< Speech 25 >",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "skill",
+      "skill": "speech",
+      "min": 25
+     }
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgschettopic011",
@@ -316,7 +411,40 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsChetTopic002",
-   "prompt": "I need supplies to fight the Powder Gangers."
+   "prompt": "I need supplies to fight the Powder Gangers.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 10
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "chet_supplied_militia",
+     "value": false
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgschettopic000",
+    "vfreeformgoodspringsgoodspringschettopic003",
+    "vfreeformgoodspringsgoodspringschettopic004",
+    "vfreeformgoodspringsgoodspringschettopic005"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringschettopic003",
@@ -334,7 +462,18 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsChetTopic003",
-   "prompt": "Let them take over the town, then. I'm sure your business will be much better off."
+   "prompt": "Let them take over the town, then. I'm sure your business will be much better off.",
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "chet_supplied_militia"
+    }
+   ],
+   "check": {
+    "type": "skill",
+    "skill": "barter",
+    "min": 25
+   }
   },
   {
    "key": "vfreeformgoodspringsgoodspringschettopic004",
@@ -347,7 +486,17 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsChetTopic004",
-   "prompt": "The town's at stake. That has to be worth more than a few supplies."
+   "prompt": "The town's at stake. That has to be worth more than a few supplies.",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "skill",
+      "skill": "barter",
+      "min": 25
+     }
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringschettopic005",
@@ -378,7 +527,17 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsChetTopic006",
-   "prompt": "What do you know about the situation with the Powder Gangers?"
+   "prompt": "What do you know about the situation with the Powder Gangers?",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "completed"
+     }
+    }
+   ]
   },
   {
    "key": "goodbye",
@@ -391,8 +550,18 @@
     }
    ],
    "topic": "GOODBYE",
-   "prompt": "Goodbye."
+   "prompt": "Goodbye.",
+   "ends": true
   }
+ ],
+ "start": [
+  "vfreeformgoodspringsgschettopic001",
+  "vfreeformgoodspringsgschettopic002",
+  "vfreeformgoodspringsgschettopic006",
+  "vfreeformgoodspringsgschettopic008",
+  "vfreeformgoodspringsgoodspringschettopic002",
+  "vfreeformgoodspringsgoodspringschettopic006",
+  "goodbye"
  ],
  "speaker": "chet"
 }
