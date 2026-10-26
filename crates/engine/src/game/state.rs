@@ -5,7 +5,7 @@ use std::num::NonZeroU32;
 use std::sync::Arc;
 
 use super::battle::{Arsenal, Battle, BattleError, Outcome};
-use crate::character::Character;
+use crate::character::{Character, PerkBook, ProgressError};
 use crate::combat::{Side, Status};
 use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
@@ -46,6 +46,7 @@ pub struct Game {
     character: Character,
     inventory: Inventory,
     arsenal: Arc<Arsenal>,
+    perks: Arc<PerkBook>,
     /// Hit points lost and not yet healed. Stored as a loss, so hit points can
     /// never be above the maximum, and a level-up raises them with the maximum.
     wounds: u32,
@@ -74,6 +75,7 @@ impl Game {
             character: Character::default(),
             inventory: Inventory::new(Arc::default()),
             arsenal: Arc::default(),
+            perks: Arc::default(),
             wounds: 0,
             won: HashSet::new(),
             fired: HashSet::new(),
@@ -94,6 +96,14 @@ impl Game {
     #[must_use]
     pub fn with_arsenal(mut self, arsenal: Arc<Arsenal>) -> Self {
         self.arsenal = arsenal;
+        self
+    }
+
+    /// The same game over the perks and traits that exist. Without a book no perk
+    /// can be taken, so call this before play.
+    #[must_use]
+    pub fn with_perks(mut self, perks: Arc<PerkBook>) -> Self {
+        self.perks = perks;
         self
     }
 
@@ -121,6 +131,31 @@ impl Game {
     #[must_use]
     pub fn character(&self) -> &Character {
         &self.character
+    }
+
+    /// The perks and traits that exist, for the picker.
+    #[must_use]
+    pub fn perks(&self) -> &PerkBook {
+        &self.perks
+    }
+
+    /// Spends a skill point the player has earned.
+    ///
+    /// # Errors
+    ///
+    /// [`ProgressError`] when no point is banked or the skill is at its maximum.
+    pub fn spend_skill_point(&mut self, skill: Skill) -> Result<(), ProgressError> {
+        self.character.spend_skill_point(skill)
+    }
+
+    /// Takes a perk with a pick the player has earned.
+    ///
+    /// # Errors
+    ///
+    /// [`ProgressError`] when no pick is waiting, the perk is unknown or fully
+    /// taken, or a requirement is unmet.
+    pub fn choose_perk(&mut self, perk: &PerkId) -> Result<(), ProgressError> {
+        self.character.choose_perk(&self.perks, perk)
     }
 
     /// What the player carries and wears.

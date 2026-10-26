@@ -49,6 +49,141 @@
         "luck"
       ]
     },
+    "modifier": {
+      "description": "A change a perk or trait makes to the numbers the character derives. Amounts are per rank.",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "skill_points_per_level"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "xp_percent"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "pounds"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "carry_weight"
+            },
+            "pounds": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 65535
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "max_hp"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 65535
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "action_points"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "all_skills"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "skill",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "skill"
+            },
+            "skill": {
+              "$ref": "#/$defs/skill"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        }
+      ]
+    },
     "faction": {
       "$ref": "#/$defs/id",
       "description": "Faction id from data/engine/factions.json (towns included, since they have reputation too)."

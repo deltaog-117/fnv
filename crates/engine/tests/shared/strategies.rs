@@ -4,7 +4,7 @@ use std::num::NonZeroU32;
 
 use engine::shared::{
     Alignment, CompanionId, Comparison, Condition, Effect, EndingId, FactionId, FlagId, ItemId,
-    NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId, QuestStage, QuestState,
+    Modifier, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId, QuestStage, QuestState,
     ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
 };
 use proptest::collection::vec;
@@ -155,4 +155,18 @@ pub fn effect() -> impl Strategy<Value = Effect> {
     ]
     .boxed();
     prop_oneof![quests, standing, things, world]
+}
+
+/// Any modifier, with amounts across the whole range each field allows.
+pub fn modifier() -> impl Strategy<Value = Modifier> {
+    prop_oneof![
+        any::<u8>().prop_map(|amount| Modifier::SkillPointsPerLevel { amount }),
+        any::<i8>().prop_map(|percent| Modifier::XpPercent { percent }),
+        any::<u16>().prop_map(|pounds| Modifier::CarryWeight { pounds }),
+        any::<u16>().prop_map(|amount| Modifier::MaxHp { amount }),
+        any::<u8>().prop_map(|amount| Modifier::ActionPoints { amount }),
+        any::<i8>().prop_map(|amount| Modifier::AllSkills { amount }),
+        (any_of::<Skill>(), any::<i8>())
+            .prop_map(|(skill, amount)| Modifier::Skill { skill, amount }),
+    ]
 }

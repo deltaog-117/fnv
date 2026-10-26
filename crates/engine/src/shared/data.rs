@@ -10,6 +10,7 @@ mod faction;
 mod item;
 mod location;
 mod npc;
+mod perk;
 mod quest;
 
 pub use dialogue::{Dialogue, Response, Topic, TopicSection};
@@ -21,4 +22,5 @@ pub use item::{
 };
 pub use location::{Location, LocationSize, MapKind, Neighbor, Position};
 pub use npc::{Npc, NpcSpecial};
+pub use perk::{Perk, PerkRequirements, Trait};
 pub use quest::{Quest, QuestKind, Rule, RuleKind, RuleTargetType, Stage, WalkthroughNode};

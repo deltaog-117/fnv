@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Leveling in `crates/engine/src/character/`: skill points at every level-up, spent one at a time with `Character::spend_skill_point`; three tagged skills (+15); a perk pick every second level; up to two traits; `Character::create` for a starting character. Every skill stays between 0 and 100, and nothing is spent that was not paid out
+- `PerkBook` (the perks and traits that exist, and who may take them) and `ProgressError`, `CreationError` and `Unmet`, which say why a spend, pick or creation is refused
+- `Modifier` in `shared/modifier.rs` (skill points per level, XP percent, carry weight, hit points, action points, all skills, one skill), mirrored by `$defs/modifier` in `common.schema.json`; `Perk`, `Trait`, `PerkRequirements` and `TraitId` records; player-facing `Skill::name` and `Special::name`
+- `data/perks/modifiers.json`, merged into the perk and trait records by `normalize.py`: Educated, Swift Learner, Strong Back, Action Boy/Girl and Life Giver, plus the traits Good Natured and Skilled. A perk or trait is listed only when all of its text is modeled; the others can be taken and change nothing yet
+- `Game::with_perks`, `Game::perks`, `Game::spend_skill_point` and `Game::choose_perk`
+- Tests: `tests/character/progression.rs`, `tests/game/progress.rs`, property tests over random level-ups, real-data checks against the perk and trait files, and contract tests that fail when the Rust types and the schema drift apart; character benchmarks
 - Trudy's dialogue in the Goodsprings slice: the Cobb argument and the Ringo follow-ups, the NCR, Legion and Dam news, the robot talk, and a Speech 25 or Sneak 25 enlistment (the flag `trudy_joined_militia`) open from Sunny's agreement until Ringo's countdown, with the failed lines shown while the skill is short
 - Dialogue scenarios take an optional `special` map, so a golden scenario can raise an attribute to pass a skill check; eight Trudy scenarios
 - Ammunition in combat: a weapon with a `Magazine` (clip size, rounds per shot, reload cost, rounds carried) loses rounds with every shot, hit or miss; an empty weapon refuses the shot with `CombatError::OutOfAmmo` and rolls no dice. `Combat::reload` refills the clip from the reserve for action points, `Combat::rounds` reads the loaded and reserve counts, and `Combatant::magazine` defaults to none, so existing fighters are unaffected

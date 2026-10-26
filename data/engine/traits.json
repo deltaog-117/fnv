@@ -56,7 +56,59 @@
   "form_id": "00137afe",
   "description": "You're Good Natured at heart, more prone to solving problems with your mind than violence. You gain +5 to Barter, Medicine, Repair, Science, and Speech, but have -5 to Energy Weapons, Explosives, Guns, Melee Weapons, and Unarmed.",
   "benefits": "+5 to Barter, Medicine, Repair, Science, and Speech",
-  "penalties": "-5 to Energy Weapons, Explosives, Guns, Melee Weapons, and Unarmed"
+  "penalties": "-5 to Energy Weapons, Explosives, Guns, Melee Weapons, and Unarmed",
+  "modifiers": [
+   {
+    "type": "skill",
+    "skill": "barter",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "medicine",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "repair",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "science",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "speech",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "energy_weapons",
+    "amount": -5
+   },
+   {
+    "type": "skill",
+    "skill": "explosives",
+    "amount": -5
+   },
+   {
+    "type": "skill",
+    "skill": "guns",
+    "amount": -5
+   },
+   {
+    "type": "skill",
+    "skill": "melee_weapons",
+    "amount": -5
+   },
+   {
+    "type": "skill",
+    "skill": "unarmed",
+    "amount": -5
+   }
+  ]
  },
  {
   "id": "heavy_handed",
@@ -123,7 +175,17 @@
   "source": "Skilled (Old World Blues)",
   "description": "You're skilled, but not experienced. You gain +5 points to every skill, but you suffer -10% from experience gained from now on.",
   "benefits": "+5 to all skills",
-  "penalties": "-10% to Experience Points gained"
+  "penalties": "-10% to Experience Points gained",
+  "modifiers": [
+   {
+    "type": "all_skills",
+    "amount": 5
+   },
+   {
+    "type": "xp_percent",
+    "percent": -10
+   }
+  ]
  },
  {
   "id": "small_frame",

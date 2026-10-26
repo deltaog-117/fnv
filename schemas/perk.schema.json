@@ -75,6 +75,13 @@
     },
     "effects_text": {
       "type": "string"
+    },
+    "modifiers": {
+      "type": "array",
+      "description": "What the game applies for each rank. Hand-authored in data/perks/modifiers.json.",
+      "items": {
+        "$ref": "common.schema.json#/$defs/modifier"
+      }
     }
   }
 }

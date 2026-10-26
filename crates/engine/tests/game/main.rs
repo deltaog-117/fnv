@@ -8,6 +8,7 @@
 mod automation;
 mod battle;
 mod pack;
+mod progress;
 mod real_data;
 mod scenarios;
 mod state;

@@ -90,6 +90,11 @@ define_id!(
     "perk"
 );
 define_id!(
+    /// Identifies a character trait.
+    TraitId,
+    "trait"
+);
+define_id!(
     /// Identifies a companion.
     CompanionId,
     "companion"

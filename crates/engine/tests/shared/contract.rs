@@ -11,8 +11,8 @@ use std::path::PathBuf;
 use std::sync::LazyLock;
 
 use engine::shared::{
-    Alignment, Comparison, Condition, Dlc, Effect, NpcState, QuestState, ReputationLevel, Skill,
-    Special,
+    Alignment, Comparison, Condition, Dlc, Effect, Modifier, NpcState, QuestState, ReputationLevel,
+    Skill, Special,
 };
 use jsonschema::Validator;
 use proptest::prelude::*;
@@ -40,6 +40,7 @@ pub fn validator(def: &str) -> Validator {
 
 static CONDITION: LazyLock<Validator> = LazyLock::new(|| validator("condition"));
 static EFFECT: LazyLock<Validator> = LazyLock::new(|| validator("effect"));
+static MODIFIER: LazyLock<Validator> = LazyLock::new(|| validator("modifier"));
 
 /// Follows a `{"$ref": "#/$defs/name"}` one step.
 fn resolve(value: &Value) -> &Value {
@@ -125,6 +126,16 @@ fn effect_types_match_the_schema() {
 }
 
 #[test]
+fn modifier_types_match_the_schema() {
+    assert_eq!(schema_tags("modifier"), as_set(&Modifier::ALL_TAGS));
+    assert_eq!(
+        Modifier::ALL_TAGS.len(),
+        as_set(&Modifier::ALL_TAGS).len(),
+        "duplicate tag"
+    );
+}
+
+#[test]
 fn closed_sets_match_the_schema() {
     let defs = &SCHEMA["$defs"];
     assert_eq!(strings(&defs["dlc"]["enum"]), rust_names::<Dlc>());
@@ -154,6 +165,10 @@ fn closed_sets_match_the_schema() {
         branch_enum("condition", "quest", "state"),
         as_set(&QuestState::ALL_TAGS)
     );
+    assert_eq!(
+        branch_enum("modifier", "skill", "skill"),
+        rust_names::<Skill>()
+    );
 }
 
 proptest! {
@@ -164,6 +179,15 @@ proptest! {
         prop_assert_eq!(json["type"].as_str(), Some(condition.tag()));
         let back: Condition = serde_json::from_value(json).expect("what we wrote parses");
         prop_assert_eq!(back, condition);
+    }
+
+    #[test]
+    fn every_modifier_satisfies_the_schema_and_round_trips(modifier in strategies::modifier()) {
+        let json = serde_json::to_value(modifier).expect("modifiers serialize");
+        prop_assert!(MODIFIER.is_valid(&json), "the schema rejects {json}");
+        prop_assert_eq!(json["type"].as_str(), Some(modifier.tag()));
+        let back: Modifier = serde_json::from_value(json).expect("what we wrote parses");
+        prop_assert_eq!(back, modifier);
     }
 
     #[test]
@@ -217,6 +241,30 @@ fn both_sides_reject_the_same_invalid_effects() {
         assert!(!EFFECT.is_valid(&doc), "the schema accepts {doc}");
         assert!(
             serde_json::from_value::<Effect>(doc.clone()).is_err(),
+            "Rust accepts {doc}"
+        );
+    }
+}
+
+#[test]
+fn both_sides_reject_the_same_invalid_modifiers() {
+    let invalid = [
+        json!({"type": "skill_points_per_level", "amount": -1}),
+        json!({"type": "skill_points_per_level", "amount": 256}),
+        json!({"type": "xp_percent", "percent": 128}),
+        json!({"type": "xp_percent", "percent": -129}),
+        json!({"type": "carry_weight", "pounds": -1}),
+        json!({"type": "max_hp", "amount": 65536}),
+        json!({"type": "all_skills"}),
+        json!({"type": "skill", "skill": "guns"}),
+        json!({"type": "skill", "skill": "swimming", "amount": 5}),
+        json!({"type": "all_skills", "amount": 5, "extra": true}),
+        json!({"type": "teleport"}),
+    ];
+    for doc in invalid {
+        assert!(!MODIFIER.is_valid(&doc), "the schema accepts {doc}");
+        assert!(
+            serde_json::from_value::<Modifier>(doc.clone()).is_err(),
             "Rust accepts {doc}"
         );
     }

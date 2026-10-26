@@ -16,6 +16,7 @@ mod error;
 mod eval;
 mod ids;
 mod load;
+mod modifier;
 mod non_empty;
 mod redacted;
 mod sink;
@@ -27,18 +28,19 @@ pub use condition::{Condition, QuestCondition};
 pub use data::{
     Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, Dialogue, Encounter, Faction,
     FactionKind, Foe, InfoValue, ItemKind, Location, LocationSize, MapKind, Neighbor, Npc,
-    NpcSpecial, Position, Quest, QuestKind, ReputationModel, ReputationNote, Response, Rule,
-    RuleKind, RuleTargetType, Stage, StatEffect, Topic, TopicSection, WalkthroughNode, Weapon,
-    WeaponClass,
+    NpcSpecial, Perk, PerkRequirements, Position, Quest, QuestKind, ReputationModel,
+    ReputationNote, Response, Rule, RuleKind, RuleTargetType, Stage, StatEffect, Topic,
+    TopicSection, Trait, WalkthroughNode, Weapon, WeaponClass,
 };
 pub use effect::Effect;
 pub use error::ModelError;
 pub use eval::{apply, apply_all, evaluate};
 pub use ids::{
     AmmoFamilyId, CompanionId, DialogueId, EncounterId, EndingId, FactionId, FlagId, ItemId,
-    LocationId, NpcId, PerkId, QuestId, TopicKey,
+    LocationId, NpcId, PerkId, QuestId, TopicKey, TraitId,
 };
 pub use load::{Catalog, GameData, LoadError, Record, Scope};
+pub use modifier::Modifier;
 pub use non_empty::NonEmpty;
 pub use redacted::Redacted;
 pub use sink::{

@@ -55,10 +55,27 @@ impl From<Level> for u32 {
     }
 }
 
+/// Points shared out among the seven attributes when a character is made (five
+/// in each, plus five more to place), as the wiki states it for the base game.
+pub const START_SPECIAL_POINTS: u32 = 40;
+/// How many skills are tagged at the start.
+pub const TAG_COUNT: usize = 3;
+/// Points a tagged skill is raised by.
+pub const TAG_BONUS: i32 = 15;
+/// How many traits a new character may choose.
+pub const MAX_TRAITS: usize = 2;
+/// The skill points of every level-up before intelligence and perks, in half
+/// points (`10 + 0.5 * intelligence` is `20 + intelligence` halves), so the half
+/// points the file says are carried over stay exact.
+pub const BASE_SKILL_HALVES: u32 = 20;
+
+/// A perk every second level (`perk_rate` in `formulas.json`).
+const STANDARD_PERK_RATE: u32 = 2;
+
 /// The constants of the leveling formulas.
 ///
 /// They mirror `constants` in `formulas.json` (`xp_base`, `xp_step`,
-/// `level_cap_base`, `ap_base_cap`); a real-data test fails if
+/// `level_cap_base`, `ap_base_cap`, `perk_rate`); a real-data test fails if
 /// [`CharacterRules::standard`] drifts from the file.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct CharacterRules {
@@ -66,6 +83,7 @@ pub struct CharacterRules {
     xp_step: u32,
     level_cap: Level,
     ap_cap: u32,
+    perk_rate: u32,
 }
 
 impl CharacterRules {
@@ -99,11 +117,30 @@ impl CharacterRules {
             xp_step,
             level_cap: Level::try_new(level_cap)?,
             ap_cap,
+            perk_rate: STANDARD_PERK_RATE,
         })
     }
 
+    /// The same rules with a perk every `rate` levels.
+    ///
+    /// # Errors
+    ///
+    /// [`ModelError::OutOfRange`] when `rate` is zero, which would never grant one.
+    pub fn with_perk_rate(mut self, rate: u32) -> Result<Self, ModelError> {
+        if rate == 0 {
+            return Err(ModelError::OutOfRange {
+                what: "perk rate",
+                min: 1,
+                max: u32::MAX,
+                got: rate,
+            });
+        }
+        self.perk_rate = rate;
+        Ok(self)
+    }
+
     /// The base game's rules: 200 XP for level 2, 150 more each level, a cap of 30
-    /// and at most 95 base action points.
+    /// at most 95 base action points and a perk every second level.
     #[must_use]
     pub fn standard() -> Self {
         Self {
@@ -111,7 +148,14 @@ impl CharacterRules {
             xp_step: 150,
             level_cap: Level(30),
             ap_cap: 95,
+            perk_rate: STANDARD_PERK_RATE,
         }
+    }
+
+    /// A perk is chosen every this many levels.
+    #[must_use]
+    pub fn perk_rate(&self) -> u32 {
+        self.perk_rate
     }
 
     /// The highest level reachable.

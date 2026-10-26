@@ -28,7 +28,13 @@
    }
   },
   "requires_text": "Level 16; Agility 6",
-  "effects_text": "+15/30 Action Points"
+  "effects_text": "+15/30 Action Points",
+  "modifiers": [
+   {
+    "type": "action_points",
+    "amount": 15
+   }
+  ]
  },
  {
   "id": "adamantium_skeleton",
@@ -737,7 +743,13 @@
    }
   },
   "requires_text": "Level 4; Intelligence 4",
-  "effects_text": "+2 skill points at each level up"
+  "effects_text": "+2 skill points at each level up",
+  "modifiers": [
+   {
+    "type": "skill_points_per_level",
+    "amount": 2
+   }
+  ]
  },
  {
   "id": "elijah_s_last_words",
@@ -1559,7 +1571,13 @@
    }
   },
   "requires_text": "Level 12; Endurance 6",
-  "effects_text": "+30 HP"
+  "effects_text": "+30 HP",
+  "modifiers": [
+   {
+    "type": "max_hp",
+    "amount": 30
+   }
+  ]
  },
  {
   "id": "light_step",
@@ -2692,7 +2710,13 @@
    }
   },
   "requires_text": "Level 8; Endurance 5; Strength 5",
-  "effects_text": "Carry an additional 50 lbs. of equipment"
+  "effects_text": "Carry an additional 50 lbs. of equipment",
+  "modifiers": [
+   {
+    "type": "carry_weight",
+    "pounds": 50
+   }
+  ]
  },
  {
   "id": "sub_dermal_armor",
@@ -2743,7 +2767,13 @@
    }
   },
   "requires_text": "Level 2; Intelligence 4",
-  "effects_text": "10% bonus to Experience Points earned"
+  "effects_text": "10% bonus to Experience Points earned",
+  "modifiers": [
+   {
+    "type": "xp_percent",
+    "percent": 10
+   }
+  ]
  },
  {
   "id": "tag",

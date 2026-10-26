@@ -82,6 +82,28 @@ pub enum Skill {
     Unarmed,
 }
 
+impl Skill {
+    /// The name the player sees.
+    #[must_use]
+    pub fn name(self) -> &'static str {
+        match self {
+            Self::Barter => "Barter",
+            Self::EnergyWeapons => "Energy Weapons",
+            Self::Explosives => "Explosives",
+            Self::Guns => "Guns",
+            Self::Lockpick => "Lockpick",
+            Self::Medicine => "Medicine",
+            Self::MeleeWeapons => "Melee Weapons",
+            Self::Repair => "Repair",
+            Self::Science => "Science",
+            Self::Sneak => "Sneak",
+            Self::Speech => "Speech",
+            Self::Survival => "Survival",
+            Self::Unarmed => "Unarmed",
+        }
+    }
+}
+
 /// The seven S.P.E.C.I.A.L. attributes.
 #[derive(
     Debug,
@@ -113,6 +135,22 @@ pub enum Special {
     Agility,
     /// Luck.
     Luck,
+}
+
+impl Special {
+    /// The name the player sees.
+    #[must_use]
+    pub fn name(self) -> &'static str {
+        match self {
+            Self::Strength => "Strength",
+            Self::Perception => "Perception",
+            Self::Endurance => "Endurance",
+            Self::Charisma => "Charisma",
+            Self::Intelligence => "Intelligence",
+            Self::Agility => "Agility",
+            Self::Luck => "Luck",
+        }
+    }
 }
 
 /// A reputation standing, ordered from worst to best.

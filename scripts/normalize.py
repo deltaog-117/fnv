@@ -634,6 +634,31 @@ def perks_and_traits(raw, kind):
     return out
 
 
+def apply_modifiers(perk_recs, trait_recs, entries):
+    """Merge the hand-authored modifiers into the perk and trait records.
+
+    Each entry names one `perk` or `trait` id. Anything that does not match
+    raises, and so does naming a record twice: a typo must not silently drop an
+    authored effect.
+    """
+    tables = {"perk": {r["id"]: r for r in perk_recs}, "trait": {r["id"]: r for r in trait_recs}}
+    seen = set()
+    for entry in entries:
+        kinds = [k for k in tables if k in entry]
+        if len(kinds) != 1:
+            raise ValueError(f"modifiers: an entry names exactly one perk or trait: {entry}")
+        kind = kinds[0]
+        target = entry[kind]
+        if target not in tables[kind]:
+            raise ValueError(f"modifiers: unknown {kind} {target}")
+        if (kind, target) in seen:
+            raise ValueError(f"modifiers: {kind} {target} is listed twice")
+        if not entry.get("modifiers"):
+            raise ValueError(f"modifiers: {kind} {target} lists no modifiers")
+        seen.add((kind, target))
+        tables[kind][target]["modifiers"] = entry["modifiers"]
+
+
 def factions(raw, rep):
     ids = Ids()
     skip = {"page", "category", "games", "mentions", "formid", "leader", "leaders",
@@ -920,8 +945,11 @@ def main(argv):
     loc_recs = locations(wl("locations"), wl("map_markers"), title_id, npc_recs)
     link_names(npc_recs, quest_recs, loc_recs, faction_recs)
     dump(out / "locations.json", loc_recs)
-    dump(out / "perks.json", perks_and_traits(wl("perks"), "perk"))
-    dump(out / "traits.json", perks_and_traits(wl("traits"), "trait"))
+    perk_recs = perks_and_traits(wl("perks"), "perk")
+    trait_recs = perks_and_traits(wl("traits"), "trait")
+    apply_modifiers(perk_recs, trait_recs, json.load(open(data / "perks" / "modifiers.json")))
+    dump(out / "perks.json", perk_recs)
+    dump(out / "traits.json", trait_recs)
     dump(out / "factions.json", faction_recs)
     (out / "reputation.json").write_text(json.dumps(
         reputation_rules(rep_raw, faction_recs), indent=1, ensure_ascii=False) + "\n")

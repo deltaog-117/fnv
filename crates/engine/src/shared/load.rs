@@ -15,10 +15,13 @@ use serde_json::Value;
 use thiserror::Error;
 
 use super::data::{
-    Ammo, Armor, Consumable, Dialogue, Encounter, Faction, Location, Npc, Quest, Weapon,
+    Ammo, Armor, Consumable, Dialogue, Encounter, Faction, Location, Npc, Perk, Quest, Trait,
+    Weapon,
 };
 use super::error::ModelError;
-use super::ids::{DialogueId, EncounterId, FactionId, ItemId, LocationId, NpcId, QuestId};
+use super::ids::{
+    DialogueId, EncounterId, FactionId, ItemId, LocationId, NpcId, PerkId, QuestId, TraitId,
+};
 
 /// A record that carries its own unique id.
 pub trait Record {
@@ -52,6 +55,8 @@ impl_record!(
     Faction => FactionId,
     Dialogue => DialogueId,
     Encounter => EncounterId,
+    Perk => PerkId,
+    Trait => TraitId,
 );
 
 /// Why the data could not be loaded.
@@ -229,6 +234,10 @@ pub struct GameData {
     pub dialogue: Catalog<Dialogue>,
     /// Every fight the player can start.
     pub encounters: Catalog<Encounter>,
+    /// Every perk.
+    pub perks: Catalog<Perk>,
+    /// Every trait.
+    pub traits: Catalog<Trait>,
 }
 
 impl GameData {
@@ -284,6 +293,8 @@ impl GameData {
             ammo: read_catalog(dir, "ammo.json")?,
             consumables: read_catalog(dir, "consumables.json")?,
             encounters,
+            perks: read_catalog(dir, "perks.json")?,
+            traits: read_catalog(dir, "traits.json")?,
             dialogue: Catalog::from_records(&dir.join("dialogue"), dialogue)?,
             locations,
             quests,

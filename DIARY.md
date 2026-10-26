@@ -20,6 +20,7 @@
 | 2026-10-25 | Quest engine | `QuestBook` definitions + `QuestLog` state machine (COA A); rules fire in `game` | ✅ Confirmed |
 | 2026-10-25 | Game state | Concrete `Game` holding the quest log; unbuilt features refuse effects (COA A) | ✅ Confirmed |
 | 2026-10-25 | Character and inventory | Both in one step, minimal; `Game` owns them and keeps the view traits as the only contract (COA A) | ✅ Confirmed |
+| 2026-10-26 | Leveling, perks and traits | Perk and trait effects are typed `Modifier` data summed once when taken; only fully modeled perks are listed | ✅ Confirmed |
 
 ---
 
@@ -1145,6 +1146,43 @@ Authoring the rest of the Goodsprings dialogue (ROADMAP "Goodsprings dialogue co
 | Date | Update | Author |
 |------|--------|--------|
 | 2026-10-25 | Initial entry | deltaog-117 |
+
+### Leveling, Perks and Traits: Effects as Typed Modifier Data
+
+**Date:** 2026-10-26
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The character had S.P.E.C.I.A.L., XP and a derived level, but nothing to do with a level once earned. Several Goodsprings skill checks (Trudy's Speech 25 and Sneak 25) could not be passed at the default 5s. The wiki records what a perk or trait does only as prose.
+
+---
+
+#### Decision
+
+> Each level-up pays out skill points (`10 + 0.5 * intelligence`, half points carried over) and, every second level, a perk pick. A skill is its starting value plus points spent, 15 if tagged, plus what perks and traits add, always between 0 and 100. The engine refuses a spend or pick that was not paid out, with an error that names the reason.
+>
+> **Effects as data:** a perk or trait changes a number through typed `modifiers` (skill points per level, XP percent, carry weight, hit points, action points, one skill or all skills), hand-authored in `data/perks/modifiers.json` and merged by `normalize.py`. The modifiers are summed once when a perk or trait is taken, so a derived number reads one field and never walks the perks. The schema and the Rust type are checked against each other by contract tests.
+>
+> **Only fully modeled perks are listed:** five perks and two traits so far. The rest can be taken and change nothing, and the picker says so, because a half-modeled perk would look like a working one.
+>
+> **Trade-offs accepted:** perks that change combat numbers wait for those numbers to exist. The player cannot reach any of this yet; the level-up and creation screens are the next step, and `Game` gets its `PerkBook` through `with_perks`, which only the tests call.
+
+---
+
+#### References
+
+- `crates/engine/src/character/`, `crates/engine/src/shared/modifier.rs`, `data/perks/`, `crates/engine/tests/character/progression.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-26 | Initial entry | deltaog-117 |
 
 ---
 

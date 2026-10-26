@@ -1,0 +1,115 @@
+[
+ {
+  "perk": "educated",
+  "modifiers": [
+   {
+    "type": "skill_points_per_level",
+    "amount": 2
+   }
+  ]
+ },
+ {
+  "perk": "swift_learner",
+  "modifiers": [
+   {
+    "type": "xp_percent",
+    "percent": 10
+   }
+  ]
+ },
+ {
+  "perk": "strong_back",
+  "modifiers": [
+   {
+    "type": "carry_weight",
+    "pounds": 50
+   }
+  ]
+ },
+ {
+  "perk": "action_boy_action_girl",
+  "modifiers": [
+   {
+    "type": "action_points",
+    "amount": 15
+   }
+  ]
+ },
+ {
+  "perk": "life_giver",
+  "modifiers": [
+   {
+    "type": "max_hp",
+    "amount": 30
+   }
+  ]
+ },
+ {
+  "trait": "good_natured",
+  "modifiers": [
+   {
+    "type": "skill",
+    "skill": "barter",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "medicine",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "repair",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "science",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "speech",
+    "amount": 5
+   },
+   {
+    "type": "skill",
+    "skill": "energy_weapons",
+    "amount": -5
+   },
+   {
+    "type": "skill",
+    "skill": "explosives",
+    "amount": -5
+   },
+   {
+    "type": "skill",
+    "skill": "guns",
+    "amount": -5
+   },
+   {
+    "type": "skill",
+    "skill": "melee_weapons",
+    "amount": -5
+   },
+   {
+    "type": "skill",
+    "skill": "unarmed",
+    "amount": -5
+   }
+  ]
+ },
+ {
+  "trait": "skilled",
+  "modifiers": [
+   {
+    "type": "all_skills",
+    "amount": 5
+   },
+   {
+    "type": "xp_percent",
+    "percent": -10
+   }
+  ]
+ }
+]
