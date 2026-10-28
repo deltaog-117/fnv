@@ -1265,6 +1265,50 @@ Chet is the next Goodsprings graph and owns the optional stage 30 of the Ghost T
 |------|--------|--------|
 | 2026-10-26 | Initial entry | deltaog-117 |
 
+
+---
+
+### Character Creation: A Panel Screen Before the First Scene
+
+**Date:** 2026-10-28
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+`Character::create` existed, but the game always started with the default character (a 5 in everything, nothing tagged, no trait). Three layouts were compared: a one-page form (A), a four-step wizard (B), and presets with an optional customize screen (C). The player asked for a Fallout-style menu in which each part is its own panel that can be opened and changed, with a button to go on.
+
+---
+
+#### Decision
+
+> **COA A, with panels.** One screen holds four panels: S.P.E.C.I.A.L., Skills (tag three), Traits (up to two) and a Done button, plus a Derived box with hit points, action points and carry weight. Left/Right (or Tab) moves between panels, Enter opens one, Esc closes it. Inside S.P.E.C.I.A.L. the arrows lower and raise a value; inside Skills and Traits, Enter toggles the row. The screen is drawn over the whole terminal, outside the persistent layout, because three panels do not fit in the scene region at the smallest size.
+>
+> **Invalid choices are not reachable:** the points left are derived from the spread (40 minus its total), a raise is refused at zero points left, tags stop at three and traits at two. The Done button stays locked until every point is spent and three skills are tagged, and says what is missing. A property test presses random keys and checks that the limits hold and that whenever the screen yields a character the engine accepted it.
+>
+> **Where it starts:** `App::with_creation` puts the screen first and `main` uses it; `App::new` still starts in the scene, so the existing tests are unchanged. Beginning swaps the character into the game that `App::new` built; the starting armor and the opening quest are kept.
+>
+> **Derived numbers:** they are computed from the spread and the tag bonus alone. Traits that change a number are applied by `Character::create` only, so the screen says "Your traits adjust these numbers once you begin" instead of showing a figure that could be wrong. A trait the game does not model yet says so in its description box.
+>
+> **Input:** `Command` gained `Left` and `Right` (arrows, `h`/`l`, Tab and Shift-Tab). There is no mouse support yet, so "click" is Enter.
+>
+> **Trade-offs accepted:** no name, age or sex (the game does not model them); no presets; no way to return to creation once the game begins; the skill list scrolls at the smallest terminal.
+
+---
+
+#### References
+
+- `crates/tui/src/character/creation.rs`, `crates/tui/src/shared/input.rs`, `crates/tui/src/app.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-28 | Initial entry | deltaog-117 |
+
 ---
 
 ## 🧠 Usage Guidelines

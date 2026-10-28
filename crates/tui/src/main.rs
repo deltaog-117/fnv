@@ -45,7 +45,7 @@ fn run() -> anyhow::Result<()> {
     let place = LocationId::try_new(START_PLACE).context("starting place id")?;
     let data = GameData::load(&dir, &Scope::Around(place.clone()))
         .with_context(|| format!("loading the game data from {}", dir.display()))?;
-    let mut app = App::new(&data, &place)?;
+    let mut app = App::new(&data, &place)?.with_creation();
 
     // `init` also installs a panic hook that restores the terminal, so a crash does
     // not leave the player's shell in raw mode.

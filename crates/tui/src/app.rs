@@ -22,7 +22,7 @@ use ratatui::layout::{Alignment, Rect};
 use ratatui::text::Line;
 use ratatui::widgets::{Block, Borders, Paragraph};
 
-use crate::character::{self, LevelUp};
+use crate::character::{self, Creation, LevelUp};
 use crate::combat::{self, Fight};
 use crate::dialogue::{self, Talk};
 use crate::exploration::{self, Exploration, Person};
@@ -44,6 +44,8 @@ const START_WEAPON: &str = "9mm_pistol";
 const START_ARMOR: &str = "leather_armor";
 
 enum Screen {
+    /// Making the character, before the first scene.
+    Creating(Creation),
     Exploring(Exploration),
     Talking(Talk),
     Fighting(Fight),
@@ -151,6 +153,14 @@ impl App {
         Ok(app)
     }
 
+    /// The same app, starting at the character creation screen. The game is the
+    /// one built by [`App::new`]; making the character swaps in the new one.
+    #[must_use]
+    pub fn with_creation(mut self) -> Self {
+        self.screen = Screen::Creating(Creation::new(self.game.perks()));
+        self
+    }
+
     /// False once the player has quit.
     #[must_use]
     pub fn is_running(&self) -> bool {
@@ -164,6 +174,13 @@ impl App {
             return;
         }
         match &mut self.screen {
+            Screen::Creating(creation) => {
+                if let Some(character) = creation.update(command, self.game.perks()) {
+                    self.game = self.game.clone().with_character(character);
+                    self.log.push(Entry::Note("Your story begins.".to_owned()));
+                    self.screen = self.exploring();
+                }
+            }
             Screen::Exploring(scene) => match scene.update(command) {
                 exploration::Next::Stay => {}
                 exploration::Next::Quit => self.running = false,
@@ -276,6 +293,10 @@ impl App {
             render_too_small(frame, area);
             return;
         };
+        if let Screen::Creating(creation) = &self.screen {
+            creation.render(frame, area);
+            return;
+        }
         let active = self.game.quests().active().count();
         frame.render_widget(
             Paragraph::new(format!(
@@ -290,6 +311,7 @@ impl App {
             regions.status,
         );
         let keys = match &self.screen {
+            Screen::Creating(_) => "",
             Screen::Exploring(scene) => {
                 scene.render(frame, regions.scene);
                 "Up/Down move | Enter choose | 1-9 pick | q quit"
@@ -417,6 +439,39 @@ mod tests {
         ] {
             assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
         }
+    }
+
+    #[test]
+    fn a_new_game_opens_on_character_creation_and_beginning_swaps_in_the_character() {
+        use engine::shared::{CharacterView, Skill, Special};
+
+        let mut app = app().with_creation();
+        let text = screen(&app, MIN_WIDTH, MIN_HEIGHT);
+        assert!(text.contains("Create your character"), "{text}");
+        assert!(text.contains("Begin (locked)"), "{text}");
+        // Beginning too early is refused and the screen stays.
+        app.update(Command::Pick(3));
+        assert!(matches!(app.screen, Screen::Creating(_)));
+        // Five points into Strength, then tag the first three skills.
+        app.update(Command::Pick(0));
+        for _ in 0..5 {
+            app.update(Command::Right);
+        }
+        app.update(Command::Back);
+        app.update(Command::Pick(1));
+        for _ in 0..3 {
+            app.update(Command::Select);
+            app.update(Command::Down);
+        }
+        app.update(Command::Back);
+        app.update(Command::Pick(3));
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+        let character = app.game.character();
+        assert_eq!(character.special(Special::Strength).get(), 10);
+        assert!(character.is_tagged(Skill::Barter));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Your story begins."), "{text}");
+        assert_eq!(app.game.character().carry_weight(), 250);
     }
 
     #[test]

@@ -9,6 +9,10 @@ pub enum Command {
     Up,
     /// Move the selection down.
     Down,
+    /// Move left: to the previous panel, or lower a value.
+    Left,
+    /// Move right: to the next panel, or raise a value.
+    Right,
     /// Choose the selected entry.
     Select,
     /// Go back, or leave the current screen.
@@ -32,6 +36,8 @@ pub fn command(key: KeyEvent) -> Option<Command> {
         KeyCode::Char('c') if key.modifiers.contains(KeyModifiers::CONTROL) => Some(Command::Quit),
         KeyCode::Up | KeyCode::Char('k') => Some(Command::Up),
         KeyCode::Down | KeyCode::Char('j') => Some(Command::Down),
+        KeyCode::Left | KeyCode::BackTab | KeyCode::Char('h') => Some(Command::Left),
+        KeyCode::Right | KeyCode::Tab | KeyCode::Char('l') => Some(Command::Right),
         KeyCode::Enter | KeyCode::Char(' ') => Some(Command::Select),
         KeyCode::Esc => Some(Command::Back),
         KeyCode::Char('q') => Some(Command::Quit),
@@ -55,6 +61,14 @@ mod tests {
     fn arrows_and_vi_keys_move_the_selection() {
         assert_eq!(command(press(KeyCode::Up)), Some(Command::Up));
         assert_eq!(command(press(KeyCode::Char('j'))), Some(Command::Down));
+    }
+
+    #[test]
+    fn left_and_right_keys_and_tab_move_sideways() {
+        assert_eq!(command(press(KeyCode::Left)), Some(Command::Left));
+        assert_eq!(command(press(KeyCode::Char('l'))), Some(Command::Right));
+        assert_eq!(command(press(KeyCode::Tab)), Some(Command::Right));
+        assert_eq!(command(press(KeyCode::BackTab)), Some(Command::Left));
     }
 
     #[test]

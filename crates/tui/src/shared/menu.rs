@@ -136,7 +136,7 @@ impl Menu {
             Command::Down => self.down(),
             Command::Select => return self.selected(),
             Command::Pick(index) => return self.pick(index),
-            Command::Back | Command::Quit => {}
+            Command::Left | Command::Right | Command::Back | Command::Quit => {}
         }
         None
     }
