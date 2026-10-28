@@ -371,6 +371,32 @@
           "type": "object",
           "required": [
             "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "health"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "op": {
+              "enum": [
+                "at_least",
+                "at_most",
+                "is"
+              ],
+              "default": "at_least"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
             "perk"
           ],
           "additionalProperties": false,
@@ -727,6 +753,18 @@
             },
             "ending": {
               "$ref": "#/$defs/id"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "heal"
             }
           }
         }

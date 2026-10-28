@@ -212,6 +212,10 @@ fn both_sides_reject_the_same_invalid_conditions() {
         json!({"type": "quest", "quest": "Bad Id", "state": "active"}),
         json!({"type": "skill", "skill": "guns", "min": 101}),
         json!({"type": "special", "stat": "luck", "min": 0}),
+        json!({"type": "health", "percent": 101}),
+        json!({"type": "health", "percent": -1}),
+        json!({"type": "health"}),
+        json!({"type": "health", "percent": 50, "op": "below"}),
         json!({"type": "has_item", "item": "stimpak", "count": 0}),
         json!({"type": "all", "of": []}),
         json!({"type": "not"}),
@@ -234,6 +238,7 @@ fn both_sides_reject_the_same_invalid_effects() {
         json!({"type": "set_stage", "quest": "q", "stage": -1}),
         json!({"type": "give_item", "item": "stimpak", "count": 0}),
         json!({"type": "karma"}),
+        json!({"type": "heal", "amount": 5}),
         json!({"type": "start_quest", "quest": "q", "extra": 1}),
         json!({"type": "teleport"}),
     ];
@@ -278,6 +283,16 @@ fn omitted_optional_fields_take_the_documented_defaults() {
     assert!(matches!(
         serde_json::from_value(reputation),
         Ok(Condition::Reputation {
+            op: Comparison::AtLeast,
+            ..
+        })
+    ));
+
+    let health = json!({"type": "health", "percent": 50});
+    assert!(CONDITION.is_valid(&health));
+    assert!(matches!(
+        serde_json::from_value(health),
+        Ok(Condition::Health {
             op: Comparison::AtLeast,
             ..
         })

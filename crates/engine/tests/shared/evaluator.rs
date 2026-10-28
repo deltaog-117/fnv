@@ -8,9 +8,9 @@
 use std::num::NonZeroU32;
 
 use engine::shared::{
-    Comparison, Condition, Effect, EffectError, EmptyWorld, EndingId, FactionId, FlagId, ItemId,
-    NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId, QuestStage, QuestState,
-    ReputationLevel, Skill, SkillLevel, apply, apply_all, evaluate,
+    Comparison, Condition, Effect, EffectError, EmptyWorld, EndingId, FactionId, FlagId,
+    HealthPercent, ItemId, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId, QuestStage,
+    QuestState, ReputationLevel, Skill, SkillLevel, apply, apply_all, evaluate,
 };
 use proptest::collection::vec;
 use proptest::prelude::*;
@@ -63,6 +63,41 @@ fn not(of: Condition) -> Condition {
     Condition::Not { of: Box::new(of) }
 }
 
+fn health(percent: u32, op: Comparison) -> Condition {
+    Condition::Health {
+        percent: HealthPercent::try_new(percent).expect("in range"),
+        op,
+    }
+}
+
+#[test]
+fn health_compares_by_percent_and_healing_restores_it() {
+    let mut state = MemoryState::default().with_health(40);
+    assert!(evaluate(&health(50, Comparison::AtMost), &state));
+    assert!(evaluate(&health(40, Comparison::Is), &state));
+    assert!(evaluate(&health(40, Comparison::AtLeast), &state));
+    assert!(!evaluate(&health(41, Comparison::AtLeast), &state));
+    assert!(!evaluate(&health(100, Comparison::Is), &state));
+
+    apply(&Effect::Heal {}, &mut state).expect("healing is always allowed");
+    assert!(evaluate(&health(100, Comparison::Is), &state));
+    apply(&Effect::Heal {}, &mut state).expect("healing a healthy player is not an error");
+    assert!(evaluate(&health(100, Comparison::Is), &state));
+}
+
+#[test]
+fn a_heal_in_a_batch_follows_the_effects_before_it() {
+    let mut state = MemoryState::default().with_health(10);
+    let caps = Effect::Caps { amount: -50.0 };
+    let batch = [caps, Effect::Heal {}];
+    let error = apply_all(&batch, &mut state).expect_err("no caps to spend");
+    assert_eq!(error.index, 0);
+    assert!(
+        evaluate(&health(10, Comparison::Is), &state),
+        "a refused payment must leave the player as hurt as before"
+    );
+}
+
 #[test]
 fn an_empty_world_has_the_documented_defaults() {
     let world = EmptyWorld;
@@ -88,6 +123,7 @@ fn an_empty_world_has_the_documented_defaults() {
         Condition::Karma {
             alignment: engine::shared::Alignment::Neutral,
         },
+        health(100, Comparison::Is),
     ];
     for condition in &yes {
         assert!(evaluate(condition, &world), "{condition:?}");
@@ -422,6 +458,29 @@ proptest! {
         if evaluate(&needs(high), &view) {
             prop_assert!(evaluate(&needs(low), &view));
         }
+    }
+
+    #[test]
+    fn an_exact_health_is_both_at_least_and_at_most(seed: u64, percent in 0u32..=100) {
+        let view = HashedView(seed);
+        let check = |op| health(percent, op);
+        prop_assert_eq!(
+            evaluate(&check(Comparison::Is), &view),
+            evaluate(&check(Comparison::AtLeast), &view) && evaluate(&check(Comparison::AtMost), &view)
+        );
+    }
+
+    #[test]
+    fn health_is_bounded_monotonic_and_full_only_when_unhurt(
+        max in 1u32..100_000,
+        low in 0u32..100_000,
+        high in 0u32..100_000,
+    ) {
+        let (low, high) = (low.min(high), low.max(high));
+        let (a, b) = (HealthPercent::of(low, max), HealthPercent::of(high, max));
+        prop_assert!(a <= b);
+        prop_assert!(b.get() <= 100);
+        prop_assert_eq!(b == HealthPercent::FULL, high >= max);
     }
 
     #[test]

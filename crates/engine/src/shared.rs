@@ -23,7 +23,7 @@ mod sink;
 mod view;
 mod vocabulary;
 
-pub use bounds::{SkillLevel, SpecialLevel};
+pub use bounds::{HealthPercent, SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
 pub use data::{
     Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, Dialogue, Encounter, Faction,

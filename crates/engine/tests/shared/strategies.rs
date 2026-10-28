@@ -3,9 +3,9 @@
 use std::num::NonZeroU32;
 
 use engine::shared::{
-    Alignment, CompanionId, Comparison, Condition, Effect, EndingId, FactionId, FlagId, ItemId,
-    Modifier, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId, QuestStage, QuestState,
-    ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
+    Alignment, CompanionId, Comparison, Condition, Effect, EndingId, FactionId, FlagId,
+    HealthPercent, ItemId, Modifier, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId,
+    QuestStage, QuestState, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
 };
 use proptest::collection::vec;
 use proptest::prelude::*;
@@ -81,6 +81,10 @@ fn leaf_condition() -> impl Strategy<Value = Condition> {
             min: SpecialLevel::try_new(min).expect("range is valid"),
         }),
         perk_id().prop_map(|perk| Condition::Perk { perk }),
+        (0u32..=100, any_of::<Comparison>()).prop_map(|(percent, op)| Condition::Health {
+            percent: HealthPercent::try_new(percent).expect("range is valid"),
+            op,
+        }),
     ]
     .boxed();
     let second = prop_oneof![
@@ -122,6 +126,7 @@ pub fn effect() -> impl Strategy<Value = Effect> {
         quest_id().prop_map(|quest| Effect::FailQuest { quest }),
         quest_id().prop_map(|quest| Effect::BlockQuest { quest }),
         (quest_id(), stage()).prop_map(|(quest, stage)| Effect::SetStage { quest, stage }),
+        Just(Effect::Heal {}),
     ]
     .boxed();
     let standing = prop_oneof![

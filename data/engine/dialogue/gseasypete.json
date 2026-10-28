@@ -109,7 +109,12 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSEasyPeteTopic000",
-   "prompt": "Why are you called Easy Pete?"
+   "prompt": "Why are you called Easy Pete?",
+   "next": [
+    "vfreeformgoodspringsgseasypetetopic005",
+    "vfreeformgoodspringsgseasypetetopic006",
+    "vfreeformgoodspringsgseasypetetopic007"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgseasypetetopic001",
@@ -202,7 +207,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSEasyPeteTopic006",
-   "prompt": "You were a prospector - like digging for gold and silver?"
+   "prompt": "You were a prospector - like digging for gold and silver?",
+   "next": [
+    "vfreeformgoodspringsgseasypetetopic003"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgseasypetetopic007",
@@ -220,7 +228,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSEasyPeteTopic007",
-   "prompt": "What's wrong with the NCR?"
+   "prompt": "What's wrong with the NCR?",
+   "next": [
+    "vfreeformgoodspringsgseasypetetopic008"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgseasypetetopic008",
@@ -248,7 +259,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSEasyPeteTopic008",
-   "prompt": "Tell me about the Legion."
+   "prompt": "Tell me about the Legion.",
+   "next": [
+    "vfreeformgoodspringsgseasypetetopic009"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgseasypetetopic009",
@@ -279,7 +293,39 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsEasyPeteTopic000",
-   "prompt": "I hear you've got dynamite. It would help us beat the powder gangers."
+   "prompt": "I hear you've got dynamite. It would help us beat the powder gangers.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 10
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "easy_pete_joined_militia",
+     "value": false
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgoodspringseasypetetopic001",
+    "vfreeformgoodspringsgoodspringseasypetetopic002",
+    "vfreeformgoodspringsgoodspringseasypetetopic006"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringseasypetetopic001",
@@ -292,7 +338,18 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsEasyPeteTopic001",
-   "prompt": "I'm familiar with the care and handling of explosives, dynamite included."
+   "prompt": "I'm familiar with the care and handling of explosives, dynamite included.",
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "easy_pete_joined_militia"
+    }
+   ],
+   "check": {
+    "type": "skill",
+    "skill": "explosives",
+    "min": 25
+   }
   },
   {
    "key": "vfreeformgoodspringsgoodspringseasypetetopic002",
@@ -305,7 +362,17 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsEasyPeteTopic002",
-   "prompt": "How hard can it be? Just light them and throw."
+   "prompt": "How hard can it be? Just light them and throw.",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "skill",
+      "skill": "explosives",
+      "min": 25
+     }
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringseasypetetopic003",
@@ -318,7 +385,20 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsEasyPeteTopic003",
-   "prompt": "What do you know about Joe Cobb?"
+   "prompt": "What do you know about Joe Cobb?",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "completed"
+     }
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgoodspringseasypetetopic005"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringseasypetetopic004",
@@ -385,7 +465,8 @@
     }
    ],
    "topic": "GOODBYE",
-   "prompt": "Goodbye."
+   "prompt": "Goodbye.",
+   "ends": true
   },
   {
    "key": "acceptyield",
@@ -975,6 +1056,15 @@
    "topic": "ObserveCombat",
    "prompt": "ObserveCombat"
   }
+ ],
+ "start": [
+  "vfreeformgoodspringsgseasypetetopic000",
+  "vfreeformgoodspringsgseasypetetopic001",
+  "vfreeformgoodspringsgseasypetetopic002",
+  "vfreeformgoodspringsgseasypetetopic004",
+  "vfreeformgoodspringsgoodspringseasypetetopic000",
+  "vfreeformgoodspringsgoodspringseasypetetopic003",
+  "goodbye"
  ],
  "speaker": "easy_pete"
 }

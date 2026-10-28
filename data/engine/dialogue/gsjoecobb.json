@@ -169,7 +169,28 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic000",
-   "prompt": "What say I help you take over this town?"
+   "prompt": "What say I help you take over this town?",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "not_started"
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "npc",
+      "npc": "ringo",
+      "state": "dead"
+     }
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgsjoecobbtopic015",
+    "vfreeformgoodspringsgsjoecobbtopic016",
+    "vfreeformgoodspringsgsjoecobbtopic024",
+    "vfreeformgoodspringsgsjoecobbtopic017"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic001",
@@ -182,7 +203,18 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic001",
-   "prompt": "Deal."
+   "prompt": "Deal.",
+   "effects": [
+    {
+     "type": "start_quest",
+     "quest": "run_goodsprings_run"
+    },
+    {
+     "type": "set_stage",
+     "quest": "run_goodsprings_run",
+     "stage": 10
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic002",
@@ -213,7 +245,11 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic003",
-   "prompt": "You can't find Ringo yourself?"
+   "prompt": "You can't find Ringo yourself?",
+   "next": [
+    "vfreeformgoodspringsgsjoecobbtopic001",
+    "vfreeformgoodspringsgsjoecobbtopic002"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic005",
@@ -226,7 +262,40 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic005",
-   "prompt": "Here - the spare medical supplies from Doc Mitchell."
+   "prompt": "Here - the spare medical supplies from Doc Mitchell.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "stage_at_least",
+     "stage": 20
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "run_goodsprings_run",
+      "state": "stage_at_least",
+      "stage": 45
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "doc_mitchell_gave_cobb_supplies"
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_stage",
+     "quest": "run_goodsprings_run",
+     "stage": 45
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic007",
@@ -239,7 +308,12 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic007",
-   "prompt": "What's been going on in the rest of the wasteland?"
+   "prompt": "What's been going on in the rest of the wasteland?",
+   "next": [
+    "vfreeformgoodspringsgsjoecobbtopic008",
+    "vfreeformgoodspringsgsjoecobbtopic010",
+    "vfreeformgoodspringsgsjoecobbtopic018"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic008",
@@ -301,7 +375,10 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic011",
-   "prompt": "This area is your territory?"
+   "prompt": "This area is your territory?",
+   "next": [
+    "vfreeformgoodspringsgsjoecobbtopic012"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic012",
@@ -314,7 +391,12 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic012",
-   "prompt": "What were you in prison for?"
+   "prompt": "What were you in prison for?",
+   "next": [
+    "vfreeformgoodspringsgsjoecobbtopic013",
+    "vfreeformgoodspringsgsjoecobbtopic013_2",
+    "vfreeformgoodspringsgsjoecobbtopic014"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic013",
@@ -328,7 +410,12 @@
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic013",
    "prompt": "I just need to know if I should watch my step around you.",
-   "label": "< Speech 20 >"
+   "label": "< Speech 20 >",
+   "check": {
+    "type": "skill",
+    "skill": "speech",
+    "min": 20
+   }
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic013_2",
@@ -342,7 +429,17 @@
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic013",
    "prompt": "I was just curious.",
-   "label": "< Speech 20 >"
+   "label": "< Speech 20 >",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "skill",
+      "skill": "speech",
+      "min": 20
+     }
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic014",
@@ -373,7 +470,23 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic015",
-   "prompt": "If you run the town, they'll have to work for you. Food, water, and money will be yours."
+   "prompt": "If you run the town, they'll have to work for you. Food, water, and money will be yours.",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 5
+     }
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgsjoecobbtopic001",
+    "vfreeformgoodspringsgsjoecobbtopic002",
+    "vfreeformgoodspringsgsjoecobbtopic003"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic016",
@@ -391,7 +504,23 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic016",
-   "prompt": "Free food, I guess."
+   "prompt": "Free food, I guess.",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 5
+     }
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgsjoecobbtopic001",
+    "vfreeformgoodspringsgsjoecobbtopic002",
+    "vfreeformgoodspringsgsjoecobbtopic003"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic017",
@@ -430,7 +559,30 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic019",
-   "prompt": "I already took care of Ringo."
+   "prompt": "I already took care of Ringo.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "not_started"
+    },
+    {
+     "type": "npc",
+     "npc": "ringo",
+     "state": "dead"
+    }
+   ],
+   "effects": [
+    {
+     "type": "start_quest",
+     "quest": "run_goodsprings_run"
+    },
+    {
+     "type": "set_stage",
+     "quest": "run_goodsprings_run",
+     "stage": 15
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic022",
@@ -443,7 +595,36 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic022",
-   "prompt": "I've done all I can. Let's take over Goodsprings."
+   "prompt": "I've done all I can. Let's take over Goodsprings.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "stage_at_least",
+     "stage": 20
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "run_goodsprings_run",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_stage",
+     "quest": "run_goodsprings_run",
+     "stage": 60
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic023",
@@ -466,7 +647,36 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic023",
-   "prompt": "Ringo's dead. What now?"
+   "prompt": "Ringo's dead. What now?",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "stage_at_least",
+     "stage": 15
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "run_goodsprings_run",
+      "state": "stage_at_least",
+      "stage": 20
+     }
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_stage",
+     "quest": "run_goodsprings_run",
+     "stage": 20
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic024",
@@ -484,7 +694,23 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic024",
-   "prompt": "It's easy pickings. Why, you got somewhere else to be?"
+   "prompt": "It's easy pickings. Why, you got somewhere else to be?",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 5
+     }
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsgsjoecobbtopic001",
+    "vfreeformgoodspringsgsjoecobbtopic002",
+    "vfreeformgoodspringsgsjoecobbtopic003"
+   ]
   },
   {
    "key": "vfreeformgoodspringsgsjoecobbtopic025",
@@ -502,7 +728,14 @@
     }
    ],
    "topic": "VFreeformGoodspringsGSJoeCobbTopic025",
-   "prompt": "So what's next for you guys?"
+   "prompt": "So what's next for you guys?",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "completed"
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsgoodspringsjoecobbtopic001",
@@ -520,7 +753,18 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsJoeCobbTopic001",
-   "prompt": "What was that you said about Ringo?"
+   "prompt": "What was that you said about Ringo?",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "run_goodsprings_run",
+      "state": "stage_at_least",
+      "stage": 15
+     }
+    }
+   ]
   },
   {
    "key": "goodbye",
@@ -533,7 +777,8 @@
     }
    ],
    "topic": "GOODBYE",
-   "prompt": "Goodbye."
+   "prompt": "Goodbye.",
+   "ends": true
   },
   {
    "key": "gsjoecobbintro",
@@ -1126,6 +1371,18 @@
    "topic": "ObserveCombat",
    "prompt": "ObserveCombat"
   }
+ ],
+ "start": [
+  "vfreeformgoodspringsgsjoecobbtopic000",
+  "vfreeformgoodspringsgsjoecobbtopic019",
+  "vfreeformgoodspringsgsjoecobbtopic023",
+  "vfreeformgoodspringsgsjoecobbtopic005",
+  "vfreeformgoodspringsgsjoecobbtopic022",
+  "vfreeformgoodspringsgoodspringsjoecobbtopic001",
+  "vfreeformgoodspringsgsjoecobbtopic007",
+  "vfreeformgoodspringsgsjoecobbtopic011",
+  "vfreeformgoodspringsgsjoecobbtopic025",
+  "goodbye"
  ],
  "speaker": "joe_cobb"
 }

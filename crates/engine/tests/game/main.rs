@@ -7,6 +7,7 @@
 
 mod automation;
 mod battle;
+mod health;
 mod pack;
 mod progress;
 mod real_data;

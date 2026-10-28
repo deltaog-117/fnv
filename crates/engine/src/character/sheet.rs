@@ -412,4 +412,10 @@ impl CharacterSink for Character {
         self.grant_xp(earned);
         Ok(())
     }
+
+    // The sheet records no wounds (the game keeps them between fights), so there is
+    // nothing here to restore and the answer is the same as for a healthy player.
+    fn restore_health(&mut self) -> Result<(), EffectError> {
+        Ok(())
+    }
 }

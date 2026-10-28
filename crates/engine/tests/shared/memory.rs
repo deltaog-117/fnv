@@ -12,9 +12,10 @@ use std::num::NonZeroU32;
 
 use engine::shared::{
     Alignment, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView,
-    EffectError, EndingId, FactionId, FlagId, InventorySink, InventoryView, ItemId, NpcId,
-    NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView, ReputationLevel,
-    Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView, WorldSink, WorldView,
+    EffectError, EndingId, FactionId, FlagId, HealthPercent, InventorySink, InventoryView, ItemId,
+    NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
+    ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView,
+    WorldSink, WorldView,
 };
 use strum::IntoEnumIterator;
 
@@ -39,6 +40,8 @@ pub struct MemoryState {
     skills: HashMap<Skill, SkillLevel>,
     specials: HashMap<Special, SpecialLevel>,
     perks: HashSet<PerkId>,
+    // None is full health: a derived Default must not start the player at zero.
+    health: Option<HealthPercent>,
     companions: HashSet<CompanionId>,
     flags: HashSet<FlagId>,
     npcs: HashMap<NpcId, Npc>,
@@ -57,6 +60,12 @@ impl MemoryState {
     pub fn with_skill(mut self, skill: Skill, level: u32) -> Self {
         self.skills
             .insert(skill, SkillLevel::try_new(level).expect("level in range"));
+        self
+    }
+
+    #[must_use]
+    pub fn with_health(mut self, percent: u32) -> Self {
+        self.health = Some(HealthPercent::try_new(percent).expect("percent in range"));
         self
     }
 
@@ -145,6 +154,10 @@ impl CharacterView for MemoryState {
 
     fn has_perk(&self, perk: &PerkId) -> bool {
         self.perks.contains(perk)
+    }
+
+    fn health(&self) -> HealthPercent {
+        self.health.unwrap_or(HealthPercent::FULL)
     }
 }
 
@@ -261,6 +274,11 @@ impl StandingSink for MemoryState {
 impl CharacterSink for MemoryState {
     fn add_xp(&mut self, amount: f64) -> Result<(), EffectError> {
         self.xp += amount;
+        Ok(())
+    }
+
+    fn restore_health(&mut self) -> Result<(), EffectError> {
+        self.health = None;
         Ok(())
     }
 }
@@ -412,6 +430,10 @@ impl CharacterView for HashedView {
 
     fn has_perk(&self, perk: &PerkId) -> bool {
         self.below(&("perk", perk), 2) == 1
+    }
+
+    fn health(&self) -> HealthPercent {
+        HealthPercent::try_new(self.below(&"health", 101)).expect("below 101")
     }
 }
 

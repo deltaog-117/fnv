@@ -1311,6 +1311,103 @@ Chet is the next Goodsprings graph and owns the optional stage 30 of the Ghost T
 
 ---
 
+### Easy Pete and Joe Cobb: Two Doors into Run Goodsprings Run
+
+**Date:** 2026-10-28
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Easy Pete owns the optional stage 50 of the Ghost Town Gunfight (dynamite, an Explosives 25 check). Joe Cobb is the giver of Run Goodsprings Run, and Chet's shakedown topics were waiting for that quest to be startable. The wiki gives both transcripts and one label (`< Speech 20 >` on Cobb's prison question), but no links or conditions; the Explosives 25 check comes from the quest walkthrough. The approach was mechanical (the pattern of Trudy and Chet), so no COAs were needed.
+
+---
+
+#### Decision
+
+> Both graphs are in `data/dialogue/slice_goodsprings.json`.
+>
+> **Easy Pete:** chatter is chained from the transcript (name, prospecting, the NCR, the Legion, Hoover Dam). The dynamite talk is offered while the gunfight is active, from stage 10 to Ringo's countdown at 60; an Explosives 25 claim sets the flag `easy_pete_joined_militia`, and a character who is short on the skill hears the refusal and may ask again. The question about Joe Cobb is open until the gunfight is completed. Like Trudy and Chet, the outcome is a flag and not stage 50, because the optional stages come in any order and a stage only moves forward.
+>
+> **Joe Cobb, starting the quest:** "What say I help you take over this town?" offers three pitches that all lead to the same deal, and the deal (`start_quest` plus stage 10) is the only thing that starts Run Goodsprings Run. A player who already agreed to help Ringo (gunfight at stage 5 or later) hears his refusal in the transcript's sense: the pitches are hidden and only "Forget I said anything" remains.
+>
+> **Joe Cobb, the middle of the quest:** stage 15 ("tell Cobb that Ringo is dead") is set by Ringo's death, which no feature can cause yet, so the report ("Ringo's dead. What now?") is gated on stage 15 and moves the quest to 20, where Chet's shakedown opens. "I already took care of Ringo" is the other door: it is offered only when the quest has not started and Ringo is already dead, and it starts the quest at stage 15. "Let's take over Goodsprings" is open from stage 20 and sets stage 60, whether or not the optional prep was done. The spare-supplies hand-over sets stage 45 and needs the flag `doc_mitchell_gave_cobb_supplies`.
+>
+> **Why a new flag for Doc's supplies:** Doc Mitchell's trick (Medicine 25 in the transcript) is not authored yet, and a flag set by his topic later is the same mechanism Chet uses. Until then the hand-over is unreachable in the game and covered by a scenario that sets the flag.
+>
+> **Scenario runner change:** `scenarios.rs` now builds the game with the NPC roster (`Game::with_world`), as the real game does, so a scenario can kill Ringo in its setup. Thirty-two scenarios existed; 29 were added for Pete and Cobb (eight for Pete, 21 for Cobb).
+>
+> **Left out for now:** the greetings, the barks and combat lines; the "Let me get out of town before we talk" refusal (no condition for position); the closing topic 009 (the generic goodbye covers it); and the Cobb topics that come after the takeover battle (stage 70 and the rewards).
+>
+> **Trade-offs accepted:** in the game the two "now what" lines (019 and 023) may be wired differently than the transcript suggests; they are read from the text and are not verified in game. The Ringo-death report and the hand-over stay out of reach in play until Ringo can be killed and Doc's trick exists.
+
+---
+
+#### References
+
+- `data/dialogue/slice_goodsprings.json`, `tests/scenarios/goodsprings_dialogue.json`, `crates/engine/tests/dialogue/scenarios.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-28 | Initial entry | deltaog-117 |
+
+
+---
+
+### Doc Mitchell: Healing as a Vocabulary Addition
+
+**Date:** 2026-10-28
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Doc Mitchell's transcript has paid healing at three prices (100, 75 or 50 caps by how hurt the player is), a lie that gets spare supplies for Joe Cobb (Medicine 25), and the doctor's bags for the gunfight. Cobb's hand-over was waiting for the flag Doc's lie sets. The game already tracked wounds between fights and had a `Game::heal` method, but a conversation could neither ask how hurt the player was nor heal them, because dialogue only reaches the game through the shared `Condition` and `Effect` vocabulary.
+
+---
+
+#### Decision
+
+> **The vocabulary grows by one condition and one effect.** `Condition::Health { percent, op }` compares the share of hit points left (0 to 100, `op` defaults to "at least", as in `Reputation`), and `Effect::Heal {}` restores full hit points. Both are in `common.schema.json`, and the contract tests check them in both directions.
+>
+> **A bounded type for the percentage.** `HealthPercent` (0 to 100) is built through `HealthPercent::of(current, max)`, which rounds down, so a single lost hit point already reads 99 and "100" means unhurt. A maximum of zero reads 0 and a current above the maximum reads full, so the function cannot fail.
+>
+> **Where the answer lives.** Wounds belong to `Game`, not to `Character`, so `CharacterView::health` has a default of full health (a state that tracks no wounds has nobody hurt) and `Game` overrides it. `CharacterSink::restore_health` has no default, as every sink method; the character sheet implements it as a documented no-op because it records no wounds, and `Game` clears its wounds. The sink method is not called `heal` so it cannot be confused with `Game::heal(amount)`.
+>
+> **`Heal` is an empty struct variant, not a unit variant.** The contract test caught that serde lets a unit variant of an internally tagged enum ignore `deny_unknown_fields`, so Rust accepted `{"type": "heal", "amount": 5}` while the schema rejects it. `Heal {}` honors the denial.
+>
+> **Doc's graph** (`data/dialogue/slice_goodsprings.json`): "I'm hurt" offers the three prices only in the band that matches the player (at most 33 percent, 34 to 66, 67 to 99), each as a payment (`caps` then `heal`, one atomic list, so a player who cannot pay is refused and stays hurt) beside the transcript's "I don't have the caps" line; an unhurt player gets no payment option. The bands treat 33, 66 and 99 as inclusive upper limits; the transcript names the numbers but not the edges, so this is a reading. The lie (the "injured man by the highway") is open while Run Goodsprings Run is at stage 20 to 44 and sets `doc_mitchell_gave_cobb_supplies`, the flag Cobb's hand-over reads; a Medicine 25 character is let through and the others hear the refusal. The gunfight bags topic now gives two doctor's bags with no skill check (the transcript shows no label and no refusal line for it, although the walkthrough says Medicine 30), and a flag (`doc_mitchell_gave_bags`) makes it a one-time gift.
+>
+> **Scenario runner:** it now attaches the item book, takes an optional starting `wounds`, and can expect items, caps and hit points. `Game::with_wounds` is the public way to start hurt (capped at the maximum, and set after the character).
+>
+> **Left out for now:** radiation cures (the game has no radiation), addiction cures, the "medical supplies" shop topic (vendors), and the opening tests and farewell (the opening quest covers them). The Medicine 25 lie gives nothing but the flag, because the data has no item for Doc's spare supplies (`medical_supplies` is Contreras's quest item).
+>
+> **Trade-offs accepted:** a player short of caps sees the payment and is refused on picking it, as with Chet, because the vocabulary has no caps condition; the healing prices and bands are read from the transcript text and not verified in game.
+
+---
+
+#### References
+
+- `crates/engine/src/shared/` (`bounds.rs`, `condition.rs`, `effect.rs`, `eval.rs`, `sink.rs`, `view.rs`), `crates/engine/src/game/state.rs`, `schemas/common.schema.json`
+- `data/dialogue/slice_goodsprings.json`, `tests/scenarios/goodsprings_dialogue.json`, `crates/engine/tests/game/health.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-28 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

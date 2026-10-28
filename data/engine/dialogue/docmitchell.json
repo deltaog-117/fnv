@@ -63,7 +63,16 @@
     }
    ],
    "topic": "DoctorMedical",
-   "prompt": "I'm hurt. I need help, Doc."
+   "prompt": "I'm hurt. I need help, Doc.",
+   "next": [
+    "doctormedical33yes",
+    "doctormedical33yes_2",
+    "doctormedical66yes",
+    "doctormedical66yes_2",
+    "doctormedical99yes",
+    "doctormedical99yes_2",
+    "doctormedicalno"
+   ]
   },
   {
    "key": "doctormedical33yes",
@@ -77,7 +86,23 @@
    ],
    "topic": "DoctorMedical33YES",
    "prompt": "Okay, fix me. Here's 100 caps.",
-   "label": "All right, here's your money."
+   "label": "All right, here's your money.",
+   "conditions": [
+    {
+     "type": "health",
+     "percent": 33,
+     "op": "at_most"
+    }
+   ],
+   "effects": [
+    {
+     "type": "caps",
+     "amount": -100
+    },
+    {
+     "type": "heal"
+    }
+   ]
   },
   {
    "key": "doctormedical33yes_2",
@@ -91,7 +116,14 @@
    ],
    "topic": "DoctorMedical33YES",
    "prompt": "Sorry, I don't have 100 caps.",
-   "label": "All right, here's your money."
+   "label": "All right, here's your money.",
+   "conditions": [
+    {
+     "type": "health",
+     "percent": 33,
+     "op": "at_most"
+    }
+   ]
   },
   {
    "key": "doctormedical66yes",
@@ -105,7 +137,31 @@
    ],
    "topic": "DoctorMedical66YES",
    "prompt": "Okay, fix me. Here's 75 caps.",
-   "label": "Here's your money."
+   "label": "Here's your money.",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "health",
+      "percent": 33,
+      "op": "at_most"
+     }
+    },
+    {
+     "type": "health",
+     "percent": 66,
+     "op": "at_most"
+    }
+   ],
+   "effects": [
+    {
+     "type": "caps",
+     "amount": -75
+    },
+    {
+     "type": "heal"
+    }
+   ]
   },
   {
    "key": "doctormedical66yes_2",
@@ -119,7 +175,22 @@
    ],
    "topic": "DoctorMedical66YES",
    "prompt": "Sorry, I don't have 75 caps.",
-   "label": "Here's your money."
+   "label": "Here's your money.",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "health",
+      "percent": 33,
+      "op": "at_most"
+     }
+    },
+    {
+     "type": "health",
+     "percent": 66,
+     "op": "at_most"
+    }
+   ]
   },
   {
    "key": "doctormedical99yes",
@@ -133,7 +204,31 @@
    ],
    "topic": "DoctorMedical99YES",
    "prompt": "Okay, fix me. Here's 50 caps.",
-   "label": "All right, fix me."
+   "label": "All right, fix me.",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "health",
+      "percent": 66,
+      "op": "at_most"
+     }
+    },
+    {
+     "type": "health",
+     "percent": 99,
+     "op": "at_most"
+    }
+   ],
+   "effects": [
+    {
+     "type": "caps",
+     "amount": -50
+    },
+    {
+     "type": "heal"
+    }
+   ]
   },
   {
    "key": "doctormedical99yes_2",
@@ -147,7 +242,22 @@
    ],
    "topic": "DoctorMedical99YES",
    "prompt": "Sorry, I don't have 50 caps.",
-   "label": "All right, fix me."
+   "label": "All right, fix me.",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "health",
+      "percent": 66,
+      "op": "at_most"
+     }
+    },
+    {
+     "type": "health",
+     "percent": 99,
+     "op": "at_most"
+    }
+   ]
   },
   {
    "key": "doctormedicalno",
@@ -1765,6 +1875,22 @@
     {
      "type": "flag",
      "flag": "doc_mitchell_offered_supplies"
+    },
+    {
+     "type": "flag",
+     "flag": "doc_mitchell_gave_bags",
+     "value": false
+    }
+   ],
+   "effects": [
+    {
+     "type": "give_item",
+     "item": "doctor_s_bag",
+     "count": 2
+    },
+    {
+     "type": "set_flag",
+     "flag": "doc_mitchell_gave_bags"
     }
    ]
   },
@@ -1862,7 +1988,39 @@
     }
    ],
    "topic": "VFreeformGoodspringsDocMitchellTopic002",
-   "prompt": "<Lie> I'll need all the medical supplies you can spare for an injured man down by the highway."
+   "prompt": "<Lie> I'll need all the medical supplies you can spare for an injured man down by the highway.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "stage_at_least",
+     "stage": 20
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "run_goodsprings_run",
+      "state": "stage_at_least",
+      "stage": 45
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "doc_mitchell_gave_cobb_supplies",
+     "value": false
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsdocmitchelltopic003",
+    "vfreeformgoodspringsdocmitchelltopic004",
+    "vfreeformgoodspringsdocmitchelltopic004_2"
+   ]
   },
   {
    "key": "vfreeformgoodspringsdocmitchelltopic003",
@@ -1889,7 +2047,18 @@
    ],
    "topic": "VFreeformGoodspringsDocMitchellTopic004",
    "prompt": "Breathing is uneven, and he's coughing up blood. Possible internal injuries.",
-   "label": "< Medicine 25 >"
+   "label": "< Medicine 25 >",
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "doc_mitchell_gave_cobb_supplies"
+    }
+   ],
+   "check": {
+    "type": "skill",
+    "skill": "medicine",
+    "min": 25
+   }
   },
   {
    "key": "vfreeformgoodspringsdocmitchelltopic004_2",
@@ -1903,7 +2072,17 @@
    ],
    "topic": "VFreeformGoodspringsDocMitchellTopic004",
    "prompt": "Well, there's lots of blood. And bruises. And maybe some other stuff, too.",
-   "label": "< Medicine 25 >"
+   "label": "< Medicine 25 >",
+   "conditions": [
+    {
+     "type": "not",
+     "of": {
+      "type": "skill",
+      "skill": "medicine",
+      "min": 25
+     }
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsdocmitchelltopic005",
@@ -2794,6 +2973,8 @@
   "vfreeformgoodspringsdocmitchelltellmeaboutyou",
   "vfreeformgoodspringsdocmitchelltowninfo",
   "vfreeformgoodspringsdocmitchellshootouthelp",
+  "doctormedical",
+  "vfreeformgoodspringsdocmitchelltopic002",
   "goodbye"
  ],
  "speaker": "doc_mitchell"

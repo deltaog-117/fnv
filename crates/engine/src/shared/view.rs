@@ -8,7 +8,7 @@
 //!
 //! [`Condition`]: super::Condition
 
-use super::bounds::{SkillLevel, SpecialLevel};
+use super::bounds::{HealthPercent, SkillLevel, SpecialLevel};
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
 use super::vocabulary::{Alignment, NpcState, QuestStage, ReputationLevel, Skill, Special};
 
@@ -67,6 +67,12 @@ pub trait CharacterView {
     /// Whether the player has the perk.
     fn has_perk(&self, _perk: &PerkId) -> bool {
         false
+    }
+
+    /// The share of their hit points the player has left; full by default, since a
+    /// state that tracks no wounds has nobody hurt.
+    fn health(&self) -> HealthPercent {
+        HealthPercent::FULL
     }
 }
 

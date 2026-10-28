@@ -54,6 +54,10 @@ pub enum Effect {
         /// The stage to move to.
         stage: QuestStage,
     },
+    /// Restores the player to full hit points. An empty struct variant rather than a
+    /// unit one, because serde lets a unit variant ignore `deny_unknown_fields`
+    /// and the schema rejects extra fields.
+    Heal {},
     /// Adds fame and infamy points with a faction.
     Reputation {
         /// The faction or town.
@@ -153,12 +157,13 @@ pub enum Effect {
 
 impl Effect {
     /// Every `type` value an effect can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 21] = [
+    pub const ALL_TAGS: [&'static str; 22] = [
         "start_quest",
         "complete_quest",
         "fail_quest",
         "block_quest",
         "set_stage",
+        "heal",
         "reputation",
         "set_reputation",
         "karma",
@@ -187,6 +192,7 @@ impl Effect {
             Self::FailQuest { .. } => "fail_quest",
             Self::BlockQuest { .. } => "block_quest",
             Self::SetStage { .. } => "set_stage",
+            Self::Heal {} => "heal",
             Self::Reputation { .. } => "reputation",
             Self::SetReputation { .. } => "set_reputation",
             Self::Karma { .. } => "karma",

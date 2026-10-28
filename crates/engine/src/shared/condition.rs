@@ -9,7 +9,7 @@ use std::num::NonZeroU32;
 
 use serde::{Deserialize, Serialize};
 
-use super::bounds::{SkillLevel, SpecialLevel};
+use super::bounds::{HealthPercent, SkillLevel, SpecialLevel};
 use super::error::ModelError;
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
 use super::non_empty::NonEmpty;
@@ -74,6 +74,14 @@ pub enum Condition {
         /// The minimum value.
         min: SpecialLevel,
     },
+    /// The share of their hit points the player has left compares to a value.
+    Health {
+        /// The percentage to compare against.
+        percent: HealthPercent,
+        /// How to compare; defaults to "at least".
+        #[serde(default)]
+        op: Comparison,
+    },
     /// The player has a perk.
     Perk {
         /// The perk.
@@ -126,7 +134,7 @@ pub enum Condition {
 
 impl Condition {
     /// Every `type` value a condition can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 14] = [
+    pub const ALL_TAGS: [&'static str; 15] = [
         "all",
         "any",
         "not",
@@ -134,6 +142,7 @@ impl Condition {
         "reputation",
         "skill",
         "special",
+        "health",
         "perk",
         "karma",
         "companion",
@@ -155,6 +164,7 @@ impl Condition {
             Self::Reputation { .. } => "reputation",
             Self::Skill { .. } => "skill",
             Self::Special { .. } => "special",
+            Self::Health { .. } => "health",
             Self::Perk { .. } => "perk",
             Self::Karma { .. } => "karma",
             Self::Companion { .. } => "companion",

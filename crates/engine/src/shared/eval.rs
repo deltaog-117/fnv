@@ -42,6 +42,14 @@ pub fn evaluate<V: StateView + ?Sized>(condition: &Condition, view: &V) -> bool 
         }
         Condition::Skill { skill, min } => view.skill(*skill) >= *min,
         Condition::Special { stat, min } => view.special(*stat) >= *min,
+        Condition::Health { percent, op } => {
+            let health = view.health();
+            match op {
+                Comparison::AtLeast => health >= *percent,
+                Comparison::AtMost => health <= *percent,
+                Comparison::Is => health == *percent,
+            }
+        }
         Condition::Perk { perk } => view.has_perk(perk),
         Condition::Karma { alignment } => view.alignment() == *alignment,
         Condition::Companion { companion, active } => view.companion_active(companion) == *active,
@@ -85,6 +93,7 @@ pub fn apply<S: StateSink + ?Sized>(effect: &Effect, sink: &mut S) -> Result<(),
         Effect::FailQuest { quest } => sink.fail_quest(quest),
         Effect::BlockQuest { quest } => sink.block_quest(quest),
         Effect::SetStage { quest, stage } => sink.set_stage(quest, *stage),
+        Effect::Heal {} => sink.restore_health(),
         Effect::Reputation {
             faction,
             fame,

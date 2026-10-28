@@ -82,6 +82,27 @@ define_bounded!(
     10,
     "S.P.E.C.I.A.L. level"
 );
+define_bounded!(
+    /// How much of their hit points the player has left, 0 to 100.
+    HealthPercent,
+    0,
+    100,
+    "health percent"
+);
+
+impl HealthPercent {
+    /// Full health: what a state that tracks no wounds reports.
+    pub const FULL: Self = Self(100);
+
+    /// The share of `max` that `current` makes up, rounded down, so that any wound
+    /// at all reads below 100. A `current` above `max` counts as full, and a
+    /// `max` of zero has nothing left to lose, so it reads 0.
+    #[must_use]
+    pub fn of(current: u32, max: u32) -> Self {
+        let share = (u64::from(current.min(max)) * 100).checked_div(u64::from(max));
+        Self(share.and_then(|n| u8::try_from(n).ok()).unwrap_or(0))
+    }
+}
 
 #[cfg(test)]
 mod tests {
@@ -111,5 +132,21 @@ mod tests {
     #[test]
     fn values_beyond_a_byte_are_rejected_not_wrapped() {
         assert!(SkillLevel::try_new(256).is_err());
+    }
+
+    #[test]
+    fn health_rounds_down_so_a_single_wound_is_never_full() {
+        assert_eq!(HealthPercent::of(200, 200), HealthPercent::FULL);
+        assert_eq!(HealthPercent::of(199, 200).get(), 99);
+        assert_eq!(HealthPercent::of(1, 200).get(), 0);
+        assert_eq!(HealthPercent::of(66, 200).get(), 33);
+        assert_eq!(HealthPercent::of(68, 200).get(), 34);
+    }
+
+    #[test]
+    fn health_stays_in_range_for_odd_inputs() {
+        assert_eq!(HealthPercent::of(500, 200), HealthPercent::FULL);
+        assert_eq!(HealthPercent::of(0, 0).get(), 0);
+        assert_eq!(HealthPercent::of(u32::MAX, u32::MAX), HealthPercent::FULL);
     }
 }

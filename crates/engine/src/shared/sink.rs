@@ -189,6 +189,13 @@ pub trait CharacterSink {
     ///
     /// [`EffectError`] when the owner refuses the grant.
     fn add_xp(&mut self, amount: f64) -> Result<(), EffectError>;
+
+    /// Restores the player to full hit points.
+    ///
+    /// # Errors
+    ///
+    /// [`EffectError`] when the owner refuses the healing.
+    fn restore_health(&mut self) -> Result<(), EffectError>;
 }
 
 /// Inventory effects.

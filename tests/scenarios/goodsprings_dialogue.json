@@ -1,5 +1,5 @@
 {
- "description": "Language-neutral dialogue scenarios: effects in 'setup' are applied to a fresh game, then each 'say' picks a topic by key in a conversation with 'dialogue'; 'fails' marks a pick that must be refused; 'special' (optional) overrides the default 5s so a skill check can pass; 'expect' lists the quest states, the flags that must be set and whether the conversation is over.",
+ "description": "Language-neutral dialogue scenarios: effects in 'setup' are applied to a fresh game, then each 'say' picks a topic by key in a conversation with 'dialogue'; 'fails' marks a pick that must be refused; 'special' (optional) overrides the default 5s so a skill check can pass; 'wounds' (optional) is the hit points already lost; 'expect' lists the quest states, the flags that must be set, the items held, the caps, the hit points left and whether the conversation is over.",
  "scenarios": [
   {
    "name": "sunny: asking to be taught starts the quest once",
@@ -368,6 +368,598 @@
     {"say": "vfreeformgoodspringsgschettopic008", "fails": true}
    ],
    "expect": {"flags": ["chet_shaken_down"]}
+  },
+  {
+   "name": "easy pete: chatter chains run both ways and goodbye ends the talk",
+   "dialogue": "gseasypete",
+   "steps": [
+    {"say": "vfreeformgoodspringsgseasypetetopic000"},
+    {"say": "vfreeformgoodspringsgseasypetetopic007"},
+    {"say": "vfreeformgoodspringsgseasypetetopic008"},
+    {"say": "vfreeformgoodspringsgseasypetetopic009"},
+    {"say": "vfreeformgoodspringsgseasypetetopic000"},
+    {"say": "vfreeformgoodspringsgseasypetetopic006"},
+    {"say": "vfreeformgoodspringsgseasypetetopic003"},
+    {"say": "goodbye"}
+   ],
+   "expect": {"over": true}
+  },
+  {
+   "name": "easy pete: the follow-ups are not on the first menu",
+   "dialogue": "gseasypete",
+   "steps": [
+    {"say": "vfreeformgoodspringsgseasypetetopic009", "fails": true},
+    {"say": "vfreeformgoodspringsgseasypetetopic003", "fails": true}
+   ],
+   "expect": {"over": false}
+  },
+  {
+   "name": "easy pete: the dynamite talk is not on offer before the gunfight or before Sunny agrees",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 5}
+   ],
+   "dialogue": "gseasypete",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic000", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 5}}}
+  },
+  {
+   "name": "easy pete: a green character is locked out of the claim but hears the refusal and may ask again",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}
+   ],
+   "dialogue": "gseasypete",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic000"},
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic001", "fails": true},
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic002"},
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic000"}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "easy pete: an Explosives 25 claim sets the flag and closes the dynamite talk",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 10}
+   ],
+   "special": {"perception": 10, "luck": 5},
+   "dialogue": "gseasypete",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic000"},
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic002", "fails": true},
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic001"},
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic000", "fails": true}
+   ],
+   "expect": {"flags": ["easy_pete_joined_militia"]}
+  },
+  {
+   "name": "easy pete: the dynamite talk closes once Ringo has started the countdown",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 60}
+   ],
+   "dialogue": "gseasypete",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic000", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "active", "stage": 60}}}
+  },
+  {
+   "name": "easy pete: the Joe Cobb question is open until the gunfight is won",
+   "dialogue": "gseasypete",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic003"},
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic005"}
+   ],
+   "expect": {"over": false}
+  },
+  {
+   "name": "easy pete: the Joe Cobb question is gone after the gunfight is won",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "complete_quest", "quest": "ghost_town_gunfight"}
+   ],
+   "dialogue": "gseasypete",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringseasypetetopic003", "fails": true}
+   ],
+   "expect": {"quests": {"ghost_town_gunfight": {"status": "completed"}}}
+  },
+  {
+   "name": "joe cobb: the territory and wasteland chatter chains and goodbye ends the talk",
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic007"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic008"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic007"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic010"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic007"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic018"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic011"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic012"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic014"},
+    {"say": "goodbye"}
+   ],
+   "expect": {"over": true}
+  },
+  {
+   "name": "joe cobb: a green character cannot press him about the prison but can say it was curiosity",
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic011"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic012"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic013", "fails": true},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic013_2"}
+   ],
+   "expect": {"over": false}
+  },
+  {
+   "name": "joe cobb: a Speech 20 character gets the answer and the curiosity line is gone",
+   "special": {"charisma": 8, "luck": 5},
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic011"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic012"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic013_2", "fails": true},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic013"}
+   ],
+   "expect": {"over": false}
+  },
+  {
+   "name": "joe cobb: agreeing to kill Ringo starts Run Goodsprings Run at stage 10 and closes the offer",
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic000"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic015"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic003"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic001"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic000", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "joe cobb: each of the three pitches leads to the same deal",
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic000"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic016"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic001"}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "joe cobb: walking away from the pitch starts nothing",
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic000"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic024"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic002"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic000"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic017"}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "not_started"}}}
+  },
+  {
+   "name": "joe cobb: after agreeing to help Ringo the player gets no deal",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"},
+    {"type": "set_stage", "quest": "ghost_town_gunfight", "stage": 5}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic000"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic015", "fails": true},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic016", "fails": true},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic024", "fails": true},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic017"}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "not_started"}}}
+  },
+  {
+   "name": "joe cobb: the Ringo question is still open while Ringo is to be killed",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 10}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringsjoecobbtopic001"}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "joe cobb: the Ringo question is closed after Ringo is reported dead",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 15}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgoodspringsjoecobbtopic001", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 15}}}
+  },
+  {
+   "name": "joe cobb: telling him Ringo is already dead starts the quest at stage 15, and the pitch is gone",
+   "setup": [{"type": "kill_npc", "npc": "ringo"}],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic000", "fails": true},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic019"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic019", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 15}}}
+  },
+  {
+   "name": "joe cobb: the death report is not on offer while Ringo lives",
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic019", "fails": true},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic023", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "not_started"}}}
+  },
+  {
+   "name": "joe cobb: the plan is closed while Ringo is still to be killed",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 10}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic023", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 10}}}
+  },
+  {
+   "name": "joe cobb: asking what now after Ringo's death plans the attack",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 15}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic023"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic023", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 20}}}
+  },
+  {
+   "name": "joe cobb: the spare supplies need Doc's flag and are handed over once",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 20}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic005", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 20}}}
+  },
+  {
+   "name": "joe cobb: with Doc's supplies in hand the hand-over moves the quest to stage 45",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 20},
+    {"type": "set_flag", "flag": "doc_mitchell_gave_cobb_supplies"}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic005"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic005", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 45}}}
+  },
+  {
+   "name": "joe cobb: the supplies cannot be handed over before the attack is planned",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 15},
+    {"type": "set_flag", "flag": "doc_mitchell_gave_cobb_supplies"}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic005", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 15}}}
+  },
+  {
+   "name": "joe cobb: taking over the town is closed until the attack is planned",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 15}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic022", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 15}}}
+  },
+  {
+   "name": "joe cobb: saying the word with no prep at all moves the quest to stage 60 once",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 20}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic022"},
+    {"say": "vfreeformgoodspringsgsjoecobbtopic022", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 60}}}
+  },
+  {
+   "name": "joe cobb: after the hand-over the player can still say the word",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 45}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic022"}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 60}}}
+  },
+  {
+   "name": "joe cobb: what is next for the gang is only asked once the quest is done",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic025", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active"}}}
+  },
+  {
+   "name": "joe cobb: once the quest is complete he talks about the gang's plans",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "complete_quest", "quest": "run_goodsprings_run"}
+   ],
+   "dialogue": "gsjoecobb",
+   "steps": [
+    {"say": "vfreeformgoodspringsgsjoecobbtopic025"}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "completed"}}}
+  },
+  {
+   "name": "doc mitchell: an unhurt player is not charged and has nothing to pay for",
+   "setup": [
+    {"type": "caps", "amount": 200}
+   ],
+   "wounds": 0,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical33yes", "fails": true},
+    {"say": "doctormedical66yes", "fails": true},
+    {"say": "doctormedical99yes", "fails": true},
+    {"say": "doctormedicalno"}
+   ],
+   "expect": {"caps": 200, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: under a third of health costs 100 caps and restores everything",
+   "setup": [
+    {"type": "caps", "amount": 150}
+   ],
+   "wounds": 140,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical66yes", "fails": true},
+    {"say": "doctormedical99yes", "fails": true},
+    {"say": "doctormedical33yes"}
+   ],
+   "expect": {"caps": 50, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: between a third and two thirds costs 75 caps",
+   "setup": [
+    {"type": "caps", "amount": 100}
+   ],
+   "wounds": 100,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical33yes", "fails": true},
+    {"say": "doctormedical99yes", "fails": true},
+    {"say": "doctormedical66yes"}
+   ],
+   "expect": {"caps": 25, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: a light wound costs 50 caps",
+   "setup": [
+    {"type": "caps", "amount": 60}
+   ],
+   "wounds": 40,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical33yes", "fails": true},
+    {"say": "doctormedical66yes", "fails": true},
+    {"say": "doctormedical99yes"}
+   ],
+   "expect": {"caps": 10, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: a single hit point lost is already worth 50 caps",
+   "setup": [
+    {"type": "caps", "amount": 100}
+   ],
+   "wounds": 1,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical99yes"}
+   ],
+   "expect": {"caps": 50, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: 33 percent exactly is still the 100 cap band",
+   "setup": [
+    {"type": "caps", "amount": 100}
+   ],
+   "wounds": 134,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical66yes", "fails": true},
+    {"say": "doctormedical33yes"}
+   ],
+   "expect": {"caps": 0, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: 34 percent is the 75 cap band",
+   "setup": [
+    {"type": "caps", "amount": 100}
+   ],
+   "wounds": 132,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical33yes", "fails": true},
+    {"say": "doctormedical66yes"}
+   ],
+   "expect": {"caps": 25, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: 66 percent exactly is still the 75 cap band",
+   "setup": [
+    {"type": "caps", "amount": 100}
+   ],
+   "wounds": 68,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical99yes", "fails": true},
+    {"say": "doctormedical66yes"}
+   ],
+   "expect": {"caps": 25, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: 67 percent is the 50 cap band",
+   "setup": [
+    {"type": "caps", "amount": 100}
+   ],
+   "wounds": 66,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical66yes", "fails": true},
+    {"say": "doctormedical99yes"}
+   ],
+   "expect": {"caps": 50, "hp": 200}
+  },
+  {
+   "name": "doc mitchell: a player who cannot pay is refused, keeps the caps and stays hurt",
+   "setup": [
+    {"type": "caps", "amount": 99}
+   ],
+   "wounds": 140,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedical33yes", "fails": true},
+    {"say": "doctormedical33yes_2"}
+   ],
+   "expect": {"caps": 99, "hp": 60}
+  },
+  {
+   "name": "doc mitchell: declining the treatment charges nothing",
+   "setup": [
+    {"type": "caps", "amount": 100}
+   ],
+   "wounds": 140,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctormedical"},
+    {"say": "doctormedicalno"}
+   ],
+   "expect": {"caps": 100, "hp": 60}
+  },
+  {
+   "name": "doc mitchell: the lie about an injured man is closed outside Run Goodsprings Run",
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "vfreeformgoodspringsdocmitchelltopic002", "fails": true}
+   ],
+   "expect": {"over": false}
+  },
+  {
+   "name": "doc mitchell: the lie is closed until Cobb has planned the attack",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 15}
+   ],
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "vfreeformgoodspringsdocmitchelltopic002", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 15}}}
+  },
+  {
+   "name": "doc mitchell: a character without Medicine 25 is locked out of the lie but hears the refusal",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 20}
+   ],
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "vfreeformgoodspringsdocmitchelltopic002"},
+    {"say": "vfreeformgoodspringsdocmitchelltopic004", "fails": true},
+    {"say": "vfreeformgoodspringsdocmitchelltopic004_2"},
+    {"say": "vfreeformgoodspringsdocmitchelltopic002"}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 20}}}
+  },
+  {
+   "name": "doc mitchell: a Medicine 25 lie gets the supplies and closes the topic",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 20}
+   ],
+   "special": {"intelligence": 10, "luck": 5},
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "vfreeformgoodspringsdocmitchelltopic002"},
+    {"say": "vfreeformgoodspringsdocmitchelltopic004_2", "fails": true},
+    {"say": "vfreeformgoodspringsdocmitchelltopic004"},
+    {"say": "vfreeformgoodspringsdocmitchelltopic002", "fails": true}
+   ],
+   "expect": {"flags": ["doc_mitchell_gave_cobb_supplies"]}
+  },
+  {
+   "name": "doc mitchell: the lie is closed once the supplies are handed to Cobb",
+   "setup": [
+    {"type": "start_quest", "quest": "run_goodsprings_run"},
+    {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 45}
+   ],
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "vfreeformgoodspringsdocmitchelltopic002", "fails": true}
+   ],
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 45}}}
+  },
+  {
+   "name": "doc mitchell: the doctor's bags for the gunfight come with no skill check, and only once",
+   "setup": [
+    {"type": "start_quest", "quest": "ghost_town_gunfight"}
+   ],
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "vfreeformgoodspringsdocmitchellshootouthelp"},
+    {"say": "vfreeformgoodspringsdocmitchellshootoutbags"},
+    {"say": "vfreeformgoodspringsdocmitchellshootouthelp"},
+    {"say": "vfreeformgoodspringsdocmitchellshootoutbags", "fails": true}
+   ],
+   "expect": {"items": {"doctor_s_bag": 2}, "flags": ["doc_mitchell_gave_bags"]}
   }
  ]
 }

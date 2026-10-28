@@ -11,10 +11,10 @@ use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
 use crate::shared::{
     CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, Effect, EffectError,
-    Encounter, EncounterId, EndingId, FactionId, FlagId, InventorySink, InventoryView, ItemId,
-    LocationId, NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
-    ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView,
-    WorldSink, WorldView, apply, apply_all, evaluate,
+    Encounter, EncounterId, EndingId, FactionId, FlagId, HealthPercent, InventorySink,
+    InventoryView, ItemId, LocationId, NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage,
+    QuestStatus, QuestView, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
+    StandingSink, StandingView, WorldSink, WorldView, apply, apply_all, evaluate,
 };
 use crate::world::{WorldBook, WorldState};
 
@@ -112,6 +112,15 @@ impl Game {
     #[must_use]
     pub fn with_character(mut self, character: Character) -> Self {
         self.character = character;
+        self
+    }
+
+    /// The same game with the player already wounded by `wounds` hit points, never
+    /// more than the character's maximum. Set the character first: the cap is
+    /// taken from the one the game holds now.
+    #[must_use]
+    pub fn with_wounds(mut self, wounds: u32) -> Self {
+        self.wounds = wounds.min(self.character.max_hp());
         self
     }
 
@@ -447,6 +456,10 @@ impl CharacterView for Game {
     fn has_perk(&self, perk: &PerkId) -> bool {
         self.character.has_perk(perk)
     }
+
+    fn health(&self) -> HealthPercent {
+        HealthPercent::of(self.hp(), self.character.max_hp())
+    }
 }
 
 impl InventoryView for Game {
@@ -494,6 +507,11 @@ impl StandingSink for Game {
 impl CharacterSink for Game {
     fn add_xp(&mut self, amount: f64) -> Result<(), EffectError> {
         self.character.add_xp(amount)
+    }
+
+    fn restore_health(&mut self) -> Result<(), EffectError> {
+        self.heal(self.character.max_hp());
+        Ok(())
     }
 }
 

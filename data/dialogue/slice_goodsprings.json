@@ -8,9 +8,90 @@
    "vfreeformgoodspringsdocmitchelltellmeaboutyou",
    "vfreeformgoodspringsdocmitchelltowninfo",
    "vfreeformgoodspringsdocmitchellshootouthelp",
+   "doctormedical",
+   "vfreeformgoodspringsdocmitchelltopic002",
    "goodbye"
   ],
   "topics": [
+   {
+    "key": "doctormedical",
+    "next": [
+     "doctormedical33yes",
+     "doctormedical33yes_2",
+     "doctormedical66yes",
+     "doctormedical66yes_2",
+     "doctormedical99yes",
+     "doctormedical99yes_2",
+     "doctormedicalno"
+    ]
+   },
+   {
+    "key": "doctormedical33yes",
+    "conditions": [{"type": "health", "percent": 33, "op": "at_most"}],
+    "effects": [{"type": "caps", "amount": -100}, {"type": "heal"}]
+   },
+   {
+    "key": "doctormedical33yes_2",
+    "conditions": [{"type": "health", "percent": 33, "op": "at_most"}]
+   },
+   {
+    "key": "doctormedical66yes",
+    "conditions": [
+     {"type": "not", "of": {"type": "health", "percent": 33, "op": "at_most"}},
+     {"type": "health", "percent": 66, "op": "at_most"}
+    ],
+    "effects": [{"type": "caps", "amount": -75}, {"type": "heal"}]
+   },
+   {
+    "key": "doctormedical66yes_2",
+    "conditions": [
+     {"type": "not", "of": {"type": "health", "percent": 33, "op": "at_most"}},
+     {"type": "health", "percent": 66, "op": "at_most"}
+    ]
+   },
+   {
+    "key": "doctormedical99yes",
+    "conditions": [
+     {"type": "not", "of": {"type": "health", "percent": 66, "op": "at_most"}},
+     {"type": "health", "percent": 99, "op": "at_most"}
+    ],
+    "effects": [{"type": "caps", "amount": -50}, {"type": "heal"}]
+   },
+   {
+    "key": "doctormedical99yes_2",
+    "conditions": [
+     {"type": "not", "of": {"type": "health", "percent": 66, "op": "at_most"}},
+     {"type": "health", "percent": 99, "op": "at_most"}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsdocmitchelltopic002",
+    "conditions": [
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "active"},
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 20},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 45}
+     },
+     {"type": "flag", "flag": "doc_mitchell_gave_cobb_supplies", "value": false}
+    ],
+    "next": [
+     "vfreeformgoodspringsdocmitchelltopic003",
+     "vfreeformgoodspringsdocmitchelltopic004",
+     "vfreeformgoodspringsdocmitchelltopic004_2"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsdocmitchelltopic004",
+    "check": {"type": "skill", "skill": "medicine", "min": 25},
+    "effects": [{"type": "set_flag", "flag": "doc_mitchell_gave_cobb_supplies"}]
+   },
+   {
+    "key": "vfreeformgoodspringsdocmitchelltopic004_2",
+    "conditions": [
+     {"type": "not", "of": {"type": "skill", "skill": "medicine", "min": 25}}
+    ]
+   },
    {
     "key": "vfreeformgoodspringsdocmitchelltellmeaboutyou",
     "next": [
@@ -47,7 +128,12 @@
    {
     "key": "vfreeformgoodspringsdocmitchellshootoutbags",
     "conditions": [
-     {"type": "flag", "flag": "doc_mitchell_offered_supplies"}
+     {"type": "flag", "flag": "doc_mitchell_offered_supplies"},
+     {"type": "flag", "flag": "doc_mitchell_gave_bags", "value": false}
+    ],
+    "effects": [
+     {"type": "give_item", "item": "doctor_s_bag", "count": 2},
+     {"type": "set_flag", "flag": "doc_mitchell_gave_bags"}
     ]
    },
    {
@@ -439,6 +525,252 @@
     ]
    },
    {"key": "vfreeformgoodspringsgschettopic011"},
+   {"key": "goodbye", "ends": true}
+  ]
+ },
+ {
+  "dialogue": "gseasypete",
+  "start": [
+   "vfreeformgoodspringsgseasypetetopic000",
+   "vfreeformgoodspringsgseasypetetopic001",
+   "vfreeformgoodspringsgseasypetetopic002",
+   "vfreeformgoodspringsgseasypetetopic004",
+   "vfreeformgoodspringsgoodspringseasypetetopic000",
+   "vfreeformgoodspringsgoodspringseasypetetopic003",
+   "goodbye"
+  ],
+  "topics": [
+   {
+    "key": "vfreeformgoodspringsgseasypetetopic000",
+    "next": [
+     "vfreeformgoodspringsgseasypetetopic005",
+     "vfreeformgoodspringsgseasypetetopic006",
+     "vfreeformgoodspringsgseasypetetopic007"
+    ]
+   },
+   {"key": "vfreeformgoodspringsgseasypetetopic006", "next": ["vfreeformgoodspringsgseasypetetopic003"]},
+   {"key": "vfreeformgoodspringsgseasypetetopic007", "next": ["vfreeformgoodspringsgseasypetetopic008"]},
+   {"key": "vfreeformgoodspringsgseasypetetopic008", "next": ["vfreeformgoodspringsgseasypetetopic009"]},
+   {
+    "key": "vfreeformgoodspringsgoodspringseasypetetopic000",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60}
+     },
+     {"type": "flag", "flag": "easy_pete_joined_militia", "value": false}
+    ],
+    "next": [
+     "vfreeformgoodspringsgoodspringseasypetetopic001",
+     "vfreeformgoodspringsgoodspringseasypetetopic002",
+     "vfreeformgoodspringsgoodspringseasypetetopic006"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringseasypetetopic001",
+    "check": {"type": "skill", "skill": "explosives", "min": 25},
+    "effects": [{"type": "set_flag", "flag": "easy_pete_joined_militia"}]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringseasypetetopic002",
+    "conditions": [
+     {"type": "not", "of": {"type": "skill", "skill": "explosives", "min": 25}}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringseasypetetopic003",
+    "conditions": [
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "completed"}
+     }
+    ],
+    "next": ["vfreeformgoodspringsgoodspringseasypetetopic005"]
+   },
+   {"key": "goodbye", "ends": true}
+  ]
+ },
+ {
+  "dialogue": "gsjoecobb",
+  "start": [
+   "vfreeformgoodspringsgsjoecobbtopic000",
+   "vfreeformgoodspringsgsjoecobbtopic019",
+   "vfreeformgoodspringsgsjoecobbtopic023",
+   "vfreeformgoodspringsgsjoecobbtopic005",
+   "vfreeformgoodspringsgsjoecobbtopic022",
+   "vfreeformgoodspringsgoodspringsjoecobbtopic001",
+   "vfreeformgoodspringsgsjoecobbtopic007",
+   "vfreeformgoodspringsgsjoecobbtopic011",
+   "vfreeformgoodspringsgsjoecobbtopic025",
+   "goodbye"
+  ],
+  "topics": [
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic000",
+    "conditions": [
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "not_started"},
+     {"type": "not", "of": {"type": "npc", "npc": "ringo", "state": "dead"}}
+    ],
+    "next": [
+     "vfreeformgoodspringsgsjoecobbtopic015",
+     "vfreeformgoodspringsgsjoecobbtopic016",
+     "vfreeformgoodspringsgsjoecobbtopic024",
+     "vfreeformgoodspringsgsjoecobbtopic017"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic015",
+    "conditions": [
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 5}
+     }
+    ],
+    "next": [
+     "vfreeformgoodspringsgsjoecobbtopic001",
+     "vfreeformgoodspringsgsjoecobbtopic002",
+     "vfreeformgoodspringsgsjoecobbtopic003"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic016",
+    "conditions": [
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 5}
+     }
+    ],
+    "next": [
+     "vfreeformgoodspringsgsjoecobbtopic001",
+     "vfreeformgoodspringsgsjoecobbtopic002",
+     "vfreeformgoodspringsgsjoecobbtopic003"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic024",
+    "conditions": [
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 5}
+     }
+    ],
+    "next": [
+     "vfreeformgoodspringsgsjoecobbtopic001",
+     "vfreeformgoodspringsgsjoecobbtopic002",
+     "vfreeformgoodspringsgsjoecobbtopic003"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic003",
+    "next": [
+     "vfreeformgoodspringsgsjoecobbtopic001",
+     "vfreeformgoodspringsgsjoecobbtopic002"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic001",
+    "effects": [
+     {"type": "start_quest", "quest": "run_goodsprings_run"},
+     {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 10}
+    ]
+   },
+   {"key": "vfreeformgoodspringsgsjoecobbtopic002"},
+   {"key": "vfreeformgoodspringsgsjoecobbtopic017"},
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic019",
+    "conditions": [
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "not_started"},
+     {"type": "npc", "npc": "ringo", "state": "dead"}
+    ],
+    "effects": [
+     {"type": "start_quest", "quest": "run_goodsprings_run"},
+     {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 15}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic023",
+    "conditions": [
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "active"},
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 15},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 20}
+     }
+    ],
+    "effects": [{"type": "set_stage", "quest": "run_goodsprings_run", "stage": 20}]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic005",
+    "conditions": [
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "active"},
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 20},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 45}
+     },
+     {"type": "flag", "flag": "doc_mitchell_gave_cobb_supplies"}
+    ],
+    "effects": [{"type": "set_stage", "quest": "run_goodsprings_run", "stage": 45}]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic022",
+    "conditions": [
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "active"},
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 20},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 60}
+     }
+    ],
+    "effects": [{"type": "set_stage", "quest": "run_goodsprings_run", "stage": 60}]
+   },
+   {
+    "key": "vfreeformgoodspringsgoodspringsjoecobbtopic001",
+    "conditions": [
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "run_goodsprings_run", "state": "stage_at_least", "stage": 15}
+     }
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic007",
+    "next": [
+     "vfreeformgoodspringsgsjoecobbtopic008",
+     "vfreeformgoodspringsgsjoecobbtopic010",
+     "vfreeformgoodspringsgsjoecobbtopic018"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic011",
+    "next": ["vfreeformgoodspringsgsjoecobbtopic012"]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic012",
+    "next": [
+     "vfreeformgoodspringsgsjoecobbtopic013",
+     "vfreeformgoodspringsgsjoecobbtopic013_2",
+     "vfreeformgoodspringsgsjoecobbtopic014"
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic013",
+    "check": {"type": "skill", "skill": "speech", "min": 20}
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic013_2",
+    "conditions": [
+     {"type": "not", "of": {"type": "skill", "skill": "speech", "min": 20}}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsgsjoecobbtopic025",
+    "conditions": [
+     {"type": "quest", "quest": "run_goodsprings_run", "state": "completed"}
+    ]
+   },
    {"key": "goodbye", "ends": true}
   ]
  }
