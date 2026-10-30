@@ -67,6 +67,17 @@ impl Menu {
         Self { len, selected: 0 }
     }
 
+    /// A menu over `len` entries that keeps this selection where it still exists,
+    /// so the cursor stays put after an action empties or shrinks the list.
+    #[must_use]
+    pub fn resized(&self, len: usize) -> Self {
+        let mut next = Self::new(len);
+        if let Some(selected) = self.selected() {
+            next.pick(selected.min(len.saturating_sub(1)));
+        }
+        next
+    }
+
     /// The selected position, or `None` when the menu is empty.
     #[must_use]
     pub fn selected(&self) -> Option<usize> {
@@ -204,6 +215,15 @@ mod tests {
         let mut menu = Menu::new(3);
         menu.up();
         assert_eq!(menu.selected(), Some(2));
+    }
+
+    #[test]
+    fn a_resized_menu_keeps_the_cursor_where_it_still_fits() {
+        let mut menu = Menu::new(5);
+        menu.pick(3);
+        assert_eq!(menu.resized(5).selected(), Some(3));
+        assert_eq!(menu.resized(2).selected(), Some(1));
+        assert_eq!(menu.resized(0).selected(), None);
     }
 
     #[test]

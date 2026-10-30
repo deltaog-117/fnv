@@ -241,7 +241,10 @@
     "duration_s": 7.0
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "heal": 7
+  }
  },
  {
   "id": "barrel_cactus_fruit",
@@ -420,7 +423,10 @@
     "per_second": true,
     "duration_s": 18.0
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 36
+  }
  },
  {
   "id": "black_blood_sausage",
@@ -4118,7 +4124,10 @@
     "amount": -50
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "heal": 10
+  }
  },
  {
   "id": "rad_x",
@@ -4738,7 +4747,10 @@
     "amount": 30
    }
   ],
-  "skill": "Medicine"
+  "skill": "Medicine",
+  "on_use": {
+   "heal": 30
+  }
  },
  {
   "id": "strange_meat",

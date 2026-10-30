@@ -12,8 +12,8 @@ use crate::quests::{QuestBook, QuestLog};
 use crate::shared::{
     CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, Effect, EffectError,
     Encounter, EncounterId, EndingId, FactionId, FlagId, HealthPercent, InventorySink,
-    InventoryView, ItemId, LocationId, NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage,
-    QuestStatus, QuestView, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
+    InventoryView, ItemId, ItemUse, LocationId, NpcId, NpcState, PerkId, QuestId, QuestSink,
+    QuestStage, QuestStatus, QuestView, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
     StandingSink, StandingView, VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
 };
 use crate::trade::{Market, Shop, TradeError, VendorBook, buy_total, sell_total};
@@ -342,6 +342,45 @@ impl Game {
     /// [`InventoryError`] when the item is not carried or cannot be equipped.
     pub fn equip(&mut self, item: &ItemId) -> Result<Slot, InventoryError> {
         self.inventory.equip(item)
+    }
+
+    /// Uses one carried consumable, returning the hit points it restored.
+    ///
+    /// The item is spent only when it heals: a player at full health keeps it, so
+    /// a stray key press does not waste a stimpak.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::Down`] when the player has no hit points,
+    /// [`InventoryError::NotHeld`] when the item is not carried,
+    /// [`InventoryError::NoEffect`] when the game does not model what it does, and
+    /// [`InventoryError::AtFullHealth`] when there is nothing to heal.
+    pub fn use_item(&mut self, item: &ItemId) -> Result<u32, InventoryError> {
+        if !self.is_alive() {
+            return Err(InventoryError::Down);
+        }
+        if self.inventory.item_count(item) == 0 {
+            return Err(InventoryError::NotHeld(item.clone()));
+        }
+        let Some(ItemUse::Heal(hp)) = self.inventory.item_use(item) else {
+            return Err(InventoryError::NoEffect(item.clone()));
+        };
+        if self.wounds == 0 {
+            return Err(InventoryError::AtFullHealth);
+        }
+        let healed = hp.get().min(self.wounds);
+        self.inventory.discard(item, NonZeroU32::MIN)?;
+        self.heal(healed);
+        Ok(healed)
+    }
+
+    /// Throws `count` copies of a carried item away.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError`] when too few are carried or the last copy is equipped.
+    pub fn drop_item(&mut self, item: &ItemId, count: NonZeroU32) -> Result<(), InventoryError> {
+        self.inventory.discard(item, count)
     }
 
     /// Empties an equipment slot, returning what was in it.

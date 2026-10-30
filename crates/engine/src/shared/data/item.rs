@@ -3,6 +3,8 @@
 //! Each item file holds one kind, so each kind is its own struct. The fields
 //! every kind shares are written once, in `item_record!`.
 
+use std::num::NonZeroU32;
+
 use serde::Deserialize;
 
 use crate::shared::{AmmoFamilyId, Dlc, ItemId, Skill};
@@ -206,8 +208,18 @@ item_record!(
         addiction: Option<Addiction>,
         /// The skill a skill-related consumable affects.
         skill: Option<String>,
+        /// What using it does, when the game models all of it.
+        on_use: Option<ItemUse>,
     }
 );
+
+/// What using a consumable does, as the game models it.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
+#[serde(rename_all = "snake_case")]
+pub enum ItemUse {
+    /// Restores this many hit points at once.
+    Heal(NonZeroU32),
+}
 
 /// One parsed "+N stat" effect of a consumable.
 #[derive(Debug, Clone, PartialEq, Deserialize)]

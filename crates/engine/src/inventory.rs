@@ -14,7 +14,9 @@
 //! - weight never blocks picking something up: being over the carry limit is for
 //!   the game to read, not for the pack to refuse.
 //!
-//! Using consumables, repair and crafting are not built. Barter lives in `trade`.
+//! Throwing items away is the pack's own action; using a consumable needs the
+//! player's health, so `Game` does it. Repair and crafting are not built. Barter
+//! lives in `trade`.
 
 mod book;
 mod state;

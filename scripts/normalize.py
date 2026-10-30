@@ -248,6 +248,25 @@ def consumables(raw, ids):
     return out
 
 
+def apply_uses(consumable_recs, entries):
+    """Merge the hand-authored uses into the consumable records as `on_use`.
+
+    Each entry names one consumable `item` and what using it does. An unknown
+    item or a repeated entry raises: a typo must not silently drop an authored
+    effect.
+    """
+    table = {r["id"]: r for r in consumable_recs}
+    seen = set()
+    for entry in entries:
+        item = entry["item"]
+        if item not in table:
+            raise ValueError(f"uses: unknown consumable {item}")
+        if item in seen:
+            raise ValueError(f"uses: {item} is listed twice")
+        seen.add(item)
+        table[item]["on_use"] = {k: v for k, v in entry.items() if k != "item"}
+
+
 def weapon_mods(raw, ids, weapon_recs):
     by_name = {}
     for w in weapon_recs:
@@ -912,8 +931,10 @@ def main(argv):
     dump(out / "weapons.json", weps)
     dump(out / "armor.json", armor(load("armor"), ids))
     book_pages = {b["page"] for b in json.load(open(data / "rules" / "skill_books.json"))}
-    dump(out / "consumables.json",
-         consumables([c for c in load("consumables") if c["page"] not in book_pages], ids))
+    consumable_recs = consumables(
+        [c for c in load("consumables") if c["page"] not in book_pages], ids)
+    apply_uses(consumable_recs, load("uses"))
+    dump(out / "consumables.json", consumable_recs)
     mods = weapon_mods(load("weapon_mods"), ids, weps)
     dump(out / "weapon_mods.json", mods)
     rdir = data / "rules"

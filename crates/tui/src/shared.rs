@@ -8,4 +8,6 @@ pub mod input;
 pub mod layout;
 pub mod log;
 pub mod menu;
+pub mod names;
+pub mod quantity;
 pub mod theme;

@@ -34,12 +34,14 @@ pub enum Next {
     Fight(usize),
     /// Open the character screen.
     Character,
+    /// Open the pack screen.
+    Pack,
     /// Leave the game.
     Quit,
 }
 
 /// The place and the actions it offers: one "talk to" per person, one per shop, one
-/// per fight on offer, the character screen, then quit.
+/// per fight on offer, the character screen, the pack, then quit.
 #[derive(Debug)]
 pub struct Exploration {
     place: String,
@@ -54,8 +56,8 @@ impl Exploration {
     /// The scene for `place` with `people` to talk to.
     #[must_use]
     pub fn new(place: String, people: Vec<Person>) -> Self {
-        // The extra rows are "character" and "quit", so the menu is never empty.
-        let menu = Menu::new(people.len() + 2);
+        // The extra rows are "character", "pack" and "quit", so the menu is never empty.
+        let menu = Menu::new(people.len() + 3);
         Self {
             place,
             people,
@@ -82,9 +84,10 @@ impl Exploration {
         self
     }
 
-    /// Everything the menu offers: the listed actions plus "character" and "quit".
+    /// Everything the menu offers: the listed actions plus "character", "pack" and
+    /// "quit".
     fn rows(&self) -> usize {
-        self.people.len() + self.shops.len() + self.fights.len() + 2
+        self.people.len() + self.shops.len() + self.fights.len() + 3
     }
 
     /// The same scene with another label on the character row, so it can say that
@@ -104,6 +107,7 @@ impl Exploration {
             Some(index) if index < shops_end => Next::Shop(index - self.people.len()),
             Some(index) if index < fights_end => Next::Fight(index - shops_end),
             Some(index) if index == fights_end => Next::Character,
+            Some(index) if index == fights_end + 1 => Next::Pack,
             Some(_) => Next::Quit,
             None => Next::Stay,
         }
@@ -121,7 +125,11 @@ impl Exploration {
                     .map(|name| Item::new(format!("Trade at {name}"))),
             )
             .chain(self.fights.iter().map(|name| Item::new(name.clone())))
-            .chain([Item::new(self.character.clone()), Item::new("Quit game")])
+            .chain([
+                Item::new(self.character.clone()),
+                Item::new("Pack"),
+                Item::new("Quit game"),
+            ])
             .collect();
         let mut lines = vec![
             Line::styled(format!("You are in {}.", self.place), theme::text()),
@@ -165,9 +173,10 @@ mod tests {
     }
 
     #[test]
-    fn the_last_row_quits() {
+    fn the_pack_comes_before_the_last_row_which_quits() {
         let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")]);
-        assert_eq!(scene.update(Command::Pick(2)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(2)), Next::Pack);
+        assert_eq!(scene.update(Command::Pick(3)), Next::Quit);
     }
 
     #[test]
@@ -183,7 +192,8 @@ mod tests {
             .with_fights(vec!["Fight the gang".to_owned()]);
         assert_eq!(scene.update(Command::Pick(1)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(2)), Next::Character);
-        assert_eq!(scene.update(Command::Pick(3)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(3)), Next::Pack);
+        assert_eq!(scene.update(Command::Pick(4)), Next::Quit);
     }
 
     #[test]
@@ -194,13 +204,15 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(1)), Next::Shop(0));
         assert_eq!(scene.update(Command::Pick(2)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(3)), Next::Character);
-        assert_eq!(scene.update(Command::Pick(4)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(4)), Next::Pack);
+        assert_eq!(scene.update(Command::Pick(5)), Next::Quit);
     }
 
     #[test]
-    fn a_place_with_nobody_still_offers_the_character_screen_and_quit() {
+    fn a_place_with_nobody_still_offers_the_character_screen_the_pack_and_quit() {
         let mut scene = Exploration::new("Nowhere".to_owned(), Vec::new());
         assert_eq!(scene.update(Command::Select), Next::Character);
-        assert_eq!(scene.update(Command::Pick(1)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(1)), Next::Pack);
+        assert_eq!(scene.update(Command::Pick(2)), Next::Quit);
     }
 }

@@ -27,7 +27,7 @@ pub use bounds::{HealthPercent, SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
 pub use data::{
     Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, Dialogue, Encounter, Faction,
-    FactionKind, Foe, InfoValue, ItemKind, Location, LocationSize, MapKind, Neighbor, Npc,
+    FactionKind, Foe, InfoValue, ItemKind, ItemUse, Location, LocationSize, MapKind, Neighbor, Npc,
     NpcSpecial, Perk, PerkRequirements, Position, Quest, QuestKind, ReputationModel,
     ReputationNote, Response, Rule, RuleKind, RuleTargetType, Stage, StatEffect, StockLine, Topic,
     TopicSection, Trait, Vendor, WalkthroughNode, Weapon, WeaponClass,

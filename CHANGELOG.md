@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Pack screen in `crates/tui/src/inventory/`: every stack the player carries on the left (marked `[wielded]`, `[worn]` or `[on head]`), and on the right what is worn and the details of the chosen item. Enter on a stack opens its actions: Use (when the game models the item's effect), Equip or Unequip, Drop, and Back; dropping a stack of more than one asks how many. The bottom line shows the load against the carry weight and warns when overencumbered. The scene gains a "Pack" row between "Character" and "Quit game", and every result reaches the log in the engine's words.
+- `Game::use_item`: spends one consumable and heals, returning the hit points restored. A player at full health keeps the item, one who is down cannot use anything, and an item whose effect the game does not model is refused and kept. `Game::drop_item` and `Inventory::discard` throw items away; the last copy of an equipped item is refused, so a slot never points at something no longer held.
+- `ItemUse` (`Heal`), `ItemBook::with_uses` and `ItemBook::item_use`, `Inventory::item_use` and `Inventory::slot_for`, and new `InventoryError` variants (`NotConsumable`, `NoEffect`, `NotEnough`, `Equipped`, `AtFullHealth`, `Down`).
+- Item uses as data: `data/items/uses.json` (hand-authored), merged by `scripts/normalize.py` into each consumable as `on_use`, with an `on_use` entry in `schemas/item.schema.json`. An unknown item or a repeated entry fails the merge. Four items are listed: stimpak (30), banana yucca fruit (7), bitter drink (36) and purified water (10). Only items whose whole effect is hit points are listed; healing powder waits for its Perception penalty to be modeled.
+- `Menu::resized`, a menu over a new length that keeps the cursor where it still fits.
+- Tests: use and drop rules through `Game` with a property test (hit points never above the maximum, a refusal changes nothing), a property test of `discard` against a plain count model, the real data's four uses, pack screen tests (use, equip and unequip, drop with and without a question, the equipped refusal, Esc order, the rendered screen), a property test that no key sequence adds items or caps or heals past the maximum, and an app test that walks scene, pack and back.
 - Trade screen in `crates/tui/src/trade/`: the vendor's stock on the left, the player's pack on the right, each with its own cursor (Left/Right switches panel). Rows show the price of one unit, and the panel titles show both sides' caps. Enter trades a stack of one at once; on a bigger stack it asks how many (Left/Right by 1, Up/Down by 10, Enter confirms, Esc cancels). Refusals appear in the log in the engine's own words, and the last worn copy of an item is marked "[worn]" and refused
 - The scene lists "Trade at ..." for each vendor in the place or its buildings, and a dialogue topic with a `shop` opens the same screen; leaving a shop opened from a conversation returns to that conversation. The real game now builds its vendors, so Chet's, Trudy's and Doc Mitchell's shops are reachable
 - `trade::Quantity`, a count bounded between one and the stack size, and `trade::Names`, display names for items
@@ -100,6 +106,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TUI tests: property tests for the menu, the log and the layout, and headless `App` tests over the real Goodsprings data using ratatui's `TestBackend`
 
 ### Changed
+- `Names` and `Quantity` moved from `crates/tui/src/trade/` to `crates/tui/src/shared/`, because the pack screen uses them too; the trade screen behaves as before.
+- The scene's row order is now people, shops, fights, Character, Pack, Quit.
 - Doc's starting kit (`ain_t_that_a_kick_in_the_head`, stage 50) also gives 30 rounds of 9mm, since the pistol cannot shoot without them; `tests/scenarios/goodsprings.json` states them
 - The test helper that plays a fight reloads when the weapon runs empty
 - The Ghost Town Gunfight is offered at stage 65 ("Join up with Sunny") instead of stage 10, so it no longer opens as soon as Sunny agrees; the optional stages 20 to 50 are skipped until Trudy, Chet, Doc and Easy Pete are authored

@@ -8,7 +8,7 @@ use thiserror::Error;
 
 use super::book::{ItemBook, ItemClass};
 use crate::shared::{
-    ArmorSlot, EffectError, FactionId, InventorySink, InventoryView, ItemId, whole_amount,
+    ArmorSlot, EffectError, FactionId, InventorySink, InventoryView, ItemId, ItemUse, whole_amount,
 };
 
 /// A place on the body or in the hand where one item can be equipped.
@@ -65,6 +65,31 @@ pub enum InventoryError {
     /// The item is not something that can be equipped.
     #[error("{0} cannot be equipped")]
     NotEquippable(ItemId),
+    /// A use was given for an item that is not a consumable.
+    #[error("item {0} is not a consumable, so it has no use")]
+    NotConsumable(ItemId),
+    /// The item has no effect the game models yet.
+    #[error("{0} has no effect the game models yet")]
+    NoEffect(ItemId),
+    /// Fewer copies are carried than the action needs.
+    #[error("{have} of {item} carried, {need} needed")]
+    NotEnough {
+        /// The item.
+        item: ItemId,
+        /// How many are carried.
+        have: u32,
+        /// How many the action needs.
+        need: u32,
+    },
+    /// The last copy of the item is equipped.
+    #[error("{0} is equipped; unequip it first")]
+    Equipped(ItemId),
+    /// The player is already at full health.
+    #[error("already at full health")]
+    AtFullHealth,
+    /// The player has no hit points left.
+    #[error("the player is down")]
+    Down,
 }
 
 /// Everything the player carries: stacks, caps and what is equipped.
@@ -108,6 +133,18 @@ impl Inventory {
         self.book.value(item)
     }
 
+    /// The slot the item goes in when equipped, if it fits one at all.
+    #[must_use]
+    pub fn slot_for(&self, item: &ItemId) -> Option<Slot> {
+        self.book.class(item).and_then(Slot::for_class)
+    }
+
+    /// What using the item does, if the game models it.
+    #[must_use]
+    pub fn item_use(&self, item: &ItemId) -> Option<ItemUse> {
+        self.book.item_use(item)
+    }
+
     /// Total weight carried, in pounds.
     #[must_use]
     pub fn weight(&self) -> f64 {
@@ -138,6 +175,38 @@ impl Inventory {
             .ok_or_else(|| InventoryError::NotEquippable(item.clone()))?;
         self.equipped.insert(slot, item.clone());
         Ok(slot)
+    }
+
+    /// Throws `count` copies away. The last copy of an equipped item stays, so
+    /// the pack never keeps a slot filled with something it no longer holds.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NotHeld`] when none is carried,
+    /// [`InventoryError::NotEnough`] when fewer than `count` are, and
+    /// [`InventoryError::Equipped`] when the last copy is equipped.
+    pub fn discard(&mut self, item: &ItemId, count: NonZeroU32) -> Result<(), InventoryError> {
+        let have = self.item_count(item);
+        if have == 0 {
+            return Err(InventoryError::NotHeld(item.clone()));
+        }
+        let Some(left) = have.checked_sub(count.get()) else {
+            return Err(InventoryError::NotEnough {
+                item: item.clone(),
+                have,
+                need: count.get(),
+            });
+        };
+        match NonZeroU32::new(left) {
+            Some(left) => {
+                self.stacks.insert(item.clone(), left);
+            }
+            None if self.is_equipped(item) => return Err(InventoryError::Equipped(item.clone())),
+            None => {
+                self.stacks.remove(item);
+            }
+        }
+        Ok(())
     }
 
     /// Empties a slot, returning what was in it.

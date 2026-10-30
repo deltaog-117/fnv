@@ -27,21 +27,24 @@ use crate::character::{self, Creation, LevelUp};
 use crate::combat::{self, Fight};
 use crate::dialogue::{self, Talk};
 use crate::exploration::{self, Exploration, Person};
+use crate::inventory::{self, Pack};
 use crate::quests;
 use crate::shared::dice::Rng;
 use crate::shared::input::Command;
 use crate::shared::layout::{self, MIN_HEIGHT, MIN_WIDTH};
 use crate::shared::log::{self, Entry, Log};
+use crate::shared::names::Names;
 use crate::shared::theme;
-use crate::trade::{self, Names, Trade};
+use crate::trade::{self, Trade};
 
 /// The quest a new game starts in, and the stage that opens it.
 const OPENING_QUEST: &str = "ain_t_that_a_kick_in_the_head";
 const OPENING_STAGE: u32 = 10;
 /// What the player wields and wears. The opening quest hands over the pistol late
-/// in Doc's scene; there is no inventory screen yet, so it is taken in hand when a
-/// fight starts. The armor is a stand-in worn from the start until there is a place
-/// to find or buy it, and without it the Goodsprings fight is not fair.
+/// in Doc's scene; it is taken in hand when a fight starts and the hand is empty,
+/// so the player is never sent to the fight unarmed by forgetting to equip it. The
+/// armor is a stand-in worn from the start, and without it the Goodsprings fight
+/// is not fair.
 const START_WEAPON: &str = "9mm_pistol";
 const START_ARMOR: &str = "leather_armor";
 
@@ -52,6 +55,8 @@ enum Screen {
     Talking(Talk),
     Fighting(Fight),
     Leveling(LevelUp),
+    /// Looking through the pack.
+    Packing(Pack),
     /// At a counter. `from` is the conversation that opened the shop, if one did, so
     /// leaving the shop picks it up again.
     Trading {
@@ -212,9 +217,17 @@ impl App {
                 }
                 exploration::Next::Fight(index) => self.start_fight(index),
                 exploration::Next::Character => self.screen = Screen::Leveling(LevelUp::new()),
+                exploration::Next::Pack => {
+                    self.screen = Screen::Packing(Pack::open(&self.game, Arc::clone(&self.names)));
+                }
             },
             Screen::Leveling(sheet) => {
                 if sheet.update(command, &mut self.game, &mut self.log) == character::Next::Leave {
+                    self.screen = self.exploring();
+                }
+            }
+            Screen::Packing(pack) => {
+                if pack.update(command, &mut self.game, &mut self.log) == inventory::Next::Leave {
                     self.screen = self.exploring();
                 }
             }
@@ -419,6 +432,10 @@ impl App {
                 sheet.render(frame, regions.scene, &self.game);
                 "Up/Down move | Enter choose | 1-9 pick | Esc back | q quit"
             }
+            Screen::Packing(pack) => {
+                pack.render(frame, regions.scene, &self.game);
+                pack.keys()
+            }
             Screen::Trading { trade, .. } => {
                 trade.render(frame, regions.scene, &self.game);
                 trade.keys()
@@ -534,6 +551,22 @@ mod tests {
         ] {
             assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
         }
+    }
+
+    #[test]
+    fn the_pack_opens_from_the_scene_shows_the_worn_armor_and_leaves_again() {
+        let mut app = app();
+        // The cursor wraps up from the first row to Quit, and Pack is just above it.
+        app.update(Command::Up);
+        app.update(Command::Up);
+        app.update(Command::Select);
+        assert!(matches!(app.screen, Screen::Packing(_)));
+        let text = screen(&app, 100, 30);
+        for expected in ["Your pack", "Leather armor", "[worn]", "Carrying"] {
+            assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
+        }
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
     }
 
     #[test]

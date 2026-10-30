@@ -18,8 +18,8 @@ pub use dialogue::{Dialogue, Response, Topic, TopicSection};
 pub use encounter::{Encounter, Foe};
 pub use faction::{Faction, FactionKind, InfoValue, ReputationModel, ReputationNote};
 pub use item::{
-    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, ItemKind, StatEffect, Weapon,
-    WeaponClass,
+    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, ItemKind, ItemUse, StatEffect,
+    Weapon, WeaponClass,
 };
 pub use location::{Location, LocationSize, MapKind, Neighbor, Position};
 pub use npc::{Npc, NpcSpecial};

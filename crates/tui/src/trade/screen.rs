@@ -12,11 +12,11 @@ use ratatui::layout::{Constraint, Layout, Rect};
 use ratatui::text::Line;
 use ratatui::widgets::{Block, Borders, Paragraph, Wrap};
 
-use super::names::Names;
-use super::quantity::Quantity;
 use crate::shared::input::Command;
 use crate::shared::log::{Entry, Log};
 use crate::shared::menu::{self, Menu};
+use crate::shared::names::Names;
+use crate::shared::quantity::Quantity;
 use crate::shared::theme;
 
 /// How far Up and Down move the count in the "how many" question.

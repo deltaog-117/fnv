@@ -310,6 +310,21 @@
         },
         "skill": {
           "type": "string"
+        },
+        "on_use": {
+          "type": "object",
+          "description": "What using the item does, when the game models all of it (hand-authored in data/items/uses.json).",
+          "required": [
+            "heal"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "heal": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Hit points restored at once."
+            }
+          }
         }
       }
     },

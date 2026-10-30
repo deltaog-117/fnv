@@ -1499,6 +1499,54 @@ Vendors and barter worked in the engine, but nothing in the TUI could reach them
 
 ---
 
+### Pack Screen and Item Use: Hand-Written Uses, Merged into the Records
+
+**Date:** 2026-10-30
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Bought stimpaks could not be used and a bought weapon could not be equipped, because the TUI had no pack screen. Using a consumable needs the game to know what an item does, and the imported data describes effects as loose text (`"stat": "HP and Limb Condition", "amount": 30`). Three ways were weighed: a hand-written table of uses (A), reading the imported effects at load (B), and reading them with hand-written overrides (C). **A was chosen**, as recommended.
+
+---
+
+#### Decision
+
+**What an item does is data, written by hand.** `data/items/uses.json` lists a consumable and what using it does (`heal`: hit points restored at once). `scripts/normalize.py` merges each entry into the consumable's record as `on_use`, the same way perk modifiers are merged: an unknown item or a repeated entry fails the merge, so a typo cannot drop an effect. The Rust side is a typed `ItemUse` (`Heal(NonZeroU32)`) on `Consumable`, carried into `ItemBook`. B and C were rejected because the stat names are free text; a string match that misses an item would fail silently.
+
+**Only fully modeled items are listed.** Four items: stimpak (30), banana yucca fruit (7), bitter drink (36), purified water (10). Healing powder is left out, although the plan named it at 18, because it carries a Perception penalty the game does not model; listing it would quietly drop the drawback. Most food adds radiation and is left out for the same reason. A per-second heal is entered as its total, since there is no clock yet; this is written in `data/items/SOURCE.md` so it is revisited when the clock lands.
+
+**Using an item is a `Game` action, not a pack action.** `Game::use_item` needs the player's wounds, which the pack does not hold. It refuses a player who is down, an item not carried, an item with no modeled effect, and a player at full health (so a stray key press does not waste a stimpak), and it changes nothing on a refusal. Dropping is the pack's own action (`Inventory::discard`), and it refuses the last copy of an equipped item so a slot never points at something no longer held.
+
+**The screen is an action menu per stack.** The existing commands have no letter keys for "use" or "drop", and adding some would touch every screen, so Enter on a stack opens its actions (Use, Equip or Unequip, Drop, Back); only the actions that apply are listed. A stack of more than one asks how many to drop with the same bounded count the trade screen uses. As in the trade screen, the pack holds only cursors and the pending question and reads everything else from the game when it draws.
+
+**Two helpers moved to `shared/`.** `Names` and `Quantity` lived in the trade screen's folder; the pack screen needs both, and one screen importing from another breaks the rule that screens depend on `shared` and never on each other. `Menu::resized` is new in `shared/menu.rs`; the trade screen keeps its own private copy of the same few lines, which I left alone to keep the change small.
+
+**The automatic pistol stays.** `take_weapon_in_hand` still wields the pistol when a fight starts with an empty hand, so unequipping it cannot send the player to the Goodsprings fight unarmed. Its comment no longer says the inventory screen is missing.
+
+**Left out for now:** per-item weight and details beyond value and the heal, comparing armor values when equipping, resting, and every consumable whose effect needs a clock, radiation, addiction or the Medicine skill.
+
+---
+
+#### References
+
+- `crates/tui/src/inventory/`, `crates/tui/src/app.rs`, `crates/tui/src/exploration/screen.rs`
+- `crates/engine/src/game/state.rs` (`use_item`, `drop_item`), `crates/engine/src/inventory/`
+- `data/items/uses.json`, `data/items/SOURCE.md`, `scripts/normalize.py` (`apply_uses`)
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-30 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

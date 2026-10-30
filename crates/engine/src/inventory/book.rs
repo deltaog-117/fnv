@@ -3,7 +3,7 @@
 use std::collections::HashMap;
 
 use super::state::InventoryError;
-use crate::shared::{ArmorSlot, GameData, ItemId};
+use crate::shared::{ArmorSlot, GameData, ItemId, ItemUse};
 
 /// What an item is, as far as carrying and wearing it goes.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -34,6 +34,7 @@ struct Info {
 #[derive(Debug, Default)]
 pub struct ItemBook {
     items: HashMap<ItemId, Info>,
+    uses: HashMap<ItemId, ItemUse>,
 }
 
 impl ItemBook {
@@ -65,7 +66,10 @@ impl ItemBook {
                 return Err(InventoryError::DuplicateItem(id));
             }
         }
-        Ok(Self { items })
+        Ok(Self {
+            items,
+            uses: HashMap::new(),
+        })
     }
 
     /// The same book with base values in caps, so items can be priced.
@@ -86,6 +90,28 @@ impl ItemBook {
                 .get_mut(&id)
                 .ok_or_else(|| InventoryError::Unknown(id.clone()))?
                 .value = Some(value);
+        }
+        Ok(self)
+    }
+
+    /// The same book with what using an item does, so consumables can be used.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::Unknown`] for an item not in the book and
+    /// [`InventoryError::NotConsumable`] for one that is not a consumable.
+    pub fn with_uses(
+        mut self,
+        uses: impl IntoIterator<Item = (ItemId, ItemUse)>,
+    ) -> Result<Self, InventoryError> {
+        for (id, effect) in uses {
+            match self.class(&id) {
+                None => return Err(InventoryError::Unknown(id)),
+                Some(ItemClass::Consumable) => {
+                    self.uses.insert(id, effect);
+                }
+                Some(_) => return Err(InventoryError::NotConsumable(id)),
+            }
         }
         Ok(self)
     }
@@ -112,18 +138,24 @@ impl ItemBook {
             .consumables
             .iter()
             .map(|item| (item.id.clone(), ItemClass::Consumable, item.weight));
-        Self::new(weapons.chain(armor).chain(ammo).chain(consumables))?.with_values(
-            data.weapons
-                .iter()
-                .map(|item| (item.id.clone(), item.value))
-                .chain(data.armor.iter().map(|item| (item.id.clone(), item.value)))
-                .chain(data.ammo.iter().map(|item| (item.id.clone(), item.value)))
-                .chain(
-                    data.consumables
-                        .iter()
-                        .map(|item| (item.id.clone(), item.value)),
-                ),
-        )
+        let uses = data
+            .consumables
+            .iter()
+            .filter_map(|item| item.on_use.map(|effect| (item.id.clone(), effect)));
+        Self::new(weapons.chain(armor).chain(ammo).chain(consumables))?
+            .with_uses(uses)?
+            .with_values(
+                data.weapons
+                    .iter()
+                    .map(|item| (item.id.clone(), item.value))
+                    .chain(data.armor.iter().map(|item| (item.id.clone(), item.value)))
+                    .chain(data.ammo.iter().map(|item| (item.id.clone(), item.value)))
+                    .chain(
+                        data.consumables
+                            .iter()
+                            .map(|item| (item.id.clone(), item.value)),
+                    ),
+            )
     }
 
     /// Whether the item exists.
@@ -148,6 +180,12 @@ impl ItemBook {
     #[must_use]
     pub fn value(&self, item: &ItemId) -> Option<f64> {
         self.items.get(item).and_then(|info| info.value)
+    }
+
+    /// What using the item does, if the game models it.
+    #[must_use]
+    pub fn item_use(&self, item: &ItemId) -> Option<ItemUse> {
+        self.uses.get(item).copied()
     }
 
     /// How many items the book holds.
