@@ -286,6 +286,26 @@
    ],
    "source": "Damage Threshold",
    "note": "`damage` is the incoming (basic) damage; at least 20% always gets through."
+  },
+  {
+   "id": "barter_buy_multiplier",
+   "name": "Barter buy price multiplier",
+   "expression": "1.55 - 0.0045*barter",
+   "vars": [
+    "barter"
+   ],
+   "source": "Game8 Fallout: New Vegas Barter table (a secondary source; the wiki page could not be fetched)",
+   "note": "155% of base value at Barter 0 down to 110% at Barter 100, linear; the table's 20-point rows (146, 137, 128, 119) all fit."
+  },
+  {
+   "id": "barter_sell_multiplier",
+   "name": "Barter sell price multiplier",
+   "expression": "0.45 + 0.0045*barter",
+   "vars": [
+    "barter"
+   ],
+   "source": "Game8 Fallout: New Vegas Barter table (a secondary source; the wiki page could not be fetched)",
+   "note": "45% of base value at Barter 0 up to 90% at Barter 100, linear; the table's 80-point row says 91 where the line gives 81, treated as a typo."
   }
  ]
 }

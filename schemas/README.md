@@ -17,6 +17,7 @@ turns them into the engine-ready files in `data/engine/`, and
 | `creature.schema.json` | Creature species with stat variants | Done, populated |
 | `rules.schema.json` | Stats, levels, challenges, recipes, endings and the formula file (definitions selected by `$ref`) | Done, populated |
 | `encounter.schema.json` | A fight at a place: offer conditions, foes with their weapon and armor, effects of winning | Done, hand-authored (`data/combat/`) |
+| `vendor.schema.json` | A merchant: the NPC, place, caps and starting stock | Done, hand-authored (`data/vendors/`) |
 | `dialogue.schema.json` | One file per speaker: flat topics, with slots for conditions, effects and `next` | Done, populated (graph not authored) |
 
 ## Conventions

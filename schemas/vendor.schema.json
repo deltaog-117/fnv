@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vendor.schema.json",
+  "title": "Vendor",
+  "description": "One entry in data/engine/vendors.json: a merchant, what they stock and the caps they hold.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "npc",
+    "place",
+    "caps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "npc": {
+      "description": "The NPC who trades.",
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "place": {
+      "description": "Location id where the vendor can be found.",
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "caps": {
+      "description": "Caps the vendor holds and starts with.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "stock": {
+      "description": "What the vendor starts with; an item appears once.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "item",
+          "count"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "item": {
+            "description": "Item id (weapon, armor, ammo or consumable).",
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
+  }
+}

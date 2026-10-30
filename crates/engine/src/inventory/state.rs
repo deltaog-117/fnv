@@ -45,6 +45,14 @@ pub enum InventoryError {
         /// The rejected weight.
         weight: f64,
     },
+    /// An item's base value was negative, NaN or infinite.
+    #[error("item {item} has an impossible value: {value}")]
+    BadValue {
+        /// The item.
+        item: ItemId,
+        /// The rejected value.
+        value: f64,
+    },
     /// Two items share an id.
     #[error("item id {0} appears twice")]
     DuplicateItem(ItemId),
@@ -92,6 +100,12 @@ impl Inventory {
     #[must_use]
     pub fn equipped(&self, slot: Slot) -> Option<&ItemId> {
         self.equipped.get(&slot)
+    }
+
+    /// The item's base value in caps, if the book gives one.
+    #[must_use]
+    pub fn value(&self, item: &ItemId) -> Option<f64> {
+        self.book.value(item)
     }
 
     /// Total weight carried, in pounds.

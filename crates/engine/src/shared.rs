@@ -29,15 +29,15 @@ pub use data::{
     Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, Dialogue, Encounter, Faction,
     FactionKind, Foe, InfoValue, ItemKind, Location, LocationSize, MapKind, Neighbor, Npc,
     NpcSpecial, Perk, PerkRequirements, Position, Quest, QuestKind, ReputationModel,
-    ReputationNote, Response, Rule, RuleKind, RuleTargetType, Stage, StatEffect, Topic,
-    TopicSection, Trait, WalkthroughNode, Weapon, WeaponClass,
+    ReputationNote, Response, Rule, RuleKind, RuleTargetType, Stage, StatEffect, StockLine, Topic,
+    TopicSection, Trait, Vendor, WalkthroughNode, Weapon, WeaponClass,
 };
 pub use effect::Effect;
 pub use error::ModelError;
 pub use eval::{apply, apply_all, evaluate};
 pub use ids::{
     AmmoFamilyId, CompanionId, DialogueId, EncounterId, EndingId, FactionId, FlagId, ItemId,
-    LocationId, NpcId, PerkId, QuestId, TopicKey, TraitId,
+    LocationId, NpcId, PerkId, QuestId, TopicKey, TraitId, VendorId,
 };
 pub use load::{Catalog, GameData, LoadError, Record, Scope};
 pub use modifier::Modifier;

@@ -16,11 +16,12 @@ use thiserror::Error;
 
 use super::data::{
     Ammo, Armor, Consumable, Dialogue, Encounter, Faction, Location, Npc, Perk, Quest, Trait,
-    Weapon,
+    Vendor, Weapon,
 };
 use super::error::ModelError;
 use super::ids::{
     DialogueId, EncounterId, FactionId, ItemId, LocationId, NpcId, PerkId, QuestId, TraitId,
+    VendorId,
 };
 
 /// A record that carries its own unique id.
@@ -57,6 +58,7 @@ impl_record!(
     Encounter => EncounterId,
     Perk => PerkId,
     Trait => TraitId,
+    Vendor => VendorId,
 );
 
 /// Why the data could not be loaded.
@@ -238,6 +240,8 @@ pub struct GameData {
     pub perks: Catalog<Perk>,
     /// Every trait.
     pub traits: Catalog<Trait>,
+    /// Every merchant, with the stock and caps they start with.
+    pub vendors: Catalog<Vendor>,
 }
 
 impl GameData {
@@ -295,6 +299,7 @@ impl GameData {
             encounters,
             perks: read_catalog(dir, "perks.json")?,
             traits: read_catalog(dir, "traits.json")?,
+            vendors: read_catalog(dir, "vendors.json")?,
             dialogue: Catalog::from_records(&dir.join("dialogue"), dialogue)?,
             locations,
             quests,

@@ -120,6 +120,11 @@ define_id!(
     "encounter"
 );
 define_id!(
+    /// Identifies a merchant who trades with the player.
+    VendorId,
+    "vendor"
+);
+define_id!(
     /// Identifies a game ending.
     EndingId,
     "ending"

@@ -75,7 +75,7 @@ def main(argv):
     validators = {
         name: Draft202012Validator({"$ref": f"{name}.schema.json"}, registry=registry)
         for name in ("item", "quest", "npc", "dialogue", "location", "perk", "trait",
-                     "faction", "reputation", "creature", "encounter")
+                     "faction", "reputation", "creature", "encounter", "vendor")
     }
 
     for name in ("stat", "challenge", "recipe", "ending", "level", "formulas"):
@@ -252,6 +252,25 @@ def main(argv):
         for ref in refs_in(scripted, "npc"):
             if ref not in npc_ids:
                 report("refs", en["id"], f"names unknown npc {ref}")
+    vendors, _ = load_group("vendors.json", "vendor", "vendors")
+    stock_ids = {r["id"] for name in ("weapons", "armor", "ammo", "consumables")
+                 for r in items[name]}
+    for vendor in vendors:
+        if vendor["place"] not in loc_ids:
+            report("refs", vendor["id"], f"unknown place {vendor['place']}")
+        if vendor["npc"] not in npc_ids:
+            report("refs", vendor["id"], f"unknown npc {vendor['npc']}")
+        lines = [line["item"] for line in vendor.get("stock", [])]
+        for item in lines:
+            if item not in stock_ids:
+                report("refs", vendor["id"], f"{item} cannot be stocked")
+        for item in {i for i in lines if lines.count(i) > 1}:
+            report("refs", vendor["id"], f"{item} is listed twice")
+    vendor_ids = {v["id"] for v in vendors}
+    for d in dialogue:
+        for t in d["topics"]:
+            if t.get("shop") and t["shop"] not in vendor_ids:
+                report("refs", d["id"], f"{t['key']} opens unknown vendor {t['shop']}")
     formulas = json.load(open(engine / "formulas.json"))
     for err in validators["formulas"].iter_errors(formulas):
         report("formulas", "formulas.json", err.message[:160])
@@ -275,6 +294,10 @@ def main(argv):
             ("action_points", dict(agility=5), 80),
             ("carry_weight", dict(strength=5), 200),
             ("skill_initial_speech", dict(charisma=5, luck=5), 15),
+            ("barter_buy_multiplier", dict(barter=0), 1.55),
+            ("barter_buy_multiplier", dict(barter=100), 1.10),
+            ("barter_sell_multiplier", dict(barter=0), 0.45),
+            ("barter_sell_multiplier", dict(barter=100), 0.90),
             ("damage_after_dr", dict(damage=40, dr=85), 6),
             ("damage_after_dt", dict(damage=40, damage_after_dr=6, dt=10), 8),
         ]

@@ -132,3 +132,31 @@ fn sunny_moves_the_gunfight_forward_when_asked_about_it() {
     assert_eq!(talk.choices(&game).len(), 2, "Trudy and Easy Pete follow");
     assert!(!keys(&talk.choices(&game)).contains(&help.as_str()));
 }
+
+#[test]
+fn doc_mitchells_supplies_topic_opens_his_shop_and_changes_nothing_else() {
+    let data = data();
+    let book = Arc::new(DialogueBook::new(data.dialogue.iter()).expect("book builds"));
+    let mut game = game(&data);
+    let mut talk = Conversation::open(book, &dialogue_id("docmitchell")).expect("Doc exists");
+    let reply = talk
+        .choose(&mut game, &key("doctorsupplies"))
+        .expect("the topic is on offer from the start");
+    assert_eq!(
+        reply.shop.as_ref().map(engine::shared::VendorId::as_str),
+        Some("doc_mitchell")
+    );
+    assert!(!reply.over, "the talk goes on after the shop closes");
+}
+
+#[test]
+fn every_shop_topic_names_a_vendor_that_exists() {
+    let data = data();
+    for d in data.dialogue.iter() {
+        for topic in &d.topics {
+            if let Some(shop) = &topic.shop {
+                assert!(data.vendors.contains(shop), "{}: {}", d.id, topic.key);
+            }
+        }
+    }
+}

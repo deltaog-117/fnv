@@ -14,8 +14,9 @@ use crate::shared::{
     Encounter, EncounterId, EndingId, FactionId, FlagId, HealthPercent, InventorySink,
     InventoryView, ItemId, LocationId, NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage,
     QuestStatus, QuestView, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
-    StandingSink, StandingView, WorldSink, WorldView, apply, apply_all, evaluate,
+    StandingSink, StandingView, VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
 };
+use crate::trade::{Market, Shop, TradeError, VendorBook, buy_total, sell_total};
 use crate::world::{WorldBook, WorldState};
 
 /// A quest effect that could not run because its feature is not built yet, kept
@@ -47,6 +48,8 @@ pub struct Game {
     inventory: Inventory,
     arsenal: Arc<Arsenal>,
     perks: Arc<PerkBook>,
+    /// What each merchant has now; changes with every trade.
+    market: Market,
     /// Hit points lost and not yet healed. Stored as a loss, so hit points can
     /// never be above the maximum, and a level-up raises them with the maximum.
     wounds: u32,
@@ -76,6 +79,7 @@ impl Game {
             inventory: Inventory::new(Arc::default()),
             arsenal: Arc::default(),
             perks: Arc::default(),
+            market: Market::default(),
             wounds: 0,
             won: HashSet::new(),
             fired: HashSet::new(),
@@ -105,6 +109,30 @@ impl Game {
     pub fn with_perks(mut self, perks: Arc<PerkBook>) -> Self {
         self.perks = perks;
         self
+    }
+
+    /// The same game over the merchants that exist, each with the stock and caps
+    /// they start with. Set the items first: every stocked item must have a base
+    /// value in the item book the game holds now.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError::NoValue`] when a vendor stocks an item the book does not know
+    /// or gives no value.
+    pub fn with_vendors(mut self, vendors: Arc<VendorBook>) -> Result<Self, TradeError> {
+        for (id, info) in vendors.iter() {
+            if let Some((item, _)) = info
+                .stock()
+                .find(|(item, _)| self.inventory.value(item).is_none())
+            {
+                return Err(TradeError::NoValue {
+                    vendor: id.clone(),
+                    item: item.clone(),
+                });
+            }
+        }
+        self.market = Market::new(vendors);
+        Ok(self)
     }
 
     /// The same game for a different character, for example one with another
@@ -319,6 +347,133 @@ impl Game {
     /// Empties an equipment slot, returning what was in it.
     pub fn unequip(&mut self, slot: Slot) -> Option<ItemId> {
         self.inventory.unequip(slot)
+    }
+
+    /// The merchants the player can trade with at `place`: those whose person is
+    /// neither dead nor hostile. None while the player is down.
+    pub fn vendors_at<'a>(
+        &'a self,
+        place: &'a LocationId,
+    ) -> impl Iterator<Item = (&'a VendorId, &'a str)> {
+        let open = self.is_alive();
+        self.market
+            .book()
+            .at(place)
+            .filter(move |(_, info)| open && self.vendor_will_trade(info.npc()))
+            .map(|(id, info)| (id, info.name()))
+    }
+
+    /// A vendor's stock and caps now.
+    #[must_use]
+    pub fn shop(&self, vendor: &VendorId) -> Option<&Shop> {
+        self.market.shop(vendor)
+    }
+
+    /// Caps the player pays to buy `count` of an item at the current Barter skill.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError::NoPrice`] when the item has no base value.
+    pub fn buy_price(&self, item: &ItemId, count: NonZeroU32) -> Result<u32, TradeError> {
+        let value = self
+            .inventory
+            .value(item)
+            .ok_or_else(|| TradeError::NoPrice(item.clone()))?;
+        Ok(buy_total(value, count, self.character.skill(Skill::Barter)))
+    }
+
+    /// Caps the player is paid for `count` of an item at the current Barter skill.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError::NoPrice`] when the item has no base value or the line is
+    /// worth less than half a cap.
+    pub fn sell_price(&self, item: &ItemId, count: NonZeroU32) -> Result<u32, TradeError> {
+        let total = self
+            .inventory
+            .value(item)
+            .map(|value| sell_total(value, count, self.character.skill(Skill::Barter)))
+            .filter(|total| *total > 0);
+        total.ok_or_else(|| TradeError::NoPrice(item.clone()))
+    }
+
+    /// Buys `count` of an item from a vendor, returning the caps paid. The vendor
+    /// and the player change together or not at all.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError`] when the vendor is unknown or will not trade, has too few of
+    /// the item, or the player cannot pay.
+    pub fn buy(
+        &mut self,
+        vendor: &VendorId,
+        item: &ItemId,
+        count: NonZeroU32,
+    ) -> Result<u32, TradeError> {
+        self.check_vendor(vendor)?;
+        let price = self.buy_price(item, count)?;
+        let have = self.inventory.caps();
+        if have < price {
+            return Err(TradeError::PlayerShort { have, need: price });
+        }
+        let mut trial = self.clone();
+        trial.market.sell_to_player(vendor, item, count, price)?;
+        trial.inventory.add_caps(-f64::from(price))?;
+        trial.inventory.give_item(item, count)?;
+        *self = trial;
+        Ok(price)
+    }
+
+    /// Sells `count` of a carried item to a vendor, returning the caps received.
+    /// The vendor and the player change together or not at all.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError`] when the vendor is unknown or will not trade, the player
+    /// carries too few, the sale would give up an equipped copy, the item has no
+    /// price, or the vendor cannot pay.
+    pub fn sell(
+        &mut self,
+        vendor: &VendorId,
+        item: &ItemId,
+        count: NonZeroU32,
+    ) -> Result<u32, TradeError> {
+        self.check_vendor(vendor)?;
+        let have = self.inventory.item_count(item);
+        if have < count.get() {
+            return Err(TradeError::NotCarried {
+                item: item.clone(),
+                have,
+                need: count.get(),
+            });
+        }
+        if have == count.get() && self.inventory.is_equipped(item) {
+            return Err(TradeError::Equipped(item.clone()));
+        }
+        let price = self.sell_price(item, count)?;
+        let mut trial = self.clone();
+        trial.market.buy_from_player(vendor, item, count, price)?;
+        trial.inventory.take_item(item, count)?;
+        trial.inventory.add_caps(f64::from(price))?;
+        *self = trial;
+        Ok(price)
+    }
+
+    /// Refuses a vendor that does not exist or whose person will not trade.
+    fn check_vendor(&self, vendor: &VendorId) -> Result<(), TradeError> {
+        let info = self
+            .market
+            .book()
+            .get(vendor)
+            .ok_or_else(|| TradeError::UnknownVendor(vendor.clone()))?;
+        if !self.is_alive() || !self.vendor_will_trade(info.npc()) {
+            return Err(TradeError::Unavailable(info.npc().clone()));
+        }
+        Ok(())
+    }
+
+    fn vendor_will_trade(&self, npc: &NpcId) -> bool {
+        !self.world.npc_is(npc, NpcState::Dead) && !self.world.npc_is(npc, NpcState::Hostile)
     }
 
     /// Quest effects postponed because their feature is not built, oldest first.

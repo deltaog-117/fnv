@@ -1,0 +1,48 @@
+[
+  {
+    "id": "chet",
+    "name": "Chet's general store",
+    "npc": "chet",
+    "place": "goodsprings_general_store",
+    "caps": 500,
+    "stock": [
+      {"item": "9mm_round", "count": 60},
+      {"item": "357_magnum_round", "count": 30},
+      {"item": "22lr_round", "count": 40},
+      {"item": "12_gauge_buckshot", "count": 20},
+      {"item": "9mm_pistol", "count": 1},
+      {"item": "varmint_rifle", "count": 1},
+      {"item": "leather_armor", "count": 1},
+      {"item": "stimpak", "count": 2}
+    ]
+  },
+  {
+    "id": "trudy",
+    "name": "Trudy's saloon",
+    "npc": "trudy",
+    "place": "prospector_saloon",
+    "caps": 300,
+    "stock": [
+      {"item": "beer", "count": 12},
+      {"item": "whiskey", "count": 6},
+      {"item": "wine", "count": 4},
+      {"item": "cram", "count": 6},
+      {"item": "dandy_boy_apples", "count": 6},
+      {"item": "sunset_sarsaparilla", "count": 4},
+      {"item": "purified_water", "count": 4}
+    ]
+  },
+  {
+    "id": "doc_mitchell",
+    "name": "Doc Mitchell's medical supplies",
+    "npc": "doc_mitchell",
+    "place": "doc_mitchell_s_house",
+    "caps": 200,
+    "stock": [
+      {"item": "stimpak", "count": 4},
+      {"item": "radaway", "count": 4},
+      {"item": "med_x", "count": 3},
+      {"item": "doctor_s_bag", "count": 2}
+    ]
+  }
+]

@@ -18,4 +18,5 @@ pub mod quests;
 pub mod reputation;
 pub mod saves;
 pub mod shared;
+pub mod trade;
 pub mod world;

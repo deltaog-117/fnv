@@ -1408,6 +1408,52 @@ Doc Mitchell's transcript has paid healing at three prices (100, 75 or 50 caps b
 
 ---
 
+### Vendors and Barter: A Shop That Remembers
+
+**Date:** 2026-10-30
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The Goodsprings dialogue was finished except for the shop topics, which waited for vendors. The roadmap asked for buying and selling with the barter formula. Three shapes were weighed: a stateless price list (endless stock and caps), a vendor with its own stock and caps that change as you trade, and that plus restocking over time. The third needs a game clock the game does not have.
+
+---
+
+#### Decision
+
+**A vendor owns stock and caps (the second shape).** A new feature module, `trade/`, holds `VendorBook` (the merchants, checked once at load), `Market` (each vendor's stock and caps now) and the price functions. The module never imports the inventory: `Game::buy` and `Game::sell` run both halves of a trade on a copy of the game and keep it only if everything worked, the same pattern quest changes use. The laws are checked by a property test: over random sequences of buys and sells, caps and items only change hands, and a refusal changes nothing.
+
+**Prices come from two curated formulas.** `barter_buy_multiplier` is `1.55 - 0.0045*barter` and `barter_sell_multiplier` is `0.45 + 0.0045*barter` in `data/rules/formulas.json`: 155 percent to buy and 45 percent to sell at Barter 0, 110 and 90 percent at Barter 100. **The wiki page could not be fetched** (HTTP 402), so the numbers come from the Game8 Barter table, a secondary source. Its 20-point rows all lie on the line, except the 80-point sell row (91, where the line gives 81), which I treated as a typo. The formulas, their self-tests in `validate.py` and a Rust test that pins the constants to the file are all in place, so replacing them with the wiki's numbers is a data change plus one test. The price of a whole line is rounded once, so a stack of cheap rounds is not rounded up one by one; buying costs at least one cap; a line worth under half a cap cannot be sold.
+
+**Item values.** `ItemBook` gained base values (`with_values`, `value`), loaded from the item records, so the inventory still owns what an item is worth and `trade/` only owns what a merchant does with it.
+
+**Vendors are data.** `data/vendors/vendors.json` (copied to `data/engine/` by the normalizer, with `vendor.schema.json` and reference checks in `validate.py`) holds Chet, Trudy and Doc Mitchell. The wiki has no stock, so the lists are placeholders written from memory, to be replaced by the xEdit export. A dead or hostile NPC does not trade; neither does a player who is down; an equipped item cannot be sold if the sale would give up that copy.
+
+**The dialogue hook is a topic field, not an effect.** Opening a shop changes no state, so `Effect::OpenTrade` (the first plan) would have put a UI request in the state vocabulary, with a sink method every state would have to answer. Instead a topic can name a `shop`, and `Conversation::choose` returns it in the `Reply`; the front end opens the shop. Doc's "I need medical supplies" is wired. Chet's and Trudy's only shop topics in the transcripts are the positive-reputation variants ("wholesale prices from now on"), so they wait for reputation instead of being wired to text that would lie.
+
+**Left out for now:** the trade screen in the TUI (its own cycle), restocking and per-vendor rules (they wait for the game clock, now on the roadmap), barter perks and the reputation discount, item condition affecting price.
+
+---
+
+#### References
+
+- `crates/engine/src/trade/`, `crates/engine/src/game/state.rs`, `crates/engine/src/inventory/book.rs`, `crates/engine/src/dialogue/conversation.rs`
+- `data/vendors/`, `data/rules/formulas.json`, `schemas/vendor.schema.json`, `crates/engine/tests/trade/`
+- Game8, Fallout: New Vegas Barter table (the source of the price numbers)
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-30 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

@@ -33,7 +33,8 @@
           "conditions": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/condition"}},
           "effects": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/effect"}},
           "next": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/id"}, "description": "Topic keys that follow."},
-          "ends": {"type": "boolean", "description": "True when choosing the topic ends the conversation; such a topic has no `next`."}
+          "ends": {"type": "boolean", "description": "True when choosing the topic ends the conversation; such a topic has no `next`."},
+          "shop": {"$ref": "common.schema.json#/$defs/id", "description": "Vendor id whose shop opens when the topic is chosen."}
         }
       }
     }

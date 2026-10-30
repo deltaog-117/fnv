@@ -1,4 +1,4 @@
-//! Items and equipment, crafting and barter.
+//! Items and equipment.
 //!
 //! So far this holds what the player carries: item stacks, bottle caps and the
 //! three equipment slots. [`ItemBook`] is the read-only list of items that exist;
@@ -14,7 +14,7 @@
 //! - weight never blocks picking something up: being over the carry limit is for
 //!   the game to read, not for the pack to refuse.
 //!
-//! Using consumables, repair, crafting and barter are not built.
+//! Using consumables, repair and crafting are not built. Barter lives in `trade`.
 
 mod book;
 mod state;

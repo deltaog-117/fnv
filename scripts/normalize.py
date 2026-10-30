@@ -444,7 +444,7 @@ def apply_dialogue_slices(docs, slices):
     """Merge the hand-authored slice files into the dialogue records.
 
     A slice names a dialogue file and gives its `start` topics and, per topic key,
-    any of `conditions`, `effects`, `check`, `next` and `ends`. The wiki text of the
+    any of `conditions`, `effects`, `check`, `next`, `shop` and `ends`. The wiki text of the
     topics is never touched. Anything that does not match raises: a typo must not
     silently drop an authored link.
     """
@@ -462,7 +462,7 @@ def apply_dialogue_slices(docs, slices):
             topic = topics.get(authored["key"])
             if topic is None:
                 raise ValueError(f"dialogue slice: {doc['id']} has no topic {authored['key']}")
-            for field in ("conditions", "effects", "check", "next"):
+            for field in ("conditions", "effects", "check", "next", "shop"):
                 put(topic, field, authored.get(field))
             if authored.get("ends"):
                 topic["ends"] = True
@@ -963,6 +963,7 @@ def main(argv):
     dump(out / "endings.json", endings(rl("endings"), title_id))
     (out / "formulas.json").write_text((rdir / "formulas.json").read_text())
     (out / "encounters.json").write_text((data / "combat" / "encounters.json").read_text())
+    (out / "vendors.json").write_text((data / "vendors" / "vendors.json").read_text())
     dump(out / "quests.json", quest_recs)
     dump(out / "npcs.json", npc_recs)
     ddir = out / "dialogue"

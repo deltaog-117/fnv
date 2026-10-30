@@ -12,6 +12,7 @@ mod location;
 mod npc;
 mod perk;
 mod quest;
+mod vendor;
 
 pub use dialogue::{Dialogue, Response, Topic, TopicSection};
 pub use encounter::{Encounter, Foe};
@@ -24,3 +25,4 @@ pub use location::{Location, LocationSize, MapKind, Neighbor, Position};
 pub use npc::{Npc, NpcSpecial};
 pub use perk::{Perk, PerkRequirements, Trait};
 pub use quest::{Quest, QuestKind, Rule, RuleKind, RuleTargetType, Stage, WalkthroughNode};
+pub use vendor::{StockLine, Vendor};

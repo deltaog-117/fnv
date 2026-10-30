@@ -6,7 +6,8 @@ use thiserror::Error;
 
 use super::book::{DialogueBook, Entry};
 use crate::shared::{
-    BatchError, Condition, DialogueId, Response, State, StateView, TopicKey, apply_all, evaluate,
+    BatchError, Condition, DialogueId, Response, State, StateView, TopicKey, VendorId, apply_all,
+    evaluate,
 };
 
 /// A move in a conversation was refused.
@@ -72,6 +73,8 @@ pub struct Reply {
     pub lines: Vec<Response>,
     /// True when the topic closed the conversation.
     pub over: bool,
+    /// The vendor whose shop the player asked to see, if the topic opens one.
+    pub shop: Option<VendorId>,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -212,6 +215,7 @@ impl Conversation {
             topic: topic.clone(),
             lines: chosen.responses.iter().cloned().collect(),
             over: chosen.ends,
+            shop: chosen.shop.clone(),
         })
     }
 

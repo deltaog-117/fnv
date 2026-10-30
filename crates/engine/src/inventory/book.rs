@@ -22,9 +22,11 @@ pub enum ItemClass {
 struct Info {
     class: ItemClass,
     weight: f64,
+    /// Base value in caps; `None` until [`ItemBook::with_values`] gives one.
+    value: Option<f64>,
 }
 
-/// Every item that can be carried, with its class and weight.
+/// Every item that can be carried, with its class, weight and base value.
 ///
 /// The book is what lets the inventory refuse an item that does not exist, instead
 /// of keeping a stack under a typo. Weapon mods, skill books and crafting
@@ -49,11 +51,43 @@ impl ItemBook {
             if !weight.is_finite() || weight < 0.0 {
                 return Err(InventoryError::BadWeight { item: id, weight });
             }
-            if items.insert(id.clone(), Info { class, weight }).is_some() {
+            if items
+                .insert(
+                    id.clone(),
+                    Info {
+                        class,
+                        weight,
+                        value: None,
+                    },
+                )
+                .is_some()
+            {
                 return Err(InventoryError::DuplicateItem(id));
             }
         }
         Ok(Self { items })
+    }
+
+    /// The same book with base values in caps, so items can be priced.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::Unknown`] for an item not in the book and
+    /// [`InventoryError::BadValue`] for a negative or non-finite value.
+    pub fn with_values(
+        mut self,
+        values: impl IntoIterator<Item = (ItemId, f64)>,
+    ) -> Result<Self, InventoryError> {
+        for (id, value) in values {
+            if !value.is_finite() || value < 0.0 {
+                return Err(InventoryError::BadValue { item: id, value });
+            }
+            self.items
+                .get_mut(&id)
+                .ok_or_else(|| InventoryError::Unknown(id.clone()))?
+                .value = Some(value);
+        }
+        Ok(self)
     }
 
     /// Every weapon, armor, ammo and consumable in the loaded data.
@@ -78,7 +112,18 @@ impl ItemBook {
             .consumables
             .iter()
             .map(|item| (item.id.clone(), ItemClass::Consumable, item.weight));
-        Self::new(weapons.chain(armor).chain(ammo).chain(consumables))
+        Self::new(weapons.chain(armor).chain(ammo).chain(consumables))?.with_values(
+            data.weapons
+                .iter()
+                .map(|item| (item.id.clone(), item.value))
+                .chain(data.armor.iter().map(|item| (item.id.clone(), item.value)))
+                .chain(data.ammo.iter().map(|item| (item.id.clone(), item.value)))
+                .chain(
+                    data.consumables
+                        .iter()
+                        .map(|item| (item.id.clone(), item.value)),
+                ),
+        )
     }
 
     /// Whether the item exists.
@@ -97,6 +142,12 @@ impl ItemBook {
     #[must_use]
     pub fn weight(&self, item: &ItemId) -> Option<f64> {
         self.items.get(item).map(|info| info.weight)
+    }
+
+    /// The item's base value in caps, if it exists and has one.
+    #[must_use]
+    pub fn value(&self, item: &ItemId) -> Option<f64> {
+        self.items.get(item).and_then(|info| info.value)
     }
 
     /// How many items the book holds.

@@ -5,7 +5,7 @@
 
 use serde::Deserialize;
 
-use crate::shared::{Condition, DialogueId, Effect, NonEmpty, NpcId, TopicKey};
+use crate::shared::{Condition, DialogueId, Effect, NonEmpty, NpcId, TopicKey, VendorId};
 
 /// Where in a conversation a topic is used.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
@@ -66,6 +66,10 @@ pub struct Topic {
     /// Choosing the topic ends the conversation; such a topic has no `next`.
     #[serde(default)]
     pub ends: bool,
+    /// The vendor whose shop opens when the topic is chosen. Opening a shop changes
+    /// nothing by itself, so it is not an effect.
+    #[serde(default)]
+    pub shop: Option<VendorId>,
 }
 
 /// All topics of one speaker.
