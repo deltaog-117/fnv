@@ -4,7 +4,7 @@ use std::sync::Arc;
 
 use engine::dialogue::{Choice, Conversation, DialogueBook, DialogueError};
 use engine::game::Game;
-use engine::shared::DialogueId;
+use engine::shared::{DialogueId, VendorId};
 use ratatui::Frame;
 use ratatui::layout::Rect;
 use ratatui::text::Line;
@@ -16,12 +16,15 @@ use crate::shared::menu::{Item, Menu};
 use crate::shared::theme;
 
 /// What the player's command led to.
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub enum Next {
     /// The conversation goes on.
     Stay,
     /// The conversation is over, or the player walked away.
     Leave,
+    /// The topic opened this vendor's shop. Ask [`Talk::is_over`] whether the
+    /// conversation is still there to return to.
+    Shop(VendorId),
 }
 
 /// An open conversation and the menu of what the player can say.
@@ -31,6 +34,7 @@ pub struct Talk {
     speaker: String,
     choices: Vec<Choice>,
     menu: Menu,
+    over: bool,
 }
 
 impl Talk {
@@ -53,6 +57,7 @@ impl Talk {
             speaker,
             choices,
             menu,
+            over: false,
         })
     }
 
@@ -84,6 +89,10 @@ impl Talk {
                         text: line.text,
                     });
                 }
+                self.over = reply.over;
+                if let Some(vendor) = reply.shop {
+                    return Next::Shop(vendor);
+                }
                 if reply.over {
                     return Next::Leave;
                 }
@@ -103,8 +112,15 @@ impl Talk {
         self.choices.len()
     }
 
-    /// Rebuilds the menu, because what a topic did may unlock or hide others.
-    fn refresh(&mut self, game: &Game) {
+    /// Whether the last topic closed the conversation.
+    #[must_use]
+    pub fn is_over(&self) -> bool {
+        self.over
+    }
+
+    /// Rebuilds the menu, because what a topic did, or a trade, may unlock or hide
+    /// others (some topics ask for caps).
+    pub fn refresh(&mut self, game: &Game) {
         self.choices = self.conversation.choices(game);
         self.menu = Menu::new(self.choices.len());
     }

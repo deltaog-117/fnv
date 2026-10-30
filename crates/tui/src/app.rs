@@ -14,8 +14,9 @@ use engine::game::{Arsenal, Game, Outcome};
 use engine::inventory::{ItemBook, Slot};
 use engine::quests::QuestBook;
 use engine::shared::{
-    Effect, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage, apply_all,
+    Effect, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage, VendorId, apply_all,
 };
+use engine::trade::VendorBook;
 use engine::world::WorldBook;
 use ratatui::Frame;
 use ratatui::layout::{Alignment, Rect};
@@ -32,6 +33,7 @@ use crate::shared::input::Command;
 use crate::shared::layout::{self, MIN_HEIGHT, MIN_WIDTH};
 use crate::shared::log::{self, Entry, Log};
 use crate::shared::theme;
+use crate::trade::{self, Names, Trade};
 
 /// The quest a new game starts in, and the stage that opens it.
 const OPENING_QUEST: &str = "ain_t_that_a_kick_in_the_head";
@@ -50,6 +52,12 @@ enum Screen {
     Talking(Talk),
     Fighting(Fight),
     Leveling(LevelUp),
+    /// At a counter. `from` is the conversation that opened the shop, if one did, so
+    /// leaving the shop picks it up again.
+    Trading {
+        trade: Trade,
+        from: Option<Talk>,
+    },
     /// The player fell in a fight; nothing more can be done but quit.
     Down,
 }
@@ -60,6 +68,10 @@ pub struct App {
     dialogue: Arc<DialogueBook>,
     place: String,
     place_id: LocationId,
+    /// The place and the buildings inside it: where the player can find a shop.
+    here: Vec<LocationId>,
+    vendors: Arc<VendorBook>,
+    names: Arc<Names>,
     people: Vec<Person>,
     screen: Screen,
     log: Log,
@@ -94,10 +106,13 @@ impl App {
 
         let items = Arc::new(ItemBook::from_data(data).context("building the item book")?);
         let arsenal = Arc::new(Arsenal::from_data(data).context("building the arsenal")?);
+        let vendors = Arc::new(VendorBook::from_data(data).context("building the vendors")?);
         let mut game = Game::with_world(quests, world)
             .with_items(items)
             .with_arsenal(arsenal)
-            .with_perks(Arc::new(PerkBook::base_game(data)));
+            .with_perks(Arc::new(PerkBook::base_game(data)))
+            .with_vendors(Arc::clone(&vendors))
+            .context("stocking the vendors")?;
         let opening = Effect::SetStage {
             quest: QuestId::try_new(OPENING_QUEST).context("opening quest id")?,
             stage: QuestStage::new(OPENING_STAGE),
@@ -144,6 +159,11 @@ impl App {
             screen: Screen::Down,
             place: location.name.clone(),
             place_id: place.clone(),
+            here: std::iter::once(place.clone())
+                .chain(location.children.iter().cloned())
+                .collect(),
+            vendors,
+            names: Arc::new(Names::from_data(data)),
             people,
             log,
             dice,
@@ -185,6 +205,11 @@ impl App {
                 exploration::Next::Stay => {}
                 exploration::Next::Quit => self.running = false,
                 exploration::Next::Talk(index) => self.start_talk(index),
+                exploration::Next::Shop(index) => {
+                    if let Some((vendor, _)) = self.shops_here().into_iter().nth(index) {
+                        self.open_shop(&vendor);
+                    }
+                }
                 exploration::Next::Fight(index) => self.start_fight(index),
                 exploration::Next::Character => self.screen = Screen::Leveling(LevelUp::new()),
             },
@@ -193,9 +218,14 @@ impl App {
                     self.screen = self.exploring();
                 }
             }
-            Screen::Talking(talk) => {
-                if talk.update(command, &mut self.game, &mut self.log) == dialogue::Next::Leave {
-                    self.screen = self.exploring();
+            Screen::Talking(talk) => match talk.update(command, &mut self.game, &mut self.log) {
+                dialogue::Next::Stay => {}
+                dialogue::Next::Leave => self.screen = self.exploring(),
+                dialogue::Next::Shop(vendor) => self.open_shop(&vendor),
+            },
+            Screen::Trading { trade, .. } => {
+                if trade.update(command, &mut self.game, &mut self.log) == trade::Next::Leave {
+                    self.leave_shop();
                 }
             }
             Screen::Fighting(fight) => {
@@ -216,7 +246,67 @@ impl App {
         }
     }
 
+    /// The shops the player can reach from here, in the order the scene lists them.
+    fn shops_here(&self) -> Vec<(VendorId, String)> {
+        self.here
+            .iter()
+            .flat_map(|place| self.game.vendors_at(place))
+            .map(|(id, name)| (id.clone(), name.to_owned()))
+            .collect()
+    }
+
+    /// Opens the shop of `vendor`. A conversation that was open stays with the shop
+    /// and comes back when the player leaves it.
+    fn open_shop(&mut self, vendor: &VendorId) {
+        let from = match std::mem::replace(&mut self.screen, Screen::Down) {
+            Screen::Talking(talk) => Some(talk),
+            _ => None,
+        };
+        let name = self
+            .vendors
+            .get(vendor)
+            .map_or_else(|| vendor.to_string(), |info| info.name().to_owned());
+        match Trade::open(
+            vendor.clone(),
+            name.clone(),
+            &self.game,
+            Arc::clone(&self.names),
+        ) {
+            Some(trade) => self.screen = Screen::Trading { trade, from },
+            None => {
+                self.log
+                    .push(Entry::Note(format!("{name} has nothing to trade.")));
+                self.screen = self.resume(from);
+            }
+        }
+    }
+
+    fn leave_shop(&mut self) {
+        let from = match std::mem::replace(&mut self.screen, Screen::Down) {
+            Screen::Trading { from, .. } => from,
+            _ => None,
+        };
+        self.screen = self.resume(from);
+    }
+
+    /// Back to the conversation that opened a shop, unless that topic ended it.
+    fn resume(&self, from: Option<Talk>) -> Screen {
+        match from {
+            Some(mut talk) if !talk.is_over() => {
+                // What was bought or sold can open or close topics that ask for caps.
+                talk.refresh(&self.game);
+                Screen::Talking(talk)
+            }
+            _ => self.exploring(),
+        }
+    }
+
     fn exploring(&self) -> Screen {
+        let shops = self
+            .shops_here()
+            .into_iter()
+            .map(|(_, name)| name)
+            .collect();
         let fights = self
             .game
             .encounters_at(&self.place_id)
@@ -232,6 +322,7 @@ impl App {
         };
         Screen::Exploring(
             Exploration::new(self.place.clone(), self.people.clone())
+                .with_shops(shops)
                 .with_fights(fights)
                 .with_character_label(label),
         )
@@ -327,6 +418,10 @@ impl App {
             Screen::Leveling(sheet) => {
                 sheet.render(frame, regions.scene, &self.game);
                 "Up/Down move | Enter choose | 1-9 pick | Esc back | q quit"
+            }
+            Screen::Trading { trade, .. } => {
+                trade.render(frame, regions.scene, &self.game);
+                trade.keys()
             }
             Screen::Down => {
                 render_down(frame, regions.scene);
@@ -541,7 +636,7 @@ mod tests {
         assert!(!app.game.is_equipped(&item(START_WEAPON)));
 
         app = with_the_gunfight_open(app);
-        let fight = app.people.len();
+        let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
         assert!(app.game.is_equipped(&item(START_WEAPON)));
     }
@@ -564,7 +659,7 @@ mod tests {
         )
         .expect("the quest advances");
         app.screen = app.exploring();
-        let fight = app.people.len();
+        let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
         assert!(matches!(app.screen, Screen::Exploring(_)));
         assert!(screen(&app, 100, 30).contains("nothing is equipped"));
@@ -581,7 +676,7 @@ mod tests {
     #[test]
     fn choosing_the_fight_opens_the_combat_screen_with_every_fighter_and_the_actions() {
         let mut app = with_the_gunfight_open(app_with_seed(1));
-        let fight = app.people.len();
+        let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
         assert!(matches!(app.screen, Screen::Fighting(_)));
         let text = screen(&app, 100, 30);
@@ -604,7 +699,7 @@ mod tests {
     #[test]
     fn shooting_uses_rounds_and_reloading_refills_the_clip() {
         let mut app = with_the_gunfight_open(app_with_seed(1));
-        let fight = app.people.len();
+        let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
         // Three foes: shoot is picks 0 to 2, then Reload, then End turn.
         app.update(Command::Pick(0));
@@ -619,7 +714,7 @@ mod tests {
     #[test]
     fn running_away_is_refused_during_a_fight() {
         let mut app = with_the_gunfight_open(app_with_seed(1));
-        let fight = app.people.len();
+        let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
         app.update(Command::Back);
         assert!(matches!(app.screen, Screen::Fighting(_)));
@@ -630,7 +725,7 @@ mod tests {
     fn a_fight_played_to_the_end_leaves_the_scene_or_the_game_over_screen() {
         for seed in 1..=6 {
             let mut app = with_the_gunfight_open(app_with_seed(seed));
-            let fight = app.people.len();
+            let fight = app.people.len() + app.shops_here().len();
             app.update(Command::Pick(fight));
             // Shoot the first foe four times (80 AP buys four 17-AP shots), then
             // pass; the fight must end in a bounded number of rounds.
@@ -676,10 +771,11 @@ mod tests {
         app
     }
 
-    /// Opens the character screen from the scene, where its row follows the people
-    /// and the fights.
+    /// Opens the character screen from the scene, where its row follows the people,
+    /// the shops and the fights.
     fn open_character(app: &mut App) {
-        let row = app.people.len() + app.game.encounters_at(&app.place_id).len();
+        let row =
+            app.people.len() + app.shops_here().len() + app.game.encounters_at(&app.place_id).len();
         app.update(Command::Pick(row));
         assert!(matches!(app.screen, Screen::Leveling(_)));
     }
@@ -785,6 +881,75 @@ mod tests {
             app.update(Command::Down);
         }
         assert!(screen(&app, 100, 40).contains("changes nothing"));
+    }
+
+    fn press_trade_row(app: &mut App, vendor: &str) {
+        let index = app
+            .shops_here()
+            .iter()
+            .position(|(id, _)| id.as_str() == vendor)
+            .expect("the shop is in town");
+        app.update(Command::Pick(app.people.len() + index));
+    }
+
+    #[test]
+    fn the_scene_lists_the_goodsprings_shops_and_choosing_one_opens_the_trade_screen() {
+        let mut app = app();
+        let text = screen(&app, 100, 30);
+        for expected in [
+            "Trade at Chet's general store",
+            "Trade at Trudy's saloon",
+            "Trade at Doc Mitchell's medical supplies",
+        ] {
+            assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
+        }
+        press_trade_row(&mut app, "chet");
+        assert!(matches!(app.screen, Screen::Trading { from: None, .. }));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Your pack"), "{text}");
+        assert!(text.contains("Enter trade"), "{text}");
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    #[test]
+    fn buying_in_a_shop_spends_caps_and_the_status_line_shows_it() {
+        let mut app = app();
+        apply_all(&[Effect::Caps { amount: 500.0 }], &mut app.game).expect("caps apply");
+        press_trade_row(&mut app, "chet");
+        // 12 gauge buckshot is the first line of Chet's stock; the stack asks how many.
+        app.update(Command::Select);
+        app.update(Command::Select);
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("You buy 1"), "{text}");
+        assert!(!text.contains("| 500 caps"), "{text}");
+    }
+
+    #[test]
+    fn a_topic_that_opens_a_shop_returns_to_the_conversation_afterwards() {
+        // Each try starts a fresh conversation, because choosing a topic changes the
+        // menu (and "goodbye" ends it).
+        let opened = (0..12).find_map(|pick| {
+            let mut app = app();
+            let doc = app
+                .people
+                .iter()
+                .position(|person| person.name == "Doc Mitchell")
+                .expect("Doc is here");
+            app.update(Command::Pick(doc));
+            app.update(Command::Pick(pick));
+            matches!(app.screen, Screen::Trading { .. }).then_some(app)
+        });
+        let mut app = opened.expect("one of Doc's topics opens his shop");
+        let Screen::Trading { from, .. } = &app.screen else {
+            panic!("expected the shop");
+        };
+        assert!(from.is_some());
+        app.update(Command::Back);
+        assert!(
+            matches!(app.screen, Screen::Talking(_)),
+            "leaving the shop should resume the conversation"
+        );
     }
 
     #[test]

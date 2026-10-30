@@ -28,6 +28,8 @@ pub enum Next {
     Stay,
     /// Talk to the person at this position in [`Exploration::people`].
     Talk(usize),
+    /// Open the shop at this position in the offered shops.
+    Shop(usize),
     /// Start the fight at this position in the offered fights.
     Fight(usize),
     /// Open the character screen.
@@ -36,12 +38,13 @@ pub enum Next {
     Quit,
 }
 
-/// The place and the actions it offers: one "talk to" per person, one per fight on
-/// offer, the character screen, then quit.
+/// The place and the actions it offers: one "talk to" per person, one per shop, one
+/// per fight on offer, the character screen, then quit.
 #[derive(Debug)]
 pub struct Exploration {
     place: String,
     people: Vec<Person>,
+    shops: Vec<String>,
     fights: Vec<String>,
     character: String,
     menu: Menu,
@@ -56,18 +59,32 @@ impl Exploration {
         Self {
             place,
             people,
+            shops: Vec::new(),
             fights: Vec::new(),
             character: "Character".to_owned(),
             menu,
         }
     }
 
-    /// The same scene with fights to offer, by name, after the people.
+    /// The same scene with shops to offer, by name, after the people.
+    #[must_use]
+    pub fn with_shops(mut self, shops: Vec<String>) -> Self {
+        self.shops = shops;
+        self.menu = Menu::new(self.rows());
+        self
+    }
+
+    /// The same scene with fights to offer, by name, after the shops.
     #[must_use]
     pub fn with_fights(mut self, fights: Vec<String>) -> Self {
-        self.menu = Menu::new(self.people.len() + fights.len() + 2);
         self.fights = fights;
+        self.menu = Menu::new(self.rows());
         self
+    }
+
+    /// Everything the menu offers: the listed actions plus "character" and "quit".
+    fn rows(&self) -> usize {
+        self.people.len() + self.shops.len() + self.fights.len() + 2
     }
 
     /// The same scene with another label on the character row, so it can say that
@@ -80,12 +97,13 @@ impl Exploration {
 
     /// Applies a command: moves the cursor, or chooses the selected action.
     pub fn update(&mut self, command: Command) -> Next {
+        let shops_end = self.people.len() + self.shops.len();
+        let fights_end = shops_end + self.fights.len();
         match self.menu.handle(command) {
             Some(index) if index < self.people.len() => Next::Talk(index),
-            Some(index) if index < self.people.len() + self.fights.len() => {
-                Next::Fight(index - self.people.len())
-            }
-            Some(index) if index == self.people.len() + self.fights.len() => Next::Character,
+            Some(index) if index < shops_end => Next::Shop(index - self.people.len()),
+            Some(index) if index < fights_end => Next::Fight(index - shops_end),
+            Some(index) if index == fights_end => Next::Character,
             Some(_) => Next::Quit,
             None => Next::Stay,
         }
@@ -97,6 +115,11 @@ impl Exploration {
             .people
             .iter()
             .map(|person| Item::new(format!("Talk to {}", person.name)))
+            .chain(
+                self.shops
+                    .iter()
+                    .map(|name| Item::new(format!("Trade at {name}"))),
+            )
             .chain(self.fights.iter().map(|name| Item::new(name.clone())))
             .chain([Item::new(self.character.clone()), Item::new("Quit game")])
             .collect();
@@ -161,6 +184,17 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(1)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(2)), Next::Character);
         assert_eq!(scene.update(Command::Pick(3)), Next::Quit);
+    }
+
+    #[test]
+    fn shops_come_after_the_people_and_before_the_fights() {
+        let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")])
+            .with_shops(vec!["Chet's store".to_owned()])
+            .with_fights(vec!["Fight the gang".to_owned()]);
+        assert_eq!(scene.update(Command::Pick(1)), Next::Shop(0));
+        assert_eq!(scene.update(Command::Pick(2)), Next::Fight(0));
+        assert_eq!(scene.update(Command::Pick(3)), Next::Character);
+        assert_eq!(scene.update(Command::Pick(4)), Next::Quit);
     }
 
     #[test]

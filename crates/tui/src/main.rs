@@ -11,6 +11,7 @@ mod exploration;
 mod inventory;
 mod quests;
 mod shared;
+mod trade;
 
 use std::path::PathBuf;
 use std::process::ExitCode;

@@ -1454,6 +1454,51 @@ The Goodsprings dialogue was finished except for the shop topics, which waited f
 
 ---
 
+### Trade Screen: Two Panels, and the Screen Holds Only Cursors
+
+**Date:** 2026-10-30
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Vendors and barter worked in the engine, but nothing in the TUI could reach them. Three shapes were weighed: one tabbed list that trades one unit per Enter, two side-by-side panels, and a tabbed list with a quantity prompt. The tabbed list with a prompt was my recommendation; **two panels was chosen** because it is closest to the trade window of the original game.
+
+---
+
+#### Decision
+
+**Two panels, a prompt for stacks.** The vendor's stock is on the left and the player's pack on the right, each with its own cursor (Left/Right switches panel). Enter on a stack of one trades it at once; on a bigger stack it opens a "how many" question (Left/Right change the count by 1, Up/Down by 10, Enter confirms, Esc cancels). Moving a whole stack with no question would have made a 200-round stack a one-key mistake, so the question stays, as in the original game.
+
+**The count is a type.** `Quantity` holds a value and the stack size, both private, and every method keeps the value between 1 and the stack size, so the screen cannot ask the engine to move nothing or more than the stack holds. A property test runs random raise and lower steps against it.
+
+**The screen holds only cursors and the pending question.** Stock, pack, prices, caps and equipped marks are read from the game whenever they are drawn or chosen, the same rule the level-up screen follows. Every trade goes through `Game::buy` and `Game::sell`, so a refusal (too few caps, an equipped last copy, a vendor short on caps) reaches the log in the engine's own words, and the screen carries no price or affordability rule of its own. A property test drives random key sequences against the real Goodsprings data and checks that caps and items are conserved across player and vendor after every key, and that both cursors stay inside their lists.
+
+**Two ways in.** The scene lists "Trade at ..." for each vendor in the place or in a building inside it (after the people, before the fights), and a dialogue topic with a `shop` opens the same screen. `dialogue::Next` gained `Shop(vendor)`, and the conversation that opened the shop travels inside the trade screen's state, so leaving the shop returns to the conversation with its menu rebuilt (some topics ask for caps, which the trade may have changed). If the topic also ended the conversation, leaving goes to the scene instead.
+
+**The app now builds the vendors.** `VendorBook::from_data` and `Game::with_vendors` were never called by the real game; `App` does it now, plus a name table (`trade::Names`) because the engine knows items by id only. An item with no record is shown by its id.
+
+**Left out for now:** the inventory screen (worn items are marked "[worn]" and the last worn copy is refused, but nothing can be equipped from the shop), a per-unit price that accounts for rounding the whole line (rows show the price of one unit; the question shows the exact total), and sorting or filtering the lists.
+
+---
+
+#### References
+
+- `crates/tui/src/trade/`, `crates/tui/src/app.rs`, `crates/tui/src/dialogue/screen.rs`, `crates/tui/src/exploration/screen.rs`
+- `crates/engine/src/game/state.rs` (`buy`, `sell`, `shop`, `vendors_at`)
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-30 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry
