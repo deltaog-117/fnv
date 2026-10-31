@@ -6,6 +6,7 @@ use std::sync::Arc;
 
 use super::battle::{Arsenal, Battle, BattleError, Outcome};
 use crate::character::{Character, PerkBook, ProgressError};
+use crate::clock::{ClockError, GameClock, Span};
 use crate::combat::{Side, Status};
 use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
@@ -50,6 +51,8 @@ pub struct Game {
     perks: Arc<PerkBook>,
     /// What each merchant has now; changes with every trade.
     market: Market,
+    /// What day and time it is; moves only through [`Game::wait`].
+    clock: GameClock,
     /// Hit points lost and not yet healed. Stored as a loss, so hit points can
     /// never be above the maximum, and a level-up raises them with the maximum.
     wounds: u32,
@@ -80,6 +83,7 @@ impl Game {
             arsenal: Arc::default(),
             perks: Arc::default(),
             market: Market::default(),
+            clock: GameClock::START,
             wounds: 0,
             won: HashSet::new(),
             fired: HashSet::new(),
@@ -218,6 +222,26 @@ impl Game {
     #[must_use]
     pub fn is_alive(&self) -> bool {
         self.hp() > 0
+    }
+
+    /// What day and time it is.
+    #[must_use]
+    pub fn clock(&self) -> GameClock {
+        self.clock
+    }
+
+    /// Lets `span` of time pass.
+    ///
+    /// # Errors
+    ///
+    /// [`ClockError::Down`] while the player has no hit points, and
+    /// [`ClockError::Overflow`] when the time does not fit; the clock is left as it
+    /// was.
+    pub fn wait(&mut self, span: Span) -> Result<(), ClockError> {
+        if !self.is_alive() {
+            return Err(ClockError::Down);
+        }
+        self.clock.advance(span)
     }
 
     /// Restores up to `amount` hit points, never past the maximum.

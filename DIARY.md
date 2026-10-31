@@ -1547,6 +1547,52 @@ Bought stimpaks could not be used and a bought weapon could not be equipped, bec
 
 ---
 
+### Game Clock: Time Lives in `Game`, Not Yet in the Vocabulary
+
+**Date:** 2026-10-31
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Nothing in the game knew what time it was, and several roadmap items wait on that: resting, vendor restocking, per-second item effects and timed bonuses. The open question was how far the clock reaches. Two ways were weighed: keep it inside `Game` (A), or also add a `time` condition and a `wait` effect to the shared condition/effect language (B). **A was chosen**, as recommended.
+
+---
+
+#### Decision
+
+**A new `clock/` feature owns the time.** `GameClock` counts whole minutes since the start of day 1 at 00:00; day, hour and minute are derived from that one number, so they cannot disagree. A game opens at day 1, 08:00. `Span` is a length of time built only from a non-zero number of minutes or hours, so waiting for nothing cannot be constructed. `GameClock::advance` uses checked addition: an overflow is refused with `ClockError::Overflow` and leaves the clock as it was.
+
+**`Game` holds the clock and decides when it moves.** `Game::wait` is the only way time passes, and it refuses a player who is down. `Game::clock` reads it. The clock is a plain `Copy` value, so cloning a game (which the batch effects do to try changes) copies the time with it.
+
+**Why not the vocabulary yet.** B would have added a `Condition::Time` and an `Effect::Wait`, with schema, contract-test and view/sink-trait changes, before any rule needs them. The first real consumers (resting, restocking, per-second effects) are Rust code in `Game`. When the first data-driven timed rule appears, it will fix the shape of the condition, instead of this cycle guessing it. Changing the schema later costs one cycle; guessing wrong costs a rewrite.
+
+**The scene gets two waits.** "Wait an hour" and "Wait 8 hours" sit between "Pack" and "Quit game". The status line shows the day and time after the place, and a wait writes "Wait 8 hours. It is now Day 1, 16:00." to the log. Existing tests that counted rows from the end were moved to the new positions.
+
+**`from_minutes` and `as_minutes` exist for saves.** A saved game has to write the clock and read it back; both are plain accessors with no rule beyond the type.
+
+**Left out for now:** resting that heals (it needs beds and a healing rule), travel that costs time, vendor restocking, per-second item effects, hardcore needs, and any `Condition`/`Effect` for time. The per-second heals entered as totals in `data/items/uses.json` stay as they are until a rule needs the difference.
+
+---
+
+#### References
+
+- `crates/engine/src/clock/`, `crates/engine/src/game/state.rs` (`clock`, `wait`)
+- `crates/engine/tests/clock/`, `crates/engine/tests/game/clock.rs`, `crates/engine/benches/clock.rs`
+- `crates/tui/src/app.rs`, `crates/tui/src/exploration/screen.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-31 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

@@ -9,6 +9,7 @@ use std::sync::Arc;
 
 use anyhow::Context;
 use engine::character::PerkBook;
+use engine::clock::Span;
 use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::{Arsenal, Game, Outcome};
 use engine::inventory::{ItemBook, Slot};
@@ -220,6 +221,7 @@ impl App {
                 exploration::Next::Pack => {
                     self.screen = Screen::Packing(Pack::open(&self.game, Arc::clone(&self.names)));
                 }
+                exploration::Next::Wait { span, label } => self.wait(span, label),
             },
             Screen::Leveling(sheet) => {
                 if sheet.update(command, &mut self.game, &mut self.log) == character::Next::Leave {
@@ -314,6 +316,15 @@ impl App {
         }
     }
 
+    /// Lets time pass and says when it is now, or why it could not.
+    fn wait(&mut self, span: Span, label: &str) {
+        let note = match self.game.wait(span) {
+            Ok(()) => format!("{label}. It is now {}.", self.game.clock()),
+            Err(error) => error.to_string(),
+        };
+        self.log.push(Entry::Note(note));
+    }
+
     fn exploring(&self) -> Screen {
         let shops = self
             .shops_here()
@@ -404,8 +415,9 @@ impl App {
         let active = self.game.quests().active().count();
         frame.render_widget(
             Paragraph::new(format!(
-                " {} | Lv {} | HP {}/{} | {} caps | {active} active quest(s)",
+                " {} | {} | Lv {} | HP {}/{} | {} caps | {active} active quest(s)",
                 self.place,
+                self.game.clock(),
                 self.game.character().level().get(),
                 self.game.hp(),
                 self.game.character().max_hp(),
@@ -556,9 +568,11 @@ mod tests {
     #[test]
     fn the_pack_opens_from_the_scene_shows_the_worn_armor_and_leaves_again() {
         let mut app = app();
-        // The cursor wraps up from the first row to Quit, and Pack is just above it.
-        app.update(Command::Up);
-        app.update(Command::Up);
+        // The cursor wraps up from the first row to Quit; the two waits sit between
+        // it and Pack.
+        for _ in 0..4 {
+            app.update(Command::Up);
+        }
         app.update(Command::Select);
         assert!(matches!(app.screen, Screen::Packing(_)));
         let text = screen(&app, 100, 30);
@@ -606,6 +620,29 @@ mod tests {
     fn the_status_line_shows_the_level_and_the_caps() {
         let text = screen(&app(), 100, 30);
         assert!(text.contains("Lv 1 | HP 200/200 | 0 caps"), "{text}");
+    }
+
+    #[test]
+    fn the_status_line_shows_the_day_and_time() {
+        let text = screen(&app(), 100, 30);
+        assert!(text.contains("| Day 1, 08:00 | Lv 1"), "{text}");
+    }
+
+    #[test]
+    fn waiting_moves_the_clock_and_the_log_says_when_it_is_now() {
+        let mut app = app();
+        // The cursor wraps up from the first row to Quit; the 8-hour wait is above it.
+        app.update(Command::Up);
+        app.update(Command::Up);
+        app.update(Command::Select);
+        assert_eq!(app.game.clock().to_string(), "Day 1, 16:00");
+        let text = screen(&app, 100, 30);
+        assert!(
+            text.contains("Wait 8 hours. It is now Day 1, 16:00."),
+            "{text}"
+        );
+        assert!(text.contains("| Day 1, 16:00 | Lv 1"), "{text}");
+        assert!(matches!(app.screen, Screen::Exploring(_)));
     }
 
     #[test]

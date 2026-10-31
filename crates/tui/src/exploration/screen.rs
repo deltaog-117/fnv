@@ -1,5 +1,8 @@
 //! Where the player stands and who they can talk to.
 
+use std::num::NonZeroU32;
+
+use engine::clock::Span;
 use engine::shared::{DialogueId, NpcId};
 use ratatui::Frame;
 use ratatui::layout::Rect;
@@ -21,6 +24,17 @@ pub struct Person {
     pub dialogue: DialogueId,
 }
 
+/// The ways to pass time from the scene: the label and the hours.
+const WAITS: [(&str, u32); 2] = [("Wait an hour", 1), ("Wait 8 hours", 8)];
+
+/// The time a wait row passes.
+fn wait_span(hours: u32) -> Option<Span> {
+    NonZeroU32::new(hours).map(Span::hours)
+}
+
+/// The rows that are always there: "character", "pack", the waits and "quit".
+const EXTRA_ROWS: usize = 3 + WAITS.len();
+
 /// What the player's command led to.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Next {
@@ -36,12 +50,19 @@ pub enum Next {
     Character,
     /// Open the pack screen.
     Pack,
+    /// Let this much time pass, and say what it was in `label`.
+    Wait {
+        /// How long.
+        span: Span,
+        /// What the row said, such as "Wait an hour".
+        label: &'static str,
+    },
     /// Leave the game.
     Quit,
 }
 
 /// The place and the actions it offers: one "talk to" per person, one per shop, one
-/// per fight on offer, the character screen, the pack, then quit.
+/// per fight on offer, the character screen, the pack, the waits, then quit.
 #[derive(Debug)]
 pub struct Exploration {
     place: String,
@@ -56,8 +77,9 @@ impl Exploration {
     /// The scene for `place` with `people` to talk to.
     #[must_use]
     pub fn new(place: String, people: Vec<Person>) -> Self {
-        // The extra rows are "character", "pack" and "quit", so the menu is never empty.
-        let menu = Menu::new(people.len() + 3);
+        // The extra rows are "character", "pack", the waits and "quit", so the menu is
+        // never empty.
+        let menu = Menu::new(people.len() + EXTRA_ROWS);
         Self {
             place,
             people,
@@ -84,10 +106,10 @@ impl Exploration {
         self
     }
 
-    /// Everything the menu offers: the listed actions plus "character", "pack" and
-    /// "quit".
+    /// Everything the menu offers: the listed actions plus "character", "pack", the
+    /// waits and "quit".
     fn rows(&self) -> usize {
-        self.people.len() + self.shops.len() + self.fights.len() + 3
+        self.people.len() + self.shops.len() + self.fights.len() + EXTRA_ROWS
     }
 
     /// The same scene with another label on the character row, so it can say that
@@ -108,7 +130,13 @@ impl Exploration {
             Some(index) if index < fights_end => Next::Fight(index - shops_end),
             Some(index) if index == fights_end => Next::Character,
             Some(index) if index == fights_end + 1 => Next::Pack,
-            Some(_) => Next::Quit,
+            Some(index) if index + 1 == self.rows() => Next::Quit,
+            // A row no arm names cannot be reached; staying is the harmless answer.
+            Some(index) => index
+                .checked_sub(fights_end + 2)
+                .and_then(|n| WAITS.get(n))
+                .and_then(|&(label, hours)| wait_span(hours).map(|span| Next::Wait { span, label }))
+                .unwrap_or(Next::Stay),
             None => Next::Stay,
         }
     }
@@ -125,11 +153,9 @@ impl Exploration {
                     .map(|name| Item::new(format!("Trade at {name}"))),
             )
             .chain(self.fights.iter().map(|name| Item::new(name.clone())))
-            .chain([
-                Item::new(self.character.clone()),
-                Item::new("Pack"),
-                Item::new("Quit game"),
-            ])
+            .chain([Item::new(self.character.clone()), Item::new("Pack")])
+            .chain(WAITS.iter().map(|&(label, _)| Item::new(label)))
+            .chain([Item::new("Quit game")])
             .collect();
         let mut lines = vec![
             Line::styled(format!("You are in {}.", self.place), theme::text()),
@@ -173,10 +199,31 @@ mod tests {
     }
 
     #[test]
-    fn the_pack_comes_before_the_last_row_which_quits() {
+    fn the_waits_come_after_the_pack_and_before_the_last_row_which_quits() {
         let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")]);
         assert_eq!(scene.update(Command::Pick(2)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(3)), Next::Quit);
+        assert_eq!(
+            scene.update(Command::Pick(3)),
+            Next::Wait {
+                span: Span::hours(NonZeroU32::MIN),
+                label: "Wait an hour"
+            }
+        );
+        assert!(matches!(
+            scene.update(Command::Pick(4)),
+            Next::Wait {
+                label: "Wait 8 hours",
+                ..
+            }
+        ));
+        assert_eq!(scene.update(Command::Pick(5)), Next::Quit);
+    }
+
+    #[test]
+    fn every_wait_passes_at_least_an_hour() {
+        for (label, hours) in WAITS {
+            assert!(wait_span(hours).is_some(), "{label} passes no time");
+        }
     }
 
     #[test]
@@ -193,7 +240,7 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(1)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(2)), Next::Character);
         assert_eq!(scene.update(Command::Pick(3)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(4)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(6)), Next::Quit);
     }
 
     #[test]
@@ -205,7 +252,7 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(2)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(3)), Next::Character);
         assert_eq!(scene.update(Command::Pick(4)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(5)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(7)), Next::Quit);
     }
 
     #[test]
@@ -213,6 +260,6 @@ mod tests {
         let mut scene = Exploration::new("Nowhere".to_owned(), Vec::new());
         assert_eq!(scene.update(Command::Select), Next::Character);
         assert_eq!(scene.update(Command::Pick(1)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(2)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(4)), Next::Quit);
     }
 }

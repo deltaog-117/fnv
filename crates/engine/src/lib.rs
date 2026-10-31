@@ -8,6 +8,7 @@
 //! common and `game` is the one place that wires them together.
 
 pub mod character;
+pub mod clock;
 pub mod combat;
 pub mod companions;
 pub mod dialogue;
