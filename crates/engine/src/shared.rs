@@ -26,7 +26,7 @@ mod vocabulary;
 pub use bounds::{HealthPercent, SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
 pub use data::{
-    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, Dialogue, Encounter, Faction,
+    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Bed, Consumable, Dialogue, Encounter, Faction,
     FactionKind, Foe, InfoValue, ItemKind, ItemUse, Location, LocationSize, MapKind, Neighbor, Npc,
     NpcSpecial, Perk, PerkRequirements, Position, Quest, QuestKind, ReputationModel,
     ReputationNote, Response, Rule, RuleKind, RuleTargetType, Stage, StatEffect, StockLine, Topic,
@@ -36,7 +36,7 @@ pub use effect::Effect;
 pub use error::ModelError;
 pub use eval::{apply, apply_all, evaluate};
 pub use ids::{
-    AmmoFamilyId, CompanionId, DialogueId, EncounterId, EndingId, FactionId, FlagId, ItemId,
+    AmmoFamilyId, BedId, CompanionId, DialogueId, EncounterId, EndingId, FactionId, FlagId, ItemId,
     LocationId, NpcId, PerkId, QuestId, TopicKey, TraitId, VendorId,
 };
 pub use load::{Catalog, GameData, LoadError, Record, Scope};

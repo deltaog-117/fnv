@@ -17,6 +17,7 @@ pub mod inventory;
 pub mod modding;
 pub mod quests;
 pub mod reputation;
+pub mod rest;
 pub mod saves;
 pub mod shared;
 pub mod trade;

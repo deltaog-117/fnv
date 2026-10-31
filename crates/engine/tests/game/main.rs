@@ -4,7 +4,8 @@
 //! effects aimed at features that are not built; `automation` covers stage effects
 //! and rule firing; `pack` carries the character and the inventory through `Game`;
 //! `real_data` runs a real quest's effects through `apply_all`; `items` uses and
-//! drops pack items; `clock` checks that only waiting moves the time.
+//! drops pack items; `clock` checks that only waiting moves the time; `rest` sleeps
+//! in a bed.
 
 mod automation;
 mod battle;
@@ -14,5 +15,6 @@ mod items;
 mod pack;
 mod progress;
 mod real_data;
+mod rest;
 mod scenarios;
 mod state;

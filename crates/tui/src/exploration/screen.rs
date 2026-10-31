@@ -10,7 +10,7 @@ use ratatui::text::Line;
 use ratatui::widgets::{Block, Borders, Paragraph, Wrap};
 
 use crate::shared::input::Command;
-use crate::shared::menu::{Item, Menu};
+use crate::shared::menu::{self, Item, Menu};
 use crate::shared::theme;
 
 /// Someone in the current place with a conversation the player can open.
@@ -46,6 +46,8 @@ pub enum Next {
     Shop(usize),
     /// Start the fight at this position in the offered fights.
     Fight(usize),
+    /// Sleep in the bed at this position in the offered beds.
+    Sleep(usize),
     /// Open the character screen.
     Character,
     /// Open the pack screen.
@@ -62,13 +64,15 @@ pub enum Next {
 }
 
 /// The place and the actions it offers: one "talk to" per person, one per shop, one
-/// per fight on offer, the character screen, the pack, the waits, then quit.
+/// per fight on offer, one per bed, the character screen, the pack, the waits, then
+/// quit.
 #[derive(Debug)]
 pub struct Exploration {
     place: String,
     people: Vec<Person>,
     shops: Vec<String>,
     fights: Vec<String>,
+    beds: Vec<String>,
     character: String,
     menu: Menu,
 }
@@ -85,6 +89,7 @@ impl Exploration {
             people,
             shops: Vec::new(),
             fights: Vec::new(),
+            beds: Vec::new(),
             character: "Character".to_owned(),
             menu,
         }
@@ -106,10 +111,18 @@ impl Exploration {
         self
     }
 
+    /// The same scene with beds to offer, by name, after the fights.
+    #[must_use]
+    pub fn with_beds(mut self, beds: Vec<String>) -> Self {
+        self.beds = beds;
+        self.menu = Menu::new(self.rows());
+        self
+    }
+
     /// Everything the menu offers: the listed actions plus "character", "pack", the
     /// waits and "quit".
     fn rows(&self) -> usize {
-        self.people.len() + self.shops.len() + self.fights.len() + EXTRA_ROWS
+        self.people.len() + self.shops.len() + self.fights.len() + self.beds.len() + EXTRA_ROWS
     }
 
     /// The same scene with another label on the character row, so it can say that
@@ -124,16 +137,18 @@ impl Exploration {
     pub fn update(&mut self, command: Command) -> Next {
         let shops_end = self.people.len() + self.shops.len();
         let fights_end = shops_end + self.fights.len();
+        let beds_end = fights_end + self.beds.len();
         match self.menu.handle(command) {
             Some(index) if index < self.people.len() => Next::Talk(index),
             Some(index) if index < shops_end => Next::Shop(index - self.people.len()),
             Some(index) if index < fights_end => Next::Fight(index - shops_end),
-            Some(index) if index == fights_end => Next::Character,
-            Some(index) if index == fights_end + 1 => Next::Pack,
+            Some(index) if index < beds_end => Next::Sleep(index - fights_end),
+            Some(index) if index == beds_end => Next::Character,
+            Some(index) if index == beds_end + 1 => Next::Pack,
             Some(index) if index + 1 == self.rows() => Next::Quit,
             // A row no arm names cannot be reached; staying is the harmless answer.
             Some(index) => index
-                .checked_sub(fights_end + 2)
+                .checked_sub(beds_end + 2)
                 .and_then(|n| WAITS.get(n))
                 .and_then(|&(label, hours)| wait_span(hours).map(|span| Next::Wait { span, label }))
                 .unwrap_or(Next::Stay),
@@ -153,6 +168,11 @@ impl Exploration {
                     .map(|name| Item::new(format!("Trade at {name}"))),
             )
             .chain(self.fights.iter().map(|name| Item::new(name.clone())))
+            .chain(
+                self.beds
+                    .iter()
+                    .map(|name| Item::new(format!("Sleep in {name}"))),
+            )
             .chain([Item::new(self.character.clone()), Item::new("Pack")])
             .chain(WAITS.iter().map(|&(label, _)| Item::new(label)))
             .chain([Item::new("Quit game")])
@@ -162,7 +182,14 @@ impl Exploration {
             Line::default(),
             Line::styled("What do you do?", theme::heading()),
         ];
-        lines.extend(self.menu.lines(&items));
+        // The town can list more actions than the scene is tall, so the rows scroll
+        // with the cursor instead of hiding whatever is below the last visible one.
+        let menu_height = usize::from(area.height.saturating_sub(2)).saturating_sub(lines.len());
+        lines.extend(menu::window(
+            self.menu.lines(&items),
+            self.menu.selected(),
+            menu_height,
+        ));
         let block = Block::new()
             .borders(Borders::ALL)
             .border_style(theme::dim())
@@ -252,6 +279,25 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(2)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(3)), Next::Character);
         assert_eq!(scene.update(Command::Pick(4)), Next::Pack);
+        assert_eq!(scene.update(Command::Pick(7)), Next::Quit);
+    }
+
+    #[test]
+    fn beds_come_after_the_fights_and_before_the_character_row() {
+        let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")])
+            .with_fights(vec!["Fight the gang".to_owned()])
+            .with_beds(vec!["a cot".to_owned()]);
+        assert_eq!(scene.update(Command::Pick(1)), Next::Fight(0));
+        assert_eq!(scene.update(Command::Pick(2)), Next::Sleep(0));
+        assert_eq!(scene.update(Command::Pick(3)), Next::Character);
+        assert_eq!(scene.update(Command::Pick(4)), Next::Pack);
+        assert!(matches!(
+            scene.update(Command::Pick(5)),
+            Next::Wait {
+                label: "Wait an hour",
+                ..
+            }
+        ));
         assert_eq!(scene.update(Command::Pick(7)), Next::Quit);
     }
 

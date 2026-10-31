@@ -15,12 +15,12 @@ use serde_json::Value;
 use thiserror::Error;
 
 use super::data::{
-    Ammo, Armor, Consumable, Dialogue, Encounter, Faction, Location, Npc, Perk, Quest, Trait,
+    Ammo, Armor, Bed, Consumable, Dialogue, Encounter, Faction, Location, Npc, Perk, Quest, Trait,
     Vendor, Weapon,
 };
 use super::error::ModelError;
 use super::ids::{
-    DialogueId, EncounterId, FactionId, ItemId, LocationId, NpcId, PerkId, QuestId, TraitId,
+    BedId, DialogueId, EncounterId, FactionId, ItemId, LocationId, NpcId, PerkId, QuestId, TraitId,
     VendorId,
 };
 
@@ -59,6 +59,7 @@ impl_record!(
     Perk => PerkId,
     Trait => TraitId,
     Vendor => VendorId,
+    Bed => BedId,
 );
 
 /// Why the data could not be loaded.
@@ -242,6 +243,8 @@ pub struct GameData {
     pub traits: Catalog<Trait>,
     /// Every merchant, with the stock and caps they start with.
     pub vendors: Catalog<Vendor>,
+    /// Every bed where the player may sleep.
+    pub beds: Catalog<Bed>,
 }
 
 impl GameData {
@@ -300,6 +303,7 @@ impl GameData {
             perks: read_catalog(dir, "perks.json")?,
             traits: read_catalog(dir, "traits.json")?,
             vendors: read_catalog(dir, "vendors.json")?,
+            beds: read_catalog(dir, "beds.json")?,
             dialogue: Catalog::from_records(&dir.join("dialogue"), dialogue)?,
             locations,
             quests,

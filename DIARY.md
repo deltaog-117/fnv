@@ -1593,6 +1593,51 @@ Nothing in the game knew what time it was, and several roadmap items wait on tha
 
 ---
 
+### Sleep: Beds Are Data, and Only Sleeping Heals
+
+**Date:** 2026-10-31
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The clock landed with nothing to heal on it. The question was how the player heals by letting time pass. Three ways were weighed: every wait heals with a constant in code (A), a separate Sleep action that heals while waiting does not (B), or every wait heals with the rate read from a data file (C). **B was chosen**, as recommended. The data has no rest rule, but the perk texts say a sleep "regains all of your Health" and speak of "the bed", so sleeping is tied to a bed and waiting is not.
+
+---
+
+#### Decision
+
+**A new `rest/` feature owns beds and the recovery rule.** `BedBook` lists the beds, each at a place; `restored(max_hp, span)` turns a sleep into hit points: linear in the length, rounded up, never above the maximum, with eight hours (`FULL_REST_HOURS`) restoring everything. Eight hours is a stand-in: the wiki gives no length, only that a sleep restores all health.
+
+**`Game::sleep` runs a sleep as one unit.** It refuses an unknown bed, works out the recovery, lets the time pass through `Game::wait` (so a player who is down is refused and an overflow changes nothing), then closes the wounds and reports what was actually healed. `Game::wait` is unchanged and heals nothing, so stimpaks and Doc Mitchell keep their value. `Game::beds_at` offers the beds at a place, none while the player is down, like `vendors_at`.
+
+**Beds are hand-authored data, as vendors are.** `data/beds/beds.json` is copied to `data/engine/beds.json` by `normalize.py`, checked by `schemas/bed.schema.json`, and `validate.py` checks that each bed stands in a known place. The one record, Doc Mitchell's spare bed, is a placeholder. The real list, with owned and rented beds, is to be fetched together with the other data the perks need (Well Rested, campfire sleeping).
+
+**The scene scrolls.** A "Sleep in ..." row follows the fights. The new row pushed "Quit game" off the 30-line test frame, and the scene was already cut off at the smallest supported terminal, so the rows now scroll with the cursor through the existing `menu::window`. The first-frame test was given a taller terminal (34 lines, was 30) because the town now lists one more row than a 30-line scene can show at once; it still checks every text it checked before. A new test shows the cursor row stays visible at the smallest size.
+
+**Left out for now:** campfire sleeping, owned and rented beds, Well Rested, hardcore mode (where sleep does not heal), a choice of how long to sleep (the scene offers the full rest only), travel that costs time, and timed item effects, which are the next step of the clock work.
+
+---
+
+#### References
+
+- `crates/engine/src/rest/`, `crates/engine/src/game/state.rs` (`with_beds`, `beds_at`, `sleep`)
+- `crates/engine/tests/rest/`, `crates/engine/tests/game/rest.rs`, `crates/engine/benches/rest.rs`
+- `data/beds/`, `schemas/bed.schema.json`, `scripts/normalize.py`, `scripts/validate.py`
+- `crates/tui/src/app.rs`, `crates/tui/src/exploration/screen.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-10-31 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

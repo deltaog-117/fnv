@@ -10,9 +10,10 @@ use crate::clock::{ClockError, GameClock, Span};
 use crate::combat::{Side, Status};
 use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
+use crate::rest::{BedBook, RestError, restored};
 use crate::shared::{
-    CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, Effect, EffectError,
-    Encounter, EncounterId, EndingId, FactionId, FlagId, HealthPercent, InventorySink,
+    BedId, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, Effect,
+    EffectError, Encounter, EncounterId, EndingId, FactionId, FlagId, HealthPercent, InventorySink,
     InventoryView, ItemId, ItemUse, LocationId, NpcId, NpcState, PerkId, QuestId, QuestSink,
     QuestStage, QuestStatus, QuestView, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
     StandingSink, StandingView, VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
@@ -51,7 +52,9 @@ pub struct Game {
     perks: Arc<PerkBook>,
     /// What each merchant has now; changes with every trade.
     market: Market,
-    /// What day and time it is; moves only through [`Game::wait`].
+    /// Where the player may sleep.
+    beds: Arc<BedBook>,
+    /// What day and time it is; moves only through [`Game::wait`] and [`Game::sleep`].
     clock: GameClock,
     /// Hit points lost and not yet healed. Stored as a loss, so hit points can
     /// never be above the maximum, and a level-up raises them with the maximum.
@@ -83,6 +86,7 @@ impl Game {
             arsenal: Arc::default(),
             perks: Arc::default(),
             market: Market::default(),
+            beds: Arc::default(),
             clock: GameClock::START,
             wounds: 0,
             won: HashSet::new(),
@@ -112,6 +116,14 @@ impl Game {
     #[must_use]
     pub fn with_perks(mut self, perks: Arc<PerkBook>) -> Self {
         self.perks = perks;
+        self
+    }
+
+    /// The same game over the beds that exist. Without a book there is nowhere to
+    /// sleep, so call this before play.
+    #[must_use]
+    pub fn with_beds(mut self, beds: Arc<BedBook>) -> Self {
+        self.beds = beds;
         self
     }
 
@@ -242,6 +254,37 @@ impl Game {
             return Err(ClockError::Down);
         }
         self.clock.advance(span)
+    }
+
+    /// The beds the player can sleep in at `place`. None while the player is down.
+    pub fn beds_at<'a>(
+        &'a self,
+        place: &'a LocationId,
+    ) -> impl Iterator<Item = (&'a BedId, &'a str)> {
+        let open = self.is_alive();
+        self.beds
+            .at(place)
+            .filter(move |_| open)
+            .map(|(id, info)| (id, info.name()))
+    }
+
+    /// Sleeps for `span` in `bed`, and returns the hit points it restored.
+    ///
+    /// # Errors
+    ///
+    /// [`RestError::UnknownBed`] when there is no such bed, and
+    /// [`RestError::Clock`] when time cannot pass (the player is down, or the time
+    /// does not fit). Nothing changes in either case.
+    pub fn sleep(&mut self, bed: &BedId, span: Span) -> Result<u32, RestError> {
+        if self.beds.get(bed).is_none() {
+            return Err(RestError::UnknownBed(bed.clone()));
+        }
+        // Worked out before the time passes; the wait is the only step that can fail.
+        let amount = restored(self.character.max_hp(), span);
+        self.wait(span)?;
+        let healed = amount.min(self.wounds);
+        self.heal(healed);
+        Ok(healed)
     }
 
     /// Restores up to `amount` hit points, never past the maximum.

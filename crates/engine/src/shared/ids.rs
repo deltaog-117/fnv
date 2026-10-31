@@ -125,6 +125,11 @@ define_id!(
     "vendor"
 );
 define_id!(
+    /// Identifies a bed where the player may sleep.
+    BedId,
+    "bed"
+);
+define_id!(
     /// Identifies a game ending.
     EndingId,
     "ending"

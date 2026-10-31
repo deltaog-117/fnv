@@ -14,8 +14,10 @@ use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::{Arsenal, Game, Outcome};
 use engine::inventory::{ItemBook, Slot};
 use engine::quests::QuestBook;
+use engine::rest::{BedBook, FULL_REST_HOURS};
 use engine::shared::{
-    Effect, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage, VendorId, apply_all,
+    BedId, Effect, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage, VendorId,
+    apply_all,
 };
 use engine::trade::VendorBook;
 use engine::world::WorldBook;
@@ -113,10 +115,12 @@ impl App {
         let items = Arc::new(ItemBook::from_data(data).context("building the item book")?);
         let arsenal = Arc::new(Arsenal::from_data(data).context("building the arsenal")?);
         let vendors = Arc::new(VendorBook::from_data(data).context("building the vendors")?);
+        let beds = Arc::new(BedBook::from_data(data).context("building the beds")?);
         let mut game = Game::with_world(quests, world)
             .with_items(items)
             .with_arsenal(arsenal)
             .with_perks(Arc::new(PerkBook::base_game(data)))
+            .with_beds(beds)
             .with_vendors(Arc::clone(&vendors))
             .context("stocking the vendors")?;
         let opening = Effect::SetStage {
@@ -217,6 +221,7 @@ impl App {
                     }
                 }
                 exploration::Next::Fight(index) => self.start_fight(index),
+                exploration::Next::Sleep(index) => self.sleep(index),
                 exploration::Next::Character => self.screen = Screen::Leveling(LevelUp::new()),
                 exploration::Next::Pack => {
                     self.screen = Screen::Packing(Pack::open(&self.game, Arc::clone(&self.names)));
@@ -325,12 +330,46 @@ impl App {
         self.log.push(Entry::Note(note));
     }
 
+    /// The beds the player can sleep in here, with the names to show.
+    fn beds_here(&self) -> Vec<(BedId, String)> {
+        self.here
+            .iter()
+            .flat_map(|place| self.game.beds_at(place))
+            .map(|(id, name)| (id.clone(), name.to_owned()))
+            .collect()
+    }
+
+    /// Sleeps a full rest in the bed at `index` of [`App::beds_here`], and says what
+    /// it restored, or why it could not be done.
+    fn sleep(&mut self, index: usize) {
+        let Some((bed, name)) = self.beds_here().into_iter().nth(index) else {
+            return;
+        };
+        let Some(span) = u32::try_from(FULL_REST_HOURS)
+            .ok()
+            .and_then(NonZeroU32::new)
+            .map(Span::hours)
+        else {
+            return;
+        };
+        let note = match self.game.sleep(&bed, span) {
+            Ok(healed) => format!(
+                "You sleep {FULL_REST_HOURS} hours in {name} and recover {healed} hit points. \
+                 It is now {}.",
+                self.game.clock()
+            ),
+            Err(error) => error.to_string(),
+        };
+        self.log.push(Entry::Note(note));
+    }
+
     fn exploring(&self) -> Screen {
         let shops = self
             .shops_here()
             .into_iter()
             .map(|(_, name)| name)
             .collect();
+        let beds = self.beds_here().into_iter().map(|(_, name)| name).collect();
         let fights = self
             .game
             .encounters_at(&self.place_id)
@@ -348,6 +387,7 @@ impl App {
             Exploration::new(self.place.clone(), self.people.clone())
                 .with_shops(shops)
                 .with_fights(fights)
+                .with_beds(beds)
                 .with_character_label(label),
         )
     }
@@ -552,7 +592,7 @@ mod tests {
 
     #[test]
     fn the_first_frame_shows_the_place_the_people_the_quest_and_the_keys() {
-        let text = screen(&app(), 100, 30);
+        let text = screen(&app(), 100, 34);
         for expected in [
             "You are in Goodsprings",
             "Talk to Doc Mitchell",
@@ -643,6 +683,45 @@ mod tests {
         );
         assert!(text.contains("| Day 1, 16:00 | Lv 1"), "{text}");
         assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    /// The scene row of the first bed offered.
+    fn sleep_row(app: &App) -> usize {
+        app.people.len() + app.shops_here().len() + app.game.encounters_at(&app.place_id).len()
+    }
+
+    #[test]
+    fn sleeping_in_the_bed_heals_the_player_moves_the_clock_and_the_log_says_so() {
+        let mut app = app();
+        app.game = app.game.clone().with_wounds(50);
+        app.screen = app.exploring();
+        app.update(Command::Pick(sleep_row(&app)));
+        assert_eq!(app.game.hp(), app.game.character().max_hp());
+        assert_eq!(app.game.clock().to_string(), "Day 1, 16:00");
+        let text = screen(&app, 100, 34);
+        // The log wraps at the panel width, so the sentence is checked in two parts.
+        assert!(text.contains("recover 50"), "{text}");
+        assert!(text.contains("It is now Day 1, 16:00."), "{text}");
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    #[test]
+    fn a_place_without_a_bed_offers_no_sleep() {
+        let mut app = app();
+        app.game = app.game.clone().with_beds(Arc::default());
+        app.screen = app.exploring();
+        assert!(app.beds_here().is_empty());
+        assert!(!screen(&app, 100, 34).contains("Sleep in"));
+    }
+
+    #[test]
+    fn the_cursor_row_stays_visible_when_the_town_lists_more_rows_than_fit() {
+        let mut app = app();
+        // The cursor wraps up from the first row to Quit, which a short scene cuts off
+        // until it scrolls.
+        app.update(Command::Up);
+        let text = screen(&app, MIN_WIDTH, MIN_HEIGHT);
+        assert!(text.contains("Quit game"), "{text}");
     }
 
     #[test]
@@ -842,10 +921,12 @@ mod tests {
     }
 
     /// Opens the character screen from the scene, where its row follows the people,
-    /// the shops and the fights.
+    /// the shops, the fights and the beds.
     fn open_character(app: &mut App) {
-        let row =
-            app.people.len() + app.shops_here().len() + app.game.encounters_at(&app.place_id).len();
+        let row = app.people.len()
+            + app.shops_here().len()
+            + app.game.encounters_at(&app.place_id).len()
+            + app.beds_here().len();
         app.update(Command::Pick(row));
         assert!(matches!(app.screen, Screen::Leveling(_)));
     }

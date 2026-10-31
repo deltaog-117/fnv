@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bed.schema.json",
+  "title": "Bed",
+  "description": "One entry in data/engine/beds.json: a bed where the player may sleep.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "place"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "place": {
+      "description": "Location id where the bed stands.",
+      "$ref": "common.schema.json#/$defs/id"
+    }
+  }
+}

@@ -4,6 +4,7 @@
 //! fields, so a field added to a schema without a matching change here fails the
 //! full-data load test instead of being dropped.
 
+mod bed;
 mod dialogue;
 mod encounter;
 mod faction;
@@ -14,6 +15,7 @@ mod perk;
 mod quest;
 mod vendor;
 
+pub use bed::Bed;
 pub use dialogue::{Dialogue, Response, Topic, TopicSection};
 pub use encounter::{Encounter, Foe};
 pub use faction::{Faction, FactionKind, InfoValue, ReputationModel, ReputationNote};

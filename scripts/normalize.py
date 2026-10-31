@@ -985,6 +985,7 @@ def main(argv):
     (out / "formulas.json").write_text((rdir / "formulas.json").read_text())
     (out / "encounters.json").write_text((data / "combat" / "encounters.json").read_text())
     (out / "vendors.json").write_text((data / "vendors" / "vendors.json").read_text())
+    (out / "beds.json").write_text((data / "beds" / "beds.json").read_text())
     dump(out / "quests.json", quest_recs)
     dump(out / "npcs.json", npc_recs)
     ddir = out / "dialogue"

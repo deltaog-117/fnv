@@ -75,7 +75,7 @@ def main(argv):
     validators = {
         name: Draft202012Validator({"$ref": f"{name}.schema.json"}, registry=registry)
         for name in ("item", "quest", "npc", "dialogue", "location", "perk", "trait",
-                     "faction", "reputation", "creature", "encounter", "vendor")
+                     "faction", "reputation", "creature", "encounter", "vendor", "bed")
     }
 
     for name in ("stat", "challenge", "recipe", "ending", "level", "formulas"):
@@ -267,6 +267,10 @@ def main(argv):
         for item in {i for i in lines if lines.count(i) > 1}:
             report("refs", vendor["id"], f"{item} is listed twice")
     vendor_ids = {v["id"] for v in vendors}
+    beds, _ = load_group("beds.json", "bed", "beds")
+    for bed in beds:
+        if bed["place"] not in loc_ids:
+            report("refs", bed["id"], f"unknown place {bed['place']}")
     for d in dialogue:
         for t in d["topics"]:
             if t.get("shop") and t["shop"] not in vendor_ids:

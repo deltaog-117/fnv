@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- The scene's action list now scrolls with the cursor when it is taller than the scene, instead of cutting off the last rows (including "Quit game") at small terminal sizes.
+
 ### Added
+- Beds and sleep in `crates/engine/src/rest/`: `BedBook` (the beds, each at a place), `restored` (hit points restored by a sleep: linear in its length, rounded up, never above the maximum, with `FULL_REST_HOURS` = 8 restoring everything) and `RestError`. A bed id appears once.
+- `Game::with_beds`, `Game::beds_at` and `Game::sleep`: sleeping needs a bed, passes the time, closes wounds and returns the hit points actually restored. A player who is down cannot sleep, and a refused sleep changes nothing. `Game::wait` still restores nothing.
+- Bed data: `data/beds/beds.json` (hand-authored; one placeholder bed in Doc Mitchell's house), `schemas/bed.schema.json`, `Bed` records, the `BedId` type, `GameData::beds`, and a reference check in `validate.py`.
+- The scene gains a "Sleep in ..." row for each bed in the place or its buildings, after the fights, and the log says what the sleep restored and what time it is.
+- Tests: property tests for the recovery law (never above the maximum, a full rest restores everything, longer never restores less, any sleep restores something), bed book and real-data tests, `Game` sleep tests with a property test that hit points never pass the maximum, scene and app tests for the sleep row, and a recovery benchmark stub (about 6 ns per calculation).
 - Game clock in `crates/engine/src/clock/`: `GameClock` (minutes since the start of day 1, with day, hour and minute worked out from it), `Span` (a length of time that cannot be zero, in minutes or hours) and `ClockError`. A new game starts at Day 1, 08:00, time only moves forward, and an advance that would overflow is refused and changes nothing.
 - `Game::clock` and `Game::wait`: waiting is the only way time passes, and a player who is down cannot wait. Conditions and effects cannot mention time yet.
 - The scene gains "Wait an hour" and "Wait 8 hours" rows between "Pack" and "Quit game"; the status line shows the day and time after the place, and a wait writes when it is now to the log.
