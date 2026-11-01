@@ -83,6 +83,13 @@ define_bounded!(
     "S.P.E.C.I.A.L. level"
 );
 define_bounded!(
+    /// One of the four tiers of fame or infamy with a faction, 0 (none) to 3 (top).
+    RenownTier,
+    0,
+    3,
+    "renown tier"
+);
+define_bounded!(
     /// How much of their hit points the player has left, 0 to 100.
     HealthPercent,
     0,

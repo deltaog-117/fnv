@@ -9387,6 +9387,12 @@
      {
       "type": "xp",
       "amount": 150
+     },
+     {
+      "type": "reputation",
+      "faction": "goodsprings",
+      "fame": 3,
+      "infamy": 0
      }
     ]
    }
@@ -9494,10 +9500,10 @@
     "target_id": "ghost_town_gunfight",
     "conditions": [
      {
-      "type": "reputation",
+      "type": "reputation_tier",
       "faction": "goodsprings",
-      "level": "shunned",
-      "op": "at_most"
+      "renown": "infamy",
+      "tier": 3
      }
     ],
     "effects": [

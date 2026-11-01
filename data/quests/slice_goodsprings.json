@@ -33,7 +33,8 @@
     "stage": 70,
     "on_enter": [
      {"type": "caps", "amount": 100},
-     {"type": "xp", "amount": 150}
+     {"type": "xp", "amount": 150},
+     {"type": "reputation", "faction": "goodsprings", "fame": 3, "infamy": 0}
     ]
    }
   ],
@@ -42,7 +43,7 @@
     "kind": "locks",
     "target": "Ghost Town Gunfight",
     "conditions": [
-     {"type": "reputation", "faction": "goodsprings", "level": "shunned", "op": "at_most"}
+     {"type": "reputation_tier", "faction": "goodsprings", "renown": "infamy", "tier": 3}
     ],
     "effects": [
      {"type": "block_quest", "quest": "ghost_town_gunfight"}

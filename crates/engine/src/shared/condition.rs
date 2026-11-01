@@ -9,12 +9,13 @@ use std::num::NonZeroU32;
 
 use serde::{Deserialize, Serialize};
 
-use super::bounds::{HealthPercent, SkillLevel, SpecialLevel};
+use super::bounds::{HealthPercent, RenownTier, SkillLevel, SpecialLevel};
 use super::error::ModelError;
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
 use super::non_empty::NonEmpty;
 use super::vocabulary::{
-    Alignment, Comparison, NpcState, QuestStage, QuestState, ReputationLevel, Skill, Special,
+    Alignment, Comparison, NpcState, QuestStage, QuestState, Renown, ReputationLevel, Skill,
+    Special,
 };
 
 fn default_count() -> NonZeroU32 {
@@ -59,6 +60,30 @@ pub enum Condition {
         /// How to compare; defaults to "at least".
         #[serde(default)]
         op: Comparison,
+    },
+    /// The player's fame or infamy tier with a faction compares to a tier. This
+    /// asks the question the wiki words as "infamy of the third tier or worse",
+    /// which the seven standings of `reputation` cannot express.
+    ReputationTier {
+        /// The faction or town.
+        faction: FactionId,
+        /// Fame or infamy.
+        renown: Renown,
+        /// The tier to compare against.
+        tier: RenownTier,
+        /// How to compare; defaults to "at least".
+        #[serde(default)]
+        op: Comparison,
+    },
+    /// The player's fame or infamy points with a faction reach a score, as in "a
+    /// fame score of at least 40".
+    ReputationPoints {
+        /// The faction or town.
+        faction: FactionId,
+        /// Fame or infamy.
+        renown: Renown,
+        /// The minimum score.
+        min: u32,
     },
     /// The player's skill is at least a value.
     Skill {
@@ -134,12 +159,14 @@ pub enum Condition {
 
 impl Condition {
     /// Every `type` value a condition can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 15] = [
+    pub const ALL_TAGS: [&'static str; 17] = [
         "all",
         "any",
         "not",
         "quest",
         "reputation",
+        "reputation_tier",
+        "reputation_points",
         "skill",
         "special",
         "health",
@@ -162,6 +189,8 @@ impl Condition {
             Self::Not { .. } => "not",
             Self::Quest(_) => "quest",
             Self::Reputation { .. } => "reputation",
+            Self::ReputationTier { .. } => "reputation_tier",
+            Self::ReputationPoints { .. } => "reputation_points",
             Self::Skill { .. } => "skill",
             Self::Special { .. } => "special",
             Self::Health { .. } => "health",

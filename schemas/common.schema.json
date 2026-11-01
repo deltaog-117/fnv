@@ -327,6 +327,71 @@
           "type": "object",
           "required": [
             "type",
+            "faction",
+            "renown",
+            "tier"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "reputation_tier"
+            },
+            "faction": {
+              "$ref": "#/$defs/faction"
+            },
+            "renown": {
+              "enum": [
+                "fame",
+                "infamy"
+              ]
+            },
+            "tier": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "op": {
+              "enum": [
+                "at_least",
+                "at_most",
+                "is"
+              ],
+              "default": "at_least"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "faction",
+            "renown",
+            "min"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "reputation_points"
+            },
+            "faction": {
+              "$ref": "#/$defs/faction"
+            },
+            "renown": {
+              "enum": [
+                "fame",
+                "infamy"
+              ]
+            },
+            "min": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
             "skill",
             "min"
           ],

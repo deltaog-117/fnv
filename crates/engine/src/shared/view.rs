@@ -8,9 +8,9 @@
 //!
 //! [`Condition`]: super::Condition
 
-use super::bounds::{HealthPercent, SkillLevel, SpecialLevel};
+use super::bounds::{HealthPercent, RenownTier, SkillLevel, SpecialLevel};
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
-use super::vocabulary::{Alignment, NpcState, QuestStage, ReputationLevel, Skill, Special};
+use super::vocabulary::{Alignment, NpcState, QuestStage, Renown, ReputationLevel, Skill, Special};
 
 /// Where a quest stands, apart from its stage number.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
@@ -44,6 +44,18 @@ pub trait StandingView {
     /// The player's standing with a faction; unknown factions are neutral.
     fn reputation(&self, _faction: &FactionId) -> ReputationLevel {
         ReputationLevel::Neutral
+    }
+
+    /// The tier of the player's fame or infamy with a faction; the lowest tier
+    /// for a faction the state does not know.
+    fn renown_tier(&self, _faction: &FactionId, _renown: Renown) -> RenownTier {
+        RenownTier::default()
+    }
+
+    /// The player's fame or infamy points with a faction; zero for a faction the
+    /// state does not know.
+    fn renown_points(&self, _faction: &FactionId, _renown: Renown) -> f64 {
+        0.0
     }
 
     /// The player's overall moral alignment.

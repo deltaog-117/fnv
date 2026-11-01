@@ -40,6 +40,24 @@ pub fn evaluate<V: StateView + ?Sized>(condition: &Condition, view: &V) -> bool 
                 Comparison::Is => standing == *level,
             }
         }
+        Condition::ReputationTier {
+            faction,
+            renown,
+            tier,
+            op,
+        } => {
+            let standing = view.renown_tier(faction, *renown);
+            match op {
+                Comparison::AtLeast => standing >= *tier,
+                Comparison::AtMost => standing <= *tier,
+                Comparison::Is => standing == *tier,
+            }
+        }
+        Condition::ReputationPoints {
+            faction,
+            renown,
+            min,
+        } => view.renown_points(faction, *renown) >= f64::from(*min),
         Condition::Skill { skill, min } => view.skill(*skill) >= *min,
         Condition::Special { stat, min } => view.special(*stat) >= *min,
         Condition::Health { percent, op } => {

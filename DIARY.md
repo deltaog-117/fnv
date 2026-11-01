@@ -1638,6 +1638,55 @@ The clock landed with nothing to heal on it. The question was how the player hea
 
 ---
 
+### Reputation: Points Underneath, Seven Standings and Exact Tiers on Top
+
+**Date:** 2026-11-01
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+`Game` still refused reputation and karma effects. The wiki models reputation as two scores per faction, fame and infamy, each falling into one of four tiers, and the pair of tiers picks a title from a 4x4 grid. The engine's rule language only had seven standings (Vilified to Idolized). Two ways to bridge that were weighed: keep the seven standings and show the 16 titles to the player only (A), or add exact tier and score conditions beside the seven (C). A third, replacing the seven with tiers, was dropped: it breaks the one existing rule and the schema for no gain over C. **C was chosen**, as recommended. The deciding fact was that the one reputation rule already shipped, Ringo not offering the gunfight at "Merciful Thug or worse", is not expressible in seven standings: Merciful Thug and Wild Child have high infamy and some fame, and the seven standings read both as Mixed.
+
+---
+
+#### Decision
+
+**Points are the state; standings are derived.** `Standing` keeps fame and infamy points per faction and one karma number. The tier is how many later thresholds a score has reached (the wiki's thresholds, per faction). The seven standings are a pure function of the two tiers: fame alone reads Accepted, Liked or Idolized by tier; infamy alone reads Shunned (tiers one and two, which covers "Hated") or Vilified (tier three); both together read Mixed. The wiki's title grid is kept per faction and read for display only.
+
+**Two exact conditions beside the seven standings.** `reputation_tier` compares the fame or infamy tier with 0 to 3, and `reputation_points` asks for a score of at least some points (the wiki's "a fame score of at least 40"). Both are in the shared vocabulary, the schema and the contract tests, and the existing `reputation` condition is unchanged. The Ghost Town Gunfight gate now reads `reputation_tier` on Goodsprings infamy, tier 3. "Or worse" is read as the whole infamy-3 row, Wild Child included; the wiki does not say.
+
+**Laws.** A gain only adds, and each score stops at 10,000 so repeated gains cannot reach infinity (the highest tier threshold is 100). Forcing a standing (`SetReputation`) replaces both scores with the fewest points that reach it, and is the only way to lower one. Karma is bounded to -1000..=1000. An effect aimed at a faction without a model, with a negative gain or with a non-finite number is refused and changes nothing; a gain that is half valid is refused whole.
+
+**Karma thresholds are a stand-in.** Good from 250, evil from -250. The wiki's karma page is not imported and the stats data has no karma entry, so these come from the game's commonly quoted values and are marked as such in the code, the roadmap and the changelog. Karma-per-action values are still in the low-priority list.
+
+**Goodsprings amounts are one placeholder.** The wiki lists no fame or infamy gains or losses for Goodsprings, so the only amount authored is 3 fame on the gunfight's last stage (one step into the first tier). Nothing in the quest data ever produced a deferred reputation effect, so there was nothing to replay from `Game::deferred()`; the roadmap item is closed on that ground.
+
+**A game with no book refuses reputation.** `Game::new` holds an empty book, as it holds an empty roster, so a reputation effect on it is refused as an unknown faction, while karma works without a book. Tests that run the gunfight to its end now build the book from the real data. Two tests that used karma as their example of an unbuilt feature now use companions.
+
+**Left out for now:** a reputation screen, the per-faction consequences the wiki lists (Chet's and Trudy's 25% discounts, the Followers, NCR and Legion effects), gain and loss amounts for the other 12 modeled factions, faction disguises, and the real karma thresholds.
+
+---
+
+#### References
+
+- `crates/engine/src/reputation/`, `crates/engine/src/shared/` (`condition.rs`, `eval.rs`, `view.rs`, `vocabulary.rs`, `bounds.rs`), `crates/engine/src/game/state.rs` (`with_reputation`, `standing`)
+- `crates/engine/tests/reputation/`, `crates/engine/tests/game/reputation.rs`, `crates/engine/tests/shared/`, `crates/engine/benches/reputation.rs`, `tests/scenarios/goodsprings.json`
+- `schemas/common.schema.json`, `data/quests/slice_goodsprings.json`, `data/engine/factions.json`
+- `crates/tui/src/app.rs`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-01 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

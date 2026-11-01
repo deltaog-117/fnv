@@ -123,6 +123,17 @@ fn an_empty_world_has_the_documented_defaults() {
         Condition::Karma {
             alignment: engine::shared::Alignment::Neutral,
         },
+        Condition::ReputationTier {
+            faction: faction("ncr"),
+            renown: engine::shared::Renown::Fame,
+            tier: engine::shared::RenownTier::default(),
+            op: Comparison::Is,
+        },
+        Condition::ReputationPoints {
+            faction: faction("ncr"),
+            renown: engine::shared::Renown::Infamy,
+            min: 0,
+        },
         health(100, Comparison::Is),
     ];
     for condition in &yes {
@@ -141,6 +152,17 @@ fn an_empty_world_has_the_documented_defaults() {
         Condition::Npc {
             npc: npc("n"),
             state: NpcState::Alive,
+        },
+        Condition::ReputationTier {
+            faction: faction("ncr"),
+            renown: engine::shared::Renown::Infamy,
+            tier: engine::shared::RenownTier::try_new(1).expect("in range"),
+            op: Comparison::AtLeast,
+        },
+        Condition::ReputationPoints {
+            faction: faction("ncr"),
+            renown: engine::shared::Renown::Fame,
+            min: 1,
         },
     ];
     for condition in &no {

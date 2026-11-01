@@ -23,7 +23,7 @@ mod sink;
 mod view;
 mod vocabulary;
 
-pub use bounds::{HealthPercent, SkillLevel, SpecialLevel};
+pub use bounds::{HealthPercent, RenownTier, SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
 pub use data::{
     Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Bed, Consumable, Dialogue, Encounter, Faction,
@@ -52,5 +52,6 @@ pub use view::{
     StateView, WorldView,
 };
 pub use vocabulary::{
-    Alignment, Comparison, Dlc, NpcState, QuestStage, QuestState, ReputationLevel, Skill, Special,
+    Alignment, Comparison, Dlc, NpcState, QuestStage, QuestState, Renown, ReputationLevel, Skill,
+    Special,
 };

@@ -5,7 +5,8 @@ use std::num::NonZeroU32;
 use engine::shared::{
     Alignment, CompanionId, Comparison, Condition, Effect, EndingId, FactionId, FlagId,
     HealthPercent, ItemId, Modifier, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId,
-    QuestStage, QuestState, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
+    QuestStage, QuestState, Renown, RenownTier, ReputationLevel, Skill, SkillLevel, Special,
+    SpecialLevel,
 };
 use proptest::collection::vec;
 use proptest::prelude::*;
@@ -88,6 +89,25 @@ fn leaf_condition() -> impl Strategy<Value = Condition> {
     ]
     .boxed();
     let second = prop_oneof![
+        (
+            faction_id(),
+            any_of::<Renown>(),
+            0u32..=3,
+            any_of::<Comparison>()
+        )
+            .prop_map(|(faction, renown, tier, op)| Condition::ReputationTier {
+                faction,
+                renown,
+                tier: RenownTier::try_new(tier).expect("range is valid"),
+                op,
+            }),
+        (faction_id(), any_of::<Renown>(), 0u32..=1_000).prop_map(|(faction, renown, min)| {
+            Condition::ReputationPoints {
+                faction,
+                renown,
+                min,
+            }
+        }),
         any_of::<Alignment>().prop_map(|alignment| Condition::Karma { alignment }),
         (companion_id(), any::<bool>())
             .prop_map(|(companion, active)| Condition::Companion { companion, active }),

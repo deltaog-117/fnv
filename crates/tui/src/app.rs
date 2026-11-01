@@ -14,6 +14,7 @@ use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::{Arsenal, Game, Outcome};
 use engine::inventory::{ItemBook, Slot};
 use engine::quests::QuestBook;
+use engine::reputation::ReputationBook;
 use engine::rest::{BedBook, FULL_REST_HOURS};
 use engine::shared::{
     BedId, Effect, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage, VendorId,
@@ -116,11 +117,14 @@ impl App {
         let arsenal = Arc::new(Arsenal::from_data(data).context("building the arsenal")?);
         let vendors = Arc::new(VendorBook::from_data(data).context("building the vendors")?);
         let beds = Arc::new(BedBook::from_data(data).context("building the beds")?);
+        let reputation =
+            Arc::new(ReputationBook::from_data(data).context("building the reputation book")?);
         let mut game = Game::with_world(quests, world)
             .with_items(items)
             .with_arsenal(arsenal)
             .with_perks(Arc::new(PerkBook::base_game(data)))
             .with_beds(beds)
+            .with_reputation(reputation)
             .with_vendors(Arc::clone(&vendors))
             .context("stocking the vendors")?;
         let opening = Effect::SetStage {

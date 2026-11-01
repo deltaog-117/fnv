@@ -7,10 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- `Game` applies reputation and karma effects instead of refusing them as unbuilt, so a quest reward that pays fame, infamy or karma now takes effect. A faction that tracks no reputation is refused. The Ghost Town Gunfight gate reads the wiki's rule exactly: Ringo stops offering the quest at infamy tier 3 with Goodsprings, whatever the fame (it was "Shunned or worse", which missed players with some fame).
+- The tests that used karma as their example of an unbuilt feature (`tests/game/state.rs`, `tests/game/automation.rs`) now use companions, which are still unbuilt.
+
 ### Fixed
 - The scene's action list now scrolls with the cursor when it is taller than the scene, instead of cutting off the last rows (including "Quit game") at small terminal sizes.
 
 ### Added
+- Reputation and karma in `crates/engine/src/reputation/`: `ReputationBook` (the 13 factions and towns with a fame/infamy model: tier thresholds and the 4x4 title grid, checked once at load), `FactionModel` (`tier`, `title`, `points_for`), `standing` (the seven standings as a function of the two tiers), `Standing` (fame and infamy points per faction, plus karma; it implements `StandingView` and `StandingSink`), `Karma` (bounded to -1000..=1000, good from 250 and evil from -250 as a stand-in), `MAX_POINTS` (10,000) and `ReputationError`. A gain only adds; forcing a standing replaces both scores with the fewest points that reach it; a negative or non-finite amount and a faction without a model are refused and change nothing.
+- Two conditions in the shared vocabulary and `schemas/common.schema.json`: `reputation_tier` (fame or infamy tier compared to 0..3, with `at_least`, `at_most` or `is`) and `reputation_points` (a score of at least some points), with the `Renown` and `RenownTier` types and two new `StandingView` methods (`renown_tier`, `renown_points`) that default to the lowest tier and zero points.
+- `Game::with_reputation` and `Game::standing`; the TUI builds the reputation book at start-up.
+- Goodsprings data: the last stage of the Ghost Town Gunfight pays 3 Goodsprings fame (a placeholder; the wiki lists no amounts for Goodsprings).
+- Tests: tier, standing, title, book and refusal tests; property tests for the laws (scores and karma stay finite and in range, a refused effect changes nothing, gains never lower a score or a tier, a forced standing reads back as itself, a higher score never has a lower tier, karma is good exactly from the threshold); a real-data check that the seven standings agree with the titles of all 13 factions; `Game` tests (conditions read what effects wrote, a stage reward pays once, a failed stage leaves the standing as it was); contract and evaluator tests for the new conditions; four new golden scenarios (the infamy gate at tier 3 and just short of it, an unmodeled town refused, karma stopping at the edge) and the gunfight scenario extended to check the fame it pays; and a benchmark stub (about 390 ns per gain-and-read round).
 - Beds and sleep in `crates/engine/src/rest/`: `BedBook` (the beds, each at a place), `restored` (hit points restored by a sleep: linear in its length, rounded up, never above the maximum, with `FULL_REST_HOURS` = 8 restoring everything) and `RestError`. A bed id appears once.
 - `Game::with_beds`, `Game::beds_at` and `Game::sleep`: sleeping needs a bed, passes the time, closes wounds and returns the hit points actually restored. A player who is down cannot sleep, and a refused sleep changes nothing. `Game::wait` still restores nothing.
 - Bed data: `data/beds/beds.json` (hand-authored; one placeholder bed in Doc Mitchell's house), `schemas/bed.schema.json`, `Bed` records, the `BedId` type, `GameData::beds`, and a reference check in `validate.py`.

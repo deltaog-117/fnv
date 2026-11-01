@@ -9,6 +9,7 @@ use engine::combat::{CombatError, Combatant, Dice, Power, Side, Status};
 use engine::game::{Arsenal, Battle, BattleError, Game, Outcome};
 use engine::inventory::ItemBook;
 use engine::quests::QuestBook;
+use engine::reputation::ReputationBook;
 use engine::shared::{
     Effect, EncounterId, GameData, InventoryView, ItemId, LocationId, NpcId, NpcState, QuestId,
     QuestStatus, QuestView, Scope, WorldView, apply_all,
@@ -21,6 +22,7 @@ struct Fixture {
     world: Arc<WorldBook>,
     items: Arc<ItemBook>,
     arsenal: Arc<Arsenal>,
+    reputation: Arc<ReputationBook>,
 }
 
 static FIXTURE: LazyLock<Fixture> = LazyLock::new(|| {
@@ -31,6 +33,7 @@ static FIXTURE: LazyLock<Fixture> = LazyLock::new(|| {
         world: Arc::new(WorldBook::new(data.npcs.iter().map(|npc| &npc.id))),
         items: Arc::new(ItemBook::from_data(&data).expect("the item book builds")),
         arsenal: Arc::new(Arsenal::from_data(&data).expect("the arsenal builds")),
+        reputation: Arc::new(ReputationBook::from_data(&data).expect("the reputation book builds")),
     }
 });
 
@@ -59,7 +62,8 @@ fn armed_game() -> Game {
     let fixture = &*FIXTURE;
     let mut game = Game::with_world(Arc::clone(&fixture.quests), Arc::clone(&fixture.world))
         .with_items(Arc::clone(&fixture.items))
-        .with_arsenal(Arc::clone(&fixture.arsenal));
+        .with_arsenal(Arc::clone(&fixture.arsenal))
+        .with_reputation(Arc::clone(&fixture.reputation));
     let pistol = item("9mm_pistol");
     apply_all(
         &[
@@ -156,7 +160,8 @@ fn the_gunfight_is_offered_only_once_sunny_has_agreed() {
     let fixture = &*FIXTURE;
     let mut game = Game::with_world(Arc::clone(&fixture.quests), Arc::clone(&fixture.world))
         .with_items(Arc::clone(&fixture.items))
-        .with_arsenal(Arc::clone(&fixture.arsenal));
+        .with_arsenal(Arc::clone(&fixture.arsenal))
+        .with_reputation(Arc::clone(&fixture.reputation));
     assert!(game.encounters_at(&place()).is_empty());
     assert!(matches!(
         game.start_battle(&gunfight()),

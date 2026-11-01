@@ -10,13 +10,15 @@ use crate::clock::{ClockError, GameClock, Span};
 use crate::combat::{Side, Status};
 use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
+use crate::reputation::{ReputationBook, Standing};
 use crate::rest::{BedBook, RestError, restored};
 use crate::shared::{
-    BedId, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView, Effect,
-    EffectError, Encounter, EncounterId, EndingId, FactionId, FlagId, HealthPercent, InventorySink,
-    InventoryView, ItemId, ItemUse, LocationId, NpcId, NpcState, PerkId, QuestId, QuestSink,
-    QuestStage, QuestStatus, QuestView, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
-    StandingSink, StandingView, VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
+    Alignment, BedId, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView,
+    Effect, EffectError, Encounter, EncounterId, EndingId, FactionId, FlagId, HealthPercent,
+    InventorySink, InventoryView, ItemId, ItemUse, LocationId, NpcId, NpcState, PerkId, QuestId,
+    QuestSink, QuestStage, QuestStatus, QuestView, Renown, RenownTier, ReputationLevel, Skill,
+    SkillLevel, Special, SpecialLevel, StandingSink, StandingView, VendorId, WorldSink, WorldView,
+    apply, apply_all, evaluate,
 };
 use crate::trade::{Market, Shop, TradeError, VendorBook, buy_total, sell_total};
 use crate::world::{WorldBook, WorldState};
@@ -46,6 +48,8 @@ pub struct Game {
     book: Arc<QuestBook>,
     quests: QuestLog,
     world: WorldState,
+    /// Fame, infamy and karma.
+    standing: Standing,
     character: Character,
     inventory: Inventory,
     arsenal: Arc<Arsenal>,
@@ -81,6 +85,7 @@ impl Game {
             quests: QuestLog::new(Arc::clone(&book)),
             book,
             world: WorldState::new(world),
+            standing: Standing::new(Arc::default()),
             character: Character::default(),
             inventory: Inventory::new(Arc::default()),
             arsenal: Arc::default(),
@@ -151,6 +156,15 @@ impl Game {
         Ok(self)
     }
 
+    /// The same game over the factions that track reputation. Without a book no
+    /// faction has a standing, so call this before play: it starts every score at
+    /// zero.
+    #[must_use]
+    pub fn with_reputation(mut self, book: Arc<ReputationBook>) -> Self {
+        self.standing = Standing::new(book);
+        self
+    }
+
     /// The same game for a different character, for example one with another
     /// S.P.E.C.I.A.L. spread. Experience already earned goes with the old one.
     #[must_use]
@@ -166,6 +180,12 @@ impl Game {
     pub fn with_wounds(mut self, wounds: u32) -> Self {
         self.wounds = wounds.min(self.character.max_hp());
         self
+    }
+
+    /// Fame, infamy and karma, for the reputation screen.
+    #[must_use]
+    pub fn standing(&self) -> &Standing {
+        &self.standing
     }
 
     /// The quest log, for the journal.
@@ -701,8 +721,25 @@ impl QuestSink for Game {
     }
 }
 
-// The two views below keep the trait defaults: no standing, nobody met.
-impl StandingView for Game {}
+impl StandingView for Game {
+    fn reputation(&self, faction: &FactionId) -> ReputationLevel {
+        self.standing.reputation(faction)
+    }
+
+    fn renown_tier(&self, faction: &FactionId, renown: Renown) -> RenownTier {
+        self.standing.renown_tier(faction, renown)
+    }
+
+    fn renown_points(&self, faction: &FactionId, renown: Renown) -> f64 {
+        self.standing.renown_points(faction, renown)
+    }
+
+    fn alignment(&self) -> Alignment {
+        self.standing.alignment()
+    }
+}
+
+// Companions keep the trait defaults: nobody has joined.
 impl CompanionView for Game {}
 
 impl CharacterView for Game {
@@ -752,16 +789,25 @@ impl WorldView for Game {
 }
 
 impl StandingSink for Game {
-    fn add_reputation(&mut self, _: &FactionId, _: f64, _: f64) -> Result<(), EffectError> {
-        Err(not_built("reputation", "reputation"))
+    fn add_reputation(
+        &mut self,
+        faction: &FactionId,
+        fame: f64,
+        infamy: f64,
+    ) -> Result<(), EffectError> {
+        self.standing.add_reputation(faction, fame, infamy)
     }
 
-    fn set_reputation(&mut self, _: &FactionId, _: ReputationLevel) -> Result<(), EffectError> {
-        Err(not_built("set_reputation", "reputation"))
+    fn set_reputation(
+        &mut self,
+        faction: &FactionId,
+        level: ReputationLevel,
+    ) -> Result<(), EffectError> {
+        self.standing.set_reputation(faction, level)
     }
 
-    fn add_karma(&mut self, _: f64) -> Result<(), EffectError> {
-        Err(not_built("karma", "reputation"))
+    fn add_karma(&mut self, amount: f64) -> Result<(), EffectError> {
+        self.standing.add_karma(amount)
     }
 }
 

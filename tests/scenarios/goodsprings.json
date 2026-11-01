@@ -1,8 +1,8 @@
 {
- "description": "Language-neutral golden scenarios: effects applied in order to a fresh game over data/engine; 'fails' marks a step that must be refused; 'deferred' lists the tags of postponed effects in order; 'caps', 'xp' and 'items' (item id to count) give the character and pack that must result.",
+ "description": "Language-neutral golden scenarios: effects applied in order to a fresh game over data/engine; 'fails' marks a step that must be refused; 'deferred' lists the tags of postponed effects in order; 'caps', 'xp' and 'items' (item id to count) give the character and pack that must result. 'fame' and 'infamy' (faction id to points) and 'karma' give the reputation that must result.",
  "scenarios": [
   {
-   "name": "gunfight: the last stage completes the quest and pays caps and XP",
+   "name": "gunfight: the last stage completes the quest and pays caps, XP and Goodsprings fame",
    "steps": [
     {
      "do": {
@@ -78,7 +78,13 @@
     "deferred": [],
     "caps": 100,
     "xp": 150,
-    "items": {}
+    "items": {},
+    "fame": {
+     "goodsprings": 3
+    },
+    "infamy": {
+     "goodsprings": 0
+    }
    }
   },
   {
@@ -446,6 +452,112 @@
       "status": "failed"
      }
     }
+   }
+  },
+  {
+   "name": "gunfight: infamy in the top Goodsprings tier locks the quest, whatever the fame",
+   "steps": [
+    {
+     "do": {
+      "type": "reputation",
+      "faction": "goodsprings",
+      "fame": 40,
+      "infamy": 15
+     }
+    },
+    {
+     "do": {
+      "type": "start_quest",
+      "quest": "ghost_town_gunfight"
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "ghost_town_gunfight": {
+      "status": "failed"
+     }
+    },
+    "fame": {
+     "goodsprings": 40
+    },
+    "infamy": {
+     "goodsprings": 15
+    }
+   }
+  },
+  {
+   "name": "gunfight: infamy one tier short of the top does not lock the quest",
+   "steps": [
+    {
+     "do": {
+      "type": "reputation",
+      "faction": "goodsprings",
+      "fame": 0,
+      "infamy": 14
+     }
+    },
+    {
+     "do": {
+      "type": "start_quest",
+      "quest": "ghost_town_gunfight"
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "ghost_town_gunfight": {
+      "status": "active"
+     }
+    },
+    "infamy": {
+     "goodsprings": 14
+    }
+   }
+  },
+  {
+   "name": "reputation: an effect on a town that tracks no reputation is refused",
+   "steps": [
+    {
+     "do": {
+      "type": "reputation",
+      "faction": "no_such_town",
+      "fame": 1,
+      "infamy": 0
+     },
+     "fails": true
+    }
+   ],
+   "expect": {
+    "fame": {
+     "goodsprings": 0
+    }
+   }
+  },
+  {
+   "name": "karma: gains and losses add up and stop at the edge",
+   "steps": [
+    {
+     "do": {
+      "type": "karma",
+      "amount": 900
+     }
+    },
+    {
+     "do": {
+      "type": "karma",
+      "amount": 900
+     }
+    },
+    {
+     "do": {
+      "type": "karma",
+      "amount": -50
+     }
+    }
+   ],
+   "expect": {
+    "karma": 950
    }
   }
  ]

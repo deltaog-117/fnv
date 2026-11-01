@@ -74,9 +74,8 @@ fn reads_about_unbuilt_features_give_the_defaults() {
 
 fn unbuilt_effects() -> Vec<Value> {
     vec![
-        json!({"type": "reputation", "faction": "ncr", "fame": 1.0, "infamy": 0.0}),
-        json!({"type": "karma", "amount": 5.0}),
         json!({"type": "companion_join", "companion": "c"}),
+        json!({"type": "companion_leave", "companion": "c"}),
     ]
 }
 

@@ -217,6 +217,29 @@ pub enum Comparison {
     Is,
 }
 
+/// Which of the two reputation scores a rule asks about.
+#[derive(
+    Debug,
+    Clone,
+    Copy,
+    PartialEq,
+    Eq,
+    Hash,
+    PartialOrd,
+    Ord,
+    Serialize,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+)]
+#[serde(rename_all = "snake_case")]
+pub enum Renown {
+    /// Good deeds the faction knows about.
+    Fame,
+    /// Bad deeds the faction knows about.
+    Infamy,
+}
+
 /// The player's overall moral alignment.
 #[derive(
     Debug,

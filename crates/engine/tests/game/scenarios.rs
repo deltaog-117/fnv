@@ -10,8 +10,10 @@ use std::sync::Arc;
 use engine::game::Game;
 use engine::inventory::ItemBook;
 use engine::quests::QuestBook;
+use engine::reputation::ReputationBook;
 use engine::shared::{
-    Effect, GameData, InventoryView, ItemId, QuestId, QuestStatus, QuestView, Scope, apply_all,
+    Effect, FactionId, GameData, InventoryView, ItemId, QuestId, QuestStatus, QuestView, Renown,
+    Scope, StandingView, apply_all,
 };
 use serde::Deserialize;
 
@@ -42,6 +44,9 @@ struct Expect {
     caps: Option<u32>,
     xp: Option<u32>,
     items: Option<BTreeMap<ItemId, u32>>,
+    fame: Option<BTreeMap<FactionId, f64>>,
+    infamy: Option<BTreeMap<FactionId, f64>>,
+    karma: Option<f64>,
 }
 
 #[derive(Deserialize)]
@@ -66,13 +71,17 @@ fn the_goodsprings_scenarios_hold() {
         .expect("the engine data loads");
     let book = Arc::new(QuestBook::new(data.quests.iter()).expect("book builds"));
     let items = Arc::new(ItemBook::from_data(&data).expect("the item book builds"));
+    let reputation =
+        Arc::new(ReputationBook::from_data(&data).expect("the reputation book builds"));
     let text = fs::read_to_string(root.join("tests/scenarios/goodsprings.json"))
         .expect("the scenario file exists");
     let file: File = serde_json::from_str(&text).expect("the scenario file parses");
     assert!(!file.scenarios.is_empty());
 
     for scenario in file.scenarios {
-        let mut game = Game::new(Arc::clone(&book)).with_items(Arc::clone(&items));
+        let mut game = Game::new(Arc::clone(&book))
+            .with_items(Arc::clone(&items))
+            .with_reputation(Arc::clone(&reputation));
         for step in &scenario.steps {
             let result = apply_all(std::slice::from_ref(&step.r#do), &mut game);
             assert_eq!(
@@ -116,6 +125,27 @@ fn the_goodsprings_scenarios_hold() {
                 .map(|(item, count)| (item.clone(), count.get()))
                 .collect();
             assert_eq!(&carried, expected, "{}: items", scenario.name);
+        }
+        for (renown, expected) in [
+            (Renown::Fame, &scenario.expect.fame),
+            (Renown::Infamy, &scenario.expect.infamy),
+        ] {
+            for (faction, points) in expected.iter().flatten() {
+                assert_eq!(
+                    game.renown_points(faction, renown),
+                    *points,
+                    "{}: {renown:?} with {faction}",
+                    scenario.name
+                );
+            }
+        }
+        if let Some(karma) = scenario.expect.karma {
+            assert_eq!(
+                game.standing().karma().get(),
+                karma,
+                "{}: karma",
+                scenario.name
+            );
         }
     }
 }

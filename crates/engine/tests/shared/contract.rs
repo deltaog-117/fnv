@@ -11,8 +11,8 @@ use std::path::PathBuf;
 use std::sync::LazyLock;
 
 use engine::shared::{
-    Alignment, Comparison, Condition, Dlc, Effect, Modifier, NpcState, QuestState, ReputationLevel,
-    Skill, Special,
+    Alignment, Comparison, Condition, Dlc, Effect, Modifier, NpcState, QuestState, Renown,
+    ReputationLevel, Skill, Special,
 };
 use jsonschema::Validator;
 use proptest::prelude::*;
@@ -153,6 +153,17 @@ fn closed_sets_match_the_schema() {
         branch_enum("condition", "reputation", "op"),
         rust_names::<Comparison>()
     );
+    for tag in ["reputation_tier", "reputation_points"] {
+        assert_eq!(
+            branch_enum("condition", tag, "renown"),
+            rust_names::<Renown>(),
+            "{tag}"
+        );
+    }
+    assert_eq!(
+        branch_enum("condition", "reputation_tier", "op"),
+        rust_names::<Comparison>()
+    );
     assert_eq!(
         branch_enum("condition", "karma", "alignment"),
         rust_names::<Alignment>()
@@ -216,6 +227,13 @@ fn both_sides_reject_the_same_invalid_conditions() {
         json!({"type": "health", "percent": -1}),
         json!({"type": "health"}),
         json!({"type": "health", "percent": 50, "op": "below"}),
+        json!({"type": "reputation_tier", "faction": "ncr", "renown": "fame", "tier": 4}),
+        json!({"type": "reputation_tier", "faction": "ncr", "renown": "fame", "tier": -1}),
+        json!({"type": "reputation_tier", "faction": "ncr", "renown": "glory", "tier": 1}),
+        json!({"type": "reputation_tier", "faction": "ncr", "tier": 1}),
+        json!({"type": "reputation_points", "faction": "ncr", "renown": "fame", "min": -1}),
+        json!({"type": "reputation_points", "faction": "ncr", "renown": "fame"}),
+        json!({"type": "reputation_points", "faction": "ncr", "renown": "fame", "min": 1.5}),
         json!({"type": "has_item", "item": "stimpak", "count": 0}),
         json!({"type": "all", "of": []}),
         json!({"type": "not"}),
@@ -283,6 +301,16 @@ fn omitted_optional_fields_take_the_documented_defaults() {
     assert!(matches!(
         serde_json::from_value(reputation),
         Ok(Condition::Reputation {
+            op: Comparison::AtLeast,
+            ..
+        })
+    ));
+
+    let tier = json!({"type": "reputation_tier", "faction": "ncr", "renown": "infamy", "tier": 3});
+    assert!(CONDITION.is_valid(&tier));
+    assert!(matches!(
+        serde_json::from_value(tier),
+        Ok(Condition::ReputationTier {
             op: Comparison::AtLeast,
             ..
         })
