@@ -4,7 +4,7 @@ use std::collections::BTreeMap;
 use std::num::NonZeroU32;
 
 use super::error::TradeError;
-use crate::shared::{GameData, ItemId, LocationId, NpcId, Vendor, VendorId};
+use crate::shared::{Discount, GameData, ItemId, LocationId, NpcId, Vendor, VendorId};
 
 /// A merchant: who trades, where, and what they start with.
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -14,9 +14,16 @@ pub struct VendorInfo {
     place: LocationId,
     caps: u32,
     stock: Vec<(ItemId, NonZeroU32)>,
+    discount: Option<Discount>,
 }
 
 impl VendorInfo {
+    /// The price cut this vendor gives a player in good standing.
+    #[must_use]
+    pub fn discount(&self) -> Option<&Discount> {
+        self.discount.as_ref()
+    }
+
     /// What the player sees when choosing to trade.
     #[must_use]
     pub fn name(&self) -> &str {
@@ -88,6 +95,7 @@ impl VendorBook {
                 place: record.place.clone(),
                 caps: record.caps,
                 stock,
+                discount: record.discount.clone(),
             };
             if vendors.insert(record.id.clone(), info).is_some() {
                 return Err(TradeError::DuplicateVendor(record.id.clone()));

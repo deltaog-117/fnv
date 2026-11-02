@@ -7,7 +7,7 @@ use std::num::NonZeroU32;
 
 use serde::Deserialize;
 
-use crate::shared::{AmmoFamilyId, Dlc, ItemId, Skill};
+use crate::shared::{AmmoFamilyId, Boost, Dlc, ItemId, Skill};
 
 /// Which item file a record came from (`kind` in `item.schema.json`).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
@@ -214,11 +214,30 @@ item_record!(
 );
 
 /// What using a consumable does, as the game models it.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize)]
 #[serde(rename_all = "snake_case")]
 pub enum ItemUse {
     /// Restores this many hit points at once.
     Heal(NonZeroU32),
+    /// Changes numbers for a while, and may also restore hit points at once.
+    Boost(BoostUse),
+}
+
+/// A consumable that changes numbers for a while.
+///
+/// The wiki gives heals-over-time in seconds, and the clock counts minutes, so a
+/// heal over time is entered as its total, restored at once.
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct BoostUse {
+    /// Hit points restored at once; the item is refused at full health when it
+    /// has one.
+    #[serde(default)]
+    pub heal: Option<NonZeroU32>,
+    /// What changes, and for how long. A new dose of the same item replaces the
+    /// last one.
+    #[serde(default)]
+    pub effects: Vec<Boost>,
 }
 
 /// One parsed "+N stat" effect of a consumable.

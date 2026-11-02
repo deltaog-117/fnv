@@ -120,6 +120,27 @@
   "addiction": {
    "type": "ant nectar",
    "chance_percent": 5.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "intelligence",
+      "amount": -2,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": -2,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 4,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -149,7 +170,28 @@
     "amount": -3,
     "duration_s": 240.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "charisma",
+      "amount": 3,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -3,
+      "minutes": 4
+     },
+     {
+      "stat": "perception",
+      "amount": -3,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "antivenom",
@@ -451,7 +493,19 @@
     "amount": 25,
     "duration_s": 240.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 200,
+    "effects": [
+     {
+      "stat": "max_hp",
+      "amount": 25,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "black_coffee",
@@ -659,7 +713,19 @@
     "duration_s": 240.0
    }
   ],
-  "skill": "None"
+  "skill": "None",
+  "on_use": {
+   "boost": {
+    "heal": 100,
+    "effects": [
+     {
+      "stat": "max_hp",
+      "amount": 10,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "brahmin_wellington",
@@ -824,6 +890,27 @@
   "addiction": {
    "type": "buffout",
    "chance_percent": 10.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "max_hp",
+      "amount": 60,
+      "minutes": 4
+     },
+     {
+      "stat": "endurance",
+      "amount": 3,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 2,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -2039,7 +2126,19 @@
     "duration_s": 18.0
    }
   ],
-  "skill": "Medicine"
+  "skill": "Medicine",
+  "on_use": {
+   "boost": {
+    "heal": 18,
+    "effects": [
+     {
+      "stat": "perception",
+      "amount": -1,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "honey_mesquite_pod",
@@ -3062,6 +3161,17 @@
   "addiction": {
    "type": "jet",
    "chance_percent": 20.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 15,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -3291,6 +3401,17 @@
   "addiction": {
    "type": "med-x",
    "chance_percent": 10.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "damage_resistance",
+      "amount": 25,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -3336,6 +3457,27 @@
   "addiction": {
    "type": "mentats",
    "chance_percent": 5.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "intelligence",
+      "amount": 2,
+      "minutes": 4
+     },
+     {
+      "stat": "perception",
+      "amount": 2,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -3887,6 +4029,27 @@
   "addiction": {
    "type": "mentats",
    "chance_percent": 15.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "intelligence",
+      "amount": 2,
+      "minutes": 1
+     },
+     {
+      "stat": "perception",
+      "amount": 2,
+      "minutes": 1
+     },
+     {
+      "stat": "charisma",
+      "amount": 5,
+      "minutes": 1
+     }
+    ]
+   }
   }
  },
  {
@@ -4919,7 +5082,19 @@
     "duration_s": 240.0
    }
   ],
-  "skill": "none"
+  "skill": "none",
+  "on_use": {
+   "boost": {
+    "heal": 120,
+    "effects": [
+     {
+      "stat": "max_hp",
+      "amount": 15,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "thin_red_paste",
@@ -4945,7 +5120,19 @@
     "duration_s": 240.0
    }
   ],
-  "skill": "none"
+  "skill": "none",
+  "on_use": {
+   "boost": {
+    "heal": 60,
+    "effects": [
+     {
+      "stat": "max_hp",
+      "amount": 5,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "trail_mix",

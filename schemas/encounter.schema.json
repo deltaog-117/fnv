@@ -57,6 +57,13 @@
             "description": "Hit points when the NPC record gives none.",
             "type": "integer",
             "minimum": 1
+          },
+          "when": {
+            "description": "Every condition must hold for this enemy to be in the fight; none means it always is. At least one foe must have none.",
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/condition"
+            }
           }
         }
       }

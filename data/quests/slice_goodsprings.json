@@ -52,6 +52,18 @@
   ]
  },
  {
+  "quest": "run_goodsprings_run",
+  "stages": [
+   {
+    "stage": 70,
+    "on_enter": [
+     {"type": "reputation", "faction": "powder_gangers", "fame": 3, "infamy": 0},
+     {"type": "reputation", "faction": "goodsprings", "fame": 0, "infamy": 3}
+    ]
+   }
+  ]
+ },
+ {
   "quest": "they_went_that_a_way",
   "stages": [
    {

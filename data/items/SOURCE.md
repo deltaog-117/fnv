@@ -21,11 +21,18 @@ regeneration commands below leave it alone. Each entry names a consumable
 
 - An unknown item or a repeated entry fails the merge, so a typo cannot
   silently drop an effect.
-- An item is listed only when every part of its text is modeled. Healing
-  powder is not (its Perception penalty is not carried), nor is anything
-  that adds radiation or a timed bonus.
+- An item is listed only when every part of its text is modeled. Anything that
+  adds radiation, poisons the player or changes damage dealt is not (those wait
+  for radiation, poison and the real combat numbers).
+- A bonus or penalty that lasts is a `boost`: a stat, an amount and a length in
+  whole minutes. The clock counts minutes, so the wiki's seconds are rounded up
+  to one (healing powder's 18 seconds of -1 Perception is one minute). A new
+  dose of the same item replaces the last; it does not stack.
 - An effect that the wiki gives per second (+2 HP/s for 5s) is entered as its
-  total (10), because the game has no clock yet; revisit when it does.
+  total (10) and restored at once, since no heal runs longer than the clock's
+  one-minute step.
+- Chems are listed without their addiction chance: addiction is not built yet,
+  so using a chem has no downside beyond its own penalties.
 
 Values are the wiki's own cleaned infobox fields (`edid` and `formid` are the
 in-game identifiers). Fields vary by item type, so not every record has every

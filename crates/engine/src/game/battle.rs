@@ -76,6 +76,9 @@ pub enum BattleError {
         /// The item.
         item: ItemId,
     },
+    /// Every enemy of the encounter can be absent, so a fight could have no one in it.
+    #[error("encounter {0}: at least one foe must always be present")]
+    NoFixedFoe(EncounterId),
     /// The encounter does not exist.
     #[error("unknown encounter {0}")]
     UnknownEncounter(EncounterId),
@@ -309,6 +312,7 @@ impl Arsenal {
             encounters: BTreeMap::new(),
         };
         for encounter in data.encounters.iter() {
+            require_fixed_foe(encounter)?;
             let foes = encounter
                 .foes
                 .iter()
@@ -556,6 +560,10 @@ impl Arsenal {
             })
             .collect::<Result<Vec<_>, _>>()?;
         let (dt, dr) = worn(pieces.into_iter())?;
+        // A chem's resistance adds to the armor's; the damage pipeline caps the sum.
+        let dr = Points::try_new(
+            (dr.get() + f64::from(character.boosts().damage_resistance())).max(0.0),
+        )?;
         let max_hp = NonZeroU32::new(character.max_hp()).unwrap_or(NonZeroU32::MIN);
         // The first load of the family the pack holds; with none, the plain load,
         // so the fight shows what is missing.
@@ -587,6 +595,15 @@ impl Arsenal {
             .get(id)
             .map(|prepared| prepared.foes.as_slice())
     }
+}
+
+/// Refuses an encounter whose every enemy can be absent, which would leave a fight
+/// with no one to win against.
+fn require_fixed_foe(encounter: &Encounter) -> Result<(), BattleError> {
+    if encounter.foes.iter().all(|foe| !foe.when.is_empty()) {
+        return Err(BattleError::NoFixedFoe(encounter.id.clone()));
+    }
+    Ok(())
 }
 
 /// One fight in progress. The player acts first; each [`Battle::end_turn`] plays
@@ -670,5 +687,42 @@ impl Battle {
     pub fn end_turn(&mut self, dice: &mut impl Dice) -> Result<Vec<Resolution>, CombatError> {
         self.combat.end_turn()?;
         Ok(enemy_turns(&mut self.combat, dice))
+    }
+}
+
+#[cfg(test)]
+mod fixed_foe_tests {
+    use super::*;
+
+    fn encounter(foes: serde_json::Value) -> Encounter {
+        serde_json::from_value(serde_json::json!({
+            "id": "maybe", "name": "Maybe", "place": "town", "foes": foes,
+        }))
+        .expect("the literal is a valid encounter record")
+    }
+
+    const MAYBE: &str =
+        r#"{"npc": "a", "weapon": "w", "when": [{"type": "flag", "flag": "f", "value": true}]}"#;
+    const ALWAYS: &str = r#"{"npc": "a", "weapon": "w"}"#;
+
+    fn foes(text: &[&str]) -> serde_json::Value {
+        serde_json::from_str(&format!("[{}]", text.join(","))).expect("literal json")
+    }
+
+    #[test]
+    fn an_encounter_where_every_foe_can_be_absent_is_refused() {
+        let record = encounter(foes(&[MAYBE, MAYBE]));
+        assert_eq!(
+            require_fixed_foe(&record),
+            Err(BattleError::NoFixedFoe(record.id.clone()))
+        );
+    }
+
+    #[test]
+    fn one_foe_with_no_condition_is_enough() {
+        assert_eq!(
+            require_fixed_foe(&encounter(foes(&[MAYBE, ALWAYS]))),
+            Ok(())
+        );
     }
 }

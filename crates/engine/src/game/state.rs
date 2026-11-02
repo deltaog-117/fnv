@@ -8,19 +8,23 @@ use super::battle::{Arsenal, Battle, BattleError, Outcome};
 use crate::character::{Character, PerkBook, ProgressError};
 use crate::clock::{ClockError, GameClock, Span};
 use crate::combat::{Side, Status};
+use crate::effects::{Active, ActiveEffects};
 use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
 use crate::reputation::{ReputationBook, Standing};
 use crate::rest::{BedBook, RestError, restored};
 use crate::shared::{
     Alignment, BedId, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView,
-    Effect, EffectError, Encounter, EncounterId, EndingId, FactionId, FlagId, HealthPercent,
-    InventorySink, InventoryView, ItemId, ItemUse, LocationId, NpcId, NpcState, PerkId, QuestId,
-    QuestSink, QuestStage, QuestStatus, QuestView, Renown, RenownTier, ReputationLevel, Skill,
-    SkillLevel, Special, SpecialLevel, StandingSink, StandingView, VendorId, WorldSink, WorldView,
-    apply, apply_all, evaluate,
+    DiscountPercent, Effect, EffectError, Encounter, EncounterId, EndingId, FactionId, FlagId,
+    HealthPercent, InventorySink, InventoryView, ItemId, ItemUse, LocationId, NpcId, NpcState,
+    PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView, Renown, RenownTier,
+    ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView,
+    VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
 };
-use crate::trade::{Market, Shop, TradeError, VendorBook, buy_total, sell_total};
+use crate::trade::{
+    Market, Shop, TradeError, VendorBook, buy_total, buy_total_with_discount, sell_total,
+};
+use crate::travel::{Route, TravelBook, TravelError};
 use crate::world::{WorldBook, WorldState};
 
 /// A quest effect that could not run because its feature is not built yet, kept
@@ -58,8 +62,15 @@ pub struct Game {
     market: Market,
     /// Where the player may sleep.
     beds: Arc<BedBook>,
-    /// What day and time it is; moves only through [`Game::wait`] and [`Game::sleep`].
+    /// What day and time it is; moves only through [`Game::wait`], [`Game::sleep`]
+    /// and [`Game::travel`].
     clock: GameClock,
+    /// Boosts from chems, drinks and meals, each with the minute it ends.
+    effects: ActiveEffects,
+    /// The places the player can walk between.
+    map: Arc<TravelBook>,
+    /// Where the player stands; `None` until the game is given a map.
+    at: Option<LocationId>,
     /// Hit points lost and not yet healed. Stored as a loss, so hit points can
     /// never be above the maximum, and a level-up raises them with the maximum.
     wounds: u32,
@@ -93,6 +104,9 @@ impl Game {
             market: Market::default(),
             beds: Arc::default(),
             clock: GameClock::START,
+            effects: ActiveEffects::default(),
+            map: Arc::default(),
+            at: None,
             wounds: 0,
             won: HashSet::new(),
             fired: HashSet::new(),
@@ -153,6 +167,25 @@ impl Game {
             }
         }
         self.market = Market::new(vendors);
+        Ok(self)
+    }
+
+    /// The same game over a map, with the player standing at `start`. Without a
+    /// map the player has no place and cannot travel, so call this before play.
+    ///
+    /// # Errors
+    ///
+    /// [`TravelError::NotOnMap`] when `start` is not on the map.
+    pub fn with_map(
+        mut self,
+        map: Arc<TravelBook>,
+        start: &LocationId,
+    ) -> Result<Self, TravelError> {
+        if !map.contains(start) {
+            return Err(TravelError::NotOnMap(start.clone()));
+        }
+        self.map = map;
+        self.at = Some(start.clone());
         Ok(self)
     }
 
@@ -273,7 +306,64 @@ impl Game {
         if !self.is_alive() {
             return Err(ClockError::Down);
         }
-        self.clock.advance(span)
+        self.clock.advance(span)?;
+        self.expire_effects();
+        Ok(())
+    }
+
+    /// The boosts in force now: what each changes, by how much, and the minute it
+    /// ends.
+    pub fn active_effects(&self) -> impl Iterator<Item = &Active> {
+        self.effects.iter()
+    }
+
+    /// Ends the boosts whose time has come. The wounds stay as they are, so hit
+    /// points gained from a boost to the maximum go with it. A player who was alive
+    /// is left with at least one hit point, because a boost to the maximum is a loan
+    /// that cannot kill when it is repaid.
+    fn expire_effects(&mut self) {
+        if self.effects.expire(self.clock.as_minutes()) {
+            self.character.set_boosts(self.effects.tally());
+            self.wounds = self.wounds.min(self.character.max_hp().saturating_sub(1));
+        }
+    }
+
+    /// Where the player stands, once the game has a map.
+    #[must_use]
+    pub fn at(&self) -> Option<&LocationId> {
+        self.at.as_ref()
+    }
+
+    /// The ways out of where the player stands, nearest first. None while the
+    /// player is down or the game has no map.
+    #[must_use]
+    pub fn routes(&self) -> Vec<Route> {
+        match (&self.at, self.is_alive()) {
+            (Some(here), true) => self.map.routes_from(here),
+            _ => Vec::new(),
+        }
+    }
+
+    /// Walks to a linked place, and returns how long it took. The player moves and
+    /// the clock advances together or not at all.
+    ///
+    /// # Errors
+    ///
+    /// [`TravelError::NoMap`] when the player has no place, [`TravelError::NoRoute`]
+    /// when `to` is not linked to where they stand, and [`TravelError::Clock`] when
+    /// time cannot pass (the player is down, or the time does not fit).
+    pub fn travel(&mut self, to: &LocationId) -> Result<Span, TravelError> {
+        let from = self.at.clone().ok_or(TravelError::NoMap)?;
+        let span = self
+            .map
+            .span_between(&from, to)
+            .ok_or_else(|| TravelError::NoRoute {
+                from: from.clone(),
+                to: to.clone(),
+            })?;
+        self.wait(span)?;
+        self.at = Some(to.clone());
+        Ok(span)
     }
 
     /// The beds the player can sleep in at `place`. None while the player is down.
@@ -359,11 +449,19 @@ impl Game {
             &worn,
             &self.inventory,
         )?;
-        let foes = self
+        let prepared = self
             .arsenal
             .foes(encounter)
             .ok_or_else(|| BattleError::UnknownEncounter(encounter.clone()))?;
-        Battle::start(encounter.clone(), player, hp, foes)
+        // The prepared fighters follow the record's foes one for one.
+        let present: Vec<_> = definition
+            .foes
+            .iter()
+            .zip(prepared)
+            .filter(|(foe, _)| foe.when.iter().all(|condition| evaluate(condition, self)))
+            .map(|(_, fighter)| fighter.clone())
+            .collect();
+        Battle::start(encounter.clone(), player, hp, &present)
     }
 
     /// Settles a finished fight: the player keeps the wounds they ended with, and
@@ -433,8 +531,9 @@ impl Game {
 
     /// Uses one carried consumable, returning the hit points it restored.
     ///
-    /// The item is spent only when it heals: a player at full health keeps it, so
-    /// a stray key press does not waste a stimpak.
+    /// An item that heals is spent only when there is something to heal: a player at
+    /// full health keeps it, so a stray key press does not waste a stimpak. An item
+    /// that boosts starts its boosts, which end by themselves as the clock moves.
     ///
     /// # Errors
     ///
@@ -449,14 +548,24 @@ impl Game {
         if self.inventory.item_count(item) == 0 {
             return Err(InventoryError::NotHeld(item.clone()));
         }
-        let Some(ItemUse::Heal(hp)) = self.inventory.item_use(item) else {
+        let Some(effect) = self.inventory.item_use(item) else {
             return Err(InventoryError::NoEffect(item.clone()));
         };
-        if self.wounds == 0 {
+        let (heal, boosts) = match &effect {
+            ItemUse::Heal(hp) => (Some(*hp), &[][..]),
+            ItemUse::Boost(boost) => (boost.heal, boost.effects.as_slice()),
+        };
+        // An item that heals is kept by a player with nothing to heal, so a stray key
+        // press does not waste it; one that only boosts is always worth using.
+        if heal.is_some() && self.wounds == 0 {
             return Err(InventoryError::AtFullHealth);
         }
-        let healed = hp.get().min(self.wounds);
+        let healed = heal.map_or(0, |hp| hp.get().min(self.wounds));
         self.inventory.discard(item, NonZeroU32::MIN)?;
+        if !boosts.is_empty() {
+            self.effects.start(item, boosts, self.clock.as_minutes());
+            self.character.set_boosts(self.effects.tally());
+        }
         self.heal(healed);
         Ok(healed)
     }
@@ -508,6 +617,47 @@ impl Game {
         Ok(buy_total(value, count, self.character.skill(Skill::Barter)))
     }
 
+    /// The percent off the player's purchases at this vendor right now: the vendor's
+    /// cut while the player's standing earns it, and `None` otherwise.
+    #[must_use]
+    pub fn discount_at(&self, vendor: &VendorId) -> Option<DiscountPercent> {
+        let discount = self.market.book().get(vendor)?.discount()?;
+        let earned =
+            discount.when.is_empty() || discount.when.iter().any(|rule| evaluate(rule, self));
+        earned.then_some(discount.percent)
+    }
+
+    /// Caps the player pays a vendor for `count` of an item: [`Game::buy_price`]
+    /// with the vendor's cut, if the player has earned one.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError::UnknownVendor`] when there is no such vendor, and
+    /// [`TradeError::NoPrice`] when the item has no base value.
+    pub fn buy_price_from(
+        &self,
+        vendor: &VendorId,
+        item: &ItemId,
+        count: NonZeroU32,
+    ) -> Result<u32, TradeError> {
+        if self.market.book().get(vendor).is_none() {
+            return Err(TradeError::UnknownVendor(vendor.clone()));
+        }
+        let Some(percent) = self.discount_at(vendor) else {
+            return self.buy_price(item, count);
+        };
+        let value = self
+            .inventory
+            .value(item)
+            .ok_or_else(|| TradeError::NoPrice(item.clone()))?;
+        Ok(buy_total_with_discount(
+            value,
+            count,
+            self.character.skill(Skill::Barter),
+            percent,
+        ))
+    }
+
     /// Caps the player is paid for `count` of an item at the current Barter skill.
     ///
     /// # Errors
@@ -537,7 +687,7 @@ impl Game {
         count: NonZeroU32,
     ) -> Result<u32, TradeError> {
         self.check_vendor(vendor)?;
-        let price = self.buy_price(item, count)?;
+        let price = self.buy_price_from(vendor, item, count)?;
         let have = self.inventory.caps();
         if have < price {
             return Err(TradeError::PlayerShort { have, need: price });

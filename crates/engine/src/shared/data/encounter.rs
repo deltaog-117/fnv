@@ -20,6 +20,11 @@ pub struct Foe {
     /// Hit points, when the NPC record gives none and the formula for the player
     /// would make a footsoldier tougher than the player.
     pub hp: Option<NonZeroU32>,
+    /// Every condition must hold for this enemy to be in the fight; none means it
+    /// always is. The game has no allies yet, so a defender who joined the town's
+    /// side is written as an enemy that is absent.
+    #[serde(default)]
+    pub when: Vec<Condition>,
 }
 
 /// A fight the player can start, and what winning it does.

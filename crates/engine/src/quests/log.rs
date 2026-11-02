@@ -74,6 +74,15 @@ impl QuestLog {
             .map(|(quest, progress)| (quest, progress.stage))
     }
 
+    /// The quests that ended, completed or failed, for the journal. The order is
+    /// unspecified; sort by name when displaying.
+    pub fn finished(&self) -> impl Iterator<Item = (&QuestId, QuestStatus)> {
+        self.progress
+            .iter()
+            .filter(|(_, progress)| progress.phase != Phase::Active)
+            .map(|(quest, progress)| (quest, progress.phase.status()))
+    }
+
     fn require_known(&self, quest: &QuestId) -> Result<(), EffectError> {
         if self.book.contains(quest) {
             Ok(())

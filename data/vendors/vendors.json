@@ -5,6 +5,13 @@
     "npc": "chet",
     "place": "goodsprings_general_store",
     "caps": 500,
+    "discount": {
+      "percent": 25,
+      "when": [
+        {"type": "reputation", "faction": "goodsprings", "level": "accepted"},
+        {"type": "reputation", "faction": "goodsprings", "level": "mixed", "op": "is"}
+      ]
+    },
     "stock": [
       {"item": "9mm_round", "count": 60},
       {"item": "357_magnum_round", "count": 30},
@@ -22,6 +29,13 @@
     "npc": "trudy",
     "place": "prospector_saloon",
     "caps": 300,
+    "discount": {
+      "percent": 25,
+      "when": [
+        {"type": "reputation", "faction": "goodsprings", "level": "accepted"},
+        {"type": "reputation", "faction": "goodsprings", "level": "mixed", "op": "is"}
+      ]
+    },
     "stock": [
       {"item": "beer", "count": 12},
       {"item": "whiskey", "count": 6},

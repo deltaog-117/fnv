@@ -313,16 +313,85 @@
         },
         "on_use": {
           "type": "object",
-          "description": "What using the item does, when the game models all of it (hand-authored in data/items/uses.json).",
-          "required": [
-            "heal"
-          ],
+          "description": "What using the item does, when the game models all of it (hand-authored in data/items/uses.json): either `heal` alone, or `boost`.",
           "additionalProperties": false,
+          "minProperties": 1,
+          "maxProperties": 1,
           "properties": {
             "heal": {
               "type": "integer",
               "minimum": 1,
               "description": "Hit points restored at once."
+            },
+            "boost": {
+              "type": "object",
+              "additionalProperties": false,
+              "description": "Changes numbers for a while, and may also restore hit points at once.",
+              "required": [
+                "effects"
+              ],
+              "properties": {
+                "heal": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "Hit points restored at once; the item is refused at full health when set."
+                },
+                "effects": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "stat",
+                      "amount",
+                      "minutes"
+                    ],
+                    "properties": {
+                      "stat": {
+                        "enum": [
+                          "strength",
+                          "perception",
+                          "endurance",
+                          "charisma",
+                          "intelligence",
+                          "agility",
+                          "luck",
+                          "barter",
+                          "energy_weapons",
+                          "explosives",
+                          "guns",
+                          "lockpick",
+                          "medicine",
+                          "melee_weapons",
+                          "repair",
+                          "science",
+                          "sneak",
+                          "speech",
+                          "survival",
+                          "unarmed",
+                          "max_hp",
+                          "action_points",
+                          "carry_weight",
+                          "damage_resistance"
+                        ]
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "minimum": -32768,
+                        "maximum": 32767,
+                        "not": {
+                          "const": 0
+                        }
+                      },
+                      "minutes": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }

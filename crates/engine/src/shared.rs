@@ -8,6 +8,7 @@
 //! language-neutral contract; contract tests in `tests/shared` fail when the two
 //! drift apart.
 
+mod boost;
 mod bounds;
 mod condition;
 mod data;
@@ -23,14 +24,15 @@ mod sink;
 mod view;
 mod vocabulary;
 
-pub use bounds::{HealthPercent, RenownTier, SkillLevel, SpecialLevel};
+pub use boost::{Boost, BoostStat, BoostTally, DerivedStat};
+pub use bounds::{DiscountPercent, HealthPercent, RenownTier, SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
 pub use data::{
-    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Bed, Consumable, Dialogue, Encounter, Faction,
-    FactionKind, Foe, InfoValue, ItemKind, ItemUse, Location, LocationSize, MapKind, Neighbor, Npc,
-    NpcSpecial, Perk, PerkRequirements, Position, Quest, QuestKind, ReputationModel,
-    ReputationNote, Response, Rule, RuleKind, RuleTargetType, Stage, StatEffect, StockLine, Topic,
-    TopicSection, Trait, Vendor, WalkthroughNode, Weapon, WeaponClass,
+    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Bed, BoostUse, Consumable, Dialogue, Discount,
+    Encounter, Faction, FactionKind, Foe, InfoValue, ItemKind, ItemUse, Location, LocationSize,
+    MapKind, Neighbor, Npc, NpcSpecial, Perk, PerkRequirements, Position, Quest, QuestKind,
+    ReputationModel, ReputationNote, Response, Rule, RuleKind, RuleTargetType, Stage, StatEffect,
+    StockLine, Topic, TopicSection, Trait, Vendor, WalkthroughNode, Weapon, WeaponClass,
 };
 pub use effect::Effect;
 pub use error::ModelError;

@@ -2,5 +2,17 @@
   {"item": "stimpak", "heal": 30},
   {"item": "banana_yucca_fruit", "heal": 7},
   {"item": "bitter_drink", "heal": 36},
-  {"item": "purified_water", "heal": 10}
+  {"item": "purified_water", "heal": 10},
+  {"item": "buffout", "boost": {"effects": [{"stat": "max_hp", "amount": 60, "minutes": 4}, {"stat": "endurance", "amount": 3, "minutes": 4}, {"stat": "strength", "amount": 2, "minutes": 4}]}},
+  {"item": "med_x", "boost": {"effects": [{"stat": "damage_resistance", "amount": 25, "minutes": 4}]}},
+  {"item": "mentats", "boost": {"effects": [{"stat": "intelligence", "amount": 2, "minutes": 4}, {"stat": "perception", "amount": 2, "minutes": 4}, {"stat": "charisma", "amount": 1, "minutes": 4}]}},
+  {"item": "party_time_mentats", "boost": {"effects": [{"stat": "intelligence", "amount": 2, "minutes": 1}, {"stat": "perception", "amount": 2, "minutes": 1}, {"stat": "charisma", "amount": 5, "minutes": 1}]}},
+  {"item": "jet", "boost": {"effects": [{"stat": "action_points", "amount": 15, "minutes": 4}]}},
+  {"item": "ant_nectar", "boost": {"effects": [{"stat": "intelligence", "amount": -2, "minutes": 4}, {"stat": "charisma", "amount": -2, "minutes": 4}, {"stat": "strength", "amount": 4, "minutes": 4}]}},
+  {"item": "ant_queen_pheromones", "boost": {"effects": [{"stat": "charisma", "amount": 3, "minutes": 4}, {"stat": "intelligence", "amount": -3, "minutes": 4}, {"stat": "perception", "amount": -3, "minutes": 4}]}},
+  {"item": "healing_powder", "boost": {"heal": 18, "effects": [{"stat": "perception", "amount": -1, "minutes": 1}]}},
+  {"item": "blood_sausage", "boost": {"heal": 100, "effects": [{"stat": "max_hp", "amount": 10, "minutes": 4}]}},
+  {"item": "black_blood_sausage", "boost": {"heal": 200, "effects": [{"stat": "max_hp", "amount": 25, "minutes": 4}]}},
+  {"item": "thin_red_paste", "boost": {"heal": 60, "effects": [{"stat": "max_hp", "amount": 5, "minutes": 4}]}},
+  {"item": "thick_red_paste", "boost": {"heal": 120, "effects": [{"stat": "max_hp", "amount": 15, "minutes": 4}]}}
 ]

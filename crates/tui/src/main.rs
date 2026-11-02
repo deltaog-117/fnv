@@ -10,8 +10,10 @@ mod dialogue;
 mod exploration;
 mod inventory;
 mod quests;
+mod reputation;
 mod shared;
 mod trade;
+mod travel;
 
 use std::path::PathBuf;
 use std::process::ExitCode;

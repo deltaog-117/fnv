@@ -167,3 +167,28 @@ fn the_book_rejects_unordered_stages_and_duplicate_quests() {
         Err(QuestBookError::DuplicateQuest { .. })
     ));
 }
+
+#[test]
+fn the_finished_quests_are_the_completed_and_the_failed_and_never_the_active() {
+    let book = QuestBook::new([
+        &quest("won", &[(5, false), (10, true)]),
+        &quest("lost", &[(5, false)]),
+        &quest("going", &[(5, false)]),
+        &quest("never", &[(5, false)]),
+    ])
+    .expect("stages are in order");
+    let mut log = engine::quests::QuestLog::new(std::sync::Arc::new(book));
+    log.set_stage(&id("won"), stage(10)).expect("finishes");
+    log.set_stage(&id("lost"), stage(5)).expect("advances");
+    log.fail_quest(&id("lost")).expect("fails");
+    log.set_stage(&id("going"), stage(5)).expect("advances");
+    let mut finished: Vec<_> = log.finished().map(|(q, s)| (q.to_string(), s)).collect();
+    finished.sort_by(|a, b| a.0.cmp(&b.0));
+    assert_eq!(
+        finished,
+        [
+            ("lost".to_owned(), QuestStatus::Failed),
+            ("won".to_owned(), QuestStatus::Completed)
+        ]
+    );
+}

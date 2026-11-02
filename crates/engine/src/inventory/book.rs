@@ -141,7 +141,7 @@ impl ItemBook {
         let uses = data
             .consumables
             .iter()
-            .filter_map(|item| item.on_use.map(|effect| (item.id.clone(), effect)));
+            .filter_map(|item| item.on_use.clone().map(|effect| (item.id.clone(), effect)));
         Self::new(weapons.chain(armor).chain(ammo).chain(consumables))?
             .with_uses(uses)?
             .with_values(
@@ -185,7 +185,7 @@ impl ItemBook {
     /// What using the item does, if the game models it.
     #[must_use]
     pub fn item_use(&self, item: &ItemId) -> Option<ItemUse> {
-        self.uses.get(item).copied()
+        self.uses.get(item).cloned()
     }
 
     /// How many items the book holds.

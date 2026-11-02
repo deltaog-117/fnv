@@ -66,3 +66,20 @@ fn a_vendor_can_pay_for_a_cheap_item() {
     game.give_item(item, NonZeroU32::MIN).expect("given");
     assert!(game.sell(id, item, NonZeroU32::MIN).is_ok());
 }
+
+#[test]
+fn only_chet_and_trudy_give_a_price_cut() {
+    let (_, vendors) = game();
+    let cuts: Vec<(&str, Option<u8>)> = vendors
+        .iter()
+        .map(|(id, info)| (id.as_str(), info.discount().map(|d| d.percent.get())))
+        .collect();
+    assert_eq!(
+        cuts,
+        [
+            ("chet", Some(25)),
+            ("doc_mitchell", None),
+            ("trudy", Some(25))
+        ]
+    );
+}

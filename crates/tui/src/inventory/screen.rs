@@ -6,7 +6,7 @@ use std::sync::Arc;
 
 use engine::game::Game;
 use engine::inventory::Slot;
-use engine::shared::{InventoryView, ItemId, ItemUse};
+use engine::shared::{Boost, InventoryView, ItemId, ItemUse};
 use ratatui::Frame;
 use ratatui::layout::{Constraint, Layout, Rect};
 use ratatui::text::Line;
@@ -162,7 +162,7 @@ impl Pack {
         let note = match action {
             Action::Use => game
                 .use_item(item)
-                .map(|healed| format!("You use the {name} and recover {healed} hit points."))
+                .map(|healed| use_note(&name, healed, game.inventory().item_use(item)))
                 .map_err(|error| error.to_string()),
             Action::Equip => game
                 .equip(item)
@@ -296,6 +296,22 @@ impl Pack {
             slot_line("Head", Slot::Head),
             Line::default(),
         ];
+        let now = game.clock().as_minutes();
+        if game.active_effects().next().is_some() {
+            lines.push(Line::styled("In force:", theme::heading()));
+            lines.extend(game.active_effects().map(|active| {
+                Line::styled(
+                    format!(
+                        "{:+} {} ({} min left)",
+                        active.amount,
+                        active.stat.name(),
+                        active.until.saturating_sub(now)
+                    ),
+                    theme::text(),
+                )
+            }));
+            lines.push(Line::default());
+        }
         match &self.mode {
             Mode::Acting {
                 item,
@@ -347,9 +363,48 @@ impl Pack {
                 format!("Restores {hp} hit points."),
                 theme::text(),
             )),
+            Some(ItemUse::Boost(boost)) => {
+                if let Some(hp) = boost.heal {
+                    lines.push(Line::styled(
+                        format!("Restores {hp} hit points."),
+                        theme::text(),
+                    ));
+                }
+                lines.extend(
+                    boost
+                        .effects
+                        .iter()
+                        .map(|effect| Line::styled(boost_text(effect), theme::text())),
+                );
+            }
             None => {}
         }
         lines
+    }
+}
+
+/// "+2 Strength for 4 minutes": one boost as the player reads it.
+fn boost_text(boost: &Boost) -> String {
+    let minutes = boost.minutes.get();
+    let unit = if minutes == 1 { "minute" } else { "minutes" };
+    format!(
+        "{:+} {} for {minutes} {unit}.",
+        boost.amount.get(),
+        boost.stat.name()
+    )
+}
+
+/// What the log says after an item is used. `healed` is what it restored, and `used`
+/// is what the item does, which says whether it also started boosts.
+fn use_note(name: &str, healed: u32, used: Option<ItemUse>) -> String {
+    let boosts = match used {
+        Some(ItemUse::Boost(boost)) => boost.effects.len(),
+        _ => 0,
+    };
+    match (healed, boosts) {
+        (hp, 0) => format!("You use the {name} and recover {hp} hit points."),
+        (0, n) => format!("You use the {name}: {n} effect(s) begin."),
+        (hp, n) => format!("You use the {name}, recover {hp} hit points, and {n} effect(s) begin."),
     }
 }
 

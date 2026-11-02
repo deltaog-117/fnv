@@ -316,6 +316,7 @@
    "vfreeformgoodspringsgstrudytopic003",
    "vfreeformgoodspringsgstrudytopic012",
    "vfreeformgoodspringsgstrudytopic013",
+   "vfreeformgoodspringsgoodspringsrubytopic007",
    "goodbye"
   ],
   "topics": [
@@ -415,6 +416,9 @@
      {"type": "not", "of": {"type": "skill", "skill": "sneak", "min": 25}}
     ]
    },
+   {"key": "vfreeformgoodspringsgoodspringsrubytopic007", "conditions": [{"type": "any", "of": [
+     {"type": "reputation", "faction": "goodsprings", "level": "accepted"},
+     {"type": "reputation", "faction": "goodsprings", "level": "mixed", "op": "is"}]}], "shop": "trudy"},
    {"key": "goodbye", "ends": true}
   ]
  },
@@ -427,6 +431,7 @@
    "vfreeformgoodspringsgschettopic008",
    "vfreeformgoodspringsgoodspringschettopic002",
    "vfreeformgoodspringsgoodspringschettopic006",
+   "vfreeformgoodspringsgoodspringschettopic000",
    "goodbye"
   ],
   "topics": [
@@ -530,6 +535,9 @@
     ]
    },
    {"key": "vfreeformgoodspringsgschettopic011"},
+   {"key": "vfreeformgoodspringsgoodspringschettopic000", "conditions": [{"type": "any", "of": [
+     {"type": "reputation", "faction": "goodsprings", "level": "accepted"},
+     {"type": "reputation", "faction": "goodsprings", "level": "mixed", "op": "is"}]}], "shop": "chet"},
    {"key": "goodbye", "ends": true}
   ]
  },

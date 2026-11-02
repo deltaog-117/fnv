@@ -224,21 +224,54 @@ fn the_player_fights_with_the_numbers_of_their_character_weapon_and_armor() {
     assert_eq!(you.dt().get(), 6.0);
 }
 
-#[test]
-fn the_foes_come_from_the_npc_records_and_the_authored_loadouts() {
-    let game = armed_game();
-    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+/// The three ways the town can help before the fight; each takes one Powder Ganger
+/// out of it.
+const HELPERS: [&str; 3] = [
+    "trudy_joined_militia",
+    "easy_pete_joined_militia",
+    "chet_supplied_militia",
+];
+
+fn help_from(game: &mut Game, helpers: &[&str]) {
+    let flags: Vec<Effect> = helpers
+        .iter()
+        .map(|flag| effect(serde_json::json!({"type": "set_flag", "flag": flag})))
+        .collect();
+    apply_all(&flags, game).expect("the flags are set");
+}
+
+/// What the foes of a started fight are: name, hit points and damage threshold.
+fn foes_of(battle: &Battle) -> Vec<(String, u32, f64)> {
     let combat = battle.combat();
-    let foes: Vec<_> = combat
+    combat
         .ids()
         .filter(|&id| combat.side(id) == Some(Side::Enemy))
         .map(|id| {
             let foe = combat.combatant(id).expect("a foe");
             (foe.name().to_owned(), foe.max_hp().get(), foe.dt().get())
         })
-        .collect();
+        .collect()
+}
+
+#[test]
+fn an_unprepared_town_faces_the_wikis_six_attackers() {
+    let game = armed_game();
+    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let mut expected = vec![("Joe Cobb".to_owned(), 50, 5.0)];
+    expected.extend(std::iter::repeat_n(
+        ("Powder Ganger".to_owned(), 30, 0.0),
+        5,
+    ));
+    assert_eq!(foes_of(&battle), expected);
+}
+
+#[test]
+fn a_fully_prepared_town_faces_cobb_and_two_gangers() {
+    let mut game = armed_game();
+    help_from(&mut game, &HELPERS);
+    let battle = game.start_battle(&gunfight()).expect("the fight starts");
     assert_eq!(
-        foes,
+        foes_of(&battle),
         [
             ("Joe Cobb".to_owned(), 50, 5.0),
             ("Powder Ganger".to_owned(), 30, 0.0),
@@ -248,8 +281,19 @@ fn the_foes_come_from_the_npc_records_and_the_authored_loadouts() {
 }
 
 #[test]
+fn each_helper_takes_exactly_one_attacker_out_of_the_fight() {
+    for helper in HELPERS {
+        let mut game = armed_game();
+        help_from(&mut game, &[helper]);
+        let battle = game.start_battle(&gunfight()).expect("the fight starts");
+        assert_eq!(foes_of(&battle).len(), 5, "{helper}");
+    }
+}
+
+#[test]
 fn winning_pays_the_quest_kills_joe_cobb_and_keeps_the_hit_points_left() {
     let mut game = dressed_game();
+    help_from(&mut game, &HELPERS);
     let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
     play(&mut battle, &mut Always(1), false);
     assert_eq!(battle.combat().status(), Status::Won(Side::Player));
@@ -418,4 +462,111 @@ fn the_pack_is_untouched_until_the_fight_is_settled() {
         .attack(foe, Power::Normal, &mut Always(100))
         .expect("a shot, wasted");
     assert_eq!(rounds_held(&game), before);
+}
+
+/// A dressed player in Run Goodsprings Run at `stage`, with `flags` set.
+fn run_game(stage_number: u32, flags: &[&str]) -> Game {
+    let mut game = dressed_game();
+    apply_all(&[stage("run_goodsprings_run", stage_number)], &mut game)
+        .expect("the quest advances");
+    help_from(&mut game, flags);
+    game
+}
+
+fn npc(text: &str) -> NpcId {
+    NpcId::try_new(text).expect("literal is a valid id")
+}
+
+fn encounter(text: &str) -> EncounterId {
+    EncounterId::try_new(text).expect("literal is a valid id")
+}
+
+#[test]
+fn killing_ringo_is_offered_only_at_stage_ten_and_moves_the_quest_to_fifteen() {
+    for (stage_number, offered) in [(10, true), (15, false), (20, false)] {
+        let game = run_game(stage_number, &[]);
+        let on_offer = game
+            .encounters_at(&place())
+            .iter()
+            .any(|e| e.id == encounter("kill_ringo"));
+        assert_eq!(on_offer, offered, "stage {stage_number}");
+    }
+    let mut game = run_game(10, &[]);
+    let mut battle = game
+        .start_battle(&encounter("kill_ringo"))
+        .expect("the fight starts");
+    assert_eq!(foes_of(&battle).len(), 1);
+    play(&mut battle, &mut Always(1), false);
+    assert_eq!(game.finish_battle(&battle), Ok(Outcome::Victory));
+    assert!(game.world().npc_is(&npc("ringo"), NpcState::Dead));
+    let quest = QuestId::try_new("run_goodsprings_run").expect("literal is a valid id");
+    assert_eq!(game.quest_stage(&quest).map(|s| s.get()), Some(15));
+}
+
+#[test]
+fn the_militia_fight_waits_for_the_takeover_call() {
+    for (stage_number, offered) in [(45, false), (60, true), (70, false)] {
+        let game = run_game(stage_number, &[]);
+        let on_offer = game
+            .encounters_at(&place())
+            .iter()
+            .any(|e| e.id == encounter("take_over_goodsprings"));
+        assert_eq!(on_offer, offered, "stage {stage_number}");
+    }
+}
+
+#[test]
+fn shaking_chet_down_keeps_trudy_out_of_the_militia() {
+    let id = encounter("take_over_goodsprings");
+    let plain = run_game(60, &[]).start_battle(&id).expect("starts");
+    let shaken = run_game(60, &["chet_shaken_down"])
+        .start_battle(&id)
+        .expect("starts");
+    assert_eq!(foes_of(&plain).len(), 3);
+    assert_eq!(foes_of(&shaken).len(), 2);
+}
+
+#[test]
+fn winning_the_militia_fight_finishes_the_quest_and_kills_the_defenders() {
+    use engine::shared::{Renown, StandingView};
+
+    let mut game = run_game(60, &["chet_shaken_down"]);
+    let mut battle = game
+        .start_battle(&encounter("take_over_goodsprings"))
+        .expect("the fight starts");
+    play(&mut battle, &mut Always(1), false);
+    assert_eq!(game.finish_battle(&battle), Ok(Outcome::Victory));
+    let quest = QuestId::try_new("run_goodsprings_run").expect("literal is a valid id");
+    assert_eq!(game.quest_status(&quest), QuestStatus::Completed);
+    for who in ["sunny_smiles", "easy_pete", "trudy"] {
+        assert!(game.world().npc_is(&npc(who), NpcState::Dead), "{who}");
+    }
+    let town = engine::shared::FactionId::try_new("goodsprings").expect("valid id");
+    assert!(game.renown_points(&town, Renown::Infamy) >= 3.0);
+}
+
+#[test]
+fn a_chems_resistance_adds_to_the_armor_in_the_next_fight_and_ends_with_the_chem() {
+    use engine::clock::Span;
+
+    let mut game = dressed_game();
+    help_from(&mut game, &HELPERS);
+    apply_all(
+        &[effect(
+            serde_json::json!({"type": "give_item", "item": "med_x"}),
+        )],
+        &mut game,
+    )
+    .expect("the chem is given");
+    let resistance = |game: &Game| {
+        let battle = game.start_battle(&gunfight()).expect("the fight starts");
+        let you = battle.combat().combatant(battle.player()).expect("you");
+        you.dr().get()
+    };
+    let bare = resistance(&game);
+    game.use_item(&item("med_x")).expect("Med-X is used");
+    assert_eq!(resistance(&game), bare + 25.0);
+    let four = std::num::NonZeroU32::new(4).expect("not zero");
+    game.wait(Span::minutes(four)).expect("time passes");
+    assert_eq!(resistance(&game), bare);
 }

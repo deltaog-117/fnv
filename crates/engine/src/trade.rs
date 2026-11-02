@@ -23,4 +23,4 @@ mod price;
 pub use book::{VendorBook, VendorInfo};
 pub use error::TradeError;
 pub use market::{Market, Shop};
-pub use price::{buy_multiplier, buy_total, sell_multiplier, sell_total};
+pub use price::{buy_multiplier, buy_total, buy_total_with_discount, sell_multiplier, sell_total};

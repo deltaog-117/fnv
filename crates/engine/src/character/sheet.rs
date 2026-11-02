@@ -12,8 +12,8 @@ use super::rules::{
     TAG_COUNT,
 };
 use crate::shared::{
-    CharacterSink, CharacterView, EffectError, PerkId, Skill, SkillLevel, Special, SpecialLevel,
-    TraitId, whole_amount,
+    BoostTally, CharacterSink, CharacterView, EffectError, PerkId, Skill, SkillLevel, Special,
+    SpecialLevel, TraitId, whole_amount,
 };
 
 /// The seven S.P.E.C.I.A.L. values; every one always holds a legal level.
@@ -55,6 +55,11 @@ impl Default for SpecialSet {
     }
 }
 
+/// `base` moved by a signed `change`, never below zero.
+fn shifted(base: u32, change: i32) -> u32 {
+    u32::try_from((i64::from(base) + i64::from(change)).max(0)).unwrap_or(u32::MAX)
+}
+
 /// The attribute a skill starts from (`skill_initial_*` in `formulas.json`).
 fn governing_stat(skill: Skill) -> Special {
     match skill {
@@ -85,6 +90,8 @@ pub struct Character {
     /// Perks taken, with the rank reached.
     perks: BTreeMap<PerkId, u8>,
     bonuses: Bonuses,
+    /// What chems, drinks and meals change for now; empty unless the game sets it.
+    boosts: BoostTally,
     /// The highest level whose rewards have been handed out.
     settled: Level,
     /// Skill points banked and not spent, in half points: the file's half points
@@ -181,6 +188,7 @@ impl Character {
             traits: BTreeSet::new(),
             perks: BTreeMap::new(),
             bonuses: Bonuses::default(),
+            boosts: BoostTally::default(),
             settled,
             skill_halves: 0,
             perk_picks: 0,
@@ -235,23 +243,50 @@ impl Character {
     /// Maximum hit points: `100 + 20 * endurance + 5 * (level - 1)`, plus perks.
     #[must_use]
     pub fn max_hp(&self) -> u32 {
-        100 + 20 * u32::from(self.special.get(Special::Endurance).get())
+        let base = 100
+            + 20 * u32::from(self.boosted(Special::Endurance))
             + 5 * (self.level().get() - 1)
-            + self.bonuses.hp
+            + self.bonuses.hp;
+        // Never below one, so a penalty cannot leave a player with no hit points to lose.
+        shifted(base, self.boosts.max_hp()).max(1)
     }
 
     /// Action points: `min(65 + 3 * agility, ap_base_cap)`, plus perks, which may
     /// take it past the cap.
     #[must_use]
     pub fn action_points(&self) -> u32 {
-        (65 + 3 * u32::from(self.special.get(Special::Agility).get())).min(self.rules.ap_cap())
-            + self.bonuses.ap
+        let base = (65 + 3 * u32::from(self.boosted(Special::Agility))).min(self.rules.ap_cap())
+            + self.bonuses.ap;
+        shifted(base, self.boosts.action_points())
     }
 
     /// Carry weight in pounds: `150 + 10 * strength`, plus perks.
     #[must_use]
     pub fn carry_weight(&self) -> u32 {
-        150 + 10 * u32::from(self.special.get(Special::Strength).get()) + self.bonuses.carry_weight
+        let base =
+            150 + 10 * u32::from(self.boosted(Special::Strength)) + self.bonuses.carry_weight;
+        shifted(base, self.boosts.carry_weight())
+    }
+
+    /// What chems, drinks and meals change for now.
+    #[must_use]
+    pub fn boosts(&self) -> &BoostTally {
+        &self.boosts
+    }
+
+    /// Sets what chems, drinks and meals change for now. The game calls this each
+    /// time a boost starts or ends; the attributes and skills the player earned
+    /// are never touched, so ending a boost puts back exactly what was there.
+    pub fn set_boosts(&mut self, boosts: BoostTally) {
+        self.boosts = boosts;
+    }
+
+    /// An attribute with the boosts in force, kept inside the 1 to 10 scale.
+    fn boosted(&self, stat: Special) -> u8 {
+        let value = i32::from(self.special.get(stat).get()) + self.boosts.special(stat);
+        let kept = value.clamp(i32::from(SpecialLevel::MIN), i32::from(SpecialLevel::MAX));
+        SpecialLevel::try_new(u32::try_from(kept).unwrap_or(1))
+            .map_or(SpecialLevel::MIN, SpecialLevel::get)
     }
 
     /// Adds experience, scaled by the percentage perks and traits give, and pays
@@ -374,8 +409,8 @@ impl CharacterView for Character {
     /// `2 + 2 * stat + ceil(luck / 2)`, plus the points spent, 15 if tagged and
     /// what perks and traits add, kept between 0 and 100.
     fn skill(&self, skill: Skill) -> SkillLevel {
-        let stat = i64::from(self.special.get(governing_stat(skill)).get());
-        let luck = i64::from(self.special.get(Special::Luck).get());
+        let stat = i64::from(self.boosted(governing_stat(skill)));
+        let luck = i64::from(self.boosted(Special::Luck));
         let slot = skill as usize;
         let tag = if self.tagged[slot] {
             i64::from(TAG_BONUS)
@@ -387,14 +422,15 @@ impl CharacterView for Character {
             + (luck + 1) / 2
             + i64::from(self.spent[slot])
             + tag
-            + i64::from(self.bonuses.skills[slot]);
+            + i64::from(self.bonuses.skills[slot])
+            + i64::from(self.boosts.skill(skill));
         let capped = value.clamp(i64::from(SkillLevel::MIN), i64::from(SkillLevel::MAX));
         SkillLevel::try_new(u32::try_from(capped).unwrap_or(0))
             .expect("the value was clamped to the skill range")
     }
 
     fn special(&self, stat: Special) -> SpecialLevel {
-        self.special.get(stat)
+        SpecialLevel::try_new(u32::from(self.boosted(stat))).unwrap_or_default()
     }
 
     fn has_perk(&self, perk: &PerkId) -> bool {

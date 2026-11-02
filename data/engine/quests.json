@@ -18052,7 +18052,21 @@
    {
     "stage": 70,
     "description": "Defeat the Goodsprings militia.",
-    "finish": true
+    "finish": true,
+    "on_enter": [
+     {
+      "type": "reputation",
+      "faction": "powder_gangers",
+      "fame": 3,
+      "infamy": 0
+     },
+     {
+      "type": "reputation",
+      "faction": "goodsprings",
+      "fame": 0,
+      "infamy": 3
+     }
+    ]
    }
   ],
   "walkthrough": [

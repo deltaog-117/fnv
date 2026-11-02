@@ -90,6 +90,13 @@ define_bounded!(
     "renown tier"
 );
 define_bounded!(
+    /// A vendor's price cut for the player, 1 to 90 percent.
+    DiscountPercent,
+    1,
+    90,
+    "discount percent"
+);
+define_bounded!(
     /// How much of their hit points the player has left, 0 to 100.
     HealthPercent,
     0,

@@ -4,6 +4,7 @@
 //! and draws the persistent layout around it. It reads no terminal and writes none
 //! (the caller feeds it commands and hands it a frame), so tests drive it headless.
 
+use std::collections::HashMap;
 use std::num::NonZeroU32;
 use std::sync::Arc;
 
@@ -21,6 +22,7 @@ use engine::shared::{
     apply_all,
 };
 use engine::trade::VendorBook;
+use engine::travel::TravelBook;
 use engine::world::WorldBook;
 use ratatui::Frame;
 use ratatui::layout::{Alignment, Rect};
@@ -32,7 +34,8 @@ use crate::combat::{self, Fight};
 use crate::dialogue::{self, Talk};
 use crate::exploration::{self, Exploration, Person};
 use crate::inventory::{self, Pack};
-use crate::quests;
+use crate::quests::{self, Journal};
+use crate::reputation::{self, Reputation};
 use crate::shared::dice::Rng;
 use crate::shared::input::Command;
 use crate::shared::layout::{self, MIN_HEIGHT, MIN_WIDTH};
@@ -40,6 +43,7 @@ use crate::shared::log::{self, Entry, Log};
 use crate::shared::names::Names;
 use crate::shared::theme;
 use crate::trade::{self, Trade};
+use crate::travel::{self, Travel, walk_time};
 
 /// The quest a new game starts in, and the stage that opens it.
 const OPENING_QUEST: &str = "ain_t_that_a_kick_in_the_head";
@@ -59,6 +63,12 @@ enum Screen {
     Talking(Talk),
     Fighting(Fight),
     Leveling(LevelUp),
+    /// Reading the quest journal.
+    Journaling(Journal),
+    /// Reading the reputation screen.
+    Standing(Reputation),
+    /// Choosing where to walk.
+    Traveling(Travel),
     /// Looking through the pack.
     Packing(Pack),
     /// At a counter. `from` is the conversation that opened the shop, if one did, so
@@ -71,6 +81,79 @@ enum Screen {
     Down,
 }
 
+/// What the front end knows about each place: its name, what stands inside it and
+/// who lives there, so arriving somewhere needs no search through the loaded data.
+struct Places {
+    names: HashMap<LocationId, String>,
+    /// The buildings and spots inside a place.
+    children: HashMap<LocationId, Vec<LocationId>>,
+    /// Everyone with a conversation to open, with the places they are found in.
+    residents: Vec<(Vec<LocationId>, Person)>,
+}
+
+impl Places {
+    fn from_data(data: &GameData, dialogue: &Arc<DialogueBook>) -> Self {
+        let residents = data
+            .npcs
+            .iter()
+            .filter_map(|npc| {
+                // Most dialogue files are transcripts without a graph; only the
+                // authored ones open.
+                let dialogue_id = npc
+                    .dialogue
+                    .iter()
+                    .find(|id| Conversation::open(Arc::clone(dialogue), id).is_ok())?;
+                let person = Person {
+                    npc: npc.id.clone(),
+                    name: npc.name.clone(),
+                    dialogue: dialogue_id.clone(),
+                };
+                Some((npc.location_ids.clone(), person))
+            })
+            .collect();
+        Self {
+            names: data
+                .locations
+                .iter()
+                .map(|location| (location.id.clone(), location.name.clone()))
+                .collect(),
+            children: data
+                .locations
+                .iter()
+                .map(|location| (location.id.clone(), location.children.clone()))
+                .collect(),
+            residents,
+        }
+    }
+
+    /// The place and the buildings inside it: where the player can find a shop.
+    fn here(&self, place: &LocationId) -> Vec<LocationId> {
+        std::iter::once(place.clone())
+            .chain(self.children.get(place).into_iter().flatten().cloned())
+            .collect()
+    }
+
+    /// The name the player sees for a place.
+    fn name(&self, place: &LocationId) -> String {
+        self.names
+            .get(place)
+            .cloned()
+            .unwrap_or_else(|| place.to_string())
+    }
+
+    /// Who can be talked to anywhere in `here`, by name.
+    fn people(&self, here: &[LocationId]) -> Vec<Person> {
+        let mut people: Vec<Person> = self
+            .residents
+            .iter()
+            .filter(|(spots, _)| spots.iter().any(|spot| here.contains(spot)))
+            .map(|(_, person)| person.clone())
+            .collect();
+        people.sort_by(|a, b| a.name.cmp(&b.name));
+        people
+    }
+}
+
 /// The whole front end's state.
 pub struct App {
     game: Game,
@@ -79,6 +162,7 @@ pub struct App {
     place_id: LocationId,
     /// The place and the buildings inside it: where the player can find a shop.
     here: Vec<LocationId>,
+    places: Places,
     vendors: Arc<VendorBook>,
     names: Arc<Names>,
     people: Vec<Person>,
@@ -119,6 +203,7 @@ impl App {
         let beds = Arc::new(BedBook::from_data(data).context("building the beds")?);
         let reputation =
             Arc::new(ReputationBook::from_data(data).context("building the reputation book")?);
+        let map = Arc::new(TravelBook::from_data(data).context("building the map")?);
         let mut game = Game::with_world(quests, world)
             .with_items(items)
             .with_arsenal(arsenal)
@@ -126,7 +211,9 @@ impl App {
             .with_beds(beds)
             .with_reputation(reputation)
             .with_vendors(Arc::clone(&vendors))
-            .context("stocking the vendors")?;
+            .context("stocking the vendors")?
+            .with_map(map, place)
+            .context("placing the player on the map")?;
         let opening = Effect::SetStage {
             quest: QuestId::try_new(OPENING_QUEST).context("opening quest id")?,
             stage: QuestStage::new(OPENING_STAGE),
@@ -140,27 +227,9 @@ impl App {
         game.equip(&armor).context("wearing the starting armor")?;
 
         // Buildings sit inside the settlement, so their residents are "here" too.
-        let here =
-            |npc_place: &LocationId| npc_place == place || location.children.contains(npc_place);
-        let mut people: Vec<Person> = data
-            .npcs
-            .iter()
-            .filter(|npc| npc.location_ids.iter().any(here))
-            .filter_map(|npc| {
-                // Most dialogue files are transcripts without a graph; only the
-                // authored ones open.
-                let dialogue_id = npc
-                    .dialogue
-                    .iter()
-                    .find(|id| Conversation::open(Arc::clone(&dialogue), id).is_ok())?;
-                Some(Person {
-                    npc: npc.id.clone(),
-                    name: npc.name.clone(),
-                    dialogue: dialogue_id.clone(),
-                })
-            })
-            .collect();
-        people.sort_by(|a, b| a.name.cmp(&b.name));
+        let places = Places::from_data(data, &dialogue);
+        let here = places.here(place);
+        let people = places.people(&here);
 
         let mut log = Log::default();
         log.push(Entry::Note(format!(
@@ -173,9 +242,8 @@ impl App {
             screen: Screen::Down,
             place: location.name.clone(),
             place_id: place.clone(),
-            here: std::iter::once(place.clone())
-                .chain(location.children.iter().cloned())
-                .collect(),
+            here,
+            places,
             vendors,
             names: Arc::new(Names::from_data(data)),
             people,
@@ -231,6 +299,30 @@ impl App {
                     self.screen = Screen::Packing(Pack::open(&self.game, Arc::clone(&self.names)));
                 }
                 exploration::Next::Wait { span, label } => self.wait(span, label),
+                exploration::Next::Journal => {
+                    self.screen = Screen::Journaling(Journal::open(&self.game));
+                }
+                exploration::Next::Reputation => {
+                    self.screen = Screen::Standing(Reputation::open(&self.game));
+                }
+                exploration::Next::Travel => {
+                    self.screen = Screen::Traveling(Travel::open(&self.game));
+                }
+            },
+            Screen::Journaling(journal) => {
+                if journal.update(command) == quests::Next::Leave {
+                    self.screen = self.exploring();
+                }
+            }
+            Screen::Standing(standing) => {
+                if standing.update(command) == reputation::Next::Leave {
+                    self.screen = self.exploring();
+                }
+            }
+            Screen::Traveling(travel) => match travel.update(command, &self.game) {
+                travel::Next::Stay => {}
+                travel::Next::Leave => self.screen = self.exploring(),
+                travel::Next::Go(to) => self.travel_to(&to),
             },
             Screen::Leveling(sheet) => {
                 if sheet.update(command, &mut self.game, &mut self.log) == character::Next::Leave {
@@ -367,6 +459,27 @@ impl App {
         self.log.push(Entry::Note(note));
     }
 
+    /// Walks to a linked place and describes the trip, or says why it was refused.
+    /// Arriving changes who and what the scene offers, so they are looked up again.
+    fn travel_to(&mut self, to: &LocationId) {
+        match self.game.travel(to) {
+            Ok(span) => {
+                self.here = self.places.here(to);
+                self.people = self.places.people(&self.here);
+                self.place = self.places.name(to);
+                self.place_id = to.clone();
+                self.log.push(Entry::Note(format!(
+                    "You walk to {} ({}). It is now {}.",
+                    self.place,
+                    walk_time(span),
+                    self.game.clock()
+                )));
+            }
+            Err(error) => self.log.push(Entry::Note(error.to_string())),
+        }
+        self.screen = self.exploring();
+    }
+
     fn exploring(&self) -> Screen {
         let shops = self
             .shops_here()
@@ -488,6 +601,18 @@ impl App {
                 sheet.render(frame, regions.scene, &self.game);
                 "Up/Down move | Enter choose | 1-9 pick | Esc back | q quit"
             }
+            Screen::Journaling(journal) => {
+                journal.render(frame, regions.scene, &self.game);
+                journal.keys()
+            }
+            Screen::Standing(standing) => {
+                standing.render(frame, regions.scene, &self.game);
+                standing.keys()
+            }
+            Screen::Traveling(travel) => {
+                travel.render(frame, regions.scene, &self.game);
+                travel.keys()
+            }
             Screen::Packing(pack) => {
                 pack.render(frame, regions.scene, &self.game);
                 pack.keys()
@@ -568,12 +693,21 @@ mod tests {
             quest: QuestId::try_new(quest).expect("valid id"),
             stage: QuestStage::new(stage),
         };
+        // The town is fully prepared, so the fight is the short one: Cobb and two
+        // gangers. The unprepared fight has six attackers.
+        let helped = |flag: &str| Effect::SetFlag {
+            flag: engine::shared::FlagId::try_new(flag).expect("valid id"),
+            value: true,
+        };
         let steps = [
             stage(OPENING_QUEST, 50),
             stage("ghost_town_gunfight", 5),
             stage("ghost_town_gunfight", 10),
             stage("ghost_town_gunfight", 60),
             stage("ghost_town_gunfight", 65),
+            helped("trudy_joined_militia"),
+            helped("easy_pete_joined_militia"),
+            helped("chet_supplied_militia"),
         ];
         apply_all(&steps, &mut app.game).expect("the quests advance");
         app.screen = app.exploring();
@@ -612,9 +746,9 @@ mod tests {
     #[test]
     fn the_pack_opens_from_the_scene_shows_the_worn_armor_and_leaves_again() {
         let mut app = app();
-        // The cursor wraps up from the first row to Quit; the two waits sit between
-        // it and Pack.
-        for _ in 0..4 {
+        // The cursor wraps up from the first row to Quit; the two waits, travel,
+        // reputation and the journal sit between it and Pack.
+        for _ in 0..7 {
             app.update(Command::Up);
         }
         app.update(Command::Select);
@@ -625,6 +759,132 @@ mod tests {
         }
         app.update(Command::Back);
         assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    /// Moves the scene's cursor to the row that says `label` and chooses it.
+    fn choose_row(app: &mut App, label: &str) {
+        for _ in 0..40 {
+            if selected_row(app).contains(label) {
+                app.update(Command::Select);
+                return;
+            }
+            app.update(Command::Down);
+        }
+        panic!("no row says {label:?}");
+    }
+
+    /// The text of the highlighted row of the scene.
+    fn selected_row(app: &App) -> String {
+        screen(app, 100, 40)
+            .lines()
+            .find(|line| line.contains("> "))
+            .map(str::to_owned)
+            .unwrap_or_default()
+    }
+
+    #[test]
+    fn the_journal_opens_from_the_scene_lists_the_opening_quest_and_leaves_again() {
+        let mut app = app();
+        choose_row(&mut app, "Journal");
+        assert!(matches!(app.screen, Screen::Journaling(_)));
+        let text = screen(&app, 100, 30);
+        for expected in ["Journal", "[active] Ain't That a Kick in the Head", "Entry"] {
+            assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
+        }
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    #[test]
+    fn the_reputation_screen_opens_from_the_scene_and_leaves_again() {
+        let mut app = app();
+        choose_row(&mut app, "Reputation");
+        assert!(matches!(app.screen, Screen::Standing(_)));
+        let text = screen(&app, 100, 30);
+        for expected in ["Karma:", "Goodsprings: Neutral"] {
+            assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
+        }
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    #[test]
+    fn travelling_moves_the_player_the_clock_and_the_scene_together() {
+        let mut app = app();
+        let start = app.game.clock();
+        choose_row(&mut app, "Travel");
+        assert!(matches!(app.screen, Screen::Traveling(_)));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Where do you go?"), "{text}");
+        assert!(text.contains("Goodsprings cave"), "{text}");
+        // Enter walks to the nearest place.
+        app.update(Command::Select);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+        assert_eq!(app.game.at(), Some(&app.place_id));
+        assert_ne!(app.place, "Goodsprings");
+        assert!(app.game.clock().as_minutes() > start.as_minutes());
+        assert!(app.people.is_empty(), "nobody lives in the wilds");
+        let text = screen(&app, 100, 30);
+        assert!(
+            text.contains(&format!("You are in {}", app.place)),
+            "{text}"
+        );
+        assert!(text.contains("You walk to"), "{text}");
+    }
+
+    #[test]
+    fn walking_back_brings_the_town_and_its_people_back() {
+        let mut app = app();
+        let people = app.people.len();
+        choose_row(&mut app, "Travel");
+        app.update(Command::Select);
+        choose_row(&mut app, "Travel");
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Goodsprings"), "{text}");
+        app.update(Command::Pick(
+            engine_routes(&app)
+                .iter()
+                .position(|name| name == "Goodsprings")
+                .expect("a way back to the town"),
+        ));
+        assert_eq!(app.place, "Goodsprings");
+        assert_eq!(app.people.len(), people);
+        assert_eq!(app.game.at(), Some(&app.place_id));
+    }
+
+    /// The names of the ways out of where the player stands, in the order offered.
+    fn engine_routes(app: &App) -> Vec<String> {
+        app.game.routes().into_iter().map(|r| r.name).collect()
+    }
+
+    #[test]
+    fn a_player_the_town_likes_sees_the_discount_in_chets_shop() {
+        let mut app = app();
+        let town = engine::shared::FactionId::try_new("goodsprings").expect("valid id");
+        apply_all(
+            &[Effect::SetReputation {
+                faction: town,
+                level: engine::shared::ReputationLevel::Accepted,
+            }],
+            &mut app.game,
+        )
+        .expect("the town tracks reputation");
+        let chet = VendorId::try_new("chet").expect("valid id");
+        app.open_shop(&chet);
+        assert!(matches!(app.screen, Screen::Trading { .. }));
+        assert!(
+            screen(&app, 110, 30).contains("25% off for you"),
+            "{}",
+            screen(&app, 110, 30)
+        );
+    }
+
+    #[test]
+    fn a_stranger_pays_the_list_price_in_chets_shop() {
+        let mut app = app();
+        let chet = VendorId::try_new("chet").expect("valid id");
+        app.open_shop(&chet);
+        assert!(!screen(&app, 110, 30).contains("off for you"));
     }
 
     #[test]

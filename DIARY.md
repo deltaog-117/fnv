@@ -1687,6 +1687,53 @@ The clock landed with nothing to heal on it. The question was how the player hea
 
 ---
 
+### Four Features in One Cycle: Standing Prices, a Place on the Map, Timed Boosts and Foes Who Can Be Absent
+
+**Date:** 2026-11-02
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The roadmap's next four items were built together because they meet at the same places: the scene, `Game`, the trade and combat data. Three of them had a real fork, and the choices were made from COAs (the fourth, reputation consumers, had one credible approach). **Travel: B**, the game owns the player's place (rather than the screen owning it, or adding random encounters, which needs data that does not exist). **Timed effects: A**, boosts that expire with the clock and heals over time entered as their total. **Story-dependent fights: A**, enemies who can be absent (rather than real allies, which is the whole "Finish combat" item, or leaving the helpers unused).
+
+---
+
+#### Decision
+
+**A price cut is data, earned by the conditions rules already use.** A vendor record may carry `discount`: a percent from 1 to 90 (`DiscountPercent`, bounded by construction) and `when` conditions, any one of which earns it. `Game::buy_price_from` prices a purchase at a given vendor and `Game::buy` charges exactly that; `buy_price` stays the list price, and selling is never cut. The cut is applied to the whole line before the single rounding, so a stack of cheap items is not rounded up one by one. Chet and Trudy get 25% for "Accepted or better, or Mixed". The wiki gives no percentage (only "special discount" and "wholesale prices"); 25% is the roadmap's figure and is marked as a stand-in. Their shop dialogue topics use the only transcript lines that exist, the positive-reputation ones, so they are shown only to such a player. The reputation screen reads the standing from the game on every draw and holds only a cursor.
+
+**The player's place lives in `Game`.** `TravelBook` turns the derived neighbor links into a two-way map checked once at load (every link joins two places that exist, over a finite distance above zero); `Game::travel` moves the player and advances the clock by the walk, or does neither. The pace is two minutes a map pixel, rounded up and never zero, so the cave is 72 minutes from Goodsprings. This is a stand-in: the wiki gives no speed. The screen's own "where am I" field is kept for names and lookups only and a test checks it agrees with `Game::at`. The loaded data has people and shops only for Goodsprings, so the places around it are empty; arriving looks up everything again, so the data can grow without touching the screen.
+
+**Boosts end by themselves, and the clock has one door.** `ActiveEffects` keeps each boost with the minute it ends; nothing in force ends at or before the time it was last expired to, a new dose of an item replaces the last (it does not stack), and the tally is exactly the sum of what is in force. All time passes through `Game::wait`, which sleeping and travelling also call, so there is one place where boosts end. `Character` reads a `BoostTally` for attributes, skills, maximum hit points, action points and carry weight, and never changes what the player earned, so ending a boost puts back exactly what was there. A chem's damage resistance adds to the armor's when a fight is prepared. A boost to maximum hit points is a loan: the wounds stay, so the extra hit points go with it, and the repayment cannot kill (the player keeps at least one hit point). A first version kept the boosted hit points instead of the earned ones; a property test of the loan law caught it before it reached the screen.
+
+**Heals over time are entered as their total.** The clock counts minutes and no heal in the data runs longer than one, so spreading a heal across ticks would be machinery for a case the data does not have. Effects the wiki gives in seconds are rounded up to one minute (healing powder's 18 seconds of -1 Perception becomes a minute). Only items whose whole text is modeled are listed: twelve now. Anything that adds radiation, poisons or changes damage dealt stays unlisted, and chems are usable without their addiction chance until addiction exists. The assertion that healing powder is unlisted was a statement of the old placeholder, so it now states the new truth.
+
+**A foe can be absent.** A foe may carry `when` conditions and is in the fight only while they hold; an encounter must keep at least one foe with none (checked when the arsenal is built, so a fight with nobody in it cannot exist). The wiki says six attack the town (five if Cobb is dead), so the Ghost Town Gunfight has Cobb and two gangers always, and three more unless Trudy joined the militia, Easy Pete joined, or Chet supplied it. A town that did all three faces the old three; one that did nothing faces six. Which helper removes which ganger is a stand-in. The two Run Goodsprings Run fights use the same field and the same machinery; defenders' loadouts and hit points are stand-ins, and winning the militia fight kills Sunny, Easy Pete and Trudy (so Trudy's saloon stops trading), while Chet and Doc live, as the wiki says.
+
+**Left out for now:** real allies in combat; random encounters on the road; radiation, poison and addiction; the other per-faction reputation consequences; crafting (so the campfire quest's stage 30 stays); and Victor and the other settlers as defenders.
+
+---
+
+#### References
+
+- `crates/engine/src/trade/`, `crates/engine/src/travel/`, `crates/engine/src/effects/`, `crates/engine/src/shared/boost.rs`, `crates/engine/src/game/` (`state.rs`, `battle.rs`), `crates/engine/src/character/sheet.rs`
+- `crates/engine/tests/trade/discount.rs`, `crates/engine/tests/travel/`, `crates/engine/tests/effects/`, `crates/engine/tests/game/boosts.rs`, `crates/engine/tests/game/battle.rs`, `crates/engine/benches/travel.rs`, `crates/engine/benches/effects.rs`
+- `crates/tui/src/` (`app.rs`, `reputation/`, `travel/`, `quests/journal.rs`, `exploration/`, `inventory/`, `trade/`)
+- `data/vendors/`, `data/combat/`, `data/items/`, `data/dialogue/slice_goodsprings.json`, `data/quests/slice_goodsprings.json`, `schemas/` (`vendor`, `encounter`, `item`)
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-02 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

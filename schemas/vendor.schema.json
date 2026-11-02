@@ -54,6 +54,27 @@
           }
         }
       }
+    },
+    "discount": {
+      "description": "A price cut for a player in good standing: the percent off what the player pays, while at least one of the conditions holds (always, when there are none).",
+      "type": "object",
+      "required": [
+        "percent"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "percent": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 90
+        },
+        "when": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/condition"
+          }
+        }
+      }
     }
   }
 }

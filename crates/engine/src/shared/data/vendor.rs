@@ -4,7 +4,21 @@ use std::num::NonZeroU32;
 
 use serde::Deserialize;
 
-use crate::shared::{ItemId, LocationId, NpcId, VendorId};
+use crate::shared::{Condition, DiscountPercent, ItemId, LocationId, NpcId, VendorId};
+
+/// A cut in the price the player pays, while the player's standing earns it.
+///
+/// The percentages and the standings come from the wiki's reputation notes, so
+/// they are authored per vendor and read with the same conditions rules use.
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct Discount {
+    /// How much is taken off what the player pays.
+    pub percent: DiscountPercent,
+    /// At least one must hold for the cut to apply; empty means always.
+    #[serde(default)]
+    pub when: Vec<Condition>,
+}
 
 /// One line of a vendor's stock.
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize)]
@@ -36,4 +50,6 @@ pub struct Vendor {
     /// What the vendor starts with; an item appears once.
     #[serde(default)]
     pub stock: Vec<StockLine>,
+    /// A price cut for a player in good standing, if the vendor gives one.
+    pub discount: Option<Discount>,
 }

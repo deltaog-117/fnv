@@ -32,8 +32,9 @@ fn wait_span(hours: u32) -> Option<Span> {
     NonZeroU32::new(hours).map(Span::hours)
 }
 
-/// The rows that are always there: "character", "pack", the waits and "quit".
-const EXTRA_ROWS: usize = 3 + WAITS.len();
+/// The rows that are always there: "character", "pack", the journal, reputation,
+/// travel, the waits and "quit".
+const EXTRA_ROWS: usize = 6 + WAITS.len();
 
 /// What the player's command led to.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -52,6 +53,12 @@ pub enum Next {
     Character,
     /// Open the pack screen.
     Pack,
+    /// Open the quest journal.
+    Journal,
+    /// Open the reputation screen.
+    Reputation,
+    /// Open the travel screen.
+    Travel,
     /// Let this much time pass, and say what it was in `label`.
     Wait {
         /// How long.
@@ -64,8 +71,8 @@ pub enum Next {
 }
 
 /// The place and the actions it offers: one "talk to" per person, one per shop, one
-/// per fight on offer, one per bed, the character screen, the pack, the waits, then
-/// quit.
+/// per fight on offer, one per bed, the character screen, the pack, the journal,
+/// reputation, travel, the waits, then quit.
 #[derive(Debug)]
 pub struct Exploration {
     place: String,
@@ -81,8 +88,8 @@ impl Exploration {
     /// The scene for `place` with `people` to talk to.
     #[must_use]
     pub fn new(place: String, people: Vec<Person>) -> Self {
-        // The extra rows are "character", "pack", the waits and "quit", so the menu is
-        // never empty.
+        // The extra rows are "character", "pack", the journal, reputation, travel, the
+        // waits and "quit", so the menu is never empty.
         let menu = Menu::new(people.len() + EXTRA_ROWS);
         Self {
             place,
@@ -120,7 +127,7 @@ impl Exploration {
     }
 
     /// Everything the menu offers: the listed actions plus "character", "pack", the
-    /// waits and "quit".
+    /// journal, reputation, travel, the waits and "quit".
     fn rows(&self) -> usize {
         self.people.len() + self.shops.len() + self.fights.len() + self.beds.len() + EXTRA_ROWS
     }
@@ -145,10 +152,13 @@ impl Exploration {
             Some(index) if index < beds_end => Next::Sleep(index - fights_end),
             Some(index) if index == beds_end => Next::Character,
             Some(index) if index == beds_end + 1 => Next::Pack,
+            Some(index) if index == beds_end + 2 => Next::Journal,
+            Some(index) if index == beds_end + 3 => Next::Reputation,
+            Some(index) if index == beds_end + 4 => Next::Travel,
             Some(index) if index + 1 == self.rows() => Next::Quit,
             // A row no arm names cannot be reached; staying is the harmless answer.
             Some(index) => index
-                .checked_sub(beds_end + 2)
+                .checked_sub(beds_end + 5)
                 .and_then(|n| WAITS.get(n))
                 .and_then(|&(label, hours)| wait_span(hours).map(|span| Next::Wait { span, label }))
                 .unwrap_or(Next::Stay),
@@ -173,7 +183,13 @@ impl Exploration {
                     .iter()
                     .map(|name| Item::new(format!("Sleep in {name}"))),
             )
-            .chain([Item::new(self.character.clone()), Item::new("Pack")])
+            .chain([
+                Item::new(self.character.clone()),
+                Item::new("Pack"),
+                Item::new("Journal"),
+                Item::new("Reputation"),
+                Item::new("Travel"),
+            ])
             .chain(WAITS.iter().map(|&(label, _)| Item::new(label)))
             .chain([Item::new("Quit game")])
             .collect();
@@ -226,24 +242,27 @@ mod tests {
     }
 
     #[test]
-    fn the_waits_come_after_the_pack_and_before_the_last_row_which_quits() {
+    fn the_journal_reputation_and_travel_follow_the_pack_then_the_waits_then_quit() {
         let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")]);
         assert_eq!(scene.update(Command::Pick(2)), Next::Pack);
+        assert_eq!(scene.update(Command::Pick(3)), Next::Journal);
+        assert_eq!(scene.update(Command::Pick(4)), Next::Reputation);
+        assert_eq!(scene.update(Command::Pick(5)), Next::Travel);
         assert_eq!(
-            scene.update(Command::Pick(3)),
+            scene.update(Command::Pick(6)),
             Next::Wait {
                 span: Span::hours(NonZeroU32::MIN),
                 label: "Wait an hour"
             }
         );
         assert!(matches!(
-            scene.update(Command::Pick(4)),
+            scene.update(Command::Pick(7)),
             Next::Wait {
                 label: "Wait 8 hours",
                 ..
             }
         ));
-        assert_eq!(scene.update(Command::Pick(5)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(8)), Next::Quit);
     }
 
     #[test]
@@ -267,7 +286,7 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(1)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(2)), Next::Character);
         assert_eq!(scene.update(Command::Pick(3)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(6)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(9)), Next::Quit);
     }
 
     #[test]
@@ -279,7 +298,7 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(2)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(3)), Next::Character);
         assert_eq!(scene.update(Command::Pick(4)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(7)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(10)), Next::Quit);
     }
 
     #[test]
@@ -292,13 +311,13 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(3)), Next::Character);
         assert_eq!(scene.update(Command::Pick(4)), Next::Pack);
         assert!(matches!(
-            scene.update(Command::Pick(5)),
+            scene.update(Command::Pick(8)),
             Next::Wait {
                 label: "Wait an hour",
                 ..
             }
         ));
-        assert_eq!(scene.update(Command::Pick(7)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(10)), Next::Quit);
     }
 
     #[test]
@@ -306,6 +325,6 @@ mod tests {
         let mut scene = Exploration::new("Nowhere".to_owned(), Vec::new());
         assert_eq!(scene.update(Command::Select), Next::Character);
         assert_eq!(scene.update(Command::Pick(1)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(4)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(7)), Next::Quit);
     }
 }

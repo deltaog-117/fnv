@@ -43,6 +43,45 @@
     "weapon": "9mm_pistol",
     "armor": "powder_gang_plain_outfit",
     "hp": 30
+   },
+   {
+    "npc": "powder_ganger",
+    "weapon": "9mm_pistol",
+    "armor": "powder_gang_plain_outfit",
+    "hp": 30,
+    "when": [
+     {
+      "type": "flag",
+      "flag": "trudy_joined_militia",
+      "value": false
+     }
+    ]
+   },
+   {
+    "npc": "powder_ganger",
+    "weapon": "9mm_pistol",
+    "armor": "powder_gang_plain_outfit",
+    "hp": 30,
+    "when": [
+     {
+      "type": "flag",
+      "flag": "easy_pete_joined_militia",
+      "value": false
+     }
+    ]
+   },
+   {
+    "npc": "powder_ganger",
+    "weapon": "9mm_pistol",
+    "armor": "powder_gang_plain_outfit",
+    "hp": 30,
+    "when": [
+     {
+      "type": "flag",
+      "flag": "chet_supplied_militia",
+      "value": false
+     }
+    ]
    }
   ],
   "on_win": [
@@ -53,6 +92,123 @@
    {
     "type": "set_stage",
     "quest": "ghost_town_gunfight",
+    "stage": 70
+   }
+  ]
+ },
+ {
+  "id": "kill_ringo",
+  "name": "Kill Ringo at the gas station",
+  "place": "goodsprings",
+  "requires": [
+   {
+    "type": "quest",
+    "quest": "run_goodsprings_run",
+    "state": "active"
+   },
+   {
+    "type": "quest",
+    "quest": "run_goodsprings_run",
+    "state": "stage_at_least",
+    "stage": 10
+   },
+   {
+    "type": "not",
+    "of": {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "stage_at_least",
+     "stage": 15
+    }
+   }
+  ],
+  "foes": [
+   {
+    "npc": "ringo",
+    "weapon": "9mm_pistol",
+    "armor": "leather_armor",
+    "hp": 40
+   }
+  ],
+  "on_win": [
+   {
+    "type": "kill_npc",
+    "npc": "ringo"
+   },
+   {
+    "type": "set_stage",
+    "quest": "run_goodsprings_run",
+    "stage": 15
+   }
+  ]
+ },
+ {
+  "id": "take_over_goodsprings",
+  "name": "Attack the Goodsprings militia",
+  "place": "goodsprings",
+  "requires": [
+   {
+    "type": "quest",
+    "quest": "run_goodsprings_run",
+    "state": "active"
+   },
+   {
+    "type": "quest",
+    "quest": "run_goodsprings_run",
+    "state": "stage_at_least",
+    "stage": 60
+   },
+   {
+    "type": "not",
+    "of": {
+     "type": "quest",
+     "quest": "run_goodsprings_run",
+     "state": "stage_at_least",
+     "stage": 70
+    }
+   }
+  ],
+  "foes": [
+   {
+    "npc": "sunny_smiles",
+    "weapon": "varmint_rifle",
+    "armor": "leather_armor",
+    "hp": 30
+   },
+   {
+    "npc": "easy_pete",
+    "weapon": "9mm_pistol",
+    "hp": 25
+   },
+   {
+    "npc": "trudy",
+    "weapon": "hunting_shotgun",
+    "hp": 35,
+    "when": [
+     {
+      "type": "flag",
+      "flag": "chet_shaken_down",
+      "value": false
+     }
+    ]
+   }
+  ],
+  "on_win": [
+   {
+    "type": "kill_npc",
+    "npc": "sunny_smiles"
+   },
+   {
+    "type": "kill_npc",
+    "npc": "easy_pete"
+   },
+   {
+    "type": "kill_npc",
+    "npc": "trudy"
+   },
+   {
+    "type": "set_stage",
+    "quest": "run_goodsprings_run",
     "stage": 70
    }
   ]

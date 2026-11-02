@@ -20,11 +20,11 @@ pub use dialogue::{Dialogue, Response, Topic, TopicSection};
 pub use encounter::{Encounter, Foe};
 pub use faction::{Faction, FactionKind, InfoValue, ReputationModel, ReputationNote};
 pub use item::{
-    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Consumable, ItemKind, ItemUse, StatEffect,
-    Weapon, WeaponClass,
+    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, BoostUse, Consumable, ItemKind, ItemUse,
+    StatEffect, Weapon, WeaponClass,
 };
 pub use location::{Location, LocationSize, MapKind, Neighbor, Position};
 pub use npc::{Npc, NpcSpecial};
 pub use perk::{Perk, PerkRequirements, Trait};
 pub use quest::{Quest, QuestKind, Rule, RuleKind, RuleTargetType, Stage, WalkthroughNode};
-pub use vendor::{StockLine, Vendor};
+pub use vendor::{Discount, StockLine, Vendor};

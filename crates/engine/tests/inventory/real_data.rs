@@ -54,9 +54,16 @@ fn the_authored_uses_reach_the_book() {
         .iter()
         .filter(|c| c.on_use.is_some())
         .count();
-    assert_eq!(modeled, 4, "uses.json lists four items");
+    assert_eq!(modeled, 16, "uses.json lists four heals and twelve boosts");
     for consumable in data.consumables.iter() {
         assert_eq!(book.item_use(&consumable.id), consumable.on_use);
     }
-    assert_eq!(book.item_use(&item("healing_powder")), None);
+    // Healing powder was unlisted while its Perception penalty was not carried.
+    let Some(ItemUse::Boost(powder)) = book.item_use(&item("healing_powder")) else {
+        panic!("healing powder is a boost item now");
+    };
+    assert_eq!(powder.heal.map(std::num::NonZeroU32::get), Some(18));
+    assert_eq!(powder.effects.len(), 1);
+    // Anything that adds radiation or poisons stays unlisted.
+    assert_eq!(book.item_use(&item("dark_datura")), None);
 }

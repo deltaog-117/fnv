@@ -380,7 +380,26 @@
     }
    ],
    "topic": "VFreeformGoodspringsGoodspringsChetTopic000",
-   "prompt": "Show me what you have for sale."
+   "prompt": "Show me what you have for sale.",
+   "conditions": [
+    {
+     "type": "any",
+     "of": [
+      {
+       "type": "reputation",
+       "faction": "goodsprings",
+       "level": "accepted"
+      },
+      {
+       "type": "reputation",
+       "faction": "goodsprings",
+       "level": "mixed",
+       "op": "is"
+      }
+     ]
+    }
+   ],
+   "shop": "chet"
   },
   {
    "key": "vfreeformgoodspringsgoodspringschettopic001",
@@ -561,6 +580,7 @@
   "vfreeformgoodspringsgschettopic008",
   "vfreeformgoodspringsgoodspringschettopic002",
   "vfreeformgoodspringsgoodspringschettopic006",
+  "vfreeformgoodspringsgoodspringschettopic000",
   "goodbye"
  ],
  "speaker": "chet"

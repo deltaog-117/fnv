@@ -58,6 +58,12 @@ impl Standing {
         self.karma
     }
 
+    /// The factions and towns that track reputation, by id order, with the name the
+    /// player sees.
+    pub fn factions(&self) -> impl Iterator<Item = (&FactionId, &str)> {
+        self.book.iter().map(|(id, model)| (id, model.name()))
+    }
+
     /// The title the player carries with a faction, for a faction that tracks
     /// reputation.
     #[must_use]

@@ -122,3 +122,16 @@ fn forcing_a_standing_uses_the_fewest_points_that_reach_it() {
     assert_eq!(model.points_for(ReputationLevel::Vilified), (0.0, 15.0));
     assert_eq!(model.points_for(ReputationLevel::Mixed), (3.0, 3.0));
 }
+
+#[test]
+fn the_standing_lists_every_modeled_faction_once_in_id_order() {
+    let records = [
+        crate::support::modeled("zeta", [0, 5, 10, 20]),
+        crate::support::modeled("alpha", [0, 5, 10, 20]),
+        crate::support::plain("gang"),
+    ];
+    let book = engine::reputation::ReputationBook::new(&records).expect("the records build");
+    let standing = engine::reputation::Standing::new(std::sync::Arc::new(book));
+    let listed: Vec<&str> = standing.factions().map(|(id, _)| id.as_str()).collect();
+    assert_eq!(listed, ["alpha", "zeta"]);
+}

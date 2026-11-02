@@ -160,3 +160,47 @@ fn every_shop_topic_names_a_vendor_that_exists() {
         }
     }
 }
+
+#[test]
+fn chet_and_trudy_offer_their_shops_only_to_a_player_the_town_likes() {
+    let data = data();
+    let book = Arc::new(DialogueBook::new(data.dialogue.iter()).expect("book builds"));
+    let reputation = Arc::new(
+        engine::reputation::ReputationBook::from_data(&data).expect("the reputation book builds"),
+    );
+    let town = engine::shared::FactionId::try_new("goodsprings").expect("valid id");
+    let cases = [
+        (
+            "gschet",
+            "vfreeformgoodspringsgoodspringschettopic000",
+            "chet",
+        ),
+        (
+            "gstrudy",
+            "vfreeformgoodspringsgoodspringsrubytopic007",
+            "trudy",
+        ),
+    ];
+    for (who, topic, vendor) in cases {
+        let stranger = game(&data).with_reputation(Arc::clone(&reputation));
+        let talk = Conversation::open(Arc::clone(&book), &dialogue_id(who)).expect("they exist");
+        assert!(
+            !keys(&talk.choices(&stranger)).contains(&topic),
+            "{who} offers a stranger the shop"
+        );
+
+        let mut friend = stranger.clone();
+        let level = Effect::SetReputation {
+            faction: town.clone(),
+            level: engine::shared::ReputationLevel::Accepted,
+        };
+        apply_all(&[level], &mut friend).expect("the town tracks reputation");
+        let mut talk = Conversation::open(Arc::clone(&book), &dialogue_id(who)).expect("exists");
+        assert!(keys(&talk.choices(&friend)).contains(&topic), "{who}");
+        let reply = talk.choose(&mut friend, &key(topic)).expect("on offer");
+        assert_eq!(
+            reply.shop.as_ref().map(engine::shared::VendorId::as_str),
+            Some(vendor)
+        );
+    }
+}
