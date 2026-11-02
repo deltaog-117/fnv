@@ -2,7 +2,7 @@
 //! and the enemies answer in the log.
 
 use engine::combat::{
-    Combat, Combatant, Dice, FighterId, FlatHitChance, Power, Resolution, Side, Status, Strike,
+    AimedHitChance, Combat, Combatant, Dice, FighterId, Power, Resolution, Side, Status, Strike,
 };
 use engine::game::{Battle, Fighter, Game, Outcome};
 use ratatui::Frame;
@@ -250,7 +250,7 @@ impl Fight {
     }
 
     /// Why the player cannot shoot right now, if they cannot.
-    fn shot_refusal(&self, combat: &Combat<Fighter, FlatHitChance>) -> Option<&'static str> {
+    fn shot_refusal(&self, combat: &Combat<Fighter, AimedHitChance>) -> Option<&'static str> {
         let who = combat.combatant(combat.active())?;
         if who.attack().ap_cost.get() > combat.ap_left() {
             return Some("not enough AP");
@@ -262,7 +262,7 @@ impl Fight {
 }
 
 /// Names in turn order, numbering fighters that share one ("Powder Ganger 1").
-fn names(combat: &Combat<Fighter, FlatHitChance>) -> Vec<String> {
+fn names(combat: &Combat<Fighter, AimedHitChance>) -> Vec<String> {
     let all: Vec<&str> = combat
         .ids()
         .filter_map(|id| combat.combatant(id))

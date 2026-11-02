@@ -570,3 +570,112 @@ fn a_chems_resistance_adds_to_the_armor_in_the_next_fight_and_ends_with_the_chem
     game.wait(Span::minutes(four)).expect("time passes");
     assert_eq!(resistance(&game), bare);
 }
+
+/// Makes `shots` attacks that all miss, while the foes' fire always hits, so the
+/// fight is lost and a win never takes the encounter off offer.
+fn miss_and_lose(battle: &mut Battle, shots: u32) {
+    for _ in 0..shots {
+        if battle.combat().status() != Status::Ongoing {
+            return;
+        }
+        let target = battle
+            .combat()
+            .ids()
+            .find(|&id| {
+                battle.combat().side(id) == Some(Side::Enemy) && battle.combat().is_standing(id)
+            })
+            .expect("a foe stands while the fight goes on");
+        let missed = battle.attack(target, Power::Normal, &mut Always(100));
+        if missed.is_err() && battle.reload().is_err() {
+            battle.end_turn(&mut Always(1)).expect("the fight goes on");
+        }
+    }
+    play(battle, &mut Always(1), true);
+}
+
+#[test]
+fn a_new_weapon_is_whole_and_wears_with_every_shot_fired() {
+    let mut game = dressed_game();
+    let pistol = item("9mm_pistol");
+    assert_eq!(game.weapon_condition(&pistol).map(|p| p.get()), Some(100));
+
+    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    miss_and_lose(&mut battle, 1);
+    assert_eq!(battle.shots(), 1);
+    assert_eq!(battle.combat().status(), Status::Won(Side::Enemy));
+    game.finish_battle(&battle).expect("the fight settles");
+    let left = game
+        .weapon_condition(&pistol)
+        .map(|p| p.get())
+        .expect("it wears");
+    assert!(left < 100, "one shot should show: {left}");
+}
+
+#[test]
+fn a_worn_weapon_hits_for_less_and_the_wear_comes_into_the_next_fight() {
+    let mut game = dressed_game();
+    let pistol = item("9mm_pistol");
+    let fresh = {
+        let fight = game.start_battle(&gunfight()).expect("the fight starts");
+        let you = fight
+            .combat()
+            .combatant(fight.player())
+            .expect("the player");
+        you.attack().condition.get()
+    };
+    assert_eq!(fresh, 1.0);
+
+    for _ in 0..40 {
+        let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+        miss_and_lose(&mut battle, 20);
+        game.finish_battle(&battle).expect("the fight settles");
+        game.heal(1_000_000);
+    }
+    let left = game
+        .weapon_condition(&pistol)
+        .map(|p| p.get())
+        .expect("it wears");
+    assert!(left < 100);
+    let worn = game.start_battle(&gunfight()).expect("the fight starts");
+    let you = worn.combat().combatant(worn.player()).expect("the player");
+    assert!(you.attack().condition.get() < 1.0);
+    assert!(you.attack().condition.get() >= 0.5);
+}
+
+#[test]
+fn only_a_weapon_that_wears_has_a_condition() {
+    let game = armed_game();
+    assert_eq!(game.weapon_condition(&item("leather_armor")), None);
+    assert_eq!(game.weapon_condition(&item("no_such_thing")), None);
+}
+
+#[test]
+fn every_fighter_can_pay_for_a_reload_inside_one_turn() {
+    let game = dressed_game();
+    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let combat = battle.combat();
+    for id in combat.ids() {
+        let fighter = combat.combatant(id).expect("a fighter");
+        if let Some(magazine) = fighter.magazine() {
+            assert!(
+                magazine.reload_ap.get() <= fighter.max_ap(),
+                "{} could never reload",
+                fighter.name()
+            );
+        }
+    }
+}
+
+#[test]
+fn the_players_chance_in_the_real_fight_comes_from_skill_and_the_pistols_spread() {
+    use engine::combat::{AimedHitChance, HitModel};
+    let game = dressed_game();
+    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let combat = battle.combat();
+    let you = combat.combatant(battle.player()).expect("the player");
+    let foe = combat
+        .combatant(combat.ids().nth(1).expect("a foe"))
+        .expect("a foe");
+    // Guns 15 and a 0.7 spread: 40 + 15 / 2 - 0.7 * 3 = 45.4.
+    assert_eq!(AimedHitChance.chance(you, foe).get(), 45);
+}

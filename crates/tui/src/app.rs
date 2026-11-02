@@ -6,6 +6,7 @@
 
 use std::collections::HashMap;
 use std::num::NonZeroU32;
+use std::path::PathBuf;
 use std::sync::Arc;
 
 use anyhow::Context;
@@ -17,6 +18,7 @@ use engine::inventory::{ItemBook, Slot};
 use engine::quests::QuestBook;
 use engine::reputation::ReputationBook;
 use engine::rest::{BedBook, FULL_REST_HOURS};
+use engine::saves::Save;
 use engine::shared::{
     BedId, Effect, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage, VendorId,
     apply_all,
@@ -55,6 +57,19 @@ const OPENING_STAGE: u32 = 10;
 /// is not fair.
 const START_WEAPON: &str = "9mm_pistol";
 const START_ARMOR: &str = "leather_armor";
+
+/// Where the game is saved: the user's data folder, or the working folder when the
+/// environment names none.
+fn default_save_path() -> PathBuf {
+    let base = std::env::var_os("XDG_DATA_HOME")
+        .map(PathBuf::from)
+        .filter(|path| path.is_absolute())
+        .or_else(|| {
+            std::env::var_os("HOME").map(|home| PathBuf::from(home).join(".local").join("share"))
+        })
+        .unwrap_or_default();
+    base.join("fnv").join("save.json")
+}
 
 enum Screen {
     /// Making the character, before the first scene.
@@ -169,6 +184,8 @@ pub struct App {
     screen: Screen,
     log: Log,
     dice: Rng,
+    /// The one file the game is saved to and loaded from.
+    save_path: PathBuf,
     running: bool,
 }
 
@@ -249,10 +266,20 @@ impl App {
             people,
             log,
             dice,
+            save_path: default_save_path(),
             running: true,
         };
         app.screen = app.exploring();
         Ok(app)
+    }
+
+    /// The same app saving to and loading from `path`; tests use it to keep the
+    /// player's own save out of reach.
+    #[cfg(test)]
+    #[must_use]
+    pub fn with_save_path(mut self, path: PathBuf) -> Self {
+        self.save_path = path;
+        self
     }
 
     /// The same app, starting at the character creation screen. The game is the
@@ -308,6 +335,8 @@ impl App {
                 exploration::Next::Travel => {
                     self.screen = Screen::Traveling(Travel::open(&self.game));
                 }
+                exploration::Next::Save => self.save_game(),
+                exploration::Next::Load => self.load_game(),
             },
             Screen::Journaling(journal) => {
                 if journal.update(command) == quests::Next::Leave {
@@ -476,6 +505,43 @@ impl App {
                 )));
             }
             Err(error) => self.log.push(Entry::Note(error.to_string())),
+        }
+        self.screen = self.exploring();
+    }
+
+    /// Writes the game to the save file and says how it went. The write replaces the
+    /// file whole or not at all, so a failure keeps the old save.
+    fn save_game(&mut self) {
+        let note = match self.game.save().write(&self.save_path) {
+            Ok(()) => format!("Game saved to {}.", self.save_path.display()),
+            Err(error) => format!("Could not save: {error}"),
+        };
+        self.log.push(Entry::Note(note));
+        self.screen = self.exploring();
+    }
+
+    /// Replaces the game with the saved one, if the file loads. A file that is
+    /// missing, damaged or from another version leaves the game as it is. Loading
+    /// moves the player, so the scene's people and shops are looked up again.
+    fn load_game(&mut self) {
+        let loaded = Save::read(&self.save_path)
+            .and_then(|save| self.game.restore(&save))
+            .map_err(|error| format!("Could not load: {error}"));
+        match loaded {
+            Ok(game) => {
+                let place = game.at().cloned().unwrap_or_else(|| self.place_id.clone());
+                self.game = game;
+                self.here = self.places.here(&place);
+                self.people = self.places.people(&self.here);
+                self.place = self.places.name(&place);
+                self.place_id = place;
+                self.log.push(Entry::Note(format!(
+                    "Game loaded. You are in {}. It is {}.",
+                    self.place,
+                    self.game.clock()
+                )));
+            }
+            Err(note) => self.log.push(Entry::Note(note)),
         }
         self.screen = self.exploring();
     }
@@ -730,7 +796,7 @@ mod tests {
 
     #[test]
     fn the_first_frame_shows_the_place_the_people_the_quest_and_the_keys() {
-        let text = screen(&app(), 100, 34);
+        let text = screen(&app(), 100, 40);
         for expected in [
             "You are in Goodsprings",
             "Talk to Doc Mitchell",
@@ -746,9 +812,9 @@ mod tests {
     #[test]
     fn the_pack_opens_from_the_scene_shows_the_worn_armor_and_leaves_again() {
         let mut app = app();
-        // The cursor wraps up from the first row to Quit; the two waits, travel,
-        // reputation and the journal sit between it and Pack.
-        for _ in 0..7 {
+        // The cursor wraps up from the first row to Quit; save, load, the two waits,
+        // travel, reputation and the journal sit between it and Pack.
+        for _ in 0..9 {
             app.update(Command::Up);
         }
         app.update(Command::Select);
@@ -935,9 +1001,11 @@ mod tests {
     #[test]
     fn waiting_moves_the_clock_and_the_log_says_when_it_is_now() {
         let mut app = app();
-        // The cursor wraps up from the first row to Quit; the 8-hour wait is above it.
-        app.update(Command::Up);
-        app.update(Command::Up);
+        // The cursor wraps up from the first row to Quit; load and save sit above it,
+        // then the 8-hour wait.
+        for _ in 0..4 {
+            app.update(Command::Up);
+        }
         app.update(Command::Select);
         assert_eq!(app.game.clock().to_string(), "Day 1, 16:00");
         let text = screen(&app, 100, 30);
@@ -1382,6 +1450,91 @@ mod tests {
         app.update(Command::Pick(0));
         app.update(Command::Back);
         assert!(app.is_running());
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    /// A folder of its own for one test, removed afterwards.
+    struct Scratch(PathBuf);
+
+    impl Scratch {
+        fn new(name: &str) -> Self {
+            Self(std::env::temp_dir().join(format!("fnv-tui-{name}-{}", std::process::id())))
+        }
+
+        fn file(&self) -> PathBuf {
+            self.0.join("save.json")
+        }
+    }
+
+    impl Drop for Scratch {
+        fn drop(&mut self) {
+            std::fs::remove_dir_all(&self.0).ok();
+        }
+    }
+
+    #[test]
+    fn saving_writes_the_file_and_the_log_says_where() {
+        let scratch = Scratch::new("save");
+        let mut app = app().with_save_path(scratch.file());
+        choose_row(&mut app, "Save game");
+        assert!(scratch.file().is_file());
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("Game saved to"), "{text}");
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    #[test]
+    fn loading_brings_back_the_saved_time_and_the_log_says_so() {
+        let scratch = Scratch::new("load");
+        let mut app = app().with_save_path(scratch.file());
+        choose_row(&mut app, "Save game");
+        choose_row(&mut app, "Wait 8 hours");
+        assert_eq!(app.game.clock().to_string(), "Day 1, 16:00");
+        choose_row(&mut app, "Load game");
+        assert_eq!(app.game.clock().to_string(), "Day 1, 08:00");
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("Game loaded."), "{text}");
+    }
+
+    #[test]
+    fn loading_puts_the_scene_back_where_the_save_was_made() {
+        let scratch = Scratch::new("place");
+        let mut app = app().with_save_path(scratch.file());
+        choose_row(&mut app, "Save game");
+        let home = app.place_id.clone();
+        let people_at_home = app.people.len();
+        let away = app.game.routes()[0].to.clone();
+        app.travel_to(&away);
+        assert_eq!(app.place_id, away);
+        choose_row(&mut app, "Load game");
+        assert_eq!(app.place_id, home);
+        assert_eq!(app.people.len(), people_at_home);
+        assert_eq!(app.game.at(), Some(&home));
+    }
+
+    #[test]
+    fn loading_with_no_save_says_so_and_changes_nothing() {
+        let scratch = Scratch::new("none");
+        let mut app = app().with_save_path(scratch.file());
+        choose_row(&mut app, "Wait an hour");
+        let before = app.game.save();
+        choose_row(&mut app, "Load game");
+        assert_eq!(app.game.save(), before);
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("Could not load"), "{text}");
+    }
+
+    #[test]
+    fn a_damaged_save_is_refused_and_the_game_goes_on() {
+        let scratch = Scratch::new("damaged");
+        std::fs::create_dir_all(&scratch.0).expect("the folder is made");
+        std::fs::write(scratch.file(), "{ not a save").expect("the file is written");
+        let mut app = app().with_save_path(scratch.file());
+        let before = app.game.save();
+        choose_row(&mut app, "Load game");
+        assert_eq!(app.game.save(), before);
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("Could not load"), "{text}");
         assert!(matches!(app.screen, Screen::Exploring(_)));
     }
 }

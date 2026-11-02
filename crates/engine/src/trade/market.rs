@@ -62,10 +62,57 @@ impl Market {
         Self { book, shops }
     }
 
+    /// A market where every vendor holds what the book says they start with, for
+    /// loading a save over.
+    #[must_use]
+    pub fn refilled(&self) -> Self {
+        Self::new(Arc::clone(&self.book))
+    }
+
     /// The merchants that exist.
     #[must_use]
     pub fn book(&self) -> &VendorBook {
         &self.book
+    }
+
+    /// Every shop in vendor id order.
+    pub fn shops(&self) -> impl Iterator<Item = (&VendorId, &Shop)> {
+        self.shops.iter()
+    }
+
+    /// Replaces a vendor's caps and stock, for loading a save.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError::UnknownVendor`] when the book has no such vendor, and
+    /// [`TradeError::DuplicateStock`] when an item is listed twice. Nothing changes
+    /// on an error.
+    pub fn set_shop(
+        &mut self,
+        vendor: &VendorId,
+        caps: u32,
+        stock: impl IntoIterator<Item = (ItemId, NonZeroU32)>,
+    ) -> Result<(), TradeError> {
+        if !self.shops.contains_key(vendor) {
+            return Err(TradeError::UnknownVendor(vendor.clone()));
+        }
+        let mut listed = BTreeMap::new();
+        for (item, count) in stock {
+            if listed.insert(item.clone(), count).is_some() {
+                return Err(TradeError::DuplicateStock {
+                    vendor: vendor.clone(),
+                    item,
+                });
+            }
+        }
+        self.shops.insert(
+            vendor.clone(),
+            Shop {
+                caps,
+                stock: listed,
+            },
+        );
+        Ok(())
     }
 
     /// A vendor's shop now.

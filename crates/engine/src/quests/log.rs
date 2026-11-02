@@ -83,6 +83,14 @@ impl QuestLog {
             .map(|(quest, progress)| (quest, progress.phase.status()))
     }
 
+    /// Every quest that has been started or shut out, with its status and stage, for
+    /// a save. The order is unspecified.
+    pub fn progress(&self) -> impl Iterator<Item = (&QuestId, QuestStatus, Option<QuestStage>)> {
+        self.progress
+            .iter()
+            .map(|(quest, progress)| (quest, progress.phase.status(), progress.stage))
+    }
+
     fn require_known(&self, quest: &QuestId) -> Result<(), EffectError> {
         if self.book.contains(quest) {
             Ok(())

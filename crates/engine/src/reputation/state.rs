@@ -52,6 +52,13 @@ impl Standing {
         }
     }
 
+    /// A standing over the same factions with no points and neutral karma, for
+    /// loading a save.
+    #[must_use]
+    pub fn emptied(&self) -> Self {
+        Self::new(Arc::clone(&self.book))
+    }
+
     /// The player's karma.
     #[must_use]
     pub fn karma(&self) -> Karma {

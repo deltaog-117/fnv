@@ -1,13 +1,13 @@
 //! The one state that `evaluate` and `apply_all` run against.
 
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
 use std::num::NonZeroU32;
 use std::sync::Arc;
 
-use super::battle::{Arsenal, Battle, BattleError, Outcome};
+use super::battle::{Arsenal, Battle, BattleError, Outcome, WEAR_PER_SHOT};
 use crate::character::{Character, PerkBook, ProgressError};
 use crate::clock::{ClockError, GameClock, Span};
-use crate::combat::{Side, Status};
+use crate::combat::{Condition, Percent, Side, Status};
 use crate::effects::{Active, ActiveEffects};
 use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
@@ -26,6 +26,8 @@ use crate::trade::{
 };
 use crate::travel::{Route, TravelBook, TravelError};
 use crate::world::{WorldBook, WorldState};
+
+mod save;
 
 /// A quest effect that could not run because its feature is not built yet, kept
 /// so the reward is not lost: it can be applied once the feature lands.
@@ -74,6 +76,9 @@ pub struct Game {
     /// Hit points lost and not yet healed. Stored as a loss, so hit points can
     /// never be above the maximum, and a level-up raises them with the maximum.
     wounds: u32,
+    /// Condition points each weapon has lost. Kept per item, so every copy of a
+    /// weapon shares it; a weapon absent here is new.
+    wear: HashMap<ItemId, u32>,
     /// Encounters the player has won; each is offered once.
     won: HashSet<EncounterId>,
     /// Rules already fired, as (quest, index into its rules).
@@ -108,6 +113,7 @@ impl Game {
             map: Arc::default(),
             at: None,
             wounds: 0,
+            wear: HashMap::new(),
             won: HashSet::new(),
             fired: HashSet::new(),
             deferred: Vec::new(),
@@ -443,11 +449,14 @@ impl Game {
             .into_iter()
             .filter_map(|slot| self.inventory.equipped(slot))
             .collect();
+        let wielded = self.inventory.equipped(Slot::Weapon);
+        let weapon_wear = wielded.map_or(0, |weapon| self.wear.get(weapon).copied().unwrap_or(0));
         let player = self.arsenal.player(
             &self.character,
-            self.inventory.equipped(Slot::Weapon),
+            wielded,
             &worn,
             &self.inventory,
+            weapon_wear,
         )?;
         let prepared = self
             .arsenal
@@ -482,6 +491,7 @@ impl Game {
         let mut trial = self.clone();
         trial.wounds = trial.character.max_hp().saturating_sub(hp);
         trial.spend_rounds(battle)?;
+        trial.wear_weapon(battle);
         let outcome = if status == Status::Won(Side::Player) {
             let effects = self
                 .arsenal
@@ -496,6 +506,32 @@ impl Game {
         };
         *self = trial;
         Ok(outcome)
+    }
+
+    /// Wears the weapon the player fought with by the shots they made.
+    fn wear_weapon(&mut self, battle: &Battle) {
+        let Some(weapon) = battle
+            .combat()
+            .combatant(battle.player())
+            .and_then(|fighter| fighter.weapon())
+        else {
+            return;
+        };
+        let Some(max) = self.arsenal.condition_max(weapon) else {
+            return;
+        };
+        let lost = self.wear.get(weapon).copied().unwrap_or(0);
+        let worn = Condition::new(max, lost).worn(battle.shots().saturating_mul(WEAR_PER_SHOT));
+        self.wear.insert(weapon.clone(), worn.lost());
+    }
+
+    /// How much of a weapon's condition is left, from 0 to 100 percent; `None` for an
+    /// item that is not a weapon that wears.
+    #[must_use]
+    pub fn weapon_condition(&self, weapon: &ItemId) -> Option<Percent> {
+        let max = self.arsenal.condition_max(weapon)?;
+        let lost = self.wear.get(weapon).copied().unwrap_or(0);
+        Some(Condition::new(max, lost).percent())
     }
 
     /// Takes the rounds the player fired out of the pack. The rounds in the weapon

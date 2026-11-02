@@ -6,13 +6,13 @@
 
 use std::num::{NonZeroI16, NonZeroU32};
 
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use strum::EnumCount;
 
 use super::vocabulary::{Skill, Special};
 
 /// A number that is neither an attribute nor a skill, which a boost can change.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Deserialize)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]
 #[serde(rename_all = "snake_case")]
 pub enum DerivedStat {
     /// Maximum hit points.
@@ -26,7 +26,7 @@ pub enum DerivedStat {
 }
 
 /// What a boost changes.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Deserialize)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BoostStat {
     /// One S.P.E.C.I.A.L. attribute.

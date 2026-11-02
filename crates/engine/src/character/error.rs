@@ -99,3 +99,72 @@ pub enum CreationError {
     #[error("{0} is not a trait of this game")]
     UnknownTrait(TraitId),
 }
+
+/// A saved character that cannot be real. Nothing is built when one of these is
+/// returned.
+#[derive(Debug, Clone, PartialEq, Eq, Error)]
+pub enum RestoreError {
+    /// The attributes add up to more than a character can have.
+    #[error("the attributes add up to {got}, more than the {max} a character can have")]
+    SpecialTotal {
+        /// The most a character can have.
+        max: u32,
+        /// The sum in the save.
+        got: u32,
+    },
+    /// More skills are tagged than a character may tag.
+    #[error("at most {max} tagged skills, not {got}")]
+    TagCount {
+        /// The most allowed.
+        max: usize,
+        /// How many the save has.
+        got: usize,
+    },
+    /// A skill is tagged twice.
+    #[error("{} is tagged twice", .0.name())]
+    DuplicateTag(Skill),
+    /// A skill has its points listed twice.
+    #[error("{} is listed twice", .0.name())]
+    DuplicateSkill(Skill),
+    /// More traits than a character may have.
+    #[error("at most {max} traits, not {got}")]
+    TooManyTraits {
+        /// The most allowed.
+        max: usize,
+        /// How many the save has.
+        got: usize,
+    },
+    /// A trait is listed twice.
+    #[error("{0} is listed twice")]
+    DuplicateTrait(TraitId),
+    /// The trait is not one the game offers.
+    #[error("{0} is not a trait of this game")]
+    UnknownTrait(TraitId),
+    /// The perk is not one the game offers.
+    #[error("{0} is not a perk of this game")]
+    UnknownPerk(PerkId),
+    /// A perk is listed twice.
+    #[error("{0} is listed twice")]
+    DuplicatePerk(PerkId),
+    /// A perk is taken more times than it has ranks, or zero times.
+    #[error("{perk} cannot be at rank {rank}; its highest rank is {max}")]
+    PerkRank {
+        /// The perk.
+        perk: PerkId,
+        /// The rank in the save.
+        rank: u8,
+        /// The highest rank.
+        max: u8,
+    },
+    /// The perks taken and waiting do not match the levels reached.
+    #[error("the levels reached give {expected} perks, the save accounts for {got}")]
+    PerkPicks {
+        /// Perks the levels reached give.
+        expected: u32,
+        /// Perks taken plus perks waiting in the save.
+        got: u32,
+    },
+    /// A skill has more points spent than it could take.
+    #[error("{} has more points spent than it could take", .0.name())]
+    SkillOverMax(Skill),
+}

@@ -13,8 +13,9 @@ use thiserror::Error;
 
 use crate::character::{Character, CharacterRules, Level, SpecialSet};
 use crate::combat::{
-    AttackProfile, Combat, CombatError, Combatant, Dice, FighterId, FlatHitChance, Magazine,
-    Multiplier, Percent, Points, Power, Reload, Resolution, Rules, StatError, enemy_turns,
+    Aim, AimedHitChance, AttackProfile, Combat, CombatError, Combatant, Condition, Dice, FighterId,
+    Magazine, Multiplier, Percent, Points, Power, Reload, Resolution, Rules, Spread, StatError,
+    enemy_turns,
 };
 use crate::shared::{
     AmmoFamilyId, Armor, BatchError, CharacterView, EffectError, Encounter, EncounterId, Foe,
@@ -22,14 +23,13 @@ use crate::shared::{
     Weapon, WeaponClass,
 };
 
-/// The chance every attack has to hit. A stand-in: the wiki gives no hit-chance
-/// formula, so no weapon spread, skill or range changes it yet.
-const STAND_IN_HIT_CHANCE: u32 = 65;
 /// The most the Luck-based critical chance can reach, from `formulas.json`.
 const CRIT_LUCK_CAP: u32 = 10;
-/// Action points a reload costs. A stand-in: the data gives the reload time in
-/// seconds and no conversion to action points is known, so every weapon pays the same.
-const RELOAD_AP: u32 = 2;
+/// Action points a reload costs when the data lacks the numbers to work it out.
+const FALLBACK_RELOAD_AP: u32 = 2;
+/// Condition points a weapon loses with every shot, hit or miss. A stand-in: the wiki
+/// gives no wear rate.
+pub(super) const WEAR_PER_SHOT: u32 = 1;
 /// A missing attribute on an NPC record reads as the middle of the scale.
 const AVERAGE_SPECIAL: u32 = 5;
 
@@ -129,6 +129,12 @@ struct WeaponStats {
     crit_chance_mult: f64,
     ap_cost: NonZeroU32,
     ammo: Option<AmmoStats>,
+    /// The skill that governs aiming; `None` reads as no skill.
+    skill: Option<Skill>,
+    spread: Spread,
+    reload_ap: NonZeroU32,
+    /// Condition points when new; `None` for a weapon that does not wear.
+    condition_max: Option<NonZeroU32>,
 }
 
 /// What a weapon fires and how many rounds it holds, checked once.
@@ -156,8 +162,11 @@ pub struct Fighter {
     dr: Points,
     crit_chance: Percent,
     attack: AttackProfile,
+    aim: Aim,
     magazine: Option<Magazine>,
     ammo_item: Option<ItemId>,
+    /// The weapon in hand, when the game tracks its wear.
+    weapon: Option<ItemId>,
 }
 
 impl Fighter {
@@ -173,6 +182,12 @@ impl Fighter {
     #[must_use]
     pub fn ammo_item(&self) -> Option<&ItemId> {
         self.ammo_item.as_ref()
+    }
+
+    /// The weapon in hand, when its wear is tracked: the player's, never a foe's.
+    #[must_use]
+    pub fn weapon(&self) -> Option<&ItemId> {
+        self.weapon.as_ref()
     }
 
     /// Rounds the pack held when the fight began; `None` when the pack is not tracked.
@@ -219,13 +234,25 @@ impl Fighter {
                 condition: Multiplier::FULL,
                 bonus: Points::try_new(bonus)?,
             },
+            aim: Aim {
+                skill: Percent::try_new(
+                    weapon
+                        .skill
+                        .map_or(0, |skill| u32::from(character.skill(skill).get())),
+                )?,
+                spread: weapon.spread,
+            },
             magazine: weapon.ammo.as_ref().map(|ammo| Magazine {
                 clip: ammo.clip,
                 per_shot: ammo.per_shot,
-                reload_ap: NonZeroU32::new(RELOAD_AP).unwrap_or(NonZeroU32::MIN),
+                // A reload dearer than a whole turn could never be paid, which would
+                // leave the weapon dead once its clip ran out.
+                reload_ap: NonZeroU32::new(character.action_points())
+                    .map_or(weapon.reload_ap, |turn| weapon.reload_ap.min(turn)),
                 stock: rounds.stock,
             }),
             ammo_item: rounds.item,
+            weapon: None,
         })
     }
 }
@@ -257,6 +284,10 @@ impl Combatant for Fighter {
 
     fn magazine(&self) -> Option<Magazine> {
         self.magazine
+    }
+
+    fn aim(&self) -> Aim {
+        self.aim
     }
 }
 
@@ -327,6 +358,11 @@ impl Arsenal {
             );
         }
         Ok(arsenal)
+    }
+
+    /// How much wear a weapon can take, when it wears at all.
+    pub(super) fn condition_max(&self, weapon: &ItemId) -> Option<NonZeroU32> {
+        self.weapons.get(weapon)?.condition_max
     }
 
     /// The encounters, ordered by id.
@@ -415,6 +451,13 @@ fn weapon_stats(weapon: &Weapon) -> Result<Option<(ItemId, WeaponStats)>, Battle
     }
     let stats = WeaponStats {
         ammo: ammo_stats(weapon),
+        skill: weapon.skill,
+        spread: Spread::try_new(weapon.spread.unwrap_or(0.0)).map_err(bad)?,
+        reload_ap: reload_ap(weapon, ap_cost),
+        condition_max: weapon
+            .condition_hp
+            .filter(|hp| hp.is_finite() && *hp >= 1.0)
+            .and_then(|hp| NonZeroU32::new(hp.round() as u32)),
         class: weapon.weapon_class,
         damage: Points::try_new(weapon.damage).map_err(bad)?,
         crit_damage: Points::try_new(weapon.crit_damage.unwrap_or(0.0)).map_err(bad)?,
@@ -422,6 +465,20 @@ fn weapon_stats(weapon: &Weapon) -> Result<Option<(ItemId, WeaponStats)>, Battle
         ap_cost,
     };
     Ok(Some((weapon.id.clone(), stats)))
+}
+
+/// Action points a reload costs: a reload of N seconds costs as much as N shots.
+/// A stand-in, since no conversion from seconds is known; a weapon missing its
+/// reload time pays the fallback.
+fn reload_ap(weapon: &Weapon, ap_cost: NonZeroU32) -> NonZeroU32 {
+    let worked_out = weapon
+        .reload_time
+        .map(|seconds| (seconds * f64::from(ap_cost.get())).round())
+        .filter(|cost| cost.is_finite() && *cost >= 1.0)
+        .and_then(|cost| NonZeroU32::new(cost as u32));
+    worked_out
+        .or_else(|| NonZeroU32::new(FALLBACK_RELOAD_AP))
+        .unwrap_or(NonZeroU32::MIN)
 }
 
 /// The magazine of a weapon that fires ammunition. A weapon whose ammunition the
@@ -544,6 +601,7 @@ impl Arsenal {
         weapon: Option<&ItemId>,
         worn_armor: &[&ItemId],
         pack: &impl InventoryView,
+        weapon_wear: u32,
     ) -> Result<Fighter, BattleError> {
         let weapon_id = weapon.ok_or(BattleError::Unarmed)?;
         let stats = self
@@ -579,15 +637,13 @@ impl Arsenal {
             stock: item.as_ref().map(|load| pack.item_count(load)),
             item,
         };
-        Ok(Fighter::assemble(
-            "You".to_owned(),
-            max_hp,
-            character,
-            stats,
-            dt,
-            dr,
-            rounds,
-        )?)
+        let mut fighter =
+            Fighter::assemble("You".to_owned(), max_hp, character, stats, dt, dr, rounds)?;
+        if let Some(max) = stats.condition_max {
+            fighter.attack.condition = Condition::new(max, weapon_wear).multiplier();
+        }
+        fighter.weapon = Some(weapon_id.clone());
+        Ok(fighter)
     }
 
     pub(super) fn foes(&self, id: &EncounterId) -> Option<&[Fighter]> {
@@ -611,8 +667,10 @@ fn require_fixed_foe(encounter: &Encounter) -> Result<(), BattleError> {
 #[derive(Debug, Clone)]
 pub struct Battle {
     encounter: EncounterId,
-    combat: Combat<Fighter, FlatHitChance>,
+    combat: Combat<Fighter, AimedHitChance>,
     player: FighterId,
+    /// Attacks the player has made, hit or miss, for the wear on the weapon.
+    shots: u32,
 }
 
 impl Battle {
@@ -627,13 +685,13 @@ impl Battle {
             foes.iter()
                 .map(|foe| (crate::combat::Side::Enemy, foe.clone())),
         );
-        let hit = FlatHitChance(Percent::try_new(STAND_IN_HIT_CHANCE)?);
-        let combat = Combat::new(order, Rules::standard(), hit)?;
+        let combat = Combat::new(order, Rules::standard(), AimedHitChance)?;
         let player = combat.active();
         Ok(Self {
             encounter,
             combat: combat.with_hp(player, hp)?,
             player,
+            shots: 0,
         })
     }
 
@@ -645,7 +703,7 @@ impl Battle {
 
     /// The fight, to read hit points, action points, status and the fighters.
     #[must_use]
-    pub fn combat(&self) -> &Combat<Fighter, FlatHitChance> {
+    pub fn combat(&self) -> &Combat<Fighter, AimedHitChance> {
         &self.combat
     }
 
@@ -653,6 +711,12 @@ impl Battle {
     #[must_use]
     pub fn player(&self) -> FighterId {
         self.player
+    }
+
+    /// Attacks the player has made so far, hit or miss.
+    #[must_use]
+    pub fn shots(&self) -> u32 {
+        self.shots
     }
 
     /// The player attacks `target`.
@@ -666,7 +730,9 @@ impl Battle {
         power: Power,
         dice: &mut impl Dice,
     ) -> Result<Resolution, CombatError> {
-        self.combat.attack(target, power, dice)
+        let resolution = self.combat.attack(target, power, dice)?;
+        self.shots = self.shots.saturating_add(1);
+        Ok(resolution)
     }
 
     /// The player reloads the weapon from the rounds carried.

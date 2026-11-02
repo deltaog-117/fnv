@@ -5,7 +5,7 @@ use std::num::NonZeroU32;
 use thiserror::Error;
 
 use super::damage::{Rules, damage_after_armor, damage_before_armor};
-use super::hit::{Dice, HitModel};
+use super::hit::{Aim, Dice, HitModel};
 use super::stats::{Multiplier, Percent, Points, Power};
 
 /// What a fighter's weapon does, already validated.
@@ -59,6 +59,10 @@ pub trait Combatant {
     /// The weapon's magazine, or `None` for a weapon that needs no ammunition.
     fn magazine(&self) -> Option<Magazine> {
         None
+    }
+    /// How well the fighter places a shot; only a model that reads it cares.
+    fn aim(&self) -> Aim {
+        Aim::UNTRAINED
     }
 }
 

@@ -6,7 +6,7 @@ use strum::{EnumCount, IntoEnumIterator};
 
 use super::bonus::Bonuses;
 use super::book::PerkBook;
-use super::error::{CreationError, ProgressError};
+use super::error::{CreationError, ProgressError, RestoreError};
 use super::rules::{
     BASE_SKILL_HALVES, CharacterRules, Level, MAX_TRAITS, START_SPECIAL_POINTS, TAG_BONUS,
     TAG_COUNT,
@@ -70,6 +70,30 @@ fn governing_stat(skill: Skill) -> Special {
         Skill::MeleeWeapons => Special::Strength,
         Skill::Survival | Skill::Unarmed => Special::Endurance,
     }
+}
+
+/// A character as a save file holds it, before it has been checked.
+///
+/// The level is not here because it is derived from experience, and neither is
+/// anything a perk or trait changes: those are rebuilt from the perk book.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct CharacterRecord {
+    /// The seven attributes.
+    pub special: SpecialSet,
+    /// Total experience earned.
+    pub xp: u32,
+    /// Points spent on each skill; a skill with none is left out.
+    pub spent: Vec<(Skill, u8)>,
+    /// The tagged skills.
+    pub tagged: Vec<Skill>,
+    /// The traits chosen.
+    pub traits: Vec<TraitId>,
+    /// The perks taken, each with the rank reached.
+    pub perks: Vec<(PerkId, u8)>,
+    /// Skill points banked and not spent, in half points.
+    pub skill_halves: u32,
+    /// Perks that may be chosen now.
+    pub perk_picks: u32,
 }
 
 /// The player character: attributes, experience, and what the levels gave.
@@ -193,6 +217,143 @@ impl Character {
             skill_halves: 0,
             perk_picks: 0,
         }
+    }
+
+    /// The rules this character grows by.
+    #[must_use]
+    pub fn rules(&self) -> CharacterRules {
+        self.rules
+    }
+
+    /// What a save needs to rebuild this character.
+    #[must_use]
+    pub fn record(&self) -> CharacterRecord {
+        CharacterRecord {
+            special: self.special,
+            xp: self.xp,
+            spent: Skill::iter()
+                .map(|skill| (skill, self.spent[skill as usize]))
+                .filter(|(_, points)| *points > 0)
+                .collect(),
+            tagged: Skill::iter()
+                .filter(|skill| self.tagged[*skill as usize])
+                .collect(),
+            traits: self.traits.iter().cloned().collect(),
+            perks: self
+                .perks
+                .iter()
+                .map(|(id, rank)| (id.clone(), *rank))
+                .collect(),
+            skill_halves: self.skill_halves,
+            perk_picks: self.perk_picks,
+        }
+    }
+
+    /// Rebuilds a saved character, checking everything a character can be asked.
+    ///
+    /// What perks and traits change is added back from `book`, the same way taking
+    /// them did. The level is derived from the experience, so it cannot disagree
+    /// with it, and the perks taken plus the perks waiting must equal the perks the
+    /// levels reached give.
+    ///
+    /// # Errors
+    ///
+    /// [`RestoreError`] naming what cannot be real; nothing is built.
+    pub fn restore(
+        record: &CharacterRecord,
+        rules: CharacterRules,
+        book: &PerkBook,
+    ) -> Result<Self, RestoreError> {
+        if record.special.total() > START_SPECIAL_POINTS {
+            return Err(RestoreError::SpecialTotal {
+                max: START_SPECIAL_POINTS,
+                got: record.special.total(),
+            });
+        }
+        if record.tagged.len() > TAG_COUNT {
+            return Err(RestoreError::TagCount {
+                max: TAG_COUNT,
+                got: record.tagged.len(),
+            });
+        }
+        if record.traits.len() > MAX_TRAITS {
+            return Err(RestoreError::TooManyTraits {
+                max: MAX_TRAITS,
+                got: record.traits.len(),
+            });
+        }
+        let mut character = Self::at_start(record.special, rules, Level::FIRST, record.xp);
+        for skill in &record.tagged {
+            if std::mem::replace(&mut character.tagged[*skill as usize], true) {
+                return Err(RestoreError::DuplicateTag(*skill));
+            }
+        }
+        for id in &record.traits {
+            let found = book
+                .character_trait(id)
+                .ok_or_else(|| RestoreError::UnknownTrait(id.clone()))?;
+            if !character.traits.insert(id.clone()) {
+                return Err(RestoreError::DuplicateTrait(id.clone()));
+            }
+            found
+                .modifiers
+                .iter()
+                .for_each(|modifier| character.bonuses.add(modifier));
+        }
+        let mut taken = 0u32;
+        for (id, rank) in &record.perks {
+            let perk = book
+                .perk(id)
+                .ok_or_else(|| RestoreError::UnknownPerk(id.clone()))?;
+            let max = PerkBook::max_rank(perk);
+            if *rank == 0 || *rank > max {
+                return Err(RestoreError::PerkRank {
+                    perk: id.clone(),
+                    rank: *rank,
+                    max,
+                });
+            }
+            if character.perks.insert(id.clone(), *rank).is_some() {
+                return Err(RestoreError::DuplicatePerk(id.clone()));
+            }
+            for _ in 0..*rank {
+                perk.modifiers
+                    .iter()
+                    .for_each(|modifier| character.bonuses.add(modifier));
+            }
+            taken += u32::from(*rank);
+        }
+        character.settled = character.level();
+        // Every level after the first pays one pick when it is a multiple of the rate.
+        let expected = (2..=character.settled.get())
+            .filter(|reached| reached % rules.perk_rate() == 0)
+            .count();
+        let expected = u32::try_from(expected).unwrap_or(u32::MAX);
+        let accounted = taken.saturating_add(record.perk_picks);
+        if accounted != expected {
+            return Err(RestoreError::PerkPicks {
+                expected,
+                got: accounted,
+            });
+        }
+        character.perk_picks = record.perk_picks;
+        character.skill_halves = record.skill_halves;
+        let mut listed = [false; Skill::COUNT];
+        for (skill, points) in &record.spent {
+            if std::mem::replace(&mut listed[*skill as usize], true) {
+                return Err(RestoreError::DuplicateSkill(*skill));
+            }
+            character.spent[*skill as usize] = *points;
+        }
+        // Spending stops at 100, so the skill must have been under it before the last point.
+        for (skill, points) in record.spent.iter().filter(|(_, points)| *points > 0) {
+            let mut before = character.clone();
+            before.spent[*skill as usize] = points - 1;
+            if before.skill(*skill).get() >= SkillLevel::MAX {
+                return Err(RestoreError::SkillOverMax(*skill));
+            }
+        }
+        Ok(character)
     }
 
     /// The attributes.

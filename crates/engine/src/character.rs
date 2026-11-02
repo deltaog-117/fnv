@@ -33,9 +33,9 @@ mod rules;
 mod sheet;
 
 pub use book::PerkBook;
-pub use error::{CreationError, ProgressError, Unmet};
+pub use error::{CreationError, ProgressError, RestoreError, Unmet};
 pub use rules::{
     BASE_SKILL_HALVES, CharacterRules, Level, MAX_TRAITS, START_SPECIAL_POINTS, TAG_BONUS,
     TAG_COUNT,
 };
-pub use sheet::{Character, SpecialSet};
+pub use sheet::{Character, CharacterRecord, SpecialSet};

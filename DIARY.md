@@ -1732,6 +1732,59 @@ The roadmap's next four items were built together because they meet at the same 
 | 2026-11-02 | Initial entry | deltaog-117 |
 
 
+### Weapon Realism and Save Games: Checked Loading, and a Wear Rate Nobody Gave Us
+
+**Date:** 2026-11-02
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Two roadmap items were built in one cycle: "Save and load" and a slice of "Finish combat". Both had real forks and were chosen from COAs. They belong together because wear on a weapon is state a save must carry: building the combat slice first meant the save format was written once, with the wear already in it, instead of being migrated straight after.
+
+---
+
+#### Decision
+
+**The hit chance reads skill and spread, and says it is a stand-in.** `AimedHitChance` gives `40 + skill / 2 - 3 * spread`, kept between 5 and 95 so no shot is hopeless or certain. The wiki has no formula; the constants were chosen so a mid-skill shooter with a steady weapon lands about two in three, as the old flat 65% did, and the two things the data supports hold as laws (skill never hurts, spread never helps). The starting pistol at Guns 15 now hits 45%. Foes read the same model through the character their record builds. The curve is marked as a stand-in in the code and the roadmap and should be replaced when the xEdit export exists.
+
+**A reload costs its seconds as shots, and never more than a turn.** The data gives reload time in seconds and the shot cost in action points. A first version priced a reload as the shots that fit in the same time (reload time times shots a second times the shot cost) and gave the 9mm pistol 89 action points, more than a whole turn, so a reload could never be paid and a fight could not end. The random-fight property test caught it. The price is now one shot's cost per second of reload (28 for the pistol), and it is capped at the fighter's action points per turn, because a reload that can never be paid would leave a weapon dead once its clip ran out. A test checks every fighter in the real gunfight can pay for a reload.
+
+**Weapons wear one point a shot, per weapon item.** `Condition` is the points lost out of the points a weapon had new, and its multiplier runs from full to half, the range the damage formula allows. The wear rate is a stand-in: the wiki gives none. Wear is kept per item id, so two copies of a weapon share it; instances would need a different pack. Only the player's weapon wears, and the shots are counted by the battle and charged when it is settled, the same way spent rounds are. Nothing repairs a weapon yet, so a long game drifts every weapon toward half damage; repair is on the roadmap and the save already carries the wear. The nine weapons with no action-point cost stay out of fights: the data gives no cost and none was invented.
+
+**A save is a record we control, loaded through the checks.** The save is a plain record with a version number, written as JSON. It holds only what changes in play; what the data files say is rebuilt from the data. Loading starts from a game built from the data and puts each part back with the operations play uses: the quest log refuses a stage that does not exist, the pack an item the game has never heard of, the character a perk it may not have. That is why the record is not simply the live types with a derive: serde would build states the constructors refuse, and every refactor would break old saves. The cost is about fifteen small record types and a conversion each way.
+
+**What loading checks beyond the parts.** A quest status must fit its stage (a stage that finishes a quest cannot belong to one still going). The level is derived from experience, so it cannot disagree with it, and the perks taken plus the perks waiting must equal the perks the levels reached give. A skill must have been under 100 before its last point. A boost that already ended, wounds past the maximum, wear past what a weapon has, and a save with no place for a game that has a map are refused. Not checked: the banked skill points, which depend on what perks added at each level and cannot be worked out afterwards; they are a plain counter that cannot break anything.
+
+**Rewards are not paid again.** Stage rewards and fired rules are already in the pack, the standing and the flags the save holds, so loading sets the quest log directly instead of replaying `Game`'s reactions, and the rules that fired are saved so none fires twice.
+
+**Saves are written whole or not at all.** The text goes to a temporary file and is renamed over the save once it is complete on disk. A save made while a fight is on screen would hold the state from before the fight, because a fight is not part of the game until it is settled; the scene is the only place with Save and Load rows, so in practice saving happens between fights. The version number is checked first: a newer file is refused, an older one is upgraded one version at a time (there is none yet, so the step table is empty and says where to add one), and unknown fields are rejected so a typo cannot silently lose data.
+
+**The player-facing part is deliberately small.** One slot at `$XDG_DATA_HOME/fnv/save.json`, replaced without asking. Several slots, a list to pick from and autosave are on the roadmap. The dice and the log are not saved. Loading puts the scene back where the save was made, because the people, shops and beds shown depend on the place.
+
+**Tests that had to change.** The scene gained two rows before Quit, so the scene tests count from the new end, and three app tests that count rows up from Quit moved by two. The first-frame test uses a taller terminal (40 rows, not 34) because the longer list scrolls and "Quit game" is the last row. Each still asserts what it did before.
+
+**Left out for now:** body-part targeting, initiative, fleeing, allies, repair, saving during a conversation, save slots, and the real hit-chance numbers.
+
+---
+
+#### References
+
+- `crates/engine/src/combat/` (`hit.rs`, `condition.rs`, `stats.rs`, `fight.rs`), `crates/engine/src/game/` (`battle.rs`, `state.rs`, `state/save.rs`), `crates/engine/src/saves/`
+- `crates/engine/src/` hooks: `quests/log.rs`, `world/state.rs`, `trade/market.rs`, `effects/active.rs`, `inventory/state.rs`, `character/sheet.rs`, `reputation/state.rs`, `shared/boost.rs`
+- `crates/engine/tests/saves/`, `crates/engine/tests/game/battle.rs`, `crates/engine/benches/saves.rs`
+- `crates/tui/src/` (`app.rs`, `exploration/screen.rs`, `combat/screen.rs`)
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-02 | Initial entry | deltaog-117 |
+
+
 ---
 
 ## 🧠 Usage Guidelines

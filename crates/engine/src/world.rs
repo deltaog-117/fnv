@@ -16,4 +16,4 @@ mod book;
 mod state;
 
 pub use book::WorldBook;
-pub use state::WorldState;
+pub use state::{Fate, Touched, WorldState};

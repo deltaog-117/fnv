@@ -124,6 +124,41 @@ impl Percent {
     }
 }
 
+/// How widely a weapon scatters its shots: zero is a perfectly steady weapon, and the
+/// weapon data goes up to 20.
+#[derive(Debug, Clone, Copy, PartialEq, PartialOrd)]
+pub struct Spread(f64);
+
+impl Spread {
+    /// A weapon that does not scatter, such as a blade.
+    pub const NONE: Self = Self(0.0);
+
+    /// Builds the spread, rejecting negatives, infinities and NaN.
+    ///
+    /// # Errors
+    ///
+    /// Returns [`StatError::OutOfRange`] when `value` is not a finite number of at
+    /// least zero.
+    pub fn try_new(value: f64) -> Result<Self, StatError> {
+        if value.is_finite() && value >= 0.0 {
+            Ok(Self(value))
+        } else {
+            Err(StatError::OutOfRange {
+                what: "spread",
+                min: 0.0,
+                max: f64::MAX,
+                got: value,
+            })
+        }
+    }
+
+    /// The spread as a plain number.
+    #[must_use]
+    pub fn get(self) -> f64 {
+        self.0
+    }
+}
+
 /// How hard an attack is pressed: the `power` factor of the damage formula.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Power {

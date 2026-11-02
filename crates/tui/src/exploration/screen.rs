@@ -34,7 +34,7 @@ fn wait_span(hours: u32) -> Option<Span> {
 
 /// The rows that are always there: "character", "pack", the journal, reputation,
 /// travel, the waits and "quit".
-const EXTRA_ROWS: usize = 6 + WAITS.len();
+const EXTRA_ROWS: usize = 8 + WAITS.len();
 
 /// What the player's command led to.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -66,13 +66,17 @@ pub enum Next {
         /// What the row said, such as "Wait an hour".
         label: &'static str,
     },
+    /// Write the game to the save file.
+    Save,
+    /// Replace the game with the one in the save file.
+    Load,
     /// Leave the game.
     Quit,
 }
 
 /// The place and the actions it offers: one "talk to" per person, one per shop, one
 /// per fight on offer, one per bed, the character screen, the pack, the journal,
-/// reputation, travel, the waits, then quit.
+/// reputation, travel, the waits, save, load, then quit.
 #[derive(Debug)]
 pub struct Exploration {
     place: String,
@@ -156,6 +160,8 @@ impl Exploration {
             Some(index) if index == beds_end + 3 => Next::Reputation,
             Some(index) if index == beds_end + 4 => Next::Travel,
             Some(index) if index + 1 == self.rows() => Next::Quit,
+            Some(index) if index + 2 == self.rows() => Next::Load,
+            Some(index) if index + 3 == self.rows() => Next::Save,
             // A row no arm names cannot be reached; staying is the harmless answer.
             Some(index) => index
                 .checked_sub(beds_end + 5)
@@ -191,7 +197,11 @@ impl Exploration {
                 Item::new("Travel"),
             ])
             .chain(WAITS.iter().map(|&(label, _)| Item::new(label)))
-            .chain([Item::new("Quit game")])
+            .chain([
+                Item::new("Save game"),
+                Item::new("Load game"),
+                Item::new("Quit game"),
+            ])
             .collect();
         let mut lines = vec![
             Line::styled(format!("You are in {}.", self.place), theme::text()),
@@ -262,7 +272,9 @@ mod tests {
                 ..
             }
         ));
-        assert_eq!(scene.update(Command::Pick(8)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(8)), Next::Save);
+        assert_eq!(scene.update(Command::Pick(9)), Next::Load);
+        assert_eq!(scene.update(Command::Pick(10)), Next::Quit);
     }
 
     #[test]
@@ -286,7 +298,7 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(1)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(2)), Next::Character);
         assert_eq!(scene.update(Command::Pick(3)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(9)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(11)), Next::Quit);
     }
 
     #[test]
@@ -298,7 +310,7 @@ mod tests {
         assert_eq!(scene.update(Command::Pick(2)), Next::Fight(0));
         assert_eq!(scene.update(Command::Pick(3)), Next::Character);
         assert_eq!(scene.update(Command::Pick(4)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(10)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(12)), Next::Quit);
     }
 
     #[test]
@@ -317,7 +329,7 @@ mod tests {
                 ..
             }
         ));
-        assert_eq!(scene.update(Command::Pick(10)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(12)), Next::Quit);
     }
 
     #[test]
@@ -325,6 +337,6 @@ mod tests {
         let mut scene = Exploration::new("Nowhere".to_owned(), Vec::new());
         assert_eq!(scene.update(Command::Select), Next::Character);
         assert_eq!(scene.update(Command::Pick(1)), Next::Pack);
-        assert_eq!(scene.update(Command::Pick(7)), Next::Quit);
+        assert_eq!(scene.update(Command::Pick(9)), Next::Quit);
     }
 }

@@ -19,24 +19,28 @@
 //! - a shot needs the rounds in the weapon, and a refused shot costs neither rounds
 //!   nor action points.
 //!
-//! [`enemy_turns`] plays the enemy side with one plain tactic. Hit chance is behind [`HitModel`] because the wiki gives no formula for it;
-//! [`FlatHitChance`] is a labelled stand-in until the real model arrives. Chance is
+//! [`enemy_turns`] plays the enemy side with one plain tactic. Hit chance is behind
+//! [`HitModel`] because the wiki gives no formula for it; [`AimedHitChance`] (skill
+//! up, spread down) and [`FlatHitChance`] are labelled stand-ins. Chance is
 //! rolled through [`Dice`], so a fight is deterministic for a given sequence of
 //! rolls. Ammunition is modelled: a weapon with a [`Magazine`] loses rounds with
 //! every shot, hit or miss, and [`Combat::reload`] refills it from the reserve.
-//! Weapon condition, body-part targeting and weapon spread are not modelled.
+//! Weapon condition is carried in the attack's multiplier; body-part targeting is not
+//! modelled.
 
 mod ai;
+mod condition;
 mod damage;
 mod fight;
 mod hit;
 mod stats;
 
 pub use ai::enemy_turns;
+pub use condition::Condition;
 pub use damage::{Rules, damage_after_armor, damage_before_armor};
 pub use fight::{
     AttackProfile, Combat, CombatError, Combatant, FighterId, Magazine, Reload, Resolution, Rounds,
     Side, Status, Strike,
 };
-pub use hit::{Dice, FlatHitChance, HitModel};
-pub use stats::{Multiplier, Percent, Points, Power, StatError};
+pub use hit::{Aim, AimedHitChance, Dice, FlatHitChance, HitModel};
+pub use stats::{Multiplier, Percent, Points, Power, Spread, StatError};

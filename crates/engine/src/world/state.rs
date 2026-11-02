@@ -27,6 +27,28 @@ const UNTOUCHED: Npc = Npc {
     met: false,
 };
 
+/// What became of an NPC the story has touched.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Fate {
+    /// Alive and friendly.
+    Friendly,
+    /// Alive and hostile.
+    Hostile,
+    /// Dead.
+    Dead,
+    /// Gone: no body is left.
+    Removed,
+}
+
+/// An NPC the story has touched, as a save needs it.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct Touched {
+    /// What became of them.
+    pub fate: Fate,
+    /// Whether the player has met them.
+    pub met: bool,
+}
+
 /// The story flags, the NPC fates and the ending locks.
 ///
 /// Cloning is cheap: the roster is shared and only NPCs that changed are stored.
@@ -48,6 +70,36 @@ impl WorldState {
             npcs: HashMap::new(),
             endings: HashMap::new(),
         }
+    }
+
+    /// A world over the same roster with nothing having happened, for loading a save.
+    #[must_use]
+    pub fn emptied(&self) -> Self {
+        Self::new(Arc::clone(&self.book))
+    }
+
+    /// The flags that are set, in no particular order.
+    pub fn flags(&self) -> impl Iterator<Item = &FlagId> {
+        self.flags.iter()
+    }
+
+    /// Every NPC the story has touched, in no particular order.
+    pub fn touched(&self) -> impl Iterator<Item = (&NpcId, Touched)> {
+        self.npcs.iter().map(|(id, npc)| {
+            let fate = match npc.status {
+                Status::Alive { hostile: false } => Fate::Friendly,
+                Status::Alive { hostile: true } => Fate::Hostile,
+                Status::Dead => Fate::Dead,
+                Status::Removed => Fate::Removed,
+            };
+            (id, Touched { fate, met: npc.met })
+        })
+    }
+
+    /// Every ending that was unlocked (`true`) or locked (`false`), in no particular
+    /// order.
+    pub fn endings(&self) -> impl Iterator<Item = (&EndingId, bool)> {
+        self.endings.iter().map(|(id, open)| (id, *open))
     }
 
     /// Records that the player has met the NPC.

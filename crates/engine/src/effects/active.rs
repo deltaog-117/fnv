@@ -36,6 +36,12 @@ impl ActiveEffects {
         }));
     }
 
+    /// The boosts of a save, in the order they were started.
+    #[must_use]
+    pub fn from_entries(list: Vec<Active>) -> Self {
+        Self { list }
+    }
+
     /// Ends every boost whose time has come at minute `now`, and says whether any
     /// ended.
     pub fn expire(&mut self, now: u64) -> bool {

@@ -116,6 +116,12 @@ impl Inventory {
         }
     }
 
+    /// An empty pack over the same items, for loading a save into.
+    #[must_use]
+    pub fn emptied(&self) -> Self {
+        Self::new(Arc::clone(&self.book))
+    }
+
     /// The carried stacks in id order.
     pub fn stacks(&self) -> impl Iterator<Item = (&ItemId, NonZeroU32)> {
         self.stacks.iter().map(|(item, count)| (item, *count))
