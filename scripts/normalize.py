@@ -267,6 +267,24 @@ def apply_uses(consumable_recs, entries):
         table[item]["on_use"] = {k: v for k, v in entry.items() if k != "item"}
 
 
+def apply_craft_effects(recipe_recs, entries):
+    """Merge the hand-authored craft reactions into the recipe records as `on_craft`.
+
+    Each entry names one `recipe` and the `reactions` making it sets off. An unknown
+    recipe or a repeated entry raises: a typo must not silently drop a reaction.
+    """
+    table = {r["id"]: r for r in recipe_recs}
+    seen = set()
+    for entry in entries:
+        recipe = entry["recipe"]
+        if recipe not in table:
+            raise ValueError(f"crafting: unknown recipe {recipe}")
+        if recipe in seen:
+            raise ValueError(f"crafting: {recipe} is listed twice")
+        seen.add(recipe)
+        table[recipe]["on_craft"] = entry["reactions"]
+
+
 def weapon_mods(raw, ids, weapon_recs):
     by_name = {}
     for w in weapon_recs:
@@ -363,6 +381,8 @@ def apply_slices(quest_recs, slices):
             if stage is None:
                 raise ValueError(f"slice: {quest['id']} has no stage {authored['stage']}")
             put(stage, "on_enter", authored.get("on_enter"))
+            if authored.get("optional"):
+                stage["optional"] = True
         for authored in entry.get("rules", []):
             if not authored.get("conditions") or not authored.get("effects"):
                 raise ValueError(f"slice: {quest['id']} rule {authored['target']!r} needs both "
@@ -873,7 +893,8 @@ def recipes(raw, item_recs):
         ing = []
         for i in r["items"]:
             name = re.sub(r"\s*\|\}\s*$", "", i["item"]).strip()
-            item_id = by_name.get(name.lower())
+            # A trailing "(1)" is the wiki's footnote marker, not part of the name.
+            item_id = by_name.get(re.sub(r"\s*\(\d+\)$", "", name).lower()) or by_name.get(name.lower())
             noise = (len(name) > 45 or name.endswith(".") or re.fullmatch(r"[\d\s]+", name)
                      or re.search(r"\bseconds?\b|per second|schematic|^\w+: \d+$", name, re.I))
             if noise and not item_id:
@@ -980,12 +1001,16 @@ def main(argv):
     dump(out / "stats.json", rule_stats(rl("stats"), json.load(open(out / "perks.json"))))
     dump(out / "levels.json", levels(rl("levels")))
     dump(out / "challenges.json", challenges(rl("challenges")))
-    dump(out / "recipes.json", recipes(rl("recipes"), item_recs))
+    recipe_recs = recipes(rl("recipes"), item_recs)
+    apply_craft_effects(recipe_recs, json.load(open(data / "crafting" / "effects.json")))
+    dump(out / "recipes.json", recipe_recs)
     dump(out / "endings.json", endings(rl("endings"), title_id))
     (out / "formulas.json").write_text((rdir / "formulas.json").read_text())
     (out / "encounters.json").write_text((data / "combat" / "encounters.json").read_text())
     (out / "vendors.json").write_text((data / "vendors" / "vendors.json").read_text())
     (out / "beds.json").write_text((data / "beds" / "beds.json").read_text())
+    (out / "stations.json").write_text((data / "stations" / "stations.json").read_text())
+    (out / "finds.json").write_text((data / "finds" / "finds.json").read_text())
     dump(out / "quests.json", quest_recs)
     dump(out / "npcs.json", npc_recs)
     ddir = out / "dialogue"

@@ -1785,6 +1785,57 @@ Two roadmap items were built in one cycle: "Save and load" and a slice of "Finis
 | 2026-11-02 | Initial entry | deltaog-117 |
 
 
+### Repair, Crafting and Gathering: Stand-In Rates, Stations as Data, and a Stage That May Come Late
+
+**Date:** 2026-11-03
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Three roadmap items were built in one cycle: repair, crafting and the rest of the Goodsprings quest slice. They share a thread: By a Campfire on the Trail needs a broc flower and a xander root, a campfire, and healing powder; a weapon wears down and needs a way back. The forks were chosen from COAs: repair by kit with merging and paid vendor repair, stations as data at places, and pickup spots as data.
+
+---
+
+#### Decision
+
+**Repair is arithmetic over condition points, with every rate marked a stand-in.** The wiki gives no repair formula, so the laws follow the shape it describes. A kit lifts a weapon to the Repair skill's share of its condition, rounded up. Merging two copies adds 10% of the new condition on top of what is left of both, held to the same ceiling and never below the better copy. A vendor charges half the weapon's value for a full repair, rounded up to at least a cap, and mends only up to their own Repair skill (Chet, 50). The module imports no other feature: the laws take plain points, and `Game` owns the wear record, the kit and the caps, running each repair on a copy so a refusal changes nothing.
+
+**Two copies of a weapon share one wear record, and the merge says so.** Wear was already kept per item id. Merging with one shared record treats the pair as equally worn, which matches the real rule when they are, and is wrong when a spare is fresh. Per-copy wear would touch the pack, the battle and the save, so it went on the roadmap instead of into this cycle. The merge function itself takes two conditions, so it needs no change when that lands.
+
+**A recipe is a formula or has a reason.** Of 168 imported recipes, 84 can be made. The others are breakdowns (not built), have no output or station, or list an ingredient the wiki's table did not match to an item. Each carries its reason and the property test checks that no recipe is both or neither. One real gap was a data bug: the weapon repair kit's "Wrench (1)" carried the wiki's footnote marker, so it matched nothing; the normalizer now strips the marker. Another consequence: crafting components are now items the player can carry (123 more), since most recipes use them.
+
+**Stations and plants are data, like beds.** The quest says "use the campfire", so crafting checks a station of the recipe's kind at the player's place, and a pickup is a one-time find at a place. Both lists are hand-authored placeholders; the wiki has neither.
+
+**The story moves through a reaction on the recipe.** Making healing powder sets stage 30 of the campfire quest, but only while the quest is between 10 and 30; a reaction has `when` conditions beside its effects, and the whole craft is one unit, so a failing reaction makes nothing. The reaction is merged from `data/crafting/effects.json` into the recipe, the way item uses are merged into consumables.
+
+**A late optional stage is not a step back.** Run Goodsprings Run's stages 30 (Chet) and 40 (Doc) are side tasks in either order, but a stage can only move forward, so a shakedown after the supplies would have been refused and would have failed the whole topic. The stage record gained `optional`: reaching it when the quest is already past it changes nothing. A stage that is not optional is still refused behind one.
+
+**The save grew to version 2.** It gained the list of finds taken; a version 1 save is upgraded on reading. This is the first use of the upgrade table the last cycle left empty.
+
+**Tests that had to change.** The scene gained rows, so the two tests that want the whole list on screen use a terminal 50 rows tall, and the character-row helper counts the new rows. The loader test's scratch directory writes the four new catalogs, and the item-book count includes the miscellany. Each still asserts what it did before.
+
+**Left out for now:** Victor and the other settlers as defenders (they need real allies), the six quests with no stages (the stage engine has nothing to track on them), taking things apart, tools that are not expended (the wrench is used up), and per-copy wear.
+
+---
+
+#### References
+
+- `crates/engine/src/repair/`, `craft/`, `gather/`, `game/state/upkeep.rs`, `quests/log.rs`, `inventory/book.rs`, `saves/record.rs`
+- `crates/engine/tests/craft/`, `gather/`, `game/upkeep.rs`, `saves/`, `quests/lifecycle.rs`, `crates/engine/benches/repair.rs`, `craft.rs`
+- `crates/tui/src/craft/`, `repair/`, `inventory/screen.rs`, `exploration/screen.rs`, `app.rs`
+- `data/stations/`, `data/finds/`, `data/crafting/`, `data/vendors/`, `data/dialogue/slice_goodsprings.json`, `schemas/`, `scripts/normalize.py`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-03 | Initial entry | deltaog-117 |
+
+
 ---
 
 ## 🧠 Usage Guidelines

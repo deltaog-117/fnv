@@ -194,7 +194,7 @@ impl QuestSink for QuestLog {
                 id: format!("{} stage {}", quest.as_str(), stage.get()),
             });
         };
-        let finish = definition.finish;
+        let (finish, optional) = (definition.finish, definition.optional);
         if let Some(progress) = self.progress.get(quest) {
             if progress.phase != Phase::Active {
                 return Err(Self::refuse(
@@ -204,6 +204,10 @@ impl QuestSink for QuestLog {
                 ));
             }
             if progress.stage.is_some_and(|current| stage < current) {
+                // A side task done after the quest moved on has nothing left to move.
+                if optional {
+                    return Ok(());
+                }
                 return Err(Self::refuse("set_stage", quest, "stages only move forward"));
             }
         }

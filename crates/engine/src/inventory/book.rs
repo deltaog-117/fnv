@@ -16,6 +16,9 @@ pub enum ItemClass {
     Ammo,
     /// Food, drink, chems and medicine.
     Consumable,
+    /// A crafting component or other miscellany: carried, sold and used up by
+    /// recipes, with no use of its own.
+    Misc,
 }
 
 #[derive(Debug, Clone, Copy)]
@@ -29,8 +32,8 @@ struct Info {
 /// Every item that can be carried, with its class, weight and base value.
 ///
 /// The book is what lets the inventory refuse an item that does not exist, instead
-/// of keeping a stack under a typo. Weapon mods, skill books and crafting
-/// components are not in the loaded data yet, so they cannot be carried.
+/// of keeping a stack under a typo. Weapon mods and skill books are not in the
+/// loaded data yet, so they cannot be carried.
 #[derive(Debug, Default)]
 pub struct ItemBook {
     items: HashMap<ItemId, Info>,
@@ -116,7 +119,7 @@ impl ItemBook {
         Ok(self)
     }
 
-    /// Every weapon, armor, ammo and consumable in the loaded data.
+    /// Every weapon, armor, ammo, consumable and miscellany in the loaded data.
     ///
     /// # Errors
     ///
@@ -142,20 +145,31 @@ impl ItemBook {
             .consumables
             .iter()
             .filter_map(|item| item.on_use.clone().map(|effect| (item.id.clone(), effect)));
-        Self::new(weapons.chain(armor).chain(ammo).chain(consumables))?
-            .with_uses(uses)?
-            .with_values(
-                data.weapons
-                    .iter()
-                    .map(|item| (item.id.clone(), item.value))
-                    .chain(data.armor.iter().map(|item| (item.id.clone(), item.value)))
-                    .chain(data.ammo.iter().map(|item| (item.id.clone(), item.value)))
-                    .chain(
-                        data.consumables
-                            .iter()
-                            .map(|item| (item.id.clone(), item.value)),
-                    ),
-            )
+        let misc = data
+            .misc
+            .iter()
+            .map(|item| (item.id.clone(), ItemClass::Misc, item.weight));
+        Self::new(
+            weapons
+                .chain(armor)
+                .chain(ammo)
+                .chain(consumables)
+                .chain(misc),
+        )?
+        .with_uses(uses)?
+        .with_values(
+            data.weapons
+                .iter()
+                .map(|item| (item.id.clone(), item.value))
+                .chain(data.armor.iter().map(|item| (item.id.clone(), item.value)))
+                .chain(data.ammo.iter().map(|item| (item.id.clone(), item.value)))
+                .chain(
+                    data.consumables
+                        .iter()
+                        .map(|item| (item.id.clone(), item.value)),
+                )
+                .chain(data.misc.iter().map(|item| (item.id.clone(), item.value))),
+        )
     }
 
     /// Whether the item exists.

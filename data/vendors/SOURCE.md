@@ -16,3 +16,10 @@ unchanged to `data/engine/vendors.json` by `scripts/normalize.py`.
   (roadmap wording: "Accepted or better and Mixed or more"). The wiki says only
   "special discount" / "wholesale prices" in the dialogue; 25% is the figure the
   roadmap carries, so treat it as a stand-in until the game-data export.
+
+- A vendor may carry a `repair` service: the vendor's own Repair skill, up to
+  which they mend a worn weapon for caps (the price is worked out by the engine
+  from the weapon's value; see `repair/`). Chet is the only Goodsprings vendor
+  who repairs, with Repair 50: a placeholder, since the wiki lists no repair
+  services for Goodsprings. Chet also stocks two weapon repair kits, also a
+  placeholder.

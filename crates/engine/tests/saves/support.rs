@@ -7,7 +7,9 @@ use std::sync::{Arc, LazyLock};
 use engine::character::PerkBook;
 use engine::clock::Span;
 use engine::combat::{Dice, Power, Side, Status};
+use engine::craft::{RecipeBook, StationBook};
 use engine::game::{Arsenal, Battle, Game};
+use engine::gather::FindBook;
 use engine::inventory::ItemBook;
 use engine::quests::QuestBook;
 use engine::reputation::ReputationBook;
@@ -49,9 +51,16 @@ static TEMPLATE: LazyLock<Game> = LazyLock::new(|| {
     let data = GameData::load(&dir, &Scope::Around(place())).expect("the engine data loads");
     let quests = Arc::new(QuestBook::new(data.quests.iter()).expect("the quests build"));
     let world = Arc::new(WorldBook::new(data.npcs.iter().map(|npc| &npc.id)));
+    let items = Arc::new(ItemBook::from_data(&data).expect("the item book builds"));
+    let recipes = RecipeBook::from_data(&data, |item| items.contains(item)).expect("recipes build");
     Game::with_world(quests, world)
-        .with_items(Arc::new(
-            ItemBook::from_data(&data).expect("the item book builds"),
+        .with_items(items)
+        .with_recipes(Arc::new(recipes))
+        .with_stations(Arc::new(
+            StationBook::from_data(&data).expect("the stations build"),
+        ))
+        .with_finds(Arc::new(
+            FindBook::from_data(&data).expect("the finds build"),
         ))
         .with_arsenal(Arc::new(
             Arsenal::from_data(&data).expect("the arsenal builds"),
@@ -161,6 +170,26 @@ pub fn played() -> Game {
     if let Some(route) = game.routes().first().cloned() {
         game.travel(&route.to).expect("the walk is made");
     }
+    // A find taken, a repair kit used on the worn pistol, and powder made at the
+    // campfire.
+    for find in ["goodsprings_broc_flower", "goodsprings_xander_root"] {
+        game.gather(&engine::shared::FindId::try_new(find).expect("literal is a valid id"))
+            .expect("the plant is picked");
+    }
+    let campfire = engine::shared::StationId::try_new("goodsprings_campfire").expect("id");
+    game.craft(
+        &campfire,
+        &engine::shared::RecipeId::try_new("healing_powder_craft").expect("id"),
+    )
+    .expect("the powder is made");
+    apply_all(
+        &[effect(
+            serde_json::json!({"type": "give_item", "item": "weapon_repair_kit"}),
+        )],
+        &mut game,
+    )
+    .expect("the kit is given");
+    game.repair_with_kit(&item("9mm_pistol")).ok();
     // Last, so the boost is still running when the game is saved.
     game.use_item(&item("buffout")).expect("buffout is used");
     game

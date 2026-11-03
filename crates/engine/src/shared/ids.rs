@@ -130,6 +130,21 @@ define_id!(
     "bed"
 );
 define_id!(
+    /// Identifies a crafting recipe.
+    RecipeId,
+    "recipe"
+);
+define_id!(
+    /// Identifies a crafting station standing at a place.
+    StationId,
+    "station"
+);
+define_id!(
+    /// Identifies something the player can pick up once at a place.
+    FindId,
+    "find"
+);
+define_id!(
     /// Identifies a game ending.
     EndingId,
     "ending"

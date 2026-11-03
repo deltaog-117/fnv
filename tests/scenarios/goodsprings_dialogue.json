@@ -367,7 +367,7 @@
     {"say": "vfreeformgoodspringsgschettopic010"},
     {"say": "vfreeformgoodspringsgschettopic008", "fails": true}
    ],
-   "expect": {"flags": ["chet_shaken_down"]}
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 30}}, "flags": ["chet_shaken_down"]}
   },
   {
    "name": "easy pete: chatter chains run both ways and goodbye ends the talk",
@@ -933,7 +933,7 @@
     {"say": "vfreeformgoodspringsdocmitchelltopic004"},
     {"say": "vfreeformgoodspringsdocmitchelltopic002", "fails": true}
    ],
-   "expect": {"flags": ["doc_mitchell_gave_cobb_supplies"]}
+   "expect": {"quests": {"run_goodsprings_run": {"status": "active", "stage": 40}}, "flags": ["doc_mitchell_gave_cobb_supplies"]}
   },
   {
    "name": "doc mitchell: the lie is closed once the supplies are handed to Cobb",

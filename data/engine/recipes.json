@@ -1782,7 +1782,8 @@
    },
    {
     "item": "Primer, shotshell (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "primer_shotshell"
    }
   ]
  },
@@ -1916,7 +1917,8 @@
   "ingredients": [
    {
     "item": "Scrap metal (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "scrap_metal"
    }
   ]
  },
@@ -1996,7 +1998,8 @@
    },
    {
     "item": "Tanned green gecko hide (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "tanned_green_gecko_hide"
    }
   ]
  },
@@ -2063,7 +2066,8 @@
    },
    {
     "item": "Tanned green gecko hide (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "tanned_green_gecko_hide"
    }
   ]
  },
@@ -2347,7 +2351,8 @@
    },
    {
     "item": "Wonderglue (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "wonderglue"
    }
   ]
  },
@@ -2725,7 +2730,8 @@
    },
    {
     "item": "Purified water (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "purified_water"
    }
   ]
  },
@@ -3250,7 +3256,8 @@
    },
    {
     "item": "Sugar Bombs (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "sugar_bombs"
    }
   ]
  },
@@ -3267,7 +3274,8 @@
   "ingredients": [
    {
     "item": "Salient Green (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "salient_green"
    }
   ]
  },
@@ -3551,6 +3559,39 @@
     "qty": 1,
     "item_id": "xander_root"
    }
+  ],
+  "on_craft": [
+   {
+    "when": [
+     {
+      "type": "quest",
+      "quest": "by_a_campfire_on_the_trail",
+      "state": "active"
+     },
+     {
+      "type": "quest",
+      "quest": "by_a_campfire_on_the_trail",
+      "state": "stage_at_least",
+      "stage": 10
+     },
+     {
+      "type": "not",
+      "of": {
+       "type": "quest",
+       "quest": "by_a_campfire_on_the_trail",
+       "state": "stage_at_least",
+       "stage": 30
+      }
+     }
+    ],
+    "effects": [
+     {
+      "type": "set_stage",
+      "quest": "by_a_campfire_on_the_trail",
+      "stage": 30
+     }
+    ]
+   }
   ]
  },
  {
@@ -3664,7 +3705,8 @@
    },
    {
     "item": "Stimpak (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "stimpak"
    }
   ]
  },
@@ -3690,7 +3732,8 @@
    },
    {
     "item": "Wonderglue (2)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "wonderglue"
    }
   ]
  },
@@ -3924,7 +3967,8 @@
    },
    {
     "item": "White horsenettle (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "white_horsenettle"
    }
   ]
  },
@@ -4542,7 +4586,8 @@
    },
    {
     "item": "Wrench (1)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "wrench"
    }
   ]
  },
@@ -4822,7 +4867,8 @@
    },
    {
     "item": "White horsenettle (2)",
-    "qty": 1
+    "qty": 1,
+    "item_id": "white_horsenettle"
    }
   ]
  }

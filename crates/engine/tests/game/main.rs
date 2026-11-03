@@ -5,7 +5,7 @@
 //! and rule firing; `pack` carries the character and the inventory through `Game`;
 //! `real_data` runs a real quest's effects through `apply_all`; `items` uses and
 //! drops pack items; `clock` checks that only waiting moves the time; `rest` sleeps
-//! in a bed; `boosts` runs chems and time together; `reputation` runs fame, infamy and karma through the composed game.
+//! in a bed; `boosts` runs chems and time together; `reputation` runs fame, infamy and karma through the composed game; `upkeep` repairs, crafts and gathers.
 
 mod automation;
 mod battle;
@@ -20,3 +20,4 @@ mod reputation;
 mod rest;
 mod scenarios;
 mod state;
+mod upkeep;

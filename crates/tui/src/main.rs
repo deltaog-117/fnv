@@ -6,10 +6,12 @@
 mod app;
 mod character;
 mod combat;
+mod craft;
 mod dialogue;
 mod exploration;
 mod inventory;
 mod quests;
+mod repair;
 mod reputation;
 mod shared;
 mod trade;

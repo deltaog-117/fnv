@@ -50,6 +50,7 @@ fn the_played_game_really_has_a_history_worth_saving() {
     assert!(!save.world.npcs.is_empty());
     assert!(!save.wear.is_empty(), "the pistol wore");
     assert!(!save.won.is_empty(), "the gunfight was won");
+    assert_eq!(save.gathered.len(), 2, "both plants were picked");
     assert!(!save.effects.is_empty(), "buffout is running");
     assert!(!save.standing.factions.is_empty());
     assert!(save.wounds > 0 || save.clock_minutes > 0);
@@ -145,6 +146,11 @@ enum Op {
     Perk(u8),
     Fight,
     Heal,
+    Gather(u8),
+    Craft,
+    Kit,
+    Merge,
+    RepairAtChet,
 }
 
 fn op() -> impl Strategy<Value = Op> {
@@ -167,6 +173,11 @@ fn op() -> impl Strategy<Value = Op> {
         (0..6u8).prop_map(Op::Perk),
         Just(Op::Fight),
         Just(Op::Heal),
+        (0..2u8).prop_map(Op::Gather),
+        Just(Op::Craft),
+        Just(Op::Kit),
+        Just(Op::Merge),
+        Just(Op::RepairAtChet),
     ]
 }
 
@@ -296,6 +307,33 @@ fn play(game: &mut Game, ops: &[Op]) {
                 }
             }
             Op::Heal => game.heal(1_000_000),
+            Op::Gather(i) => {
+                let find = ["goodsprings_broc_flower", "goodsprings_xander_root"][usize::from(*i)];
+                game.gather(&engine::shared::FindId::try_new(find).expect("id"))
+                    .ok();
+            }
+            Op::Craft => {
+                let campfire =
+                    engine::shared::StationId::try_new("goodsprings_campfire").expect("id");
+                let powder = engine::shared::RecipeId::try_new("healing_powder_craft").expect("id");
+                game.craft(&campfire, &powder).ok();
+            }
+            Op::Kit => {
+                apply_all(
+                    &[effect(
+                        serde_json::json!({"type": "give_item", "item": "weapon_repair_kit"}),
+                    )],
+                    game,
+                )
+                .ok();
+                game.repair_with_kit(&item("9mm_pistol")).ok();
+            }
+            Op::Merge => {
+                game.merge_weapons(&item("9mm_pistol")).ok();
+            }
+            Op::RepairAtChet => {
+                game.repair_at(&vendor("chet"), &item("9mm_pistol")).ok();
+            }
         }
     }
 }

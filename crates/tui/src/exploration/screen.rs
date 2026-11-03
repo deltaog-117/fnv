@@ -49,6 +49,12 @@ pub enum Next {
     Fight(usize),
     /// Sleep in the bed at this position in the offered beds.
     Sleep(usize),
+    /// Pick up the find at this position in the offered finds.
+    Gather(usize),
+    /// Craft at the station at this position in the offered stations.
+    Craft(usize),
+    /// Have the repairer at this position in the offered repairers mend a weapon.
+    Repair(usize),
     /// Open the character screen.
     Character,
     /// Open the pack screen.
@@ -75,7 +81,8 @@ pub enum Next {
 }
 
 /// The place and the actions it offers: one "talk to" per person, one per shop, one
-/// per fight on offer, one per bed, the character screen, the pack, the journal,
+/// per fight on offer, one per bed, one per find, one per crafting station, one per
+/// repairer, the character screen, the pack, the journal,
 /// reputation, travel, the waits, save, load, then quit.
 #[derive(Debug)]
 pub struct Exploration {
@@ -84,6 +91,9 @@ pub struct Exploration {
     shops: Vec<String>,
     fights: Vec<String>,
     beds: Vec<String>,
+    finds: Vec<String>,
+    stations: Vec<String>,
+    repairers: Vec<String>,
     character: String,
     menu: Menu,
 }
@@ -101,6 +111,9 @@ impl Exploration {
             shops: Vec::new(),
             fights: Vec::new(),
             beds: Vec::new(),
+            finds: Vec::new(),
+            stations: Vec::new(),
+            repairers: Vec::new(),
             character: "Character".to_owned(),
             menu,
         }
@@ -130,10 +143,41 @@ impl Exploration {
         self
     }
 
+    /// The same scene with things to pick up, by name, after the beds.
+    #[must_use]
+    pub fn with_finds(mut self, finds: Vec<String>) -> Self {
+        self.finds = finds;
+        self.menu = Menu::new(self.rows());
+        self
+    }
+
+    /// The same scene with crafting stations, by name, after the finds.
+    #[must_use]
+    pub fn with_stations(mut self, stations: Vec<String>) -> Self {
+        self.stations = stations;
+        self.menu = Menu::new(self.rows());
+        self
+    }
+
+    /// The same scene with repairers, by name, after the stations.
+    #[must_use]
+    pub fn with_repairers(mut self, repairers: Vec<String>) -> Self {
+        self.repairers = repairers;
+        self.menu = Menu::new(self.rows());
+        self
+    }
+
     /// Everything the menu offers: the listed actions plus "character", "pack", the
     /// journal, reputation, travel, the waits and "quit".
     fn rows(&self) -> usize {
-        self.people.len() + self.shops.len() + self.fights.len() + self.beds.len() + EXTRA_ROWS
+        self.people.len()
+            + self.shops.len()
+            + self.fights.len()
+            + self.beds.len()
+            + self.finds.len()
+            + self.stations.len()
+            + self.repairers.len()
+            + EXTRA_ROWS
     }
 
     /// The same scene with another label on the character row, so it can say that
@@ -149,22 +193,28 @@ impl Exploration {
         let shops_end = self.people.len() + self.shops.len();
         let fights_end = shops_end + self.fights.len();
         let beds_end = fights_end + self.beds.len();
+        let finds_end = beds_end + self.finds.len();
+        let stations_end = finds_end + self.stations.len();
+        let fixed = stations_end + self.repairers.len();
         match self.menu.handle(command) {
             Some(index) if index < self.people.len() => Next::Talk(index),
             Some(index) if index < shops_end => Next::Shop(index - self.people.len()),
             Some(index) if index < fights_end => Next::Fight(index - shops_end),
             Some(index) if index < beds_end => Next::Sleep(index - fights_end),
-            Some(index) if index == beds_end => Next::Character,
-            Some(index) if index == beds_end + 1 => Next::Pack,
-            Some(index) if index == beds_end + 2 => Next::Journal,
-            Some(index) if index == beds_end + 3 => Next::Reputation,
-            Some(index) if index == beds_end + 4 => Next::Travel,
+            Some(index) if index < finds_end => Next::Gather(index - beds_end),
+            Some(index) if index < stations_end => Next::Craft(index - finds_end),
+            Some(index) if index < fixed => Next::Repair(index - stations_end),
+            Some(index) if index == fixed => Next::Character,
+            Some(index) if index == fixed + 1 => Next::Pack,
+            Some(index) if index == fixed + 2 => Next::Journal,
+            Some(index) if index == fixed + 3 => Next::Reputation,
+            Some(index) if index == fixed + 4 => Next::Travel,
             Some(index) if index + 1 == self.rows() => Next::Quit,
             Some(index) if index + 2 == self.rows() => Next::Load,
             Some(index) if index + 3 == self.rows() => Next::Save,
             // A row no arm names cannot be reached; staying is the harmless answer.
             Some(index) => index
-                .checked_sub(beds_end + 5)
+                .checked_sub(fixed + 5)
                 .and_then(|n| WAITS.get(n))
                 .and_then(|&(label, hours)| wait_span(hours).map(|span| Next::Wait { span, label }))
                 .unwrap_or(Next::Stay),
@@ -188,6 +238,21 @@ impl Exploration {
                 self.beds
                     .iter()
                     .map(|name| Item::new(format!("Sleep in {name}"))),
+            )
+            .chain(
+                self.finds
+                    .iter()
+                    .map(|name| Item::new(format!("Pick up {name}"))),
+            )
+            .chain(
+                self.stations
+                    .iter()
+                    .map(|name| Item::new(format!("Craft at {name}"))),
+            )
+            .chain(
+                self.repairers
+                    .iter()
+                    .map(|name| Item::new(format!("Have {name} repair a weapon"))),
             )
             .chain([
                 Item::new(self.character.clone()),
@@ -338,5 +403,26 @@ mod tests {
         assert_eq!(scene.update(Command::Select), Next::Character);
         assert_eq!(scene.update(Command::Pick(1)), Next::Pack);
         assert_eq!(scene.update(Command::Pick(9)), Next::Quit);
+    }
+
+    #[test]
+    fn finds_stations_and_repairers_follow_the_beds_and_precede_the_character_row() {
+        let mut scene = Exploration::new("Goodsprings".to_owned(), vec![person("Doc")])
+            .with_beds(vec!["a bed".to_owned()])
+            .with_finds(vec!["a flower".to_owned(), "a root".to_owned()])
+            .with_stations(vec!["a campfire".to_owned()])
+            .with_repairers(vec!["Chet".to_owned()]);
+        // Doc is row 0 and the bed row 1.
+        assert_eq!(scene.update(Command::Pick(1)), Next::Sleep(0));
+        assert_eq!(scene.update(Command::Pick(2)), Next::Gather(0));
+        // The cursor is on row 2 after the pick; two steps down reach the station.
+        for _ in 0..2 {
+            scene.update(Command::Down);
+        }
+        assert_eq!(scene.update(Command::Select), Next::Craft(0));
+        scene.update(Command::Down);
+        assert_eq!(scene.update(Command::Select), Next::Repair(0));
+        scene.update(Command::Down);
+        assert_eq!(scene.update(Command::Select), Next::Character);
     }
 }

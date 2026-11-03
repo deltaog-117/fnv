@@ -39,3 +39,10 @@ Each entry is one rule: `quest` (the quest whose page states it), `kind`,
 Only gameplay-relevant rules were kept. Trivia, glitches and PC console
 workarounds from the notes were left out. Entries with `target_type: "quest"`
 are validated against the quest files.
+
+## Optional stages
+
+A slice entry may mark a stage `"optional": true` (`slice_goodsprings.json` does
+this for stages 30 and 40 of Run Goodsprings Run, the two side tasks). Reaching an
+optional stage when the quest is already past it changes nothing instead of being
+refused, so the tasks can be done in either order.

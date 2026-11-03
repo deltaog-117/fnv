@@ -29,7 +29,7 @@ impl Slot {
             ItemClass::Weapon => Some(Self::Weapon),
             ItemClass::Armor(ArmorSlot::Body | ArmorSlot::Clothing) => Some(Self::Outfit),
             ItemClass::Armor(ArmorSlot::Head) => Some(Self::Head),
-            ItemClass::Ammo | ItemClass::Consumable => None,
+            ItemClass::Ammo | ItemClass::Consumable | ItemClass::Misc => None,
         }
     }
 }

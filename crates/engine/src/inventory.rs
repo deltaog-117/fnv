@@ -15,8 +15,8 @@
 //!   the game to read, not for the pack to refuse.
 //!
 //! Throwing items away is the pack's own action; using a consumable needs the
-//! player's health, so `Game` does it. Repair and crafting are not built. Barter
-//! lives in `trade`.
+//! player's health, so `Game` does it. Repair lives in `repair`, crafting in `craft`
+//! and picking things up in `gather`; barter lives in `trade`.
 
 mod book;
 mod state;

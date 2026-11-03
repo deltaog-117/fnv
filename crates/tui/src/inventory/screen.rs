@@ -6,6 +6,7 @@ use std::sync::Arc;
 
 use engine::game::Game;
 use engine::inventory::Slot;
+use engine::repair::WEAPON_REPAIR_KIT;
 use engine::shared::{Boost, InventoryView, ItemId, ItemUse};
 use ratatui::Frame;
 use ratatui::layout::{Constraint, Layout, Rect};
@@ -37,6 +38,10 @@ enum Action {
     Use,
     Equip,
     Unequip(Slot),
+    /// Mend a worn weapon with a repair kit.
+    Mend,
+    /// Merge two copies of a weapon into one better one.
+    Merge,
     Drop,
     Back,
 }
@@ -47,6 +52,8 @@ impl Action {
             Self::Use => "Use",
             Self::Equip => "Equip",
             Self::Unequip(_) => "Unequip",
+            Self::Mend => "Mend with a kit",
+            Self::Merge => "Merge two copies",
             Self::Drop => "Drop",
             Self::Back => "Back",
         }
@@ -172,6 +179,14 @@ impl Pack {
                 game.unequip(slot);
                 Ok(format!("You put the {name} away."))
             }
+            Action::Mend => game
+                .repair_with_kit(item)
+                .map(|left| format!("You mend the {name}; it is at {}%.", left.get()))
+                .map_err(|error| error.to_string()),
+            Action::Merge => game
+                .merge_weapons(item)
+                .map(|left| format!("You merge two {name} into one at {}%.", left.get()))
+                .map_err(|error| error.to_string()),
             Action::Drop => {
                 let held = game.inventory().item_count(item);
                 match NonZeroU32::new(held) {
@@ -358,6 +373,12 @@ impl Pack {
                 theme::text(),
             ));
         }
+        if let Some(left) = game.weapon_condition(item) {
+            lines.push(Line::styled(
+                format!("Condition {}%.", left.get()),
+                theme::text(),
+            ));
+        }
         match game.inventory().item_use(item) {
             Some(ItemUse::Heal(hp)) => lines.push(Line::styled(
                 format!("Restores {hp} hit points."),
@@ -436,6 +457,15 @@ fn actions(game: &Game, item: &ItemId) -> Vec<Action> {
             None => Action::Equip,
         });
         debug_assert!(worn_in(game, item).is_none_or(|worn| worn == slot));
+    }
+    if game.weapon_condition(item).is_some() {
+        let kit = ItemId::try_new(WEAPON_REPAIR_KIT);
+        if kit.is_ok_and(|kit| inventory.item_count(&kit) > 0) {
+            actions.push(Action::Mend);
+        }
+        if inventory.item_count(item) >= 2 {
+            actions.push(Action::Merge);
+        }
     }
     actions.extend([Action::Drop, Action::Back]);
     actions

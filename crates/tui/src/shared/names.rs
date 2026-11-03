@@ -4,7 +4,8 @@ use std::collections::BTreeMap;
 
 use engine::shared::{GameData, ItemId};
 
-/// Display names for the weapons, armor, ammo and consumables of the loaded data.
+/// Display names for the weapons, armor, ammo, consumables and miscellany of the
+/// loaded data.
 #[derive(Debug, Clone, Default)]
 pub struct Names(BTreeMap<ItemId, String>);
 
@@ -19,11 +20,13 @@ impl Names {
             .consumables
             .iter()
             .map(|i| (i.id.clone(), i.name.clone()));
+        let misc = data.misc.iter().map(|i| (i.id.clone(), i.name.clone()));
         Self(
             weapons
                 .chain(armor)
                 .chain(ammo)
                 .chain(consumables)
+                .chain(misc)
                 .collect(),
         )
     }

@@ -1,6 +1,8 @@
 //! Each rule of the quest lifecycle, one case at a time.
 
-use engine::quests::{QuestBook, QuestBookError};
+use std::sync::Arc;
+
+use engine::quests::{QuestBook, QuestBookError, QuestLog};
 use engine::shared::{EffectError, QuestSink, QuestStatus, QuestView};
 
 use crate::support::{id, log, quest, stage};
@@ -191,4 +193,40 @@ fn the_finished_quests_are_the_completed_and_the_failed_and_never_the_active() {
             ("won".to_owned(), QuestStatus::Completed)
         ]
     );
+}
+
+/// A quest with a side task (stage 10) that may be done after the quest moved on.
+fn quest_with_a_side_task() -> QuestLog {
+    let mut record = quest("q", &[(5, false), (10, false), (20, false), (30, true)]);
+    record.stages[1].optional = true;
+    let book = QuestBook::new([&record]).expect("stages are in order");
+    QuestLog::new(Arc::new(book))
+}
+
+#[test]
+fn an_optional_stage_reached_late_changes_nothing_and_is_not_refused() {
+    let mut log = quest_with_a_side_task();
+    log.set_stage(&id("q"), stage(20)).expect("skips ahead");
+    log.set_stage(&id("q"), stage(10))
+        .expect("the side task is no step back");
+    assert_eq!(log.quest_stage(&id("q")), Some(stage(20)));
+    assert_eq!(log.quest_status(&id("q")), QuestStatus::Active);
+}
+
+#[test]
+fn an_optional_stage_reached_in_order_still_moves_the_quest() {
+    let mut log = quest_with_a_side_task();
+    log.set_stage(&id("q"), stage(5)).expect("advances");
+    log.set_stage(&id("q"), stage(10)).expect("the side task");
+    assert_eq!(log.quest_stage(&id("q")), Some(stage(10)));
+}
+
+#[test]
+fn a_stage_that_is_not_optional_is_still_refused_behind_an_optional_one() {
+    let mut log = quest_with_a_side_task();
+    log.set_stage(&id("q"), stage(20)).expect("skips ahead");
+    assert!(matches!(
+        log.set_stage(&id("q"), stage(5)),
+        Err(EffectError::Refused { .. })
+    ));
 }

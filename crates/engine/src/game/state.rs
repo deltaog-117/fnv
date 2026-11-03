@@ -8,7 +8,9 @@ use super::battle::{Arsenal, Battle, BattleError, Outcome, WEAR_PER_SHOT};
 use crate::character::{Character, PerkBook, ProgressError};
 use crate::clock::{ClockError, GameClock, Span};
 use crate::combat::{Condition, Percent, Side, Status};
+use crate::craft::{RecipeBook, StationBook};
 use crate::effects::{Active, ActiveEffects};
+use crate::gather::{FindBook, Gathered};
 use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
 use crate::quests::{QuestBook, QuestLog};
 use crate::reputation::{ReputationBook, Standing};
@@ -28,6 +30,9 @@ use crate::travel::{Route, TravelBook, TravelError};
 use crate::world::{WorldBook, WorldState};
 
 mod save;
+mod upkeep;
+
+pub use upkeep::{Crafted, RepairQuote};
 
 /// A quest effect that could not run because its feature is not built yet, kept
 /// so the reward is not lost: it can be applied once the feature lands.
@@ -64,6 +69,12 @@ pub struct Game {
     market: Market,
     /// Where the player may sleep.
     beds: Arc<BedBook>,
+    /// What can be made, and where the stations stand.
+    recipes: Arc<RecipeBook>,
+    stations: Arc<StationBook>,
+    /// What lies at a place to be picked up once, and what has been picked up.
+    finds: Arc<FindBook>,
+    gathered: Gathered,
     /// What day and time it is; moves only through [`Game::wait`], [`Game::sleep`]
     /// and [`Game::travel`].
     clock: GameClock,
@@ -108,6 +119,10 @@ impl Game {
             perks: Arc::default(),
             market: Market::default(),
             beds: Arc::default(),
+            recipes: Arc::default(),
+            stations: Arc::default(),
+            finds: Arc::default(),
+            gathered: Gathered::default(),
             clock: GameClock::START,
             effects: ActiveEffects::default(),
             map: Arc::default(),
@@ -149,6 +164,30 @@ impl Game {
     #[must_use]
     pub fn with_beds(mut self, beds: Arc<BedBook>) -> Self {
         self.beds = beds;
+        self
+    }
+
+    /// The same game over the recipes that exist. Without a book nothing can be
+    /// made, so call this before play.
+    #[must_use]
+    pub fn with_recipes(mut self, recipes: Arc<RecipeBook>) -> Self {
+        self.recipes = recipes;
+        self
+    }
+
+    /// The same game over the crafting stations that exist. Without a book there is
+    /// nowhere to craft, so call this before play.
+    #[must_use]
+    pub fn with_stations(mut self, stations: Arc<StationBook>) -> Self {
+        self.stations = stations;
+        self
+    }
+
+    /// The same game over the finds that exist. Without a book there is nothing to
+    /// pick up, so call this before play.
+    #[must_use]
+    pub fn with_finds(mut self, finds: Arc<FindBook>) -> Self {
+        self.finds = finds;
         self
     }
 

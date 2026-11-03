@@ -6,8 +6,8 @@ use engine::saves::{
     SavedShop, SavedWear,
 };
 use engine::shared::{
-    BoostStat, Effect, EncounterId, LocationId, NpcId, PerkId, QuestId, QuestStage, Skill, Special,
-    TraitId,
+    BoostStat, Effect, EncounterId, FindId, LocationId, NpcId, PerkId, QuestId, QuestStage, Skill,
+    Special, TraitId,
 };
 
 use super::support::{item, played, template, vendor};
@@ -328,5 +328,26 @@ fn a_skill_pushed_past_one_hundred_is_refused() {
             save.character.spent.insert(Skill::Guns, 250);
         }),
         "character"
+    );
+}
+
+#[test]
+fn a_find_the_game_does_not_have_is_refused() {
+    assert_eq!(
+        refused_part(|save| save
+            .gathered
+            .push(FindId::try_new("no_such_find").expect("literal is a valid id"))),
+        "gathered"
+    );
+}
+
+#[test]
+fn a_find_taken_twice_is_refused() {
+    assert_eq!(
+        refused_part(|save| {
+            let again = save.gathered[0].clone();
+            save.gathered.push(again);
+        }),
+        "gathered"
     );
 }

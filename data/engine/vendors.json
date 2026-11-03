@@ -5,6 +5,7 @@
     "npc": "chet",
     "place": "goodsprings_general_store",
     "caps": 500,
+    "repair": {"skill": 50},
     "discount": {
       "percent": 25,
       "when": [
@@ -20,7 +21,8 @@
       {"item": "9mm_pistol", "count": 1},
       {"item": "varmint_rifle", "count": 1},
       {"item": "leather_armor", "count": 1},
-      {"item": "stimpak", "count": 2}
+      {"item": "stimpak", "count": 2},
+      {"item": "weapon_repair_kit", "count": 2}
     ]
   },
   {

@@ -75,7 +75,8 @@ def main(argv):
     validators = {
         name: Draft202012Validator({"$ref": f"{name}.schema.json"}, registry=registry)
         for name in ("item", "quest", "npc", "dialogue", "location", "perk", "trait",
-                     "faction", "reputation", "creature", "encounter", "vendor", "bed")
+                     "faction", "reputation", "creature", "encounter", "vendor", "bed",
+                     "station", "find")
     }
 
     for name in ("stat", "challenge", "recipe", "ending", "level", "formulas"):
@@ -223,6 +224,11 @@ def main(argv):
         for ref in [rc.get("output_item_id")] + [i.get("item_id") for i in rc["ingredients"]]:
             if ref and ref not in item_ids:
                 report("refs", rc["id"], f"unknown item {ref}")
+        scripted = [node for reaction in rc.get("on_craft", [])
+                    for node in reaction.get("when", []) + reaction["effects"]]
+        for ref in refs_in(scripted, "quest"):
+            if ref not in quest_ids:
+                report("refs", rc["id"], f"names unknown quest {ref}")
     endings, _ = load_group("endings.json", "ending", "endings")
     for en in endings:
         for ref in en.get("condition_quests", []):
@@ -271,6 +277,21 @@ def main(argv):
     for bed in beds:
         if bed["place"] not in loc_ids:
             report("refs", bed["id"], f"unknown place {bed['place']}")
+    stations, _ = load_group("stations.json", "station", "stations")
+    for station in stations:
+        if station["place"] not in loc_ids:
+            report("refs", station["id"], f"unknown place {station['place']}")
+    carried_ids = stock_ids | {r["id"] for r in json.load(open(engine / "misc.json"))}
+    finds, _ = load_group("finds.json", "find", "finds")
+    for find in finds:
+        if find["place"] not in loc_ids:
+            report("refs", find["id"], f"unknown place {find['place']}")
+        lines = [line["item"] for line in find["items"]]
+        for item in lines:
+            if item not in carried_ids:
+                report("refs", find["id"], f"{item} cannot be carried")
+        for item in {i for i in lines if lines.count(i) > 1}:
+            report("refs", find["id"], f"{item} is listed twice")
     for d in dialogue:
         for t in d["topics"]:
             if t.get("shop") and t["shop"] not in vendor_ids:

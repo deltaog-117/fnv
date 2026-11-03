@@ -89,7 +89,10 @@
    {
     "key": "vfreeformgoodspringsdocmitchelltopic004",
     "check": {"type": "skill", "skill": "medicine", "min": 25},
-    "effects": [{"type": "set_flag", "flag": "doc_mitchell_gave_cobb_supplies"}]
+    "effects": [
+     {"type": "set_flag", "flag": "doc_mitchell_gave_cobb_supplies"},
+     {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 40}
+    ]
    },
    {
     "key": "vfreeformgoodspringsdocmitchelltopic004_2",
@@ -515,7 +518,10 @@
    {
     "key": "vfreeformgoodspringsgschettopic009",
     "check": {"type": "skill", "skill": "barter", "min": 25},
-    "effects": [{"type": "set_flag", "flag": "chet_shaken_down"}]
+    "effects": [
+     {"type": "set_flag", "flag": "chet_shaken_down"},
+     {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 30}
+    ]
    },
    {
     "key": "vfreeformgoodspringsgschettopic009_2",
@@ -526,7 +532,10 @@
    {
     "key": "vfreeformgoodspringsgschettopic010",
     "check": {"type": "skill", "skill": "speech", "min": 25},
-    "effects": [{"type": "set_flag", "flag": "chet_shaken_down"}]
+    "effects": [
+     {"type": "set_flag", "flag": "chet_shaken_down"},
+     {"type": "set_stage", "quest": "run_goodsprings_run", "stage": 30}
+    ]
    },
    {
     "key": "vfreeformgoodspringsgschettopic010_2",

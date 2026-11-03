@@ -7,12 +7,12 @@ use serde::{Deserialize, Serialize};
 
 use super::error::SaveError;
 use crate::shared::{
-    BoostStat, Effect, EncounterId, EndingId, FactionId, FlagId, ItemId, LocationId, NpcId, PerkId,
-    QuestId, QuestStage, Skill, Special, TraitId, VendorId,
+    BoostStat, Effect, EncounterId, EndingId, FactionId, FindId, FlagId, ItemId, LocationId, NpcId,
+    PerkId, QuestId, QuestStage, Skill, Special, TraitId, VendorId,
 };
 
 /// The newest version this game reads and the only one it writes.
-pub const VERSION: u32 = 1;
+pub const VERSION: u32 = 2;
 
 /// Everything that changes during play.
 ///
@@ -44,6 +44,8 @@ pub struct Save {
     pub effects: Vec<SavedEffect>,
     /// How worn each weapon is.
     pub wear: Vec<SavedWear>,
+    /// The finds the player has already picked up.
+    pub gathered: Vec<FindId>,
     /// Fights the player has won.
     pub won: Vec<EncounterId>,
     /// Consequence rules that already fired.
@@ -282,8 +284,18 @@ impl Save {
     }
 }
 
-/// Turns a save of `from` into one of `from + 1`. There is only one version so far,
-/// so no step exists yet; the first change to the record adds `1 => ...` here.
-fn upgrade(_value: serde_json::Value, from: u64) -> Result<serde_json::Value, SaveError> {
-    Err(SaveError::UnknownVersion(from))
+/// Turns a save of `from` into one of `from + 1`.
+fn upgrade(mut value: serde_json::Value, from: u64) -> Result<serde_json::Value, SaveError> {
+    match from {
+        // Version 2 added the finds taken; a version 1 game had none to take.
+        1 => {
+            let object = value
+                .as_object_mut()
+                .ok_or_else(|| SaveError::Format("the save is not an object".to_owned()))?;
+            object.insert("gathered".to_owned(), serde_json::Value::Array(Vec::new()));
+            object.insert("version".to_owned(), serde_json::Value::from(2));
+            Ok(value)
+        }
+        _ => Err(SaveError::UnknownVersion(from)),
+    }
 }

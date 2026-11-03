@@ -107,6 +107,10 @@
             "type": "boolean",
             "description": "Reaching this stage completes the quest."
           },
+          "optional": {
+            "type": "boolean",
+            "description": "An optional stage: reaching it when the quest is already past it changes nothing instead of being refused; authored in data/quests/slice_*.json."
+          },
           "on_enter": {
             "type": "array",
             "items": {

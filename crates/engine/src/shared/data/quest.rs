@@ -71,6 +71,10 @@ pub struct Stage {
     /// True when reaching this stage completes the quest.
     #[serde(default)]
     pub finish: bool,
+    /// An optional stage: reaching it when the quest is already past it changes
+    /// nothing instead of being refused, so side tasks can be done in any order.
+    #[serde(default)]
+    pub optional: bool,
     /// Effects applied once, the first time the quest reaches this stage.
     #[serde(default)]
     pub on_enter: Vec<Effect>,

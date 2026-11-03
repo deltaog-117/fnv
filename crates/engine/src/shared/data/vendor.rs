@@ -4,7 +4,7 @@ use std::num::NonZeroU32;
 
 use serde::Deserialize;
 
-use crate::shared::{Condition, DiscountPercent, ItemId, LocationId, NpcId, VendorId};
+use crate::shared::{Condition, DiscountPercent, ItemId, LocationId, NpcId, SkillLevel, VendorId};
 
 /// A cut in the price the player pays, while the player's standing earns it.
 ///
@@ -18,6 +18,14 @@ pub struct Discount {
     /// At least one must hold for the cut to apply; empty means always.
     #[serde(default)]
     pub when: Vec<Condition>,
+}
+
+/// A repair service: the vendor mends worn weapons for caps.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct RepairService {
+    /// The vendor's own Repair skill: a weapon is mended to at most this percent.
+    pub skill: SkillLevel,
 }
 
 /// One line of a vendor's stock.
@@ -52,4 +60,6 @@ pub struct Vendor {
     pub stock: Vec<StockLine>,
     /// A price cut for a player in good standing, if the vendor gives one.
     pub discount: Option<Discount>,
+    /// Mends worn weapons for caps, if the vendor offers it.
+    pub repair: Option<RepairService>,
 }

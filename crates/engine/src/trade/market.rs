@@ -193,6 +193,21 @@ impl Market {
         Ok(())
     }
 
+    /// The vendor is paid `caps` for a service, such as a repair.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError::UnknownVendor`], or [`TradeError::VendorShort`] when the caps
+    /// would overflow what a vendor can hold. Nothing changes on an error.
+    pub fn earn(&mut self, vendor: &VendorId, caps: u32) -> Result<(), TradeError> {
+        let shop = self.shop_mut(vendor)?;
+        shop.caps = shop.caps.checked_add(caps).ok_or(TradeError::VendorShort {
+            have: shop.caps,
+            need: caps,
+        })?;
+        Ok(())
+    }
+
     fn shop_mut(&mut self, vendor: &VendorId) -> Result<&mut Shop, TradeError> {
         self.shops
             .get_mut(vendor)

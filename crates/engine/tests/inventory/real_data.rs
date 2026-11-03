@@ -14,12 +14,17 @@ fn data() -> GameData {
 }
 
 #[test]
-fn the_book_holds_every_weapon_armor_ammo_and_consumable() {
+fn the_book_holds_every_weapon_armor_ammo_consumable_and_miscellany() {
     let data = data();
     let book = ItemBook::from_data(&data).expect("weights are valid and ids are unique");
-    let expected = data.weapons.len() + data.armor.len() + data.ammo.len() + data.consumables.len();
+    let expected = data.weapons.len()
+        + data.armor.len()
+        + data.ammo.len()
+        + data.consumables.len()
+        + data.misc.len();
     assert_eq!(book.len(), expected);
     assert!(book.contains(&item("pip_boy_3000")));
+    assert!(book.contains(&item("duct_tape")));
 }
 
 #[test]

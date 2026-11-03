@@ -213,6 +213,16 @@ item_record!(
     }
 );
 
+item_record!(
+    /// A crafting component or other miscellany: scrap, tools, holotapes and notes.
+    Misc {
+        /// The wiki's kind of miscellany, such as "crafting" or "holotape".
+        item_type: Option<String>,
+        /// The wiki's list of what the item is used to make.
+        component_of_text: Option<String>,
+    }
+);
+
 /// What using a consumable does, as the game models it.
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize)]
 #[serde(rename_all = "snake_case")]

@@ -15,13 +15,13 @@ use serde_json::Value;
 use thiserror::Error;
 
 use super::data::{
-    Ammo, Armor, Bed, Consumable, Dialogue, Encounter, Faction, Location, Npc, Perk, Quest, Trait,
-    Vendor, Weapon,
+    Ammo, Armor, Bed, Consumable, Dialogue, Encounter, Faction, Find, Location, Misc, Npc, Perk,
+    Quest, Recipe, Station, Trait, Vendor, Weapon,
 };
 use super::error::ModelError;
 use super::ids::{
-    BedId, DialogueId, EncounterId, FactionId, ItemId, LocationId, NpcId, PerkId, QuestId, TraitId,
-    VendorId,
+    BedId, DialogueId, EncounterId, FactionId, FindId, ItemId, LocationId, NpcId, PerkId, QuestId,
+    RecipeId, StationId, TraitId, VendorId,
 };
 
 /// A record that carries its own unique id.
@@ -60,6 +60,10 @@ impl_record!(
     Trait => TraitId,
     Vendor => VendorId,
     Bed => BedId,
+    Misc => ItemId,
+    Recipe => RecipeId,
+    Station => StationId,
+    Find => FindId,
 );
 
 /// Why the data could not be loaded.
@@ -245,6 +249,14 @@ pub struct GameData {
     pub vendors: Catalog<Vendor>,
     /// Every bed where the player may sleep.
     pub beds: Catalog<Bed>,
+    /// Every crafting component and other miscellany.
+    pub misc: Catalog<Misc>,
+    /// Every crafting recipe.
+    pub recipes: Catalog<Recipe>,
+    /// Every crafting station.
+    pub stations: Catalog<Station>,
+    /// Everything the player can pick up at a place.
+    pub finds: Catalog<Find>,
 }
 
 impl GameData {
@@ -304,6 +316,10 @@ impl GameData {
             traits: read_catalog(dir, "traits.json")?,
             vendors: read_catalog(dir, "vendors.json")?,
             beds: read_catalog(dir, "beds.json")?,
+            misc: read_catalog(dir, "misc.json")?,
+            recipes: read_catalog(dir, "recipes.json")?,
+            stations: read_catalog(dir, "stations.json")?,
+            finds: read_catalog(dir, "finds.json")?,
             dialogue: Catalog::from_records(&dir.join("dialogue"), dialogue)?,
             locations,
             quests,

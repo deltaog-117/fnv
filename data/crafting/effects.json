@@ -1,0 +1,20 @@
+[
+  {
+    "recipe": "healing_powder_craft",
+    "reactions": [
+      {
+        "when": [
+          {"type": "quest", "quest": "by_a_campfire_on_the_trail", "state": "active"},
+          {"type": "quest", "quest": "by_a_campfire_on_the_trail", "state": "stage_at_least", "stage": 10},
+          {
+            "type": "not",
+            "of": {"type": "quest", "quest": "by_a_campfire_on_the_trail", "state": "stage_at_least", "stage": 30}
+          }
+        ],
+        "effects": [
+          {"type": "set_stage", "quest": "by_a_campfire_on_the_trail", "stage": 30}
+        ]
+      }
+    ]
+  }
+]

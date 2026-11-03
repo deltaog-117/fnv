@@ -12,16 +12,18 @@ use std::sync::Arc;
 use anyhow::Context;
 use engine::character::PerkBook;
 use engine::clock::Span;
+use engine::craft::{RecipeBook, StationBook};
 use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::{Arsenal, Game, Outcome};
+use engine::gather::FindBook;
 use engine::inventory::{ItemBook, Slot};
 use engine::quests::QuestBook;
 use engine::reputation::ReputationBook;
 use engine::rest::{BedBook, FULL_REST_HOURS};
 use engine::saves::Save;
 use engine::shared::{
-    BedId, Effect, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage, VendorId,
-    apply_all,
+    BedId, Effect, FindId, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage,
+    StationId, VendorId, apply_all,
 };
 use engine::trade::VendorBook;
 use engine::travel::TravelBook;
@@ -33,10 +35,12 @@ use ratatui::widgets::{Block, Borders, Paragraph};
 
 use crate::character::{self, Creation, LevelUp};
 use crate::combat::{self, Fight};
+use crate::craft::{self, Craft};
 use crate::dialogue::{self, Talk};
 use crate::exploration::{self, Exploration, Person};
 use crate::inventory::{self, Pack};
 use crate::quests::{self, Journal};
+use crate::repair::{self, Repair};
 use crate::reputation::{self, Reputation};
 use crate::shared::dice::Rng;
 use crate::shared::input::Command;
@@ -86,6 +90,10 @@ enum Screen {
     Traveling(Travel),
     /// Looking through the pack.
     Packing(Pack),
+    /// Making things at a crafting station.
+    Crafting(Craft),
+    /// Having a vendor mend a weapon.
+    Repairing(Repair),
     /// At a counter. `from` is the conversation that opened the shop, if one did, so
     /// leaving the shop picks it up again.
     Trading {
@@ -218,6 +226,13 @@ impl App {
         let arsenal = Arc::new(Arsenal::from_data(data).context("building the arsenal")?);
         let vendors = Arc::new(VendorBook::from_data(data).context("building the vendors")?);
         let beds = Arc::new(BedBook::from_data(data).context("building the beds")?);
+        let recipes = Arc::new(
+            RecipeBook::from_data(data, |item| items.contains(item))
+                .context("building the recipes")?,
+        );
+        let stations =
+            Arc::new(StationBook::from_data(data).context("building the crafting stations")?);
+        let finds = Arc::new(FindBook::from_data(data).context("building the finds")?);
         let reputation =
             Arc::new(ReputationBook::from_data(data).context("building the reputation book")?);
         let map = Arc::new(TravelBook::from_data(data).context("building the map")?);
@@ -226,6 +241,9 @@ impl App {
             .with_arsenal(arsenal)
             .with_perks(Arc::new(PerkBook::base_game(data)))
             .with_beds(beds)
+            .with_recipes(recipes)
+            .with_stations(stations)
+            .with_finds(finds)
             .with_reputation(reputation)
             .with_vendors(Arc::clone(&vendors))
             .context("stocking the vendors")?
@@ -321,6 +339,9 @@ impl App {
                 }
                 exploration::Next::Fight(index) => self.start_fight(index),
                 exploration::Next::Sleep(index) => self.sleep(index),
+                exploration::Next::Gather(index) => self.gather(index),
+                exploration::Next::Craft(index) => self.open_station(index),
+                exploration::Next::Repair(index) => self.open_repairs(index),
                 exploration::Next::Character => self.screen = Screen::Leveling(LevelUp::new()),
                 exploration::Next::Pack => {
                     self.screen = Screen::Packing(Pack::open(&self.game, Arc::clone(&self.names)));
@@ -360,6 +381,16 @@ impl App {
             }
             Screen::Packing(pack) => {
                 if pack.update(command, &mut self.game, &mut self.log) == inventory::Next::Leave {
+                    self.screen = self.exploring();
+                }
+            }
+            Screen::Crafting(craft) => {
+                if craft.update(command, &mut self.game, &mut self.log) == craft::Next::Leave {
+                    self.screen = self.exploring();
+                }
+            }
+            Screen::Repairing(repairs) => {
+                if repairs.update(command, &mut self.game, &mut self.log) == repair::Next::Leave {
                     self.screen = self.exploring();
                 }
             }
@@ -464,6 +495,73 @@ impl App {
             .collect()
     }
 
+    /// The things lying here that the player has not taken, with the names to show.
+    fn finds_here(&self) -> Vec<(FindId, String)> {
+        self.here
+            .iter()
+            .flat_map(|place| self.game.finds_at(place))
+            .map(|(id, name)| (id.clone(), name.to_owned()))
+            .collect()
+    }
+
+    /// The crafting stations here, with the names to show.
+    fn stations_here(&self) -> Vec<(StationId, String)> {
+        self.here
+            .iter()
+            .flat_map(|place| self.game.stations_at(place))
+            .map(|(id, name)| (id.clone(), name.to_owned()))
+            .collect()
+    }
+
+    /// The merchants here who mend weapons, with the names to show.
+    fn repairers_here(&self) -> Vec<(VendorId, String)> {
+        self.here
+            .iter()
+            .flat_map(|place| self.game.repairers_at(place))
+            .map(|(id, name)| (id.clone(), name.to_owned()))
+            .collect()
+    }
+
+    /// Picks up the find at `index` of [`App::finds_here`] and says what it was, or
+    /// why it could not be done.
+    fn gather(&mut self, index: usize) {
+        let Some((find, name)) = self.finds_here().into_iter().nth(index) else {
+            return;
+        };
+        let note = match self.game.gather(&find) {
+            Ok(()) => format!("You pick up {name}."),
+            Err(error) => error.to_string(),
+        };
+        self.log.push(Entry::Note(note));
+        self.screen = self.exploring();
+    }
+
+    /// Opens the crafting station at `index` of [`App::stations_here`].
+    fn open_station(&mut self, index: usize) {
+        let Some((station, name)) = self.stations_here().into_iter().nth(index) else {
+            return;
+        };
+        self.screen = Screen::Crafting(Craft::open(
+            station,
+            name,
+            &self.game,
+            Arc::clone(&self.names),
+        ));
+    }
+
+    /// Opens the repair counter of the merchant at `index` of [`App::repairers_here`].
+    fn open_repairs(&mut self, index: usize) {
+        let Some((vendor, name)) = self.repairers_here().into_iter().nth(index) else {
+            return;
+        };
+        self.screen = Screen::Repairing(Repair::open(
+            vendor,
+            name,
+            &self.game,
+            Arc::clone(&self.names),
+        ));
+    }
+
     /// Sleeps a full rest in the bed at `index` of [`App::beds_here`], and says what
     /// it restored, or why it could not be done.
     fn sleep(&mut self, index: usize) {
@@ -553,6 +651,21 @@ impl App {
             .map(|(_, name)| name)
             .collect();
         let beds = self.beds_here().into_iter().map(|(_, name)| name).collect();
+        let finds = self
+            .finds_here()
+            .into_iter()
+            .map(|(_, name)| name)
+            .collect();
+        let stations = self
+            .stations_here()
+            .into_iter()
+            .map(|(_, name)| name)
+            .collect();
+        let repairers = self
+            .repairers_here()
+            .into_iter()
+            .map(|(_, name)| name)
+            .collect();
         let fights = self
             .game
             .encounters_at(&self.place_id)
@@ -571,6 +684,9 @@ impl App {
                 .with_shops(shops)
                 .with_fights(fights)
                 .with_beds(beds)
+                .with_finds(finds)
+                .with_stations(stations)
+                .with_repairers(repairers)
                 .with_character_label(label),
         )
     }
@@ -687,6 +803,14 @@ impl App {
                 trade.render(frame, regions.scene, &self.game);
                 trade.keys()
             }
+            Screen::Crafting(craft) => {
+                craft.render(frame, regions.scene, &self.game);
+                craft.keys()
+            }
+            Screen::Repairing(repairs) => {
+                repairs.render(frame, regions.scene, &self.game);
+                repairs.keys()
+            }
             Screen::Down => {
                 render_down(frame, regions.scene);
                 "Enter or Esc to leave | q quit"
@@ -796,7 +920,9 @@ mod tests {
 
     #[test]
     fn the_first_frame_shows_the_place_the_people_the_quest_and_the_keys() {
-        let text = screen(&app(), 100, 40);
+        // Tall enough for every row of the town, which now lists finds, stations and
+        // a repairer too.
+        let text = screen(&app(), 100, 50);
         for expected in [
             "You are in Goodsprings",
             "Talk to Doc Mitchell",
@@ -1253,12 +1379,15 @@ mod tests {
     }
 
     /// Opens the character screen from the scene, where its row follows the people,
-    /// the shops, the fights and the beds.
+    /// the shops, the fights, the beds, the finds, the stations and the repairers.
     fn open_character(app: &mut App) {
         let row = app.people.len()
             + app.shops_here().len()
             + app.game.encounters_at(&app.place_id).len()
-            + app.beds_here().len();
+            + app.beds_here().len()
+            + app.finds_here().len()
+            + app.stations_here().len()
+            + app.repairers_here().len();
         app.update(Command::Pick(row));
         assert!(matches!(app.screen, Screen::Leveling(_)));
     }
@@ -1266,11 +1395,11 @@ mod tests {
     #[test]
     fn the_scene_offers_the_character_screen_and_says_when_points_are_waiting() {
         let app = app();
-        assert!(screen(&app, 100, 30).contains("Character"));
+        assert!(screen(&app, 100, 50).contains("Character"));
         let app = with_levels_waiting(app);
         assert!(app.game.character().skill_points() > 0);
         assert!(app.game.character().perk_picks() > 0);
-        assert!(screen(&app, 100, 30).contains("Level up ("));
+        assert!(screen(&app, 100, 50).contains("Level up ("));
     }
 
     #[test]
@@ -1536,5 +1665,130 @@ mod tests {
         let text = screen(&app, 120, 40);
         assert!(text.contains("Could not load"), "{text}");
         assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    fn give(app: &mut App, item: &str, count: u32) {
+        let effect = Effect::GiveItem {
+            item: ItemId::try_new(item).expect("valid id"),
+            count: NonZeroU32::new(count).expect("a positive count"),
+        };
+        apply_all(&[effect], &mut app.game).expect("the item is given");
+    }
+
+    /// Wears the pistol down by `lost` points and puts it in the pack.
+    fn with_a_worn_pistol(mut app: App, lost: u32) -> App {
+        give(&mut app, "9mm_pistol", 1);
+        let mut save = app.game.save();
+        save.wear.push(engine::saves::SavedWear {
+            item: ItemId::try_new("9mm_pistol").expect("valid id"),
+            lost,
+        });
+        app.game = app.game.restore(&save).expect("the worn pistol loads");
+        app.screen = app.exploring();
+        app
+    }
+
+    #[test]
+    fn the_scene_lists_the_pickups_the_campfire_and_the_repairer() {
+        let text = screen(&app(), 100, 60);
+        for expected in [
+            "Pick up a broc flower",
+            "Pick up a xander root",
+            "Craft at the campfire at the Goodsprings source",
+            "Craft at the workbench in the Goodsprings home",
+            "repair a weapon",
+        ] {
+            assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
+        }
+    }
+
+    #[test]
+    fn picking_up_the_plants_and_making_powder_at_the_campfire_works_from_the_scene() {
+        let mut app = app();
+        choose_row(&mut app, "Pick up a broc flower");
+        choose_row(&mut app, "Pick up a xander root");
+        let text = screen(&app, 100, 60);
+        assert!(
+            !text.contains("Pick up a broc flower"),
+            "a taken find is gone:\n{text}"
+        );
+        assert!(text.contains("You pick up a xander root"), "{text}");
+        choose_row(&mut app, "Craft at the campfire");
+        assert!(matches!(app.screen, Screen::Crafting(_)));
+        let text = screen(&app, 100, 30);
+        for expected in ["Healing powder", "[ready]", "Broc flower", "Uses up"] {
+            assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
+        }
+        // Healing powder is the only campfire recipe the pack can make, but the
+        // cursor starts on the first recipe in the list.
+        while !selected_row(&app).contains("Healing powder") {
+            app.update(Command::Down);
+        }
+        app.update(Command::Select);
+        assert!(screen(&app, 100, 30).contains("You make Healing powder x1"));
+        assert_eq!(
+            app.game
+                .inventory()
+                .item_count(&ItemId::try_new("healing_powder").expect("valid id")),
+            1
+        );
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    #[test]
+    fn crafting_without_the_parts_says_what_is_missing_and_changes_nothing() {
+        let mut app = app();
+        choose_row(&mut app, "Craft at the campfire");
+        while !selected_row(&app).contains("Healing powder") {
+            app.update(Command::Down);
+        }
+        let before = app.game.save();
+        app.update(Command::Select);
+        assert_eq!(app.game.save(), before);
+        assert!(
+            screen(&app, 100, 30).contains("you carry 0 of"),
+            "{}",
+            screen(&app, 100, 30)
+        );
+    }
+
+    #[test]
+    fn the_repair_counter_quotes_a_price_and_mends_the_weapon() {
+        let mut app = with_a_worn_pistol(app(), 140);
+        apply_all(&[Effect::Caps { amount: 500.0 }], &mut app.game).expect("caps apply");
+        choose_row(&mut app, "repair a weapon");
+        assert!(matches!(app.screen, Screen::Repairing(_)));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("9mm pistol"), "{text}");
+        assert!(text.contains("caps"), "{text}");
+        let before = app.game.caps();
+        app.update(Command::Select);
+        assert!(app.game.caps() < before);
+        assert!(screen(&app, 100, 30).contains("mends your 9mm pistol"));
+        let pistol = ItemId::try_new("9mm_pistol").expect("valid id");
+        assert!(
+            app.game
+                .weapon_condition(&pistol)
+                .is_some_and(|left| left.get() >= 50)
+        );
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    #[test]
+    fn a_worn_weapon_and_a_kit_offer_mending_in_the_pack_and_two_copies_offer_a_merge() {
+        let mut app = with_a_worn_pistol(app(), 100);
+        give(&mut app, "weapon_repair_kit", 1);
+        give(&mut app, "9mm_pistol", 1);
+        choose_row(&mut app, "Pack");
+        while !selected_row(&app).contains("9mm pistol") {
+            app.update(Command::Down);
+        }
+        app.update(Command::Select);
+        let text = screen(&app, 100, 40);
+        for expected in ["Mend with a kit", "Merge two copies"] {
+            assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
+        }
     }
 }

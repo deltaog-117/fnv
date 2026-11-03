@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "station.schema.json",
+  "title": "Station",
+  "description": "One entry in data/engine/stations.json: a crafting station standing at a place.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "place"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "description": "The station kind, spelled as recipes.json spells it.",
+      "enum": [
+        "Campfire",
+        "Workbench",
+        "Reloading bench"
+      ]
+    },
+    "place": {
+      "description": "Location id where the station stands.",
+      "$ref": "common.schema.json#/$defs/id"
+    }
+  }
+}

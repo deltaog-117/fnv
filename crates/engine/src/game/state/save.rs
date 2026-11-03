@@ -15,6 +15,7 @@ use super::{Active, ActiveEffects, Deferred, Game};
 use crate::character::{Character, CharacterRecord, SpecialSet};
 use crate::clock::GameClock;
 use crate::combat::Condition;
+use crate::gather::Gathered;
 use crate::inventory::Slot;
 use crate::saves::{
     Save, SaveError, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding, SavedFate,
@@ -194,6 +195,7 @@ impl Game {
             shops,
             effects,
             wear,
+            gathered: self.gathered.iter().cloned().collect(),
             won,
             fired,
             deferred,
@@ -228,6 +230,10 @@ impl Game {
             perks: self.perks.clone(),
             market: self.market.refilled(),
             beds: self.beds.clone(),
+            recipes: self.recipes.clone(),
+            stations: self.stations.clone(),
+            finds: self.finds.clone(),
+            gathered: Gathered::default(),
             clock: GameClock::from_minutes(save.clock_minutes),
             effects: ActiveEffects::default(),
             map: self.map.clone(),
@@ -248,6 +254,7 @@ impl Game {
         game.restore_place(save, self)?;
         game.restore_wounds(save)?;
         game.restore_wear(save)?;
+        game.restore_gathered(save)?;
         game.restore_history(save)?;
         Ok(game)
     }
@@ -483,6 +490,21 @@ impl Game {
             {
                 return Err(bad(&format!("{} is listed twice", entry.item)));
             }
+        }
+        Ok(())
+    }
+
+    fn restore_gathered(&mut self, save: &Save) -> Result<(), SaveError> {
+        for find in &save.gathered {
+            if self.finds.get(find).is_none() {
+                return Err(SaveError::invalid(
+                    "gathered",
+                    format!("unknown find {find}"),
+                ));
+            }
+            self.gathered
+                .take(find)
+                .map_err(|error| SaveError::invalid("gathered", error))?;
         }
         Ok(())
     }

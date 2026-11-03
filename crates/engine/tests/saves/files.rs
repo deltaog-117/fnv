@@ -128,3 +128,17 @@ fn reading_a_file_that_is_not_there_says_so() {
         Err(SaveError::Io(_))
     ));
 }
+
+#[test]
+fn a_version_one_save_is_upgraded_with_nothing_gathered() {
+    let mut value: serde_json::Value =
+        serde_json::from_str(&template().save().to_json().expect("writes")).expect("json");
+    let object = value.as_object_mut().expect("a save is an object");
+    object.remove("gathered");
+    object.insert("version".to_owned(), serde_json::json!(1));
+    let upgraded = Save::from_json(&value.to_string()).expect("a version 1 save reads");
+    assert_eq!(upgraded.version, VERSION);
+    assert!(upgraded.gathered.is_empty());
+    assert_eq!(upgraded, template().save());
+    assert!(template().restore(&upgraded).is_ok());
+}
