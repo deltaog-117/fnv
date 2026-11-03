@@ -13,6 +13,12 @@ pub enum RepairError {
     /// The item is not a weapon that wears.
     #[error("{0} does not wear, so it cannot be repaired")]
     DoesNotWear(ItemId),
+    /// The player carries no weapon with this number.
+    #[error("you carry no weapon #{0}")]
+    NoSuchWeapon(u32),
+    /// Two weapons to merge are the same weapon or different kinds.
+    #[error("only two different copies of the same weapon can be merged")]
+    NotAPair,
     /// The player carries fewer of an item than the repair needs.
     #[error("you carry {have} of {item}, and the repair needs {need}")]
     NotCarried {

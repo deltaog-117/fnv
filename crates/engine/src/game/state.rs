@@ -1,6 +1,6 @@
 //! The one state that `evaluate` and `apply_all` run against.
 
-use std::collections::{HashMap, HashSet};
+use std::collections::HashSet;
 use std::num::NonZeroU32;
 use std::sync::Arc;
 
@@ -11,7 +11,7 @@ use crate::combat::{Condition, Percent, Side, Status};
 use crate::craft::{RecipeBook, StationBook};
 use crate::effects::{Active, ActiveEffects};
 use crate::gather::{FindBook, Gathered};
-use crate::inventory::{Inventory, InventoryError, ItemBook, Slot};
+use crate::inventory::{CopyId, Inventory, InventoryError, ItemBook, Slot, WeaponCopy};
 use crate::quests::{QuestBook, QuestLog};
 use crate::reputation::{ReputationBook, Standing};
 use crate::rest::{BedBook, RestError, restored};
@@ -32,7 +32,7 @@ use crate::world::{WorldBook, WorldState};
 mod save;
 mod upkeep;
 
-pub use upkeep::{Crafted, RepairQuote};
+pub use upkeep::{Crafted, RepairQuote, WornWeapon};
 
 /// A quest effect that could not run because its feature is not built yet, kept
 /// so the reward is not lost: it can be applied once the feature lands.
@@ -87,9 +87,6 @@ pub struct Game {
     /// Hit points lost and not yet healed. Stored as a loss, so hit points can
     /// never be above the maximum, and a level-up raises them with the maximum.
     wounds: u32,
-    /// Condition points each weapon has lost. Kept per item, so every copy of a
-    /// weapon shares it; a weapon absent here is new.
-    wear: HashMap<ItemId, u32>,
     /// Encounters the player has won; each is offered once.
     won: HashSet<EncounterId>,
     /// Rules already fired, as (quest, index into its rules).
@@ -128,7 +125,6 @@ impl Game {
             map: Arc::default(),
             at: None,
             wounds: 0,
-            wear: HashMap::new(),
             won: HashSet::new(),
             fired: HashSet::new(),
             deferred: Vec::new(),
@@ -351,7 +347,9 @@ impl Game {
         if !self.is_alive() {
             return Err(ClockError::Down);
         }
+        let before = self.clock.as_minutes();
         self.clock.advance(span)?;
+        self.market.restock(before, self.clock.as_minutes());
         self.expire_effects();
         Ok(())
     }
@@ -489,7 +487,10 @@ impl Game {
             .filter_map(|slot| self.inventory.equipped(slot))
             .collect();
         let wielded = self.inventory.equipped(Slot::Weapon);
-        let weapon_wear = wielded.map_or(0, |weapon| self.wear.get(weapon).copied().unwrap_or(0));
+        let copy = self.inventory.wielded();
+        let weapon_wear = copy
+            .and_then(|id| self.inventory.weapon(id))
+            .map_or(0, WeaponCopy::lost);
         let player = self.arsenal.player(
             &self.character,
             wielded,
@@ -509,7 +510,7 @@ impl Game {
             .filter(|(foe, _)| foe.when.iter().all(|condition| evaluate(condition, self)))
             .map(|(_, fighter)| fighter.clone())
             .collect();
-        Battle::start(encounter.clone(), player, hp, &present)
+        Battle::start(encounter.clone(), player, hp, &present, copy)
     }
 
     /// Settles a finished fight: the player keeps the wounds they ended with, and
@@ -531,7 +532,9 @@ impl Game {
         trial.wounds = trial.character.max_hp().saturating_sub(hp);
         trial.spend_rounds(battle)?;
         trial.wear_weapon(battle);
-        let outcome = if status == Status::Won(Side::Player) {
+        let outcome = if status == Status::Fled {
+            Outcome::Fled
+        } else if status == Status::Won(Side::Player) {
             let effects = self
                 .arsenal
                 .encounter(battle.encounter())
@@ -547,30 +550,30 @@ impl Game {
         Ok(outcome)
     }
 
-    /// Wears the weapon the player fought with by the shots they made.
+    /// Wears the very weapon the player fought with by the shots they made.
     fn wear_weapon(&mut self, battle: &Battle) {
-        let Some(weapon) = battle
-            .combat()
-            .combatant(battle.player())
-            .and_then(|fighter| fighter.weapon())
-        else {
+        let Some(copy) = battle.weapon() else {
             return;
         };
-        let Some(max) = self.arsenal.condition_max(weapon) else {
+        let Some(held) = self.inventory.weapon(copy) else {
             return;
         };
-        let lost = self.wear.get(weapon).copied().unwrap_or(0);
-        let worn = Condition::new(max, lost).worn(battle.shots().saturating_mul(WEAR_PER_SHOT));
-        self.wear.insert(weapon.clone(), worn.lost());
+        let Some(max) = self.arsenal.condition_max(held.item()) else {
+            return;
+        };
+        let worn =
+            Condition::new(max, held.lost()).worn(battle.shots().saturating_mul(WEAR_PER_SHOT));
+        // The copy was found just above, so the pack cannot refuse.
+        let _ = self.inventory.set_lost(copy, worn.lost());
     }
 
-    /// How much of a weapon's condition is left, from 0 to 100 percent; `None` for an
-    /// item that is not a weapon that wears.
+    /// How much of a carried weapon's condition is left, from 0 to 100 percent;
+    /// `None` for a weapon that is not carried or does not wear.
     #[must_use]
-    pub fn weapon_condition(&self, weapon: &ItemId) -> Option<Percent> {
-        let max = self.arsenal.condition_max(weapon)?;
-        let lost = self.wear.get(weapon).copied().unwrap_or(0);
-        Some(Condition::new(max, lost).percent())
+    pub fn copy_condition(&self, copy: CopyId) -> Option<Percent> {
+        let held = self.inventory.weapon(copy)?;
+        let max = self.arsenal.condition_max(held.item())?;
+        Some(Condition::new(max, held.lost()).percent())
     }
 
     /// Takes the rounds the player fired out of the pack. The rounds in the weapon
@@ -595,13 +598,33 @@ impl Game {
         }
     }
 
-    /// Equips a carried item.
+    /// Equips a carried item. Of several copies of a weapon, the least worn goes in
+    /// hand.
     ///
     /// # Errors
     ///
     /// [`InventoryError`] when the item is not carried or cannot be equipped.
     pub fn equip(&mut self, item: &ItemId) -> Result<Slot, InventoryError> {
         self.inventory.equip(item)
+    }
+
+    /// Puts one particular carried weapon in hand.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when no carried weapon has that id.
+    pub fn equip_copy(&mut self, copy: CopyId) -> Result<Slot, InventoryError> {
+        self.inventory.equip_copy(copy)
+    }
+
+    /// Throws one particular carried weapon away.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when no carried weapon has that id and
+    /// [`InventoryError::Equipped`] when it is the one in hand.
+    pub fn drop_copy(&mut self, copy: CopyId) -> Result<(), InventoryError> {
+        self.inventory.discard_copy(copy)
     }
 
     /// Uses one carried consumable, returning the hit points it restored.
@@ -805,6 +828,39 @@ impl Game {
         let mut trial = self.clone();
         trial.market.buy_from_player(vendor, item, count, price)?;
         trial.inventory.take_item(item, count)?;
+        trial.inventory.add_caps(f64::from(price))?;
+        *self = trial;
+        Ok(price)
+    }
+
+    /// Sells one particular carried weapon to a vendor, returning the caps received.
+    /// The vendor and the player change together or not at all. The vendor's stock
+    /// gains a weapon like any other: a shop keeps no record of wear.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError`] when the vendor is unknown or will not trade, the player does
+    /// not carry that weapon, it is the one in hand, it has no price, or the vendor
+    /// cannot pay.
+    pub fn sell_copy(&mut self, vendor: &VendorId, copy: CopyId) -> Result<u32, TradeError> {
+        self.check_vendor(vendor)?;
+        let item = self
+            .inventory
+            .weapon(copy)
+            .map(|held| held.item().clone())
+            .ok_or(TradeError::NoSuchWeapon(copy.get()))?;
+        if self.inventory.wielded() == Some(copy) {
+            return Err(TradeError::Equipped(item));
+        }
+        let price = self.sell_price(&item, NonZeroU32::MIN)?;
+        let mut trial = self.clone();
+        trial
+            .market
+            .buy_from_player(vendor, &item, NonZeroU32::MIN, price)?;
+        trial
+            .inventory
+            .discard_copy(copy)
+            .map_err(|_| TradeError::NoSuchWeapon(copy.get()))?;
         trial.inventory.add_caps(f64::from(price))?;
         *self = trial;
         Ok(price)

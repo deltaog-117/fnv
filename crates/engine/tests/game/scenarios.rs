@@ -119,11 +119,14 @@ fn the_goodsprings_scenarios_hold() {
             assert_eq!(game.character().xp(), xp, "{}: xp", scenario.name);
         }
         if let Some(expected) = &scenario.expect.items {
-            let carried: BTreeMap<ItemId, u32> = game
+            let mut carried: BTreeMap<ItemId, u32> = game
                 .inventory()
                 .stacks()
                 .map(|(item, count)| (item.clone(), count.get()))
                 .collect();
+            for (_, copy) in game.inventory().weapons() {
+                *carried.entry(copy.item().clone()).or_default() += 1;
+            }
             assert_eq!(&carried, expected, "{}: items", scenario.name);
         }
         for (renown, expected) in [

@@ -72,6 +72,9 @@ pub enum TradeError {
         /// How many were asked for.
         need: u32,
     },
+    /// The player carries no weapon with this number.
+    #[error("you carry no weapon #{0}")]
+    NoSuchWeapon(u32),
     /// The item is worn or wielded and the sale would give up that copy.
     #[error("{0} is equipped; unequip it first")]
     Equipped(ItemId),

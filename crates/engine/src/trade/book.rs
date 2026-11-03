@@ -16,9 +16,20 @@ pub struct VendorInfo {
     stock: Vec<(ItemId, NonZeroU32)>,
     discount: Option<Discount>,
     repair: Option<SkillLevel>,
+    restock_days: NonZeroU32,
 }
 
+/// Days between restocks when a vendor does not say. The game's stand-in: the wiki
+/// gives no restock interval.
+pub const DEFAULT_RESTOCK_DAYS: NonZeroU32 = NonZeroU32::new(3).unwrap();
+
 impl VendorInfo {
+    /// Days between restocks.
+    #[must_use]
+    pub fn restock_days(&self) -> NonZeroU32 {
+        self.restock_days
+    }
+
     /// The Repair skill the vendor mends weapons with, if they offer repairs.
     #[must_use]
     pub fn repair_skill(&self) -> Option<SkillLevel> {
@@ -104,6 +115,7 @@ impl VendorBook {
                 stock,
                 discount: record.discount.clone(),
                 repair: record.repair.map(|service| service.skill),
+                restock_days: record.restock_days.unwrap_or(DEFAULT_RESTOCK_DAYS),
             };
             if vendors.insert(record.id.clone(), info).is_some() {
                 return Err(TradeError::DuplicateVendor(record.id.clone()));

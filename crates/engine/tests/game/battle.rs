@@ -2,17 +2,18 @@
 //! offered by quest state, the fighters come from the character, the pack and the
 //! NPC records, and the wounds and the winnings come back.
 
+use std::num::NonZeroU32;
 use std::path::Path;
 use std::sync::{Arc, LazyLock};
 
-use engine::combat::{CombatError, Combatant, Dice, Power, Side, Status};
+use engine::combat::{CombatError, Combatant, Dice, Flight, Power, Side, Status};
 use engine::game::{Arsenal, Battle, BattleError, Game, Outcome};
-use engine::inventory::ItemBook;
+use engine::inventory::{CopyId, ItemBook};
 use engine::quests::QuestBook;
 use engine::reputation::ReputationBook;
 use engine::shared::{
-    Effect, EncounterId, GameData, InventoryView, ItemId, LocationId, NpcId, NpcState, QuestId,
-    QuestStatus, QuestView, Scope, WorldView, apply_all,
+    Effect, EncounterId, GameData, InventorySink, InventoryView, ItemId, LocationId, NpcId,
+    NpcState, QuestId, QuestStatus, QuestView, Scope, WorldView, apply_all,
 };
 use engine::world::WorldBook;
 use proptest::prelude::*;
@@ -39,6 +40,14 @@ static FIXTURE: LazyLock<Fixture> = LazyLock::new(|| {
 
 fn place() -> LocationId {
     LocationId::try_new("goodsprings").expect("literal is a valid id")
+}
+
+/// Starts the gunfight and plays whatever the foes do before the player's first turn,
+/// with dice that make every opening shot miss.
+fn start(game: &Game) -> Battle {
+    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    battle.open(&mut Always(100));
+    battle
 }
 
 fn gunfight() -> EncounterId {
@@ -204,7 +213,7 @@ fn the_player_fights_with_the_numbers_of_their_character_weapon_and_armor() {
         &mut game,
     )
     .expect("the armor is given");
-    let bare = game.start_battle(&gunfight()).expect("the fight starts");
+    let bare = start(&game);
     let you = bare.combat().combatant(bare.player()).expect("the player");
     assert_eq!(you.name(), "You");
     assert_eq!(you.max_hp().get(), game.character().max_hp());
@@ -216,7 +225,7 @@ fn the_player_fights_with_the_numbers_of_their_character_weapon_and_armor() {
 
     game.equip(&item("leather_armor"))
         .expect("the armor is carried");
-    let dressed = game.start_battle(&gunfight()).expect("the fight starts");
+    let dressed = start(&game);
     let you = dressed
         .combat()
         .combatant(dressed.player())
@@ -256,7 +265,7 @@ fn foes_of(battle: &Battle) -> Vec<(String, u32, f64)> {
 #[test]
 fn an_unprepared_town_faces_the_wikis_six_attackers() {
     let game = armed_game();
-    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let battle = start(&game);
     let mut expected = vec![("Joe Cobb".to_owned(), 50, 5.0)];
     expected.extend(std::iter::repeat_n(
         ("Powder Ganger".to_owned(), 30, 0.0),
@@ -269,7 +278,7 @@ fn an_unprepared_town_faces_the_wikis_six_attackers() {
 fn a_fully_prepared_town_faces_cobb_and_two_gangers() {
     let mut game = armed_game();
     help_from(&mut game, &HELPERS);
-    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let battle = start(&game);
     assert_eq!(
         foes_of(&battle),
         [
@@ -285,7 +294,7 @@ fn each_helper_takes_exactly_one_attacker_out_of_the_fight() {
     for helper in HELPERS {
         let mut game = armed_game();
         help_from(&mut game, &[helper]);
-        let battle = game.start_battle(&gunfight()).expect("the fight starts");
+        let battle = start(&game);
         assert_eq!(foes_of(&battle).len(), 5, "{helper}");
     }
 }
@@ -294,7 +303,7 @@ fn each_helper_takes_exactly_one_attacker_out_of_the_fight() {
 fn winning_pays_the_quest_kills_joe_cobb_and_keeps_the_hit_points_left() {
     let mut game = dressed_game();
     help_from(&mut game, &HELPERS);
-    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let mut battle = start(&game);
     play(&mut battle, &mut Always(1), false);
     assert_eq!(battle.combat().status(), Status::Won(Side::Player));
     let hp_left = battle.combat().hp(battle.player()).expect("the player");
@@ -317,7 +326,7 @@ fn winning_pays_the_quest_kills_joe_cobb_and_keeps_the_hit_points_left() {
 #[test]
 fn losing_leaves_the_player_down_and_the_fight_unwon() {
     let mut game = armed_game();
-    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let mut battle = start(&game);
     play(&mut battle, &mut Always(1), true);
     assert_eq!(battle.combat().status(), Status::Won(Side::Enemy));
 
@@ -338,7 +347,7 @@ fn losing_leaves_the_player_down_and_the_fight_unwon() {
 #[test]
 fn a_fight_that_is_not_over_cannot_be_settled_and_changes_nothing() {
     let mut game = armed_game();
-    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let battle = start(&game);
     assert_eq!(game.finish_battle(&battle), Err(BattleError::Unfinished));
     assert_eq!(game.hp(), game.character().max_hp());
     assert_eq!(game.caps(), 0);
@@ -347,14 +356,14 @@ fn a_fight_that_is_not_over_cannot_be_settled_and_changes_nothing() {
 #[test]
 fn a_wounded_player_starts_the_next_fight_wounded() {
     let mut game = armed_game();
-    let mut first = game.start_battle(&gunfight()).expect("the fight starts");
+    let mut first = start(&game);
     // Lose on purpose, then heal part of the way and look at the next start.
     play(&mut first, &mut Always(1), true);
     game.finish_battle(&first).expect("the fight settles");
     game.heal(30);
     assert_eq!(game.hp(), 30);
     // Nothing is offered while down, but once healed the fight resumes at 30.
-    let second = game.start_battle(&gunfight()).expect("the fight starts");
+    let second = start(&game);
     assert_eq!(second.combat().hp(second.player()), Some(30));
 }
 
@@ -370,7 +379,7 @@ proptest! {
     fn any_fight_ends_and_settles_consistently(seed in any::<u64>(), pass_only in any::<bool>()) {
         let mut game = dressed_game();
         let max = game.character().max_hp();
-        let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+        let mut battle = start(&game);
         play(&mut battle, &mut Seeded(seed), pass_only);
         let status = battle.combat().status();
         let outcome = game.finish_battle(&battle).expect("a finished fight settles");
@@ -388,6 +397,11 @@ proptest! {
                 prop_assert_eq!(game.hp(), 0);
                 prop_assert_eq!(game.caps(), 0);
             }
+            Outcome::Fled => {
+                prop_assert_eq!(status, Status::Fled);
+                prop_assert!(game.is_alive());
+                prop_assert!(!game.encounters_at(&place()).is_empty());
+            }
         }
     }
 }
@@ -399,7 +413,7 @@ fn rounds_held(game: &Game) -> u32 {
 #[test]
 fn the_player_starts_loaded_from_the_pack_and_foes_have_endless_rounds() {
     let game = armed_game();
-    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let battle = start(&game);
     let combat = battle.combat();
     let you = combat
         .rounds(battle.player())
@@ -414,7 +428,7 @@ fn the_player_starts_loaded_from_the_pack_and_foes_have_endless_rounds() {
 #[test]
 fn the_rounds_fired_leave_the_pack_when_the_fight_is_settled() {
     let mut game = dressed_game();
-    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let mut battle = start(&game);
     play(&mut battle, &mut Always(1), false);
     let rounds = battle.combat().rounds(battle.player()).expect("a clip");
     let left = rounds.total().expect("the pack is counted");
@@ -435,7 +449,7 @@ fn a_pistol_with_no_rounds_cannot_shoot() {
         &mut game,
     )
     .expect("the rounds are taken");
-    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let mut battle = start(&game);
     let foe = battle
         .combat()
         .ids()
@@ -452,7 +466,7 @@ fn a_pistol_with_no_rounds_cannot_shoot() {
 fn the_pack_is_untouched_until_the_fight_is_settled() {
     let game = dressed_game();
     let before = rounds_held(&game);
-    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let mut battle = start(&game);
     let foe = battle
         .combat()
         .ids()
@@ -559,7 +573,7 @@ fn a_chems_resistance_adds_to_the_armor_in_the_next_fight_and_ends_with_the_chem
     )
     .expect("the chem is given");
     let resistance = |game: &Game| {
-        let battle = game.start_battle(&gunfight()).expect("the fight starts");
+        let battle = start(game);
         let you = battle.combat().combatant(battle.player()).expect("you");
         you.dr().get()
     };
@@ -596,16 +610,16 @@ fn miss_and_lose(battle: &mut Battle, shots: u32) {
 #[test]
 fn a_new_weapon_is_whole_and_wears_with_every_shot_fired() {
     let mut game = dressed_game();
-    let pistol = item("9mm_pistol");
-    assert_eq!(game.weapon_condition(&pistol).map(|p| p.get()), Some(100));
+    let pistol = wielded(&game);
+    assert_eq!(game.copy_condition(pistol).map(|p| p.get()), Some(100));
 
-    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let mut battle = start(&game);
     miss_and_lose(&mut battle, 1);
     assert_eq!(battle.shots(), 1);
     assert_eq!(battle.combat().status(), Status::Won(Side::Enemy));
     game.finish_battle(&battle).expect("the fight settles");
     let left = game
-        .weapon_condition(&pistol)
+        .copy_condition(pistol)
         .map(|p| p.get())
         .expect("it wears");
     assert!(left < 100, "one shot should show: {left}");
@@ -614,9 +628,9 @@ fn a_new_weapon_is_whole_and_wears_with_every_shot_fired() {
 #[test]
 fn a_worn_weapon_hits_for_less_and_the_wear_comes_into_the_next_fight() {
     let mut game = dressed_game();
-    let pistol = item("9mm_pistol");
+    let pistol = wielded(&game);
     let fresh = {
-        let fight = game.start_battle(&gunfight()).expect("the fight starts");
+        let fight = start(&game);
         let you = fight
             .combat()
             .combatant(fight.player())
@@ -626,17 +640,17 @@ fn a_worn_weapon_hits_for_less_and_the_wear_comes_into_the_next_fight() {
     assert_eq!(fresh, 1.0);
 
     for _ in 0..40 {
-        let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+        let mut battle = start(&game);
         miss_and_lose(&mut battle, 20);
         game.finish_battle(&battle).expect("the fight settles");
         game.heal(1_000_000);
     }
     let left = game
-        .weapon_condition(&pistol)
+        .copy_condition(pistol)
         .map(|p| p.get())
         .expect("it wears");
     assert!(left < 100);
-    let worn = game.start_battle(&gunfight()).expect("the fight starts");
+    let worn = start(&game);
     let you = worn.combat().combatant(worn.player()).expect("the player");
     assert!(you.attack().condition.get() < 1.0);
     assert!(you.attack().condition.get() >= 0.5);
@@ -645,14 +659,131 @@ fn a_worn_weapon_hits_for_less_and_the_wear_comes_into_the_next_fight() {
 #[test]
 fn only_a_weapon_that_wears_has_a_condition() {
     let game = armed_game();
-    assert_eq!(game.weapon_condition(&item("leather_armor")), None);
-    assert_eq!(game.weapon_condition(&item("no_such_thing")), None);
+    assert_eq!(game.copy_condition(CopyId::from_saved(u32::MAX)), None);
+}
+
+/// The weapon in hand.
+fn wielded(game: &Game) -> CopyId {
+    game.inventory().wielded().expect("a weapon is in hand")
+}
+
+#[test]
+fn only_the_weapon_that_was_fought_with_wears() {
+    let mut game = dressed_game();
+    InventorySink::give_item(&mut game, &item("9mm_pistol"), NonZeroU32::MIN)
+        .expect("a spare is given");
+    let spare = game
+        .inventory()
+        .copies_of(&item("9mm_pistol"))
+        .find(|copy| Some(*copy) != game.inventory().wielded())
+        .expect("a spare pistol");
+    let mut battle = start(&game);
+    miss_and_lose(&mut battle, 1);
+    game.finish_battle(&battle).expect("the fight settles");
+    assert_eq!(game.copy_condition(spare).map(|p| p.get()), Some(100));
+    assert!(
+        game.copy_condition(wielded(&game))
+            .is_some_and(|left| left.get() < 100)
+    );
+}
+
+#[test]
+fn running_away_leaves_the_fight_unwon_with_the_wounds_and_the_wear() {
+    let mut game = dressed_game();
+    let mut battle = start(&game);
+    let target = battle
+        .combat()
+        .ids()
+        .find(|&id| battle.combat().side(id) == Some(Side::Enemy))
+        .expect("a foe");
+    battle
+        .attack(target, Power::Normal, &mut Always(100))
+        .expect("a shot is fired");
+    // The lowest roll beats any chance the game allows, which is never below 5%.
+    let (flight, enemy_turns) = battle.flee(&mut Always(1)).expect("the run is tried");
+    assert_eq!(flight, Flight::Escaped);
+    assert!(
+        enemy_turns.is_empty(),
+        "nobody shoots at someone who got away"
+    );
+    assert_eq!(battle.combat().status(), Status::Fled);
+
+    let hp_in_fight = battle.combat().hp(battle.player()).expect("the player");
+    assert_eq!(game.finish_battle(&battle), Ok(Outcome::Fled));
+    assert_eq!(game.hp(), hp_in_fight, "the wounds stay");
+    assert!(
+        game.encounters_at(&place())
+            .iter()
+            .any(|encounter| encounter.id == gunfight()),
+        "the fight is still on offer"
+    );
+    assert!(
+        game.copy_condition(wielded(&game))
+            .is_some_and(|left| left.get() < 100),
+        "the shot wore the weapon"
+    );
+}
+
+#[test]
+fn a_failed_run_hands_the_turn_to_the_foes_and_the_fight_goes_on() {
+    let game = dressed_game();
+    let mut battle = start(&game);
+    // The highest roll fails any chance below 100%.
+    let (flight, enemy_turns) = battle.flee(&mut Always(100)).expect("the run is tried");
+    assert_eq!(flight, Flight::Blocked);
+    assert!(!enemy_turns.is_empty(), "the foes shoot");
+    assert_eq!(battle.combat().status(), Status::Ongoing);
+    assert_eq!(
+        battle.combat().active(),
+        battle.player(),
+        "it is your turn again"
+    );
+}
+
+#[test]
+fn the_player_has_a_sequence_of_twice_perception_and_a_flee_chance_from_agility() {
+    use engine::shared::{CharacterView, Special};
+    let game = dressed_game();
+    let battle = start(&game);
+    let you = battle.combat().combatant(battle.player()).expect("you");
+    let perception = u32::from(game.character().special(Special::Perception).get());
+    let agility = u32::from(game.character().special(Special::Agility).get());
+    assert_eq!(you.sequence(), 2 * perception);
+    assert_eq!(
+        u32::from(you.flee_chance().get()),
+        (25 + 6 * agility).clamp(5, 95)
+    );
+}
+
+#[test]
+fn a_foe_that_acts_first_shoots_before_the_player_gets_a_turn() {
+    // Whoever has the higher sequence opens the fight, so `open` plays the foes
+    // that come first and then stops at the player.
+    let game = dressed_game();
+    let mut battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let opening = battle.open(&mut Always(100));
+    assert_eq!(battle.combat().active(), battle.player());
+    let first_is_foe = battle.combat().round() == 1 && !opening.is_empty();
+    let you = battle
+        .combat()
+        .combatant(battle.player())
+        .expect("you")
+        .sequence();
+    let fastest_foe = battle
+        .combat()
+        .ids()
+        .filter(|&id| battle.combat().side(id) == Some(Side::Enemy))
+        .filter_map(|id| battle.combat().combatant(id))
+        .map(|foe| foe.sequence())
+        .max()
+        .expect("a foe");
+    assert_eq!(first_is_foe, fastest_foe > you);
 }
 
 #[test]
 fn every_fighter_can_pay_for_a_reload_inside_one_turn() {
     let game = dressed_game();
-    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let battle = start(&game);
     let combat = battle.combat();
     for id in combat.ids() {
         let fighter = combat.combatant(id).expect("a fighter");
@@ -670,7 +801,7 @@ fn every_fighter_can_pay_for_a_reload_inside_one_turn() {
 fn the_players_chance_in_the_real_fight_comes_from_skill_and_the_pistols_spread() {
     use engine::combat::{AimedHitChance, HitModel};
     let game = dressed_game();
-    let battle = game.start_battle(&gunfight()).expect("the fight starts");
+    let battle = start(&game);
     let combat = battle.combat();
     let you = combat.combatant(battle.player()).expect("the player");
     let foe = combat

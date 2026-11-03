@@ -8,19 +8,18 @@
 //! Quest rewards are not paid again, since the effects of the stages reached are
 //! already in the pack, the standing and the flags the save holds.
 
-use std::collections::{HashMap, HashSet};
+use std::collections::HashSet;
 use std::num::NonZeroU32;
 
 use super::{Active, ActiveEffects, Deferred, Game};
 use crate::character::{Character, CharacterRecord, SpecialSet};
 use crate::clock::GameClock;
-use crate::combat::Condition;
 use crate::gather::Gathered;
-use crate::inventory::Slot;
+use crate::inventory::{CopyId, Slot};
 use crate::saves::{
     Save, SaveError, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding, SavedFate,
     SavedFired, SavedNpc, SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop, SavedStanding,
-    SavedWear, SavedWorld, VERSION,
+    SavedWeapon, SavedWorld, VERSION,
 };
 use crate::shared::{
     InventorySink, InventoryView, NpcId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
@@ -114,7 +113,17 @@ impl Game {
                 .stacks()
                 .map(|(item, count)| (item.clone(), count.get()))
                 .collect(),
-            weapon: self.inventory.equipped(Slot::Weapon).cloned(),
+            weapons: self
+                .inventory
+                .weapons()
+                .map(|(id, copy)| SavedWeapon {
+                    id: id.get(),
+                    item: copy.item().clone(),
+                    lost: copy.lost(),
+                })
+                .collect(),
+            wielded: self.inventory.wielded().map(CopyId::get),
+            weapon: None,
             outfit: self.inventory.equipped(Slot::Outfit).cloned(),
             head: self.inventory.equipped(Slot::Head).cloned(),
         };
@@ -142,17 +151,6 @@ impl Game {
                 until: active.until,
             })
             .collect();
-
-        let mut wear: Vec<SavedWear> = self
-            .wear
-            .iter()
-            .filter(|(_, lost)| **lost > 0)
-            .map(|(item, lost)| SavedWear {
-                item: item.clone(),
-                lost: *lost,
-            })
-            .collect();
-        wear.sort_by(|a, b| a.item.cmp(&b.item));
 
         let mut won: Vec<_> = self.won.iter().cloned().collect();
         won.sort();
@@ -194,7 +192,6 @@ impl Game {
             pack,
             shops,
             effects,
-            wear,
             gathered: self.gathered.iter().cloned().collect(),
             won,
             fired,
@@ -239,7 +236,6 @@ impl Game {
             map: self.map.clone(),
             at: None,
             wounds: 0,
-            wear: HashMap::new(),
             won: HashSet::new(),
             fired: HashSet::new(),
             deferred: Vec::new(),
@@ -253,7 +249,6 @@ impl Game {
         game.restore_effects(save)?;
         game.restore_place(save, self)?;
         game.restore_wounds(save)?;
-        game.restore_wear(save)?;
         game.restore_gathered(save)?;
         game.restore_history(save)?;
         Ok(game)
@@ -382,10 +377,33 @@ impl Game {
         self.inventory
             .add_caps(f64::from(pack.caps))
             .map_err(|e| bad(&e))?;
+        for saved in &pack.weapons {
+            let lost = self
+                .arsenal
+                .condition_max(&saved.item)
+                .map_or(0, |max| max.get());
+            if saved.lost > lost {
+                return Err(bad(&format!(
+                    "{} lost {} of {lost} points",
+                    saved.item, saved.lost
+                )));
+            }
+            self.inventory
+                .restore_weapon(CopyId::from_saved(saved.id), &saved.item, saved.lost)
+                .map_err(|e| bad(&e))?;
+        }
         for (item, count) in &pack.items {
             let count = NonZeroU32::new(*count)
                 .ok_or_else(|| bad(&format!("{item} is carried zero times")))?;
             self.inventory.give_item(item, count).map_err(|e| bad(&e))?;
+        }
+        if pack.wielded.is_some() && pack.weapon.is_some() {
+            return Err(bad(&"the weapon in hand is named twice"));
+        }
+        if let Some(id) = pack.wielded {
+            self.inventory
+                .equip_copy(CopyId::from_saved(id))
+                .map_err(|e| bad(&e))?;
         }
         for (slot, item) in [
             (Slot::Weapon, &pack.weapon),
@@ -467,30 +485,6 @@ impl Game {
             ));
         }
         self.wounds = save.wounds;
-        Ok(())
-    }
-
-    fn restore_wear(&mut self, save: &Save) -> Result<(), SaveError> {
-        let bad = |what: &dyn std::fmt::Display| SaveError::invalid("wear", what);
-        for entry in &save.wear {
-            let max = self
-                .arsenal
-                .condition_max(&entry.item)
-                .ok_or_else(|| bad(&format!("{} is not a weapon that wears", entry.item)))?;
-            if entry.lost > max.get() {
-                return Err(bad(&format!(
-                    "{} lost {} of {} points",
-                    entry.item, entry.lost, max
-                )));
-            }
-            if self
-                .wear
-                .insert(entry.item.clone(), Condition::new(max, entry.lost).lost())
-                .is_some()
-            {
-                return Err(bad(&format!("{} is listed twice", entry.item)));
-            }
-        }
         Ok(())
     }
 

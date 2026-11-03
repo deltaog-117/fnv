@@ -20,7 +20,7 @@ use engine::inventory::{ItemBook, Slot};
 use engine::quests::QuestBook;
 use engine::reputation::ReputationBook;
 use engine::rest::{BedBook, FULL_REST_HOURS};
-use engine::saves::Save;
+use engine::saves::{SaveFolder, Slot as SaveSlot};
 use engine::shared::{
     BedId, Effect, FindId, GameData, InventoryView, ItemId, LocationId, QuestId, QuestStage,
     StationId, VendorId, apply_all,
@@ -29,6 +29,7 @@ use engine::trade::VendorBook;
 use engine::travel::TravelBook;
 use engine::world::WorldBook;
 use ratatui::Frame;
+use ratatui::crossterm::event::KeyCode;
 use ratatui::layout::{Alignment, Rect};
 use ratatui::text::Line;
 use ratatui::widgets::{Block, Borders, Paragraph};
@@ -42,6 +43,7 @@ use crate::inventory::{self, Pack};
 use crate::quests::{self, Journal};
 use crate::repair::{self, Repair};
 use crate::reputation::{self, Reputation};
+use crate::saves::{self, Purpose, Slots};
 use crate::shared::dice::Rng;
 use crate::shared::input::Command;
 use crate::shared::layout::{self, MIN_HEIGHT, MIN_WIDTH};
@@ -62,9 +64,9 @@ const OPENING_STAGE: u32 = 10;
 const START_WEAPON: &str = "9mm_pistol";
 const START_ARMOR: &str = "leather_armor";
 
-/// Where the game is saved: the user's data folder, or the working folder when the
-/// environment names none.
-fn default_save_path() -> PathBuf {
+/// Where the saves are kept: a folder in the user's data folder, or in the working
+/// folder when the environment names none.
+fn default_save_dir() -> PathBuf {
     let base = std::env::var_os("XDG_DATA_HOME")
         .map(PathBuf::from)
         .filter(|path| path.is_absolute())
@@ -72,7 +74,7 @@ fn default_save_path() -> PathBuf {
             std::env::var_os("HOME").map(|home| PathBuf::from(home).join(".local").join("share"))
         })
         .unwrap_or_default();
-    base.join("fnv").join("save.json")
+    base.join("fnv").join("saves")
 }
 
 enum Screen {
@@ -81,6 +83,8 @@ enum Screen {
     Exploring(Exploration),
     Talking(Talk),
     Fighting(Fight),
+    /// Choosing a save to write or to load.
+    Saves(Slots),
     Leveling(LevelUp),
     /// Reading the quest journal.
     Journaling(Journal),
@@ -192,8 +196,12 @@ pub struct App {
     screen: Screen,
     log: Log,
     dice: Rng,
-    /// The one file the game is saved to and loaded from.
-    save_path: PathBuf,
+    /// The folder the named saves and the automatic save are kept in.
+    saves: SaveFolder,
+    /// Whether the game saves by itself at safe moments (after a walk, a sleep or a
+    /// settled fight). Off until [`App::with_autosave`], so a test never writes to
+    /// the player's folder.
+    autosave: bool,
     running: bool,
 }
 
@@ -284,20 +292,46 @@ impl App {
             people,
             log,
             dice,
-            save_path: default_save_path(),
+            saves: SaveFolder::new(default_save_dir()),
+            autosave: false,
             running: true,
         };
         app.screen = app.exploring();
         Ok(app)
     }
 
-    /// The same app saving to and loading from `path`; tests use it to keep the
-    /// player's own save out of reach.
+    /// The same app saving to and loading from the folder `dir`; tests use it to
+    /// keep the player's own saves out of reach.
     #[cfg(test)]
     #[must_use]
-    pub fn with_save_path(mut self, path: PathBuf) -> Self {
-        self.save_path = path;
+    pub fn with_save_dir(mut self, dir: PathBuf) -> Self {
+        self.saves = SaveFolder::new(dir);
         self
+    }
+
+    /// The same app, saving by itself at safe moments: after a walk, after a sleep
+    /// and after a fight is settled. The automatic save has a slot of its own, so it
+    /// never writes over a save the player named.
+    #[must_use]
+    pub fn with_autosave(mut self) -> Self {
+        self.autosave = true;
+        self
+    }
+
+    /// Whether keys are being typed into a text field, so the front end must hand
+    /// them to [`App::type_key`] and not read them as commands.
+    #[must_use]
+    pub fn is_typing(&self) -> bool {
+        matches!(&self.screen, Screen::Saves(slots) if slots.is_typing())
+    }
+
+    /// Applies a key typed into a text field.
+    pub fn type_key(&mut self, key: KeyCode) {
+        let Screen::Saves(slots) = &mut self.screen else {
+            return;
+        };
+        let next = slots.type_key(key);
+        self.after_saves(next);
     }
 
     /// The same app, starting at the character creation screen. The game is the
@@ -356,9 +390,13 @@ impl App {
                 exploration::Next::Travel => {
                     self.screen = Screen::Traveling(Travel::open(&self.game));
                 }
-                exploration::Next::Save => self.save_game(),
-                exploration::Next::Load => self.load_game(),
+                exploration::Next::Save => self.open_saves(Purpose::Save),
+                exploration::Next::Load => self.open_saves(Purpose::Load),
             },
+            Screen::Saves(slots) => {
+                let next = slots.update(command);
+                self.after_saves(next);
+            }
             Screen::Journaling(journal) => {
                 if journal.update(command) == quests::Next::Leave {
                     self.screen = self.exploring();
@@ -408,10 +446,7 @@ impl App {
                 if let combat::Next::Done(outcome) =
                     fight.update(command, &mut self.game, &mut self.log, &mut self.dice)
                 {
-                    self.screen = match outcome {
-                        Some(Outcome::Defeat) => Screen::Down,
-                        _ => self.exploring(),
-                    };
+                    self.screen = self.after_fight(outcome);
                 }
             }
             Screen::Down => {
@@ -584,6 +619,7 @@ impl App {
             Err(error) => error.to_string(),
         };
         self.log.push(Entry::Note(note));
+        self.autosave();
     }
 
     /// Walks to a linked place and describes the trip, or says why it was refused.
@@ -605,24 +641,58 @@ impl App {
             Err(error) => self.log.push(Entry::Note(error.to_string())),
         }
         self.screen = self.exploring();
+        self.autosave();
     }
 
-    /// Writes the game to the save file and says how it went. The write replaces the
-    /// file whole or not at all, so a failure keeps the old save.
-    fn save_game(&mut self) {
-        let note = match self.game.save().write(&self.save_path) {
-            Ok(()) => format!("Game saved to {}.", self.save_path.display()),
+    /// Opens the list of saves for saving or loading.
+    fn open_saves(&mut self, purpose: Purpose) {
+        let places = &self.places;
+        self.screen = Screen::Saves(Slots::open(purpose, &self.saves, |place| {
+            places.name(place)
+        }));
+    }
+
+    /// Does what the saves screen asked for.
+    fn after_saves(&mut self, next: saves::Next) {
+        match next {
+            saves::Next::Stay => {}
+            saves::Next::Leave => self.screen = self.exploring(),
+            saves::Next::Save(name) => self.save_game(&SaveSlot::Named(name)),
+            saves::Next::Load(slot) => self.load_game(&slot),
+        }
+    }
+
+    /// Writes the game to a slot and says how it went. The write replaces the file
+    /// whole or not at all, so a failure keeps the old save.
+    fn save_game(&mut self, slot: &SaveSlot) {
+        let note = match self.saves.write(slot, &self.game.save()) {
+            Ok(()) => format!("Game saved as \"{}\".", slot.label()),
             Err(error) => format!("Could not save: {error}"),
         };
         self.log.push(Entry::Note(note));
         self.screen = self.exploring();
     }
 
+    /// Saves by itself, when that is switched on and the player is alive. A failure
+    /// is said in the log, never silent, and never stops the game.
+    fn autosave(&mut self) {
+        if !self.autosave || !self.game.is_alive() {
+            return;
+        }
+        let note = match self.saves.write(&SaveSlot::Auto, &self.game.save()) {
+            Ok(()) => "Autosaved.".to_owned(),
+            Err(error) => format!("Could not autosave: {error}"),
+        };
+        self.log.push(Entry::Note(note));
+    }
+
     /// Replaces the game with the saved one, if the file loads. A file that is
     /// missing, damaged or from another version leaves the game as it is. Loading
     /// moves the player, so the scene's people and shops are looked up again.
-    fn load_game(&mut self) {
-        let loaded = Save::read(&self.save_path)
+    fn load_game(&mut self, slot: &SaveSlot) {
+        let loaded = self
+            .saves
+            .read(slot)
             .and_then(|save| self.game.restore(&save))
             .map_err(|error| format!("Could not load: {error}"));
         match loaded {
@@ -715,9 +785,32 @@ impl App {
         match self.game.start_battle(&id) {
             Ok(battle) => {
                 self.log.push(Entry::Note("Guns are drawn.".to_owned()));
-                self.screen = Screen::Fighting(Fight::new(battle));
+                let fight = Fight::new(battle, &mut self.log, &mut self.dice);
+                self.screen = if fight.is_over() {
+                    // The quick foes finished it before the player could act.
+                    let outcome = match fight.finish(&mut self.game, &mut self.log) {
+                        combat::Next::Done(outcome) => outcome,
+                        combat::Next::Stay => None,
+                    };
+                    self.after_fight(outcome)
+                } else {
+                    Screen::Fighting(fight)
+                };
             }
             Err(error) => self.log.push(Entry::Note(error.to_string())),
+        }
+    }
+
+    /// The screen after a fight is settled: the game over screen when the player is
+    /// down, the scene otherwise.
+    fn after_fight(&mut self, outcome: Option<Outcome>) -> Screen {
+        match outcome {
+            Some(Outcome::Defeat) => Screen::Down,
+            Some(_) => {
+                self.autosave();
+                self.exploring()
+            }
+            None => self.exploring(),
         }
     }
 
@@ -774,6 +867,10 @@ impl App {
             Screen::Talking(talk) => {
                 talk.render(frame, regions.scene);
                 "Up/Down move | Enter say | 1-9 pick | Esc walk away | q quit"
+            }
+            Screen::Saves(slots) => {
+                slots.render(frame, regions.scene);
+                slots.keys()
             }
             Screen::Fighting(fight) => {
                 fight.render(frame, regions.scene);
@@ -1319,13 +1416,48 @@ mod tests {
     }
 
     #[test]
-    fn running_away_is_refused_during_a_fight() {
+    fn the_back_key_points_at_the_run_away_action_during_a_fight() {
         let mut app = with_the_gunfight_open(app_with_seed(1));
         let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
         app.update(Command::Back);
         assert!(matches!(app.screen, Screen::Fighting(_)));
-        assert!(screen(&app, 100, 30).contains("no running"));
+        assert!(screen(&app, 100, 30).contains("Run away"));
+    }
+
+    #[test]
+    fn running_away_ends_the_fight_unwon_and_the_fight_stays_on_offer() {
+        let mut escapes = 0;
+        for seed in 1..=8 {
+            let mut app = with_the_gunfight_open(app_with_seed(seed));
+            let fight = app.people.len() + app.shops_here().len();
+            app.update(Command::Pick(fight));
+            for _ in 0..60 {
+                let Screen::Fighting(fight) = &app.screen else {
+                    break;
+                };
+                // "Run away" sits just before "End turn", which is last.
+                app.update(Command::Pick(fight.action_count() - 2));
+            }
+            if matches!(app.screen, Screen::Exploring(_)) {
+                escapes += 1;
+                let text = screen(&app, 100, 30);
+                assert!(text.contains("You got away from the fight."), "{text}");
+                assert!(text.contains("Fight the Powder Gangers"), "{text}");
+                assert!(app.game.is_alive());
+            }
+        }
+        assert!(escapes > 0, "some seed gets away");
+    }
+
+    #[test]
+    fn the_run_away_row_shows_its_chance() {
+        let mut app = with_the_gunfight_open(app_with_seed(1));
+        let fight = app.people.len() + app.shops_here().len();
+        app.update(Command::Pick(fight));
+        let text = screen(&app, 100, 30);
+        assert!(text.contains("Run away ("), "{text}");
+        assert!(text.contains("% to get out)"), "{text}");
     }
 
     #[test]
@@ -1590,8 +1722,12 @@ mod tests {
             Self(std::env::temp_dir().join(format!("fnv-tui-{name}-{}", std::process::id())))
         }
 
-        fn file(&self) -> PathBuf {
-            self.0.join("save.json")
+        fn dir(&self) -> PathBuf {
+            self.0.clone()
+        }
+
+        fn file(&self, name: &str) -> PathBuf {
+            self.0.join(format!("{name}.json"))
         }
     }
 
@@ -1601,70 +1737,292 @@ mod tests {
         }
     }
 
+    /// Types `text` into the open name field and presses Enter.
+    fn type_name(app: &mut App, text: &str) {
+        assert!(app.is_typing(), "a name field is open");
+        for c in text.chars() {
+            app.type_key(KeyCode::Char(c));
+        }
+        app.type_key(KeyCode::Enter);
+    }
+
+    /// Saves the game under `name` through the screens.
+    fn save_as(app: &mut App, name: &str) {
+        choose_row(app, "Save game");
+        app.update(Command::Select);
+        type_name(app, name);
+    }
+
     #[test]
-    fn saving_writes_the_file_and_the_log_says_where() {
+    fn saving_asks_for_a_name_writes_that_file_and_the_log_says_so() {
         let scratch = Scratch::new("save");
-        let mut app = app().with_save_path(scratch.file());
+        let mut app = app().with_save_dir(scratch.dir());
         choose_row(&mut app, "Save game");
-        assert!(scratch.file().is_file());
+        assert!(matches!(app.screen, Screen::Saves(_)));
+        assert!(!app.is_typing());
         let text = screen(&app, 120, 40);
-        assert!(text.contains("Game saved to"), "{text}");
+        assert!(text.contains("New save..."), "{text}");
+        app.update(Command::Select);
+        assert!(app.is_typing());
+        type_name(&mut app, "camp one");
+        assert!(scratch.file("camp one").is_file());
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("Game saved as \"camp one\""), "{text}");
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+        assert!(!app.is_typing());
+    }
+
+    #[test]
+    fn a_name_that_cannot_be_used_says_why_and_the_field_stays_open() {
+        let scratch = Scratch::new("badname");
+        let mut app = app().with_save_dir(scratch.dir());
+        choose_row(&mut app, "Save game");
+        app.update(Command::Select);
+        app.type_key(KeyCode::Enter);
+        assert!(app.is_typing());
+        assert!(
+            screen(&app, 120, 40).contains("needs a name"),
+            "{}",
+            screen(&app, 120, 40)
+        );
+        type_name(&mut app, "AutoSave");
+        assert!(app.is_typing());
+        assert!(screen(&app, 120, 40).contains("kept for the automatic save"));
+        assert!(!scratch.file("AutoSave").exists() && !scratch.file("autosave").exists());
+    }
+
+    #[test]
+    fn letters_typed_into_a_name_are_not_commands_and_other_characters_are_ignored() {
+        let scratch = Scratch::new("letters");
+        let mut app = app().with_save_dir(scratch.dir());
+        choose_row(&mut app, "Save game");
+        app.update(Command::Select);
+        // 'q', 'j' and '1' are commands elsewhere; here they are part of a name, and
+        // characters that could escape the folder are dropped.
+        type_name(&mut app, "q../j/1\\x");
+        assert!(
+            scratch.file("qj1x").is_file(),
+            "{:?}",
+            std::fs::read_dir(scratch.dir()).map(|d| d.count())
+        );
+        assert!(app.is_running());
+    }
+
+    #[test]
+    fn backspace_erases_and_escape_cancels_the_name_then_leaves_the_list() {
+        let scratch = Scratch::new("escape");
+        let mut app = app().with_save_dir(scratch.dir());
+        choose_row(&mut app, "Save game");
+        app.update(Command::Select);
+        app.type_key(KeyCode::Char('a'));
+        app.type_key(KeyCode::Char('b'));
+        app.type_key(KeyCode::Backspace);
+        assert!(screen(&app, 120, 40).contains("Name: a_"));
+        app.type_key(KeyCode::Esc);
+        assert!(!app.is_typing());
+        assert!(matches!(app.screen, Screen::Saves(_)));
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
+        assert!(
+            !scratch.dir().exists()
+                || std::fs::read_dir(scratch.dir()).is_ok_and(|d| d.count() == 0)
+        );
+    }
+
+    #[test]
+    fn loading_a_named_save_brings_back_its_time_and_the_log_says_so() {
+        let scratch = Scratch::new("load");
+        let mut app = app().with_save_dir(scratch.dir());
+        save_as(&mut app, "start");
+        choose_row(&mut app, "Wait 8 hours");
+        assert_eq!(app.game.clock().to_string(), "Day 1, 16:00");
+        choose_row(&mut app, "Load game");
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("start - Day 1, 08:00"), "{text}");
+        app.update(Command::Select);
+        assert_eq!(app.game.clock().to_string(), "Day 1, 08:00");
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("Game loaded."), "{text}");
         assert!(matches!(app.screen, Screen::Exploring(_)));
     }
 
     #[test]
-    fn loading_brings_back_the_saved_time_and_the_log_says_so() {
-        let scratch = Scratch::new("load");
-        let mut app = app().with_save_path(scratch.file());
-        choose_row(&mut app, "Save game");
+    fn several_saves_are_listed_and_each_loads_its_own_game() {
+        let scratch = Scratch::new("several");
+        let mut app = app().with_save_dir(scratch.dir());
+        save_as(&mut app, "morning");
         choose_row(&mut app, "Wait 8 hours");
-        assert_eq!(app.game.clock().to_string(), "Day 1, 16:00");
+        save_as(&mut app, "evening");
+        choose_row(&mut app, "Wait 8 hours");
         choose_row(&mut app, "Load game");
-        assert_eq!(app.game.clock().to_string(), "Day 1, 08:00");
         let text = screen(&app, 120, 40);
-        assert!(text.contains("Game loaded."), "{text}");
+        assert!(
+            text.contains("morning") && text.contains("evening"),
+            "{text}"
+        );
+        // The most recently written save comes first.
+        app.update(Command::Pick(1));
+        assert_eq!(app.game.clock().to_string(), "Day 1, 08:00");
+        choose_row(&mut app, "Load game");
+        app.update(Command::Pick(0));
+        assert_eq!(app.game.clock().to_string(), "Day 1, 16:00");
+    }
+
+    #[test]
+    fn saving_over_a_name_asks_first_and_keeps_the_old_save_on_no() {
+        let scratch = Scratch::new("overwrite");
+        let mut app = app().with_save_dir(scratch.dir());
+        save_as(&mut app, "slot");
+        let first = std::fs::read_to_string(scratch.file("slot")).expect("written");
+        choose_row(&mut app, "Wait 8 hours");
+        save_as(&mut app, "slot");
+        assert!(matches!(app.screen, Screen::Saves(_)), "it asks first");
+        assert!(screen(&app, 120, 40).contains("Write over \"slot\""));
+        app.update(Command::Back);
+        assert_eq!(
+            std::fs::read_to_string(scratch.file("slot")).expect("kept"),
+            first
+        );
+        // Choosing the existing save from the list asks the same question.
+        app.update(Command::Pick(1));
+        app.update(Command::Select);
+        assert_ne!(
+            std::fs::read_to_string(scratch.file("slot")).expect("written"),
+            first
+        );
+        assert!(matches!(app.screen, Screen::Exploring(_)));
     }
 
     #[test]
     fn loading_puts_the_scene_back_where_the_save_was_made() {
         let scratch = Scratch::new("place");
-        let mut app = app().with_save_path(scratch.file());
-        choose_row(&mut app, "Save game");
+        let mut app = app().with_save_dir(scratch.dir());
+        save_as(&mut app, "home");
         let home = app.place_id.clone();
         let people_at_home = app.people.len();
         let away = app.game.routes()[0].to.clone();
         app.travel_to(&away);
         assert_eq!(app.place_id, away);
         choose_row(&mut app, "Load game");
+        app.update(Command::Select);
         assert_eq!(app.place_id, home);
         assert_eq!(app.people.len(), people_at_home);
         assert_eq!(app.game.at(), Some(&home));
     }
 
     #[test]
-    fn loading_with_no_save_says_so_and_changes_nothing() {
+    fn loading_with_no_saves_says_so_and_changes_nothing() {
         let scratch = Scratch::new("none");
-        let mut app = app().with_save_path(scratch.file());
+        let mut app = app().with_save_dir(scratch.dir());
         choose_row(&mut app, "Wait an hour");
         let before = app.game.save();
         choose_row(&mut app, "Load game");
+        assert!(screen(&app, 120, 40).contains("There are no saves yet."));
+        app.update(Command::Select);
         assert_eq!(app.game.save(), before);
-        let text = screen(&app, 120, 40);
-        assert!(text.contains("Could not load"), "{text}");
+        app.update(Command::Back);
+        assert!(matches!(app.screen, Screen::Exploring(_)));
     }
 
     #[test]
-    fn a_damaged_save_is_refused_and_the_game_goes_on() {
+    fn a_damaged_save_is_listed_refused_and_the_game_goes_on() {
         let scratch = Scratch::new("damaged");
         std::fs::create_dir_all(&scratch.0).expect("the folder is made");
-        std::fs::write(scratch.file(), "{ not a save").expect("the file is written");
-        let mut app = app().with_save_path(scratch.file());
+        std::fs::write(scratch.file("broken"), "{ not a save").expect("the file is written");
+        let mut app = app().with_save_dir(scratch.dir());
         let before = app.game.save();
         choose_row(&mut app, "Load game");
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("broken - cannot be read"), "{text}");
+        app.update(Command::Select);
         assert_eq!(app.game.save(), before);
         let text = screen(&app, 120, 40);
         assert!(text.contains("Could not load"), "{text}");
         assert!(matches!(app.screen, Screen::Exploring(_)));
+    }
+
+    #[test]
+    fn nothing_is_saved_by_itself_unless_autosave_is_on() {
+        let scratch = Scratch::new("noauto");
+        let mut app = app().with_save_dir(scratch.dir());
+        let away = app.game.routes()[0].to.clone();
+        app.travel_to(&away);
+        assert!(!scratch.file("autosave").exists());
+    }
+
+    #[test]
+    fn walking_saves_by_itself_in_its_own_slot_and_leaves_named_saves_alone() {
+        let scratch = Scratch::new("auto");
+        let mut app = app().with_save_dir(scratch.dir()).with_autosave();
+        save_as(&mut app, "mine");
+        let mine = std::fs::read_to_string(scratch.file("mine")).expect("written");
+
+        let away = app.game.routes()[0].to.clone();
+        app.travel_to(&away);
+        assert!(scratch.file("autosave").is_file());
+        assert!(screen(&app, 120, 40).contains("Autosaved."));
+        let after_walk = std::fs::read_to_string(scratch.file("autosave")).expect("written");
+
+        let onward = app.game.routes()[0].to.clone();
+        app.travel_to(&onward);
+        assert_ne!(
+            std::fs::read_to_string(scratch.file("autosave")).expect("written"),
+            after_walk,
+            "each safe moment writes it again"
+        );
+        assert_eq!(
+            std::fs::read_to_string(scratch.file("mine")).expect("kept"),
+            mine,
+            "a named save is never touched"
+        );
+    }
+
+    #[test]
+    fn a_settled_fight_saves_by_itself_unless_the_player_is_down() {
+        let scratch = Scratch::new("autofight");
+        let mut app = app().with_save_dir(scratch.dir()).with_autosave();
+        assert!(matches!(
+            app.after_fight(Some(Outcome::Defeat)),
+            Screen::Down
+        ));
+        assert!(!scratch.file("autosave").exists());
+        assert!(matches!(
+            app.after_fight(Some(Outcome::Fled)),
+            Screen::Exploring(_)
+        ));
+        assert!(
+            scratch.file("autosave").is_file(),
+            "the player is alive, so it saves"
+        );
+    }
+
+    #[test]
+    fn the_autosave_is_listed_for_loading_but_never_offered_for_saving() {
+        let scratch = Scratch::new("autolist");
+        let mut app = app().with_save_dir(scratch.dir()).with_autosave();
+        let away = app.game.routes()[0].to.clone();
+        app.travel_to(&away);
+        choose_row(&mut app, "Save game");
+        assert!(!screen(&app, 120, 40).contains("Autosave (automatic)"));
+        app.update(Command::Back);
+        choose_row(&mut app, "Load game");
+        assert!(screen(&app, 120, 40).contains("Autosave (automatic)"));
+        app.update(Command::Select);
+        assert!(screen(&app, 120, 40).contains("Game loaded."));
+    }
+
+    #[test]
+    fn a_failed_autosave_is_said_and_the_game_goes_on() {
+        let scratch = Scratch::new("autofail");
+        // A file where the folder should be, so the folder cannot be made.
+        std::fs::create_dir_all(&scratch.0).expect("the folder is made");
+        let blocker = scratch.0.join("blocked");
+        std::fs::write(&blocker, "x").expect("written");
+        let mut app = app().with_save_dir(blocker).with_autosave();
+        let away = app.game.routes()[0].to.clone();
+        app.travel_to(&away);
+        assert!(screen(&app, 120, 40).contains("Could not autosave"));
+        assert_eq!(app.place_id, away);
     }
 
     fn give(app: &mut App, item: &str, count: u32) {
@@ -1679,10 +2037,9 @@ mod tests {
     fn with_a_worn_pistol(mut app: App, lost: u32) -> App {
         give(&mut app, "9mm_pistol", 1);
         let mut save = app.game.save();
-        save.wear.push(engine::saves::SavedWear {
-            item: ItemId::try_new("9mm_pistol").expect("valid id"),
-            lost,
-        });
+        for weapon in &mut save.pack.weapons {
+            weapon.lost = lost;
+        }
         app.game = app.game.restore(&save).expect("the worn pistol loads");
         app.screen = app.exploring();
         app
@@ -1767,9 +2124,15 @@ mod tests {
         assert!(app.game.caps() < before);
         assert!(screen(&app, 100, 30).contains("mends your 9mm pistol"));
         let pistol = ItemId::try_new("9mm_pistol").expect("valid id");
+        let copy = app
+            .game
+            .inventory()
+            .copies_of(&pistol)
+            .next()
+            .expect("the pistol is carried");
         assert!(
             app.game
-                .weapon_condition(&pistol)
+                .copy_condition(copy)
                 .is_some_and(|left| left.get() >= 50)
         );
         app.update(Command::Back);
@@ -1787,7 +2150,7 @@ mod tests {
         }
         app.update(Command::Select);
         let text = screen(&app, 100, 40);
-        for expected in ["Mend with a kit", "Merge two copies"] {
+        for expected in ["Mend with a kit", "Merge another copy"] {
             assert!(text.contains(expected), "missing {expected:?} in:\n{text}");
         }
     }

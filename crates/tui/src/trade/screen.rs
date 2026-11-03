@@ -5,6 +5,7 @@ use std::num::NonZeroU32;
 use std::sync::Arc;
 
 use engine::game::Game;
+use engine::inventory::CopyId;
 use engine::shared::{InventoryView, ItemId, VendorId};
 use engine::trade::Shop;
 use ratatui::Frame;
@@ -48,7 +49,14 @@ struct Ask {
     quantity: Quantity,
 }
 
-type Stack = (ItemId, NonZeroU32);
+/// One line of a panel: a stack, or (on the player's side) one weapon, which is
+/// sold by itself because each has its own wear.
+#[derive(Debug, Clone)]
+struct Stack {
+    item: ItemId,
+    count: NonZeroU32,
+    copy: Option<CopyId>,
+}
 
 /// An open shop. It holds only the cursors and the pending question: stock, pack,
 /// prices and caps are read from the game whenever they are needed, so the screen
@@ -125,10 +133,12 @@ impl Trade {
             Side::Buy => stock(game, &self.vendor),
             Side::Sell => pack(game),
         };
-        let Some((item, count)) = stacks.into_iter().nth(index) else {
+        let Some(Stack { item, count, copy }) = stacks.into_iter().nth(index) else {
             return;
         };
-        if count == NonZeroU32::MIN {
+        if let Some(copy) = copy {
+            self.sell_weapon(copy, &item, game, log);
+        } else if count == NonZeroU32::MIN {
             self.trade(side, &item, count, game, log);
         } else {
             self.ask = Some(Ask {
@@ -137,6 +147,17 @@ impl Trade {
                 quantity: Quantity::new(count),
             });
         }
+    }
+
+    /// Sells one particular weapon.
+    fn sell_weapon(&mut self, copy: CopyId, item: &ItemId, game: &mut Game, log: &mut Log) {
+        let name = self.names.name(item);
+        let note = game
+            .sell_copy(&self.vendor, copy)
+            .map(|price| format!("You sell the {name} for {price} caps."));
+        log.push(Entry::Note(note.unwrap_or_else(|error| error.to_string())));
+        self.buy = resized(&self.buy, stock(game, &self.vendor).len());
+        self.sell = resized(&self.sell, pack(game).len());
     }
 
     /// Handles a command while the "how many" question is open.
@@ -266,18 +287,27 @@ impl Trade {
         let lines: Vec<Line<'static>> = stacks
             .iter()
             .enumerate()
-            .map(|(index, (item, count))| {
+            .map(|(index, Stack { item, count, copy })| {
+                let (item, count) = (item, *count);
                 let price = match side {
                     Side::Buy => game.buy_price_from(&self.vendor, item, NonZeroU32::MIN),
                     Side::Sell => game.sell_price(item, NonZeroU32::MIN),
                 }
                 .ok();
-                let worn = side == Side::Sell && game.is_equipped(item);
+                let worn = side == Side::Sell
+                    && match copy {
+                        Some(copy) => game.inventory().wielded() == Some(*copy),
+                        None => game.is_equipped(item),
+                    };
                 let usable = match side {
                     Side::Buy => price.is_some_and(|price| price <= caps),
-                    Side::Sell => price.is_some() && !(worn && *count == NonZeroU32::MIN),
+                    Side::Sell => price.is_some() && !(worn && count == NonZeroU32::MIN),
                 };
-                let mut label = format!("{} x{count}", self.names.name(item));
+                let mut label = match copy.and_then(|copy| game.copy_condition(copy)) {
+                    Some(left) => format!("{} {}%", self.names.name(item), left.get()),
+                    None if copy.is_some() => self.names.name(item),
+                    None => format!("{} x{count}", self.names.name(item)),
+                };
                 if worn {
                     label.push_str(" [worn]");
                 }
@@ -315,17 +345,31 @@ fn stock(game: &Game, vendor: &VendorId) -> Vec<Stack> {
     game.shop(vendor)
         .map(|shop| {
             shop.stock()
-                .map(|(item, count)| (item.clone(), count))
+                .map(|(item, count)| Stack {
+                    item: item.clone(),
+                    count,
+                    copy: None,
+                })
                 .collect()
         })
         .unwrap_or_default()
 }
 
-/// The stacks the player carries, in the order the panel lists them.
+/// The stacks the player carries, then each weapon, in the order the panel lists them.
 fn pack(game: &Game) -> Vec<Stack> {
-    game.inventory()
+    let inventory = game.inventory();
+    inventory
         .stacks()
-        .map(|(item, count)| (item.clone(), count))
+        .map(|(item, count)| Stack {
+            item: item.clone(),
+            count,
+            copy: None,
+        })
+        .chain(inventory.weapons().map(|(copy, held)| Stack {
+            item: held.item().clone(),
+            count: NonZeroU32::MIN,
+            copy: Some(copy),
+        }))
         .collect()
 }
 
@@ -449,7 +493,7 @@ mod tests {
         trade.update(key, game, log);
         let target = stacks
             .iter()
-            .position(|(candidate, _)| candidate.as_str() == item)
+            .position(|stack| stack.item.as_str() == item)
             .expect("the item is listed");
         for _ in 0..stacks.len() {
             let menu = match side {
@@ -556,6 +600,26 @@ mod tests {
         trade.update(Command::Select, &mut game, &mut log);
         assert_eq!(game.item_count(&armor), 1);
         assert!(said(&log).contains("equipped"), "{}", said(&log));
+    }
+
+    #[test]
+    fn a_weapon_is_sold_by_itself_and_never_asks_how_many() {
+        let (mut game, mut trade, mut log) = shop(0.0, &[("9mm_pistol", 2)]);
+        let pistol = id("9mm_pistol");
+        let spare = game
+            .inventory()
+            .copies_of(&pistol)
+            .nth(1)
+            .expect("two pistols");
+        point_at(&mut trade, &mut game, &mut log, Side::Sell, "9mm_pistol");
+        trade.update(Command::Down, &mut game, &mut log);
+        trade.update(Command::Select, &mut game, &mut log);
+        assert!(trade.ask.is_none(), "a weapon is one object");
+        assert_eq!(game.item_count(&pistol), 1);
+        assert!(
+            game.inventory().weapon(spare).is_none(),
+            "the chosen copy went"
+        );
     }
 
     #[test]

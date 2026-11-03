@@ -2,7 +2,8 @@
 //! and the enemies answer in the log.
 
 use engine::combat::{
-    AimedHitChance, Combat, Combatant, Dice, FighterId, Power, Resolution, Side, Status, Strike,
+    AimedHitChance, Combat, Combatant, Dice, FighterId, Flight, Power, Resolution, Side, Status,
+    Strike,
 };
 use engine::game::{Battle, Fighter, Game, Outcome};
 use ratatui::Frame;
@@ -29,6 +30,8 @@ pub enum Next {
 enum Action {
     Shoot(FighterId),
     Reload,
+    /// Try to run away.
+    Flee,
     EndTurn,
 }
 
@@ -43,18 +46,38 @@ pub struct Fight {
 }
 
 impl Fight {
-    /// Starts the screen on a fresh battle.
+    /// Starts the screen on a fresh battle. A foe that is quicker than the player
+    /// acts first: what it did before the player's turn goes to the log.
     #[must_use]
-    pub fn new(battle: Battle) -> Self {
+    pub fn new(mut battle: Battle, log: &mut Log, dice: &mut impl Dice) -> Self {
         let names = names(battle.combat());
+        let opening = battle.open(dice);
         let mut fight = Self {
             battle,
             names,
             actions: Vec::new(),
             menu: Menu::new(0),
         };
+        if !opening.is_empty() {
+            log.push(Entry::Note("They are quicker and shoot first.".to_owned()));
+            opening
+                .iter()
+                .for_each(|resolution| log.push(Entry::Note(fight.describe(resolution))));
+        }
         fight.refresh();
         fight
+    }
+
+    /// Whether the fight ended before the player could act, so it must be settled
+    /// at once.
+    #[must_use]
+    pub fn is_over(&self) -> bool {
+        self.battle.combat().status() != Status::Ongoing
+    }
+
+    /// Settles a fight that is over, as [`Fight::update`] does after a move.
+    pub fn finish(&self, game: &mut Game, log: &mut Log) -> Next {
+        self.settle(game, log)
     }
 
     /// Applies a command: moves the cursor, or does the chosen action. What
@@ -68,7 +91,7 @@ impl Fight {
     ) -> Next {
         if command == Command::Back {
             log.push(Entry::Note(
-                "There is no running from this fight.".to_owned(),
+                "Choose \"Run away\" to try to get out of this fight.".to_owned(),
             ));
             return Next::Stay;
         }
@@ -92,6 +115,16 @@ impl Fight {
                 ))),
                 Err(error) => log.push(Entry::Note(error.to_string())),
             },
+            Action::Flee => match self.battle.flee(dice) {
+                Ok((Flight::Escaped, _)) => log.push(Entry::Note("You get away.".to_owned())),
+                Ok((Flight::Blocked, resolutions)) => {
+                    log.push(Entry::Note("You cannot get away!".to_owned()));
+                    resolutions
+                        .iter()
+                        .for_each(|resolution| log.push(Entry::Note(self.describe(resolution))));
+                }
+                Err(error) => log.push(Entry::Note(error.to_string())),
+            },
             Action::EndTurn => match self.battle.end_turn(dice) {
                 Ok(resolutions) => resolutions
                     .iter()
@@ -112,6 +145,7 @@ impl Fight {
                 let message = match outcome {
                     Outcome::Victory => "The fight is won.",
                     Outcome::Defeat => "You are down.",
+                    Outcome::Fled => "You got away from the fight.",
                 };
                 log.push(Entry::Note(message.to_owned()));
                 Next::Done(Some(outcome))
@@ -137,7 +171,7 @@ impl Fight {
             .filter(|&id| combat.side(id) == Some(Side::Enemy) && combat.is_standing(id))
             .map(Action::Shoot)
             .chain(combat.rounds(self.battle.player()).map(|_| Action::Reload))
-            .chain([Action::EndTurn])
+            .chain([Action::Flee, Action::EndTurn])
             .collect();
         self.menu = Menu::new(self.actions.len());
     }
@@ -233,6 +267,12 @@ impl Fight {
                     }
                 }
                 Action::Reload => Item::new("Reload"),
+                Action::Flee => Item::new(format!(
+                    "Run away ({}% to get out)",
+                    combat
+                        .combatant(self.battle.player())
+                        .map_or(0, |you| you.flee_chance().get())
+                )),
                 Action::EndTurn => Item::new("End turn"),
             })
             .collect();

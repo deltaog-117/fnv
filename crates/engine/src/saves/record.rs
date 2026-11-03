@@ -12,7 +12,7 @@ use crate::shared::{
 };
 
 /// The newest version this game reads and the only one it writes.
-pub const VERSION: u32 = 2;
+pub const VERSION: u32 = 3;
 
 /// Everything that changes during play.
 ///
@@ -42,8 +42,6 @@ pub struct Save {
     pub shops: Vec<SavedShop>,
     /// The boosts in force.
     pub effects: Vec<SavedEffect>,
-    /// How worn each weapon is.
-    pub wear: Vec<SavedWear>,
     /// The finds the player has already picked up.
     pub gathered: Vec<FindId>,
     /// Fights the player has won.
@@ -176,9 +174,15 @@ pub struct SavedCharacter {
 pub struct SavedPack {
     /// Bottle caps.
     pub caps: u32,
-    /// Item stacks.
+    /// Item stacks. A weapon listed here is that many new copies, which is how a
+    /// version 2 save is read.
     pub items: BTreeMap<ItemId, u32>,
-    /// The wielded weapon.
+    /// The weapons carried one by one, each with its own wear.
+    pub weapons: Vec<SavedWeapon>,
+    /// The number of the weapon in hand.
+    pub wielded: Option<u32>,
+    /// The kind of weapon in hand, for a save that does not say which copy
+    /// (version 2). A game writes `wielded` instead.
     pub weapon: Option<ItemId>,
     /// The outfit worn.
     pub outfit: Option<ItemId>,
@@ -212,11 +216,13 @@ pub struct SavedEffect {
     pub until: u64,
 }
 
-/// A weapon's wear.
+/// One carried weapon.
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
-pub struct SavedWear {
-    /// The weapon.
+pub struct SavedWeapon {
+    /// Its number in the pack.
+    pub id: u32,
+    /// What kind of weapon it is.
     pub item: ItemId,
     /// Condition points lost.
     pub lost: u32,
@@ -294,6 +300,59 @@ fn upgrade(mut value: serde_json::Value, from: u64) -> Result<serde_json::Value,
                 .ok_or_else(|| SaveError::Format("the save is not an object".to_owned()))?;
             object.insert("gathered".to_owned(), serde_json::Value::Array(Vec::new()));
             object.insert("version".to_owned(), serde_json::Value::from(2));
+            Ok(value)
+        }
+        // Version 3 gave every weapon its own wear. The old per-kind wear becomes the
+        // wear of each copy of that kind; a weapon with no record was new and stays
+        // a plain count, which loads as new copies.
+        2 => {
+            let format = |what: &str| SaveError::Format(what.to_owned());
+            let object = value
+                .as_object_mut()
+                .ok_or_else(|| format("the save is not an object"))?;
+            let wear = object.remove("wear").unwrap_or_default();
+            let pack = object
+                .get_mut("pack")
+                .and_then(serde_json::Value::as_object_mut)
+                .ok_or_else(|| format("the save has no pack"))?;
+            let mut weapons = Vec::new();
+            let mut first: std::collections::BTreeMap<String, u64> = Default::default();
+            let mut entries: Vec<(String, u64)> = wear
+                .as_array()
+                .into_iter()
+                .flatten()
+                .filter_map(|entry| {
+                    Some((
+                        entry.get("item")?.as_str()?.to_owned(),
+                        entry.get("lost")?.as_u64()?,
+                    ))
+                })
+                .collect();
+            entries.sort();
+            let mut next = 0u64;
+            for (item, lost) in entries {
+                let count = pack
+                    .get_mut("items")
+                    .and_then(serde_json::Value::as_object_mut)
+                    .and_then(|items| items.remove(&item))
+                    .and_then(|count| count.as_u64())
+                    .unwrap_or(0);
+                for _ in 0..count {
+                    first.entry(item.clone()).or_insert(next);
+                    weapons.push(serde_json::json!({"id": next, "item": item, "lost": lost}));
+                    next += 1;
+                }
+            }
+            let in_hand = pack
+                .get("weapon")
+                .and_then(serde_json::Value::as_str)
+                .and_then(|kind| first.get(kind).copied());
+            if in_hand.is_some() {
+                pack.insert("weapon".to_owned(), serde_json::Value::Null);
+            }
+            pack.insert("weapons".to_owned(), serde_json::Value::Array(weapons));
+            pack.insert("wielded".to_owned(), serde_json::json!(in_hand));
+            object.insert("version".to_owned(), serde_json::Value::from(3));
             Ok(value)
         }
         _ => Err(SaveError::UnknownVersion(from)),

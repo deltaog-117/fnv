@@ -9,6 +9,7 @@ use super::Game;
 use crate::combat::Percent;
 use crate::craft::{CraftError, Formula};
 use crate::gather::GatherError;
+use crate::inventory::CopyId;
 use crate::repair::{RepairError, WEAPON_REPAIR_KIT, after_kit, after_merge, vendor_price};
 use crate::shared::{
     CharacterView, FindId, InventorySink, InventoryView, ItemId, LocationId, RecipeId, Skill,
@@ -33,24 +34,36 @@ pub struct Crafted {
     pub count: NonZeroU32,
 }
 
+/// A carried weapon that wears, and how much of it is left.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct WornWeapon {
+    /// Which weapon.
+    pub copy: CopyId,
+    /// What kind of weapon it is.
+    pub item: ItemId,
+    /// How much of its condition is left.
+    pub condition: Percent,
+}
+
 impl Game {
-    /// The weapon's new condition points and the points it has lost, when it wears.
-    fn wear_of(&self, weapon: &ItemId) -> Result<(NonZeroU32, u32), RepairError> {
+    /// A carried weapon's kind, its points when new and the points it has lost.
+    fn wear_of(&self, copy: CopyId) -> Result<(ItemId, NonZeroU32, u32), RepairError> {
+        let held = self
+            .inventory
+            .weapon(copy)
+            .ok_or(RepairError::NoSuchWeapon(copy.get()))?;
         let max = self
             .arsenal
-            .condition_max(weapon)
-            .ok_or_else(|| RepairError::DoesNotWear(weapon.clone()))?;
-        let lost = self.wear.get(weapon).copied().unwrap_or(0).min(max.get());
-        Ok((max, lost))
+            .condition_max(held.item())
+            .ok_or_else(|| RepairError::DoesNotWear(held.item().clone()))?;
+        Ok((held.item().clone(), max, held.lost().min(max.get())))
     }
 
-    /// Records the points a weapon has lost; a whole weapon leaves no record.
-    fn set_lost(&mut self, weapon: &ItemId, lost: u32) {
-        if lost == 0 {
-            self.wear.remove(weapon);
-        } else {
-            self.wear.insert(weapon.clone(), lost);
-        }
+    /// Records the points a carried weapon has lost.
+    fn set_lost(&mut self, copy: CopyId, lost: u32) -> Result<(), RepairError> {
+        self.inventory
+            .set_lost(copy, lost)
+            .map_err(|_| RepairError::NoSuchWeapon(copy.get()))
     }
 
     /// The condition left after `lost` of `max` points are gone.
@@ -60,10 +73,16 @@ impl Game {
 
     /// The weapons the player carries that wear, with how much of each is left.
     #[must_use]
-    pub fn worn_weapons(&self) -> Vec<(ItemId, Percent)> {
+    pub fn worn_weapons(&self) -> Vec<WornWeapon> {
         self.inventory
-            .stacks()
-            .filter_map(|(item, _)| Some((item.clone(), self.weapon_condition(item)?)))
+            .weapons()
+            .filter_map(|(copy, held)| {
+                Some(WornWeapon {
+                    copy,
+                    item: held.item().clone(),
+                    condition: self.copy_condition(copy)?,
+                })
+            })
             .collect()
     }
 
@@ -73,16 +92,16 @@ impl Game {
     ///
     /// # Errors
     ///
-    /// [`RepairError`] when the player is down, the item does not wear or is not
-    /// carried, there is no kit, or the repair would change nothing.
-    pub fn repair_with_kit(&mut self, weapon: &ItemId) -> Result<Percent, RepairError> {
-        self.check_repairer(weapon)?;
-        let (max, lost) = self.wear_of(weapon)?;
+    /// [`RepairError`] when the player is down, the weapon is not carried or does
+    /// not wear, there is no kit, or the repair would change nothing.
+    pub fn repair_with_kit(&mut self, copy: CopyId) -> Result<Percent, RepairError> {
+        self.check_repairer()?;
+        let (item, max, lost) = self.wear_of(copy)?;
         let skill = self.character.skill(Skill::Repair);
         let after = after_kit(max, lost, skill);
         if after == lost {
             return Err(RepairError::NothingToGain {
-                item: weapon.clone(),
+                item,
                 skill: skill.get(),
             });
         }
@@ -90,43 +109,51 @@ impl Game {
         let mut trial = self.clone();
         require(&trial, &kit, 1)?;
         trial.inventory.take_item(&kit, NonZeroU32::MIN)?;
-        trial.set_lost(weapon, after);
+        trial.set_lost(copy, after)?;
         *self = trial;
         Ok(Self::left_percent(max, after))
     }
 
-    /// Merges two carried copies of one weapon into a single, better one: one copy
-    /// is used up. Both copies share one wear record, so the pair is as worn as the
-    /// record says. Returns what is left of the remaining copy's condition.
+    /// Merges two carried copies of one weapon into a single, better one: `gone`
+    /// is used up and `keep` ends with the combined condition. If `gone` was in
+    /// hand, `keep` takes its place. Returns what is left of the remaining copy's
+    /// condition.
     ///
     /// # Errors
     ///
-    /// [`RepairError`] when the player is down, the item does not wear, fewer than
-    /// two copies are carried, or the merge would change nothing.
-    pub fn merge_weapons(&mut self, weapon: &ItemId) -> Result<Percent, RepairError> {
-        self.check_repairer(weapon)?;
-        let (max, lost) = self.wear_of(weapon)?;
+    /// [`RepairError`] when the player is down, either weapon is not carried or
+    /// does not wear, they are the same weapon or different kinds, or the merge
+    /// would change nothing.
+    pub fn merge_weapons(&mut self, keep: CopyId, gone: CopyId) -> Result<Percent, RepairError> {
+        self.check_repairer()?;
+        let (item, max, lost_keep) = self.wear_of(keep)?;
+        let (other, _, lost_gone) = self.wear_of(gone)?;
+        if keep == gone || item != other {
+            return Err(RepairError::NotAPair);
+        }
         let skill = self.character.skill(Skill::Repair);
-        let after = after_merge(max, lost, lost, skill);
-        if after == lost {
+        let after = after_merge(max, lost_keep, lost_gone, skill);
+        if after >= lost_keep.min(lost_gone) {
             return Err(RepairError::NothingToGain {
-                item: weapon.clone(),
+                item,
                 skill: skill.get(),
             });
         }
         let mut trial = self.clone();
-        require(&trial, weapon, 2)?;
-        trial.inventory.take_item(weapon, NonZeroU32::MIN)?;
-        trial.set_lost(weapon, after);
+        trial
+            .inventory
+            .merge_copies(keep, gone, after)
+            .map_err(|_| RepairError::NotAPair)?;
         *self = trial;
         Ok(Self::left_percent(max, after))
     }
 
-    fn check_repairer(&self, weapon: &ItemId) -> Result<(), RepairError> {
-        if !self.is_alive() {
-            return Err(RepairError::Down);
+    fn check_repairer(&self) -> Result<(), RepairError> {
+        if self.is_alive() {
+            Ok(())
+        } else {
+            Err(RepairError::Down)
         }
-        require(self, weapon, 1)
     }
 
     /// The merchants at `place` who mend weapons for caps and are willing to trade.
@@ -155,7 +182,7 @@ impl Game {
     pub fn repair_quote(
         &self,
         vendor: &VendorId,
-        weapon: &ItemId,
+        copy: CopyId,
     ) -> Result<RepairQuote, RepairError> {
         let info = self
             .market
@@ -171,18 +198,17 @@ impl Game {
         if !self.vendor_will_trade(info.npc()) {
             return Err(RepairError::Unavailable(info.npc().clone()));
         }
-        require(self, weapon, 1)?;
-        let (max, lost) = self.wear_of(weapon)?;
+        let (weapon, max, lost) = self.wear_of(copy)?;
         let after = after_kit(max, lost, skill);
         if after == lost {
             return Err(RepairError::NothingToGain {
-                item: weapon.clone(),
+                item: weapon,
                 skill: skill.get(),
             });
         }
         let value = self
             .inventory
-            .value(weapon)
+            .value(&weapon)
             .ok_or_else(|| RepairError::NoPrice(weapon.clone()))?;
         Ok(RepairQuote {
             price: vendor_price(value, max, lost, after),
@@ -200,9 +226,9 @@ impl Game {
     pub fn repair_at(
         &mut self,
         vendor: &VendorId,
-        weapon: &ItemId,
+        copy: CopyId,
     ) -> Result<RepairQuote, RepairError> {
-        let quote = self.repair_quote(vendor, weapon)?;
+        let quote = self.repair_quote(vendor, copy)?;
         let have = self.inventory.caps();
         if have < quote.price {
             return Err(RepairError::PlayerShort {
@@ -216,14 +242,14 @@ impl Game {
             .get(vendor)
             .and_then(|info| info.repair_skill())
             .unwrap_or_default();
-        let (max, lost) = self.wear_of(weapon)?;
+        let (_, max, lost) = self.wear_of(copy)?;
         let mut trial = self.clone();
         trial.inventory.add_caps(-f64::from(quote.price))?;
         trial
             .market
             .earn(vendor, quote.price)
             .map_err(|_| RepairError::UnknownVendor(vendor.clone()))?;
-        trial.set_lost(weapon, after_kit(max, lost, skill));
+        trial.set_lost(copy, after_kit(max, lost, skill))?;
         *self = trial;
         Ok(quote)
     }

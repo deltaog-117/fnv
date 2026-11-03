@@ -23,6 +23,14 @@ pub enum Command {
     Pick(usize),
 }
 
+/// Whether the key is Ctrl+C, which quits even while a name is being typed.
+#[must_use]
+pub fn is_interrupt(key: KeyEvent) -> bool {
+    key.kind != KeyEventKind::Release
+        && key.code == KeyCode::Char('c')
+        && key.modifiers.contains(KeyModifiers::CONTROL)
+}
+
 /// The command a key press stands for, if any.
 ///
 /// Key releases are ignored: some terminals report both edges of a press and the
@@ -83,6 +91,17 @@ mod tests {
         let ctrl_c = KeyEvent::new(KeyCode::Char('c'), KeyModifiers::CONTROL);
         assert_eq!(command(ctrl_c), Some(Command::Quit));
         assert_eq!(command(press(KeyCode::Char('c'))), None);
+    }
+
+    #[test]
+    fn only_control_c_interrupts_a_name_being_typed() {
+        let ctrl_c = KeyEvent::new(KeyCode::Char('c'), KeyModifiers::CONTROL);
+        assert!(is_interrupt(ctrl_c));
+        assert!(!is_interrupt(press(KeyCode::Char('c'))));
+        assert!(!is_interrupt(press(KeyCode::Char('q'))));
+        let mut release = ctrl_c;
+        release.kind = KeyEventKind::Release;
+        assert!(!is_interrupt(release));
     }
 
     #[test]

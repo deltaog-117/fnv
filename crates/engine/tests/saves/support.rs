@@ -25,6 +25,11 @@ pub fn place() -> LocationId {
     LocationId::try_new("goodsprings").expect("literal is a valid id")
 }
 
+/// The carried 9mm pistols, in id order.
+pub fn pistols(game: &Game) -> Vec<engine::inventory::CopyId> {
+    game.inventory().copies_of(&item("9mm_pistol")).collect()
+}
+
 pub fn item(text: &str) -> ItemId {
     ItemId::try_new(text).expect("literal is a valid id")
 }
@@ -141,6 +146,7 @@ pub fn played() -> Game {
 
     let encounter = EncounterId::try_new("ghost_town_gunfight").expect("literal is a valid id");
     let mut battle = game.start_battle(&encounter).expect("the fight starts");
+    battle.open(&mut Always(100));
     fight_to_the_end(&mut battle);
     game.finish_battle(&battle).expect("the fight settles");
 
@@ -189,7 +195,9 @@ pub fn played() -> Game {
         &mut game,
     )
     .expect("the kit is given");
-    game.repair_with_kit(&item("9mm_pistol")).ok();
+    if let Some(pistol) = pistols(&game).first() {
+        game.repair_with_kit(*pistol).ok();
+    }
     // Last, so the boost is still running when the game is saved.
     game.use_item(&item("buffout")).expect("buffout is used");
     game

@@ -13,6 +13,7 @@ mod inventory;
 mod quests;
 mod repair;
 mod reputation;
+mod saves;
 mod shared;
 mod trade;
 mod travel;
@@ -50,7 +51,7 @@ fn run() -> anyhow::Result<()> {
     let place = LocationId::try_new(START_PLACE).context("starting place id")?;
     let data = GameData::load(&dir, &Scope::Around(place.clone()))
         .with_context(|| format!("loading the game data from {}", dir.display()))?;
-    let mut app = App::new(&data, &place)?.with_creation();
+    let mut app = App::new(&data, &place)?.with_creation().with_autosave();
 
     // `init` also installs a panic hook that restores the terminal, so a crash does
     // not leave the player's shell in raw mode.
@@ -64,10 +65,17 @@ fn event_loop(terminal: &mut DefaultTerminal, app: &mut App) -> anyhow::Result<(
     while app.is_running() {
         terminal.draw(|frame| app.render(frame))?;
         // A resize arrives as an event too, so the next iteration redraws it.
-        if let Event::Key(key) = event::read()?
-            && let Some(command) = input::command(key)
-        {
-            app.update(command);
+        if let Event::Key(key) = event::read()? {
+            if app.is_typing() {
+                // Typing a name: letters are letters, not commands. Ctrl+C still quits.
+                if input::is_interrupt(key) {
+                    app.update(input::Command::Quit);
+                } else if key.kind != ratatui::crossterm::event::KeyEventKind::Release {
+                    app.type_key(key.code);
+                }
+            } else if let Some(command) = input::command(key) {
+                app.update(command);
+            }
         }
     }
     Ok(())

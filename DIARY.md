@@ -22,6 +22,7 @@
 | 2026-10-25 | Character and inventory | Both in one step, minimal; `Game` owns them and keeps the view traits as the only contract (COA A) | ✅ Confirmed |
 | 2026-10-26 | Leveling, perks and traits | Perk and trait effects are typed `Modifier` data summed once when taken; only fully modeled perks are listed | ✅ Confirmed |
 | 2026-10-26 | Level-up screen | Level-up screen only; the creation screen waits for Doc's intro (COA B) | ✅ Confirmed |
+| 2026-11-03 | Weapon instances, restocking, fleeing, named saves | Weapon objects with ids, global restock from the clock, one flee roll, a folder of named saves (B, A, A, B) | ✅ Confirmed |
 
 ---
 
@@ -1826,6 +1827,61 @@ Three roadmap items were built in one cycle: repair, crafting and the rest of th
 - `crates/engine/tests/craft/`, `gather/`, `game/upkeep.rs`, `saves/`, `quests/lifecycle.rs`, `crates/engine/benches/repair.rs`, `craft.rs`
 - `crates/tui/src/craft/`, `repair/`, `inventory/screen.rs`, `exploration/screen.rs`, `app.rs`
 - `data/stations/`, `data/finds/`, `data/crafting/`, `data/vendors/`, `data/dialogue/slice_goodsprings.json`, `schemas/`, `scripts/normalize.py`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-03 | Initial entry | deltaog-117 |
+
+
+### Weapon Instances, Restocking, Fleeing and Named Saves: Four Features in One Cycle
+
+**Date:** 2026-11-03
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+The last cycle left four loose ends: two copies of a weapon shared one wear record, shops only ever emptied, a fight could not be left, and the game had one save file. They were built together because three of them touch the save record, so it moved once, to version 3. Each fork was chosen from COAs: weapon objects with ids (B), a folder of named saves (B), a flee roll (A) and a global restock (A). The fourth item's other parts, initiative and body-part targeting, were split: initiative was built and body-part targeting became a spike, because no source gives limb numbers.
+
+---
+
+#### Decision
+
+**Every weapon is an object; everything else stays a count.** The pack keeps ammo, armor and chems as stacks and keeps each weapon as a record with an id and the points it has lost. Two things made this cheaper than it sounds. First, `item_count`, `give_item`, `take_item`, `discard`, `equip` and `weight` keep their meaning, so the quest, craft and dialogue code that speaks in counts did not change. Second, wear never moved into a map keyed by item again: the condition lives on the copy, so a merge, a sale and a drop move it with the copy by construction. The cost is rules for the count-shaped calls: taking a weapon away by kind removes the most worn spare first and the one in hand last, and equipping a kind takes the least worn copy. Ids are never reused within a pack and a save keeps them, so a loaded game saves to the same text.
+
+**A shop does not remember wear.** A sold weapon joins the vendor's stock as an ordinary item and comes back new if bought. That is a hole in a realistic economy but not in conservation of caps or weapons, and a price that follows condition needs a per-item stock the market does not have. It is on the roadmap.
+
+**The save moved once, and the upgrade is data-free.** Version 3 lists weapons with their ids and names the one in hand by id. The version 2 step runs on the JSON alone, so it cannot know which items are weapons; it uses the one thing that says so, the old wear list, and turns each wear entry into one record per carried copy of that kind. A weapon with no wear entry was new and stays a plain count in `items`, which loads as new copies. I said earlier that old saves would be refused; the save module already documents an upgrade step per version, so following it was less code than breaking it.
+
+**Restocking is a function of the clock.** A vendor refills on every multiple of its interval since the game began (3 days unless the record says), checked whenever time moves. Nothing is stored: a save holds the shops as they were, the clock holds the day, and the next move of the clock decides. That makes "many small waits equal one big wait" a property test and not a promise. A refill replaces the shop, so what the player sold is gone and the vendor's caps return to the starting figure; per-vendor rules about what a vendor buys wait for the full economy.
+
+**Initiative is a turn order, not a rewrite.** `Combat` keeps its fighters in the order given, so a `FighterId` still means the position the caller put a fighter in, and adds a separate turn order sorted by Sequence (highest first; ties keep the order given). The player's Sequence is twice Perception, which is the familiar formula but is not in the curated formulas file, so it is marked a stand-in. The cost is that a quicker foe now shoots before the player's first turn: `Battle::open` plays those turns, and the combat screen calls it at the start. Several existing tests assumed the player always opened, so they start fights through a helper that plays the opening with dice that miss.
+
+**Running away is one roll.** `25 + 6 * Agility`, kept between 5 and 95, a stand-in like the hit curve. A failed run costs the rest of the turn and the foes then play; a successful one ends the fight with a new `Fled` status, settled as an outcome that keeps the wounds, the rounds fired and the wear, wins nothing and leaves the encounter on offer. The 5 and 95 mean a fight is never certain to be escapable or inescapable.
+
+**Named saves are a folder, and a name is a checked type.** `SaveName` allows letters, digits, spaces, `-` and `_`, trims the ends, caps the length at 40 and refuses `autosave` in any case, so any name that gets through is safe as a file name and stays inside the folder (a property test over arbitrary text). The automatic save has a slot of its own that a typed name can never reach. The list reads each file's summary (day, time, place, experience) without loading a game, and shows a damaged file with its reason so the player can see it exists.
+
+**Typing needed a second input path.** The key map turns `q`, `j`, `k`, `h`, `l`, space and digits into commands, so a name cannot be typed through it. While a name is open the event loop hands raw keys to `App::type_key`, which keeps `Command` as it was (no exhaustive match in the other screens had to change). Ctrl+C still quits.
+
+**Autosave is off until `main` turns it on.** Tests build `App` many times and walk and sleep in them; an autosave on by default would write into the real data folder. `with_autosave` is called from `main` only. It runs after a walk, a sleep and a settled fight while the player is alive; a failure goes to the log and the game goes on.
+
+**Tests that had to change.** The pack no longer lists weapons as stacks, so the helpers that compared stacks to a model count weapons by kind. The save tests tamper with `pack.weapons` instead of a wear list, and the "gear not carried" refusal gained a sibling for a weapon in hand that is not carried. The scene tests that save and load go through the new list. The trade restock tests, copy tests, initiative tests and slot tests are new.
+
+**Left out for now:** body-part targeting (a spike), a message when shops restock, deleting or renaming a save, and reading the old single `save.json`.
+
+---
+
+#### References
+
+- `crates/engine/src/inventory/copies.rs`, `inventory/state.rs`, `game/state.rs`, `game/state/upkeep.rs`, `game/state/save.rs`, `game/battle.rs`, `combat/fight.rs`, `trade/market.rs`, `trade/book.rs`, `saves/record.rs`, `saves/folder.rs`
+- `crates/engine/tests/inventory/copies.rs`, `trade/restock.rs`, `combat/initiative.rs`, `saves/folder.rs`, `saves/files.rs`, `game/battle.rs`, `game/upkeep.rs`
+- `crates/tui/src/inventory/screen.rs`, `trade/screen.rs`, `repair/screen.rs`, `combat/screen.rs`, `saves/screen.rs`, `app.rs`, `main.rs`, `shared/input.rs`
+- `schemas/vendor.schema.json`
 
 ---
 

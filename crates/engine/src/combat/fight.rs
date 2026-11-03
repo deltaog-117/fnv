@@ -64,6 +64,15 @@ pub trait Combatant {
     fn aim(&self) -> Aim {
         Aim::UNTRAINED
     }
+    /// Decides who acts first: the higher number goes earlier, and equal numbers
+    /// keep the order the fighters were given in.
+    fn sequence(&self) -> u32 {
+        0
+    }
+    /// The chance that running away works. A fighter that cannot run says never.
+    fn flee_chance(&self) -> Percent {
+        Percent::NEVER
+    }
 }
 
 /// One of the two sides of a fight.
@@ -94,6 +103,17 @@ pub enum Status {
     Ongoing,
     /// The other side has no fighter standing.
     Won(Side),
+    /// The player's side got away. Nobody won: the foes are still up.
+    Fled,
+}
+
+/// What an attempt to run away came to.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Flight {
+    /// The player got away and the fight is over.
+    Escaped,
+    /// The foes blocked the way; the rest of the turn is lost.
+    Blocked,
 }
 
 /// What one attack did to its target.
@@ -170,6 +190,9 @@ pub enum CombatError {
     /// The target is already down.
     #[error("fighter {0} is already down")]
     TargetDown(usize),
+    /// Only the player's side can run away.
+    #[error("only the player's side can run away")]
+    OnlyThePlayerFlees,
     /// The target is on the attacker's side.
     #[error("fighter {0} is on the attacker's side")]
     FriendlyFire(usize),
@@ -219,6 +242,8 @@ pub struct Combat<C, H> {
     fighters: Vec<Slot<C>>,
     rules: Rules,
     hit_model: H,
+    /// Fighter indexes in the order they act: the highest sequence first.
+    turn_order: Vec<usize>,
     active: usize,
     ap_left: u32,
     round: u32,
@@ -226,8 +251,9 @@ pub struct Combat<C, H> {
 }
 
 impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
-    /// Starts a fight. The first fighter acts first, then the rest in the order
-    /// given, and the round counter starts at 1.
+    /// Starts a fight. The fighter with the highest sequence acts first, then the
+    /// rest by falling sequence; fighters with the same sequence keep the order they
+    /// were given in. The round counter starts at 1.
     ///
     /// # Errors
     ///
@@ -250,12 +276,17 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
         if !(has(Side::Player) && has(Side::Enemy)) {
             return Err(CombatError::NeedsBothSides);
         }
-        let ap_left = fighters.first().map_or(0, |f| f.who.max_ap());
+        let mut turn_order: Vec<usize> = (0..fighters.len()).collect();
+        // A stable sort, so equal sequences keep the order given.
+        turn_order.sort_by_key(|&i| std::cmp::Reverse(fighters[i].who.sequence()));
+        let active = turn_order.first().copied().unwrap_or(0);
+        let ap_left = fighters.get(active).map_or(0, |f| f.who.max_ap());
         Ok(Self {
             fighters,
             rules,
             hit_model,
-            active: 0,
+            turn_order,
+            active,
             ap_left,
             round: 1,
             status: Status::Ongoing,
@@ -487,18 +518,50 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
         if self.status != Status::Ongoing {
             return Err(CombatError::Over);
         }
-        let count = self.fighters.len();
+        let count = self.turn_order.len();
+        let at = self
+            .turn_order
+            .iter()
+            .position(|&i| i == self.active)
+            .unwrap_or(0);
         // Both sides have someone standing while the fight goes on, so a next one exists.
-        let next = (1..=count)
-            .map(|step| (self.active + step) % count)
-            .find(|&i| self.fighters[i].hp > 0)
-            .unwrap_or(self.active);
-        if next <= self.active {
+        let (step, next) = (1..=count)
+            .map(|step| (step, self.turn_order[(at + step) % count]))
+            .find(|&(_, i)| self.fighters[i].hp > 0)
+            .unwrap_or((count, self.active));
+        // Passing the end of the order starts a new round.
+        if at + step >= count {
             self.round += 1;
         }
         self.active = next;
         self.ap_left = self.fighters[next].who.max_ap();
         Ok(())
+    }
+
+    /// The active fighter tries to run away: one roll against the fighter's chance.
+    /// Escaping ends the fight with [`Status::Fled`]; failing loses what is left of
+    /// the turn, and the caller then ends it.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError::Over`] when the fight is over and
+    /// [`CombatError::OnlyThePlayerFlees`] when the active fighter is an enemy.
+    /// Nothing changes and no dice are rolled in those cases.
+    pub fn flee(&mut self, dice: &mut impl Dice) -> Result<Flight, CombatError> {
+        if self.status != Status::Ongoing {
+            return Err(CombatError::Over);
+        }
+        let runner = &self.fighters[self.active];
+        if runner.side != Side::Player {
+            return Err(CombatError::OnlyThePlayerFlees);
+        }
+        if roll(dice) <= runner.who.flee_chance().get() {
+            self.status = Status::Fled;
+            Ok(Flight::Escaped)
+        } else {
+            self.ap_left = 0;
+            Ok(Flight::Blocked)
+        }
     }
 
     fn standing_status(&self) -> Status {

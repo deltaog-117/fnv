@@ -3,8 +3,8 @@
 
 use std::sync::Arc;
 
-use engine::game::Game;
-use engine::shared::{InventoryView, ItemId, VendorId};
+use engine::game::{Game, WornWeapon};
+use engine::shared::{InventoryView, VendorId};
 use ratatui::Frame;
 use ratatui::layout::Rect;
 use ratatui::text::Line;
@@ -66,8 +66,8 @@ impl Repair {
         let Some(weapon) = worn(game).into_iter().nth(index) else {
             return Next::Stay;
         };
-        let name = self.names.name(&weapon);
-        let note = match game.repair_at(&self.vendor, &weapon) {
+        let name = self.names.name(&weapon.item);
+        let note = match game.repair_at(&self.vendor, weapon.copy) {
             Ok(quote) => format!(
                 "{} mends your {name} to {}% for {} caps.",
                 self.name,
@@ -87,17 +87,15 @@ impl Repair {
             .iter()
             .enumerate()
             .map(|(index, weapon)| {
-                let now = game
-                    .weapon_condition(weapon)
-                    .map_or(0, |condition| condition.get());
-                let text = match game.repair_quote(&self.vendor, weapon) {
+                let now = weapon.condition.get();
+                let name = self.names.name(&weapon.item);
+                let text = match game.repair_quote(&self.vendor, weapon.copy) {
                     Ok(quote) => format!(
-                        "{} - {now}% to {}% for {} caps",
-                        self.names.name(weapon),
+                        "{name} - {now}% to {}% for {} caps",
                         quote.condition.get(),
                         quote.price
                     ),
-                    Err(error) => format!("{} - {now}%: {error}", self.names.name(weapon)),
+                    Err(error) => format!("{name} - {now}%: {error}"),
                 };
                 let selected = self.list.selected() == Some(index);
                 let style = if selected {
@@ -124,10 +122,9 @@ impl Repair {
 }
 
 /// The carried weapons that are not as good as new, in the order the pack lists them.
-fn worn(game: &Game) -> Vec<ItemId> {
+fn worn(game: &Game) -> Vec<WornWeapon> {
     game.worn_weapons()
         .into_iter()
-        .filter(|(_, left)| left.get() < 100)
-        .map(|(item, _)| item)
+        .filter(|weapon| weapon.condition.get() < 100)
         .collect()
 }

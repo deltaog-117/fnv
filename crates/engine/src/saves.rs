@@ -7,7 +7,8 @@
 //! fills these facts back in, through the same checks play uses, so a file that
 //! disagrees with the data is refused with a message naming the part at fault.
 //!
-//! This module holds only the record, its JSON form and the file handling. It does
+//! This module holds only the record, its JSON form and the file handling, including
+//! a [`SaveFolder`] of named saves and the automatic save beside them. It does
 //! not know the features: `game` converts between a [`Save`] and a running game.
 //!
 //! A save carries a version number. A file from a newer game is refused, and a file
@@ -16,11 +17,15 @@
 
 mod error;
 mod file;
+mod folder;
 mod record;
 
 pub use error::SaveError;
+pub use folder::{
+    AUTOSAVE, MAX_NAME_LEN, NameError, SaveEntry, SaveFolder, SaveName, SaveSummary, Slot,
+};
 pub use record::{
     Save, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding, SavedFate, SavedFired, SavedNpc,
-    SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop, SavedStanding, SavedWear, SavedWorld,
-    VERSION,
+    SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop, SavedStanding, SavedWeapon,
+    SavedWorld, VERSION,
 };

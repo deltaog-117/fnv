@@ -19,6 +19,8 @@ pub struct Plain {
     pub crit_damage: f64,
     pub ap_cost: u32,
     pub magazine: Option<Magazine>,
+    pub sequence: u32,
+    pub flee: u32,
 }
 
 impl Plain {
@@ -34,6 +36,8 @@ impl Plain {
             crit_damage: 0.0,
             ap_cost: 20,
             magazine: None,
+            sequence: 0,
+            flee: 0,
         }
     }
 
@@ -46,6 +50,18 @@ impl Plain {
             reload_ap: NonZeroU32::new(5).expect("literal is not zero"),
             stock,
         });
+        self
+    }
+
+    /// Acts earlier the higher this is.
+    pub fn sequence(mut self, sequence: u32) -> Self {
+        self.sequence = sequence;
+        self
+    }
+
+    /// Escapes a fight on a roll up to this percent.
+    pub fn flee(mut self, chance: u32) -> Self {
+        self.flee = chance;
         self
     }
 
@@ -102,6 +118,14 @@ impl Combatant for Plain {
 
     fn magazine(&self) -> Option<Magazine> {
         self.magazine
+    }
+
+    fn sequence(&self) -> u32 {
+        self.sequence
+    }
+
+    fn flee_chance(&self) -> Percent {
+        Percent::try_new(self.flee).expect("valid test flee chance")
     }
 }
 

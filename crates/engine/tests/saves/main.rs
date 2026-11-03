@@ -5,6 +5,7 @@
 //! refused by part; `files` covers versions, the JSON form and the files on disk.
 
 mod files;
+mod folder;
 mod refusals;
 mod round_trip;
 mod support;

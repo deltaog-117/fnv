@@ -7,7 +7,9 @@ use engine::shared::{CharacterView, InventoryView, Skill, apply_all};
 use proptest::prelude::*;
 use strum::IntoEnumIterator;
 
-use super::support::{count, effect, fight_to_the_end, item, played, stage, template, vendor};
+use super::support::{
+    count, effect, fight_to_the_end, item, pistols, played, stage, template, vendor,
+};
 
 /// Saves, writes to text, reads it back and loads it into a fresh game.
 fn through_text(game: &Game) -> Game {
@@ -48,7 +50,10 @@ fn the_played_game_really_has_a_history_worth_saving() {
     let save = game.save();
     assert!(!save.quests.is_empty());
     assert!(!save.world.npcs.is_empty());
-    assert!(!save.wear.is_empty(), "the pistol wore");
+    assert!(
+        save.pack.weapons.iter().any(|copy| copy.lost > 0),
+        "the pistol wore"
+    );
     assert!(!save.won.is_empty(), "the gunfight was won");
     assert_eq!(save.gathered.len(), 2, "both plants were picked");
     assert!(!save.effects.is_empty(), "buffout is running");
@@ -95,10 +100,10 @@ fn a_loaded_game_goes_on_exactly_like_the_original() {
 #[test]
 fn a_worn_weapon_stays_worn_after_loading() {
     let game = played();
-    let pistol = item("9mm_pistol");
-    let before = game.weapon_condition(&pistol);
+    let pistol = pistols(&game)[0];
+    let before = game.copy_condition(pistol);
     assert!(before.is_some_and(|left| left.get() < 100));
-    assert_eq!(through_text(&game).weapon_condition(&pistol), before);
+    assert_eq!(through_text(&game).copy_condition(pistol), before);
 }
 
 #[test]
@@ -302,6 +307,7 @@ fn play(game: &mut Game, ops: &[Op]) {
             Op::Fight => {
                 let id = engine::shared::EncounterId::try_new("ghost_town_gunfight").expect("id");
                 if let Ok(mut battle) = game.start_battle(&id) {
+                    battle.open(&mut super::support::Always(100));
                     fight_to_the_end(&mut battle);
                     game.finish_battle(&battle).ok();
                 }
@@ -326,13 +332,19 @@ fn play(game: &mut Game, ops: &[Op]) {
                     game,
                 )
                 .ok();
-                game.repair_with_kit(&item("9mm_pistol")).ok();
+                if let Some(pistol) = pistols(game).first() {
+                    game.repair_with_kit(*pistol).ok();
+                }
             }
             Op::Merge => {
-                game.merge_weapons(&item("9mm_pistol")).ok();
+                if let [keep, gone, ..] = pistols(game)[..] {
+                    game.merge_weapons(keep, gone).ok();
+                }
             }
             Op::RepairAtChet => {
-                game.repair_at(&vendor("chet"), &item("9mm_pistol")).ok();
+                if let Some(pistol) = pistols(game).first() {
+                    game.repair_at(&vendor("chet"), *pistol).ok();
+                }
             }
         }
     }

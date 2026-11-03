@@ -1,11 +1,14 @@
-//! The player's pack: every stack on the left, what is worn and what the chosen
-//! item can do on the right.
+//! The player's pack: every stack and every weapon on the left, what is worn and
+//! what the chosen item can do on the right.
+//!
+//! Ammunition, armor and chems are counted stacks; each weapon is a row of its own,
+//! because each has its own wear.
 
 use std::num::NonZeroU32;
 use std::sync::Arc;
 
 use engine::game::Game;
-use engine::inventory::Slot;
+use engine::inventory::{CopyId, Slot};
 use engine::repair::WEAPON_REPAIR_KIT;
 use engine::shared::{Boost, InventoryView, ItemId, ItemUse};
 use ratatui::Frame;
@@ -32,7 +35,7 @@ pub enum Next {
     Leave,
 }
 
-/// Something the player can do with a stack.
+/// Something the player can do with a row.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 enum Action {
     Use,
@@ -40,7 +43,7 @@ enum Action {
     Unequip(Slot),
     /// Mend a worn weapon with a repair kit.
     Mend,
-    /// Merge two copies of a weapon into one better one.
+    /// Merge another copy of a weapon into this one.
     Merge,
     Drop,
     Back,
@@ -53,9 +56,24 @@ impl Action {
             Self::Equip => "Equip",
             Self::Unequip(_) => "Unequip",
             Self::Mend => "Mend with a kit",
-            Self::Merge => "Merge two copies",
+            Self::Merge => "Merge another copy into this one",
             Self::Drop => "Drop",
             Self::Back => "Back",
+        }
+    }
+}
+
+/// One line of the pack: a counted stack, or a single weapon.
+#[derive(Debug, Clone, PartialEq, Eq)]
+enum Row {
+    Stack(ItemId, NonZeroU32),
+    Weapon(CopyId, ItemId),
+}
+
+impl Row {
+    fn item(&self) -> &ItemId {
+        match self {
+            Self::Stack(item, _) | Self::Weapon(_, item) => item,
         }
     }
 }
@@ -63,21 +81,25 @@ impl Action {
 /// What the screen is waiting for.
 #[derive(Debug)]
 enum Mode {
-    /// Moving through the stacks.
+    /// Moving through the rows.
     Browsing,
-    /// Choosing what to do with `item`.
+    /// Choosing what to do with a row.
     Acting {
-        item: ItemId,
+        row: Row,
         actions: Vec<Action>,
         menu: Menu,
     },
     /// Choosing how many of a stack to throw away.
     Dropping { item: ItemId, quantity: Quantity },
+    /// Choosing which other copy to merge into `keep`.
+    Merging {
+        keep: CopyId,
+        others: Vec<CopyId>,
+        menu: Menu,
+    },
 }
 
-type Stack = (ItemId, NonZeroU32);
-
-/// An open pack. It holds only the cursor and the pending question: stacks, worn
+/// An open pack. It holds only the cursor and the pending question: rows, worn
 /// items and weight are read from the game whenever they are needed, so the
 /// screen cannot show a number the engine has since changed.
 #[derive(Debug)]
@@ -93,7 +115,7 @@ impl Pack {
     pub fn open(game: &Game, names: Arc<Names>) -> Self {
         Self {
             names,
-            list: Menu::new(stacks(game).len()),
+            list: Menu::new(rows(game).len()),
             mode: Mode::Browsing,
         }
     }
@@ -103,7 +125,9 @@ impl Pack {
     pub fn keys(&self) -> &'static str {
         match self.mode {
             Mode::Browsing => "Up/Down move | Enter actions | Esc leave | q quit",
-            Mode::Acting { .. } => "Up/Down move | Enter choose | 1-9 pick | Esc back | q quit",
+            Mode::Acting { .. } | Mode::Merging { .. } => {
+                "Up/Down move | Enter choose | 1-9 pick | Esc back | q quit"
+            }
             Mode::Dropping { .. } => {
                 "Left/Right +/-1 | Up/Down +/-10 | Enter confirm | Esc cancel | q quit"
             }
@@ -122,16 +146,12 @@ impl Pack {
                     self.offer_actions(index, game);
                 }
             }
-            Mode::Acting {
-                item,
-                actions,
-                menu,
-            } => {
+            Mode::Acting { row, actions, menu } => {
                 if command == Command::Back {
                     self.mode = Mode::Browsing;
                 } else if let Some(action) = menu.handle(command).and_then(|i| actions.get(i)) {
-                    let (item, action) = (item.clone(), *action);
-                    self.perform(action, &item, game, log);
+                    let (row, action) = (row.clone(), *action);
+                    self.perform(action, &row, game, log);
                 }
             }
             Mode::Dropping { item, quantity } => match command {
@@ -147,47 +167,73 @@ impl Pack {
                 Command::Up => quantity.raise(BIG_STEP),
                 Command::Pick(_) | Command::Quit => {}
             },
+            Mode::Merging { keep, others, menu } => {
+                if command == Command::Back {
+                    self.mode = Mode::Browsing;
+                } else if let Some(gone) = menu.handle(command).and_then(|i| others.get(i)) {
+                    let (keep, gone) = (*keep, *gone);
+                    self.merge(keep, gone, game, log);
+                }
+            }
         }
         Next::Stay
     }
 
-    /// Opens the action menu of the stack at `index`.
+    /// Opens the action menu of the row at `index`.
     fn offer_actions(&mut self, index: usize, game: &Game) {
-        let Some((item, _)) = stacks(game).into_iter().nth(index) else {
+        let Some(row) = rows(game).into_iter().nth(index) else {
             return;
         };
-        let actions = actions(game, &item);
+        let actions = actions(game, &row);
         self.mode = Mode::Acting {
             menu: Menu::new(actions.len()),
-            item,
+            row,
             actions,
         };
     }
 
-    fn perform(&mut self, action: Action, item: &ItemId, game: &mut Game, log: &mut Log) {
+    fn perform(&mut self, action: Action, row: &Row, game: &mut Game, log: &mut Log) {
+        let item = row.item();
         let name = self.names.name(item);
-        let note = match action {
-            Action::Use => game
+        let note = match (action, row) {
+            (Action::Use, _) => game
                 .use_item(item)
                 .map(|healed| use_note(&name, healed, game.inventory().item_use(item)))
                 .map_err(|error| error.to_string()),
-            Action::Equip => game
+            (Action::Equip, Row::Weapon(copy, _)) => game
+                .equip_copy(*copy)
+                .map(|_| format!("You equip the {name}."))
+                .map_err(|error| error.to_string()),
+            (Action::Equip, Row::Stack(..)) => game
                 .equip(item)
                 .map(|_| format!("You equip the {name}."))
                 .map_err(|error| error.to_string()),
-            Action::Unequip(slot) => {
+            (Action::Unequip(slot), _) => {
                 game.unequip(slot);
                 Ok(format!("You put the {name} away."))
             }
-            Action::Mend => game
-                .repair_with_kit(item)
+            (Action::Mend, Row::Weapon(copy, _)) => game
+                .repair_with_kit(*copy)
                 .map(|left| format!("You mend the {name}; it is at {}%.", left.get()))
                 .map_err(|error| error.to_string()),
-            Action::Merge => game
-                .merge_weapons(item)
-                .map(|left| format!("You merge two {name} into one at {}%.", left.get()))
+            (Action::Merge, Row::Weapon(keep, _)) => {
+                let others: Vec<CopyId> = game
+                    .inventory()
+                    .copies_of(item)
+                    .filter(|copy| copy != keep)
+                    .collect();
+                self.mode = Mode::Merging {
+                    keep: *keep,
+                    menu: Menu::new(others.len()),
+                    others,
+                };
+                return;
+            }
+            (Action::Drop, Row::Weapon(copy, _)) => game
+                .drop_copy(*copy)
+                .map(|()| format!("You drop the {name}."))
                 .map_err(|error| error.to_string()),
-            Action::Drop => {
+            (Action::Drop, Row::Stack(..)) => {
                 let held = game.inventory().item_count(item);
                 match NonZeroU32::new(held) {
                     Some(count) if count > NonZeroU32::MIN => {
@@ -204,14 +250,28 @@ impl Pack {
                     }
                 }
             }
-            Action::Back => {
+            (Action::Back, _) | (Action::Mend | Action::Merge, Row::Stack(..)) => {
                 self.mode = Mode::Browsing;
                 return;
             }
         };
         log.push(Entry::Note(note.unwrap_or_else(|error| error)));
         self.mode = Mode::Browsing;
-        self.list = self.list.resized(stacks(game).len());
+        self.list = self.list.resized(rows(game).len());
+    }
+
+    fn merge(&mut self, keep: CopyId, gone: CopyId, game: &mut Game, log: &mut Log) {
+        let name = game
+            .inventory()
+            .weapon(keep)
+            .map_or_else(String::new, |copy| self.names.name(copy.item()));
+        let note = game
+            .merge_weapons(keep, gone)
+            .map(|left| format!("You merge two {name} into one at {}%.", left.get()))
+            .unwrap_or_else(|error| error.to_string());
+        log.push(Entry::Note(note));
+        self.mode = Mode::Browsing;
+        self.list = self.list.resized(rows(game).len());
     }
 
     fn throw_away(&mut self, item: &ItemId, count: NonZeroU32, game: &mut Game, log: &mut Log) {
@@ -221,17 +281,17 @@ impl Pack {
             .map(|()| format!("You drop {count} {name}."))
             .unwrap_or_else(|error| error.to_string());
         log.push(Entry::Note(note));
-        self.list = self.list.resized(stacks(game).len());
+        self.list = self.list.resized(rows(game).len());
     }
 
-    /// Draws the stacks, the worn items, the chosen item and the question line.
+    /// Draws the rows, the worn items, the chosen item and the question line.
     pub fn render(&self, frame: &mut Frame, area: Rect, game: &Game) {
         let [panels, prompt] =
             Layout::vertical([Constraint::Min(0), Constraint::Length(3)]).areas(area);
         let [left, right] =
             Layout::horizontal([Constraint::Percentage(55), Constraint::Percentage(45)])
                 .areas(panels);
-        self.render_stacks(frame, left, game);
+        self.render_rows(frame, left, game);
         self.render_side(frame, right, game);
 
         let carried = game.inventory().weight();
@@ -264,24 +324,28 @@ impl Pack {
         );
     }
 
-    fn render_stacks(&self, frame: &mut Frame, area: Rect, game: &Game) {
+    fn render_rows(&self, frame: &mut Frame, area: Rect, game: &Game) {
         let width = usize::from(area.width.saturating_sub(2));
         let height = usize::from(area.height.saturating_sub(2));
-        let lines: Vec<Line<'static>> = stacks(game)
+        let lines: Vec<Line<'static>> = rows(game)
             .iter()
             .enumerate()
-            .map(|(index, (item, count))| {
-                let tag = worn_in(game, item).map_or("", |slot| match slot {
-                    Slot::Weapon => "[wielded]",
-                    Slot::Outfit => "[worn]",
-                    Slot::Head => "[on head]",
-                });
-                row_line(
-                    &format!("{} x{count}", self.names.name(item)),
-                    tag,
-                    width,
-                    self.list.selected() == Some(index),
-                )
+            .map(|(index, row)| {
+                let (label, tag) = match row {
+                    Row::Stack(item, count) => (
+                        format!("{} x{count}", self.names.name(item)),
+                        worn_in(game, item).map_or("", slot_tag),
+                    ),
+                    Row::Weapon(copy, item) => (
+                        format!("{}{}", self.names.name(item), condition_text(game, *copy)),
+                        if game.inventory().wielded() == Some(*copy) {
+                            "[wielded]"
+                        } else {
+                            ""
+                        },
+                    ),
+                };
+                row_line(&label, tag, width, self.list.selected() == Some(index))
             })
             .collect();
         let lines = if lines.is_empty() {
@@ -328,15 +392,26 @@ impl Pack {
             lines.push(Line::default());
         }
         match &self.mode {
-            Mode::Acting {
-                item,
-                actions,
-                menu,
-            } => {
-                lines.push(Line::styled(self.names.name(item), theme::heading()));
+            Mode::Acting { row, actions, menu } => {
+                lines.push(Line::styled(self.names.name(row.item()), theme::heading()));
                 let items: Vec<Item> = actions
                     .iter()
                     .map(|action| Item::new(action.label()))
+                    .collect();
+                lines.extend(menu.lines(&items));
+            }
+            Mode::Merging { keep, others, menu } => {
+                let name = game
+                    .inventory()
+                    .weapon(*keep)
+                    .map_or_else(String::new, |copy| self.names.name(copy.item()));
+                lines.push(Line::styled(
+                    format!("Merge into this {name}{}:", condition_text(game, *keep)),
+                    theme::heading(),
+                ));
+                let items: Vec<Item> = others
+                    .iter()
+                    .map(|copy| Item::new(format!("{name}{}", condition_text(game, *copy))))
                     .collect();
                 lines.extend(menu.lines(&items));
             }
@@ -344,9 +419,9 @@ impl Pack {
                 let chosen = self
                     .list
                     .selected()
-                    .and_then(|index| stacks(game).into_iter().nth(index));
-                if let Some((item, count)) = chosen {
-                    lines.extend(self.describe(game, &item, count));
+                    .and_then(|index| rows(game).into_iter().nth(index));
+                if let Some(row) = chosen {
+                    lines.extend(self.describe(game, &row));
                 }
             }
         }
@@ -362,18 +437,22 @@ impl Pack {
         );
     }
 
-    fn describe(&self, game: &Game, item: &ItemId, count: NonZeroU32) -> Vec<Line<'static>> {
-        let mut lines = vec![Line::styled(
-            format!("{} x{count}", self.names.name(item)),
-            theme::heading(),
-        )];
+    fn describe(&self, game: &Game, row: &Row) -> Vec<Line<'static>> {
+        let item = row.item();
+        let heading = match row {
+            Row::Stack(item, count) => format!("{} x{count}", self.names.name(item)),
+            Row::Weapon(_, item) => self.names.name(item),
+        };
+        let mut lines = vec![Line::styled(heading, theme::heading())];
         if let Some(value) = game.inventory().value(item) {
             lines.push(Line::styled(
                 format!("Worth {value:.0} caps."),
                 theme::text(),
             ));
         }
-        if let Some(left) = game.weapon_condition(item) {
+        if let Row::Weapon(copy, _) = row
+            && let Some(left) = game.copy_condition(*copy)
+        {
             lines.push(Line::styled(
                 format!("Condition {}%.", left.get()),
                 theme::text(),
@@ -429,42 +508,74 @@ fn use_note(name: &str, healed: u32, used: Option<ItemUse>) -> String {
     }
 }
 
-/// The stacks the player carries, in the order the panel lists them.
-fn stacks(game: &Game) -> Vec<Stack> {
-    game.inventory()
+/// " 85%" for a weapon that wears, and nothing for one that does not.
+fn condition_text(game: &Game, copy: CopyId) -> String {
+    game.copy_condition(copy)
+        .map_or_else(String::new, |left| format!(" {}%", left.get()))
+}
+
+fn slot_tag(slot: Slot) -> &'static str {
+    match slot {
+        Slot::Weapon => "[wielded]",
+        Slot::Outfit => "[worn]",
+        Slot::Head => "[on head]",
+    }
+}
+
+/// The rows the player carries, in the order the panel lists them: the stacks, then
+/// the weapons one by one.
+fn rows(game: &Game) -> Vec<Row> {
+    let inventory = game.inventory();
+    inventory
         .stacks()
-        .map(|(item, count)| (item.clone(), count))
+        .map(|(item, count)| Row::Stack(item.clone(), count))
+        .chain(
+            inventory
+                .weapons()
+                .map(|(copy, held)| Row::Weapon(copy, held.item().clone())),
+        )
         .collect()
 }
 
-/// The slot `item` is in, if it is equipped.
+/// The armor slot `item` is in, if it is worn.
 fn worn_in(game: &Game, item: &ItemId) -> Option<Slot> {
-    [Slot::Weapon, Slot::Outfit, Slot::Head]
+    [Slot::Outfit, Slot::Head]
         .into_iter()
         .find(|slot| game.inventory().equipped(*slot) == Some(item))
 }
 
-/// What the player can do with `item` right now, ending with "Back".
-fn actions(game: &Game, item: &ItemId) -> Vec<Action> {
+/// What the player can do with a row right now, ending with "Back".
+fn actions(game: &Game, row: &Row) -> Vec<Action> {
     let inventory = game.inventory();
+    let item = row.item();
     let mut actions = Vec::new();
     if inventory.item_use(item).is_some() {
         actions.push(Action::Use);
     }
-    if let Some(slot) = inventory.slot_for(item) {
-        actions.push(match worn_in(game, item) {
-            Some(worn) => Action::Unequip(worn),
-            None => Action::Equip,
-        });
-        debug_assert!(worn_in(game, item).is_none_or(|worn| worn == slot));
-    }
-    if game.weapon_condition(item).is_some() {
-        let kit = ItemId::try_new(WEAPON_REPAIR_KIT);
-        if kit.is_ok_and(|kit| inventory.item_count(&kit) > 0) {
-            actions.push(Action::Mend);
+    match row {
+        Row::Stack(..) => {
+            if inventory.slot_for(item).is_some() {
+                actions.push(match worn_in(game, item) {
+                    Some(worn) => Action::Unequip(worn),
+                    None => Action::Equip,
+                });
+            }
         }
-        if inventory.item_count(item) >= 2 {
-            actions.push(Action::Merge);
+        Row::Weapon(copy, _) => {
+            actions.push(if inventory.wielded() == Some(*copy) {
+                Action::Unequip(Slot::Weapon)
+            } else {
+                Action::Equip
+            });
+            if game.copy_condition(*copy).is_some() {
+                let kit = ItemId::try_new(WEAPON_REPAIR_KIT);
+                if kit.is_ok_and(|kit| inventory.item_count(&kit) > 0) {
+                    actions.push(Action::Mend);
+                }
+                if inventory.item_count(item) >= 2 {
+                    actions.push(Action::Merge);
+                }
+            }
         }
     }
     actions.extend([Action::Drop, Action::Back]);
@@ -549,11 +660,11 @@ mod tests {
 
     /// Moves the cursor onto `item`.
     fn point_at(pack: &mut Pack, game: &mut Game, log: &mut Log, item: &str) {
-        let target = stacks(game)
+        let target = rows(game)
             .iter()
-            .position(|(candidate, _)| candidate.as_str() == item)
+            .position(|row| row.item().as_str() == item)
             .expect("the item is listed");
-        for _ in 0..stacks(game).len() {
+        for _ in 0..rows(game).len() {
             if pack.list.selected() == Some(target) {
                 return;
             }
@@ -642,7 +753,7 @@ mod tests {
         let (mut game, mut pack, mut log) = carrying(0, &[("stimpak", 1)]);
         choose(&mut pack, &mut game, &mut log, "stimpak", "Drop");
         assert_eq!(game.inventory().item_count(&id("stimpak")), 0);
-        assert!(stacks(&game).is_empty());
+        assert!(rows(&game).is_empty());
         assert_eq!(pack.list.selected(), None);
     }
 
@@ -726,7 +837,7 @@ mod tests {
                 previous = now;
                 prop_assert_eq!(game.caps(), caps);
                 prop_assert!(game.hp() <= max);
-                prop_assert!(pack.list.selected().is_none_or(|index| index < stacks(&game).len()));
+                prop_assert!(pack.list.selected().is_none_or(|index| index < rows(&game).len()));
             }
         }
 

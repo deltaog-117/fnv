@@ -6,7 +6,7 @@ use engine::inventory::{Inventory, Slot};
 use engine::shared::{InventorySink, InventoryView, ItemId};
 use proptest::prelude::*;
 
-use crate::support::{count, item, pack};
+use crate::support::{count, held, item, pack};
 
 const NAMES: [&str; 7] = [
     "stimpak", "pistol", "armor", "shirt", "hat", "ammo", "ghost",
@@ -38,7 +38,7 @@ type Snapshot = (BTreeMap<ItemId, u32>, u32, Vec<Option<ItemId>>);
 
 fn snapshot(pack: &Inventory) -> Snapshot {
     (
-        pack.stacks().map(|(i, c)| (i.clone(), c.get())).collect(),
+        held(pack),
         pack.caps(),
         SLOTS
             .iter()
@@ -96,10 +96,7 @@ proptest! {
                 Op::Unequip(s) => { pack.unequip(SLOTS[s]); }
             }
             prop_assert_eq!(i64::from(pack.caps()), caps);
-            prop_assert_eq!(
-                pack.stacks().map(|(i, c)| (i.clone(), c.get())).collect::<BTreeMap<_, _>>(),
-                model.clone()
-            );
+            prop_assert_eq!(held(&pack), model.clone());
             // An equipped item is always carried.
             for slot in SLOTS {
                 if let Some(worn) = pack.equipped(slot) {

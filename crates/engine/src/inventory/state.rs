@@ -7,6 +7,7 @@ use std::sync::Arc;
 use thiserror::Error;
 
 use super::book::{ItemBook, ItemClass};
+use super::copies::{CopyId, WeaponCopy};
 use crate::shared::{
     ArmorSlot, EffectError, FactionId, InventorySink, InventoryView, ItemId, ItemUse, whole_amount,
 };
@@ -84,6 +85,12 @@ pub enum InventoryError {
     /// The last copy of the item is equipped.
     #[error("{0} is equipped; unequip it first")]
     Equipped(ItemId),
+    /// No carried weapon has this id.
+    #[error("no carried weapon is {0}")]
+    NoSuchCopy(CopyId),
+    /// A weapon id was listed twice, or the numbers ran out.
+    #[error("weapon {0} cannot be added")]
+    CopyTaken(CopyId),
     /// The player is already at full health.
     #[error("already at full health")]
     AtFullHealth,
@@ -92,16 +99,21 @@ pub enum InventoryError {
     Down,
 }
 
-/// Everything the player carries: stacks, caps and what is equipped.
+/// Everything the player carries: stacks, weapons, caps and what is equipped.
 ///
-/// Cloning is cheap enough to try a batch on a copy: the book is shared and a
-/// stack list is short.
+/// Weapons are kept one by one (see [`WeaponCopy`]); every other item is a counted
+/// stack. Cloning is cheap enough to try a batch on a copy: the book is shared and
+/// the lists are short.
 #[derive(Debug, Clone)]
 pub struct Inventory {
     book: Arc<ItemBook>,
     stacks: BTreeMap<ItemId, NonZeroU32>,
+    weapons: BTreeMap<CopyId, WeaponCopy>,
+    next_copy: Option<CopyId>,
     caps: u32,
+    /// Armor and clothing; the weapon slot is `wielded`.
     equipped: BTreeMap<Slot, ItemId>,
+    wielded: Option<CopyId>,
 }
 
 impl Inventory {
@@ -111,8 +123,11 @@ impl Inventory {
         Self {
             book,
             stacks: BTreeMap::new(),
+            weapons: BTreeMap::new(),
+            next_copy: Some(CopyId::FIRST),
             caps: 0,
             equipped: BTreeMap::new(),
+            wielded: None,
         }
     }
 
@@ -122,15 +137,47 @@ impl Inventory {
         Self::new(Arc::clone(&self.book))
     }
 
-    /// The carried stacks in id order.
+    /// The carried stacks in id order. Weapons are not stacks: see
+    /// [`Inventory::weapons`].
     pub fn stacks(&self) -> impl Iterator<Item = (&ItemId, NonZeroU32)> {
         self.stacks.iter().map(|(item, count)| (item, *count))
     }
 
-    /// The item in a slot.
+    /// The carried weapons in id order.
+    pub fn weapons(&self) -> impl Iterator<Item = (CopyId, &WeaponCopy)> {
+        self.weapons.iter().map(|(id, copy)| (*id, copy))
+    }
+
+    /// The carried copies of one kind of weapon, in id order.
+    pub fn copies_of(&self, item: &ItemId) -> impl Iterator<Item = CopyId> + '_ {
+        let item = item.clone();
+        self.weapons()
+            .filter(move |(_, copy)| copy.item() == &item)
+            .map(|(id, _)| id)
+    }
+
+    /// One carried weapon.
+    #[must_use]
+    pub fn weapon(&self, id: CopyId) -> Option<&WeaponCopy> {
+        self.weapons.get(&id)
+    }
+
+    /// The weapon in hand.
+    #[must_use]
+    pub fn wielded(&self) -> Option<CopyId> {
+        self.wielded
+    }
+
+    /// The item in a slot. For the weapon slot it is the kind of the weapon in hand.
     #[must_use]
     pub fn equipped(&self, slot: Slot) -> Option<&ItemId> {
-        self.equipped.get(&slot)
+        match slot {
+            Slot::Weapon => self
+                .wielded
+                .and_then(|id| self.weapons.get(&id))
+                .map(|copy| &copy.item),
+            Slot::Outfit | Slot::Head => self.equipped.get(&slot),
+        }
     }
 
     /// The item's base value in caps, if the book gives one.
@@ -154,23 +201,41 @@ impl Inventory {
     /// Total weight carried, in pounds.
     #[must_use]
     pub fn weight(&self) -> f64 {
-        self.stacks
+        let stacks: f64 = self
+            .stacks
             .iter()
             .filter_map(|(item, count)| {
                 self.book
                     .weight(item)
                     .map(|weight| weight * f64::from(count.get()))
             })
-            .sum()
+            .sum();
+        let weapons: f64 = self
+            .weapons
+            .values()
+            .filter_map(|copy| self.book.weight(&copy.item))
+            .sum();
+        stacks + weapons
     }
 
-    /// Equips a carried item in the slot it fits, replacing what was there.
+    /// Equips a carried item in the slot it fits, replacing what was there. Of
+    /// several copies of a weapon, the least worn goes in hand.
     ///
     /// # Errors
     ///
     /// [`InventoryError::NotHeld`] when the item is not carried and
     /// [`InventoryError::NotEquippable`] when it has no slot.
     pub fn equip(&mut self, item: &ItemId) -> Result<Slot, InventoryError> {
+        if self.is_weapon(item) {
+            let best = self
+                .weapons
+                .iter()
+                .filter(|(_, copy)| &copy.item == item)
+                .min_by_key(|(id, copy)| (copy.lost, **id))
+                .map(|(id, _)| *id)
+                .ok_or_else(|| InventoryError::NotHeld(item.clone()))?;
+            return self.equip_copy(best);
+        }
         if !self.stacks.contains_key(item) {
             return Err(InventoryError::NotHeld(item.clone()));
         }
@@ -183,8 +248,84 @@ impl Inventory {
         Ok(slot)
     }
 
+    /// Puts one particular carried weapon in hand.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when no carried weapon has that id.
+    pub fn equip_copy(&mut self, id: CopyId) -> Result<Slot, InventoryError> {
+        if !self.weapons.contains_key(&id) {
+            return Err(InventoryError::NoSuchCopy(id));
+        }
+        self.wielded = Some(id);
+        Ok(Slot::Weapon)
+    }
+
+    /// Records the condition points a carried weapon has lost.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when no carried weapon has that id.
+    pub fn set_lost(&mut self, id: CopyId, lost: u32) -> Result<(), InventoryError> {
+        self.weapons
+            .get_mut(&id)
+            .map(|copy| copy.lost = lost)
+            .ok_or(InventoryError::NoSuchCopy(id))
+    }
+
+    /// Puts a weapon back into the pack under the id a save gave it.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::Unknown`] when the item is not a weapon in the book and
+    /// [`InventoryError::CopyTaken`] when the id is already in use.
+    pub fn restore_weapon(
+        &mut self,
+        id: CopyId,
+        item: &ItemId,
+        lost: u32,
+    ) -> Result<(), InventoryError> {
+        if !self.is_weapon(item) {
+            return Err(InventoryError::Unknown(item.clone()));
+        }
+        if self.weapons.contains_key(&id) {
+            return Err(InventoryError::CopyTaken(id));
+        }
+        self.weapons.insert(
+            id,
+            WeaponCopy {
+                item: item.clone(),
+                lost,
+            },
+        );
+        // Later weapons must never reuse an id a save already handed out.
+        if self.next_copy.is_some_and(|next| next <= id) {
+            self.next_copy = id.next();
+        }
+        Ok(())
+    }
+
+    /// Throws one weapon away.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when no carried weapon has that id and
+    /// [`InventoryError::Equipped`] when it is the one in hand.
+    pub fn discard_copy(&mut self, id: CopyId) -> Result<(), InventoryError> {
+        let copy = self
+            .weapons
+            .get(&id)
+            .ok_or(InventoryError::NoSuchCopy(id))?;
+        if self.wielded == Some(id) {
+            return Err(InventoryError::Equipped(copy.item.clone()));
+        }
+        self.weapons.remove(&id);
+        Ok(())
+    }
+
     /// Throws `count` copies away. The last copy of an equipped item stays, so
-    /// the pack never keeps a slot filled with something it no longer holds.
+    /// the pack never keeps a slot filled with something it no longer holds. Of
+    /// weapons the most worn go first and the one in hand last.
     ///
     /// # Errors
     ///
@@ -203,6 +344,13 @@ impl Inventory {
                 need: count.get(),
             });
         };
+        if self.is_weapon(item) {
+            if left == 0 && self.is_equipped(item) {
+                return Err(InventoryError::Equipped(item.clone()));
+            }
+            self.remove_weapons(item, count.get());
+            return Ok(());
+        }
         match NonZeroU32::new(left) {
             Some(left) => {
                 self.stacks.insert(item.clone(), left);
@@ -217,12 +365,83 @@ impl Inventory {
 
     /// Empties a slot, returning what was in it.
     pub fn unequip(&mut self, slot: Slot) -> Option<ItemId> {
-        self.equipped.remove(&slot)
+        match slot {
+            Slot::Weapon => {
+                let id = self.wielded.take()?;
+                self.weapons.get(&id).map(|copy| copy.item.clone())
+            }
+            Slot::Outfit | Slot::Head => self.equipped.remove(&slot),
+        }
+    }
+
+    /// Merges the weapon `gone` into `keep`: `gone` leaves the pack and `keep`
+    /// ends with `lost` points lost. If `gone` was in hand, `keep` takes its place.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when either id is unknown or they are the
+    /// same, and [`InventoryError::NotEquippable`] when they are different kinds.
+    pub fn merge_copies(
+        &mut self,
+        keep: CopyId,
+        gone: CopyId,
+        lost: u32,
+    ) -> Result<(), InventoryError> {
+        let kind = |id: CopyId| self.weapons.get(&id).map(|copy| copy.item.clone());
+        let (Some(kept), Some(other)) = (kind(keep), kind(gone)) else {
+            let missing = if self.weapons.contains_key(&keep) {
+                gone
+            } else {
+                keep
+            };
+            return Err(InventoryError::NoSuchCopy(missing));
+        };
+        if keep == gone {
+            return Err(InventoryError::NoSuchCopy(gone));
+        }
+        if kept != other {
+            return Err(InventoryError::NotEquippable(other));
+        }
+        self.weapons.remove(&gone);
+        if self.wielded == Some(gone) {
+            self.wielded = Some(keep);
+        }
+        self.set_lost(keep, lost)
+    }
+
+    fn is_weapon(&self, item: &ItemId) -> bool {
+        self.book.class(item) == Some(ItemClass::Weapon)
+    }
+
+    /// Removes `count` copies of a weapon: unwielded ones first, the most worn
+    /// first, the one in hand last. The caller has checked there are enough.
+    fn remove_weapons(&mut self, item: &ItemId, count: u32) {
+        let mut copies: Vec<(bool, std::cmp::Reverse<u32>, CopyId)> = self
+            .weapons
+            .iter()
+            .filter(|(_, copy)| &copy.item == item)
+            .map(|(id, copy)| (self.wielded == Some(*id), std::cmp::Reverse(copy.lost), *id))
+            .collect();
+        copies.sort();
+        for (_, _, id) in copies.into_iter().take(count as usize) {
+            self.weapons.remove(&id);
+            if self.wielded == Some(id) {
+                self.wielded = None;
+            }
+        }
     }
 }
 
 impl InventoryView for Inventory {
     fn item_count(&self, item: &ItemId) -> u32 {
+        if self.is_weapon(item) {
+            let held = self
+                .weapons
+                .values()
+                .filter(|copy| &copy.item == item)
+                .count();
+            return u32::try_from(held).unwrap_or(u32::MAX);
+        }
         self.stacks.get(item).map_or(0, |count| count.get())
     }
 
@@ -232,6 +451,10 @@ impl InventoryView for Inventory {
 
     fn is_equipped(&self, item: &ItemId) -> bool {
         self.equipped.values().any(|worn| worn == item)
+            || self
+                .wielded
+                .and_then(|id| self.weapons.get(&id))
+                .is_some_and(|copy| &copy.item == item)
     }
 
     fn disguises_as(&self, _item: &ItemId, _faction: &FactionId) -> bool {
@@ -272,6 +495,9 @@ impl InventorySink for Inventory {
                 effect: "give_item",
                 reason: format!("{held} + {count} of {item} is more than can be carried"),
             })?;
+        if self.is_weapon(item) {
+            return self.add_weapons(item, count.get());
+        }
         self.stacks.insert(item.clone(), total);
         Ok(())
     }
@@ -285,12 +511,43 @@ impl InventorySink for Inventory {
                     have,
                     need: count.get(),
                 })?;
+        if self.is_weapon(item) {
+            self.remove_weapons(item, count.get());
+            return Ok(());
+        }
         if let Some(left) = NonZeroU32::new(remaining) {
             self.stacks.insert(item.clone(), left);
         } else {
             self.stacks.remove(item);
             self.equipped.retain(|_, worn| worn != item);
         }
+        Ok(())
+    }
+}
+
+impl Inventory {
+    /// Adds `count` new weapons, all or none: the ids must not run out.
+    fn add_weapons(&mut self, item: &ItemId, count: u32) -> Result<(), EffectError> {
+        let mut next = self.next_copy;
+        let mut ids = Vec::new();
+        for _ in 0..count {
+            let id = next.ok_or_else(|| EffectError::Refused {
+                effect: "give_item",
+                reason: "too many weapons have been carried".to_owned(),
+            })?;
+            ids.push(id);
+            next = id.next();
+        }
+        for id in ids {
+            self.weapons.insert(
+                id,
+                WeaponCopy {
+                    item: item.clone(),
+                    lost: 0,
+                },
+            );
+        }
+        self.next_copy = next;
         Ok(())
     }
 }

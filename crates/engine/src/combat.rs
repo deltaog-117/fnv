@@ -8,14 +8,17 @@
 //!
 //! The fight owns these laws and nothing else:
 //!
-//! - fighters act in the order they were given; the active fighter starts its turn
-//!   with all its action points, and an attack spends the weapon's cost;
+//! - fighters act in the order of their sequence, highest first, and equal sequences
+//!   keep the order given; the active fighter starts its turn with all its action
+//!   points, and an attack spends the weapon's cost;
 //! - a move is checked as a whole before anything changes: a refused attack costs
 //!   no action points, and a refused move leaves the fight as it was;
 //! - damage runs the curated formulas in order: weapon damage, then resistance,
 //!   then threshold, and a hit that gets through at all costs at least 1 hit point;
-//! - the fight is over as soon as one side has no fighter standing, and nothing
-//!   can be done after;
+//! - the fight is over as soon as one side has no fighter standing or the player's
+//!   side gets away, and nothing can be done after;
+//! - running away is one roll against the runner's chance, only the player's side
+//!   can try, and a failed try costs what is left of the turn;
 //! - a shot needs the rounds in the weapon, and a refused shot costs neither rounds
 //!   nor action points.
 //!
@@ -39,8 +42,8 @@ pub use ai::enemy_turns;
 pub use condition::Condition;
 pub use damage::{Rules, damage_after_armor, damage_before_armor};
 pub use fight::{
-    AttackProfile, Combat, CombatError, Combatant, FighterId, Magazine, Reload, Resolution, Rounds,
-    Side, Status, Strike,
+    AttackProfile, Combat, CombatError, Combatant, FighterId, Flight, Magazine, Reload, Resolution,
+    Rounds, Side, Status, Strike,
 };
 pub use hit::{Aim, AimedHitChance, Dice, FlatHitChance, HitModel};
 pub use stats::{Multiplier, Percent, Points, Power, Spread, StatError};

@@ -33,3 +33,15 @@ pub fn book() -> Arc<ItemBook> {
 pub fn pack() -> Inventory {
     Inventory::new(book())
 }
+
+/// Everything the pack holds as counts: stacks, and weapons counted by kind.
+pub fn held(pack: &Inventory) -> std::collections::BTreeMap<ItemId, u32> {
+    let mut counts: std::collections::BTreeMap<ItemId, u32> = pack
+        .stacks()
+        .map(|(item, count)| (item.clone(), count.get()))
+        .collect();
+    for (_, copy) in pack.weapons() {
+        *counts.entry(copy.item().clone()).or_default() += 1;
+    }
+    counts
+}

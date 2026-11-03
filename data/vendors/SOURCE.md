@@ -17,6 +17,10 @@ unchanged to `data/engine/vendors.json` by `scripts/normalize.py`.
   "special discount" / "wholesale prices" in the dialogue; 25% is the figure the
   roadmap carries, so treat it as a stand-in until the game-data export.
 
+- A vendor may carry `restock_days`: how many days pass between restocks (3 when absent).
+  The wiki gives no interval, so 3 is a stand-in. On each multiple of the interval since
+  the game began the vendor goes back to the stock and caps written here.
+
 - A vendor may carry a `repair` service: the vendor's own Repair skill, up to
   which they mend a worn weapon for caps (the price is worked out by the engine
   from the weapon's value; see `repair/`). Chet is the only Goodsprings vendor

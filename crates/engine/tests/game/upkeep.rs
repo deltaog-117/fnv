@@ -10,7 +10,7 @@ use engine::character::PerkBook;
 use engine::craft::{CraftError, RecipeBook, StationBook};
 use engine::game::{Arsenal, Game};
 use engine::gather::{FindBook, GatherError};
-use engine::inventory::ItemBook;
+use engine::inventory::{CopyId, ItemBook};
 use engine::quests::QuestBook;
 use engine::repair::RepairError;
 use engine::reputation::ReputationBook;
@@ -108,10 +108,9 @@ fn worn(repair: u8, lost: u32, pistols: u32, kits: u32) -> Game {
         give(&mut game, "weapon_repair_kit", kits);
     }
     let mut save = game.save();
-    save.wear.push(engine::saves::SavedWear {
-        item: item("9mm_pistol"),
-        lost,
-    });
+    for copy in &mut save.pack.weapons {
+        copy.lost = lost;
+    }
     TEMPLATE.restore(&save).expect("the worn pistol loads")
 }
 
@@ -125,8 +124,17 @@ fn give_xp(game: &mut Game, amount: u32) {
     .expect("experience is given");
 }
 
+/// The first carried 9mm pistol.
+fn pistol(game: &Game) -> CopyId {
+    game.inventory()
+        .copies_of(&item("9mm_pistol"))
+        .next()
+        .expect("a pistol is carried")
+}
+
+/// What is left of the first carried pistol, in percent.
 fn left(game: &Game) -> u8 {
-    game.weapon_condition(&item("9mm_pistol"))
+    game.copy_condition(pistol(game))
         .expect("the pistol wears")
         .get()
 }
@@ -142,7 +150,7 @@ fn a_kit_lifts_a_worn_weapon_to_the_repair_skill_and_is_used_up() {
     let mut game = worn(80, 140, 1, 1);
     assert!(left(&game) < 10);
     let skill = game.character().skill(Skill::Repair).get();
-    let after = game.repair_with_kit(&item("9mm_pistol")).expect("mended");
+    let after = game.repair_with_kit(pistol(&game)).expect("mended");
     assert_eq!(left(&game), after.get());
     assert!(
         after.get() >= skill.min(99),
@@ -158,7 +166,7 @@ fn a_kit_that_cannot_help_is_kept() {
     let mut game = worn(80, 0, 1, 1);
     let before = game.save();
     assert!(matches!(
-        game.repair_with_kit(&item("9mm_pistol")),
+        game.repair_with_kit(pistol(&game)),
         Err(RepairError::NothingToGain { .. })
     ));
     assert_eq!(game.save(), before);
@@ -170,14 +178,14 @@ fn a_repair_without_a_kit_or_for_something_that_does_not_wear_changes_nothing() 
     let mut game = worn(80, 140, 1, 0);
     let before = game.save();
     assert!(matches!(
-        game.repair_with_kit(&item("9mm_pistol")),
+        game.repair_with_kit(pistol(&game)),
         Err(RepairError::NotCarried { .. })
     ));
     give(&mut game, "weapon_repair_kit", 1);
     give(&mut game, "stimpak", 1);
     assert!(matches!(
-        game.repair_with_kit(&item("stimpak")),
-        Err(RepairError::DoesNotWear(_))
+        game.repair_with_kit(CopyId::from_saved(u32::MAX)),
+        Err(RepairError::NoSuchWeapon(_))
     ));
     assert_eq!(game.inventory().item_count(&item("weapon_repair_kit")), 1);
     assert_ne!(game.save(), before, "the gifts changed it");
@@ -187,7 +195,8 @@ fn a_repair_without_a_kit_or_for_something_that_does_not_wear_changes_nothing() 
 fn merging_two_copies_leaves_one_better_copy() {
     let mut game = worn(90, 100, 2, 0);
     let before = left(&game);
-    let after = game.merge_weapons(&item("9mm_pistol")).expect("merged");
+    let (keep, gone) = pair(&game);
+    let after = game.merge_weapons(keep, gone).expect("merged");
     assert_eq!(game.inventory().item_count(&item("9mm_pistol")), 1);
     assert!(after.get() > before);
     assert_eq!(left(&game), after.get());
@@ -197,9 +206,51 @@ fn merging_two_copies_leaves_one_better_copy() {
 fn merging_needs_two_copies_and_changes_nothing_without() {
     let mut game = worn(90, 100, 1, 0);
     let before = game.save();
+    let only = pistol(&game);
     assert!(matches!(
-        game.merge_weapons(&item("9mm_pistol")),
-        Err(RepairError::NotCarried { need: 2, .. })
+        game.merge_weapons(only, only),
+        Err(RepairError::NotAPair)
+    ));
+    assert_eq!(game.save(), before);
+}
+
+/// The first two carried pistols.
+fn pair(game: &Game) -> (CopyId, CopyId) {
+    let mut copies = game.inventory().copies_of(&item("9mm_pistol"));
+    (
+        copies.next().expect("a first pistol"),
+        copies.next().expect("a second pistol"),
+    )
+}
+
+#[test]
+fn merging_keeps_the_copy_chosen_and_the_wear_of_each_is_its_own() {
+    let game = worn(90, 100, 2, 0);
+    let (first, second) = pair(&game);
+    // Make the second copy less worn through a hand-edited save, then merge the
+    // first into it: the survivor is the second copy, not the first.
+    let mut save = game.save();
+    save.pack.weapons[1].lost = 50;
+    let mut game = TEMPLATE.restore(&save).expect("loads");
+    let before = game.copy_condition(second).expect("it wears");
+    let after = game.merge_weapons(second, first).expect("merged");
+    assert_eq!(game.inventory().item_count(&item("9mm_pistol")), 1);
+    assert_eq!(game.copy_condition(second), Some(after));
+    assert!(after > before);
+    assert_eq!(game.copy_condition(first), None);
+}
+
+#[test]
+fn merging_into_a_copy_that_cannot_improve_is_refused_and_changes_nothing() {
+    let mut game = worn(90, 100, 2, 0);
+    let (first, second) = pair(&game);
+    let mut save = game.save();
+    save.pack.weapons[1].lost = 0;
+    game = TEMPLATE.restore(&save).expect("loads");
+    let before = game.save();
+    assert!(matches!(
+        game.merge_weapons(first, second),
+        Err(RepairError::NothingToGain { .. })
     ));
     assert_eq!(game.save(), before);
 }
@@ -212,14 +263,10 @@ fn chet() -> VendorId {
 fn chet_repairs_for_caps_and_is_paid_what_he_quoted() {
     let mut game = worn(0, 140, 1, 0);
     give_caps(&mut game, 500);
-    let quote = game
-        .repair_quote(&chet(), &item("9mm_pistol"))
-        .expect("a quote");
+    let quote = game.repair_quote(&chet(), pistol(&game)).expect("a quote");
     assert!(quote.price > 0);
     let (player, vendor) = (game.caps(), game.shop(&chet()).expect("a shop").caps());
-    let done = game
-        .repair_at(&chet(), &item("9mm_pistol"))
-        .expect("mended");
+    let done = game.repair_at(&chet(), pistol(&game)).expect("mended");
     assert_eq!(done, quote);
     assert_eq!(game.caps(), player - quote.price);
     assert_eq!(
@@ -245,7 +292,7 @@ fn a_player_who_cannot_pay_is_refused_and_nothing_changes() {
     let mut game = worn(0, 140, 1, 0);
     let before = game.save();
     assert!(matches!(
-        game.repair_at(&chet(), &item("9mm_pistol")),
+        game.repair_at(&chet(), pistol(&game)),
         Err(RepairError::PlayerShort { .. })
     ));
     assert_eq!(game.save(), before);
@@ -257,7 +304,7 @@ fn only_a_vendor_with_a_service_repairs_and_only_while_willing() {
     give_caps(&mut game, 500);
     let trudy = VendorId::try_new("trudy").expect("literal is a valid id");
     assert!(matches!(
-        game.repair_quote(&trudy, &item("9mm_pistol")),
+        game.repair_quote(&trudy, pistol(&game)),
         Err(RepairError::NoService(_))
     ));
     let store = LocationId::try_new("goodsprings_general_store").expect("literal is valid");
@@ -271,7 +318,7 @@ fn only_a_vendor_with_a_service_repairs_and_only_while_willing() {
     .expect("Chet dies");
     assert_eq!(game.repairers_at(&store).count(), 0);
     assert!(matches!(
-        game.repair_at(&chet(), &item("9mm_pistol")),
+        game.repair_at(&chet(), pistol(&game)),
         Err(RepairError::Unavailable(_))
     ));
 }
@@ -280,9 +327,7 @@ fn only_a_vendor_with_a_service_repairs_and_only_while_willing() {
 fn a_vendor_does_not_lift_a_weapon_past_their_own_skill() {
     let mut game = worn(100, 140, 1, 0);
     give_caps(&mut game, 500);
-    let quote = game
-        .repair_quote(&chet(), &item("9mm_pistol"))
-        .expect("a quote");
+    let quote = game.repair_quote(&chet(), pistol(&game)).expect("a quote");
     // Chet's Repair is 50, whatever the player's: a 140/150 loss ends near half.
     assert!(quote.condition.get() <= 51, "{}", quote.condition.get());
 }
@@ -463,7 +508,7 @@ proptest! {
         give_caps(&mut game, caps);
         let total = game.caps() + game.shop(&chet()).expect("a shop").caps();
         let before = left(&game);
-        if game.repair_at(&chet(), &item("9mm_pistol")).is_ok() {
+        if game.repair_at(&chet(), pistol(&game)).is_ok() {
             prop_assert!(left(&game) >= before);
         }
         prop_assert_eq!(game.caps() + game.shop(&chet()).expect("a shop").caps(), total);

@@ -123,6 +123,7 @@ fn the_combat_scenarios_hold() {
             Status::Ongoing => "ongoing",
             Status::Won(Side::Player) => "won_player",
             Status::Won(Side::Enemy) => "won_enemy",
+            Status::Fled => "fled",
         };
         assert_eq!(status, s.expect.status, "{name}: status");
         assert_eq!(combat.round(), s.expect.round, "{name}: round");

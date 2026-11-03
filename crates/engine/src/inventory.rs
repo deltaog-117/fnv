@@ -11,6 +11,7 @@
 //! - caps never go below zero, and amounts are whole numbers;
 //! - an equipped item is always held, sits in a slot it fits, and stops being
 //!   equipped when its last copy leaves;
+//! - a weapon is never part of a stack: each copy has its own id and its own wear;
 //! - weight never blocks picking something up: being over the carry limit is for
 //!   the game to read, not for the pack to refuse.
 //!
@@ -19,7 +20,9 @@
 //! and picking things up in `gather`; barter lives in `trade`.
 
 mod book;
+mod copies;
 mod state;
 
 pub use book::{ItemBook, ItemClass};
+pub use copies::{CopyId, WeaponCopy};
 pub use state::{Inventory, InventoryError, Slot};

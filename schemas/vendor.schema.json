@@ -55,6 +55,11 @@
         }
       }
     },
+    "restock_days": {
+      "description": "Days between restocks: the vendor goes back to the stock and caps above on every multiple of this many days since the game began. When absent the game's default of 3 days applies.",
+      "type": "integer",
+      "minimum": 1
+    },
     "repair": {
       "description": "A repair service: the vendor mends weapons for caps, up to their own Repair skill.",
       "type": "object",

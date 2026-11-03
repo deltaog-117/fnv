@@ -62,4 +62,7 @@ pub struct Vendor {
     pub discount: Option<Discount>,
     /// Mends worn weapons for caps, if the vendor offers it.
     pub repair: Option<RepairService>,
+    /// Days between restocks; the game's default when absent.
+    #[serde(default)]
+    pub restock_days: Option<NonZeroU32>,
 }

@@ -3,7 +3,7 @@
 
 use engine::saves::{
     Save, SaveError, SavedDeferred, SavedEffect, SavedFired, SavedNpc, SavedPhase, SavedQuest,
-    SavedShop, SavedWear,
+    SavedShop, SavedWeapon,
 };
 use engine::shared::{
     BoostStat, Effect, EncounterId, FindId, LocationId, NpcId, PerkId, QuestId, QuestStage, Skill,
@@ -129,10 +129,15 @@ fn gear_worn_in_the_wrong_place_is_refused() {
 fn gear_that_is_not_carried_cannot_be_worn() {
     assert_eq!(
         refused_part(|save| {
-            save.pack.items.remove(&item("9mm_pistol"));
+            save.pack.items.remove(&item("leather_armor"));
         }),
         "pack"
     );
+}
+
+#[test]
+fn a_weapon_in_hand_that_is_not_carried_is_refused() {
+    assert_eq!(refused_part(|save| save.pack.weapons.clear()), "pack");
 }
 
 #[test]
@@ -206,11 +211,12 @@ fn a_save_without_a_place_does_not_fit_a_game_with_a_map() {
 #[test]
 fn wear_on_something_that_is_not_a_weapon_is_refused() {
     assert_eq!(
-        refused_part(|save| save.wear.push(SavedWear {
+        refused_part(|save| save.pack.weapons.push(SavedWeapon {
+            id: 9_000,
             item: item("leather_armor"),
             lost: 1,
         })),
-        "wear"
+        "pack"
     );
 }
 
@@ -218,9 +224,31 @@ fn wear_on_something_that_is_not_a_weapon_is_refused() {
 fn wear_past_what_a_weapon_has_is_refused() {
     assert_eq!(
         refused_part(|save| {
-            save.wear[0].lost = u32::MAX;
+            save.pack.weapons[0].lost = u32::MAX;
         }),
-        "wear"
+        "pack"
+    );
+}
+
+#[test]
+fn two_weapons_with_one_number_are_refused() {
+    assert_eq!(
+        refused_part(|save| {
+            let copy = save.pack.weapons[0].clone();
+            save.pack.weapons.push(copy);
+        }),
+        "pack"
+    );
+}
+
+#[test]
+fn naming_the_weapon_in_hand_twice_is_refused() {
+    assert_eq!(
+        refused_part(|save| {
+            save.pack.wielded = Some(save.pack.weapons[0].id);
+            save.pack.weapon = Some(item("9mm_pistol"));
+        }),
+        "pack"
     );
 }
 

@@ -14,9 +14,10 @@ use thiserror::Error;
 use crate::character::{Character, CharacterRules, Level, SpecialSet};
 use crate::combat::{
     Aim, AimedHitChance, AttackProfile, Combat, CombatError, Combatant, Condition, Dice, FighterId,
-    Magazine, Multiplier, Percent, Points, Power, Reload, Resolution, Rules, Spread, StatError,
-    enemy_turns,
+    Flight, Magazine, Multiplier, Percent, Points, Power, Reload, Resolution, Rules, Spread,
+    StatError, enemy_turns,
 };
+use crate::inventory::CopyId;
 use crate::shared::{
     AmmoFamilyId, Armor, BatchError, CharacterView, EffectError, Encounter, EncounterId, Foe,
     GameData, InventoryView, ItemId, ModelError, Npc, NpcSpecial, Skill, Special, SpecialLevel,
@@ -118,6 +119,9 @@ pub enum Outcome {
     Victory,
     /// The player is down.
     Defeat,
+    /// The player got away. The foes are still up and the encounter is still on
+    /// offer; the wounds taken, the rounds fired and the wear on the weapon stay.
+    Fled,
 }
 
 /// A weapon's combat numbers, checked once.
@@ -167,7 +171,20 @@ pub struct Fighter {
     ammo_item: Option<ItemId>,
     /// The weapon in hand, when the game tracks its wear.
     weapon: Option<ItemId>,
+    sequence: u32,
+    flee_chance: Percent,
 }
+
+/// Sequence is twice Perception. A stand-in: the familiar formula, but it is not in
+/// the curated formulas file.
+const SEQUENCE_PER_PERCEPTION: u32 = 2;
+/// The chance to run away at Agility 0, in percent. A stand-in: the wiki gives no
+/// formula for escaping a fight.
+const FLEE_BASE: u32 = 25;
+/// What each point of Agility adds to the chance to run away. A stand-in.
+const FLEE_PER_AGILITY: u32 = 6;
+/// The least and most the chance to run away can be, so it is never certain.
+const FLEE_RANGE: (u32, u32) = (5, 95);
 
 impl Fighter {
     /// The name to show.
@@ -253,6 +270,11 @@ impl Fighter {
             }),
             ammo_item: rounds.item,
             weapon: None,
+            sequence: SEQUENCE_PER_PERCEPTION * level_of(Special::Perception),
+            flee_chance: Percent::try_new(
+                (FLEE_BASE + FLEE_PER_AGILITY * level_of(Special::Agility))
+                    .clamp(FLEE_RANGE.0, FLEE_RANGE.1),
+            )?,
         })
     }
 }
@@ -288,6 +310,14 @@ impl Combatant for Fighter {
 
     fn aim(&self) -> Aim {
         self.aim
+    }
+
+    fn sequence(&self) -> u32 {
+        self.sequence
+    }
+
+    fn flee_chance(&self) -> Percent {
+        self.flee_chance
     }
 }
 
@@ -671,6 +701,8 @@ pub struct Battle {
     player: FighterId,
     /// Attacks the player has made, hit or miss, for the wear on the weapon.
     shots: u32,
+    /// The very weapon the player carries into the fight, so its wear lands on it.
+    weapon: Option<CopyId>,
 }
 
 impl Battle {
@@ -680,18 +712,22 @@ impl Battle {
         player: Fighter,
         hp: NonZeroU32,
         foes: &[Fighter],
+        weapon: Option<CopyId>,
     ) -> Result<Self, BattleError> {
         let order = std::iter::once((crate::combat::Side::Player, player)).chain(
             foes.iter()
                 .map(|foe| (crate::combat::Side::Enemy, foe.clone())),
         );
         let combat = Combat::new(order, Rules::standard(), AimedHitChance)?;
-        let player = combat.active();
+        // The player was given first, so their place is the first one, whoever acts
+        // first once the sequences are compared.
+        let player = combat.ids().next().ok_or(CombatError::NeedsBothSides)?;
         Ok(Self {
             encounter,
             combat: combat.with_hp(player, hp)?,
             player,
             shots: 0,
+            weapon,
         })
     }
 
@@ -713,10 +749,39 @@ impl Battle {
         self.player
     }
 
+    /// The weapon the player fights with.
+    #[must_use]
+    pub fn weapon(&self) -> Option<CopyId> {
+        self.weapon
+    }
+
     /// Attacks the player has made so far, hit or miss.
     #[must_use]
     pub fn shots(&self) -> u32 {
         self.shots
+    }
+
+    /// Plays the enemy turns that come before the player's first one, when a foe's
+    /// sequence is higher. Does nothing when the player acts first.
+    pub fn open(&mut self, dice: &mut impl Dice) -> Vec<Resolution> {
+        enemy_turns(&mut self.combat, dice)
+    }
+
+    /// The player tries to run away. A failed try costs the rest of the turn, so the
+    /// enemies then play until it is the player's turn again; what they did comes
+    /// back with the result.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError`] when the move is refused (the fight is unchanged).
+    pub fn flee(&mut self, dice: &mut impl Dice) -> Result<(Flight, Vec<Resolution>), CombatError> {
+        match self.combat.flee(dice)? {
+            Flight::Escaped => Ok((Flight::Escaped, Vec::new())),
+            Flight::Blocked => {
+                let turns = self.end_turn(dice)?;
+                Ok((Flight::Blocked, turns))
+            }
+        }
     }
 
     /// The player attacks `target`.

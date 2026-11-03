@@ -1,6 +1,6 @@
 //! Integration tests for turn-based combat.
 //!
-//! `damage` and `fight` pin each rule with small hand-built fights; `ai` covers the
+//! `initiative` covers turn order and running away; `damage` and `fight` pin each rule with small hand-built fights; `ai` covers the
 //! enemy side's turns and a fighter that starts wounded; `properties`
 //! checks the laws over random fights; `scenarios` runs the language-neutral JSON
 //! in `tests/scenarios/combat.json`; `real_data` checks the rules against
@@ -10,6 +10,7 @@ mod ai;
 mod ammo;
 mod damage;
 mod fight;
+mod initiative;
 mod properties;
 mod real_data;
 mod scenarios;

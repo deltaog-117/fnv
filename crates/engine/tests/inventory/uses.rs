@@ -6,7 +6,7 @@ use engine::inventory::{Inventory, InventoryError, ItemBook, ItemClass, Slot};
 use engine::shared::{InventorySink, InventoryView, ItemId, ItemUse};
 use proptest::prelude::*;
 
-use crate::support::{count, item, pack};
+use crate::support::{count, held as carried_by, item, pack};
 
 fn heal(hp: u32) -> ItemUse {
     ItemUse::Heal(count(hp))
@@ -142,8 +142,7 @@ proptest! {
             } else {
                 prop_assert!(result.is_err());
             }
-            let carried: BTreeMap<ItemId, u32> =
-                pack.stacks().map(|(i, c)| (i.clone(), c.get())).collect();
+            let carried: BTreeMap<ItemId, u32> = carried_by(&pack);
             prop_assert_eq!(&carried, &model);
         }
     }

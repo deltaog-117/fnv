@@ -8,6 +8,9 @@ use super::book::VendorBook;
 use super::error::TradeError;
 use crate::shared::{ItemId, VendorId};
 
+/// Minutes in a game day.
+const MINUTES_PER_DAY: u64 = 24 * 60;
+
 /// One vendor's stock and caps right now.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Shop {
@@ -113,6 +116,34 @@ impl Market {
             },
         );
         Ok(())
+    }
+
+    /// Refills every vendor whose restock day fell between two moments of the game
+    /// clock, `from` (exclusive) to `to` (inclusive), both in minutes. A vendor goes
+    /// back to the stock and caps the book gives, once, however long the wait: the
+    /// days are every multiple of the vendor's interval since the game began, so the
+    /// shops depend on the clock alone and never on how it was reached. Returns the
+    /// vendors refilled.
+    pub fn restock(&mut self, from: u64, to: u64) -> Vec<VendorId> {
+        let mut refilled = Vec::new();
+        for (id, info) in self.book.iter() {
+            let period = u64::from(info.restock_days().get()) * MINUTES_PER_DAY;
+            if to / period == from / period {
+                continue;
+            }
+            self.shops.insert(
+                id.clone(),
+                Shop {
+                    caps: info.caps(),
+                    stock: info
+                        .stock()
+                        .map(|(item, count)| (item.clone(), count))
+                        .collect(),
+                },
+            );
+            refilled.push(id.clone());
+        }
+        refilled
     }
 
     /// A vendor's shop now.
