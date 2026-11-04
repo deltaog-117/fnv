@@ -21,6 +21,10 @@ pub enum Command {
     Quit,
     /// Choose the entry at this zero-based position (keys 1 to 9).
     Pick(usize),
+    /// Delete the selected entry (key d or Delete), where a screen offers it.
+    Delete,
+    /// Rename the selected entry (key r), where a screen offers it.
+    Rename,
 }
 
 /// Whether the key is Ctrl+C, which quits even while a name is being typed.
@@ -49,6 +53,8 @@ pub fn command(key: KeyEvent) -> Option<Command> {
         KeyCode::Enter | KeyCode::Char(' ') => Some(Command::Select),
         KeyCode::Esc => Some(Command::Back),
         KeyCode::Char('q') => Some(Command::Quit),
+        KeyCode::Char('d') | KeyCode::Delete => Some(Command::Delete),
+        KeyCode::Char('r') => Some(Command::Rename),
         KeyCode::Char(digit @ '1'..='9') => digit
             .to_digit(10)
             .and_then(|n| usize::try_from(n - 1).ok())
@@ -77,6 +83,13 @@ mod tests {
         assert_eq!(command(press(KeyCode::Char('l'))), Some(Command::Right));
         assert_eq!(command(press(KeyCode::Tab)), Some(Command::Right));
         assert_eq!(command(press(KeyCode::BackTab)), Some(Command::Left));
+    }
+
+    #[test]
+    fn d_deletes_and_r_renames() {
+        assert_eq!(command(press(KeyCode::Char('d'))), Some(Command::Delete));
+        assert_eq!(command(press(KeyCode::Delete)), Some(Command::Delete));
+        assert_eq!(command(press(KeyCode::Char('r'))), Some(Command::Rename));
     }
 
     #[test]

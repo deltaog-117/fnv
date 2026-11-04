@@ -11,17 +11,17 @@ use std::num::NonZeroU32;
 
 use thiserror::Error;
 
-use crate::character::{Character, CharacterRules, Level, SpecialSet};
+use crate::character::{Character, CharacterRules, Edge, Level, SpecialSet};
 use crate::combat::{
-    Aim, AimedHitChance, AttackProfile, Combat, CombatError, Combatant, Condition, Dice, FighterId,
-    Flight, Magazine, Multiplier, Percent, Points, Power, Reload, Resolution, Rules, Spread,
-    StatError, enemy_turns,
+    Against, Aim, AimedHitChance, AttackProfile, Combat, CombatError, Combatant, Condition, Dice,
+    FighterId, Flight, Magazine, Multiplier, Percent, Points, Power, Reload, Resolution, Rules,
+    Spread, StatError, enemy_turns,
 };
 use crate::inventory::CopyId;
 use crate::shared::{
     AmmoFamilyId, Armor, BatchError, CharacterView, EffectError, Encounter, EncounterId, Foe,
-    GameData, InventoryView, ItemId, ModelError, Npc, NpcSpecial, Skill, Special, SpecialLevel,
-    Weapon, WeaponClass,
+    FoeKind, GameData, InventoryView, ItemId, ModelError, Npc, NpcSpecial, Skill, Special,
+    SpecialLevel, Weapon, WeaponClass,
 };
 
 /// The most the Luck-based critical chance can reach, from `formulas.json`.
@@ -173,6 +173,10 @@ pub struct Fighter {
     weapon: Option<ItemId>,
     sequence: u32,
     flee_chance: Percent,
+    kind: FoeKind,
+    /// What its attacks gain against particular kinds of foe.
+    against: Vec<(FoeKind, Against)>,
+    ignored_threshold: Points,
 }
 
 /// Sequence is twice Perception. A stand-in: the familiar formula, but it is not in
@@ -228,7 +232,9 @@ impl Fighter {
         rounds: Rounds,
     ) -> Result<Self, StatError> {
         let level_of = |stat| u32::from(character.special(stat).get());
-        let crit = f64::from(level_of(Special::Luck).min(CRIT_LUCK_CAP)) * weapon.crit_chance_mult;
+        let edge = character.edge(weapon.skill);
+        let crit = f64::from(level_of(Special::Luck).min(CRIT_LUCK_CAP)) * weapon.crit_chance_mult
+            + f64::from(edge.crit_chance);
         let bonus = match weapon.class {
             WeaponClass::Melee => 0.5 * f64::from(level_of(Special::Strength)),
             WeaponClass::Unarmed => {
@@ -236,17 +242,18 @@ impl Fighter {
             }
             _ => 0.0,
         };
+        let turn = NonZeroU32::new(character.action_points());
         Ok(Self {
             name,
             max_hp,
             max_ap: character.action_points(),
-            dt: armor,
-            dr: resistance,
+            dt: Points::try_new((armor.get() + f64::from(edge.threshold)).max(0.0))?,
+            dr: Points::try_new((resistance.get() + f64::from(edge.resistance)).max(0.0))?,
             crit_chance: Percent::try_new(crit.round().clamp(0.0, 100.0) as u32)?,
             attack: AttackProfile {
-                ap_cost: weapon.ap_cost,
-                base_damage: weapon.damage,
-                crit_damage: weapon.crit_damage,
+                ap_cost: scaled_cost(weapon.ap_cost, edge.ap_cost_percent),
+                base_damage: scaled(weapon.damage, edge.damage_percent)?,
+                crit_damage: scaled(weapon.crit_damage, edge.crit_damage_percent)?,
                 skill: Multiplier::FULL,
                 condition: Multiplier::FULL,
                 bonus: Points::try_new(bonus)?,
@@ -257,15 +264,19 @@ impl Fighter {
                         .skill
                         .map_or(0, |skill| u32::from(character.skill(skill).get())),
                 )?,
-                spread: weapon.spread,
+                spread: Spread::try_new(
+                    weapon.spread.get() * (1.0 + f64::from(edge.spread_percent) / 100.0).max(0.0),
+                )?,
             },
             magazine: weapon.ammo.as_ref().map(|ammo| Magazine {
                 clip: ammo.clip,
                 per_shot: ammo.per_shot,
                 // A reload dearer than a whole turn could never be paid, which would
                 // leave the weapon dead once its clip ran out.
-                reload_ap: NonZeroU32::new(character.action_points())
-                    .map_or(weapon.reload_ap, |turn| weapon.reload_ap.min(turn)),
+                reload_ap: {
+                    let cost = scaled_cost(weapon.reload_ap, edge.reload_ap_percent);
+                    turn.map_or(cost, |turn| cost.min(turn))
+                },
                 stock: rounds.stock,
             }),
             ammo_item: rounds.item,
@@ -275,8 +286,39 @@ impl Fighter {
                 (FLEE_BASE + FLEE_PER_AGILITY * level_of(Special::Agility))
                     .clamp(FLEE_RANGE.0, FLEE_RANGE.1),
             )?,
+            kind: FoeKind::Human,
+            against: against_each_kind(&edge),
+            ignored_threshold: Points::try_new(f64::from(edge.ignored_threshold))?,
         })
     }
+}
+
+/// `points` with `percent` added; a penalty cannot take it below zero.
+fn scaled(points: Points, percent: i32) -> Result<Points, StatError> {
+    Points::try_new(points.get() * (1.0 + f64::from(percent) / 100.0).max(0.0))
+}
+
+/// An action point cost with `percent` added, rounded, and never below 1 so a turn
+/// always runs out.
+fn scaled_cost(cost: NonZeroU32, percent: i32) -> NonZeroU32 {
+    let worked = (f64::from(cost.get()) * (1.0 + f64::from(percent) / 100.0)).round();
+    NonZeroU32::new(worked.clamp(1.0, f64::from(u32::MAX)) as u32).unwrap_or(NonZeroU32::MIN)
+}
+
+/// The edge's per-kind entries as the fight reads them.
+fn against_each_kind(edge: &Edge) -> Vec<(FoeKind, Against)> {
+    edge.versus
+        .iter()
+        .map(|entry| {
+            (
+                entry.kind,
+                Against {
+                    damage_percent: entry.damage_percent,
+                    crit_damage_percent: entry.crit_damage_percent,
+                },
+            )
+        })
+        .collect()
 }
 
 impl Combatant for Fighter {
@@ -318,6 +360,21 @@ impl Combatant for Fighter {
 
     fn flee_chance(&self) -> Percent {
         self.flee_chance
+    }
+
+    fn kind(&self) -> FoeKind {
+        self.kind
+    }
+
+    fn against(&self, kind: FoeKind) -> Against {
+        self.against
+            .iter()
+            .find(|(known, _)| *known == kind)
+            .map_or(Against::NONE, |(_, against)| *against)
+    }
+
+    fn ignored_threshold(&self) -> Points {
+        self.ignored_threshold
     }
 }
 
@@ -444,7 +501,7 @@ impl Arsenal {
             .or_else(|| NonZeroU32::new(character.max_hp()))
             .unwrap_or(NonZeroU32::MIN);
         let (dt, dr) = worn(armor.into_iter().copied())?;
-        Ok(Fighter::assemble(
+        let mut fighter = Fighter::assemble(
             npc.name.clone(),
             max_hp,
             &character,
@@ -452,7 +509,9 @@ impl Arsenal {
             dt,
             dr,
             Rounds::default(),
-        )?)
+        )?;
+        fighter.kind = foe.kind;
+        Ok(fighter)
     }
 }
 

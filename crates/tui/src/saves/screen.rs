@@ -1,9 +1,11 @@
 //! Lists the saves in the folder. Saving offers "New save" (type a name) and every
-//! named save to write over; loading offers every save, the automatic one included.
-//! The screen holds the list it read when it opened, a cursor and the name being
-//! typed; the files themselves are written and read by the app.
+//! named save to write over; loading offers every save, the automatic ones and the
+//! old single save included. Either list can delete a save or rename a named one,
+//! each after the player confirms. The screen holds the list it read when it opened,
+//! a cursor and the name being typed; the files themselves are written, read, deleted
+//! and renamed by the app.
 
-use engine::saves::{MAX_NAME_LEN, SaveEntry, SaveFolder, SaveName, SaveSummary, Slot};
+use engine::saves::{MAX_NAME_LEN, NameError, SaveEntry, SaveFolder, SaveName, SaveSummary, Slot};
 use engine::shared::LocationId;
 use ratatui::Frame;
 use ratatui::crossterm::event::KeyCode;
@@ -35,6 +37,15 @@ pub enum Next {
     Save(SaveName),
     /// Load the game in this slot.
     Load(Slot),
+    /// Delete the save in this slot.
+    Delete(Slot),
+    /// Give a named save a new name.
+    Rename {
+        /// The name it has.
+        from: SaveName,
+        /// The name it should have.
+        to: SaveName,
+    },
 }
 
 /// What the screen is waiting for.
@@ -46,6 +57,15 @@ enum Mode {
     Typing(String),
     /// Asking whether to write over a save that exists.
     Overwriting(SaveName),
+    /// Asking whether to delete a save.
+    Deleting(Slot),
+    /// Typing a new name for a named save.
+    Renaming {
+        /// The name it has.
+        from: SaveName,
+        /// What has been typed so far.
+        text: String,
+    },
 }
 
 /// One row of the list.
@@ -109,16 +129,26 @@ impl Slots {
     /// commands.
     #[must_use]
     pub fn is_typing(&self) -> bool {
-        matches!(self.mode, Mode::Typing(_))
+        matches!(self.mode, Mode::Typing(_) | Mode::Renaming { .. })
+    }
+
+    /// What the screen is for.
+    #[must_use]
+    pub fn purpose(&self) -> Purpose {
+        self.purpose
     }
 
     /// The keys that work right now.
     #[must_use]
     pub fn keys(&self) -> &'static str {
         match self.mode {
-            Mode::Browsing => "Up/Down move | Enter choose | Esc back | q quit",
+            Mode::Browsing => {
+                "Up/Down move | Enter choose | d delete | r rename | Esc back | q quit"
+            }
             Mode::Typing(_) => "Type a name | Backspace erase | Enter save | Esc cancel",
+            Mode::Renaming { .. } => "Type a name | Backspace erase | Enter rename | Esc cancel",
             Mode::Overwriting(_) => "Enter write over it | Esc keep it",
+            Mode::Deleting(_) => "Enter delete it | Esc keep it",
         }
     }
 
@@ -127,7 +157,11 @@ impl Slots {
             .entries
             .iter()
             .enumerate()
-            .filter(|(_, entry)| self.purpose == Purpose::Load || entry.slot != Slot::Auto)
+            // Saving offers only what the player named: the game's own saves are not a
+            // place to save to.
+            .filter(|(_, entry)| {
+                self.purpose == Purpose::Load || matches!(entry.slot, Slot::Named(_))
+            })
             .map(|(index, _)| Row::Entry(index));
         match self.purpose {
             Purpose::Save => std::iter::once(Row::New).chain(entries).collect(),
@@ -141,6 +175,11 @@ impl Slots {
             Mode::Browsing => {
                 if command == Command::Back {
                     return Next::Leave;
+                }
+                if matches!(command, Command::Delete | Command::Rename) {
+                    self.problem = None;
+                    self.begin(command);
+                    return Next::Stay;
                 }
                 let Some(index) = self.menu.handle(command) else {
                     return Next::Stay;
@@ -167,8 +206,47 @@ impl Slots {
                 }
                 _ => Next::Stay,
             },
+            Mode::Deleting(slot) => match command {
+                Command::Select => {
+                    let slot = slot.clone();
+                    self.mode = Mode::Browsing;
+                    Next::Delete(slot)
+                }
+                Command::Back => {
+                    self.mode = Mode::Browsing;
+                    Next::Stay
+                }
+                _ => Next::Stay,
+            },
             // Typing is fed by `type_key`; a command that arrives anyway does nothing.
-            Mode::Typing(_) => Next::Stay,
+            Mode::Typing(_) | Mode::Renaming { .. } => Next::Stay,
+        }
+    }
+
+    /// Starts deleting or renaming the save under the cursor.
+    fn begin(&mut self, command: Command) {
+        let Some(Row::Entry(index)) = self
+            .menu
+            .selected()
+            .and_then(|row| self.rows().get(row).cloned())
+        else {
+            return;
+        };
+        let Some(entry) = self.entries.get(index) else {
+            return;
+        };
+        match (command, &entry.slot) {
+            (Command::Delete, slot) => self.mode = Mode::Deleting(slot.clone()),
+            (Command::Rename, Slot::Named(name)) => {
+                self.mode = Mode::Renaming {
+                    from: name.clone(),
+                    text: name.to_string(),
+                };
+            }
+            (Command::Rename, _) => {
+                self.problem = Some("Only a save you named can be renamed.".to_owned());
+            }
+            _ => {}
         }
     }
 
@@ -182,15 +260,17 @@ impl Slots {
                 self.mode = Mode::Overwriting(name.clone());
                 Next::Stay
             }
-            // The automatic save is the game's own; it is never a place to save to.
-            (Purpose::Save, Slot::Auto) => Next::Stay,
+            // The game's own saves are never a place to save to.
+            (Purpose::Save, _) => Next::Stay,
         }
     }
 
     /// Applies a key typed into a name.
     pub fn type_key(&mut self, key: KeyCode) -> Next {
-        let Mode::Typing(text) = &mut self.mode else {
-            return Next::Stay;
+        let (text, renaming) = match &mut self.mode {
+            Mode::Typing(text) => (text, None),
+            Mode::Renaming { from, text } => (text, Some(from.clone())),
+            _ => return Next::Stay,
         };
         match key {
             KeyCode::Char(c) if SaveName::allows(c) => {
@@ -207,24 +287,51 @@ impl Slots {
                 self.mode = Mode::Browsing;
                 self.problem = None;
             }
-            KeyCode::Enter => match SaveName::try_new(text) {
-                Err(error) => self.problem = Some(error.to_string()),
-                Ok(name) => {
-                    let taken = self
-                        .entries
-                        .iter()
-                        .any(|entry| entry.slot == Slot::Named(name.clone()));
-                    if taken {
-                        self.mode = Mode::Overwriting(name);
-                    } else {
-                        self.mode = Mode::Browsing;
-                        return Next::Save(name);
-                    }
-                }
-            },
+            KeyCode::Enter => {
+                let typed = SaveName::try_new(text);
+                return self.submit(typed, renaming);
+            }
             _ => {}
         }
         Next::Stay
+    }
+
+    /// Acts on a finished name: a new save, a write-over question, or a rename.
+    fn submit(&mut self, typed: Result<SaveName, NameError>, renaming: Option<SaveName>) -> Next {
+        let name = match typed {
+            Ok(name) => name,
+            Err(error) => {
+                self.problem = Some(error.to_string());
+                return Next::Stay;
+            }
+        };
+        let taken = self
+            .entries
+            .iter()
+            .any(|entry| entry.slot == Slot::Named(name.clone()));
+        match renaming {
+            Some(from) if from == name => {
+                self.mode = Mode::Browsing;
+                Next::Stay
+            }
+            // A rename never writes over another save.
+            Some(_) if taken => {
+                self.problem = Some(format!("A save named \"{name}\" already exists."));
+                Next::Stay
+            }
+            Some(from) => {
+                self.mode = Mode::Browsing;
+                Next::Rename { from, to: name }
+            }
+            None if taken => {
+                self.mode = Mode::Overwriting(name);
+                Next::Stay
+            }
+            None => {
+                self.mode = Mode::Browsing;
+                Next::Save(name)
+            }
+        }
     }
 
     /// Draws the list and the line under it.
@@ -259,6 +366,14 @@ impl Slots {
         let (text, style) = match (&self.mode, &self.problem) {
             (_, Some(problem)) => (problem.clone(), theme::warning()),
             (Mode::Typing(name), None) => (format!("Name: {name}_"), theme::heading()),
+            (Mode::Renaming { from, text }, None) => (
+                format!("New name for \"{from}\": {text}_"),
+                theme::heading(),
+            ),
+            (Mode::Deleting(slot), None) => (
+                format!("Delete \"{}\"? Enter yes, Esc no.", slot.label()),
+                theme::heading(),
+            ),
             (Mode::Overwriting(name), None) => (
                 format!("Write over \"{name}\"? Enter yes, Esc no."),
                 theme::heading(),
@@ -291,6 +406,8 @@ impl Slots {
         let name = match entry.slot {
             Slot::Named(_) => entry.slot.label(),
             Slot::Auto => "Autosave (automatic)".to_owned(),
+            Slot::Previous => "Previous autosave (automatic)".to_owned(),
+            Slot::Legacy => "Old save (from before named saves)".to_owned(),
         };
         match &entry.summary {
             Ok(summary) => format!("{name} - {}", when_and_where(summary, &self.places[index])),

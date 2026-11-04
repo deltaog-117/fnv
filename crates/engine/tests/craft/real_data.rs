@@ -2,9 +2,9 @@
 
 use std::path::Path;
 
-use engine::craft::{RecipeBook, StationBook, Unavailable};
+use engine::craft::{RecipeBook, StationBook, Unavailable, Work};
 use engine::inventory::ItemBook;
-use engine::shared::{GameData, ItemId, RecipeId, Scope, StationKind};
+use engine::shared::{GameData, ItemId, RecipeId, RecipeMode, Scope, StationKind};
 
 fn data() -> GameData {
     let dir = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/engine");
@@ -60,8 +60,95 @@ fn most_recipes_can_be_made_and_every_other_one_says_why_not() {
     assert_eq!(book.len() + book.unavailable().count(), data.recipes.len());
     assert!(
         book.unavailable()
-            .any(|(_, why)| matches!(why, Unavailable::Breakdown))
+            .any(|(_, why)| matches!(why, Unavailable::NoSubject))
     );
+}
+
+#[test]
+fn most_of_the_sixteen_breakdowns_can_be_done_and_the_rest_name_no_item() {
+    let data = data();
+    let book = recipes(&data);
+    let apart: Vec<_> = data
+        .recipes
+        .iter()
+        .filter(|record| record.mode == RecipeMode::Breakdown)
+        .collect();
+    assert_eq!(apart.len(), 16);
+    let done = apart.iter().filter(|r| book.get(&r.id).is_some()).count();
+    assert_eq!(done, 12, "the other four name no item to take apart");
+    for record in &apart {
+        let Some(formula) = book.get(&record.id) else {
+            assert_eq!(record.output_item_id, None, "{}", record.id);
+            continue;
+        };
+        assert_eq!(formula.work(), Work::TakeApart);
+        assert_eq!(formula.kind(), StationKind::ReloadingBench);
+    }
+}
+
+/// Taking a round apart must never give back more than making it took, or the
+/// reloading bench would print parts.
+#[test]
+fn taking_a_round_apart_never_gives_more_than_making_it_used() {
+    let data = data();
+    let book = recipes(&data);
+    let mut compared = 0;
+    for record in data
+        .recipes
+        .iter()
+        .filter(|r| r.mode == RecipeMode::Breakdown)
+    {
+        let Some(apart) = book.get(&record.id) else {
+            continue;
+        };
+        let (subject, spent) = apart.inputs().next().expect("a subject");
+        let Some(made) = data
+            .recipes
+            .iter()
+            .filter(|r| r.mode == RecipeMode::Craft)
+            .filter_map(|r| book.get(&r.id))
+            .find(|formula| formula.output().0 == subject && formula.output().1 == spent)
+        else {
+            continue;
+        };
+        compared += 1;
+        for (part, count) in apart.outputs() {
+            let used = made
+                .inputs()
+                .find(|(item, _)| *item == part)
+                .map_or(0, |(_, n)| n.get());
+            assert!(
+                count.get() <= used,
+                "{}: gives {count} of {part}, making it used {used}",
+                record.id
+            );
+        }
+    }
+    assert!(compared >= 8, "only {compared} rounds could be compared");
+}
+
+#[test]
+fn the_wikis_not_expended_tools_are_marked_and_the_recipes_still_name_what_blocks_them() {
+    let data = data();
+    let book = recipes(&data);
+    let marked: Vec<_> = data
+        .recipes
+        .iter()
+        .filter(|record| record.ingredients.iter().any(|line| line.kept))
+        .map(|record| record.id.as_str())
+        .collect();
+    assert_eq!(
+        marked,
+        [
+            "black_coffee_craft",
+            "purified_water_4_made_using_mass_purified_water_recipe_craft"
+        ]
+    );
+    // Both stay unmade for other reasons: an ingredient the item book lacks, and a
+    // recipe with no product named.
+    for id_text in marked {
+        assert!(book.get(&id(id_text)).is_none(), "{id_text}");
+    }
 }
 
 #[test]

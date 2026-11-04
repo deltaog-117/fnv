@@ -465,6 +465,151 @@ fn a_trained_player_with_the_parts_makes_a_weapon_repair_kit_at_the_workbench() 
     assert_eq!(game.inventory().item_count(&item("scrap_metal")), 0);
 }
 
+fn reloading_bench() -> StationId {
+    StationId::try_new("goodsprings_reloading_bench").expect("literal is valid")
+}
+
+fn recipe_id(text: &str) -> RecipeId {
+    RecipeId::try_new(text).expect("literal is valid")
+}
+
+#[test]
+fn a_round_taken_apart_at_the_reloading_bench_gives_back_its_parts() {
+    let mut game = worn(30, 0, 0, 0);
+    give(&mut game, "9mm_round", 3);
+    let made = game
+        .craft(&reloading_bench(), &recipe_id("9mm_round_breakdown"))
+        .expect("the round is taken apart");
+    assert_eq!(made.parts.len(), 4);
+    let count = |name: &str| game.inventory().item_count(&item(name));
+    assert_eq!(count("9mm_round"), 2, "one round was spent");
+    assert_eq!(count("case_9mm"), 1);
+    assert_eq!(count("lead"), 11);
+    assert_eq!(count("powder_pistol"), 5);
+    assert_eq!(count("primer_small_pistol"), 1);
+}
+
+#[test]
+fn taking_apart_needs_the_item_in_the_pack_and_the_skill_and_changes_nothing_otherwise() {
+    let mut game = worn(30, 0, 0, 0);
+    let before = game.save();
+    assert!(matches!(
+        game.craft(&reloading_bench(), &recipe_id("9mm_round_breakdown")),
+        Err(CraftError::Missing { .. })
+    ));
+    // The .22LR breakdown spends three rounds at once.
+    give(&mut game, "22lr_round", 2);
+    let held = game.save();
+    assert!(matches!(
+        game.craft(&reloading_bench(), &recipe_id("22lr_round_breakdown")),
+        Err(CraftError::Missing {
+            need: 3,
+            have: 2,
+            ..
+        })
+    ));
+    assert_eq!(game.save(), held);
+    assert_ne!(held, before);
+    let mut untrained = worn(0, 0, 0, 0);
+    give(&mut untrained, "50_mg", 1);
+    let before = untrained.save();
+    assert!(matches!(
+        untrained.craft(&reloading_bench(), &recipe_id("50_mg_breakdown")),
+        Err(CraftError::SkillTooLow { .. })
+    ));
+    assert_eq!(untrained.save(), before);
+}
+
+#[test]
+fn making_a_round_and_taking_it_apart_never_leaves_more_than_was_put_in() {
+    let mut game = worn(30, 0, 0, 0);
+    for (name, n) in [
+        ("case_9mm", 1),
+        ("lead", 13),
+        ("powder_pistol", 6),
+        ("primer_small_pistol", 1),
+    ] {
+        give(&mut game, name, n);
+    }
+    game.craft(&reloading_bench(), &recipe_id("9mm_round_craft"))
+        .expect("the round is made");
+    game.craft(&reloading_bench(), &recipe_id("9mm_round_breakdown"))
+        .expect("the round is taken apart");
+    let count = |name: &str| game.inventory().item_count(&item(name));
+    assert_eq!(count("9mm_round"), 0);
+    assert!(count("lead") <= 13 && count("powder_pistol") <= 6);
+    assert_eq!(count("case_9mm"), 1);
+}
+
+/// A game with one campfire recipe, tea, that needs two leaves and a pot to be
+/// carried but not used up.
+fn tea_game() -> Game {
+    let ingredient = |name: &str, qty: u32, kept: bool| engine::shared::Ingredient {
+        item: name.to_owned(),
+        item_id: Some(item(name)),
+        qty: std::num::NonZeroU32::new(qty).expect("a positive count"),
+        kept,
+    };
+    let tea = engine::shared::Recipe {
+        id: recipe_id("tea"),
+        name: "Tea".to_owned(),
+        mode: engine::shared::RecipeMode::Craft,
+        table: None,
+        output_qty: None,
+        output_item_id: Some(item("tea")),
+        skill: None,
+        station: Some(engine::shared::StationKind::Campfire),
+        ingredients: vec![ingredient("leaf", 2, false), ingredient("pot", 1, true)],
+        on_craft: Vec::new(),
+    };
+    let station = engine::shared::Station {
+        id: StationId::try_new("fire").expect("literal is valid"),
+        name: "a fire".to_owned(),
+        kind: engine::shared::StationKind::Campfire,
+        place: place(),
+    };
+    let items = ItemBook::new([
+        (item("leaf"), engine::inventory::ItemClass::Misc, 0.0),
+        (item("pot"), engine::inventory::ItemClass::Misc, 1.0),
+        (item("tea"), engine::inventory::ItemClass::Consumable, 0.0),
+    ])
+    .expect("the literal entries are valid");
+    let recipes = RecipeBook::new([&tea], |_| true).expect("the book builds");
+    let quests = QuestBook::new(std::iter::empty::<&engine::shared::Quest>())
+        .expect("no quests is a valid book");
+    Game::new(Arc::new(quests))
+        .with_items(Arc::new(items))
+        .with_recipes(Arc::new(recipes))
+        .with_stations(Arc::new(
+            StationBook::new([&station]).expect("the station builds"),
+        ))
+}
+
+#[test]
+fn a_tool_must_be_carried_and_is_still_there_after_the_craft() {
+    let fire = StationId::try_new("fire").expect("literal is valid");
+    let mut game = tea_game();
+    give(&mut game, "leaf", 4);
+    let before = game.save();
+    assert!(matches!(
+        game.craft(&fire, &recipe_id("tea")),
+        Err(CraftError::Missing {
+            have: 0,
+            need: 1,
+            ..
+        })
+    ));
+    assert_eq!(game.save(), before, "no pot, so nothing changed");
+
+    give(&mut game, "pot", 1);
+    game.craft(&fire, &recipe_id("tea")).expect("tea is made");
+    game.craft(&fire, &recipe_id("tea")).expect("and again");
+    let count = |name: &str| game.inventory().item_count(&item(name));
+    assert_eq!(count("tea"), 2);
+    assert_eq!(count("leaf"), 0);
+    assert_eq!(count("pot"), 1, "the pot is not used up");
+}
+
 #[test]
 fn stations_are_offered_only_where_they_stand() {
     let game = TEMPLATE.clone();

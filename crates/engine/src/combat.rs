@@ -40,7 +40,7 @@ mod stats;
 
 pub use ai::enemy_turns;
 pub use condition::Condition;
-pub use damage::{Rules, damage_after_armor, damage_before_armor};
+pub use damage::{Against, Rules, damage_after_armor, damage_before_armor};
 pub use fight::{
     AttackProfile, Combat, CombatError, Combatant, FighterId, Flight, Magazine, Reload, Resolution,
     Rounds, Side, Status, Strike,

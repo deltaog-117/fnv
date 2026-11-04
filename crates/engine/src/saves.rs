@@ -22,7 +22,8 @@ mod record;
 
 pub use error::SaveError;
 pub use folder::{
-    AUTOSAVE, MAX_NAME_LEN, NameError, SaveEntry, SaveFolder, SaveName, SaveSummary, Slot,
+    AUTOSAVE, AUTOSAVE_PREVIOUS, MAX_NAME_LEN, NameError, SaveEntry, SaveFolder, SaveName,
+    SaveSummary, Slot,
 };
 pub use record::{
     Save, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding, SavedFate, SavedFired, SavedNpc,

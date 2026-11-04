@@ -1892,6 +1892,55 @@ The last cycle left four loose ends: two copies of a weapon shared one wear reco
 | 2026-11-03 | Initial entry | deltaog-117 |
 
 
+### Conditional Perks, Healing by Medicine, Taking Things Apart and Save Management: Four Features in One Cycle
+
+**Date:** 2026-11-04
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Four loose ends were taken together: most perks and traits changed nothing, the only ways to heal were items, Doc and a bed, sixteen recipes were refused as "not built", and saves could be added to but not tidied. Three forks were chosen from COAs: conditional modifiers (C) for perks, healing the way the real game does it, and the defaults for crafting and saves.
+
+---
+
+#### Decision
+
+**A modifier can say when it applies.** The perk vocabulary gained eleven kinds, and six of them take an optional weapon skill, kind of foe or item. The condition is a plain field and not a second condition language, because the three things a perk needs to name (what is in hand, what is being fought, what is being used) are closed sets. Leaving the field out means always. The price was that `Modifier` can no longer be copied (it can hold an item id), which touched only the places that matched on it. A character sums the modifiers for the weapon in hand into one `Edge` when a fight starts, so the fight reads numbers and never walks the perks, and the foe's kind is the only thing the fight resolves at each attack.
+
+**Only perks that can be taken and fully carried were modeled.** Fifteen perks and traits were added. The ones left out fall in three groups: effects the game cannot carry (a player's health below half, the time of day, the armor worn, particular weapons, sneak attacks, limbs), perks with a second effect that is not built (Bloody Mess makes enemies explode, Robotics Expert shuts robots down), and perks that ask for a kill count, a challenge or caps, which the game never offers. The last group is why no perk that hits a kind of foe harder was modeled except Entomologist and Hunter, and why no current encounter names a foe kind other than a person: the machinery is tested and waits for content. Where the wiki gives a number but not where it enters, a choice was made and is marked a stand-in: Finesse is a flat +5 critical chance (the wiki says "equivalent to +5 Luck"), Better Criticals and Hunter scale the critical bonus and not the whole hit, and Fast Shot and Trigger Discipline carry their V.A.T.S. accuracy through spread because the game has no V.A.T.S.
+
+**Healing follows the real game: nothing heals by itself.** I had proposed a capped rest and passive recovery; the choice was "closest to the real game", which has neither. Waiting and walking still heal nothing, so stimpaks, Doc and beds keep their value. What the wiki does say is that Medicine changes how well stimpaks work, so a stimpak restores 30 plus one percent per two points of Medicine (a stand-in; the wiki gives no formula), and Fast Metabolism adds 20 percent. The heal is rounded once, to the nearest point, so a bonus never rounds a heal away. The stimpak's record is `medicine_heal` in the data.
+
+**Taking things apart is a recipe read the other way.** The schema already said it: a breakdown "is taken apart into the listed items". So the item named is spent (as many as `output_qty`, one when absent) and the listed parts come back. The risk was a bench that prints parts, so a test compares every round that can be both made and taken apart: it never gives back more than making it used (a 9mm round costs 13 lead and gives back 11). Twelve of the sixteen work; four name no item to take apart (the wiki's table matched none), and say so.
+
+**A tool that stays is a marked ingredient.** The wiki marks "(2, not expended)" on some ingredients, and the importer now reads it as a carried tool of that count. Only two recipes carry the mark and both are still blocked by something else, so no recipe changed. The weapon repair kit's wrench stays used up: the wiki's table does not mark it, and I did not guess. I had noted the wrench as a case of this earlier; it is not, on the evidence we have.
+
+**Saves: delete, rename, a previous autosave and the old file.** Delete and rename sit on `d` and `r` on the list and each asks first; a rename never replaces another save (checked before the move, since a move over a file would do it silently). Before the autosave is written, the existing one is copied to `autosave_previous` through a staging file, and the new one is written last and whole, so there is always at least one good copy; an autosave that cannot be read is not copied over a good previous one. The old `save.json` sits one level above the folder, so it is listed as "Old save" even before the folder exists, and can be loaded or deleted but never written. `Command` gained two variants, which meant adding them to four matches that list every command.
+
+**Tests that had to change.** The stimpak tests expected a flat 30. The TUI save tests now keep the saves folder inside a folder of their own, so a stray `save.json` in the temp folder cannot show up in a list. The real-data tests that pin which perks and traits carry modifiers were extended, and the wiki text of each new one is pinned.
+
+**Left out for now:** the perks and traits listed above, the four breakdowns with no item, the 51 recipes with a gap in the wiki's table, weapon mods, and stepping back through more than one earlier autosave.
+
+---
+
+#### References
+
+- `crates/engine/src/shared/modifier.rs`, `shared/vocabulary.rs`, `character/edge.rs`, `character/bonus.rs`, `combat/damage.rs`, `combat/fight.rs`, `game/battle.rs`, `game/state.rs`, `game/state/upkeep.rs`, `craft/book.rs`, `saves/folder.rs`
+- `crates/engine/tests/character/edge.rs`, `combat/perks.rs`, `game/battle.rs`, `game/upkeep.rs`, `craft/`, `saves/folder.rs`, `shared/contract.rs`
+- `crates/tui/src/craft/screen.rs`, `saves/screen.rs`, `app.rs`, `shared/input.rs`
+- `schemas/common.schema.json`, `encounter.schema.json`, `item.schema.json`, `rules.schema.json`, `data/perks/modifiers.json`, `data/items/uses.json`, `scripts/normalize.py`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-04 | Initial entry | deltaog-117 |
+
+
 ---
 
 ## 🧠 Usage Guidelines

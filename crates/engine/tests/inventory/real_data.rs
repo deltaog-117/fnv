@@ -52,7 +52,7 @@ fn the_authored_uses_reach_the_book() {
     let book = ItemBook::from_data(&data).expect("the book builds");
     assert_eq!(
         book.item_use(&item("stimpak")),
-        Some(ItemUse::Heal(count(30)))
+        Some(ItemUse::MedicineHeal(count(30)))
     );
     let modeled = data
         .consumables

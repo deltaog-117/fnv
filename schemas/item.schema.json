@@ -323,6 +323,11 @@
               "minimum": 1,
               "description": "Hit points restored at once."
             },
+            "medicine_heal": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Hit points restored at once, plus one percent for every two points of Medicine."
+            },
             "boost": {
               "type": "object",
               "additionalProperties": false,

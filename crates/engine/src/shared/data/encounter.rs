@@ -4,7 +4,11 @@ use std::num::NonZeroU32;
 
 use serde::Deserialize;
 
-use crate::shared::{Condition, Effect, EncounterId, ItemId, LocationId, NonEmpty, NpcId};
+use crate::shared::{Condition, Effect, EncounterId, FoeKind, ItemId, LocationId, NonEmpty, NpcId};
+
+fn default_kind() -> FoeKind {
+    FoeKind::Human
+}
 
 /// One enemy of an encounter. The NPC record gives its attributes and level; the
 /// wiki has no loadouts, so the weapon and the armor are authored here.
@@ -17,6 +21,9 @@ pub struct Foe {
     pub weapon: ItemId,
     /// The armor worn, if any.
     pub armor: Option<ItemId>,
+    /// What sort of creature this is; a person when absent.
+    #[serde(default = "default_kind")]
+    pub kind: FoeKind,
     /// Hit points, when the NPC record gives none and the formula for the player
     /// would make a footsoldier tougher than the player.
     pub hp: Option<NonZeroU32>,

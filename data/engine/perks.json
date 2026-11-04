@@ -188,7 +188,13 @@
    }
   },
   "requires_text": "Level 16; Perception 6; Luck 6",
-  "effects_text": "+50% Damage with critical hits"
+  "effects_text": "+50% Damage with critical hits",
+  "modifiers": [
+   {
+    "type": "crit_damage_percent",
+    "percent": 50
+   }
+  ]
  },
  {
   "id": "better_healing",
@@ -699,7 +705,14 @@
    }
   },
   "requires_text": "Level 6; Explosives 50",
-  "effects_text": "+20%/40%/60% Damage with explosives"
+  "effects_text": "+20%/40%/60% Damage with explosives",
+  "modifiers": [
+   {
+    "type": "damage_percent",
+    "percent": 20,
+    "skill": "explosives"
+   }
+  ]
  },
  {
   "id": "dine_and_dash",
@@ -822,7 +835,14 @@
    }
   },
   "requires_text": "Level 4; Intelligence 4; Survival 45",
-  "effects_text": "+50% Damage when attacking a mutated insect."
+  "effects_text": "+50% Damage when attacking a mutated insect.",
+  "modifiers": [
+   {
+    "type": "damage_percent",
+    "percent": 50,
+    "foe": "mutated_insect"
+   }
+  ]
  },
  {
   "id": "explorer",
@@ -876,7 +896,14 @@
    "level": 12
   },
   "requires_text": "Level 12",
-  "effects_text": "20% Health bonus when using stimpaks"
+  "effects_text": "20% Health bonus when using stimpaks",
+  "modifiers": [
+   {
+    "type": "heal_percent",
+    "percent": 20,
+    "item": "stimpak"
+   }
+  ]
  },
  {
   "id": "fast_times",
@@ -934,7 +961,13 @@
    "level": 10
   },
   "requires_text": "Level 10",
-  "effects_text": "Higher critical hit chance (equivalent to +5 Luck)"
+  "effects_text": "Higher critical hit chance (equivalent to +5 Luck)",
+  "modifiers": [
+   {
+    "type": "crit_chance",
+    "percent": 5
+   }
+  ]
  },
  {
   "id": "fortune_finder",
@@ -1245,7 +1278,19 @@
    }
   },
   "requires_text": "Level 2; Survival 30",
-  "effects_text": "75% more critical damage against animals and mutated animals."
+  "effects_text": "75% more critical damage against animals and mutated animals.",
+  "modifiers": [
+   {
+    "type": "crit_damage_percent",
+    "percent": 75,
+    "foe": "animal"
+   },
+   {
+    "type": "crit_damage_percent",
+    "percent": 75,
+    "foe": "mutated_animal"
+   }
+  ]
  },
  {
   "id": "implant_c_13",
@@ -1753,7 +1798,17 @@
    }
   },
   "requires_text": "Level 10; Science 70",
-  "effects_text": "Reduce all AP costs by 10 percent."
+  "effects_text": "Reduce all AP costs by 10 percent.",
+  "modifiers": [
+   {
+    "type": "ap_cost_percent",
+    "percent": -10
+   },
+   {
+    "type": "reload_ap_percent",
+    "percent": -10
+   }
+  ]
  },
  {
   "id": "meat_of_champions",
@@ -2075,7 +2130,13 @@
    }
   },
   "requires_text": "Level 12; Unarmed 70",
-  "effects_text": "Ignore 15 points of a target's DT"
+  "effects_text": "Ignore 15 points of a target's DT",
+  "modifiers": [
+   {
+    "type": "ignore_threshold",
+    "amount": 15
+   }
+  ]
  },
  {
   "id": "plasma_spaz",
@@ -2252,7 +2313,13 @@
    }
   },
   "requires_text": "Level 2; Guns 30; Agility 5",
-  "effects_text": "25% faster reload"
+  "effects_text": "25% faster reload",
+  "modifiers": [
+   {
+    "type": "reload_ap_percent",
+    "percent": -25
+   }
+  ]
  },
  {
   "id": "ravenous_hunger",
@@ -2895,7 +2962,13 @@
    }
   },
   "requires_text": "Level 6; Endurance 5",
-  "effects_text": "Permanent +3 to DT"
+  "effects_text": "Permanent +3 to DT",
+  "modifiers": [
+   {
+    "type": "damage_threshold",
+    "amount": 3
+   }
+  ]
  },
  {
   "id": "travel_light",

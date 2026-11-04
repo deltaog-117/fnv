@@ -32,6 +32,11 @@ use crate::world::{WorldBook, WorldState};
 mod save;
 mod upkeep;
 
+/// A medicine-scaled heal gains one percent for every this many points of Medicine.
+/// A stand-in: the wiki says Medicine changes how well stimpaks work and gives no
+/// formula.
+const MEDICINE_HEAL_DIVISOR: i32 = 2;
+
 pub use upkeep::{Crafted, RepairQuote, WornWeapon};
 
 /// A quest effect that could not run because its feature is not built yet, kept
@@ -561,8 +566,12 @@ impl Game {
         let Some(max) = self.arsenal.condition_max(held.item()) else {
             return;
         };
-        let worn =
-            Condition::new(max, held.lost()).worn(battle.shots().saturating_mul(WEAR_PER_SHOT));
+        // Rounded once over the whole fight, so the wear does not depend on how the
+        // shots were counted.
+        let percent = (100 + i64::from(self.character.wear_percent())).max(0);
+        let points = i64::from(battle.shots().saturating_mul(WEAR_PER_SHOT)) * percent;
+        let wear = u32::try_from((points + 50) / 100).unwrap_or(u32::MAX);
+        let worn = Condition::new(max, held.lost()).worn(wear);
         // The copy was found just above, so the pack cannot refuse.
         let _ = self.inventory.set_lost(copy, worn.lost());
     }
@@ -650,7 +659,7 @@ impl Game {
             return Err(InventoryError::NoEffect(item.clone()));
         };
         let (heal, boosts) = match &effect {
-            ItemUse::Heal(hp) => (Some(*hp), &[][..]),
+            ItemUse::Heal(hp) | ItemUse::MedicineHeal(hp) => (Some(*hp), &[][..]),
             ItemUse::Boost(boost) => (boost.heal, boost.effects.as_slice()),
         };
         // An item that heals is kept by a player with nothing to heal, so a stray key
@@ -658,7 +667,18 @@ impl Game {
         if heal.is_some() && self.wounds == 0 {
             return Err(InventoryError::AtFullHealth);
         }
-        let healed = heal.map_or(0, |hp| hp.get().min(self.wounds));
+        let medicine = if matches!(effect, ItemUse::MedicineHeal(_)) {
+            i32::from(self.character.skill(Skill::Medicine).get()) / MEDICINE_HEAL_DIVISOR
+        } else {
+            0
+        };
+        let percent =
+            (100 + i64::from(self.character.heal_percent(item)) + i64::from(medicine)).max(0);
+        let healed = heal.map_or(0, |hp| {
+            // Rounded to the nearest point, once, so a bonus never rounds a heal away.
+            let scaled = (i64::from(hp.get()) * percent + 50) / 100;
+            u32::try_from(scaled).unwrap_or(u32::MAX).min(self.wounds)
+        });
         self.inventory.discard(item, NonZeroU32::MIN)?;
         if !boosts.is_empty() {
             self.effects.start(item, boosts, self.clock.as_minutes());

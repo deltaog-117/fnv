@@ -3,9 +3,10 @@
 use std::num::NonZeroU32;
 
 use engine::combat::{
-    AttackProfile, Combat, Combatant, Dice, FlatHitChance, Magazine, Multiplier, Percent, Points,
-    Rules, Side,
+    Against, AttackProfile, Combat, Combatant, Dice, FlatHitChance, Magazine, Multiplier, Percent,
+    Points, Rules, Side,
 };
+use engine::shared::FoeKind;
 
 /// A fighter made of plain numbers, the way a test (or a monster) would be.
 #[derive(Debug, Clone)]
@@ -21,6 +22,9 @@ pub struct Plain {
     pub magazine: Option<Magazine>,
     pub sequence: u32,
     pub flee: u32,
+    pub kind: FoeKind,
+    pub against: Vec<(FoeKind, Against)>,
+    pub ignores: f64,
 }
 
 impl Plain {
@@ -38,6 +42,9 @@ impl Plain {
             magazine: None,
             sequence: 0,
             flee: 0,
+            kind: FoeKind::Human,
+            against: Vec::new(),
+            ignores: 0.0,
         }
     }
 
@@ -62,6 +69,30 @@ impl Plain {
     /// Escapes a fight on a roll up to this percent.
     pub fn flee(mut self, chance: u32) -> Self {
         self.flee = chance;
+        self
+    }
+
+    /// What sort of creature this is.
+    pub fn kind(mut self, kind: FoeKind) -> Self {
+        self.kind = kind;
+        self
+    }
+
+    /// Hits foes of `kind` harder by these percents.
+    pub fn against(mut self, kind: FoeKind, damage_percent: i32, crit_damage_percent: i32) -> Self {
+        self.against.push((
+            kind,
+            Against {
+                damage_percent,
+                crit_damage_percent,
+            },
+        ));
+        self
+    }
+
+    /// Ignores this many points of the target's threshold.
+    pub fn ignores(mut self, points: f64) -> Self {
+        self.ignores = points;
         self
     }
 
@@ -126,6 +157,21 @@ impl Combatant for Plain {
 
     fn flee_chance(&self) -> Percent {
         Percent::try_new(self.flee).expect("valid test flee chance")
+    }
+
+    fn kind(&self) -> FoeKind {
+        self.kind
+    }
+
+    fn against(&self, kind: FoeKind) -> Against {
+        self.against
+            .iter()
+            .find(|(known, _)| *known == kind)
+            .map_or(Against::NONE, |(_, against)| *against)
+    }
+
+    fn ignored_threshold(&self) -> Points {
+        Points::try_new(self.ignores).expect("valid test threshold")
     }
 }
 

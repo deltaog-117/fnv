@@ -147,7 +147,12 @@ impl Menu {
             Command::Down => self.down(),
             Command::Select => return self.selected(),
             Command::Pick(index) => return self.pick(index),
-            Command::Left | Command::Right | Command::Back | Command::Quit => {}
+            Command::Left
+            | Command::Right
+            | Command::Back
+            | Command::Quit
+            | Command::Delete
+            | Command::Rename => {}
         }
         None
     }
@@ -166,6 +171,8 @@ mod tests {
             Just(Command::Select),
             Just(Command::Back),
             Just(Command::Quit),
+            Just(Command::Delete),
+            Just(Command::Rename),
             (0usize..20).prop_map(Command::Pick),
         ]
     }

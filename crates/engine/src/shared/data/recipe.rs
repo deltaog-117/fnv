@@ -62,6 +62,9 @@ pub struct Ingredient {
     pub item_id: Option<ItemId>,
     /// How many.
     pub qty: NonZeroU32,
+    /// A tool the wiki marks "not expended": it must be carried, and is not used up.
+    #[serde(default)]
+    pub kept: bool,
 }
 
 /// What making a recipe does to the story, while its conditions hold.

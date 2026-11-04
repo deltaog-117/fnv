@@ -181,6 +181,228 @@
               "maximum": 127
             }
           }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "damage_threshold"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "damage_resistance"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "ignore_threshold"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "damage_percent"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            },
+            "skill": {
+              "$ref": "#/$defs/skill"
+            },
+            "foe": {
+              "$ref": "#/$defs/foe_kind"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "crit_chance"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            },
+            "skill": {
+              "$ref": "#/$defs/skill"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "crit_damage_percent"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            },
+            "skill": {
+              "$ref": "#/$defs/skill"
+            },
+            "foe": {
+              "$ref": "#/$defs/foe_kind"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "ap_cost_percent"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            },
+            "skill": {
+              "$ref": "#/$defs/skill"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "reload_ap_percent"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "spread_percent"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            },
+            "skill": {
+              "$ref": "#/$defs/skill"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "weapon_wear_percent"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "heal_percent"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            },
+            "item": {
+              "$ref": "#/$defs/id"
+            }
+          }
         }
       ]
     },
@@ -833,6 +1055,17 @@
             }
           }
         }
+      ]
+    },
+    "foe_kind": {
+      "enum": [
+        "human",
+        "robot",
+        "animal",
+        "mutated_animal",
+        "mutated_insect",
+        "super_mutant",
+        "abomination"
       ]
     }
   }

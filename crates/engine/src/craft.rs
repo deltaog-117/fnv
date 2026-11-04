@@ -22,6 +22,6 @@ mod book;
 mod error;
 mod stations;
 
-pub use book::{Formula, RecipeBook, Unavailable};
+pub use book::{Formula, RecipeBook, Unavailable, Work};
 pub use error::CraftError;
 pub use stations::{StationBook, StationInfo};

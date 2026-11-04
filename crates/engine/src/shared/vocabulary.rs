@@ -37,6 +37,39 @@ pub enum Dlc {
     GunRunnersArsenal,
 }
 
+/// What sort of creature a foe is, for the perks that hit one sort harder.
+#[derive(
+    Debug,
+    Clone,
+    Copy,
+    PartialEq,
+    Eq,
+    Hash,
+    PartialOrd,
+    Ord,
+    Serialize,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+)]
+#[serde(rename_all = "snake_case")]
+pub enum FoeKind {
+    /// A person, ghoul or other humanoid who is not one of the kinds below.
+    Human,
+    /// A robot.
+    Robot,
+    /// An animal that is not mutated.
+    Animal,
+    /// A mutated animal.
+    MutatedAnimal,
+    /// A mutated insect.
+    MutatedInsect,
+    /// A super mutant.
+    SuperMutant,
+    /// An abomination, such as a deathclaw or a Yao guai.
+    Abomination,
+}
+
 /// The thirteen skills.
 #[derive(
     Debug,

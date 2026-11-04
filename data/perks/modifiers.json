@@ -111,5 +111,213 @@
     "percent": -10
    }
   ]
+ },
+ {
+  "perk": "toughness",
+  "modifiers": [
+   {
+    "type": "damage_threshold",
+    "amount": 3
+   }
+  ]
+ },
+ {
+  "perk": "finesse",
+  "modifiers": [
+   {
+    "type": "crit_chance",
+    "percent": 5
+   }
+  ]
+ },
+ {
+  "perk": "better_criticals",
+  "modifiers": [
+   {
+    "type": "crit_damage_percent",
+    "percent": 50
+   }
+  ]
+ },
+ {
+  "perk": "math_wrath",
+  "modifiers": [
+   {
+    "type": "ap_cost_percent",
+    "percent": -10
+   },
+   {
+    "type": "reload_ap_percent",
+    "percent": -10
+   }
+  ]
+ },
+ {
+  "perk": "rapid_reload",
+  "modifiers": [
+   {
+    "type": "reload_ap_percent",
+    "percent": -25
+   }
+  ]
+ },
+ {
+  "perk": "piercing_strike",
+  "modifiers": [
+   {
+    "type": "ignore_threshold",
+    "amount": 15
+   }
+  ]
+ },
+ {
+  "perk": "fast_metabolism",
+  "modifiers": [
+   {
+    "type": "heal_percent",
+    "percent": 20,
+    "item": "stimpak"
+   }
+  ]
+ },
+ {
+  "perk": "demolition_expert",
+  "modifiers": [
+   {
+    "type": "damage_percent",
+    "percent": 20,
+    "skill": "explosives"
+   }
+  ]
+ },
+ {
+  "perk": "entomologist",
+  "modifiers": [
+   {
+    "type": "damage_percent",
+    "percent": 50,
+    "foe": "mutated_insect"
+   }
+  ]
+ },
+ {
+  "perk": "hunter",
+  "modifiers": [
+   {
+    "type": "crit_damage_percent",
+    "percent": 75,
+    "foe": "animal"
+   },
+   {
+    "type": "crit_damage_percent",
+    "percent": 75,
+    "foe": "mutated_animal"
+   }
+  ]
+ },
+ {
+  "trait": "built_to_destroy",
+  "modifiers": [
+   {
+    "type": "crit_chance",
+    "percent": 3
+   },
+   {
+    "type": "weapon_wear_percent",
+    "percent": 15
+   }
+  ]
+ },
+ {
+  "trait": "kamikaze",
+  "modifiers": [
+   {
+    "type": "action_points",
+    "amount": 10
+   },
+   {
+    "type": "damage_threshold",
+    "amount": -2
+   },
+   {
+    "type": "damage_resistance",
+    "percent": -15
+   }
+  ]
+ },
+ {
+  "trait": "heavy_handed",
+  "modifiers": [
+   {
+    "type": "damage_percent",
+    "percent": 20,
+    "skill": "melee_weapons"
+   },
+   {
+    "type": "damage_percent",
+    "percent": 20,
+    "skill": "unarmed"
+   },
+   {
+    "type": "crit_damage_percent",
+    "percent": -60,
+    "skill": "melee_weapons"
+   },
+   {
+    "type": "crit_damage_percent",
+    "percent": -60,
+    "skill": "unarmed"
+   }
+  ]
+ },
+ {
+  "trait": "fast_shot",
+  "modifiers": [
+   {
+    "type": "ap_cost_percent",
+    "percent": -20,
+    "skill": "guns"
+   },
+   {
+    "type": "ap_cost_percent",
+    "percent": -20,
+    "skill": "energy_weapons"
+   },
+   {
+    "type": "spread_percent",
+    "percent": 20,
+    "skill": "guns"
+   },
+   {
+    "type": "spread_percent",
+    "percent": 20,
+    "skill": "energy_weapons"
+   }
+  ]
+ },
+ {
+  "trait": "trigger_discipline",
+  "modifiers": [
+   {
+    "type": "ap_cost_percent",
+    "percent": 20,
+    "skill": "guns"
+   },
+   {
+    "type": "ap_cost_percent",
+    "percent": 20,
+    "skill": "energy_weapons"
+   },
+   {
+    "type": "spread_percent",
+    "percent": -20,
+    "skill": "guns"
+   },
+   {
+    "type": "spread_percent",
+    "percent": -20,
+    "skill": "energy_weapons"
+   }
+  ]
  }
 ]

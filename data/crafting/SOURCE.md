@@ -11,3 +11,11 @@ in `data/engine/recipes.json` as `on_craft`.
   silently drop a reaction.
 - Healing powder moves By a Campfire on the Trail to stage 30 ("use the campfire
   to make healing powder") while the quest is between stage 10 and stage 30.
+
+Recipes themselves come from the wiki's tables through `scripts/normalize.py`:
+
+- A `breakdown` recipe takes the item it names apart: that item is spent (as many
+  as `output_qty`, one when absent) and the listed ingredients are what comes back.
+- An ingredient written "Name (N, not expended)" becomes `kept: true` with `qty` N: a
+  tool that must be carried and is not used up.
+

@@ -6,14 +6,16 @@ use std::num::NonZeroU32;
 use std::path::Path;
 use std::sync::{Arc, LazyLock};
 
+use engine::character::{Character, CharacterRules, Level, PerkBook, SpecialSet};
 use engine::combat::{CombatError, Combatant, Dice, Flight, Power, Side, Status};
 use engine::game::{Arsenal, Battle, BattleError, Game, Outcome};
 use engine::inventory::{CopyId, ItemBook};
 use engine::quests::QuestBook;
 use engine::reputation::ReputationBook;
 use engine::shared::{
-    Effect, EncounterId, GameData, InventorySink, InventoryView, ItemId, LocationId, NpcId,
-    NpcState, QuestId, QuestStatus, QuestView, Scope, WorldView, apply_all,
+    CharacterView, Effect, EncounterId, GameData, InventorySink, InventoryView, ItemId, LocationId,
+    NpcId, NpcState, PerkId, QuestId, QuestStatus, QuestView, Scope, Skill, Special, SpecialLevel,
+    TraitId, WorldView, apply_all,
 };
 use engine::world::WorldBook;
 use proptest::prelude::*;
@@ -24,6 +26,7 @@ struct Fixture {
     items: Arc<ItemBook>,
     arsenal: Arc<Arsenal>,
     reputation: Arc<ReputationBook>,
+    perks: PerkBook,
 }
 
 static FIXTURE: LazyLock<Fixture> = LazyLock::new(|| {
@@ -35,6 +38,7 @@ static FIXTURE: LazyLock<Fixture> = LazyLock::new(|| {
         items: Arc::new(ItemBook::from_data(&data).expect("the item book builds")),
         arsenal: Arc::new(Arsenal::from_data(&data).expect("the arsenal builds")),
         reputation: Arc::new(ReputationBook::from_data(&data).expect("the reputation book builds")),
+        perks: PerkBook::base_game(&data),
     }
 });
 
@@ -809,4 +813,135 @@ fn the_players_chance_in_the_real_fight_comes_from_skill_and_the_pistols_spread(
         .expect("a foe");
     // Guns 15 and a 0.7 spread: 40 + 15 / 2 - 0.7 * 3 = 45.4.
     assert_eq!(AimedHitChance.chance(you, foe).get(), 45);
+}
+
+// Perks and traits that change the numbers a fight and a heal read.
+
+/// Five in everything but intelligence, which takes the five spare points, with the
+/// given traits.
+fn trained(traits: &[&str]) -> Character {
+    let special = SpecialSet::default().with(
+        Special::Intelligence,
+        SpecialLevel::try_new(10).expect("literal is a legal level"),
+    );
+    let traits: Vec<TraitId> = traits
+        .iter()
+        .map(|name| TraitId::try_new(*name).expect("literal is a valid id"))
+        .collect();
+    Character::create(
+        special,
+        &[Skill::Guns, Skill::Speech, Skill::Sneak],
+        &traits,
+        CharacterRules::standard(),
+        &FIXTURE.perks,
+    )
+    .expect("a legal character")
+}
+
+/// The player's fighter at the start of the gunfight.
+fn you_in(game: &Game) -> engine::game::Fighter {
+    let battle = start(game);
+    battle
+        .combat()
+        .combatant(battle.player())
+        .expect("the player")
+        .clone()
+}
+
+#[test]
+fn kamikaze_adds_action_points_and_takes_threshold_and_resistance_away() {
+    let plain = you_in(&dressed_game().with_character(trained(&[])));
+    let reckless = you_in(&dressed_game().with_character(trained(&["kamikaze"])));
+    assert_eq!(reckless.max_ap(), plain.max_ap() + 10);
+    assert_eq!(reckless.dt().get(), (plain.dt().get() - 2.0).max(0.0));
+    assert_eq!(reckless.dr().get(), (plain.dr().get() - 15.0).max(0.0));
+}
+
+#[test]
+fn fast_shot_makes_a_pistol_shot_cheaper_and_less_steady() {
+    let plain = you_in(&dressed_game().with_character(trained(&[])));
+    let quick = you_in(&dressed_game().with_character(trained(&["fast_shot"])));
+    let cost = |fighter: &engine::game::Fighter| fighter.attack().ap_cost.get();
+    assert!(
+        cost(&quick) < cost(&plain),
+        "{} < {}",
+        cost(&quick),
+        cost(&plain)
+    );
+    assert!(quick.aim().spread.get() > plain.aim().spread.get());
+}
+
+#[test]
+fn trigger_discipline_does_the_opposite() {
+    let plain = you_in(&dressed_game().with_character(trained(&[])));
+    let steady = you_in(&dressed_game().with_character(trained(&["trigger_discipline"])));
+    assert!(steady.attack().ap_cost.get() > plain.attack().ap_cost.get());
+    assert!(steady.aim().spread.get() < plain.aim().spread.get());
+}
+
+#[test]
+fn heavy_handed_leaves_a_pistol_alone() {
+    let plain = you_in(&dressed_game().with_character(trained(&[])));
+    let heavy = you_in(&dressed_game().with_character(trained(&["heavy_handed"])));
+    assert_eq!(heavy.attack(), plain.attack());
+}
+
+#[test]
+fn built_to_destroy_adds_critical_chance_and_wears_the_weapon_faster() {
+    let plain = you_in(&dressed_game().with_character(trained(&[])));
+    let burning = you_in(&dressed_game().with_character(trained(&["built_to_destroy"])));
+    assert_eq!(
+        burning.crit_chance().get(),
+        plain.crit_chance().get() + 3,
+        "three points of critical chance"
+    );
+    let left_after = |character: Character| {
+        let mut game = dressed_game().with_character(character);
+        let mut battle = start(&game);
+        miss_and_lose(&mut battle, 20);
+        game.finish_battle(&battle).expect("the fight settles");
+        game.copy_condition(wielded(&game)).expect("it wears").get()
+    };
+    assert!(left_after(trained(&["built_to_destroy"])) < left_after(trained(&[])));
+}
+
+/// A character that has reached level 12 and taken `perk`.
+fn with_perk(perk: &str) -> Character {
+    let mut character = trained(&[]);
+    let rules = CharacterRules::standard();
+    let level = Level::try_new(12).expect("a legal level");
+    character.grant_xp(rules.xp_for_level(level));
+    character
+        .choose_perk(
+            &FIXTURE.perks,
+            &PerkId::try_new(perk).expect("literal is a valid id"),
+        )
+        .expect("the perk can be taken");
+    character
+}
+
+/// What one stimpak restores for a player with this character and 100 wounds.
+fn stimpak_heals(character: Character) -> u32 {
+    let mut game = armed_game().with_character(character).with_wounds(100);
+    InventorySink::give_item(&mut game, &item("stimpak"), NonZeroU32::MIN)
+        .expect("a stimpak is given");
+    game.use_item(&item("stimpak")).expect("the stimpak works")
+}
+
+#[test]
+fn a_stimpak_heals_more_the_higher_the_medicine_and_more_again_with_fast_metabolism() {
+    let plain = trained(&[]);
+    let medicine = u32::from(plain.skill(Skill::Medicine).get());
+    assert_eq!(
+        stimpak_heals(plain),
+        (30 * (100 + medicine / 2) + 50) / 100,
+        "one percent for every two points of Medicine"
+    );
+    let metabolic = with_perk("fast_metabolism");
+    let medicine = u32::from(metabolic.skill(Skill::Medicine).get());
+    assert_eq!(
+        stimpak_heals(metabolic),
+        (30 * (120 + medicine / 2) + 50) / 100,
+        "and twenty percent more with the perk"
+    );
 }

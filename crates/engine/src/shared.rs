@@ -56,6 +56,6 @@ pub use view::{
     StateView, WorldView,
 };
 pub use vocabulary::{
-    Alignment, Comparison, Dlc, NpcState, QuestStage, QuestState, Renown, ReputationLevel, Skill,
-    Special,
+    Alignment, Comparison, Dlc, FoeKind, NpcState, QuestStage, QuestState, Renown, ReputationLevel,
+    Skill, Special,
 };

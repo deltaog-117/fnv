@@ -165,7 +165,7 @@ impl Pack {
                 Command::Right => quantity.raise(1),
                 Command::Down => quantity.lower(BIG_STEP),
                 Command::Up => quantity.raise(BIG_STEP),
-                Command::Pick(_) | Command::Quit => {}
+                Command::Pick(_) | Command::Quit | Command::Delete | Command::Rename => {}
             },
             Mode::Merging { keep, others, menu } => {
                 if command == Command::Back {
@@ -463,6 +463,10 @@ impl Pack {
                 format!("Restores {hp} hit points."),
                 theme::text(),
             )),
+            Some(ItemUse::MedicineHeal(hp)) => lines.push(Line::styled(
+                format!("Restores {hp} hit points, and more the higher your Medicine."),
+                theme::text(),
+            )),
             Some(ItemUse::Boost(boost)) => {
                 if let Some(hp) = boost.heal {
                     lines.push(Line::styled(
@@ -698,10 +702,20 @@ mod tests {
     fn using_a_stimpak_heals_spends_it_and_says_so() {
         let (mut game, mut pack, mut log) = carrying(40, &[("stimpak", 2)]);
         let before = game.hp();
+        // A stimpak restores 30 and one percent more for every two points of Medicine.
+        let medicine = u32::from(
+            engine::shared::CharacterView::skill(game.character(), engine::shared::Skill::Medicine)
+                .get(),
+        );
+        let healed = (30 * (100 + medicine / 2) + 50) / 100;
         choose(&mut pack, &mut game, &mut log, "stimpak", "Use");
-        assert_eq!(game.hp(), before + 30);
+        assert_eq!(game.hp(), before + healed);
         assert_eq!(game.inventory().item_count(&id("stimpak")), 1);
-        assert!(said(&log).contains("recover 30"), "{}", said(&log));
+        assert!(
+            said(&log).contains(&format!("recover {healed}")),
+            "{}",
+            said(&log)
+        );
         assert!(matches!(pack.mode, Mode::Browsing));
     }
 

@@ -15,7 +15,9 @@ redistributed.
 
 `uses.json` is the exception: it is hand-authored, not imported, and the
 regeneration commands below leave it alone. Each entry names a consumable
-`item` and what using it does (`heal`: hit points restored at once), and
+`item` and what using it does (`heal`: hit points restored at once;
+`medicine_heal`: the same, plus one percent for every two points of Medicine, a
+stand-in because the wiki gives no formula), and
 `scripts/normalize.py` merges it into that item's record in
 `data/engine/consumables.json` as `on_use`.
 

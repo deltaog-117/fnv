@@ -900,6 +900,13 @@ def recipes(raw, item_recs):
             if noise and not item_id:
                 continue
             e = {"item": name, "qty": max(1, i["qty"])}
+            # "(2, not expended)" is the wiki's mark for a tool that is carried and
+            # not used up; the number is how many are needed.
+            tool = re.search(r"\s*\((\d+),\s*not expended\)$", name, re.I)
+            if tool:
+                name = name[: tool.start()].strip()
+                item_id = by_name.get(name.lower())
+                e = {"item": name, "qty": max(1, int(tool.group(1))), "kept": True}
             put(e, "item_id", item_id)
             ing.append(e)
         rec["ingredients"] = ing

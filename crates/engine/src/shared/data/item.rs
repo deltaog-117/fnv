@@ -229,6 +229,10 @@ item_record!(
 pub enum ItemUse {
     /// Restores this many hit points at once.
     Heal(NonZeroU32),
+    /// Restores this many hit points at once, and more the higher the Medicine
+    /// skill: the wiki says Medicine changes how well stimpaks work, and gives no
+    /// formula.
+    MedicineHeal(NonZeroU32),
     /// Changes numbers for a while, and may also restore hit points at once.
     Boost(BoostUse),
 }

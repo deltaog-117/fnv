@@ -209,6 +209,10 @@
               "qty": {
                 "type": "integer",
                 "minimum": 1
+              },
+              "kept": {
+                "type": "boolean",
+                "description": "A tool the wiki marks \"not expended\": it must be carried, and is not used up."
               }
             }
           }

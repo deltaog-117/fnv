@@ -146,6 +146,22 @@ fn the_wiki_text_still_says_what_each_modeled_perk_and_trait_does() {
         ("strong_back", "additional 50 lbs"),
         ("action_boy_action_girl", "+15/30 Action Points"),
         ("life_giver", "+30 HP"),
+        ("toughness", "Permanent +3 to DT"),
+        ("finesse", "equivalent to +5 Luck"),
+        ("better_criticals", "+50% Damage with critical hits"),
+        ("math_wrath", "Reduce all AP costs by 10 percent."),
+        ("rapid_reload", "25% faster reload"),
+        ("piercing_strike", "Ignore 15 points of a target's DT"),
+        ("fast_metabolism", "20% Health bonus when using stimpaks"),
+        ("demolition_expert", "+20%/40%/60% Damage with explosives"),
+        (
+            "entomologist",
+            "+50% Damage when attacking a mutated insect.",
+        ),
+        (
+            "hunter",
+            "75% more critical damage against animals and mutated animals.",
+        ),
     ] {
         let perk = data
             .perks
@@ -166,13 +182,54 @@ fn the_wiki_text_still_says_what_each_modeled_perk_and_trait_does() {
             "+5 to all skills",
             "-10% to Experience Points gained",
         ),
+        (
+            "built_to_destroy",
+            "+3% Critical Chance",
+            "+15% weapon wear",
+        ),
+        (
+            "kamikaze",
+            "+10 Action Points",
+            "-2 Damage Threshold, -15% Damage Resistance",
+        ),
+        (
+            "heavy_handed",
+            "+20% damage (Melee and Unarmed only)",
+            "-60% Critical damage. (Melee and Unarmed only)",
+        ),
+        (
+            "fast_shot",
+            "AP costs are decreased by 20% for all firearms with Energy Weapons and Guns",
+            "Weapon Spread increases by 20%",
+        ),
+        (
+            "trigger_discipline",
+            "+20% accuracy with Guns and Energy Weapons",
+            "+20% AP required per shot",
+        ),
     ] {
         let record = data
             .traits
             .get(&trait_id(id))
             .unwrap_or_else(|| panic!("trait {id} exists"));
-        assert_eq!(record.benefits.as_deref(), Some(benefit), "{id}");
-        assert_eq!(record.penalties.as_deref(), Some(penalty), "{id}");
+        assert!(
+            record
+                .benefits
+                .as_deref()
+                .unwrap_or_default()
+                .contains(benefit),
+            "{id}: {:?}",
+            record.benefits
+        );
+        assert!(
+            record
+                .penalties
+                .as_deref()
+                .unwrap_or_default()
+                .contains(penalty),
+            "{id}: {:?}",
+            record.penalties
+        );
         assert!(!record.modifiers.is_empty(), "{id} is modeled");
     }
 }
@@ -190,10 +247,20 @@ fn only_the_modeled_perks_and_traits_carry_modifiers() {
         perks,
         [
             "action_boy_action_girl",
+            "better_criticals",
+            "demolition_expert",
             "educated",
+            "entomologist",
+            "fast_metabolism",
+            "finesse",
+            "hunter",
             "life_giver",
+            "math_wrath",
+            "piercing_strike",
+            "rapid_reload",
             "strong_back",
-            "swift_learner"
+            "swift_learner",
+            "toughness"
         ]
     );
     let traits: Vec<&str> = data
@@ -202,7 +269,18 @@ fn only_the_modeled_perks_and_traits_carry_modifiers() {
         .filter(|record| !record.modifiers.is_empty())
         .map(|record| record.id.as_str())
         .collect();
-    assert_eq!(traits, ["good_natured", "skilled"]);
+    assert_eq!(
+        traits,
+        [
+            "built_to_destroy",
+            "fast_shot",
+            "good_natured",
+            "heavy_handed",
+            "kamikaze",
+            "skilled",
+            "trigger_discipline"
+        ]
+    );
 }
 
 #[test]

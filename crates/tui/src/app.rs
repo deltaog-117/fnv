@@ -659,7 +659,32 @@ impl App {
             saves::Next::Leave => self.screen = self.exploring(),
             saves::Next::Save(name) => self.save_game(&SaveSlot::Named(name)),
             saves::Next::Load(slot) => self.load_game(&slot),
+            saves::Next::Delete(slot) => {
+                let note = match self.saves.delete(&slot) {
+                    Ok(()) => format!("Deleted \"{}\".", slot.label()),
+                    Err(error) => format!("Could not delete: {error}"),
+                };
+                self.after_change(note);
+            }
+            saves::Next::Rename { from, to } => {
+                let note = match self.saves.rename(&from, &to) {
+                    Ok(()) => format!("Renamed \"{from}\" to \"{to}\"."),
+                    Err(error) => format!("Could not rename: {error}"),
+                };
+                self.after_change(note);
+            }
         }
+    }
+
+    /// Says what happened to a save and opens the list again, so it shows the folder
+    /// as it is now.
+    fn after_change(&mut self, note: String) {
+        let purpose = match &self.screen {
+            Screen::Saves(slots) => slots.purpose(),
+            _ => Purpose::Load,
+        };
+        self.log.push(Entry::Note(note));
+        self.open_saves(purpose);
     }
 
     /// Writes the game to a slot and says how it went. The write replaces the file
@@ -679,7 +704,7 @@ impl App {
         if !self.autosave || !self.game.is_alive() {
             return;
         }
-        let note = match self.saves.write(&SaveSlot::Auto, &self.game.save()) {
+        let note = match self.saves.write_automatic(&self.game.save()) {
             Ok(()) => "Autosaved.".to_owned(),
             Err(error) => format!("Could not autosave: {error}"),
         };
@@ -1722,12 +1747,14 @@ mod tests {
             Self(std::env::temp_dir().join(format!("fnv-tui-{name}-{}", std::process::id())))
         }
 
+        /// The saves folder, inside a folder of the test's own so that the old save
+        /// beside it is the test's too.
         fn dir(&self) -> PathBuf {
-            self.0.clone()
+            self.0.join("saves")
         }
 
         fn file(&self, name: &str) -> PathBuf {
-            self.0.join(format!("{name}.json"))
+            self.dir().join(format!("{name}.json"))
         }
     }
 
@@ -1927,7 +1954,7 @@ mod tests {
     #[test]
     fn a_damaged_save_is_listed_refused_and_the_game_goes_on() {
         let scratch = Scratch::new("damaged");
-        std::fs::create_dir_all(&scratch.0).expect("the folder is made");
+        std::fs::create_dir_all(scratch.dir()).expect("the folder is made");
         std::fs::write(scratch.file("broken"), "{ not a save").expect("the file is written");
         let mut app = app().with_save_dir(scratch.dir());
         let before = app.game.save();
@@ -2007,6 +2034,100 @@ mod tests {
         app.update(Command::Back);
         choose_row(&mut app, "Load game");
         assert!(screen(&app, 120, 40).contains("Autosave (automatic)"));
+        app.update(Command::Select);
+        assert!(screen(&app, 120, 40).contains("Game loaded."));
+    }
+
+    #[test]
+    fn deleting_a_save_asks_first_then_removes_only_that_file() {
+        let scratch = Scratch::new("delete");
+        let mut app = app().with_save_dir(scratch.dir());
+        save_as(&mut app, "keep");
+        save_as(&mut app, "drop");
+        choose_row(&mut app, "Load game");
+        // The most recently written save is first: "drop".
+        app.update(Command::Delete);
+        assert!(screen(&app, 120, 40).contains("Delete \"drop\"?"));
+        app.update(Command::Back);
+        assert!(scratch.file("drop").is_file(), "Esc keeps it");
+        app.update(Command::Delete);
+        app.update(Command::Select);
+        assert!(!scratch.file("drop").exists());
+        assert!(scratch.file("keep").is_file());
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("Deleted \"drop\"."), "{text}");
+        assert!(
+            text.contains("keep"),
+            "the list shows the folder as it is now"
+        );
+        assert!(matches!(app.screen, Screen::Saves(_)));
+    }
+
+    #[test]
+    fn renaming_a_save_moves_its_file_and_never_replaces_another() {
+        let scratch = Scratch::new("rename");
+        let mut app = app().with_save_dir(scratch.dir());
+        save_as(&mut app, "first");
+        save_as(&mut app, "second");
+        choose_row(&mut app, "Load game");
+        app.update(Command::Rename);
+        assert!(app.is_typing(), "the new name is typed");
+        for _ in 0.."second".len() {
+            app.type_key(KeyCode::Backspace);
+        }
+        for c in "first".chars() {
+            app.type_key(KeyCode::Char(c));
+        }
+        app.type_key(KeyCode::Enter);
+        assert!(app.is_typing(), "a name that is taken is refused");
+        assert!(screen(&app, 120, 40).contains("already exists"));
+        assert!(scratch.file("second").is_file());
+        for _ in 0.."first".len() {
+            app.type_key(KeyCode::Backspace);
+        }
+        for c in "third".chars() {
+            app.type_key(KeyCode::Char(c));
+        }
+        app.type_key(KeyCode::Enter);
+        assert!(!scratch.file("second").exists());
+        assert!(scratch.file("third").is_file());
+        assert!(scratch.file("first").is_file());
+        assert!(screen(&app, 120, 40).contains("Renamed \"second\" to \"third\"."));
+    }
+
+    #[test]
+    fn the_autosave_keeps_the_one_before_it_and_both_can_be_loaded() {
+        let scratch = Scratch::new("twoauto");
+        let mut app = app().with_save_dir(scratch.dir()).with_autosave();
+        let away = app.game.routes()[0].to.clone();
+        app.travel_to(&away);
+        let first = std::fs::read_to_string(scratch.file("autosave")).expect("written");
+        let onward = app.game.routes()[0].to.clone();
+        app.travel_to(&onward);
+        assert_eq!(
+            std::fs::read_to_string(scratch.file("autosave_previous")).expect("kept"),
+            first
+        );
+        choose_row(&mut app, "Load game");
+        let text = screen(&app, 120, 40);
+        assert!(text.contains("Autosave (automatic)"), "{text}");
+        assert!(text.contains("Previous autosave (automatic)"), "{text}");
+    }
+
+    #[test]
+    fn the_old_single_save_is_listed_for_loading_but_not_for_saving() {
+        let scratch = Scratch::new("legacy");
+        let mut app = app().with_save_dir(scratch.dir());
+        std::fs::create_dir_all(&scratch.0).expect("the folder is made");
+        app.game
+            .save()
+            .write(&scratch.0.join("save.json"))
+            .expect("written");
+        choose_row(&mut app, "Save game");
+        assert!(!screen(&app, 120, 40).contains("Old save"));
+        app.update(Command::Back);
+        choose_row(&mut app, "Load game");
+        assert!(screen(&app, 120, 40).contains("Old save (from before named saves)"));
         app.update(Command::Select);
         assert!(screen(&app, 120, 40).contains("Game loaded."));
     }

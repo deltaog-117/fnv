@@ -4,7 +4,8 @@ use std::path::PathBuf;
 use std::sync::atomic::{AtomicU32, Ordering};
 
 use engine::saves::{
-    AUTOSAVE, MAX_NAME_LEN, NameError, SaveError, SaveFolder, SaveName, SaveSummary, Slot,
+    AUTOSAVE, AUTOSAVE_PREVIOUS, MAX_NAME_LEN, NameError, SaveError, SaveFolder, SaveName,
+    SaveSummary, Slot,
 };
 use proptest::prelude::*;
 
@@ -68,7 +69,13 @@ fn bad_names_are_refused_with_the_reason() {
     ] {
         assert_eq!(SaveName::try_new(text), Err(NameError::BadCharacter(bad)));
     }
-    for text in [AUTOSAVE, "AutoSave", " AUTOSAVE "] {
+    for text in [
+        AUTOSAVE,
+        "AutoSave",
+        " AUTOSAVE ",
+        AUTOSAVE_PREVIOUS,
+        "Autosave_Previous",
+    ] {
         assert_eq!(SaveName::try_new(text), Err(NameError::Reserved));
     }
 }
@@ -187,6 +194,111 @@ fn writing_over_a_save_replaces_it_and_leaves_the_others() {
     assert_eq!(folder.list().expect("lists").len(), 2);
 }
 
+#[test]
+fn the_previous_autosave_sits_in_the_folder_and_the_old_save_beside_it() {
+    let folder = SaveFolder::new("/somewhere/saves");
+    assert_eq!(
+        folder.path_of(&Slot::Previous),
+        PathBuf::from("/somewhere/saves/autosave_previous.json")
+    );
+    assert_eq!(
+        folder.path_of(&Slot::Legacy),
+        PathBuf::from("/somewhere/save.json")
+    );
+}
+
+#[test]
+fn renaming_moves_the_save_and_refuses_to_replace_another() {
+    let scratch = Scratch::new();
+    let folder = scratch.folder();
+    let (first, second) = (template().save(), played().save());
+    folder.write(&named("a"), &first).expect("writes");
+    folder.write(&named("b"), &second).expect("writes");
+    let (a, b, c) = (
+        SaveName::try_new("a").expect("valid"),
+        SaveName::try_new("b").expect("valid"),
+        SaveName::try_new("c").expect("valid"),
+    );
+    folder.rename(&a, &c).expect("renames");
+    assert!(!folder.exists(&named("a")));
+    assert_eq!(folder.read(&named("c")), Ok(first.clone()));
+
+    assert!(matches!(folder.rename(&c, &b), Err(SaveError::Io(_))));
+    assert_eq!(folder.read(&named("b")), Ok(second), "b was not replaced");
+    assert_eq!(folder.read(&named("c")), Ok(first), "c is where it was");
+    assert!(matches!(folder.rename(&a, &c), Err(SaveError::Io(_))));
+}
+
+#[test]
+fn deleting_removes_one_save_and_nothing_else() {
+    let scratch = Scratch::new();
+    let folder = scratch.folder();
+    let save = template().save();
+    folder.write(&named("a"), &save).expect("writes");
+    folder.write(&named("b"), &save).expect("writes");
+    folder.delete(&named("a")).expect("deletes");
+    assert!(!folder.exists(&named("a")));
+    assert!(folder.exists(&named("b")));
+    assert!(matches!(folder.delete(&named("a")), Err(SaveError::Io(_))));
+}
+
+#[test]
+fn the_automatic_save_keeps_the_one_before_it() {
+    let scratch = Scratch::new();
+    let folder = scratch.folder();
+    let (first, second, third) = (template().save(), played().save(), template().save());
+    folder.write_automatic(&first).expect("writes");
+    assert!(
+        !folder.exists(&Slot::Previous),
+        "there was nothing to keep yet"
+    );
+    folder.write_automatic(&second).expect("writes");
+    assert_eq!(folder.read(&Slot::Auto), Ok(second.clone()));
+    assert_eq!(folder.read(&Slot::Previous), Ok(first));
+    folder.write_automatic(&third).expect("writes");
+    assert_eq!(folder.read(&Slot::Previous), Ok(second));
+    assert!(
+        !folder.dir().join("autosave_previous.json.tmp").exists(),
+        "no staging file is left behind"
+    );
+}
+
+#[test]
+fn a_damaged_autosave_is_not_kept_over_a_good_previous_one() {
+    let scratch = Scratch::new();
+    let folder = scratch.folder();
+    let (good, newest) = (played().save(), template().save());
+    folder.write(&Slot::Previous, &good).expect("writes");
+    std::fs::write(folder.path_of(&Slot::Auto), "not json at all").expect("writes");
+    folder.write_automatic(&newest).expect("writes");
+    assert_eq!(folder.read(&Slot::Auto), Ok(newest));
+    assert_eq!(folder.read(&Slot::Previous), Ok(good));
+}
+
+#[test]
+fn the_old_single_save_is_listed_and_loaded_but_never_written() {
+    let scratch = Scratch::new();
+    let folder = scratch.folder();
+    let save = played().save();
+    // The saves folder does not exist yet: this is a first run after the upgrade.
+    save.write(&scratch.0.join("save.json")).expect("writes");
+    let listed = folder.list().expect("lists");
+    assert_eq!(listed.len(), 1);
+    assert_eq!(listed[0].slot, Slot::Legacy);
+    assert_eq!(
+        listed[0].summary.as_ref(),
+        Ok(&SaveSummary::of(&save)),
+        "it is read like any save"
+    );
+    assert_eq!(folder.read(&Slot::Legacy), Ok(save.clone()));
+    assert!(matches!(
+        folder.write(&Slot::Legacy, &save),
+        Err(SaveError::Io(_))
+    ));
+    folder.delete(&Slot::Legacy).expect("it can be discarded");
+    assert_eq!(folder.list(), Ok(Vec::new()));
+}
+
 proptest! {
     /// Whatever is typed, a name that is accepted is safe as a file name: it stays
     /// inside the folder, has no separators and is never the automatic save's.
@@ -203,5 +315,28 @@ proptest! {
             // A name survives being read back from its own file name.
             prop_assert_eq!(SaveName::try_new(name.as_str()), Ok(name));
         }
+    }
+}
+
+proptest! {
+    #![proptest_config(ProptestConfig::with_cases(24))]
+
+    /// However many automatic saves are written, the latest is the autosave and the
+    /// one before it is the previous autosave.
+    #[test]
+    fn the_autosave_is_the_latest_and_the_previous_is_the_one_before(
+        which in prop::collection::vec(any::<bool>(), 2..7)
+    ) {
+        let scratch = Scratch::new();
+        let folder = scratch.folder();
+        let saves: Vec<_> = which
+            .iter()
+            .map(|played_one| if *played_one { played().save() } else { template().save() })
+            .collect();
+        for save in &saves {
+            folder.write_automatic(save).expect("writes");
+        }
+        prop_assert_eq!(folder.read(&Slot::Auto), Ok(saves[saves.len() - 1].clone()));
+        prop_assert_eq!(folder.read(&Slot::Previous), Ok(saves[saves.len() - 2].clone()));
     }
 }

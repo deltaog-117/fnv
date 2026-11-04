@@ -51,6 +51,12 @@ impl Points {
     pub fn get(self) -> f64 {
         self.0
     }
+
+    /// This amount less `other`, stopping at zero.
+    #[must_use]
+    pub fn less(self, other: Self) -> Self {
+        Self((self.0 - other.0).max(0.0))
+    }
 }
 
 /// A damage multiplier from skill or weapon condition, from half to full effect.

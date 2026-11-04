@@ -2403,8 +2403,10 @@
     "qty": 1
    },
    {
-    "item": "Coffee pot (1, not expended)",
-    "qty": 1
+    "item": "Coffee pot",
+    "qty": 1,
+    "kept": true,
+    "item_id": "coffee_pot"
    },
    {
     "item": "Coyote tobacco chew",
@@ -2644,12 +2646,16 @@
     "item_id": "dirty_water"
    },
    {
-    "item": "Glass pitcher (2, not expended)",
-    "qty": 1
+    "item": "Glass pitcher",
+    "qty": 2,
+    "kept": true,
+    "item_id": "glass_pitcher"
    },
    {
-    "item": "Surgical tubing (1, not expended)",
-    "qty": 1
+    "item": "Surgical tubing",
+    "qty": 1,
+    "kept": true,
+    "item_id": "surgical_tubing"
    }
   ]
  },

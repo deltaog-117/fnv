@@ -11,7 +11,7 @@ use std::path::PathBuf;
 use std::sync::LazyLock;
 
 use engine::shared::{
-    Alignment, Comparison, Condition, Dlc, Effect, Modifier, NpcState, QuestState, Renown,
+    Alignment, Comparison, Condition, Dlc, Effect, FoeKind, Modifier, NpcState, QuestState, Renown,
     ReputationLevel, Skill, Special,
 };
 use jsonschema::Validator;
@@ -180,6 +180,26 @@ fn closed_sets_match_the_schema() {
         branch_enum("modifier", "skill", "skill"),
         rust_names::<Skill>()
     );
+    for tag in [
+        "damage_percent",
+        "crit_chance",
+        "crit_damage_percent",
+        "ap_cost_percent",
+        "spread_percent",
+    ] {
+        assert_eq!(
+            branch_enum("modifier", tag, "skill"),
+            rust_names::<Skill>(),
+            "{tag}"
+        );
+    }
+    for tag in ["damage_percent", "crit_damage_percent"] {
+        assert_eq!(
+            branch_enum("modifier", tag, "foe"),
+            rust_names::<FoeKind>(),
+            "{tag}"
+        );
+    }
 }
 
 proptest! {
@@ -194,7 +214,7 @@ proptest! {
 
     #[test]
     fn every_modifier_satisfies_the_schema_and_round_trips(modifier in strategies::modifier()) {
-        let json = serde_json::to_value(modifier).expect("modifiers serialize");
+        let json = serde_json::to_value(&modifier).expect("modifiers serialize");
         prop_assert!(MODIFIER.is_valid(&json), "the schema rejects {json}");
         prop_assert_eq!(json["type"].as_str(), Some(modifier.tag()));
         let back: Modifier = serde_json::from_value(json).expect("what we wrote parses");
@@ -283,6 +303,15 @@ fn both_sides_reject_the_same_invalid_modifiers() {
         json!({"type": "skill", "skill": "swimming", "amount": 5}),
         json!({"type": "all_skills", "amount": 5, "extra": true}),
         json!({"type": "teleport"}),
+        json!({"type": "damage_threshold", "amount": 128}),
+        json!({"type": "ignore_threshold", "amount": -1}),
+        json!({"type": "damage_percent", "percent": 5, "foe": "dragon"}),
+        json!({"type": "damage_percent", "percent": 5, "skill": "swimming"}),
+        json!({"type": "damage_percent", "percent": 5, "item": "stimpak"}),
+        json!({"type": "crit_chance", "percent": 5, "foe": "robot"}),
+        json!({"type": "heal_percent", "percent": 5, "skill": "guns"}),
+        json!({"type": "reload_ap_percent", "percent": -10, "skill": "guns"}),
+        json!({"type": "weapon_wear_percent"}),
     ];
     for doc in invalid {
         assert!(!MODIFIER.is_valid(&doc), "the schema accepts {doc}");

@@ -6,14 +6,15 @@ use strum::{EnumCount, IntoEnumIterator};
 
 use super::bonus::Bonuses;
 use super::book::PerkBook;
+use super::edge::{self, Edge};
 use super::error::{CreationError, ProgressError, RestoreError};
 use super::rules::{
     BASE_SKILL_HALVES, CharacterRules, Level, MAX_TRAITS, START_SPECIAL_POINTS, TAG_BONUS,
     TAG_COUNT,
 };
 use crate::shared::{
-    BoostTally, CharacterSink, CharacterView, EffectError, PerkId, Skill, SkillLevel, Special,
-    SpecialLevel, TraitId, whole_amount,
+    BoostTally, CharacterSink, CharacterView, EffectError, ItemId, PerkId, Skill, SkillLevel,
+    Special, SpecialLevel, TraitId, whole_amount,
 };
 
 /// The seven S.P.E.C.I.A.L. values; every one always holds a legal level.
@@ -433,6 +434,25 @@ impl Character {
     #[must_use]
     pub fn boosts(&self) -> &BoostTally {
         &self.boosts
+    }
+
+    /// What the perks and traits change in a fight with a weapon governed by
+    /// `skill` (`None` for a weapon no skill governs).
+    #[must_use]
+    pub fn edge(&self, skill: Option<Skill>) -> Edge {
+        Edge::of(&self.bonuses.scoped, skill)
+    }
+
+    /// Percent added to how fast the weapon in hand wears.
+    #[must_use]
+    pub fn wear_percent(&self) -> i32 {
+        edge::wear_percent(&self.bonuses.scoped)
+    }
+
+    /// Percent added to what `item` restores when it is used.
+    #[must_use]
+    pub fn heal_percent(&self, item: &ItemId) -> i32 {
+        edge::heal_percent(&self.bonuses.scoped, item)
     }
 
     /// Sets what chems, drinks and meals change for now. The game calls this each

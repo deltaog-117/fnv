@@ -25,13 +25,15 @@ pub struct RepairQuote {
     pub condition: Percent,
 }
 
-/// What a craft made.
+/// What a craft made, or what taking something apart gave.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Crafted {
     /// The item.
     pub item: ItemId,
     /// How many.
     pub count: NonZeroU32,
+    /// Everything that arrived: the product, or the parts of what was taken apart.
+    pub parts: Vec<(ItemId, NonZeroU32)>,
 }
 
 /// A carried weapon that wears, and how much of it is left.
@@ -309,7 +311,7 @@ impl Game {
                 });
             }
         }
-        for (item, need) in formula.inputs() {
+        for (item, need) in formula.inputs().chain(formula.tools()) {
             let have = self.inventory.item_count(item);
             if have < need.get() {
                 return Err(CraftError::Missing {
@@ -339,8 +341,14 @@ impl Game {
         for (item, need) in formula.inputs() {
             trial.inventory.take_item(item, need)?;
         }
+        let parts: Vec<(ItemId, NonZeroU32)> = formula
+            .outputs()
+            .map(|(item, count)| (item.clone(), count))
+            .collect();
+        for (item, count) in &parts {
+            trial.inventory.give_item(item, *count)?;
+        }
         let (item, count) = formula.output();
-        trial.inventory.give_item(item, count)?;
         for reaction in formula.reactions() {
             if reaction
                 .when
@@ -354,6 +362,7 @@ impl Game {
         Ok(Crafted {
             item: item.clone(),
             count,
+            parts,
         })
     }
 

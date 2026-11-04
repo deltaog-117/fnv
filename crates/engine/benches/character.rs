@@ -71,6 +71,25 @@ fn median_climb() -> Duration {
     times[RUNS / 2]
 }
 
+/// Edge reads per run of the third measurement: the one a fight makes for each
+/// fighter when it starts.
+const EDGES: u32 = 100_000;
+
+fn median_edge() -> Duration {
+    let character = Character::default();
+    let mut times: Vec<Duration> = (0..RUNS)
+        .map(|_| {
+            let start = Instant::now();
+            for _ in 0..EDGES {
+                std::hint::black_box(character.edge(std::hint::black_box(Some(Skill::Guns))));
+            }
+            start.elapsed()
+        })
+        .collect();
+    times.sort();
+    times[RUNS / 2]
+}
+
 /// Nanoseconds per operation with a decimal: the reads take about twenty, and a
 /// whole-nanosecond figure would hide a regression of a few percent.
 fn per_op(total: Duration, operations: u32) -> f64 {
@@ -86,5 +105,9 @@ fn main() {
         "character growth: {:.1} ns per XP award + skill point spent ({} per run)",
         per_op(median_climb(), CLIMBS * AWARDS),
         CLIMBS * AWARDS
+    );
+    println!(
+        "character edge: {:.1} ns per fight edge read ({EDGES} per run)",
+        per_op(median_edge(), EDGES)
     );
 }

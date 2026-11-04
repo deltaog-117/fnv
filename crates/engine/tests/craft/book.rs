@@ -2,7 +2,7 @@
 
 use std::num::NonZeroU32;
 
-use engine::craft::{CraftError, RecipeBook, StationBook, Unavailable};
+use engine::craft::{CraftError, RecipeBook, StationBook, Unavailable, Work};
 use engine::shared::{
     Ingredient, ItemId, LocationId, Recipe, RecipeId, RecipeMode, Station, StationId, StationKind,
 };
@@ -21,6 +21,14 @@ fn line(text: &str, qty: u32) -> Ingredient {
         item: text.to_owned(),
         item_id: Some(item(text)),
         qty: self::qty(qty),
+        kept: false,
+    }
+}
+
+fn tool(text: &str, qty: u32) -> Ingredient {
+    Ingredient {
+        kept: true,
+        ..line(text, qty)
     }
 }
 
@@ -83,9 +91,61 @@ fn an_item_listed_twice_is_one_ingredient_of_the_sum() {
 }
 
 #[test]
+fn taking_apart_spends_the_item_named_and_gives_the_listed_parts() {
+    let mut apart = recipe("apart", "round", vec![line("case", 1), line("lead", 11)]);
+    apart.mode = RecipeMode::Breakdown;
+    apart.output_qty = Some(qty(3));
+    let book = RecipeBook::new([&apart], everything_exists).expect("the book builds");
+    let formula = book
+        .get(&RecipeId::try_new("apart").expect("valid id"))
+        .expect("a formula");
+    assert_eq!(formula.work(), Work::TakeApart);
+    let spent: Vec<_> = formula
+        .inputs()
+        .map(|(i, n)| (i.as_str(), n.get()))
+        .collect();
+    assert_eq!(spent, [("round", 3)]);
+    let given: Vec<_> = formula
+        .outputs()
+        .map(|(i, n)| (i.as_str(), n.get()))
+        .collect();
+    assert_eq!(given, [("case", 1), ("lead", 11)]);
+}
+
+#[test]
+fn a_tool_is_carried_and_not_listed_among_what_is_used_up() {
+    let records = [recipe(
+        "brew",
+        "tea",
+        vec![line("leaf", 2), tool("pot", 1), tool("pot", 1)],
+    )];
+    let book = RecipeBook::new(&records, everything_exists).expect("the book builds");
+    let formula = book
+        .get(&RecipeId::try_new("brew").expect("valid id"))
+        .expect("a formula");
+    assert_eq!(formula.work(), Work::Make);
+    let used: Vec<_> = formula
+        .inputs()
+        .map(|(i, n)| (i.as_str(), n.get()))
+        .collect();
+    assert_eq!(used, [("leaf", 2)]);
+    let carried: Vec<_> = formula
+        .tools()
+        .map(|(i, n)| (i.as_str(), n.get()))
+        .collect();
+    assert_eq!(
+        carried,
+        [("pot", 2)],
+        "a tool listed twice is one tool of the sum"
+    );
+}
+
+#[test]
 fn each_missing_part_gives_its_own_reason() {
-    let mut breakdown = recipe("apart", "x", vec![line("a", 1)]);
-    breakdown.mode = RecipeMode::Breakdown;
+    let mut no_subject = recipe("nosubject", "x", vec![line("a", 1)]);
+    no_subject.mode = RecipeMode::Breakdown;
+    no_subject.output_item_id = None;
+    let tools_only = recipe("toolsonly", "x", vec![tool("a", 1)]);
     let mut no_station = recipe("nostation", "x", vec![line("a", 1)]);
     no_station.station = None;
     let mut no_output = recipe("nooutput", "x", vec![line("a", 1)]);
@@ -96,7 +156,8 @@ fn each_missing_part_gives_its_own_reason() {
     unmatched.ingredients[0].item_id = None;
     let empty = recipe("empty", "x", vec![]);
     let records = [
-        breakdown,
+        no_subject,
+        tools_only,
         no_station,
         no_output,
         unknown_output,
@@ -110,7 +171,8 @@ fn each_missing_part_gives_its_own_reason() {
         .unavailable()
         .map(|(id, why)| (id.as_str().to_owned(), why.clone()))
         .collect();
-    assert_eq!(reasons["apart"], Unavailable::Breakdown);
+    assert_eq!(reasons["nosubject"], Unavailable::NoSubject);
+    assert_eq!(reasons["toolsonly"], Unavailable::NoIngredients);
     assert_eq!(reasons["nostation"], Unavailable::NoStation);
     assert_eq!(reasons["nooutput"], Unavailable::NoOutput);
     assert_eq!(
@@ -218,7 +280,8 @@ proptest! {
             if let Some(formula) = formula {
                 prop_assert!(formula.inputs().count() > 0);
                 prop_assert!(formula.inputs().all(|(item, n)| item.as_str() != "ghost" && n.get() > 0));
-                prop_assert!(formula.output().0.as_str() != "ghost");
+                prop_assert!(formula.outputs().count() > 0);
+                prop_assert!(formula.outputs().all(|(item, n)| item.as_str() != "ghost" && n.get() > 0));
             }
         }
         prop_assert_eq!(book.len() + book.unavailable().count(), records.len());

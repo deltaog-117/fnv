@@ -4,9 +4,10 @@ use std::num::NonZeroU32;
 
 use thiserror::Error;
 
-use super::damage::{Rules, damage_after_armor, damage_before_armor};
+use super::damage::{Against, Rules, damage_after_armor, damage_before_armor};
 use super::hit::{Aim, Dice, HitModel};
 use super::stats::{Multiplier, Percent, Points, Power};
+use crate::shared::FoeKind;
 
 /// What a fighter's weapon does, already validated.
 #[derive(Debug, Clone, Copy, PartialEq)]
@@ -72,6 +73,18 @@ pub trait Combatant {
     /// The chance that running away works. A fighter that cannot run says never.
     fn flee_chance(&self) -> Percent {
         Percent::NEVER
+    }
+    /// What sort of creature this is, for attackers that hit one sort harder.
+    fn kind(&self) -> FoeKind {
+        FoeKind::Human
+    }
+    /// What this fighter's attacks gain against a foe of `kind`.
+    fn against(&self, _kind: FoeKind) -> Against {
+        Against::NONE
+    }
+    /// Points of the target's damage threshold this fighter's attacks ignore.
+    fn ignored_threshold(&self) -> Points {
+        Points::ZERO
     }
 }
 
@@ -408,6 +421,10 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             return Err(CombatError::FriendlyFire(target.0));
         }
         let profile = self.fighters[attacker].who.attack();
+        let profile = self.fighters[attacker]
+            .who
+            .against(victim.who.kind())
+            .applied(&profile);
         let needed = profile.ap_cost.get();
         if needed > self.ap_left {
             return Err(CombatError::NotEnoughAp {
@@ -436,7 +453,11 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
         let strike = if roll(dice) <= chance.get() {
             let critical = roll(dice) <= self.fighters[attacker].who.crit_chance().get();
             let raw = damage_before_armor(&profile, power, critical);
-            let through = damage_after_armor(&self.rules, raw, victim.who.dt(), victim.who.dr());
+            let dt = victim
+                .who
+                .dt()
+                .less(self.fighters[attacker].who.ignored_threshold());
+            let through = damage_after_armor(&self.rules, raw, dt, victim.who.dr());
             Strike::Hit {
                 critical,
                 damage: whole_hit_points(through),

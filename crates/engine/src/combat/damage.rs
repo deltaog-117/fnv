@@ -4,6 +4,38 @@
 use super::fight::AttackProfile;
 use super::stats::{Points, Power, StatError};
 
+/// What an attacker's training adds against one kind of foe, in percent.
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq)]
+pub struct Against {
+    /// Added to the weapon's damage.
+    pub damage_percent: i32,
+    /// Added to the damage a critical hit brings.
+    pub crit_damage_percent: i32,
+}
+
+impl Against {
+    /// No difference.
+    pub const NONE: Self = Self {
+        damage_percent: 0,
+        crit_damage_percent: 0,
+    };
+
+    /// The attack with this difference built in. A penalty never takes damage below
+    /// zero.
+    #[must_use]
+    pub fn applied(self, profile: &AttackProfile) -> AttackProfile {
+        let scale = |points: Points, percent: i32| {
+            Points::try_new(points.get() * (1.0 + f64::from(percent) / 100.0).max(0.0))
+                .unwrap_or(points)
+        };
+        AttackProfile {
+            base_damage: scale(profile.base_damage, self.damage_percent),
+            crit_damage: scale(profile.crit_damage, self.crit_damage_percent),
+            ..*profile
+        }
+    }
+}
+
 /// The constants of the damage steps.
 ///
 /// They mirror `constants.dr_cap` and `constants.min_damage_fraction` in

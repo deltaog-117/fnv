@@ -1,9 +1,9 @@
-//! Making things at a station: the recipes on the left, what the chosen one needs
+//! Making things, and taking them apart, at a station: the recipes on the left, what the chosen one needs
 //! on the right.
 
 use std::sync::Arc;
 
-use engine::craft::Formula;
+use engine::craft::{Formula, Work};
 use engine::game::Game;
 use engine::shared::{InventoryView, RecipeId, StationId};
 use ratatui::Frame;
@@ -69,11 +69,48 @@ impl Craft {
             return Next::Stay;
         };
         let note = match game.craft(&self.station, &recipe) {
+            Ok(made) if made.parts.len() > 1 || self.takes_apart(game, &recipe) => {
+                let parts: Vec<String> = made
+                    .parts
+                    .iter()
+                    .map(|(item, count)| format!("{} x{count}", self.names.name(item)))
+                    .collect();
+                format!("You take it apart and get {}.", parts.join(", "))
+            }
             Ok(made) => format!("You make {} x{}.", self.names.name(&made.item), made.count),
             Err(error) => error.to_string(),
         };
         log.push(Entry::Note(note));
         Next::Stay
+    }
+
+    /// Whether the recipe takes something apart.
+    fn takes_apart(&self, game: &Game, recipe: &RecipeId) -> bool {
+        game.recipes_at(&self.station)
+            .into_iter()
+            .any(|(id, formula)| id == recipe && formula.work() == Work::TakeApart)
+    }
+
+    /// What the list and the heading call a recipe: what it makes, or what it takes
+    /// apart.
+    fn title(&self, formula: &Formula) -> String {
+        match formula.work() {
+            Work::Make => {
+                let (output, count) = formula.output();
+                if count.get() > 1 {
+                    format!("{} x{count}", self.names.name(output))
+                } else {
+                    self.names.name(output)
+                }
+            }
+            Work::TakeApart => {
+                let subject = formula.inputs().next().map_or_else(
+                    || formula.name().to_owned(),
+                    |(item, _)| self.names.name(item),
+                );
+                format!("Take apart {subject}")
+            }
+        }
     }
 
     /// The station's recipes in the order the list shows them: the ones the player
@@ -83,7 +120,7 @@ impl Craft {
         recipes.sort_by_cached_key(|(id, formula)| {
             (
                 game.can_craft(&self.station, id).is_err(),
-                self.names.name(formula.output().0),
+                self.title(formula),
             )
         });
         recipes
@@ -105,12 +142,7 @@ impl Craft {
             .iter()
             .enumerate()
             .map(|(index, (id, formula))| {
-                let (output, count) = formula.output();
-                let label = if count.get() > 1 {
-                    format!("{} x{count}", self.names.name(output))
-                } else {
-                    self.names.name(output)
-                };
+                let label = self.title(formula);
                 let tag = if game.can_craft(&self.station, id).is_ok() {
                     "[ready]"
                 } else {
@@ -141,11 +173,7 @@ impl Craft {
             .map(|(id, formula)| (id.clone(), formula));
         let mut lines = Vec::new();
         if let Some((id, formula)) = chosen {
-            let (output, count) = formula.output();
-            lines.push(Line::styled(
-                format!("{} x{count}", self.names.name(output)),
-                theme::heading(),
-            ));
+            lines.push(Line::styled(self.title(formula), theme::heading()));
             if let Some((skill, level)) = formula.skill() {
                 lines.push(Line::styled(
                     format!("Needs {} {}.", skill.name(), level.get()),
@@ -165,6 +193,32 @@ impl Craft {
                     format!("{} - {have} of {need}", self.names.name(item)),
                     style,
                 ));
+            }
+            if formula.work() == Work::TakeApart {
+                lines.push(Line::default());
+                lines.push(Line::styled("Gives:", theme::heading()));
+                for (item, count) in formula.outputs() {
+                    lines.push(Line::styled(
+                        format!("{} x{count}", self.names.name(item)),
+                        theme::text(),
+                    ));
+                }
+            }
+            if formula.tools().next().is_some() {
+                lines.push(Line::default());
+                lines.push(Line::styled("Carry (not used up):", theme::heading()));
+                for (item, need) in formula.tools() {
+                    let have = game.inventory().item_count(item);
+                    let style = if have >= need.get() {
+                        theme::text()
+                    } else {
+                        theme::warning()
+                    };
+                    lines.push(Line::styled(
+                        format!("{} - {have} of {need}", self.names.name(item)),
+                        style,
+                    ));
+                }
             }
             if let Err(reason) = game.can_craft(&self.station, &id) {
                 lines.push(Line::default());

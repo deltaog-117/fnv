@@ -7,7 +7,17 @@
   "form_id": "00137b02",
   "description": "The flamer that burns twice as bright burns half as long. All weapons have +3% chance to Critical Hit, but equipment condition decays 15% faster.",
   "benefits": "+3% Critical Chance",
-  "penalties": "+15% weapon wear"
+  "penalties": "+15% weapon wear",
+  "modifiers": [
+   {
+    "type": "crit_chance",
+    "percent": 3
+   },
+   {
+    "type": "weapon_wear_percent",
+    "percent": 15
+   }
+  ]
  },
  {
   "id": "claustrophobia",
@@ -35,7 +45,29 @@
   "form_id": "00135ec7",
   "description": "While using Guns and Energy Weapons, you fire 20% more quickly but your shots are 20% less accurate.",
   "benefits": "Fire Rate increases by 20%,; AP costs are decreased by 20% for all firearms with Energy Weapons and Guns",
-  "penalties": "Weapon Spread increases by 20%,; V.A.T.S Accuracy decreases by 20% for all with Energy Weapons and Guns"
+  "penalties": "Weapon Spread increases by 20%,; V.A.T.S Accuracy decreases by 20% for all with Energy Weapons and Guns",
+  "modifiers": [
+   {
+    "type": "ap_cost_percent",
+    "percent": -20,
+    "skill": "guns"
+   },
+   {
+    "type": "ap_cost_percent",
+    "percent": -20,
+    "skill": "energy_weapons"
+   },
+   {
+    "type": "spread_percent",
+    "percent": 20,
+    "skill": "guns"
+   },
+   {
+    "type": "spread_percent",
+    "percent": 20,
+    "skill": "energy_weapons"
+   }
+  ]
  },
  {
   "id": "four_eyes",
@@ -118,7 +150,29 @@
   "form_id": "00135ec5",
   "description": "Your melee and unarmed attacks do more damage, but less critical hit damage.",
   "benefits": "+20% damage (Melee and Unarmed only)",
-  "penalties": "-60% Critical damage. (Melee and Unarmed only)"
+  "penalties": "-60% Critical damage. (Melee and Unarmed only)",
+  "modifiers": [
+   {
+    "type": "damage_percent",
+    "percent": 20,
+    "skill": "melee_weapons"
+   },
+   {
+    "type": "damage_percent",
+    "percent": 20,
+    "skill": "unarmed"
+   },
+   {
+    "type": "crit_damage_percent",
+    "percent": -60,
+    "skill": "melee_weapons"
+   },
+   {
+    "type": "crit_damage_percent",
+    "percent": -60,
+    "skill": "unarmed"
+   }
+  ]
  },
  {
   "id": "hoarder",
@@ -146,7 +200,21 @@
   "form_id": "00135f05",
   "description": "You have +10 Action Points but your reckless nature causes you to have -2 Damage Threshold.",
   "benefits": "+10 Action Points",
-  "penalties": "-2 Damage Threshold, -15% Damage Resistance"
+  "penalties": "-2 Damage Threshold, -15% Damage Resistance",
+  "modifiers": [
+   {
+    "type": "action_points",
+    "amount": 10
+   },
+   {
+    "type": "damage_threshold",
+    "amount": -2
+   },
+   {
+    "type": "damage_resistance",
+    "percent": -15
+   }
+  ]
  },
  {
   "id": "logan_s_loophole",
@@ -206,7 +274,29 @@
   "form_id": "00135ec8",
   "description": "While using Guns and Energy Weapons, you fire 20% more slowly but are 20% more accurate.",
   "benefits": "+20% accuracy with Guns and Energy Weapons",
-  "penalties": "-20% fire rate with guns and energy weapons; +20% AP required per shot"
+  "penalties": "-20% fire rate with guns and energy weapons; +20% AP required per shot",
+  "modifiers": [
+   {
+    "type": "ap_cost_percent",
+    "percent": 20,
+    "skill": "guns"
+   },
+   {
+    "type": "ap_cost_percent",
+    "percent": 20,
+    "skill": "energy_weapons"
+   },
+   {
+    "type": "spread_percent",
+    "percent": -20,
+    "skill": "guns"
+   },
+   {
+    "type": "spread_percent",
+    "percent": -20,
+    "skill": "energy_weapons"
+   }
+  ]
  },
  {
   "id": "wild_wasteland",

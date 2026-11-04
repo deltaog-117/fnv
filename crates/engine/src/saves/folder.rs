@@ -1,8 +1,12 @@
-//! A folder of named saves, and the one automatic save beside them.
+//! A folder of named saves, and the automatic saves beside them.
 //!
 //! Every save is one file, `<name>.json`, in the folder. A name is checked before it
 //! is ever turned into a path, so no name can point outside the folder, and the
-//! name `autosave` belongs to the game: only the automatic save may use it.
+//! names `autosave` and `autosave_previous` belong to the game: only the automatic
+//! saves may use them. The automatic save keeps the one before it as
+//! `autosave_previous`, so a bad moment can be stepped back from. The single
+//! `save.json` an older game wrote, one level above the folder, is listed as the old
+//! save and can still be loaded.
 
 use std::fmt;
 use std::fs;
@@ -18,6 +22,10 @@ use crate::shared::LocationId;
 
 /// The name the automatic save is kept under.
 pub const AUTOSAVE: &str = "autosave";
+/// The name the automatic save before the latest is kept under.
+pub const AUTOSAVE_PREVIOUS: &str = "autosave_previous";
+/// The file an older game wrote, one level above the saves folder.
+const LEGACY_FILE: &str = "save.json";
 /// The longest name, in characters.
 pub const MAX_NAME_LEN: usize = 40;
 const EXTENSION: &str = "json";
@@ -34,15 +42,16 @@ pub enum NameError {
     /// A character other than a letter, a digit, a space, `-` or `_`.
     #[error("a save name may hold only letters, digits, spaces, '-' and '_', not {0:?}")]
     BadCharacter(char),
-    /// The name is the automatic save's.
-    #[error("\"{AUTOSAVE}\" is kept for the automatic save")]
+    /// The name is an automatic save's.
+    #[error("\"{AUTOSAVE}\" and \"{AUTOSAVE_PREVIOUS}\" are kept for the automatic saves")]
     Reserved,
 }
 
 /// The name of a manual save: plain text that is safe as a file name.
 ///
 /// Letters (ASCII), digits, spaces, `-` and `_`, up to [`MAX_NAME_LEN`] characters,
-/// trimmed of spaces at both ends, and not `autosave` in any case.
+/// trimmed of spaces at both ends, and not `autosave` or `autosave_previous` in any
+/// case.
 #[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct SaveName(String);
 
@@ -69,7 +78,8 @@ impl SaveName {
         if let Some(bad) = trimmed.chars().find(|c| !Self::allows(*c)) {
             return Err(NameError::BadCharacter(bad));
         }
-        if trimmed.eq_ignore_ascii_case(AUTOSAVE) {
+        if trimmed.eq_ignore_ascii_case(AUTOSAVE) || trimmed.eq_ignore_ascii_case(AUTOSAVE_PREVIOUS)
+        {
             return Err(NameError::Reserved);
         }
         Ok(Self(trimmed.to_owned()))
@@ -88,20 +98,32 @@ impl fmt::Display for SaveName {
     }
 }
 
-/// Which save: one the player named, or the automatic one.
+/// Which save: one the player named, an automatic one, or the old single file.
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub enum Slot {
     /// A save the player named.
     Named(SaveName),
     /// The automatic save.
     Auto,
+    /// The automatic save before the latest one.
+    Previous,
+    /// The single `save.json` an older game wrote. It is only ever read or deleted.
+    Legacy,
 }
 
 impl Slot {
+    /// Whether the game writes this slot by itself.
+    #[must_use]
+    pub fn is_automatic(&self) -> bool {
+        matches!(self, Self::Auto | Self::Previous)
+    }
+
     fn stem(&self) -> &str {
         match self {
             Self::Named(name) => name.as_str(),
             Self::Auto => AUTOSAVE,
+            Self::Previous => AUTOSAVE_PREVIOUS,
+            Self::Legacy => "save",
         }
     }
 
@@ -111,6 +133,8 @@ impl Slot {
         match self {
             Self::Named(name) => name.to_string(),
             Self::Auto => "Autosave".to_owned(),
+            Self::Previous => "Previous autosave".to_owned(),
+            Self::Legacy => "Old save".to_owned(),
         }
     }
 }
@@ -176,10 +200,16 @@ impl SaveFolder {
     }
 
     /// The file a slot is kept in. Names are checked, so this is always directly
-    /// inside the folder.
+    /// inside the folder, except the old save, which sits beside it.
     #[must_use]
     pub fn path_of(&self, slot: &Slot) -> PathBuf {
-        self.dir.join(format!("{}.{EXTENSION}", slot.stem()))
+        match slot {
+            Slot::Legacy => self.dir.parent().map_or_else(
+                || PathBuf::from(LEGACY_FILE),
+                |parent| parent.join(LEGACY_FILE),
+            ),
+            _ => self.dir.join(format!("{}.{EXTENSION}", slot.stem())),
+        }
     }
 
     /// Whether a save exists in the slot.
@@ -192,9 +222,73 @@ impl SaveFolder {
     ///
     /// # Errors
     ///
-    /// [`SaveError::Io`] when the folder or the file cannot be written.
+    /// [`SaveError::Io`] when the folder or the file cannot be written, or when the
+    /// slot is the old save, which is never written.
     pub fn write(&self, slot: &Slot, save: &Save) -> Result<(), SaveError> {
+        if *slot == Slot::Legacy {
+            return Err(SaveError::Io("the old save is never written".to_owned()));
+        }
         save.write(&self.path_of(slot))
+    }
+
+    /// Writes the automatic save, first keeping the one it replaces as the previous
+    /// automatic save. An automatic save that cannot be read is not kept over a
+    /// good previous one. The new save is written last and whole, so a failure
+    /// leaves the latest automatic save as it was.
+    ///
+    /// # Errors
+    ///
+    /// [`SaveError::Io`] when the folder or a file cannot be written.
+    pub fn write_automatic(&self, save: &Save) -> Result<(), SaveError> {
+        let latest = self.path_of(&Slot::Auto);
+        if latest.is_file() && Save::read(&latest).is_ok() {
+            let previous = self.path_of(&Slot::Previous);
+            let staging = previous.with_extension("json.tmp");
+            let kept = fs::copy(&latest, &staging)
+                .and_then(|_| fs::rename(&staging, &previous))
+                .map_err(|error| {
+                    // A half-made copy is not left lying in the folder.
+                    let _ = fs::remove_file(&staging);
+                    SaveError::Io(format!("cannot keep {}: {error}", latest.display()))
+                });
+            kept?;
+        }
+        self.write(&Slot::Auto, save)
+    }
+
+    /// Deletes the save in a slot.
+    ///
+    /// # Errors
+    ///
+    /// [`SaveError::Io`] when there is no such save or it cannot be removed.
+    pub fn delete(&self, slot: &Slot) -> Result<(), SaveError> {
+        let path = self.path_of(slot);
+        fs::remove_file(&path)
+            .map_err(|error| SaveError::Io(format!("cannot delete {}: {error}", path.display())))
+    }
+
+    /// Gives a named save a new name. Nothing is replaced: a save already holding
+    /// the new name is refused.
+    ///
+    /// # Errors
+    ///
+    /// [`SaveError::Io`] when `from` does not exist, `to` already does, or the file
+    /// cannot be renamed.
+    pub fn rename(&self, from: &SaveName, to: &SaveName) -> Result<(), SaveError> {
+        let (old, new) = (
+            self.path_of(&Slot::Named(from.clone())),
+            self.path_of(&Slot::Named(to.clone())),
+        );
+        if !old.is_file() {
+            return Err(SaveError::Io(format!("there is no save named \"{from}\"")));
+        }
+        if new.exists() {
+            return Err(SaveError::Io(format!(
+                "a save named \"{to}\" already exists"
+            )));
+        }
+        fs::rename(&old, &new)
+            .map_err(|error| SaveError::Io(format!("cannot rename \"{from}\": {error}")))
     }
 
     /// Reads the save in a slot.
@@ -209,15 +303,17 @@ impl SaveFolder {
     /// Every save in the folder, the most recently written first (and by name among
     /// saves written at the same moment). A file that is not a save is listed with
     /// the reason, so the player can see it is there; files whose names are not
-    /// valid save names are left alone. A missing folder holds no saves.
+    /// valid save names are left alone. A missing folder holds no saves of its own.
     ///
     /// # Errors
     ///
     /// [`SaveError::Io`] when the folder exists but cannot be read.
     pub fn list(&self) -> Result<Vec<SaveEntry>, SaveError> {
         let reader = match fs::read_dir(&self.dir) {
-            Ok(reader) => reader,
-            Err(error) if error.kind() == std::io::ErrorKind::NotFound => return Ok(Vec::new()),
+            Ok(reader) => Some(reader),
+            // The folder is made by the first save, but the old save may be there
+            // already.
+            Err(error) if error.kind() == std::io::ErrorKind::NotFound => None,
             Err(error) => {
                 return Err(SaveError::Io(format!(
                     "cannot read {}: {error}",
@@ -225,7 +321,10 @@ impl SaveFolder {
                 )));
             }
         };
+        let legacy = self.path_of(&Slot::Legacy);
         let mut entries: Vec<SaveEntry> = reader
+            .into_iter()
+            .flatten()
             .filter_map(Result::ok)
             .filter_map(|file| {
                 let path = file.path();
@@ -235,6 +334,8 @@ impl SaveFolder {
                 let stem = path.file_stem()?.to_str()?;
                 let slot = if stem == AUTOSAVE {
                     Slot::Auto
+                } else if stem == AUTOSAVE_PREVIOUS {
+                    Slot::Previous
                 } else {
                     Slot::Named(
                         SaveName::try_new(stem)
@@ -252,6 +353,7 @@ impl SaveFolder {
                     summary,
                 })
             })
+            .chain(legacy.is_file().then(|| entry_of(Slot::Legacy, &legacy)))
             .collect();
         entries.sort_by(|a, b| {
             b.modified
@@ -259,5 +361,16 @@ impl SaveFolder {
                 .then_with(|| a.slot.label().cmp(&b.slot.label()))
         });
         Ok(entries)
+    }
+}
+
+/// The listing of one file, which may turn out not to be a save.
+fn entry_of(slot: Slot, path: &Path) -> SaveEntry {
+    SaveEntry {
+        slot,
+        modified: fs::metadata(path).and_then(|m| m.modified()).ok(),
+        summary: Save::read(path)
+            .map(|save| SaveSummary::of(&save))
+            .map_err(|error| error.to_string()),
     }
 }

@@ -53,6 +53,10 @@
             "description": "Armor item id.",
             "$ref": "common.schema.json#/$defs/id"
           },
+          "kind": {
+            "description": "What sort of creature the enemy is; a person when absent.",
+            "$ref": "common.schema.json#/$defs/foe_kind"
+          },
           "hp": {
             "description": "Hit points when the NPC record gives none.",
             "type": "integer",

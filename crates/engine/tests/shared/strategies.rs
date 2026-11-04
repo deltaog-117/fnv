@@ -3,7 +3,7 @@
 use std::num::NonZeroU32;
 
 use engine::shared::{
-    Alignment, CompanionId, Comparison, Condition, Effect, EndingId, FactionId, FlagId,
+    Alignment, CompanionId, Comparison, Condition, Effect, EndingId, FactionId, FlagId, FoeKind,
     HealthPercent, ItemId, Modifier, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId,
     QuestStage, QuestState, Renown, RenownTier, ReputationLevel, Skill, SkillLevel, Special,
     SpecialLevel,
@@ -182,9 +182,12 @@ pub fn effect() -> impl Strategy<Value = Effect> {
     prop_oneof![quests, standing, things, world]
 }
 
-/// Any modifier, with amounts across the whole range each field allows.
+/// Any modifier, with amounts across the whole range each field allows and each
+/// condition present or absent.
 pub fn modifier() -> impl Strategy<Value = Modifier> {
-    prop_oneof![
+    let skill = || proptest::option::of(any_of::<Skill>());
+    let foe = || proptest::option::of(any_of::<FoeKind>());
+    let sheet = prop_oneof![
         any::<u8>().prop_map(|amount| Modifier::SkillPointsPerLevel { amount }),
         any::<i8>().prop_map(|percent| Modifier::XpPercent { percent }),
         any::<u16>().prop_map(|pounds| Modifier::CarryWeight { pounds }),
@@ -194,4 +197,36 @@ pub fn modifier() -> impl Strategy<Value = Modifier> {
         (any_of::<Skill>(), any::<i8>())
             .prop_map(|(skill, amount)| Modifier::Skill { skill, amount }),
     ]
+    .boxed();
+    let armor = prop_oneof![
+        any::<i8>().prop_map(|amount| Modifier::DamageThreshold { amount }),
+        any::<i8>().prop_map(|percent| Modifier::DamageResistance { percent }),
+        any::<u8>().prop_map(|amount| Modifier::IgnoreThreshold { amount }),
+        any::<i8>().prop_map(|percent| Modifier::WeaponWearPercent { percent }),
+        any::<i8>().prop_map(|percent| Modifier::ReloadApPercent { percent }),
+    ]
+    .boxed();
+    let weapon = prop_oneof![
+        (any::<i8>(), skill(), foe()).prop_map(|(percent, skill, foe)| Modifier::DamagePercent {
+            percent,
+            skill,
+            foe
+        }),
+        (any::<i8>(), skill()).prop_map(|(percent, skill)| Modifier::CritChance { percent, skill }),
+        (any::<i8>(), skill(), foe()).prop_map(|(percent, skill, foe)| {
+            Modifier::CritDamagePercent {
+                percent,
+                skill,
+                foe,
+            }
+        }),
+        (any::<i8>(), skill())
+            .prop_map(|(percent, skill)| Modifier::ApCostPercent { percent, skill }),
+        (any::<i8>(), skill())
+            .prop_map(|(percent, skill)| Modifier::SpreadPercent { percent, skill }),
+        (any::<i8>(), proptest::option::of(item_id()))
+            .prop_map(|(percent, item)| Modifier::HealPercent { percent, item }),
+    ]
+    .boxed();
+    prop_oneof![sheet, armor, weapon]
 }

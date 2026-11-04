@@ -120,7 +120,7 @@ impl Trade {
                     self.choose(index, game, log);
                 }
             }
-            Command::Quit => {}
+            Command::Quit | Command::Delete | Command::Rename => {}
         }
         Next::Stay
     }
@@ -179,7 +179,7 @@ impl Trade {
                     }
                 }
             }
-            Command::Pick(_) | Command::Quit => {}
+            Command::Pick(_) | Command::Quit | Command::Delete | Command::Rename => {}
         }
     }
 
