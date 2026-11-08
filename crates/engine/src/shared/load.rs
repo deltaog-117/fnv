@@ -16,7 +16,7 @@ use thiserror::Error;
 
 use super::data::{
     Ammo, Armor, Bed, Consumable, Dialogue, Encounter, Faction, Find, Location, Misc, Npc, Perk,
-    Quest, Recipe, Station, Trait, Vendor, Weapon,
+    Quest, Recipe, Station, Trait, Vendor, Weapon, WeaponMod,
 };
 use super::error::ModelError;
 use super::ids::{
@@ -61,6 +61,7 @@ impl_record!(
     Vendor => VendorId,
     Bed => BedId,
     Misc => ItemId,
+    WeaponMod => ItemId,
     Recipe => RecipeId,
     Station => StationId,
     Find => FindId,
@@ -251,6 +252,8 @@ pub struct GameData {
     pub beds: Catalog<Bed>,
     /// Every crafting component and other miscellany.
     pub misc: Catalog<Misc>,
+    /// Every weapon mod.
+    pub weapon_mods: Catalog<WeaponMod>,
     /// Every crafting recipe.
     pub recipes: Catalog<Recipe>,
     /// Every crafting station.
@@ -317,6 +320,7 @@ impl GameData {
             vendors: read_catalog(dir, "vendors.json")?,
             beds: read_catalog(dir, "beds.json")?,
             misc: read_catalog(dir, "misc.json")?,
+            weapon_mods: read_catalog(dir, "weapon_mods.json")?,
             recipes: read_catalog(dir, "recipes.json")?,
             stations: read_catalog(dir, "stations.json")?,
             finds: read_catalog(dir, "finds.json")?,

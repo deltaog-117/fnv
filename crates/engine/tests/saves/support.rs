@@ -20,6 +20,7 @@ use engine::shared::{
 };
 use engine::trade::VendorBook;
 use engine::travel::TravelBook;
+use engine::weapon_mods::WeaponModBook;
 use engine::world::WorldBook;
 
 pub fn place() -> LocationId {
@@ -63,6 +64,9 @@ static TEMPLATE: LazyLock<Game> = LazyLock::new(|| {
         .with_items(items)
         .with_addictions(Arc::new(
             AddictionBook::from_data(&data).expect("the addiction book builds"),
+        ))
+        .with_weapon_mods(Arc::new(
+            WeaponModBook::from_data(&data).expect("the weapon mods build"),
         ))
         .with_recipes(Arc::new(recipes))
         .with_stations(Arc::new(

@@ -13,6 +13,7 @@ use crate::craft::{RecipeBook, StationBook};
 use crate::effects::{Active, ActiveEffects};
 use crate::gather::{FindBook, Gathered};
 use crate::inventory::{CopyId, Inventory, InventoryError, ItemBook, Slot, WeaponCopy};
+use crate::poison::Poison;
 use crate::quests::{QuestBook, QuestLog};
 use crate::radiation::Radiation;
 use crate::reputation::{ReputationBook, Standing};
@@ -29,8 +30,10 @@ use crate::trade::{
     Market, Shop, TradeError, VendorBook, buy_total, buy_total_with_discount, sell_total,
 };
 use crate::travel::{Route, TravelBook, TravelError};
+use crate::weapon_mods::WeaponModBook;
 use crate::world::{WorldBook, WorldState};
 
+mod fit;
 mod save;
 mod upkeep;
 
@@ -52,6 +55,10 @@ pub struct Used {
     pub rads_out: u16,
     /// The addiction the dose started, if it did.
     pub addicted: Option<AddictionKind>,
+    /// Poison points that got in, after resistance.
+    pub poison_in: u16,
+    /// Whether the dose ended poison the player had.
+    pub cured_poison: bool,
 }
 
 /// A quest effect that could not run because its feature is not built yet, kept
@@ -84,6 +91,8 @@ pub struct Game {
     character: Character,
     inventory: Inventory,
     arsenal: Arc<Arsenal>,
+    /// Which mod fits which weapon, and what each changes.
+    weapon_mods: Arc<WeaponModBook>,
     perks: Arc<PerkBook>,
     /// What each merchant has now; changes with every trade.
     market: Market,
@@ -102,6 +111,8 @@ pub struct Game {
     effects: ActiveEffects,
     /// Radiation absorbed.
     radiation: Radiation,
+    /// Poison in the blood, paid out in hit points as time passes.
+    poison: Poison,
     /// What the player is addicted to, and which items can addict.
     addictions: Addictions,
     addiction_book: Arc<AddictionBook>,
@@ -138,6 +149,7 @@ impl Game {
             character: Character::default(),
             inventory: Inventory::new(Arc::default()),
             arsenal: Arc::default(),
+            weapon_mods: Arc::default(),
             perks: Arc::default(),
             market: Market::default(),
             beds: Arc::default(),
@@ -148,6 +160,7 @@ impl Game {
             clock: GameClock::START,
             effects: ActiveEffects::default(),
             radiation: Radiation::default(),
+            poison: Poison::default(),
             addictions: Addictions::default(),
             addiction_book: Arc::default(),
             map: Arc::default(),
@@ -172,6 +185,14 @@ impl Game {
     #[must_use]
     pub fn with_arsenal(mut self, arsenal: Arc<Arsenal>) -> Self {
         self.arsenal = arsenal;
+        self
+    }
+
+    /// The same game over the weapon mods that exist. Without a book no mod fits any
+    /// weapon, so call this before play.
+    #[must_use]
+    pub fn with_weapon_mods(mut self, mods: Arc<WeaponModBook>) -> Self {
+        self.weapon_mods = mods;
         self
     }
 
@@ -301,6 +322,14 @@ impl Game {
         self
     }
 
+    /// The same game with the player holding `points` of poison (never more than
+    /// [`Poison::MAX`]), for a scenario or a test that starts poisoned.
+    #[must_use]
+    pub fn with_poison(mut self, points: u16) -> Self {
+        self.poison = Poison::holding(points);
+        self
+    }
+
     /// The same game with the player addicted to `kind` as of now, for a scenario
     /// or a test that starts hooked. Set the character first.
     #[must_use]
@@ -405,7 +434,22 @@ impl Game {
         self.clock.advance(span)?;
         self.market.restock(before, self.clock.as_minutes());
         self.expire_effects();
+        let drained = self
+            .poison
+            .elapse(self.clock.as_minutes().saturating_sub(before));
+        self.hurt_by_poison(drained);
         Ok(())
+    }
+
+    /// Turns the poison that left the blood into wounds. Poison alone never takes the
+    /// player's last hit point (a stand-in: the wiki lets it kill), so a poisoned
+    /// player who waits is left standing and can still reach an antidote.
+    fn hurt_by_poison(&mut self, points: u16) {
+        let limit = self.character.max_hp().saturating_sub(1);
+        self.wounds = self
+            .wounds
+            .saturating_add(u32::from(points))
+            .min(limit.max(self.wounds));
     }
 
     /// The boosts in force now: what each changes, by how much, and the minute it
@@ -455,6 +499,18 @@ impl Game {
     #[must_use]
     pub fn rads(&self) -> Rads {
         self.radiation.rads()
+    }
+
+    /// The poison in the blood, in hit points still to be lost.
+    #[must_use]
+    pub fn poison(&self) -> u16 {
+        self.poison.left()
+    }
+
+    /// How much of the poison offered the player's body keeps out, in percent.
+    #[must_use]
+    pub fn poison_resistance(&self) -> u8 {
+        self.character.poison_resistance()
     }
 
     /// The addictions the player has.
@@ -601,12 +657,17 @@ impl Game {
         let weapon_wear = copy
             .and_then(|id| self.inventory.weapon(id))
             .map_or(0, WeaponCopy::lost);
+        let fitting = copy
+            .and_then(|id| self.inventory.weapon(id))
+            .map(|held| self.fitting_of(held))
+            .unwrap_or_default();
         let player = self.arsenal.player(
             &self.character,
             wielded,
             &worn,
             &self.inventory,
             weapon_wear,
+            &fitting,
         )?;
         let prepared = self
             .arsenal
@@ -682,7 +743,10 @@ impl Game {
         let Some(held) = self.inventory.weapon(copy) else {
             return;
         };
-        let Some(max) = self.arsenal.condition_max(held.item()) else {
+        let Some(max) = self
+            .arsenal
+            .condition_max(held.item(), &self.fitting_of(held))
+        else {
             return;
         };
         // Rounded once over the whole fight, so the wear does not depend on how the
@@ -700,7 +764,9 @@ impl Game {
     #[must_use]
     pub fn copy_condition(&self, copy: CopyId) -> Option<Percent> {
         let held = self.inventory.weapon(copy)?;
-        let max = self.arsenal.condition_max(held.item())?;
+        let max = self
+            .arsenal
+            .condition_max(held.item(), &self.fitting_of(held))?;
         Some(Condition::new(max, held.lost()).percent())
     }
 
@@ -804,9 +870,15 @@ impl Game {
         let Some(effect) = self.inventory.item_use(item) else {
             return Err(InventoryError::NoEffect(item.clone()));
         };
-        let (heal, rads, boosts) = match &effect {
-            ItemUse::Heal(hp) | ItemUse::MedicineHeal(hp) => (Some(*hp), 0, &[][..]),
-            ItemUse::Boost(boost) => (boost.heal, boost.rads, boost.effects.as_slice()),
+        let (heal, rads, boosts, poison, cures_poison) = match &effect {
+            ItemUse::Heal(hp) | ItemUse::MedicineHeal(hp) => (Some(*hp), 0, &[][..], 0, false),
+            ItemUse::Boost(boost) => (
+                boost.heal,
+                boost.rads,
+                boost.effects.as_slice(),
+                boost.poison,
+                boost.cure_poison,
+            ),
         };
         // An item that heals is kept by a player with nothing to heal, so a stray key
         // press does not waste it; one that only boosts is always worth using.
@@ -816,6 +888,11 @@ impl Game {
         let only_cleans = rads < 0 && heal.is_none() && boosts.is_empty();
         if only_cleans && self.radiation.rads() == Rads::NONE {
             return Err(InventoryError::NotIrradiated);
+        }
+        let only_cures =
+            cures_poison && rads == 0 && poison == 0 && heal.is_none() && boosts.is_empty();
+        if only_cures && !self.poison.is_poisoned() {
+            return Err(InventoryError::NotPoisoned);
         }
         let medicine = if matches!(effect, ItemUse::MedicineHeal(_)) {
             i32::from(self.character.skill(Skill::Medicine).get()) / MEDICINE_HEAL_DIVISOR
@@ -836,6 +913,16 @@ impl Game {
             more if more > 0 => (self.radiation.absorb(more.unsigned_abs(), resistance), 0),
             less => (0, self.radiation.remove(less.unsigned_abs())),
         };
+        let had_poison = self.poison.is_poisoned();
+        let poison_in = if poison == 0 {
+            0
+        } else {
+            self.poison
+                .absorb(poison, self.character.poison_resistance())
+        };
+        if cures_poison {
+            self.poison.clear();
+        }
         if !boosts.is_empty() {
             self.effects.start(item, boosts, self.clock.as_minutes());
         }
@@ -847,6 +934,8 @@ impl Game {
             rads_in,
             rads_out,
             addicted,
+            poison_in,
+            cured_poison: cures_poison && had_poison,
         })
     }
 
@@ -1312,6 +1401,7 @@ impl CharacterSink for Game {
     fn cure(&mut self, ailment: Ailment) -> Result<(), EffectError> {
         match ailment {
             Ailment::Radiation => self.radiation.clear(),
+            Ailment::Poison => self.poison.clear(),
             Ailment::Addiction => {
                 self.addictions.cure();
             }

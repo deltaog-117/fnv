@@ -56,7 +56,7 @@ impl Game {
             .ok_or(RepairError::NoSuchWeapon(copy.get()))?;
         let max = self
             .arsenal
-            .condition_max(held.item())
+            .condition_max(held.item(), &self.fitting_of(held))
             .ok_or_else(|| RepairError::DoesNotWear(held.item().clone()))?;
         Ok((held.item().clone(), max, held.lost().min(max.get())))
     }

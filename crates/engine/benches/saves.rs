@@ -21,6 +21,7 @@ use engine::saves::Save;
 use engine::shared::{Effect, GameData, LocationId, QuestId, QuestStage, Scope, apply_all};
 use engine::trade::VendorBook;
 use engine::travel::TravelBook;
+use engine::weapon_mods::WeaponModBook;
 use engine::world::WorldBook;
 
 const RUNS: usize = 15;
@@ -37,6 +38,9 @@ fn template() -> Game {
     .with_items(Arc::new(ItemBook::from_data(&data).expect("items build")))
     .with_addictions(Arc::new(
         AddictionBook::from_data(&data).expect("addictions build"),
+    ))
+    .with_weapon_mods(Arc::new(
+        WeaponModBook::from_data(&data).expect("weapon mods build"),
     ))
     .with_arsenal(Arc::new(Arsenal::from_data(&data).expect("arsenal builds")))
     .with_perks(Arc::new(PerkBook::base_game(&data)))

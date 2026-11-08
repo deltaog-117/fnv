@@ -15,6 +15,7 @@ mod clock;
 mod health;
 mod items;
 mod pack;
+mod poison;
 mod progress;
 mod real_data;
 mod reputation;

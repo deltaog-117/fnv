@@ -12,7 +12,7 @@ use crate::shared::{
 };
 
 /// The newest version this game reads and the only one it writes.
-pub const VERSION: u32 = 4;
+pub const VERSION: u32 = 5;
 
 /// Everything that changes during play.
 ///
@@ -46,6 +46,8 @@ pub struct Save {
     pub rads: u16,
     /// What the player is addicted to, by name.
     pub addictions: Vec<SavedAddiction>,
+    /// Poison in the blood, in hit points still to be lost.
+    pub poison: u16,
     /// The finds the player has already picked up.
     pub gathered: Vec<FindId>,
     /// Fights the player has won.
@@ -240,6 +242,8 @@ pub struct SavedWeapon {
     pub item: ItemId,
     /// Condition points lost.
     pub lost: u32,
+    /// The weapon mods fitted to it.
+    pub mods: Vec<ItemId>,
 }
 
 /// A consequence rule that already fired.
@@ -381,6 +385,28 @@ fn upgrade(mut value: serde_json::Value, from: u64) -> Result<serde_json::Value,
                 serde_json::Value::Array(Vec::new()),
             );
             object.insert("version".to_owned(), serde_json::Value::from(4));
+            Ok(value)
+        }
+        // Version 5 added weapon mods and poison; an older game had no mods fitted and
+        // no poison in the blood.
+        4 => {
+            let format = |what: &str| SaveError::Format(what.to_owned());
+            let object = value
+                .as_object_mut()
+                .ok_or_else(|| format("the save is not an object"))?;
+            object.insert("poison".to_owned(), serde_json::Value::from(0));
+            let weapons = object
+                .get_mut("pack")
+                .and_then(|pack| pack.get_mut("weapons"))
+                .and_then(serde_json::Value::as_array_mut)
+                .ok_or_else(|| format("the save has no list of weapons"))?;
+            for weapon in weapons {
+                weapon
+                    .as_object_mut()
+                    .ok_or_else(|| format("a weapon is not an object"))?
+                    .insert("mods".to_owned(), serde_json::Value::Array(Vec::new()));
+            }
+            object.insert("version".to_owned(), serde_json::Value::from(5));
             Ok(value)
         }
         _ => Err(SaveError::UnknownVersion(from)),

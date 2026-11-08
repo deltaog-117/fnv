@@ -25,6 +25,8 @@ pub enum DerivedStat {
     DamageResistance,
     /// Radiation resistance, in percent points before the cap.
     RadiationResistance,
+    /// Poison resistance, in percent points before the cap.
+    PoisonResistance,
 }
 
 /// What a boost changes.
@@ -51,6 +53,7 @@ impl BoostStat {
             Self::Derived(DerivedStat::CarryWeight) => "Carry weight",
             Self::Derived(DerivedStat::DamageResistance) => "Damage resistance",
             Self::Derived(DerivedStat::RadiationResistance) => "Radiation resistance",
+            Self::Derived(DerivedStat::PoisonResistance) => "Poison resistance",
         }
     }
 }
@@ -79,6 +82,7 @@ pub struct BoostTally {
     carry_weight: i32,
     damage_resistance: i32,
     radiation_resistance: i32,
+    poison_resistance: i32,
 }
 
 impl BoostTally {
@@ -93,6 +97,7 @@ impl BoostTally {
             BoostStat::Derived(DerivedStat::CarryWeight) => &mut self.carry_weight,
             BoostStat::Derived(DerivedStat::DamageResistance) => &mut self.damage_resistance,
             BoostStat::Derived(DerivedStat::RadiationResistance) => &mut self.radiation_resistance,
+            BoostStat::Derived(DerivedStat::PoisonResistance) => &mut self.poison_resistance,
         };
         *slot = slot.saturating_add(amount);
     }
@@ -114,6 +119,7 @@ impl BoostTally {
         add(&mut self.carry_weight, other.carry_weight);
         add(&mut self.damage_resistance, other.damage_resistance);
         add(&mut self.radiation_resistance, other.radiation_resistance);
+        add(&mut self.poison_resistance, other.poison_resistance);
     }
 
     /// The change to an attribute.
@@ -156,6 +162,12 @@ impl BoostTally {
     #[must_use]
     pub fn radiation_resistance(&self) -> i32 {
         self.radiation_resistance
+    }
+
+    /// The change to poison resistance, in percent points.
+    #[must_use]
+    pub fn poison_resistance(&self) -> i32 {
+        self.poison_resistance
     }
 
     /// Whether nothing is changed.

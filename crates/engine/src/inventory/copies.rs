@@ -2,7 +2,8 @@
 //!
 //! A stack of three pistols would share one wear number; here each pistol is its
 //! own record with its own id and the condition points it has lost. Everything else
-//! the pack holds (ammo, armor, chems) stays a counted stack.
+//! the pack holds (ammo, armor, chems) stays a counted stack. A copy also keeps the
+//! weapon mods fitted to it.
 
 use std::fmt;
 
@@ -49,6 +50,8 @@ impl fmt::Display for CopyId {
 pub struct WeaponCopy {
     pub(super) item: ItemId,
     pub(super) lost: u32,
+    /// The mods fitted, in id order, each at most once.
+    pub(super) mods: Vec<ItemId>,
 }
 
 impl WeaponCopy {
@@ -63,5 +66,11 @@ impl WeaponCopy {
     #[must_use]
     pub fn lost(&self) -> u32 {
         self.lost
+    }
+
+    /// The mods fitted to this copy, in id order.
+    #[must_use]
+    pub fn mods(&self) -> &[ItemId] {
+        &self.mods
     }
 }

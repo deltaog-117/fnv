@@ -41,6 +41,7 @@ fn empty_data(name: &str) -> PathBuf {
         "vendors",
         "beds",
         "misc",
+        "weapon_mods",
         "recipes",
         "stations",
         "finds",

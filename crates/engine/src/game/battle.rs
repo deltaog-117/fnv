@@ -23,6 +23,7 @@ use crate::shared::{
     FoeKind, GameData, InventoryView, ItemId, ModelError, Npc, NpcSpecial, Skill, Special,
     SpecialLevel, Weapon, WeaponClass,
 };
+use crate::weapon_mods::Fitting;
 
 /// The most the Luck-based critical chance can reach, from `formulas.json`.
 const CRIT_LUCK_CAP: u32 = 10;
@@ -139,6 +140,24 @@ struct WeaponStats {
     reload_ap: NonZeroU32,
     /// Condition points when new; `None` for a weapon that does not wear.
     condition_max: Option<NonZeroU32>,
+}
+
+impl WeaponStats {
+    /// The same numbers with a weapon's fitted mods on: damage and magazine added,
+    /// spread narrowed (never below none) and the condition when new raised.
+    fn fitted(&self, fitting: &Fitting) -> Result<Self, StatError> {
+        if fitting.is_plain() {
+            return Ok(self.clone());
+        }
+        let mut stats = self.clone();
+        stats.damage = Points::try_new(self.damage.get() + fitting.damage())?;
+        stats.spread = Spread::try_new((self.spread.get() + fitting.spread()).max(0.0))?;
+        if let Some(ammo) = &mut stats.ammo {
+            ammo.clip = ammo.clip.saturating_add(fitting.clip());
+        }
+        stats.condition_max = self.condition_max.map(|max| fitting.condition_max(max));
+        Ok(stats)
+    }
 }
 
 /// What a weapon fires and how many rounds it holds, checked once.
@@ -455,9 +474,12 @@ impl Arsenal {
         Ok(arsenal)
     }
 
-    /// How much wear a weapon can take, when it wears at all.
-    pub(super) fn condition_max(&self, weapon: &ItemId) -> Option<NonZeroU32> {
-        self.weapons.get(weapon)?.condition_max
+    /// How much wear a weapon can take with these mods on, when it wears at all.
+    pub(super) fn condition_max(&self, weapon: &ItemId, fitting: &Fitting) -> Option<NonZeroU32> {
+        self.weapons
+            .get(weapon)?
+            .condition_max
+            .map(|max| fitting.condition_max(max))
     }
 
     /// The encounters, ordered by id.
@@ -699,12 +721,15 @@ impl Arsenal {
         worn_armor: &[&ItemId],
         pack: &impl InventoryView,
         weapon_wear: u32,
+        fitting: &Fitting,
     ) -> Result<Fighter, BattleError> {
         let weapon_id = weapon.ok_or(BattleError::Unarmed)?;
         let stats = self
             .weapons
             .get(weapon_id)
-            .ok_or_else(|| BattleError::UnusableGear(weapon_id.clone()))?;
+            .ok_or_else(|| BattleError::UnusableGear(weapon_id.clone()))?
+            .fitted(fitting)?;
+        let stats = &stats;
         let pieces = worn_armor
             .iter()
             .map(|id| {

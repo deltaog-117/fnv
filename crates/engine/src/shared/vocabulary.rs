@@ -271,6 +271,8 @@ pub enum Ailment {
     Radiation,
     /// Every chem the player is addicted to.
     Addiction,
+    /// The poison in the blood.
+    Poison,
 }
 
 /// Which of the two reputation scores a rule asks about.

@@ -30,7 +30,7 @@ impl Slot {
             ItemClass::Weapon => Some(Self::Weapon),
             ItemClass::Armor(ArmorSlot::Body | ArmorSlot::Clothing) => Some(Self::Outfit),
             ItemClass::Armor(ArmorSlot::Head) => Some(Self::Head),
-            ItemClass::Ammo | ItemClass::Consumable | ItemClass::Misc => None,
+            ItemClass::Ammo | ItemClass::Consumable | ItemClass::Misc | ItemClass::Mod => None,
         }
     }
 }
@@ -97,9 +97,31 @@ pub enum InventoryError {
     /// The item only takes radiation out, and the player has none.
     #[error("no radiation to take out")]
     NotIrradiated,
+    /// The item only cures poison, and the player is not poisoned.
+    #[error("not poisoned")]
+    NotPoisoned,
     /// The player has no hit points left.
     #[error("the player is down")]
     Down,
+    /// The item is not a weapon mod.
+    #[error("{0} is not a weapon mod")]
+    NotAMod(ItemId),
+    /// The weapon already has this mod fitted.
+    #[error("{item} is already fitted to {copy}")]
+    AlreadyFitted {
+        /// The mod.
+        item: ItemId,
+        /// The weapon.
+        copy: CopyId,
+    },
+    /// The weapon does not have this mod fitted.
+    #[error("{item} is not fitted to {copy}")]
+    NotFitted {
+        /// The mod.
+        item: ItemId,
+        /// The weapon.
+        copy: CopyId,
+    },
 }
 
 /// Everything the player carries: stacks, weapons, caps and what is equipped.
@@ -216,7 +238,8 @@ impl Inventory {
         let weapons: f64 = self
             .weapons
             .values()
-            .filter_map(|copy| self.book.weight(&copy.item))
+            .flat_map(|copy| std::iter::once(&copy.item).chain(&copy.mods))
+            .filter_map(|item| self.book.weight(item))
             .sum();
         stacks + weapons
     }
@@ -299,6 +322,7 @@ impl Inventory {
             WeaponCopy {
                 item: item.clone(),
                 lost,
+                mods: Vec::new(),
             },
         );
         // Later weapons must never reuse an id a save already handed out.
@@ -322,7 +346,9 @@ impl Inventory {
         if self.wielded == Some(id) {
             return Err(InventoryError::Equipped(copy.item.clone()));
         }
-        self.weapons.remove(&id);
+        if let Some(gone) = self.weapons.remove(&id) {
+            self.take_off(gone.mods);
+        }
         Ok(())
     }
 
@@ -405,11 +431,112 @@ impl Inventory {
         if kept != other {
             return Err(InventoryError::NotEquippable(other));
         }
-        self.weapons.remove(&gone);
+        if let Some(gone) = self.weapons.remove(&gone) {
+            self.take_off(gone.mods);
+        }
         if self.wielded == Some(gone) {
             self.wielded = Some(keep);
         }
         self.set_lost(keep, lost)
+    }
+
+    /// Fits a carried weapon mod to a carried weapon: the mod leaves the stack and
+    /// the weapon keeps it. Whether the mod suits that weapon is for the caller to
+    /// say; the pack only knows the mod is a mod.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when no carried weapon has that id,
+    /// [`InventoryError::NotAMod`] when the item is not a weapon mod,
+    /// [`InventoryError::NotHeld`] when no such mod is carried and
+    /// [`InventoryError::AlreadyFitted`] when the weapon has it already.
+    pub fn fit_mod(&mut self, id: CopyId, item: &ItemId) -> Result<(), InventoryError> {
+        let copy = self
+            .weapons
+            .get(&id)
+            .ok_or(InventoryError::NoSuchCopy(id))?;
+        if self.book.class(item) != Some(ItemClass::Mod) {
+            return Err(InventoryError::NotAMod(item.clone()));
+        }
+        if copy.mods.contains(item) {
+            return Err(InventoryError::AlreadyFitted {
+                item: item.clone(),
+                copy: id,
+            });
+        }
+        let left = match self.stacks.get(item) {
+            None => return Err(InventoryError::NotHeld(item.clone())),
+            Some(count) => NonZeroU32::new(count.get() - 1),
+        };
+        match left {
+            Some(left) => {
+                self.stacks.insert(item.clone(), left);
+            }
+            None => {
+                self.stacks.remove(item);
+            }
+        }
+        if let Some(copy) = self.weapons.get_mut(&id) {
+            copy.mods.push(item.clone());
+            copy.mods.sort();
+        }
+        Ok(())
+    }
+
+    /// Takes a mod off a carried weapon and puts it back in the pack.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when no carried weapon has that id and
+    /// [`InventoryError::NotFitted`] when the weapon does not have the mod.
+    pub fn remove_mod(&mut self, id: CopyId, item: &ItemId) -> Result<(), InventoryError> {
+        let copy = self
+            .weapons
+            .get_mut(&id)
+            .ok_or(InventoryError::NoSuchCopy(id))?;
+        let at = copy
+            .mods
+            .iter()
+            .position(|fitted| fitted == item)
+            .ok_or_else(|| InventoryError::NotFitted {
+                item: item.clone(),
+                copy: id,
+            })?;
+        let taken = copy.mods.remove(at);
+        self.take_off(vec![taken]);
+        Ok(())
+    }
+
+    /// Puts the mods a save kept back on a restored weapon, without taking them
+    /// from the pack.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::NoSuchCopy`] when no carried weapon has that id,
+    /// [`InventoryError::NotAMod`] for an item that is not a weapon mod and
+    /// [`InventoryError::AlreadyFitted`] when one is listed twice.
+    pub fn restore_mods(&mut self, id: CopyId, mods: &[ItemId]) -> Result<(), InventoryError> {
+        if !self.weapons.contains_key(&id) {
+            return Err(InventoryError::NoSuchCopy(id));
+        }
+        let mut fitted: Vec<ItemId> = Vec::with_capacity(mods.len());
+        for item in mods {
+            if self.book.class(item) != Some(ItemClass::Mod) {
+                return Err(InventoryError::NotAMod(item.clone()));
+            }
+            if fitted.contains(item) {
+                return Err(InventoryError::AlreadyFitted {
+                    item: item.clone(),
+                    copy: id,
+                });
+            }
+            fitted.push(item.clone());
+        }
+        fitted.sort();
+        if let Some(copy) = self.weapons.get_mut(&id) {
+            copy.mods = fitted;
+        }
+        Ok(())
     }
 
     fn is_weapon(&self, item: &ItemId) -> bool {
@@ -427,10 +554,25 @@ impl Inventory {
             .collect();
         copies.sort();
         for (_, _, id) in copies.into_iter().take(count as usize) {
-            self.weapons.remove(&id);
+            if let Some(gone) = self.weapons.remove(&id) {
+                self.take_off(gone.mods);
+            }
             if self.wielded == Some(id) {
                 self.wielded = None;
             }
+        }
+    }
+
+    /// Puts mods that left their weapon back in the pack as carried stacks, so a
+    /// weapon thrown away, sold or merged never takes its mods with it.
+    fn take_off(&mut self, mods: Vec<ItemId>) {
+        for item in mods {
+            let held = self.stacks.get(&item).map_or(0, |count| count.get());
+            // The count cannot overflow in play; if it ever did, keeping the top
+            // of the range loses one mod and never the pack.
+            let total = held.saturating_add(1);
+            self.stacks
+                .insert(item, NonZeroU32::new(total).unwrap_or(NonZeroU32::MAX));
         }
     }
 }
@@ -547,6 +689,7 @@ impl Inventory {
                 WeaponCopy {
                     item: item.clone(),
                     lost: 0,
+                    mods: Vec::new(),
                 },
             );
         }

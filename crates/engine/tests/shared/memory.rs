@@ -308,6 +308,8 @@ impl CharacterSink for MemoryState {
         match ailment {
             Ailment::Radiation => self.rads = 0,
             Ailment::Addiction => self.addicted = false,
+            // The in-memory state keeps no poison, so there is nothing to end.
+            Ailment::Poison => {}
         }
         Ok(())
     }

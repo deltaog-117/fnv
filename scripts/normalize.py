@@ -285,6 +285,38 @@ def apply_craft_effects(recipe_recs, entries):
         table[recipe]["on_craft"] = entry["reactions"]
 
 
+# Each piece of a mod's wiki text that names a number the game can act on. A piece
+# that matches none (a silencer, a scope, a laser, rate of fire, carry weight, a
+# multi-beam bonus) gives no effect: the mod can still be fitted.
+_NUM = r"(\d+(?:\.\d+)?|\.\d+)"
+MOD_EFFECT_PATTERNS = (
+    ("damage", re.compile(rf"^\+?{_NUM} damage$", re.I), 1),
+    ("damage", re.compile(rf"damage \(\+{_NUM}(?: DAM)?\)$", re.I), 1),
+    ("condition_hp", re.compile(rf"^\+{_NUM} item HP$", re.I), 1),
+    ("condition_percent", re.compile(rf"condition \(\+{_NUM}%\)$", re.I), 1),
+    ("clip_size", re.compile(r"(?:ammunition|ammo) capacity \(\+(\d+)\)$", re.I), 1),
+    ("spread", re.compile(rf"spread \(-{_NUM}\)$", re.I), -1),
+)
+
+
+def mod_effects(text):
+    out = []
+    for piece in str(text).split(";"):
+        piece = piece.strip()
+        for kind, pattern, sign in MOD_EFFECT_PATTERNS:
+            m = pattern.search(piece)
+            if not m:
+                continue
+            amount = float(m.group(1)) * sign
+            if kind == "clip_size":
+                amount = int(m.group(1))
+            elif amount == int(amount):
+                amount = int(amount)
+            out.append({"kind": kind, "amount": amount})
+            break
+    return out
+
+
 def weapon_mods(raw, ids, weapon_recs):
     by_name = {}
     for w in weapon_recs:
@@ -293,6 +325,7 @@ def weapon_mods(raw, ids, weapon_recs):
     for r in raw:
         rec = common(r, r, strip_title(r["page"]), ids, "weapon_mod")
         rec["effects_text"] = str(r.get("effects", ""))
+        put(rec, "effects", mod_effects(rec["effects_text"]))
         mod = str(r.get("modifies", ""))
         put(rec, "modifies_text", mod)
         found = [i for part in mod.split(";")

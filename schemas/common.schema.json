@@ -1089,7 +1089,7 @@
         },
         {
           "type": "object",
-          "description": "Cures radiation (to none) or every addiction.",
+          "description": "Cures radiation (to none), every addiction or the poison in the blood.",
           "required": [
             "type",
             "ailment"
@@ -1102,7 +1102,8 @@
             "ailment": {
               "enum": [
                 "radiation",
-                "addiction"
+                "addiction",
+                "poison"
               ]
             }
           }

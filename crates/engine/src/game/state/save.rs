@@ -17,6 +17,7 @@ use crate::character::{Character, CharacterRecord, SpecialSet};
 use crate::clock::GameClock;
 use crate::gather::Gathered;
 use crate::inventory::{CopyId, Slot};
+use crate::poison::Poison;
 use crate::radiation::Radiation;
 use crate::saves::{
     Save, SaveError, SavedAddiction, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding,
@@ -122,6 +123,7 @@ impl Game {
                     id: id.get(),
                     item: copy.item().clone(),
                     lost: copy.lost(),
+                    mods: copy.mods().to_vec(),
                 })
                 .collect(),
             wielded: self.inventory.wielded().map(CopyId::get),
@@ -195,6 +197,7 @@ impl Game {
             shops,
             effects,
             rads: self.radiation.rads().get(),
+            poison: self.poison.left(),
             addictions: self
                 .addictions
                 .iter()
@@ -235,6 +238,7 @@ impl Game {
             character: self.character.clone(),
             inventory: self.inventory.emptied(),
             arsenal: self.arsenal.clone(),
+            weapon_mods: self.weapon_mods.clone(),
             perks: self.perks.clone(),
             market: self.market.refilled(),
             beds: self.beds.clone(),
@@ -245,6 +249,7 @@ impl Game {
             clock: GameClock::from_minutes(save.clock_minutes),
             effects: ActiveEffects::default(),
             radiation: Radiation::default(),
+            poison: Poison::default(),
             addictions: Addictions::default(),
             addiction_book: self.addiction_book.clone(),
             map: self.map.clone(),
@@ -393,9 +398,10 @@ impl Game {
             .add_caps(f64::from(pack.caps))
             .map_err(|e| bad(&e))?;
         for saved in &pack.weapons {
+            let fitting = self.weapon_mods.fitting(&saved.mods);
             let lost = self
                 .arsenal
-                .condition_max(&saved.item)
+                .condition_max(&saved.item, &fitting)
                 .map_or(0, |max| max.get());
             if saved.lost > lost {
                 return Err(bad(&format!(
@@ -405,6 +411,14 @@ impl Game {
             }
             self.inventory
                 .restore_weapon(CopyId::from_saved(saved.id), &saved.item, saved.lost)
+                .map_err(|e| bad(&e))?;
+            for item in &saved.mods {
+                if !self.weapon_mods.fits(item, &saved.item) {
+                    return Err(bad(&format!("{item} does not fit {}", saved.item)));
+                }
+            }
+            self.inventory
+                .restore_mods(CopyId::from_saved(saved.id), &saved.mods)
                 .map_err(|e| bad(&e))?;
         }
         for (item, count) in &pack.items {
@@ -484,6 +498,13 @@ impl Game {
         let bad = |what: &dyn std::fmt::Display| SaveError::invalid("ailments", what);
         let rads = Rads::try_new(u32::from(save.rads)).map_err(|e| bad(&e))?;
         self.radiation = Radiation::holding(rads);
+        if save.poison > Poison::MAX {
+            return Err(bad(&format!(
+                "{} poison is more than a player can hold",
+                save.poison
+            )));
+        }
+        self.poison = Poison::holding(save.poison);
         let now = self.clock.as_minutes();
         let mut held = Vec::with_capacity(save.addictions.len());
         for entry in &save.addictions {

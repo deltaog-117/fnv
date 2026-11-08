@@ -439,6 +439,15 @@ impl Character {
         u8::try_from(total.clamp(0, 100)).unwrap_or(0)
     }
 
+    /// Poison resistance in percent: `5 * (endurance - 1)` (the curated formula)
+    /// plus what chems add, kept between 0 and 100.
+    #[must_use]
+    pub fn poison_resistance(&self) -> u8 {
+        let base = 5 * (i32::from(self.boosted(Special::Endurance)) - 1);
+        let total = base.saturating_add(self.boosts.poison_resistance());
+        u8::try_from(total.clamp(0, 100)).unwrap_or(0)
+    }
+
     /// What chems, drinks and meals change for now.
     #[must_use]
     pub fn boosts(&self) -> &BoostTally {

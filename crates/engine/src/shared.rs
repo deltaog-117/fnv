@@ -30,11 +30,11 @@ pub use condition::{Condition, QuestCondition};
 pub use data::{
     Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Bed, BoostUse, Consumable, CraftReaction,
     Dialogue, Discount, Encounter, Faction, FactionKind, Find, FindLine, Foe, InfoValue,
-    Ingredient, ItemKind, ItemUse, Location, LocationSize, MapKind, Misc, Neighbor, Npc,
+    Ingredient, ItemKind, ItemUse, Location, LocationSize, MapKind, Misc, ModEffect, Neighbor, Npc,
     NpcSpecial, Perk, PerkRequirements, Position, Quest, QuestKind, Recipe, RecipeMode,
     RecipeSkill, RepairService, ReputationModel, ReputationNote, Response, Rule, RuleKind,
     RuleTargetType, Stage, StatEffect, Station, StationKind, StockLine, Topic, TopicSection, Trait,
-    Vendor, WalkthroughNode, Weapon, WeaponClass,
+    Vendor, WalkthroughNode, Weapon, WeaponClass, WeaponMod,
 };
 pub use effect::Effect;
 pub use error::ModelError;

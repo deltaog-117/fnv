@@ -214,6 +214,54 @@ item_record!(
 );
 
 item_record!(
+    /// A modification fitted to a weapon.
+    WeaponMod {
+        /// The wiki's description of what it does; the source of truth.
+        effects_text: String,
+        /// The weapons it fits, as the wiki writes them.
+        modifies_text: Option<String>,
+        /// The weapons it fits, when they resolved to items.
+        #[serde(default)]
+        modifies: Vec<ItemId>,
+        /// What the game can act on in `effects_text`. A mod whose text names
+        /// nothing it can act on lists none, and can still be fitted.
+        #[serde(default)]
+        effects: Vec<ModEffect>,
+    }
+);
+
+/// One number a weapon mod changes, as the game models it.
+#[derive(Debug, Clone, Copy, PartialEq, Deserialize)]
+#[serde(tag = "kind", rename_all = "snake_case", deny_unknown_fields)]
+pub enum ModEffect {
+    /// Damage per shot, added.
+    Damage {
+        /// Points added; never negative.
+        amount: f64,
+    },
+    /// Condition points when new, added.
+    ConditionHp {
+        /// Points added; never negative.
+        amount: f64,
+    },
+    /// Condition points when new, raised by this percent.
+    ConditionPercent {
+        /// Percent added; never negative.
+        amount: f64,
+    },
+    /// Rounds the magazine holds, added.
+    ClipSize {
+        /// Rounds added.
+        amount: u32,
+    },
+    /// Spread of the shot, changed; negative narrows it.
+    Spread {
+        /// Points added; never positive.
+        amount: f64,
+    },
+}
+
+item_record!(
     /// A crafting component or other miscellany: scrap, tools, holotapes and notes.
     Misc {
         /// The wiki's kind of miscellany, such as "crafting" or "holotape".
@@ -252,6 +300,14 @@ pub struct BoostUse {
     /// is cut by the player's radiation resistance; what goes out is not.
     #[serde(default)]
     pub rads: i16,
+    /// Poison taken in at once, in hit points still to be lost over time. What comes
+    /// in is cut by the player's poison resistance.
+    #[serde(default)]
+    pub poison: u16,
+    /// Ends the poison in the blood, whatever its size; an item that does only this
+    /// is refused when the player is not poisoned.
+    #[serde(default)]
+    pub cure_poison: bool,
     /// What changes, and for how long. A new dose of the same item replaces the
     /// last one.
     #[serde(default)]

@@ -92,5 +92,10 @@
   {"item": "yumyum_deviled_eggs", "boost": {"heal": 5, "rads": 3}},
   {"item": "rad_x", "boost": {"effects": [{"stat": "radiation_resistance", "amount": 25, "minutes": 4}]}},
   {"item": "radaway", "boost": {"rads": -50}},
-  {"item": "super_stimpak", "boost": {"heal": 60, "effects": [{"stat": "strength", "amount": -1, "minutes": 2}, {"stat": "agility", "amount": -1, "minutes": 2}]}}
+  {"item": "super_stimpak", "boost": {"heal": 60, "effects": [{"stat": "strength", "amount": -1, "minutes": 2}, {"stat": "agility", "amount": -1, "minutes": 2}]}},
+  {"item": "antivenom", "boost": {"cure_poison": true}},
+  {"item": "datura_antivenom", "boost": {"cure_poison": true}},
+  {"item": "fiery_purgative", "boost": {"rads": -50, "cure_poison": true, "effects": [{"stat": "endurance", "amount": -1, "minutes": 1}]}},
+  {"item": "blood_shield", "boost": {"heal": 24, "effects": [{"stat": "poison_resistance", "amount": 50, "minutes": 2}]}},
+  {"item": "bleak_venom", "boost": {"poison": 150}}
 ]

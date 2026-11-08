@@ -215,6 +215,7 @@ fn wear_on_something_that_is_not_a_weapon_is_refused() {
             id: 9_000,
             item: item("leather_armor"),
             lost: 1,
+            mods: Vec::new(),
         })),
         "pack"
     );

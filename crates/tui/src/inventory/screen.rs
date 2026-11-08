@@ -46,6 +46,10 @@ enum Action {
     Mend,
     /// Merge another copy of a weapon into this one.
     Merge,
+    /// Fit a carried mod to a weapon.
+    Fit,
+    /// Take a fitted mod off a weapon.
+    TakeOff,
     Drop,
     Back,
 }
@@ -58,6 +62,8 @@ impl Action {
             Self::Unequip(_) => "Unequip",
             Self::Mend => "Mend with a kit",
             Self::Merge => "Merge another copy into this one",
+            Self::Fit => "Fit a mod",
+            Self::TakeOff => "Take a mod off",
             Self::Drop => "Drop",
             Self::Back => "Back",
         }
@@ -96,6 +102,13 @@ enum Mode {
     Merging {
         keep: CopyId,
         others: Vec<CopyId>,
+        menu: Menu,
+    },
+    /// Choosing which mod to fit to, or take off, the weapon `copy`.
+    Modding {
+        copy: CopyId,
+        mods: Vec<ItemId>,
+        fitting: bool,
         menu: Menu,
     },
 }
@@ -137,7 +150,7 @@ impl Pack {
     pub fn keys(&self) -> &'static str {
         match self.mode {
             Mode::Browsing => "Up/Down move | Enter actions | Esc leave | q quit",
-            Mode::Acting { .. } | Mode::Merging { .. } => {
+            Mode::Acting { .. } | Mode::Merging { .. } | Mode::Modding { .. } => {
                 "Up/Down move | Enter choose | 1-9 pick | Esc back | q quit"
             }
             Mode::Dropping { .. } => {
@@ -185,6 +198,19 @@ impl Pack {
                 } else if let Some(gone) = menu.handle(command).and_then(|i| others.get(i)) {
                     let (keep, gone) = (*keep, *gone);
                     self.merge(keep, gone, game, log);
+                }
+            }
+            Mode::Modding {
+                copy,
+                mods,
+                fitting,
+                menu,
+            } => {
+                if command == Command::Back {
+                    self.mode = Mode::Browsing;
+                } else if let Some(item) = menu.handle(command).and_then(|i| mods.get(i)) {
+                    let (copy, item, fitting) = (*copy, item.clone(), *fitting);
+                    self.modify(copy, &item, fitting, game, log);
                 }
             }
         }
@@ -241,6 +267,25 @@ impl Pack {
                 };
                 return;
             }
+            (Action::Fit | Action::TakeOff, Row::Weapon(copy, _)) => {
+                let fitting = action == Action::Fit;
+                let mods: Vec<ItemId> = if fitting {
+                    game.mods_for(item)
+                        .into_iter()
+                        .filter(|fit| game.inventory().item_count(fit) > 0)
+                        .cloned()
+                        .collect()
+                } else {
+                    game.fitted_mods(*copy).to_vec()
+                };
+                self.mode = Mode::Modding {
+                    copy: *copy,
+                    menu: Menu::new(mods.len()),
+                    mods,
+                    fitting,
+                };
+                return;
+            }
             (Action::Drop, Row::Weapon(copy, _)) => game
                 .drop_copy(*copy)
                 .map(|()| format!("You drop the {name}."))
@@ -262,7 +307,8 @@ impl Pack {
                     }
                 }
             }
-            (Action::Back, _) | (Action::Mend | Action::Merge, Row::Stack(..)) => {
+            (Action::Back, _)
+            | (Action::Mend | Action::Merge | Action::Fit | Action::TakeOff, Row::Stack(..)) => {
                 self.mode = Mode::Browsing;
                 return;
             }
@@ -281,6 +327,32 @@ impl Pack {
             .merge_weapons(keep, gone)
             .map(|left| format!("You merge two {name} into one at {}%.", left.get()))
             .unwrap_or_else(|error| error.to_string());
+        log.push(Entry::Note(note));
+        self.mode = Mode::Browsing;
+        self.list = self.list.resized(rows(game).len());
+    }
+
+    fn modify(
+        &mut self,
+        copy: CopyId,
+        item: &ItemId,
+        fitting: bool,
+        game: &mut Game,
+        log: &mut Log,
+    ) {
+        let weapon = game
+            .inventory()
+            .weapon(copy)
+            .map_or_else(String::new, |held| self.names.name(held.item()));
+        let name = self.names.name(item);
+        let note = if fitting {
+            game.fit_mod(copy, item)
+                .map(|()| format!("You fit the {name} to the {weapon}."))
+        } else {
+            game.remove_mod(copy, item)
+                .map(|()| format!("You take the {name} off the {weapon}."))
+        }
+        .unwrap_or_else(|error| error.to_string());
         log.push(Entry::Note(note));
         self.mode = Mode::Browsing;
         self.list = self.list.resized(rows(game).len());
@@ -427,6 +499,27 @@ impl Pack {
                     .collect();
                 lines.extend(menu.lines(&items));
             }
+            Mode::Modding {
+                copy,
+                mods,
+                fitting,
+                menu,
+            } => {
+                let weapon = game
+                    .inventory()
+                    .weapon(*copy)
+                    .map_or_else(String::new, |held| self.names.name(held.item()));
+                let verb = if *fitting { "Fit to" } else { "Take off" };
+                lines.push(Line::styled(
+                    format!("{verb} this {weapon}:"),
+                    theme::heading(),
+                ));
+                let items: Vec<Item> = mods
+                    .iter()
+                    .map(|item| Item::new(self.names.name(item)))
+                    .collect();
+                lines.extend(menu.lines(&items));
+            }
             Mode::Browsing | Mode::Dropping { .. } => {
                 let chosen = self
                     .list
@@ -470,6 +563,16 @@ impl Pack {
                 theme::text(),
             ));
         }
+        if let Row::Weapon(copy, _) = row {
+            let fitted = game.fitted_mods(*copy);
+            if !fitted.is_empty() {
+                let names: Vec<String> = fitted.iter().map(|item| self.names.name(item)).collect();
+                lines.push(Line::styled(
+                    format!("Fitted: {}.", names.join(", ")),
+                    theme::text(),
+                ));
+            }
+        }
         match game.inventory().item_use(item) {
             Some(ItemUse::Heal(hp)) => lines.push(Line::styled(
                 format!("Restores {hp} hit points."),
@@ -485,6 +588,15 @@ impl Pack {
                         format!("Restores {hp} hit points."),
                         theme::text(),
                     ));
+                }
+                if boost.poison > 0 {
+                    lines.push(Line::styled(
+                        format!("Poisons: {} points, less your resistance.", boost.poison),
+                        theme::text(),
+                    ));
+                }
+                if boost.cure_poison {
+                    lines.push(Line::styled("Cures poison.", theme::text()));
                 }
                 lines.extend(
                     boost
@@ -526,6 +638,12 @@ fn use_note(name: &str, used: &Used, left: Option<ItemUse>) -> String {
     }
     if used.rads_out > 0 {
         parts.push(format!("clear {} rads", used.rads_out));
+    }
+    if used.poison_in > 0 {
+        parts.push(format!("are poisoned for {} points", used.poison_in));
+    }
+    if used.cured_poison {
+        parts.push("are cured of poison".to_owned());
     }
     if boosts > 0 {
         parts.push(format!("{boosts} effect(s) begin"));
@@ -600,6 +718,13 @@ fn actions(game: &Game, row: &Row) -> Vec<Action> {
             } else {
                 Action::Equip
             });
+            let carried = |fit: &&ItemId| inventory.item_count(fit) > 0;
+            if game.mods_for(item).iter().any(carried) {
+                actions.push(Action::Fit);
+            }
+            if !game.fitted_mods(*copy).is_empty() {
+                actions.push(Action::TakeOff);
+            }
             if game.copy_condition(*copy).is_some() {
                 let kit = ItemId::try_new(WEAPON_REPAIR_KIT);
                 if kit.is_ok_and(|kit| inventory.item_count(&kit) > 0) {
@@ -670,7 +795,11 @@ mod tests {
                 );
                 let game = Game::with_world(quests, world)
                     .with_items(items)
-                    .with_addictions(addictions);
+                    .with_addictions(addictions)
+                    .with_weapon_mods(Arc::new(
+                        engine::weapon_mods::WeaponModBook::from_data(&data)
+                            .expect("weapon mods build"),
+                    ));
                 (game, Arc::new(Names::from_data(&data)))
             })
             .clone()
@@ -787,6 +916,52 @@ mod tests {
         choose(&mut pack, &mut lucky, &mut log, "jet", "Use");
         assert!(!lucky.addictions().any());
         assert!(!said(&log).contains("addicted"), "{}", said(&log));
+    }
+
+    #[test]
+    fn a_mod_is_fitted_to_a_weapon_and_taken_off_again() {
+        let (mut game, mut pack, mut log) =
+            carrying(0, &[("9mm_pistol", 1), ("9mm_pistol_extended_mags", 1)]);
+        choose(&mut pack, &mut game, &mut log, "9mm_pistol", "Fit a mod");
+        pack.update(Command::Pick(0), &mut game, &mut log);
+        assert!(said(&log).contains("You fit the"), "{}", said(&log));
+        let copy = game
+            .inventory()
+            .copies_of(&id("9mm_pistol"))
+            .next()
+            .expect("carried");
+        assert_eq!(game.fitted_mods(copy).len(), 1);
+        assert_eq!(
+            game.inventory().item_count(&id("9mm_pistol_extended_mags")),
+            0
+        );
+
+        choose(
+            &mut pack,
+            &mut game,
+            &mut log,
+            "9mm_pistol",
+            "Take a mod off",
+        );
+        pack.update(Command::Pick(0), &mut game, &mut log);
+        assert!(said(&log).contains("off the"), "{}", said(&log));
+        assert!(game.fitted_mods(copy).is_empty());
+        assert_eq!(
+            game.inventory().item_count(&id("9mm_pistol_extended_mags")),
+            1
+        );
+    }
+
+    #[test]
+    fn a_weapon_with_no_fitting_mod_carried_offers_no_fitting() {
+        let (game, pack, _) = carrying(0, &[("9mm_pistol", 1)]);
+        let row = rows(&game)
+            .into_iter()
+            .find(|row| row.item().as_str() == "9mm_pistol")
+            .expect("listed");
+        let offered = actions(&game, &row);
+        assert!(!offered.contains(&Action::Fit) && !offered.contains(&Action::TakeOff));
+        drop(pack);
     }
 
     #[test]

@@ -23,6 +23,7 @@
 | 2026-10-26 | Leveling, perks and traits | Perk and trait effects are typed `Modifier` data summed once when taken; only fully modeled perks are listed | ✅ Confirmed |
 | 2026-10-26 | Level-up screen | Level-up screen only; the creation screen waits for Doc's intro (COA B) | ✅ Confirmed |
 | 2026-11-03 | Weapon instances, restocking, fleeing, named saves | Weapon objects with ids, global restock from the clock, one flee roll, a folder of named saves (B, A, A, B) | ✅ Confirmed |
+| 2026-11-08 | Poison and weapon mods | Poison as one bounded pool paid out by the clock; mods as data on each weapon copy, summed by one `Fitting` (both chosen without a COA table: the shape was set by earlier features) | ✅ Confirmed |
 
 ---
 
@@ -1995,6 +1996,56 @@ Five loose ends from the roadmap were taken together: a helper in the Ghost Town
 |------|--------|--------|
 | 2026-11-07 | Initial entry | deltaog-117 |
 
+
+---
+
+### Poison and Weapon Mods
+
+**Date:** 2026-11-08
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Radiation and addiction were in, and the next two loose ends from the roadmap were poison (five consumables could not be used without it) and weapon mods (111 imported records that nothing read). Both reuse plumbing that already existed: boosts and resistance for poison, weapon copies for mods.
+
+---
+
+#### Decision
+
+- **Poison** is one bounded pool, `Poison`, of points still to be lost (999 at most). Resistance cuts what comes in, never what comes out. `Game::wait` moves points from the pool into wounds at 5 a minute, and the points it reports are exactly the wounds it adds, so no hit point is lost that was not first poison. The rate is a stand-in: the wiki gives hit points per second for a few seconds and the clock counts whole minutes.
+- **Poison never takes the last hit point** (a stand-in; the wiki lets it kill). A poisoned player who waits is left at one hit point and can still reach an antidote. Revisit once dying has a screen of its own.
+- **Poison resistance** follows the curated formula, `5 * (endurance - 1)`, plus chem boosts, so blood shield works through the existing boost machinery with one new stat.
+- **Mods are data on the weapon copy**, not a new kind of weapon. The pack only knows a mod is a mod; `WeaponModBook` says which weapon it fits, and one `Fitting` sums what a weapon's mods change. The sum is the same in any fitting order, and nothing a mod does can lower damage or condition (the book refuses such a record at load).
+- **Only numbers the game can act on become effects.** `normalize.py` reads damage, condition points and percent, magazine and spread out of the wiki text (59 of 111 mods). The rest (silencers, scopes, lasers, rate of fire) are kept as fittable mods that change nothing, so the pack is honest about what the player carries.
+- **Taking a mod off clamps the wear**: a weapon that lost more than it can hold without the mod is left at its new limit, not above it.
+- **Saves** went to version 5 (poison, and each weapon's mods). A version 4 save is upgraded with neither; a save that fits a mod to the wrong weapon is refused.
+
+---
+
+#### Consequences
+
+- Five consumables are usable; 96 still wait on damage dealt, limb condition, the hardcore needs and effects the wiki lists in words.
+- The pack screen gained "Fit a mod" and "Take a mod off", and the status line shows poison.
+- **Left out for now:** mod slots (a weapon takes any number of different mods), mods that change fire rate or carry weight, a skill or tool requirement for fitting, and poison from creatures or traps.
+
+---
+
+#### References
+
+- `crates/engine/src/poison/`, `weapon_mods/`, `game/state/fit.rs`, `game/state.rs`, `game/battle.rs`, `game/state/save.rs`, `inventory/state.rs`, `saves/record.rs`, `shared/boost.rs`
+- `crates/engine/tests/poison/`, `weapon_mods/`, `game/poison.rs`
+- `crates/tui/src/inventory/screen.rs`, `app.rs`
+- `schemas/common.schema.json`, `item.schema.json`, `data/engine/weapon_mods.json`, `data/items/uses.json`, `scripts/normalize.py`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-08 | Initial entry | deltaog-117 |
 
 ---
 

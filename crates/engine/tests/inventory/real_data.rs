@@ -14,13 +14,14 @@ fn data() -> GameData {
 }
 
 #[test]
-fn the_book_holds_every_weapon_armor_ammo_consumable_and_miscellany() {
+fn the_book_holds_every_weapon_armor_ammo_consumable_mod_and_miscellany() {
     let data = data();
     let book = ItemBook::from_data(&data).expect("weights are valid and ids are unique");
     let expected = data.weapons.len()
         + data.armor.len()
         + data.ammo.len()
         + data.consumables.len()
+        + data.weapon_mods.len()
         + data.misc.len();
     assert_eq!(book.len(), expected);
     assert!(book.contains(&item("pip_boy_3000")));
@@ -60,8 +61,8 @@ fn the_authored_uses_reach_the_book() {
         .filter(|c| c.on_use.is_some())
         .count();
     assert_eq!(
-        modeled, 94,
-        "uses.json lists the heals, boosts and irradiated meals"
+        modeled, 99,
+        "uses.json lists the heals, boosts, irradiated meals and the poison items"
     );
     for consumable in data.consumables.iter() {
         assert_eq!(book.item_use(&consumable.id), consumable.on_use);
@@ -72,7 +73,8 @@ fn the_authored_uses_reach_the_book() {
     };
     assert_eq!(powder.heal.map(std::num::NonZeroU32::get), Some(18));
     assert_eq!(powder.effects.len(), 1);
-    // Anything that poisons or cures a limb stays unlisted.
+    // Anything that poisons by a source the game does not model, or cures a limb,
+    // stays unlisted.
     assert_eq!(book.item_use(&item("dark_datura")), None);
     assert_eq!(
         book.item_use(&item("doctor_s_bag")),
@@ -100,7 +102,9 @@ fn radiation_in_a_use_matches_the_wiki_text() {
         assert_eq!(boost.rads != 0, mentions, "{}: {text}", consumable.id);
         if boost.rads != 0 {
             with_rads += 1;
-            let removes = text.contains("-50 RAD") || text.contains("-10 Radiation");
+            let removes = ["-50 RAD", "-10 Radiation", "-5 Radiation"]
+                .iter()
+                .any(|phrase| text.contains(phrase));
             assert_eq!(boost.rads < 0, removes, "{}: {text}", consumable.id);
         }
     }

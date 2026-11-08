@@ -203,7 +203,12 @@
   "source": "Antivenom",
   "edid": "NVAntivenom",
   "form_id": "000e2c6f",
-  "effects_text": "Cure Animal Poison"
+  "effects_text": "Cure Animal Poison",
+  "on_use": {
+   "boost": {
+    "cure_poison": true
+   }
+  }
  },
  {
   "id": "atomic_cocktail",
@@ -601,7 +606,12 @@
     "per_second": true,
     "duration_s": 10.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "poison": 150
+   }
+  }
  },
  {
   "id": "bloatfly_meat",
@@ -695,7 +705,19 @@
     "duration_s": 120.0
    }
   ],
-  "skill": "Medicine"
+  "skill": "Medicine",
+  "on_use": {
+   "boost": {
+    "heal": 24,
+    "effects": [
+     {
+      "stat": "poison_resistance",
+      "amount": 50,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "blood_pack",
@@ -1361,7 +1383,12 @@
   "source": "Datura antivenom",
   "edid": "NVDLC02Antivenom",
   "form_id": "0000000d",
-  "effects_text": "Cure poison from creatures and sacred datura root"
+  "effects_text": "Cure poison from creatures and sacred datura root",
+  "on_use": {
+   "boost": {
+    "cure_poison": true
+   }
+  }
  },
  {
   "id": "datura_hide",
@@ -1733,7 +1760,20 @@
     "duration_s": 10.0
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "rads": -50,
+    "cure_poison": true,
+    "effects": [
+     {
+      "stat": "endurance",
+      "amount": -1,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "fire_ant_egg",

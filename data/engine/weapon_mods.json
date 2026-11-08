@@ -9,6 +9,12 @@
   "source": ".357 Magnum revolver long barrel",
   "form_id": "000eeeda",
   "effects_text": "+3 Damage",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 3
+   }
+  ],
   "modifies_text": ".357 Magnum revolver",
   "modifies": [
    "357_magnum_revolver"
@@ -24,6 +30,12 @@
   "source": ".357 revolver HD cylinder",
   "form_id": "000eeed9",
   "effects_text": "+100 item HP",
+  "effects": [
+   {
+    "kind": "condition_hp",
+    "amount": 100
+   }
+  ],
   "modifies_text": ".357 Magnum revolver",
   "modifies": [
    "357_magnum_revolver"
@@ -39,6 +51,12 @@
   "source": ".44 revolver heavy frame",
   "form_id": "0010c85c",
   "effects_text": "+125 item HP",
+  "effects": [
+   {
+    "kind": "condition_hp",
+    "amount": 125
+   }
+  ],
   "modifies_text": ".44 Magnum revolver",
   "modifies": [
    "44_magnum_revolver"
@@ -69,6 +87,12 @@
   "source": ".45 AP HD slide",
   "form_id": "0000000d",
   "effects_text": "+75 item HP",
+  "effects": [
+   {
+    "kind": "condition_hp",
+    "amount": 75
+   }
+  ],
   "modifies_text": ".45 Auto pistol",
   "modifies": [
    "45_auto_pistol"
@@ -99,6 +123,12 @@
   "source": ".45 Auto SMG comp.",
   "form_id": "0000000d",
   "effects_text": "Reduces weapon spread (-0.5)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.5
+   }
+  ],
   "modifies_text": ".45 Auto submachine gun",
   "modifies": [
    "45_auto_submachine_gun"
@@ -114,6 +144,12 @@
   "source": ".45 Auto SMG drums",
   "form_id": "0000000d",
   "effects_text": "Increased ammunition capacity (+20)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 20
+   }
+  ],
   "modifies_text": ".45 Auto submachine gun",
   "modifies": [
    "45_auto_submachine_gun"
@@ -130,6 +166,12 @@
   "edid": "ModNV10mmSMGExtMags",
   "form_id": "0010c85d",
   "effects_text": "Increased ammunition capacity (+10)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 10
+   }
+  ],
   "modifies_text": "10mm submachine gun",
   "modifies": [
    "10mm_submachine_gun"
@@ -146,6 +188,12 @@
   "edid": "ModNV10mmSMGRecoilCompensator",
   "form_id": "0010c85e",
   "effects_text": "Reduced weapon spread (-1)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -1
+   }
+  ],
   "modifies_text": "10mm submachine gun",
   "modifies": [
    "10mm_submachine_gun"
@@ -162,6 +210,12 @@
   "edid": "ModNV10mmPistolExtMags",
   "form_id": "0010c858",
   "effects_text": "Increased ammo capacity (+4)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 4
+   }
+  ],
   "modifies_text": "10mm pistol; Weathered 10mm pistol",
   "modifies": [
    "10mm_pistol",
@@ -179,6 +233,12 @@
   "edid": "ModNV10mmPistolLaserSight",
   "form_id": "0010c859",
   "effects_text": "Reduced weapon spread (-0.4); Laser line aim assist",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.4
+   }
+  ],
   "modifies_text": "10mm pistol; Weathered 10mm pistol",
   "modifies": [
    "10mm_pistol",
@@ -213,6 +273,12 @@
   "edid": "NVDLC05ModNV127mmSMGLaserSight",
   "form_id": "0000000d",
   "effects_text": "Reduced weapon spread (-0.4)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.4
+   }
+  ],
   "modifies_text": "12.7mm submachine gun (GRA)",
   "modifies": [
    "12_7mm_submachine_gun_gra"
@@ -229,6 +295,12 @@
   "edid": "NVDLC05ModNV127mmSMGStackedMagazine",
   "form_id": "0000000d",
   "effects_text": "Increased ammunition capacity (+6)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 6
+   }
+  ],
   "modifies_text": "12.7mm submachine gun (GRA)",
   "modifies": [
    "12_7mm_submachine_gun_gra"
@@ -292,6 +364,12 @@
   "source": "25mm G. APW exp. drum",
   "form_id": "0000000d",
   "effects_text": "Increased ammunition capacity (+2)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 2
+   }
+  ],
   "modifies_text": "25mm grenade APW (GRA)",
   "modifies": [
    "25mm_grenade_apw_gra"
@@ -337,6 +415,12 @@
   "source": "9mm SMG drums",
   "form_id": "000f18fc",
   "effects_text": "Increased ammunition capacity (+30)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 30
+   }
+  ],
   "modifies_text": "9mm submachine gun",
   "modifies": [
    "9mm_submachine_gun"
@@ -367,6 +451,12 @@
   "source": "9mm pistol extended mags",
   "form_id": "000eed3d",
   "effects_text": "Increased ammo capacity (+7)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 7
+   }
+  ],
   "modifies_text": "9mm pistol",
   "modifies": [
    "9mm_pistol"
@@ -446,6 +536,12 @@
   "edid": "NVDLC05ModNVAssaultCarbineExtendedMags",
   "form_id": "0000000d",
   "effects_text": "Increases ammunition capacity (+6)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 6
+   }
+  ],
   "modifies_text": "Assault carbine (GRA)",
   "modifies": [
    "assault_carbine_gra"
@@ -462,6 +558,12 @@
   "edid": "NVDLC05ModNVAssaultCarbineForgedReceiver",
   "form_id": "0000000d",
   "effects_text": "+248 item HP",
+  "effects": [
+   {
+    "kind": "condition_hp",
+    "amount": 248
+   }
+  ],
   "modifies_text": "Assault carbine (GRA)",
   "modifies": [
    "assault_carbine_gra"
@@ -494,6 +596,12 @@
   "edid": "ModNVAssaultCarbineExtMags",
   "form_id": "0010c863",
   "effects_text": "Increased ammunition capacity (+6)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 6
+   }
+  ],
   "modifies_text": "Assault carbine",
   "modifies": [
    "assault_carbine"
@@ -542,6 +650,12 @@
   "edid": "NVDLC05ModNVBaseballBatMapleBody",
   "form_id": "0000000d",
   "effects_text": "Increased weapon condition (+50%)",
+  "effects": [
+   {
+    "kind": "condition_percent",
+    "amount": 50
+   }
+  ],
   "modifies_text": "Baseball bat (GRA)",
   "modifies": [
    "baseball_bat_gra"
@@ -558,6 +672,12 @@
   "edid": "NVDLC05ModNVBaseballBatNails",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+6)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 6
+   }
+  ],
   "modifies_text": "Baseball bat (GRA)",
   "modifies": [
    "baseball_bat_gra"
@@ -574,6 +694,12 @@
   "edid": "ModNVDLC01BearTrapFistHeavyDutySprings",
   "form_id": "0000000d",
   "effects_text": "Increases weapon's damage (+3 DAM)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 3
+   }
+  ],
   "modifies_text": "bear trap fist",
   "modifies": [
    "bear_trap_fist"
@@ -590,6 +716,12 @@
   "edid": "ModNVBrushGunForgedReceiver",
   "form_id": "000eea72",
   "effects_text": "+75 item HP",
+  "effects": [
+   {
+    "kind": "condition_hp",
+    "amount": 75
+   }
+  ],
   "modifies_text": "Brush gun",
   "modifies": [
    "brush_gun"
@@ -606,6 +738,12 @@
   "edid": "NVDLC05ModNVChainsawHeavyDutyChain",
   "form_id": "0000000d",
   "effects_text": "Increased weapon condition (+50%)",
+  "effects": [
+   {
+    "kind": "condition_percent",
+    "amount": 50
+   }
+  ],
   "modifies_text": "Chainsaw (GRA)",
   "modifies": [
    "chainsaw_gra"
@@ -638,6 +776,12 @@
   "edid": "NVDLC05ModNVChainsawCarbideTeeth",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+15)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 15
+   }
+  ],
   "modifies_text": "Chainsaw (GRA)",
   "modifies": [
    "chainsaw_gra"
@@ -670,6 +814,12 @@
   "edid": "ModNVCowboyRepeaterLongTube",
   "form_id": "000eed3a",
   "effects_text": "Increased ammunition capacity (+4)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 4
+   }
+  ],
   "modifies_text": "Cowboy repeater",
   "modifies": [
    "cowboy_repeater"
@@ -719,6 +869,12 @@
   "edid": "ModNVFlamerExpandedTanks",
   "form_id": "0010c85f",
   "effects_text": "Increased ammunition capacity (+60)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 60
+   }
+  ],
   "modifies_text": "Flamer",
   "modifies": [
    "flamer"
@@ -751,6 +907,12 @@
   "edid": "ModNVGatlingLaserFocusOptics",
   "form_id": "0010c86c",
   "effects_text": "Increased weapon damage (+3)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 3
+   }
+  ],
   "modifies_text": "Gatling laser",
   "modifies": [
    "gatling_laser"
@@ -800,6 +962,12 @@
   "edid": "ModNVDLC01HolorifleAdvancedCalibration",
   "form_id": "0000000d",
   "effects_text": "Reduced weapon spread (-0.25)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.25
+   }
+  ],
   "modifies_text": "Holorifle",
   "modifies": [
    "holorifle"
@@ -816,6 +984,12 @@
   "edid": "ModNVDLC01HolorifleFocusOptics",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+25)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 25
+   }
+  ],
   "modifies_text": "Holorifle",
   "modifies": [
    "holorifle"
@@ -832,6 +1006,12 @@
   "edid": "ModNVDLC01HolorifleReinforced",
   "form_id": "0000000d",
   "effects_text": "Increased condition (+1.5%)",
+  "effects": [
+   {
+    "kind": "condition_percent",
+    "amount": 1.5
+   }
+  ],
   "modifies_text": "Holorifle",
   "modifies": [
    "holorifle"
@@ -848,6 +1028,12 @@
   "edid": "NVDLC05ModNVHuntingRevolverSixShotCylinder",
   "form_id": "0000000d",
   "effects_text": "Increased ammo capacity (+1)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 1
+   }
+  ],
   "modifies_text": "Hunting revolver (GRA)",
   "modifies": [
    "hunting_revolver_gra"
@@ -864,6 +1050,12 @@
   "edid": "NVDLC05ModNVHuntingRevolverMatchBarrel",
   "form_id": "0000000d",
   "effects_text": "Reduced weapon spread (-.15)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.15
+   }
+  ],
   "modifies_text": "GRA hunting revolver"
  },
  {
@@ -893,6 +1085,12 @@
   "edid": "ModNVHuntingRifleExtMag",
   "form_id": "0010c862",
   "effects_text": "Increased ammunition capacity (+5)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 5
+   }
+  ],
   "modifies_text": "Hunting rifle",
   "modifies": [
    "hunting_rifle"
@@ -925,6 +1123,12 @@
   "edid": "ModNVHuntingShotgunChoke",
   "form_id": "000f0fe9",
   "effects_text": "Reduced weapon spread (-0.6)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.6
+   }
+  ],
   "modifies_text": "Hunting shotgun",
   "modifies": [
    "hunting_shotgun"
@@ -941,6 +1145,12 @@
   "edid": "ModNVHuntingShotgunLongTube",
   "form_id": "000f0fe8",
   "effects_text": "Increased ammunition capacity (+3)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 3
+   }
+  ],
   "modifies_text": "Hunting shotgun",
   "modifies": [
    "hunting_shotgun"
@@ -973,6 +1183,12 @@
   "edid": "NVDLC03ModK9000ReslaRoil",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+2)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 2
+   }
+  ],
   "modifies_text": "K9000 cyberdog gun",
   "modifies": [
    "k9000_cyberdog_gun"
@@ -989,6 +1205,12 @@
   "edid": "NVDLC05ModNVKatanaAuthenticBlade",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+5)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 5
+   }
+  ],
   "modifies_text": "Katana (GRA)",
   "modifies": [
    "katana_gra"
@@ -1021,6 +1243,12 @@
   "edid": "NVDLC05ModNVKatanaProtectiveSheath",
   "form_id": "0000000d",
   "effects_text": "Increased weapon condition (+50%)",
+  "effects": [
+   {
+    "kind": "condition_percent",
+    "amount": 50
+   }
+  ],
   "modifies_text": "Katana (GRA)",
   "modifies": [
    "katana_gra"
@@ -1104,6 +1332,12 @@
   "edid": "NVDLC05ModNVLaserPistolFocusOptics",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+3)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 3
+   }
+  ],
   "modifies_text": "Laser pistol (GRA)",
   "modifies": [
    "laser_pistol_gra"
@@ -1152,6 +1386,12 @@
   "edid": "ModNVLaserRifleFocusOptics",
   "form_id": "0010c869",
   "effects_text": "Increased weapon damage (+3)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 3
+   }
+  ],
   "modifies_text": "Laser rifle",
   "modifies": [
    "laser_rifle"
@@ -1184,6 +1424,12 @@
   "edid": "ModNVLightMGExpandedDrums",
   "form_id": "0010c852",
   "effects_text": "Increasesd ammunition capacity (+110)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 110
+   }
+  ],
   "modifies_text": "Light machine gun",
   "modifies": [
    "light_machine_gun"
@@ -1200,6 +1446,12 @@
   "edid": "ModNVMinigunDampedSubframe",
   "form_id": "0010c866",
   "effects_text": "Reduced weapon spread (-0.35)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.35
+   }
+  ],
   "modifies_text": "Minigun",
   "modifies": [
    "minigun"
@@ -1232,6 +1484,12 @@
   "edid": "ModNVMissileLauncherGuidanceSys",
   "form_id": "0010c86e",
   "effects_text": "Reduced weapon spread (-0.25)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.25
+   }
+  ],
   "modifies_text": "Missile launcher",
   "modifies": [
    "missile_launcher"
@@ -1248,6 +1506,12 @@
   "edid": "NVDLC05ModNVPlasmaPistolHighEnergyIonizer",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+7)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 7
+   }
+  ],
   "modifies_text": "Plasma pistol (GRA)",
   "modifies": [
    "plasma_pistol_gra"
@@ -1296,6 +1560,12 @@
   "edid": "NVDLC05ModNVPlasmaDefenderHighCapTerminal",
   "form_id": "0000000d",
   "effects_text": "Increased ammunition capacity (+32)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 32
+   }
+  ],
   "modifies_text": "Plasma defender (GRA)",
   "modifies": [
    "plasma_defender_gra"
@@ -1328,6 +1598,12 @@
   "edid": "NVDLC05ModNVPlasmaDefenderSheathStabilizer",
   "form_id": "0000000d",
   "effects_text": "Decreased weapon spread (-0.2)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.2
+   }
+  ],
   "modifies_text": "Plasma Defender (GRA)",
   "modifies": [
    "plasma_defender_gra"
@@ -1376,6 +1652,12 @@
   "edid": "NVDLC05ModNVPowerFistChromedTubes",
   "form_id": "0000000d",
   "effects_text": "Increased weapon condition (+100%)",
+  "effects": [
+   {
+    "kind": "condition_percent",
+    "amount": 100
+   }
+  ],
   "modifies_text": "Power fist (GRA)",
   "modifies": [
    "power_fist_gra"
@@ -1392,6 +1674,12 @@
   "edid": "NVDLC05ModNVPowerFistHighCapValves",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+8)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 8
+   }
+  ],
   "modifies_text": "Power fist (GRA)",
   "modifies": [
    "power_fist_gra"
@@ -1472,6 +1760,12 @@
   "edid": "NVDLC05ModNVRipperHeavyDutyChain",
   "form_id": "0000000d",
   "effects_text": "Increased weapon condition (+50%)",
+  "effects": [
+   {
+    "kind": "condition_percent",
+    "amount": 50
+   }
+  ],
   "modifies_text": "Ripper (GRA)",
   "modifies": [
    "ripper_gra"
@@ -1488,6 +1782,12 @@
   "edid": "NVDLC05ModNVRipperCarbideTeeth",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+10)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 10
+   }
+  ],
   "modifies_text": "Ripper (GRA)",
   "modifies": [
    "ripper_gra"
@@ -1504,6 +1804,12 @@
   "edid": "ModNVDLC04SMMGExtendedMag",
   "form_id": "0000000d",
   "effects_text": "Increased ammunition capacity (+15)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 15
+   }
+  ],
   "modifies_text": "Shoulder mounted machine gun",
   "modifies": [
    "shoulder_mounted_machine_gun"
@@ -1520,6 +1826,12 @@
   "edid": "ModNVDLC04SMMGMechanicalUpgrade",
   "form_id": "0000000d",
   "effects_text": "Increased weapon condition (+25%)",
+  "effects": [
+   {
+    "kind": "condition_percent",
+    "amount": 25
+   }
+  ],
   "modifies_text": "Shoulder mounted machine gun",
   "modifies": [
    "shoulder_mounted_machine_gun"
@@ -1536,6 +1848,12 @@
   "edid": "ModNVDLC04SMMGRecoilCompensator",
   "form_id": "0000000d",
   "effects_text": "Reduced weapon spread (-0.2)",
+  "effects": [
+   {
+    "kind": "spread",
+    "amount": -0.2
+   }
+  ],
   "modifies_text": "Shoulder mounted machine gun",
   "modifies": [
    "shoulder_mounted_machine_gun"
@@ -1552,6 +1870,12 @@
   "edid": "ModNVServiceRifleForgedReceiver",
   "form_id": "0010c851",
   "effects_text": "+200 item HP",
+  "effects": [
+   {
+    "kind": "condition_hp",
+    "amount": 200
+   }
+  ],
   "modifies_text": "Service rifle",
   "modifies": [
    "service_rifle"
@@ -1584,6 +1908,12 @@
   "edid": "ModNVSilenced22SMGDrums",
   "form_id": "0010c86f",
   "effects_text": "Increased ammunition capacity (+60)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 60
+   }
+  ],
   "modifies_text": "Silenced .22 SMG",
   "modifies": [
    "silenced_22_smg"
@@ -1648,6 +1978,12 @@
   "edid": "NVDLC05ModNVTriBeamLaserRifleHDCapacitors",
   "form_id": "0000000d",
   "effects_text": "Increased weapon condition (+200%)",
+  "effects": [
+   {
+    "kind": "condition_percent",
+    "amount": 200
+   }
+  ],
   "modifies_text": "Tri-beam laser rifle (GRA)",
   "modifies": [
    "tri_beam_laser_rifle_gra"
@@ -1680,6 +2016,12 @@
   "edid": "NVDLC05ModNVTriBeamLaserRifleHighCapTerminal",
   "form_id": "0000000d",
   "effects_text": "Increased ammunition capacity (+24)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 24
+   }
+  ],
   "modifies_text": "Tri-beam laser rifle (GRA)",
   "modifies": [
    "tri_beam_laser_rifle_gra"
@@ -1696,6 +2038,12 @@
   "edid": "ModNVVarmintRifleExtMags",
   "form_id": "000eeed8",
   "effects_text": "Increased ammunition capacity (+3)",
+  "effects": [
+   {
+    "kind": "clip_size",
+    "amount": 3
+   }
+  ],
   "modifies_text": "Varmint rifle",
   "modifies": [
    "varmint_rifle"
@@ -1744,6 +2092,12 @@
   "edid": "ModNVDLC02WarClubCasing",
   "form_id": "0000000d",
   "effects_text": "Increased weapon damage (+5)",
+  "effects": [
+   {
+    "kind": "damage",
+    "amount": 5
+   }
+  ],
   "modifies_text": "War club",
   "modifies": [
    "war_club"

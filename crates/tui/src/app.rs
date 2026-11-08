@@ -29,6 +29,7 @@ use engine::shared::{
 };
 use engine::trade::VendorBook;
 use engine::travel::TravelBook;
+use engine::weapon_mods::WeaponModBook;
 use engine::world::WorldBook;
 use ratatui::Frame;
 use ratatui::crossterm::event::KeyCode;
@@ -248,9 +249,12 @@ impl App {
         let map = Arc::new(TravelBook::from_data(data).context("building the map")?);
         let addictions =
             Arc::new(AddictionBook::from_data(data).context("building the addiction book")?);
+        let weapon_mods =
+            Arc::new(WeaponModBook::from_data(data).context("building the weapon mods")?);
         let mut game = Game::with_world(quests, world)
             .with_items(items)
             .with_addictions(addictions)
+            .with_weapon_mods(weapon_mods)
             .with_arsenal(arsenal)
             .with_perks(Arc::new(PerkBook::base_game(data)))
             .with_beds(beds)
@@ -992,12 +996,15 @@ fn render_too_small(frame: &mut Frame, area: Rect) {
     );
 }
 
-/// " | 276 rads | 1 addiction(s)" for a player who has either, and nothing for one
-/// who has neither, so the status line stays short for a healthy player.
+/// " | 276 rads | 40 poison | 1 addiction(s)" for a player who has any, and nothing
+/// for one who has none, so the status line stays short for a healthy player.
 fn ailments_note(game: &Game) -> String {
     let mut note = String::new();
     if game.rads().get() > 0 {
         note.push_str(&format!(" | {} rads", game.rads().get()));
+    }
+    if game.poison() > 0 {
+        note.push_str(&format!(" | {} poison", game.poison()));
     }
     if game.addictions().any() {
         note.push_str(&format!(" | {} addiction(s)", game.addictions().len()));

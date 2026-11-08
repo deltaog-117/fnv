@@ -331,7 +331,7 @@
             "boost": {
               "type": "object",
               "additionalProperties": false,
-              "description": "Changes numbers for a while, and may also restore hit points or change radiation at once. At least one of heal, rads and effects is present.",
+              "description": "Changes numbers for a while, and may also restore hit points, change radiation or poison at once, or cure poison. At least one of heal, rads, poison, cure_poison and effects is present.",
               "minProperties": 1,
               "properties": {
                 "heal": {
@@ -347,6 +347,16 @@
                     "const": 0
                   },
                   "description": "Radiation taken in (positive, cut by radiation resistance) or taken out (negative) at once; an item that only takes radiation out is refused when there is none."
+                },
+                "poison": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 999,
+                  "description": "Poison taken in at once, in hit points still to be lost over time (cut by poison resistance)."
+                },
+                "cure_poison": {
+                  "const": true,
+                  "description": "Ends the poison in the blood; an item that does only this is refused when the player is not poisoned."
                 },
                 "effects": {
                   "type": "array",
@@ -386,7 +396,8 @@
                           "action_points",
                           "carry_weight",
                           "damage_resistance",
-                          "radiation_resistance"
+                          "radiation_resistance",
+                          "poison_resistance"
                         ]
                       },
                       "amount": {
@@ -418,12 +429,41 @@
         "modifies_text": {
           "type": "string"
         },
+        "effects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mod_effect"
+          },
+          "description": "What the game can act on in effects_text. A mod whose text names nothing it can act on lists none, and can still be fitted."
+        },
         "modifies": {
           "type": "array",
           "items": {
             "$ref": "common.schema.json#/$defs/id"
           },
           "description": "Weapon ids, when resolved."
+        }
+      }
+    },
+    "mod_effect": {
+      "type": "object",
+      "required": [
+        "kind",
+        "amount"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "damage",
+            "condition_hp",
+            "condition_percent",
+            "clip_size",
+            "spread"
+          ]
+        },
+        "amount": {
+          "type": "number"
         }
       }
     },

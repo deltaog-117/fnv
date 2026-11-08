@@ -19,6 +19,8 @@ pub enum ItemClass {
     /// A crafting component or other miscellany: carried, sold and used up by
     /// recipes, with no use of its own.
     Misc,
+    /// A weapon mod: carried until it is fitted to a weapon, which then keeps it.
+    Mod,
 }
 
 #[derive(Debug, Clone, Copy)]
@@ -32,8 +34,8 @@ struct Info {
 /// Every item that can be carried, with its class, weight and base value.
 ///
 /// The book is what lets the inventory refuse an item that does not exist, instead
-/// of keeping a stack under a typo. Weapon mods and skill books are not in the
-/// loaded data yet, so they cannot be carried.
+/// of keeping a stack under a typo. Skill books are not in the loaded data yet, so
+/// they cannot be carried.
 #[derive(Debug, Default)]
 pub struct ItemBook {
     items: HashMap<ItemId, Info>,
@@ -119,7 +121,8 @@ impl ItemBook {
         Ok(self)
     }
 
-    /// Every weapon, armor, ammo, consumable and miscellany in the loaded data.
+    /// Every weapon, armor, ammo, consumable, weapon mod and miscellany in the loaded
+    /// data.
     ///
     /// # Errors
     ///
@@ -149,12 +152,17 @@ impl ItemBook {
             .misc
             .iter()
             .map(|item| (item.id.clone(), ItemClass::Misc, item.weight));
+        let mods = data
+            .weapon_mods
+            .iter()
+            .map(|item| (item.id.clone(), ItemClass::Mod, item.weight));
         Self::new(
             weapons
                 .chain(armor)
                 .chain(ammo)
                 .chain(consumables)
-                .chain(misc),
+                .chain(misc)
+                .chain(mods),
         )?
         .with_uses(uses)?
         .with_values(
@@ -168,7 +176,12 @@ impl ItemBook {
                         .iter()
                         .map(|item| (item.id.clone(), item.value)),
                 )
-                .chain(data.misc.iter().map(|item| (item.id.clone(), item.value))),
+                .chain(data.misc.iter().map(|item| (item.id.clone(), item.value)))
+                .chain(
+                    data.weapon_mods
+                        .iter()
+                        .map(|item| (item.id.clone(), item.value)),
+                ),
         )
     }
 
