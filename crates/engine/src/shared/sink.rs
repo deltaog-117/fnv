@@ -12,7 +12,7 @@ use thiserror::Error;
 
 use super::ids::{CompanionId, EndingId, FactionId, FlagId, ItemId, NpcId, QuestId};
 use super::view::StateView;
-use super::vocabulary::{QuestStage, ReputationLevel};
+use super::vocabulary::{Ailment, QuestStage, ReputationLevel};
 
 /// An effect could not be applied.
 #[derive(Debug, Clone, PartialEq, Error)]
@@ -196,6 +196,13 @@ pub trait CharacterSink {
     ///
     /// [`EffectError`] when the owner refuses the healing.
     fn restore_health(&mut self) -> Result<(), EffectError>;
+
+    /// Cures radiation or every addiction.
+    ///
+    /// # Errors
+    ///
+    /// [`EffectError`] when the owner refuses the cure.
+    fn cure(&mut self, ailment: Ailment) -> Result<(), EffectError>;
 }
 
 /// Inventory effects.

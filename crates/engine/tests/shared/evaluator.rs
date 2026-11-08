@@ -8,9 +8,9 @@
 use std::num::NonZeroU32;
 
 use engine::shared::{
-    Comparison, Condition, Effect, EffectError, EmptyWorld, EndingId, FactionId, FlagId,
+    Ailment, Comparison, Condition, Effect, EffectError, EmptyWorld, EndingId, FactionId, FlagId,
     HealthPercent, ItemId, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId, QuestStage,
-    QuestState, ReputationLevel, Skill, SkillLevel, apply, apply_all, evaluate,
+    QuestState, Rads, ReputationLevel, Skill, SkillLevel, apply, apply_all, evaluate,
 };
 use proptest::collection::vec;
 use proptest::prelude::*;
@@ -83,6 +83,57 @@ fn health_compares_by_percent_and_healing_restores_it() {
     assert!(evaluate(&health(100, Comparison::Is), &state));
     apply(&Effect::Heal {}, &mut state).expect("healing a healthy player is not an error");
     assert!(evaluate(&health(100, Comparison::Is), &state));
+}
+
+#[test]
+fn radiation_is_read_by_the_rads_held_and_a_cure_takes_it_away() {
+    let at_least = |min: u32| Condition::Radiation {
+        min: Rads::try_new(min).expect("in range"),
+    };
+    let mut state = MemoryState::default().with_rads(150);
+    assert!(evaluate(&at_least(0), &state) && evaluate(&at_least(150), &state));
+    assert!(!evaluate(&at_least(151), &state));
+    apply(
+        &Effect::Cure {
+            ailment: Ailment::Radiation,
+        },
+        &mut state,
+    )
+    .expect("curing is always allowed");
+    assert!(!evaluate(&at_least(1), &state));
+    apply(
+        &Effect::Cure {
+            ailment: Ailment::Radiation,
+        },
+        &mut state,
+    )
+    .expect("a well player is not an error");
+}
+
+#[test]
+fn addiction_is_read_as_a_yes_or_no_and_a_cure_ends_it() {
+    let mut state = MemoryState::default().addicted();
+    assert!(evaluate(&Condition::Addicted {}, &state));
+    apply(
+        &Effect::Cure {
+            ailment: Ailment::Radiation,
+        },
+        &mut state,
+    )
+    .expect("allowed");
+    assert!(
+        evaluate(&Condition::Addicted {}, &state),
+        "radiation is not addiction"
+    );
+    apply(
+        &Effect::Cure {
+            ailment: Ailment::Addiction,
+        },
+        &mut state,
+    )
+    .expect("allowed");
+    assert!(!evaluate(&Condition::Addicted {}, &state));
+    assert!(!evaluate(&Condition::Addicted {}, &EmptyWorld));
 }
 
 #[test]

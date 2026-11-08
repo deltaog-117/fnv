@@ -7,7 +7,7 @@
 use std::num::NonZeroU32;
 use std::sync::Arc;
 
-use engine::game::Game;
+use engine::game::{Game, Used};
 use engine::inventory::{CopyId, Slot};
 use engine::repair::WEAPON_REPAIR_KIT;
 use engine::shared::{Boost, InventoryView, ItemId, ItemUse};
@@ -16,6 +16,7 @@ use ratatui::layout::{Constraint, Layout, Rect};
 use ratatui::text::Line;
 use ratatui::widgets::{Block, Borders, Paragraph, Wrap};
 
+use crate::shared::dice::Rng;
 use crate::shared::input::Command;
 use crate::shared::log::{Entry, Log};
 use crate::shared::menu::{self, Item, Menu};
@@ -107,6 +108,8 @@ pub struct Pack {
     names: Arc<Names>,
     list: Menu,
     mode: Mode,
+    /// Rolled for the addiction risk of a chem.
+    dice: Rng,
 }
 
 impl Pack {
@@ -117,7 +120,16 @@ impl Pack {
             names,
             list: Menu::new(rows(game).len()),
             mode: Mode::Browsing,
+            dice: Rng::from_clock(),
         }
+    }
+
+    /// The same pack rolling the dice a caller chooses, so a test or a seeded game
+    /// rolls the same way every time.
+    #[must_use]
+    pub fn with_dice(mut self, dice: Rng) -> Self {
+        self.dice = dice;
+        self
     }
 
     /// The keys that work right now.
@@ -197,8 +209,8 @@ impl Pack {
         let name = self.names.name(item);
         let note = match (action, row) {
             (Action::Use, _) => game
-                .use_item(item)
-                .map(|healed| use_note(&name, healed, game.inventory().item_use(item)))
+                .use_item_rolling(item, &mut self.dice)
+                .map(|used| use_note(&name, &used, game.inventory().item_use(item)))
                 .map_err(|error| error.to_string()),
             (Action::Equip, Row::Weapon(copy, _)) => game
                 .equip_copy(*copy)
@@ -500,16 +512,33 @@ fn boost_text(boost: &Boost) -> String {
 
 /// What the log says after an item is used. `healed` is what it restored, and `used`
 /// is what the item does, which says whether it also started boosts.
-fn use_note(name: &str, healed: u32, used: Option<ItemUse>) -> String {
-    let boosts = match used {
+fn use_note(name: &str, used: &Used, left: Option<ItemUse>) -> String {
+    let boosts = match left {
         Some(ItemUse::Boost(boost)) => boost.effects.len(),
         _ => 0,
     };
-    match (healed, boosts) {
-        (hp, 0) => format!("You use the {name} and recover {hp} hit points."),
-        (0, n) => format!("You use the {name}: {n} effect(s) begin."),
-        (hp, n) => format!("You use the {name}, recover {hp} hit points, and {n} effect(s) begin."),
+    let mut parts = Vec::new();
+    if used.healed > 0 {
+        parts.push(format!("recover {} hit points", used.healed));
     }
+    if used.rads_in > 0 {
+        parts.push(format!("absorb {} rads", used.rads_in));
+    }
+    if used.rads_out > 0 {
+        parts.push(format!("clear {} rads", used.rads_out));
+    }
+    if boosts > 0 {
+        parts.push(format!("{boosts} effect(s) begin"));
+    }
+    let mut note = match parts.split_last() {
+        None => format!("You use the {name}."),
+        Some((only, [])) => format!("You use the {name} and {only}."),
+        Some((last, first)) => format!("You use the {name}, {}, and {last}.", first.join(", ")),
+    };
+    if let Some(kind) = &used.addicted {
+        note.push_str(&format!(" You are now addicted to {kind}."));
+    }
+    note
 }
 
 /// " 85%" for a weapon that wears, and nothing for one that does not.
@@ -636,7 +665,12 @@ mod tests {
                 let quests = Arc::new(QuestBook::new(data.quests.iter()).expect("quests build"));
                 let world = Arc::new(WorldBook::new(data.npcs.iter().map(|npc| &npc.id)));
                 let items = Arc::new(ItemBook::from_data(&data).expect("items build"));
-                let game = Game::with_world(quests, world).with_items(items);
+                let addictions = Arc::new(
+                    engine::addiction::AddictionBook::from_data(&data).expect("addictions build"),
+                );
+                let game = Game::with_world(quests, world)
+                    .with_items(items)
+                    .with_addictions(addictions);
                 (game, Arc::new(Names::from_data(&data)))
             })
             .clone()
@@ -696,6 +730,63 @@ mod tests {
             .map(ToString::to_string)
             .collect::<Vec<_>>()
             .join("\n")
+    }
+
+    #[test]
+    fn using_radaway_clears_rads_spends_it_and_says_so() {
+        let (game, mut pack, mut log) = carrying(0, &[("radaway", 2)]);
+        let mut game = game.with_rads(engine::shared::Rads::try_new(300).expect("in range"));
+        choose(&mut pack, &mut game, &mut log, "radaway", "Use");
+        assert_eq!(game.rads().get(), 250);
+        assert_eq!(game.inventory().item_count(&id("radaway")), 1);
+        assert!(said(&log).contains("clear 50 rads"), "{}", said(&log));
+    }
+
+    #[test]
+    fn radaway_is_kept_by_a_player_with_no_radiation() {
+        let (mut game, mut pack, mut log) = carrying(0, &[("radaway", 2)]);
+        choose(&mut pack, &mut game, &mut log, "radaway", "Use");
+        assert_eq!(game.inventory().item_count(&id("radaway")), 2);
+        assert!(
+            said(&log).contains("no radiation to take out"),
+            "{}",
+            said(&log)
+        );
+    }
+
+    #[test]
+    fn irradiated_food_says_how_many_rads_got_in() {
+        let (mut game, mut pack, mut log) = carrying(10, &[("cram", 1)]);
+        choose(&mut pack, &mut game, &mut log, "cram", "Use");
+        let text = said(&log);
+        assert!(text.contains("recover 5 hit points"), "{text}");
+        assert!(text.contains("absorb 3 rads"), "{text}");
+        assert_eq!(game.rads().get(), 3);
+    }
+
+    /// A seed whose first roll satisfies `wanted`, so a chem's risk can be forced.
+    fn seed_rolling(wanted: impl Fn(u8) -> bool) -> crate::shared::dice::Rng {
+        use engine::combat::Dice;
+        (1u64..)
+            .map(crate::shared::dice::Rng::new)
+            .find(|rng| wanted(rng.clone().percent()))
+            .expect("some seed rolls it")
+    }
+
+    #[test]
+    fn a_chem_can_hook_the_player_and_the_log_says_so() {
+        // Jet's chance is 20%: a roll at or below it hooks, above it does not.
+        let (game, pack, mut log) = carrying(0, &[("jet", 1)]);
+        let (mut hooked, mut pack) = (game.clone(), pack.with_dice(seed_rolling(|r| r <= 20)));
+        choose(&mut pack, &mut hooked, &mut log, "jet", "Use");
+        assert!(hooked.addictions().any());
+        assert!(said(&log).contains("addicted to jet"), "{}", said(&log));
+
+        let (mut lucky, pack, mut log) = carrying(0, &[("jet", 1)]);
+        let mut pack = pack.with_dice(seed_rolling(|r| r > 20));
+        choose(&mut pack, &mut lucky, &mut log, "jet", "Use");
+        assert!(!lucky.addictions().any());
+        assert!(!said(&log).contains("addicted"), "{}", said(&log));
     }
 
     #[test]

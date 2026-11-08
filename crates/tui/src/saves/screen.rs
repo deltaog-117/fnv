@@ -407,6 +407,7 @@ impl Slots {
             Slot::Named(_) => entry.slot.label(),
             Slot::Auto => "Autosave (automatic)".to_owned(),
             Slot::Previous => "Previous autosave (automatic)".to_owned(),
+            Slot::Earlier(depth) => format!("Autosave {} back (automatic)", depth.steps()),
             Slot::Legacy => "Old save (from before named saves)".to_owned(),
         };
         match &entry.summary {

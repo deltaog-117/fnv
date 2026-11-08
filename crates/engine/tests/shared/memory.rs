@@ -11,9 +11,9 @@ use std::hash::{Hash, Hasher};
 use std::num::NonZeroU32;
 
 use engine::shared::{
-    Alignment, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView,
+    Ailment, Alignment, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView,
     EffectError, EndingId, FactionId, FlagId, HealthPercent, InventorySink, InventoryView, ItemId,
-    NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
+    NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView, Rads,
     ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView,
     WorldSink, WorldView,
 };
@@ -42,6 +42,8 @@ pub struct MemoryState {
     perks: HashSet<PerkId>,
     // None is full health: a derived Default must not start the player at zero.
     health: Option<HealthPercent>,
+    rads: u16,
+    addicted: bool,
     companions: HashSet<CompanionId>,
     flags: HashSet<FlagId>,
     npcs: HashMap<NpcId, Npc>,
@@ -66,6 +68,18 @@ impl MemoryState {
     #[must_use]
     pub fn with_health(mut self, percent: u32) -> Self {
         self.health = Some(HealthPercent::try_new(percent).expect("percent in range"));
+        self
+    }
+
+    #[must_use]
+    pub fn with_rads(mut self, rads: u16) -> Self {
+        self.rads = rads;
+        self
+    }
+
+    #[must_use]
+    pub fn addicted(mut self) -> Self {
+        self.addicted = true;
         self
     }
 
@@ -154,6 +168,14 @@ impl CharacterView for MemoryState {
 
     fn has_perk(&self, perk: &PerkId) -> bool {
         self.perks.contains(perk)
+    }
+
+    fn radiation(&self) -> Rads {
+        Rads::try_new(u32::from(self.rads)).expect("rads in range")
+    }
+
+    fn addicted(&self) -> bool {
+        self.addicted
     }
 
     fn health(&self) -> HealthPercent {
@@ -279,6 +301,14 @@ impl CharacterSink for MemoryState {
 
     fn restore_health(&mut self) -> Result<(), EffectError> {
         self.health = None;
+        Ok(())
+    }
+
+    fn cure(&mut self, ailment: Ailment) -> Result<(), EffectError> {
+        match ailment {
+            Ailment::Radiation => self.rads = 0,
+            Ailment::Addiction => self.addicted = false,
+        }
         Ok(())
     }
 }
@@ -434,6 +464,14 @@ impl CharacterView for HashedView {
 
     fn health(&self) -> HealthPercent {
         HealthPercent::try_new(self.below(&"health", 101)).expect("below 101")
+    }
+
+    fn radiation(&self) -> Rads {
+        Rads::try_new(self.below(&"rads", 1000)).expect("below 1000")
+    }
+
+    fn addicted(&self) -> bool {
+        self.below(&"addicted", 2) == 1
     }
 }
 

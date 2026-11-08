@@ -278,29 +278,120 @@ fn an_unprepared_town_faces_the_wikis_six_attackers() {
     assert_eq!(foes_of(&battle), expected);
 }
 
+/// What fights on the player's side besides the player: name and hit points.
+fn allies_of(battle: &Battle) -> Vec<(String, u32)> {
+    let combat = battle.combat();
+    combat
+        .ids()
+        .filter(|&id| combat.side(id) == Some(Side::Player) && id != battle.player())
+        .map(|id| {
+            let ally = combat.combatant(id).expect("an ally");
+            (ally.name().to_owned(), ally.max_hp().get())
+        })
+        .collect()
+}
+
 #[test]
-fn a_fully_prepared_town_faces_cobb_and_two_gangers() {
+fn only_chets_supplies_thin_the_attackers_and_the_other_helpers_fight_beside_the_player() {
     let mut game = armed_game();
     help_from(&mut game, &HELPERS);
     let battle = start(&game);
+    // Cobb and four gangers: the supplies keep one away. Trudy and Easy Pete shoot.
+    assert_eq!(foes_of(&battle).len(), 5);
     assert_eq!(
-        foes_of(&battle),
+        allies_of(&battle),
         [
-            ("Joe Cobb".to_owned(), 50, 5.0),
-            ("Powder Ganger".to_owned(), 30, 0.0),
-            ("Powder Ganger".to_owned(), 30, 0.0),
+            ("Sunny Smiles".to_owned(), 30),
+            ("Easy Pete".to_owned(), 25),
+            ("Trudy".to_owned(), 35),
         ]
     );
 }
 
 #[test]
-fn each_helper_takes_exactly_one_attacker_out_of_the_fight() {
-    for helper in HELPERS {
+fn each_helper_has_their_own_effect_on_the_fight() {
+    let unhelped = start(&armed_game());
+    assert_eq!(foes_of(&unhelped).len(), 6);
+    assert_eq!(allies_of(&unhelped), [("Sunny Smiles".to_owned(), 30)]);
+    for (helper, foes, ally) in [
+        ("trudy_joined_militia", 6, Some("Trudy")),
+        ("easy_pete_joined_militia", 6, Some("Easy Pete")),
+        ("chet_supplied_militia", 5, None),
+    ] {
         let mut game = armed_game();
         help_from(&mut game, &[helper]);
         let battle = start(&game);
-        assert_eq!(foes_of(&battle).len(), 5, "{helper}");
+        assert_eq!(foes_of(&battle).len(), foes, "{helper}");
+        let allies = allies_of(&battle);
+        assert_eq!(allies.len(), 1 + usize::from(ally.is_some()), "{helper}");
+        assert_eq!(
+            allies.iter().any(|(name, _)| Some(name.as_str()) == ally),
+            ally.is_some()
+        );
     }
+}
+
+#[test]
+fn a_dead_ally_does_not_join_the_fight() {
+    let mut game = armed_game();
+    help_from(&mut game, &["trudy_joined_militia"]);
+    apply_all(
+        &[effect(
+            serde_json::json!({"type": "kill_npc", "npc": "trudy"}),
+        )],
+        &mut game,
+    )
+    .expect("trudy dies");
+    let names: Vec<_> = allies_of(&start(&game))
+        .into_iter()
+        .map(|(name, _)| name)
+        .collect();
+    assert_eq!(names, ["Sunny Smiles"]);
+}
+
+#[test]
+fn allies_shoot_for_themselves_while_the_player_passes() {
+    let mut game = armed_game();
+    help_from(&mut game, &["trudy_joined_militia"]);
+    let mut battle = start(&game);
+    let allies: Vec<_> = {
+        let combat = battle.combat();
+        combat
+            .ids()
+            .filter(|&id| combat.side(id) == Some(Side::Player) && id != battle.player())
+            .collect()
+    };
+    let shots = battle
+        .end_turn(&mut Always(100))
+        .expect("the player passes");
+    assert!(
+        shots.iter().any(|shot| allies.contains(&shot.attacker)),
+        "an ally took a turn"
+    );
+    assert!(
+        shots
+            .iter()
+            .all(|shot| battle.combat().side(shot.attacker) != battle.combat().side(shot.target)),
+        "nobody shoots their own side"
+    );
+}
+
+#[test]
+fn the_fight_is_lost_when_the_player_falls_even_if_an_ally_still_stands() {
+    let game = armed_game();
+    // One hit point left, so the first shot that lands finishes the player.
+    let max = game.character().max_hp();
+    let game = game.with_wounds(max - 1);
+    let mut battle = start(&game);
+    play(&mut battle, &mut Always(1), true);
+    assert_eq!(battle.combat().status(), Status::Won(Side::Enemy));
+    let sunny_up = battle
+        .combat()
+        .ids()
+        .filter(|&id| id != battle.player() && battle.combat().side(id) == Some(Side::Player))
+        .any(|id| battle.combat().is_standing(id));
+    assert!(sunny_up, "Sunny was still standing when the player fell");
+    assert_eq!(game.clone().finish_battle(&battle), Ok(Outcome::Defeat));
 }
 
 #[test]

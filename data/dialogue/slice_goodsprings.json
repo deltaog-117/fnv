@@ -9,6 +9,8 @@
    "vfreeformgoodspringsdocmitchelltowninfo",
    "vfreeformgoodspringsdocmitchellshootouthelp",
    "doctormedical",
+   "doctorradiation",
+   "doctoraddiction",
    "doctorsupplies",
    "vfreeformgoodspringsdocmitchelltopic002",
    "goodbye"
@@ -17,6 +19,36 @@
    {
     "key": "doctorsupplies",
     "shop": "doc_mitchell"
+   },
+   {
+    "key": "doctorradiation",
+    "conditions": [{"type": "radiation", "min": 1}],
+    "next": ["doctorradiationyes", "doctorradiationyes_2", "doctorradiationno"]
+   },
+   {
+    "key": "doctorradiationyes",
+    "conditions": [{"type": "radiation", "min": 1}],
+    "effects": [{"type": "caps", "amount": -100}, {"type": "cure", "ailment": "radiation"}]
+   },
+   {
+    "key": "doctorradiationyes_2",
+    "conditions": [{"type": "radiation", "min": 1}]
+   },
+   {
+    "key": "doctorradiationno"
+   },
+   {
+    "key": "doctoraddiction",
+    "conditions": [{"type": "addicted"}],
+    "next": ["doctoraddictionyes", "doctoraddictionno"]
+   },
+   {
+    "key": "doctoraddictionyes",
+    "conditions": [{"type": "addicted"}],
+    "effects": [{"type": "cure", "ailment": "addiction"}]
+   },
+   {
+    "key": "doctoraddictionno"
    },
    {
     "key": "doctormedical",

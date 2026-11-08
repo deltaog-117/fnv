@@ -10,8 +10,9 @@ fn default_kind() -> FoeKind {
     FoeKind::Human
 }
 
-/// One enemy of an encounter. The NPC record gives its attributes and level; the
-/// wiki has no loadouts, so the weapon and the armor are authored here.
+/// One fighter of an encounter, an enemy or an ally. The NPC record gives its
+/// attributes and level; the wiki has no loadouts, so the weapon and the armor are
+/// authored here.
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct Foe {
@@ -27,9 +28,10 @@ pub struct Foe {
     /// Hit points, when the NPC record gives none and the formula for the player
     /// would make a footsoldier tougher than the player.
     pub hp: Option<NonZeroU32>,
-    /// Every condition must hold for this enemy to be in the fight; none means it
-    /// always is. The game has no allies yet, so a defender who joined the town's
-    /// side is written as an enemy that is absent.
+    /// Every condition must hold for this fighter to be in the fight; none means it
+    /// always is. An ally is listed with the conditions that bring them (a flag, a
+    /// living NPC); an enemy that a helper's prepared defenses keep away is listed
+    /// as one that is absent.
     #[serde(default)]
     pub when: Vec<Condition>,
 }
@@ -47,8 +49,11 @@ pub struct Encounter {
     /// Every condition must hold for the fight to be offered.
     #[serde(default)]
     pub requires: Vec<Condition>,
-    /// The enemies, in the order they act after the player.
+    /// The enemies, in the order they act after the player and the allies.
     pub foes: NonEmpty<Foe>,
+    /// The fighters on the player's side, who play themselves.
+    #[serde(default)]
+    pub allies: Vec<Foe>,
     /// Applied, in order, when the player wins.
     #[serde(default)]
     pub on_win: Vec<Effect>,

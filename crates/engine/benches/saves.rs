@@ -10,6 +10,7 @@ use std::path::Path;
 use std::sync::Arc;
 use std::time::{Duration, Instant};
 
+use engine::addiction::AddictionBook;
 use engine::character::PerkBook;
 use engine::game::{Arsenal, Game};
 use engine::inventory::ItemBook;
@@ -34,6 +35,9 @@ fn template() -> Game {
         Arc::new(WorldBook::new(data.npcs.iter().map(|npc| &npc.id))),
     )
     .with_items(Arc::new(ItemBook::from_data(&data).expect("items build")))
+    .with_addictions(Arc::new(
+        AddictionBook::from_data(&data).expect("addictions build"),
+    ))
     .with_arsenal(Arc::new(Arsenal::from_data(&data).expect("arsenal builds")))
     .with_perks(Arc::new(PerkBook::base_game(&data)))
     .with_beds(Arc::new(BedBook::from_data(&data).expect("beds build")))

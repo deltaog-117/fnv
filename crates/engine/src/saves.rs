@@ -22,11 +22,11 @@ mod record;
 
 pub use error::SaveError;
 pub use folder::{
-    AUTOSAVE, AUTOSAVE_PREVIOUS, MAX_NAME_LEN, NameError, SaveEntry, SaveFolder, SaveName,
-    SaveSummary, Slot,
+    AUTOSAVE, AUTOSAVE_PREVIOUS, Depth, HISTORY_DEPTH, LEGACY_NAME, MAX_NAME_LEN, NameError,
+    SaveEntry, SaveFolder, SaveName, SaveSummary, Slot,
 };
 pub use record::{
-    Save, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding, SavedFate, SavedFired, SavedNpc,
-    SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop, SavedStanding, SavedWeapon,
-    SavedWorld, VERSION,
+    Save, SavedAddiction, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding, SavedFate,
+    SavedFired, SavedNpc, SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop, SavedStanding,
+    SavedWeapon, SavedWorld, VERSION,
 };

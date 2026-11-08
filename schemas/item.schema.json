@@ -313,7 +313,7 @@
         },
         "on_use": {
           "type": "object",
-          "description": "What using the item does, when the game models all of it (hand-authored in data/items/uses.json): either `heal` alone, or `boost`.",
+          "description": "What using the item does, when the game models all of it (hand-authored in data/items/uses.json): `heal`, `medicine_heal` or `boost`.",
           "additionalProperties": false,
           "minProperties": 1,
           "maxProperties": 1,
@@ -331,15 +331,22 @@
             "boost": {
               "type": "object",
               "additionalProperties": false,
-              "description": "Changes numbers for a while, and may also restore hit points at once.",
-              "required": [
-                "effects"
-              ],
+              "description": "Changes numbers for a while, and may also restore hit points or change radiation at once. At least one of heal, rads and effects is present.",
+              "minProperties": 1,
               "properties": {
                 "heal": {
                   "type": "integer",
                   "minimum": 1,
                   "description": "Hit points restored at once; the item is refused at full health when set."
+                },
+                "rads": {
+                  "type": "integer",
+                  "minimum": -999,
+                  "maximum": 999,
+                  "not": {
+                    "const": 0
+                  },
+                  "description": "Radiation taken in (positive, cut by radiation resistance) or taken out (negative) at once; an item that only takes radiation out is refused when there is none."
                 },
                 "effects": {
                   "type": "array",
@@ -378,7 +385,8 @@
                           "max_hp",
                           "action_points",
                           "carry_weight",
-                          "damage_resistance"
+                          "damage_resistance",
+                          "radiation_resistance"
                         ]
                       },
                       "amount": {

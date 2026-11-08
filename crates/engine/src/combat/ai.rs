@@ -1,6 +1,6 @@
-//! The opponents' turn: a deliberately plain tactic, so the fight is fair to read.
+//! The computer's turns: a deliberately plain tactic, so the fight is fair to read.
 
-use super::fight::{Combat, CombatError, Combatant, Resolution, Side};
+use super::fight::{Combat, CombatError, Combatant, FighterId, Resolution, Side, Status};
 use super::hit::{Dice, HitModel};
 use super::stats::Power;
 
@@ -16,13 +16,43 @@ where
     C: Combatant,
     H: HitModel<C>,
 {
+    play(combat, dice, |combat| {
+        combat.side(combat.active()) != Some(Side::Enemy)
+    })
+}
+
+/// Plays turns for everyone but the player's lead, enemies and allies alike, until
+/// it is the lead's turn again or the fight ends. Each fighter shoots the first
+/// opponent still standing, which is the same tactic the enemies use alone. With
+/// no lead named, it plays the enemy side only, like [`enemy_turns`].
+///
+/// It stops after at most one pass over the order, for the same reason.
+pub fn computer_turns<C, H>(combat: &mut Combat<C, H>, dice: &mut impl Dice) -> Vec<Resolution>
+where
+    C: Combatant,
+    H: HitModel<C>,
+{
+    let Some(lead) = combat.lead() else {
+        return enemy_turns(combat, dice);
+    };
+    play(combat, dice, |combat| combat.active() == lead)
+}
+
+fn play<C, H>(
+    combat: &mut Combat<C, H>,
+    dice: &mut impl Dice,
+    hands_over: impl Fn(&Combat<C, H>) -> bool,
+) -> Vec<Resolution>
+where
+    C: Combatant,
+    H: HitModel<C>,
+{
     let mut log = Vec::new();
-    while combat.status() == super::fight::Status::Ongoing
-        && combat.side(combat.active()) == Some(Side::Enemy)
-    {
-        let target = combat
-            .ids()
-            .find(|&id| combat.side(id) == Some(Side::Player) && combat.is_standing(id));
+    while combat.status() == Status::Ongoing && !hands_over(combat) {
+        let Some(own) = combat.side(combat.active()) else {
+            break;
+        };
+        let target = first_standing(combat, own);
         let mut attacked = target.map(|id| combat.attack(id, Power::Normal, dice));
         if let (Some(Err(CombatError::OutOfAmmo { .. })), Some(id)) = (&attacked, target)
             && combat.reload().is_ok()
@@ -40,4 +70,15 @@ where
         }
     }
     log
+}
+
+/// The first fighter standing on the other side from `own`.
+fn first_standing<C, H>(combat: &Combat<C, H>, own: Side) -> Option<FighterId>
+where
+    C: Combatant,
+    H: HitModel<C>,
+{
+    combat
+        .ids()
+        .find(|&id| combat.side(id).is_some_and(|side| side != own) && combat.is_standing(id))
 }

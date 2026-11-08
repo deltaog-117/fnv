@@ -874,6 +874,18 @@ def challenges(raw):
     return out
 
 
+# A breakdown the wiki titles by the cartridge, not by an item. Each cartridge here has
+# exactly one plain round in the item list (the others carry a variant suffix), so the
+# round is unambiguous. "12 gauge shotgun shell" is left out on purpose: twelve
+# gauge has no plain round, only buckshot, slug and other loads, and picking one
+# would be a guess.
+BREAKDOWN_ROUNDS = {
+    ".357 magnum": "357_magnum_round",
+    ".44 magnum": "44_magnum_round",
+    "20 gauge shotgun shell": "20_gauge_round",
+}
+
+
 def recipes(raw, item_recs):
     by_name = lookup(item_recs, "name")
     ids = Ids()
@@ -883,6 +895,8 @@ def recipes(raw, item_recs):
                "table": r["table"]}
         put(rec, "output_qty", r.get("name_qty"))
         item = by_name.get(r["name"].lower())
+        if item is None and r["mode"] == "breakdown":
+            item = BREAKDOWN_ROUNDS.get(r["name"].lower())
         put(rec, "output_item_id", item)
         sk = r.get("skill")
         if sk:

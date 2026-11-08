@@ -248,6 +248,10 @@ pub struct BoostUse {
     /// has one.
     #[serde(default)]
     pub heal: Option<NonZeroU32>,
+    /// Radiation taken in (positive) or taken out (negative) at once. What comes in
+    /// is cut by the player's radiation resistance; what goes out is not.
+    #[serde(default)]
+    pub rads: i16,
     /// What changes, and for how long. A new dose of the same item replaces the
     /// last one.
     #[serde(default)]

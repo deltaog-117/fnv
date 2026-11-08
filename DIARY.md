@@ -1943,6 +1943,61 @@ Four loose ends were taken together: most perks and traits changed nothing, the 
 
 ---
 
+### Allies, Radiation, Addiction, Item Use and Save History: Five Items in One Cycle
+
+**Date:** 2026-11-07
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Five loose ends from the roadmap were taken together: a helper in the Ghost Town Gunfight only removed one enemy from the fight, most consumables could not be used because they needed radiation or addiction, Doc Mitchell's two cures had nothing to cure, three breakdown recipes named no item, and the autosave kept one earlier save. Two forks were chosen from COAs: allies listed per fight and played by the computer (A), and radiation and addiction as two small features (B).
+
+---
+
+#### Decision
+
+**Allies are fighters on the player's side who play themselves.** The fight already had a "player side" that could hold several fighters; what it lacked was a rule for who loses. Without one, a player who falls while an ally stands would leave a fight nobody can play. So a fight can name a lead (`Combat::with_lead`), the player, whose fall loses the fight for their side, and `computer_turns` plays every other fighter with the plain tactic the enemies already used (shoot the first opponent standing). `enemy_turns` is unchanged and `Combat::new` names no lead, so every fight written before this behaves as it did. An encounter lists its allies with the same record as a foe, because the fields are the same (NPC, weapon, armor, hit points, `when`), and the allies are prepared once at load like the foes.
+
+**The stand-in for helpers was undone, but not all of it.** Easy Pete and Trudy used to make a ganger absent from the fight. They now fight on the player's side and the foes are the wiki's six whoever helped. Chet's supplies are not a person who shoots, so they keep thinning the attackers to five (still a stand-in). Sunny always fights beside the player, since the fight is only offered from stage 65, when she joins the line. A dead NPC does not join (the `when` of each ally asks that the NPC is alive). A fallen ally is not killed in the world and is back for the next fight: killing an ally for good is a story decision that belongs to the quests. I had thought of giving the player orders to allies (COA C) and of a party kept by the game (COA B); both belong to companions.
+
+**Radiation is a number the world adds to and the player takes from.** `Rads` is bounded from 0 to 999; the wiki has death at 1000, and the engine stops short of it, as it does for a repaid boost to maximum hit points. The wiki's own formula for radiation resistance (`2 * (endurance - 1)` percent) cuts what comes in, and Rad-X adds to it. Sickness is a tally of penalties the character reads like any boost, so the character module never learned about radiation. The tiers (one per 200 rads, one Endurance and one Agility each) are a stand-in; the wiki's table was not imported. `Game::retally` is now the one place that sums boosts, radiation and withdrawal, and it keeps a living player at one hit point when the maximum falls, exactly as before.
+
+**Addiction takes a roll as a plain number.** The addiction module cannot import combat (features never import each other), so it asks for a roll from 1 to 100 and `Game` supplies the dice. A roll at or below the chance addicts, unless the player is already addicted to the chem, in which case only the last dose moves forward. `Game::use_item` never rolls, which kept every existing caller and test as it was; the pack screen calls `use_item_rolling`. Withdrawal (one Strength and one Agility per addiction) and the three days it takes to wear off are stand-ins. The save is version 4, and a version 3 save loads with none of either.
+
+**Item use grew by 78 consumables, from the wiki's own text.** Writing 75 meals by hand would have invited typos, so a one-off script read each item's text (the part before "Hardcore mode only") and kept only items whose every piece is "+N Hit Points", "+N Hit Points per second for Ts" or "+/-N Radiation", with a heal over time entered as its total. Anything else stayed unusable. A test pins that an item changes radiation exactly when the text mentions it, and in the direction it gives. **The Doctor's bag is not among them:** its wiki text is only about limb condition, and I had suggested earlier that it could heal like a stimpak; the data does not say so, and limbs are not modeled. RadAway is kept by a player with no radiation, like a stimpak at full health.
+
+**Doc's cures use a new, small vocabulary.** `Condition::Radiation`, `Condition::Addicted` and `Effect::Cure` (`Ailment`: radiation or addiction) sit in the shared language, the schema and the contract tests. The first draft called the field of `Cure` `of`, which the validator reads as a nested list in `all`, `any` and `not`; it is `ailment`. The radiation cure costs 100 caps, the figure in the transcript. The addiction cure's transcript line names no price, so it is free.
+
+**Three breakdowns resolved, one did not.** The wiki titles them by cartridge: ".357 Magnum", ".44 Magnum" and "20 gauge shotgun shell". Each cartridge has exactly one plain round in the item list (the others carry a variant suffix), so the mapping is a three-line table in the importer with its reason beside it. The 12 gauge shell stays refused: twelve gauge has buckshot, slug and other loads, no plain round, and picking one would be a guess. The test that said "twelve of sixteen" now says fifteen, and names the one that stays.
+
+**Save history is a shift, not a log.** The automatic save keeps five earlier ones. Each write moves the older ones one step back, oldest first, so no step overwrites a file that has not moved, and only if the latest save can be read, so a damaged autosave never pushes good history out. The names `autosave_previous_2` onwards are reserved, and `autosave_previous_1` and `autosave_previous_02` are not names at all, so a slot has one spelling. The old `save.json` moves into the folder as "Old save" when the saves screen opens; if that name is taken the move is refused and the old file stays where it is.
+
+**Tests that had to change.** Two TUI tests expected the old save to stay beside the folder (it now moves), and the reserved-name message was shortened to fit the log line. The gunfight tests that counted attackers by helper now count attackers and allies. Four fight-screen tests read 40 rows instead of 30: the fight lists allies and the actions scroll to fit, as the other menus do. The reload test finds the Reload row, third from the end, instead of counting foes.
+
+**Left out for now:** the weapon mods subsystem (split out, as suggested), the 12 gauge breakdown, poison, limb condition and the Doctor's bag, orders for allies, Victor and the settlers as defenders, and killing a fallen ally in the world.
+
+---
+
+#### References
+
+- `crates/engine/src/combat/ai.rs`, `combat/fight.rs`, `game/battle.rs`, `game/state.rs`, `game/state/save.rs`, `radiation/`, `addiction/`, `saves/folder.rs`, `saves/record.rs`, `shared/bounds.rs`, `shared/boost.rs`, `shared/condition.rs`, `shared/effect.rs`, `shared/data/encounter.rs`, `shared/data/item.rs`
+- `crates/engine/tests/combat/allies.rs`, `game/ailments.rs`, `game/battle.rs`, `radiation/`, `addiction/`, `saves/folder.rs`, `saves/files.rs`, `dialogue/scenarios.rs`, `inventory/real_data.rs`, `craft/real_data.rs`
+- `crates/tui/src/app.rs`, `combat/screen.rs`, `inventory/screen.rs`, `saves/screen.rs`
+- `schemas/common.schema.json`, `encounter.schema.json`, `item.schema.json`, `data/combat/encounters.json`, `data/items/uses.json`, `data/dialogue/slice_goodsprings.json`, `scripts/normalize.py`, `scripts/validate.py`, `tests/scenarios/goodsprings_dialogue.json`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-07 | Initial entry | deltaog-117 |
+
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

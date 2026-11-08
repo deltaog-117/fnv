@@ -8,12 +8,12 @@ use engine::combat::{
 use engine::game::{Battle, Fighter, Game, Outcome};
 use ratatui::Frame;
 use ratatui::layout::Rect;
-use ratatui::text::Line;
+use ratatui::text::{Line, Span};
 use ratatui::widgets::{Block, Borders, Paragraph, Wrap};
 
 use crate::shared::input::Command;
 use crate::shared::log::{Entry, Log};
-use crate::shared::menu::{Item, Menu};
+use crate::shared::menu::{self, Item, Menu};
 use crate::shared::theme;
 
 /// What the player's command led to.
@@ -233,7 +233,20 @@ impl Fight {
             ),
             Line::default(),
         ];
-        for id in combat.ids() {
+        // The player first, then the allies together on one line (a fight with three
+        // helpers would otherwise push the actions off a small terminal), then the foes.
+        let ally =
+            |id: &FighterId| *id != self.battle.player() && combat.side(*id) == Some(Side::Player);
+        let (allies, others): (Vec<FighterId>, Vec<FighterId>) =
+            combat.ids().partition(|id| ally(id));
+        let mut shown: Vec<FighterId> = vec![self.battle.player()];
+        shown.extend(
+            others
+                .iter()
+                .copied()
+                .filter(|id| *id != self.battle.player()),
+        );
+        for id in shown {
             let hp = combat.hp(id).unwrap_or(0);
             let max = combat
                 .combatant(id)
@@ -252,6 +265,9 @@ impl Fight {
                 format!("{:<20} HP {hp}/{max}{ammo}", self.name(id)),
                 style,
             ));
+            if id == self.battle.player() && !allies.is_empty() {
+                lines.push(self.allies_line(combat, &allies));
+            }
         }
         lines.push(Line::default());
         lines.push(Line::styled("What do you do?", theme::heading()));
@@ -276,7 +292,17 @@ impl Fight {
                 Action::EndTurn => Item::new("End turn"),
             })
             .collect();
-        lines.extend(self.menu.lines(&items));
+        // A fight with allies lists more than a short terminal can hold, so the
+        // actions scroll with the cursor, as the other menus do.
+        let room = usize::from(area.height)
+            .saturating_sub(2)
+            .saturating_sub(lines.len())
+            .max(1);
+        lines.extend(menu::window(
+            self.menu.lines(&items),
+            self.menu.selected(),
+            room,
+        ));
         let block = Block::new()
             .borders(Borders::ALL)
             .border_style(theme::dim())
@@ -287,6 +313,32 @@ impl Fight {
                 .wrap(Wrap { trim: false }),
             area,
         );
+    }
+
+    /// "On your side: Sunny Smiles 30/30, Trudy 0/35 (down)", one line, with a fallen
+    /// ally dimmed.
+    fn allies_line(
+        &self,
+        combat: &Combat<Fighter, AimedHitChance>,
+        allies: &[FighterId],
+    ) -> Line<'static> {
+        let mut spans = vec![Span::styled("On your side: ", theme::heading())];
+        for (index, &id) in allies.iter().enumerate() {
+            let hp = combat.hp(id).unwrap_or(0);
+            let max = combat
+                .combatant(id)
+                .map_or(0, |c| engine::combat::Combatant::max_hp(c).get());
+            let (text, style) = if hp == 0 {
+                (format!("{} {hp}/{max} (down)", self.name(id)), theme::dim())
+            } else {
+                (format!("{} {hp}/{max}", self.name(id)), theme::text())
+            };
+            if index > 0 {
+                spans.push(Span::styled(", ", theme::dim()));
+            }
+            spans.push(Span::styled(text, style));
+        }
+        Line::from(spans)
     }
 
     /// Why the player cannot shoot right now, if they cannot.

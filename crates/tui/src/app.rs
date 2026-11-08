@@ -10,8 +10,10 @@ use std::path::PathBuf;
 use std::sync::Arc;
 
 use anyhow::Context;
+use engine::addiction::AddictionBook;
 use engine::character::PerkBook;
 use engine::clock::Span;
+use engine::combat::Dice;
 use engine::craft::{RecipeBook, StationBook};
 use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::{Arsenal, Game, Outcome};
@@ -244,8 +246,11 @@ impl App {
         let reputation =
             Arc::new(ReputationBook::from_data(data).context("building the reputation book")?);
         let map = Arc::new(TravelBook::from_data(data).context("building the map")?);
+        let addictions =
+            Arc::new(AddictionBook::from_data(data).context("building the addiction book")?);
         let mut game = Game::with_world(quests, world)
             .with_items(items)
+            .with_addictions(addictions)
             .with_arsenal(arsenal)
             .with_perks(Arc::new(PerkBook::base_game(data)))
             .with_beds(beds)
@@ -378,7 +383,11 @@ impl App {
                 exploration::Next::Repair(index) => self.open_repairs(index),
                 exploration::Next::Character => self.screen = Screen::Leveling(LevelUp::new()),
                 exploration::Next::Pack => {
-                    self.screen = Screen::Packing(Pack::open(&self.game, Arc::clone(&self.names)));
+                    let seed =
+                        (0..8).fold(0u64, |seed, _| (seed << 8) | u64::from(self.dice.percent()));
+                    self.screen = Screen::Packing(
+                        Pack::open(&self.game, Arc::clone(&self.names)).with_dice(Rng::new(seed)),
+                    );
                 }
                 exploration::Next::Wait { span, label } => self.wait(span, label),
                 exploration::Next::Journal => {
@@ -646,6 +655,14 @@ impl App {
 
     /// Opens the list of saves for saving or loading.
     fn open_saves(&mut self, purpose: Purpose) {
+        // An older game's single save joins the folder, so every save is in one place.
+        match self.saves.adopt_legacy() {
+            Ok(Some(name)) => self.log.push(Entry::Note(format!(
+                "The old save was moved into the saves folder as \"{name}\"."
+            ))),
+            Ok(None) => {}
+            Err(error) => self.log.push(Entry::Note(format!("Old save: {error}"))),
+        }
         let places = &self.places;
         self.screen = Screen::Saves(Slots::open(purpose, &self.saves, |place| {
             places.name(place)
@@ -872,13 +889,14 @@ impl App {
         let active = self.game.quests().active().count();
         frame.render_widget(
             Paragraph::new(format!(
-                " {} | {} | Lv {} | HP {}/{} | {} caps | {active} active quest(s)",
+                " {} | {} | Lv {} | HP {}/{} | {} caps{} | {active} active quest(s)",
                 self.place,
                 self.game.clock(),
                 self.game.character().level().get(),
                 self.game.hp(),
                 self.game.character().max_hp(),
                 self.game.caps(),
+                ailments_note(&self.game),
             ))
             .style(theme::heading()),
             regions.status,
@@ -972,6 +990,19 @@ fn render_too_small(frame: &mut Frame, area: Rect) {
         Paragraph::new(Line::styled(message, theme::warning())).alignment(Alignment::Center),
         area,
     );
+}
+
+/// " | 276 rads | 1 addiction(s)" for a player who has either, and nothing for one
+/// who has neither, so the status line stays short for a healthy player.
+fn ailments_note(game: &Game) -> String {
+    let mut note = String::new();
+    if game.rads().get() > 0 {
+        note.push_str(&format!(" | {} rads", game.rads().get()));
+    }
+    if game.addictions().any() {
+        note.push_str(&format!(" | {} addiction(s)", game.addictions().len()));
+    }
+    note
 }
 
 #[cfg(test)]
@@ -1241,6 +1272,25 @@ mod tests {
     }
 
     #[test]
+    fn the_status_line_shows_radiation_and_addictions_only_when_there_are_some() {
+        let well = screen(&app(), 140, 30);
+        assert!(
+            !well.contains("rads") && !well.contains("addiction"),
+            "{well}"
+        );
+        let mut sick = app();
+        sick.game = sick
+            .game
+            .clone()
+            .with_rads(engine::shared::Rads::try_new(276).expect("in range"))
+            .with_addiction(
+                &engine::addiction::AddictionKind::try_new("jet").expect("a valid kind"),
+            );
+        let text = screen(&sick, 140, 30);
+        assert!(text.contains("| 276 rads | 1 addiction(s) |"), "{text}");
+    }
+
+    #[test]
     fn the_status_line_shows_the_day_and_time() {
         let text = screen(&app(), 100, 30);
         assert!(text.contains("| Day 1, 08:00 | Lv 1"), "{text}");
@@ -1408,10 +1458,11 @@ mod tests {
         let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
         assert!(matches!(app.screen, Screen::Fighting(_)));
-        let text = screen(&app, 100, 30);
+        let text = screen(&app, 100, 40);
         for expected in [
             "Round 1 | your turn | 80 AP left",
             "You",
+            "On your side: Sunny Smiles",
             "Joe Cobb",
             "Powder Ganger 1",
             "Powder Ganger 2",
@@ -1430,12 +1481,17 @@ mod tests {
         let mut app = with_the_gunfight_open(app_with_seed(1));
         let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
-        // Three foes: shoot is picks 0 to 2, then Reload, then End turn.
+        // The actions are a shot at each foe still standing, then Reload, Run away
+        // and End turn, so Reload is third from the end.
         app.update(Command::Pick(0));
-        let text = screen(&app, 100, 30);
+        let text = screen(&app, 100, 40);
         assert!(text.contains("Ammo 12/17"), "{text}");
-        app.update(Command::Pick(3));
-        let text = screen(&app, 100, 30);
+        let Screen::Fighting(fight) = &app.screen else {
+            panic!("the fight is still on");
+        };
+        let reload = fight.action_count() - 3;
+        app.update(Command::Pick(reload));
+        let text = screen(&app, 100, 40);
         assert!(text.contains("Ammo 13/16"), "{text}");
         assert!(text.contains("You reload: 13 rounds"), "{text}");
     }
@@ -1480,7 +1536,7 @@ mod tests {
         let mut app = with_the_gunfight_open(app_with_seed(1));
         let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
-        let text = screen(&app, 100, 30);
+        let text = screen(&app, 100, 40);
         assert!(text.contains("Run away ("), "{text}");
         assert!(text.contains("% to get out)"), "{text}");
     }
@@ -2115,7 +2171,7 @@ mod tests {
     }
 
     #[test]
-    fn the_old_single_save_is_listed_for_loading_but_not_for_saving() {
+    fn the_old_single_save_moves_into_the_folder_as_a_named_save() {
         let scratch = Scratch::new("legacy");
         let mut app = app().with_save_dir(scratch.dir());
         std::fs::create_dir_all(&scratch.0).expect("the folder is made");
@@ -2123,11 +2179,10 @@ mod tests {
             .save()
             .write(&scratch.0.join("save.json"))
             .expect("written");
-        choose_row(&mut app, "Save game");
-        assert!(!screen(&app, 120, 40).contains("Old save"));
-        app.update(Command::Back);
         choose_row(&mut app, "Load game");
-        assert!(screen(&app, 120, 40).contains("Old save (from before named saves)"));
+        assert!(screen(&app, 120, 40).contains("The old save was moved"));
+        assert!(screen(&app, 120, 40).contains("Old save - "));
+        assert!(!scratch.0.join("save.json").exists());
         app.update(Command::Select);
         assert!(screen(&app, 120, 40).contains("Game loaded."));
     }

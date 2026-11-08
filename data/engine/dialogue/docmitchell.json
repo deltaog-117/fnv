@@ -14,7 +14,16 @@
     }
    ],
    "topic": "DoctorAddiction",
-   "prompt": "I think I might be addicted to something."
+   "prompt": "I think I might be addicted to something.",
+   "conditions": [
+    {
+     "type": "addicted"
+    }
+   ],
+   "next": [
+    "doctoraddictionyes",
+    "doctoraddictionno"
+   ]
   },
   {
    "key": "doctoraddictionno",
@@ -40,7 +49,18 @@
     }
    ],
    "topic": "DoctorAddictionYES",
-   "prompt": "Yes, cure me."
+   "prompt": "Yes, cure me.",
+   "conditions": [
+    {
+     "type": "addicted"
+    }
+   ],
+   "effects": [
+    {
+     "type": "cure",
+     "ailment": "addiction"
+    }
+   ]
   },
   {
    "key": "doctormedical",
@@ -283,7 +303,18 @@
     }
    ],
    "topic": "DoctorRadiation",
-   "prompt": "Can you heal my radiation?"
+   "prompt": "Can you heal my radiation?",
+   "conditions": [
+    {
+     "type": "radiation",
+     "min": 1
+    }
+   ],
+   "next": [
+    "doctorradiationyes",
+    "doctorradiationyes_2",
+    "doctorradiationno"
+   ]
   },
   {
    "key": "doctorradiationno",
@@ -310,7 +341,23 @@
    ],
    "topic": "DoctorRadiationYES",
    "prompt": "Here's your 100 caps. Do it.",
-   "label": "Do it."
+   "label": "Do it.",
+   "conditions": [
+    {
+     "type": "radiation",
+     "min": 1
+    }
+   ],
+   "effects": [
+    {
+     "type": "caps",
+     "amount": -100
+    },
+    {
+     "type": "cure",
+     "ailment": "radiation"
+    }
+   ]
   },
   {
    "key": "doctorradiationyes_2",
@@ -324,7 +371,13 @@
    ],
    "topic": "DoctorRadiationYES",
    "prompt": "I don't have 100 caps.",
-   "label": "Do it."
+   "label": "Do it.",
+   "conditions": [
+    {
+     "type": "radiation",
+     "min": 1
+    }
+   ]
   },
   {
    "key": "doctorsupplies",
@@ -2980,6 +3033,8 @@
   "vfreeformgoodspringsdocmitchelltowninfo",
   "vfreeformgoodspringsdocmitchellshootouthelp",
   "doctormedical",
+  "doctorradiation",
+  "doctoraddiction",
   "doctorsupplies",
   "vfreeformgoodspringsdocmitchelltopic002",
   "goodbye"

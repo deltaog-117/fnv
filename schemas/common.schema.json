@@ -682,6 +682,38 @@
         },
         {
           "type": "object",
+          "description": "The player has absorbed at least this many rads.",
+          "required": [
+            "type",
+            "min"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "radiation"
+            },
+            "min": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 999
+            }
+          }
+        },
+        {
+          "type": "object",
+          "description": "The player is addicted to at least one chem.",
+          "required": [
+            "type"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "addicted"
+            }
+          }
+        },
+        {
+          "type": "object",
           "required": [
             "type",
             "perk"
@@ -1052,6 +1084,26 @@
           "properties": {
             "type": {
               "const": "heal"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "description": "Cures radiation (to none) or every addiction.",
+          "required": [
+            "type",
+            "ailment"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "cure"
+            },
+            "ailment": {
+              "enum": [
+                "radiation",
+                "addiction"
+              ]
             }
           }
         }

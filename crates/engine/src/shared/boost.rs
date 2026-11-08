@@ -23,6 +23,8 @@ pub enum DerivedStat {
     CarryWeight,
     /// Damage resistance, in percent points before the cap.
     DamageResistance,
+    /// Radiation resistance, in percent points before the cap.
+    RadiationResistance,
 }
 
 /// What a boost changes.
@@ -48,6 +50,7 @@ impl BoostStat {
             Self::Derived(DerivedStat::ActionPoints) => "Action points",
             Self::Derived(DerivedStat::CarryWeight) => "Carry weight",
             Self::Derived(DerivedStat::DamageResistance) => "Damage resistance",
+            Self::Derived(DerivedStat::RadiationResistance) => "Radiation resistance",
         }
     }
 }
@@ -75,6 +78,7 @@ pub struct BoostTally {
     action_points: i32,
     carry_weight: i32,
     damage_resistance: i32,
+    radiation_resistance: i32,
 }
 
 impl BoostTally {
@@ -88,8 +92,28 @@ impl BoostTally {
             BoostStat::Derived(DerivedStat::ActionPoints) => &mut self.action_points,
             BoostStat::Derived(DerivedStat::CarryWeight) => &mut self.carry_weight,
             BoostStat::Derived(DerivedStat::DamageResistance) => &mut self.damage_resistance,
+            BoostStat::Derived(DerivedStat::RadiationResistance) => &mut self.radiation_resistance,
         };
         *slot = slot.saturating_add(amount);
+    }
+
+    /// Adds everything `other` changes, stat by stat, so changes from different
+    /// sources (a chem, radiation sickness, withdrawal) read as one.
+    pub fn merge(&mut self, other: &Self) {
+        let add = |mine: &mut i32, theirs: i32| *mine = mine.saturating_add(theirs);
+        self.special
+            .iter_mut()
+            .zip(other.special)
+            .for_each(|(mine, theirs)| add(mine, theirs));
+        self.skills
+            .iter_mut()
+            .zip(other.skills)
+            .for_each(|(mine, theirs)| add(mine, theirs));
+        add(&mut self.max_hp, other.max_hp);
+        add(&mut self.action_points, other.action_points);
+        add(&mut self.carry_weight, other.carry_weight);
+        add(&mut self.damage_resistance, other.damage_resistance);
+        add(&mut self.radiation_resistance, other.radiation_resistance);
     }
 
     /// The change to an attribute.
@@ -126,6 +150,12 @@ impl BoostTally {
     #[must_use]
     pub fn damage_resistance(&self) -> i32 {
         self.damage_resistance
+    }
+
+    /// The change to radiation resistance, in percent points.
+    #[must_use]
+    pub fn radiation_resistance(&self) -> i32 {
+        self.radiation_resistance
     }
 
     /// Whether nothing is changed.
@@ -185,6 +215,18 @@ mod tests {
         assert_eq!(tally.skill(Skill::Barter), 0);
         assert_eq!(tally.max_hp(), 60);
         assert!(!tally.is_empty());
+    }
+
+    #[test]
+    fn merging_adds_stat_by_stat() {
+        let (mut a, mut b) = (BoostTally::default(), BoostTally::default());
+        a.add(BoostStat::Special(Special::Endurance), -1);
+        b.add(BoostStat::Special(Special::Endurance), 3);
+        b.add(BoostStat::Derived(DerivedStat::RadiationResistance), 25);
+        a.merge(&b);
+        assert_eq!(a.special(Special::Endurance), 2);
+        assert_eq!(a.radiation_resistance(), 25);
+        assert_eq!(a.special(Special::Luck), 0);
     }
 
     #[test]

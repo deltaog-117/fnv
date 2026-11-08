@@ -7,6 +7,7 @@
 //! never imports another feature; `shared` holds the contracts they have in
 //! common and `game` is the one place that wires them together.
 
+pub mod addiction;
 pub mod character;
 pub mod clock;
 pub mod combat;
@@ -19,6 +20,7 @@ pub mod gather;
 pub mod inventory;
 pub mod modding;
 pub mod quests;
+pub mod radiation;
 pub mod repair;
 pub mod reputation;
 pub mod rest;

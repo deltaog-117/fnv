@@ -15,15 +15,17 @@
 //!   no action points, and a refused move leaves the fight as it was;
 //! - damage runs the curated formulas in order: weapon damage, then resistance,
 //!   then threshold, and a hit that gets through at all costs at least 1 hit point;
-//! - the fight is over as soon as one side has no fighter standing or the player's
-//!   side gets away, and nothing can be done after;
+//! - the fight is over as soon as one side has no fighter standing, the player's lead
+//!   (when one is named) falls, or the player's side gets away, and nothing can be
+//!   done after;
 //! - running away is one roll against the runner's chance, only the player's side
 //!   can try, and a failed try costs what is left of the turn;
 //! - a shot needs the rounds in the weapon, and a refused shot costs neither rounds
 //!   nor action points.
 //!
-//! [`enemy_turns`] plays the enemy side with one plain tactic. Hit chance is behind
-//! [`HitModel`] because the wiki gives no formula for it; [`AimedHitChance`] (skill
+//! [`enemy_turns`] plays the enemy side with one plain tactic, and [`computer_turns`]
+//! plays everyone but the player's lead, so allies fight beside the player. Hit
+//! chance is behind [`HitModel`] because the wiki gives no formula for it; [`AimedHitChance`] (skill
 //! up, spread down) and [`FlatHitChance`] are labelled stand-ins. Chance is
 //! rolled through [`Dice`], so a fight is deterministic for a given sequence of
 //! rolls. Ammunition is modelled: a weapon with a [`Magazine`] loses rounds with
@@ -38,7 +40,7 @@ mod fight;
 mod hit;
 mod stats;
 
-pub use ai::enemy_turns;
+pub use ai::{computer_turns, enemy_turns};
 pub use condition::Condition;
 pub use damage::{Against, Rules, damage_after_armor, damage_before_armor};
 pub use fight::{

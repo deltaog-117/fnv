@@ -143,6 +143,22 @@ fn a_version_one_save_is_upgraded_with_nothing_gathered() {
     assert!(template().restore(&upgraded).is_ok());
 }
 
+#[test]
+fn a_version_three_save_is_upgraded_with_no_radiation_and_no_addictions() {
+    let mut value: serde_json::Value =
+        serde_json::from_str(&template().save().to_json().expect("writes")).expect("json");
+    let object = value.as_object_mut().expect("a save is an object");
+    object.remove("rads");
+    object.remove("addictions");
+    object.insert("version".to_owned(), serde_json::json!(3));
+    let upgraded = Save::from_json(&value.to_string()).expect("a version 3 save reads");
+    assert_eq!(upgraded.version, VERSION);
+    assert_eq!(upgraded.rads, 0);
+    assert!(upgraded.addictions.is_empty());
+    assert_eq!(upgraded, template().save());
+    assert!(template().restore(&upgraded).is_ok());
+}
+
 /// Rewrites a current save as a version 2 file: weapons are counted in the pack,
 /// the wear is kept per kind, and the weapon in hand is named by kind.
 fn as_version_two(save: &Save) -> serde_json::Value {

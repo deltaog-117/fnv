@@ -244,14 +244,15 @@ def main(argv):
     for en in encounters:
         if en["place"] not in loc_ids:
             report("refs", en["id"], f"unknown place {en['place']}")
-        for foe in en["foes"]:
+        for foe in en["foes"] + en.get("allies", []):
             if foe["npc"] not in npc_ids:
                 report("refs", en["id"], f"unknown npc {foe['npc']}")
             if foe["weapon"] not in weapon_ids:
                 report("refs", en["id"], f"{foe['weapon']} is not a weapon")
             if foe.get("armor") and foe["armor"] not in armor_ids:
                 report("refs", en["id"], f"{foe['armor']} is not armor")
-        scripted = en.get("requires", []) + en.get("on_win", [])
+        scripted = (en.get("requires", []) + en.get("on_win", [])
+                    + [c for f in en["foes"] + en.get("allies", []) for c in f.get("when", [])])
         for ref in refs_in(scripted, "quest"):
             if ref not in quest_ids:
                 report("refs", en["id"], f"names unknown quest {ref}")

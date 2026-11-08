@@ -9,7 +9,7 @@ use std::num::NonZeroU32;
 
 use serde::{Deserialize, Serialize};
 
-use super::bounds::{HealthPercent, RenownTier, SkillLevel, SpecialLevel};
+use super::bounds::{HealthPercent, Rads, RenownTier, SkillLevel, SpecialLevel};
 use super::error::ModelError;
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
 use super::non_empty::NonEmpty;
@@ -107,6 +107,14 @@ pub enum Condition {
         #[serde(default)]
         op: Comparison,
     },
+    /// The player has absorbed at least this much radiation.
+    Radiation {
+        /// The fewest rads that make this true.
+        min: Rads,
+    },
+    /// The player is addicted to at least one chem. An empty struct variant for
+    /// the same reason as `Effect::Heal`.
+    Addicted {},
     /// The player has a perk.
     Perk {
         /// The perk.
@@ -159,7 +167,7 @@ pub enum Condition {
 
 impl Condition {
     /// Every `type` value a condition can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 17] = [
+    pub const ALL_TAGS: [&'static str; 19] = [
         "all",
         "any",
         "not",
@@ -170,6 +178,8 @@ impl Condition {
         "skill",
         "special",
         "health",
+        "radiation",
+        "addicted",
         "perk",
         "karma",
         "companion",
@@ -194,6 +204,8 @@ impl Condition {
             Self::Skill { .. } => "skill",
             Self::Special { .. } => "special",
             Self::Health { .. } => "health",
+            Self::Radiation { .. } => "radiation",
+            Self::Addicted {} => "addicted",
             Self::Perk { .. } => "perk",
             Self::Karma { .. } => "karma",
             Self::Companion { .. } => "companion",

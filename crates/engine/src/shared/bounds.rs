@@ -118,9 +118,88 @@ impl HealthPercent {
     }
 }
 
+/// Radiation absorbed, in rads, 0 to [`Rads::MAX`].
+///
+/// The wiki has the player die at 1000 rads; this game stops short of it and keeps
+/// the most irradiated player alive, as it does for a repaid boost to maximum hit
+/// points (a stand-in).
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, PartialOrd, Ord, Serialize, Deserialize)]
+#[serde(try_from = "u32", into = "u32")]
+pub struct Rads(u16);
+
+impl Rads {
+    /// No radiation.
+    pub const NONE: Self = Self(0);
+    /// The most radiation a player can hold.
+    pub const MAX: u16 = 999;
+
+    /// Builds the value, rejecting numbers above [`MAX`](Self::MAX).
+    ///
+    /// # Errors
+    ///
+    /// [`ModelError::OutOfRange`] when `value` is above the maximum.
+    pub fn try_new(value: u32) -> Result<Self, ModelError> {
+        match u16::try_from(value) {
+            Ok(v) if v <= Self::MAX => Ok(Self(v)),
+            _ => Err(ModelError::OutOfRange {
+                what: "rads",
+                min: 0,
+                max: u32::from(Self::MAX),
+                got: value,
+            }),
+        }
+    }
+
+    /// The value as a plain number.
+    #[must_use]
+    pub fn get(self) -> u16 {
+        self.0
+    }
+
+    /// `self` plus `amount`, stopping at the maximum.
+    #[must_use]
+    pub fn saturating_add(self, amount: u16) -> Self {
+        Self(self.0.saturating_add(amount).min(Self::MAX))
+    }
+
+    /// `self` minus `amount`, stopping at none.
+    #[must_use]
+    pub fn saturating_sub(self, amount: u16) -> Self {
+        Self(self.0.saturating_sub(amount))
+    }
+}
+
+impl Default for Rads {
+    fn default() -> Self {
+        Self::NONE
+    }
+}
+
+impl TryFrom<u32> for Rads {
+    type Error = ModelError;
+
+    fn try_from(value: u32) -> Result<Self, Self::Error> {
+        Self::try_new(value)
+    }
+}
+
+impl From<Rads> for u32 {
+    fn from(value: Rads) -> Self {
+        u32::from(value.0)
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn rads_stop_at_the_maximum_and_at_none() {
+        assert!(Rads::try_new(0).is_ok() && Rads::try_new(999).is_ok());
+        assert!(Rads::try_new(1000).is_err());
+        assert_eq!(Rads::try_new(990).unwrap().saturating_add(50).get(), 999);
+        assert_eq!(Rads::try_new(10).unwrap().saturating_sub(50), Rads::NONE);
+    }
 
     #[test]
     fn skill_levels_cover_zero_to_one_hundred() {

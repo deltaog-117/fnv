@@ -728,6 +728,87 @@
    "expect": {"quests": {"run_goodsprings_run": {"status": "completed"}}}
   },
   {
+   "name": "doc mitchell: a player with no radiation has nothing to cure and is not charged",
+   "setup": [
+    {"type": "caps", "amount": 200}
+   ],
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctorradiation", "fails": true},
+    {"say": "doctorradiationyes", "fails": true}
+   ],
+   "expect": {"caps": 200, "rads": 0}
+  },
+  {
+   "name": "doc mitchell: curing radiation costs 100 caps and takes every rad away",
+   "setup": [
+    {"type": "caps", "amount": 150}
+   ],
+   "rads": 420,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctorradiation"},
+    {"say": "doctorradiationyes"}
+   ],
+   "expect": {"caps": 50, "rads": 0}
+  },
+  {
+   "name": "doc mitchell: a player who cannot pay is not cured and keeps the radiation",
+   "setup": [
+    {"type": "caps", "amount": 99}
+   ],
+   "rads": 420,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctorradiation"},
+    {"say": "doctorradiationyes", "fails": true},
+    {"say": "doctorradiationyes_2"}
+   ],
+   "expect": {"caps": 99, "rads": 420}
+  },
+  {
+   "name": "doc mitchell: tough it out leaves the radiation and the caps alone",
+   "setup": [
+    {"type": "caps", "amount": 150}
+   ],
+   "rads": 420,
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctorradiation"},
+    {"say": "doctorradiationno"}
+   ],
+   "expect": {"caps": 150, "rads": 420}
+  },
+  {
+   "name": "doc mitchell: a player who is not addicted is not offered the cure",
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctoraddiction", "fails": true},
+    {"say": "doctoraddictionyes", "fails": true}
+   ],
+   "expect": {"addicted": false}
+  },
+  {
+   "name": "doc mitchell: the addiction cure ends every addiction",
+   "addicted_to": ["jet", "med-x"],
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctoraddiction"},
+    {"say": "doctoraddictionyes"}
+   ],
+   "expect": {"addicted": false}
+  },
+  {
+   "name": "doc mitchell: refusing the addiction cure keeps the addiction",
+   "addicted_to": ["jet"],
+   "dialogue": "docmitchell",
+   "steps": [
+    {"say": "doctoraddiction"},
+    {"say": "doctoraddictionno"}
+   ],
+   "expect": {"addicted": true}
+  },
+  {
    "name": "doc mitchell: an unhurt player is not charged and has nothing to pay for",
    "setup": [
     {"type": "caps", "amount": 200}

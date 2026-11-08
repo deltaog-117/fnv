@@ -5,23 +5,25 @@ use std::num::NonZeroU32;
 use std::sync::Arc;
 
 use super::battle::{Arsenal, Battle, BattleError, Outcome, WEAR_PER_SHOT};
+use crate::addiction::{AddictionBook, AddictionKind, Addictions, Risk};
 use crate::character::{Character, PerkBook, ProgressError};
 use crate::clock::{ClockError, GameClock, Span};
-use crate::combat::{Condition, Percent, Side, Status};
+use crate::combat::{Condition, Dice, Percent, Side, Status};
 use crate::craft::{RecipeBook, StationBook};
 use crate::effects::{Active, ActiveEffects};
 use crate::gather::{FindBook, Gathered};
 use crate::inventory::{CopyId, Inventory, InventoryError, ItemBook, Slot, WeaponCopy};
 use crate::quests::{QuestBook, QuestLog};
+use crate::radiation::Radiation;
 use crate::reputation::{ReputationBook, Standing};
 use crate::rest::{BedBook, RestError, restored};
 use crate::shared::{
-    Alignment, BedId, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView,
-    DiscountPercent, Effect, EffectError, Encounter, EncounterId, EndingId, FactionId, FlagId,
-    HealthPercent, InventorySink, InventoryView, ItemId, ItemUse, LocationId, NpcId, NpcState,
-    PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView, Renown, RenownTier,
-    ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView,
-    VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
+    Ailment, Alignment, BedId, CharacterSink, CharacterView, CompanionId, CompanionSink,
+    CompanionView, DiscountPercent, Effect, EffectError, Encounter, EncounterId, EndingId,
+    FactionId, FlagId, HealthPercent, InventorySink, InventoryView, ItemId, ItemUse, LocationId,
+    NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView, Rads, Renown,
+    RenownTier, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink,
+    StandingView, VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
 };
 use crate::trade::{
     Market, Shop, TradeError, VendorBook, buy_total, buy_total_with_discount, sell_total,
@@ -38,6 +40,19 @@ mod upkeep;
 const MEDICINE_HEAL_DIVISOR: i32 = 2;
 
 pub use upkeep::{Crafted, RepairQuote, WornWeapon};
+
+/// What using one consumable did.
+#[derive(Debug, Clone, PartialEq, Eq, Default)]
+pub struct Used {
+    /// Hit points restored.
+    pub healed: u32,
+    /// Rads that got in, after resistance.
+    pub rads_in: u16,
+    /// Rads taken out.
+    pub rads_out: u16,
+    /// The addiction the dose started, if it did.
+    pub addicted: Option<AddictionKind>,
+}
 
 /// A quest effect that could not run because its feature is not built yet, kept
 /// so the reward is not lost: it can be applied once the feature lands.
@@ -85,6 +100,11 @@ pub struct Game {
     clock: GameClock,
     /// Boosts from chems, drinks and meals, each with the minute it ends.
     effects: ActiveEffects,
+    /// Radiation absorbed.
+    radiation: Radiation,
+    /// What the player is addicted to, and which items can addict.
+    addictions: Addictions,
+    addiction_book: Arc<AddictionBook>,
     /// The places the player can walk between.
     map: Arc<TravelBook>,
     /// Where the player stands; `None` until the game is given a map.
@@ -127,6 +147,9 @@ impl Game {
             gathered: Gathered::default(),
             clock: GameClock::START,
             effects: ActiveEffects::default(),
+            radiation: Radiation::default(),
+            addictions: Addictions::default(),
+            addiction_book: Arc::default(),
             map: Arc::default(),
             at: None,
             wounds: 0,
@@ -165,6 +188,14 @@ impl Game {
     #[must_use]
     pub fn with_beds(mut self, beds: Arc<BedBook>) -> Self {
         self.beds = beds;
+        self
+    }
+
+    /// The same game over the items that can addict. Without a book no chem
+    /// addicts, so call this before play.
+    #[must_use]
+    pub fn with_addictions(mut self, book: Arc<AddictionBook>) -> Self {
+        self.addiction_book = book;
         self
     }
 
@@ -258,6 +289,24 @@ impl Game {
     #[must_use]
     pub fn with_wounds(mut self, wounds: u32) -> Self {
         self.wounds = wounds.min(self.character.max_hp());
+        self
+    }
+
+    /// The same game with the player holding `rads`, for a scenario or a test that
+    /// starts irradiated. Set the character first: the sickness is read from it.
+    #[must_use]
+    pub fn with_rads(mut self, rads: Rads) -> Self {
+        self.radiation = Radiation::holding(rads);
+        self.set_tally();
+        self
+    }
+
+    /// The same game with the player addicted to `kind` as of now, for a scenario
+    /// or a test that starts hooked. Set the character first.
+    #[must_use]
+    pub fn with_addiction(mut self, kind: &AddictionKind) -> Self {
+        self.addictions.dose(kind, self.clock.as_minutes(), true);
+        self.set_tally();
         self
     }
 
@@ -370,10 +419,66 @@ impl Game {
     /// is left with at least one hit point, because a boost to the maximum is a loan
     /// that cannot kill when it is repaid.
     fn expire_effects(&mut self) {
-        if self.effects.expire(self.clock.as_minutes()) {
-            self.character.set_boosts(self.effects.tally());
+        let now = self.clock.as_minutes();
+        // Both run, so a boost and an addiction that end together are both seen.
+        let boosts_ended = self.effects.expire(now);
+        let weaned = self.addictions.expire(now);
+        if boosts_ended || weaned {
+            self.retally();
+        }
+    }
+
+    /// Puts what chems, radiation sickness and withdrawal change onto the
+    /// character as one tally. The wounds stay as they are, so hit points gained
+    /// from a boost to the maximum go with it; a player who was alive is left with
+    /// at least one hit point, because a boost to the maximum is a loan that cannot
+    /// kill when it is repaid.
+    fn retally(&mut self) {
+        // Asked before the numbers change: a player the repayment would take to zero
+        // was alive, and is the one to be spared.
+        let was_alive = self.is_alive();
+        self.set_tally();
+        if was_alive {
             self.wounds = self.wounds.min(self.character.max_hp().saturating_sub(1));
         }
+    }
+
+    /// The same tally without touching the wounds, for putting a save back.
+    fn set_tally(&mut self) {
+        let mut tally = self.effects.tally();
+        tally.merge(&self.radiation.sickness());
+        tally.merge(&self.addictions.withdrawal());
+        self.character.set_boosts(tally);
+    }
+
+    /// The radiation the player has absorbed.
+    #[must_use]
+    pub fn rads(&self) -> Rads {
+        self.radiation.rads()
+    }
+
+    /// The addictions the player has.
+    #[must_use]
+    pub fn addictions(&self) -> &Addictions {
+        &self.addictions
+    }
+
+    /// What using the item risks, if it can addict.
+    #[must_use]
+    pub fn addiction_risk(&self, item: &ItemId) -> Option<&Risk> {
+        self.addiction_book.risk(item)
+    }
+
+    /// How much of the radiation offered the player's body keeps out, in percent.
+    #[must_use]
+    pub fn radiation_resistance(&self) -> u8 {
+        self.character.radiation_resistance()
+    }
+
+    /// How sick the radiation makes the player: 0 is well.
+    #[must_use]
+    pub fn radiation_tier(&self) -> u8 {
+        self.radiation.tier()
     }
 
     /// Where the player stands, once the game has a map.
@@ -515,7 +620,21 @@ impl Game {
             .filter(|(foe, _)| foe.when.iter().all(|condition| evaluate(condition, self)))
             .map(|(_, fighter)| fighter.clone())
             .collect();
-        Battle::start(encounter.clone(), player, hp, &present, copy)
+        let present_allies: Vec<_> = definition
+            .allies
+            .iter()
+            .zip(self.arsenal.allies(encounter).unwrap_or_default())
+            .filter(|(ally, _)| ally.when.iter().all(|condition| evaluate(condition, self)))
+            .map(|(_, fighter)| fighter.clone())
+            .collect();
+        Battle::start(
+            encounter.clone(),
+            player,
+            hp,
+            &present_allies,
+            &present,
+            copy,
+        )
     }
 
     /// Settles a finished fight: the player keeps the wounds they ended with, and
@@ -636,19 +755,46 @@ impl Game {
         self.inventory.discard_copy(copy)
     }
 
-    /// Uses one carried consumable, returning the hit points it restored.
+    /// Uses one carried consumable, returning the hit points it restored. A chem
+    /// used this way never starts an addiction, because nothing rolls for it;
+    /// [`Game::use_item_rolling`] is the one that does.
     ///
     /// An item that heals is spent only when there is something to heal: a player at
     /// full health keeps it, so a stray key press does not waste a stimpak. An item
-    /// that boosts starts its boosts, which end by themselves as the clock moves.
+    /// that only takes radiation out is kept by a player with none. An item that
+    /// boosts starts its boosts, which end by themselves as the clock moves.
     ///
     /// # Errors
     ///
     /// [`InventoryError::Down`] when the player has no hit points,
     /// [`InventoryError::NotHeld`] when the item is not carried,
-    /// [`InventoryError::NoEffect`] when the game does not model what it does, and
-    /// [`InventoryError::AtFullHealth`] when there is nothing to heal.
+    /// [`InventoryError::NoEffect`] when the game does not model what it does,
+    /// [`InventoryError::AtFullHealth`] when there is nothing to heal and
+    /// [`InventoryError::NotIrradiated`] when there is no radiation to take out.
     pub fn use_item(&mut self, item: &ItemId) -> Result<u32, InventoryError> {
+        self.consume(item, None).map(|used| used.healed)
+    }
+
+    /// Uses one carried consumable like [`Game::use_item`], and rolls the dice for
+    /// its addiction risk: a roll at or below the chem's chance starts an
+    /// addiction, unless the player is already addicted to it.
+    ///
+    /// # Errors
+    ///
+    /// The same as [`Game::use_item`].
+    pub fn use_item_rolling(
+        &mut self,
+        item: &ItemId,
+        dice: &mut impl Dice,
+    ) -> Result<Used, InventoryError> {
+        self.consume(item, Some(&mut || dice.percent()))
+    }
+
+    fn consume(
+        &mut self,
+        item: &ItemId,
+        roll: Option<&mut dyn FnMut() -> u8>,
+    ) -> Result<Used, InventoryError> {
         if !self.is_alive() {
             return Err(InventoryError::Down);
         }
@@ -658,14 +804,18 @@ impl Game {
         let Some(effect) = self.inventory.item_use(item) else {
             return Err(InventoryError::NoEffect(item.clone()));
         };
-        let (heal, boosts) = match &effect {
-            ItemUse::Heal(hp) | ItemUse::MedicineHeal(hp) => (Some(*hp), &[][..]),
-            ItemUse::Boost(boost) => (boost.heal, boost.effects.as_slice()),
+        let (heal, rads, boosts) = match &effect {
+            ItemUse::Heal(hp) | ItemUse::MedicineHeal(hp) => (Some(*hp), 0, &[][..]),
+            ItemUse::Boost(boost) => (boost.heal, boost.rads, boost.effects.as_slice()),
         };
         // An item that heals is kept by a player with nothing to heal, so a stray key
         // press does not waste it; one that only boosts is always worth using.
         if heal.is_some() && self.wounds == 0 {
             return Err(InventoryError::AtFullHealth);
+        }
+        let only_cleans = rads < 0 && heal.is_none() && boosts.is_empty();
+        if only_cleans && self.radiation.rads() == Rads::NONE {
+            return Err(InventoryError::NotIrradiated);
         }
         let medicine = if matches!(effect, ItemUse::MedicineHeal(_)) {
             i32::from(self.character.skill(Skill::Medicine).get()) / MEDICINE_HEAL_DIVISOR
@@ -679,13 +829,42 @@ impl Game {
             let scaled = (i64::from(hp.get()) * percent + 50) / 100;
             u32::try_from(scaled).unwrap_or(u32::MAX).min(self.wounds)
         });
+        let resistance = self.character.radiation_resistance();
         self.inventory.discard(item, NonZeroU32::MIN)?;
+        let (rads_in, rads_out) = match rads {
+            0 => (0, 0),
+            more if more > 0 => (self.radiation.absorb(more.unsigned_abs(), resistance), 0),
+            less => (0, self.radiation.remove(less.unsigned_abs())),
+        };
         if !boosts.is_empty() {
             self.effects.start(item, boosts, self.clock.as_minutes());
-            self.character.set_boosts(self.effects.tally());
         }
+        let addicted = self.dose_addiction(item, roll);
+        self.retally();
         self.heal(healed);
-        Ok(healed)
+        Ok(Used {
+            healed,
+            rads_in,
+            rads_out,
+            addicted,
+        })
+    }
+
+    /// Records a dose of an addictive chem, rolling for a new addiction only when
+    /// there is a roll to make and the player is not already hooked on it. Returns
+    /// the addiction the dose started.
+    fn dose_addiction(
+        &mut self,
+        item: &ItemId,
+        roll: Option<&mut dyn FnMut() -> u8>,
+    ) -> Option<AddictionKind> {
+        let risk = self.addiction_book.risk(item)?;
+        let kind = risk.kind().clone();
+        let strikes = !self.addictions.has(&kind)
+            && roll.is_some_and(|roll| risk.strikes(roll().clamp(1, 100)));
+        self.addictions
+            .dose(&kind, self.clock.as_minutes(), strikes)
+            .then_some(kind)
     }
 
     /// Throws `count` copies of a carried item away.
@@ -1059,6 +1238,14 @@ impl CharacterView for Game {
     fn health(&self) -> HealthPercent {
         HealthPercent::of(self.hp(), self.character.max_hp())
     }
+
+    fn radiation(&self) -> Rads {
+        self.radiation.rads()
+    }
+
+    fn addicted(&self) -> bool {
+        self.addictions.any()
+    }
 }
 
 impl InventoryView for Game {
@@ -1119,6 +1306,17 @@ impl CharacterSink for Game {
 
     fn restore_health(&mut self) -> Result<(), EffectError> {
         self.heal(self.character.max_hp());
+        Ok(())
+    }
+
+    fn cure(&mut self, ailment: Ailment) -> Result<(), EffectError> {
+        match ailment {
+            Ailment::Radiation => self.radiation.clear(),
+            Ailment::Addiction => {
+                self.addictions.cure();
+            }
+        }
+        self.retally();
         Ok(())
     }
 }

@@ -12,7 +12,7 @@ use crate::shared::{
 };
 
 /// The newest version this game reads and the only one it writes.
-pub const VERSION: u32 = 3;
+pub const VERSION: u32 = 4;
 
 /// Everything that changes during play.
 ///
@@ -42,6 +42,10 @@ pub struct Save {
     pub shops: Vec<SavedShop>,
     /// The boosts in force.
     pub effects: Vec<SavedEffect>,
+    /// Radiation absorbed, in rads.
+    pub rads: u16,
+    /// What the player is addicted to, by name.
+    pub addictions: Vec<SavedAddiction>,
     /// The finds the player has already picked up.
     pub gathered: Vec<FindId>,
     /// Fights the player has won.
@@ -216,6 +220,16 @@ pub struct SavedEffect {
     pub until: u64,
 }
 
+/// One addiction.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct SavedAddiction {
+    /// What the player is addicted to.
+    pub kind: String,
+    /// The minute of the last dose.
+    pub last_dose: u64,
+}
+
 /// One carried weapon.
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -353,6 +367,20 @@ fn upgrade(mut value: serde_json::Value, from: u64) -> Result<serde_json::Value,
             pack.insert("weapons".to_owned(), serde_json::Value::Array(weapons));
             pack.insert("wielded".to_owned(), serde_json::json!(in_hand));
             object.insert("version".to_owned(), serde_json::Value::from(3));
+            Ok(value)
+        }
+        // Version 4 added radiation and addiction; an older game had neither, so the
+        // player starts clean.
+        3 => {
+            let object = value
+                .as_object_mut()
+                .ok_or_else(|| SaveError::Format("the save is not an object".to_owned()))?;
+            object.insert("rads".to_owned(), serde_json::Value::from(0));
+            object.insert(
+                "addictions".to_owned(),
+                serde_json::Value::Array(Vec::new()),
+            );
+            object.insert("version".to_owned(), serde_json::Value::from(4));
             Ok(value)
         }
         _ => Err(SaveError::UnknownVersion(from)),

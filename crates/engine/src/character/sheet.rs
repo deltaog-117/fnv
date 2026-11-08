@@ -13,8 +13,8 @@ use super::rules::{
     TAG_COUNT,
 };
 use crate::shared::{
-    BoostTally, CharacterSink, CharacterView, EffectError, ItemId, PerkId, Skill, SkillLevel,
-    Special, SpecialLevel, TraitId, whole_amount,
+    Ailment, BoostTally, CharacterSink, CharacterView, EffectError, ItemId, PerkId, Skill,
+    SkillLevel, Special, SpecialLevel, TraitId, whole_amount,
 };
 
 /// The seven S.P.E.C.I.A.L. values; every one always holds a legal level.
@@ -430,6 +430,15 @@ impl Character {
         shifted(base, self.boosts.carry_weight())
     }
 
+    /// Radiation resistance in percent: `2 * (endurance - 1)` plus what chems add,
+    /// kept between 0 and 100.
+    #[must_use]
+    pub fn radiation_resistance(&self) -> u8 {
+        let base = 2 * (i32::from(self.boosted(Special::Endurance)) - 1);
+        let total = base.saturating_add(self.boosts.radiation_resistance());
+        u8::try_from(total.clamp(0, 100)).unwrap_or(0)
+    }
+
     /// What chems, drinks and meals change for now.
     #[must_use]
     pub fn boosts(&self) -> &BoostTally {
@@ -633,6 +642,12 @@ impl CharacterSink for Character {
     // The sheet records no wounds (the game keeps them between fights), so there is
     // nothing here to restore and the answer is the same as for a healthy player.
     fn restore_health(&mut self) -> Result<(), EffectError> {
+        Ok(())
+    }
+
+    // Radiation and addiction are the game's, like wounds, so the sheet has none to
+    // cure.
+    fn cure(&mut self, _ailment: Ailment) -> Result<(), EffectError> {
         Ok(())
     }
 }

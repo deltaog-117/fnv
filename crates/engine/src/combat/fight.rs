@@ -209,6 +209,9 @@ pub enum CombatError {
     /// The target is on the attacker's side.
     #[error("fighter {0} is on the attacker's side")]
     FriendlyFire(usize),
+    /// Only a fighter on the player's side can lead it.
+    #[error("fighter {0} is on the enemy side and cannot lead the player's")]
+    LeadOnTheEnemySide(usize),
     /// A fighter cannot start with more hit points than its maximum.
     #[error("fighter {id} cannot start with {hp} hit points; its maximum is {max}")]
     HpAboveMax {
@@ -261,6 +264,9 @@ pub struct Combat<C, H> {
     ap_left: u32,
     round: u32,
     status: Status,
+    /// The player-side fighter whose fall loses the fight for their side, even
+    /// while allies stand. `None` means a side loses when all of it has fallen.
+    lead: Option<usize>,
 }
 
 impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
@@ -303,7 +309,34 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             ap_left,
             round: 1,
             status: Status::Ongoing,
+            lead: None,
         })
+    }
+
+    /// Names the fighter whose fall loses the fight for the player's side, so allies
+    /// who are still standing cannot go on without them. The same fighter is the one
+    /// a person plays: everyone else on either side is played by the computer.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError::NoSuchFighter`] for an unknown id and
+    /// [`CombatError::LeadOnTheEnemySide`] for a fighter on the enemy side.
+    pub fn with_lead(mut self, id: FighterId) -> Result<Self, CombatError> {
+        match self.fighters.get(id.0).map(|slot| slot.side) {
+            None => Err(CombatError::NoSuchFighter(id.0)),
+            Some(Side::Enemy) => Err(CombatError::LeadOnTheEnemySide(id.0)),
+            Some(Side::Player) => {
+                self.lead = Some(id.0);
+                self.status = self.standing_status();
+                Ok(self)
+            }
+        }
+    }
+
+    /// The fighter whose fall loses the fight for the player's side, if one is named.
+    #[must_use]
+    pub fn lead(&self) -> Option<FighterId> {
+        self.lead.map(FighterId)
     }
 
     /// Starts `id` with `hp` hit points instead of its maximum, for a fighter who
@@ -587,7 +620,11 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
 
     fn standing_status(&self) -> Status {
         let standing = |side| self.fighters.iter().any(|f| f.side == side && f.hp > 0);
-        match (standing(Side::Player), standing(Side::Enemy)) {
+        let player_side = match self.lead {
+            Some(lead) => self.fighters[lead].hp > 0,
+            None => standing(Side::Player),
+        };
+        match (player_side, standing(Side::Enemy)) {
             (true, false) => Status::Won(Side::Player),
             (false, true) => Status::Won(Side::Enemy),
             _ => Status::Ongoing,

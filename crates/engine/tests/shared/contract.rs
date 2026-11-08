@@ -247,6 +247,10 @@ fn both_sides_reject_the_same_invalid_conditions() {
         json!({"type": "health", "percent": -1}),
         json!({"type": "health"}),
         json!({"type": "health", "percent": 50, "op": "below"}),
+        json!({"type": "radiation", "min": 1000}),
+        json!({"type": "radiation", "min": -1}),
+        json!({"type": "radiation"}),
+        json!({"type": "addicted", "to": "jet"}),
         json!({"type": "reputation_tier", "faction": "ncr", "renown": "fame", "tier": 4}),
         json!({"type": "reputation_tier", "faction": "ncr", "renown": "fame", "tier": -1}),
         json!({"type": "reputation_tier", "faction": "ncr", "renown": "glory", "tier": 1}),
@@ -277,6 +281,8 @@ fn both_sides_reject_the_same_invalid_effects() {
         json!({"type": "give_item", "item": "stimpak", "count": 0}),
         json!({"type": "karma"}),
         json!({"type": "heal", "amount": 5}),
+        json!({"type": "cure"}),
+        json!({"type": "cure", "ailment": "hangover"}),
         json!({"type": "start_quest", "quest": "q", "extra": 1}),
         json!({"type": "teleport"}),
     ];
@@ -353,6 +359,19 @@ fn omitted_optional_fields_take_the_documented_defaults() {
             op: Comparison::AtLeast,
             ..
         })
+    ));
+
+    let radiation = json!({"type": "radiation", "min": 100});
+    assert!(CONDITION.is_valid(&radiation));
+    assert!(matches!(
+        serde_json::from_value(radiation),
+        Ok(Condition::Radiation { min }) if min.get() == 100
+    ));
+    let addicted = json!({"type": "addicted"});
+    assert!(CONDITION.is_valid(&addicted));
+    assert!(matches!(
+        serde_json::from_value(addicted),
+        Ok(Condition::Addicted {})
     ));
 
     let item = json!({"type": "has_item", "item": "stimpak"});

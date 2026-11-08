@@ -8,7 +8,7 @@
 //!
 //! [`Condition`]: super::Condition
 
-use super::bounds::{HealthPercent, RenownTier, SkillLevel, SpecialLevel};
+use super::bounds::{HealthPercent, Rads, RenownTier, SkillLevel, SpecialLevel};
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
 use super::vocabulary::{Alignment, NpcState, QuestStage, Renown, ReputationLevel, Skill, Special};
 
@@ -85,6 +85,16 @@ pub trait CharacterView {
     /// state that tracks no wounds has nobody hurt.
     fn health(&self) -> HealthPercent {
         HealthPercent::FULL
+    }
+
+    /// The radiation the player has absorbed; none by default.
+    fn radiation(&self) -> Rads {
+        Rads::NONE
+    }
+
+    /// Whether the player is addicted to any chem; not by default.
+    fn addicted(&self) -> bool {
+        false
     }
 }
 

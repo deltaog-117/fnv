@@ -12,18 +12,20 @@ use std::collections::HashSet;
 use std::num::NonZeroU32;
 
 use super::{Active, ActiveEffects, Deferred, Game};
+use crate::addiction::{AddictionKind, Addictions};
 use crate::character::{Character, CharacterRecord, SpecialSet};
 use crate::clock::GameClock;
 use crate::gather::Gathered;
 use crate::inventory::{CopyId, Slot};
+use crate::radiation::Radiation;
 use crate::saves::{
-    Save, SaveError, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding, SavedFate,
-    SavedFired, SavedNpc, SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop, SavedStanding,
-    SavedWeapon, SavedWorld, VERSION,
+    Save, SaveError, SavedAddiction, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding,
+    SavedFate, SavedFired, SavedNpc, SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop,
+    SavedStanding, SavedWeapon, SavedWorld, VERSION,
 };
 use crate::shared::{
     InventorySink, InventoryView, NpcId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
-    Renown, Special, SpecialLevel, StandingSink, StandingView, WorldSink,
+    Rads, Renown, Special, SpecialLevel, StandingSink, StandingView, WorldSink,
 };
 use crate::world::Fate;
 use strum::IntoEnumIterator;
@@ -192,6 +194,15 @@ impl Game {
             pack,
             shops,
             effects,
+            rads: self.radiation.rads().get(),
+            addictions: self
+                .addictions
+                .iter()
+                .map(|(kind, last_dose)| SavedAddiction {
+                    kind: kind.to_string(),
+                    last_dose,
+                })
+                .collect(),
             gathered: self.gathered.iter().cloned().collect(),
             won,
             fired,
@@ -233,6 +244,9 @@ impl Game {
             gathered: Gathered::default(),
             clock: GameClock::from_minutes(save.clock_minutes),
             effects: ActiveEffects::default(),
+            radiation: Radiation::default(),
+            addictions: Addictions::default(),
+            addiction_book: self.addiction_book.clone(),
             map: self.map.clone(),
             at: None,
             wounds: 0,
@@ -246,6 +260,7 @@ impl Game {
         game.restore_character(save, self)?;
         game.restore_pack(save)?;
         game.restore_shops(save)?;
+        game.restore_ailments(save)?;
         game.restore_effects(save)?;
         game.restore_place(save, self)?;
         game.restore_wounds(save)?;
@@ -461,7 +476,41 @@ impl Game {
             });
         }
         self.effects = ActiveEffects::from_entries(list);
-        self.character.set_boosts(self.effects.tally());
+        self.set_tally();
+        Ok(())
+    }
+
+    fn restore_ailments(&mut self, save: &Save) -> Result<(), SaveError> {
+        let bad = |what: &dyn std::fmt::Display| SaveError::invalid("ailments", what);
+        let rads = Rads::try_new(u32::from(save.rads)).map_err(|e| bad(&e))?;
+        self.radiation = Radiation::holding(rads);
+        let now = self.clock.as_minutes();
+        let mut held = Vec::with_capacity(save.addictions.len());
+        for entry in &save.addictions {
+            let kind = AddictionKind::try_new(&entry.kind).map_err(|e| bad(&e))?;
+            if kind.as_str() != entry.kind {
+                return Err(bad(&format!(
+                    "{:?} is not spelled the way the game spells it",
+                    entry.kind
+                )));
+            }
+            if !self.addiction_book.knows(&kind) {
+                return Err(bad(&format!("no item addicts to {kind}")));
+            }
+            if entry.last_dose > now {
+                return Err(bad(&format!(
+                    "the last dose of {kind} is after the save was made"
+                )));
+            }
+            if held
+                .iter()
+                .any(|(other, _): &(AddictionKind, u64)| *other == kind)
+            {
+                return Err(bad(&format!("{kind} is listed twice")));
+            }
+            held.push((kind, entry.last_dose));
+        }
+        self.addictions = Addictions::from_entries(held);
         Ok(())
     }
 

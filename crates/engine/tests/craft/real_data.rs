@@ -65,7 +65,7 @@ fn most_recipes_can_be_made_and_every_other_one_says_why_not() {
 }
 
 #[test]
-fn most_of_the_sixteen_breakdowns_can_be_done_and_the_rest_name_no_item() {
+fn fifteen_of_the_sixteen_breakdowns_can_be_done_and_twelve_gauge_names_no_one_round() {
     let data = data();
     let book = recipes(&data);
     let apart: Vec<_> = data
@@ -75,7 +75,12 @@ fn most_of_the_sixteen_breakdowns_can_be_done_and_the_rest_name_no_item() {
         .collect();
     assert_eq!(apart.len(), 16);
     let done = apart.iter().filter(|r| book.get(&r.id).is_some()).count();
-    assert_eq!(done, 12, "the other four name no item to take apart");
+    assert_eq!(done, 15, "only the 12 gauge shell has no one plain round");
+    let twelve = apart
+        .iter()
+        .find(|r| r.id.as_str() == "12_gauge_shotgun_shell_breakdown")
+        .expect("the 12 gauge breakdown is in the data");
+    assert!(book.get(&twelve.id).is_none() && twelve.output_item_id.is_none());
     for record in &apart {
         let Some(formula) = book.get(&record.id) else {
             assert_eq!(record.output_item_id, None, "{}", record.id);

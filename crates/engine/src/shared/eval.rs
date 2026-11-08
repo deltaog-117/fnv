@@ -68,6 +68,8 @@ pub fn evaluate<V: StateView + ?Sized>(condition: &Condition, view: &V) -> bool 
                 Comparison::Is => health == *percent,
             }
         }
+        Condition::Radiation { min } => view.radiation() >= *min,
+        Condition::Addicted {} => view.addicted(),
         Condition::Perk { perk } => view.has_perk(perk),
         Condition::Karma { alignment } => view.alignment() == *alignment,
         Condition::Companion { companion, active } => view.companion_active(companion) == *active,
@@ -112,6 +114,7 @@ pub fn apply<S: StateSink + ?Sized>(effect: &Effect, sink: &mut S) -> Result<(),
         Effect::BlockQuest { quest } => sink.block_quest(quest),
         Effect::SetStage { quest, stage } => sink.set_stage(quest, *stage),
         Effect::Heal {} => sink.restore_health(),
+        Effect::Cure { ailment } => sink.cure(*ailment),
         Effect::Reputation {
             faction,
             fame,

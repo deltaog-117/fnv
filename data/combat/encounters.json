@@ -48,27 +48,13 @@
     "npc": "powder_ganger",
     "weapon": "9mm_pistol",
     "armor": "powder_gang_plain_outfit",
-    "hp": 30,
-    "when": [
-     {
-      "type": "flag",
-      "flag": "trudy_joined_militia",
-      "value": false
-     }
-    ]
+    "hp": 30
    },
    {
     "npc": "powder_ganger",
     "weapon": "9mm_pistol",
     "armor": "powder_gang_plain_outfit",
-    "hp": 30,
-    "when": [
-     {
-      "type": "flag",
-      "flag": "easy_pete_joined_militia",
-      "value": false
-     }
-    ]
+    "hp": 30
    },
    {
     "npc": "powder_ganger",
@@ -80,6 +66,55 @@
       "type": "flag",
       "flag": "chet_supplied_militia",
       "value": false
+     }
+    ]
+   }
+  ],
+  "allies": [
+   {
+    "npc": "sunny_smiles",
+    "weapon": "varmint_rifle",
+    "armor": "leather_armor",
+    "hp": 30,
+    "when": [
+     {
+      "type": "npc",
+      "npc": "sunny_smiles",
+      "state": "alive"
+     }
+    ]
+   },
+   {
+    "npc": "easy_pete",
+    "weapon": "9mm_pistol",
+    "hp": 25,
+    "when": [
+     {
+      "type": "flag",
+      "flag": "easy_pete_joined_militia",
+      "value": true
+     },
+     {
+      "type": "npc",
+      "npc": "easy_pete",
+      "state": "alive"
+     }
+    ]
+   },
+   {
+    "npc": "trudy",
+    "weapon": "hunting_shotgun",
+    "hp": 35,
+    "when": [
+     {
+      "type": "flag",
+      "flag": "trudy_joined_militia",
+      "value": true
+     },
+     {
+      "type": "npc",
+      "npc": "trudy",
+      "state": "alive"
      }
     ]
    }

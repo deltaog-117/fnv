@@ -9,7 +9,7 @@ use std::num::NonZeroU32;
 use serde::{Deserialize, Serialize};
 
 use super::ids::{CompanionId, EndingId, FactionId, FlagId, ItemId, NpcId, QuestId};
-use super::vocabulary::{QuestStage, ReputationLevel};
+use super::vocabulary::{Ailment, QuestStage, ReputationLevel};
 
 fn default_count() -> NonZeroU32 {
     NonZeroU32::MIN
@@ -58,6 +58,12 @@ pub enum Effect {
     /// unit one, because serde lets a unit variant ignore `deny_unknown_fields`
     /// and the schema rejects extra fields.
     Heal {},
+    /// Cures a lasting harm: radiation goes to none, or every addiction ends.
+    Cure {
+        /// What is cured. Not called `of`, which the validator reads as a nested
+        /// condition list.
+        ailment: Ailment,
+    },
     /// Adds fame and infamy points with a faction.
     Reputation {
         /// The faction or town.
@@ -157,13 +163,14 @@ pub enum Effect {
 
 impl Effect {
     /// Every `type` value an effect can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 22] = [
+    pub const ALL_TAGS: [&'static str; 23] = [
         "start_quest",
         "complete_quest",
         "fail_quest",
         "block_quest",
         "set_stage",
         "heal",
+        "cure",
         "reputation",
         "set_reputation",
         "karma",
@@ -193,6 +200,7 @@ impl Effect {
             Self::BlockQuest { .. } => "block_quest",
             Self::SetStage { .. } => "set_stage",
             Self::Heal {} => "heal",
+            Self::Cure { .. } => "cure",
             Self::Reputation { .. } => "reputation",
             Self::SetReputation { .. } => "set_reputation",
             Self::Karma { .. } => "karma",

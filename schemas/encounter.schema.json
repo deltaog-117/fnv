@@ -35,41 +35,14 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "type": "object",
-        "required": [
-          "npc",
-          "weapon"
-        ],
-        "additionalProperties": false,
-        "properties": {
-          "npc": {
-            "$ref": "common.schema.json#/$defs/id"
-          },
-          "weapon": {
-            "description": "Weapon item id.",
-            "$ref": "common.schema.json#/$defs/id"
-          },
-          "armor": {
-            "description": "Armor item id.",
-            "$ref": "common.schema.json#/$defs/id"
-          },
-          "kind": {
-            "description": "What sort of creature the enemy is; a person when absent.",
-            "$ref": "common.schema.json#/$defs/foe_kind"
-          },
-          "hp": {
-            "description": "Hit points when the NPC record gives none.",
-            "type": "integer",
-            "minimum": 1
-          },
-          "when": {
-            "description": "Every condition must hold for this enemy to be in the fight; none means it always is. At least one foe must have none.",
-            "type": "array",
-            "items": {
-              "$ref": "common.schema.json#/$defs/condition"
-            }
-          }
-        }
+        "$ref": "#/$defs/fighter"
+      }
+    },
+    "allies": {
+      "description": "The fighters on the player's side, who play themselves; each one is present only while every `when` condition holds. A fallen ally is not killed in the world.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fighter"
       }
     },
     "on_win": {
@@ -78,6 +51,46 @@
       "items": {
         "$ref": "common.schema.json#/$defs/effect"
       }
+    }
+  },
+  "$defs": {
+    "fighter": {
+      "type": "object",
+      "required": [
+        "npc",
+        "weapon"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "npc": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "weapon": {
+          "description": "Weapon item id.",
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "armor": {
+          "description": "Armor item id.",
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "kind": {
+          "description": "What sort of creature the enemy is; a person when absent.",
+          "$ref": "common.schema.json#/$defs/foe_kind"
+        },
+        "hp": {
+          "description": "Hit points when the NPC record gives none.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "when": {
+          "description": "Every condition must hold for this fighter to be in the fight; none means it always is. At least one foe must have none.",
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/condition"
+          }
+        }
+      },
+      "description": "One fighter: an enemy under `foes`, or a fighter on the player's side under `allies`."
     }
   }
 }

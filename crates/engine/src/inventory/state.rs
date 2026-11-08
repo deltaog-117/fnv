@@ -94,6 +94,9 @@ pub enum InventoryError {
     /// The player is already at full health.
     #[error("already at full health")]
     AtFullHealth,
+    /// The item only takes radiation out, and the player has none.
+    #[error("no radiation to take out")]
+    NotIrradiated,
     /// The player has no hit points left.
     #[error("the player is down")]
     Down,

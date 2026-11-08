@@ -7,6 +7,7 @@ use std::fs;
 use std::path::Path;
 use std::sync::Arc;
 
+use engine::addiction::AddictionKind;
 use engine::character::{Character, CharacterRules, SpecialSet};
 use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::Game;
@@ -14,7 +15,7 @@ use engine::inventory::ItemBook;
 use engine::quests::QuestBook;
 use engine::shared::{
     DialogueId, Effect, FlagId, GameData, InventoryView, ItemId, QuestId, QuestStatus, QuestView,
-    Scope, Special, SpecialLevel, TopicKey, WorldView, apply_all,
+    Rads, Scope, Special, SpecialLevel, TopicKey, WorldView, apply_all,
 };
 use engine::world::WorldBook;
 use serde::Deserialize;
@@ -36,6 +37,12 @@ struct Scenario {
     /// Hit points already lost when the talk begins.
     #[serde(default)]
     wounds: u32,
+    /// Rads already absorbed when the talk begins.
+    #[serde(default)]
+    rads: u32,
+    /// What the player is already addicted to when the talk begins.
+    #[serde(default)]
+    addicted_to: Vec<String>,
     steps: Vec<Step>,
     expect: Expect,
 }
@@ -59,6 +66,10 @@ struct Expect {
     caps: Option<u32>,
     /// Hit points left at the end.
     hp: Option<u32>,
+    /// Rads held at the end.
+    rads: Option<u32>,
+    /// Whether the player is addicted to anything at the end.
+    addicted: Option<bool>,
     over: Option<bool>,
 }
 
@@ -106,7 +117,14 @@ fn the_goodsprings_dialogue_scenarios_hold() {
         let mut game = Game::with_world(Arc::clone(&quests), Arc::clone(&world))
             .with_items(Arc::clone(&items))
             .with_character(Character::new(spread, CharacterRules::standard()))
-            .with_wounds(scenario.wounds);
+            .with_wounds(scenario.wounds)
+            .with_rads(
+                Rads::try_new(scenario.rads).unwrap_or_else(|e| panic!("{name}: rads: {e}")),
+            );
+        for kind in &scenario.addicted_to {
+            let kind = AddictionKind::try_new(kind).unwrap_or_else(|e| panic!("{name}: {e}"));
+            game = game.with_addiction(&kind);
+        }
         apply_all(&scenario.setup, &mut game).unwrap_or_else(|e| panic!("{name}: setup: {e}"));
         let mut talk = Conversation::open(Arc::clone(&dialogue), &scenario.dialogue)
             .unwrap_or_else(|e| panic!("{name}: {e}"));
@@ -144,6 +162,12 @@ fn the_goodsprings_dialogue_scenarios_hold() {
         }
         if let Some(hp) = scenario.expect.hp {
             assert_eq!(game.hp(), hp, "{name}: hit points");
+        }
+        if let Some(rads) = scenario.expect.rads {
+            assert_eq!(u32::from(game.rads().get()), rads, "{name}: rads");
+        }
+        if let Some(addicted) = scenario.expect.addicted {
+            assert_eq!(game.addictions().any(), addicted, "{name}: addicted");
         }
         if let Some(over) = scenario.expect.over {
             assert_eq!(talk.is_over(), over, "{name}: over");

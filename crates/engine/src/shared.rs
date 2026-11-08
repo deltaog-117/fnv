@@ -25,7 +25,7 @@ mod view;
 mod vocabulary;
 
 pub use boost::{Boost, BoostStat, BoostTally, DerivedStat};
-pub use bounds::{DiscountPercent, HealthPercent, RenownTier, SkillLevel, SpecialLevel};
+pub use bounds::{DiscountPercent, HealthPercent, Rads, RenownTier, SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
 pub use data::{
     Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Bed, BoostUse, Consumable, CraftReaction,
@@ -56,6 +56,6 @@ pub use view::{
     StateView, WorldView,
 };
 pub use vocabulary::{
-    Alignment, Comparison, Dlc, FoeKind, NpcState, QuestStage, QuestState, Renown, ReputationLevel,
-    Skill, Special,
+    Ailment, Alignment, Comparison, Dlc, FoeKind, NpcState, QuestStage, QuestState, Renown,
+    ReputationLevel, Skill, Special,
 };

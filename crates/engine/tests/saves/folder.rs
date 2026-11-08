@@ -4,8 +4,8 @@ use std::path::PathBuf;
 use std::sync::atomic::{AtomicU32, Ordering};
 
 use engine::saves::{
-    AUTOSAVE, AUTOSAVE_PREVIOUS, MAX_NAME_LEN, NameError, SaveError, SaveFolder, SaveName,
-    SaveSummary, Slot,
+    AUTOSAVE, AUTOSAVE_PREVIOUS, HISTORY_DEPTH, LEGACY_NAME, MAX_NAME_LEN, NameError, SaveError,
+    SaveFolder, SaveName, SaveSummary, Slot,
 };
 use proptest::prelude::*;
 
@@ -318,6 +318,82 @@ proptest! {
     }
 }
 
+/// A save told apart from the others by its clock.
+fn stamped(minutes: u64) -> engine::saves::Save {
+    let mut save = template().save();
+    save.clock_minutes = minutes;
+    save
+}
+
+#[test]
+fn the_history_steps_back_and_drops_the_oldest() {
+    let scratch = Scratch::new();
+    let folder = scratch.folder();
+    let total = u64::from(HISTORY_DEPTH) + 3;
+    for minute in 0..total {
+        folder.write_automatic(&stamped(minute)).expect("writes");
+    }
+    assert_eq!(folder.read(&Slot::Auto), Ok(stamped(total - 1)));
+    for steps in 1..=HISTORY_DEPTH {
+        let slot = Slot::back(steps).expect("kept");
+        assert_eq!(
+            folder.read(&slot),
+            Ok(stamped(total - 1 - u64::from(steps))),
+            "{steps} back"
+        );
+    }
+    assert_eq!(
+        Slot::back(HISTORY_DEPTH + 1),
+        None,
+        "nothing is kept deeper"
+    );
+    assert!(!folder.dir().join("autosave_previous_6.json").exists());
+    let listed = folder.list().expect("lists");
+    assert_eq!(listed.len(), usize::from(HISTORY_DEPTH) + 1);
+    assert!(listed.iter().all(|entry| entry.slot.is_automatic()));
+}
+
+#[test]
+fn the_earlier_autosave_names_are_kept_for_the_game() {
+    for text in [
+        "autosave_previous_2",
+        "Autosave_Previous_5",
+        " autosave_previous ",
+    ] {
+        assert_eq!(SaveName::try_new(text), Err(NameError::Reserved), "{text}");
+    }
+    // Only the exact spellings are the game's.
+    for text in [
+        "autosave_previous_1",
+        "autosave_previous_6",
+        "autosave_previous_02",
+        "autosave_previous_x",
+    ] {
+        assert!(SaveName::try_new(text).is_ok(), "{text}");
+    }
+}
+
+#[test]
+fn the_old_save_moves_into_the_folder_and_nothing_is_replaced() {
+    let scratch = Scratch::new();
+    let folder = scratch.folder();
+    assert_eq!(folder.adopt_legacy(), Ok(None), "nothing to move");
+    let save = played().save();
+    save.write(&scratch.0.join("save.json")).expect("writes");
+    let moved = folder
+        .adopt_legacy()
+        .expect("moves")
+        .expect("there was one");
+    assert_eq!(moved.as_str(), LEGACY_NAME);
+    assert!(!folder.exists(&Slot::Legacy));
+    assert_eq!(folder.read(&Slot::Named(moved)), Ok(save));
+    // A second old save will not take the first one's place.
+    let other = template().save();
+    other.write(&scratch.0.join("save.json")).expect("writes");
+    assert!(matches!(folder.adopt_legacy(), Err(SaveError::Io(_))));
+    assert!(folder.exists(&Slot::Legacy), "it stays where it was");
+}
+
 proptest! {
     #![proptest_config(ProptestConfig::with_cases(24))]
 
@@ -338,5 +414,10 @@ proptest! {
         }
         prop_assert_eq!(folder.read(&Slot::Auto), Ok(saves[saves.len() - 1].clone()));
         prop_assert_eq!(folder.read(&Slot::Previous), Ok(saves[saves.len() - 2].clone()));
+        let kept = usize::from(HISTORY_DEPTH).min(saves.len() - 1);
+        for steps in 1..=kept {
+            let slot = Slot::back(u8::try_from(steps).expect("small")).expect("kept");
+            prop_assert_eq!(folder.read(&slot), Ok(saves[saves.len() - 1 - steps].clone()));
+        }
     }
 }

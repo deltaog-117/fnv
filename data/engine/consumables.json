@@ -416,7 +416,13 @@
     "stat": "Starvation",
     "amount": -50
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 15,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "bighorner_steak",
@@ -569,7 +575,13 @@
     "stat": "Starvation",
     "amount": -20
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "bleak_venom",
@@ -617,7 +629,13 @@
     "amount": -1,
     "duration_s": 120.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "bloatfly_slider",
@@ -646,7 +664,13 @@
     "amount": -75
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 45,
+    "rads": 1
+   }
+  }
  },
  {
   "id": "blood_shield",
@@ -687,7 +711,10 @@
     "stat": "Hit Point",
     "amount": 1
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 1
+  }
  },
  {
   "id": "blood_sausage",
@@ -744,7 +771,10 @@
     "amount": -100
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "heal": 50
+  }
  },
  {
   "id": "brahmin_meat",
@@ -771,7 +801,13 @@
     "amount": -1,
     "duration_s": 120.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 15,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "brahmin_steak",
@@ -817,7 +853,10 @@
     "stat": "Starvation",
     "amount": -5
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 4
+  }
  },
  {
   "id": "bubblegum",
@@ -839,7 +878,13 @@
     "stat": "Radiation",
     "amount": 1
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 1,
+    "rads": 1
+   }
+  }
  },
  {
   "id": "buffalo_gourd_seed",
@@ -857,7 +902,10 @@
     "stat": "Starvation",
     "amount": -10
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 2
+  }
  },
  {
   "id": "buffout",
@@ -934,7 +982,10 @@
     "amount": -200
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "heal": 45
+  }
  },
  {
   "id": "cateye",
@@ -970,7 +1021,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 4,
+    "rads": -10
+   }
+  }
  },
  {
   "id": "cazador_egg",
@@ -1063,7 +1120,13 @@
     "amount": -2,
     "duration_s": 120.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 8,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "coyote_steak",
@@ -1093,7 +1156,13 @@
     "amount": -35
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 24,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "coyote_tobacco_chew",
@@ -1153,7 +1222,13 @@
     "stat": "Starvation",
     "amount": -50
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "crispy_squirrel_bits",
@@ -1210,7 +1285,13 @@
     "amount": -25
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "dandy_boy_apples",
@@ -1237,7 +1318,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "dark_datura",
@@ -1354,7 +1441,10 @@
     "amount": -80
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "heal": 105
+  }
  },
  {
   "id": "dirty_water",
@@ -1383,7 +1473,13 @@
     "amount": -50
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 10,
+    "rads": 6
+   }
+  }
  },
  {
   "id": "dixon_s_jet",
@@ -1493,7 +1589,13 @@
     "amount": -1,
     "duration_s": 120.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 8,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "dog_steak",
@@ -1522,7 +1624,13 @@
     "amount": -35
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "drugged_wine",
@@ -1593,7 +1701,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "fiery_purgative",
@@ -1647,7 +1761,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "fire_ant_fricass_e",
@@ -1672,7 +1792,10 @@
     "amount": -80
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "heal": 60
+  }
  },
  {
   "id": "fire_ant_meat",
@@ -1705,7 +1828,13 @@
     "amount": -1,
     "duration_s": 120.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "fire_ant_nectar",
@@ -1774,7 +1903,10 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 7
+  }
  },
  {
   "id": "fresh_carrot",
@@ -1802,7 +1934,10 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 7
+  }
  },
  {
   "id": "fresh_pear",
@@ -1858,7 +1993,10 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 7
+  }
  },
  {
   "id": "gecko_kebab",
@@ -1891,7 +2029,13 @@
     "amount": -80
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 40,
+    "rads": 1
+   }
+  }
  },
  {
   "id": "gecko_meat",
@@ -1952,7 +2096,13 @@
     "amount": -75
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 30,
+    "rads": 1
+   }
+  }
  },
  {
   "id": "ghost_sight",
@@ -2048,7 +2198,13 @@
     "stat": "Starvation",
     "amount": -75
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 30,
+    "rads": 1
+   }
+  }
  },
  {
   "id": "gum_drops",
@@ -2070,7 +2226,13 @@
     "stat": "Radiation",
     "amount": 1
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 1,
+    "rads": 1
+   }
+  }
  },
  {
   "id": "healing_poultice",
@@ -2166,7 +2328,10 @@
     "stat": "Starvation",
     "amount": -10
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 4
+  }
  },
  {
   "id": "human_flesh",
@@ -2194,7 +2359,13 @@
     "stat": "Starvation",
     "amount": -60
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "human_remains",
@@ -2218,7 +2389,10 @@
     "stat": "Starvation",
     "amount": -45
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 10
+  }
  },
  {
   "id": "hydra",
@@ -2307,7 +2481,13 @@
     "stat": "Starvation",
     "amount": -25
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "iguana_on_a_stick",
@@ -2336,7 +2516,13 @@
     "amount": -75
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 12,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "imitation_strange_meat_pie",
@@ -2364,7 +2550,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "instamash",
@@ -2392,7 +2584,13 @@
     "stat": "Starvation",
     "amount": -25
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 2
+   }
+  }
  },
  {
   "id": "irr_dandy_boy_apples",
@@ -2448,7 +2646,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irr_mac_cheese",
@@ -2477,7 +2681,13 @@
     "amount": -20
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irr_pork_n_beans",
@@ -2505,7 +2715,13 @@
     "stat": "Dehydration",
     "amount": 20
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irr_potato_crisps",
@@ -2538,7 +2754,13 @@
     "amount": 10
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irr_salisbury_steak",
@@ -2566,7 +2788,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irr_sugar_bombs",
@@ -2628,7 +2856,13 @@
     "amount": 5
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 50,
+    "rads": 9
+   }
+  }
  },
  {
   "id": "irr_yumyum_d_eggs",
@@ -2684,7 +2918,13 @@
     "amount": -15
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 7,
+    "rads": 9
+   }
+  }
  },
  {
   "id": "irr_barrel_cactus",
@@ -2750,7 +2990,13 @@
     "amount": -25
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irr_gecko_meat",
@@ -2842,7 +3088,13 @@
     "amount": -25
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irradiated_beer",
@@ -2916,7 +3168,13 @@
     "amount": -10
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 10,
+    "rads": 9
+   }
+  }
  },
  {
   "id": "irradiated_potato",
@@ -2948,7 +3206,13 @@
     "stat": "Dehydration",
     "amount": -10
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 10,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irradiated_scotch",
@@ -3138,7 +3402,10 @@
     "stat": "Starvation",
     "amount": -10
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 5
+  }
  },
  {
   "id": "jet",
@@ -3195,7 +3462,13 @@
     "stat": "Radiation",
     "amount": 3
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "lakelurk_egg",
@@ -3253,7 +3526,13 @@
     "stat": "Starvation",
     "amount": -45
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "rads": 1
+   }
+  }
  },
  {
   "id": "large_wasteland_tequila",
@@ -3350,7 +3629,10 @@
     "stat": "Starvation",
     "amount": -200
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 30
+  }
  },
  {
   "id": "maize",
@@ -3378,7 +3660,10 @@
     "stat": "Dehydration",
     "amount": -10
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 9
+  }
  },
  {
   "id": "med_x",
@@ -3568,7 +3853,13 @@
     "stat": "Starvation",
     "amount": -40
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "moonshine",
@@ -3693,7 +3984,13 @@
     "amount": -20
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 10,
+    "rads": 2
+   }
+  }
  },
  {
   "id": "mutfruit",
@@ -3725,7 +4022,13 @@
     "stat": "Starvation",
     "amount": -20
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "nevada_agave_fruit",
@@ -3753,7 +4056,10 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 8
+  }
  },
  {
   "id": "nightstalker_squeezin_s",
@@ -3817,7 +4123,13 @@
     "per_second": true,
     "duration_s": 5.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "noodles",
@@ -3844,7 +4156,13 @@
     "stat": "Starvation",
     "amount": -25
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "nuka_cola",
@@ -4074,7 +4392,10 @@
     "stat": "Starvation",
     "amount": -5
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 3
+  }
  },
  {
   "id": "pinyon_nuts",
@@ -4098,7 +4419,10 @@
     "stat": "Starvation",
     "amount": -10
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 5
+  }
  },
  {
   "id": "poison",
@@ -4140,7 +4464,13 @@
     "stat": "Dehydration",
     "amount": 20
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "potato_crisps",
@@ -4172,7 +4502,13 @@
     "stat": "Dehydration",
     "amount": 10
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "pre_war_steak",
@@ -4218,7 +4554,10 @@
     "amount": -50
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "heal": 15
+  }
  },
  {
   "id": "prickly_pear_fruit",
@@ -4246,7 +4585,10 @@
     "stat": "Starvation",
     "amount": -10
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 10
+  }
  },
  {
   "id": "psycho",
@@ -4302,7 +4644,18 @@
   "source": "Rad-X (Fallout: New Vegas)",
   "edid": "RadX",
   "form_id": "00015168",
-  "effects_text": "25% Rad. Res. for 4 min."
+  "effects_text": "25% Rad. Res. for 4 min.",
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "radiation_resistance",
+      "amount": 25,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "radaway",
@@ -4322,7 +4675,12 @@
     "per_second": true,
     "duration_s": 10.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "rads": -50
+   }
+  }
  },
  {
   "id": "radroach_meat",
@@ -4468,7 +4826,13 @@
     "amount": -100
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 30,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "rum_nuka",
@@ -4573,7 +4937,10 @@
     "amount": -25
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "heal": 14
+  }
  },
  {
   "id": "salisbury_steak",
@@ -4601,7 +4968,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "scotch",
@@ -4820,7 +5193,13 @@
     "stat": "Starvation",
     "amount": -75
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "squirrel_stew",
@@ -4848,7 +5227,13 @@
     "stat": "Starvation",
     "amount": -50
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "steady",
@@ -4974,7 +5359,13 @@
     "stat": "Starvation",
     "amount": -35
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "sugar_bombs",
@@ -5056,7 +5447,24 @@
     "amount": -1,
     "duration_s": 120.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 60,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -1,
+      "minutes": 2
+     },
+     {
+      "stat": "agility",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "thick_red_paste",
@@ -5549,7 +5957,10 @@
     "stat": "Starvation",
     "amount": -5
    }
-  ]
+  ],
+  "on_use": {
+   "heal": 4
+  }
  },
  {
   "id": "yao_guai_meat",
@@ -5605,6 +6016,12 @@
     "stat": "Starvation",
     "amount": -10
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  }
 ]

@@ -4,6 +4,7 @@ use std::num::NonZeroU32;
 use std::path::Path;
 use std::sync::{Arc, LazyLock};
 
+use engine::addiction::AddictionBook;
 use engine::character::PerkBook;
 use engine::clock::Span;
 use engine::combat::{Dice, Power, Side, Status};
@@ -60,6 +61,9 @@ static TEMPLATE: LazyLock<Game> = LazyLock::new(|| {
     let recipes = RecipeBook::from_data(&data, |item| items.contains(item)).expect("recipes build");
     Game::with_world(quests, world)
         .with_items(items)
+        .with_addictions(Arc::new(
+            AddictionBook::from_data(&data).expect("the addiction book builds"),
+        ))
         .with_recipes(Arc::new(recipes))
         .with_stations(Arc::new(
             StationBook::from_data(&data).expect("the stations build"),

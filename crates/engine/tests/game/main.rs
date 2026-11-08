@@ -7,6 +7,7 @@
 //! drops pack items; `clock` checks that only waiting moves the time; `rest` sleeps
 //! in a bed; `boosts` runs chems and time together; `reputation` runs fame, infamy and karma through the composed game; `upkeep` repairs, crafts and gathers.
 
+mod ailments;
 mod automation;
 mod battle;
 mod boosts;

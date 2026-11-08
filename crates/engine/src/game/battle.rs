@@ -15,7 +15,7 @@ use crate::character::{Character, CharacterRules, Edge, Level, SpecialSet};
 use crate::combat::{
     Against, Aim, AimedHitChance, AttackProfile, Combat, CombatError, Combatant, Condition, Dice,
     FighterId, Flight, Magazine, Multiplier, Percent, Points, Power, Reload, Resolution, Rules,
-    Spread, StatError, enemy_turns,
+    Spread, StatError, computer_turns,
 };
 use crate::inventory::CopyId;
 use crate::shared::{
@@ -391,6 +391,8 @@ struct Rounds {
 struct Prepared {
     encounter: Encounter,
     foes: Vec<Fighter>,
+    /// The player's allies, one for one with the record's `allies`.
+    allies: Vec<Fighter>,
 }
 
 /// Everything a fight needs from the data, checked once and shared.
@@ -436,11 +438,17 @@ impl Arsenal {
                 .iter()
                 .map(|foe| arsenal.foe(data, &encounter.id, foe))
                 .collect::<Result<Vec<_>, _>>()?;
+            let allies = encounter
+                .allies
+                .iter()
+                .map(|ally| arsenal.foe(data, &encounter.id, ally))
+                .collect::<Result<Vec<_>, _>>()?;
             arsenal.encounters.insert(
                 encounter.id.clone(),
                 Prepared {
                     encounter: encounter.clone(),
                     foes,
+                    allies,
                 },
             );
         }
@@ -740,6 +748,12 @@ impl Arsenal {
             .get(id)
             .map(|prepared| prepared.foes.as_slice())
     }
+
+    pub(super) fn allies(&self, id: &EncounterId) -> Option<&[Fighter]> {
+        self.encounters
+            .get(id)
+            .map(|prepared| prepared.allies.as_slice())
+    }
 }
 
 /// Refuses an encounter whose every enemy can be absent, which would leave a fight
@@ -751,8 +765,10 @@ fn require_fixed_foe(encounter: &Encounter) -> Result<(), BattleError> {
     Ok(())
 }
 
-/// One fight in progress. The player acts first; each [`Battle::end_turn`] plays
-/// the enemies' turns. When it is over, hand it to [`Game::finish_battle`](super::Game::finish_battle).
+/// One fight in progress. The player's allies and the enemies play themselves; each
+/// [`Battle::end_turn`] plays their turns until it is the player's again. The fight
+/// is lost when the player falls, even if an ally still stands. When it is over,
+/// hand it to [`Game::finish_battle`](super::Game::finish_battle).
 #[derive(Debug, Clone)]
 pub struct Battle {
     encounter: EncounterId,
@@ -765,25 +781,32 @@ pub struct Battle {
 }
 
 impl Battle {
-    /// Starts the fight with the player at `hp`, ahead of the foes.
+    /// Starts the fight with the player at `hp`, ahead of the allies and the foes.
     pub(super) fn start(
         encounter: EncounterId,
         player: Fighter,
         hp: NonZeroU32,
+        allies: &[Fighter],
         foes: &[Fighter],
         weapon: Option<CopyId>,
     ) -> Result<Self, BattleError> {
-        let order = std::iter::once((crate::combat::Side::Player, player)).chain(
-            foes.iter()
-                .map(|foe| (crate::combat::Side::Enemy, foe.clone())),
-        );
+        let order = std::iter::once((crate::combat::Side::Player, player))
+            .chain(
+                allies
+                    .iter()
+                    .map(|ally| (crate::combat::Side::Player, ally.clone())),
+            )
+            .chain(
+                foes.iter()
+                    .map(|foe| (crate::combat::Side::Enemy, foe.clone())),
+            );
         let combat = Combat::new(order, Rules::standard(), AimedHitChance)?;
         // The player was given first, so their place is the first one, whoever acts
         // first once the sequences are compared.
         let player = combat.ids().next().ok_or(CombatError::NeedsBothSides)?;
         Ok(Self {
             encounter,
-            combat: combat.with_hp(player, hp)?,
+            combat: combat.with_hp(player, hp)?.with_lead(player)?,
             player,
             shots: 0,
             weapon,
@@ -820,10 +843,10 @@ impl Battle {
         self.shots
     }
 
-    /// Plays the enemy turns that come before the player's first one, when a foe's
-    /// sequence is higher. Does nothing when the player acts first.
+    /// Plays the turns of allies and enemies that come before the player's first
+    /// one, when their sequence is higher. Does nothing when the player acts first.
     pub fn open(&mut self, dice: &mut impl Dice) -> Vec<Resolution> {
-        enemy_turns(&mut self.combat, dice)
+        computer_turns(&mut self.combat, dice)
     }
 
     /// The player tries to run away. A failed try costs the rest of the turn, so the
@@ -868,15 +891,15 @@ impl Battle {
         self.combat.reload()
     }
 
-    /// The player passes; the enemies then play until it is the player's turn
-    /// again or the fight is over. Returns what the enemies did.
+    /// The player passes; the allies and the enemies then play until it is the
+    /// player's turn again or the fight is over. Returns what they did.
     ///
     /// # Errors
     ///
     /// [`CombatError::Over`] when the fight is already over.
     pub fn end_turn(&mut self, dice: &mut impl Dice) -> Result<Vec<Resolution>, CombatError> {
         self.combat.end_turn()?;
-        Ok(enemy_turns(&mut self.combat, dice))
+        Ok(computer_turns(&mut self.combat, dice))
     }
 }
 

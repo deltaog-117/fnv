@@ -250,6 +250,29 @@ pub enum Comparison {
     Is,
 }
 
+/// A lasting harm a doctor can cure.
+#[derive(
+    Debug,
+    Clone,
+    Copy,
+    PartialEq,
+    Eq,
+    Hash,
+    PartialOrd,
+    Ord,
+    Serialize,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+)]
+#[serde(rename_all = "snake_case")]
+pub enum Ailment {
+    /// Radiation absorbed.
+    Radiation,
+    /// Every chem the player is addicted to.
+    Addiction,
+}
+
 /// Which of the two reputation scores a rule asks about.
 #[derive(
     Debug,
