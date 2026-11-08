@@ -7,6 +7,11 @@
       "type": "string",
       "pattern": "^[a-z0-9][a-z0-9_]*$"
     },
+    "time_of_day": {
+      "description": "A minute of the day, written HH:MM from 00:00 to 23:59.",
+      "type": "string",
+      "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$"
+    },
     "form_id": {
       "type": "string",
       "pattern": "^[0-9a-f]{8}$"
@@ -48,6 +53,31 @@
         "agility",
         "luck"
       ]
+    },
+    "conditional_modifiers": {
+      "description": "Modifiers that apply only while every condition holds. The conditions may ask about health and the time of day (joined by all, any and not) and nothing else; the game refuses a maximum-hit-points modifier here, and under a health condition any change to Endurance.",
+      "type": "object",
+      "required": [
+        "when",
+        "modifiers"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "when": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/condition"
+          }
+        },
+        "modifiers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/modifier"
+          }
+        }
+      }
     },
     "modifier": {
       "description": "A change a perk or trait makes to the numbers the character derives. Amounts are per rank.",
@@ -152,6 +182,46 @@
           "properties": {
             "type": {
               "const": "all_skills"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "stat",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "special"
+            },
+            "stat": {
+              "$ref": "#/$defs/special"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "all_special"
             },
             "amount": {
               "type": "integer",
@@ -677,6 +747,27 @@
                 "is"
               ],
               "default": "at_least"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "description": "The time of day is inside a window that starts at `from` and stops before `to`. A window with `to` earlier than `from` crosses midnight. Both ends may not be the same minute.",
+          "required": [
+            "type",
+            "from",
+            "to"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "time_of_day"
+            },
+            "from": {
+              "$ref": "#/$defs/time_of_day"
+            },
+            "to": {
+              "$ref": "#/$defs/time_of_day"
             }
           }
         },

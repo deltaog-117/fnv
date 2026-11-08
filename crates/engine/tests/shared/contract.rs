@@ -247,6 +247,12 @@ fn both_sides_reject_the_same_invalid_conditions() {
         json!({"type": "health", "percent": -1}),
         json!({"type": "health"}),
         json!({"type": "health", "percent": 50, "op": "below"}),
+        json!({"type": "time_of_day", "from": "24:00", "to": "05:00"}),
+        json!({"type": "time_of_day", "from": "8:00", "to": "05:00"}),
+        json!({"type": "time_of_day", "from": "08:60", "to": "05:00"}),
+        json!({"type": "time_of_day", "from": "08:00"}),
+        json!({"type": "time_of_day", "from": 480, "to": 300}),
+        json!({"type": "time_of_day", "from": "08:00", "to": "09:00", "extra": 1}),
         json!({"type": "radiation", "min": 1000}),
         json!({"type": "radiation", "min": -1}),
         json!({"type": "radiation"}),
@@ -367,6 +373,13 @@ fn omitted_optional_fields_take_the_documented_defaults() {
         serde_json::from_value(radiation),
         Ok(Condition::Radiation { min }) if min.get() == 100
     ));
+    let night = json!({"type": "time_of_day", "from": "20:15", "to": "05:45"});
+    assert!(CONDITION.is_valid(&night));
+    assert!(matches!(
+        serde_json::from_value(night),
+        Ok(Condition::TimeOfDay(window))
+            if window.from().get() == 20 * 60 + 15 && window.to().get() == 5 * 60 + 45
+    ));
     let addicted = json!({"type": "addicted"});
     assert!(CONDITION.is_valid(&addicted));
     assert!(matches!(
@@ -394,4 +407,16 @@ fn omitted_optional_fields_take_the_documented_defaults() {
         serde_json::from_value(give),
         Ok(Effect::GiveItem { count, .. }) if count.get() == 1
     ));
+}
+
+/// JSON Schema cannot say "these two fields differ", so a window that begins and
+/// ends at the same minute is refused by the Rust type alone.
+#[test]
+fn only_rust_refuses_a_window_with_the_same_start_and_end() {
+    let empty = json!({"type": "time_of_day", "from": "20:00", "to": "20:00"});
+    assert!(
+        CONDITION.is_valid(&empty),
+        "the schema has no way to say it"
+    );
+    assert!(serde_json::from_value::<Condition>(empty).is_err());
 }

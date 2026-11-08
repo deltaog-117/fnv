@@ -10,6 +10,7 @@
 
 use super::bounds::{HealthPercent, Rads, RenownTier, SkillLevel, SpecialLevel};
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
+use super::time::MinuteOfDay;
 use super::vocabulary::{Alignment, NpcState, QuestStage, Renown, ReputationLevel, Skill, Special};
 
 /// Where a quest stands, apart from its stage number.
@@ -140,6 +141,12 @@ pub trait WorldView {
     /// no state, `Alive` included.
     fn npc_is(&self, _npc: &NpcId, _state: NpcState) -> bool {
         false
+    }
+
+    /// The time of day. A state with no clock answers 08:00, where a new game
+    /// starts, so a rule about the night does not hold for it.
+    fn minute_of_day(&self) -> MinuteOfDay {
+        MinuteOfDay::new(8, 0).unwrap_or(MinuteOfDay::MIDNIGHT)
     }
 }
 

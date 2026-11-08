@@ -6,7 +6,7 @@ use std::sync::Arc;
 
 use super::battle::{Arsenal, Battle, BattleError, Outcome, WEAR_PER_SHOT};
 use crate::addiction::{AddictionBook, AddictionKind, Addictions, Risk};
-use crate::character::{Character, PerkBook, ProgressError};
+use crate::character::{Character, PerkBook, ProgressError, Situation};
 use crate::clock::{ClockError, GameClock, Span};
 use crate::combat::{Condition, Dice, Percent, Side, Status};
 use crate::craft::{RecipeBook, StationBook};
@@ -22,9 +22,9 @@ use crate::shared::{
     Ailment, Alignment, BedId, CharacterSink, CharacterView, CompanionId, CompanionSink,
     CompanionView, DiscountPercent, Effect, EffectError, Encounter, EncounterId, EndingId,
     FactionId, FlagId, HealthPercent, InventorySink, InventoryView, ItemId, ItemUse, LocationId,
-    NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView, Rads, Renown,
-    RenownTier, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink,
-    StandingView, VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
+    MinuteOfDay, NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
+    Rads, Renown, RenownTier, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
+    StandingSink, StandingView, VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
 };
 use crate::trade::{
     Market, Shop, TradeError, VendorBook, buy_total, buy_total_with_discount, sell_total,
@@ -301,6 +301,7 @@ impl Game {
     #[must_use]
     pub fn with_character(mut self, character: Character) -> Self {
         self.character = character;
+        self.settle();
         self
     }
 
@@ -310,6 +311,7 @@ impl Game {
     #[must_use]
     pub fn with_wounds(mut self, wounds: u32) -> Self {
         self.wounds = wounds.min(self.character.max_hp());
+        self.settle();
         self
     }
 
@@ -438,7 +440,35 @@ impl Game {
             .poison
             .elapse(self.clock.as_minutes().saturating_sub(before));
         self.hurt_by_poison(drained);
+        self.settle();
         Ok(())
+    }
+
+    /// Tells the character how hurt it is and what time it is, which is what
+    /// Hot Blooded, Nerd Rage, Early Bird and the other conditional perks read.
+    /// Called wherever wounds, the clock or the character change.
+    ///
+    /// A time-bound change to Endurance moves the maximum hit points, and with
+    /// them the health share a health condition reads, so the two are settled
+    /// again until they agree. Three rounds are enough: health gates cannot move
+    /// the maximum (the data refuses them), so the time gates settle it in one and
+    /// the health gates in the next. A player who was alive is never left down by
+    /// the maximum falling, the same mercy a repaid boost gets.
+    fn settle(&mut self) {
+        let was_alive = self.is_alive();
+        for _ in 0..3 {
+            let now = Situation {
+                health: HealthPercent::of(self.hp(), self.character.max_hp()),
+                time: MinuteOfDay::from_total_minutes(self.clock.as_minutes()),
+            };
+            if self.character.situation() == now {
+                break;
+            }
+            self.character.set_situation(now);
+        }
+        if was_alive {
+            self.wounds = self.wounds.min(self.character.max_hp().saturating_sub(1));
+        }
     }
 
     /// Turns the poison that left the blood into wounds. Poison alone never takes the
@@ -485,6 +515,7 @@ impl Game {
         if was_alive {
             self.wounds = self.wounds.min(self.character.max_hp().saturating_sub(1));
         }
+        self.settle();
     }
 
     /// The same tally without touching the wounds, for putting a save back.
@@ -609,6 +640,7 @@ impl Game {
     /// Restores up to `amount` hit points, never past the maximum.
     pub fn heal(&mut self, amount: u32) {
         self.wounds = self.wounds.saturating_sub(amount);
+        self.settle();
     }
 
     /// The fights on offer at `place`: not yet won, and with every requirement met.
@@ -715,6 +747,7 @@ impl Game {
         let hp = combat.hp(battle.player()).unwrap_or(0);
         let mut trial = self.clone();
         trial.wounds = trial.character.max_hp().saturating_sub(hp);
+        trial.settle();
         trial.spend_rounds(battle)?;
         trial.wear_weapon(battle);
         let outcome = if status == Status::Fled {
@@ -1362,6 +1395,10 @@ impl WorldView for Game {
 
     fn npc_is(&self, npc: &NpcId, state: NpcState) -> bool {
         self.world.npc_is(npc, state)
+    }
+
+    fn minute_of_day(&self) -> MinuteOfDay {
+        MinuteOfDay::from_total_minutes(self.clock.as_minutes())
     }
 }
 

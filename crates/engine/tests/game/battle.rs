@@ -296,7 +296,8 @@ fn only_chets_supplies_thin_the_attackers_and_the_other_helpers_fight_beside_the
     let mut game = armed_game();
     help_from(&mut game, &HELPERS);
     let battle = start(&game);
-    // Cobb and four gangers: the supplies keep one away. Trudy and Easy Pete shoot.
+    // Cobb and four gangers: the supplies keep one away. Trudy, Easy Pete and the two
+    // settlers Trudy enlisted with her shoot.
     assert_eq!(foes_of(&battle).len(), 5);
     assert_eq!(
         allies_of(&battle),
@@ -304,6 +305,8 @@ fn only_chets_supplies_thin_the_attackers_and_the_other_helpers_fight_beside_the
             ("Sunny Smiles".to_owned(), 30),
             ("Easy Pete".to_owned(), 25),
             ("Trudy".to_owned(), 35),
+            ("Goodsprings settler".to_owned(), 25),
+            ("Goodsprings settler".to_owned(), 25),
         ]
     );
 }
@@ -313,17 +316,19 @@ fn each_helper_has_their_own_effect_on_the_fight() {
     let unhelped = start(&armed_game());
     assert_eq!(foes_of(&unhelped).len(), 6);
     assert_eq!(allies_of(&unhelped), [("Sunny Smiles".to_owned(), 30)]);
-    for (helper, foes, ally) in [
-        ("trudy_joined_militia", 6, Some("Trudy")),
-        ("easy_pete_joined_militia", 6, Some("Easy Pete")),
-        ("chet_supplied_militia", 5, None),
+    // Trudy's Speech or Sneak check enlists the settlers with her, so her flag brings
+    // three people; the others bring one or none.
+    for (helper, foes, ally, brought) in [
+        ("trudy_joined_militia", 6, Some("Trudy"), 3),
+        ("easy_pete_joined_militia", 6, Some("Easy Pete"), 1),
+        ("chet_supplied_militia", 5, None, 0),
     ] {
         let mut game = armed_game();
         help_from(&mut game, &[helper]);
         let battle = start(&game);
         assert_eq!(foes_of(&battle).len(), foes, "{helper}");
         let allies = allies_of(&battle);
-        assert_eq!(allies.len(), 1 + usize::from(ally.is_some()), "{helper}");
+        assert_eq!(allies.len(), 1 + brought, "{helper}");
         assert_eq!(
             allies.iter().any(|(name, _)| Some(name.as_str()) == ally),
             ally.is_some()
@@ -346,7 +351,11 @@ fn a_dead_ally_does_not_join_the_fight() {
         .into_iter()
         .map(|(name, _)| name)
         .collect();
-    assert_eq!(names, ["Sunny Smiles"]);
+    assert_eq!(
+        names,
+        ["Sunny Smiles", "Goodsprings settler", "Goodsprings settler"],
+        "the settlers were enlisted with Trudy and fight on without her"
+    );
 }
 
 #[test]

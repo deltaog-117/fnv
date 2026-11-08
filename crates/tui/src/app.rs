@@ -1528,8 +1528,13 @@ mod tests {
                 app.update(Command::Pick(fight.action_count() - 2));
             }
             if matches!(app.screen, Screen::Exploring(_)) {
-                escapes += 1;
                 let text = screen(&app, 100, 30);
+                // Five allies can finish the fight before a roll gets the player out;
+                // that is a win, not an escape, and says nothing about running away.
+                if text.contains("The fight is won.") {
+                    continue;
+                }
+                escapes += 1;
                 assert!(text.contains("You got away from the fight."), "{text}");
                 assert!(text.contains("Fight the Powder Gangers"), "{text}");
                 assert!(app.game.is_alive());

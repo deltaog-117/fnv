@@ -35,7 +35,39 @@
   "source": "Early Bird",
   "description": "Hey early risers! Enjoy a +2 to each of your SPECIAL attributes from 6 am to 12 pm, but suffer -1 from 6 pm to 6 am when you're not at your best.",
   "benefits": "+2 to SPECIAL stats from 6 a.m. to 12 p.m.",
-  "penalties": "-1 to SPECIAL stats from 6 p.m. to 6 a.m."
+  "penalties": "-1 to SPECIAL stats from 6 p.m. to 6 a.m.",
+  "conditional": [
+   {
+    "when": [
+     {
+      "type": "time_of_day",
+      "from": "06:00",
+      "to": "12:00"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "all_special",
+      "amount": 2
+     }
+    ]
+   },
+   {
+    "when": [
+     {
+      "type": "time_of_day",
+      "from": "18:00",
+      "to": "06:00"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "all_special",
+      "amount": -1
+     }
+    ]
+   }
+  ]
  },
  {
   "id": "fast_shot",
@@ -190,7 +222,34 @@
   "source": "Hot Blooded",
   "description": "When your health drops below 50% you gain +10% more damage, but you also suffer -2 to your Agility and Perception attributes.",
   "benefits": "+15% damage when your health is below 50%",
-  "penalties": "-2 to Perception and Agility when your health is below 50%"
+  "penalties": "-2 to Perception and Agility when your health is below 50%",
+  "conditional": [
+   {
+    "when": [
+     {
+      "type": "health",
+      "percent": 49,
+      "op": "at_most"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "damage_percent",
+      "percent": 10
+     },
+     {
+      "type": "special",
+      "stat": "agility",
+      "amount": -2
+     },
+     {
+      "type": "special",
+      "stat": "perception",
+      "amount": -2
+     }
+    ]
+   }
+  ]
  },
  {
   "id": "kamikaze",

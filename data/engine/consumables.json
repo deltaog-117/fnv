@@ -35,7 +35,28 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "perception",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "ant_egg",
@@ -61,7 +82,13 @@
     "amount": 3
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "ant_meat",
@@ -87,7 +114,13 @@
     "amount": 3
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "ant_nectar",
@@ -318,7 +351,19 @@
     "duration_s": 120.0
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "effects": [
+     {
+      "stat": "endurance",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "battle_brew",
@@ -360,6 +405,37 @@
   ],
   "addiction": {
    "type": "alcohol"
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "damage_resistance",
+      "amount": 35,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "action_points",
+      "amount": 40,
+      "minutes": 1
+     },
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 1
+     }
+    ]
+   }
   }
  },
  {
@@ -398,7 +474,28 @@
    "type": "alcohol",
    "chance_percent": 5.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "bighorner_meat",
@@ -456,7 +553,13 @@
     "amount": -75
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "rads": 2
+   }
+  }
  },
  {
   "id": "bitter_drink",
@@ -557,7 +660,24 @@
     "amount": -2
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "effects": [
+     {
+      "stat": "intelligence",
+      "amount": 2,
+      "minutes": 1
+     },
+     {
+      "stat": "agility",
+      "amount": -1,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "blamco_mac_cheese",
@@ -857,7 +977,13 @@
     "amount": -50
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 30,
+    "rads": 2
+   }
+  }
  },
  {
   "id": "broc_flower",
@@ -1072,7 +1198,13 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 1,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "cloud_kiss",
@@ -1107,7 +1239,12 @@
     "stat": "Starvation",
     "amount": -80
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 120
+   }
+  }
  },
  {
   "id": "coyote_meat",
@@ -1216,6 +1353,22 @@
   "addiction": {
    "type": "tobacco",
    "chance_percent": 10.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "perception",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "agility",
+      "amount": 1,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -1278,7 +1431,13 @@
     "stat": "Starvation",
     "amount": -25
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "crunchy_mutfruit",
@@ -1533,6 +1692,17 @@
   "addiction": {
    "type": "jet",
    "chance_percent": 50.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 10,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -1565,6 +1735,22 @@
   "addiction": {
    "type": "alcohol",
    "chance_percent": 50.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -2,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -1700,6 +1886,28 @@
   "addiction": {
    "type": "alcohol",
    "chance_percent": 5.0
+  },
+  "on_use": {
+   "boost": {
+    "heal": 40,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -2005,7 +2213,12 @@
     "stat": "Starvation",
     "amount": -15
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 7
+   }
+  }
  },
  {
   "id": "fresh_potato",
@@ -2108,7 +2321,20 @@
     "stat": "Starvation",
     "amount": -50
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "gecko_steak",
@@ -2210,7 +2436,20 @@
     "stat": "Starvation",
     "amount": -35
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 2,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "grilled_mantis",
@@ -2493,7 +2732,13 @@
     "stat": "Sleep",
     "amount": -60
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 80,
+    "rads": 2
+   }
+  }
  },
  {
   "id": "iguana_bits",
@@ -2658,7 +2903,13 @@
     "amount": -15
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 1,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irr_fancy_lads",
@@ -2867,7 +3118,20 @@
     "stat": "Starvation",
     "amount": -30
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 7,
+    "rads": 10,
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 5,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "irr_sunset_sars",
@@ -2925,7 +3189,12 @@
     "amount": -10
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irr_banana_yucca",
@@ -3001,7 +3270,20 @@
     "stat": "Dehydration",
     "amount": -20
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 9,
+    "effects": [
+     {
+      "stat": "endurance",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "irr_crunchy_mutfruit",
@@ -3070,7 +3352,20 @@
     "amount": -50
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "irradiated_cram",
@@ -3099,7 +3394,13 @@
     "amount": -50
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "irradiated_instamash",
@@ -3175,7 +3476,29 @@
    "type": "alcohol",
    "chance_percent": 5.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "rads": 10,
+    "effects": [
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "irradiated_mutfruit",
@@ -3300,7 +3623,30 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "rads": 10,
+    "effects": [
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "irradiated_water",
@@ -3328,7 +3674,13 @@
   "addiction": {
    "type": "no"
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 10,
+    "rads": 16
+   }
+  }
  },
  {
   "id": "irradiated_whiskey",
@@ -3370,7 +3722,29 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "rads": 10,
+    "effects": [
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "jake_juice",
@@ -3414,7 +3788,29 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "jalape_o_pepper",
@@ -3539,6 +3935,12 @@
   ],
   "addiction": {
    "type": "no"
+  },
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3
+   }
   }
  },
  {
@@ -3836,7 +4238,20 @@
     "stat": "Starvation",
     "amount": -25
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "mole_rat_stew",
@@ -3865,7 +4280,19 @@
     "stat": "Starvation",
     "amount": -30
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 60,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "mole_rat_wonder_meat",
@@ -3937,7 +4364,28 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "none (see Notes)"
+  "skill": "none (see Notes)",
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "charisma",
+      "amount": 2,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 2,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -2,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "mother_darkness",
@@ -3995,7 +4443,19 @@
     "duration_s": 20.0
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 60,
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 3,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "mutant_cave_fungus",
@@ -4239,7 +4699,13 @@
     "amount": -15
    }
   ],
-  "skill": "none"
+  "skill": "none",
+  "on_use": {
+   "boost": {
+    "heal": 50,
+    "rads": 3
+   }
+  }
  },
  {
   "id": "nuka_cola_quantum",
@@ -4273,6 +4739,18 @@
   "addiction": {
    "type": "nuka-cola quantum",
    "chance_percent": 10.0
+  },
+  "on_use": {
+   "boost": {
+    "rads": 8,
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 20,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -4354,7 +4832,25 @@
     "amount": -15
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 60,
+    "rads": 10,
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 10,
+      "minutes": 2
+     },
+     {
+      "stat": "perception",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "party_time_mentats",
@@ -4753,7 +5249,20 @@
     "stat": "Starvation",
     "amount": -25
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 10,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "rat_meat",
@@ -4786,7 +5295,20 @@
     "stat": "Starvation",
     "amount": -25
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "rebound",
@@ -4825,6 +5347,17 @@
   "addiction": {
    "type": "jet",
    "chance_percent": 30.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 30,
+      "minutes": 1
+     }
+    ]
+   }
   }
  },
  {
@@ -4913,7 +5446,24 @@
     "amount": -5
    }
   ],
-  "skill": "None (see bugs)"
+  "skill": "None (see bugs)",
+  "on_use": {
+   "boost": {
+    "rads": 3,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "rushing_water",
@@ -4952,7 +5502,18 @@
     "duration_s": 90.0
    }
   ],
-  "skill": "None"
+  "skill": "None",
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "perception",
+      "amount": -2,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "salient_green",
@@ -5058,7 +5619,29 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "sierra_madre_martini",
@@ -5091,6 +5674,27 @@
   "addiction": {
    "type": "alcohol",
    "chance_percent": 15.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "max_hp",
+      "amount": 75,
+      "minutes": 4
+     },
+     {
+      "stat": "endurance",
+      "amount": 4,
+      "minutes": 4
+     },
+     {
+      "stat": "strength",
+      "amount": 2,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -5139,6 +5743,17 @@
   "addiction": {
    "type": "psycho",
    "chance_percent": 20.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "damage_resistance",
+      "amount": 25,
+      "minutes": 1
+     }
+    ]
+   }
   }
  },
  {
@@ -5180,7 +5795,12 @@
   "addiction": {
    "type": "n/a"
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 4
+   }
+  }
  },
  {
   "id": "spore_plant_pods",
@@ -5206,7 +5826,19 @@
     "duration_s": 120.0
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 24,
+    "effects": [
+     {
+      "stat": "poison_resistance",
+      "amount": 25,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "squirrel_on_a_stick",
@@ -5371,7 +6003,20 @@
     "stat": "Starvation",
     "amount": -35
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "rads": 3,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "strange_meat_pie",
@@ -5438,7 +6083,20 @@
     "stat": "Starvation",
     "amount": -30
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 7,
+    "rads": 3,
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 5,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "sunset_sarsaparilla",
@@ -5463,7 +6121,12 @@
     "amount": 5
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 50
+   }
+  }
  },
  {
   "id": "super_stimpak",
@@ -5614,7 +6277,20 @@
     "amount": -150
    }
   ],
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 75,
+    "rads": 3,
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 5,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "tremble",
@@ -5700,6 +6376,17 @@
   "addiction": {
    "type": "ultrajet",
    "chance_percent": 20.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "action_points",
+      "amount": 40,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -5744,7 +6431,29 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "wasteland_omelet",
@@ -5768,7 +6477,12 @@
     "stat": "Starvation",
     "amount": -150
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 240
+   }
+  }
  },
  {
   "id": "wasteland_tequila",
@@ -5807,7 +6521,33 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 2,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -2,
+      "minutes": 4
+     },
+     {
+      "stat": "poison_resistance",
+      "amount": 5,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "weapon_binding_ritual",
@@ -5896,7 +6636,28 @@
    "type": "alcohol",
    "chance_percent": 10.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     }
+    ]
+   }
+  }
  },
  {
   "id": "white_horsenettle",
@@ -5930,7 +6691,24 @@
     "stat": "Starvation",
     "amount": -5
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 5,
+    "effects": [
+     {
+      "stat": "endurance",
+      "amount": -1,
+      "minutes": 2
+     },
+     {
+      "stat": "agility",
+      "amount": -1,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "wine",
@@ -5973,6 +6751,28 @@
   "addiction": {
    "type": "alcohol",
    "chance_percent": 5.0
+  },
+  "on_use": {
+   "boost": {
+    "heal": 20,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -1,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -6028,7 +6828,13 @@
     "stat": "Starvation",
     "amount": -100
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "heal": 10,
+    "rads": 10
+   }
+  }
  },
  {
   "id": "yumyum_deviled_eggs",

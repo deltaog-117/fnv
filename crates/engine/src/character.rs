@@ -19,6 +19,11 @@
 //! - a perk is taken only when a pick is waiting and its requirements hold;
 //!   what a perk or trait changes comes from its `modifiers` in the data, summed
 //!   once when it is taken;
+//! - a perk or trait may also carry conditional gates, modifiers that apply only
+//!   while the character is hurt or at some hour; the game tells the character its
+//!   [`Situation`] and the character re-sums, so the gates switch on and off with
+//!   wounds and the clock and a character's numbers depend on where it stands, not
+//!   on how it got there;
 //! - every derived number comes from `data/engine/formulas.json`, and a real-data
 //!   test fails if the formulas written here drift from the file.
 //!
@@ -32,6 +37,7 @@ mod edge;
 mod error;
 mod rules;
 mod sheet;
+mod situation;
 
 pub use book::PerkBook;
 pub use edge::{Edge, Versus};
@@ -41,3 +47,4 @@ pub use rules::{
     TAG_COUNT,
 };
 pub use sheet::{Character, CharacterRecord, SpecialSet};
+pub use situation::Situation;

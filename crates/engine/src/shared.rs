@@ -21,6 +21,7 @@ mod modifier;
 mod non_empty;
 mod redacted;
 mod sink;
+mod time;
 mod view;
 mod vocabulary;
 
@@ -44,13 +45,14 @@ pub use ids::{
     ItemId, LocationId, NpcId, PerkId, QuestId, RecipeId, StationId, TopicKey, TraitId, VendorId,
 };
 pub use load::{Catalog, GameData, LoadError, Record, Scope};
-pub use modifier::Modifier;
+pub use modifier::{ConditionalModifiers, Modifier};
 pub use non_empty::NonEmpty;
 pub use redacted::Redacted;
 pub use sink::{
     BatchError, CharacterSink, CompanionSink, EffectError, InventorySink, QuestSink, StandingSink,
     State, StateSink, WorldSink, whole_amount,
 };
+pub use time::{MinuteOfDay, TimeWindow};
 pub use view::{
     CharacterView, CompanionView, EmptyWorld, InventoryView, QuestStatus, QuestView, StandingView,
     StateView, WorldView,

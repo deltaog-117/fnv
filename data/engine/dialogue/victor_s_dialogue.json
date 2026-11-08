@@ -567,7 +567,40 @@
     }
    ],
    "topic": "VFreeformGoodspringsVictorTopic005",
-   "prompt": "Are you decent in a fight? I could use more firepower, if you have any."
+   "prompt": "Are you decent in a fight? I could use more firepower, if you have any.",
+   "conditions": [
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "active"
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "stage_at_least",
+     "stage": 10
+    },
+    {
+     "type": "not",
+     "of": {
+      "type": "quest",
+      "quest": "ghost_town_gunfight",
+      "state": "stage_at_least",
+      "stage": 60
+     }
+    },
+    {
+     "type": "flag",
+     "flag": "victor_joined_militia",
+     "value": false
+    }
+   ],
+   "effects": [
+    {
+     "type": "set_flag",
+     "flag": "victor_joined_militia"
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsvictortopic006",
@@ -580,7 +613,19 @@
     }
    ],
    "topic": "VFreeformGoodspringsVictorTopic006",
-   "prompt": "Some good you were. You didn't even show up to the fight."
+   "prompt": "Some good you were. You didn't even show up to the fight.",
+   "conditions": [
+    {
+     "type": "flag",
+     "flag": "victor_joined_militia",
+     "value": true
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "completed"
+    }
+   ]
   },
   {
    "key": "vfreeformgoodspringsvictortopic007",
@@ -621,7 +666,22 @@
     }
    ],
    "topic": "VFreeformGoodspringsVictorTopic008",
-   "prompt": "They were here. The fight's over."
+   "prompt": "They were here. The fight's over.",
+   "conditions": [
+    {
+     "type": "flag",
+     "flag": "victor_joined_militia",
+     "value": true
+    },
+    {
+     "type": "quest",
+     "quest": "ghost_town_gunfight",
+     "state": "completed"
+    }
+   ],
+   "next": [
+    "vfreeformgoodspringsvictortopic009"
+   ]
   },
   {
    "key": "vfreeformgoodspringsvictortopic009",
@@ -701,7 +761,8 @@
     }
    ],
    "topic": "GOODBYE",
-   "prompt": "Goodbye."
+   "prompt": "Goodbye.",
+   "ends": true
   },
   {
    "key": "hello",
@@ -1724,6 +1785,17 @@
    "topic": "GREETING",
    "prompt": "GREETING"
   }
+ ],
+ "start": [
+  "vfreeformgoodspringsvictortopic000",
+  "vfreeformgoodspringsvictortopic001",
+  "vfreeformgoodspringsvictortopic002",
+  "vfreeformgoodspringsvictortopic003",
+  "vfreeformgoodspringsvictortopic004",
+  "vfreeformgoodspringsvictortopic005",
+  "vfreeformgoodspringsvictortopic006",
+  "vfreeformgoodspringsvictortopic008",
+  "goodbye"
  ],
  "speaker": "victor_securitron"
 }

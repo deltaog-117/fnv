@@ -4,9 +4,9 @@ use std::num::NonZeroU32;
 
 use engine::shared::{
     Ailment, Alignment, CompanionId, Comparison, Condition, Effect, EndingId, FactionId, FlagId,
-    FoeKind, HealthPercent, ItemId, Modifier, NonEmpty, NpcId, NpcState, PerkId, QuestCondition,
-    QuestId, QuestStage, QuestState, Rads, Renown, RenownTier, ReputationLevel, Skill, SkillLevel,
-    Special, SpecialLevel,
+    FoeKind, HealthPercent, ItemId, MinuteOfDay, Modifier, NonEmpty, NpcId, NpcState, PerkId,
+    QuestCondition, QuestId, QuestStage, QuestState, Rads, Renown, RenownTier, ReputationLevel,
+    Skill, SkillLevel, Special, SpecialLevel, TimeWindow,
 };
 use proptest::collection::vec;
 use proptest::prelude::*;
@@ -63,6 +63,22 @@ fn amount() -> impl Strategy<Value = f64> {
     -1.0e6f64..1.0e6f64
 }
 
+/// A minute of the day.
+pub fn minute_of_day() -> impl Strategy<Value = MinuteOfDay> {
+    (0u32..24, 0u32..60).prop_map(|(hour, minute)| {
+        MinuteOfDay::new(hour, minute).expect("hour and minute are in range")
+    })
+}
+
+/// A window of the day that begins and ends at different minutes.
+pub fn time_window() -> impl Strategy<Value = TimeWindow> {
+    (minute_of_day(), minute_of_day())
+        .prop_filter("both ends may not be the same minute", |(from, to)| {
+            from != to
+        })
+        .prop_map(|(from, to)| TimeWindow::new(from, to).expect("the ends differ"))
+}
+
 fn leaf_condition() -> impl Strategy<Value = Condition> {
     let first = prop_oneof![
         (quest_id(), quest_state())
@@ -90,6 +106,7 @@ fn leaf_condition() -> impl Strategy<Value = Condition> {
             min: Rads::try_new(min).expect("range is valid"),
         }),
         Just(Condition::Addicted {}),
+        time_window().prop_map(Condition::TimeOfDay),
     ]
     .boxed();
     let second = prop_oneof![
@@ -199,6 +216,9 @@ pub fn modifier() -> impl Strategy<Value = Modifier> {
         any::<u16>().prop_map(|amount| Modifier::MaxHp { amount }),
         any::<u8>().prop_map(|amount| Modifier::ActionPoints { amount }),
         any::<i8>().prop_map(|amount| Modifier::AllSkills { amount }),
+        any::<i8>().prop_map(|amount| Modifier::AllSpecial { amount }),
+        (any_of::<Special>(), any::<i8>())
+            .prop_map(|(stat, amount)| Modifier::Special { stat, amount }),
         (any_of::<Skill>(), any::<i8>())
             .prop_map(|(skill, amount)| Modifier::Skill { skill, amount }),
     ]

@@ -45,3 +45,12 @@ Regenerate with:
     python3 -I scripts/fetch_items.py list  <cache_dir>
     python3 -I scripts/fetch_items.py fetch <cache_dir>
     python3 -I scripts/fetch_items.py build <cache_dir> data/items
+
+## Uses added from the parsed effects
+
+61 consumables in `uses.json` were entered by reading each item's parsed effects:
+hit points over time as their total, radiation from the text, attribute, poison
+resistance, damage resistance, maximum hit points and action point boosts by the
+minute (seconds round up). Hardcore-only effects (dehydration, starvation, sleep)
+and bottle caps are left out. An item with any other effect (damage over time,
+thresholds, limbs, sneak, a permanent change) stays unusable.

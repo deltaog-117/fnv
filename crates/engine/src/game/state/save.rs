@@ -268,7 +268,11 @@ impl Game {
         game.restore_ailments(save)?;
         game.restore_effects(save)?;
         game.restore_place(save, self)?;
+        // The time-bound perks settle first, so the cap on the wounds is the maximum
+        // the player had at the moment of the save.
+        game.settle();
         game.restore_wounds(save)?;
+        game.settle();
         game.restore_gathered(save)?;
         game.restore_history(save)?;
         Ok(game)

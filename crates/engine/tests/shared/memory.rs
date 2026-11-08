@@ -13,8 +13,8 @@ use std::num::NonZeroU32;
 use engine::shared::{
     Ailment, Alignment, CharacterSink, CharacterView, CompanionId, CompanionSink, CompanionView,
     EffectError, EndingId, FactionId, FlagId, HealthPercent, InventorySink, InventoryView, ItemId,
-    NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView, Rads,
-    ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView,
+    MinuteOfDay, NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
+    Rads, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, StandingSink, StandingView,
     WorldSink, WorldView,
 };
 use strum::IntoEnumIterator;
@@ -508,5 +508,9 @@ impl WorldView for HashedView {
 
     fn npc_is(&self, npc: &NpcId, state: NpcState) -> bool {
         self.below(&("npc", npc, state), 2) == 1
+    }
+
+    fn minute_of_day(&self) -> MinuteOfDay {
+        MinuteOfDay::from_total_minutes(u64::from(self.below(&"minute", 1440)))
     }
 }

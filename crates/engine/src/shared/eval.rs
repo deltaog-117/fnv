@@ -68,6 +68,7 @@ pub fn evaluate<V: StateView + ?Sized>(condition: &Condition, view: &V) -> bool 
                 Comparison::Is => health == *percent,
             }
         }
+        Condition::TimeOfDay(window) => window.contains(view.minute_of_day()),
         Condition::Radiation { min } => view.radiation() >= *min,
         Condition::Addicted {} => view.addicted(),
         Condition::Perk { perk } => view.has_perk(perk),

@@ -827,5 +827,54 @@
    },
    {"key": "goodbye", "ends": true}
   ]
+ },
+ {
+  "dialogue": "victor_s_dialogue",
+  "start": [
+   "vfreeformgoodspringsvictortopic000",
+   "vfreeformgoodspringsvictortopic001",
+   "vfreeformgoodspringsvictortopic002",
+   "vfreeformgoodspringsvictortopic003",
+   "vfreeformgoodspringsvictortopic004",
+   "vfreeformgoodspringsvictortopic005",
+   "vfreeformgoodspringsvictortopic006",
+   "vfreeformgoodspringsvictortopic008",
+   "goodbye"
+  ],
+  "topics": [
+   {
+    "key": "vfreeformgoodspringsvictortopic005",
+    "conditions": [
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "active"},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 10},
+     {
+      "type": "not",
+      "of": {"type": "quest", "quest": "ghost_town_gunfight", "state": "stage_at_least", "stage": 60}
+     },
+     {"type": "flag", "flag": "victor_joined_militia", "value": false}
+    ],
+    "effects": [
+     {"type": "set_flag", "flag": "victor_joined_militia"}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsvictortopic006",
+    "conditions": [
+     {"type": "flag", "flag": "victor_joined_militia", "value": true},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "completed"}
+    ]
+   },
+   {
+    "key": "vfreeformgoodspringsvictortopic008",
+    "conditions": [
+     {"type": "flag", "flag": "victor_joined_militia", "value": true},
+     {"type": "quest", "quest": "ghost_town_gunfight", "state": "completed"}
+    ],
+    "next": [
+     "vfreeformgoodspringsvictortopic009"
+    ]
+   },
+   {"key": "goodbye", "ends": true}
+  ]
  }
 ]

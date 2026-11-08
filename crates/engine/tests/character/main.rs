@@ -2,9 +2,10 @@
 //!
 //! `sheet` pins each derived number and each refusal with small hand-built
 //! characters; `progression` does the same for skill points, tags, traits and perks; `properties` checks the laws over random attributes and XP;
-//! `edge` checks what perks and traits add to a fight and to healing; `real_data` checks the formulas and constants against
+//! `conditional` checks the perks and traits that apply only at some health or hour; `edge` checks what perks and traits add to a fight and to healing; `real_data` checks the formulas and constants against
 //! `data/engine/formulas.json` and `data/engine/levels.json`.
 
+mod conditional;
 mod edge;
 mod progression;
 mod properties;

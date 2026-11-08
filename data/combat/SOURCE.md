@@ -27,3 +27,8 @@ copied unchanged to `data/engine/encounters.json` by `scripts/normalize.py`.
   points for the defenders, so those are stand-ins. Trudy stays out of the
   militia fight when Chet was shaken down; winning kills Sunny, Easy Pete and
   Trudy, so Trudy's saloon stops trading. Chet and Doc survive, as in the wiki.
+- Victor never fights: the transcript has him agree to help and then "doze off"
+  after an override command, so he is a dialogue flag (`victor_joined_militia`) and
+  not an ally. The two Goodsprings settlers that Trudy's Speech or Sneak 25 check
+  enlists fight under her flag; the wiki gives neither a count nor a loadout, so two
+  settlers with a 9mm pistol and 25 hit points are stand-ins.

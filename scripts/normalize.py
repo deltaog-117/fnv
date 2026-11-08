@@ -709,8 +709,9 @@ def perks_and_traits(raw, kind):
 def apply_modifiers(perk_recs, trait_recs, entries):
     """Merge the hand-authored modifiers into the perk and trait records.
 
-    Each entry names one `perk` or `trait` id. Anything that does not match
-    raises, and so does naming a record twice: a typo must not silently drop an
+    Each entry names one `perk` or `trait` id and lists plain `modifiers`,
+    `conditional` ones (each with the `when` conditions that switch it on), or
+    both. Anything that does not match raises, and so does naming a record twice: a typo must not silently drop an
     authored effect.
     """
     tables = {"perk": {r["id"]: r for r in perk_recs}, "trait": {r["id"]: r for r in trait_recs}}
@@ -725,10 +726,12 @@ def apply_modifiers(perk_recs, trait_recs, entries):
             raise ValueError(f"modifiers: unknown {kind} {target}")
         if (kind, target) in seen:
             raise ValueError(f"modifiers: {kind} {target} is listed twice")
-        if not entry.get("modifiers"):
+        if not entry.get("modifiers") and not entry.get("conditional"):
             raise ValueError(f"modifiers: {kind} {target} lists no modifiers")
         seen.add((kind, target))
-        tables[kind][target]["modifiers"] = entry["modifiers"]
+        for field in ("modifiers", "conditional"):
+            if entry.get(field):
+                tables[kind][target][field] = entry[field]
 
 
 def factions(raw, rep):

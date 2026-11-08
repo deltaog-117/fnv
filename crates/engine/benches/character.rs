@@ -11,8 +11,10 @@
 
 use std::time::{Duration, Instant};
 
-use engine::character::Character;
-use engine::shared::{CharacterView, Skill};
+use engine::character::{Character, CharacterRules, PerkBook, Situation, SpecialSet};
+use engine::shared::{
+    CharacterView, Dlc, HealthPercent, MinuteOfDay, Skill, Special, SpecialLevel, Trait, TraitId,
+};
 
 const RUNS: usize = 15;
 const READS: u32 = 200_000;
@@ -90,6 +92,65 @@ fn median_edge() -> Duration {
     times[RUNS / 2]
 }
 
+/// Situation changes per run of the fourth measurement: the game makes one each time
+/// wounds or the clock change.
+const SETTLES: u32 = 100_000;
+
+/// A character whose trait has two gates, one by the hour and one by health, so every
+/// change of situation re-sums the bonuses.
+fn gated_character() -> Character {
+    let traits: Vec<Trait> = serde_json::from_value(serde_json::json!([{
+        "id": "marked", "name": "Marked", "dlc": "base",
+        "conditional": [
+            {"when": [{"type": "time_of_day", "from": "18:00", "to": "06:00"}],
+             "modifiers": [{"type": "all_special", "amount": -1}]},
+            {"when": [{"type": "health", "percent": 49, "op": "at_most"}],
+             "modifiers": [{"type": "damage_percent", "percent": 10},
+                           {"type": "special", "stat": "agility", "amount": -2}]}
+        ]
+    }]))
+    .expect("the trait parses");
+    let book = PerkBook::new(&[], &traits, &[Dlc::Base]);
+    let five = SpecialLevel::try_new(5).expect("a legal level");
+    let ten = SpecialLevel::try_new(10).expect("a legal level");
+    let special = SpecialSet::uniform(five).with(Special::Strength, ten);
+    Character::create(
+        special,
+        &[Skill::Guns, Skill::Speech, Skill::Sneak],
+        &[TraitId::try_new("marked").expect("a valid id")],
+        CharacterRules::standard(),
+        &book,
+    )
+    .expect("a legal character")
+}
+
+fn median_settle() -> Duration {
+    let calm = Situation::default();
+    let night_and_hurt = Situation {
+        health: HealthPercent::try_new(30).expect("a valid share"),
+        time: MinuteOfDay::new(23, 0).expect("a valid time"),
+    };
+    let mut times: Vec<Duration> = (0..RUNS)
+        .map(|_| {
+            let mut character = gated_character();
+            let start = Instant::now();
+            for change in 0..SETTLES {
+                // Alternating, so every call changes the situation and re-sums.
+                let next = if change % 2 == 0 {
+                    night_and_hurt
+                } else {
+                    calm
+                };
+                character.set_situation(std::hint::black_box(next));
+                std::hint::black_box(character.special(Special::Agility));
+            }
+            start.elapsed()
+        })
+        .collect();
+    times.sort();
+    times[RUNS / 2]
+}
+
 /// Nanoseconds per operation with a decimal: the reads take about twenty, and a
 /// whole-nanosecond figure would hide a regression of a few percent.
 fn per_op(total: Duration, operations: u32) -> f64 {
@@ -109,5 +170,9 @@ fn main() {
     println!(
         "character edge: {:.1} ns per fight edge read ({EDGES} per run)",
         per_op(median_edge(), EDGES)
+    );
+    println!(
+        "character situation: {:.1} ns per situation change + attribute read ({SETTLES} per run)",
+        per_op(median_settle(), SETTLES)
     );
 }

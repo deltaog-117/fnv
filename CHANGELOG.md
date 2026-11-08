@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- `Condition` gained `TimeOfDay` (`ALL_TAGS` is 20), `WorldView` gained `minute_of_day` with a default of 08:00, and `Modifier` gained `Special` and `AllSpecial` (`ALL_TAGS` is 20). `Perk` and `Trait` gained `conditional`, and `Character` gained `situation` and `set_situation`; a character built without them behaves as before.
+- The three Ghost Town Gunfight tests that listed the allies now expect the two settlers that come with Trudy.
+- The radiation check over uses also reads "Rads", the spelling some of the new items use.
 - The save is now version 5: it holds `poison` and each carried weapon's `mods`. A version 4 save is upgraded on reading with no poison and no mods fitted, and a save that fits a mod to a weapon it does not suit, or lists one twice, is refused.
 - `Arsenal` reads a weapon's fitted mods when it builds the fighter and when it works out how much wear the weapon can take, so a mod that raises the condition raises it everywhere. `BoostStat` and `DerivedStat` gained `PoisonResistance`.
 - `Modifier` can no longer be copied (a modifier can now name an item), and `Bonuses` keeps the fight and healing modifiers whole. `Combatant` gained `kind`, `against` and `ignored_threshold`, all with defaults, so a fighter written before them still compiles.
@@ -59,6 +62,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The scene's action list now scrolls with the cursor when it is taller than the scene, instead of cutting off the last rows (including "Quit game") at small terminal sizes.
 
 ### Added
+- Time of day: `MinuteOfDay` (written `"HH:MM"`), `TimeWindow` (crosses midnight; equal ends refused), the `time_of_day` condition and `common.schema.json` entries. Property tests: a window and its swap split the day; the start is inside and the end is out.
+- Conditional perks and traits: `ConditionalModifiers` (a `when` list and the modifiers it switches on, limited to health and the hour, refused when it could change what it reads), `Situation`, `Game::settle`, `special` and `all_special` modifiers, and a `conditional` list in `data/perks/modifiers.json` for Nerd Rage, Night Person, Hot Blooded and Early Bird. Tests on hand-built and real characters, a path-independence property test, and a benchmark stub (about 38 ns per situation change).
+- Victor's dialogue (flag `victor_joined_militia`; he never fights, as in the source) and two settlers as Ghost Town Gunfight allies under Trudy's flag, with seven golden scenarios.
+- 61 more usable consumables in `data/items/uses.json` (160 of 195), and a test that compares every boost and heal with the wiki's parsed numbers.
 - Poison: `poison/` (`Poison`, `taken_in`, `DRAIN_PER_MINUTE`), `Game::{poison, poison_resistance, with_poison}`, the `Ailment::Poison` cure, and the `poison_resistance` boost stat. Time turns poison into wounds at 5 points a minute (a stand-in), and poison alone never takes the last hit point (a stand-in: the wiki lets it kill). `Used` gained `poison_in` and `cured_poison`; `InventoryError` gained `NotPoisoned`, and an antidote is kept by a player who is not poisoned.
 - Five more usable consumables in `data/items/uses.json`: antivenom, datura antivenom, fiery purgative, blood shield and bleak venom. A boost may now carry `poison` and `cure_poison`; `item.schema.json` and `common.schema.json` say so.
 - Weapon mods: `weapon_mods/` (`WeaponModBook`, `Fitting`, `FitError`, `WeaponModError`), `Game::{fit_mod, remove_mod, mods_for, fitted_mods, fitting, with_weapon_mods}` and `data/engine/weapon_mods.json` (111 mods, 59 with effects `normalize.py` reads from the wiki text). A fitted mod adds damage, adds rounds to the magazine, narrows spread and raises the condition a weapon has when new; a mod the game cannot act on (a silencer, a scope) fits and changes nothing. Taking a mod off leaves a weapon at its new, lower limit if it was more worn than that.

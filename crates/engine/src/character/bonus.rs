@@ -2,7 +2,7 @@
 
 use strum::EnumCount;
 
-use crate::shared::{Modifier, Skill};
+use crate::shared::{Modifier, Skill, Special};
 
 /// What perks and traits add up to. Kept as sums, so the derived numbers read a
 /// field and never walk the perks.
@@ -14,6 +14,8 @@ pub(super) struct Bonuses {
     pub(super) carry_weight: u32,
     pub(super) hp: u32,
     pub(super) ap: u32,
+    /// Per attribute, with the modifiers that name every attribute already added in.
+    pub(super) special: [i32; Special::COUNT],
     /// Per skill, with the modifiers that name every skill already added in, so a
     /// skill read looks at one number.
     pub(super) skills: [i32; Skill::COUNT],
@@ -41,6 +43,15 @@ impl Bonuses {
             }
             Modifier::AllSkills { amount } => {
                 for slot in &mut self.skills {
+                    *slot = slot.saturating_add(i32::from(*amount));
+                }
+            }
+            Modifier::Special { stat, amount } => {
+                let slot = &mut self.special[*stat as usize];
+                *slot = slot.saturating_add(i32::from(*amount));
+            }
+            Modifier::AllSpecial { amount } => {
+                for slot in &mut self.special {
                     *slot = slot.saturating_add(i32::from(*amount));
                 }
             }

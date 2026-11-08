@@ -2049,6 +2049,57 @@ Radiation and addiction were in, and the next two loose ends from the roadmap we
 
 ---
 
+### Conditional Perks, Time of Day, Defenders and More Consumables: Four Items in One Cycle
+
+**Date:** 2026-11-08
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Four roadmap items went in together because two of them need each other: the perks that read health or the hour (item 2) need a way to say "only while", and the hour needs a condition (item 5). Victor and the settlers (item 1) and the unusable consumables (item 4) were data and wiring on top of what existed.
+
+---
+
+#### Decision
+
+- **A perk's conditions are a gate, not a field on every modifier.** A record lists `conditional` entries, each a `when` list and the modifiers it switches on. It says the same as a `when` on every modifier, without repeating the condition for Hot Blooded's three changes, and it needs no custom parsing of a tagged enum. The conditions reuse the shared `Condition` vocabulary, so health, the hour and later triggers work like they do in dialogue and quests.
+- **Gates are restricted at load, not trusted.** They may ask only about health and the time of day, and may not change maximum hit points, nor Endurance under a health condition. Anything that reads an attribute or a skill could depend on the very modifier it switches on; a health gate that moved Endurance would move the maximum and flip its own condition. Refusing it when the data is read means the engine never has to detect a loop.
+- **The character holds the plain sum and the gates apart** and re-sums when told its situation (health share and minute of day). It does not know wounds or the clock; `Game::settle` hands them over wherever wounds, the clock or the character change. A time-bound change to Endurance moves the maximum and so the health share, so `settle` repeats up to three rounds until they agree, and a living player is never left down by a falling maximum (the mercy a repaid boost already gets).
+- **Time is a window of minutes, not hours or named periods.** The sources give 8:15 pm to 5:45 am and 6 am to 12 pm, and Night Person says only "sun down" (a stand-in of 18:00 to 06:00). A window may cross midnight; a window with the same start and end is refused. The effect to wait and a days-passed condition were not built: nothing in the data needs them.
+- **Victor never fights.** The transcript has him say "Count me in" and then "dozed off" after an override command shut him down. Asking him sets a flag and unlocks the talk afterwards; he gets no ally entry. The settlers Trudy enlists are allies under her flag, with a stand-in loadout and count.
+- **Consumables are entered only when every effect is modeled.** Hardcore-only effects and bottle caps are left out; an item that also needs damage over time, a threshold, a limb or a permanent change stays unusable, so no item is half-modeled in silence. A test compares each boost and heal with the wiki's parsed numbers.
+
+---
+
+#### Consequences
+
+- Nerd Rage and Night Person work in the base game. Hot Blooded and Early Bird are modeled but belong to Old World Blues, so the base-game book does not offer them yet.
+- **Left out for now:** a fight reads the character's edge when it opens, so Nerd Rage helps only if the player is already below 20% hit points then; Just Lucky I'm Alive (it reads the end of a fight and karma); Hot Blooded's benefit text says +15% where its description says +10%, and the description was used; the data-corruption check on Victor (no threshold in the transcript).
+- Health below 50% is read as 49 or less because the share rounds down, so "20% or below" holds slightly above 20 (one hit point's rounding).
+- 160 of 195 consumables are usable; 35 wait on damage over time, thresholds, limbs, sneak, automatic use and weapon effects.
+- The edge read measured 16.2 ns before and 17.4 ns after (17 is the figure already on record), within noise but above the 5% gate on that single comparison; the new situation change measures about 38 ns.
+
+---
+
+#### References
+
+- `crates/engine/src/shared/time.rs`, `condition.rs`, `modifier.rs`, `view.rs`, `eval.rs`, `error.rs`
+- `crates/engine/src/character/situation.rs`, `sheet.rs`, `bonus.rs`, `crates/engine/src/game/state.rs`, `game/state/save.rs`
+- `crates/engine/tests/character/conditional.rs`, `game/situation.rs`, `shared/evaluator.rs`, `shared/contract.rs`, `game/battle.rs`, `inventory/real_data.rs`, `crates/engine/benches/character.rs`
+- `schemas/common.schema.json`, `perk.schema.json`, `trait.schema.json`, `data/perks/modifiers.json`, `data/items/uses.json`, `data/dialogue/slice_goodsprings.json`, `data/combat/encounters.json`, `tests/scenarios/goodsprings_dialogue.json`, `scripts/normalize.py`
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-08 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

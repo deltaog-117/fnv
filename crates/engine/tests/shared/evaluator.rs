@@ -9,8 +9,9 @@ use std::num::NonZeroU32;
 
 use engine::shared::{
     Ailment, Comparison, Condition, Effect, EffectError, EmptyWorld, EndingId, FactionId, FlagId,
-    HealthPercent, ItemId, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId, QuestStage,
-    QuestState, Rads, ReputationLevel, Skill, SkillLevel, apply, apply_all, evaluate,
+    HealthPercent, ItemId, MinuteOfDay, NonEmpty, NpcId, NpcState, PerkId, QuestCondition, QuestId,
+    QuestStage, QuestState, Rads, ReputationLevel, Skill, SkillLevel, TimeWindow, apply, apply_all,
+    evaluate,
 };
 use proptest::collection::vec;
 use proptest::prelude::*;
@@ -694,4 +695,58 @@ fn xp_and_reputation_points_accumulate() {
     apply_all(&effects, &mut state).expect("all four apply");
     assert!((state.xp() - 35.0).abs() < f64::EPSILON);
     assert_eq!(state.points(&faction("ncr")), (5.0, 1.0));
+}
+
+/// A world that knows only what time it is.
+struct AtTime(MinuteOfDay);
+
+impl engine::shared::QuestView for AtTime {}
+impl engine::shared::StandingView for AtTime {}
+impl engine::shared::CharacterView for AtTime {}
+impl engine::shared::InventoryView for AtTime {}
+impl engine::shared::CompanionView for AtTime {}
+impl engine::shared::WorldView for AtTime {
+    fn minute_of_day(&self) -> MinuteOfDay {
+        self.0
+    }
+}
+
+fn at(hour: u32, minute: u32) -> MinuteOfDay {
+    MinuteOfDay::new(hour, minute).expect("a valid time")
+}
+
+#[test]
+fn a_time_window_is_read_from_the_clock_and_may_cross_midnight() {
+    let night = Condition::TimeOfDay(TimeWindow::new(at(18, 0), at(6, 0)).expect("a window"));
+    assert!(evaluate(&night, &AtTime(at(23, 30))));
+    assert!(evaluate(&night, &AtTime(at(3, 0))));
+    assert!(!evaluate(&night, &AtTime(at(12, 0))));
+    assert!(
+        !evaluate(&night, &EmptyWorld),
+        "a state with no clock reads 08:00, which is not night"
+    );
+}
+
+proptest! {
+    /// Swapping the ends of a window gives the rest of the day: every minute is in
+    /// exactly one of the two.
+    #[test]
+    fn a_window_and_its_swap_split_the_day(
+        window in strategies::time_window(),
+        time in strategies::minute_of_day(),
+    ) {
+        let swapped = TimeWindow::new(window.to(), window.from()).expect("the ends differ");
+        prop_assert_ne!(window.contains(time), swapped.contains(time));
+    }
+
+    /// The start is inside, the end is outside, and the evaluator agrees with the
+    /// window.
+    #[test]
+    fn the_start_is_in_the_end_is_out(window in strategies::time_window()) {
+        prop_assert!(window.contains(window.from()));
+        prop_assert!(!window.contains(window.to()));
+        let condition = Condition::TimeOfDay(window);
+        prop_assert!(evaluate(&condition, &AtTime(window.from())));
+        prop_assert!(!evaluate(&condition, &AtTime(window.to())));
+    }
 }

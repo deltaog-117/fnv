@@ -12,9 +12,10 @@ use super::rules::{
     BASE_SKILL_HALVES, CharacterRules, Level, MAX_TRAITS, START_SPECIAL_POINTS, TAG_BONUS,
     TAG_COUNT,
 };
+use super::situation::Situation;
 use crate::shared::{
-    Ailment, BoostTally, CharacterSink, CharacterView, EffectError, ItemId, PerkId, Skill,
-    SkillLevel, Special, SpecialLevel, TraitId, whole_amount,
+    Ailment, BoostTally, CharacterSink, CharacterView, ConditionalModifiers, EffectError, ItemId,
+    Modifier, PerkId, Skill, SkillLevel, Special, SpecialLevel, TraitId, evaluate, whole_amount,
 };
 
 /// The seven S.P.E.C.I.A.L. values; every one always holds a legal level.
@@ -114,7 +115,15 @@ pub struct Character {
     traits: BTreeSet<TraitId>,
     /// Perks taken, with the rank reached.
     perks: BTreeMap<PerkId, u8>,
+    /// What the perks and traits change now: `fixed` plus every conditional gate
+    /// that holds in `situation`.
     bonuses: Bonuses,
+    /// What perks and traits change whatever the situation.
+    fixed: Bonuses,
+    /// The conditional modifiers of every perk and trait taken, once per rank.
+    gated: Vec<ConditionalModifiers>,
+    /// What the gates read, set by the game.
+    situation: Situation,
     /// What chems, drinks and meals change for now; empty unless the game sets it.
     boosts: BoostTally,
     /// The highest level whose rewards have been handed out.
@@ -186,10 +195,7 @@ impl Character {
             if !character.traits.insert(id.clone()) {
                 return Err(CreationError::DuplicateTrait(id.clone()));
             }
-            record
-                .modifiers
-                .iter()
-                .for_each(|modifier| character.bonuses.add(modifier));
+            character.take(&record.modifiers, &record.conditional);
         }
         Ok(character)
     }
@@ -213,6 +219,9 @@ impl Character {
             traits: BTreeSet::new(),
             perks: BTreeMap::new(),
             bonuses: Bonuses::default(),
+            fixed: Bonuses::default(),
+            gated: Vec::new(),
+            situation: Situation::default(),
             boosts: BoostTally::default(),
             settled,
             skill_halves: 0,
@@ -296,10 +305,7 @@ impl Character {
             if !character.traits.insert(id.clone()) {
                 return Err(RestoreError::DuplicateTrait(id.clone()));
             }
-            found
-                .modifiers
-                .iter()
-                .for_each(|modifier| character.bonuses.add(modifier));
+            character.take(&found.modifiers, &found.conditional);
         }
         let mut taken = 0u32;
         for (id, rank) in &record.perks {
@@ -318,9 +324,7 @@ impl Character {
                 return Err(RestoreError::DuplicatePerk(id.clone()));
             }
             for _ in 0..*rank {
-                perk.modifiers
-                    .iter()
-                    .for_each(|modifier| character.bonuses.add(modifier));
+                character.take(&perk.modifiers, &perk.conditional);
             }
             taken += u32::from(*rank);
         }
@@ -480,9 +484,55 @@ impl Character {
         self.boosts = boosts;
     }
 
-    /// An attribute with the boosts in force, kept inside the 1 to 10 scale.
+    /// Adds what one perk or trait changes, for one rank.
+    fn take(&mut self, modifiers: &[Modifier], gated: &[ConditionalModifiers]) {
+        modifiers
+            .iter()
+            .for_each(|modifier| self.fixed.add(modifier));
+        self.gated.extend_from_slice(gated);
+        self.resolve();
+    }
+
+    /// Works out `bonuses` again: what always applies, plus each gate whose
+    /// conditions hold in the current situation.
+    fn resolve(&mut self) {
+        let mut resolved = self.fixed.clone();
+        for gate in &self.gated {
+            if gate
+                .when()
+                .iter()
+                .all(|when| evaluate(when, &self.situation))
+            {
+                gate.modifiers()
+                    .iter()
+                    .for_each(|modifier| resolved.add(modifier));
+            }
+        }
+        self.bonuses = resolved;
+    }
+
+    /// The situation the conditional modifiers read now.
+    #[must_use]
+    pub fn situation(&self) -> Situation {
+        self.situation
+    }
+
+    /// Sets how hurt the character is and what time it is. The game calls this each
+    /// time wounds or the clock change, so Hot Blooded or Early Bird switch on and
+    /// off with them; nothing the player earned is touched.
+    pub fn set_situation(&mut self, situation: Situation) {
+        if self.situation != situation {
+            self.situation = situation;
+            self.resolve();
+        }
+    }
+
+    /// An attribute with the perks, traits and boosts in force, kept inside the 1 to
+    /// 10 scale.
     fn boosted(&self, stat: Special) -> u8 {
-        let value = i32::from(self.special.get(stat).get()) + self.boosts.special(stat);
+        let value = i32::from(self.special.get(stat).get())
+            + self.bonuses.special[stat as usize]
+            + self.boosts.special(stat);
         let kept = value.clamp(i32::from(SpecialLevel::MIN), i32::from(SpecialLevel::MAX));
         SpecialLevel::try_new(u32::try_from(kept).unwrap_or(1))
             .map_or(SpecialLevel::MIN, SpecialLevel::get)
@@ -590,9 +640,7 @@ impl Character {
             return Err(ProgressError::NoPerkPick);
         }
         let perk = book.check(id, self)?;
-        perk.modifiers
-            .iter()
-            .for_each(|modifier| self.bonuses.add(modifier));
+        self.take(&perk.modifiers, &perk.conditional);
         *self.perks.entry(id.clone()).or_insert(0) += 1;
         self.perk_picks -= 1;
         Ok(())

@@ -61,8 +61,8 @@ fn the_authored_uses_reach_the_book() {
         .filter(|c| c.on_use.is_some())
         .count();
     assert_eq!(
-        modeled, 99,
-        "uses.json lists the heals, boosts, irradiated meals and the poison items"
+        modeled, 160,
+        "uses.json lists the heals, boosts, meals, drinks and the poison items"
     );
     for consumable in data.consumables.iter() {
         assert_eq!(book.item_use(&consumable.id), consumable.on_use);
@@ -98,7 +98,7 @@ fn radiation_in_a_use_matches_the_wiki_text() {
             .split("Hardcore mode only")
             .next()
             .unwrap_or_default();
-        let mentions = text.contains("Radiation") || text.contains("RAD");
+        let mentions = text.contains("Radiation") || text.contains("RAD") || text.contains("Rads");
         assert_eq!(boost.rads != 0, mentions, "{}: {text}", consumable.id);
         if boost.rads != 0 {
             with_rads += 1;
@@ -126,4 +126,57 @@ fn rad_x_radaway_and_the_super_stimpak_are_usable_now() {
         panic!("the super stimpak is a boost item");
     };
     assert_eq!(super_stimpak.heal.map(std::num::NonZeroU32::get), Some(60));
+}
+
+/// Every timed change a use makes, and every heal it gives, is a number the wiki
+/// states: an attribute, resistance or action-point boost names an amount and a
+/// length that one of the item's parsed effects has, and a heal is the total of the
+/// item's hit-point effects.
+#[test]
+fn boosts_and_heals_in_a_use_match_the_wiki_numbers() {
+    const HIT_POINTS: [&str; 3] = ["HP", "Hit Point", "Hit Points"];
+    // Authored from the wiki's words before this check existed, where the import
+    // parsed the effect into another shape (a resistance with no length, a heal
+    // written as "+60 HP" without a duration).
+    const READ_FROM_TEXT: [&str; 2] = ["rad_x", "super_stimpak"];
+    let data = data();
+    let mut checked = 0;
+    for consumable in data.consumables.iter() {
+        let Some(ItemUse::Boost(boost)) = &consumable.on_use else {
+            continue;
+        };
+        if READ_FROM_TEXT.contains(&consumable.id.as_str()) {
+            continue;
+        }
+        for effect in &boost.effects {
+            let minutes = effect.minutes.get();
+            let found = consumable.effects.iter().any(|parsed| {
+                let seconds = parsed.duration_s.unwrap_or(0.0);
+                (parsed.amount - f64::from(effect.amount.get())).abs() < f64::EPSILON
+                    && (seconds / 60.0).ceil().max(1.0) == f64::from(minutes)
+            });
+            assert!(found, "{}: no wiki effect gives {effect:?}", consumable.id);
+            checked += 1;
+        }
+        if let Some(heal) = boost.heal {
+            let total: f64 = consumable
+                .effects
+                .iter()
+                .filter(|parsed| HIT_POINTS.contains(&parsed.stat.as_str()))
+                .map(|parsed| {
+                    if parsed.per_second {
+                        parsed.amount * parsed.duration_s.unwrap_or(1.0)
+                    } else {
+                        parsed.amount
+                    }
+                })
+                .sum();
+            assert!(
+                (total - f64::from(heal.get())).abs() < f64::EPSILON,
+                "{}: heals {heal} but the wiki totals {total}",
+                consumable.id
+            );
+        }
+    }
+    assert!(checked >= 100, "only {checked} boost effects were checked");
 }

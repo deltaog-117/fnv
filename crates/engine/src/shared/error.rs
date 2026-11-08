@@ -42,4 +42,15 @@ pub enum ModelError {
         /// What is wrong, for example `"needs a stage number"`.
         problem: &'static str,
     },
+    /// A time of day was not written `HH:MM`.
+    #[error("invalid time of day {0:?}: write it as HH:MM, from 00:00 to 23:59")]
+    InvalidTime(String),
+    /// A window of the day began and ended at the same minute.
+    #[error(
+        "a time window must not begin and end at {0}: say whether it is none of the day or all of it"
+    )]
+    EmptyWindow(String),
+    /// Conditional modifiers whose conditions or modifiers are not allowed.
+    #[error("conditional modifiers: {0}")]
+    InvalidGate(&'static str),
 }

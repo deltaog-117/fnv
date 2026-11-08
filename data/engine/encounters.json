@@ -117,6 +117,30 @@
       "state": "alive"
      }
     ]
+   },
+   {
+    "npc": "goodsprings_settler",
+    "weapon": "9mm_pistol",
+    "hp": 25,
+    "when": [
+     {
+      "type": "flag",
+      "flag": "trudy_joined_militia",
+      "value": true
+     }
+    ]
+   },
+   {
+    "npc": "goodsprings_settler",
+    "weapon": "9mm_pistol",
+    "hp": 25,
+    "when": [
+     {
+      "type": "flag",
+      "flag": "trudy_joined_militia",
+      "value": true
+     }
+    ]
    }
   ],
   "on_win": [

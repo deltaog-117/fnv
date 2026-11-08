@@ -28,3 +28,19 @@ wiki's own text by `crates/engine/tests/character/real_data.rs`. Stand-ins:
   as the wiki writes them; a perk whose ranks differ in size (such as the 3/6/10%
   foe perks) is not modeled, and those ask for kill counts, so they are not offered.
 
+
+## Conditional modifiers
+
+An entry in `modifiers.json` may carry `conditional` gates: a `when` list (only
+`health`, `time_of_day` and `all`/`any`/`not` of them) and the modifiers it switches
+on. A gate may not change maximum hit points, nor Endurance under a health
+condition. Stand-ins:
+
+- "Drops below 50%" is read as a health share of 49 or less, and "20% or below" as
+  20 or less; the share rounds down.
+- Hot Blooded's wiki text says +15% in its benefit line and +10% in its description;
+  the description's 10 is used.
+- Night Person says only "when the sun is down"; the window 18:00 to 06:00 is a
+  stand-in. Early Bird's windows (06:00 to 12:00 and 18:00 to 06:00) are the wiki's.
+- Nerd Rage raises Strength "to 10" as +9, which the 1 to 10 scale caps.
+- Hot Blooded and Early Bird belong to Old World Blues and are not offered until it is.

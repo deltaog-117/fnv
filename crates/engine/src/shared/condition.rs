@@ -13,6 +13,7 @@ use super::bounds::{HealthPercent, Rads, RenownTier, SkillLevel, SpecialLevel};
 use super::error::ModelError;
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
 use super::non_empty::NonEmpty;
+use super::time::TimeWindow;
 use super::vocabulary::{
     Alignment, Comparison, NpcState, QuestStage, QuestState, Renown, ReputationLevel, Skill,
     Special,
@@ -107,6 +108,8 @@ pub enum Condition {
         #[serde(default)]
         op: Comparison,
     },
+    /// The time of day falls inside a window, which may cross midnight.
+    TimeOfDay(TimeWindow),
     /// The player has absorbed at least this much radiation.
     Radiation {
         /// The fewest rads that make this true.
@@ -167,7 +170,7 @@ pub enum Condition {
 
 impl Condition {
     /// Every `type` value a condition can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 19] = [
+    pub const ALL_TAGS: [&'static str; 20] = [
         "all",
         "any",
         "not",
@@ -178,6 +181,7 @@ impl Condition {
         "skill",
         "special",
         "health",
+        "time_of_day",
         "radiation",
         "addicted",
         "perk",
@@ -204,6 +208,7 @@ impl Condition {
             Self::Skill { .. } => "skill",
             Self::Special { .. } => "special",
             Self::Health { .. } => "health",
+            Self::TimeOfDay(_) => "time_of_day",
             Self::Radiation { .. } => "radiation",
             Self::Addicted {} => "addicted",
             Self::Perk { .. } => "perk",

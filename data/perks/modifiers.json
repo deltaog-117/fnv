@@ -319,5 +319,121 @@
     "skill": "energy_weapons"
    }
   ]
+ },
+ {
+  "trait": "hot_blooded",
+  "conditional": [
+   {
+    "when": [
+     {
+      "type": "health",
+      "percent": 49,
+      "op": "at_most"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "damage_percent",
+      "percent": 10
+     },
+     {
+      "type": "special",
+      "stat": "agility",
+      "amount": -2
+     },
+     {
+      "type": "special",
+      "stat": "perception",
+      "amount": -2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "trait": "early_bird",
+  "conditional": [
+   {
+    "when": [
+     {
+      "type": "time_of_day",
+      "from": "06:00",
+      "to": "12:00"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "all_special",
+      "amount": 2
+     }
+    ]
+   },
+   {
+    "when": [
+     {
+      "type": "time_of_day",
+      "from": "18:00",
+      "to": "06:00"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "all_special",
+      "amount": -1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "perk": "nerd_rage",
+  "conditional": [
+   {
+    "when": [
+     {
+      "type": "health",
+      "percent": 20,
+      "op": "at_most"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "special",
+      "stat": "strength",
+      "amount": 9
+     },
+     {
+      "type": "damage_threshold",
+      "amount": 15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "perk": "night_person",
+  "conditional": [
+   {
+    "when": [
+     {
+      "type": "time_of_day",
+      "from": "18:00",
+      "to": "06:00"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "special",
+      "stat": "intelligence",
+      "amount": 2
+     },
+     {
+      "type": "special",
+      "stat": "perception",
+      "amount": 2
+     }
+    ]
+   }
+  ]
  }
 ]

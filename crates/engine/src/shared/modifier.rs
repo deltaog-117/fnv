@@ -10,8 +10,11 @@
 
 use serde::{Deserialize, Serialize};
 
+use super::condition::Condition;
+use super::error::ModelError;
 use super::ids::ItemId;
-use super::vocabulary::{FoeKind, Skill};
+use super::non_empty::NonEmpty;
+use super::vocabulary::{FoeKind, Skill, Special};
 
 /// One change a perk or trait makes to the numbers the character derives.
 ///
@@ -48,6 +51,18 @@ pub enum Modifier {
     /// Every skill.
     AllSkills {
         /// Skill points; negative for a penalty.
+        amount: i8,
+    },
+    /// One S.P.E.C.I.A.L. attribute, kept inside the 1 to 10 scale.
+    Special {
+        /// Which attribute.
+        stat: Special,
+        /// Points; negative for a penalty.
+        amount: i8,
+    },
+    /// Every S.P.E.C.I.A.L. attribute, each kept inside the 1 to 10 scale.
+    AllSpecial {
+        /// Points; negative for a penalty.
         amount: i8,
     },
     /// One skill.
@@ -141,13 +156,15 @@ pub enum Modifier {
 
 impl Modifier {
     /// Every `type` value a modifier can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 18] = [
+    pub const ALL_TAGS: [&'static str; 20] = [
         "skill_points_per_level",
         "xp_percent",
         "carry_weight",
         "max_hp",
         "action_points",
         "all_skills",
+        "special",
+        "all_special",
         "skill",
         "damage_threshold",
         "damage_resistance",
@@ -173,6 +190,8 @@ impl Modifier {
             Self::MaxHp { .. } => "max_hp",
             Self::ActionPoints { .. } => "action_points",
             Self::AllSkills { .. } => "all_skills",
+            Self::Special { .. } => "special",
+            Self::AllSpecial { .. } => "all_special",
             Self::Skill { .. } => "skill",
             Self::DamageThreshold { .. } => "damage_threshold",
             Self::DamageResistance { .. } => "damage_resistance",
@@ -186,5 +205,101 @@ impl Modifier {
             Self::WeaponWearPercent { .. } => "weapon_wear_percent",
             Self::HealPercent { .. } => "heal_percent",
         }
+    }
+}
+
+/// Modifiers that apply only while conditions about the character's situation hold.
+///
+/// A perk lists these beside its plain modifiers: Hot Blooded gives its damage and
+/// its penalties only below half health, Early Bird its bonus only in the morning.
+/// The conditions may ask about health and the time of day, joined with `all`,
+/// `any` and `not`, and nothing else: anything that reads an attribute or a skill
+/// could depend on the very modifiers it switches on, and a rule that can contradict
+/// itself is refused when the data is read.
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize)]
+#[serde(try_from = "ConditionalWire")]
+pub struct ConditionalModifiers {
+    when: NonEmpty<Condition>,
+    modifiers: NonEmpty<Modifier>,
+}
+
+#[derive(Deserialize)]
+#[serde(deny_unknown_fields)]
+struct ConditionalWire {
+    when: NonEmpty<Condition>,
+    modifiers: NonEmpty<Modifier>,
+}
+
+impl ConditionalModifiers {
+    /// Pairs the conditions that must all hold with what they switch on.
+    ///
+    /// # Errors
+    ///
+    /// [`ModelError::InvalidGate`] when a condition asks about something other than
+    /// health or the time of day, or when the modifiers include one that could move
+    /// the thing the conditions read: maximum hit points, or (under a health
+    /// condition) any attribute that sets them.
+    pub fn new(
+        when: NonEmpty<Condition>,
+        modifiers: NonEmpty<Modifier>,
+    ) -> Result<Self, ModelError> {
+        if !when.iter().all(reads_only_the_situation) {
+            return Err(ModelError::InvalidGate(
+                "conditions may only ask about health and the time of day",
+            ));
+        }
+        let by_health = when.iter().any(reads_health);
+        for modifier in modifiers.iter() {
+            let moves_hit_points = match modifier {
+                Modifier::MaxHp { .. } => true,
+                Modifier::AllSpecial { .. } => by_health,
+                Modifier::Special { stat, .. } => by_health && *stat == Special::Endurance,
+                _ => false,
+            };
+            if moves_hit_points {
+                return Err(ModelError::InvalidGate(
+                    "modifiers may not change the maximum hit points a health condition reads",
+                ));
+            }
+        }
+        Ok(Self { when, modifiers })
+    }
+
+    /// The conditions, all of which must hold.
+    #[must_use]
+    pub fn when(&self) -> &[Condition] {
+        self.when.as_slice()
+    }
+
+    /// What applies while they do.
+    #[must_use]
+    pub fn modifiers(&self) -> &[Modifier] {
+        self.modifiers.as_slice()
+    }
+}
+
+impl TryFrom<ConditionalWire> for ConditionalModifiers {
+    type Error = ModelError;
+
+    fn try_from(wire: ConditionalWire) -> Result<Self, Self::Error> {
+        Self::new(wire.when, wire.modifiers)
+    }
+}
+
+fn reads_only_the_situation(condition: &Condition) -> bool {
+    match condition {
+        Condition::Health { .. } | Condition::TimeOfDay(_) => true,
+        Condition::All { of } | Condition::Any { of } => of.iter().all(reads_only_the_situation),
+        Condition::Not { of } => reads_only_the_situation(of),
+        _ => false,
+    }
+}
+
+fn reads_health(condition: &Condition) -> bool {
+    match condition {
+        Condition::Health { .. } => true,
+        Condition::All { of } | Condition::Any { of } => of.iter().any(reads_health),
+        Condition::Not { of } => reads_health(of),
+        _ => false,
     }
 }

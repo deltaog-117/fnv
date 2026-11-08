@@ -1968,7 +1968,29 @@
    }
   },
   "requires_text": "Level 10; Intelligence 5; Science 50",
-  "effects_text": "+15 Damage Threshold and Strength is raised up to 10 if HP drop below 20%"
+  "effects_text": "+15 Damage Threshold and Strength is raised up to 10 if HP drop below 20%",
+  "conditional": [
+   {
+    "when": [
+     {
+      "type": "health",
+      "percent": 20,
+      "op": "at_most"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "special",
+      "stat": "strength",
+      "amount": 9
+     },
+     {
+      "type": "damage_threshold",
+      "amount": 15
+     }
+    ]
+   }
+  ]
  },
  {
   "id": "nerves_of_steel",
@@ -1999,7 +2021,30 @@
    "level": 10
   },
   "requires_text": "Level 10",
-  "effects_text": "+2 Intelligence and +2 Perception (up to a maximum of 10) when the sun is down."
+  "effects_text": "+2 Intelligence and +2 Perception (up to a maximum of 10) when the sun is down.",
+  "conditional": [
+   {
+    "when": [
+     {
+      "type": "time_of_day",
+      "from": "18:00",
+      "to": "06:00"
+     }
+    ],
+    "modifiers": [
+     {
+      "type": "special",
+      "stat": "intelligence",
+      "amount": 2
+     },
+     {
+      "type": "special",
+      "stat": "perception",
+      "amount": 2
+     }
+    ]
+   }
+  ]
  },
  {
   "id": "ninja",

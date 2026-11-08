@@ -4,7 +4,9 @@ use std::collections::BTreeMap;
 
 use serde::Deserialize;
 
-use crate::shared::{Dlc, Modifier, PerkId, Skill, SkillLevel, Special, SpecialLevel, TraitId};
+use crate::shared::{
+    ConditionalModifiers, Dlc, Modifier, PerkId, Skill, SkillLevel, Special, SpecialLevel, TraitId,
+};
 
 /// What a character needs before a perk can be taken.
 #[derive(Debug, Clone, Default, PartialEq, Eq, Deserialize)]
@@ -51,6 +53,9 @@ pub struct Perk {
     /// built: it can be taken and recorded, and changes no number.
     #[serde(default)]
     pub modifiers: Vec<Modifier>,
+    /// What the game applies for each rank only while conditions hold.
+    #[serde(default)]
+    pub conditional: Vec<ConditionalModifiers>,
 }
 
 /// A trait chosen when the character is made.
@@ -78,4 +83,7 @@ pub struct Trait {
     /// What the game applies. Empty for a trait whose effects are not built.
     #[serde(default)]
     pub modifiers: Vec<Modifier>,
+    /// What the game applies only while conditions hold.
+    #[serde(default)]
+    pub conditional: Vec<ConditionalModifiers>,
 }
