@@ -7,12 +7,12 @@ use serde::{Deserialize, Serialize};
 
 use super::error::SaveError;
 use crate::shared::{
-    BoostStat, Effect, EncounterId, EndingId, FactionId, FindId, FlagId, ItemId, LocationId, NpcId,
-    PerkId, QuestId, QuestStage, Skill, Special, TraitId, VendorId,
+    BoostStat, CompanionId, Effect, EncounterId, EndingId, FactionId, FindId, FlagId, ItemId,
+    LocationId, NpcId, PerkId, QuestId, QuestStage, Skill, Special, TraitId, VendorId,
 };
 
 /// The newest version this game reads and the only one it writes.
-pub const VERSION: u32 = 5;
+pub const VERSION: u32 = 6;
 
 /// Everything that changes during play.
 ///
@@ -48,6 +48,8 @@ pub struct Save {
     pub addictions: Vec<SavedAddiction>,
     /// Poison in the blood, in hit points still to be lost.
     pub poison: u16,
+    /// The companions in the party, in the order they joined.
+    pub party: Vec<CompanionId>,
     /// The finds the player has already picked up.
     pub gathered: Vec<FindId>,
     /// Fights the player has won.
@@ -407,6 +409,15 @@ fn upgrade(mut value: serde_json::Value, from: u64) -> Result<serde_json::Value,
                     .insert("mods".to_owned(), serde_json::Value::Array(Vec::new()));
             }
             object.insert("version".to_owned(), serde_json::Value::from(5));
+            Ok(value)
+        }
+        // Version 6 added the party; an older game had nobody travelling with the player.
+        5 => {
+            let object = value
+                .as_object_mut()
+                .ok_or_else(|| SaveError::Format("the save is not an object".to_owned()))?;
+            object.insert("party".to_owned(), serde_json::Value::Array(Vec::new()));
+            object.insert("version".to_owned(), serde_json::Value::from(6));
             Ok(value)
         }
         _ => Err(SaveError::UnknownVersion(from)),

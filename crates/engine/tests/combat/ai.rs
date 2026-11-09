@@ -2,7 +2,7 @@
 
 use std::num::NonZeroU32;
 
-use engine::combat::{CombatError, Side, Status, enemy_turns};
+use engine::combat::{CombatError, Side, Status, computer_turns_then, enemy_turns};
 use proptest::prelude::*;
 
 use crate::support::{Cycle, Plain, Rolls, duel, fight};
@@ -104,4 +104,30 @@ proptest! {
         // Nobody on the enemy side was hurt by its own turn.
         prop_assert!(c.ids().filter(|id| c.side(*id) == Some(Side::Enemy)).all(|id| c.hp(id) == Some(60)));
     }
+}
+
+#[test]
+fn the_hook_runs_after_every_attack_and_its_new_numbers_count_from_the_next_shot() {
+    let mut c = duel(Plain::new(200, 1.0), Plain::new(50, 20.0), 100);
+    let player = c.ids().next().expect("the player");
+    c.end_turn().expect("the player passes");
+    let mut calls = 0;
+    // The first hit leaves the player armored: later shots meet a threshold of 15.
+    let done = computer_turns_then(
+        &mut c,
+        &mut Rolls::new(&[1, 100, 1, 100, 1, 100]),
+        |fight| {
+            calls += 1;
+            if calls == 1 {
+                fight
+                    .replace_combatant(player, Plain::new(200, 1.0).armor(15.0, 0.0))
+                    .expect("the same maximum");
+            }
+        },
+    );
+    assert_eq!(done.len(), 3);
+    assert_eq!(calls, 3, "once per attack");
+    // 20 damage, then 20 less the threshold of 15 twice.
+    let left: Vec<_> = done.iter().map(|r| r.target_hp).collect();
+    assert_eq!(left, [180, 175, 170]);
 }

@@ -27,6 +27,10 @@ pub enum DerivedStat {
     RadiationResistance,
     /// Poison resistance, in percent points before the cap.
     PoisonResistance,
+    /// Damage threshold, on top of the armor's.
+    DamageThreshold,
+    /// Damage dealt, in percent points added to every attack.
+    DamagePercent,
 }
 
 /// What a boost changes.
@@ -54,6 +58,8 @@ impl BoostStat {
             Self::Derived(DerivedStat::DamageResistance) => "Damage resistance",
             Self::Derived(DerivedStat::RadiationResistance) => "Radiation resistance",
             Self::Derived(DerivedStat::PoisonResistance) => "Poison resistance",
+            Self::Derived(DerivedStat::DamageThreshold) => "Damage threshold",
+            Self::Derived(DerivedStat::DamagePercent) => "Damage",
         }
     }
 }
@@ -83,6 +89,8 @@ pub struct BoostTally {
     damage_resistance: i32,
     radiation_resistance: i32,
     poison_resistance: i32,
+    damage_threshold: i32,
+    damage_percent: i32,
 }
 
 impl BoostTally {
@@ -98,6 +106,8 @@ impl BoostTally {
             BoostStat::Derived(DerivedStat::DamageResistance) => &mut self.damage_resistance,
             BoostStat::Derived(DerivedStat::RadiationResistance) => &mut self.radiation_resistance,
             BoostStat::Derived(DerivedStat::PoisonResistance) => &mut self.poison_resistance,
+            BoostStat::Derived(DerivedStat::DamageThreshold) => &mut self.damage_threshold,
+            BoostStat::Derived(DerivedStat::DamagePercent) => &mut self.damage_percent,
         };
         *slot = slot.saturating_add(amount);
     }
@@ -120,6 +130,8 @@ impl BoostTally {
         add(&mut self.damage_resistance, other.damage_resistance);
         add(&mut self.radiation_resistance, other.radiation_resistance);
         add(&mut self.poison_resistance, other.poison_resistance);
+        add(&mut self.damage_threshold, other.damage_threshold);
+        add(&mut self.damage_percent, other.damage_percent);
     }
 
     /// The change to an attribute.
@@ -168,6 +180,18 @@ impl BoostTally {
     #[must_use]
     pub fn poison_resistance(&self) -> i32 {
         self.poison_resistance
+    }
+
+    /// The change to damage threshold, in points.
+    #[must_use]
+    pub fn damage_threshold(&self) -> i32 {
+        self.damage_threshold
+    }
+
+    /// The change to the damage every attack does, in percent points.
+    #[must_use]
+    pub fn damage_percent(&self) -> i32 {
+        self.damage_percent
     }
 
     /// Whether nothing is changed.

@@ -72,7 +72,7 @@ fn reads_about_unbuilt_features_give_the_defaults() {
     assert!(!evaluate(&condition, &game));
 }
 
-fn unbuilt_effects() -> Vec<Value> {
+fn companion_effects() -> Vec<Value> {
     vec![
         json!({"type": "companion_join", "companion": "c"}),
         json!({"type": "companion_leave", "companion": "c"}),
@@ -81,23 +81,23 @@ fn unbuilt_effects() -> Vec<Value> {
 
 proptest! {
     #[test]
-    fn an_effect_on_an_unbuilt_feature_is_refused_and_changes_nothing(
-        index in 0..unbuilt_effects().len()
+    fn a_companion_effect_with_no_such_companion_is_refused_and_changes_nothing(
+        index in 0..companion_effects().len()
     ) {
         let mut game = game();
         apply_all(&[effect(json!({"type": "start_quest", "quest": "q"}))], &mut game)
             .expect("starts");
         let before = (game.quest_status(&quest_id()), game.quest_stage(&quest_id()));
 
-        let wanted = effect(unbuilt_effects()[index].clone());
+        let wanted = effect(companion_effects()[index].clone());
         let result = apply_all(std::slice::from_ref(&wanted), &mut game);
 
-        let error = result.expect_err("the feature is not built");
-        let not_built = matches!(
+        let error = result.expect_err("nobody by that name can join or leave");
+        let refused = matches!(
             error.source,
-            EffectError::NotBuilt { effect, .. } if effect == wanted.tag()
+            EffectError::Refused { effect, .. } if effect == wanted.tag()
         );
-        prop_assert!(not_built);
+        prop_assert!(refused);
         prop_assert_eq!(
             (game.quest_status(&quest_id()), game.quest_stage(&quest_id())),
             before

@@ -1045,3 +1045,91 @@ fn a_stimpak_heals_more_the_higher_the_medicine_and_more_again_with_fast_metabol
         "and twenty percent more with the perk"
     );
 }
+
+/// A level 12 character with the Science the perk asks for, who has taken it.
+fn nerd_raged() -> Character {
+    let mut character = trained(&[]);
+    let rules = CharacterRules::standard();
+    character.grant_xp(rules.xp_for_level(Level::try_new(12).expect("a legal level")));
+    while character.skill(Skill::Science).get() < 50 {
+        character
+            .spend_skill_point(Skill::Science)
+            .expect("the level-up paid enough points");
+    }
+    character
+        .choose_perk(
+            &FIXTURE.perks,
+            &PerkId::try_new("nerd_rage").expect("literal is a valid id"),
+        )
+        .expect("the perk can be taken");
+    character
+}
+
+/// One hit in seven rolls and no critical, so a round wounds the player without
+/// finishing them.
+struct Sparse(u32);
+
+impl Dice for Sparse {
+    fn percent(&mut self) -> u8 {
+        self.0 += 1;
+        if self.0 % 7 == 1 { 1 } else { 100 }
+    }
+}
+
+/// The player's fighter in `battle`.
+fn you(battle: &Battle) -> engine::game::Fighter {
+    battle
+        .combat()
+        .combatant(battle.player())
+        .expect("the player")
+        .clone()
+}
+
+#[test]
+fn nerd_rage_switches_on_in_the_fight_the_moment_health_falls_to_a_fifth() {
+    let character = nerd_raged();
+    // A quarter of their hit points left: above the perk's 20% line when it opens.
+    let wounds = character.max_hp() - character.max_hp() / 4;
+    let mut game = dressed_game().with_character(character).with_wounds(wounds);
+    let mut battle = start(&game);
+    let calm = you(&battle).dt().get();
+    let max = you(&battle).max_hp().get();
+    let mut raged = false;
+    for _ in 0..12 {
+        if battle.combat().status() != Status::Ongoing {
+            break;
+        }
+        let Ok(_) = battle.end_turn(&mut Sparse(0)) else {
+            break;
+        };
+        let hp = battle.combat().hp(battle.player()).unwrap_or(0);
+        let low = engine::shared::HealthPercent::of(hp, max)
+            <= engine::shared::HealthPercent::of(20, 100);
+        let expected = if low { calm + 15.0 } else { calm };
+        assert_eq!(you(&battle).dt().get(), expected, "at {hp} of {max}");
+        raged |= low && battle.combat().status() == Status::Ongoing;
+    }
+    assert!(
+        raged,
+        "the fight reached the low-health line with the player up"
+    );
+    game.finish_battle(&battle).ok();
+}
+
+#[test]
+fn a_chem_that_raises_damage_threshold_and_damage_reaches_the_fight() {
+    let mut game = dressed_game();
+    for name in ["datura_hide", "psycho"] {
+        InventorySink::give_item(&mut game, &item(name), NonZeroU32::MIN)
+            .expect("the chem is given");
+    }
+    let plain = you_in(&game);
+    game.use_item(&item("datura_hide")).expect("the hide works");
+    game.use_item(&item("psycho")).expect("psycho works");
+    let boosted = you_in(&game);
+    assert_eq!(boosted.dt().get(), plain.dt().get() + 1.0);
+    assert_eq!(
+        boosted.attack().base_damage.get(),
+        plain.attack().base_damage.get() * 1.25
+    );
+}

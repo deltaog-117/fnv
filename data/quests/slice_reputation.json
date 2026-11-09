@@ -1,0 +1,53 @@
+[
+ {
+  "quest": "most_wanted",
+  "rules": [
+   {
+    "kind": "triggers",
+    "target": "Most Wanted",
+    "when": "negative NCR reputation",
+    "conditions": [
+     {"type": "reputation", "faction": "new_california_republic", "level": "shunned", "op": "at_most"},
+     {"type": "quest", "quest": "most_wanted", "state": "not_started"}
+    ],
+    "effects": [
+     {"type": "start_quest", "quest": "most_wanted"}
+    ]
+   }
+  ]
+ },
+ {
+  "quest": "caesar_s_foe",
+  "rules": [
+   {
+    "kind": "triggers",
+    "target": "Caesar's Foe",
+    "when": "negative Caesar's Legion reputation",
+    "conditions": [
+     {"type": "reputation", "faction": "caesar_s_legion", "level": "shunned", "op": "at_most"},
+     {"type": "quest", "quest": "caesar_s_foe", "state": "not_started"}
+    ],
+    "effects": [
+     {"type": "start_quest", "quest": "caesar_s_foe"}
+    ]
+   }
+  ]
+ },
+ {
+  "quest": "don_t_tread_on_the_bear",
+  "rules": [
+   {
+    "kind": "fails",
+    "target": "Don't Tread on the Bear!",
+    "when": "negative NCR reputation",
+    "conditions": [
+     {"type": "reputation", "faction": "new_california_republic", "level": "shunned", "op": "at_most"},
+     {"type": "quest", "quest": "don_t_tread_on_the_bear", "state": "active"}
+    ],
+    "effects": [
+     {"type": "fail_quest", "quest": "don_t_tread_on_the_bear"}
+    ]
+   }
+  ]
+ }
+]

@@ -2100,6 +2100,59 @@ Four roadmap items went in together because two of them need each other: the per
 
 ---
 
+### Fights That Follow Perks, Chems, Barter, Standing and Companions: Five Items in One Cycle
+
+**Date:** 2026-11-09
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Five roadmap items went in together. Three needed a choice between approaches, and the choices were made from a table of options: where a fight gets the player's changing situation from (item 1), how far to take the unusable consumables (item 2), and how much of the companion system to build first (item 5). Barter (item 3) and reputation (item 4) were data on top of what existed, with one engine change for each.
+
+---
+
+#### Decision
+
+- **The game layer rebuilds the player's fighter; the fight engine only accepts the swap.** `Combat::replace_combatant` takes a new set of numbers for one fighter and keeps its hit points, rounds and turn, refusing a different maximum. `Battle` holds a `PlayerKit` (a copy of the character, the weapon's numbers, the armor, the rounds and the wear) and builds the fighter again whenever the health share changes. The other two options were a hook that makes the fight ask for numbers each round (more general, but the fight engine would then know that something outside it changes a fighter) and two precomputed versions that flip at a threshold (it copies the gate rule and fits health only). The rebuild reuses the same rule that decides where a character stands, which a property test already says depends only on the situation.
+- **The rebuild happens after every attack, including the computer's.** The first version refreshed once after the whole block of enemy turns, which left the player's threshold stale between two shots of the same round, found while writing the test. `computer_turns_then` calls a hook after each landed attack, and `computer_turns` is the same with no hook.
+- **Damage over time goes through the poison pool.** A wiki entry of "-8 hit points per second for 10 seconds" is entered as 80 poison, which the clock pays out in wounds and poison resistance cuts. The wiki does not say what resists these items, so the cut is a stand-in, like the rate. Items needing energy or fire resistance, vision, limbs or the three variants of Cloud Kiss stay unusable. Automatic use (the auto-inject stimpaks) was left for a later cycle: it needs a trigger the per-round rebuild now makes possible.
+- **The barter formula was right, and a stand-in was wrong.** The wiki's page is reachable through the MediaWiki API (the page fetcher was refused, which is why the formula came from a secondary table before). It gives the same numbers, and the row of 81 at Barter 80 settles the old "typo" note. The same page says Chet prices by Barter alone however the town sees the player, so his 25% cut, which was the roadmap's figure and not the wiki's, is removed. For a Mixed standing the page says 1:1 prices; no price rule models that yet.
+- **A rule that reads reputation is checked when reputation changes.** Rules ran only when their own quest changed, so "a negative NCR standing fails Don't Tread on the Bear!" could never fire from a standing change. `QuestBook` now lists the quests with such a rule, and `Game` runs the change and those rules as one unit on a copy (a refusal leaves the standing as it was). "Negative" is Shunned or worse. Only three of the wiki's faction effects were written as rules; the rest name quests, items or NPCs the game does not carry.
+- **Companions: a roster, a party of two, and the rest as data.** Loadouts are placeholders (the wiki has none). The refusals the wiki lists are `refuses_when` conditions in the data, so adding one needs no code. A companion goes home when their conditions turn true after joining, and when their NPC dies. They fight in every fight as allies built when the game loads, ahead of the encounter's own allies. A perk is granted by naming it: Arcade's Better Healing is the only one of the companion perks the game can act on. Nothing in the loaded data recruits anyone yet, so the party is reachable through the `companion_join` effect only.
+
+---
+
+#### Consequences
+
+- The save is version 6. `Game` has no effect it refuses as "not built" any more; the list of postponed effects stays for the next feature that needs it, and three tests that used a companion effect as their example now check something else.
+- Chet's shop no longer shows a cut. Trudy's does, for a player the town finds Accepted or better, or Mixed.
+- The Goodsprings gunfight lock takes hold when infamy reaches the third tier, not when the player next starts the quest; the golden scenario now expects the start to be refused.
+- A companion always starts a fight at full health and is not wounded in the world; the player cannot give them orders.
+- Cloning the whole game on a reputation change is a few microseconds; the benchmark for the party is 23 ns per join and leave, and the fight benchmark did not move (549 ns before and 550 ns after).
+- 167 of 195 consumables are usable; 28 wait on damage types, vision, limbs, variants, sneak, automatic use and weapon effects.
+
+---
+
+#### References
+
+- `crates/engine/src/combat/fight.rs`, `ai.rs`, `crates/engine/src/game/battle.rs`, `state.rs`, `state/save.rs`
+- `crates/engine/src/companions.rs`, `companions/book.rs`, `companions/party.rs`, `shared/data/companion.rs`, `shared/condition.rs`, `shared/boost.rs`, `quests/book.rs`, `character/sheet.rs`, `saves/record.rs`
+- `crates/engine/tests/companions/main.rs`, `game/companions.rs`, `game/battle.rs`, `combat/ai.rs`, `combat/fight.rs`, `inventory/real_data.rs`, `crates/engine/benches/companions.rs`, `tests/scenarios/goodsprings.json`
+- `data/companions/companions.json`, `data/quests/slice_reputation.json`, `data/quests/consequences.json`, `data/rules/formulas.json`, `data/items/uses.json`, `data/vendors/vendors.json`, `data/perks/modifiers.json`, `schemas/companion.schema.json`, `schemas/item.schema.json`, `scripts/normalize.py`, `scripts/validate.py`
+- Fallout wiki, Barter (Fallout: New Vegas), read through the MediaWiki API
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-09 | Initial entry | deltaog-117 |
+
+---
+
 ## 🧠 Usage Guidelines
 
 ### When to Write an Entry

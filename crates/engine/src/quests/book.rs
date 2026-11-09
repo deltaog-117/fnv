@@ -4,7 +4,7 @@ use std::collections::HashMap;
 
 use thiserror::Error;
 
-use crate::shared::{Quest, QuestId, QuestStage, Rule, Stage};
+use crate::shared::{Condition, Quest, QuestId, QuestStage, Rule, Stage};
 
 /// A quest definition was rejected while building the book.
 #[derive(Debug, Clone, PartialEq, Eq, Error)]
@@ -41,6 +41,9 @@ struct Entry {
 #[derive(Debug, Default)]
 pub struct QuestBook {
     quests: HashMap<QuestId, Entry>,
+    /// Quests with an automated rule that reads the player's standing, sorted so
+    /// the rules run in the same order every time.
+    standing_quests: Vec<QuestId>,
 }
 
 impl QuestBook {
@@ -76,7 +79,28 @@ impl QuestBook {
                 });
             }
         }
-        Ok(Self { quests: book })
+        let mut standing_quests: Vec<QuestId> = book
+            .iter()
+            .filter(|(_, entry)| {
+                entry.rules.iter().any(|rule| {
+                    !rule.effects.is_empty()
+                        && rule.conditions.iter().any(Condition::reads_standing)
+                })
+            })
+            .map(|(id, _)| id.clone())
+            .collect();
+        standing_quests.sort();
+        Ok(Self {
+            quests: book,
+            standing_quests,
+        })
+    }
+
+    /// The quests whose rules read the player's standing: the ones to check again
+    /// when it changes.
+    #[must_use]
+    pub fn standing_quests(&self) -> &[QuestId] {
+        &self.standing_quests
     }
 
     /// True when the book defines the quest.

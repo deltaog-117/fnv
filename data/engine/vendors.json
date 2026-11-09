@@ -6,13 +6,6 @@
     "place": "goodsprings_general_store",
     "caps": 500,
     "repair": {"skill": 50},
-    "discount": {
-      "percent": 25,
-      "when": [
-        {"type": "reputation", "faction": "goodsprings", "level": "accepted"},
-        {"type": "reputation", "faction": "goodsprings", "level": "mixed", "op": "is"}
-      ]
-    },
     "stock": [
       {"item": "9mm_round", "count": 60},
       {"item": "357_magnum_round", "count": 30},

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "arcade_israel_gannon",
+    "name": "Arcade Gannon",
+    "loadout": {"npc": "arcade_israel_gannon", "weapon": "laser_pistol"},
+    "perk": "better_healing",
+    "refuses_when": [
+      {"type": "reputation", "faction": "followers_of_the_apocalypse", "level": "shunned", "op": "at_most"},
+      {"type": "reputation", "faction": "caesar_s_legion", "level": "accepted"}
+    ]
+  },
+  {
+    "id": "boone",
+    "name": "Craig Boone",
+    "loadout": {"npc": "boone", "weapon": "sniper_rifle", "armor": "1st_recon_assault_armor"},
+    "refuses_when": [
+      {"type": "reputation", "faction": "new_california_republic", "level": "shunned", "op": "at_most"},
+      {"type": "reputation", "faction": "caesar_s_legion", "level": "accepted"}
+    ]
+  },
+  {
+    "id": "cass",
+    "name": "Rose of Sharon Cassidy",
+    "loadout": {"npc": "cass", "weapon": "357_magnum_revolver", "armor": "leather_armor"},
+    "refuses_when": [
+      {"type": "reputation", "faction": "new_california_republic", "level": "shunned", "op": "at_most"}
+    ]
+  },
+  {
+    "id": "ed_e",
+    "name": "ED-E",
+    "loadout": {"npc": "ed_e", "weapon": "laser_pistol", "kind": "robot"}
+  },
+  {
+    "id": "lily_bowen",
+    "name": "Lily Bowen",
+    "loadout": {"npc": "lily_bowen", "weapon": "hunting_rifle", "kind": "super_mutant"}
+  },
+  {
+    "id": "raul_tejada",
+    "name": "Raul Tejada",
+    "loadout": {"npc": "raul_tejada", "weapon": "cowboy_repeater"}
+  },
+  {
+    "id": "rex",
+    "name": "Rex",
+    "loadout": {"npc": "rex", "weapon": "brass_knuckles", "kind": "animal"}
+  },
+  {
+    "id": "veronica",
+    "name": "Veronica",
+    "loadout": {"npc": "veronica_renata_santangelo", "weapon": "power_fist"},
+    "refuses_when": [
+      {"type": "reputation", "faction": "brotherhood_of_steel", "level": "shunned", "op": "at_most"}
+    ]
+  }
+]

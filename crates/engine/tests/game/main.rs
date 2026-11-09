@@ -12,6 +12,7 @@ mod automation;
 mod battle;
 mod boosts;
 mod clock;
+mod companions;
 mod health;
 mod items;
 mod pack;

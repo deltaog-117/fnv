@@ -248,6 +248,8 @@ fn only_the_modeled_perks_and_traits_carry_modifiers() {
         [
             "action_boy_action_girl",
             "better_criticals",
+            // Arcade Gannon grants it while he is in the party.
+            "better_healing",
             "demolition_expert",
             "educated",
             "entomologist",

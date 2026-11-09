@@ -11,17 +11,17 @@ use std::num::NonZeroU32;
 
 use thiserror::Error;
 
-use crate::character::{Character, CharacterRules, Edge, Level, SpecialSet};
+use crate::character::{Character, CharacterRules, Edge, Level, Situation, SpecialSet};
 use crate::combat::{
     Against, Aim, AimedHitChance, AttackProfile, Combat, CombatError, Combatant, Condition, Dice,
     FighterId, Flight, Magazine, Multiplier, Percent, Points, Power, Reload, Resolution, Rules,
-    Spread, StatError, computer_turns,
+    Spread, StatError, computer_turns_then,
 };
 use crate::inventory::CopyId;
 use crate::shared::{
-    AmmoFamilyId, Armor, BatchError, CharacterView, EffectError, Encounter, EncounterId, Foe,
-    FoeKind, GameData, InventoryView, ItemId, ModelError, Npc, NpcSpecial, Skill, Special,
-    SpecialLevel, Weapon, WeaponClass,
+    AmmoFamilyId, Armor, BatchError, CharacterView, CompanionId, EffectError, Encounter,
+    EncounterId, Foe, FoeKind, GameData, HealthPercent, InventoryView, ItemId, ModelError, Npc,
+    NpcSpecial, Skill, Special, SpecialLevel, Weapon, WeaponClass,
 };
 use crate::weapon_mods::Fitting;
 
@@ -252,6 +252,7 @@ impl Fighter {
     ) -> Result<Self, StatError> {
         let level_of = |stat| u32::from(character.special(stat).get());
         let edge = character.edge(weapon.skill);
+        let boosts = character.boosts();
         let crit = f64::from(level_of(Special::Luck).min(CRIT_LUCK_CAP)) * weapon.crit_chance_mult
             + f64::from(edge.crit_chance);
         let bonus = match weapon.class {
@@ -266,12 +267,17 @@ impl Fighter {
             name,
             max_hp,
             max_ap: character.action_points(),
-            dt: Points::try_new((armor.get() + f64::from(edge.threshold)).max(0.0))?,
+            // A chem's threshold and damage add to the perks' and the armor's; foes
+            // carry no chems, so for them these are zero.
+            dt: Points::try_new(
+                (armor.get() + f64::from(edge.threshold) + f64::from(boosts.damage_threshold()))
+                    .max(0.0),
+            )?,
             dr: Points::try_new((resistance.get() + f64::from(edge.resistance)).max(0.0))?,
             crit_chance: Percent::try_new(crit.round().clamp(0.0, 100.0) as u32)?,
             attack: AttackProfile {
                 ap_cost: scaled_cost(weapon.ap_cost, edge.ap_cost_percent),
-                base_damage: scaled(weapon.damage, edge.damage_percent)?,
+                base_damage: scaled(weapon.damage, edge.damage_percent + boosts.damage_percent())?,
                 crit_damage: scaled(weapon.crit_damage, edge.crit_damage_percent)?,
                 skill: Multiplier::FULL,
                 condition: Multiplier::FULL,
@@ -414,6 +420,58 @@ struct Prepared {
     allies: Vec<Fighter>,
 }
 
+/// What the player brings into a fight, kept so the fighter can be built again when
+/// a perk that reads their health switches on or off mid-fight.
+///
+/// The character is a copy: the game itself is not touched until the fight is
+/// settled.
+#[derive(Debug, Clone)]
+pub(super) struct PlayerKit {
+    character: Character,
+    max_hp: NonZeroU32,
+    stats: WeaponStats,
+    dt: Points,
+    dr: Points,
+    rounds: Rounds,
+    condition: Option<Multiplier>,
+    weapon: ItemId,
+}
+
+impl PlayerKit {
+    /// The player as the fight reads them, with the situation the character is in.
+    pub(super) fn fighter(&self) -> Result<Fighter, StatError> {
+        let mut fighter = Fighter::assemble(
+            "You".to_owned(),
+            self.max_hp,
+            &self.character,
+            &self.stats,
+            self.dt,
+            self.dr,
+            self.rounds.clone(),
+        )?;
+        if let Some(condition) = self.condition {
+            fighter.attack.condition = condition;
+        }
+        fighter.weapon = Some(self.weapon.clone());
+        Ok(fighter)
+    }
+
+    /// The kit for a player with `hit_points` left, or `None` when the character is
+    /// already in that situation (nothing to rebuild).
+    fn at_health(&self, hit_points: u32) -> Option<Self> {
+        let now = Situation {
+            health: HealthPercent::of(hit_points, self.max_hp.get()),
+            ..self.character.situation()
+        };
+        if self.character.situation() == now {
+            return None;
+        }
+        let mut next = self.clone();
+        next.character.set_situation(now);
+        Some(next)
+    }
+}
+
 /// Everything a fight needs from the data, checked once and shared.
 #[derive(Debug, Default)]
 pub struct Arsenal {
@@ -422,6 +480,8 @@ pub struct Arsenal {
     /// The ammunition items of each family, standard loads first.
     ammo: HashMap<AmmoFamilyId, Vec<ItemId>>,
     encounters: BTreeMap<EncounterId, Prepared>,
+    /// Each companion as a fighter, ready for when they are in the party.
+    companions: BTreeMap<CompanionId, Fighter>,
 }
 
 impl Arsenal {
@@ -449,7 +509,20 @@ impl Arsenal {
             armor,
             ammo: ammo_by_family(data),
             encounters: BTreeMap::new(),
+            companions: BTreeMap::new(),
         };
+        for companion in data.companions.iter() {
+            // Errors name this id where they would name an encounter.
+            let context =
+                EncounterId::try_new(format!("companion_{}", companion.id)).map_err(|source| {
+                    BattleError::BadNpc {
+                        npc: companion.loadout.npc.clone(),
+                        source,
+                    }
+                })?;
+            let fighter = arsenal.foe(data, &context, &companion.loadout)?;
+            arsenal.companions.insert(companion.id.clone(), fighter);
+        }
         for encounter in data.encounters.iter() {
             require_fixed_foe(encounter)?;
             let foes = encounter
@@ -480,6 +553,11 @@ impl Arsenal {
             .get(weapon)?
             .condition_max
             .map(|max| fitting.condition_max(max))
+    }
+
+    /// A companion as they fight, when the data has one by this id.
+    pub(super) fn companion(&self, id: &CompanionId) -> Option<&Fighter> {
+        self.companions.get(id)
     }
 
     /// The encounters, ordered by id.
@@ -712,9 +790,10 @@ fn npc_character(npc: &Npc) -> Result<Character, BattleError> {
 }
 
 impl Arsenal {
-    /// The player as a fighter: their numbers, the weapon in hand and the armor
-    /// worn (`worn` lists the equipped armor ids).
-    pub(super) fn player(
+    /// What it takes to build the player as a fighter, now and again as their
+    /// situation changes: their numbers, the weapon in hand and the armor worn
+    /// (`worn_armor` lists the equipped armor ids).
+    pub(super) fn player_kit(
         &self,
         character: &Character,
         weapon: Option<&ItemId>,
@@ -722,14 +801,13 @@ impl Arsenal {
         pack: &impl InventoryView,
         weapon_wear: u32,
         fitting: &Fitting,
-    ) -> Result<Fighter, BattleError> {
+    ) -> Result<PlayerKit, BattleError> {
         let weapon_id = weapon.ok_or(BattleError::Unarmed)?;
         let stats = self
             .weapons
             .get(weapon_id)
             .ok_or_else(|| BattleError::UnusableGear(weapon_id.clone()))?
             .fitted(fitting)?;
-        let stats = &stats;
         let pieces = worn_armor
             .iter()
             .map(|id| {
@@ -759,13 +837,19 @@ impl Arsenal {
             stock: item.as_ref().map(|load| pack.item_count(load)),
             item,
         };
-        let mut fighter =
-            Fighter::assemble("You".to_owned(), max_hp, character, stats, dt, dr, rounds)?;
-        if let Some(max) = stats.condition_max {
-            fighter.attack.condition = Condition::new(max, weapon_wear).multiplier();
-        }
-        fighter.weapon = Some(weapon_id.clone());
-        Ok(fighter)
+        let condition = stats
+            .condition_max
+            .map(|max| Condition::new(max, weapon_wear).multiplier());
+        Ok(PlayerKit {
+            character: character.clone(),
+            max_hp,
+            stats,
+            dt,
+            dr,
+            rounds,
+            condition,
+            weapon: weapon_id.clone(),
+        })
     }
 
     pub(super) fn foes(&self, id: &EncounterId) -> Option<&[Fighter]> {
@@ -803,18 +887,21 @@ pub struct Battle {
     shots: u32,
     /// The very weapon the player carries into the fight, so its wear lands on it.
     weapon: Option<CopyId>,
+    /// What the player's fighter is rebuilt from as their health changes.
+    kit: Box<PlayerKit>,
 }
 
 impl Battle {
     /// Starts the fight with the player at `hp`, ahead of the allies and the foes.
     pub(super) fn start(
         encounter: EncounterId,
-        player: Fighter,
+        kit: PlayerKit,
         hp: NonZeroU32,
         allies: &[Fighter],
         foes: &[Fighter],
         weapon: Option<CopyId>,
     ) -> Result<Self, BattleError> {
+        let player = kit.fighter()?;
         let order = std::iter::once((crate::combat::Side::Player, player))
             .chain(
                 allies
@@ -835,6 +922,7 @@ impl Battle {
             player,
             shots: 0,
             weapon,
+            kit: Box::new(kit),
         })
     }
 
@@ -871,7 +959,16 @@ impl Battle {
     /// Plays the turns of allies and enemies that come before the player's first
     /// one, when their sequence is higher. Does nothing when the player acts first.
     pub fn open(&mut self, dice: &mut impl Dice) -> Vec<Resolution> {
-        computer_turns(&mut self.combat, dice)
+        self.computer_turns(dice)
+    }
+
+    /// Plays the allies' and the enemies' turns, building the player's fighter again
+    /// after every attack, so a perk like Nerd Rage works from the very next shot.
+    fn computer_turns(&mut self, dice: &mut impl Dice) -> Vec<Resolution> {
+        let (kit, player) = (&mut self.kit, self.player);
+        computer_turns_then(&mut self.combat, dice, |combat| {
+            refresh_player(kit, player, combat);
+        })
     }
 
     /// The player tries to run away. A failed try costs the rest of the turn, so the
@@ -904,6 +1001,7 @@ impl Battle {
     ) -> Result<Resolution, CombatError> {
         let resolution = self.combat.attack(target, power, dice)?;
         self.shots = self.shots.saturating_add(1);
+        refresh_player(&mut self.kit, self.player, &mut self.combat);
         Ok(resolution)
     }
 
@@ -924,7 +1022,30 @@ impl Battle {
     /// [`CombatError::Over`] when the fight is already over.
     pub fn end_turn(&mut self, dice: &mut impl Dice) -> Result<Vec<Resolution>, CombatError> {
         self.combat.end_turn()?;
-        Ok(computer_turns(&mut self.combat, dice))
+        Ok(self.computer_turns(dice))
+    }
+}
+
+/// Builds the player's fighter again when their health has moved into another
+/// situation, so a perk like Nerd Rage works from the hit that wounds them and
+/// stops once they are healed. A refused swap leaves the fighter as it was: a fight
+/// must never fail because of a perk.
+fn refresh_player(
+    kit: &mut PlayerKit,
+    player: FighterId,
+    combat: &mut Combat<Fighter, AimedHitChance>,
+) {
+    let Some(hit_points) = combat.hp(player) else {
+        return;
+    };
+    let Some(next) = kit.at_health(hit_points) else {
+        return;
+    };
+    let Ok(fighter) = next.fighter() else {
+        return;
+    };
+    if combat.replace_combatant(player, fighter).is_ok() {
+        *kit = next;
     }
 }
 

@@ -40,7 +40,7 @@ mod fight;
 mod hit;
 mod stats;
 
-pub use ai::{computer_turns, enemy_turns};
+pub use ai::{computer_turns, computer_turns_then, enemy_turns};
 pub use condition::Condition;
 pub use damage::{Against, Rules, damage_after_armor, damage_before_armor};
 pub use fight::{

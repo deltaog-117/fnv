@@ -144,7 +144,7 @@
   {"item": "sacred_datura_root", "boost": {"effects": [{"stat": "perception", "amount": -2, "minutes": 2}]}},
   {"item": "scotch", "boost": {"heal": 20, "effects": [{"stat": "strength", "amount": 1, "minutes": 4}, {"stat": "charisma", "amount": 1, "minutes": 4}, {"stat": "intelligence", "amount": -1, "minutes": 4}]}},
   {"item": "sierra_madre_martini", "boost": {"effects": [{"stat": "max_hp", "amount": 75, "minutes": 4}, {"stat": "endurance", "amount": 4, "minutes": 4}, {"stat": "strength", "amount": 2, "minutes": 4}]}},
-  {"item": "slasher", "boost": {"effects": [{"stat": "damage_resistance", "amount": 25, "minutes": 1}]}},
+  {"item": "slasher", "boost": {"effects": [{"stat": "damage_percent", "amount": 25, "minutes": 1}, {"stat": "damage_resistance", "amount": 25, "minutes": 1}]}},
   {"item": "spore_carrier_sap", "boost": {"heal": 4}},
   {"item": "spore_plant_pods", "boost": {"heal": 24, "effects": [{"stat": "poison_resistance", "amount": 25, "minutes": 2}]}},
   {"item": "strange_meat", "boost": {"heal": 5, "rads": 3, "effects": [{"stat": "strength", "amount": -1, "minutes": 2}]}},
@@ -158,5 +158,12 @@
   {"item": "whiskey", "boost": {"effects": [{"stat": "strength", "amount": 1, "minutes": 4}, {"stat": "charisma", "amount": 1, "minutes": 4}, {"stat": "intelligence", "amount": -1, "minutes": 4}]}},
   {"item": "white_horsenettle", "boost": {"heal": 5, "effects": [{"stat": "endurance", "amount": -1, "minutes": 2}, {"stat": "agility", "amount": -1, "minutes": 2}]}},
   {"item": "wine", "boost": {"heal": 20, "effects": [{"stat": "strength", "amount": 1, "minutes": 4}, {"stat": "charisma", "amount": 1, "minutes": 4}, {"stat": "intelligence", "amount": -1, "minutes": 4}]}},
-  {"item": "yao_guai_meat", "boost": {"heal": 10, "rads": 10}}
+  {"item": "yao_guai_meat", "boost": {"heal": 10, "rads": 10}},
+  {"item": "datura_hide", "boost": {"effects": [{"stat": "damage_threshold", "amount": 1, "minutes": 1}]}},
+  {"item": "large_wasteland_tequila", "boost": {"effects": [{"stat": "strength", "amount": 3, "minutes": 4}, {"stat": "charisma", "amount": 1, "minutes": 4}, {"stat": "intelligence", "amount": -3, "minutes": 4}, {"stat": "damage_threshold", "amount": 2, "minutes": 2}, {"stat": "poison_resistance", "amount": 10, "minutes": 2}]}},
+  {"item": "psycho", "boost": {"effects": [{"stat": "damage_percent", "amount": 25, "minutes": 4}]}},
+  {"item": "dark_datura", "boost": {"poison": 60, "effects": [{"stat": "intelligence", "amount": -2, "minutes": 2}]}},
+  {"item": "mother_darkness", "boost": {"poison": 80, "effects": [{"stat": "agility", "amount": -3, "minutes": 1}, {"stat": "perception", "amount": -3, "minutes": 1}]}},
+  {"item": "silver_sting", "boost": {"poison": 80, "effects": [{"stat": "strength", "amount": -2, "minutes": 1}]}},
+  {"item": "tremble", "boost": {"poison": 40, "effects": [{"stat": "guns", "amount": -50, "minutes": 1}, {"stat": "explosives", "amount": -50, "minutes": 1}, {"stat": "melee_weapons", "amount": -50, "minutes": 1}, {"stat": "energy_weapons", "amount": -50, "minutes": 1}]}}
 ]

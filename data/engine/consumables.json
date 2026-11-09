@@ -1530,7 +1530,19 @@
     "amount": -2,
     "duration_s": 90.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "poison": 60,
+    "effects": [
+     {
+      "stat": "intelligence",
+      "amount": -2,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "datura_antivenom",
@@ -1566,7 +1578,18 @@
     "amount": 1,
     "duration_s": 60.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "damage_threshold",
+      "amount": 1,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "daturana",
@@ -4018,7 +4041,38 @@
    "type": "alcohol",
    "chance_percent": 15.0
   },
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": 3,
+      "minutes": 4
+     },
+     {
+      "stat": "charisma",
+      "amount": 1,
+      "minutes": 4
+     },
+     {
+      "stat": "intelligence",
+      "amount": -3,
+      "minutes": 4
+     },
+     {
+      "stat": "damage_threshold",
+      "amount": 2,
+      "minutes": 2
+     },
+     {
+      "stat": "poison_resistance",
+      "amount": 10,
+      "minutes": 2
+     }
+    ]
+   }
+  }
  },
  {
   "id": "leg_healing_powder",
@@ -4416,7 +4470,24 @@
     "duration_s": 10.0
    }
   ],
-  "skill": "none"
+  "skill": "none",
+  "on_use": {
+   "boost": {
+    "poison": 80,
+    "effects": [
+     {
+      "stat": "agility",
+      "amount": -3,
+      "minutes": 1
+     },
+     {
+      "stat": "perception",
+      "amount": -3,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "mushroom_cloud",
@@ -5140,6 +5211,17 @@
   "addiction": {
    "type": "psycho",
    "chance_percent": 10.0
+  },
+  "on_use": {
+   "boost": {
+    "effects": [
+     {
+      "stat": "damage_percent",
+      "amount": 25,
+      "minutes": 4
+     }
+    ]
+   }
   }
  },
  {
@@ -5720,7 +5802,19 @@
     "per_second": true,
     "duration_s": 10.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "poison": 80,
+    "effects": [
+     {
+      "stat": "strength",
+      "amount": -2,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "slasher",
@@ -5747,6 +5841,11 @@
   "on_use": {
    "boost": {
     "effects": [
+     {
+      "stat": "damage_percent",
+      "amount": 25,
+      "minutes": 1
+     },
      {
       "stat": "damage_resistance",
       "amount": 25,
@@ -6330,7 +6429,34 @@
     "per_second": true,
     "duration_s": 20.0
    }
-  ]
+  ],
+  "on_use": {
+   "boost": {
+    "poison": 40,
+    "effects": [
+     {
+      "stat": "guns",
+      "amount": -50,
+      "minutes": 1
+     },
+     {
+      "stat": "explosives",
+      "amount": -50,
+      "minutes": 1
+     },
+     {
+      "stat": "melee_weapons",
+      "amount": -50,
+      "minutes": 1
+     },
+     {
+      "stat": "energy_weapons",
+      "amount": -50,
+      "minutes": 1
+     }
+    ]
+   }
+  }
  },
  {
   "id": "turbo",

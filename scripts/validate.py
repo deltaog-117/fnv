@@ -75,7 +75,7 @@ def main(argv):
     validators = {
         name: Draft202012Validator({"$ref": f"{name}.schema.json"}, registry=registry)
         for name in ("item", "quest", "npc", "dialogue", "location", "perk", "trait",
-                     "faction", "reputation", "creature", "encounter", "vendor", "bed",
+                     "faction", "reputation", "creature", "encounter", "vendor", "bed", "companion",
                      "station", "find")
     }
 
@@ -274,6 +274,23 @@ def main(argv):
         for item in {i for i in lines if lines.count(i) > 1}:
             report("refs", vendor["id"], f"{item} is listed twice")
     vendor_ids = {v["id"] for v in vendors}
+    companions, _ = load_group("companions.json", "companion", "companions")
+    faction_ids = {f["id"] for f in json.load(open(engine / "factions.json"))}
+    for who in companions:
+        loadout = who["loadout"]
+        if loadout["npc"] not in npc_ids:
+            report("refs", who["id"], f"unknown npc {loadout['npc']}")
+        if loadout["weapon"] not in weapon_ids:
+            report("refs", who["id"], f"{loadout['weapon']} is not a weapon")
+        if loadout.get("armor") and loadout["armor"] not in armor_ids:
+            report("refs", who["id"], f"{loadout['armor']} is not armor")
+        if loadout.get("when"):
+            report("refs", who["id"], "a loadout may not carry a `when`")
+        if who.get("perk") and who["perk"] not in perk_ids:
+            report("refs", who["id"], f"unknown perk {who['perk']}")
+        for ref in refs_in(who.get("refuses_when", []), "faction"):
+            if ref not in faction_ids:
+                report("refs", who["id"], f"unknown faction {ref}")
     beds, _ = load_group("beds.json", "bed", "beds")
     for bed in beds:
         if bed["place"] not in loc_ids:

@@ -5,7 +5,8 @@ use std::sync::Arc;
 use engine::game::Game;
 use engine::quests::QuestBook;
 use engine::shared::{
-    Effect, FlagId, Quest, QuestId, QuestStage, QuestStatus, QuestView, WorldView, apply_all,
+    Effect, FlagId, InventoryView, Quest, QuestId, QuestStage, QuestStatus, QuestView, WorldView,
+    apply_all,
 };
 use proptest::prelude::*;
 use serde_json::json;
@@ -19,7 +20,7 @@ fn game() -> Game {
             "id": "a", "name": "a", "kind": "side", "dlc": "base",
             "stages": [
                 {"stage": 5, "description": "s"},
-                {"stage": 10, "description": "s", "on_enter": [{"type": "companion_join", "companion": "c"}]},
+                {"stage": 10, "description": "s", "on_enter": [{"type": "caps", "amount": 50}]},
                 {"stage": 20, "description": "s", "finish": true,
                  "on_enter": [{"type": "set_flag", "flag": "a_done"}]},
             ],
@@ -70,14 +71,11 @@ fn flag(text: &str) -> FlagId {
 }
 
 #[test]
-fn a_stage_reward_for_an_unbuilt_feature_is_deferred_not_lost() {
+fn a_stage_reward_is_paid_when_the_stage_is_reached() {
     let mut game = game();
     set_stage(&mut game, "a", 10).expect("the stage is reached");
-    let deferred = game.deferred();
-    assert_eq!(deferred.len(), 1);
-    assert_eq!(deferred[0].quest, id("a"));
-    assert_eq!(deferred[0].feature, "companions");
-    assert!(matches!(deferred[0].effect, Effect::CompanionJoin { .. }));
+    assert_eq!(game.caps(), 50);
+    assert!(game.deferred().is_empty());
 }
 
 #[test]
@@ -85,7 +83,7 @@ fn stage_effects_pay_once_even_if_the_stage_is_set_again() {
     let mut game = game();
     set_stage(&mut game, "a", 10).expect("first time");
     set_stage(&mut game, "a", 10).expect("second time");
-    assert_eq!(game.deferred().len(), 1);
+    assert_eq!(game.caps(), 50);
 }
 
 #[test]
@@ -126,12 +124,12 @@ fn an_effect_that_fails_undoes_the_whole_change() {
     assert!(game.deferred().is_empty());
 }
 
-fn observe(game: &Game) -> (Vec<QuestStatus>, Vec<Option<QuestStage>>, usize, bool) {
+fn observe(game: &Game) -> (Vec<QuestStatus>, Vec<Option<QuestStage>>, u32, bool) {
     let quests = [id("a"), id("b"), id("c")];
     (
         quests.iter().map(|q| game.quest_status(q)).collect(),
         quests.iter().map(|q| game.quest_stage(q)).collect(),
-        game.deferred().len(),
+        game.caps(),
         game.flag(&flag("a_done")),
     )
 }
@@ -160,8 +158,8 @@ proptest! {
                 Ok(()) => entered_ten |= (quest, stage) == ("a", 10),
                 Err(_) => prop_assert_eq!(observe(&game), before),
             }
-            prop_assert!(game.deferred().len() <= 1);
+            prop_assert!(game.caps() <= 50);
         }
-        prop_assert_eq!(game.deferred().len(), usize::from(entered_ten));
+        prop_assert_eq!(game.caps(), if entered_ten { 50 } else { 0 });
     }
 }

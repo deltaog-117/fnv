@@ -208,7 +208,13 @@
    "other": "Arcade Gannon as companion"
   },
   "requires_text": "Arcade Gannon as companion",
-  "effects_text": "All consumables regain 20% more health."
+  "effects_text": "All consumables regain 20% more health.",
+  "modifiers": [
+   {
+    "type": "heal_percent",
+    "percent": 20
+   }
+  ]
  },
  {
   "id": "big_brained",

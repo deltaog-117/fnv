@@ -270,3 +270,51 @@ fn an_unknown_target_is_refused() {
         Err(CombatError::NoSuchFighter(2))
     );
 }
+
+#[test]
+fn a_replaced_fighter_fights_with_its_new_numbers_and_keeps_its_hit_points() {
+    let mut c = duel(Plain::new(50, 10.0), Plain::new(100, 1.0), 100);
+    let [player, enemy] = ids(&c)[..] else {
+        panic!("two fighters")
+    };
+    c.replace_combatant(player, Plain::new(50, 30.0))
+        .expect("the same maximum");
+    c.attack(enemy, Power::Normal, &mut Rolls::new(&[1, 100]))
+        .expect("the attack lands");
+    assert_eq!(c.hp(enemy), Some(70), "the new weapon did 30");
+    assert_eq!(c.hp(player), Some(50));
+}
+
+#[test]
+fn a_replacement_with_another_maximum_or_for_no_one_is_refused() {
+    let mut c = duel(Plain::new(50, 10.0), Plain::new(50, 10.0), 100);
+    let [player, _] = ids(&c)[..] else {
+        panic!("two fighters")
+    };
+    assert_eq!(
+        c.replace_combatant(player, Plain::new(60, 10.0)),
+        Err(CombatError::MaxHpChanged {
+            id: player.index(),
+            was: 50,
+            now: 60
+        })
+    );
+    assert!(matches!(
+        c.replace_combatant(
+            ids(&duel_with_three()).into_iter().nth(2).expect("a third"),
+            Plain::new(50, 1.0)
+        ),
+        Err(CombatError::NoSuchFighter(2))
+    ));
+}
+
+fn duel_with_three() -> Combat<Plain, FlatHitChance> {
+    fight(
+        vec![
+            (Side::Player, Plain::new(5, 1.0)),
+            (Side::Enemy, Plain::new(5, 1.0)),
+            (Side::Enemy, Plain::new(5, 1.0)),
+        ],
+        100,
+    )
+}

@@ -46,3 +46,9 @@ A slice entry may mark a stage `"optional": true` (`slice_goodsprings.json` does
 this for stages 30 and 40 of Run Goodsprings Run, the two side tasks). Reaching an
 optional stage when the quest is already past it changes nothing instead of being
 refused, so the tasks can be done in either order.
+
+`slice_reputation.json` authors three rules the wiki lists as effects of a negative
+NCR or Legion standing (Most Wanted starts and Don't Tread on the Bear! fails for
+the NCR, Caesar's Foe starts for the Legion); the three curated rows they merge
+into are at the end of `consequences.json`. A slice rule may carry the wiki's
+`when` text to pick one of two rules with the same kind and target.

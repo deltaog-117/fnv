@@ -222,6 +222,17 @@ pub enum CombatError {
         /// The fighter's maximum.
         max: u32,
     },
+    /// A fighter's replacement must keep the maximum hit points, or the hit points
+    /// it has left would mean something else.
+    #[error("fighter {id} has {was} hit points at most and the replacement {now}")]
+    MaxHpChanged {
+        /// The fighter.
+        id: usize,
+        /// The maximum it had.
+        was: u32,
+        /// The maximum the replacement has.
+        now: u32,
+    },
     /// The weapon holds fewer rounds than one attack uses.
     #[error("the weapon holds {loaded} rounds and an attack uses {needed}")]
     OutOfAmmo {
@@ -362,6 +373,31 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
         }
         slot.hp = hp.get();
         Ok(self)
+    }
+
+    /// Swaps the numbers `id` fights with, for a fighter whose perks switch on or off
+    /// as the fight goes (Nerd Rage below a fifth of their hit points).
+    ///
+    /// Hit points, rounds in the weapon and the turn in progress are kept: the
+    /// action points left this turn are not topped up, the new maximum applies from
+    /// the next turn, and the order of play does not change.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError::NoSuchFighter`] for an unknown id, and
+    /// [`CombatError::MaxHpChanged`] when the replacement has a different maximum;
+    /// the fight is unchanged in both cases.
+    pub fn replace_combatant(&mut self, id: FighterId, who: C) -> Result<(), CombatError> {
+        let slot = self
+            .fighters
+            .get_mut(id.0)
+            .ok_or(CombatError::NoSuchFighter(id.0))?;
+        let (was, now) = (slot.who.max_hp().get(), who.max_hp().get());
+        if was != now {
+            return Err(CombatError::MaxHpChanged { id: id.0, was, now });
+        }
+        slot.who = who;
+        Ok(())
     }
 
     /// Whether the fight goes on or who won.

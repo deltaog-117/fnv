@@ -169,6 +169,20 @@ pub enum Condition {
 }
 
 impl Condition {
+    /// Whether the answer can change when the player's standing with a faction
+    /// does, so a rule that holds it must be checked again at that moment.
+    #[must_use]
+    pub fn reads_standing(&self) -> bool {
+        match self {
+            Self::Reputation { .. }
+            | Self::ReputationTier { .. }
+            | Self::ReputationPoints { .. } => true,
+            Self::All { of } | Self::Any { of } => of.iter().any(Self::reads_standing),
+            Self::Not { of } => of.reads_standing(),
+            _ => false,
+        }
+    }
+
     /// Every `type` value a condition can have, in schema order.
     pub const ALL_TAGS: [&'static str; 20] = [
         "all",
@@ -323,5 +337,25 @@ impl From<QuestCondition> for QuestConditionWire {
             state,
             stage,
         }
+    }
+}
+
+#[cfg(test)]
+mod standing_tests {
+    use super::*;
+
+    fn parse(json: &str) -> Condition {
+        serde_json::from_str(json).expect("the literal is a valid condition")
+    }
+
+    #[test]
+    fn only_conditions_that_ask_about_a_standing_read_it_even_when_nested() {
+        let rep = r#"{"type": "reputation", "faction": "ncr", "level": "shunned"}"#;
+        let flag = r#"{"type": "flag", "flag": "f", "value": true}"#;
+        assert!(parse(rep).reads_standing());
+        assert!(!parse(flag).reads_standing());
+        assert!(parse(&format!(r#"{{"type": "not", "of": {rep}}}"#)).reads_standing());
+        assert!(parse(&format!(r#"{{"type": "all", "of": [{flag}, {rep}]}}"#)).reads_standing());
+        assert!(!parse(&format!(r#"{{"type": "any", "of": [{flag}, {flag}]}}"#)).reads_standing());
     }
 }

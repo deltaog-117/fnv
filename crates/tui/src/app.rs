@@ -14,6 +14,7 @@ use engine::addiction::AddictionBook;
 use engine::character::PerkBook;
 use engine::clock::Span;
 use engine::combat::Dice;
+use engine::companions::CompanionBook;
 use engine::craft::{RecipeBook, StationBook};
 use engine::dialogue::{Conversation, DialogueBook};
 use engine::game::{Arsenal, Game, Outcome};
@@ -237,6 +238,8 @@ impl App {
         let arsenal = Arc::new(Arsenal::from_data(data).context("building the arsenal")?);
         let vendors = Arc::new(VendorBook::from_data(data).context("building the vendors")?);
         let beds = Arc::new(BedBook::from_data(data).context("building the beds")?);
+        let companions =
+            Arc::new(CompanionBook::from_data(data).context("building the companions")?);
         let recipes = Arc::new(
             RecipeBook::from_data(data, |item| items.contains(item))
                 .context("building the recipes")?,
@@ -257,6 +260,7 @@ impl App {
             .with_weapon_mods(weapon_mods)
             .with_arsenal(arsenal)
             .with_perks(Arc::new(PerkBook::base_game(data)))
+            .with_companions(companions)
             .with_beds(beds)
             .with_recipes(recipes)
             .with_stations(stations)
@@ -1210,7 +1214,7 @@ mod tests {
     }
 
     #[test]
-    fn a_player_the_town_likes_sees_the_discount_in_chets_shop() {
+    fn a_player_the_town_likes_sees_the_discount_in_trudys_shop() {
         let mut app = app();
         let town = engine::shared::FactionId::try_new("goodsprings").expect("valid id");
         apply_all(
@@ -1221,14 +1225,31 @@ mod tests {
             &mut app.game,
         )
         .expect("the town tracks reputation");
-        let chet = VendorId::try_new("chet").expect("valid id");
-        app.open_shop(&chet);
+        let trudy = VendorId::try_new("trudy").expect("valid id");
+        app.open_shop(&trudy);
         assert!(matches!(app.screen, Screen::Trading { .. }));
         assert!(
             screen(&app, 110, 30).contains("25% off for you"),
             "{}",
             screen(&app, 110, 30)
         );
+    }
+
+    #[test]
+    fn chet_gives_no_cut_however_much_the_town_likes_the_player() {
+        let mut app = app();
+        let town = engine::shared::FactionId::try_new("goodsprings").expect("valid id");
+        apply_all(
+            &[Effect::SetReputation {
+                faction: town,
+                level: engine::shared::ReputationLevel::Idolized,
+            }],
+            &mut app.game,
+        )
+        .expect("the town tracks reputation");
+        let chet = VendorId::try_new("chet").expect("valid id");
+        app.open_shop(&chet);
+        assert!(!screen(&app, 110, 30).contains("off for you"));
     }
 
     #[test]

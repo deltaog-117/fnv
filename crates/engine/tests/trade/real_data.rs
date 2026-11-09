@@ -68,7 +68,7 @@ fn a_vendor_can_pay_for_a_cheap_item() {
 }
 
 #[test]
-fn only_chet_and_trudy_give_a_price_cut() {
+fn only_trudy_gives_a_price_cut() {
     let (_, vendors) = game();
     let cuts: Vec<(&str, Option<u8>)> = vendors
         .iter()
@@ -76,10 +76,6 @@ fn only_chet_and_trudy_give_a_price_cut() {
         .collect();
     assert_eq!(
         cuts,
-        [
-            ("chet", Some(25)),
-            ("doc_mitchell", None),
-            ("trudy", Some(25))
-        ]
+        [("chet", None), ("doc_mitchell", None), ("trudy", Some(25))]
     );
 }

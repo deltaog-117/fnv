@@ -16,9 +16,12 @@ where
     C: Combatant,
     H: HitModel<C>,
 {
-    play(combat, dice, |combat| {
-        combat.side(combat.active()) != Some(Side::Enemy)
-    })
+    play(
+        combat,
+        dice,
+        |combat| combat.side(combat.active()) != Some(Side::Enemy),
+        |_| {},
+    )
 }
 
 /// Plays turns for everyone but the player's lead, enemies and allies alike, until
@@ -32,16 +35,37 @@ where
     C: Combatant,
     H: HitModel<C>,
 {
+    computer_turns_then(combat, dice, |_| {})
+}
+
+/// [`computer_turns`] that calls `after` with the fight once each attack has
+/// landed, so the caller can change a fighter's numbers between two shots of the
+/// same round (a perk that switches on when a hit leaves the player low).
+pub fn computer_turns_then<C, H>(
+    combat: &mut Combat<C, H>,
+    dice: &mut impl Dice,
+    after: impl FnMut(&mut Combat<C, H>),
+) -> Vec<Resolution>
+where
+    C: Combatant,
+    H: HitModel<C>,
+{
     let Some(lead) = combat.lead() else {
-        return enemy_turns(combat, dice);
+        return play(
+            combat,
+            dice,
+            |combat| combat.side(combat.active()) != Some(Side::Enemy),
+            after,
+        );
     };
-    play(combat, dice, |combat| combat.active() == lead)
+    play(combat, dice, |combat| combat.active() == lead, after)
 }
 
 fn play<C, H>(
     combat: &mut Combat<C, H>,
     dice: &mut impl Dice,
     hands_over: impl Fn(&Combat<C, H>) -> bool,
+    mut after: impl FnMut(&mut Combat<C, H>),
 ) -> Vec<Resolution>
 where
     C: Combatant,
@@ -62,7 +86,10 @@ where
         }
         let attacked = attacked.and_then(Result::ok);
         match attacked {
-            Some(resolution) => log.push(resolution),
+            Some(resolution) => {
+                log.push(resolution);
+                after(combat);
+            }
             // Out of action points (or nobody to shoot): the turn passes. A refused
             // end_turn means the fight is over, which the loop condition then sees.
             None if combat.end_turn().is_err() => break,

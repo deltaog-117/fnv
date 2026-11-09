@@ -5,6 +5,7 @@
 //! full-data load test instead of being dropped.
 
 mod bed;
+mod companion;
 mod dialogue;
 mod encounter;
 mod faction;
@@ -19,6 +20,7 @@ mod station;
 mod vendor;
 
 pub use bed::Bed;
+pub use companion::Companion;
 pub use dialogue::{Dialogue, Response, Topic, TopicSection};
 pub use encounter::{Encounter, Foe};
 pub use faction::{Faction, FactionKind, InfoValue, ReputationModel, ReputationNote};

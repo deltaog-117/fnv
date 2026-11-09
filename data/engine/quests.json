@@ -4289,6 +4289,35 @@
     }
    ]
   ],
+  "rules": [
+   {
+    "kind": "triggers",
+    "target": "Caesar's Foe",
+    "target_type": "quest",
+    "when": "negative Caesar's Legion reputation",
+    "note": "Legionary assassins are sent to kill the player throughout the wasteland",
+    "target_id": "caesar_s_foe",
+    "conditions": [
+     {
+      "type": "reputation",
+      "faction": "caesar_s_legion",
+      "level": "shunned",
+      "op": "at_most"
+     },
+     {
+      "type": "quest",
+      "quest": "caesar_s_foe",
+      "state": "not_started"
+     }
+    ],
+    "effects": [
+     {
+      "type": "start_quest",
+      "quest": "caesar_s_foe"
+     }
+    ]
+   }
+  ],
   "location_ids": [
    "mojave_wasteland"
   ]
@@ -6664,6 +6693,33 @@
     "when": "NCR trooper messenger killed",
     "note": "Also fails if Kimball arrives during Arizona Killer",
     "target_id": "don_t_tread_on_the_bear"
+   },
+   {
+    "kind": "fails",
+    "target": "Don't Tread on the Bear!",
+    "target_type": "quest",
+    "when": "negative NCR reputation",
+    "note": "Permanently locks out the NCR main questline, and all faction members become enemies",
+    "target_id": "don_t_tread_on_the_bear",
+    "conditions": [
+     {
+      "type": "reputation",
+      "faction": "new_california_republic",
+      "level": "shunned",
+      "op": "at_most"
+     },
+     {
+      "type": "quest",
+      "quest": "don_t_tread_on_the_bear",
+      "state": "active"
+     }
+    ],
+    "effects": [
+     {
+      "type": "fail_quest",
+      "quest": "don_t_tread_on_the_bear"
+     }
+    ]
    }
   ],
   "location_ids": [
@@ -13984,6 +14040,35 @@
      "text": "Reward: NCR infamy"
     }
    ]
+  ],
+  "rules": [
+   {
+    "kind": "triggers",
+    "target": "Most Wanted",
+    "target_type": "quest",
+    "when": "negative NCR reputation",
+    "note": "NCR Ranger hit squads warn the player to change their reputation within three days, or hunt them; immediately hostile if Vilified (the three-day timer is not modeled)",
+    "target_id": "most_wanted",
+    "conditions": [
+     {
+      "type": "reputation",
+      "faction": "new_california_republic",
+      "level": "shunned",
+      "op": "at_most"
+     },
+     {
+      "type": "quest",
+      "quest": "most_wanted",
+      "state": "not_started"
+     }
+    ],
+    "effects": [
+     {
+      "type": "start_quest",
+      "quest": "most_wanted"
+     }
+    ]
+   }
   ],
   "location_ids": [
    "mojave_wasteland"

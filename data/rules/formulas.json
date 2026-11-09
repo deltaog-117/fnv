@@ -294,8 +294,8 @@
    "vars": [
     "barter"
    ],
-   "source": "Game8 Fallout: New Vegas Barter table (a secondary source; the wiki page could not be fetched)",
-   "note": "155% of base value at Barter 0 down to 110% at Barter 100, linear; the table's 20-point rows (146, 137, 128, 119) all fit."
+   "source": "Fallout wiki, Barter (Fallout: New Vegas): Buy Value = round(Item Value * (1.55 - Barter * 9 / 2000) * Modifier)",
+   "note": "155% of base value at Barter 0 down to 110% at Barter 100, linear; the wiki's table rows (146, 137, 128, 119) all fit. The wiki's Modifier is the merchant's own scripted change, which vendor discounts model."
   },
   {
    "id": "barter_sell_multiplier",
@@ -304,8 +304,8 @@
    "vars": [
     "barter"
    ],
-   "source": "Game8 Fallout: New Vegas Barter table (a secondary source; the wiki page could not be fetched)",
-   "note": "45% of base value at Barter 0 up to 90% at Barter 100, linear; the table's 80-point row says 91 where the line gives 81, treated as a typo."
+   "source": "Fallout wiki, Barter (Fallout: New Vegas): Sale Value = round(Item Value * (0.45 + Barter * 9 / 2000) * Modifier)",
+   "note": "45% of base value at Barter 0 up to 90% at Barter 100, linear; the wiki's table rows (54, 63, 72, 81, 90) all fit. The wiki also says reputation does not change a price unless the merchant is scripted to; Chet is not (Idolized or not he prices by Barter alone), and at a Mixed reputation he offers 1:1 prices, which is not modeled yet."
   }
  ]
 }

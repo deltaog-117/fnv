@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "companion.schema.json",
+  "title": "Companion",
+  "description": "One entry in data/engine/companions.json: a person who can join the player's party, how they fight, the perk they grant while with the player and what makes them refuse.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "loadout"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "loadout": {
+      "description": "The NPC and the weapon and armor the companion fights with. The wiki gives no loadouts, so these are placeholders. A `when` is not allowed: a companion is in a fight because they are in the party.",
+      "$ref": "encounter.schema.json#/$defs/fighter"
+    },
+    "perk": {
+      "description": "A perk whose modifiers the player has while the companion is in the party.",
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "refuses_when": {
+      "description": "The companion will not join, and leaves, while any of these holds.",
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/condition"
+      }
+    }
+  }
+}

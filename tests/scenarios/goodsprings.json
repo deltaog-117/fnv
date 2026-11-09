@@ -455,7 +455,7 @@
    }
   },
   {
-   "name": "gunfight: infamy in the top Goodsprings tier locks the quest, whatever the fame",
+   "name": "gunfight: infamy in the top Goodsprings tier locks the quest the moment it lands, whatever the fame",
    "steps": [
     {
      "do": {
@@ -469,7 +469,8 @@
      "do": {
       "type": "start_quest",
       "quest": "ghost_town_gunfight"
-     }
+     },
+     "fails": true
     }
    ],
    "expect": {
@@ -558,6 +559,66 @@
    ],
    "expect": {
     "karma": 950
+   }
+  },
+  {
+   "name": "reputation: turning negative with the NCR starts Most Wanted and fails Don't Tread on the Bear!",
+   "steps": [
+    {
+     "do": {
+      "type": "start_quest",
+      "quest": "don_t_tread_on_the_bear"
+     }
+    },
+    {
+     "do": {
+      "type": "set_reputation",
+      "faction": "new_california_republic",
+      "level": "shunned"
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "most_wanted": {
+      "status": "active"
+     },
+     "don_t_tread_on_the_bear": {
+      "status": "failed"
+     },
+     "caesar_s_foe": {
+      "status": "not_started"
+     }
+    }
+   }
+  },
+  {
+   "name": "reputation: a mixed NCR standing starts nothing, and a negative Legion standing starts Caesar's Foe",
+   "steps": [
+    {
+     "do": {
+      "type": "set_reputation",
+      "faction": "new_california_republic",
+      "level": "mixed"
+     }
+    },
+    {
+     "do": {
+      "type": "set_reputation",
+      "faction": "caesar_s_legion",
+      "level": "vilified"
+     }
+    }
+   ],
+   "expect": {
+    "quests": {
+     "most_wanted": {
+      "status": "not_started"
+     },
+     "caesar_s_foe": {
+      "status": "active"
+     }
+    }
    }
   }
  ]

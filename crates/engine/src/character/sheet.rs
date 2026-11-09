@@ -122,6 +122,9 @@ pub struct Character {
     fixed: Bonuses,
     /// The conditional modifiers of every perk and trait taken, once per rank.
     gated: Vec<ConditionalModifiers>,
+    /// What the perks of the companions in the party change; empty unless the game
+    /// sets it. Kept apart from `fixed` so a companion leaving takes it away.
+    company: Vec<Modifier>,
     /// What the gates read, set by the game.
     situation: Situation,
     /// What chems, drinks and meals change for now; empty unless the game sets it.
@@ -221,6 +224,7 @@ impl Character {
             bonuses: Bonuses::default(),
             fixed: Bonuses::default(),
             gated: Vec::new(),
+            company: Vec::new(),
             situation: Situation::default(),
             boosts: BoostTally::default(),
             settled,
@@ -497,6 +501,9 @@ impl Character {
     /// conditions hold in the current situation.
     fn resolve(&mut self) {
         let mut resolved = self.fixed.clone();
+        self.company
+            .iter()
+            .for_each(|modifier| resolved.add(modifier));
         for gate in &self.gated {
             if gate
                 .when()
@@ -509,6 +516,15 @@ impl Character {
             }
         }
         self.bonuses = resolved;
+    }
+
+    /// Sets what the companions in the party change for now (their perks). The game
+    /// calls this each time the party changes; nothing the player earned is touched.
+    pub fn set_company(&mut self, modifiers: Vec<Modifier>) {
+        if self.company != modifiers {
+            self.company = modifiers;
+            self.resolve();
+        }
     }
 
     /// The situation the conditional modifiers read now.

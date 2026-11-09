@@ -888,5 +888,29 @@
   "target_type": "quest",
   "when": "more than 11 tips bought",
   "note": "Hat script only triggers on exactly 11"
+ },
+ {
+  "quest": "Most Wanted (Fallout: New Vegas)",
+  "kind": "triggers",
+  "target": "Most Wanted",
+  "target_type": "quest",
+  "when": "negative NCR reputation",
+  "note": "NCR Ranger hit squads warn the player to change their reputation within three days, or hunt them; immediately hostile if Vilified (the three-day timer is not modeled)"
+ },
+ {
+  "quest": "Caesar's Foe",
+  "kind": "triggers",
+  "target": "Caesar's Foe",
+  "target_type": "quest",
+  "when": "negative Caesar's Legion reputation",
+  "note": "Legionary assassins are sent to kill the player throughout the wasteland"
+ },
+ {
+  "quest": "Don't Tread on the Bear!",
+  "kind": "fails",
+  "target": "Don't Tread on the Bear!",
+  "target_type": "quest",
+  "when": "negative NCR reputation",
+  "note": "Permanently locks out the NCR main questline, and all faction members become enemies"
  }
 ]

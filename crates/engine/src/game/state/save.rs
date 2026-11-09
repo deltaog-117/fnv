@@ -15,6 +15,7 @@ use super::{Active, ActiveEffects, Deferred, Game};
 use crate::addiction::{AddictionKind, Addictions};
 use crate::character::{Character, CharacterRecord, SpecialSet};
 use crate::clock::GameClock;
+use crate::companions::Party;
 use crate::gather::Gathered;
 use crate::inventory::{CopyId, Slot};
 use crate::poison::Poison;
@@ -198,6 +199,7 @@ impl Game {
             effects,
             rads: self.radiation.rads().get(),
             poison: self.poison.left(),
+            party: self.party.members().to_vec(),
             addictions: self
                 .addictions
                 .iter()
@@ -240,6 +242,8 @@ impl Game {
             arsenal: self.arsenal.clone(),
             weapon_mods: self.weapon_mods.clone(),
             perks: self.perks.clone(),
+            companions: self.companions.clone(),
+            party: Party::default(),
             market: self.market.refilled(),
             beds: self.beds.clone(),
             recipes: self.recipes.clone(),
@@ -267,6 +271,7 @@ impl Game {
         game.restore_shops(save)?;
         game.restore_ailments(save)?;
         game.restore_effects(save)?;
+        game.restore_party(save)?;
         game.restore_place(save, self)?;
         // The time-bound perks settle first, so the cap on the wounds is the maximum
         // the player had at the moment of the save.
@@ -574,6 +579,20 @@ impl Game {
                 .take(find)
                 .map_err(|error| SaveError::invalid("gathered", error))?;
         }
+        Ok(())
+    }
+
+    fn restore_party(&mut self, save: &Save) -> Result<(), SaveError> {
+        let bad = |what: &dyn std::fmt::Display| SaveError::invalid("party", what);
+        if let Some(unknown) = save
+            .party
+            .iter()
+            .find(|member| self.companions.get(member).is_none())
+        {
+            return Err(bad(&format!("{unknown} is not a companion in this game")));
+        }
+        self.party = Party::from_members(save.party.iter().cloned()).map_err(|e| bad(&e))?;
+        self.settle_company();
         Ok(())
     }
 

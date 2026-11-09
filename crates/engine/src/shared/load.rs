@@ -15,13 +15,13 @@ use serde_json::Value;
 use thiserror::Error;
 
 use super::data::{
-    Ammo, Armor, Bed, Consumable, Dialogue, Encounter, Faction, Find, Location, Misc, Npc, Perk,
-    Quest, Recipe, Station, Trait, Vendor, Weapon, WeaponMod,
+    Ammo, Armor, Bed, Companion, Consumable, Dialogue, Encounter, Faction, Find, Location, Misc,
+    Npc, Perk, Quest, Recipe, Station, Trait, Vendor, Weapon, WeaponMod,
 };
 use super::error::ModelError;
 use super::ids::{
-    BedId, DialogueId, EncounterId, FactionId, FindId, ItemId, LocationId, NpcId, PerkId, QuestId,
-    RecipeId, StationId, TraitId, VendorId,
+    BedId, CompanionId, DialogueId, EncounterId, FactionId, FindId, ItemId, LocationId, NpcId,
+    PerkId, QuestId, RecipeId, StationId, TraitId, VendorId,
 };
 
 /// A record that carries its own unique id.
@@ -60,6 +60,7 @@ impl_record!(
     Trait => TraitId,
     Vendor => VendorId,
     Bed => BedId,
+    Companion => CompanionId,
     Misc => ItemId,
     WeaponMod => ItemId,
     Recipe => RecipeId,
@@ -250,6 +251,8 @@ pub struct GameData {
     pub vendors: Catalog<Vendor>,
     /// Every bed where the player may sleep.
     pub beds: Catalog<Bed>,
+    /// Every person who can join the player's party.
+    pub companions: Catalog<Companion>,
     /// Every crafting component and other miscellany.
     pub misc: Catalog<Misc>,
     /// Every weapon mod.
@@ -274,6 +277,7 @@ impl GameData {
         let mut quests = read_catalog::<Quest>(dir, "quests.json")?;
         let mut npcs = read_catalog::<Npc>(dir, "npcs.json")?;
         let encounters = read_catalog::<Encounter>(dir, "encounters.json")?;
+        let companions = read_catalog::<Companion>(dir, "companions.json")?;
 
         let dialogue_ids = match scope {
             Scope::Everywhere => list_dialogue_ids(&dir.join("dialogue"))?,
@@ -292,9 +296,15 @@ impl GameData {
                     .filter(|e| areas.contains(&e.place))
                     .flat_map(|e| e.foes.iter().map(|foe| foe.npc.clone()))
                     .collect();
+                // A recruited companion fights wherever the player is.
+                let party: BTreeSet<NpcId> = companions
+                    .iter()
+                    .map(|companion| companion.loadout.npc.clone())
+                    .collect();
                 npcs.records.retain(|id, n| {
                     givers.contains(id)
                         || foes.contains(id)
+                        || party.contains(id)
                         || n.location_ids.iter().any(|l| areas.contains(l))
                 });
                 npcs.iter()
@@ -319,6 +329,7 @@ impl GameData {
             traits: read_catalog(dir, "traits.json")?,
             vendors: read_catalog(dir, "vendors.json")?,
             beds: read_catalog(dir, "beds.json")?,
+            companions,
             misc: read_catalog(dir, "misc.json")?,
             weapon_mods: read_catalog(dir, "weapon_mods.json")?,
             recipes: read_catalog(dir, "recipes.json")?,

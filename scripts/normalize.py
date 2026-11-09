@@ -399,7 +399,8 @@ def apply_slices(quest_recs, slices):
     """Merge the hand-authored slice files into the quest records.
 
     A slice adds `on_enter` effects to existing stages and `conditions`/`effects`
-    to existing consequence rules (matched by kind and target name), so the prose
+    to existing consequence rules (matched by kind and target name, and by the
+    wiki's `when` text when the slice gives one), so the prose
     in consequences.json stays the source of what a rule is. Anything that does not
     match raises: a typo must not silently drop an authored rule.
     """
@@ -420,8 +421,11 @@ def apply_slices(quest_recs, slices):
             if not authored.get("conditions") or not authored.get("effects"):
                 raise ValueError(f"slice: {quest['id']} rule {authored['target']!r} needs both "
                                  "conditions and effects (an empty list would fire it always)")
+            # A quest can have two rules with the same kind and target (the wiki lists
+            # several ways to fail one quest); the optional "when" tells them apart.
             rule = next((r for r in quest.get("rules", [])
-                         if r["kind"] == authored["kind"] and r["target"] == authored["target"]), None)
+                         if r["kind"] == authored["kind"] and r["target"] == authored["target"]
+                         and authored.get("when", r.get("when")) == r.get("when")), None)
             if rule is None:
                 raise ValueError(f"slice: {quest['id']} has no {authored['kind']} rule "
                                  f"for {authored['target']!r}")
@@ -1066,6 +1070,7 @@ def main(argv):
     (out / "encounters.json").write_text((data / "combat" / "encounters.json").read_text())
     (out / "vendors.json").write_text((data / "vendors" / "vendors.json").read_text())
     (out / "beds.json").write_text((data / "beds" / "beds.json").read_text())
+    (out / "companions.json").write_text((data / "companions" / "companions.json").read_text())
     (out / "stations.json").write_text((data / "stations" / "stations.json").read_text())
     (out / "finds.json").write_text((data / "finds" / "finds.json").read_text())
     dump(out / "quests.json", quest_recs)

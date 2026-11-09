@@ -9,6 +9,7 @@ use crate::addiction::{AddictionBook, AddictionKind, Addictions, Risk};
 use crate::character::{Character, PerkBook, ProgressError, Situation};
 use crate::clock::{ClockError, GameClock, Span};
 use crate::combat::{Condition, Dice, Percent, Side, Status};
+use crate::companions::{CompanionBook, Party};
 use crate::craft::{RecipeBook, StationBook};
 use crate::effects::{Active, ActiveEffects};
 use crate::gather::{FindBook, Gathered};
@@ -94,6 +95,9 @@ pub struct Game {
     /// Which mod fits which weapon, and what each changes.
     weapon_mods: Arc<WeaponModBook>,
     perks: Arc<PerkBook>,
+    /// Who can join the player's party, and who has.
+    companions: Arc<CompanionBook>,
+    party: Party,
     /// What each merchant has now; changes with every trade.
     market: Market,
     /// Where the player may sleep.
@@ -151,6 +155,8 @@ impl Game {
             arsenal: Arc::default(),
             weapon_mods: Arc::default(),
             perks: Arc::default(),
+            companions: Arc::default(),
+            party: Party::default(),
             market: Market::default(),
             beds: Arc::default(),
             recipes: Arc::default(),
@@ -186,6 +192,20 @@ impl Game {
     pub fn with_arsenal(mut self, arsenal: Arc<Arsenal>) -> Self {
         self.arsenal = arsenal;
         self
+    }
+
+    /// The same game over the companions that exist. Without a book nobody can join
+    /// the party, so call this before play.
+    #[must_use]
+    pub fn with_companions(mut self, companions: Arc<CompanionBook>) -> Self {
+        self.companions = companions;
+        self
+    }
+
+    /// The companions with the player now, in the order they joined.
+    #[must_use]
+    pub fn party(&self) -> &[CompanionId] {
+        self.party.members()
     }
 
     /// The same game over the weapon mods that exist. Without a book no mod fits any
@@ -693,7 +713,7 @@ impl Game {
             .and_then(|id| self.inventory.weapon(id))
             .map(|held| self.fitting_of(held))
             .unwrap_or_default();
-        let player = self.arsenal.player(
+        let kit = self.arsenal.player_kit(
             &self.character,
             wielded,
             &worn,
@@ -713,21 +733,23 @@ impl Game {
             .filter(|(foe, _)| foe.when.iter().all(|condition| evaluate(condition, self)))
             .map(|(_, fighter)| fighter.clone())
             .collect();
-        let present_allies: Vec<_> = definition
-            .allies
+        // The party fights beside the player in every fight, ahead of the allies the
+        // encounter brings of its own.
+        let present_allies: Vec<_> = self
+            .party
+            .members()
             .iter()
-            .zip(self.arsenal.allies(encounter).unwrap_or_default())
-            .filter(|(ally, _)| ally.when.iter().all(|condition| evaluate(condition, self)))
-            .map(|(_, fighter)| fighter.clone())
+            .filter_map(|member| self.arsenal.companion(member).cloned())
+            .chain(
+                definition
+                    .allies
+                    .iter()
+                    .zip(self.arsenal.allies(encounter).unwrap_or_default())
+                    .filter(|(ally, _)| ally.when.iter().all(|condition| evaluate(condition, self)))
+                    .map(|(_, fighter)| fighter.clone()),
+            )
             .collect();
-        Battle::start(
-            encounter.clone(),
-            player,
-            hp,
-            &present_allies,
-            &present,
-            copy,
-        )
+        Battle::start(encounter.clone(), kit, hp, &present_allies, &present, copy)
     }
 
     /// Settles a finished fight: the player keeps the wounds they ended with, and
@@ -1239,6 +1261,76 @@ impl Game {
         Ok(())
     }
 
+    /// Runs a change to the player's standing, then the rules that read it, as a
+    /// unit: a rule can start or fail a quest the moment a faction turns against the
+    /// player. If one of them fails, the standing is left as it was.
+    fn standing_change(
+        &mut self,
+        change: impl FnOnce(&mut Standing) -> Result<(), EffectError>,
+    ) -> Result<(), EffectError> {
+        if self.book.standing_quests().is_empty() && self.party.is_empty() {
+            return change(&mut self.standing);
+        }
+        let mut trial = self.clone();
+        change(&mut trial.standing)?;
+        let book = Arc::clone(&trial.book);
+        for quest in book.standing_quests() {
+            // The stage has not moved, so only the rules run, never its rewards.
+            let stage = trial.quests.quest_stage(quest);
+            trial.react(quest, stage)?;
+        }
+        // A companion who dislikes where the player now stands goes home.
+        trial.dismiss_who(|game, companion| game.refuses(companion));
+        *self = trial;
+        Ok(())
+    }
+
+    /// Whether the companion's own reputation conditions say they will not travel
+    /// with the player now.
+    fn refuses(&self, companion: &CompanionId) -> bool {
+        self.companions.get(companion).is_some_and(|record| {
+            record
+                .refuses_when
+                .iter()
+                .any(|condition| evaluate(condition, self))
+        })
+    }
+
+    /// Takes out of the party everyone `leaves` picks, then settles what their perks
+    /// gave.
+    fn dismiss_who(&mut self, leaves: impl Fn(&Self, &CompanionId) -> bool) {
+        let going: Vec<CompanionId> = self
+            .party
+            .members()
+            .iter()
+            .filter(|member| leaves(self, member))
+            .cloned()
+            .collect();
+        if going.is_empty() {
+            return;
+        }
+        for member in &going {
+            // Each one was just found in the party, so leaving cannot be refused.
+            let _ = self.party.leave(member);
+        }
+        self.settle_company();
+    }
+
+    /// Gives the character the perks of the companions in the party, and takes
+    /// away the perks of those who left.
+    fn settle_company(&mut self) {
+        let modifiers = self
+            .party
+            .members()
+            .iter()
+            .filter_map(|member| self.companions.get(member)?.perk.as_ref())
+            .filter_map(|perk| self.perks.perk(perk))
+            .flat_map(|perk| perk.modifiers.iter().cloned())
+            .collect();
+        self.character.set_company(modifiers);
+        self.settle();
+    }
+
     /// Applies what a change to `quest` sets off: the effects of the stage it just
     /// reached (only when the stage moved, so repeating a stage pays nothing
     /// twice), then each consequence rule that now holds and has not fired.
@@ -1283,12 +1375,6 @@ impl Game {
         }
         Ok(())
     }
-}
-
-/// The refusal for an effect whose feature has no state yet. Removing one of these
-/// is the signal that the feature landed and `Game` gained a field for it.
-fn not_built(effect: &'static str, feature: &'static str) -> EffectError {
-    EffectError::NotBuilt { effect, feature }
 }
 
 impl QuestView for Game {
@@ -1340,9 +1426,6 @@ impl StandingView for Game {
         self.standing.alignment()
     }
 }
-
-// Companions keep the trait defaults: nobody has joined.
-impl CompanionView for Game {}
 
 impl CharacterView for Game {
     fn skill(&self, skill: Skill) -> SkillLevel {
@@ -1409,7 +1492,7 @@ impl StandingSink for Game {
         fame: f64,
         infamy: f64,
     ) -> Result<(), EffectError> {
-        self.standing.add_reputation(faction, fame, infamy)
+        self.standing_change(|standing| standing.add_reputation(faction, fame, infamy))
     }
 
     fn set_reputation(
@@ -1417,7 +1500,7 @@ impl StandingSink for Game {
         faction: &FactionId,
         level: ReputationLevel,
     ) -> Result<(), EffectError> {
-        self.standing.set_reputation(faction, level)
+        self.standing_change(|standing| standing.set_reputation(faction, level))
     }
 
     fn add_karma(&mut self, amount: f64) -> Result<(), EffectError> {
@@ -1462,13 +1545,48 @@ impl InventorySink for Game {
     }
 }
 
+impl CompanionView for Game {
+    fn companion_active(&self, companion: &CompanionId) -> bool {
+        self.party.contains(companion)
+    }
+}
+
 impl CompanionSink for Game {
-    fn companion_join(&mut self, _: &CompanionId) -> Result<(), EffectError> {
-        Err(not_built("companion_join", "companions"))
+    fn companion_join(&mut self, companion: &CompanionId) -> Result<(), EffectError> {
+        let refuse = |reason: String| EffectError::Refused {
+            effect: "companion_join",
+            reason,
+        };
+        let record = self
+            .companions
+            .get(companion)
+            .ok_or_else(|| refuse(format!("unknown companion {companion}")))?;
+        let (npc, name) = (&record.loadout.npc, &record.name);
+        if self.world.npc_is(npc, NpcState::Dead) {
+            return Err(refuse(format!("{name} is dead")));
+        }
+        if self.world.npc_is(npc, NpcState::Hostile) {
+            return Err(refuse(format!("{name} is hostile to you")));
+        }
+        if self.refuses(companion) {
+            return Err(refuse(format!("{name} will not travel with you")));
+        }
+        self.party
+            .join(companion)
+            .map_err(|error| refuse(error.to_string()))?;
+        self.settle_company();
+        Ok(())
     }
 
-    fn companion_leave(&mut self, _: &CompanionId) -> Result<(), EffectError> {
-        Err(not_built("companion_leave", "companions"))
+    fn companion_leave(&mut self, companion: &CompanionId) -> Result<(), EffectError> {
+        self.party
+            .leave(companion)
+            .map_err(|error| EffectError::Refused {
+                effect: "companion_leave",
+                reason: error.to_string(),
+            })?;
+        self.settle_company();
+        Ok(())
     }
 }
 
@@ -1478,7 +1596,9 @@ impl WorldSink for Game {
     }
 
     fn kill_npc(&mut self, npc: &NpcId) -> Result<(), EffectError> {
-        self.world.kill_npc(npc)
+        self.world.kill_npc(npc)?;
+        self.dismiss_who(|game, companion| game.companions.of_npc(npc) == Some(companion));
+        Ok(())
     }
 
     fn set_hostile(&mut self, npc: &NpcId) -> Result<(), EffectError> {

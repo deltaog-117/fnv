@@ -1,7 +1,7 @@
 # Engine data schemas
 
 JSON Schema (draft 2020-12), language-neutral. Raw wiki imports live in
-`data/items`, `data/quests`, `data/npcs`, `data/dialogue`, `data/world` and `data/rules` and are never edited (except `data/rules/formulas.json`, `data/combat/encounters.json`, `data/quests/consequences.json` and `data/quests/slice_*.json`, which are hand-curated); `scripts/normalize.py`
+`data/items`, `data/quests`, `data/npcs`, `data/dialogue`, `data/world` and `data/rules` and are never edited (except `data/rules/formulas.json`, `data/combat/encounters.json`, `data/quests/consequences.json`, `data/quests/slice_*.json` and `data/companions/`, which are hand-curated); `scripts/normalize.py`
 turns them into the engine-ready files in `data/engine/`, and
 `scripts/validate.py` checks those files against these schemas.
 
@@ -18,6 +18,7 @@ turns them into the engine-ready files in `data/engine/`, and
 | `rules.schema.json` | Stats, levels, challenges, recipes, endings and the formula file (definitions selected by `$ref`) | Done, populated |
 | `encounter.schema.json` | A fight at a place: offer conditions, foes with their weapon and armor, effects of winning | Done, hand-authored (`data/combat/`) |
 | `vendor.schema.json` | A merchant: the NPC, place, caps and starting stock | Done, hand-authored (`data/vendors/`) |
+| `companion.schema.json` | A person who can join the party: the NPC and loadout, the perk they grant, and what makes them refuse | Done, hand-authored (`data/companions/`) |
 | `dialogue.schema.json` | One file per speaker: flat topics, with slots for conditions, effects and `next` | Done, populated (graph not authored) |
 
 ## Conventions

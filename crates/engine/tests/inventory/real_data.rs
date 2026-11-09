@@ -61,7 +61,7 @@ fn the_authored_uses_reach_the_book() {
         .filter(|c| c.on_use.is_some())
         .count();
     assert_eq!(
-        modeled, 160,
+        modeled, 167,
         "uses.json lists the heals, boosts, meals, drinks and the poison items"
     );
     for consumable in data.consumables.iter() {
@@ -73,9 +73,16 @@ fn the_authored_uses_reach_the_book() {
     };
     assert_eq!(powder.heal.map(std::num::NonZeroU32::get), Some(18));
     assert_eq!(powder.effects.len(), 1);
-    // Anything that poisons by a source the game does not model, or cures a limb,
-    // stays unlisted.
-    assert_eq!(book.item_use(&item("dark_datura")), None);
+    // What cures or hurts a limb, or needs vision, stealth or a damage type the game
+    // does not have, stays unlisted.
+    for unmodeled in [
+        "cloud_kiss",
+        "atomic_cocktail",
+        "fire_ant_nectar",
+        "nuka_cola_quartz",
+    ] {
+        assert_eq!(book.item_use(&item(unmodeled)), None, "{unmodeled}");
+    }
     assert_eq!(
         book.item_use(&item("doctor_s_bag")),
         None,
@@ -138,7 +145,7 @@ fn boosts_and_heals_in_a_use_match_the_wiki_numbers() {
     // Authored from the wiki's words before this check existed, where the import
     // parsed the effect into another shape (a resistance with no length, a heal
     // written as "+60 HP" without a duration).
-    const READ_FROM_TEXT: [&str; 2] = ["rad_x", "super_stimpak"];
+    const READ_FROM_TEXT: [&str; 3] = ["rad_x", "super_stimpak", "psycho"];
     let data = data();
     let mut checked = 0;
     for consumable in data.consumables.iter() {
@@ -179,4 +186,32 @@ fn boosts_and_heals_in_a_use_match_the_wiki_numbers() {
         }
     }
     assert!(checked >= 100, "only {checked} boost effects were checked");
+}
+
+/// The damage-over-time items turn the wiki's hit points per second into the total
+/// poison they put in the blood, before resistance.
+#[test]
+fn damage_over_time_in_a_use_is_the_wiki_total() {
+    let data = data();
+    for id in ["dark_datura", "mother_darkness", "silver_sting", "tremble"] {
+        let consumable = data
+            .consumables
+            .iter()
+            .find(|c| c.id.as_str() == id)
+            .expect("the item exists");
+        let Some(ItemUse::Boost(boost)) = &consumable.on_use else {
+            panic!("{id} is a boost item");
+        };
+        let total: f64 = consumable
+            .effects
+            .iter()
+            .filter(|parsed| parsed.stat == "Hit Points" && parsed.per_second)
+            .map(|parsed| -parsed.amount * parsed.duration_s.unwrap_or(1.0))
+            .sum();
+        assert!(
+            (total - f64::from(boost.poison)).abs() < f64::EPSILON,
+            "{id}: poisons {} but the wiki totals {total}",
+            boost.poison
+        );
+    }
 }
