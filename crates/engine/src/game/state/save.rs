@@ -11,7 +11,7 @@
 use std::collections::HashSet;
 use std::num::NonZeroU32;
 
-use super::{Active, ActiveEffects, Deferred, Game};
+use super::{Active, ActiveEffects, BoostSource, Deferred, Game};
 use crate::addiction::{AddictionKind, Addictions};
 use crate::character::{Character, CharacterRecord, SpecialSet};
 use crate::clock::GameClock;
@@ -22,12 +22,12 @@ use crate::poison::Poison;
 use crate::radiation::Radiation;
 use crate::saves::{
     Save, SaveError, SavedAddiction, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding,
-    SavedFate, SavedFired, SavedNpc, SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop,
-    SavedStanding, SavedWeapon, SavedWorld, VERSION,
+    SavedFate, SavedFired, SavedNpc, SavedPack, SavedPhase, SavedQuest, SavedQuestTime,
+    SavedReward, SavedScore, SavedShop, SavedStanding, SavedWeapon, SavedWorld, VERSION,
 };
 use crate::shared::{
-    InventorySink, InventoryView, NpcId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
-    Rads, Renown, Special, SpecialLevel, StandingSink, StandingView, WorldSink,
+    InventorySink, InventoryView, NpcId, QuestEvent, QuestId, QuestSink, QuestStage, QuestStatus,
+    QuestView, Rads, Renown, Special, SpecialLevel, StandingSink, StandingView, WorldSink,
 };
 use crate::world::Fate;
 use strum::IntoEnumIterator;
@@ -149,11 +149,33 @@ impl Game {
         let effects = self
             .effects
             .iter()
-            .map(|active| SavedEffect {
-                source: active.source.clone(),
+            .filter_map(|active| match &active.source {
+                BoostSource::Item(source) => Some(SavedEffect {
+                    source: source.clone(),
+                    stat: active.stat,
+                    amount: active.amount,
+                    until: active.until,
+                }),
+                BoostSource::AfterFight => None,
+            })
+            .collect();
+        let rewards = self
+            .effects
+            .iter()
+            .filter(|active| active.source == BoostSource::AfterFight)
+            .map(|active| SavedReward {
                 stat: active.stat,
                 amount: active.amount,
                 until: active.until,
+            })
+            .collect();
+        let quest_times = self
+            .quest_times
+            .iter()
+            .map(|((quest, event), minute)| SavedQuestTime {
+                quest: quest.clone(),
+                event: *event,
+                minute: *minute,
             })
             .collect();
 
@@ -197,6 +219,8 @@ impl Game {
             pack,
             shops,
             effects,
+            rewards,
+            quest_times,
             rads: self.radiation.rads().get(),
             poison: self.poison.left(),
             party: self.party.members().to_vec(),
@@ -252,6 +276,7 @@ impl Game {
             gathered: Gathered::default(),
             clock: GameClock::from_minutes(save.clock_minutes),
             effects: ActiveEffects::default(),
+            quest_times: std::collections::BTreeMap::new(),
             radiation: Radiation::default(),
             poison: Poison::default(),
             addictions: Addictions::default(),
@@ -280,6 +305,7 @@ impl Game {
         game.settle();
         game.restore_gathered(save)?;
         game.restore_history(save)?;
+        game.restore_quest_times(save)?;
         Ok(game)
     }
 
@@ -492,10 +518,24 @@ impl Game {
                 return Err(bad(&format!("{} has already worn off", effect.source)));
             }
             list.push(Active {
-                source: effect.source.clone(),
+                source: BoostSource::Item(effect.source.clone()),
                 stat: effect.stat,
                 amount: effect.amount,
                 until: effect.until,
+            });
+        }
+        for reward in &save.rewards {
+            if reward.until <= now {
+                return Err(SaveError::invalid(
+                    "rewards",
+                    "a reward that has already worn off",
+                ));
+            }
+            list.push(Active {
+                source: BoostSource::AfterFight,
+                stat: reward.stat,
+                amount: reward.amount,
+                until: reward.until,
             });
         }
         self.effects = ActiveEffects::from_entries(list);
@@ -593,6 +633,34 @@ impl Game {
         }
         self.party = Party::from_members(save.party.iter().cloned()).map_err(|e| bad(&e))?;
         self.settle_company();
+        Ok(())
+    }
+
+    fn restore_quest_times(&mut self, save: &Save) -> Result<(), SaveError> {
+        let now = self.clock.as_minutes();
+        for entry in &save.quest_times {
+            let bad = |reason: &str| {
+                SaveError::invalid("quest_times", format!("{}: {reason}", entry.quest))
+            };
+            if !self.book.contains(&entry.quest) {
+                return Err(bad("unknown quest"));
+            }
+            if let QuestEvent::Stage(stage) = entry.event
+                && self.book.stage(&entry.quest, stage).is_none()
+            {
+                return Err(bad("no such stage"));
+            }
+            if entry.minute > now {
+                return Err(bad("a moment that has not happened yet"));
+            }
+            if self
+                .quest_times
+                .insert((entry.quest.clone(), entry.event), entry.minute)
+                .is_some()
+            {
+                return Err(bad("the same moment is listed twice"));
+            }
+        }
         Ok(())
     }
 

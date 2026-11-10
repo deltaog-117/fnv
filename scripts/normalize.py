@@ -251,7 +251,8 @@ def consumables(raw, ids):
 def apply_uses(consumable_recs, entries):
     """Merge the hand-authored uses into the consumable records as `on_use`.
 
-    Each entry names one consumable `item` and what using it does. An unknown
+    Each entry names one consumable `item` and what using it does; an optional
+    `auto` says when the game uses it by itself (`auto_use`). An unknown
     item or a repeated entry raises: a typo must not silently drop an authored
     effect.
     """
@@ -264,7 +265,10 @@ def apply_uses(consumable_recs, entries):
         if item in seen:
             raise ValueError(f"uses: {item} is listed twice")
         seen.add(item)
-        table[item]["on_use"] = {k: v for k, v in entry.items() if k != "item"}
+        use = {k: v for k, v in entry.items() if k not in ("item", "auto")}
+        table[item]["on_use"] = use
+        if "auto" in entry:
+            table[item]["auto_use"] = entry["auto"]
 
 
 def apply_craft_effects(recipe_recs, entries):

@@ -60,6 +60,11 @@ pub struct Vendor {
     pub stock: Vec<StockLine>,
     /// A price cut for a player in good standing, if the vendor gives one.
     pub discount: Option<Discount>,
+    /// While any of these holds the vendor buys and sells at the item's base value,
+    /// with no Barter markup either way ("1:1 prices"); it wins over a discount.
+    /// Empty means never.
+    #[serde(default)]
+    pub flat_prices: Vec<Condition>,
     /// Mends worn weapons for caps, if the vendor offers it.
     pub repair: Option<RepairService>,
     /// Days between restocks; the game's default when absent.

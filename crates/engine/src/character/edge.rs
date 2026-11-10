@@ -1,7 +1,7 @@
 //! What a character's perks and traits add to a fight and to healing, resolved for
 //! the weapon in hand.
 
-use crate::shared::{FoeKind, ItemId, Modifier, Skill};
+use crate::shared::{ArmorClass, FoeKind, HealthPercent, ItemId, Modifier, Skill, Special};
 
 /// What an attack against one kind of foe gains or loses.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -30,6 +30,9 @@ pub struct Edge {
     pub damage_percent: i32,
     /// Percent points added to the chance of a critical hit.
     pub crit_chance: i32,
+    /// Percent points added to the chance that a hit on this character is critical,
+    /// whoever strikes.
+    pub crit_chance_against: i32,
     /// Percent added to the critical bonus.
     pub crit_damage_percent: i32,
     /// Percent added to what an attack costs in action points.
@@ -43,13 +46,16 @@ pub struct Edge {
 }
 
 impl Edge {
-    /// Adds up the modifiers that apply to a weapon governed by `skill`.
+    /// Adds up the modifiers that apply to a weapon governed by `skill`, in body
+    /// armor of class `armor` (`None` for clothing or nothing).
     pub(super) fn of<'a>(
         modifiers: impl IntoIterator<Item = &'a Modifier>,
         skill: Option<Skill>,
+        armor: Option<ArmorClass>,
     ) -> Self {
         let mut edge = Self::default();
         let applies = |only: &Option<Skill>| only.is_none_or(|needed| Some(needed) == skill);
+        let wearing = |only: &Option<ArmorClass>| only.is_none_or(|needed| Some(needed) == armor);
         for modifier in modifiers {
             match modifier {
                 Modifier::DamageThreshold { amount } => {
@@ -73,7 +79,12 @@ impl Edge {
                 Modifier::CritChance {
                     percent,
                     skill: only,
-                } if applies(only) => edge.crit_chance += i32::from(*percent),
+                    armor: worn,
+                } if applies(only) && wearing(worn) => edge.crit_chance += i32::from(*percent),
+                Modifier::CritChanceAgainst {
+                    percent,
+                    armor: worn,
+                } if wearing(worn) => edge.crit_chance_against += i32::from(*percent),
                 Modifier::CritDamagePercent {
                     percent,
                     skill: only,
@@ -148,4 +159,40 @@ pub(super) fn wear_percent<'a>(modifiers: impl IntoIterator<Item = &'a Modifier>
             _ => None,
         })
         .sum()
+}
+
+/// A reward that follows a fight survived on little health.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct AfterFight {
+    /// The fight must end with less than this share of the hit points left.
+    pub below_health: HealthPercent,
+    /// The attribute raised.
+    pub stat: Special,
+    /// Points added.
+    pub amount: i8,
+    /// Minutes it lasts.
+    pub minutes: u16,
+}
+
+/// The after-fight rewards among `modifiers`.
+pub(super) fn after_fight<'a>(
+    modifiers: impl IntoIterator<Item = &'a Modifier>,
+) -> Vec<AfterFight> {
+    modifiers
+        .into_iter()
+        .filter_map(|modifier| match modifier {
+            Modifier::AfterFightBoost {
+                below_health,
+                stat,
+                amount,
+                minutes,
+            } => Some(AfterFight {
+                below_health: *below_health,
+                stat: *stat,
+                amount: *amount,
+                minutes: minutes.get(),
+            }),
+            _ => None,
+        })
+        .collect()
 }

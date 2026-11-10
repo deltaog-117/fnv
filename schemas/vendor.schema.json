@@ -96,6 +96,13 @@
           }
         }
       }
+    },
+    "flat_prices": {
+      "description": "While at least one of the conditions holds the vendor buys and sells at the item's base value, with no Barter markup either way (the wiki's \"1:1 prices\"). It wins over a discount. No conditions means never.",
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/condition"
+      }
     }
   }
 }

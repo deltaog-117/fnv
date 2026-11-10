@@ -9,7 +9,8 @@ use thiserror::Error;
 use super::book::{ItemBook, ItemClass};
 use super::copies::{CopyId, WeaponCopy};
 use crate::shared::{
-    ArmorSlot, EffectError, FactionId, InventorySink, InventoryView, ItemId, ItemUse, whole_amount,
+    ArmorSlot, AutoUse, EffectError, FactionId, InventorySink, InventoryView, ItemId, ItemUse,
+    whole_amount,
 };
 
 /// A place on the body or in the hand where one item can be equipped.
@@ -221,6 +222,12 @@ impl Inventory {
     #[must_use]
     pub fn item_use(&self, item: &ItemId) -> Option<ItemUse> {
         self.book.item_use(item)
+    }
+
+    /// When the item is used by itself, if it is.
+    #[must_use]
+    pub fn auto_use(&self, item: &ItemId) -> Option<AutoUse> {
+        self.book.auto_use(item)
     }
 
     /// Total weight carried, in pounds.

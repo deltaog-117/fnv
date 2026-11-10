@@ -11,7 +11,9 @@
 use super::bounds::{HealthPercent, Rads, RenownTier, SkillLevel, SpecialLevel};
 use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId};
 use super::time::MinuteOfDay;
-use super::vocabulary::{Alignment, NpcState, QuestStage, Renown, ReputationLevel, Skill, Special};
+use super::vocabulary::{
+    Alignment, NpcState, QuestEvent, QuestStage, Renown, ReputationLevel, Skill, Special,
+};
 
 /// Where a quest stands, apart from its stage number.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
@@ -36,6 +38,12 @@ pub trait QuestView {
     /// The stage the quest last reached, if it reached any. A finished quest keeps
     /// its last stage, so stage conditions still answer after completion.
     fn quest_stage(&self, _quest: &QuestId) -> Option<QuestStage> {
+        None
+    }
+
+    /// Whole minutes since the quest last had this happen to it; `None` when it
+    /// never did, or when the state keeps no times.
+    fn minutes_since(&self, _quest: &QuestId, _event: QuestEvent) -> Option<u64> {
         None
     }
 }

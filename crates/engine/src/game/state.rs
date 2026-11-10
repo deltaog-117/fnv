@@ -1,17 +1,19 @@
 //! The one state that `evaluate` and `apply_all` run against.
 
-use std::collections::HashSet;
-use std::num::NonZeroU32;
+use std::collections::{BTreeMap, HashSet};
+use std::num::{NonZeroI16, NonZeroU32};
 use std::sync::Arc;
 
-use super::battle::{Arsenal, Battle, BattleError, Outcome, WEAR_PER_SHOT};
+use super::battle::{
+    Arsenal, Battle, BattleError, Dress, Outcome, PlayerKit, USE_ITEM_AP, WEAR_PER_SHOT,
+};
 use crate::addiction::{AddictionBook, AddictionKind, Addictions, Risk};
 use crate::character::{Character, PerkBook, ProgressError, Situation};
 use crate::clock::{ClockError, GameClock, Span};
 use crate::combat::{Condition, Dice, Percent, Side, Status};
 use crate::companions::{CompanionBook, Party};
 use crate::craft::{RecipeBook, StationBook};
-use crate::effects::{Active, ActiveEffects};
+use crate::effects::{Active, ActiveEffects, BoostSource};
 use crate::gather::{FindBook, Gathered};
 use crate::inventory::{CopyId, Inventory, InventoryError, ItemBook, Slot, WeaponCopy};
 use crate::poison::Poison;
@@ -20,15 +22,17 @@ use crate::radiation::Radiation;
 use crate::reputation::{ReputationBook, Standing};
 use crate::rest::{BedBook, RestError, restored};
 use crate::shared::{
-    Ailment, Alignment, BedId, CharacterSink, CharacterView, CompanionId, CompanionSink,
-    CompanionView, DiscountPercent, Effect, EffectError, Encounter, EncounterId, EndingId,
-    FactionId, FlagId, HealthPercent, InventorySink, InventoryView, ItemId, ItemUse, LocationId,
-    MinuteOfDay, NpcId, NpcState, PerkId, QuestId, QuestSink, QuestStage, QuestStatus, QuestView,
-    Rads, Renown, RenownTier, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel,
-    StandingSink, StandingView, VendorId, WorldSink, WorldView, apply, apply_all, evaluate,
+    Ailment, Alignment, AutoUse, BedId, Boost, BoostStat, CharacterSink, CharacterView,
+    CompanionId, CompanionSink, CompanionView, DiscountPercent, Effect, EffectError, Encounter,
+    EncounterId, EndingId, FactionId, FlagId, HealthPercent, InventorySink, InventoryView, ItemId,
+    ItemUse, LocationId, MinuteOfDay, NpcId, NpcState, PerkId, QuestEvent, QuestId, QuestSink,
+    QuestStage, QuestStatus, QuestView, Rads, Renown, RenownTier, ReputationLevel, Skill,
+    SkillLevel, Special, SpecialLevel, StandingSink, StandingView, VendorId, WorldSink, WorldView,
+    apply, apply_all, evaluate,
 };
 use crate::trade::{
-    Market, Shop, TradeError, VendorBook, buy_total, buy_total_with_discount, sell_total,
+    Market, Shop, TradeError, VendorBook, buy_total, buy_total_with_discount, flat_buy_total,
+    flat_sell_total, sell_total,
 };
 use crate::travel::{Route, TravelBook, TravelError};
 use crate::weapon_mods::WeaponModBook;
@@ -113,6 +117,9 @@ pub struct Game {
     clock: GameClock,
     /// Boosts from chems, drinks and meals, each with the minute it ends.
     effects: ActiveEffects,
+    /// The minute each remembered moment of each quest happened, so a rule can ask
+    /// how long ago it was.
+    quest_times: BTreeMap<(QuestId, QuestEvent), u64>,
     /// Radiation absorbed.
     radiation: Radiation,
     /// Poison in the blood, paid out in hit points as time passes.
@@ -165,6 +172,7 @@ impl Game {
             gathered: Gathered::default(),
             clock: GameClock::START,
             effects: ActiveEffects::default(),
+            quest_times: BTreeMap::new(),
             radiation: Radiation::default(),
             poison: Poison::default(),
             addictions: Addictions::default(),
@@ -461,6 +469,7 @@ impl Game {
             .elapse(self.clock.as_minutes().saturating_sub(before));
         self.hurt_by_poison(drained);
         self.settle();
+        self.fire_timed_rules();
         Ok(())
     }
 
@@ -700,27 +709,7 @@ impl Game {
         if !self.encounters_at(&definition.place).contains(&definition) {
             return Err(BattleError::NotOffered(encounter.clone()));
         }
-        let worn: Vec<&ItemId> = [Slot::Outfit, Slot::Head]
-            .into_iter()
-            .filter_map(|slot| self.inventory.equipped(slot))
-            .collect();
-        let wielded = self.inventory.equipped(Slot::Weapon);
-        let copy = self.inventory.wielded();
-        let weapon_wear = copy
-            .and_then(|id| self.inventory.weapon(id))
-            .map_or(0, WeaponCopy::lost);
-        let fitting = copy
-            .and_then(|id| self.inventory.weapon(id))
-            .map(|held| self.fitting_of(held))
-            .unwrap_or_default();
-        let kit = self.arsenal.player_kit(
-            &self.character,
-            wielded,
-            &worn,
-            &self.inventory,
-            weapon_wear,
-            &fitting,
-        )?;
+        let (kit, copy) = self.build_kit()?;
         let prepared = self
             .arsenal
             .foes(encounter)
@@ -752,6 +741,138 @@ impl Game {
         Battle::start(encounter.clone(), kit, hp, &present_allies, &present, copy)
     }
 
+    /// The player as a fight reads them now: the weapon in hand, the armor worn, the
+    /// pack and the character with its boosts, and the weapon copy that wears.
+    fn build_kit(&self) -> Result<(PlayerKit, Option<CopyId>), BattleError> {
+        let worn: Vec<&ItemId> = [Slot::Outfit, Slot::Head]
+            .into_iter()
+            .filter_map(|slot| self.inventory.equipped(slot))
+            .collect();
+        let wielded = self.inventory.equipped(Slot::Weapon);
+        let copy = self.inventory.wielded();
+        let weapon_wear = copy
+            .and_then(|id| self.inventory.weapon(id))
+            .map_or(0, WeaponCopy::lost);
+        let fitting = copy
+            .and_then(|id| self.inventory.weapon(id))
+            .map(|held| self.fitting_of(held))
+            .unwrap_or_default();
+        let kit = self.arsenal.player_kit(
+            &self.character,
+            wielded,
+            Dress {
+                pieces: &worn,
+                body: self.inventory.equipped(Slot::Outfit),
+            },
+            &self.inventory,
+            weapon_wear,
+            &fitting,
+        )?;
+        Ok((kit, copy))
+    }
+
+    /// Uses a carried item in the middle of a fight, on the player's turn, for a few
+    /// action points. The game takes the fight's wounds first, so a stimpak heals
+    /// what the fight has done and not what the player carried in; afterwards the
+    /// fight reads the player again, so a chem works from the very next shot and a
+    /// boost to the maximum moves the hit points with it.
+    ///
+    /// The item, the pack and the fight change together or not at all: a refusal
+    /// leaves the game and the fight as they were.
+    ///
+    /// # Errors
+    ///
+    /// [`BattleError::NotYourTurn`], [`BattleError::Combat`] (the fight is over or
+    /// the action points are too few) and [`BattleError::Item`] (the item cannot be
+    /// used, as [`Game::use_item`] says).
+    pub fn use_item_in_battle(
+        &mut self,
+        battle: &mut Battle,
+        item: &ItemId,
+        dice: &mut impl Dice,
+    ) -> Result<Used, BattleError> {
+        self.in_battle(battle, USE_ITEM_AP, |game| {
+            Ok(game.use_item_rolling(item, dice)?)
+        })
+    }
+
+    /// Uses the carried items whose moment has come, in the middle of a fight, free
+    /// of action points. Nothing happens when no item is due, it is not the player's
+    /// turn, or the fight is over.
+    pub fn auto_use_in_battle(&mut self, battle: &mut Battle) -> Vec<(ItemId, Used)> {
+        if self.due_autos(battle.player_hp()).is_empty() {
+            return Vec::new();
+        }
+        // A refusal leaves everything as it was, so there is nothing to report.
+        self.in_battle(battle, 0, |game| Ok(game.auto_use()))
+            .unwrap_or_default()
+    }
+
+    /// Runs `act` on a copy of the game whose wounds are the fight's, then puts the
+    /// result into both the game and the fight.
+    fn in_battle<R>(
+        &mut self,
+        battle: &mut Battle,
+        cost: u32,
+        act: impl FnOnce(&mut Self) -> Result<R, BattleError>,
+    ) -> Result<R, BattleError> {
+        battle.ready_to_use(cost)?;
+        let mut trial = self.clone();
+        trial.wounds = trial.character.max_hp().saturating_sub(battle.player_hp());
+        trial.settle();
+        let result = act(&mut trial)?;
+        let (mut kit, _) = trial.build_kit()?;
+        battle.carry_over(&mut kit);
+        let mut next = battle.clone();
+        next.after_item(kit, trial.hp(), cost)?;
+        *battle = next;
+        *self = trial;
+        Ok(result)
+    }
+
+    /// The carried items that work by themselves and whose moment has come, with
+    /// the player at `hit_points`.
+    fn due_autos(&self, hit_points: u32) -> Vec<ItemId> {
+        let health = HealthPercent::of(hit_points, self.character.max_hp());
+        self.inventory
+            .stacks()
+            .filter(|_| hit_points > 0)
+            .filter_map(|(item, _)| {
+                let due = match self.inventory.auto_use(item)? {
+                    AutoUse::HealthAtOrBelow(limit) => health.get() <= limit.get(),
+                    AutoUse::Poisoned => self.poison.is_poisoned(),
+                };
+                due.then(|| item.clone())
+            })
+            .collect()
+    }
+
+    /// Uses every carried item that works by itself and whose moment has come: an
+    /// auto-inject stimpak once health is at or below its share, a snakebite
+    /// tourniquet once poisoned. Each is used once per dose in the pack, until none
+    /// is due or the pack has none left; an item the game refuses is left alone.
+    ///
+    /// The game does not check on its own: whoever changes the player's health (a
+    /// wait, a fight, an item) calls this afterwards. Nothing rolls for addiction.
+    pub fn auto_use(&mut self) -> Vec<(ItemId, Used)> {
+        let mut done = Vec::new();
+        let mut refused = HashSet::new();
+        // Each pass either spends one item or sets one aside, so the loop ends.
+        while let Some(item) = self
+            .due_autos(self.hp())
+            .into_iter()
+            .find(|item| !refused.contains(item))
+        {
+            match self.consume(&item, None) {
+                Ok(used) => done.push((item, used)),
+                Err(_) => {
+                    refused.insert(item);
+                }
+            }
+        }
+        done
+    }
+
     /// Settles a finished fight: the player keeps the wounds they ended with, and
     /// a win applies the encounter's effects and takes it off offer. If those
     /// effects fail, nothing changes.
@@ -772,6 +893,9 @@ impl Game {
         trial.settle();
         trial.spend_rounds(battle)?;
         trial.wear_weapon(battle);
+        if hp > 0 {
+            trial.reward_close_fight();
+        }
         let outcome = if status == Status::Fled {
             Outcome::Fled
         } else if status == Status::Won(Side::Player) {
@@ -788,6 +912,33 @@ impl Game {
         };
         *self = trial;
         Ok(outcome)
+    }
+
+    /// Starts the rewards perks give for a fight that ends with the player standing
+    /// on less than a share of their hit points: Just Lucky I'm Alive raises Luck
+    /// for a few minutes. The share is rounded down, so "less than 25%" means 24
+    /// or under.
+    fn reward_close_fight(&mut self) {
+        let share = HealthPercent::of(self.hp(), self.character.max_hp());
+        let now = self.clock.as_minutes();
+        for reward in self.character.after_fight_rewards() {
+            let (Some(amount), Some(minutes)) = (
+                NonZeroI16::new(i16::from(reward.amount)),
+                NonZeroU32::new(u32::from(reward.minutes)),
+            ) else {
+                continue;
+            };
+            if share < reward.below_health {
+                let boost = Boost {
+                    stat: BoostStat::Special(reward.stat),
+                    amount,
+                    minutes,
+                };
+                self.effects.start_after_fight(&boost, now);
+            }
+        }
+        self.set_tally();
+        self.settle();
     }
 
     /// Wears the very weapon the player fought with by the shots they made.
@@ -1068,8 +1219,20 @@ impl Game {
         earned.then_some(discount.percent)
     }
 
+    /// Whether this vendor deals at base value both ways right now: any of the
+    /// conditions on the vendor's `flat_prices` holds. Chet does for a player the
+    /// town finds Mixed, however good or bad that is.
+    #[must_use]
+    pub fn flat_prices_at(&self, vendor: &VendorId) -> bool {
+        self.market
+            .book()
+            .get(vendor)
+            .is_some_and(|info| info.flat_prices().iter().any(|rule| evaluate(rule, self)))
+    }
+
     /// Caps the player pays a vendor for `count` of an item: [`Game::buy_price`]
-    /// with the vendor's cut, if the player has earned one.
+    /// with the vendor's cut, if the player has earned one, or at base value where
+    /// the vendor deals flat (which wins over a cut).
     ///
     /// # Errors
     ///
@@ -1083,6 +1246,13 @@ impl Game {
     ) -> Result<u32, TradeError> {
         if self.market.book().get(vendor).is_none() {
             return Err(TradeError::UnknownVendor(vendor.clone()));
+        }
+        if self.flat_prices_at(vendor) {
+            let value = self
+                .inventory
+                .value(item)
+                .ok_or_else(|| TradeError::NoPrice(item.clone()))?;
+            return Ok(flat_buy_total(value, count));
         }
         let Some(percent) = self.discount_at(vendor) else {
             return self.buy_price(item, count);
@@ -1110,6 +1280,34 @@ impl Game {
             .inventory
             .value(item)
             .map(|value| sell_total(value, count, self.character.skill(Skill::Barter)))
+            .filter(|total| *total > 0);
+        total.ok_or_else(|| TradeError::NoPrice(item.clone()))
+    }
+
+    /// Caps a vendor pays for `count` of an item: [`Game::sell_price`], or the base
+    /// value where the vendor deals flat.
+    ///
+    /// # Errors
+    ///
+    /// [`TradeError::UnknownVendor`] when there is no such vendor, and
+    /// [`TradeError::NoPrice`] when the item has no base value or the line is worth
+    /// less than half a cap.
+    pub fn sell_price_to(
+        &self,
+        vendor: &VendorId,
+        item: &ItemId,
+        count: NonZeroU32,
+    ) -> Result<u32, TradeError> {
+        if self.market.book().get(vendor).is_none() {
+            return Err(TradeError::UnknownVendor(vendor.clone()));
+        }
+        if !self.flat_prices_at(vendor) {
+            return self.sell_price(item, count);
+        }
+        let total = self
+            .inventory
+            .value(item)
+            .map(|value| flat_sell_total(value, count))
             .filter(|total| *total > 0);
         total.ok_or_else(|| TradeError::NoPrice(item.clone()))
     }
@@ -1167,7 +1365,7 @@ impl Game {
         if have == count.get() && self.inventory.is_equipped(item) {
             return Err(TradeError::Equipped(item.clone()));
         }
-        let price = self.sell_price(item, count)?;
+        let price = self.sell_price_to(vendor, item, count)?;
         let mut trial = self.clone();
         trial.market.buy_from_player(vendor, item, count, price)?;
         trial.inventory.take_item(item, count)?;
@@ -1195,7 +1393,7 @@ impl Game {
         if self.inventory.wielded() == Some(copy) {
             return Err(TradeError::Equipped(item));
         }
-        let price = self.sell_price(&item, NonZeroU32::MIN)?;
+        let price = self.sell_price_to(vendor, &item, NonZeroU32::MIN)?;
         let mut trial = self.clone();
         trial
             .market
@@ -1250,15 +1448,66 @@ impl Game {
         quest: &QuestId,
         change: impl FnOnce(&mut QuestLog) -> Result<(), EffectError>,
     ) -> Result<(), EffectError> {
+        let (was_status, before) = (
+            self.quests.quest_status(quest),
+            self.quests.quest_stage(quest),
+        );
         if !self.book.is_automated(quest) {
-            return change(&mut self.quests);
+            change(&mut self.quests)?;
+            self.remember_quest_moment(quest, was_status, before);
+            return Ok(());
         }
-        let before = self.quests.quest_stage(quest);
         let mut trial = self.clone();
         change(&mut trial.quests)?;
+        // Remembered before the rules run, so a rule that asks how long ago the
+        // stage began already finds it.
+        trial.remember_quest_moment(quest, was_status, before);
         trial.react(quest, before)?;
         *self = trial;
         Ok(())
+    }
+
+    /// Notes the time of whatever just happened to `quest`: it began, finished,
+    /// failed or reached a new stage, given where it stood before.
+    fn remember_quest_moment(
+        &mut self,
+        quest: &QuestId,
+        was_status: QuestStatus,
+        was_stage: Option<QuestStage>,
+    ) {
+        let now = self.clock.as_minutes();
+        let status = self.quests.quest_status(quest);
+        if status != was_status {
+            let event = match status {
+                QuestStatus::Active => Some(QuestEvent::Started),
+                QuestStatus::Completed => Some(QuestEvent::Completed),
+                QuestStatus::Failed => Some(QuestEvent::Failed),
+                QuestStatus::NotStarted => None,
+            };
+            if let Some(event) = event {
+                self.quest_times.insert((quest.clone(), event), now);
+            }
+        }
+        let stage = self.quests.quest_stage(quest);
+        if stage != was_stage
+            && let Some(stage) = stage
+        {
+            self.quest_times
+                .insert((quest.clone(), QuestEvent::Stage(stage)), now);
+        }
+    }
+
+    /// Runs again the rules that read how much time has passed. A rule whose effects
+    /// are refused stays unfired, so the next wait tries it again.
+    fn fire_timed_rules(&mut self) {
+        let book = Arc::clone(&self.book);
+        for quest in book.clock_quests() {
+            let stage = self.quests.quest_stage(quest);
+            let mut trial = self.clone();
+            if trial.react(quest, stage).is_ok() {
+                *self = trial;
+            }
+        }
     }
 
     /// Runs a change to the player's standing, then the rules that read it, as a
@@ -1384,6 +1633,12 @@ impl QuestView for Game {
 
     fn quest_stage(&self, quest: &QuestId) -> Option<QuestStage> {
         self.quests.quest_stage(quest)
+    }
+
+    fn minutes_since(&self, quest: &QuestId, event: QuestEvent) -> Option<u64> {
+        self.quest_times
+            .get(&(quest.clone(), event))
+            .map(|at| self.clock.as_minutes().saturating_sub(*at))
     }
 }
 

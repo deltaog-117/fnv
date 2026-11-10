@@ -64,6 +64,8 @@ impl Bonuses {
             | Modifier::IgnoreThreshold { .. }
             | Modifier::DamagePercent { .. }
             | Modifier::CritChance { .. }
+            | Modifier::CritChanceAgainst { .. }
+            | Modifier::AfterFightBoost { .. }
             | Modifier::CritDamagePercent { .. }
             | Modifier::ApCostPercent { .. }
             | Modifier::ReloadApPercent { .. }

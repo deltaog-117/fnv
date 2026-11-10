@@ -1133,3 +1133,394 @@ fn a_chem_that_raises_damage_threshold_and_damage_reaches_the_fight() {
         plain.attack().base_damage.get() * 1.25
     );
 }
+
+/// Gives the pack `count` of an item.
+fn give(game: &mut Game, name: &str, count: u32) {
+    InventorySink::give_item(
+        game,
+        &item(name),
+        NonZeroU32::new(count).expect("a count above zero"),
+    )
+    .expect("the item is given");
+}
+
+fn carried(game: &Game, name: &str) -> u32 {
+    game.inventory().item_count(&item(name))
+}
+
+/// The foes shoot with every roll a hit, until the player has lost some hit points
+/// but is still up; returns the hit points left.
+fn get_shot(battle: &mut Battle) -> u32 {
+    for _ in 0..6 {
+        battle.end_turn(&mut Sparse(0)).expect("the fight goes on");
+        let hp = battle.combat().hp(battle.player()).unwrap_or(0);
+        assert!(hp > 0, "the player must stay up for this test");
+        if hp < you(battle).max_hp().get() {
+            return hp;
+        }
+    }
+    panic!("the foes never hit");
+}
+
+#[test]
+fn a_stimpak_in_the_fight_heals_what_the_fight_took_and_costs_action_points() {
+    let mut game = dressed_game();
+    help_from(&mut game, &HELPERS);
+    give(&mut game, "stimpak", 2);
+    let mut battle = start(&game);
+    let hurt = get_shot(&mut battle);
+    let ap = battle.combat().ap_left();
+    // The game still believes the player walked in whole: the fight's wounds are
+    // what the stimpak must heal.
+    assert_eq!(game.hp(), game.character().max_hp());
+
+    let used = game
+        .use_item_in_battle(&mut battle, &item("stimpak"), &mut Always(100))
+        .expect("the stimpak is used");
+
+    assert!(used.healed > 0);
+    let hp = battle.combat().hp(battle.player()).expect("the player");
+    assert_eq!(hp, (hurt + used.healed).min(you(&battle).max_hp().get()));
+    assert_eq!(game.hp(), hp, "the game and the fight agree");
+    assert_eq!(carried(&game, "stimpak"), 1);
+    assert_eq!(
+        battle.combat().ap_left(),
+        ap - engine::game::USE_ITEM_AP,
+        "using an item costs action points"
+    );
+}
+
+#[test]
+fn an_item_refused_in_the_fight_changes_nothing() {
+    let mut game = dressed_game();
+    give(&mut game, "stimpak", 1);
+    let mut battle = start(&game);
+    let (hp, ap) = (
+        battle.combat().hp(battle.player()),
+        battle.combat().ap_left(),
+    );
+    let before = game.clone();
+
+    let refused = game.use_item_in_battle(&mut battle, &item("stimpak"), &mut Always(100));
+
+    assert_eq!(
+        refused,
+        Err(BattleError::Item(
+            engine::inventory::InventoryError::AtFullHealth
+        ))
+    );
+    assert_eq!(battle.combat().hp(battle.player()), hp);
+    assert_eq!(battle.combat().ap_left(), ap);
+    assert_eq!(carried(&game, "stimpak"), carried(&before, "stimpak"));
+    assert_eq!(game.hp(), before.hp());
+}
+
+#[test]
+fn items_stop_when_the_action_points_run_out_and_only_the_ones_used_are_spent() {
+    let mut game = dressed_game();
+    give(&mut game, "med_x", 60);
+    let mut battle = start(&game);
+    let mut used = 0;
+    let stopped = loop {
+        match game.use_item_in_battle(&mut battle, &item("med_x"), &mut Always(100)) {
+            Ok(_) => used += 1,
+            Err(error) => break error,
+        }
+        assert!(used <= 60, "the action points must run out");
+    };
+    assert!(matches!(
+        stopped,
+        BattleError::Combat(CombatError::NotEnoughAp { .. })
+    ));
+    assert_eq!(carried(&game, "med_x"), 60 - used);
+    assert!(used >= 1);
+}
+
+#[test]
+fn a_chem_used_in_the_fight_works_from_the_very_next_shot() {
+    let mut game = dressed_game();
+    give(&mut game, "psycho", 1);
+    give(&mut game, "datura_hide", 1);
+    let mut battle = start(&game);
+    let plain = you(&battle);
+
+    game.use_item_in_battle(&mut battle, &item("psycho"), &mut Always(100))
+        .expect("psycho works");
+    game.use_item_in_battle(&mut battle, &item("datura_hide"), &mut Always(100))
+        .expect("the hide works");
+
+    let boosted = you(&battle);
+    assert_eq!(
+        boosted.attack().base_damage.get(),
+        plain.attack().base_damage.get() * 1.25
+    );
+    assert_eq!(boosted.dt().get(), plain.dt().get() + 1.0);
+    // The rounds in the weapon are the fight's, not the pack's: using a chem does
+    // not reload or empty the weapon.
+    assert_eq!(
+        battle.combat().rounds(battle.player()),
+        start(&game).combat().rounds(battle.player())
+    );
+}
+
+#[test]
+fn a_fight_settled_after_using_an_item_keeps_the_hit_points_the_fight_ended_with() {
+    let mut game = dressed_game();
+    help_from(&mut game, &HELPERS);
+    give(&mut game, "stimpak", 1);
+    let mut battle = start(&game);
+    get_shot(&mut battle);
+    game.use_item_in_battle(&mut battle, &item("stimpak"), &mut Always(100))
+        .expect("the stimpak is used");
+    play(&mut battle, &mut Always(1), false);
+    let hp = battle.combat().hp(battle.player()).unwrap_or(0);
+
+    game.finish_battle(&battle).expect("the fight settles");
+
+    assert_eq!(game.hp(), hp);
+}
+
+#[test]
+fn an_auto_inject_stimpak_goes_off_at_half_health_in_the_fight_and_costs_nothing() {
+    let mut game = dressed_game();
+    give(&mut game, "auto_inject_stimpak", 1);
+    let max = game.character().max_hp();
+    game = game.with_wounds(max - max * 4 / 10);
+    let mut battle = start(&game);
+    let (hp, ap) = (
+        battle.combat().hp(battle.player()),
+        battle.combat().ap_left(),
+    );
+
+    let fired = game.auto_use_in_battle(&mut battle);
+
+    assert_eq!(fired.len(), 1);
+    assert_eq!(fired[0].0, item("auto_inject_stimpak"));
+    assert!(battle.combat().hp(battle.player()) > hp);
+    assert_eq!(battle.combat().ap_left(), ap, "it works by itself");
+    assert_eq!(carried(&game, "auto_inject_stimpak"), 0);
+    assert!(game.auto_use_in_battle(&mut battle).is_empty());
+}
+
+#[test]
+fn an_auto_inject_stimpak_waits_while_health_is_above_its_line() {
+    let mut game = dressed_game();
+    give(&mut game, "auto_inject_stimpak", 1);
+    let max = game.character().max_hp();
+    game = game.with_wounds(max / 4);
+    let mut battle = start(&game);
+    assert!(game.auto_use_in_battle(&mut battle).is_empty());
+    assert!(game.auto_use().is_empty());
+    assert_eq!(carried(&game, "auto_inject_stimpak"), 1);
+}
+
+#[test]
+fn a_snakebite_tourniquet_goes_off_once_the_player_is_poisoned() {
+    let mut game = dressed_game();
+    give(&mut game, "snakebite_tourniquet", 1);
+    assert!(game.auto_use().is_empty());
+    game = game.with_poison(60);
+    let fired = game.auto_use();
+    assert_eq!(fired.len(), 1);
+    assert!(fired[0].1.cured_poison);
+    assert_eq!(game.poison(), 0);
+    assert_eq!(carried(&game, "snakebite_tourniquet"), 0);
+}
+
+proptest! {
+    #![proptest_config(ProptestConfig::with_cases(64))]
+    /// An auto-inject stimpak goes off exactly when health, rounded down to a
+    /// percent, is at or below its 50% line, and never for a player who is down.
+    #[test]
+    fn the_auto_inject_stimpak_goes_off_exactly_at_or_below_half(wounds in 0u32..400) {
+        let mut game = dressed_game();
+        give(&mut game, "auto_inject_stimpak", 1);
+        let max = game.character().max_hp();
+        let wounds = wounds.min(max - 1);
+        game = game.with_wounds(wounds);
+        let health = engine::shared::HealthPercent::of(max - wounds, max).get();
+        let fired = game.auto_use();
+        prop_assert_eq!(!fired.is_empty(), health <= 50, "at {} of {}", max - wounds, max);
+        prop_assert_eq!(carried(&game, "auto_inject_stimpak"), u32::from(fired.is_empty()));
+    }
+}
+
+/// A book holding one custom perk, `marked`, made of `modifiers`.
+fn marked_book(modifiers: serde_json::Value) -> PerkBook {
+    use engine::shared::{Dlc, Perk};
+    let perks: Vec<Perk> = serde_json::from_value(serde_json::json!([
+        {"id": "marked", "name": "Marked", "dlc": "base", "ranks": 1, "modifiers": modifiers}
+    ]))
+    .expect("the perk parses");
+    PerkBook::new(&perks, std::iter::empty(), &[Dlc::Base])
+}
+
+/// A character with the custom perk made of `modifiers`, taken once.
+fn with_modifiers(modifiers: serde_json::Value) -> Character {
+    let book = marked_book(modifiers);
+    let mut character = trained(&[]);
+    let rules = CharacterRules::standard();
+    character.grant_xp(rules.xp_for_level(Level::try_new(12).expect("a legal level")));
+    character
+        .choose_perk(&book, &PerkId::try_new("marked").expect("a valid id"))
+        .expect("the perk can be taken");
+    character
+}
+
+/// How many of the foes' hits in one round of fire were critical, with every roll
+/// a hit and a critical for anyone who can score one.
+fn criticals_against(character: Character) -> (usize, usize) {
+    let game = dressed_game().with_character(character);
+    let mut battle = start(&game);
+    let round = battle.end_turn(&mut Always(1)).expect("the fight goes on");
+    let hits: Vec<_> = round
+        .iter()
+        .filter(|shot| shot.target == battle.player())
+        .filter_map(|shot| match shot.strike {
+            engine::combat::Strike::Hit { critical, .. } => Some(critical),
+            engine::combat::Strike::Missed => None,
+        })
+        .collect();
+    (
+        hits.len(),
+        hits.iter().filter(|critical| **critical).count(),
+    )
+}
+
+#[test]
+fn a_player_immune_to_criticals_is_never_hit_critically() {
+    let (hits, criticals) = criticals_against(trained(&[]));
+    assert!(hits > 0 && criticals == hits, "plain: {criticals}/{hits}");
+    let (hits, criticals) = criticals_against(with_modifiers(serde_json::json!([
+        {"type": "crit_chance_against", "percent": -100}
+    ])));
+    assert!(hits > 0, "the foes still hit");
+    assert_eq!(criticals, 0);
+}
+
+#[test]
+fn light_touch_cuts_the_foes_critical_chance_only_in_light_armor() {
+    // Leather armor is light: with a -100 stand-in the effect is visible on every
+    // roll, and bare skin gets none of it.
+    let touched = || {
+        with_modifiers(serde_json::json!([
+            {"type": "crit_chance_against", "percent": -100, "armor": "light"}
+        ]))
+    };
+    let (hits, criticals) = criticals_against(touched());
+    assert!(hits > 0);
+    assert_eq!(criticals, 0, "leather armor is light");
+
+    let mut game = armed_game().with_character(touched());
+    apply_all(
+        &[effect(
+            serde_json::json!({"type": "give_item", "item": "metal_armor"}),
+        )],
+        &mut game,
+    )
+    .expect("the armor is given");
+    game.equip(&item("metal_armor")).expect("it is carried");
+    let mut battle = start(&game);
+    let round = battle.end_turn(&mut Always(1)).expect("the fight goes on");
+    let critical_hits = round
+        .iter()
+        .filter(|shot| shot.target == battle.player())
+        .filter(|shot| {
+            matches!(
+                shot.strike,
+                engine::combat::Strike::Hit { critical: true, .. }
+            )
+        })
+        .count();
+    assert!(critical_hits > 0, "metal armor is not light");
+}
+
+fn lucky_modifiers() -> serde_json::Value {
+    serde_json::json!([
+        {"type": "after_fight_boost", "below_health": 25, "stat": "luck",
+         "amount": 4, "minutes": 3}
+    ])
+}
+
+fn lucky() -> Character {
+    with_modifiers(lucky_modifiers())
+}
+
+/// Runs away from the fight with `wounds` already taken, and returns the game after
+/// it is settled.
+fn flee_with(wounds: u32) -> Game {
+    let mut game = dressed_game()
+        .with_perks(Arc::new(marked_book(lucky_modifiers())))
+        .with_character(lucky())
+        .with_wounds(wounds);
+    let mut battle = start(&game);
+    battle.flee(&mut Always(1)).expect("the player runs");
+    assert_eq!(
+        game.finish_battle(&battle),
+        Ok(Outcome::Fled),
+        "a roll of 1 always gets away"
+    );
+    game
+}
+
+#[test]
+fn ending_a_fight_below_the_line_raises_luck_for_the_minutes_it_lasts() {
+    let max = lucky().max_hp();
+    let before = lucky().special(Special::Luck).get();
+    let mut game = flee_with(max - max / 10);
+    assert_eq!(game.character().special(Special::Luck).get(), before + 4);
+    assert_eq!(game.active_effects().count(), 1);
+    game.wait(engine::clock::Span::minutes(
+        NonZeroU32::new(2).expect("not zero"),
+    ))
+    .expect("time passes");
+    assert_eq!(game.character().special(Special::Luck).get(), before + 4);
+    game.wait(engine::clock::Span::minutes(NonZeroU32::MIN))
+        .expect("time passes");
+    assert_eq!(game.character().special(Special::Luck).get(), before);
+    assert_eq!(game.active_effects().count(), 0);
+}
+
+#[test]
+fn a_fight_ended_on_more_health_gives_nothing() {
+    let max = lucky().max_hp();
+    assert_eq!(flee_with(0).active_effects().count(), 0);
+    assert_eq!(flee_with(max / 2).active_effects().count(), 0);
+}
+
+proptest! {
+    #![proptest_config(ProptestConfig::with_cases(48))]
+    /// The reward follows the whole percent the player ends on, rounded down:
+    /// strictly under 25 gets it, 25 does not.
+    #[test]
+    fn the_reward_follows_the_percent_left_rounded_down(wounds in 0u32..200) {
+        let max = lucky().max_hp();
+        let wounds = wounds.min(max - 1);
+        let game = flee_with(wounds);
+        let share = engine::shared::HealthPercent::of(max - wounds, max).get();
+        prop_assert_eq!(game.active_effects().count() == 1, share < 25, "{} of {}", max - wounds, max);
+    }
+}
+
+#[test]
+fn a_reward_for_a_close_fight_is_saved_and_a_stale_one_is_refused() {
+    let max = lucky().max_hp();
+    let game = flee_with(max - max / 10);
+    let save = game.save();
+    assert_eq!(save.rewards.len(), 1);
+    assert!(save.effects.is_empty(), "no item started it");
+    let loaded = game.restore(&save).expect("the save loads");
+    assert_eq!(loaded.save(), save);
+    assert_eq!(
+        loaded.character().special(Special::Luck),
+        game.character().special(Special::Luck)
+    );
+    let mut stale = save;
+    stale.rewards[0].until = 0;
+    assert!(
+        game.restore(&stale)
+            .expect_err("a worn-off reward is refused")
+            .to_string()
+            .contains("rewards")
+    );
+}

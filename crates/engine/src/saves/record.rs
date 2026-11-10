@@ -8,11 +8,11 @@ use serde::{Deserialize, Serialize};
 use super::error::SaveError;
 use crate::shared::{
     BoostStat, CompanionId, Effect, EncounterId, EndingId, FactionId, FindId, FlagId, ItemId,
-    LocationId, NpcId, PerkId, QuestId, QuestStage, Skill, Special, TraitId, VendorId,
+    LocationId, NpcId, PerkId, QuestEvent, QuestId, QuestStage, Skill, Special, TraitId, VendorId,
 };
 
 /// The newest version this game reads and the only one it writes.
-pub const VERSION: u32 = 6;
+pub const VERSION: u32 = 7;
 
 /// Everything that changes during play.
 ///
@@ -42,6 +42,10 @@ pub struct Save {
     pub shops: Vec<SavedShop>,
     /// The boosts in force.
     pub effects: Vec<SavedEffect>,
+    /// The rewards for fights survived on little health that are still in force.
+    pub rewards: Vec<SavedReward>,
+    /// The minute each remembered moment of each quest happened.
+    pub quest_times: Vec<SavedQuestTime>,
     /// Radiation absorbed, in rads.
     pub rads: u16,
     /// What the player is addicted to, by name.
@@ -222,6 +226,30 @@ pub struct SavedEffect {
     pub amount: i16,
     /// The minute it ends.
     pub until: u64,
+}
+
+/// One reward for a fight survived on little health, still in force.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct SavedReward {
+    /// What it changes.
+    pub stat: BoostStat,
+    /// By how much.
+    pub amount: i16,
+    /// The minute it ends.
+    pub until: u64,
+}
+
+/// When something happened in a quest.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct SavedQuestTime {
+    /// The quest.
+    pub quest: QuestId,
+    /// What happened.
+    pub event: QuestEvent,
+    /// The minute on the game clock.
+    pub minute: u64,
 }
 
 /// One addiction.
@@ -418,6 +446,20 @@ fn upgrade(mut value: serde_json::Value, from: u64) -> Result<serde_json::Value,
                 .ok_or_else(|| SaveError::Format("the save is not an object".to_owned()))?;
             object.insert("party".to_owned(), serde_json::Value::Array(Vec::new()));
             object.insert("version".to_owned(), serde_json::Value::from(6));
+            Ok(value)
+        }
+        // Version 7 added the rewards for close fights and the time of each quest
+        // moment; an older game had neither.
+        6 => {
+            let object = value
+                .as_object_mut()
+                .ok_or_else(|| SaveError::Format("the save is not an object".to_owned()))?;
+            object.insert("rewards".to_owned(), serde_json::Value::Array(Vec::new()));
+            object.insert(
+                "quest_times".to_owned(),
+                serde_json::Value::Array(Vec::new()),
+            );
+            object.insert("version".to_owned(), serde_json::Value::from(7));
             Ok(value)
         }
         _ => Err(SaveError::UnknownVersion(from)),

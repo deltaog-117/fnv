@@ -2,4 +2,5 @@
 
 mod screen;
 
+pub(crate) use screen::use_note;
 pub use screen::{Next, Pack};

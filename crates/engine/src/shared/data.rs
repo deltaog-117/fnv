@@ -26,8 +26,8 @@ pub use encounter::{Encounter, Foe};
 pub use faction::{Faction, FactionKind, InfoValue, ReputationModel, ReputationNote};
 pub use find::{Find, FindLine};
 pub use item::{
-    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, BoostUse, Consumable, ItemKind, ItemUse, Misc,
-    ModEffect, StatEffect, Weapon, WeaponClass, WeaponMod,
+    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, AutoUse, BoostUse, Consumable, ItemKind,
+    ItemUse, Misc, ModEffect, StatEffect, Weapon, WeaponClass, WeaponMod,
 };
 pub use location::{Location, LocationSize, MapKind, Neighbor, Position};
 pub use npc::{Npc, NpcSpecial};

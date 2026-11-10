@@ -61,7 +61,7 @@ fn the_authored_uses_reach_the_book() {
         .filter(|c| c.on_use.is_some())
         .count();
     assert_eq!(
-        modeled, 167,
+        modeled, 170,
         "uses.json lists the heals, boosts, meals, drinks and the poison items"
     );
     for consumable in data.consumables.iter() {
@@ -144,8 +144,15 @@ fn boosts_and_heals_in_a_use_match_the_wiki_numbers() {
     const HIT_POINTS: [&str; 3] = ["HP", "Hit Point", "Hit Points"];
     // Authored from the wiki's words before this check existed, where the import
     // parsed the effect into another shape (a resistance with no length, a heal
-    // written as "+60 HP" without a duration).
-    const READ_FROM_TEXT: [&str; 3] = ["rad_x", "super_stimpak", "psycho"];
+    // written as "+60 HP" without a duration, or as the range "+72-180 Hit Points").
+    const READ_FROM_TEXT: [&str; 5] = [
+        "rad_x",
+        "super_stimpak",
+        "psycho",
+        "auto_inject_super_stimpak",
+        // "+85 Poison Resistance (30s)": the import parsed no effect from it.
+        "snakebite_tourniquet",
+    ];
     let data = data();
     let mut checked = 0;
     for consumable in data.consumables.iter() {
@@ -214,4 +221,71 @@ fn damage_over_time_in_a_use_is_the_wiki_total() {
             boost.poison
         );
     }
+}
+
+/// An item works by itself exactly when the wiki's text says "Automatic use", and
+/// at the health the text names.
+#[test]
+fn the_items_that_work_by_themselves_match_the_wiki_text() {
+    use engine::shared::AutoUse;
+
+    let data = data();
+    let mut found = Vec::new();
+    for consumable in data.consumables.iter() {
+        let said = consumable.effects_text.contains("Automatic use");
+        assert_eq!(
+            consumable.auto_use.is_some(),
+            said && consumable.on_use.is_some(),
+            "{}: {}",
+            consumable.id,
+            consumable.effects_text
+        );
+        let Some(when) = consumable.auto_use else {
+            continue;
+        };
+        if let AutoUse::HealthAtOrBelow(limit) = when {
+            let words = format!("Automatic use at {}% health", limit.get());
+            assert!(
+                consumable.effects_text.contains(&words),
+                "{}",
+                consumable.id
+            );
+        }
+        found.push(consumable.id.as_str());
+    }
+    assert_eq!(
+        found,
+        [
+            "auto_inject_stimpak",
+            "auto_inject_super_stimpak",
+            "snakebite_tourniquet"
+        ]
+    );
+}
+
+#[test]
+fn an_item_that_works_by_itself_must_have_a_use_and_be_a_consumable() {
+    use engine::inventory::{InventoryError, ItemClass};
+    use engine::shared::AutoUse;
+
+    let book = ItemBook::new([
+        (item("tonic"), ItemClass::Consumable, 0.0),
+        (item("club"), ItemClass::Weapon, 1.0),
+    ])
+    .expect("the book builds");
+    let by_itself = |name: &str| [(item(name), AutoUse::Poisoned)];
+    assert!(matches!(
+        ItemBook::new([(item("tonic"), ItemClass::Consumable, 0.0)])
+            .expect("the book builds")
+            .with_autos(by_itself("tonic")),
+        Err(InventoryError::NoEffect(_))
+    ));
+    assert!(matches!(
+        book.with_autos(by_itself("club")),
+        Err(InventoryError::NotConsumable(_))
+    ));
+    assert!(matches!(
+        ItemBook::default().with_autos(by_itself("ghost")),
+        Err(InventoryError::Unknown(_))
+    ));
 }

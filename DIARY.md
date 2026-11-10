@@ -24,6 +24,7 @@
 | 2026-10-26 | Level-up screen | Level-up screen only; the creation screen waits for Doc's intro (COA B) | ✅ Confirmed |
 | 2026-11-03 | Weapon instances, restocking, fleeing, named saves | Weapon objects with ids, global restock from the clock, one flee roll, a folder of named saves (B, A, A, B) | ✅ Confirmed |
 | 2026-11-08 | Poison and weapon mods | Poison as one bounded pool paid out by the clock; mods as data on each weapon copy, summed by one `Fitting` (both chosen without a COA table: the shape was set by earlier features) | ✅ Confirmed |
+| 2026-11-10 | Items in a fight, auto-use, close-fight perks, time since a quest moment, flat prices, body parts | Items used on the real game and the fight re-read (COA A); days since a quest stage, event or start (COA B); the rest by the shape earlier features set; body parts wait for the game's own records | ✅ Confirmed |
 
 ---
 
@@ -2150,6 +2151,61 @@ Five roadmap items went in together. Three needed a choice between approaches, a
 | Date | Update | Author |
 |------|--------|--------|
 | 2026-11-09 | Initial entry | deltaog-117 |
+
+---
+
+### Items in a Fight, Auto-Use, Close-Fight Perks, Time Since a Quest Moment, Flat Prices and Body Parts: Six Items in One Cycle
+
+**Date:** 2026-11-10
+**Status:** Confirmed
+
+---
+
+#### Context / Background
+
+Six roadmap items went in together. Two needed a choice that is hard to undo and were put to the user as courses of action; the other four followed the shape earlier features had set, and were stated in one line each. The sixth was a spike (a decision, no code).
+
+---
+
+#### Decision
+
+- **An item used in a fight is used on the real game, and the fight reads the player again (COA A).** A fight runs on a copy of the player and the game is not touched until it is settled, so the question was who owns the item, the pack and the wounds while a fight is open. The two other options were a fight that carries a whole private copy of the game and merges it back at the end (atomic, but it rewrites the settle path and makes `Battle` hold a `Game`) and a fight that only heals, with the pack charged at the end like ammunition (smallest, but chems and addiction would need a second mechanism). `Game::use_item_in_battle` works on a clone: it gives the clone the fight's wounds (otherwise a stimpak would heal what the player walked in with, and refuse at "full health" in a fight that had hurt them), uses the item, rebuilds the player's fighter from the clone and puts hit points and fighter into the fight with `Combat::retune`, which, unlike `replace_combatant`, lets the maximum move (a chem that raises Endurance raises it). Only then does the game take the clone's place, so a refusal changes nothing. The wear on the weapon and the rounds in the pack stay as the fight opened them; both are settled at the end.
+- **An item costs 2 action points in a fight.** A stand-in: the wiki gives none. Using one is only possible on the player's own turn.
+- **Auto-use is a trigger on the item, checked by whoever changes health.** An item may carry `auto_use` (health at or below N percent, or poisoned) beside its `on_use`, so the item says when and what it does stays one rule. The book refuses an auto item with no use. The game does not poll: `Game::auto_use` is called after every command outside a fight (the scene calls it once per key, 70 ns when nothing is due) and `auto_use_in_battle` after each of the player's moves in a fight. It does not run between two shots of the same enemy round, because the fight's per-attack hook has no game to call; this is on the roadmap. The three items are Lonesome Road items, so nothing hands them out yet.
+- **Light Touch and Just Lucky I'm Alive without a new condition.** The gates a perk may carry read only health and the time, so "while wearing light armor" became a field on the modifier (`armor`, like `skill` and `foe` before it) and "a hit on this character" became its own modifier (`crit_chance_against`; -100 is immunity). The armor class is the body armor's, read from the data's `armor_class`. Light Touch's -25 is read as percent points, not a share of the foe's chance: the wiki's text does not say which. Just Lucky I'm Alive's Luck is a new kind of boost, `AfterFightBoost`, set when a fight ends with the player standing on less than the share (rounded down, so exactly 25% gets nothing).
+- **A timed boost that no item started needed a new source (`BoostSource`).** The save kept the item that started each boost and refused a boost from anything else, so the Luck reward is saved in its own list, `rewards`, and an expired one is refused like an expired chem.
+- **Time since a quest moment is one condition on a remembered minute (COA B).** The other options were a plain day number (cannot say "three days after") and named timers any rule can start (general, but new state, a new effect and a new condition in every sink). `Game` records the minute each quest began, finished, failed and reached each stage, before the stage's rules run so a rule that asks already finds it; `Condition::DaysSince` compares whole days. `Game::wait` runs the rules that ask again (`QuestBook::clock_quests`, like the standing list from the last cycle), each on a copy, so a rule that is refused tries again at the next wait. Sleep and travel go through `wait`, so they are covered. The save is version 7 (the times and the rewards).
+- **The wait effect was not built.** The table listed it with the condition, but nothing needs it: no rule in the data waits, and an effect that moves the clock would have to be added to every sink. It stays on the roadmap for the first rule that needs one. No rule uses the days-since condition either: the three-day warning of Most Wanted has no consequence the wiki gives, so it has no real example; a synthetic quest in the tests covers it.
+- **Chet's "1:1" is base value both ways while Goodsprings finds the player Mixed.** The wiki says "with a mixed reputation (regardless of how good or bad it is), he will offer 1:1 prices" and does not say what 1:1 is. The game reads it as the item's base value for buying and for selling, with no Barter markup; a vendor's `flat_prices` conditions say when, and it wins over a cut. Selling had no vendor in its price before, so `Game::sell_price_to` is the vendor-aware price and `sell` and `sell_copy` use it.
+- **Body-part targeting waits for the game's own records (the spike).** The wiki's Crippled Limbs page gives the effects in words: crippling the head costs the target 4 Perception and accuracy, the torso makes it flinch more, an arm costs accuracy and 10% (one-handed) or 5% (two-handed, unarmed) of base melee damage, two crippled arms 10%, a leg costs mobility, and the weapon itself can be crippled. It gives no hit points per part, no chance to hit a part and no crippling threshold, and the V.A.T.S. page names six targets with no numbers. Those numbers are in the game's body-part and actor records, which the xEdit export will carry. Building a model now would put invented numbers into the engine's core, so no code was written. What is ready for the day: `Combat::attack` takes a power, so a target part would sit beside it; `Fighter` would hold hit points per part; and of the wiki's effects only the head's Perception, the arms' melee damage and the weapon's crippling have an engine meaning, since combat has no movement or flinching.
+
+---
+
+#### Consequences
+
+- The fight screen has a new row, "Use an item", between Reload and Run away; the one test that counted rows from the end moved with it. The status line at the top shows the game's hit points, which a fight leaves alone until an item is used or it is settled, so it can disagree with the fight's own line; this is on the roadmap.
+- The save is version 7. A version 6 save loads with no rewards and no quest times; a save that names an unknown quest or stage, a moment in the future, repeats a moment or carries a reward that has worn off is refused with the part named.
+- 170 of 195 consumables are usable. The two new perks are modeled and neither can be taken: both belong to add-ons, and Just Lucky I'm Alive also asks for Neutral karma, which the checker reads as a requirement it cannot check.
+- `Game::auto_use` and `auto_use_in_battle` return what they used; the scene logs "It goes off by itself."
+- Benchmarks: 71 ns for an auto-use check with nothing due (it runs on every key press outside a fight) and 2.2 microseconds for an item used in a fight, which clones the game.
+
+---
+
+#### References
+
+- `crates/engine/src/game/state.rs`, `game/battle.rs`, `game/state/save.rs`, `combat/fight.rs`, `character/edge.rs`, `character/sheet.rs`, `effects/active.rs`, `quests/book.rs`, `inventory/book.rs`, `saves/record.rs`, `shared/condition.rs`, `shared/modifier.rs`, `shared/vocabulary.rs`, `shared/view.rs`, `shared/eval.rs`, `shared/data/item.rs`, `shared/data/vendor.rs`, `trade/`
+- `crates/tui/src/combat/screen.rs`, `app.rs`, `trade/screen.rs`
+- `crates/engine/tests/game/battle.rs`, `game/quest_times.rs`, `character/edge.rs`, `trade/flat_prices.rs`, `inventory/real_data.rs`, `saves/files.rs`, `shared/contract.rs`, `crates/engine/benches/fight_items.rs`
+- `data/items/uses.json`, `data/perks/modifiers.json`, `data/vendors/vendors.json`, `schemas/common.schema.json`, `schemas/item.schema.json`, `schemas/vendor.schema.json`, `scripts/normalize.py`
+- Fallout wiki, Crippled Limbs, Fallout: New Vegas combat and Barter (Fallout: New Vegas), read through the MediaWiki API
+
+---
+
+#### Review / Update Log
+
+| Date | Update | Author |
+|------|--------|--------|
+| 2026-11-10 | Initial entry | deltaog-117 |
 
 ---
 

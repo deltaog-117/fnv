@@ -174,3 +174,79 @@ proptest! {
         prop_assert_eq!(edge.crit_chance, expected);
     }
 }
+
+mod armor_and_close_calls {
+    use engine::shared::ArmorClass;
+
+    use super::*;
+
+    fn light_touch() -> serde_json::Value {
+        json!([
+            {"type": "crit_chance", "percent": 5, "armor": "light"},
+            {"type": "crit_chance_against", "percent": -25, "armor": "light"}
+        ])
+    }
+
+    #[test]
+    fn light_touch_works_only_in_light_armor() {
+        let book = book(&light_touch(), &json!([]));
+        let character = character(&book, 1);
+        let light = character.edge_in(None, Some(ArmorClass::Light));
+        assert_eq!((light.crit_chance, light.crit_chance_against), (5, -25));
+        for other in [None, Some(ArmorClass::Medium), Some(ArmorClass::Heavy)] {
+            let edge = character.edge_in(None, other);
+            assert_eq!(
+                (edge.crit_chance, edge.crit_chance_against),
+                (0, 0),
+                "{other:?}"
+            );
+        }
+        assert_eq!(character.edge(None), character.edge_in(None, None));
+    }
+
+    #[test]
+    fn a_modifier_with_no_armor_named_applies_in_any_armor_or_none() {
+        let book = book(
+            &json!([{"type": "crit_chance_against", "percent": -100}]),
+            &json!([]),
+        );
+        let character = character(&book, 1);
+        for worn in [None, Some(ArmorClass::Light), Some(ArmorClass::Power)] {
+            assert_eq!(character.edge_in(None, worn).crit_chance_against, -100);
+        }
+    }
+
+    #[test]
+    fn the_reward_for_a_close_fight_is_listed_once_per_rank() {
+        let book = book(
+            &json!([{"type": "after_fight_boost", "below_health": 25, "stat": "luck",
+                     "amount": 4, "minutes": 3}]),
+            &json!([]),
+        );
+        assert!(character(&book, 0).after_fight_rewards().is_empty());
+        let rewards = character(&book, 2).after_fight_rewards();
+        assert_eq!(rewards.len(), 2);
+        assert_eq!(
+            (rewards[0].stat, rewards[0].amount, rewards[0].minutes),
+            (Special::Luck, 4, 3)
+        );
+        assert_eq!(rewards[0].below_health.get(), 25);
+    }
+
+    proptest! {
+        /// Ranks add up, whatever the armor: the order and the count are all that
+        /// matter, so the sum is the amount times the ranks.
+        #[test]
+        fn protection_from_criticals_adds_up_over_ranks(ranks in 0u32..6, percent in -50i8..0) {
+            let book = book(
+                &json!([{"type": "crit_chance_against", "percent": percent}]),
+                &json!([]),
+            );
+            let character = character(&book, ranks);
+            prop_assert_eq!(
+                character.edge_in(None, Some(ArmorClass::Light)).crit_chance_against,
+                i32::from(percent) * i32::try_from(ranks).expect("a few ranks")
+            );
+        }
+    }
+}

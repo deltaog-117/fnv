@@ -56,6 +56,20 @@ pub fn sell_total(value: f64, count: NonZeroU32, barter: SkillLevel) -> u32 {
     round_caps(value * f64::from(count.get()) * sell_multiplier(barter))
 }
 
+/// Caps to buy `count` of an item worth `value` at a vendor who deals at base value,
+/// never less than one.
+#[must_use]
+pub fn flat_buy_total(value: f64, count: NonZeroU32) -> u32 {
+    round_caps(value * f64::from(count.get())).max(1)
+}
+
+/// Caps paid for `count` of an item worth `value` by a vendor who deals at base
+/// value; zero when the line is worth less than half a cap.
+#[must_use]
+pub fn flat_sell_total(value: f64, count: NonZeroU32) -> u32 {
+    round_caps(value * f64::from(count.get()))
+}
+
 fn round_caps(caps: f64) -> u32 {
     // Clamped to the range a u32 holds, and finite because a value is checked
     // to be finite when the item book is built.

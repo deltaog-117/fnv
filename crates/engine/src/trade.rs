@@ -28,4 +28,7 @@ mod price;
 pub use book::{DEFAULT_RESTOCK_DAYS, VendorBook, VendorInfo};
 pub use error::TradeError;
 pub use market::{Market, Shop};
-pub use price::{buy_multiplier, buy_total, buy_total_with_discount, sell_multiplier, sell_total};
+pub use price::{
+    buy_multiplier, buy_total, buy_total_with_discount, flat_buy_total, flat_sell_total,
+    sell_multiplier, sell_total,
+};

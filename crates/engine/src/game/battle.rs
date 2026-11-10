@@ -17,11 +17,11 @@ use crate::combat::{
     FighterId, Flight, Magazine, Multiplier, Percent, Points, Power, Reload, Resolution, Rules,
     Spread, StatError, computer_turns_then,
 };
-use crate::inventory::CopyId;
+use crate::inventory::{CopyId, InventoryError};
 use crate::shared::{
-    AmmoFamilyId, Armor, BatchError, CharacterView, CompanionId, EffectError, Encounter,
-    EncounterId, Foe, FoeKind, GameData, HealthPercent, InventoryView, ItemId, ModelError, Npc,
-    NpcSpecial, Skill, Special, SpecialLevel, Weapon, WeaponClass,
+    AmmoFamilyId, Armor, ArmorClass, BatchError, CharacterView, CompanionId, EffectError,
+    Encounter, EncounterId, Foe, FoeKind, GameData, HealthPercent, InventoryView, ItemId,
+    ModelError, Npc, NpcSpecial, Skill, Special, SpecialLevel, Weapon, WeaponClass,
 };
 use crate::weapon_mods::Fitting;
 
@@ -32,6 +32,8 @@ const FALLBACK_RELOAD_AP: u32 = 2;
 /// Condition points a weapon loses with every shot, hit or miss. A stand-in: the wiki
 /// gives no wear rate.
 pub(super) const WEAR_PER_SHOT: u32 = 1;
+/// Action points using an item costs in a fight. A stand-in: the wiki gives none.
+pub const USE_ITEM_AP: u32 = 2;
 /// A missing attribute on an NPC record reads as the middle of the scale.
 const AVERAGE_SPECIAL: u32 = 5;
 
@@ -99,6 +101,12 @@ pub enum BattleError {
     /// The fight has not ended yet.
     #[error("the fight is not over")]
     Unfinished,
+    /// An item can only be used on the player's own turn.
+    #[error("it is not your turn")]
+    NotYourTurn,
+    /// The item could not be used; the fight and the game are unchanged.
+    #[error(transparent)]
+    Item(#[from] InventoryError),
     /// The fight refused a move.
     #[error(transparent)]
     Combat(#[from] CombatError),
@@ -173,6 +181,7 @@ struct AmmoStats {
 struct ArmorStats {
     dt: Points,
     dr: Points,
+    class: Option<ArmorClass>,
 }
 
 /// Someone in a fight: the numbers [`Combat`] reads, fixed when the fight starts.
@@ -196,6 +205,24 @@ pub struct Fighter {
     /// What its attacks gain against particular kinds of foe.
     against: Vec<(FoeKind, Against)>,
     ignored_threshold: Points,
+    /// Percent points added to the chance that a hit on this fighter is critical.
+    crit_against: i32,
+}
+
+/// What a fighter wears, summed over the pieces: the threshold, the resistance, and
+/// the class of the body armor (`None` for clothing, nothing, or a foe).
+#[derive(Debug, Clone, Copy)]
+struct Worn {
+    dt: Points,
+    dr: Points,
+    class: Option<ArmorClass>,
+}
+
+/// The armor the player has on: every piece worn, and which of them is the outfit.
+#[derive(Debug, Clone, Copy)]
+pub(super) struct Dress<'a> {
+    pub(super) pieces: &'a [&'a ItemId],
+    pub(super) body: Option<&'a ItemId>,
 }
 
 /// Sequence is twice Perception. A stand-in: the familiar formula, but it is not in
@@ -246,12 +273,11 @@ impl Fighter {
         max_hp: NonZeroU32,
         character: &Character,
         weapon: &WeaponStats,
-        armor: Points,
-        resistance: Points,
+        worn: Worn,
         rounds: Rounds,
     ) -> Result<Self, StatError> {
         let level_of = |stat| u32::from(character.special(stat).get());
-        let edge = character.edge(weapon.skill);
+        let edge = character.edge_in(weapon.skill, worn.class);
         let boosts = character.boosts();
         let crit = f64::from(level_of(Special::Luck).min(CRIT_LUCK_CAP)) * weapon.crit_chance_mult
             + f64::from(edge.crit_chance);
@@ -270,10 +296,10 @@ impl Fighter {
             // A chem's threshold and damage add to the perks' and the armor's; foes
             // carry no chems, so for them these are zero.
             dt: Points::try_new(
-                (armor.get() + f64::from(edge.threshold) + f64::from(boosts.damage_threshold()))
+                (worn.dt.get() + f64::from(edge.threshold) + f64::from(boosts.damage_threshold()))
                     .max(0.0),
             )?,
-            dr: Points::try_new((resistance.get() + f64::from(edge.resistance)).max(0.0))?,
+            dr: Points::try_new((worn.dr.get() + f64::from(edge.resistance)).max(0.0))?,
             crit_chance: Percent::try_new(crit.round().clamp(0.0, 100.0) as u32)?,
             attack: AttackProfile {
                 ap_cost: scaled_cost(weapon.ap_cost, edge.ap_cost_percent),
@@ -314,6 +340,7 @@ impl Fighter {
             kind: FoeKind::Human,
             against: against_each_kind(&edge),
             ignored_threshold: Points::try_new(f64::from(edge.ignored_threshold))?,
+            crit_against: edge.crit_chance_against,
         })
     }
 }
@@ -401,6 +428,10 @@ impl Combatant for Fighter {
     fn ignored_threshold(&self) -> Points {
         self.ignored_threshold
     }
+
+    fn crit_chance_against(&self) -> i32 {
+        self.crit_against
+    }
 }
 
 /// Where a fighter's rounds come from.
@@ -430,8 +461,8 @@ pub(super) struct PlayerKit {
     character: Character,
     max_hp: NonZeroU32,
     stats: WeaponStats,
-    dt: Points,
-    dr: Points,
+    /// The armor worn, whose body class Light Touch reads.
+    worn: Worn,
     rounds: Rounds,
     condition: Option<Multiplier>,
     weapon: ItemId,
@@ -445,8 +476,7 @@ impl PlayerKit {
             self.max_hp,
             &self.character,
             &self.stats,
-            self.dt,
-            self.dr,
+            self.worn,
             self.rounds.clone(),
         )?;
         if let Some(condition) = self.condition {
@@ -614,8 +644,11 @@ impl Arsenal {
             max_hp,
             &character,
             weapon,
-            dt,
-            dr,
+            Worn {
+                dt,
+                dr,
+                class: None,
+            },
             Rounds::default(),
         )?;
         fighter.kind = foe.kind;
@@ -725,6 +758,7 @@ fn armor_stats(piece: &Armor) -> Result<ArmorStats, BattleError> {
     Ok(ArmorStats {
         dt: Points::try_new(piece.dt).map_err(bad)?,
         dr: Points::try_new(piece.dr.unwrap_or(0.0)).map_err(bad)?,
+        class: piece.armor_class,
     })
 }
 
@@ -792,12 +826,12 @@ fn npc_character(npc: &Npc) -> Result<Character, BattleError> {
 impl Arsenal {
     /// What it takes to build the player as a fighter, now and again as their
     /// situation changes: their numbers, the weapon in hand and the armor worn
-    /// (`worn_armor` lists the equipped armor ids).
+    /// (`dress` names the equipped armor).
     pub(super) fn player_kit(
         &self,
         character: &Character,
         weapon: Option<&ItemId>,
-        worn_armor: &[&ItemId],
+        dress: Dress<'_>,
         pack: &impl InventoryView,
         weapon_wear: u32,
         fitting: &Fitting,
@@ -808,7 +842,8 @@ impl Arsenal {
             .get(weapon_id)
             .ok_or_else(|| BattleError::UnusableGear(weapon_id.clone()))?
             .fitted(fitting)?;
-        let pieces = worn_armor
+        let pieces = dress
+            .pieces
             .iter()
             .map(|id| {
                 self.armor
@@ -844,8 +879,14 @@ impl Arsenal {
             character: character.clone(),
             max_hp,
             stats,
-            dt,
-            dr,
+            worn: Worn {
+                dt,
+                dr,
+                class: dress
+                    .body
+                    .and_then(|id| self.armor.get(id))
+                    .and_then(|piece| piece.class),
+            },
             rounds,
             condition,
             weapon: weapon_id.clone(),
@@ -954,6 +995,53 @@ impl Battle {
     #[must_use]
     pub fn shots(&self) -> u32 {
         self.shots
+    }
+
+    /// Whether the player can spend `cost` action points on an item now.
+    pub(super) fn ready_to_use(&self, cost: u32) -> Result<(), BattleError> {
+        if self.combat.status() != crate::combat::Status::Ongoing {
+            return Err(CombatError::Over.into());
+        }
+        if self.combat.active() != self.player {
+            return Err(BattleError::NotYourTurn);
+        }
+        if cost > self.combat.ap_left() {
+            return Err(CombatError::NotEnoughAp {
+                needed: cost,
+                left: self.combat.ap_left(),
+            }
+            .into());
+        }
+        Ok(())
+    }
+
+    /// The player's hit points in the fight.
+    pub(super) fn player_hp(&self) -> u32 {
+        self.combat.hp(self.player).unwrap_or(0)
+    }
+
+    /// Gives a kit built from the game as it is now what only the fight knows: the
+    /// wear on the weapon when it opened and the rounds in the pack, which are not
+    /// spent until the fight is settled.
+    pub(super) fn carry_over(&self, kit: &mut PlayerKit) {
+        kit.condition = self.kit.condition;
+        kit.rounds = self.kit.rounds.clone();
+    }
+
+    /// Puts the player's numbers back after an item changed them: the new kit, the
+    /// hit points the game now has, and `cost` action points spent.
+    pub(super) fn after_item(
+        &mut self,
+        kit: PlayerKit,
+        hit_points: u32,
+        cost: u32,
+    ) -> Result<(), BattleError> {
+        let hp = NonZeroU32::new(hit_points).ok_or(BattleError::PlayerDown)?;
+        let fighter = kit.fighter()?;
+        self.combat.retune(self.player, fighter, hp)?;
+        self.combat.spend_ap(cost)?;
+        *self.kit = kit;
+        Ok(())
     }
 
     /// Plays the turns of allies and enemies that come before the player's first

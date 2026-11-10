@@ -27,3 +27,12 @@ unchanged to `data/engine/vendors.json` by `scripts/normalize.py`.
   who repairs, with Repair 50: a placeholder, since the wiki lists no repair
   services for Goodsprings. Chet also stocks two weapon repair kits, also a
   placeholder.
+
+- A vendor may carry `flat_prices`: conditions (any one is enough) under which the
+  vendor buys and sells at the item's base value, with no Barter markup either way.
+  The wiki's Barter page says Chet "will use only the PC's barter skill value to
+  determine prices even if they are Idolized with Goodsprings, but with a mixed
+  reputation (regardless of how good or bad it is), he will offer 1:1 prices", so
+  Chet carries one condition: Goodsprings standing is exactly Mixed. "1:1" read as
+  base value both ways is the game's reading, since the page does not spell it out.
+  A flat price wins over a `discount`.

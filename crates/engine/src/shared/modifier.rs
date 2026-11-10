@@ -8,9 +8,13 @@
 //! kind of foe being fought or the item being used, and apply only then. Leaving
 //! the condition out means always.
 
+use std::num::NonZeroU16;
+
 use serde::{Deserialize, Serialize};
 
+use super::bounds::HealthPercent;
 use super::condition::Condition;
+use super::data::ArmorClass;
 use super::error::ModelError;
 use super::ids::ItemId;
 use super::non_empty::NonEmpty;
@@ -106,6 +110,30 @@ pub enum Modifier {
         /// Only with a weapon governed by this skill.
         #[serde(default, skip_serializing_if = "Option::is_none")]
         skill: Option<Skill>,
+        /// Only while the body armor worn is of this class.
+        #[serde(default, skip_serializing_if = "Option::is_none")]
+        armor: Option<ArmorClass>,
+    },
+    /// The chance that a hit on this character is critical, whoever strikes.
+    CritChanceAgainst {
+        /// Percent points added to the attacker's chance; negative makes this
+        /// character harder to hurt critically, and -100 makes them immune.
+        percent: i8,
+        /// Only while the body armor worn is of this class.
+        #[serde(default, skip_serializing_if = "Option::is_none")]
+        armor: Option<ArmorClass>,
+    },
+    /// A reward for a fight survived with little health: an attribute raised for a
+    /// while once the fight is over.
+    AfterFightBoost {
+        /// The fight must end with less than this share of the hit points left.
+        below_health: HealthPercent,
+        /// The attribute raised.
+        stat: Special,
+        /// Points added; negative for a penalty.
+        amount: i8,
+        /// How long it lasts, in minutes.
+        minutes: NonZeroU16,
     },
     /// The damage a critical hit adds.
     CritDamagePercent {
@@ -156,7 +184,7 @@ pub enum Modifier {
 
 impl Modifier {
     /// Every `type` value a modifier can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 20] = [
+    pub const ALL_TAGS: [&'static str; 22] = [
         "skill_points_per_level",
         "xp_percent",
         "carry_weight",
@@ -171,6 +199,8 @@ impl Modifier {
         "ignore_threshold",
         "damage_percent",
         "crit_chance",
+        "crit_chance_against",
+        "after_fight_boost",
         "crit_damage_percent",
         "ap_cost_percent",
         "reload_ap_percent",
@@ -198,6 +228,8 @@ impl Modifier {
             Self::IgnoreThreshold { .. } => "ignore_threshold",
             Self::DamagePercent { .. } => "damage_percent",
             Self::CritChance { .. } => "crit_chance",
+            Self::CritChanceAgainst { .. } => "crit_chance_against",
+            Self::AfterFightBoost { .. } => "after_fight_boost",
             Self::CritDamagePercent { .. } => "crit_damage_percent",
             Self::ApCostPercent { .. } => "ap_cost_percent",
             Self::ReloadApPercent { .. } => "reload_ap_percent",

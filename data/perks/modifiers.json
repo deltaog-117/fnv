@@ -444,5 +444,40 @@
     ]
    }
   ]
+ },
+ {
+  "perk": "light_touch",
+  "modifiers": [
+   {
+    "type": "crit_chance",
+    "percent": 5,
+    "armor": "light"
+   },
+   {
+    "type": "crit_chance_against",
+    "percent": -25,
+    "armor": "light"
+   }
+  ]
+ },
+ {
+  "perk": "just_lucky_i_m_alive",
+  "modifiers": [
+   {
+    "type": "crit_damage_percent",
+    "percent": 50
+   },
+   {
+    "type": "crit_chance_against",
+    "percent": -100
+   },
+   {
+    "type": "after_fight_boost",
+    "below_health": 25,
+    "stat": "luck",
+    "amount": 4,
+    "minutes": 3
+   }
+  ]
  }
 ]

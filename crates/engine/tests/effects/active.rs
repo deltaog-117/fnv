@@ -1,6 +1,6 @@
 //! Starting, replacing and ending boosts.
 
-use engine::effects::ActiveEffects;
+use engine::effects::{ActiveEffects, BoostSource};
 use engine::shared::{Boost, BoostStat, ItemId, Skill, Special};
 use proptest::prelude::*;
 use serde_json::json;
@@ -140,7 +140,7 @@ proptest! {
             effects.start(&item(names[*who]), boosts, *at);
         }
         for name in names {
-            let count = effects.iter().filter(|a| a.source == item(name)).count();
+            let count = effects.iter().filter(|a| a.source == BoostSource::Item(item(name))).count();
             let last = doses.iter().rev().find(|(who, _, _)| names[*who] == name);
             prop_assert_eq!(count, last.map_or(0, |(_, boosts, _)| boosts.len()));
         }

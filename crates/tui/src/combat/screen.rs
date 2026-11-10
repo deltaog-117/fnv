@@ -1,19 +1,24 @@
 //! One fight, driven by the engine's `Battle`: the player picks a target or passes,
 //! and the enemies answer in the log.
 
+use std::sync::Arc;
+
 use engine::combat::{
     AimedHitChance, Combat, Combatant, Dice, FighterId, Flight, Power, Resolution, Side, Status,
     Strike,
 };
 use engine::game::{Battle, Fighter, Game, Outcome};
+use engine::shared::ItemId;
 use ratatui::Frame;
 use ratatui::layout::Rect;
 use ratatui::text::{Line, Span};
 use ratatui::widgets::{Block, Borders, Paragraph, Wrap};
 
+use crate::inventory::use_note;
 use crate::shared::input::Command;
 use crate::shared::log::{Entry, Log};
 use crate::shared::menu::{self, Item, Menu};
+use crate::shared::names::Names;
 use crate::shared::theme;
 
 /// What the player's command led to.
@@ -30,6 +35,8 @@ pub enum Next {
 enum Action {
     Shoot(FighterId),
     Reload,
+    /// Choose something from the pack to use.
+    Items,
     /// Try to run away.
     Flee,
     EndTurn,
@@ -43,13 +50,28 @@ pub struct Fight {
     names: Vec<String>,
     actions: Vec<Action>,
     menu: Menu,
+    names_of_items: Arc<Names>,
+    /// The list of usable items, while the player is choosing one.
+    choosing: Option<Choosing>,
+}
+
+/// The pack's usable items on offer in the middle of a fight.
+#[derive(Debug)]
+struct Choosing {
+    items: Vec<(ItemId, u32)>,
+    menu: Menu,
 }
 
 impl Fight {
     /// Starts the screen on a fresh battle. A foe that is quicker than the player
     /// acts first: what it did before the player's turn goes to the log.
     #[must_use]
-    pub fn new(mut battle: Battle, log: &mut Log, dice: &mut impl Dice) -> Self {
+    pub fn new(
+        mut battle: Battle,
+        names_of_items: Arc<Names>,
+        log: &mut Log,
+        dice: &mut impl Dice,
+    ) -> Self {
         let names = names(battle.combat());
         let opening = battle.open(dice);
         let mut fight = Self {
@@ -57,6 +79,8 @@ impl Fight {
             names,
             actions: Vec::new(),
             menu: Menu::new(0),
+            names_of_items,
+            choosing: None,
         };
         if !opening.is_empty() {
             log.push(Entry::Note("They are quicker and shoot first.".to_owned()));
@@ -89,6 +113,9 @@ impl Fight {
         log: &mut Log,
         dice: &mut impl Dice,
     ) -> Next {
+        if self.choosing.is_some() {
+            return self.update_items(command, game, log, dice);
+        }
         if command == Command::Back {
             log.push(Entry::Note(
                 "Choose \"Run away\" to try to get out of this fight.".to_owned(),
@@ -115,6 +142,7 @@ impl Fight {
                 ))),
                 Err(error) => log.push(Entry::Note(error.to_string())),
             },
+            Action::Items => self.offer_items(game, log),
             Action::Flee => match self.battle.flee(dice) {
                 Ok((Flight::Escaped, _)) => log.push(Entry::Note("You get away.".to_owned())),
                 Ok((Flight::Blocked, resolutions)) => {
@@ -132,11 +160,77 @@ impl Fight {
                 Err(error) => log.push(Entry::Note(error.to_string())),
             },
         }
+        self.after_action(game, log)
+    }
+
+    /// What follows any move of the player's: items that work by themselves go off
+    /// when their moment has come, then a finished fight is settled and an
+    /// unfinished one gets its menu again.
+    fn after_action(&mut self, game: &mut Game, log: &mut Log) -> Next {
+        for (item, used) in game.auto_use_in_battle(&mut self.battle) {
+            let name = self.names_of_items.name(&item);
+            let note = use_note(&name, &used, game.inventory().item_use(&item));
+            log.push(Entry::Note(format!("It goes off by itself. {note}")));
+        }
         if self.battle.combat().status() != Status::Ongoing {
             return self.settle(game, log);
         }
         self.refresh();
         Next::Stay
+    }
+
+    /// Lists what the player carries that can be used, or says there is nothing.
+    fn offer_items(&mut self, game: &Game, log: &mut Log) {
+        let items: Vec<(ItemId, u32)> = game
+            .inventory()
+            .stacks()
+            .filter(|(item, _)| game.inventory().item_use(item).is_some())
+            .map(|(item, count)| (item.clone(), count.get()))
+            .collect();
+        if items.is_empty() {
+            log.push(Entry::Note("You carry nothing you can use.".to_owned()));
+            return;
+        }
+        self.choosing = Some(Choosing {
+            menu: Menu::new(items.len()),
+            items,
+        });
+    }
+
+    /// The item list: Enter uses the item, Esc goes back to the fight.
+    fn update_items(
+        &mut self,
+        command: Command,
+        game: &mut Game,
+        log: &mut Log,
+        dice: &mut impl Dice,
+    ) -> Next {
+        let Some(choosing) = self.choosing.as_mut() else {
+            return Next::Stay;
+        };
+        if command == Command::Back {
+            self.choosing = None;
+            return Next::Stay;
+        }
+        let Some((item, _)) = choosing
+            .menu
+            .handle(command)
+            .and_then(|index| choosing.items.get(index))
+            .cloned()
+        else {
+            return Next::Stay;
+        };
+        let name = self.names_of_items.name(&item);
+        match game.use_item_in_battle(&mut self.battle, &item, dice) {
+            Ok(used) => {
+                let note = use_note(&name, &used, game.inventory().item_use(&item));
+                log.push(Entry::Note(note));
+                self.choosing = None;
+            }
+            // The list stays open: the player may pick something else.
+            Err(error) => log.push(Entry::Note(error.to_string())),
+        }
+        self.after_action(game, log)
     }
 
     fn settle(&self, game: &mut Game, log: &mut Log) -> Next {
@@ -171,7 +265,7 @@ impl Fight {
             .filter(|&id| combat.side(id) == Some(Side::Enemy) && combat.is_standing(id))
             .map(Action::Shoot)
             .chain(combat.rounds(self.battle.player()).map(|_| Action::Reload))
-            .chain([Action::Flee, Action::EndTurn])
+            .chain([Action::Items, Action::Flee, Action::EndTurn])
             .collect();
         self.menu = Menu::new(self.actions.len());
     }
@@ -270,6 +364,40 @@ impl Fight {
             }
         }
         lines.push(Line::default());
+        if let Some(choosing) = &self.choosing {
+            lines.push(Line::styled(
+                format!("Use which item? ({} AP)", engine::game::USE_ITEM_AP),
+                theme::heading(),
+            ));
+            let rows: Vec<Item> = choosing
+                .items
+                .iter()
+                .map(|(item, count)| {
+                    Item::new(format!("{} x{count}", self.names_of_items.name(item)))
+                })
+                .collect();
+            let room = usize::from(area.height)
+                .saturating_sub(2)
+                .saturating_sub(lines.len())
+                .max(1);
+            lines.extend(menu::window(
+                choosing.menu.lines(&rows),
+                choosing.menu.selected(),
+                room,
+            ));
+            frame.render_widget(
+                Paragraph::new(lines)
+                    .block(
+                        Block::new()
+                            .borders(Borders::ALL)
+                            .border_style(theme::dim())
+                            .title(" Fight "),
+                    )
+                    .wrap(Wrap { trim: false }),
+                area,
+            );
+            return;
+        }
         lines.push(Line::styled("What do you do?", theme::heading()));
         let items: Vec<Item> = self
             .actions
@@ -283,6 +411,7 @@ impl Fight {
                     }
                 }
                 Action::Reload => Item::new("Reload"),
+                Action::Items => Item::new("Use an item"),
                 Action::Flee => Item::new(format!(
                     "Run away ({}% to get out)",
                     combat

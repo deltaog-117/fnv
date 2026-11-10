@@ -348,6 +348,78 @@
             },
             "skill": {
               "$ref": "#/$defs/skill"
+            },
+            "armor": {
+              "enum": [
+                "light",
+                "medium",
+                "heavy",
+                "power"
+              ],
+              "description": "Only while the body armor worn is of this class."
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "percent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "crit_chance_against"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127,
+              "description": "Percent points added to the attacker's chance; -100 makes the character immune to critical hits."
+            },
+            "armor": {
+              "enum": [
+                "light",
+                "medium",
+                "heavy",
+                "power"
+              ],
+              "description": "Only while the body armor worn is of this class."
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "below_health",
+            "stat",
+            "amount",
+            "minutes"
+          ],
+          "additionalProperties": false,
+          "description": "An attribute raised for a while after a fight that ends with less than this share of the hit points left.",
+          "properties": {
+            "type": {
+              "const": "after_fight_boost"
+            },
+            "below_health": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "stat": {
+              "$ref": "#/$defs/special"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": -128,
+              "maximum": 127
+            },
+            "minutes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 65535
             }
           }
         },
@@ -578,6 +650,53 @@
               }
             }
           ]
+        },
+        {
+          "type": "object",
+          "description": "At least this many whole days have passed since something happened in a quest. Never true for a moment that has not happened.",
+          "required": [
+            "type",
+            "quest",
+            "event",
+            "days"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "days_since"
+            },
+            "quest": {
+              "$ref": "#/$defs/id"
+            },
+            "event": {
+              "oneOf": [
+                {
+                  "enum": [
+                    "started",
+                    "completed",
+                    "failed"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "stage"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "stage": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "days": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
         },
         {
           "type": "object",

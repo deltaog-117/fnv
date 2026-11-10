@@ -15,8 +15,8 @@ use super::ids::{CompanionId, FactionId, FlagId, ItemId, NpcId, PerkId, QuestId}
 use super::non_empty::NonEmpty;
 use super::time::TimeWindow;
 use super::vocabulary::{
-    Alignment, Comparison, NpcState, QuestStage, QuestState, Renown, ReputationLevel, Skill,
-    Special,
+    Alignment, Comparison, NpcState, QuestEvent, QuestStage, QuestState, Renown, ReputationLevel,
+    Skill, Special,
 };
 
 fn default_count() -> NonZeroU32 {
@@ -52,6 +52,17 @@ pub enum Condition {
     },
     /// A quest is in a given state.
     Quest(QuestCondition),
+    /// At least this many whole days have passed since something happened in a
+    /// quest, as in "three days after Most Wanted began". Never true for a moment
+    /// that has not happened.
+    DaysSince {
+        /// The quest.
+        quest: QuestId,
+        /// The moment in its life.
+        event: QuestEvent,
+        /// The days that must have passed.
+        days: NonZeroU32,
+    },
     /// The player's standing with a faction compares to a level.
     Reputation {
         /// The faction or town.
@@ -183,12 +194,25 @@ impl Condition {
         }
     }
 
+    /// Whether the answer can change as the clock moves, so a rule that holds it
+    /// must be checked again when time passes.
+    #[must_use]
+    pub fn reads_clock(&self) -> bool {
+        match self {
+            Self::DaysSince { .. } => true,
+            Self::All { of } | Self::Any { of } => of.iter().any(Self::reads_clock),
+            Self::Not { of } => of.reads_clock(),
+            _ => false,
+        }
+    }
+
     /// Every `type` value a condition can have, in schema order.
-    pub const ALL_TAGS: [&'static str; 20] = [
+    pub const ALL_TAGS: [&'static str; 21] = [
         "all",
         "any",
         "not",
         "quest",
+        "days_since",
         "reputation",
         "reputation_tier",
         "reputation_points",
@@ -216,6 +240,7 @@ impl Condition {
             Self::Any { .. } => "any",
             Self::Not { .. } => "not",
             Self::Quest(_) => "quest",
+            Self::DaysSince { .. } => "days_since",
             Self::Reputation { .. } => "reputation",
             Self::ReputationTier { .. } => "reputation_tier",
             Self::ReputationPoints { .. } => "reputation_points",

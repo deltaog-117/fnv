@@ -43,6 +43,7 @@ use crate::combat::{self, Fight};
 use crate::craft::{self, Craft};
 use crate::dialogue::{self, Talk};
 use crate::exploration::{self, Exploration, Person};
+use crate::inventory::use_note;
 use crate::inventory::{self, Pack};
 use crate::quests::{self, Journal};
 use crate::repair::{self, Repair};
@@ -472,6 +473,22 @@ impl App {
                 }
             }
         }
+        // A fight sets its own items off, round by round; everywhere else the game
+        // checks after each command, because a wait, a poisoned drink or a settled
+        // fight may have brought one's moment.
+        if !matches!(self.screen, Screen::Fighting(_) | Screen::Down) {
+            self.set_off_items();
+        }
+    }
+
+    /// Uses the items that work by themselves and whose moment has come, and says so.
+    fn set_off_items(&mut self) {
+        for (item, used) in self.game.auto_use() {
+            let name = self.names.name(&item);
+            let note = use_note(&name, &used, self.game.inventory().item_use(&item));
+            self.log
+                .push(Entry::Note(format!("It goes off by itself. {note}")));
+        }
     }
 
     /// The shops the player can reach from here, in the order the scene lists them.
@@ -835,7 +852,12 @@ impl App {
         match self.game.start_battle(&id) {
             Ok(battle) => {
                 self.log.push(Entry::Note("Guns are drawn.".to_owned()));
-                let fight = Fight::new(battle, &mut self.log, &mut self.dice);
+                let fight = Fight::new(
+                    battle,
+                    Arc::clone(&self.names),
+                    &mut self.log,
+                    &mut self.dice,
+                );
                 self.screen = if fight.is_over() {
                     // The quick foes finished it before the player could act.
                     let outcome = match fight.finish(&mut self.game, &mut self.log) {
@@ -1509,19 +1531,96 @@ mod tests {
         let mut app = with_the_gunfight_open(app_with_seed(1));
         let fight = app.people.len() + app.shops_here().len();
         app.update(Command::Pick(fight));
-        // The actions are a shot at each foe still standing, then Reload, Run away
-        // and End turn, so Reload is third from the end.
+        // The actions are a shot at each foe still standing, then Reload, Use an
+        // item, Run away and End turn, so Reload is fourth from the end.
         app.update(Command::Pick(0));
         let text = screen(&app, 100, 40);
         assert!(text.contains("Ammo 12/17"), "{text}");
         let Screen::Fighting(fight) = &app.screen else {
             panic!("the fight is still on");
         };
-        let reload = fight.action_count() - 3;
+        let reload = fight.action_count() - 4;
         app.update(Command::Pick(reload));
         let text = screen(&app, 100, 40);
         assert!(text.contains("Ammo 13/16"), "{text}");
         assert!(text.contains("You reload: 13 rounds"), "{text}");
+    }
+
+    fn carried(app: &App, item: &str) -> u32 {
+        app.game
+            .inventory()
+            .item_count(&engine::shared::ItemId::try_new(item).expect("valid id"))
+    }
+
+    #[test]
+    fn using_an_item_in_a_fight_lists_the_pack_and_spends_the_item_only_when_it_works() {
+        let mut app = with_the_gunfight_open(app_with_seed(1));
+        give(&mut app, "stimpak", 2);
+        give(&mut app, "radaway", 1);
+        let fight = app.people.len() + app.shops_here().len();
+        app.update(Command::Pick(fight));
+        let items = |app: &App| {
+            let Screen::Fighting(fight) = &app.screen else {
+                panic!("the fight is on");
+            };
+            // "Use an item" sits before "Run away" and "End turn".
+            fight.action_count() - 3
+        };
+        app.update(Command::Pick(items(&app)));
+        let text = screen(&app, 100, 40);
+        assert!(text.contains("Use which item? (2 AP)"), "{text}");
+        assert!(
+            text.contains("RadAway x1") && text.contains("Stimpak x2"),
+            "{text}"
+        );
+        // RadAway is refused (no rads to clear): kept, said, and the list stays open.
+        app.update(Command::Pick(0));
+        let text = screen(&app, 100, 40);
+        assert!(text.contains("Use which item?"), "{text}");
+        assert_eq!(carried(&app, "radaway"), 1);
+        // Esc goes back to the fight without spending anything.
+        app.update(Command::Back);
+        assert!(screen(&app, 100, 40).contains("What do you do?"));
+        assert_eq!((carried(&app, "stimpak"), carried(&app, "radaway")), (2, 1));
+        // The foes shot first, so a stimpak heals what the fight took.
+        app.update(Command::Pick(items(&app)));
+        app.update(Command::Pick(1));
+        let text = screen(&app, 100, 40);
+        assert!(text.contains("You use the Stimpak and recover"), "{text}");
+        assert!(
+            text.contains("78 AP left"),
+            "two action points spent: {text}"
+        );
+        assert_eq!(carried(&app, "stimpak"), 1);
+    }
+
+    #[test]
+    fn with_nothing_usable_the_fight_says_so_and_stays_on_the_menu() {
+        let mut app = with_the_gunfight_open(app_with_seed(1));
+        let fight = app.people.len() + app.shops_here().len();
+        app.update(Command::Pick(fight));
+        let Screen::Fighting(fight) = &app.screen else {
+            panic!("the fight is on");
+        };
+        let at = fight.action_count() - 3;
+        app.update(Command::Pick(at));
+        let text = screen(&app, 100, 40);
+        assert!(text.contains("You carry nothing you can use."), "{text}");
+        assert!(text.contains("What do you do?"), "{text}");
+    }
+
+    #[test]
+    fn an_auto_inject_stimpak_goes_off_in_the_scene_once_health_is_low() {
+        let mut app = app();
+        give(&mut app, "auto_inject_stimpak", 1);
+        let max = app.game.character().max_hp();
+        app.game = app.game.clone().with_wounds(max - max / 4);
+        // Any command gives the scene its moment to check.
+        app.update(Command::Down);
+        assert_eq!(carried(&app, "auto_inject_stimpak"), 0);
+        assert!(app.game.hp() > max / 4);
+        let text = screen(&app, 100, 50);
+        assert!(text.contains("It goes off by itself."), "{text}");
     }
 
     #[test]

@@ -29,7 +29,7 @@ pub use boost::{Boost, BoostStat, BoostTally, DerivedStat};
 pub use bounds::{DiscountPercent, HealthPercent, Rads, RenownTier, SkillLevel, SpecialLevel};
 pub use condition::{Condition, QuestCondition};
 pub use data::{
-    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, Bed, BoostUse, Companion, Consumable,
+    Addiction, Ammo, Armor, ArmorClass, ArmorSlot, AutoUse, Bed, BoostUse, Companion, Consumable,
     CraftReaction, Dialogue, Discount, Encounter, Faction, FactionKind, Find, FindLine, Foe,
     InfoValue, Ingredient, ItemKind, ItemUse, Location, LocationSize, MapKind, Misc, ModEffect,
     Neighbor, Npc, NpcSpecial, Perk, PerkRequirements, Position, Quest, QuestKind, Recipe,
@@ -58,6 +58,6 @@ pub use view::{
     StateView, WorldView,
 };
 pub use vocabulary::{
-    Ailment, Alignment, Comparison, Dlc, FoeKind, NpcState, QuestStage, QuestState, Renown,
-    ReputationLevel, Skill, Special,
+    Ailment, Alignment, Comparison, Dlc, FoeKind, NpcState, QuestEvent, QuestStage, QuestState,
+    Renown, ReputationLevel, Skill, Special,
 };

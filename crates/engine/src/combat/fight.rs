@@ -86,6 +86,11 @@ pub trait Combatant {
     fn ignored_threshold(&self) -> Points {
         Points::ZERO
     }
+    /// Percent points added to the chance that a hit on this fighter is critical,
+    /// whoever strikes; -100 makes them immune. The sum is kept between 0 and 100.
+    fn crit_chance_against(&self) -> i32 {
+        0
+    }
 }
 
 /// One of the two sides of a fight.
@@ -400,6 +405,66 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
         Ok(())
     }
 
+    /// Swaps the numbers `id` fights with and sets its hit points, for a fighter whose
+    /// maximum can change in the middle of a fight (a chem that raises Endurance, or
+    /// a heal). Rounds and the turn in progress are kept.
+    ///
+    /// Unlike [`Combat::replace_combatant`] the maximum may differ, so the hit points
+    /// are given with it: `hp` is never zero (a fighter is not raised from the dead
+    /// or struck down this way) and never above the new maximum.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError::Over`] when the fight is over, [`CombatError::NoSuchFighter`]
+    /// for an unknown id, [`CombatError::TargetDown`] for a fighter already down and
+    /// [`CombatError::HpAboveMax`] when `hp` is more than the new maximum; the fight
+    /// is unchanged in all of them.
+    pub fn retune(&mut self, id: FighterId, who: C, hp: NonZeroU32) -> Result<(), CombatError> {
+        if self.status != Status::Ongoing {
+            return Err(CombatError::Over);
+        }
+        let slot = self
+            .fighters
+            .get_mut(id.0)
+            .ok_or(CombatError::NoSuchFighter(id.0))?;
+        if slot.hp == 0 {
+            return Err(CombatError::TargetDown(id.0));
+        }
+        let max = who.max_hp().get();
+        if hp.get() > max {
+            return Err(CombatError::HpAboveMax {
+                id: id.0,
+                hp: hp.get(),
+                max,
+            });
+        }
+        slot.who = who;
+        slot.hp = hp.get();
+        Ok(())
+    }
+
+    /// The active fighter spends `cost` action points on something that is not an
+    /// attack, such as using an item.
+    ///
+    /// # Errors
+    ///
+    /// [`CombatError::Over`] when the fight is over and
+    /// [`CombatError::NotEnoughAp`] when the fighter has too few left; nothing
+    /// changes in either case.
+    pub fn spend_ap(&mut self, cost: u32) -> Result<(), CombatError> {
+        if self.status != Status::Ongoing {
+            return Err(CombatError::Over);
+        }
+        self.ap_left = self
+            .ap_left
+            .checked_sub(cost)
+            .ok_or(CombatError::NotEnoughAp {
+                needed: cost,
+                left: self.ap_left,
+            })?;
+        Ok(())
+    }
+
     /// Whether the fight goes on or who won.
     #[must_use]
     pub fn status(&self) -> Status {
@@ -520,7 +585,10 @@ impl<C: Combatant, H: HitModel<C>> Combat<C, H> {
             .hit_model
             .chance(&self.fighters[attacker].who, &victim.who);
         let strike = if roll(dice) <= chance.get() {
-            let critical = roll(dice) <= self.fighters[attacker].who.crit_chance().get();
+            let line = i32::from(self.fighters[attacker].who.crit_chance().get())
+                .saturating_add(victim.who.crit_chance_against())
+                .clamp(0, 100);
+            let critical = i32::from(roll(dice)) <= line;
             let raw = damage_before_armor(&profile, power, critical);
             let dt = victim
                 .who

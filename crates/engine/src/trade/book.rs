@@ -4,7 +4,9 @@ use std::collections::BTreeMap;
 use std::num::NonZeroU32;
 
 use super::error::TradeError;
-use crate::shared::{Discount, GameData, ItemId, LocationId, NpcId, SkillLevel, Vendor, VendorId};
+use crate::shared::{
+    Condition, Discount, GameData, ItemId, LocationId, NpcId, SkillLevel, Vendor, VendorId,
+};
 
 /// A merchant: who trades, where, and what they start with.
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -15,6 +17,7 @@ pub struct VendorInfo {
     caps: u32,
     stock: Vec<(ItemId, NonZeroU32)>,
     discount: Option<Discount>,
+    flat_prices: Vec<Condition>,
     repair: Option<SkillLevel>,
     restock_days: NonZeroU32,
 }
@@ -40,6 +43,13 @@ impl VendorInfo {
     #[must_use]
     pub fn discount(&self) -> Option<&Discount> {
         self.discount.as_ref()
+    }
+
+    /// The conditions under which this vendor deals at base value both ways; any one
+    /// of them is enough, and none means never.
+    #[must_use]
+    pub fn flat_prices(&self) -> &[Condition] {
+        &self.flat_prices
     }
 
     /// What the player sees when choosing to trade.
@@ -114,6 +124,7 @@ impl VendorBook {
                 caps: record.caps,
                 stock,
                 discount: record.discount.clone(),
+                flat_prices: record.flat_prices.clone(),
                 repair: record.repair.map(|service| service.skill),
                 restock_days: record.restock_days.unwrap_or(DEFAULT_RESTOCK_DAYS),
             };

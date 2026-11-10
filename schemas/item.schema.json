@@ -311,6 +311,28 @@
         "skill": {
           "type": "string"
         },
+        "auto_use": {
+          "description": "When the game uses the item without being asked, for an item that works by itself: `poisoned`, or `{\"health_at_or_below\": percent}`. What it then does is `on_use`, which the item must have.",
+          "oneOf": [
+            {
+              "const": "poisoned"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "health_at_or_below"
+              ],
+              "properties": {
+                "health_at_or_below": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              }
+            }
+          ]
+        },
         "on_use": {
           "type": "object",
           "description": "What using the item does, when the game models all of it (hand-authored in data/items/uses.json): `heal`, `medicine_heal` or `boost`.",

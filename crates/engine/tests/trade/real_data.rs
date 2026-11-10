@@ -79,3 +79,13 @@ fn only_trudy_gives_a_price_cut() {
         [("chet", None), ("doc_mitchell", None), ("trudy", Some(25))]
     );
 }
+
+#[test]
+fn only_chet_deals_flat_and_only_for_a_mixed_goodsprings() {
+    let (_, vendors) = game();
+    let flat: Vec<(&str, usize)> = vendors
+        .iter()
+        .map(|(id, info)| (id.as_str(), info.flat_prices().len()))
+        .collect();
+    assert_eq!(flat, [("chet", 1), ("doc_mitchell", 0), ("trudy", 0)]);
+}

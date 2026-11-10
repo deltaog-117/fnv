@@ -44,6 +44,8 @@ pub struct QuestBook {
     /// Quests with an automated rule that reads the player's standing, sorted so
     /// the rules run in the same order every time.
     standing_quests: Vec<QuestId>,
+    /// Quests with an automated rule that reads how much time has passed.
+    clock_quests: Vec<QuestId>,
 }
 
 impl QuestBook {
@@ -90,10 +92,28 @@ impl QuestBook {
             .map(|(id, _)| id.clone())
             .collect();
         standing_quests.sort();
+        let mut clock_quests: Vec<QuestId> = book
+            .iter()
+            .filter(|(_, entry)| {
+                entry.rules.iter().any(|rule| {
+                    !rule.effects.is_empty() && rule.conditions.iter().any(Condition::reads_clock)
+                })
+            })
+            .map(|(id, _)| id.clone())
+            .collect();
+        clock_quests.sort();
         Ok(Self {
             quests: book,
             standing_quests,
+            clock_quests,
         })
+    }
+
+    /// The quests whose rules read how much time has passed: the ones to check
+    /// again when the clock moves.
+    #[must_use]
+    pub fn clock_quests(&self) -> &[QuestId] {
+        &self.clock_quests
     }
 
     /// The quests whose rules read the player's standing: the ones to check again

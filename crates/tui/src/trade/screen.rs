@@ -208,11 +208,7 @@ impl Trade {
     /// Draws both panels and the question line under them.
     pub fn render(&self, frame: &mut Frame, area: Rect, game: &Game) {
         // A line more when the discount note is added, so it wraps instead of being cut.
-        let prompt_height = if game.discount_at(&self.vendor).is_some() {
-            4
-        } else {
-            3
-        };
+        let prompt_height = if self.has_note(game) { 4 } else { 3 };
         let [panels, prompt] =
             Layout::vertical([Constraint::Min(0), Constraint::Length(prompt_height)]).areas(area);
         let [left, right] =
@@ -237,12 +233,20 @@ impl Trade {
         let (text, style) = match &self.ask {
             Some(ask) => (self.question(ask, game), theme::heading()),
             None => (
-                match game.discount_at(&self.vendor) {
-                    Some(cut) => format!(
+                match (
+                    game.flat_prices_at(&self.vendor),
+                    game.discount_at(&self.vendor),
+                ) {
+                    (true, _) => "Prices are one for one with you. Enter trades the selected \
+                                  stack. Prices are per unit."
+                        .to_owned(),
+                    (false, Some(cut)) => format!(
                         "{}% off for you. Enter trades the selected stack. Prices are per unit.",
                         cut.get()
                     ),
-                    None => "Enter trades the selected stack. Prices are per unit.".to_owned(),
+                    (false, None) => {
+                        "Enter trades the selected stack. Prices are per unit.".to_owned()
+                    }
                 },
                 theme::dim(),
             ),
@@ -259,11 +263,16 @@ impl Trade {
         );
     }
 
+    /// Whether the line under the panels has a note about a cut or flat prices.
+    fn has_note(&self, game: &Game) -> bool {
+        game.flat_prices_at(&self.vendor) || game.discount_at(&self.vendor).is_some()
+    }
+
     fn question(&self, ask: &Ask, game: &Game) -> String {
         let count = ask.quantity.get();
         let (verb, total) = match ask.side {
             Side::Buy => ("Buy", game.buy_price_from(&self.vendor, &ask.item, count)),
-            Side::Sell => ("Sell", game.sell_price(&ask.item, count)),
+            Side::Sell => ("Sell", game.sell_price_to(&self.vendor, &ask.item, count)),
         };
         let name = self.names.name(&ask.item);
         match total {
@@ -291,7 +300,7 @@ impl Trade {
                 let (item, count) = (item, *count);
                 let price = match side {
                     Side::Buy => game.buy_price_from(&self.vendor, item, NonZeroU32::MIN),
-                    Side::Sell => game.sell_price(item, NonZeroU32::MIN),
+                    Side::Sell => game.sell_price_to(&self.vendor, item, NonZeroU32::MIN),
                 }
                 .ok();
                 let worn = side == Side::Sell

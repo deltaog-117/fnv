@@ -40,7 +40,7 @@ mod sheet;
 mod situation;
 
 pub use book::PerkBook;
-pub use edge::{Edge, Versus};
+pub use edge::{AfterFight, Edge, Versus};
 pub use error::{CreationError, ProgressError, RestoreError, Unmet};
 pub use rules::{
     BASE_SKILL_HALVES, CharacterRules, Level, MAX_TRAITS, START_SPECIAL_POINTS, TAG_BONUS,

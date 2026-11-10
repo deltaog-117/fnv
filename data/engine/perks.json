@@ -1508,7 +1508,24 @@
    "other": "Neutral Karma"
   },
   "requires_text": "Level 50; Neutral Karma",
-  "effects_text": "+50% critical hit damage; Immunity to critical hits; +4 Luck for three minutes if a fight has ended with less than 25% health"
+  "effects_text": "+50% critical hit damage; Immunity to critical hits; +4 Luck for three minutes if a fight has ended with less than 25% health",
+  "modifiers": [
+   {
+    "type": "crit_damage_percent",
+    "percent": 50
+   },
+   {
+    "type": "crit_chance_against",
+    "percent": -100
+   },
+   {
+    "type": "after_fight_boost",
+    "below_health": 25,
+    "stat": "luck",
+    "amount": 4,
+    "minutes": 3
+   }
+  ]
  },
  {
   "id": "khan_trick",
@@ -1665,7 +1682,19 @@
    }
   },
   "requires_text": "Level 2; Agility 6; Repair 45",
-  "effects_text": "+5% Critical Chance, enemies suffer -25% crit chance. (Only while wearing light armor)."
+  "effects_text": "+5% Critical Chance, enemies suffer -25% crit chance. (Only while wearing light armor).",
+  "modifiers": [
+   {
+    "type": "crit_chance",
+    "percent": 5,
+    "armor": "light"
+   },
+   {
+    "type": "crit_chance_against",
+    "percent": -25,
+    "armor": "light"
+   }
+  ]
  },
  {
   "id": "living_anatomy",

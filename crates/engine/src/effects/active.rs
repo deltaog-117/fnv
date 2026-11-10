@@ -2,12 +2,21 @@
 
 use crate::shared::{Boost, BoostStat, BoostTally, ItemId};
 
-/// One boost in force: what it changes, by how much, which item started it and the
+/// What started a boost.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum BoostSource {
+    /// A dose of this item.
+    Item(ItemId),
+    /// A perk's reward for a fight survived on little health.
+    AfterFight,
+}
+
+/// One boost in force: what it changes, by how much, what started it and the
 /// minute it ends.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Active {
-    /// The item that started it.
-    pub source: ItemId,
+    /// What started it.
+    pub source: BoostSource,
     /// What it changes.
     pub stat: BoostStat,
     /// By how much; negative for a penalty.
@@ -27,13 +36,28 @@ impl ActiveEffects {
     /// earlier dose of the same item. Each lasts its own length, counted from
     /// `now`; the end saturates, so no length can wrap the clock around.
     pub fn start(&mut self, source: &ItemId, boosts: &[Boost], now: u64) {
-        self.list.retain(|active| &active.source != source);
+        self.list
+            .retain(|active| active.source != BoostSource::Item(source.clone()));
         self.list.extend(boosts.iter().map(|boost| Active {
-            source: source.clone(),
+            source: BoostSource::Item(source.clone()),
             stat: boost.stat,
             amount: boost.amount.get(),
             until: now.saturating_add(u64::from(boost.minutes.get())),
         }));
+    }
+
+    /// Starts a perk's reward for a fight survived on little health, replacing an
+    /// earlier reward to the same stat so the same fight twice does not stack.
+    pub fn start_after_fight(&mut self, boost: &Boost, now: u64) {
+        self.list.retain(|active| {
+            !(active.source == BoostSource::AfterFight && active.stat == boost.stat)
+        });
+        self.list.push(Active {
+            source: BoostSource::AfterFight,
+            stat: boost.stat,
+            amount: boost.amount.get(),
+            until: now.saturating_add(u64::from(boost.minutes.get())),
+        });
     }
 
     /// The boosts of a save, in the order they were started.

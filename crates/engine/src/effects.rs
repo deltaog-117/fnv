@@ -18,4 +18,4 @@
 
 mod active;
 
-pub use active::{Active, ActiveEffects};
+pub use active::{Active, ActiveEffects, BoostSource};

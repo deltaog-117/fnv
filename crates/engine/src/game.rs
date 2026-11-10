@@ -10,5 +10,5 @@
 mod battle;
 mod state;
 
-pub use battle::{Arsenal, Battle, BattleError, Fighter, Outcome};
+pub use battle::{Arsenal, Battle, BattleError, Fighter, Outcome, USE_ITEM_AP};
 pub use state::{Crafted, Deferred, Game, RepairQuote, Used, WornWeapon};

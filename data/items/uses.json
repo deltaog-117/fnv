@@ -165,5 +165,8 @@
   {"item": "dark_datura", "boost": {"poison": 60, "effects": [{"stat": "intelligence", "amount": -2, "minutes": 2}]}},
   {"item": "mother_darkness", "boost": {"poison": 80, "effects": [{"stat": "agility", "amount": -3, "minutes": 1}, {"stat": "perception", "amount": -3, "minutes": 1}]}},
   {"item": "silver_sting", "boost": {"poison": 80, "effects": [{"stat": "strength", "amount": -2, "minutes": 1}]}},
-  {"item": "tremble", "boost": {"poison": 40, "effects": [{"stat": "guns", "amount": -50, "minutes": 1}, {"stat": "explosives", "amount": -50, "minutes": 1}, {"stat": "melee_weapons", "amount": -50, "minutes": 1}, {"stat": "energy_weapons", "amount": -50, "minutes": 1}]}}
+  {"item": "tremble", "boost": {"poison": 40, "effects": [{"stat": "guns", "amount": -50, "minutes": 1}, {"stat": "explosives", "amount": -50, "minutes": 1}, {"stat": "melee_weapons", "amount": -50, "minutes": 1}, {"stat": "energy_weapons", "amount": -50, "minutes": 1}]}},
+  {"item": "auto_inject_stimpak", "medicine_heal": 60, "auto": {"health_at_or_below": 50}},
+  {"item": "auto_inject_super_stimpak", "boost": {"heal": 72}, "auto": {"health_at_or_below": 25}},
+  {"item": "snakebite_tourniquet", "boost": {"cure_poison": true, "effects": [{"stat": "poison_resistance", "amount": 85, "minutes": 1}]}, "auto": "poisoned"}
 ]

@@ -1,12 +1,12 @@
 //! `proptest` strategies that build arbitrary valid model values.
 
-use std::num::NonZeroU32;
+use std::num::{NonZeroU16, NonZeroU32};
 
 use engine::shared::{
-    Ailment, Alignment, CompanionId, Comparison, Condition, Effect, EndingId, FactionId, FlagId,
-    FoeKind, HealthPercent, ItemId, MinuteOfDay, Modifier, NonEmpty, NpcId, NpcState, PerkId,
-    QuestCondition, QuestId, QuestStage, QuestState, Rads, Renown, RenownTier, ReputationLevel,
-    Skill, SkillLevel, Special, SpecialLevel, TimeWindow,
+    Ailment, Alignment, ArmorClass, CompanionId, Comparison, Condition, Effect, EndingId,
+    FactionId, FlagId, FoeKind, HealthPercent, ItemId, MinuteOfDay, Modifier, NonEmpty, NpcId,
+    NpcState, PerkId, QuestCondition, QuestEvent, QuestId, QuestStage, QuestState, Rads, Renown,
+    RenownTier, ReputationLevel, Skill, SkillLevel, Special, SpecialLevel, TimeWindow,
 };
 use proptest::collection::vec;
 use proptest::prelude::*;
@@ -54,6 +54,24 @@ fn quest_state() -> impl Strategy<Value = QuestState> {
     ]
 }
 
+fn quest_event() -> impl Strategy<Value = QuestEvent> {
+    prop_oneof![
+        Just(QuestEvent::Started),
+        Just(QuestEvent::Completed),
+        Just(QuestEvent::Failed),
+        stage().prop_map(QuestEvent::Stage),
+    ]
+}
+
+fn armor_class() -> impl Strategy<Value = Option<ArmorClass>> {
+    proptest::option::of(select(vec![
+        ArmorClass::Light,
+        ArmorClass::Medium,
+        ArmorClass::Heavy,
+        ArmorClass::Power,
+    ]))
+}
+
 fn count() -> impl Strategy<Value = NonZeroU32> {
     (1u32..1_000).prop_map(|n| NonZeroU32::new(n).expect("range starts at one"))
 }
@@ -83,6 +101,8 @@ fn leaf_condition() -> impl Strategy<Value = Condition> {
     let first = prop_oneof![
         (quest_id(), quest_state())
             .prop_map(|(quest, state)| Condition::Quest(QuestCondition::new(quest, state))),
+        (quest_id(), quest_event(), count())
+            .prop_map(|(quest, event, days)| { Condition::DaysSince { quest, event, days } }),
         (
             faction_id(),
             any_of::<ReputationLevel>(),
@@ -237,7 +257,27 @@ pub fn modifier() -> impl Strategy<Value = Modifier> {
             skill,
             foe
         }),
-        (any::<i8>(), skill()).prop_map(|(percent, skill)| Modifier::CritChance { percent, skill }),
+        (any::<i8>(), skill(), armor_class()).prop_map(|(percent, skill, armor)| {
+            Modifier::CritChance {
+                percent,
+                skill,
+                armor,
+            }
+        }),
+        (any::<i8>(), armor_class())
+            .prop_map(|(percent, armor)| Modifier::CritChanceAgainst { percent, armor }),
+        (
+            0u32..=100,
+            any_of::<Special>(),
+            any::<i8>(),
+            1u16..=u16::MAX
+        )
+            .prop_map(|(below, stat, amount, minutes)| Modifier::AfterFightBoost {
+                below_health: HealthPercent::try_new(below).expect("range is valid"),
+                stat,
+                amount,
+                minutes: NonZeroU16::new(minutes).expect("range starts at one"),
+            }),
         (any::<i8>(), skill(), foe()).prop_map(|(percent, skill, foe)| {
             Modifier::CritDamagePercent {
                 percent,

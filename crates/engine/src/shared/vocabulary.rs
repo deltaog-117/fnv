@@ -369,6 +369,37 @@ impl QuestStage {
     }
 }
 
+/// A moment in a quest's life whose time the game keeps, so a rule can ask how long
+/// ago it was.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, PartialOrd, Ord, Serialize, Deserialize)]
+#[serde(rename_all = "snake_case")]
+pub enum QuestEvent {
+    /// The quest began.
+    Started,
+    /// The quest was completed.
+    Completed,
+    /// The quest failed or was locked out.
+    Failed,
+    /// The quest reached exactly this stage.
+    Stage(QuestStage),
+}
+
+impl QuestEvent {
+    /// Every wire name of a quest event, in schema order.
+    pub const ALL_TAGS: [&'static str; 4] = ["started", "completed", "failed", "stage"];
+
+    /// The wire name of this event.
+    #[must_use]
+    pub fn tag(&self) -> &'static str {
+        match self {
+            Self::Started => "started",
+            Self::Completed => "completed",
+            Self::Failed => "failed",
+            Self::Stage(_) => "stage",
+        }
+    }
+}
+
 /// Where a quest stands. The stage-based states carry their stage number, so a
 /// state that needs one cannot be built without it.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]

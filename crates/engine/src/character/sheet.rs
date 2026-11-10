@@ -6,7 +6,7 @@ use strum::{EnumCount, IntoEnumIterator};
 
 use super::bonus::Bonuses;
 use super::book::PerkBook;
-use super::edge::{self, Edge};
+use super::edge::{self, AfterFight, Edge};
 use super::error::{CreationError, ProgressError, RestoreError};
 use super::rules::{
     BASE_SKILL_HALVES, CharacterRules, Level, MAX_TRAITS, START_SPECIAL_POINTS, TAG_BONUS,
@@ -14,8 +14,9 @@ use super::rules::{
 };
 use super::situation::Situation;
 use crate::shared::{
-    Ailment, BoostTally, CharacterSink, CharacterView, ConditionalModifiers, EffectError, ItemId,
-    Modifier, PerkId, Skill, SkillLevel, Special, SpecialLevel, TraitId, evaluate, whole_amount,
+    Ailment, ArmorClass, BoostTally, CharacterSink, CharacterView, ConditionalModifiers,
+    EffectError, ItemId, Modifier, PerkId, Skill, SkillLevel, Special, SpecialLevel, TraitId,
+    evaluate, whole_amount,
 };
 
 /// The seven S.P.E.C.I.A.L. values; every one always holds a legal level.
@@ -466,7 +467,20 @@ impl Character {
     /// `skill` (`None` for a weapon no skill governs).
     #[must_use]
     pub fn edge(&self, skill: Option<Skill>) -> Edge {
-        Edge::of(&self.bonuses.scoped, skill)
+        self.edge_in(skill, None)
+    }
+
+    /// [`Character::edge`] for a character wearing body armor of class `armor`, which
+    /// is what Light Touch reads.
+    #[must_use]
+    pub fn edge_in(&self, skill: Option<Skill>, armor: Option<ArmorClass>) -> Edge {
+        Edge::of(&self.bonuses.scoped, skill, armor)
+    }
+
+    /// The rewards for ending a fight on little health, one per rank taken.
+    #[must_use]
+    pub fn after_fight_rewards(&self) -> Vec<AfterFight> {
+        edge::after_fight(&self.bonuses.scoped)
     }
 
     /// Percent added to how fast the weapon in hand wears.

@@ -287,7 +287,13 @@
   "edid": "NVDLC04AutoInjectStimpak",
   "form_id": "0000000d",
   "effects_text": "Automatic use at 50% health; +90 Hit Points (with Medicine skill 100)",
-  "skill": "Medicine"
+  "skill": "Medicine",
+  "on_use": {
+   "medicine_heal": 60
+  },
+  "auto_use": {
+   "health_at_or_below": 50
+  }
  },
  {
   "id": "auto_inject_super_stimpak",
@@ -299,7 +305,15 @@
   "source": "Auto-inject super stimpak",
   "edid": "NVDLC04AutoInjectSuperStimpak",
   "form_id": "0000000d",
-  "effects_text": "Automatic use at 25% health; +72-180 Hit Points (180 at Medicine skill 100)"
+  "effects_text": "Automatic use at 25% health; +72-180 Hit Points (180 at Medicine skill 100)",
+  "on_use": {
+   "boost": {
+    "heal": 72
+   }
+  },
+  "auto_use": {
+   "health_at_or_below": 25
+  }
  },
  {
   "id": "banana_yucca_fruit",
@@ -5866,7 +5880,20 @@
   "edid": "NVDLC04Tourniquet",
   "form_id": "0000000d",
   "effects_text": "Cure animal poison; Automatic use; +85 Poison Resistance (30s)",
-  "skill": "Survival"
+  "skill": "Survival",
+  "on_use": {
+   "boost": {
+    "cure_poison": true,
+    "effects": [
+     {
+      "stat": "poison_resistance",
+      "amount": 85,
+      "minutes": 1
+     }
+    ]
+   }
+  },
+  "auto_use": "poisoned"
  },
  {
   "id": "spore_carrier_sap",

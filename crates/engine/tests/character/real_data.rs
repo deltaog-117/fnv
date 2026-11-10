@@ -162,6 +162,14 @@ fn the_wiki_text_still_says_what_each_modeled_perk_and_trait_does() {
             "hunter",
             "75% more critical damage against animals and mutated animals.",
         ),
+        (
+            "just_lucky_i_m_alive",
+            "+4 Luck for three minutes if a fight has ended with less than 25% health",
+        ),
+        (
+            "light_touch",
+            "enemies suffer -25% crit chance. (Only while wearing light armor)",
+        ),
     ] {
         let perk = data
             .perks
@@ -256,7 +264,9 @@ fn only_the_modeled_perks_and_traits_carry_modifiers() {
             "fast_metabolism",
             "finesse",
             "hunter",
+            "just_lucky_i_m_alive",
             "life_giver",
+            "light_touch",
             "math_wrath",
             "piercing_strike",
             "rapid_reload",

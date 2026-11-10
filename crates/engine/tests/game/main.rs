@@ -5,7 +5,7 @@
 //! and rule firing; `pack` carries the character and the inventory through `Game`;
 //! `real_data` runs a real quest's effects through `apply_all`; `items` uses and
 //! drops pack items; `clock` checks that only waiting moves the time; `rest` sleeps
-//! in a bed; `boosts` runs chems and time together; `reputation` runs fame, infamy and karma through the composed game; `upkeep` repairs, crafts and gathers; `situation` runs the perks that depend on wounds and the hour.
+//! in a bed; `boosts` runs chems and time together; `reputation` runs fame, infamy and karma through the composed game; `upkeep` repairs, crafts and gathers; `situation` runs the perks that depend on wounds and the hour; `quest_times` asks how long ago a quest moment was.
 
 mod ailments;
 mod automation;
@@ -18,6 +18,7 @@ mod items;
 mod pack;
 mod poison;
 mod progress;
+mod quest_times;
 mod real_data;
 mod reputation;
 mod rest;

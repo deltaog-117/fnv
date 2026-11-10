@@ -27,6 +27,6 @@ pub use folder::{
 };
 pub use record::{
     Save, SavedAddiction, SavedCharacter, SavedDeferred, SavedEffect, SavedEnding, SavedFate,
-    SavedFired, SavedNpc, SavedPack, SavedPhase, SavedQuest, SavedScore, SavedShop, SavedStanding,
-    SavedWeapon, SavedWorld, VERSION,
+    SavedFired, SavedNpc, SavedPack, SavedPhase, SavedQuest, SavedQuestTime, SavedReward,
+    SavedScore, SavedShop, SavedStanding, SavedWeapon, SavedWorld, VERSION,
 };

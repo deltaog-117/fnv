@@ -624,7 +624,7 @@ fn boost_text(boost: &Boost) -> String {
 
 /// What the log says after an item is used. `healed` is what it restored, and `used`
 /// is what the item does, which says whether it also started boosts.
-fn use_note(name: &str, used: &Used, left: Option<ItemUse>) -> String {
+pub(crate) fn use_note(name: &str, used: &Used, left: Option<ItemUse>) -> String {
     let boosts = match left {
         Some(ItemUse::Boost(boost)) => boost.effects.len(),
         _ => 0,

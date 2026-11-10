@@ -5,9 +5,9 @@
 
 use std::num::NonZeroU32;
 
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
-use crate::shared::{AmmoFamilyId, Boost, Dlc, ItemId, Skill};
+use crate::shared::{AmmoFamilyId, Boost, Dlc, HealthPercent, ItemId, Skill};
 
 /// Which item file a record came from (`kind` in `item.schema.json`).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
@@ -64,7 +64,7 @@ pub enum ArmorSlot {
 }
 
 /// Armor weight class.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "snake_case")]
 pub enum ArmorClass {
     /// Light armor.
@@ -210,6 +210,10 @@ item_record!(
         skill: Option<String>,
         /// What using it does, when the game models all of it.
         on_use: Option<ItemUse>,
+        /// When the game uses it without being asked, for an item that works by
+        /// itself (an auto-inject stimpak, a snakebite tourniquet).
+        #[serde(default)]
+        auto_use: Option<AutoUse>,
     }
 );
 
@@ -270,6 +274,17 @@ item_record!(
         component_of_text: Option<String>,
     }
 );
+
+/// When a carried consumable is used without the player asking for it. What it then
+/// does is the item's `on_use`.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
+#[serde(rename_all = "snake_case")]
+pub enum AutoUse {
+    /// Used once health has fallen to this share of the maximum, or below.
+    HealthAtOrBelow(HealthPercent),
+    /// Used once the player is poisoned.
+    Poisoned,
+}
 
 /// What using a consumable does, as the game models it.
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize)]

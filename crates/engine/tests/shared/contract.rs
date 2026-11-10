@@ -11,8 +11,8 @@ use std::path::PathBuf;
 use std::sync::LazyLock;
 
 use engine::shared::{
-    Alignment, Comparison, Condition, Dlc, Effect, FoeKind, Modifier, NpcState, QuestState, Renown,
-    ReputationLevel, Skill, Special,
+    Alignment, ArmorClass, Comparison, Condition, Dlc, Effect, FoeKind, Modifier, NpcState,
+    QuestEvent, QuestState, Renown, ReputationLevel, Skill, Special,
 };
 use jsonschema::Validator;
 use proptest::prelude::*;
@@ -198,6 +198,48 @@ fn closed_sets_match_the_schema() {
             branch_enum("modifier", tag, "foe"),
             rust_names::<FoeKind>(),
             "{tag}"
+        );
+    }
+}
+
+#[test]
+fn quest_events_and_armor_classes_match_the_schema() {
+    // `days_since` names an event as a plain word or as {"stage": n}.
+    let condition = SCHEMA["$defs"]["condition"]["oneOf"]
+        .as_array()
+        .expect("the definition is a oneOf")
+        .iter()
+        .find(|branch| branch_tags(branch).contains("days_since"))
+        .expect("the days_since branch exists");
+    let event = &condition["properties"]["event"]["oneOf"];
+    let words = strings(&event[0]["enum"]);
+    let staged = event[1]["required"]
+        .as_array()
+        .expect("the staged event requires its stage");
+    assert_eq!(staged, &[json!("stage")]);
+    let mut all = words;
+    all.insert("stage".to_owned());
+    assert_eq!(all, as_set(&QuestEvent::ALL_TAGS));
+    for tag in ["crit_chance", "crit_chance_against"] {
+        assert_eq!(
+            branch_enum("modifier", tag, "armor"),
+            ["light", "medium", "heavy", "power"]
+                .iter()
+                .map(|name| (*name).to_owned())
+                .collect::<BTreeSet<_>>(),
+            "{tag}"
+        );
+    }
+    for class in [
+        ArmorClass::Light,
+        ArmorClass::Medium,
+        ArmorClass::Heavy,
+        ArmorClass::Power,
+    ] {
+        let name = serde_json::to_value(class).expect("a class is data");
+        assert!(
+            branch_enum("modifier", "crit_chance", "armor")
+                .contains(name.as_str().expect("a word"))
         );
     }
 }

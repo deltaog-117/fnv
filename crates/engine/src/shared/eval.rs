@@ -14,6 +14,8 @@ use super::sink::{BatchError, EffectError, State, StateSink};
 use super::view::{QuestStatus, StateView};
 use super::vocabulary::{Comparison, QuestState};
 
+const MINUTES_PER_DAY: u64 = 24 * 60;
+
 /// Whether the condition holds in the given state.
 ///
 /// # Examples
@@ -32,6 +34,9 @@ pub fn evaluate<V: StateView + ?Sized>(condition: &Condition, view: &V) -> bool 
         Condition::Any { of } => of.iter().any(|inner| evaluate(inner, view)),
         Condition::Not { of } => !evaluate(of, view),
         Condition::Quest(quest) => quest_holds(quest, view),
+        Condition::DaysSince { quest, event, days } => view
+            .minutes_since(quest, *event)
+            .is_some_and(|minutes| minutes / MINUTES_PER_DAY >= u64::from(days.get())),
         Condition::Reputation { faction, level, op } => {
             let standing = view.reputation(faction);
             match op {

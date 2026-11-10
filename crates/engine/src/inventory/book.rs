@@ -3,7 +3,7 @@
 use std::collections::HashMap;
 
 use super::state::InventoryError;
-use crate::shared::{ArmorSlot, GameData, ItemId, ItemUse};
+use crate::shared::{ArmorSlot, AutoUse, GameData, ItemId, ItemUse};
 
 /// What an item is, as far as carrying and wearing it goes.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -40,6 +40,7 @@ struct Info {
 pub struct ItemBook {
     items: HashMap<ItemId, Info>,
     uses: HashMap<ItemId, ItemUse>,
+    autos: HashMap<ItemId, AutoUse>,
 }
 
 impl ItemBook {
@@ -74,6 +75,7 @@ impl ItemBook {
         Ok(Self {
             items,
             uses: HashMap::new(),
+            autos: HashMap::new(),
         })
     }
 
@@ -121,6 +123,31 @@ impl ItemBook {
         Ok(self)
     }
 
+    /// The same book with the items that are used by themselves, and when.
+    ///
+    /// # Errors
+    ///
+    /// [`InventoryError::Unknown`] for an item not in the book,
+    /// [`InventoryError::NotConsumable`] for one that is not a consumable, and
+    /// [`InventoryError::NoEffect`] for one with no use to set off, since an item
+    /// that does nothing when its moment comes would be spent for nothing.
+    pub fn with_autos(
+        mut self,
+        autos: impl IntoIterator<Item = (ItemId, AutoUse)>,
+    ) -> Result<Self, InventoryError> {
+        for (id, when) in autos {
+            match self.class(&id) {
+                None => return Err(InventoryError::Unknown(id)),
+                Some(ItemClass::Consumable) if self.uses.contains_key(&id) => {
+                    self.autos.insert(id, when);
+                }
+                Some(ItemClass::Consumable) => return Err(InventoryError::NoEffect(id)),
+                Some(_) => return Err(InventoryError::NotConsumable(id)),
+            }
+        }
+        Ok(self)
+    }
+
     /// Every weapon, armor, ammo, consumable, weapon mod and miscellany in the loaded
     /// data.
     ///
@@ -148,6 +175,10 @@ impl ItemBook {
             .consumables
             .iter()
             .filter_map(|item| item.on_use.clone().map(|effect| (item.id.clone(), effect)));
+        let autos = data
+            .consumables
+            .iter()
+            .filter_map(|item| item.auto_use.map(|when| (item.id.clone(), when)));
         let misc = data
             .misc
             .iter()
@@ -165,6 +196,7 @@ impl ItemBook {
                 .chain(mods),
         )?
         .with_uses(uses)?
+        .with_autos(autos)?
         .with_values(
             data.weapons
                 .iter()
@@ -213,6 +245,12 @@ impl ItemBook {
     #[must_use]
     pub fn item_use(&self, item: &ItemId) -> Option<ItemUse> {
         self.uses.get(item).cloned()
+    }
+
+    /// When the item is used by itself, if it is.
+    #[must_use]
+    pub fn auto_use(&self, item: &ItemId) -> Option<AutoUse> {
+        self.autos.get(item).copied()
     }
 
     /// How many items the book holds.
